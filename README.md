@@ -9,9 +9,10 @@ Removed so far:
 - **Delphi package files (`*.dpk`):** all 27, including the ones in `examples/` and `Source/Unassigned/`. The units they listed are still in the tree.
 - **Dead database drivers:** the BDE, DBISAM, Advantage, IBX, DBExpress, SQLDirect and DOA persistence back ends, and the unassigned Asta, BDEUtils, dbvalidate and Oracle-BDE code. ADO and the generic DB layer are kept.
 - **Non-Windows code (CLX and Linux):** the CLX GUI (`Source/BoldQAwareGUI`), the CLX environment (`BoldEnvironmentCLX.pas`, `BoldEnvironmentAllowBothUseCLX.pas`, and `BoldEnvironmentAllowBothUseVCL.pas`, which existed only to allow VCL and CLX together), the CLX configuration in `BoldEnvironment.pas`, and the `{$IFDEF LINUX}` branches in `BoldPerformanceCounter.pas` and `BoldUtils.pas`. The matching entries are removed from `PackageDef.txt` and `SourceDef.txt`.
+- **Rational Rose code:** `Common/Rose98`, `Common/Rose2000` and `UMLModel/ModelLinks/Rose98`, along with the Rose link in the UML data module. UML model creation and import is not replaced yet. A replacement is needed, as tracked in the drop list.
 - **Unrelated examples:** the example projects that depend on a dropped feature (COM/DCOM, MSXML/SOAP/XML, OLE, Rational Rose, the system debugger form) are removed: 41 example folders, deleted as 32 top-level folders in `examples/CBuilder` and `examples/Delphi`. Examples that only use kept features, or that use nothing dropped, are kept.
 
-Not yet removed: the rest of the drop list (COM and DCOM distribution, Rational Rose links, Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
+Not yet removed: the rest of the drop list (COM and DCOM distribution, Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
 
 This is master branch. If you want latest development please check develop branch instead
 https://github.com/Embarcadero/BoldForDelphi/tree/develop
