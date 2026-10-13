@@ -9,8 +9,6 @@ PackageGroup=T2H
 ; Stuff listed here is excluded from all packages in all sets
 ;------------------------------------------------------------
 [Global.Exclude]
-File=$(SRCDIR)\ClientGuiCom\BoldControls\BoldDragDropTargetCom.pas
-File=$(SRCDIR)\Common\ConnectionCOM\BoldComServ.pas
 
 Dir=$(SRCDIR)\Unassigned
 Dir=$(SRCDIR)\MoldModelEditor
@@ -150,8 +148,6 @@ BPKTemplate=$(BUILD_TEMP)\BCBPackageTemplateBPK.exp
 CPPTemplate=$(BUILD_TEMP)\BCBPackageTemplateCPP.exp
 
 [Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)ComGUI.Include]
-Dir=$(SRCDIR)\ClientGuiCom
-Dir=$(SRCDIR)\ClientHandlesCom
 
 ;-----------------------
 ; Package BoldXX$(BUILD_TARGET) - Com
@@ -168,15 +164,10 @@ Dir=$(SRCDIR)\Common\COM
 Dir=$(SRCDIR)\Common\ConnectionCOM
 Dir=$(SRCDIR)\Common\ConnectionHandlesCOM
 Dir=$(SRCDIR)\Common\IDECOM
-Dir=$(SRCDIR)\Handles\COM
-Dir=$(SRCDIR)\Handles\IDECOM
 Dir=$(SRCDIR)\ObjectSpace\COM
 Dir=$(SRCDIR)\Persistence\COM
 Dir=$(SRCDIR)\Persistence\SOAP
 Dir=$(SRCDIR)\Persistence\HTTP
-Dir=$(SRCDIR)\Persistence\IDECOM
-Dir=$(SRCDIR)\ConcurrencyControl\COM
-Dir=$(SRCDIR)\ConcurrencyControl\IDECOM
 Dir=$(SRCDIR)\Propagator\COM
 Dir=$(SRCDIR)\Propagator\IDECOM
 File=$(SRCDIR)\Persistence\Propagation\BoldPropagatorUtils.pas
@@ -257,8 +248,6 @@ BPKTemplate=$(BUILD_TEMP)\BCBPackageTemplateBPK.exp
 CPPTemplate=$(BUILD_TEMP)\BCBPackageTemplateCPP.exp
 
 [Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)OLLE.Include]
-Dir=$(SRCDIR)\Extensions\OLLE\Core
-Dir=$(SRCDIR)\Extensions\OLLE\IDE
 
 ;-----------------------
 ; Package BoldXX$(BUILD_TARGET) - Utils
@@ -419,21 +408,16 @@ Dir=$(SRCDIR)
 [Package.T2H.BfD.Exclude]
 Dir=$(SRCDIR)\BoldAwareGUI\IDE
 Dir=$(SRCDIR)\BoldAwareGUI\UtilsGUI
-Dir=$(SRCDIR)\ClientGuiCom\IDE
-Dir=$(SRCDIR)\ClientHandlesCom\IDE
 Dir=$(SRCDIR)\Common\MsXml
 Dir=$(SRCDIR)\Common\IDE
 dir=$(SRCDIR)\Common\Licensing
 dir=$(SRCDIR)\Common\ProductProtection
 Dir=$(SRCDIR)\Common\IDECOM
 Dir=$(SRCDIR)\Common\UtilsGUI
-Dir=$(SRCDIR)\ConcurrencyControl\IDECOM
 Dir=$(SRCDIR)\Handles\IDE
-Dir=$(SRCDIR)\Handles\IDECOM
 Dir=$(SRCDIR)\MoldModel\IDE
 Dir=$(SRCDIR)\ObjectSpace\IDE
 Dir=$(SRCDIR)\Persistence\IDE
-Dir=$(SRCDIR)\Persistence\IDECOM
 Dir=$(SRCDIR)\Persistence\IDEUDP
 Dir=$(SRCDIR)\Propagator\Enterprise
 Dir=$(SRCDIR)\Propagator\IDECOM

@@ -4,15 +4,13 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 9 subfolder(s), 0 file(s).
+**Contents:** 7 subfolder(s), 0 file(s).
 
 ## Subfolders
 
 - [Actions/](Actions/FOLDER_INFO.md)
-- [COM/](COM/FOLDER_INFO.md)
 - [Core/](Core/FOLDER_INFO.md)
 - [IDE/](IDE/FOLDER_INFO.md)
-- [IDECOM/](IDECOM/FOLDER_INFO.md)
 - [Manipulators/](Manipulators/FOLDER_INFO.md)
 - [PessimisticLocking/](PessimisticLocking/FOLDER_INFO.md)
 - [UnLoader/](UnLoader/FOLDER_INFO.md)

@@ -4,16 +4,13 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 17 subfolder(s), 4 file(s).
+**Contents:** 14 subfolder(s), 4 file(s).
 
 ## Subfolders
 
 - [BoldAwareGUI/](BoldAwareGUI/FOLDER_INFO.md)
-- [ClientGuiCom/](ClientGuiCom/FOLDER_INFO.md)
-- [ClientHandlesCom/](ClientHandlesCom/FOLDER_INFO.md)
 - [Common/](Common/FOLDER_INFO.md)
 - [ConcurrencyControl/](ConcurrencyControl/FOLDER_INFO.md)
-- [Extensions/](Extensions/FOLDER_INFO.md)
 - [FreestandingValueSpace/](FreestandingValueSpace/FOLDER_INFO.md)
 - [Handles/](Handles/FOLDER_INFO.md)
 - [MoldModel/](MoldModel/FOLDER_INFO.md)

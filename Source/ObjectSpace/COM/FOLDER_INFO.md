@@ -4,7 +4,7 @@
 
 **Drop list:** this folder (or items in it) is on the drop list: C-1. See DROP_LIST.md.
 
-**Contents:** 0 subfolder(s), 7 file(s), plus 4 .UnitDoc file(s) documenting units here.
+**Contents:** 0 subfolder(s), 6 file(s), plus 3 .UnitDoc file(s) documenting units here.
 
 ## Files
 
@@ -16,7 +16,6 @@
 | `BoldComObjectSpace.tlb` | tlb | Compiled or binary artifact (tlb). *(drop list: C-1)* |
 | `BoldComObjectSpaceAdapters.pas` | Unit | Method UpdateDatabase: Update database with all objects that have changed in memory. Declares TBoldComElementAdapter, TBoldComMetaElementAdapter, TBoldComElementTypeInfoAdapter, TBoldComTypeTypeInfoAdapter and 24 more. *(drop list: C-1)* |
 | `BoldComObjectSpace_TLB.pas` | Unit | Method UpdateDatabase: Method exposed by the interface. *(drop list: C-1)* |
-| `BoldComponentValidatorCom.pas` | Unit | Declares TBoldComponentValidatorCom. *(drop list: C-1)* |
 
 ---
 

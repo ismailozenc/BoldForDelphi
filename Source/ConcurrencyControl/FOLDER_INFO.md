@@ -4,13 +4,11 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 3 subfolder(s), 0 file(s).
+**Contents:** 1 subfolder(s), 0 file(s).
 
 ## Subfolders
 
-- [COM/](COM/FOLDER_INFO.md)
 - [Common/](Common/FOLDER_INFO.md)
-- [IDECOM/](IDECOM/FOLDER_INFO.md)
 
 ---
 

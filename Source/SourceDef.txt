@@ -31,8 +31,6 @@ RemovePropertyDetails=1
 ; We must explicitly add those files that don't have .pas extension
 File=$(SRCDIR)\Common\Include\Bold.inc
 File=$(SRCDIR)\Common\ProductProtection\OnGuard.inc
-File=$(SRCDIR)\Extensions\OLLE\Core\DistributableInfo.inc
-File=$(SRCDIR)\Extensions\OLLE\Core\DistributableInfo_Interface.inc
 
 [Research.Exclude]
 Dir=$(SRCDIR)\Unassigned
@@ -47,17 +45,13 @@ Section=IDE.Exclude
 
 [IDE.Exclude]
 Dir=$(SRCDIR)\BoldAwareGUI\UtilsGUI
-Dir=$(SRCDIR)\ClientGuiCom\IDE
-Dir=$(SRCDIR)\ClientHandlesCom\IDE
 Dir=$(SRCDIR)\Common\IDE
 Dir=$(SRCDIR)\Common\IDECOM
 Dir=$(SRCDIR)\Common\UtilsGUI
 Dir=$(SRCDIR)\Handles\IDE
-Dir=$(SRCDIR)\Handles\IDECOM
 Dir=$(SRCDIR)\MoldModel\IDE
 Dir=$(SRCDIR)\ObjectSpace\IDE
 Dir=$(SRCDIR)\Persistence\IDE
-Dir=$(SRCDIR)\Persistence\IDECOM
 Dir=$(SRCDIR)\Persistence\IDEUDP
 Dir=$(SRCDIR)\UMLModel\IDE
 Dir=$(SRCDIR)\ObjectSpace\IDE\AttributeWizard
@@ -80,7 +74,6 @@ Dir=$(SRCDIR)\Handles\Core
 Dir=$(SRCDIR)\Handles\Actions
 Dir=$(SRCDIR)\FreestandingValueSpace
 Dir=$(SRCDIR)\ValueSpace
-Dir=$(SRCDIR)\Extensions
 
 File=$(SRCDIR)\ObjectSpace\BORepresentation\BoldAttributes.pas
 File=$(SRCDIR)\ObjectSpace\BORepresentation\BoldMLAttributes.pas
@@ -96,8 +89,6 @@ Section=FullSource.COMGUI
 Dir=$(SRCDIR)\Persistence\UDPPropagator
 
 [FullSource.COMGUI]
-Dir=$(SRCDIR)\ClientGuiCom
-Dir=$(SRCDIR)\ClientHandlesCom
 Dir=$(SRCDIR)\Common\COM
 Dir=$(SRCDIR)\Common\Connection
 Dir=$(SRCDIR)\Common\ConnectionCOM
@@ -166,8 +157,6 @@ File=$(SRCDIR)\Common\ConnectionCOM\BoldComConnection.dpr
 File=$(SRCDIR)\Common\ConnectionCOM\BoldComConnection.tlb
 File=$(SRCDIR)\ObjectSpace\COM\BoldComObjectSpace.dpr
 File=$(SRCDIR)\ObjectSpace\COM\BoldComObjectSpace.tlb
-File=$(SRCDIR)\Common\SOAP\BoldSOAP.dpr
-File=$(SRCDIR)\Common\SOAP\BoldSOAP.tlb
 File=$(SRCDIR)\Propagator\Common\BoldPropagatorInterfaces.dpr
 File=$(SRCDIR)\Propagator\Common\BoldPropagatorInterfaces.tlb
 File=$(SRCDIR)\Propagator\Common\BoldLockingSupportInterfaces.dpr

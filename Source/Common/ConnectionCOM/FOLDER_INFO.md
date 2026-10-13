@@ -4,7 +4,7 @@
 
 **Drop list:** this folder (or items in it) is on the drop list: C-5. See DROP_LIST.md.
 
-**Contents:** 0 subfolder(s), 7 file(s), plus 3 .UnitDoc file(s) documenting units here.
+**Contents:** 0 subfolder(s), 6 file(s), plus 3 .UnitDoc file(s) documenting units here.
 
 ## Files
 
@@ -15,7 +15,6 @@
 | `BoldComConnection.pas` | Unit | Method OnServerEvent: Receives events from the server. *(drop list: C-5)* |
 | `BoldComConnection.res` | res | Compiled or binary artifact (res). *(drop list: C-5)* |
 | `BoldComConnection.tlb` | tlb | Compiled or binary artifact (tlb). *(drop list: C-5)* |
-| `BoldComServ.pas` | Unit | No public classes; a unit of procedures and constants. *(drop list: C-5)* |
 | `BoldComServer.pas` | Unit | Method CreateObject: Requests for a new instance of ClassName. Declares TBoldComServerSubscriber, TBoldComServerEventQueue, TBoldComServerInterface, TBoldComServerProvider and 8 more. *(drop list: C-5)* |
 
 ---
