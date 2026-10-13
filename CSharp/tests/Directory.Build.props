@@ -1,0 +1,34 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)..'))" />
+
+  <!-- Every project named *.Tests is an NUnit test project. -->
+  <PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.Tests'))">
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Bold.Tests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup Condition="$(MSBuildProjectName.EndsWith('.Tests'))">
+    <PackageReference Include="NUnit" />
+    <Using Include="NUnit.Framework" />
+    <ProjectReference Include="$(MSBuildThisFileDirectory)Bold.TestSupport/Bold.TestSupport.csproj" />
+  </ItemGroup>
+
+  <!-- Normal builds: Visual Studio, Rider and dotnet test find the tests through the NUnit adapter. -->
+  <ItemGroup Condition="$(MSBuildProjectName.EndsWith('.Tests')) and '$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NUnit3TestAdapter" />
+  </ItemGroup>
+
+  <!--
+    Offline builds (dotnet build -p:BoldOffline=true), for machines whose package feed has NUnit but not the test adapter:
+    each test project becomes a NUnitLite console program. Run it with dotnet run, or run its dll with
+    -result=CSharp/TestResults/<project>.xml to write results the port tool reads.
+  -->
+  <PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.Tests')) and '$(BoldOffline)' == 'true'">
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup Condition="$(MSBuildProjectName.EndsWith('.Tests')) and '$(BoldOffline)' == 'true'">
+    <PackageReference Include="NUnitLite" />
+    <Compile Include="$(MSBuildThisFileDirectory)NUnitLiteMain.cs" Link="NUnitLiteMain.cs" />
+  </ItemGroup>
+</Project>

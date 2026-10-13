@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Delphi RTL semantics the ported code relies on (sets, and later string and format routines), under the Delphi names.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+  </ItemGroup>
+</Project>

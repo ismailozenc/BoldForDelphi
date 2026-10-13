@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>XMI 1.x import and XMI 2.x import and export for the Mold model.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Ids, value interfaces, conditions, free-standing values and XML streaming.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+  </ItemGroup>
+</Project>

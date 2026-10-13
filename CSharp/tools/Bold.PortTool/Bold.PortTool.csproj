@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Links Delphi and C# code both ways, reports the port status of every symbol, checks the links, and copies the test models.</Description>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Bold.PortTool</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Shares the PortStatus enum with the code it reads. -->
+    <ProjectReference Include="../../src/Bold.Porting/Bold.Porting.csproj" />
+  </ItemGroup>
+</Project>

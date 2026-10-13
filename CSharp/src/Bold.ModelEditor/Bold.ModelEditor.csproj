@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The WinForms model editor.</Description>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- Lets this project compile on Linux and macOS as well. -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../Bold.WinForms/Bold.WinForms.csproj" />
+    <ProjectReference Include="../Bold.CodeGen/Bold.CodeGen.csproj" />
+    <ProjectReference Include="../Bold.Xmi/Bold.Xmi.csproj" />
+  </ItemGroup>
+</Project>

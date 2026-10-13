@@ -1,0 +1,1150 @@
+{
+  "source": "master",
+  "models": [
+    {
+      "file": "AccountClasses.server.Account.bld",
+      "model": "AccountClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 0,
+      "sha1": "48ef6e70d0",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/bios2/server/Account.bld",
+          "component": null,
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/bios2/server/Account.bld"
+        }
+      ]
+    },
+    {
+      "file": "AccountClasses.server.dmProduct-BoldModel1.bld",
+      "model": "AccountClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 0,
+      "sha1": "9daa5cbfee",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/bios2/server/dmProduct.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/bios2/server/dmProduct.dfm"
+        }
+      ]
+    },
+    {
+      "file": "AssociationClassExampleClasses.CBuilder-Simple-ObjectSpace-AssociationClass.bld",
+      "model": "AssociationClassExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 1,
+      "sha1": "5d70258b16",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/AssociationClass/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/AssociationClass/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "AssociationClassExampleClasses.Delphi-Simple-ObjectSpace-AssociationClass.bld",
+      "model": "AssociationClassExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 1,
+      "sha1": "885994aa30",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/AssociationClass/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/AssociationClass/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BankingClasses.CBuilder-Simple-ObjectSpace-Transaction.bld",
+      "model": "BankingClasses",
+      "version": 19,
+      "classes": 6,
+      "associations": 4,
+      "sha1": "bf74968149",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/Transaction/dMain.dfm",
+          "component": "bmoMain",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/Transaction/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BankingClasses.Delphi-Simple-ObjectSpace-Transaction.bld",
+      "model": "BankingClasses",
+      "version": 19,
+      "classes": 6,
+      "associations": 4,
+      "sha1": "1fba2913c9",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/Transaction/dMain.dfm",
+          "component": "bmoMain",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/Transaction/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BldOwnClasses.CBuilder-Simple-Persistence-Synchronization.bld",
+      "model": "BldOwnClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "c307f7e1ab",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/Persistence/Synchronization/dModel.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/Persistence/Synchronization/dModel.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BldOwnClasses.Delphi-Simple-Persistence-Synchronization.bld",
+      "model": "BldOwnClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "f104e1cfcf",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/Persistence/Synchronization/datamod.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/Persistence/Synchronization/datamod.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BoldUMLModel.bld",
+      "model": "BoldUMLModel",
+      "version": 19,
+      "classes": 122,
+      "associations": 116,
+      "sha1": "789ed8f83a",
+      "sources": [
+        {
+          "path": "Source/UMLModel/Core/BoldUMLModelDataModule.dfm",
+          "component": "bmlUMLModel",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/Source/UMLModel/Core/BoldUMLModelDataModule.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BudgetClasses.XML.BoldAppDataModUnit-BoldModel1.bld",
+      "model": "BudgetClasses",
+      "version": 19,
+      "classes": 7,
+      "associations": 5,
+      "sha1": "d02190d2cc",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/XML/BoldAppDataModUnit.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/XML/BoldAppDataModUnit.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BudgetClasses.XML.Budget.bld",
+      "model": "BudgetClasses",
+      "version": 19,
+      "classes": 7,
+      "associations": 5,
+      "sha1": "e31ffc2ed4",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/XML/Budget.bld",
+          "component": null,
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/XML/Budget.bld"
+        }
+      ]
+    },
+    {
+      "file": "BuildingClasses.CBuilder-Compound-Building.bld",
+      "model": "BuildingClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "3c6e091b7d",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Compound/Building/datamod.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Compound/Building/datamod.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BuildingClasses.Compound-ASP-Server.bld",
+      "model": "BuildingClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "876c54a3f7",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ASP/Server/MainWebModule.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ASP/Server/MainWebModule.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BuildingClasses.Compound-HTTPPMapper-Common.bld",
+      "model": "BuildingClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "ed02083a11",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/HTTPPMapper/Common/dmCoreUnit.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/HTTPPMapper/Common/dmCoreUnit.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BuildingClasses.Delphi-Compound-Building.bld",
+      "model": "BuildingClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "f4dfd1df8f",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/Building/Building.bld",
+          "component": null,
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/Building/Building.bld"
+        }
+      ]
+    },
+    {
+      "file": "BuildingsAndOwners.Building.bld",
+      "model": "BuildingsAndOwners",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "5134ba66cf",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/Building/Datamod.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/Building/Datamod.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BuildingsAndOwners.Core.bld",
+      "model": "BuildingsAndOwners",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "ecd6077261",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/Bios/Core/DMCore.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/Bios/Core/DMCore.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.CBuilder-Compound-Locking-Common.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 3,
+      "sha1": "1ea9f936dd",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Compound/Locking/Common/dModel.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Compound/Locking/Common/dModel.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.CBuilder-Simple-ObjectSpace-DataSetAndReporting.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 1,
+      "associations": 0,
+      "sha1": "55050e62b2",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/DataSetAndReporting/dMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/DataSetAndReporting/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.Delphi-Compound-ASP-Common.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 2,
+      "sha1": "d48472c154",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ASP/Common/ModelDM.dfm",
+          "component": "bmASPDemo",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ASP/Common/ModelDM.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.Delphi-Compound-Locking-Common.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 3,
+      "sha1": "a70435277c",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/Locking/Common/ModelDM.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/Locking/Common/ModelDM.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.Delphi-Simple-GUIControls-SimpleTreeView.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 2,
+      "sha1": "d747377049",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/GUIControls/SimpleTreeView/SimpleTreeViewForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/GUIControls/SimpleTreeView/SimpleTreeViewForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.Delphi-Simple-Persistence-CheckInOut.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 1,
+      "sha1": "2c9b87746a",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/Persistence/CheckInOut/MainDM.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/Persistence/CheckInOut/MainDM.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.Delphi-Simple-Persistence-ObjectLending.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 0,
+      "sha1": "9f8c7addd9",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/Persistence/ObjectLending/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/Persistence/ObjectLending/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.examples-Delphi-Compound-ExternalPersistence.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 9,
+      "associations": 8,
+      "sha1": "0f06109358",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ExternalPersistence/dMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ExternalPersistence/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.examples-Delphi-Compound-ExternalPersistence2.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 9,
+      "associations": 8,
+      "sha1": "033e064614",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ExternalPersistence2/dMain.dfm",
+          "component": "bmMain",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ExternalPersistence2/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "BusinessClasses.Tools-BoldUpgrader.bld",
+      "model": "BusinessClasses",
+      "version": 19,
+      "classes": 1,
+      "associations": 0,
+      "sha1": "d213b5d5ee",
+      "sources": [
+        {
+          "path": "Tools/BoldUpgrader/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/Tools/BoldUpgrader/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ComboBoxClasses.CBuilder-Simple-GUIControls-ComboBox.bld",
+      "model": "ComboBoxClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 1,
+      "sha1": "d4268361fe",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/GUIControls/ComboBox/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/GUIControls/ComboBox/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ComboBoxClasses.Delphi-Simple-GUIControls-ComboBox.bld",
+      "model": "ComboBoxClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 1,
+      "sha1": "161622cee1",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/GUIControls/ComboBox/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/GUIControls/ComboBox/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ConstraintExampleClasses.CBuilder-Simple-ObjectSpace-Constraints.bld",
+      "model": "ConstraintExampleClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 3,
+      "sha1": "d95d280943",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/Constraints/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/Constraints/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ConstraintExampleClasses.Delphi-Simple-ObjectSpace-Constraints.bld",
+      "model": "ConstraintExampleClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 3,
+      "sha1": "bb53d12c00",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/Constraints/fConstraintsMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/Constraints/fConstraintsMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ConwayClasses.CBuilder-Compound-Conway.bld",
+      "model": "ConwayClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 6,
+      "sha1": "9e28940d7e",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Compound/Conway/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Compound/Conway/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ConwayClasses.Delphi-Compound-Conway.bld",
+      "model": "ConwayClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 6,
+      "sha1": "3534637da5",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/Conway/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/Conway/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "CustAttrExampleClasses.bld",
+      "model": "CustAttrExampleClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 0,
+      "sha1": "f513ea85f8",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/CustomAttributes/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/CustomAttributes/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DataSetExampleClasses.CBuilder-Simple-ObjectSpace-DataSetAndReporting.bld",
+      "model": "DataSetExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 1,
+      "sha1": "5a0c84a5d9",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/DataSetAndReporting/dMain.dfm",
+          "component": "bmoMain",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/DataSetAndReporting/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DataSetExampleClasses.Delphi-Simple-ObjectSpace-DataSetAndReporting.bld",
+      "model": "DataSetExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 1,
+      "sha1": "4e91741dbb",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/DataSetAndReporting/dMain.dfm",
+          "component": "bmoMain",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/DataSetAndReporting/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DataValidationExampleClasses.bld",
+      "model": "DataValidationExampleClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 1,
+      "sha1": "9c6b9d1c62",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/DataValidation/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/DataValidation/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DerivedAttrExampleClasses.CBuilder-Simple-ObjectSpace-DerivedAttributes.bld",
+      "model": "DerivedAttrExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 0,
+      "sha1": "fe84460270",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/DerivedAttributes/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/DerivedAttributes/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DerivedAttrExampleClasses.Delphi-Simple-ObjectSpace-DerivedAttributes.bld",
+      "model": "DerivedAttrExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 0,
+      "sha1": "0367d26a0b",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/DerivedAttributes/fDerivedAttrMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/DerivedAttributes/fDerivedAttrMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DerivedHandleExampleClasses.CBuilder-Simple-ObjectSpace-DerivedHandle.bld",
+      "model": "DerivedHandleExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 2,
+      "sha1": "bde43520bb",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/DerivedHandle/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/DerivedHandle/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DerivedHandleExampleClasses.CBuilder-Simple-ObjectSpace-DerivedRelations.bld",
+      "model": "DerivedHandleExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 4,
+      "sha1": "751c2e02a8",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/DerivedRelations/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/DerivedRelations/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DerivedHandleExampleClasses.Delphi-Simple-ObjectSpace-DerivedHandle.bld",
+      "model": "DerivedHandleExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 2,
+      "sha1": "ec739c0da9",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/DerivedHandle/Mainform.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/DerivedHandle/Mainform.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DerivedHandleExampleClasses.Delphi-Simple-ObjectSpace-DerivedRelations.bld",
+      "model": "DerivedHandleExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 4,
+      "sha1": "a84f8e8714",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/DerivedRelations/fDerivedRelationsMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/DerivedRelations/fDerivedRelationsMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DistributableInfo.bld",
+      "model": "DistributableInfo",
+      "version": 19,
+      "classes": 11,
+      "associations": 6,
+      "sha1": "85888e9735",
+      "sources": [
+        {
+          "path": "Source/Extensions/OLLE/Core/BoldOLLEdmmain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/Source/Extensions/OLLE/Core/BoldOLLEdmmain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DocumentClasses.CBuilder-Simple-ObjectSpace-Temporal.bld",
+      "model": "DocumentClasses",
+      "version": 19,
+      "classes": 8,
+      "associations": 7,
+      "sha1": "9fe7943069",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/Temporal/dModel.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/Temporal/dModel.dfm"
+        }
+      ]
+    },
+    {
+      "file": "DocumentClasses.Delphi-Simple-ObjectSpace-Temporal.bld",
+      "model": "DocumentClasses",
+      "version": 19,
+      "classes": 8,
+      "associations": 7,
+      "sha1": "841028cfd4",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/Temporal/MainDM.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/Temporal/MainDM.dfm"
+        }
+      ]
+    },
+    {
+      "file": "EmptyModel.bld",
+      "model": "EmptyModel",
+      "version": 19,
+      "classes": 1,
+      "associations": 0,
+      "sha1": "6f54097c98",
+      "sources": [
+        {
+          "path": "examples/Delphi/Repository/DefaultProject/dMain.dfm",
+          "component": "bmoMain",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Repository/DefaultProject/dMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "GettingStarted.bld",
+      "model": "GettingStarted",
+      "version": 19,
+      "classes": 2,
+      "associations": 0,
+      "sha1": "8553471329",
+      "sources": [
+        {
+          "path": "Doc/Documents/GettingStarted/DataMod.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/Doc/Documents/GettingStarted/DataMod.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ImageDemoClasses.CBuilder-Simple-GUIControls-BoldImage.bld",
+      "model": "ImageDemoClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 0,
+      "sha1": "da61255f87",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/GUIControls/BoldImage/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/GUIControls/BoldImage/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ImageDemoClasses.Delphi-Simple-GUIControls-BoldImage.bld",
+      "model": "ImageDemoClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 0,
+      "sha1": "154c946dad",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/GUIControls/BoldImage/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/GUIControls/BoldImage/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ModelEvDemo.CBuilder-Compound-ModelEvolution-Version1.bld",
+      "model": "ModelEvDemo",
+      "version": 19,
+      "classes": 5,
+      "associations": 3,
+      "sha1": "76d52c94cc",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Compound/ModelEvolution/Version1/dModel.dfm",
+          "component": "Model",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Compound/ModelEvolution/Version1/dModel.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ModelEvDemo.CBuilder-Compound-ModelEvolution-Version2.bld",
+      "model": "ModelEvDemo",
+      "version": 19,
+      "classes": 6,
+      "associations": 4,
+      "sha1": "c2759e7f2f",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Compound/ModelEvolution/Version2/dModel.dfm",
+          "component": "Model",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Compound/ModelEvolution/Version2/dModel.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ModelEvDemo.Delphi-Compound-ModelEvolution-Version1.bld",
+      "model": "ModelEvDemo",
+      "version": 19,
+      "classes": 5,
+      "associations": 3,
+      "sha1": "45b307a777",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ModelEvolution/Version1/dModel.dfm",
+          "component": "Model",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ModelEvolution/Version1/dModel.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ModelEvDemo.Delphi-Compound-ModelEvolution-Version2.bld",
+      "model": "ModelEvDemo",
+      "version": 19,
+      "classes": 6,
+      "associations": 4,
+      "sha1": "b9472c4e45",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ModelEvolution/Version2/dModel.dfm",
+          "component": "Model",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ModelEvolution/Version2/dModel.dfm"
+        }
+      ]
+    },
+    {
+      "file": "MultilangClasses.bld",
+      "model": "MultilangClasses",
+      "version": 19,
+      "classes": 8,
+      "associations": 2,
+      "sha1": "62d00aa21e",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/GUIControls/MultiLang/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/GUIControls/MultiLang/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "New_Model.bld",
+      "model": "New_Model",
+      "version": 19,
+      "classes": 1,
+      "associations": 0,
+      "sha1": "37e10f6dab",
+      "sources": [
+        {
+          "path": "Source/Unassigned/BoldOclSymbolLister.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/Source/Unassigned/BoldOclSymbolLister.dfm"
+        },
+        {
+          "path": "examples/CBuilder/Compound/Building/Mainform.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Compound/Building/Mainform.dfm"
+        }
+      ]
+    },
+    {
+      "file": "OclVariableClasses.bld",
+      "model": "OclVariableClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 0,
+      "sha1": "2082a69201",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/OclVariables/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/OclVariables/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "OclVariablesClasses.bld",
+      "model": "OclVariablesClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 0,
+      "sha1": "e1580cfc51",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/OclVariables/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/OclVariables/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "OptimisticLockingExampleClasses.CBuilder-Simple-ObjectSpace-OptimisticLocking.bld",
+      "model": "OptimisticLockingExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 1,
+      "sha1": "37866a15ff",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/OptimisticLocking/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/OptimisticLocking/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "OptimisticLockingExampleClasses.Delphi-Simple-ObjectSpace-OptimisticLocking.bld",
+      "model": "OptimisticLockingExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 1,
+      "sha1": "1daead5511",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/OptimisticLocking/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/OptimisticLocking/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "OrgChartClasses.bld",
+      "model": "OrgChartClasses",
+      "version": 19,
+      "classes": 9,
+      "associations": 6,
+      "sha1": "5d7c44b6a8",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/XML2/MainDataModule.dfm",
+          "component": "OrgchartModel",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/XML2/MainDataModule.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ParentChildMappingClasses.ParentandChildMapping.bld",
+      "model": "ParentChildMappingClasses",
+      "version": 19,
+      "classes": 7,
+      "associations": 0,
+      "sha1": "0f552fddb8",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/Persistence/ParentandChildMapping/MainForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/Persistence/ParentandChildMapping/MainForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ParentChildMappingClasses.ParentChildMapping.bld",
+      "model": "ParentChildMappingClasses",
+      "version": 19,
+      "classes": 7,
+      "associations": 0,
+      "sha1": "d1105804c1",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/Persistence/ParentChildMapping/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/Persistence/ParentChildMapping/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ProdStructClasses.CBuilder-Compound-ProdStruct.bld",
+      "model": "ProdStructClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 1,
+      "sha1": "dec4df054c",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Compound/ProdStruct/dm1.dfm",
+          "component": "BoldModel",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Compound/ProdStruct/dm1.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ProdStructClasses.Delphi-Compound-ProdStruct.dm1-BoldModel.bld",
+      "model": "ProdStructClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 1,
+      "sha1": "2a59c83520",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ProdStruct/dm1.dfm",
+          "component": "BoldModel",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ProdStruct/dm1.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ProdStructClasses.Delphi-Compound-ProdStruct.ProdStruct.bld",
+      "model": "ProdStructClasses",
+      "version": 19,
+      "classes": 5,
+      "associations": 1,
+      "sha1": "5b0e328ef5",
+      "sources": [
+        {
+          "path": "examples/Delphi/Compound/ProdStruct/ProdStruct.bld",
+          "component": null,
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Compound/ProdStruct/ProdStruct.bld"
+        }
+      ]
+    },
+    {
+      "file": "QueryDemoClasses.CBuilder-Simple-ObjectSpace-Query.bld",
+      "model": "QueryDemoClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 1,
+      "sha1": "bd5def5bc7",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/Query/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/Query/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "QueryDemoClasses.Delphi-Simple-ObjectSpace-Query.bld",
+      "model": "QueryDemoClasses",
+      "version": 19,
+      "classes": 2,
+      "associations": 1,
+      "sha1": "7908ff7c23",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/Query/QueryDemoForm.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/Query/QueryDemoForm.dfm"
+        }
+      ]
+    },
+    {
+      "file": "RendererExampleClasses.CBuilder-Simple-GUIControls-Renderers.bld",
+      "model": "RendererExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 0,
+      "sha1": "c944dceede",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/GUIControls/Renderers/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/GUIControls/Renderers/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "RendererExampleClasses.Delphi-Simple-GUIControls-Renderers.bld",
+      "model": "RendererExampleClasses",
+      "version": 19,
+      "classes": 3,
+      "associations": 0,
+      "sha1": "39a1a83f7f",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/GUIControls/Renderers/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/GUIControls/Renderers/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ReverseDeriveExampleClasses.CBuilder-Simple-ObjectSpace-ReverseDerivedAttributes.bld",
+      "model": "ReverseDeriveExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 1,
+      "sha1": "bcf505b058",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/ReverseDerivedAttributes/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/ReverseDerivedAttributes/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "ReverseDeriveExampleClasses.Delphi-Simple-ObjectSpace-ReverseDerivedAttributes.bld",
+      "model": "ReverseDeriveExampleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 1,
+      "sha1": "70976566f6",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/ReverseDerivedAttributes/fRDExamMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/ReverseDerivedAttributes/fRDExamMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "SQLHandleClasses.CBuilder-Simple-ObjectSpace-SQLHandle.bld",
+      "model": "SQLHandleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 2,
+      "sha1": "8f60306d10",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/ObjectSpace/SQLHandle/fMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/ObjectSpace/SQLHandle/fMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "SQLHandleClasses.Delphi-Simple-ObjectSpace-SQLHandle.bld",
+      "model": "SQLHandleClasses",
+      "version": 19,
+      "classes": 4,
+      "associations": 2,
+      "sha1": "a37fe00749",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/ObjectSpace/SQLHandle/Mainform.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/ObjectSpace/SQLHandle/Mainform.dfm"
+        }
+      ]
+    },
+    {
+      "file": "TreeViewExampleClasses.CBuilder-Simple-GUIControls-TreeView.bld",
+      "model": "TreeViewExampleClasses",
+      "version": 19,
+      "classes": 8,
+      "associations": 2,
+      "sha1": "f52bd4cade",
+      "sources": [
+        {
+          "path": "examples/CBuilder/Simple/GUIControls/TreeView/fTreeViewMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/CBuilder/Simple/GUIControls/TreeView/fTreeViewMain.dfm"
+        }
+      ]
+    },
+    {
+      "file": "TreeViewExampleClasses.Delphi-Simple-GUIControls-TreeView.bld",
+      "model": "TreeViewExampleClasses",
+      "version": 19,
+      "classes": 8,
+      "associations": 2,
+      "sha1": "d2da06b45f",
+      "sources": [
+        {
+          "path": "examples/Delphi/Simple/GUIControls/TreeView/fTreeViewMain.dfm",
+          "component": "BoldModel1",
+          "url": "https://github.com/ismailozenc/boldfordelphi/blob/master/examples/Delphi/Simple/GUIControls/TreeView/fTreeViewMain.dfm"
+        }
+      ]
+    }
+  ]
+}

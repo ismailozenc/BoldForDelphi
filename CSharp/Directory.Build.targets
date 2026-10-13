@@ -1,0 +1,17 @@
+<Project>
+  <!--
+    Delphi type aliases (for example "TBoldTimeStampType = integer") are ported as C# global using
+    aliases in files named <Unit>.Aliases.cs. In Delphi such a name is visible in every unit that uses
+    the declaring unit. To match that, each project also compiles the alias files of the projects it
+    references directly. Rule: reference every Bold project whose names you use, not only through
+    another project.
+  -->
+  <Target Name="BoldIncludeReferencedAliases" BeforeTargets="CoreCompile" Condition="'@(ProjectReference)' != ''">
+    <ItemGroup>
+      <_BoldReferencedProjectDir Include="@(ProjectReference->'%(RootDir)%(Directory)')" />
+      <_BoldReferencedAliasFile Include="%(_BoldReferencedProjectDir.Identity)**/*.Aliases.cs"
+                                Exclude="%(_BoldReferencedProjectDir.Identity)obj/**;%(_BoldReferencedProjectDir.Identity)bin/**" />
+      <Compile Include="@(_BoldReferencedAliasFile)" Exclude="@(Compile)" />
+    </ItemGroup>
+  </Target>
+</Project>

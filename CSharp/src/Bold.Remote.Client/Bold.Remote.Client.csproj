@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Remote persistence client over HttpClient.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
+  </ItemGroup>
+</Project>

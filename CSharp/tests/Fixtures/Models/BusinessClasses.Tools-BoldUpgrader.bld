@@ -1,0 +1,25 @@
+VERSION 19
+(Model
+	"BusinessClasses"
+	"BusinessClassesRoot"
+	""
+	""
+	"Bold.DelphiName=<Name>,Bold.PMapper=<default>"
+	(Classes
+		(Class
+			"BusinessClassesRoot"
+			"<NONE>"
+			TRUE
+			FALSE
+			""
+			""
+			"Bold.TableName=<Prefix>_OBJECT,Bold.PMapper=<default>"
+			(Attributes
+			)
+			(Methods
+			)
+		)
+	)
+	(Associations
+	)
+)

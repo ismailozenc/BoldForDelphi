@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Shared test helpers: repository paths, the test models, and assertions that compare ported code with the Delphi source.</Description>
+    <RootNamespace>Bold.Tests</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" />
+    <Using Include="NUnit.Framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Porting/Bold.Porting.csproj" />
+    <!-- The Delphi parser and constant evaluator, so tests can read expected values from the Delphi source. -->
+    <ProjectReference Include="../../tools/Bold.PortTool/Bold.PortTool.csproj" />
+  </ItemGroup>
+</Project>

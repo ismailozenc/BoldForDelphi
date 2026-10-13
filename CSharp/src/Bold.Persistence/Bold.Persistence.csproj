@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Persistence controller abstractions and file persistence.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
+  </ItemGroup>
+</Project>

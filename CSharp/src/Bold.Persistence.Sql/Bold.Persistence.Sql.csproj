@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Object-relational mapping, SQL generation and database evolution on ADO.NET.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+  </ItemGroup>
+</Project>

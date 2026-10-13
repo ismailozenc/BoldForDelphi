@@ -1,0 +1,9 @@
+<Project>
+  <!-- Central package versions. Ported code itself uses no packages; only tests do. -->
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageVersion Include="NUnit" Version="4.6.1" />
+    <PackageVersion Include="NUnit3TestAdapter" Version="6.3.0" />
+    <PackageVersion Include="NUnitLite" Version="4.6.1" />
+  </ItemGroup>
+</Project>

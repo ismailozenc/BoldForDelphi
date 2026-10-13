@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Attributes that link each ported C# element to its Delphi origin and record its port status.</Description>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,71 @@
+name: C# port
+
+on:
+  push:
+    paths:
+      - 'CSharp/**'
+      - 'Source/**'
+      - 'Tools/**'
+      - '.github/workflows/csharp.yml'
+  pull_request:
+    paths:
+      - 'CSharp/**'
+      - 'Source/**'
+      - 'Tools/**'
+      - '.github/workflows/csharp.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: csharp-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-test-check:
+    name: Build, test and check the port links
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore CSharp/Bold.slnx
+
+      - name: Build
+        run: dotnet build CSharp/Bold.slnx --configuration Release --no-restore
+
+      - name: Test
+        run: |
+          failed=0
+          for project in CSharp/tests/*.Tests/*.Tests.csproj; do
+            name=$(basename "$project" .csproj)
+            dotnet test "$project" --configuration Release --no-build --logger trx --results-directory "CSharp/TestResults/$name" || failed=1
+          done
+          exit $failed
+
+      - name: Check port links
+        if: ${{ !cancelled() }}
+        run: dotnet run --project CSharp/tools/Bold.PortTool --configuration Release --no-build -- check --results CSharp/TestResults
+
+      - name: Port status on the job page
+        if: ${{ !cancelled() }}
+        run: dotnet run --project CSharp/tools/Bold.PortTool --configuration Release --no-build -- summary --results CSharp/TestResults --out "$GITHUB_STEP_SUMMARY"
+
+      - name: Port status pages
+        if: ${{ !cancelled() }}
+        run: dotnet run --project CSharp/tools/Bold.PortTool --configuration Release --no-build -- report --results CSharp/TestResults
+
+      - name: Upload status pages and test results
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: port-status
+          path: |
+            CSharp/port/PORT_STATUS.md
+            CSharp/port/units/
+            CSharp/TestResults/

@@ -1,0 +1,25 @@
+VERSION 19
+(Model
+	"EmptyModel"
+	"RootClass"
+	""
+	""
+	"_BoldInternal.flattened=True,_Boldify.boldified=True,_BoldInternal.ModelErrors=,Bold.DelphiName=<Name>,Bold.RootClass=RootClass"
+	(Classes
+		(Class
+			"RootClass"
+			"<NONE>"
+			TRUE
+			FALSE
+			""
+			""
+			"persistence=persistent"
+			(Attributes
+			)
+			(Methods
+			)
+		)
+	)
+	(Associations
+	)
+)

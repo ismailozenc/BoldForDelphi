@@ -1,0 +1,38 @@
+VERSION 19
+(Model
+	"GettingStarted"
+	"<Empty model>Root"
+	""
+	""
+	"_BoldInternal.flattened=True,_Boldify.boldified=True,\"_BoldInternal.ModelErrors=\"\"Invalid expression name \"\"\"\"_Empty_model_Root\"\"\"\" in \"\"\"\"<Empty model>Root\"\"\"\"\"\"\",Bold.DelphiName=<Name>,\"Bold.RootClass=<Empty model>Root\""
+	(Classes
+		(Class
+			"<Empty model>Root"
+			"<NONE>"
+			TRUE
+			FALSE
+			""
+			""
+			"_Boldify.autoCreated=True,persistence=persistent,Bold.TableName=<Prefix>_OBJECT"
+			(Attributes
+			)
+			(Methods
+			)
+		)
+		(Class
+			"RootClass"
+			"<Empty model>Root"
+			TRUE
+			FALSE
+			""
+			""
+			"persistence=persistent"
+			(Attributes
+			)
+			(Methods
+			)
+		)
+	)
+	(Associations
+	)
+)

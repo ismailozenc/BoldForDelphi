@@ -1,0 +1,42 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="PORTING.md" />
+    <File Path="README.md" />
+    <File Path="port/port-map.json" />
+    <File Path="tests/Directory.Build.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Bold.CodeGen/Bold.CodeGen.csproj" />
+    <Project Path="src/Bold.Core/Bold.Core.csproj" />
+    <Project Path="src/Bold.Handles/Bold.Handles.csproj" />
+    <Project Path="src/Bold.Model/Bold.Model.csproj" />
+    <Project Path="src/Bold.ModelEditor/Bold.ModelEditor.csproj" />
+    <Project Path="src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <Project Path="src/Bold.Olle/Bold.Olle.csproj" />
+    <Project Path="src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <Project Path="src/Bold.Persistence/Bold.Persistence.csproj" />
+    <Project Path="src/Bold.Porting/Bold.Porting.csproj" />
+    <Project Path="src/Bold.Propagation/Bold.Propagation.csproj" />
+    <Project Path="src/Bold.Propagator.Server/Bold.Propagator.Server.csproj" />
+    <Project Path="src/Bold.Remote.Client/Bold.Remote.Client.csproj" />
+    <Project Path="src/Bold.Remote.Server/Bold.Remote.Server.csproj" />
+    <Project Path="src/Bold.Rtl/Bold.Rtl.csproj" />
+    <Project Path="src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <Project Path="src/Bold.WinForms/Bold.WinForms.csproj" />
+    <Project Path="src/Bold.Xmi/Bold.Xmi.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Bold.Core.Tests/Bold.Core.Tests.csproj" />
+    <Project Path="tests/Bold.PortTool.Tests/Bold.PortTool.Tests.csproj" />
+    <Project Path="tests/Bold.Rtl.Tests/Bold.Rtl.Tests.csproj" />
+    <Project Path="tests/Bold.TestSupport/Bold.TestSupport.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Bold.PortTool/Bold.PortTool.csproj" />
+  </Folder>
+</Solution>

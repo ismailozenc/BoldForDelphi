@@ -1,0 +1,25 @@
+VERSION 19
+(Model
+	"New_Model"
+	"New_ModelRoot"
+	""
+	""
+	"Bold.DelphiName=<Name>"
+	(Classes
+		(Class
+			"New_ModelRoot"
+			"<NONE>"
+			TRUE
+			FALSE
+			""
+			""
+			""
+			(Attributes
+			)
+			(Methods
+			)
+		)
+	)
+	(Associations
+	)
+)

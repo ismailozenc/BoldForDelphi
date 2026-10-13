@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of the port tool: Delphi and C# readers, form files, constant evaluation, and the links of the whole repository.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../tools/Bold.PortTool/Bold.PortTool.csproj" />
+  </ItemGroup>
+</Project>

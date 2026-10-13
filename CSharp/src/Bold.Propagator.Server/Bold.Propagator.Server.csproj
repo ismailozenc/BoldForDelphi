@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The propagator and lock manager server, hosted as a Worker Service.</Description>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../Bold.Propagation/Bold.Propagation.csproj" />
+  </ItemGroup>
+</Project>

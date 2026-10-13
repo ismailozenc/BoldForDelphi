@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of Bold.Core. Test files mirror the Delphi paths: Common/Core/BoldDefsTests.cs tests Source/Common/Core/BoldDefs.pas.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+  </ItemGroup>
+</Project>

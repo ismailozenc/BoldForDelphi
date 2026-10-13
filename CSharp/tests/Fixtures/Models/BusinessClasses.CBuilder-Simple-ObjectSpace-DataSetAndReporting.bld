@@ -1,0 +1,25 @@
+VERSION 19
+(Model
+	"BusinessClasses"
+	"BusinessClassesRoot"
+	""
+	""
+	"_Boldify.boldified=True,_BoldInternal.flattened=True,Bold.DelphiName=<Name>,Bold.RootClass=BusinessClassesRoot"
+	(Classes
+		(Class
+			"BusinessClassesRoot"
+			"<NONE>"
+			TRUE
+			FALSE
+			""
+			""
+			"persistence=persistent"
+			(Attributes
+			)
+			(Methods
+			)
+		)
+	)
+	(Associations
+	)
+)

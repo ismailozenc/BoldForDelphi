@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of the Delphi RTL semantics in Bold.Rtl.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+# Test models keep the bytes Delphi wrote, line ends included.
+*.bld -text
