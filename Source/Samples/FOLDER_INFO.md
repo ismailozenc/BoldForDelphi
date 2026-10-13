@@ -4,7 +4,7 @@
 
 **Drop list:** this folder (or items in it) is on the drop list: S-1. See DROP_LIST.md.
 
-**Contents:** 12 subfolder(s), 0 file(s).
+**Contents:** 11 subfolder(s), 0 file(s).
 
 ## Subfolders
 
@@ -19,7 +19,6 @@
 - [SystemComparer/](SystemComparer/FOLDER_INFO.md)
 - [SystemDebugger/](SystemDebugger/FOLDER_INFO.md)
 - [UMLPlugins/](UMLPlugins/FOLDER_INFO.md)
-- [Unicode/](Unicode/FOLDER_INFO.md)
 
 ---
 

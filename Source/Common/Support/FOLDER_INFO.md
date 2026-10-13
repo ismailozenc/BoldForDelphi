@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 0 subfolder(s), 31 file(s), plus 27 .UnitDoc file(s) documenting units here.
+**Contents:** 0 subfolder(s), 30 file(s), plus 26 .UnitDoc file(s) documenting units here.
 
 ## Files
 
@@ -16,7 +16,6 @@
 | `BoldCommonBitmaps.rc` | rc | Compiled or binary artifact (rc). |
 | `BoldControlPackDefs.pas` | Unit | No public classes; a unit of procedures and constants. |
 | `BoldControlsDefs.pas` | Unit | No public classes; a unit of procedures and constants. |
-| `BoldDirectoryTraverser.pas` | Unit | Declares TBoldDirectoryTraverser. |
 | `BoldExternalizedReferences.pas` | Unit | Declares TBoldExternalizedReferenceList, TBoldExternalLink, TBoldExternalizedIndexList, TBoldExternalizedReferenceHashIndex. |
 | `BoldFileHandler.pas` | Unit | Declares TBoldFileHandler, TBoldDiskFileHandler, TBoldFileHandlerClass. |
 | `BoldGUIDUtils.pas` | Unit | No public classes; a unit of procedures and constants. |
@@ -38,7 +37,6 @@
 | `BoldSorter.pas` | Unit | No public classes; a unit of procedures and constants. |
 | `BoldStringList.pas` | Unit | Method Add: Adds a string to the list Declares TBoldStringList. |
 | `BoldSupportConst.pas` | Unit | No public classes; a unit of procedures and constants. |
-| `BoldTemplateExpander.pas` | Unit | Declares TBoldTemplatevariable, TBoldTemplateVariables, TBoldTemplateHolder, TBoldTemplateList and 1 more. |
 | `BoldUtils.pas` | Unit | Declares TBoldPassthroughNotifier. |
 | `BoldXMLStreaming.pas` | Unit | Method ReadInterface: This method should read from the XML node Node and stuff the values into Item. Declares TBoldXMLStreamerRegistry, TBoldXMLStreamManager, TBoldXMLStreamer, TBoldXMLStreamerList and 5 more. |
 

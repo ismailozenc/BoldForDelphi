@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 23 subfolder(s), 1 file(s).
+**Contents:** 22 subfolder(s), 1 file(s).
 
 ## Subfolders
 
@@ -28,7 +28,6 @@
 - [Support/](Support/FOLDER_INFO.md)
 - [SupportWin/](SupportWin/FOLDER_INFO.md)
 - [TaggedValues/](TaggedValues/FOLDER_INFO.md)
-- [Template/](Template/FOLDER_INFO.md)
 - [UML/](UML/FOLDER_INFO.md)
 - [UtilsGUI/](UtilsGUI/FOLDER_INFO.md)
 

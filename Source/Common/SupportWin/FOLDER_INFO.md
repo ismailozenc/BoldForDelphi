@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 0 subfolder(s), 3 file(s), plus 2 .UnitDoc file(s) documenting units here.
+**Contents:** 0 subfolder(s), 2 file(s), plus 1 .UnitDoc file(s) documenting units here.
 
 ## Files
 
@@ -12,7 +12,6 @@
 |---|---|---|
 | `BoldThread.pas` | Unit | Declares TBoldNotifiableThread. |
 | `BoldWinINet.pas` | Unit | No public classes; a unit of procedures and constants. |
-| `BoldWinUtils.pas` | Unit | No public classes; a unit of procedures and constants. *(drop list: W-4)* |
 
 ---
 

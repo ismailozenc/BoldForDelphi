@@ -220,7 +220,6 @@
         <DCCReference Include="Source\Common\Support\BoldCommonBitmaps.pas"/>
         <DCCReference Include="Source\Common\Support\BoldControlPackDefs.pas"/>
         <DCCReference Include="Source\Common\Support\BoldControlsDefs.pas"/>
-        <DCCReference Include="Source\Common\Support\BoldDirectoryTraverser.pas"/>
         <DCCReference Include="Source\Common\Support\BoldExternalizedReferences.pas"/>
         <DCCReference Include="Source\Common\Support\BoldFileHandler.pas"/>
         <DCCReference Include="Source\Common\Support\BoldGuard.pas"/>
@@ -247,12 +246,10 @@
         <DCCReference Include="Source\Common\Support\BoldXMLStreaming.pas"/>
         <DCCReference Include="Source\Common\SupportWin\BoldThread.pas"/>
         <DCCReference Include="Source\Common\SupportWin\BoldWinINet.pas"/>
-        <DCCReference Include="Source\Common\SupportWin\BoldWinUtils.pas"/>
         <DCCReference Include="Source\Common\TaggedValues\BoldDefaultTaggedValues.pas"/>
         <DCCReference Include="Source\Common\TaggedValues\BoldTaggedValueList.pas"/>
         <DCCReference Include="Source\Common\TaggedValues\BoldTaggedValueSupport.pas"/>
         <DCCReference Include="Source\Common\TaggedValues\BoldUMLTaggedValues.pas"/>
-        <DCCReference Include="Source\Common\Template\BoldTemplate.pas"/>
         <DCCReference Include="Source\Common\UML\BoldUMLDelphiSupport.pas"/>
         <DCCReference Include="Source\Common\UML\BoldUMLTypes.pas"/>
         <DCCReference Include="Source\Common\UtilsGUI\BoldCursorGuard.pas"/>
