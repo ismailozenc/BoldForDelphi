@@ -73,11 +73,6 @@ uses
   BoldCommonConst,
   Windows;
 
-{$IFDEF LINUX}
-const
-  MAX_COMPUTERNAME_LENGTH = 128;
-{$ENDIF}
-
 { Taken from FileCtrl to remove unit dependency }
 function DirectoryExists(const Name: string): Boolean;
 var

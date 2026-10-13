@@ -16,7 +16,6 @@ Dir=$(SRCDIR)\Unassigned
 Dir=$(SRCDIR)\MoldModelEditor
 Dir=$(SRCDIR)\Propagator\LowEnd
 Dir=$(SRCDIR)\Propagator\Enterprise
-Dir=$(SRCDIR)\BoldQAwareGUI
 
 Section=Exclude.$(BUILD_TARGET)
 
@@ -35,15 +34,6 @@ comment=There must be something in the section
 [Global.ForceInclude]
 comment=No longer required
 ;Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)Protection.Include
-
-;------------------------------------------------------------
-; CLX support
-;------------------------------------------------------------
-[CLX.include]
-File=$(SRCDIR)\Common\Environment\BoldEnvironmentCLX.pas
-File=$(SRCDIR)\Common\Environment\BoldEnvironmentAllowBothUseVCL.pas
-File=$(SRCDIR)\Common\Environment\BoldEnvironmentAllowBothUseCLX.pas
-
 
 ;------------------------------------------------------------
 ; Attriubte wizard 
@@ -84,7 +74,7 @@ PackageExtension=.dpk
 ; Package BoldXX$(BUILD_TARGET) - ALL FILES
 ;-----------------------
 [Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)AllFiles]
-Requires=$(RTL) $(VCL) $(VCLDB) $(CDS) $(VCLBDE) $(VCLJPG) $(VCLX) $(VCLADO) $(VCLIB) $(INDY) $(VCLDESIGNIDE) $(VCLVISUALCLX)
+Requires=$(RTL) $(VCL) $(VCLDB) $(CDS) $(VCLBDE) $(VCLJPG) $(VCLX) $(VCLADO) $(VCLIB) $(INDY) $(VCLDESIGNIDE)
 Description=$(PRODUCT_BASE_NAME) $(PRODUCT_VERSION) - ALL FILES
 SourceType=$(BUILD_TARGET)
 BPKTemplate=$(BUILD_TEMP)\BCBPackageTemplateBPK.exp
@@ -103,7 +93,7 @@ Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)UDPProp
 ; Package BoldXX$(BUILD_TARGET)
 ;-----------------------
 [Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)]
-Requires=$(RTL) $(VCL) $(VCLDB) $(DBRTL) $(VCLJPG) $(VCLX) $(VCLDESIGNIDE) $(VCLVISUALCLX)
+Requires=$(RTL) $(VCL) $(VCLDB) $(DBRTL) $(VCLJPG) $(VCLX) $(VCLDESIGNIDE)
 Description=$(PRODUCT_BASE_NAME) $(PRODUCT_VERSION)
 SourceType=$(BUILD_TARGET)
 BPKTemplate=$(BUILD_TEMP)\BCBPackageTemplateBPK.exp
@@ -135,10 +125,6 @@ File=$(SRCDIR)\Common\IDE\BoldInstallation.pas
 File=$(SRCDIR)\Common\IDE\BoldLicenseTextForm.pas
 
 Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)Boot.Include
-File=$(CLXSUPPORT)
-
-; CLX support
-Section=CLX.include
 
 ;-----------------------
 ; Package BoldXX$(BUILD_TARGET) - Ado

@@ -37,7 +37,6 @@ File=$(SRCDIR)\Extensions\OLLE\Core\DistributableInfo_Interface.inc
 
 [Research.Exclude]
 Dir=$(SRCDIR)\Unassigned
-Dir=$(SRCDIR)\BoldQAwareGUI
 
 [Protection.Exclude]
 Dir=$(SRCDIR)\Common\ProductProtection

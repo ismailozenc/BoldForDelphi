@@ -4,12 +4,11 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 18 subfolder(s), 4 file(s).
+**Contents:** 17 subfolder(s), 4 file(s).
 
 ## Subfolders
 
 - [BoldAwareGUI/](BoldAwareGUI/FOLDER_INFO.md)
-- [BoldQAwareGUI/](BoldQAwareGUI/FOLDER_INFO.md)
 - [ClientGuiCom/](ClientGuiCom/FOLDER_INFO.md)
 - [ClientHandlesCom/](ClientHandlesCom/FOLDER_INFO.md)
 - [Common/](Common/FOLDER_INFO.md)

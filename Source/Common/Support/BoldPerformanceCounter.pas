@@ -14,9 +14,6 @@ uses
 type
   { forward declarations }
   TBoldPerformanceCounter = class;
-  {$IFDEF LINUX}
-  TLargeInteger = longint;
-  {$ENDIF}
   TBoldPerformanceCounterState = (bpcsStopped, bpcsStarted);
 
   { TBoldPerformanceCounter }
@@ -70,21 +67,6 @@ begin
     G_MainPerformanceCounter := TBoldPerformanceCounter.Create(nil, 'BoldMainPerformanceCounter'); // do not localize
   result := G_MainPerformanceCounter;
 end;
-
-{$IFDEF LINUX}
-{ TODO : Find performancecoutner for LINUX. }
-function QueryPerformanceCounter(var PerformanceCounter: TLargeInteger): boolean;
-begin
-  PerformanceCounter := 0;
-  Result := False;
-end;
-
-function QueryPerformanceFrequency(var Frequency: TLargeInteger): boolean;
-begin
-  Frequency := 0;
-  Result := False;
-end;
-{$ENDIF}
 
 constructor TBoldPerformanceCounter.Create(Owner: TBoldPerformanceCounter; Name: String);
 begin

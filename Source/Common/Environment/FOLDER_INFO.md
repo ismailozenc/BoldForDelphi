@@ -4,16 +4,13 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 0 subfolder(s), 6 file(s), plus 6 .UnitDoc file(s) documenting units here.
+**Contents:** 0 subfolder(s), 3 file(s), plus 3 .UnitDoc file(s) documenting units here.
 
 ## Files
 
 | File | Kind | What it does |
 |---|---|---|
 | `BoldEnvironment.pas` | Unit | Method AskUser: Ask user a questinon Declares TBoldEnvironmentConfiguration, TBoldApplicationSubscriber, TBoldFreestandingEnvironmentConfiguration, TBoldQueueClass. |
-| `BoldEnvironmentAllowBothUseCLX.pas` | Unit | No public classes; a unit of procedures and constants. *(drop list: W-2)* |
-| `BoldEnvironmentAllowBothUseVCL.pas` | Unit | No public classes; a unit of procedures and constants. |
-| `BoldEnvironmentCLX.pas` | Unit | Declares TBoldCLXEnvironmentConfiguration, TBoldTimerQueue. *(drop list: W-2)* |
 | `BoldEnvironmentIDE.pas` | Unit | No public classes; a unit of procedures and constants. *(drop list: W-3)* |
 | `BoldEnvironmentVCL.pas` | Unit | Declares TBoldAppEventQueue, TBoldVCLEnvironmentConfiguration. |
 
