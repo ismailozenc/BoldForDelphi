@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 25 subfolder(s), 1 file(s).
+**Contents:** 23 subfolder(s), 1 file(s).
 
 ## Subfolders
 
@@ -23,8 +23,6 @@
 - [Logging/](Logging/FOLDER_INFO.md)
 - [MsXml/](MsXml/FOLDER_INFO.md)
 - [Queue/](Queue/FOLDER_INFO.md)
-- [Rose2000/](Rose2000/FOLDER_INFO.md)
-- [Rose98/](Rose98/FOLDER_INFO.md)
 - [SOAP/](SOAP/FOLDER_INFO.md)
 - [Subscription/](Subscription/FOLDER_INFO.md)
 - [Support/](Support/FOLDER_INFO.md)

@@ -31,7 +31,6 @@ RemovePropertyDetails=1
 ; We must explicitly add those files that don't have .pas extension
 File=$(SRCDIR)\Common\Include\Bold.inc
 File=$(SRCDIR)\Common\ProductProtection\OnGuard.inc
-File=$(SRCDIR)\UMLModel\ModelLinks\Rose98\BfD.pty
 File=$(SRCDIR)\Extensions\OLLE\Core\DistributableInfo.inc
 File=$(SRCDIR)\Extensions\OLLE\Core\DistributableInfo_Interface.inc
 

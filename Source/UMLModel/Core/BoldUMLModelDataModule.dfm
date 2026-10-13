@@ -8748,18 +8748,4 @@ object dmModelEdit: TdmModelEdit
     Left = 224
     Top = 136
   end
-  object BoldUMLRoseLink1: TBoldUMLRoseLink
-    FileName = 'P:\UMLModel\Core\uml.mdl'
-    IncludeSubPackages = True
-    LogicalPackages.Strings = (
-      'Behavioral_Elements'
-      'Core'
-      'Extension_Mechanisms'
-      'StandardElements'
-      'Model_Management'
-      'Bold Specifics')
-    BoldModel = bmlUMLModel
-    Left = 48
-    Top = 160
-  end
 end

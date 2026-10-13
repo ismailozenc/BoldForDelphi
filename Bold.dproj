@@ -209,10 +209,6 @@
         <DCCReference Include="Source\Common\Queue\BoldAbstractDequeuer.pas"/>
         <DCCReference Include="Source\Common\Queue\BoldEventQueue.pas"/>
         <DCCReference Include="Source\Common\Queue\BoldQueue.pas"/>
-        <DCCReference Include="Source\Common\Rose2000\BoldRose2000Support.pas"/>
-        <DCCReference Include="Source\Common\Rose2000\RationalRose2000_TLB.pas"/>
-        <DCCReference Include="Source\Common\Rose98\BoldRose98Support.pas"/>
-        <DCCReference Include="Source\Common\Rose98\RationalRose98_TLB.pas"/>
         <DCCReference Include="Source\Common\SOAP\BoldSOAP_TLB.pas"/>
         <DCCReference Include="Source\Common\SOAP\BoldSOAP2_TLB.pas"/>
         <DCCReference Include="Source\Common\SOAP\BoldXMLRequests.pas"/>

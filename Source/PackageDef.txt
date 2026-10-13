@@ -198,8 +198,6 @@ Dir=$(SRCDIR)\UMLModel\Editor
 Dir=$(SRCDIR)\UMLModel\Handles
 Dir=$(SRCDIR)\UMLModel\IDE
 Dir=$(SRCDIR)\UMLModel\ModelLinks\Core
-Dir=$(SRCDIR)\UMLModel\ModelLinks\Rose2000
-Dir=$(SRCDIR)\UMLModel\ModelLinks\Rose98
 Dir=$(SRCDIR)\UMLModel\ModelLinks\Bld
 Dir=$(SRCDIR)\UMLModel\Plugins
 
@@ -426,8 +424,6 @@ Dir=$(SRCDIR)\ClientHandlesCom\IDE
 Dir=$(SRCDIR)\Common\Template
 Dir=$(SRCDIR)\Common\MsXml
 Dir=$(SRCDIR)\Common\IDE
-Dir=$(SRCDIR)\Common\Rose98
-Dir=$(SRCDIR)\Common\Rose2000
 dir=$(SRCDIR)\Common\Licensing
 dir=$(SRCDIR)\Common\ProductProtection
 Dir=$(SRCDIR)\Common\IDECOM
@@ -448,7 +444,6 @@ Dir=$(SRCDIR)\Samples\Unicode
 Dir=$(SRCDIR)\Unassigned
 Dir=$(SRCDIR)\UMLModel\Editor
 Dir=$(SRCDIR)\UMLModel\IDE
-Dir=$(SRCDIR)\UMLModel\ModelLinks\Rose2000
 
 
 File=$(SRCDIR)\common\Support\BoldMD5.pas
@@ -479,8 +474,6 @@ File=$(SRCDIR)\UMLModel\Core\BoldUMLModelConverter.pas
 File=$(SRCDIR)\UMLModel\Core\BoldUMLModelDataModule.pas
 File=$(SRCDIR)\UMLModel\Core\BoldUMLModelUpdater.pas
 File=$(SRCDIR)\UMLModel\Core\BoldUMLModelValidator.pas
-File=$(SRCDIR)\UMLModel\ModelLinks\Rose98\BoldUMLRose98LinkReg.pas
-File=$(SRCDIR)\UMLModel\ModelLinks\Rose98\BoldRose98ptyCreator.pas
 File=$(SRCDIR)\UMLModel\ModelLinks\XMI\BoldUMLXMILinkReg.pas
 File=$(SRCDIR)\UMLModel\ModelLinks\XMI\BoldUMLMMLinkReg.pas
 File=$(SRCDIR)\UMLModel\Plugins\BoldCodePlugins.pas

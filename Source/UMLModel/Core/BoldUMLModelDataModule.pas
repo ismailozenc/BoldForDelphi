@@ -8,7 +8,6 @@ uses
   BoldSystemHandle,
   BoldModel,
   BoldTypeNameHandle,
-  BoldUMLRose98Link,
   BoldExpressionHandle, BoldHandle, BoldUMLModelLink, BoldRootedHandles,
   BoldSubscription, BoldAbstractModel;
 
@@ -19,7 +18,6 @@ type
     BoldSystemTypeInfoHandle1: TBoldSystemTypeInfoHandle;
     BoldExpressionHandle1: TBoldExpressionHandle;
     bmlUMLModel: TBoldModel;
-    BoldUMLRoseLink1: TBoldUMLRoseLink;
   private
     { Private declarations }
   public
