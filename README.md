@@ -1,5 +1,15 @@
 # BoldForDelphi
 
+## Changes in this copy
+
+This copy is being used to rebuild Bold in C#. Some parts have been removed, and each folder has a `FOLDER_INFO.md` that describes its contents.
+
+Removed so far:
+- **Standalone tools:** `Tools/BoldClientifier`, `Tools/BoldUpgrader` and `Tools/DBConvert`. `Tools/PropagatorAnalyzer` is kept.
+- **Delphi package files (`*.dpk`):** all 27, including the ones in `examples/` and `Source/Unassigned/`. The units they listed are still in the tree.
+
+Not yet removed: the rest of the drop list (COM and DCOM distribution, the CLX GUI, dead database drivers, Rational Rose links, Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
+
 This is master branch. If you want latest development please check develop branch instead
 https://github.com/Embarcadero/BoldForDelphi/tree/develop
 
