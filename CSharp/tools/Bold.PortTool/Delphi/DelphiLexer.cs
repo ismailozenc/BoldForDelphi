@@ -359,22 +359,20 @@ public sealed class DelphiLexer
         Lex(resolved, ReadSource(resolved), depth + 1);
     }
 
-    /// <summary>Finds a file the way Windows does, ignoring case, since the Delphi source was written on Windows.</summary>
+    /// <summary>
+    /// Finds a file the way Windows does, ignoring case, since the Delphi source was written on Windows, and returns it
+    /// with the case it has on disk: links built from it must work on GitHub, where paths are case-sensitive, on every OS.
+    /// </summary>
     public static string? ResolveCaseInsensitive(string directory, string fileName)
     {
-        string direct = Path.Combine(directory, fileName);
-        if (File.Exists(direct))
-        {
-            return direct;
-        }
-
         if (!Directory.Exists(directory))
         {
             return null;
         }
 
-        return Directory.EnumerateFiles(directory)
-            .FirstOrDefault(f => string.Equals(Path.GetFileName(f), fileName, StringComparison.OrdinalIgnoreCase));
+        string[] files = Directory.GetFiles(directory);
+        return files.FirstOrDefault(f => string.Equals(Path.GetFileName(f), fileName, StringComparison.Ordinal))
+               ?? files.FirstOrDefault(f => string.Equals(Path.GetFileName(f), fileName, StringComparison.OrdinalIgnoreCase));
     }
 
     private static int Count(string text, char c)

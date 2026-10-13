@@ -181,6 +181,10 @@ public sealed class PortAnalysis
 
     public SymbolStatus StatusOf(DelphiSymbol symbol) => _status[symbol];
 
+    /// <summary>The test method declaration for "Namespace.Class.Method", to point at it from a failure.</summary>
+    public CsDeclaration? FindTest(string testKey) =>
+        CSharp.Declarations.FirstOrDefault(d => d.IsTestMethod && $"{d.Namespace}.{d.Owner}.{d.Name}" == testKey);
+
     public IReadOnlyList<Marker> MarkersOn(CsDeclaration declaration) =>
         _markersByDeclaration.TryGetValue(declaration, out var list) ? list : [];
 

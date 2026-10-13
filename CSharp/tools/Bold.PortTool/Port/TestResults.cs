@@ -16,6 +16,7 @@ public enum TestOutcome
 public sealed class TestResults
 {
     private readonly Dictionary<string, TestOutcome> _outcomes = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, string> _messages = new(StringComparer.Ordinal);
 
     public List<string> Sources { get; } = [];
 
@@ -27,6 +28,10 @@ public sealed class TestResults
         _outcomes.GetValueOrDefault($"{className}.{method}", TestOutcome.NotRun);
 
     public IEnumerable<KeyValuePair<string, TestOutcome>> All => _outcomes;
+
+    /// <summary>Failed test methods ("Namespace.Class.Method") with the first failure message of each.</summary>
+    public IEnumerable<KeyValuePair<string, string>> Failures =>
+        _outcomes.Where(o => o.Value == TestOutcome.Failed).Select(o => new KeyValuePair<string, string>(o.Key, _messages.GetValueOrDefault(o.Key, "")));
 
     public static TestResults Load(RepoLayout layout, string? directory)
     {
@@ -53,7 +58,7 @@ public sealed class TestResults
         return results;
     }
 
-    private void Record(string className, string method, TestOutcome outcome)
+    private void Record(string className, string method, TestOutcome outcome, string? message = null)
     {
         int paren = method.IndexOf('(');
         if (paren >= 0)
@@ -62,6 +67,11 @@ public sealed class TestResults
         }
 
         string key = $"{className}.{method}";
+        if (outcome == TestOutcome.Failed && !string.IsNullOrWhiteSpace(message) && !_messages.ContainsKey(key))
+        {
+            _messages[key] = message.Trim();
+        }
+
         var previous = _outcomes.GetValueOrDefault(key, TestOutcome.NotRun);
         _outcomes[key] = previous == TestOutcome.Failed || outcome == TestOutcome.Failed ? TestOutcome.Failed
             : previous == TestOutcome.Passed || outcome == TestOutcome.Passed ? TestOutcome.Passed
@@ -84,7 +94,9 @@ public sealed class TestResults
                 continue;
             }
 
-            Record(method.Item1, method.Item2, ParseOutcome((string?)result.Attribute("outcome")));
+            string? message = (string?)result.Descendants(ns + "Message").FirstOrDefault();
+            string? stack = (string?)result.Descendants(ns + "StackTrace").FirstOrDefault();
+            Record(method.Item1, method.Item2, ParseOutcome((string?)result.Attribute("outcome")), Join(message, stack));
         }
     }
 
@@ -114,11 +126,16 @@ public sealed class TestResults
                 continue;
             }
 
-            Record(className, method, ParseOutcome((string?)testCase.Attribute("result")));
+            var failure = testCase.Element("failure");
+            Record(className, method, ParseOutcome((string?)testCase.Attribute("result")),
+                Join((string?)failure?.Element("message"), (string?)failure?.Element("stack-trace")));
         }
 
         return true;
     }
+
+    private static string? Join(string? message, string? stack) =>
+        message is null ? stack : stack is null ? message : $"{message.TrimEnd()}\n{stack.Trim()}";
 
     private static TestOutcome ParseOutcome(string? outcome) => outcome switch
     {

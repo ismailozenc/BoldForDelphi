@@ -142,11 +142,43 @@ public static class Program
         }
 
         PrintProblems(analysis);
+        if (Environment.GetEnvironmentVariable("GITHUB_ACTIONS") == "true")
+        {
+            WriteAnnotations(analysis);
+        }
+
         int errors = analysis.Problems.Count(p => p.Severity == Severity.Error);
         int warnings = analysis.Problems.Count - errors;
         Console.WriteLine($"Check: {analysis.Units.Count} units, {analysis.Markers.Count} markers, {analysis.TestMethodCount} test methods; " +
                           $"{errors} errors, {warnings} warnings.");
         return errors == 0 ? 0 : 1;
+    }
+
+    /// <summary>
+    /// GitHub Actions workflow commands, so problems and failed tests show on the run page and on the lines they concern.
+    /// </summary>
+    private static void WriteAnnotations(PortAnalysis analysis)
+    {
+        static string Escape(string text, bool property) =>
+            property
+                ? text.Replace("%", "%25").Replace("\r", "%0D").Replace("\n", "%0A").Replace(":", "%3A").Replace(",", "%2C")
+                : text.Replace("%", "%25").Replace("\r", "%0D").Replace("\n", "%0A");
+
+        foreach (var problem in analysis.Problems)
+        {
+            string location = problem.Location;
+            int colon = location.LastIndexOf(':');
+            string file = colon > 0 && int.TryParse(location[(colon + 1)..], out _) ? location[..colon] : location;
+            string line = colon > 0 && int.TryParse(location[(colon + 1)..], out int number) ? $",line={number}" : "";
+            Console.WriteLine($"::{(problem.Severity == Severity.Error ? "error" : "warning")} file={Escape(file, true)}{line},title=Port link::{Escape(problem.Message, false)}");
+        }
+
+        foreach (var (test, message) in analysis.Results.Failures)
+        {
+            var declaration = analysis.FindTest(test);
+            string where = declaration is null ? "" : $"file={Escape(declaration.File, true)},line={declaration.Line},";
+            Console.WriteLine($"::error {where}title={Escape("Test failed: " + test, true)}::{Escape(message, false)}");
+        }
     }
 
     private static int Summary(RepoLayout layout, string? results, string? output)
