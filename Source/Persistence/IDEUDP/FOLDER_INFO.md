@@ -1,0 +1,18 @@
+# Source/Persistence/IDEUDP
+
+**What this folder is for:** The IDEUDP folder inside Source/Persistence. See the file table below for what it holds.
+
+**Drop list:** this folder (or items in it) is on the drop list: I-6. See DROP_LIST.md.
+
+**Contents:** 0 subfolder(s), 2 file(s).
+
+## Files
+
+| File | Kind | What it does |
+|---|---|---|
+| `BoldUDPBroadcaster.rc` | rc | Compiled or binary artifact (rc). *(drop list: I-6)* |
+| `BoldUDPBroadcasterReg.pas` | Unit | No public classes; a unit of procedures and constants. Registers design-time components or editors (IDE only). *(drop list: I-6)* |
+
+---
+
+Descriptions are generated from the source: unit summaries come from the `.UnitDoc` files, and class names from the declarations. The folder purpose line is a summary written for this folder, not a line-by-line review.
