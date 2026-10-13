@@ -7,8 +7,9 @@ This copy is being used to rebuild Bold in C#. Some parts have been removed, and
 Removed so far:
 - **Standalone tools:** `Tools/BoldClientifier`, `Tools/BoldUpgrader` and `Tools/DBConvert`. `Tools/PropagatorAnalyzer` is kept.
 - **Delphi package files (`*.dpk`):** all 27, including the ones in `examples/` and `Source/Unassigned/`. The units they listed are still in the tree.
+- **Dead database drivers:** the BDE, DBISAM, Advantage, IBX, DBExpress, SQLDirect and DOA persistence back ends, and the unassigned Asta, BDEUtils, dbvalidate and Oracle-BDE code. ADO and the generic DB layer are kept.
 
-Not yet removed: the rest of the drop list (COM and DCOM distribution, the CLX GUI, dead database drivers, Rational Rose links, Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
+Not yet removed: the rest of the drop list (COM and DCOM distribution, the CLX GUI, Rational Rose links, Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
 
 This is master branch. If you want latest development please check develop branch instead
 https://github.com/Embarcadero/BoldForDelphi/tree/develop
