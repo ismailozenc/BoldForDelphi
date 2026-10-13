@@ -1,4 +1,4 @@
-unit BoldUDPBroadcasterReg;
+unit BoldUDPBroadcasterReg; { C# port: not ported (IDE registration); see CSharp/port/units/BoldUDPBroadcasterReg.md }
 
 interface
 

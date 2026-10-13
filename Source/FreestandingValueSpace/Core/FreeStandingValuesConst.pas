@@ -1,4 +1,4 @@
-unit FreeStandingValuesConst;
+unit FreeStandingValuesConst; { C# port: CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs; symbols and status: CSharp/port/units/FreeStandingValuesConst.md }
 
 interface
 

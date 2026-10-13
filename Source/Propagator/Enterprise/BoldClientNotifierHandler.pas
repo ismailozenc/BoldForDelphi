@@ -1,4 +1,4 @@
-unit BoldClientNotifierHandler;
+unit BoldClientNotifierHandler; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs; symbols and status: CSharp/port/units/BoldClientNotifierHandler.md }
 
 interface
 

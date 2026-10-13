@@ -1,4 +1,4 @@
-unit BoldOCLGraphicRTDebug;
+unit BoldOCLGraphicRTDebug; { C# port: CSharp/src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs; symbols and status: CSharp/port/units/BoldOCLGraphicRTDebug.md }
 
 interface
 

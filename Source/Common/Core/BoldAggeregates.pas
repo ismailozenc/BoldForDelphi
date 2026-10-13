@@ -1,4 +1,4 @@
-unit BoldAggeregates;
+unit BoldAggeregates; { C# port: CSharp/src/Bold.Core/Common/Core/BoldAggeregates.cs; symbols and status: CSharp/port/units/BoldAggeregates.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldUMLConstraintEditor;
+unit BoldUMLConstraintEditor; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs; symbols and status: CSharp/port/units/BoldUMLConstraintEditor.md }
 
 interface
 

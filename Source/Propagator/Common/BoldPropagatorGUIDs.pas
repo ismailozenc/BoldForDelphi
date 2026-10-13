@@ -1,4 +1,4 @@
-unit BoldPropagatorGUIDs;
+unit BoldPropagatorGUIDs; { C# port: CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs; symbols and status: CSharp/port/units/BoldPropagatorGUIDs.md }
 
 interface
 

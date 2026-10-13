@@ -1,4 +1,4 @@
-unit BoldComReg;
+unit BoldComReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldComReg.md }
 
 interface
 

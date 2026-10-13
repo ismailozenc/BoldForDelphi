@@ -1,4 +1,4 @@
-unit BoldModel;
+unit BoldModel; { C# port: not ported (the TBoldModel component; the Bold.Model loader replaces it); see CSharp/port/units/BoldModel.md }
 
 interface
 

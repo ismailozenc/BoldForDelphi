@@ -1,4 +1,4 @@
-unit BoldEnvironment;
+unit BoldEnvironment; { C# port: CSharp/src/Bold.Core/Common/Environment/BoldEnvironment.cs; symbols and status: CSharp/port/units/BoldEnvironment.md }
 
 interface
 

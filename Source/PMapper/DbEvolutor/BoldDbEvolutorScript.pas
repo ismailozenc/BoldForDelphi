@@ -1,4 +1,4 @@
-unit BoldDbEvolutorScript;
+unit BoldDbEvolutorScript; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs; symbols and status: CSharp/port/units/BoldDbEvolutorScript.md }
 
 interface
 

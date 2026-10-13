@@ -1,4 +1,4 @@
-unit BoldOptimisticLockingSupport;
+unit BoldOptimisticLockingSupport; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs; symbols and status: CSharp/port/units/BoldOptimisticLockingSupport.md }
 
 interface
 

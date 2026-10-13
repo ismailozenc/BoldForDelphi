@@ -1,4 +1,4 @@
-unit BoldMOFInterfaces;
+unit BoldMOFInterfaces; { C# port: CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs; symbols and status: CSharp/port/units/BoldMOFInterfaces.md }
 
 interface
 

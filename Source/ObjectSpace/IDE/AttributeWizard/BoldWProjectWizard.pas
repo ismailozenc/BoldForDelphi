@@ -1,4 +1,4 @@
-unit BoldWProjectWizard;
+unit BoldWProjectWizard; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.cs; symbols and status: CSharp/port/units/BoldWProjectWizard.md }
 
 interface
 

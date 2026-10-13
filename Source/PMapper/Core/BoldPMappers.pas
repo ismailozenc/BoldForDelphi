@@ -1,4 +1,4 @@
-unit BoldPMappers;
+unit BoldPMappers; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPMappers.cs; symbols and status: CSharp/port/units/BoldPMappers.md }
 
 interface
 

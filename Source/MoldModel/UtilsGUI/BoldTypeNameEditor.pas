@@ -1,4 +1,4 @@
-unit BoldTypeNameEditor;
+unit BoldTypeNameEditor; { C# port: CSharp/src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs; symbols and status: CSharp/port/units/BoldTypeNameEditor.md }
 
 interface
 

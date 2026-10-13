@@ -1,4 +1,4 @@
-unit BoldHandle;
+unit BoldHandle; { C# port: CSharp/src/Bold.Core/Common/Handles/BoldHandle.cs; symbols and status: CSharp/port/units/BoldHandle.md }
 
 interface
 

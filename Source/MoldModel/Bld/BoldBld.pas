@@ -1,4 +1,4 @@
-unit BoldBld;
+unit BoldBld; { C# port: CSharp/src/Bold.Model/MoldModel/Bld/BoldBld.cs; symbols and status: CSharp/port/units/BoldBld.md }
 
 interface
 

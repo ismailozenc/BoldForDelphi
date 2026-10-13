@@ -1,4 +1,4 @@
-unit BoldAwareGuiReg;
+unit BoldAwareGuiReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldAwareGuiReg.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

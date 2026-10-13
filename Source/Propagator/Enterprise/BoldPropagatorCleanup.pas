@@ -1,4 +1,4 @@
-unit BoldPropagatorCleanup;
+unit BoldPropagatorCleanup; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs; symbols and status: CSharp/port/units/BoldPropagatorCleanup.md }
 
 interface
 

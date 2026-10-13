@@ -1,4 +1,4 @@
-unit BoldUndoInterfaces;
+unit BoldUndoInterfaces; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs; symbols and status: CSharp/port/units/BoldUndoInterfaces.md }
 
 interface
 

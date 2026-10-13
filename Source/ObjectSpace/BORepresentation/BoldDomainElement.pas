@@ -1,4 +1,4 @@
-unit BoldDomainElement;
+unit BoldDomainElement; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs; symbols and status: CSharp/port/units/BoldDomainElement.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldSnooperHandle;
+unit BoldSnooperHandle; { C# port: CSharp/src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs; symbols and status: CSharp/port/units/BoldSnooperHandle.md }
 
 interface
 

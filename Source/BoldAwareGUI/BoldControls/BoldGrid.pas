@@ -1,4 +1,4 @@
-unit BoldGrid;
+unit BoldGrid; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs; symbols and status: CSharp/port/units/BoldGrid.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

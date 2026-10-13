@@ -1,4 +1,4 @@
-unit BoldOclSemantics;
+unit BoldOclSemantics; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs; symbols and status: CSharp/port/units/BoldOclSemantics.md }
 
 interface
 

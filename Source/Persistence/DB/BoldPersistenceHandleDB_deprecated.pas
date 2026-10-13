@@ -1,4 +1,4 @@
-unit BoldPersistenceHandleDB_deprecated;
+unit BoldPersistenceHandleDB_deprecated; { C# port: not ported (deprecated in Delphi Bold); see CSharp/port/units/BoldPersistenceHandleDB_deprecated.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldOclLightWeightNodeMaker;
+unit BoldOclLightWeightNodeMaker; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodeMaker.cs; symbols and status: CSharp/port/units/BoldOclLightWeightNodeMaker.md }
 
 interface
 uses

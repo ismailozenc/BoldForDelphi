@@ -1,4 +1,4 @@
-unit BoldAbstractModificationPropagator;
+unit BoldAbstractModificationPropagator; { C# port: CSharp/src/Bold.Propagation/Persistence/UDPPropagator/BoldAbstractModificationPropagator.cs; symbols and status: CSharp/port/units/BoldAbstractModificationPropagator.md }
 
 interface
 

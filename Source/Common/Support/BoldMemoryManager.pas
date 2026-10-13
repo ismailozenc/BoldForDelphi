@@ -1,4 +1,4 @@
-unit BoldMemoryManager;
+unit BoldMemoryManager; { C# port: CSharp/src/Bold.Core/Common/Support/BoldMemoryManager.cs; symbols and status: CSharp/port/units/BoldMemoryManager.md }
 
 interface
 

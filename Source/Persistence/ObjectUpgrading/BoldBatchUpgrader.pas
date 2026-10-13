@@ -1,4 +1,4 @@
-unit BoldBatchUpgrader;
+unit BoldBatchUpgrader; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs; symbols and status: CSharp/port/units/BoldBatchUpgrader.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldModelOCLValidatorPlugIn;
+unit BoldModelOCLValidatorPlugIn; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs; symbols and status: CSharp/port/units/BoldModelOCLValidatorPlugIn.md }
 
 interface
 

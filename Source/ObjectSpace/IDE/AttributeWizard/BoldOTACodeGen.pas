@@ -1,4 +1,4 @@
-unit BoldOTACodeGen;
+unit BoldOTACodeGen; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.cs; symbols and status: CSharp/port/units/BoldOTACodeGen.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldExternalizedReferences;
+unit BoldExternalizedReferences; { C# port: CSharp/src/Bold.Core/Common/Support/BoldExternalizedReferences.cs; symbols and status: CSharp/port/units/BoldExternalizedReferences.md }
 
 interface
 

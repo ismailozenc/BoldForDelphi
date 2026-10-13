@@ -1,4 +1,4 @@
-unit BoldRegionDefinitionParser;
+unit BoldRegionDefinitionParser; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs; symbols and status: CSharp/port/units/BoldRegionDefinitionParser.md }
 
 interface
 

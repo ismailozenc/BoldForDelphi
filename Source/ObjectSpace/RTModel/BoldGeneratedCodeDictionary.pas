@@ -1,4 +1,4 @@
-unit BoldGeneratedCodeDictionary;
+unit BoldGeneratedCodeDictionary; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs; symbols and status: CSharp/port/units/BoldGeneratedCodeDictionary.md }
 
 interface
 

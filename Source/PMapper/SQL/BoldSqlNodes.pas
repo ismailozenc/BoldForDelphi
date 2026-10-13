@@ -1,4 +1,4 @@
-unit BoldSqlNodes;
+unit BoldSqlNodes; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs; symbols and status: CSharp/port/units/BoldSqlNodes.md }
 
 interface
 uses

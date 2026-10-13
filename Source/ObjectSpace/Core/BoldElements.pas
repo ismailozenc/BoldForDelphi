@@ -1,4 +1,4 @@
-unit BoldElements;
+unit BoldElements; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Core/BoldElements.cs; symbols and status: CSharp/port/units/BoldElements.md }
 
 interface
 

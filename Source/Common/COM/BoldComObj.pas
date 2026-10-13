@@ -1,4 +1,4 @@
-unit BoldComObj;
+unit BoldComObj; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldComObj.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldBase;
+unit BoldBase; { C# port: CSharp/src/Bold.Core/Common/Core/BoldBase.cs; symbols and status: CSharp/port/units/BoldBase.md }
 
 interface
 

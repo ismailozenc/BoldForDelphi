@@ -1,4 +1,4 @@
-unit BoldIndex;
+unit BoldIndex; { C# port: CSharp/src/Bold.Core/Common/Support/BoldIndex.cs; symbols and status: CSharp/port/units/BoldIndex.md }
 
 interface
 

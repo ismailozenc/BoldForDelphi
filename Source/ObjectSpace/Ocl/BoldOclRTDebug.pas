@@ -1,4 +1,4 @@
-unit BoldOclRTDebug;
+unit BoldOclRTDebug; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs; symbols and status: CSharp/port/units/BoldOclRTDebug.md }
 
 interface
 

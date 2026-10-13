@@ -1,4 +1,4 @@
-unit BoldSQLMappingInfo;
+unit BoldSQLMappingInfo; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs; symbols and status: CSharp/port/units/BoldSQLMappingInfo.md }
 
 interface
 

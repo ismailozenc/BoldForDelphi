@@ -1,4 +1,4 @@
-unit BoldNamedValueList;
+unit BoldNamedValueList; { C# port: CSharp/src/Bold.Core/Common/Support/BoldNamedValueList.cs; symbols and status: CSharp/port/units/BoldNamedValueList.md }
 
 interface
 

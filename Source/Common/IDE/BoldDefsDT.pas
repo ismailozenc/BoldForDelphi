@@ -1,4 +1,4 @@
-unit BoldDefsDT;
+unit BoldDefsDT; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldDefsDT.md }
 
 interface
 

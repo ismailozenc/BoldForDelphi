@@ -1,4 +1,4 @@
-unit BoldWASubClassForm1;
+unit BoldWASubClassForm1; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWASubClassForm1.cs; symbols and status: CSharp/port/units/BoldWASubClassForm1.md }
 
 interface
 

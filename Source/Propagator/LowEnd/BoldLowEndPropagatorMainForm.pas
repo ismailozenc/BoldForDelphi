@@ -1,4 +1,4 @@
-unit BoldLowEndPropagatorMainForm;
+unit BoldLowEndPropagatorMainForm; { C# port: not ported (propagator user interface); see CSharp/port/units/BoldLowEndPropagatorMainForm.md }
 
 interface
 

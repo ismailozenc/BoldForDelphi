@@ -1,4 +1,4 @@
-unit BoldDataSetIP;
+unit BoldDataSetIP; { C# port: not ported (TDataSet for the InfoPower grid, a third-party VCL library; nothing uses it); see CSharp/port/units/BoldDataSetIP.md }
 
 interface
 

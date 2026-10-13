@@ -1,4 +1,4 @@
-unit BoldGeneratorTemplatesDelphi;
+unit BoldGeneratorTemplatesDelphi; { C# port: CSharp/src/Bold.CodeGen/MoldModel/CodeGenerator/BoldGeneratorTemplatesDelphi.cs; symbols and status: CSharp/port/units/BoldGeneratorTemplatesDelphi.md }
 
 interface
 

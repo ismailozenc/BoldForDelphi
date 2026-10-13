@@ -1,4 +1,4 @@
-unit BoldSQLHandle;
+unit BoldSQLHandle; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldSQLHandle.cs; symbols and status: CSharp/port/units/BoldSQLHandle.md }
 
 interface
 

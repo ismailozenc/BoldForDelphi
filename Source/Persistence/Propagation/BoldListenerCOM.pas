@@ -1,4 +1,4 @@
-unit BoldListenerCOM;
+unit BoldListenerCOM; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldListenerCOM.md }
 
 interface
 

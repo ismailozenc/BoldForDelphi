@@ -1,4 +1,4 @@
-unit BoldObjectUpgraderHandleReg;
+unit BoldObjectUpgraderHandleReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldObjectUpgraderHandleReg.md }
 
 interface
 

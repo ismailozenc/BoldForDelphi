@@ -1,4 +1,4 @@
-unit BoldPerformanceCounter;
+unit BoldPerformanceCounter; { C# port: CSharp/src/Bold.Core/Common/Support/BoldPerformanceCounter.cs; symbols and status: CSharp/port/units/BoldPerformanceCounter.md }
 
 interface
 

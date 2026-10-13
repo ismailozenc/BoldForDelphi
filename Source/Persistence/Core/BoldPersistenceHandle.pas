@@ -1,4 +1,4 @@
-unit BoldPersistenceHandle;
+unit BoldPersistenceHandle; { C# port: CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs; symbols and status: CSharp/port/units/BoldPersistenceHandle.md }
 
 interface
 

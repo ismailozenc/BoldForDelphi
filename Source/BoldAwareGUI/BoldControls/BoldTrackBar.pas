@@ -1,4 +1,4 @@
-unit BoldTrackBar;
+unit BoldTrackBar; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTrackBar.cs; symbols and status: CSharp/port/units/BoldTrackBar.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

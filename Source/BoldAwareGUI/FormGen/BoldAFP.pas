@@ -1,4 +1,4 @@
-unit BoldAFP;
+unit BoldAFP; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs; symbols and status: CSharp/port/units/BoldAFP.md }
 
 interface
 

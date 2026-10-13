@@ -1,4 +1,4 @@
-unit BoldCollections;
+unit BoldCollections; { C# port: CSharp/src/Bold.Core/Common/Support/BoldCollections.cs; symbols and status: CSharp/port/units/BoldCollections.md }
 
 interface
 

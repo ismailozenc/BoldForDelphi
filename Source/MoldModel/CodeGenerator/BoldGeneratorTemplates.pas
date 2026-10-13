@@ -1,4 +1,4 @@
-unit BoldGeneratorTemplates;
+unit BoldGeneratorTemplates; { C# port: CSharp/src/Bold.CodeGen/MoldModel/CodeGenerator/BoldGeneratorTemplates.cs; symbols and status: CSharp/port/units/BoldGeneratorTemplates.md }
 
 interface
 

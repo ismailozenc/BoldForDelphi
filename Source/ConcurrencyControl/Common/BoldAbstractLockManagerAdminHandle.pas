@@ -1,4 +1,4 @@
-unit BoldAbstractLockManagerAdminHandle;
+unit BoldAbstractLockManagerAdminHandle; { C# port: CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs; symbols and status: CSharp/port/units/BoldAbstractLockManagerAdminHandle.md }
 
 interface
 

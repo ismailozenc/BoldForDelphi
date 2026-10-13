@@ -1,4 +1,4 @@
-unit BoldLockRegions;
+unit BoldLockRegions; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs; symbols and status: CSharp/port/units/BoldLockRegions.md }
 
 interface
 

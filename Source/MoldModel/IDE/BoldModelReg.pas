@@ -1,4 +1,4 @@
-unit BoldModelReg;
+unit BoldModelReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldModelReg.md }
 
 interface
 

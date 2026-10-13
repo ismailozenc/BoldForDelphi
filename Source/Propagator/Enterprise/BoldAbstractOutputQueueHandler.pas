@@ -1,4 +1,4 @@
-unit BoldAbstractOutputQueueHandler;
+unit BoldAbstractOutputQueueHandler; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs; symbols and status: CSharp/port/units/BoldAbstractOutputQueueHandler.md }
 
 interface
 

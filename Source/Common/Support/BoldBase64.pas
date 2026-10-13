@@ -1,4 +1,4 @@
-unit BoldBase64;
+unit BoldBase64; { C# port: CSharp/src/Bold.Core/Common/Support/BoldBase64.cs; symbols and status: CSharp/port/units/BoldBase64.md }
 
 // uTBase64 v1.0 - Simple Base64 encoding/decoding class
 // Base64 described in RFC2045, Page 24, (w) 1996 Freed & Borenstein

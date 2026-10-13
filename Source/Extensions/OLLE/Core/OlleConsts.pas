@@ -1,4 +1,4 @@
-unit OlleConsts;
+unit OlleConsts; { C# port: CSharp/src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs; symbols and status: CSharp/port/units/OlleConsts.md }
 
 interface
 

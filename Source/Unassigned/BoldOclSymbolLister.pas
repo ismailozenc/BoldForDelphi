@@ -1,4 +1,4 @@
-unit BoldOclSymbolLister;
+unit BoldOclSymbolLister; { C# port: not ported (a developer form that lists the OCL operations; the OCL tests list them instead); see CSharp/port/units/BoldOclSymbolLister.md }
 
 interface
 

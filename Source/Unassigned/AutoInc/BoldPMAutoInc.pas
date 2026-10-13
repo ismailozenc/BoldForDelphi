@@ -1,4 +1,4 @@
-unit BoldPMAutoInc;
+unit BoldPMAutoInc; { C# port: CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs; symbols and status: CSharp/port/units/BoldPMAutoInc.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldWAMethodInfo;
+unit BoldWAMethodInfo; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.cs; symbols and status: CSharp/port/units/BoldWAMethodInfo.md }
 
 interface
 

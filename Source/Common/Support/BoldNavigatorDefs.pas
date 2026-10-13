@@ -1,4 +1,4 @@
-unit BoldNavigatorDefs;
+unit BoldNavigatorDefs; { C# port: CSharp/src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs; symbols and status: CSharp/port/units/BoldNavigatorDefs.md }
 
 interface
 

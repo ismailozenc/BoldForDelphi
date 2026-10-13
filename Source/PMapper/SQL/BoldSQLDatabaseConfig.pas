@@ -1,4 +1,4 @@
-unit BoldSQLDatabaseConfig;
+unit BoldSQLDatabaseConfig; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLDatabaseConfig.cs; symbols and status: CSharp/port/units/BoldSQLDatabaseConfig.md }
 
 interface
 

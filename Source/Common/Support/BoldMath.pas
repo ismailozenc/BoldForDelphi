@@ -1,4 +1,4 @@
-unit BoldMath;
+unit BoldMath; { C# port: CSharp/src/Bold.Core/Common/Support/BoldMath.cs; symbols and status: CSharp/port/units/BoldMath.md }
 
 interface
 

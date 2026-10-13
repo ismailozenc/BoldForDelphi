@@ -1,4 +1,4 @@
-unit BoldAbstractPersistenceHandleDB;
+unit BoldAbstractPersistenceHandleDB; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs; symbols and status: CSharp/port/units/BoldAbstractPersistenceHandleDB.md }
 
 interface
 

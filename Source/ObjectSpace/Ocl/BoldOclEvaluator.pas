@@ -1,4 +1,4 @@
-unit BoldOclEvaluator;
+unit BoldOclEvaluator; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs; symbols and status: CSharp/port/units/BoldOclEvaluator.md }
 
 interface
 

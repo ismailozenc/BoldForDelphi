@@ -1,4 +1,4 @@
-unit BoldDerivedValueSet;
+unit BoldDerivedValueSet; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDerivedValueSet.cs; symbols and status: CSharp/port/units/BoldDerivedValueSet.md }
 
 interface
 

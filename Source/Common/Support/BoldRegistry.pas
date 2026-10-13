@@ -1,4 +1,4 @@
-unit BoldRegistry;
+unit BoldRegistry; { C# port: CSharp/src/Bold.Core/Common/Support/BoldRegistry.cs; symbols and status: CSharp/port/units/BoldRegistry.md }
 
 interface
 

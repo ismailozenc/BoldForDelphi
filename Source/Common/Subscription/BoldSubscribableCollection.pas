@@ -1,4 +1,4 @@
-unit BoldSubscribableCollection;
+unit BoldSubscribableCollection; { C# port: CSharp/src/Bold.Core/Common/Subscription/BoldSubscribableCollection.cs; symbols and status: CSharp/port/units/BoldSubscribableCollection.md }
 
 interface
 

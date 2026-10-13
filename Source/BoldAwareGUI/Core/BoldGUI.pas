@@ -1,4 +1,4 @@
-unit BoldGUI;
+unit BoldGUI; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/Core/BoldGUI.cs; symbols and status: CSharp/port/units/BoldGUI.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldUMLPluginCallBacks;
+unit BoldUMLPluginCallBacks; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLPluginCallBacks.cs; symbols and status: CSharp/port/units/BoldUMLPluginCallBacks.md }
 
 interface
 

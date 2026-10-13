@@ -1,4 +1,4 @@
-unit ADOConsts;
+unit ADOConsts; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs; symbols and status: CSharp/port/units/ADOConsts.md }
 
 interface
 

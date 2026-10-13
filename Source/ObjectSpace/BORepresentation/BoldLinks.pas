@@ -1,4 +1,4 @@
-unit BoldLinks;
+unit BoldLinks; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs; symbols and status: CSharp/port/units/BoldLinks.md }
 
 interface
 

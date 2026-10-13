@@ -1,4 +1,4 @@
-unit BoldMemo;
+unit BoldMemo; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs; symbols and status: CSharp/port/units/BoldMemo.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

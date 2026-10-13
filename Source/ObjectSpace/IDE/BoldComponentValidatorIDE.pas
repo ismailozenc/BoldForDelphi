@@ -1,4 +1,4 @@
-unit BoldComponentValidatorIDE;
+unit BoldComponentValidatorIDE; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldComponentValidatorIDE.md }
 
 interface
 

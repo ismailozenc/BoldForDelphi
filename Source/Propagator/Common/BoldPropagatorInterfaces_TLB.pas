@@ -1,4 +1,4 @@
-unit BoldPropagatorInterfaces_TLB;
+unit BoldPropagatorInterfaces_TLB; { C# port: CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs; symbols and status: CSharp/port/units/BoldPropagatorInterfaces_TLB.md }
 
 // ************************************************************************ //
 // WARNING                                                                    

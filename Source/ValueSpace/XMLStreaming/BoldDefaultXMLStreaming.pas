@@ -1,4 +1,4 @@
-unit BoldDefaultXMLStreaming;
+unit BoldDefaultXMLStreaming; { C# port: CSharp/src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs; symbols and status: CSharp/port/units/BoldDefaultXMLStreaming.md }
 
 interface
 

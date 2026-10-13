@@ -1,4 +1,4 @@
-unit BoldImage;
+unit BoldImage; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImage.cs; symbols and status: CSharp/port/units/BoldImage.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

@@ -1,4 +1,4 @@
-unit BoldExternalPersistenceHandleEventDriven;
+unit BoldExternalPersistenceHandleEventDriven; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs; symbols and status: CSharp/port/units/BoldExternalPersistenceHandleEventDriven.md }
 
 interface
 

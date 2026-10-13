@@ -1,4 +1,4 @@
-unit BoldStringList;
+unit BoldStringList; { C# port: CSharp/src/Bold.Core/Common/Support/BoldStringList.cs; symbols and status: CSharp/port/units/BoldStringList.md }
 
 interface
 

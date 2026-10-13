@@ -1,4 +1,4 @@
-unit BoldThreadSafeLog;
+unit BoldThreadSafeLog; { C# port: CSharp/src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs; symbols and status: CSharp/port/units/BoldThreadSafeLog.md }
 
 interface
 

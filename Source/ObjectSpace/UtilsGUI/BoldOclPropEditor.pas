@@ -1,4 +1,4 @@
-unit BoldOclPropEditor;
+unit BoldOclPropEditor; { C# port: CSharp/src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOclPropEditor.cs; symbols and status: CSharp/port/units/BoldOclPropEditor.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldObjectSpaceLists;
+unit BoldObjectSpaceLists; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs; symbols and status: CSharp/port/units/BoldObjectSpaceLists.md }
 
 interface
 

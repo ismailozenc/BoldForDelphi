@@ -1,4 +1,4 @@
-unit BoldSorter;
+unit BoldSorter; { C# port: CSharp/src/Bold.Core/Common/Support/BoldSorter.cs; symbols and status: CSharp/port/units/BoldSorter.md }
 
 interface
 

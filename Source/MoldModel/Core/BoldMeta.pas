@@ -1,4 +1,4 @@
-unit BoldMeta;
+unit BoldMeta; { C# port: CSharp/src/Bold.Model/MoldModel/Core/BoldMeta.cs; symbols and status: CSharp/port/units/BoldMeta.md }
 
 interface
 

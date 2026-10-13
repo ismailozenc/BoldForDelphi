@@ -1,4 +1,4 @@
-unit BoldTaggedValueSupport;
+unit BoldTaggedValueSupport; { C# port: CSharp/src/Bold.Core/Common/TaggedValues/BoldTaggedValueSupport.cs; symbols and status: CSharp/port/units/BoldTaggedValueSupport.md }
 
 interface
 

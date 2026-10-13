@@ -1,4 +1,4 @@
-unit BoldSystemHandle;
+unit BoldSystemHandle; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldSystemHandle.cs; symbols and status: CSharp/port/units/BoldSystemHandle.md }
 
 interface
 

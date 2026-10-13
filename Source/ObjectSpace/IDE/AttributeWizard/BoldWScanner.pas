@@ -1,4 +1,4 @@
-unit BoldWScanner;
+unit BoldWScanner; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWScanner.cs; symbols and status: CSharp/port/units/BoldWScanner.md }
 
 interface
 

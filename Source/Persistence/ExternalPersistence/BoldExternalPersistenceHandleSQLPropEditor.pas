@@ -1,4 +1,4 @@
-unit BoldExternalPersistenceHandleSQLPropEditor;
+unit BoldExternalPersistenceHandleSQLPropEditor; { C# port: not ported (IDE property editor); see CSharp/port/units/BoldExternalPersistenceHandleSQLPropEditor.md }
 
 interface
 

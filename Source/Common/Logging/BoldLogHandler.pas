@@ -1,4 +1,4 @@
-unit BoldLogHandler;
+unit BoldLogHandler; { C# port: CSharp/src/Bold.Core/Common/Logging/BoldLogHandler.cs; symbols and status: CSharp/port/units/BoldLogHandler.md }
 
 interface
 

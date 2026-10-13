@@ -1,4 +1,4 @@
-unit BoldQueryUserDlg;
+unit BoldQueryUserDlg; { C# port: CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs; symbols and status: CSharp/port/units/BoldQueryUserDlg.md }
 
 interface
 

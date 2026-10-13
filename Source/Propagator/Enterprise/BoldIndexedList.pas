@@ -1,4 +1,4 @@
-unit BoldIndexedList;
+unit BoldIndexedList; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs; symbols and status: CSharp/port/units/BoldIndexedList.md }
 
 interface
 

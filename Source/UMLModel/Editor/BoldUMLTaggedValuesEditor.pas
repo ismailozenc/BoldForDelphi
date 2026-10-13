@@ -1,4 +1,4 @@
-unit BoldUMLTaggedValuesEditor;
+unit BoldUMLTaggedValuesEditor; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs; symbols and status: CSharp/port/units/BoldUMLTaggedValuesEditor.md }
 
 interface
 

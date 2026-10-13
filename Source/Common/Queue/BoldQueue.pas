@@ -1,4 +1,4 @@
-unit BoldQueue;
+unit BoldQueue; { C# port: CSharp/src/Bold.Core/Common/Queue/BoldQueue.cs; symbols and status: CSharp/port/units/BoldQueue.md }
 
 interface
 

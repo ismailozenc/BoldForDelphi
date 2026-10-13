@@ -1,4 +1,4 @@
-unit BoldManipulators;
+unit BoldManipulators; { C# port: CSharp/src/Bold.Handles/Handles/Manipulators/BoldManipulators.cs; symbols and status: CSharp/port/units/BoldManipulators.md }
 
 interface
 

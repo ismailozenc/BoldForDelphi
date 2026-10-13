@@ -1,4 +1,4 @@
-unit BoldDatabaseAdapterADO;
+unit BoldDatabaseAdapterADO; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs; symbols and status: CSharp/port/units/BoldDatabaseAdapterADO.md }
 
 interface
 

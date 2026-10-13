@@ -1,4 +1,4 @@
-unit BoldExternalPersistenceHandlesReg;
+unit BoldExternalPersistenceHandlesReg; { C# port: not ported (IDE registration); see CSharp/port/units/BoldExternalPersistenceHandlesReg.md }
 
 interface
 

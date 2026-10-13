@@ -1,4 +1,4 @@
-unit BoldGuard;
+unit BoldGuard; { C# port: CSharp/src/Bold.Core/Common/Support/BoldGuard.cs; symbols and status: CSharp/port/units/BoldGuard.md }
 
 interface
 

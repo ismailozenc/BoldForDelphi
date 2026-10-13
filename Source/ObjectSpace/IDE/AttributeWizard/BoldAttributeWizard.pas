@@ -1,4 +1,4 @@
-unit BoldAttributeWizard;
+unit BoldAttributeWizard; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.cs; symbols and status: CSharp/port/units/BoldAttributeWizard.md }
 
 // NB! The attribute wizard is disabled in BCB. Check the Register-procedure
 

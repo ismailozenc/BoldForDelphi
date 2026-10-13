@@ -1,4 +1,4 @@
-unit BoldNodeDescriptionEditor;
+unit BoldNodeDescriptionEditor; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldNodeDescriptionEditor.md }
 
 interface
 

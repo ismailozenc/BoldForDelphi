@@ -1,4 +1,4 @@
-unit BoldWAdatamodule;
+unit BoldWAdatamodule; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.cs; symbols and status: CSharp/port/units/BoldWAdatamodule.md }
 
 interface
 

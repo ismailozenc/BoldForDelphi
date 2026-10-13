@@ -1,6 +1,6 @@
 {$DEFINE SANDSTONEREDISTRIBUTABLE}
 
-unit BoldSSExcept;
+unit BoldSSExcept; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs; symbols and status: CSharp/port/units/BoldSSExcept.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldCheckBox;
+unit BoldCheckBox; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs; symbols and status: CSharp/port/units/BoldCheckBox.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

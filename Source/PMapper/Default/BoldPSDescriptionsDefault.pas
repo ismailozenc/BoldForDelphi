@@ -1,4 +1,4 @@
-unit BoldPSDescriptionsDefault;
+unit BoldPSDescriptionsDefault; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs; symbols and status: CSharp/port/units/BoldPSDescriptionsDefault.md }
 
 interface
 

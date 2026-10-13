@@ -1,4 +1,4 @@
-unit BoldGridRTColEditor;
+unit BoldGridRTColEditor; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs; symbols and status: CSharp/port/units/BoldGridRTColEditor.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

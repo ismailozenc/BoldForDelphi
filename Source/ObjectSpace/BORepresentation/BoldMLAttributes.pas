@@ -1,4 +1,4 @@
-unit BoldMLAttributes;
+unit BoldMLAttributes; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs; symbols and status: CSharp/port/units/BoldMLAttributes.md }
 
 interface
 

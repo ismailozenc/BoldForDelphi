@@ -1,4 +1,4 @@
-unit BoldObjectMarshaler;
+unit BoldObjectMarshaler; { C# port: CSharp/src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs; symbols and status: CSharp/port/units/BoldObjectMarshaler.md }
 
 interface
 

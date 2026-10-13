@@ -1,4 +1,4 @@
-unit BoldComboBox;
+unit BoldComboBox; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldComboBox.cs; symbols and status: CSharp/port/units/BoldComboBox.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

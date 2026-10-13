@@ -1,4 +1,4 @@
-unit BoldCustomBlobMapper;
+unit BoldCustomBlobMapper; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs; symbols and status: CSharp/port/units/BoldCustomBlobMapper.md }
 
 interface
 

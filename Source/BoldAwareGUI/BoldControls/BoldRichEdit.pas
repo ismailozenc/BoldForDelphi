@@ -1,4 +1,4 @@
-unit BoldRichEdit;
+unit BoldRichEdit; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldRichEdit.cs; symbols and status: CSharp/port/units/BoldRichEdit.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

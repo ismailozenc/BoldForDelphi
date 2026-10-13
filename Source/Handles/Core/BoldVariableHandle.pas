@@ -1,4 +1,4 @@
-unit BoldVariableHandle;
+unit BoldVariableHandle; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldVariableHandle.cs; symbols and status: CSharp/port/units/BoldVariableHandle.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldPropagatorUIManager;
+unit BoldPropagatorUIManager; { C# port: not ported (propagator user interface); see CSharp/port/units/BoldPropagatorUIManager.md }
 
 interface
 

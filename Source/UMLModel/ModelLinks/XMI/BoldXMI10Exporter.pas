@@ -1,4 +1,4 @@
-unit BoldXMI10Exporter;
+unit BoldXMI10Exporter; { C# port: CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldXMI10Exporter.cs; symbols and status: CSharp/port/units/BoldXMI10Exporter.md }
 
 interface
 

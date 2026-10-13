@@ -1,6 +1,6 @@
 
 // (c) Boldsoft 2002 - all rights reserved
-unit OCLEditorPatch;
+unit OCLEditorPatch; { C# port: not ported (IDE patch); see CSharp/port/units/OCLEditorPatch.md }
 
 // Fixes the problem that the colon after a class name is erronously added to the
 // result text. This only happens if ShowTypes is checked.

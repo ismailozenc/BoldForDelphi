@@ -1,4 +1,4 @@
-unit BoldComboBoxPropertyEditors;
+unit BoldComboBoxPropertyEditors; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldComboBoxPropertyEditors.md }
 
 interface
 

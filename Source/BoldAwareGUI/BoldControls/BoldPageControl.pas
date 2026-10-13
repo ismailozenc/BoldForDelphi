@@ -1,4 +1,4 @@
-unit BoldPageControl;
+unit BoldPageControl; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs; symbols and status: CSharp/port/units/BoldPageControl.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

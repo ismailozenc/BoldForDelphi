@@ -1,4 +1,4 @@
-unit BoldPersistenceHandleReg;
+unit BoldPersistenceHandleReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldPersistenceHandleReg.md }
 
 interface
 

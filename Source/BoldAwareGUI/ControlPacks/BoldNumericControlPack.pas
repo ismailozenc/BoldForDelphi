@@ -1,4 +1,4 @@
-unit BoldNumericControlPack;
+unit BoldNumericControlPack; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldNumericControlPack.cs; symbols and status: CSharp/port/units/BoldNumericControlPack.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

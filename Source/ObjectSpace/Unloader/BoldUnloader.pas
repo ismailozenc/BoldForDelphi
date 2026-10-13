@@ -1,4 +1,4 @@
-unit BoldUnloader;
+unit BoldUnloader; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs; symbols and status: CSharp/port/units/BoldUnloader.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldEnqueuer;
+unit BoldEnqueuer; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs; symbols and status: CSharp/port/units/BoldEnqueuer.md }
 
 interface
 

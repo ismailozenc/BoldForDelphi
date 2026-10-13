@@ -1,4 +1,4 @@
-unit BoldThread;
+unit BoldThread; { C# port: CSharp/src/Bold.Propagator.Server/Common/SupportWin/BoldThread.cs; symbols and status: CSharp/port/units/BoldThread.md }
 
 interface
 

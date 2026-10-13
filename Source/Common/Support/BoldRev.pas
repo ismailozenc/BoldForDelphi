@@ -1,4 +1,4 @@
-unit BoldRev;
+unit BoldRev; { C# port: CSharp/src/Bold.Core/Common/Support/BoldRev.cs; symbols and status: CSharp/port/units/BoldRev.md }
 
 interface
 

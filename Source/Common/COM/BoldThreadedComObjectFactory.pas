@@ -1,4 +1,4 @@
-unit BoldThreadedComObjectFactory;
+unit BoldThreadedComObjectFactory; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldThreadedComObjectFactory.md }
 
 interface
 

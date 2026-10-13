@@ -1,4 +1,4 @@
-unit BoldCaptionController;
+unit BoldCaptionController; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCaptionController.cs; symbols and status: CSharp/port/units/BoldCaptionController.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

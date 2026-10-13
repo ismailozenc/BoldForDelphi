@@ -1,4 +1,4 @@
-unit BoldVariableDefinition;
+unit BoldVariableDefinition; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldVariableDefinition.cs; symbols and status: CSharp/port/units/BoldVariableDefinition.md }
 
 interface
 

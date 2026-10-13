@@ -1,4 +1,4 @@
-unit BoldLockingReg;
+unit BoldLockingReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldLockingReg.md }
 
 interface
 

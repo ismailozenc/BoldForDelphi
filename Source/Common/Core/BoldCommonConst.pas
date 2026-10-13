@@ -1,4 +1,4 @@
-unit BoldCommonConst;
+unit BoldCommonConst; { C# port: CSharp/src/Bold.Core/Common/Core/BoldCommonConst.cs; symbols and status: CSharp/port/units/BoldCommonConst.md }
 
 interface
 

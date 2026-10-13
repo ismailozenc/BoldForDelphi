@@ -1,4 +1,4 @@
-unit BoldGUIDUtils;
+unit BoldGUIDUtils; { C# port: CSharp/src/Bold.Core/Common/Support/BoldGUIDUtils.cs; symbols and status: CSharp/port/units/BoldGUIDUtils.md }
 
 interface
 function BoldCreateGUIDAsString(StripBrackets: Boolean = false): string;

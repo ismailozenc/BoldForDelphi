@@ -1,4 +1,4 @@
-unit BoldIsoDateTime;
+unit BoldIsoDateTime; { C# port: CSharp/src/Bold.Core/Common/Support/BoldIsoDateTime.cs; symbols and status: CSharp/port/units/BoldIsoDateTime.md }
 
 interface
 

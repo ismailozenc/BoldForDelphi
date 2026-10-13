@@ -1,4 +1,4 @@
-unit BoldGettingStartedExpert;
+unit BoldGettingStartedExpert; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldGettingStartedExpert.md }
 
 interface
 

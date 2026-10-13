@@ -1,4 +1,4 @@
-unit BoldProgressBar;
+unit BoldProgressBar; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldProgressBar.cs; symbols and status: CSharp/port/units/BoldProgressBar.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

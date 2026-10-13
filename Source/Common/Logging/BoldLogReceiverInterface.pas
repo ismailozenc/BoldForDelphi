@@ -1,4 +1,4 @@
-unit BoldLogReceiverInterface;
+unit BoldLogReceiverInterface; { C# port: CSharp/src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs; symbols and status: CSharp/port/units/BoldLogReceiverInterface.md }
 
 interface
 

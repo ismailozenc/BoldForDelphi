@@ -1,4 +1,4 @@
-unit BoldCursorHandle;
+unit BoldCursorHandle; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldCursorHandle.cs; symbols and status: CSharp/port/units/BoldCursorHandle.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit ExPeConsts;
+unit ExPeConsts; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs; symbols and status: CSharp/port/units/ExPeConsts.md }
 
 interface
 

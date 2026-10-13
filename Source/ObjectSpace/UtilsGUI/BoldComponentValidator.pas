@@ -1,4 +1,4 @@
-unit BoldComponentValidator;
+unit BoldComponentValidator; { C# port: CSharp/src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs; symbols and status: CSharp/port/units/BoldComponentValidator.md }
 
 interface
 

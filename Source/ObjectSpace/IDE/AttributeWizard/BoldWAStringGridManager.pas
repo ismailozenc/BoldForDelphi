@@ -1,4 +1,4 @@
-unit BoldWAStringGridManager;
+unit BoldWAStringGridManager; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.cs; symbols and status: CSharp/port/units/BoldWAStringGridManager.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldPriorityListEnlister;
+unit BoldPriorityListEnlister; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs; symbols and status: CSharp/port/units/BoldPriorityListEnlister.md }
 
 interface
 

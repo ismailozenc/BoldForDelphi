@@ -1,4 +1,4 @@
-unit BoldTemplateExpander;
+unit BoldTemplateExpander; { C# port: CSharp/src/Bold.Core/Common/Support/BoldTemplateExpander.cs; symbols and status: CSharp/port/units/BoldTemplateExpander.md }
 
 interface
 

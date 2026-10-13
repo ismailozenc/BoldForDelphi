@@ -1,4 +1,4 @@
-unit BoldAbstractDequeuer;
+unit BoldAbstractDequeuer; { C# port: CSharp/src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs; symbols and status: CSharp/port/units/BoldAbstractDequeuer.md }
 
 interface
 

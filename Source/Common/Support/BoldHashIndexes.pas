@@ -1,4 +1,4 @@
-unit BoldHashIndexes;
+unit BoldHashIndexes; { C# port: CSharp/src/Bold.Core/Common/Support/BoldHashIndexes.cs; symbols and status: CSharp/port/units/BoldHashIndexes.md }
 
 interface
 

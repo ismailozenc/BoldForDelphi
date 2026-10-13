@@ -1,4 +1,4 @@
-unit BoldIDESupport;
+unit BoldIDESupport; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldIDESupport.md }
 
 interface
 

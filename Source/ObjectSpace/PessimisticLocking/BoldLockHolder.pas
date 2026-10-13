@@ -1,4 +1,4 @@
-unit BoldLockHolder;
+unit BoldLockHolder; { C# port: CSharp/src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHolder.cs; symbols and status: CSharp/port/units/BoldLockHolder.md }
 
 interface
 

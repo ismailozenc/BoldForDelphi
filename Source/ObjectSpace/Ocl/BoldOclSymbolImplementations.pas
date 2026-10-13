@@ -1,4 +1,4 @@
-unit BoldOclSymbolImplementations;
+unit BoldOclSymbolImplementations; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs; symbols and status: CSharp/port/units/BoldOclSymbolImplementations.md }
 
 interface
 

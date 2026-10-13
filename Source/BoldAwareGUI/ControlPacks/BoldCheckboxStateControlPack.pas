@@ -1,4 +1,4 @@
-unit BoldCheckboxStateControlPack;
+unit BoldCheckboxStateControlPack; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldCheckboxStateControlPack.cs; symbols and status: CSharp/port/units/BoldCheckboxStateControlPack.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

@@ -1,4 +1,4 @@
-unit BoldWAMainForm;
+unit BoldWAMainForm; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.cs; symbols and status: CSharp/port/units/BoldWAMainForm.md }
 
 interface
 

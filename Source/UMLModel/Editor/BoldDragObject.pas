@@ -1,4 +1,4 @@
-unit BoldDragObject;
+unit BoldDragObject; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldDragObject.cs; symbols and status: CSharp/port/units/BoldDragObject.md }
 
 interface
 

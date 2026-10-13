@@ -1,4 +1,4 @@
-unit BoldCommonBitmaps;
+unit BoldCommonBitmaps; { C# port: CSharp/src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs; symbols and status: CSharp/port/units/BoldCommonBitmaps.md }
 
 interface
 

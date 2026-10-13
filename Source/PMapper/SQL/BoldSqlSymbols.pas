@@ -1,4 +1,4 @@
-unit BoldSqlSymbols;
+unit BoldSqlSymbols; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs; symbols and status: CSharp/port/units/BoldSqlSymbols.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldAbstractDatabaseAdapter;
+unit BoldAbstractDatabaseAdapter; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs; symbols and status: CSharp/port/units/BoldAbstractDatabaseAdapter.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldDataSet;
+unit BoldDataSet; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDataSet.cs; symbols and status: CSharp/port/units/BoldDataSet.md }
 
 interface
 

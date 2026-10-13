@@ -1,4 +1,4 @@
-unit BoldXMLReg;
+unit BoldXMLReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldXMLReg.md }
 
 interface
 uses

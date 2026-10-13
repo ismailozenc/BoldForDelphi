@@ -1,4 +1,4 @@
-unit BoldCondition;
+unit BoldCondition; { C# port: CSharp/src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs; symbols and status: CSharp/port/units/BoldCondition.md }
 
 interface
 

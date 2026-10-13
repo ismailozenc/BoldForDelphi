@@ -1,4 +1,4 @@
-unit BoldExternalObjectSpaceEventHandler;
+unit BoldExternalObjectSpaceEventHandler; { C# port: CSharp/src/Bold.Propagation/ObjectSpace/BORepresentation/BoldExternalObjectSpaceEventHandler.cs; symbols and status: CSharp/port/units/BoldExternalObjectSpaceEventHandler.md }
 
 interface
 

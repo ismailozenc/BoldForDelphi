@@ -1,4 +1,4 @@
-unit BoldUMLModelEditorDebuggerPlugin;
+unit BoldUMLModelEditorDebuggerPlugin; { C# port: not ported (Delphi model editor plugin that opens the object space debugger); see CSharp/port/units/BoldUMLModelEditorDebuggerPlugin.md }
 
 interface
 

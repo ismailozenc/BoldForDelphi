@@ -1,4 +1,4 @@
-unit BoldUDPModificationBroadcaster;
+unit BoldUDPModificationBroadcaster; { C# port: CSharp/src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs; symbols and status: CSharp/port/units/BoldUDPModificationBroadcaster.md }
 
 interface
 

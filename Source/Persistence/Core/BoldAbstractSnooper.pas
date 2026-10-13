@@ -1,4 +1,4 @@
-unit BoldAbstractSnooper;
+unit BoldAbstractSnooper; { C# port: CSharp/src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs; symbols and status: CSharp/port/units/BoldAbstractSnooper.md }
 
 interface
 uses

@@ -12,7 +12,7 @@
 (*                                       *)
 (*****************************************)
 
-unit DistributableInfo;
+unit DistributableInfo; { C# port: CSharp/src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs; symbols and status: CSharp/port/units/DistributableInfo.md }
 
 {$DEFINE DistributableInfo_unitheader}
 {$INCLUDE DistributableInfo_Interface.inc}

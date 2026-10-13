@@ -1,4 +1,4 @@
-unit BoldSharedStrings;
+unit BoldSharedStrings; { C# port: CSharp/src/Bold.Core/Common/Support/BoldSharedStrings.cs; symbols and status: CSharp/port/units/BoldSharedStrings.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldOclRepository;
+unit BoldOclRepository; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldOclRepository.cs; symbols and status: CSharp/port/units/BoldOclRepository.md }
 
 interface
 

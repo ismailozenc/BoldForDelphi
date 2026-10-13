@@ -1,4 +1,4 @@
-unit BoldLogForm;
+unit BoldLogForm; { C# port: CSharp/src/Bold.WinForms/Common/Logging/BoldLogForm.cs; symbols and status: CSharp/port/units/BoldLogForm.md }
 
 interface
 

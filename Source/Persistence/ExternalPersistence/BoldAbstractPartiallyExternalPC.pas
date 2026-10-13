@@ -1,4 +1,4 @@
-unit BoldAbstractPartiallyExternalPC;
+unit BoldAbstractPartiallyExternalPC; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPC.cs; symbols and status: CSharp/port/units/BoldAbstractPartiallyExternalPC.md }
 
 interface
 

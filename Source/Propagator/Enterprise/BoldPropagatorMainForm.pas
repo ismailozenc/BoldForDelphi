@@ -1,4 +1,4 @@
-unit BoldPropagatorMainForm;
+unit BoldPropagatorMainForm; { C# port: not ported (propagator user interface; the server is a Worker Service); see CSharp/port/units/BoldPropagatorMainForm.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldSqlQueryGenerator;
+unit BoldSqlQueryGenerator; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlQueryGenerator.cs; symbols and status: CSharp/port/units/BoldSqlQueryGenerator.md }
 
 interface
 

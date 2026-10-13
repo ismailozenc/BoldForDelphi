@@ -1,4 +1,4 @@
-unit BoldTypeNameSelector;
+unit BoldTypeNameSelector; { C# port: CSharp/src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs; symbols and status: CSharp/port/units/BoldTypeNameSelector.md }
 
 interface
 

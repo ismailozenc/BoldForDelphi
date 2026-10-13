@@ -1,4 +1,4 @@
-unit BoldIDAdder;
+unit BoldIDAdder; { C# port: CSharp/src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs; symbols and status: CSharp/port/units/BoldIDAdder.md }
 
 interface
 

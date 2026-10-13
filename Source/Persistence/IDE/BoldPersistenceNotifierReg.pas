@@ -1,4 +1,4 @@
-unit BoldPersistenceNotifierReg;
+unit BoldPersistenceNotifierReg; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldPersistenceNotifierReg.md }
 
 interface
 

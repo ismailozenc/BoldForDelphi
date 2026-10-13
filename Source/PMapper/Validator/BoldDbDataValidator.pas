@@ -1,4 +1,4 @@
-unit BoldDbDataValidator;
+unit BoldDbDataValidator; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs; symbols and status: CSharp/port/units/BoldDbDataValidator.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit MSXML_TLB;
+unit MSXML_TLB; { C# port: not ported (MSXML type library; System.Xml replaces it); see CSharp/port/units/MSXML_TLB.md }
 
 // ************************************************************************ //
 // WARNING                                                                    

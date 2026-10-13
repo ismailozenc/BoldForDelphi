@@ -1,4 +1,4 @@
-unit BoldEnqueuerCOM;
+unit BoldEnqueuerCOM; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldEnqueuerCOM.md }
 
 interface
 

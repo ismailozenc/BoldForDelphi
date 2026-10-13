@@ -1,4 +1,4 @@
-unit BoldStreams;
+unit BoldStreams; { C# port: CSharp/src/Bold.Core/Common/Core/BoldStreams.cs; symbols and status: CSharp/port/units/BoldStreams.md }
 
 interface
 

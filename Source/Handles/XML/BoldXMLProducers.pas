@@ -1,4 +1,4 @@
-unit BoldXMLProducers;
+unit BoldXMLProducers; { C# port: CSharp/src/Bold.Handles/Handles/XML/BoldXMLProducers.cs; symbols and status: CSharp/port/units/BoldXMLProducers.md }
 
 interface
 

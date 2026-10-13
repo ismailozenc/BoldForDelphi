@@ -1,4 +1,4 @@
-unit BoldObjectSpaceExternalEvents;
+unit BoldObjectSpaceExternalEvents; { C# port: CSharp/src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs; symbols and status: CSharp/port/units/BoldObjectSpaceExternalEvents.md }
 
 interface
 

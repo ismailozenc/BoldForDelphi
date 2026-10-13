@@ -1,4 +1,4 @@
-unit MainForm;
+unit MainForm; { C# port: not planned yet; see CSharp/port/units/MainForm.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldPlaceableSubscriber;
+unit BoldPlaceableSubscriber; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs; symbols and status: CSharp/port/units/BoldPlaceableSubscriber.md }
 
 interface
 

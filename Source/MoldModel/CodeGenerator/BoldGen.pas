@@ -1,4 +1,4 @@
-unit BoldGen;
+unit BoldGen; { C# port: CSharp/src/Bold.CodeGen/MoldModel/CodeGenerator/BoldGen.cs; symbols and status: CSharp/port/units/BoldGen.md }
 
 interface
 

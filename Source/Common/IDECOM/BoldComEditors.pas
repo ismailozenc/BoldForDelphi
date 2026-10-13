@@ -1,4 +1,4 @@
-unit BoldComEditors;
+unit BoldComEditors; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldComEditors.md }
 
 interface
 

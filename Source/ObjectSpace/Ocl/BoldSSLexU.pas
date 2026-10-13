@@ -1,4 +1,4 @@
-unit BoldSSLexU;
+unit BoldSSLexU; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs; symbols and status: CSharp/port/units/BoldSSLexU.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldUMLTypes;
+unit BoldUMLTypes; { C# port: CSharp/src/Bold.Core/Common/UML/BoldUMLTypes.cs; symbols and status: CSharp/port/units/BoldUMLTypes.md }
 
 interface
 

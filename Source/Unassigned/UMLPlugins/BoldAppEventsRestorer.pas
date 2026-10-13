@@ -1,4 +1,4 @@
-unit BoldAppEventsRestorer;
+unit BoldAppEventsRestorer; { C# port: CSharp/src/Bold.ModelEditor/Unassigned/UMLPlugins/BoldAppEventsRestorer.cs; symbols and status: CSharp/port/units/BoldAppEventsRestorer.md }
 
 interface
 

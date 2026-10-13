@@ -1,4 +1,4 @@
-unit BoldOTAFileHandler;
+unit BoldOTAFileHandler; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldOTAFileHandler.md }
 
 interface
 

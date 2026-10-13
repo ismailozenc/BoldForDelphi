@@ -1,4 +1,4 @@
-unit BoldGridPropertyEditors;
+unit BoldGridPropertyEditors; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldGridPropertyEditors.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

@@ -1,4 +1,4 @@
-unit BoldUMLTaggedValues;
+unit BoldUMLTaggedValues; { C# port: CSharp/src/Bold.Core/Common/TaggedValues/BoldUMLTaggedValues.cs; symbols and status: CSharp/port/units/BoldUMLTaggedValues.md }
 
 interface
 

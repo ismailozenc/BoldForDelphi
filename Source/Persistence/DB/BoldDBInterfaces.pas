@@ -1,4 +1,4 @@
-unit BoldDBInterfaces;
+unit BoldDBInterfaces; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs; symbols and status: CSharp/port/units/BoldDBInterfaces.md }
 
 interface
 

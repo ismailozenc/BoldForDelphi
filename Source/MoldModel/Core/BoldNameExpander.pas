@@ -1,4 +1,4 @@
-unit BoldNameExpander;
+unit BoldNameExpander; { C# port: CSharp/src/Bold.Model/MoldModel/Core/BoldNameExpander.cs; symbols and status: CSharp/port/units/BoldNameExpander.md }
 
 interface
 

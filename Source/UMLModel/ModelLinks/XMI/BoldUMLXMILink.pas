@@ -1,4 +1,4 @@
-unit BoldUMLXMILink;
+unit BoldUMLXMILink; { C# port: CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs; symbols and status: CSharp/port/units/BoldUMLXMILink.md }
 
 interface
 

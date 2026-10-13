@@ -1,4 +1,4 @@
-unit BoldNavigator;
+unit BoldNavigator; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs; symbols and status: CSharp/port/units/BoldNavigator.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

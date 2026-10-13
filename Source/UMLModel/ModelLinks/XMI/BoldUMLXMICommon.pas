@@ -1,4 +1,4 @@
-unit BoldUMLXMICommon;
+unit BoldUMLXMICommon; { C# port: CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs; symbols and status: CSharp/port/units/BoldUMLXMICommon.md }
 
 interface
 

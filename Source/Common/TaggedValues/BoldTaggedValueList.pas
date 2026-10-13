@@ -1,4 +1,4 @@
-unit BoldTaggedValueList;
+unit BoldTaggedValueList; { C# port: CSharp/src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs; symbols and status: CSharp/port/units/BoldTaggedValueList.md }
 
 interface
 

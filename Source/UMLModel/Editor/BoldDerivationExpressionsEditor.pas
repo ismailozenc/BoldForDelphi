@@ -1,4 +1,4 @@
-unit BoldDerivationExpressionsEditor;
+unit BoldDerivationExpressionsEditor; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs; symbols and status: CSharp/port/units/BoldDerivationExpressionsEditor.md }
 
 interface
 

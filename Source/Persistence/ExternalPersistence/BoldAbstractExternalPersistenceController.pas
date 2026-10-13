@@ -1,4 +1,4 @@
-unit BoldAbstractExternalPersistenceController;
+unit BoldAbstractExternalPersistenceController; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractExternalPersistenceController.cs; symbols and status: CSharp/port/units/BoldAbstractExternalPersistenceController.md }
 
 interface
 uses

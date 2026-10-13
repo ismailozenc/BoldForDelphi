@@ -1,4 +1,4 @@
-unit BoldAbstractPropagatorHandle;
+unit BoldAbstractPropagatorHandle; { C# port: CSharp/src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs; symbols and status: CSharp/port/units/BoldAbstractPropagatorHandle.md }
 
 interface
 

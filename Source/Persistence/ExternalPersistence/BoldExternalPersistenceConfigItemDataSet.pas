@@ -1,4 +1,4 @@
-unit BoldExternalPersistenceConfigItemDataSet;
+unit BoldExternalPersistenceConfigItemDataSet; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceConfigItemDataSet.cs; symbols and status: CSharp/port/units/BoldExternalPersistenceConfigItemDataSet.md }
 
 interface
 

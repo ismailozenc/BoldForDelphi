@@ -1,4 +1,4 @@
-unit BoldOclVariables;
+unit BoldOclVariables; { C# port: CSharp/src/Bold.Handles/Handles/Core/BoldOclVariables.cs; symbols and status: CSharp/port/units/BoldOclVariables.md }
 
 interface
 

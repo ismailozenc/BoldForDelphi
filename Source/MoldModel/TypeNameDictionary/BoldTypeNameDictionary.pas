@@ -1,4 +1,4 @@
-unit BoldTypeNameDictionary;
+unit BoldTypeNameDictionary; { C# port: CSharp/src/Bold.Model/MoldModel/TypeNameDictionary/BoldTypeNameDictionary.cs; symbols and status: CSharp/port/units/BoldTypeNameDictionary.md }
 
 interface
 

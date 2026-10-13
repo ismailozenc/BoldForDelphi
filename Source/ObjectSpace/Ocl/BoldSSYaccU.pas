@@ -1,4 +1,4 @@
-unit BoldSSYaccU;
+unit BoldSSYaccU; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs; symbols and status: CSharp/port/units/BoldSSYaccU.md }
 
 {$RANGECHECKS OFF}
 

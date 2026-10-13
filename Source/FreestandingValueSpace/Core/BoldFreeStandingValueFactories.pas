@@ -1,4 +1,4 @@
-unit BoldFreeStandingValueFactories;
+unit BoldFreeStandingValueFactories; { C# port: CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs; symbols and status: CSharp/port/units/BoldFreeStandingValueFactories.md }
 
 interface
 

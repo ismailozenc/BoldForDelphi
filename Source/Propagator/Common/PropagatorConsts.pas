@@ -1,4 +1,4 @@
-unit PropagatorConsts;
+unit PropagatorConsts; { C# port: CSharp/src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs; symbols and status: CSharp/port/units/PropagatorConsts.md }
 
 interface
 

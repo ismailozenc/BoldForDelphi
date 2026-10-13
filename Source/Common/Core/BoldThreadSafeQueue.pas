@@ -1,4 +1,4 @@
-unit BoldThreadSafeQueue;
+unit BoldThreadSafeQueue; { C# port: CSharp/src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs; symbols and status: CSharp/port/units/BoldThreadSafeQueue.md }
 
 interface
 

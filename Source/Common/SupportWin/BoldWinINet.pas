@@ -1,4 +1,4 @@
-unit BoldWinINet;
+unit BoldWinINet; { C# port: not ported (WinInet; HttpClient replaces it); see CSharp/port/units/BoldWinINet.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldServerHandlesDataMod;
+unit BoldServerHandlesDataMod; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldServerHandlesDataMod.md }
 
 interface
 

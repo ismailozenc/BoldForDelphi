@@ -1,4 +1,4 @@
-unit BoldPMConsts;
+unit BoldPMConsts; { C# port: CSharp/src/Bold.Persistence/PMapper/Core/BoldPMConsts.cs; symbols and status: CSharp/port/units/BoldPMConsts.md }
 
 interface
 

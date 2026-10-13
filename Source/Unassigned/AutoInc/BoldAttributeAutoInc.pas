@@ -1,4 +1,4 @@
-unit BoldAttributeAutoInc;
+unit BoldAttributeAutoInc; { C# port: CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs; symbols and status: CSharp/port/units/BoldAttributeAutoInc.md }
 
 interface
 

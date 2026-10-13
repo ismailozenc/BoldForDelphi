@@ -1,4 +1,4 @@
-unit BoldWAValueSetDlg;
+unit BoldWAValueSetDlg; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.cs; symbols and status: CSharp/port/units/BoldWAValueSetDlg.md }
 
 interface
 

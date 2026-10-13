@@ -1,4 +1,4 @@
-unit BoldLoggableCriticalSection;
+unit BoldLoggableCriticalSection; { C# port: CSharp/src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs; symbols and status: CSharp/port/units/BoldLoggableCriticalSection.md }
 
 interface
 

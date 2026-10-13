@@ -1,4 +1,4 @@
-unit BoldDragDropTarget;
+unit BoldDragDropTarget; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDragDropTarget.cs; symbols and status: CSharp/port/units/BoldDragDropTarget.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

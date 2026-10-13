@@ -1,4 +1,4 @@
-unit BoldGuiResourceStrings;
+unit BoldGuiResourceStrings; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/Core/BoldGuiResourceStrings.cs; symbols and status: CSharp/port/units/BoldGuiResourceStrings.md }
 
 interface
 

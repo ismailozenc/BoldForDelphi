@@ -1,4 +1,4 @@
-unit BoldWACustomAttr;
+unit BoldWACustomAttr; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.cs; symbols and status: CSharp/port/units/BoldWACustomAttr.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldMemberTypeDictionary;
+unit BoldMemberTypeDictionary; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs; symbols and status: CSharp/port/units/BoldMemberTypeDictionary.md }
 
 interface
 

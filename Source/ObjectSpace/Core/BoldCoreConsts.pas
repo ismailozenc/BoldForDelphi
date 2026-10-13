@@ -1,4 +1,4 @@
-unit BoldCoreConsts;
+unit BoldCoreConsts; { C# port: CSharp/src/Bold.Persistence/ObjectSpace/Core/BoldCoreConsts.cs; symbols and status: CSharp/port/units/BoldCoreConsts.md }
 
 interface
 

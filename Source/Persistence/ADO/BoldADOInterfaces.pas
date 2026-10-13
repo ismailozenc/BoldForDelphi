@@ -1,4 +1,4 @@
-unit BoldADOInterfaces;
+unit BoldADOInterfaces; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldADOInterfaces.cs; symbols and status: CSharp/port/units/BoldADOInterfaces.md }
 
 interface
 

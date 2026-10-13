@@ -1,4 +1,4 @@
-unit PersistenceConsts;
+unit PersistenceConsts; { C# port: CSharp/src/Bold.Persistence/Persistence/Core/PersistenceConsts.cs; symbols and status: CSharp/port/units/PersistenceConsts.md }
 
 interface
 

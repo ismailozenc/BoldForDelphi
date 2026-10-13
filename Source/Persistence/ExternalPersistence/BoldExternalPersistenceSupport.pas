@@ -1,4 +1,4 @@
-unit BoldExternalPersistenceSupport;
+unit BoldExternalPersistenceSupport; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs; symbols and status: CSharp/port/units/BoldExternalPersistenceSupport.md }
 
 interface
 

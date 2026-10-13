@@ -1,4 +1,4 @@
-unit BoldWSimpleMenuWizard;
+unit BoldWSimpleMenuWizard; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldWSimpleMenuWizard.md }
 
 interface
 

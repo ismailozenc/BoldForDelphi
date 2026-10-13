@@ -1,4 +1,4 @@
-unit BoldUMLModelDataModule;
+unit BoldUMLModelDataModule; { C# port: not ported (data module of the Delphi model editor over the UML object space (D6)); see CSharp/port/units/BoldUMLModelDataModule.md }
 
 interface
 

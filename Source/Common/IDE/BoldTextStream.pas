@@ -1,4 +1,4 @@
-unit BoldTextStream;
+unit BoldTextStream; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldTextStream.md }
 
 interface
 

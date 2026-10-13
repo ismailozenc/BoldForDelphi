@@ -1,4 +1,4 @@
-unit BoldLockingSupportInterfaces_TLB;
+unit BoldLockingSupportInterfaces_TLB; { C# port: CSharp/src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs; symbols and status: CSharp/port/units/BoldLockingSupportInterfaces_TLB.md }
 
 // ************************************************************************ //
 // WARNING                                                                    

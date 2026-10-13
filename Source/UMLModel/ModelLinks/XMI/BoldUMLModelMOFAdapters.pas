@@ -1,4 +1,4 @@
-unit BoldUMLModelMOFAdapters;
+unit BoldUMLModelMOFAdapters; { C# port: CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLModelMOFAdapters.cs; symbols and status: CSharp/port/units/BoldUMLModelMOFAdapters.md }
 
 interface
 

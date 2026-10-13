@@ -1,4 +1,4 @@
-unit BoldWCodeInformer;
+unit BoldWCodeInformer; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.cs; symbols and status: CSharp/port/units/BoldWCodeInformer.md }
 
 interface
 

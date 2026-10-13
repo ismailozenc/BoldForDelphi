@@ -1,4 +1,4 @@
-unit BoldTypeNameHandle;
+unit BoldTypeNameHandle; { C# port: CSharp/src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs; symbols and status: CSharp/port/units/BoldTypeNameHandle.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldCursorGuard;
+unit BoldCursorGuard; { C# port: CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs; symbols and status: CSharp/port/units/BoldCursorGuard.md }
 
 interface
 

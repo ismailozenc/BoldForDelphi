@@ -1,4 +1,4 @@
-unit BoldControlsDefs;
+unit BoldControlsDefs; { C# port: CSharp/src/Bold.WinForms/Common/Support/BoldControlsDefs.cs; symbols and status: CSharp/port/units/BoldControlsDefs.md }
 
 interface
 

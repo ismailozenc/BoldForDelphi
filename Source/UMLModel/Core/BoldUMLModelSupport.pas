@@ -1,4 +1,4 @@
-unit BoldUMLModelSupport;
+unit BoldUMLModelSupport; { C# port: CSharp/src/Bold.Xmi/UMLModel/Core/BoldUMLModelSupport.cs; symbols and status: CSharp/port/units/BoldUMLModelSupport.md }
 
 interface
 

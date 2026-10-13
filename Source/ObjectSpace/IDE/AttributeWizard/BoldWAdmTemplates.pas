@@ -1,4 +1,4 @@
-unit BoldWAdmTemplates;
+unit BoldWAdmTemplates; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.cs; symbols and status: CSharp/port/units/BoldWAdmTemplates.md }
 
 interface
 

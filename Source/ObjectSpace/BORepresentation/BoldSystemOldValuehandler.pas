@@ -1,4 +1,4 @@
-unit BoldSystemOldValuehandler;
+unit BoldSystemOldValuehandler; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs; symbols and status: CSharp/port/units/BoldSystemOldValuehandler.md }
 // Implementation of Old values in the form used for the optimistic locking support.
 
 interface

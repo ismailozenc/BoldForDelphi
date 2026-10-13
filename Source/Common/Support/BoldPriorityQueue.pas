@@ -1,4 +1,4 @@
-unit BoldPriorityQueue;
+unit BoldPriorityQueue; { C# port: CSharp/src/Bold.Core/Common/Support/BoldPriorityQueue.cs; symbols and status: CSharp/port/units/BoldPriorityQueue.md }
 
 interface
 

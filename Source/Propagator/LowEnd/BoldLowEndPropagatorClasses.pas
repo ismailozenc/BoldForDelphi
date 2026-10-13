@@ -1,4 +1,4 @@
-unit BoldLowEndPropagatorClasses;
+unit BoldLowEndPropagatorClasses; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs; symbols and status: CSharp/port/units/BoldLowEndPropagatorClasses.md }
 
 interface
 

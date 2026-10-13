@@ -1,4 +1,4 @@
-unit BoldUMXMILinkreg;
+unit BoldUMXMILinkreg; { C# port: not ported (IDE registration); see CSharp/port/units/BoldUMXMILinkreg.md }
 
 interface
 

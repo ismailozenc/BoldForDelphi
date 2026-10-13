@@ -1,4 +1,4 @@
-unit BoldLockList;
+unit BoldLockList; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs; symbols and status: CSharp/port/units/BoldLockList.md }
 
 interface
 

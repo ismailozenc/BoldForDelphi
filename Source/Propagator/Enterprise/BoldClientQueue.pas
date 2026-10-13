@@ -1,4 +1,4 @@
-unit BoldClientQueue;
+unit BoldClientQueue; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs; symbols and status: CSharp/port/units/BoldClientQueue.md }
 
 interface
 

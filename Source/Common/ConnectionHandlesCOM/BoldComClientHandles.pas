@@ -1,4 +1,4 @@
-unit BoldComClientHandles;
+unit BoldComClientHandles; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldComClientHandles.md }
 
 interface
 

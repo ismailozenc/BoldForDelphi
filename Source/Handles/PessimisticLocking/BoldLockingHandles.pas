@@ -1,4 +1,4 @@
-unit BoldLockingHandles;
+unit BoldLockingHandles; { C# port: CSharp/src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs; symbols and status: CSharp/port/units/BoldLockingHandles.md }
 
 interface
 

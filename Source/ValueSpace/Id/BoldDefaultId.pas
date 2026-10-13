@@ -1,4 +1,4 @@
-unit BoldDefaultId;
+unit BoldDefaultId; { C# port: CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs; symbols and status: CSharp/port/units/BoldDefaultId.md }
 
 interface
 

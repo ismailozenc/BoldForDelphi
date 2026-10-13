@@ -1,4 +1,4 @@
-unit BoldDTDParser;
+unit BoldDTDParser; { C# port: CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldDTDParser.cs; symbols and status: CSharp/port/units/BoldDTDParser.md }
 
 interface
 

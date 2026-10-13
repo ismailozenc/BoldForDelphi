@@ -1,4 +1,4 @@
-unit BoldSqlNodeMaker;
+unit BoldSqlNodeMaker; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodeMaker.cs; symbols and status: CSharp/port/units/BoldSqlNodeMaker.md }
 
 interface
 uses

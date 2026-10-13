@@ -1,4 +1,4 @@
-unit BoldUMLAttributes;
+unit BoldUMLAttributes; { C# port: not ported (attribute classes of the UML metamodel object space; the Mold model is the only model in memory (D6)); see CSharp/port/units/BoldUMLAttributes.md }
 
 interface
 

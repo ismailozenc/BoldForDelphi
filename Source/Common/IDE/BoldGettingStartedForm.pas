@@ -1,4 +1,4 @@
-unit BoldGettingStartedForm;
+unit BoldGettingStartedForm; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldGettingStartedForm.md }
 
 interface
 

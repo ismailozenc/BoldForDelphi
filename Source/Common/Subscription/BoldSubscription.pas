@@ -1,4 +1,4 @@
-unit BoldSubscription;
+unit BoldSubscription; { C# port: CSharp/src/Bold.Core/Common/Subscription/BoldSubscription.cs; symbols and status: CSharp/port/units/BoldSubscription.md }
 
 interface
 

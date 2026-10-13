@@ -1,4 +1,4 @@
-unit BoldAbstractPropertyEditors;
+unit BoldAbstractPropertyEditors; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldAbstractPropertyEditors.md }
 
 interface
 

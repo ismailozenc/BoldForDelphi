@@ -1,4 +1,4 @@
-unit BoldLockingDefs;
+unit BoldLockingDefs; { C# port: CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs; symbols and status: CSharp/port/units/BoldLockingDefs.md }
 
 interface
 

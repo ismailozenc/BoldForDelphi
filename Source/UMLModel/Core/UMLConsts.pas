@@ -1,4 +1,4 @@
-unit UMLConsts;
+unit UMLConsts; { C# port: CSharp/src/Bold.Xmi/UMLModel/Core/UMLConsts.cs; symbols and status: CSharp/port/units/UMLConsts.md }
 
 interface
 

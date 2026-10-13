@@ -1,7 +1,7 @@
 // as long as the distribution question of sandstone libs is not solved,
 // this unit is used as an include file by BoldOCL
 
-unit BoldORed;
+unit BoldORed; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs; symbols and status: CSharp/port/units/BoldORed.md }
 
 interface
 

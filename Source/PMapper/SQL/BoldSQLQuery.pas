@@ -1,4 +1,4 @@
-unit BoldSQLQuery;
+unit BoldSQLQuery; { C# port: CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs; symbols and status: CSharp/port/units/BoldSQLQuery.md }
 
 interface
 

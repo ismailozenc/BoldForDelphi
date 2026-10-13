@@ -1,4 +1,4 @@
-unit BoldFileHandler;
+unit BoldFileHandler; { C# port: CSharp/src/Bold.Core/Common/Support/BoldFileHandler.cs; symbols and status: CSharp/port/units/BoldFileHandler.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldPropagatorServer;
+unit BoldPropagatorServer; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs; symbols and status: CSharp/port/units/BoldPropagatorServer.md }
 
 interface
 

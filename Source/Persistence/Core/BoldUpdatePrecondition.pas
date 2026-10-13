@@ -1,4 +1,4 @@
-unit BoldUpdatePrecondition;
+unit BoldUpdatePrecondition; { C# port: CSharp/src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs; symbols and status: CSharp/port/units/BoldUpdatePrecondition.md }
 
 interface
 

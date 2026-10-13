@@ -1,4 +1,4 @@
-unit BoldOclError;
+unit BoldOclError; { C# port: CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs; symbols and status: CSharp/port/units/BoldOclError.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldUMLDTDData;
+unit BoldUMLDTDData; { C# port: CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs; symbols and status: CSharp/port/units/BoldUMLDTDData.md }
 
 interface
 

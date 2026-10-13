@@ -1,4 +1,4 @@
-unit BoldLockManagerAdmin;
+unit BoldLockManagerAdmin; { C# port: CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs; symbols and status: CSharp/port/units/BoldLockManagerAdmin.md }
 
 interface
 

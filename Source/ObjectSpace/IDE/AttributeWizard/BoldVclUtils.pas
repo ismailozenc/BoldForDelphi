@@ -1,4 +1,4 @@
-unit BoldVclUtils;
+unit BoldVclUtils; { C# port: CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldVclUtils.cs; symbols and status: CSharp/port/units/BoldVclUtils.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldHandlePropEditor;
+unit BoldHandlePropEditor; { C# port: not ported (IDE / design-time code); see CSharp/port/units/BoldHandlePropEditor.md }
 
 interface
 

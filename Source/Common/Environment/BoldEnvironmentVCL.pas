@@ -1,4 +1,4 @@
-unit BoldEnvironmentVCL;
+unit BoldEnvironmentVCL; { C# port: CSharp/src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs; symbols and status: CSharp/port/units/BoldEnvironmentVCL.md }
 
 interface
 

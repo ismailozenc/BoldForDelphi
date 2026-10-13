@@ -1,4 +1,4 @@
-unit HandlesConst;
+unit HandlesConst; { C# port: CSharp/src/Bold.Handles/Handles/Core/HandlesConst.cs; symbols and status: CSharp/port/units/HandlesConst.md }
 
 interface
 

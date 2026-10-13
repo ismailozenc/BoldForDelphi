@@ -1,4 +1,4 @@
-unit BoldLabel;
+unit BoldLabel; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs; symbols and status: CSharp/port/units/BoldLabel.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

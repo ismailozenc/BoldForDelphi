@@ -12,7 +12,7 @@
 (*                                       *)
 (*****************************************)
 
-unit BoldUMLModel;
+unit BoldUMLModel; { C# port: not ported (generated code for the UML metamodel; the Mold model is the only model in memory (D6)); see CSharp/port/units/BoldUMLModel.md }
 
 {$DEFINE BoldUMLModel_unitheader}
 {$INCLUDE BoldUMLModel_Interface.inc}

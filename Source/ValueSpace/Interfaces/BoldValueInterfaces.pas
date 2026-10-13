@@ -1,4 +1,4 @@
-unit BoldValueInterfaces;
+unit BoldValueInterfaces; { C# port: CSharp/src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs; symbols and status: CSharp/port/units/BoldValueInterfaces.md }
 
 interface
 

@@ -1,4 +1,4 @@
-unit BoldObjectUpgrader;
+unit BoldObjectUpgrader; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldObjectUpgrader.cs; symbols and status: CSharp/port/units/BoldObjectUpgrader.md }
 
 interface
 
