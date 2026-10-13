@@ -11,9 +11,10 @@ Removed so far:
 - **Non-Windows code (CLX and Linux):** the CLX GUI (`Source/BoldQAwareGUI`), the CLX environment (`BoldEnvironmentCLX.pas`, `BoldEnvironmentAllowBothUseCLX.pas`, and `BoldEnvironmentAllowBothUseVCL.pas`, which existed only to allow VCL and CLX together), the CLX configuration in `BoldEnvironment.pas`, and the `{$IFDEF LINUX}` branches in `BoldPerformanceCounter.pas` and `BoldUtils.pas`. The matching entries are removed from `PackageDef.txt` and `SourceDef.txt`.
 - **Rational Rose code:** `Common/Rose98`, `Common/Rose2000` and `UMLModel/ModelLinks/Rose98`, along with the Rose link in the UML data module. UML model creation and import is not replaced yet. A replacement is needed, as tracked in the drop list.
 - **Windows-only units with no remaining users:** `Common/SupportWin/BoldWinUtils`, `Common/Support/BoldDirectoryTraverser`, `Common/Template/BoldTemplate` and `Samples/Unicode`. Other Windows-API units stay until the code that uses them is ported; the drop list says which.
+- **COM and DCOM distribution:** 84 COM-only units and their files, including the COM object space, COM client GUI and handles, COM connection layers, the Enterprise propagator COM wrappers, OLE, and the COM handles and concurrency control. The HTTP client, XML parsing and propagator interfaces still use some COM-era units; those stay until their replacements are built. The drop list says which.
 - **Unrelated examples:** the example projects that depend on a dropped feature (COM/DCOM, MSXML/SOAP/XML, OLE, Rational Rose, the system debugger form) are removed: 41 example folders, deleted as 32 top-level folders in `examples/CBuilder` and `examples/Delphi`. Examples that only use kept features, or that use nothing dropped, are kept.
 
-Not yet removed: the rest of the drop list (COM and DCOM distribution, Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
+Not yet removed: the rest of the drop list (Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
 
 This is master branch. If you want latest development please check develop branch instead
 https://github.com/Embarcadero/BoldForDelphi/tree/develop
