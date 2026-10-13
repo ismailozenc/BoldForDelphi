@@ -59,9 +59,6 @@ Dir=$(SRCDIR)\ObjectSpace\IDE\AttributeWizard
 [FullSource.Dataset]
 File=$(SRCDIR)\BoldAwareGUI\BoldControls\BoldDataSet.pas
 
-[FullSource.Samples]
-Dir=$(SRCDIR)\Samples
-
 [FullSource.NonSCALA]
 Dir=$(SRCDIR)\BoldAwareGUI
 Dir=$(SRCDIR)\Common\Core
@@ -312,18 +309,3 @@ Section=FullSource.SCALA
 
 [SourceImage.$(BUILD_TARGET).SCALA.Exclude]
 Section=Research.Exclude
-
-; *********
-; *** SAMPLES
-; *********
-
-[SourceImage.$(BUILD_TARGET).SAMPLES]
-KeepDirectories=1
-KeepRelativeDir=$(SRCDIR)\Samples
-
-[SourceImage.$(BUILD_TARGET).SAMPLES.PAS]
-OutputDir=$(PRODIMAGEDIR)\Source\Samples
-Section=FullSource.Samples
-
-[SourceImage.$(BUILD_TARGET).SAMPLES.Exclude]
-Section=Global.Include

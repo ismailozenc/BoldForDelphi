@@ -235,9 +235,6 @@ SourceType=$(BUILD_TARGET)
 BPKTemplate=$(BUILD_TEMP)\BCBPackageTemplateBPK.exp
 CPPTemplate=$(BUILD_TEMP)\BCBPackageTemplateCPP.exp
 
-[Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)Utils.Include]
-Dir=$(SRCDIR)\Samples
-
 ;-----------------------
 ; Package BoldXX$(BUILD_TARGET) - IB
 ;-----------------------
@@ -398,7 +395,6 @@ Dir=$(SRCDIR)\Persistence\IDEUDP
 Dir=$(SRCDIR)\Propagator\Enterprise
 Dir=$(SRCDIR)\Propagator\IDECOM
 Dir=$(SRCDIR)\Propagator\LowEnd
-Dir=$(SRCDIR)\Samples\IDE
 Dir=$(SRCDIR)\Unassigned
 Dir=$(SRCDIR)\UMLModel\Editor
 Dir=$(SRCDIR)\UMLModel\IDE

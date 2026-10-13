@@ -15,9 +15,11 @@ Removed so far:
 - **SOAP and HTTP persistence:** `Source/Persistence/SOAP`, `Source/Common/SOAP`, `Source/Persistence/HTTP` and `Source/Common/HTTP`. The HTTP transport was SOAP over HTTP, so it goes too. The XML streaming helpers used only by SOAP (`GetSOAP`/`NewSOAP`) and the SOAP/XMLRequests constants are removed. The ASP and HTTPPMapper examples, the XML dispatcher COM and IDE remnants, and the related component bitmaps are removed with them. A replacement HTTP transport on ASP.NET Core is still needed, as tracked in the drop list.
 - **ModelMaker link and ECO III generator:** `UMLModel/ModelLinks/ModelMaker` and `UMLModel/Plugins/BoldUMLModelToEcoIIIGenerator.pas`, plus `BoldUMLDelphiSupport`, which only the ModelMaker importer used. ModelMaker integration is planned for later.
 - **Connection base classes:** `Common/Connection` and `Common/ConnectionHandles` (abstract client and server classes, with their application registry). Only the COM layer used them. The COM-blocked Enterprise propagator server (`BoldServerHandlesDataMod.pas`) still refers to `BoldServerHandles`, so it will not build until that propagator is replaced.
+- **Samples:** `Source/Samples` (example components and apps). They are kept on `master` as the reference copy.
+- **Multi-unit code generator patch:** `Source/Unassigned/patches/MultiUnitCodeGenPatch.pas`. It fixed Delphi unit placement for link classes. C# output uses one file per class, so it is not needed.
 - **All examples:** the whole `examples/` folder (CBuilder, Delphi and html). Examples are removed entirely. We will write our own examples once the main functionality is running.
 
-Not yet removed: the rest of the drop list (Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
+Not yet removed: the rest of the drop list (Delphi IDE integration). Those are tracked in the drop list and will be removed in later changes.
 
 This is master branch. If you want latest development please check develop branch instead
 https://github.com/Embarcadero/BoldForDelphi/tree/develop
