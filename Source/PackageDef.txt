@@ -224,6 +224,7 @@ BPKTemplate=$(BUILD_TEMP)\BCBPackageTemplateBPK.exp
 CPPTemplate=$(BUILD_TEMP)\BCBPackageTemplateCPP.exp
 
 [Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)OLLE.Include]
+Dir=$(SRCDIR)\Extensions\OLLE\Core
 
 ;-----------------------
 ; Package BoldXX$(BUILD_TARGET) - Utils

@@ -31,6 +31,8 @@ RemovePropertyDetails=1
 ; We must explicitly add those files that don't have .pas extension
 File=$(SRCDIR)\Common\Include\Bold.inc
 File=$(SRCDIR)\Common\ProductProtection\OnGuard.inc
+File=$(SRCDIR)\Extensions\OLLE\Core\DistributableInfo.inc
+File=$(SRCDIR)\Extensions\OLLE\Core\DistributableInfo_Interface.inc
 
 [Research.Exclude]
 Dir=$(SRCDIR)\Unassigned
@@ -71,6 +73,7 @@ Dir=$(SRCDIR)\Handles\Core
 Dir=$(SRCDIR)\Handles\Actions
 Dir=$(SRCDIR)\FreestandingValueSpace
 Dir=$(SRCDIR)\ValueSpace
+Dir=$(SRCDIR)\Extensions
 
 File=$(SRCDIR)\ObjectSpace\BORepresentation\BoldAttributes.pas
 File=$(SRCDIR)\ObjectSpace\BORepresentation\BoldMLAttributes.pas
