@@ -8,6 +8,7 @@ Removed so far:
 - **Standalone tools:** `Tools/BoldClientifier`, `Tools/BoldUpgrader` and `Tools/DBConvert`. `Tools/PropagatorAnalyzer` is kept.
 - **Delphi package files (`*.dpk`):** all 27, including the ones in `examples/` and `Source/Unassigned/`. The units they listed are still in the tree.
 - **Dead database drivers:** the BDE, DBISAM, Advantage, IBX, DBExpress, SQLDirect and DOA persistence back ends, and the unassigned Asta, BDEUtils, dbvalidate and Oracle-BDE code. ADO and the generic DB layer are kept.
+- **Unrelated examples:** the example projects that depend on a dropped feature (COM/DCOM, MSXML/SOAP/XML, OLE, Rational Rose, the system debugger form) are removed: 41 example folders, deleted as 32 top-level folders in `examples/CBuilder` and `examples/Delphi`. Examples that only use kept features, or that use nothing dropped, are kept.
 
 Not yet removed: the rest of the drop list (COM and DCOM distribution, the CLX GUI, Rational Rose links, Delphi IDE integration, and samples). Those are tracked in the drop list and will be removed in later changes.
 
