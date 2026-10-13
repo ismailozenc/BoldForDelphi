@@ -164,10 +164,6 @@
         <DCCReference Include="Source\ObjectSpace\UtilsGUI\BoldOCLGraphicRTDebug.pas"/>
         <DCCReference Include="Source\ObjectSpace\UtilsGUI\BoldOclPropEditor.pas"/>
         <DCCReference Include="Source\ObjectSpace\UtilsGUI\BoldTypeNameSelector.pas"/>
-        <DCCReference Include="Source\Common\Connection\BoldClient.pas"/>
-        <DCCReference Include="Source\Common\Connection\BoldServer.pas"/>
-        <DCCReference Include="Source\Common\ConnectionHandles\BoldClientHandles.pas"/>
-        <DCCReference Include="Source\Common\ConnectionHandles\BoldServerHandles.pas"/>
         <DCCReference Include="Source\Common\Core\BoldAggeregates.pas"/>
         <DCCReference Include="Source\Common\Core\BoldBase.pas"/>
         <DCCReference Include="Source\Common\Core\BoldCommonConst.pas"/>

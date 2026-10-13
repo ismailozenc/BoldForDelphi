@@ -90,9 +90,7 @@ Dir=$(SRCDIR)\Persistence\UDPPropagator
 
 [FullSource.COMGUI]
 Dir=$(SRCDIR)\Common\COM
-Dir=$(SRCDIR)\Common\Connection
 Dir=$(SRCDIR)\Common\ConnectionCOM
-Dir=$(SRCDIR)\Common\ConnectionHandles
 Dir=$(SRCDIR)\Common\ConnectionHandlesCOM
 File=$(SRCDIR)\ObjectSpace\COM
 
