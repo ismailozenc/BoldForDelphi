@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 0 subfolder(s), 8 file(s), plus 2 .UnitDoc file(s) documenting units here.
+**Contents:** 0 subfolder(s), 7 file(s), plus 2 .UnitDoc file(s) documenting units here.
 
 ## Files
 
@@ -14,7 +14,6 @@
 | `BoldDbPlugins.pas` | Unit | Declares TUMLGenericDBPlugin, TUMLDBGenerator, TBoldUMLDBEvolutorPlugin, TBoldDbValidatorPlugIn and 2 more. |
 | `BoldModelOCLValidatorPlugIn.pas` | Unit | Declares TUMLOCLValidator. |
 | `BoldUMLModelEditPlugIn.pas` | Unit | Declares TUMLPlugIn, TUMLPlugInMenuItem, TUMLPlugInToolButton. |
-| `BoldUMLModelToEcoIIIGenerator.pas` | Unit | Declares TUMLModelToEcoIIIGenerator. *(drop list: M-2)* |
 | `BoldUMLPluginCallBacks.pas` | Unit | Declares TUMLOCLValidatorCallBack, TBoldUMLModelValidatorCallBack. |
 | `BoldUMLPlugins.pas` | Unit | Declares TUMLPlugInFunction, TUMLLinkImporterExporter, TUMLLinkImporter, TUMLLinkExporter and 1 more. |
 | `BoldUMLPlugins.rc` | rc | Compiled or binary artifact (rc). |

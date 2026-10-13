@@ -250,7 +250,6 @@
         <DCCReference Include="Source\Common\TaggedValues\BoldTaggedValueList.pas"/>
         <DCCReference Include="Source\Common\TaggedValues\BoldTaggedValueSupport.pas"/>
         <DCCReference Include="Source\Common\TaggedValues\BoldUMLTaggedValues.pas"/>
-        <DCCReference Include="Source\Common\UML\BoldUMLDelphiSupport.pas"/>
         <DCCReference Include="Source\Common\UML\BoldUMLTypes.pas"/>
         <DCCReference Include="Source\Common\UtilsGUI\BoldCursorGuard.pas"/>
         <DCCReference Include="Source\Common\UtilsGUI\BoldQueryUserDlg.pas"/>

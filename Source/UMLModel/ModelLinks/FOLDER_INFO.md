@@ -4,13 +4,12 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 4 subfolder(s), 0 file(s).
+**Contents:** 3 subfolder(s), 0 file(s).
 
 ## Subfolders
 
 - [Bld/](Bld/FOLDER_INFO.md)
 - [Core/](Core/FOLDER_INFO.md)
-- [ModelMaker/](ModelMaker/FOLDER_INFO.md)
 - [XMI/](XMI/FOLDER_INFO.md)
 
 ---

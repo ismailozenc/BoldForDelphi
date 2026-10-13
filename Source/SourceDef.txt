@@ -119,7 +119,6 @@ section=FullSource.boldsource
 section=Includes.all
 section=aux.typelibs
 section=aux.propagator
-section=FullSource.MMLink
 
 [Includes.all]
 section=Includes.OCL
@@ -143,10 +142,6 @@ File=$(SRCDIR)\UMLModel\Core\BoldUMLModel.mdl
 File=$(SRCDIR)\Common\Licensing\BoldNoLicense.inc
 File=$(SRCDIR)\Common\Licensing\BoldLicense.inc
 File=$(SRCDIR)\Common\Include\BoldDeploymentKeyControl.inc
-
-[FullSource.MMLink]
-File=$(SRCDIR)\UMLModel\ModelLinks\ModelMaker\MMPlugIn\BoldMMPlugin.tlb
-File=$(SRCDIR)\UMLModel\ModelLinks\ModelMaker\MMPlugIn\BoldMMPlugin.dpr
 
 [aux.typelibs]
 ;

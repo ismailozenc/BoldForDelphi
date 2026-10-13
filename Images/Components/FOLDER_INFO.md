@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 0 subfolder(s), 129 file(s).
+**Contents:** 0 subfolder(s), 128 file(s).
 
 ## Files
 
@@ -124,7 +124,6 @@
 | `TBoldTreeView.bmp` | bmp | Image asset. |
 | `TBoldTypeNameHandle.bmp` | bmp | Image asset. |
 | `TBoldUDPModificationBroadcaster.bmp` | bmp | Image asset. |
-| `TBoldUMLMMLink.bmp` | bmp | Image asset. |
 | `TBoldUMLRose98Link.bmp` | bmp | Image asset. |
 | `TBoldUMLRoseLink.bmp` | bmp | Image asset. |
 | `TBoldUMLXMILink.bmp` | bmp | Image asset. |

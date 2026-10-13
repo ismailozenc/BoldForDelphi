@@ -54,7 +54,6 @@ Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)DBExpress
 Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)DBIsam
 Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)DOA
 Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)IB
-Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)MMLink
 Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)OLLE
 Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)SQLDirect
 Package=Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)UDPProp
@@ -110,7 +109,6 @@ Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)DBIsam.
 Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)DBExpress.Include
 Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)DOA.Include
 Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)IB.Include
-Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)MMLink.Include
 Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)OLLE.Include
 Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)SQLDirect.Include
 Section=Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)UDPProp.Include
@@ -217,25 +215,6 @@ CPPTemplate=$(BUILD_TEMP)\BCBPackageTemplateCPP.exp
 
 [Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)DOA.Include]
 Dir=$(SRCDIR)\Persistence\DOA
-
-;-----------------------
-; Package BoldXX$(BUILD_TARGET) - MMLink
-;-----------------------
-[Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)MMLink]
-Requires=$(RTL) $(VCL) $(BOLDCORE) $(BOLDUML) $(VCLDESIGNIDE)
-Description=$(PRODUCT_BASE_NAME) $(PRODUCT_VERSION) (ModelMaker Link)
-SourceType=$(BUILD_TARGET)
-BPKTemplate=$(BUILD_TEMP)\BCBPackageTemplateBPK.exp
-CPPTemplate=$(BUILD_TEMP)\BCBPackageTemplateCPP.exp
-
-[Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)MMLink.Include]
-Dir=$(SRCDIR)\UMLModel\ModelLinks\ModelMaker
-
-[Package.$(BUILD_TARGET).Bold$(PRODUCT_VERSION_NUM)$(BUILD_TARGET)MMLink.Exclude]
-File=$(SRCDIR)\UMLModel\ModelLinks\ModelMaker\MMPlugin\BoldMMExpert.pas
-File=$(SRCDIR)\UMLModel\ModelLinks\ModelMaker\MMPlugin\BoldMMTVEditor.pas
-File=$(SRCDIR)\UMLModel\ModelLinks\ModelMaker\MMPlugin\BoldMMTVMemo.pas
-File=$(SRCDIR)\UMLModel\ModelLinks\ModelMaker\Support\BoldMMImporter.pas
 
 ;-----------------------
 ; Package BoldXX$(BUILD_TARGET) - OLLE
@@ -457,7 +436,6 @@ File=$(SRCDIR)\UMLModel\Core\BoldUMLModelDataModule.pas
 File=$(SRCDIR)\UMLModel\Core\BoldUMLModelUpdater.pas
 File=$(SRCDIR)\UMLModel\Core\BoldUMLModelValidator.pas
 File=$(SRCDIR)\UMLModel\ModelLinks\XMI\BoldUMLXMILinkReg.pas
-File=$(SRCDIR)\UMLModel\ModelLinks\XMI\BoldUMLMMLinkReg.pas
 File=$(SRCDIR)\UMLModel\Plugins\BoldCodePlugins.pas
 File=$(SRCDIR)\UMLModel\Plugins\BoldDBPlugins.pas
 File=$(SRCDIR)\Propagator\Common\BoldObjectMarshaler.pas
