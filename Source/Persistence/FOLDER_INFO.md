@@ -4,22 +4,19 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 14 subfolder(s), 0 file(s).
+**Contents:** 11 subfolder(s), 0 file(s).
 
 ## Subfolders
 
 - [ADO/](ADO/FOLDER_INFO.md)
-- [COM/](COM/FOLDER_INFO.md)
 - [Core/](Core/FOLDER_INFO.md)
 - [DB/](DB/FOLDER_INFO.md)
 - [ExternalPersistence/](ExternalPersistence/FOLDER_INFO.md)
 - [File/](File/FOLDER_INFO.md)
-- [HTTP/](HTTP/FOLDER_INFO.md)
 - [IDE/](IDE/FOLDER_INFO.md)
 - [IDEUDP/](IDEUDP/FOLDER_INFO.md)
 - [ObjectUpgrading/](ObjectUpgrading/FOLDER_INFO.md)
 - [Propagation/](Propagation/FOLDER_INFO.md)
-- [SOAP/](SOAP/FOLDER_INFO.md)
 - [System/](System/FOLDER_INFO.md)
 - [UDPPropagator/](UDPPropagator/FOLDER_INFO.md)
 

@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 0 subfolder(s), 128 file(s).
+**Contents:** 0 subfolder(s), 123 file(s).
 
 ## Files
 
@@ -56,8 +56,6 @@
 | `TBoldFilter.bmp` | bmp | Image asset. |
 | `TBoldFormSaver.bmp` | bmp | Image asset. |
 | `TBoldGrid.bmp` | bmp | Image asset. |
-| `TBoldHTTPClientPersistenceHandle.bmp` | bmp | Image asset. |
-| `TBoldHTTPServerPersistenceHandlePassthrough.bmp` | bmp | Image asset. |
 | `TBoldIBAliasCreator.bmp` | bmp | Image asset. |
 | `TBoldIDAdderHandle.bmp` | bmp | Image asset. |
 | `TBoldImage.bmp` | bmp | Image asset. |
@@ -106,8 +104,6 @@
 | `TBoldReferenceHandle.bmp` | bmp | Image asset. |
 | `TBoldRenderer.bmp` | bmp | Image asset. |
 | `TBoldRichEdit.bmp` | bmp | Image asset. |
-| `TBoldSOAPClientPersistenceHandle.bmp` | bmp | Image asset. |
-| `TBoldSOAPServerPersistenceHandle.bmp` | bmp | Image asset. |
 | `TBoldSQLHandle.bmp` | bmp | Image asset. |
 | `TBoldSaveToDatabaseButton.bmp` | bmp | Image asset. |
 | `TBoldSelectLink.bmp` | bmp | Image asset. |
@@ -130,7 +126,6 @@
 | `TBoldUnloaderHandle.bmp` | bmp | Image asset. |
 | `TBoldVariableDefinition.bmp` | bmp | Image asset. |
 | `TBoldVariableHandle.bmp` | bmp | Image asset. |
-| `TBoldWebConnection.bmp` | bmp | Image asset. |
 | `TBoldXCVTreeView.bmp` | bmp | Image asset. |
 | `TBoldXMLDispatcher.bmp` | bmp | Image asset. |
 | `TBoldXMLDispatcherVB.bmp` | bmp | Image asset. |

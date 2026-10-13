@@ -179,8 +179,6 @@
         <DCCReference Include="Source\Common\Environment\BoldEnvironmentIDE.pas"/>
         <DCCReference Include="Source\Common\Environment\BoldEnvironmentVCL.pas"/>
         <DCCReference Include="Source\Common\Handles\BoldHandle.pas"/>
-        <DCCReference Include="Source\Common\HTTP\BoldDataBlock.pas"/>
-        <DCCReference Include="Source\Common\HTTP\BoldWebConnection.pas"/>
         <DCCReference Include="Source\Common\IDE\BoldAbout.pas"/>
         <DCCReference Include="Source\Common\IDE\BoldAbstractPropertyEditors.pas"/>
         <DCCReference Include="Source\Common\IDE\BoldDefsDT.pas"/>
@@ -197,7 +195,6 @@
         <DCCReference Include="Source\Common\IDE\BoldPropertyEditors.pas"/>
         <DCCReference Include="Source\Common\IDE\BoldReg.pas"/>
         <DCCReference Include="Source\Common\IDE\BoldTextStream.pas"/>
-        <DCCReference Include="Source\Common\IDE\BoldWebConnectionReg.pas"/>
         <DCCReference Include="Source\Common\Logging\BoldLogForm.pas"/>
         <DCCReference Include="Source\Common\Logging\BoldLogHandler.pas"/>
         <DCCReference Include="Source\Common\Logging\BoldLogHandlerForm.pas"/>
@@ -209,9 +206,6 @@
         <DCCReference Include="Source\Common\Queue\BoldAbstractDequeuer.pas"/>
         <DCCReference Include="Source\Common\Queue\BoldEventQueue.pas"/>
         <DCCReference Include="Source\Common\Queue\BoldQueue.pas"/>
-        <DCCReference Include="Source\Common\SOAP\BoldSOAP_TLB.pas"/>
-        <DCCReference Include="Source\Common\SOAP\BoldSOAP2_TLB.pas"/>
-        <DCCReference Include="Source\Common\SOAP\BoldXMLRequests.pas"/>
         <DCCReference Include="Source\Common\Subscription\BoldDeriver.pas"/>
         <DCCReference Include="Source\Common\Subscription\BoldSubscribableCollection.pas"/>
         <DCCReference Include="Source\Common\Subscription\BoldSubscription.pas"/>

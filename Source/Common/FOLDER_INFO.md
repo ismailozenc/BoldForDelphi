@@ -4,7 +4,7 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 22 subfolder(s), 1 file(s).
+**Contents:** 20 subfolder(s), 1 file(s).
 
 ## Subfolders
 
@@ -15,7 +15,6 @@
 - [ConnectionHandlesCOM/](ConnectionHandlesCOM/FOLDER_INFO.md)
 - [Core/](Core/FOLDER_INFO.md)
 - [Environment/](Environment/FOLDER_INFO.md)
-- [HTTP/](HTTP/FOLDER_INFO.md)
 - [Handles/](Handles/FOLDER_INFO.md)
 - [IDE/](IDE/FOLDER_INFO.md)
 - [IDECOM/](IDECOM/FOLDER_INFO.md)
@@ -23,7 +22,6 @@
 - [Logging/](Logging/FOLDER_INFO.md)
 - [MsXml/](MsXml/FOLDER_INFO.md)
 - [Queue/](Queue/FOLDER_INFO.md)
-- [SOAP/](SOAP/FOLDER_INFO.md)
 - [Subscription/](Subscription/FOLDER_INFO.md)
 - [Support/](Support/FOLDER_INFO.md)
 - [SupportWin/](SupportWin/FOLDER_INFO.md)

@@ -134,8 +134,6 @@ type
     constructor Create(Registry: TBoldXMLStreamerRegistry);
     function GetRootNode(Document: TDomDocument; const Accessor: string): TBoldXMLNode;
     function NewRootNode(Document: TDomDocument; const Accessor: string): TBoldXMLNode;
-    function GetSOAP(Document: TDomDocument): TBoldXMLNode;
-    function NewSOAP(Document: TDomDocument): TBoldXMLNode;
     property Registry: TBoldXMLStreamerRegistry read fRegistry;
   end;
 
@@ -867,15 +865,6 @@ begin
   result := TBoldXMLNode.Create(self, Document.documentElement, nil);
 end;
 
-function TBoldXMLStreamManager.GetSOAP(Document: TDomDocument): TBoldXMLNode;
-var
-  aNode: TBoldXMLNode;
-begin
-  aNode := GetRootNode(Document, 'SOAP-ENV:Envelope'); // do not localize
-  result := aNode.GetSubNode('SOAP-ENV:Body'); // do not localize
-  aNode.Free;
-end;
-
 function TBoldXMLStreamManager.NewRootNode(Document: TDomDocument; const Accessor: string): TBoldXMLNode;
 begin
   if not assigned(Document) then
@@ -887,17 +876,6 @@ begin
   result := TBoldXMLNode.Create(self, Document.documentElement, nil);
   result.XMLDomElement.setAttribute('xmlns:xsi', 'http://www.w3.org/1999/XMLSchema-instance'); // do not localize
   result.XMLDomElement.setAttribute('xml:space', 'preserve'); // do not localize
-end;
-
-function TBoldXMLStreamManager.NewSOAP(Document: TDomDocument): TBoldXMLNode;
-var
-  aNode: TBoldXMLNode;
-begin
-  aNode := NewRootNode(Document, 'SOAP-ENV:Envelope'); // do not localize
-  aNode.XMLDomElement.setAttribute('xmlns:SOAP-ENV', 'http://schemas.xmlsoap.org/soap/envelope/'); // do not localize
-  aNode.XMLDomElement.setAttribute('SOAP-ENV:encodingStyle', 'http://schemas.xmlsoap.org/soap/encoding/'); // do not localize
-  result := aNode.NewSubNode('SOAP-ENV:Body'); // do not localize
-  aNode.Free;
 end;
 
 { TBoldXMLStreamStateManager }

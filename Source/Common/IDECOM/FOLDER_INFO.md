@@ -4,7 +4,7 @@
 
 **Drop list:** this folder (or items in it) is on the drop list: I-2. See DROP_LIST.md.
 
-**Contents:** 0 subfolder(s), 9 file(s).
+**Contents:** 0 subfolder(s), 6 file(s).
 
 ## Files
 
@@ -16,9 +16,6 @@
 | `BoldObjectNamePropertyEditor.ddp` | ddp | Form layout (design-time). *(drop list: I-2)* |
 | `BoldObjectNamePropertyEditor.dfm` | dfm | Form layout for ObjectNamePropEditFrm (TObjectNamePropEditFrm). *(drop list: I-2)* |
 | `BoldObjectNamePropertyEditor.pas` | Unit | Declares TObjectNamePropEditFrm, TBoldObjectNameProperty, TBoldProviderObjectInfo. *(drop list: I-2)* |
-| `BoldXMLDispatcherEditor.pas` | Unit | Declares TBoldXMLDispatcherEditor. *(drop list: I-2)* |
-| `BoldXMLDispatcherReg.pas` | Unit | No public classes; a unit of procedures and constants. Registers design-time components or editors (IDE only). *(drop list: I-2)* |
-| `BoldXMLDispatcherVBReg.pas` | Unit | No public classes; a unit of procedures and constants. Registers design-time components or editors (IDE only). *(drop list: I-2)* |
 
 ---
 

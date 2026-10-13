@@ -4,7 +4,7 @@
 
 **Drop list:** this folder (or items in it) is on the drop list: C-6. See DROP_LIST.md.
 
-**Contents:** 0 subfolder(s), 6 file(s), plus 4 .UnitDoc file(s) documenting units here.
+**Contents:** 0 subfolder(s), 2 file(s), plus 2 .UnitDoc file(s) documenting units here.
 
 ## Files
 
@@ -12,10 +12,6 @@
 |---|---|---|
 | `BoldComClientHandles.pas` | Unit | Declares TBoldComConnectionHandle, TBoldComImportHandle, TBoldComClientObjectHandle. *(drop list: C-6)* |
 | `BoldComServerHandles.pas` | Unit | Method Add: Adds a new object. Declares TBoldComClass, TBoldComClasses, TBoldComObjectProvider, TBoldComServerHandle and 2 more. *(drop list: C-6)* |
-| `BoldXMLDispatcher.pas` | Unit | Method DispatchAction: Dispatches an XML request to the TBoldXMLActionItem. Declares TBoldXMLDispatcher, TBoldXMLSOAPService, TBoldXMLActions, TBoldXMLActionItem. *(drop list: C-6)* |
-| `BoldXMLDispatcher.rc` | rc | Compiled or binary artifact (rc). *(drop list: C-6)* |
-| `BoldXMLDispatcherVB.pas` | Unit | Declares TBoldXMLSOAPService2, TBoldXMLDispatcherVB. *(drop list: C-6)* |
-| `BoldXMLDispatcherVB.rc` | rc | Compiled or binary artifact (rc). *(drop list: C-6)* |
 
 ---
 

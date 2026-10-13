@@ -128,7 +128,6 @@ type
 
   EBoldXMLLoadError = class(EBold);
   EBoldXMLIncorrectXPath = class(EBold);
-  EBoldInvalidSOAP = class(EBold);
 
   EBoldEnsureDatabaseLockError = class(EBold);
   EBoldLockManagerError = class(EBold);

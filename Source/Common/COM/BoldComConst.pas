@@ -4,8 +4,6 @@ interface
 
 resourcestring
   sCannotLoadLibrary = 'Unable to load type library (%s)';
-  sXMLRequestNotAssigned = '%s.Get: XMLRequest not assigned';
-  sUnableToLoadTypeLibBoldSoap = '%s.Create: Unable to load type library LIBID_BoldSOAP';
   sNoAdapterRegistered = 'No adapter registered for %s';
 
 // BoldApartmentThread
@@ -32,12 +30,6 @@ resourcestring
   sCannotChangePropertyAtRuntime = '%s: Cannot change %s at run-time';
   sInvalidCLSID = '%s: Invalid CLSID';
   sInvalidName = '%s: Invalid Name';
-
-// BoldXMLDispatcher
-  sXMLRequestIsNil = '%s.DispatchAction: request is nil';
-
-//BoldXMLDispatcherEditor
-  sEditActions = 'Edit actions...';
 
 //BoldCOMConnection
   sUnableToLoadTypeLib = 'Unable to load type library (BoldComConnection)';
@@ -66,25 +58,11 @@ resourcestring
   sQueryConnectToServer = 'Connect to server %s and retrieve exported objects?';
   sCannotFindConnectionHandle = 'Cannot find a ConnectionHandle.';  
 
-//BoldHTTPClientPersistenceHandle
+//Persistence handles
   sModelRequired = '%s.CreatePersistenceController: Can not get a PersistenceController without a Model';
 
-//BoldHTTPServerPersistenceHandlePassthrough
-  sPersistenceHandleNotAssigned = '%s.%s: PersistenceHandle not assigned';
-
-//BoldSOAPPersistenceControllerProxy
-  sFailedToConnect = 'Failed connecting to COM object ''%s''.';
-  sCOMObjectNotPController = 'COM object ''%s'' is not a persistence controller.';
-  sNotConnected = '%s.%s: Not connected.';
-
-//BoldPersistenceOperationXMLStreaming
-  sInvalidSOAPData = 'Invalid SOAP data : %s';
-  sEmptySOAPData = 'Empty SOAP data.';
+//Errors
   sError = 'Error: %s';
-  sErrorNoMessage = 'Error: empty error message';
-
-//BoldPersistenceControllerSOAPAdapterCore
-  sUnknownOperation = '%s.Get: Unrecognized operation %s';
 
 //BoldComObjectSpace
   sUnableToLoadComObjectSpace = 'Unable to load type library (BoldComObjectSpace)';

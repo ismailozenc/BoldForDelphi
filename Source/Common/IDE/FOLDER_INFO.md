@@ -4,7 +4,7 @@
 
 **Drop list:** this folder (or items in it) is on the drop list: I-1. See DROP_LIST.md.
 
-**Contents:** 0 subfolder(s), 29 file(s).
+**Contents:** 0 subfolder(s), 27 file(s).
 
 ## Files
 
@@ -37,8 +37,6 @@
 | `BoldReg.pas` | Unit | No public classes; a unit of procedures and constants. Registers design-time components or editors (IDE only). *(drop list: I-1)* |
 | `BoldReg.rc` | rc | Compiled or binary artifact (rc). *(drop list: I-1)* |
 | `BoldTextStream.pas` | Unit | Declares TBoldTextStream, TITextStream. *(drop list: I-1)* |
-| `BoldWebConnectionReg.pas` | Unit | No public classes; a unit of procedures and constants. Registers design-time components or editors (IDE only). *(drop list: I-1)* |
-| `BoldWebConnectionReg.rc` | rc | Compiled or binary artifact (rc). *(drop list: I-1)* |
 
 ---
 

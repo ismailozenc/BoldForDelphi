@@ -47,14 +47,6 @@ resourcestring
   sLogSmallWarnings = '%s  there were warnings, click the yellow icon for details...';
   sLogSmallErrors = '%s  there were errors, click the red icon for details...';
 
-//BoldXMLRequests
-  sSOAPActionNotSet = '%s.%s: Action not set';
-  sCannotSetPropertyWhenReadOnly = '%s.%s: cannot set BoldIds in ReadOnly mode';
-  sCannotPerformInReadOnlyMode = '%s.%s: cannot perform this operation in ReadOnly mode';
-  sSetActionInvalidArgs = '%s.SetAction: Invalid arguments "ActionPath" or "ActionName"';
-  sSOAPDOMDocumentMissing = '%s.EnsureRoot: The XMLRequest has no DomDocument.';
-  sSOAPBadConstructorToUse = '%s.Create: Use the constructors CreateFromXML or CreateInitialized';
-
 //BoldDeriver
   sCannotReverseDerive = '%s: can''t reverse derive';
   sUnknownMessageReceived = '%s.Receive: Unknown message received (%d)';

@@ -4,22 +4,15 @@
 
 **Drop list:** not on the drop list as a whole folder. Individual files may be; see the table.
 
-**Contents:** 13 subfolder(s), 0 file(s).
+**Contents:** 6 subfolder(s), 0 file(s).
 
 ## Subfolders
 
-- [ASP/](ASP/FOLDER_INFO.md)
-- [Bios/](Bios/FOLDER_INFO.md)
-- [Building/](Building/FOLDER_INFO.md)
 - [Conway/](Conway/FOLDER_INFO.md)
 - [ExternalPersistence/](ExternalPersistence/FOLDER_INFO.md)
 - [ExternalPersistence2/](ExternalPersistence2/FOLDER_INFO.md)
-- [HTTPPMapper/](HTTPPMapper/FOLDER_INFO.md)
-- [Locking/](Locking/FOLDER_INFO.md)
 - [ModelEvolution/](ModelEvolution/FOLDER_INFO.md)
 - [ProdStruct/](ProdStruct/FOLDER_INFO.md)
-- [XML/](XML/FOLDER_INFO.md)
-- [XML2/](XML2/FOLDER_INFO.md)
 - [bios2/](bios2/FOLDER_INFO.md)
 
 ---
