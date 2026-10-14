@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldSharedStrings.pas`](../../../Source/Common/Support/BoldSharedStrings.pas) (209 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldSharedStrings.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldSharedStrings.cs`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs) |
 | Project | Bold.Core |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 24 symbols done, 0 verified |
+| Status | 🟡 partial: 17 of 24 symbols done, 9 verified |
 
-⚪ 24 not started
+✅ 9 verified · 🟢 7 ported · 🔵 1 replaced · 🟡 5 partial · ⚪ 2 not started
 
 ## Unit level
 
@@ -18,58 +18,65 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSharedStringHolder` | class | [10](../../../Source/Common/Support/BoldSharedStrings.pas#L10) |  | ⚪ not started |  |
-| `TBoldSharedStringCache` | class | [20](../../../Source/Common/Support/BoldSharedStrings.pas#L20) |  | ⚪ not started |  |
-| `TBoldSharedStringManager` | class | [28](../../../Source/Common/Support/BoldSharedStrings.pas#L28) |  | ⚪ not started |  |
-| `BoldSharedStringManager` | routine | [46](../../../Source/Common/Support/BoldSharedStrings.pas#L46) · [body 67](../../../Source/Common/Support/BoldSharedStrings.pas#L67) |  | ⚪ not started |  |
-| `StringRefCount` | routine | [48](../../../Source/Common/Support/BoldSharedStrings.pas#L48) · [body 74](../../../Source/Common/Support/BoldSharedStrings.pas#L74) |  | ⚪ not started |  |
-| `TBoldStringHolderValueIndex` | class, implementation | [62](../../../Source/Common/Support/BoldSharedStrings.pas#L62) |  | ⚪ not started |  |
+| `TBoldSharedStringHolder` | class | [10](../../../Source/Common/Support/BoldSharedStrings.pas#L10) | [`TBoldSharedStringHolder`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L13) | 🟢 ported |  |
+| `TBoldSharedStringCache` | class | [20](../../../Source/Common/Support/BoldSharedStrings.pas#L20) | [`TBoldSharedStringCache`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L36) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
+| `TBoldSharedStringManager` | class | [28](../../../Source/Common/Support/BoldSharedStrings.pas#L28) | [`TBoldSharedStringManager`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L63) | 🟢 ported |  |
+| `BoldSharedStringManager` | routine | [46](../../../Source/Common/Support/BoldSharedStrings.pas#L46) · [body 67](../../../Source/Common/Support/BoldSharedStrings.pas#L67) | [`BoldSharedStrings.BoldSharedStringManager`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L185) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
+| `StringRefCount` | routine | [48](../../../Source/Common/Support/BoldSharedStrings.pas#L48) · [body 74](../../../Source/Common/Support/BoldSharedStrings.pas#L74) | [`[assembly: Delphi] in BoldSharedStrings.cs`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L4) | 🔵 replaced: .NET strings have no reference count; holders count how often they were handed out instead. |  |
+| `TBoldStringHolderValueIndex` | class, implementation | [62](../../../Source/Common/Support/BoldSharedStrings.pas#L62) | [`TBoldSharedStringCache.TBoldStringHolderValueIndex`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L41) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
 | `initialization` | initialization, implementation | [206](../../../Source/Common/Support/BoldSharedStrings.pas#L206) |  | ⚪ not started |  |
 | `finalization` | finalization, implementation | [207](../../../Source/Common/Support/BoldSharedStrings.pas#L207) |  | ⚪ not started |  |
 
 ## TBoldSharedStringHolder
 
-class at [line 10](../../../Source/Common/Support/BoldSharedStrings.pas#L10); ⚪ not started.
+class at [line 10](../../../Source/Common/Support/BoldSharedStrings.pas#L10); 🟢 ported, C# [`TBoldSharedStringHolder`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetExternalRefCount` | method, private | [13](../../../Source/Common/Support/BoldSharedStrings.pas#L13) · [body 201](../../../Source/Common/Support/BoldSharedStrings.pas#L201) |  | ⚪ not started |  |
-| `Create` | constructor | [15](../../../Source/Common/Support/BoldSharedStrings.pas#L15) · [body 195](../../../Source/Common/Support/BoldSharedStrings.pas#L195) |  | ⚪ not started |  |
-| `ExternalRefCount` | property | [16](../../../Source/Common/Support/BoldSharedStrings.pas#L16) |  | ⚪ not started |  |
-| `Value` | property | [17](../../../Source/Common/Support/BoldSharedStrings.pas#L17) |  | ⚪ not started |  |
+| `GetExternalRefCount` | method, private | [13](../../../Source/Common/Support/BoldSharedStrings.pas#L13) · [body 201](../../../Source/Common/Support/BoldSharedStrings.pas#L201) | [`TBoldSharedStringHolder.GetExternalRefCount`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L25) | 🟡 partial: How many times the string was handed out, not how many references are alive. |  |
+| `Create` | constructor | [15](../../../Source/Common/Support/BoldSharedStrings.pas#L15) · [body 195](../../../Source/Common/Support/BoldSharedStrings.pas#L195) | [`TBoldSharedStringHolder.TBoldSharedStringHolder`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L19) | 🟢 ported |  |
+| `ExternalRefCount` | property | [16](../../../Source/Common/Support/BoldSharedStrings.pas#L16) | [`TBoldSharedStringHolder.ExternalRefCount`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L28) | 🟡 partial: How many times the string was handed out, not how many references are alive. |  |
+| `Value` | property | [17](../../../Source/Common/Support/BoldSharedStrings.pas#L17) | [`TBoldSharedStringHolder.Value`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L31) | 🟢 ported |  |
 
 ## TBoldSharedStringCache
 
-class at [line 20](../../../Source/Common/Support/BoldSharedStrings.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/Common/Support/BoldSharedStrings.pas#L20); ✅ verified, C# [`TBoldSharedStringCache`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L36).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetHolderByValue` | method, private | [22](../../../Source/Common/Support/BoldSharedStrings.pas#L22) · [body 179](../../../Source/Common/Support/BoldSharedStrings.pas#L179) |  | ⚪ not started |  |
-| `Create` | constructor | [24](../../../Source/Common/Support/BoldSharedStrings.pas#L24) · [body 173](../../../Source/Common/Support/BoldSharedStrings.pas#L173) |  | ⚪ not started |  |
-| `HolderByValue` | property | [25](../../../Source/Common/Support/BoldSharedStrings.pas#L25) |  | ⚪ not started |  |
+| `GetHolderByValue` | method, private | [22](../../../Source/Common/Support/BoldSharedStrings.pas#L22) · [body 179](../../../Source/Common/Support/BoldSharedStrings.pas#L179) | [`TBoldSharedStringCache.GetHolderByValue`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L54) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
+| `Create` | constructor | [24](../../../Source/Common/Support/BoldSharedStrings.pas#L24) · [body 173](../../../Source/Common/Support/BoldSharedStrings.pas#L173) | [`TBoldSharedStringCache.TBoldSharedStringCache`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L48) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
+| `HolderByValue` | property | [25](../../../Source/Common/Support/BoldSharedStrings.pas#L25) | [`TBoldSharedStringCache.HolderByValue`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L58) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
 
 ## TBoldSharedStringManager
 
-class at [line 28](../../../Source/Common/Support/BoldSharedStrings.pas#L28); ⚪ not started.
+class at [line 28](../../../Source/Common/Support/BoldSharedStrings.pas#L28); 🟢 ported, C# [`TBoldSharedStringManager`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L63).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSavedMemory` | method, private | [35](../../../Source/Common/Support/BoldSharedStrings.pas#L35) · [body 123](../../../Source/Common/Support/BoldSharedStrings.pas#L123) |  | ⚪ not started |  |
-| `GetInfoString` | method, private | [36](../../../Source/Common/Support/BoldSharedStrings.pas#L36) · [body 116](../../../Source/Common/Support/BoldSharedStrings.pas#L116) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/Common/Support/BoldSharedStrings.pas#L38) · [body 81](../../../Source/Common/Support/BoldSharedStrings.pas#L81) |  | ⚪ not started |  |
-| `Destroy` | destructor | [39](../../../Source/Common/Support/BoldSharedStrings.pas#L39) · [body 88](../../../Source/Common/Support/BoldSharedStrings.pas#L88) |  | ⚪ not started |  |
-| `GetSharedString` | method | [40](../../../Source/Common/Support/BoldSharedStrings.pas#L40) · [body 139](../../../Source/Common/Support/BoldSharedStrings.pas#L139) |  | ⚪ not started |  |
-| `GarbageCollect` | method | [41](../../../Source/Common/Support/BoldSharedStrings.pas#L41) · [body 94](../../../Source/Common/Support/BoldSharedStrings.pas#L94) |  | ⚪ not started |  |
-| `SavedMemory` | property | [42](../../../Source/Common/Support/BoldSharedStrings.pas#L42) |  | ⚪ not started |  |
-| `InfoString` | property | [43](../../../Source/Common/Support/BoldSharedStrings.pas#L43) |  | ⚪ not started |  |
+| `GetSavedMemory` | method, private | [35](../../../Source/Common/Support/BoldSharedStrings.pas#L35) · [body 123](../../../Source/Common/Support/BoldSharedStrings.pas#L123) | [`TBoldSharedStringManager.GetSavedMemory`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L149) | 🟡 partial: Estimated from hand-out counts. |  |
+| `GetInfoString` | method, private | [36](../../../Source/Common/Support/BoldSharedStrings.pas#L36) · [body 116](../../../Source/Common/Support/BoldSharedStrings.pas#L116) | [`TBoldSharedStringManager.GetInfoString`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L164) | 🟢 ported |  |
+| `Create` | constructor | [38](../../../Source/Common/Support/BoldSharedStrings.pas#L38) · [body 81](../../../Source/Common/Support/BoldSharedStrings.pas#L81) | [`TBoldSharedStringManager.TBoldSharedStringManager`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L70) | 🟢 ported |  |
+| `Destroy` | destructor | [39](../../../Source/Common/Support/BoldSharedStrings.pas#L39) · [body 88](../../../Source/Common/Support/BoldSharedStrings.pas#L88) | [`TBoldSharedStringManager.Dispose`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L77) | 🟢 ported |  |
+| `GetSharedString` | method | [40](../../../Source/Common/Support/BoldSharedStrings.pas#L40) · [body 139](../../../Source/Common/Support/BoldSharedStrings.pas#L139) | [`TBoldSharedStringManager.GetSharedString`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L86) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
+| `GarbageCollect` | method | [41](../../../Source/Common/Support/BoldSharedStrings.pas#L41) · [body 94](../../../Source/Common/Support/BoldSharedStrings.pas#L94) | [`TBoldSharedStringManager.GarbageCollect`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L122) | 🟡 partial: Decides by hand-out count, as reference counts are not available in .NET. | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
+| `SavedMemory` | property | [42](../../../Source/Common/Support/BoldSharedStrings.pas#L42) | [`TBoldSharedStringManager.SavedMemory`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L169) | 🟡 partial: Estimated from hand-out counts. |  |
+| `InfoString` | property | [43](../../../Source/Common/Support/BoldSharedStrings.pas#L43) | [`TBoldSharedStringManager.InfoString`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L172) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
 
 ## TBoldStringHolderValueIndex
 
-class at [line 62](../../../Source/Common/Support/BoldSharedStrings.pas#L62); ⚪ not started.
+class at [line 62](../../../Source/Common/Support/BoldSharedStrings.pas#L62); ✅ verified, C# [`TBoldSharedStringCache.TBoldStringHolderValueIndex`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L41).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [64](../../../Source/Common/Support/BoldSharedStrings.pas#L64) · [body 187](../../../Source/Common/Support/BoldSharedStrings.pas#L187) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [64](../../../Source/Common/Support/BoldSharedStrings.pas#L64) · [body 187](../../../Source/Common/Support/BoldSharedStrings.pas#L187) | [`TBoldSharedStringCache.TBoldStringHolderValueIndex.ItemAsKeyString`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L44) | ✅ verified | ✔ [`BoldIndexableListTests.Shared_strings_return_one_instance_per_value`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L125) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldSharedStringHolder.fHandedOut`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L16) (field)
+- [`TBoldSharedStringManager.CachedHits`](../../src/Bold.Core/Common/Support/BoldSharedStrings.cs#L175) (property)
 
 ## Dependencies
 

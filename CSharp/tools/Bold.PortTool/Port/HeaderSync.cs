@@ -27,6 +27,11 @@ public sealed partial class HeaderSync(PortAnalysis analysis)
             return $"{{ C# port: not in CSharp/port/port-map.json yet }}";
         }
 
+        if (map.IsReplaced && map.CSharpFile is null)
+        {
+            return $"{{ C# port: replaced by .NET ({Clean(map.Replace!)}); see {page} }}";
+        }
+
         if (map.IsDropped)
         {
             return $"{{ C# port: not ported ({Clean(map.Drop!)}); see {page} }}";
@@ -152,6 +157,10 @@ public sealed partial class HeaderSync(PortAnalysis analysis)
             if (unit.IsDropped)
             {
                 target = $"not ported: {Md.Escape(unit.Map!.Drop!)}";
+            }
+            else if (unit.Map?.IsReplaced == true && unit.Map.CSharpFile is null)
+            {
+                target = $"replaced by .NET: {Md.Escape(unit.Map.Replace!)}";
             }
             else if (unit.Map?.CSharpFile is { } file)
             {

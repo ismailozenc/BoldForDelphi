@@ -22,6 +22,8 @@ public static class Program
           inventory  Print what the Delphi parser found; --json <file> writes it all, --warnings lists parse warnings.
           fixtures   Copy the test models from a branch (default master) into CSharp/tests/Fixtures/Models.
           all        sync, then report.
+          scaffold-consts --unit <Name>
+                     Print C# declarations, with [Delphi] markers, for the unit's constants and resource strings.
 
         Options:
           --results <dir>  Test results to read: .trx files (dotnet test --logger trx) or NUnit .xml files.
@@ -67,6 +69,7 @@ public static class Program
             "inventory" => Inventory(layout, options),
             "fixtures" => Fixtures(layout, options.GetValueOrDefault("--ref") ?? "master"),
             "all" => Sync(layout, results) == 0 ? Report(layout, results) : 1,
+            "scaffold-consts" => ScaffoldConstants(layout, options.GetValueOrDefault("--unit")),
             _ => UnknownCommand(args[0]),
         };
     }
@@ -81,7 +84,7 @@ public static class Program
             {
                 options[name] = "true";
             }
-            else if (name is "--results" or "--ref" or "--root" or "--json" or "--out" && k + 1 < args.Length)
+            else if (name is "--results" or "--ref" or "--root" or "--json" or "--out" or "--unit" && k + 1 < args.Length)
             {
                 options[name] = args[++k];
             }
@@ -179,6 +182,55 @@ public static class Program
             string where = declaration is null ? "" : $"file={Escape(declaration.File, true)},line={declaration.Line},";
             Console.WriteLine($"::error {where}title={Escape("Test failed: " + test, true)}::{Escape(message, false)}");
         }
+    }
+
+    /// <summary>Writes C# constants for a unit's constants and resource strings, a starting point for porting them.</summary>
+    private static int ScaffoldConstants(RepoLayout layout, string? unitName)
+    {
+        var unit = DelphiInventory.Load(layout).Find(unitName ?? "");
+        if (unit is null)
+        {
+            Console.Error.WriteLine($"No unit {unitName}");
+            return 2;
+        }
+
+        var values = Bold.PortTool.Delphi.DelphiConstants.Evaluate(unit);
+        foreach (var symbol in unit.Symbols.Where(s => s.Kind is Bold.PortTool.Delphi.SymbolKind.Const or Bold.PortTool.Delphi.SymbolKind.ResourceString))
+        {
+            object? value = values.GetValueOrDefault(symbol.Name);
+            string declaration = value switch
+            {
+                string text => $"public const string {symbol.Name} = {Literal(text)};",
+                long number when number is >= int.MinValue and <= int.MaxValue => $"public const int {symbol.Name} = {number};",
+                long number => $"public const long {symbol.Name} = {number}L;",
+                double number => $"public const double {symbol.Name} = {number.ToString(System.Globalization.CultureInfo.InvariantCulture)};",
+                bool flag => $"public const bool {symbol.Name} = {(flag ? "true" : "false")};",
+                _ => $"// TODO {symbol.Name} = {string.Join(" ", symbol.ValueTokens?.Select(t => t.Text) ?? [])}",
+            };
+            Console.WriteLine($"    [Delphi(PortStatus.Ported)] {declaration}");
+        }
+
+        return 0;
+    }
+
+    private static string Literal(string text)
+    {
+        var sb = new StringBuilder("\"");
+        foreach (char c in text)
+        {
+            sb.Append(c switch
+            {
+                '"' => "\\\"",
+                '\\' => "\\\\",
+                '\r' => "\\r",
+                '\n' => "\\n",
+                '\t' => "\\t",
+                < ' ' or > '~' => $"\\u{(int)c:X4}",
+                _ => c.ToString(),
+            });
+        }
+
+        return sb.Append('"').ToString();
     }
 
     private static int Summary(RepoLayout layout, string? results, string? output)

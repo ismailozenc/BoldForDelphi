@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldGuard.pas`](../../../Source/Common/Support/BoldGuard.pas) (219 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldGuard.cs` |
-| Project | Bold.Core |
+| C# | replaced by .NET: C# using statements and the garbage collector free objects |
+| Project | not decided |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | 🔵 replaced: 15 of 15 symbols done, 0 verified |
 
-⚪ 15 not started
+🔵 15 replaced
 
 ## Unit level
 
@@ -18,28 +18,28 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `MAXARRAY` | const | [9](../../../Source/Common/Support/BoldGuard.pas#L9) |  | ⚪ not started |  |
-| `TBoldObjectVariableReference` | pointer | [15](../../../Source/Common/Support/BoldGuard.pas#L15) |  | ⚪ not started |  |
-| `IBoldGuard` | interface | [18](../../../Source/Common/Support/BoldGuard.pas#L18) |  | ⚪ not started |  |
-| `TBoldGuard` | class | [22](../../../Source/Common/Support/BoldGuard.pas#L22) |  | ⚪ not started |  |
+| `MAXARRAY` | const | [9](../../../Source/Common/Support/BoldGuard.pas#L9) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `TBoldObjectVariableReference` | pointer | [15](../../../Source/Common/Support/BoldGuard.pas#L15) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `IBoldGuard` | interface | [18](../../../Source/Common/Support/BoldGuard.pas#L18) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `TBoldGuard` | class | [22](../../../Source/Common/Support/BoldGuard.pas#L22) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
 
 ## TBoldGuard
 
-class at [line 22](../../../Source/Common/Support/BoldGuard.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/Common/Support/BoldGuard.pas#L22); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create()` | constructor | [27](../../../Source/Common/Support/BoldGuard.pas#L27) · [body 46](../../../Source/Common/Support/BoldGuard.pas#L46) |  | ⚪ not started |  |
-| `Create(,)` | constructor | [28](../../../Source/Common/Support/BoldGuard.pas#L28) · [body 53](../../../Source/Common/Support/BoldGuard.pas#L53) |  | ⚪ not started |  |
-| `Create(,,)` | constructor | [29](../../../Source/Common/Support/BoldGuard.pas#L29) · [body 62](../../../Source/Common/Support/BoldGuard.pas#L62) |  | ⚪ not started |  |
-| `Create(,,,)` | constructor | [30](../../../Source/Common/Support/BoldGuard.pas#L30) · [body 73](../../../Source/Common/Support/BoldGuard.pas#L73) |  | ⚪ not started |  |
-| `Create(,,,,)` | constructor | [31](../../../Source/Common/Support/BoldGuard.pas#L31) · [body 86](../../../Source/Common/Support/BoldGuard.pas#L86) |  | ⚪ not started |  |
-| `Create(,,,,,)` | constructor | [32](../../../Source/Common/Support/BoldGuard.pas#L32) · [body 101](../../../Source/Common/Support/BoldGuard.pas#L101) |  | ⚪ not started |  |
-| `Create(,,,,,,)` | constructor | [33](../../../Source/Common/Support/BoldGuard.pas#L33) · [body 118](../../../Source/Common/Support/BoldGuard.pas#L118) |  | ⚪ not started |  |
-| `Create(,,,,,,,)` | constructor | [34](../../../Source/Common/Support/BoldGuard.pas#L34) · [body 137](../../../Source/Common/Support/BoldGuard.pas#L137) |  | ⚪ not started |  |
-| `Create(,,,,,,,,)` | constructor | [35](../../../Source/Common/Support/BoldGuard.pas#L35) · [body 158](../../../Source/Common/Support/BoldGuard.pas#L158) |  | ⚪ not started |  |
-| `Create(,,,,,,,,,)` | constructor | [36](../../../Source/Common/Support/BoldGuard.pas#L36) · [body 181](../../../Source/Common/Support/BoldGuard.pas#L181) |  | ⚪ not started |  |
-| `Destroy` | destructor | [37](../../../Source/Common/Support/BoldGuard.pas#L37) · [body 206](../../../Source/Common/Support/BoldGuard.pas#L206) |  | ⚪ not started |  |
+| `Create()` | constructor | [27](../../../Source/Common/Support/BoldGuard.pas#L27) · [body 46](../../../Source/Common/Support/BoldGuard.pas#L46) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,)` | constructor | [28](../../../Source/Common/Support/BoldGuard.pas#L28) · [body 53](../../../Source/Common/Support/BoldGuard.pas#L53) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,)` | constructor | [29](../../../Source/Common/Support/BoldGuard.pas#L29) · [body 62](../../../Source/Common/Support/BoldGuard.pas#L62) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,,)` | constructor | [30](../../../Source/Common/Support/BoldGuard.pas#L30) · [body 73](../../../Source/Common/Support/BoldGuard.pas#L73) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,,,)` | constructor | [31](../../../Source/Common/Support/BoldGuard.pas#L31) · [body 86](../../../Source/Common/Support/BoldGuard.pas#L86) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,,,,)` | constructor | [32](../../../Source/Common/Support/BoldGuard.pas#L32) · [body 101](../../../Source/Common/Support/BoldGuard.pas#L101) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,,,,,)` | constructor | [33](../../../Source/Common/Support/BoldGuard.pas#L33) · [body 118](../../../Source/Common/Support/BoldGuard.pas#L118) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,,,,,,)` | constructor | [34](../../../Source/Common/Support/BoldGuard.pas#L34) · [body 137](../../../Source/Common/Support/BoldGuard.pas#L137) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,,,,,,,)` | constructor | [35](../../../Source/Common/Support/BoldGuard.pas#L35) · [body 158](../../../Source/Common/Support/BoldGuard.pas#L158) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Create(,,,,,,,,,)` | constructor | [36](../../../Source/Common/Support/BoldGuard.pas#L36) · [body 181](../../../Source/Common/Support/BoldGuard.pas#L181) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
+| `Destroy` | destructor | [37](../../../Source/Common/Support/BoldGuard.pas#L37) · [body 206](../../../Source/Common/Support/BoldGuard.pas#L206) |  | 🔵 replaced (via unit replaced): C# using statements and the garbage collector free objects |  |
 
 ## Dependencies
 

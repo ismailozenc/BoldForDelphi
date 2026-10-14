@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldNamedValueList.pas`](../../../Source/Common/Support/BoldNamedValueList.pas) (208 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldNamedValueList.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldNamedValueList.cs`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs) |
 | Project | Bold.Core |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 26 symbols done, 0 verified |
+| Status | ✅ verified: 26 of 26 symbols done, 26 verified |
 
-⚪ 26 not started
+✅ 26 verified
 
 ## Unit level
 
@@ -18,53 +18,53 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldNamedValueListEntry` | class | [12](../../../Source/Common/Support/BoldNamedValueList.pas#L12) |  | ⚪ not started |  |
-| `TBoldNamedValueList` | class | [24](../../../Source/Common/Support/BoldNamedValueList.pas#L24) |  | ⚪ not started |  |
-| `TNameIndex` | class, implementation | [61](../../../Source/Common/Support/BoldNamedValueList.pas#L61) |  | ⚪ not started |  |
+| `TBoldNamedValueListEntry` | class | [12](../../../Source/Common/Support/BoldNamedValueList.pas#L12) | [`TBoldNamedValueListEntry`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L8) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `TBoldNamedValueList` | class | [24](../../../Source/Common/Support/BoldNamedValueList.pas#L24) | [`TBoldNamedValueList`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L42) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `TNameIndex` | class, implementation | [61](../../../Source/Common/Support/BoldNamedValueList.pas#L61) | [`TBoldNamedValueList.TNameIndex`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L48) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
 
 ## TBoldNamedValueListEntry
 
-class at [line 12](../../../Source/Common/Support/BoldNamedValueList.pas#L12); ⚪ not started.
+class at [line 12](../../../Source/Common/Support/BoldNamedValueList.pas#L12); ✅ verified, C# [`TBoldNamedValueListEntry`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [18](../../../Source/Common/Support/BoldNamedValueList.pas#L18) · [body 177](../../../Source/Common/Support/BoldNamedValueList.pas#L177) |  | ⚪ not started |  |
-| `Name` | property | [19](../../../Source/Common/Support/BoldNamedValueList.pas#L19) |  | ⚪ not started |  |
-| `Value` | property | [20](../../../Source/Common/Support/BoldNamedValueList.pas#L20) |  | ⚪ not started |  |
-| `aObject` | property | [21](../../../Source/Common/Support/BoldNamedValueList.pas#L21) |  | ⚪ not started |  |
+| `Create` | constructor | [18](../../../Source/Common/Support/BoldNamedValueList.pas#L18) · [body 177](../../../Source/Common/Support/BoldNamedValueList.pas#L177) | [`TBoldNamedValueListEntry.TBoldNamedValueListEntry`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L15) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `Name` | property | [19](../../../Source/Common/Support/BoldNamedValueList.pas#L19) | [`TBoldNamedValueListEntry.Name`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L23) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `Value` | property | [20](../../../Source/Common/Support/BoldNamedValueList.pas#L20) | [`TBoldNamedValueListEntry.Value`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L26) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `aObject` | property | [21](../../../Source/Common/Support/BoldNamedValueList.pas#L21) | [`TBoldNamedValueListEntry.aObject`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L33) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
 
 ## TBoldNamedValueList
 
-class at [line 24](../../../Source/Common/Support/BoldNamedValueList.pas#L24); ⚪ not started.
+class at [line 24](../../../Source/Common/Support/BoldNamedValueList.pas#L24); ✅ verified, C# [`TBoldNamedValueList`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L42).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [26](../../../Source/Common/Support/BoldNamedValueList.pas#L26) · [body 117](../../../Source/Common/Support/BoldNamedValueList.pas#L117) |  | ⚪ not started |  |
-| `GetItemByName` | method, private | [27](../../../Source/Common/Support/BoldNamedValueList.pas#L27) · [body 123](../../../Source/Common/Support/BoldNamedValueList.pas#L123) |  | ⚪ not started |  |
-| `SetCommaText` | method, private | [28](../../../Source/Common/Support/BoldNamedValueList.pas#L28) · [body 162](../../../Source/Common/Support/BoldNamedValueList.pas#L162) |  | ⚪ not started |  |
-| `GetCommaText` | method, private | [29](../../../Source/Common/Support/BoldNamedValueList.pas#L29) · [body 104](../../../Source/Common/Support/BoldNamedValueList.pas#L104) |  | ⚪ not started |  |
-| `GetValueByname` | method, private | [30](../../../Source/Common/Support/BoldNamedValueList.pas#L30) · [body 142](../../../Source/Common/Support/BoldNamedValueList.pas#L142) |  | ⚪ not started |  |
-| `SetValueByname` | method, private | [31](../../../Source/Common/Support/BoldNamedValueList.pas#L31) · [body 197](../../../Source/Common/Support/BoldNamedValueList.pas#L197) |  | ⚪ not started |  |
-| `GetObjectByName` | method, private | [32](../../../Source/Common/Support/BoldNamedValueList.pas#L32) · [body 130](../../../Source/Common/Support/BoldNamedValueList.pas#L130) |  | ⚪ not started |  |
-| `SetObjectByName` | method, private | [33](../../../Source/Common/Support/BoldNamedValueList.pas#L33) · [body 185](../../../Source/Common/Support/BoldNamedValueList.pas#L185) |  | ⚪ not started |  |
-| `Create` | constructor | [35](../../../Source/Common/Support/BoldNamedValueList.pas#L35) · [body 96](../../../Source/Common/Support/BoldNamedValueList.pas#L96) |  | ⚪ not started |  |
-| `AddFromStrings` | method | [36](../../../Source/Common/Support/BoldNamedValueList.pas#L36) · [body 79](../../../Source/Common/Support/BoldNamedValueList.pas#L79) |  | ⚪ not started |  |
-| `AddToStrings` | method | [37](../../../Source/Common/Support/BoldNamedValueList.pas#L37) · [body 87](../../../Source/Common/Support/BoldNamedValueList.pas#L87) |  | ⚪ not started |  |
-| `AddEntry` | method | [38](../../../Source/Common/Support/BoldNamedValueList.pas#L38) · [body 73](../../../Source/Common/Support/BoldNamedValueList.pas#L73) |  | ⚪ not started |  |
-| `RemoveName` | method | [39](../../../Source/Common/Support/BoldNamedValueList.pas#L39) · [body 153](../../../Source/Common/Support/BoldNamedValueList.pas#L153) |  | ⚪ not started |  |
-| `Items` | property | [40](../../../Source/Common/Support/BoldNamedValueList.pas#L40) |  | ⚪ not started |  |
-| `ItemByName` | property | [41](../../../Source/Common/Support/BoldNamedValueList.pas#L41) |  | ⚪ not started |  |
-| `CommaText` | property | [42](../../../Source/Common/Support/BoldNamedValueList.pas#L42) |  | ⚪ not started |  |
-| `ValueByName` | property | [44](../../../Source/Common/Support/BoldNamedValueList.pas#L44) |  | ⚪ not started |  |
-| `ObjectByName` | property | [45](../../../Source/Common/Support/BoldNamedValueList.pas#L45) |  | ⚪ not started |  |
+| `GetItem` | method, private | [26](../../../Source/Common/Support/BoldNamedValueList.pas#L26) · [body 117](../../../Source/Common/Support/BoldNamedValueList.pas#L117) | [`TBoldNamedValueList.GetItem`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L63) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `GetItemByName` | method, private | [27](../../../Source/Common/Support/BoldNamedValueList.pas#L27) · [body 123](../../../Source/Common/Support/BoldNamedValueList.pas#L123) | [`TBoldNamedValueList.GetItemByName`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L66) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `SetCommaText` | method, private | [28](../../../Source/Common/Support/BoldNamedValueList.pas#L28) · [body 162](../../../Source/Common/Support/BoldNamedValueList.pas#L162) | [`TBoldNamedValueList.SetCommaText`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L70) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `GetCommaText` | method, private | [29](../../../Source/Common/Support/BoldNamedValueList.pas#L29) · [body 104](../../../Source/Common/Support/BoldNamedValueList.pas#L104) | [`TBoldNamedValueList.GetCommaText`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L77) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `GetValueByname` | method, private | [30](../../../Source/Common/Support/BoldNamedValueList.pas#L30) · [body 142](../../../Source/Common/Support/BoldNamedValueList.pas#L142) | [`TBoldNamedValueList.GetValueByname`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L85) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `SetValueByname` | method, private | [31](../../../Source/Common/Support/BoldNamedValueList.pas#L31) · [body 197](../../../Source/Common/Support/BoldNamedValueList.pas#L197) | [`TBoldNamedValueList.SetValueByname`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L89) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `GetObjectByName` | method, private | [32](../../../Source/Common/Support/BoldNamedValueList.pas#L32) · [body 130](../../../Source/Common/Support/BoldNamedValueList.pas#L130) | [`TBoldNamedValueList.GetObjectByName`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L103) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `SetObjectByName` | method, private | [33](../../../Source/Common/Support/BoldNamedValueList.pas#L33) · [body 185](../../../Source/Common/Support/BoldNamedValueList.pas#L185) | [`TBoldNamedValueList.SetObjectByName`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L107) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `Create` | constructor | [35](../../../Source/Common/Support/BoldNamedValueList.pas#L35) · [body 96](../../../Source/Common/Support/BoldNamedValueList.pas#L96) | [`TBoldNamedValueList.TBoldNamedValueList`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L55) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `AddFromStrings` | method | [36](../../../Source/Common/Support/BoldNamedValueList.pas#L36) · [body 79](../../../Source/Common/Support/BoldNamedValueList.pas#L79) | [`TBoldNamedValueList.AddFromStrings`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L122) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `AddToStrings` | method | [37](../../../Source/Common/Support/BoldNamedValueList.pas#L37) · [body 87](../../../Source/Common/Support/BoldNamedValueList.pas#L87) | [`TBoldNamedValueList.AddToStrings`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L133) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `AddEntry` | method | [38](../../../Source/Common/Support/BoldNamedValueList.pas#L38) · [body 73](../../../Source/Common/Support/BoldNamedValueList.pas#L73) | [`TBoldNamedValueList.AddEntry`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L143) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `RemoveName` | method | [39](../../../Source/Common/Support/BoldNamedValueList.pas#L39) · [body 153](../../../Source/Common/Support/BoldNamedValueList.pas#L153) | [`TBoldNamedValueList.RemoveName`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L147) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `Items` | property | [40](../../../Source/Common/Support/BoldNamedValueList.pas#L40) | [`TBoldNamedValueList.this`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L157) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `ItemByName` | property | [41](../../../Source/Common/Support/BoldNamedValueList.pas#L41) | [`TBoldNamedValueList.ItemByName`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L160) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `CommaText` | property | [42](../../../Source/Common/Support/BoldNamedValueList.pas#L42) | [`TBoldNamedValueList.CommaText`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L163) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `ValueByName` | property | [44](../../../Source/Common/Support/BoldNamedValueList.pas#L44) | [`TBoldNamedValueList.ValueByName`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L170) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
+| `ObjectByName` | property | [45](../../../Source/Common/Support/BoldNamedValueList.pas#L45) | [`TBoldNamedValueList.ObjectByName`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L173) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
 
 ## TNameIndex
 
-class at [line 61](../../../Source/Common/Support/BoldNamedValueList.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/Common/Support/BoldNamedValueList.pas#L61); ✅ verified, C# [`TBoldNamedValueList.TNameIndex`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L48).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [63](../../../Source/Common/Support/BoldNamedValueList.pas#L63) · [body 66](../../../Source/Common/Support/BoldNamedValueList.pas#L66) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [63](../../../Source/Common/Support/BoldNamedValueList.pas#L63) · [body 66](../../../Source/Common/Support/BoldNamedValueList.pas#L66) | [`TBoldNamedValueList.TNameIndex.ItemAsKeyString`](../../src/Bold.Core/Common/Support/BoldNamedValueList.cs#L51) | ✅ verified | ✔ [`BoldIndexableListTests.Named_value_list_reads_and_writes_comma_text`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexableListTests.cs#L101) |
 
 ## Dependencies
 

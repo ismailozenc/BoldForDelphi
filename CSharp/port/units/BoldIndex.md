@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldIndex.pas`](../../../Source/Common/Support/BoldIndex.pas) (751 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldIndex.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldIndex.cs`](../../src/Bold.Core/Common/Support/BoldIndex.cs) |
 | Project | Bold.Core |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 96 symbols done, 0 verified |
+| Status | 🟢 ported: 96 of 96 symbols done, 48 verified |
 
-⚪ 96 not started
+✅ 48 verified · 🟢 44 ported · 🔵 4 replaced
 
 ## Unit level
 
@@ -18,137 +18,153 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `PItemEntry` | pointer | [18](../../../Source/Common/Support/BoldIndex.pas#L18) |  | ⚪ not started |  |
-| `PPItemEntry` | pointer | [19](../../../Source/Common/Support/BoldIndex.pas#L19) |  | ⚪ not started |  |
-| `PPItemEntryList` | pointer | [21](../../../Source/Common/Support/BoldIndex.pas#L21) |  | ⚪ not started |  |
-| `TPItemEntryList` | array | [22](../../../Source/Common/Support/BoldIndex.pas#L22) |  | ⚪ not started |  |
-| `TBoldHashIndexItemEntryRec` | record | [25](../../../Source/Common/Support/BoldIndex.pas#L25) |  | ⚪ not started |  |
-| `TBoldHashIndexBucketEntry` | class | [32](../../../Source/Common/Support/BoldIndex.pas#L32) |  | ⚪ not started |  |
-| `TBoldIndexTraverser` | class | [37](../../../Source/Common/Support/BoldIndex.pas#L37) |  | ⚪ not started |  |
-| `TBoldIndex` | class | [48](../../../Source/Common/Support/BoldIndex.pas#L48) |  | ⚪ not started |  |
-| `TBoldIntegerIndex` | class | [73](../../../Source/Common/Support/BoldIndex.pas#L73) |  | ⚪ not started |  |
-| `TBoldHashIndexTraverser` | class | [105](../../../Source/Common/Support/BoldIndex.pas#L105) |  | ⚪ not started |  |
-| `TBoldHashIndexOptions` | record | [122](../../../Source/Common/Support/BoldIndex.pas#L122) |  | ⚪ not started |  |
-| `TBoldHashIndex` | class | [130](../../../Source/Common/Support/BoldIndex.pas#L130) |  | ⚪ not started |  |
-| `ReturnItemEntry` | routine | [170](../../../Source/Common/Support/BoldIndex.pas#L170) · [body 184](../../../Source/Common/Support/BoldIndex.pas#L184) |  | ⚪ not started |  |
+| `PItemEntry` | pointer | [18](../../../Source/Common/Support/BoldIndex.pas#L18) | [`[assembly: Delphi] in BoldIndex.cs`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L3) | 🔵 replaced: A reference to TBoldHashIndexItemEntryRec, which is a class here. |  |
+| `PPItemEntry` | pointer | [19](../../../Source/Common/Support/BoldIndex.pas#L19) | [`[assembly: Delphi] in BoldIndex.cs`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L4) | 🔵 replaced: Bucket heads are array slots; no pointer to pointer is needed. |  |
+| `PPItemEntryList` | pointer | [21](../../../Source/Common/Support/BoldIndex.pas#L21) | [`[assembly: Delphi] in BoldIndex.cs`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L5) | 🔵 replaced: The bucket array is a .NET array. |  |
+| `TPItemEntryList` | array | [22](../../../Source/Common/Support/BoldIndex.pas#L22) | [`[assembly: Delphi] in BoldIndex.cs`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L6) | 🔵 replaced: The bucket array is a .NET array. |  |
+| `TBoldHashIndexItemEntryRec` | record | [25](../../../Source/Common/Support/BoldIndex.pas#L25) | [`TBoldHashIndexItemEntryRec`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L12) | 🟢 ported: A class instead of a record reached through pointers. |  |
+| `TBoldHashIndexBucketEntry` | class | [32](../../../Source/Common/Support/BoldIndex.pas#L32) | [`TBoldHashIndexBucketEntry`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L19) | 🟢 ported: Unused in Bold; kept for the name. |  |
+| `TBoldIndexTraverser` | class | [37](../../../Source/Common/Support/BoldIndex.pas#L37) | [`TBoldIndexTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L26) | 🟢 ported |  |
+| `TBoldIndex` | class | [48](../../../Source/Common/Support/BoldIndex.pas#L48) | [`TBoldIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L51) | 🟢 ported |  |
+| `TBoldIntegerIndex` | class | [73](../../../Source/Common/Support/BoldIndex.pas#L73) | [`TBoldIntegerIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L125) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `TBoldHashIndexTraverser` | class | [105](../../../Source/Common/Support/BoldIndex.pas#L105) | [`TBoldHashIndexTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L248) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `TBoldHashIndexOptions` | record | [122](../../../Source/Common/Support/BoldIndex.pas#L122) | [`TBoldHashIndexOptions`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L306) | 🟢 ported |  |
+| `TBoldHashIndex` | class | [130](../../../Source/Common/Support/BoldIndex.pas#L130) | [`TBoldHashIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L319) | 🟢 ported |  |
+| `ReturnItemEntry` | routine | [170](../../../Source/Common/Support/BoldIndex.pas#L170) · [body 184](../../../Source/Common/Support/BoldIndex.pas#L184) | [`BoldIndex.ReturnItemEntry`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L654) | 🟢 ported |  |
 
 ## TBoldIndexTraverser
 
-class at [line 37](../../../Source/Common/Support/BoldIndex.pas#L37); ⚪ not started.
+class at [line 37](../../../Source/Common/Support/BoldIndex.pas#L37); 🟢 ported, C# [`TBoldIndexTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L26).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, protected | [39](../../../Source/Common/Support/BoldIndex.pas#L39) |  | ⚪ not started |  |
-| `GetEol` | method, protected | [40](../../../Source/Common/Support/BoldIndex.pas#L40) |  | ⚪ not started |  |
-| `Next` | method | [42](../../../Source/Common/Support/BoldIndex.pas#L42) |  | ⚪ not started |  |
-| `Item` | property | [43](../../../Source/Common/Support/BoldIndex.pas#L43) |  | ⚪ not started |  |
-| `EndOfList` | property | [44](../../../Source/Common/Support/BoldIndex.pas#L44) |  | ⚪ not started |  |
+| `GetItem` | method, protected | [39](../../../Source/Common/Support/BoldIndex.pas#L39) | [`TBoldIndexTraverser.GetItem`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L29) | 🟢 ported |  |
+| `GetEol` | method, protected | [40](../../../Source/Common/Support/BoldIndex.pas#L40) | [`TBoldIndexTraverser.GetEol`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L32) | 🟢 ported |  |
+| `Next` | method | [42](../../../Source/Common/Support/BoldIndex.pas#L42) | [`TBoldIndexTraverser.Next`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L35) | 🟢 ported |  |
+| `Item` | property | [43](../../../Source/Common/Support/BoldIndex.pas#L43) | [`TBoldIndexTraverser.Item`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L38) | 🟢 ported |  |
+| `EndOfList` | property | [44](../../../Source/Common/Support/BoldIndex.pas#L44) | [`TBoldIndexTraverser.EndOfList`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L41) | 🟢 ported |  |
 
 ## TBoldIndex
 
-class at [line 48](../../../Source/Common/Support/BoldIndex.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/Common/Support/BoldIndex.pas#L48); 🟢 ported, C# [`TBoldIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L51).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAny` | method, protected | [50](../../../Source/Common/Support/BoldIndex.pas#L50) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [51](../../../Source/Common/Support/BoldIndex.pas#L51) |  | ⚪ not started |  |
-| `Match` | method, protected | [52](../../../Source/Common/Support/BoldIndex.pas#L52) |  | ⚪ not started |  |
-| `GetSupportsTraverser` | method, protected | [53](../../../Source/Common/Support/BoldIndex.pas#L53) · [body 207](../../../Source/Common/Support/BoldIndex.pas#L207) |  | ⚪ not started |  |
-| `GetSupportsNilItems` | method, protected | [54](../../../Source/Common/Support/BoldIndex.pas#L54) · [body 202](../../../Source/Common/Support/BoldIndex.pas#L202) |  | ⚪ not started |  |
-| `FillEmptyIndex` | method | [56](../../../Source/Common/Support/BoldIndex.pas#L56) |  | ⚪ not started |  |
-| `Add` | method | [57](../../../Source/Common/Support/BoldIndex.pas#L57) |  | ⚪ not started |  |
-| `Clear` | method | [58](../../../Source/Common/Support/BoldIndex.pas#L58) |  | ⚪ not started |  |
-| `Find` | method | [59](../../../Source/Common/Support/BoldIndex.pas#L59) |  | ⚪ not started |  |
-| `FindAll` | method | [60](../../../Source/Common/Support/BoldIndex.pas#L60) |  | ⚪ not started |  |
-| `IsCorrectlyIndexed` | method | [61](../../../Source/Common/Support/BoldIndex.pas#L61) |  | ⚪ not started |  |
-| `ItemChanged` | method | [62](../../../Source/Common/Support/BoldIndex.pas#L62) · [body 212](../../../Source/Common/Support/BoldIndex.pas#L212) |  | ⚪ not started |  |
-| `Remove` | method | [63](../../../Source/Common/Support/BoldIndex.pas#L63) |  | ⚪ not started |  |
-| `RemoveChanged` | method | [64](../../../Source/Common/Support/BoldIndex.pas#L64) |  | ⚪ not started |  |
-| `CreateTraverser` | method | [65](../../../Source/Common/Support/BoldIndex.pas#L65) · [body 197](../../../Source/Common/Support/BoldIndex.pas#L197) |  | ⚪ not started |  |
-| `Count` | property | [66](../../../Source/Common/Support/BoldIndex.pas#L66) |  | ⚪ not started |  |
-| `Any` | property | [67](../../../Source/Common/Support/BoldIndex.pas#L67) |  | ⚪ not started |  |
-| `SupportsTraverser` | property | [68](../../../Source/Common/Support/BoldIndex.pas#L68) |  | ⚪ not started |  |
-| `SupportsNilItems` | property | [69](../../../Source/Common/Support/BoldIndex.pas#L69) |  | ⚪ not started |  |
+| `GetAny` | method, protected | [50](../../../Source/Common/Support/BoldIndex.pas#L50) | [`TBoldIndex.GetAny`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L57) | 🟢 ported |  |
+| `GetCount` | method, protected | [51](../../../Source/Common/Support/BoldIndex.pas#L51) | [`TBoldIndex.GetCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L60) | 🟢 ported |  |
+| `Match` | method, protected | [52](../../../Source/Common/Support/BoldIndex.pas#L52) | [`TBoldIndex.Match`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L63) | 🟢 ported |  |
+| `GetSupportsTraverser` | method, protected | [53](../../../Source/Common/Support/BoldIndex.pas#L53) · [body 207](../../../Source/Common/Support/BoldIndex.pas#L207) | [`TBoldIndex.GetSupportsTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L66) | 🟢 ported |  |
+| `GetSupportsNilItems` | method, protected | [54](../../../Source/Common/Support/BoldIndex.pas#L54) · [body 202](../../../Source/Common/Support/BoldIndex.pas#L202) | [`TBoldIndex.GetSupportsNilItems`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L69) | 🟢 ported |  |
+| `FillEmptyIndex` | method | [56](../../../Source/Common/Support/BoldIndex.pas#L56) | [`TBoldIndex.FillEmptyIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L72) | 🟢 ported |  |
+| `Add` | method | [57](../../../Source/Common/Support/BoldIndex.pas#L57) | [`TBoldIndex.Add`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L75) | 🟢 ported |  |
+| `Clear` | method | [58](../../../Source/Common/Support/BoldIndex.pas#L58) | [`TBoldIndex.Clear`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L78) | 🟢 ported |  |
+| `Find` | method | [59](../../../Source/Common/Support/BoldIndex.pas#L59) | [`TBoldIndex.Find`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L81) | 🟢 ported |  |
+| `FindAll` | method | [60](../../../Source/Common/Support/BoldIndex.pas#L60) | [`TBoldIndex.FindAll`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L84) | 🟢 ported |  |
+| `IsCorrectlyIndexed` | method | [61](../../../Source/Common/Support/BoldIndex.pas#L61) | [`TBoldIndex.IsCorrectlyIndexed`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L87) | 🟢 ported |  |
+| `ItemChanged` | method | [62](../../../Source/Common/Support/BoldIndex.pas#L62) · [body 212](../../../Source/Common/Support/BoldIndex.pas#L212) | [`TBoldIndex.ItemChanged`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L91) | ✅ verified | ✔ [`BoldIndexTests.Changed_items_are_reindexed`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L92) |
+| `Remove` | method | [63](../../../Source/Common/Support/BoldIndex.pas#L63) | [`TBoldIndex.Remove`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L101) | 🟢 ported |  |
+| `RemoveChanged` | method | [64](../../../Source/Common/Support/BoldIndex.pas#L64) | [`TBoldIndex.RemoveChanged`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L105) | 🟢 ported |  |
+| `CreateTraverser` | method | [65](../../../Source/Common/Support/BoldIndex.pas#L65) · [body 197](../../../Source/Common/Support/BoldIndex.pas#L197) | [`TBoldIndex.CreateTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L108) | 🟢 ported |  |
+| `Count` | property | [66](../../../Source/Common/Support/BoldIndex.pas#L66) | [`TBoldIndex.Count`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L111) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `Any` | property | [67](../../../Source/Common/Support/BoldIndex.pas#L67) | [`TBoldIndex.Any`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L114) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `SupportsTraverser` | property | [68](../../../Source/Common/Support/BoldIndex.pas#L68) | [`TBoldIndex.SupportsTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L117) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `SupportsNilItems` | property | [69](../../../Source/Common/Support/BoldIndex.pas#L69) | [`TBoldIndex.SupportsNilItems`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L120) | 🟢 ported |  |
 
 ## TBoldIntegerIndex
 
-class at [line 73](../../../Source/Common/Support/BoldIndex.pas#L73); ⚪ not started.
+class at [line 73](../../../Source/Common/Support/BoldIndex.pas#L73); ✅ verified, C# [`TBoldIntegerIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L125).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [76](../../../Source/Common/Support/BoldIndex.pas#L76) · [body 641](../../../Source/Common/Support/BoldIndex.pas#L641) |  | ⚪ not started |  |
-| `SetItems` | method, private | [77](../../../Source/Common/Support/BoldIndex.pas#L77) · [body 646](../../../Source/Common/Support/BoldIndex.pas#L646) |  | ⚪ not started |  |
-| `GetAny` | method, protected | [79](../../../Source/Common/Support/BoldIndex.pas#L79) · [body 609](../../../Source/Common/Support/BoldIndex.pas#L609) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [80](../../../Source/Common/Support/BoldIndex.pas#L80) · [body 604](../../../Source/Common/Support/BoldIndex.pas#L604) |  | ⚪ not started |  |
-| `Match` | method, protected | [81](../../../Source/Common/Support/BoldIndex.pas#L81) · [body 622](../../../Source/Common/Support/BoldIndex.pas#L622) |  | ⚪ not started |  |
-| `GetSupportsNilItems` | method, protected | [82](../../../Source/Common/Support/BoldIndex.pas#L82) · [body 700](../../../Source/Common/Support/BoldIndex.pas#L700) |  | ⚪ not started |  |
-| `Create` | constructor | [84](../../../Source/Common/Support/BoldIndex.pas#L84) · [body 581](../../../Source/Common/Support/BoldIndex.pas#L581) |  | ⚪ not started |  |
-| `Destroy` | destructor | [85](../../../Source/Common/Support/BoldIndex.pas#L85) · [body 694](../../../Source/Common/Support/BoldIndex.pas#L694) |  | ⚪ not started |  |
-| `FillEmptyIndex` | method | [86](../../../Source/Common/Support/BoldIndex.pas#L86) · [body 681](../../../Source/Common/Support/BoldIndex.pas#L681) |  | ⚪ not started |  |
-| `Add` | method | [87](../../../Source/Common/Support/BoldIndex.pas#L87) · [body 559](../../../Source/Common/Support/BoldIndex.pas#L559) |  | ⚪ not started |  |
-| `Clear` | method | [88](../../../Source/Common/Support/BoldIndex.pas#L88) · [body 564](../../../Source/Common/Support/BoldIndex.pas#L564) |  | ⚪ not started |  |
-| `ItemChanged` | method | [89](../../../Source/Common/Support/BoldIndex.pas#L89) · [body 689](../../../Source/Common/Support/BoldIndex.pas#L689) |  | ⚪ not started |  |
-| `Find` | method | [90](../../../Source/Common/Support/BoldIndex.pas#L90) · [body 586](../../../Source/Common/Support/BoldIndex.pas#L586) |  | ⚪ not started |  |
-| `FindAll` | method | [91](../../../Source/Common/Support/BoldIndex.pas#L91) · [body 595](../../../Source/Common/Support/BoldIndex.pas#L595) |  | ⚪ not started |  |
-| `IsCorrectlyIndexed` | method | [92](../../../Source/Common/Support/BoldIndex.pas#L92) · [body 617](../../../Source/Common/Support/BoldIndex.pas#L617) |  | ⚪ not started |  |
-| `Remove` | method | [93](../../../Source/Common/Support/BoldIndex.pas#L93) · [body 631](../../../Source/Common/Support/BoldIndex.pas#L631) |  | ⚪ not started |  |
-| `RemoveChanged` | method | [94](../../../Source/Common/Support/BoldIndex.pas#L94) · [body 636](../../../Source/Common/Support/BoldIndex.pas#L636) |  | ⚪ not started |  |
-| `Move` | method | [95](../../../Source/Common/Support/BoldIndex.pas#L95) · [body 661](../../../Source/Common/Support/BoldIndex.pas#L661) |  | ⚪ not started |  |
-| `Sort` | method | [96](../../../Source/Common/Support/BoldIndex.pas#L96) · [body 666](../../../Source/Common/Support/BoldIndex.pas#L666) |  | ⚪ not started |  |
-| `Insert` | method | [97](../../../Source/Common/Support/BoldIndex.pas#L97) · [body 671](../../../Source/Common/Support/BoldIndex.pas#L671) |  | ⚪ not started |  |
-| `Exchange` | method | [98](../../../Source/Common/Support/BoldIndex.pas#L98) · [body 651](../../../Source/Common/Support/BoldIndex.pas#L651) |  | ⚪ not started |  |
-| `RemoveByIndex` | method | [99](../../../Source/Common/Support/BoldIndex.pas#L99) · [body 676](../../../Source/Common/Support/BoldIndex.pas#L676) |  | ⚪ not started |  |
-| `IndexOf` | method | [100](../../../Source/Common/Support/BoldIndex.pas#L100) · [body 656](../../../Source/Common/Support/BoldIndex.pas#L656) |  | ⚪ not started |  |
-| `Items` | property | [101](../../../Source/Common/Support/BoldIndex.pas#L101) |  | ⚪ not started |  |
+| `GetItems` | method, private | [76](../../../Source/Common/Support/BoldIndex.pas#L76) · [body 641](../../../Source/Common/Support/BoldIndex.pas#L641) | [`TBoldIntegerIndex.this`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L239) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `SetItems` | method, private | [77](../../../Source/Common/Support/BoldIndex.pas#L77) · [body 646](../../../Source/Common/Support/BoldIndex.pas#L646) | [`TBoldIntegerIndex.SetItems`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L235) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `GetAny` | method, protected | [79](../../../Source/Common/Support/BoldIndex.pas#L79) · [body 609](../../../Source/Common/Support/BoldIndex.pas#L609) | [`TBoldIntegerIndex.GetAny`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L142) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `GetCount` | method, protected | [80](../../../Source/Common/Support/BoldIndex.pas#L80) · [body 604](../../../Source/Common/Support/BoldIndex.pas#L604) | [`TBoldIntegerIndex.GetCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L145) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Match` | method, protected | [81](../../../Source/Common/Support/BoldIndex.pas#L81) · [body 622](../../../Source/Common/Support/BoldIndex.pas#L622) | [`TBoldIntegerIndex.Match`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L148) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `GetSupportsNilItems` | method, protected | [82](../../../Source/Common/Support/BoldIndex.pas#L82) · [body 700](../../../Source/Common/Support/BoldIndex.pas#L700) | [`TBoldIntegerIndex.GetSupportsNilItems`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L155) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Create` | constructor | [84](../../../Source/Common/Support/BoldIndex.pas#L84) · [body 581](../../../Source/Common/Support/BoldIndex.pas#L581) | [`TBoldIntegerIndex.TBoldIntegerIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L130) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Destroy` | destructor | [85](../../../Source/Common/Support/BoldIndex.pas#L85) · [body 694](../../../Source/Common/Support/BoldIndex.pas#L694) | [`TBoldIntegerIndex.Dispose`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L135) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `FillEmptyIndex` | method | [86](../../../Source/Common/Support/BoldIndex.pas#L86) · [body 681](../../../Source/Common/Support/BoldIndex.pas#L681) | [`TBoldIntegerIndex.FillEmptyIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L158) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Add` | method | [87](../../../Source/Common/Support/BoldIndex.pas#L87) · [body 559](../../../Source/Common/Support/BoldIndex.pas#L559) | [`TBoldIntegerIndex.Add`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L167) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Clear` | method | [88](../../../Source/Common/Support/BoldIndex.pas#L88) · [body 564](../../../Source/Common/Support/BoldIndex.pas#L564) | [`TBoldIntegerIndex.Clear`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L170) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `ItemChanged` | method | [89](../../../Source/Common/Support/BoldIndex.pas#L89) · [body 689](../../../Source/Common/Support/BoldIndex.pas#L689) | [`TBoldIntegerIndex.ItemChanged`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L186) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Find` | method | [90](../../../Source/Common/Support/BoldIndex.pas#L90) · [body 586](../../../Source/Common/Support/BoldIndex.pas#L586) | [`TBoldIntegerIndex.Find`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L191) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `FindAll` | method | [91](../../../Source/Common/Support/BoldIndex.pas#L91) · [body 595](../../../Source/Common/Support/BoldIndex.pas#L595) | [`TBoldIntegerIndex.FindAll`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L198) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `IsCorrectlyIndexed` | method | [92](../../../Source/Common/Support/BoldIndex.pas#L92) · [body 617](../../../Source/Common/Support/BoldIndex.pas#L617) | [`TBoldIntegerIndex.IsCorrectlyIndexed`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L208) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Remove` | method | [93](../../../Source/Common/Support/BoldIndex.pas#L93) · [body 631](../../../Source/Common/Support/BoldIndex.pas#L631) | [`TBoldIntegerIndex.Remove`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L211) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `RemoveChanged` | method | [94](../../../Source/Common/Support/BoldIndex.pas#L94) · [body 636](../../../Source/Common/Support/BoldIndex.pas#L636) | [`TBoldIntegerIndex.RemoveChanged`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L214) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Move` | method | [95](../../../Source/Common/Support/BoldIndex.pas#L95) · [body 661](../../../Source/Common/Support/BoldIndex.pas#L661) | [`TBoldIntegerIndex.Move`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L217) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Sort` | method | [96](../../../Source/Common/Support/BoldIndex.pas#L96) · [body 666](../../../Source/Common/Support/BoldIndex.pas#L666) | [`TBoldIntegerIndex.Sort`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L220) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Insert` | method | [97](../../../Source/Common/Support/BoldIndex.pas#L97) · [body 671](../../../Source/Common/Support/BoldIndex.pas#L671) | [`TBoldIntegerIndex.Insert`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L223) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Exchange` | method | [98](../../../Source/Common/Support/BoldIndex.pas#L98) · [body 651](../../../Source/Common/Support/BoldIndex.pas#L651) | [`TBoldIntegerIndex.Exchange`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L226) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `RemoveByIndex` | method | [99](../../../Source/Common/Support/BoldIndex.pas#L99) · [body 676](../../../Source/Common/Support/BoldIndex.pas#L676) | [`TBoldIntegerIndex.RemoveByIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L229) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `IndexOf` | method | [100](../../../Source/Common/Support/BoldIndex.pas#L100) · [body 656](../../../Source/Common/Support/BoldIndex.pas#L656) | [`TBoldIntegerIndex.IndexOf`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L232) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
+| `Items` | property | [101](../../../Source/Common/Support/BoldIndex.pas#L101) | [`TBoldIntegerIndex.this`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L239) | ✅ verified | ✔ [`BoldIndexTests.Integer_index_keeps_order_and_nil`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L179) |
 
 ## TBoldHashIndexTraverser
 
-class at [line 105](../../../Source/Common/Support/BoldIndex.pas#L105); ⚪ not started.
+class at [line 105](../../../Source/Common/Support/BoldIndex.pas#L105); ✅ verified, C# [`TBoldHashIndexTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L248).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FirstItemOfNextBucket` | method, private | [111](../../../Source/Common/Support/BoldIndex.pas#L111) · [body 722](../../../Source/Common/Support/BoldIndex.pas#L722) |  | ⚪ not started |  |
-| `GetItem` | method, protected | [113](../../../Source/Common/Support/BoldIndex.pas#L113) · [body 737](../../../Source/Common/Support/BoldIndex.pas#L737) |  | ⚪ not started |  |
-| `GetEol` | method, protected | [114](../../../Source/Common/Support/BoldIndex.pas#L114) · [body 732](../../../Source/Common/Support/BoldIndex.pas#L732) |  | ⚪ not started |  |
-| `Create` | constructor | [116](../../../Source/Common/Support/BoldIndex.pas#L116) · [body 707](../../../Source/Common/Support/BoldIndex.pas#L707) |  | ⚪ not started |  |
-| `Destroy` | destructor | [117](../../../Source/Common/Support/BoldIndex.pas#L117) · [body 716](../../../Source/Common/Support/BoldIndex.pas#L716) |  | ⚪ not started |  |
-| `Next` | method | [118](../../../Source/Common/Support/BoldIndex.pas#L118) · [body 742](../../../Source/Common/Support/BoldIndex.pas#L742) |  | ⚪ not started |  |
+| `FirstItemOfNextBucket` | method, private | [111](../../../Source/Common/Support/BoldIndex.pas#L111) · [body 722](../../../Source/Common/Support/BoldIndex.pas#L722) | [`TBoldHashIndexTraverser.FirstItemOfNextBucket`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L278) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `GetItem` | method, protected | [113](../../../Source/Common/Support/BoldIndex.pas#L113) · [body 737](../../../Source/Common/Support/BoldIndex.pas#L737) | [`TBoldHashIndexTraverser.GetItem`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L294) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `GetEol` | method, protected | [114](../../../Source/Common/Support/BoldIndex.pas#L114) · [body 732](../../../Source/Common/Support/BoldIndex.pas#L732) | [`TBoldHashIndexTraverser.GetEol`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L291) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `Create` | constructor | [116](../../../Source/Common/Support/BoldIndex.pas#L116) · [body 707](../../../Source/Common/Support/BoldIndex.pas#L707) | [`TBoldHashIndexTraverser.TBoldHashIndexTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L257) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `Destroy` | destructor | [117](../../../Source/Common/Support/BoldIndex.pas#L117) · [body 716](../../../Source/Common/Support/BoldIndex.pas#L716) | [`TBoldHashIndexTraverser.Dispose`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L266) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `Next` | method | [118](../../../Source/Common/Support/BoldIndex.pas#L118) · [body 742](../../../Source/Common/Support/BoldIndex.pas#L742) | [`TBoldHashIndexTraverser.Next`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L297) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
 
 ## TBoldHashIndex
 
-class at [line 130](../../../Source/Common/Support/BoldIndex.pas#L130); ⚪ not started.
+class at [line 130](../../../Source/Common/Support/BoldIndex.pas#L130); 🟢 ported, C# [`TBoldHashIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L319).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBucketArray` | method, private | [137](../../../Source/Common/Support/BoldIndex.pas#L137) · [body 427](../../../Source/Common/Support/BoldIndex.pas#L427) |  | ⚪ not started |  |
-| `InsertEntry` | method, private | [138](../../../Source/Common/Support/BoldIndex.pas#L138) · [body 325](../../../Source/Common/Support/BoldIndex.pas#L325) |  | ⚪ not started |  |
-| `MinimumBucketCount` | method, private | [139](../../../Source/Common/Support/BoldIndex.pas#L139) · [body 422](../../../Source/Common/Support/BoldIndex.pas#L422) |  | ⚪ not started |  |
-| `MaximumBucketCount` | method, private | [140](../../../Source/Common/Support/BoldIndex.pas#L140) · [body 506](../../../Source/Common/Support/BoldIndex.pas#L506) |  | ⚪ not started |  |
-| `PrefferedBucketCount` | method, private | [141](../../../Source/Common/Support/BoldIndex.pas#L141) · [body 417](../../../Source/Common/Support/BoldIndex.pas#L417) |  | ⚪ not started |  |
-| `SetAutoResize` | method, private | [142](../../../Source/Common/Support/BoldIndex.pas#L142) · [body 235](../../../Source/Common/Support/BoldIndex.pas#L235) |  | ⚪ not started |  |
-| `DecreaseTraverser` | method, private | [143](../../../Source/Common/Support/BoldIndex.pas#L143) · [body 499](../../../Source/Common/Support/BoldIndex.pas#L499) |  | ⚪ not started |  |
-| `BucketArray` | property, private | [144](../../../Source/Common/Support/BoldIndex.pas#L144) |  | ⚪ not started |  |
-| `PBucketForHash` | method, protected | [146](../../../Source/Common/Support/BoldIndex.pas#L146) · [body 511](../../../Source/Common/Support/BoldIndex.pas#L511) |  | ⚪ not started |  |
-| `PBucketForIndex` | method, protected | [147](../../../Source/Common/Support/BoldIndex.pas#L147) · [body 520](../../../Source/Common/Support/BoldIndex.pas#L520) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [148](../../../Source/Common/Support/BoldIndex.pas#L148) · [body 241](../../../Source/Common/Support/BoldIndex.pas#L241) |  | ⚪ not started |  |
-| `HashItem` | method, protected | [149](../../../Source/Common/Support/BoldIndex.pas#L149) |  | ⚪ not started |  |
-| `Hash` | method, protected | [150](../../../Source/Common/Support/BoldIndex.pas#L150) |  | ⚪ not started |  |
-| `GetAny` | method, protected | [151](../../../Source/Common/Support/BoldIndex.pas#L151) · [body 448](../../../Source/Common/Support/BoldIndex.pas#L448) |  | ⚪ not started |  |
-| `GetSupportsTraverser` | method, protected | [152](../../../Source/Common/Support/BoldIndex.pas#L152) · [body 488](../../../Source/Common/Support/BoldIndex.pas#L488) |  | ⚪ not started |  |
-| `Create` | constructor | [154](../../../Source/Common/Support/BoldIndex.pas#L154) · [body 222](../../../Source/Common/Support/BoldIndex.pas#L222) |  | ⚪ not started |  |
-| `Destroy` | destructor | [155](../../../Source/Common/Support/BoldIndex.pas#L155) · [body 228](../../../Source/Common/Support/BoldIndex.pas#L228) |  | ⚪ not started |  |
-| `FillEmptyIndex` | method | [156](../../../Source/Common/Support/BoldIndex.pas#L156) · [body 472](../../../Source/Common/Support/BoldIndex.pas#L472) |  | ⚪ not started |  |
-| `Add` | method | [157](../../../Source/Common/Support/BoldIndex.pas#L157) · [body 336](../../../Source/Common/Support/BoldIndex.pas#L336) |  | ⚪ not started |  |
-| `Clear` | method | [158](../../../Source/Common/Support/BoldIndex.pas#L158) · [body 434](../../../Source/Common/Support/BoldIndex.pas#L434) |  | ⚪ not started |  |
-| `Find` | method | [159](../../../Source/Common/Support/BoldIndex.pas#L159) · [body 350](../../../Source/Common/Support/BoldIndex.pas#L350) |  | ⚪ not started |  |
-| `FindAll` | method | [160](../../../Source/Common/Support/BoldIndex.pas#L160) · [body 402](../../../Source/Common/Support/BoldIndex.pas#L402) |  | ⚪ not started |  |
-| `IsCorrectlyIndexed` | method | [161](../../../Source/Common/Support/BoldIndex.pas#L161) · [body 363](../../../Source/Common/Support/BoldIndex.pas#L363) |  | ⚪ not started |  |
-| `Remove` | method | [162](../../../Source/Common/Support/BoldIndex.pas#L162) · [body 301](../../../Source/Common/Support/BoldIndex.pas#L301) |  | ⚪ not started |  |
-| `RemoveChanged` | method | [163](../../../Source/Common/Support/BoldIndex.pas#L163) · [body 373](../../../Source/Common/Support/BoldIndex.pas#L373) |  | ⚪ not started |  |
-| `Resize` | method | [164](../../../Source/Common/Support/BoldIndex.pas#L164) · [body 246](../../../Source/Common/Support/BoldIndex.pas#L246) |  | ⚪ not started |  |
-| `CreateTraverser` | method | [165](../../../Source/Common/Support/BoldIndex.pas#L165) · [body 493](../../../Source/Common/Support/BoldIndex.pas#L493) |  | ⚪ not started |  |
-| `AutoResize` | property | [166](../../../Source/Common/Support/BoldIndex.pas#L166) |  | ⚪ not started |  |
-| `AssertIndex` | method | [167](../../../Source/Common/Support/BoldIndex.pas#L167) · [body 526](../../../Source/Common/Support/BoldIndex.pas#L526) |  | ⚪ not started |  |
+| `GetBucketArray` | method, private | [137](../../../Source/Common/Support/BoldIndex.pas#L137) · [body 427](../../../Source/Common/Support/BoldIndex.pas#L427) | [`TBoldHashIndex.GetBucketArray`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L345) | 🟢 ported |  |
+| `InsertEntry` | method, private | [138](../../../Source/Common/Support/BoldIndex.pas#L138) · [body 325](../../../Source/Common/Support/BoldIndex.pas#L325) | [`TBoldHashIndex.InsertEntry`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L353) | 🟢 ported |  |
+| `MinimumBucketCount` | method, private | [139](../../../Source/Common/Support/BoldIndex.pas#L139) · [body 422](../../../Source/Common/Support/BoldIndex.pas#L422) | [`TBoldHashIndex.MinimumBucketCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L362) | 🟢 ported |  |
+| `MaximumBucketCount` | method, private | [140](../../../Source/Common/Support/BoldIndex.pas#L140) · [body 506](../../../Source/Common/Support/BoldIndex.pas#L506) | [`TBoldHashIndex.MaximumBucketCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L365) | 🟢 ported |  |
+| `PrefferedBucketCount` | method, private | [141](../../../Source/Common/Support/BoldIndex.pas#L141) · [body 417](../../../Source/Common/Support/BoldIndex.pas#L417) | [`TBoldHashIndex.PrefferedBucketCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L368) | 🟢 ported |  |
+| `SetAutoResize` | method, private | [142](../../../Source/Common/Support/BoldIndex.pas#L142) · [body 235](../../../Source/Common/Support/BoldIndex.pas#L235) | [`TBoldHashIndex.SetAutoResize`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L371) | 🟢 ported |  |
+| `DecreaseTraverser` | method, private | [143](../../../Source/Common/Support/BoldIndex.pas#L143) · [body 499](../../../Source/Common/Support/BoldIndex.pas#L499) | [`TBoldHashIndex.DecreaseTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L381) | 🟢 ported |  |
+| `BucketArray` | property, private | [144](../../../Source/Common/Support/BoldIndex.pas#L144) | [`TBoldHashIndex.BucketArray`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L348) | 🟢 ported |  |
+| `PBucketForHash` | method, protected | [146](../../../Source/Common/Support/BoldIndex.pas#L146) · [body 511](../../../Source/Common/Support/BoldIndex.pas#L511) | [`TBoldHashIndex.PBucketForHash`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L391) | 🟢 ported: Returns the bucket index; the bucket itself is an array slot. |  |
+| `PBucketForIndex` | method, protected | [147](../../../Source/Common/Support/BoldIndex.pas#L147) · [body 520](../../../Source/Common/Support/BoldIndex.pas#L520) | [`TBoldHashIndex.PBucketForIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L396) | 🟢 ported: Returns the bucket's first entry. |  |
+| `GetCount` | method, protected | [148](../../../Source/Common/Support/BoldIndex.pas#L148) · [body 241](../../../Source/Common/Support/BoldIndex.pas#L241) | [`TBoldHashIndex.GetCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L399) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `HashItem` | method, protected | [149](../../../Source/Common/Support/BoldIndex.pas#L149) | [`TBoldHashIndex.HashItem`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L402) | 🟢 ported |  |
+| `Hash` | method, protected | [150](../../../Source/Common/Support/BoldIndex.pas#L150) | [`TBoldHashIndex.Hash`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L405) | 🟢 ported |  |
+| `GetAny` | method, protected | [151](../../../Source/Common/Support/BoldIndex.pas#L151) · [body 448](../../../Source/Common/Support/BoldIndex.pas#L448) | [`TBoldHashIndex.GetAny`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L408) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `GetSupportsTraverser` | method, protected | [152](../../../Source/Common/Support/BoldIndex.pas#L152) · [body 488](../../../Source/Common/Support/BoldIndex.pas#L488) | [`TBoldHashIndex.GetSupportsTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L435) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `Create` | constructor | [154](../../../Source/Common/Support/BoldIndex.pas#L154) · [body 222](../../../Source/Common/Support/BoldIndex.pas#L222) | [`TBoldHashIndex.TBoldHashIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L331) | 🟢 ported |  |
+| `Destroy` | destructor | [155](../../../Source/Common/Support/BoldIndex.pas#L155) · [body 228](../../../Source/Common/Support/BoldIndex.pas#L228) | [`TBoldHashIndex.Dispose`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L338) | 🟢 ported |  |
+| `FillEmptyIndex` | method | [156](../../../Source/Common/Support/BoldIndex.pas#L156) · [body 472](../../../Source/Common/Support/BoldIndex.pas#L472) | [`TBoldHashIndex.FillEmptyIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L438) | 🟢 ported |  |
+| `Add` | method | [157](../../../Source/Common/Support/BoldIndex.pas#L157) · [body 336](../../../Source/Common/Support/BoldIndex.pas#L336) | [`TBoldHashIndex.Add`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L450) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `Clear` | method | [158](../../../Source/Common/Support/BoldIndex.pas#L158) · [body 434](../../../Source/Common/Support/BoldIndex.pas#L434) | [`TBoldHashIndex.Clear`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L464) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `Find` | method | [159](../../../Source/Common/Support/BoldIndex.pas#L159) · [body 350](../../../Source/Common/Support/BoldIndex.pas#L350) | [`TBoldHashIndex.Find`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L480) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `FindAll` | method | [160](../../../Source/Common/Support/BoldIndex.pas#L160) · [body 402](../../../Source/Common/Support/BoldIndex.pas#L402) | [`TBoldHashIndex.FindAll`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L492) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `IsCorrectlyIndexed` | method | [161](../../../Source/Common/Support/BoldIndex.pas#L161) · [body 363](../../../Source/Common/Support/BoldIndex.pas#L363) | [`TBoldHashIndex.IsCorrectlyIndexed`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L504) | ✅ verified | ✔ [`BoldIndexTests.Changed_items_are_reindexed`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L92) |
+| `Remove` | method | [162](../../../Source/Common/Support/BoldIndex.pas#L162) · [body 301](../../../Source/Common/Support/BoldIndex.pas#L301) | [`TBoldHashIndex.Remove`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L517) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `RemoveChanged` | method | [163](../../../Source/Common/Support/BoldIndex.pas#L163) · [body 373](../../../Source/Common/Support/BoldIndex.pas#L373) | [`TBoldHashIndex.RemoveChanged`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L552) | ✅ verified | ✔ [`BoldIndexTests.Changed_items_are_reindexed`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L92) |
+| `Resize` | method | [164](../../../Source/Common/Support/BoldIndex.pas#L164) · [body 246](../../../Source/Common/Support/BoldIndex.pas#L246) | [`TBoldHashIndex.Resize`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L567) | ✅ verified | ✔ [`BoldIndexTests.String_index_finds_ignoring_case_and_survives_resizing`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L53) |
+| `CreateTraverser` | method | [165](../../../Source/Common/Support/BoldIndex.pas#L165) · [body 493](../../../Source/Common/Support/BoldIndex.pas#L493) | [`TBoldHashIndex.CreateTraverser`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L612) | ✅ verified | ✔ [`BoldIndexTests.Traverser_visits_every_item_once`](../../tests/Bold.Core.Tests/Common/Support/BoldIndexTests.cs#L109) |
+| `AutoResize` | property | [166](../../../Source/Common/Support/BoldIndex.pas#L166) | [`TBoldHashIndex.AutoResize`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L619) | 🟢 ported |  |
+| `AssertIndex` | method | [167](../../../Source/Common/Support/BoldIndex.pas#L167) · [body 526](../../../Source/Common/Support/BoldIndex.pas#L526) | [`TBoldHashIndex.AssertIndex`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L627) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldHashIndexItemEntryRec.Next`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L14) (field)
+- [`TBoldHashIndexItemEntryRec.Item`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L15) (field)
+- [`TBoldHashIndexBucketEntry.Next`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L21) (field)
+- [`TBoldIndexTraverser.Dispose`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L43) (method)
+- [`TBoldIndex.Dispose`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L54) (method)
+- [`TBoldHashIndexOptions.AutoResize`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L308) (field)
+- [`TBoldHashIndexOptions.PendingResize`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L309) (field)
+- [`TBoldHashIndexOptions.IsResizing`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L310) (field)
+- [`TBoldHashIndexOptions.TraverserCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L311) (field)
+- [`TBoldHashIndex.fBucketCount`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L325) (field)
+- [`TBoldHashIndex.BucketHead`](../../src/Bold.Core/Common/Support/BoldIndex.cs#L350) (method)
 
 ## Dependencies
 

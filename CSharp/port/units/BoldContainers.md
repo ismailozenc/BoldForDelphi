@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Core/BoldContainers.pas`](../../../Source/Common/Core/BoldContainers.pas) (666 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Core/BoldContainers.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Core/BoldContainers.Aliases.cs`](../../src/Bold.Core/Common/Core/BoldContainers.Aliases.cs)<br>[`CSharp/src/Bold.Core/Common/Core/BoldContainers.cs`](../../src/Bold.Core/Common/Core/BoldContainers.cs) |
 | Project | Bold.Core |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 90 symbols done, 0 verified |
+| Status | 🟡 partial: 89 of 90 symbols done, 40 verified |
 
-⚪ 90 not started
+✅ 40 verified · 🟢 43 ported · 🔵 6 replaced · ⚪ 1 not started
 
 ## Unit level
 
@@ -18,138 +18,145 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EBoldContainerError` | class | [19](../../../Source/Common/Core/BoldContainers.pas#L19) |  | ⚪ not started |  |
-| `TBoldContainerOption` | enum | [21](../../../Source/Common/Core/BoldContainers.pas#L21) |  | ⚪ not started |  |
-| `TBoldContainerOptions` | set | [22](../../../Source/Common/Core/BoldContainers.pas#L22) |  | ⚪ not started |  |
-| `TBoldArraySortCompare` | event type | [23](../../../Source/Common/Core/BoldContainers.pas#L23) |  | ⚪ not started |  |
-| `PByteArray` | pointer | [25](../../../Source/Common/Core/BoldContainers.pas#L25) |  | ⚪ not started |  |
-| `TByteArray` | array | [26](../../../Source/Common/Core/BoldContainers.pas#L26) |  | ⚪ not started |  |
-| `TBoldContainer` | class | [29](../../../Source/Common/Core/BoldContainers.pas#L29) |  | ⚪ not started |  |
-| `TBoldArray` | class | [43](../../../Source/Common/Core/BoldContainers.pas#L43) |  | ⚪ not started |  |
-| `TBoldPointerArray` | class | [83](../../../Source/Common/Core/BoldContainers.pas#L83) |  | ⚪ not started |  |
-| `TBoldObjectArray` | class | [99](../../../Source/Common/Core/BoldContainers.pas#L99) |  | ⚪ not started |  |
-| `TBoldInterfaceArray` | class | [116](../../../Source/Common/Core/BoldContainers.pas#L116) |  | ⚪ not started |  |
-| `TBoldIntegerArray` | class | [133](../../../Source/Common/Core/BoldContainers.pas#L133) |  | ⚪ not started |  |
-| `ECapacityLessThanCount` | resourcestring | [149](../../../Source/Common/Core/BoldContainers.pas#L149) |  | ⚪ not started |  |
-| `ECountLessThanCount` | resourcestring | [150](../../../Source/Common/Core/BoldContainers.pas#L150) |  | ⚪ not started |  |
-| `EIndexOutOfBounds` | resourcestring | [151](../../../Source/Common/Core/BoldContainers.pas#L151) |  | ⚪ not started |  |
+| `EBoldContainerError` | class | [19](../../../Source/Common/Core/BoldContainers.pas#L19) | [`EBoldContainerError`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L10) | 🟢 ported |  |
+| `TBoldContainerOption` | enum | [21](../../../Source/Common/Core/BoldContainers.pas#L21) | [`TBoldContainerOption`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L13) | 🟢 ported |  |
+| `TBoldContainerOptions` | set | [22](../../../Source/Common/Core/BoldContainers.pas#L22) | [`global using TBoldContainerOptions`](../../src/Bold.Core/Common/Core/BoldContainers.Aliases.cs#L5) | 🟢 ported: Global using alias of DelphiSet&lt;TBoldContainerOption&gt;, in BoldContainers.Aliases.cs. |  |
+| `TBoldArraySortCompare` | event type | [23](../../../Source/Common/Core/BoldContainers.pas#L23) | [`TBoldArraySortCompare`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L17) | 🟢 ported |  |
+| `PByteArray` | pointer | [25](../../../Source/Common/Core/BoldContainers.pas#L25) | [`[assembly: Delphi] in BoldContainers.cs`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L4) | 🔵 replaced: The arrays hold .NET references, not raw bytes. |  |
+| `TByteArray` | array | [26](../../../Source/Common/Core/BoldContainers.pas#L26) | [`[assembly: Delphi] in BoldContainers.cs`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L5) | 🔵 replaced: The arrays hold .NET references, not raw bytes. |  |
+| `TBoldContainer` | class | [29](../../../Source/Common/Core/BoldContainers.pas#L29) | [`TBoldContainer`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L29) | 🟢 ported |  |
+| `TBoldArray` | class | [43](../../../Source/Common/Core/BoldContainers.pas#L43) | [`TBoldArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L65) | 🟢 ported |  |
+| `TBoldPointerArray` | class | [83](../../../Source/Common/Core/BoldContainers.pas#L83) | [`TBoldPointerArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L349) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `TBoldObjectArray` | class | [99](../../../Source/Common/Core/BoldContainers.pas#L99) | [`TBoldObjectArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L381) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `TBoldInterfaceArray` | class | [116](../../../Source/Common/Core/BoldContainers.pas#L116) | [`TBoldInterfaceArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L417) | 🟢 ported |  |
+| `TBoldIntegerArray` | class | [133](../../../Source/Common/Core/BoldContainers.pas#L133) | [`TBoldIntegerArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L454) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `ECapacityLessThanCount` | resourcestring | [149](../../../Source/Common/Core/BoldContainers.pas#L149) | [`BoldContainers.ECapacityLessThanCount`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L22) | 🟢 ported |  |
+| `ECountLessThanCount` | resourcestring | [150](../../../Source/Common/Core/BoldContainers.pas#L150) | [`BoldContainers.ECountLessThanCount`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L23) | 🟢 ported |  |
+| `EIndexOutOfBounds` | resourcestring | [151](../../../Source/Common/Core/BoldContainers.pas#L151) | [`BoldContainers.EIndexOutOfBounds`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L24) | 🟢 ported |  |
 | `QuickSort` | routine, implementation | [158](../../../Source/Common/Core/BoldContainers.pas#L158) |  | ⚪ not started |  |
 
 ## TBoldContainer
 
-class at [line 29](../../../Source/Common/Core/BoldContainers.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/Common/Core/BoldContainers.pas#L29); 🟢 ported, C# [`TBoldContainer`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCount` | method, protected | [33](../../../Source/Common/Core/BoldContainers.pas#L33) |  | ⚪ not started |  |
-| `SetCount` | method, protected | [34](../../../Source/Common/Core/BoldContainers.pas#L34) |  | ⚪ not started |  |
-| `Create` | constructor | [36](../../../Source/Common/Core/BoldContainers.pas#L36) · [body 200](../../../Source/Common/Core/BoldContainers.pas#L200) |  | ⚪ not started |  |
-| `Clear` | method | [37](../../../Source/Common/Core/BoldContainers.pas#L37) |  | ⚪ not started |  |
-| `Count` | property | [38](../../../Source/Common/Core/BoldContainers.pas#L38) |  | ⚪ not started |  |
-| `Options` | property | [39](../../../Source/Common/Core/BoldContainers.pas#L39) |  | ⚪ not started |  |
+| `GetCount` | method, protected | [33](../../../Source/Common/Core/BoldContainers.pas#L33) | [`TBoldContainer.GetCount`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L41) | 🟢 ported |  |
+| `SetCount` | method, protected | [34](../../../Source/Common/Core/BoldContainers.pas#L34) | [`TBoldContainer.SetCount`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L44) | 🟢 ported |  |
+| `Create` | constructor | [36](../../../Source/Common/Core/BoldContainers.pas#L36) · [body 200](../../../Source/Common/Core/BoldContainers.pas#L200) | [`TBoldContainer.TBoldContainer`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L32) | 🟢 ported |  |
+| `Clear` | method | [37](../../../Source/Common/Core/BoldContainers.pas#L37) | [`TBoldContainer.Clear`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L54) | 🟢 ported |  |
+| `Count` | property | [38](../../../Source/Common/Core/BoldContainers.pas#L38) | [`TBoldContainer.Count`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L47) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Options` | property | [39](../../../Source/Common/Core/BoldContainers.pas#L39) | [`TBoldContainer.Options`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L38) | 🟢 ported |  |
 
 ## TBoldArray
 
-class at [line 43](../../../Source/Common/Core/BoldContainers.pas#L43); ⚪ not started.
+class at [line 43](../../../Source/Common/Core/BoldContainers.pas#L43); 🟢 ported, C# [`TBoldArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L65).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AddItems` | method, private | [48](../../../Source/Common/Core/BoldContainers.pas#L48) · [body 241](../../../Source/Common/Core/BoldContainers.pas#L241) |  | ⚪ not started |  |
-| `EnsureCapacity` | method, private | [49](../../../Source/Common/Core/BoldContainers.pas#L49) · [body 277](../../../Source/Common/Core/BoldContainers.pas#L277) |  | ⚪ not started |  |
-| `GetCapacity` | method, private | [50](../../../Source/Common/Core/BoldContainers.pas#L50) · [body 314](../../../Source/Common/Core/BoldContainers.pas#L314) |  | ⚪ not started |  |
-| `MoveItems` | method, private | [51](../../../Source/Common/Core/BoldContainers.pas#L51) · [body 374](../../../Source/Common/Core/BoldContainers.pas#L374) |  | ⚪ not started |  |
-| `SetCapacity` | method, private | [52](../../../Source/Common/Core/BoldContainers.pas#L52) · [body 413](../../../Source/Common/Core/BoldContainers.pas#L413) |  | ⚪ not started |  |
-| `Add` | method, protected | [54](../../../Source/Common/Core/BoldContainers.pas#L54) · [body 227](../../../Source/Common/Core/BoldContainers.pas#L227) |  | ⚪ not started |  |
-| `AddArray` | method, protected | [55](../../../Source/Common/Core/BoldContainers.pas#L55) · [body 235](../../../Source/Common/Core/BoldContainers.pas#L235) |  | ⚪ not started |  |
-| `Dispose` | method, protected | [56](../../../Source/Common/Core/BoldContainers.pas#L56) · [body 273](../../../Source/Common/Core/BoldContainers.pas#L273) |  | ⚪ not started |  |
-| `Get` | method, protected | [57](../../../Source/Common/Core/BoldContainers.pas#L57) · [body 307](../../../Source/Common/Core/BoldContainers.pas#L307) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [58](../../../Source/Common/Core/BoldContainers.pas#L58) · [body 319](../../../Source/Common/Core/BoldContainers.pas#L319) |  | ⚪ not started |  |
-| `GetGrowDelta` | method, protected | [59](../../../Source/Common/Core/BoldContainers.pas#L59) · [body 324](../../../Source/Common/Core/BoldContainers.pas#L324) |  | ⚪ not started |  |
-| `GetItemSize` | method, protected | [60](../../../Source/Common/Core/BoldContainers.pas#L60) |  | ⚪ not started |  |
-| `IndexOf` | method, protected | [61](../../../Source/Common/Core/BoldContainers.pas#L61) · [body 332](../../../Source/Common/Core/BoldContainers.pas#L332) |  | ⚪ not started |  |
-| `Insert` | method, protected | [62](../../../Source/Common/Core/BoldContainers.pas#L62) · [body 344](../../../Source/Common/Core/BoldContainers.pas#L344) |  | ⚪ not started |  |
-| `Put` | method, protected | [63](../../../Source/Common/Core/BoldContainers.pas#L63) · [body 386](../../../Source/Common/Core/BoldContainers.pas#L386) |  | ⚪ not started |  |
-| `Remove` | method, protected | [64](../../../Source/Common/Core/BoldContainers.pas#L64) · [body 395](../../../Source/Common/Core/BoldContainers.pas#L395) |  | ⚪ not started |  |
-| `RemoveWithNil` | method, protected | [65](../../../Source/Common/Core/BoldContainers.pas#L65) · [body 402](../../../Source/Common/Core/BoldContainers.pas#L402) |  | ⚪ not started |  |
-| `SetCount` | method, protected | [66](../../../Source/Common/Core/BoldContainers.pas#L66) · [body 424](../../../Source/Common/Core/BoldContainers.pas#L424) |  | ⚪ not started |  |
-| `Slice` | method, protected | [67](../../../Source/Common/Core/BoldContainers.pas#L67) · [body 435](../../../Source/Common/Core/BoldContainers.pas#L435) |  | ⚪ not started |  |
-| `Create` | constructor | [69](../../../Source/Common/Core/BoldContainers.pas#L69) · [body 208](../../../Source/Common/Core/BoldContainers.pas#L208) |  | ⚪ not started |  |
-| `Destroy` | destructor | [70](../../../Source/Common/Core/BoldContainers.pas#L70) · [body 214](../../../Source/Common/Core/BoldContainers.pas#L214) |  | ⚪ not started |  |
-| `Clear` | method | [71](../../../Source/Common/Core/BoldContainers.pas#L71) · [body 252](../../../Source/Common/Core/BoldContainers.pas#L252) |  | ⚪ not started |  |
-| `Delete` | method | [72](../../../Source/Common/Core/BoldContainers.pas#L72) · [body 262](../../../Source/Common/Core/BoldContainers.pas#L262) |  | ⚪ not started |  |
-| `DeleteRange` | method | [73](../../../Source/Common/Core/BoldContainers.pas#L73) · [body 650](../../../Source/Common/Core/BoldContainers.pas#L650) |  | ⚪ not started |  |
-| `Exchange` | method | [74](../../../Source/Common/Core/BoldContainers.pas#L74) · [body 283](../../../Source/Common/Core/BoldContainers.pas#L283) |  | ⚪ not started |  |
-| `Move` | method | [75](../../../Source/Common/Core/BoldContainers.pas#L75) · [body 355](../../../Source/Common/Core/BoldContainers.pas#L355) |  | ⚪ not started |  |
-| `Pack` | method | [76](../../../Source/Common/Core/BoldContainers.pas#L76) · [body 381](../../../Source/Common/Core/BoldContainers.pas#L381) |  | ⚪ not started |  |
-| `Sort` | method | [77](../../../Source/Common/Core/BoldContainers.pas#L77) · [body 220](../../../Source/Common/Core/BoldContainers.pas#L220) |  | ⚪ not started |  |
-| `Capacity` | property | [78](../../../Source/Common/Core/BoldContainers.pas#L78) |  | ⚪ not started |  |
-| `ItemSize` | property | [79](../../../Source/Common/Core/BoldContainers.pas#L79) |  | ⚪ not started |  |
+| `AddItems` | method, private | [48](../../../Source/Common/Core/BoldContainers.pas#L48) · [body 241](../../../Source/Common/Core/BoldContainers.pas#L241) | [`TBoldArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L65) | 🔵 replaced: AddArray and Slice copy slots directly. |  |
+| `EnsureCapacity` | method, private | [49](../../../Source/Common/Core/BoldContainers.pas#L49) · [body 277](../../../Source/Common/Core/BoldContainers.pas#L277) | [`TBoldArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L65) | 🔵 replaced: List&lt;T&gt; grows by itself. |  |
+| `GetCapacity` | method, private | [50](../../../Source/Common/Core/BoldContainers.pas#L50) · [body 314](../../../Source/Common/Core/BoldContainers.pas#L314) | [`TBoldArray.GetCapacity`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L97) | 🟢 ported |  |
+| `MoveItems` | method, private | [51](../../../Source/Common/Core/BoldContainers.pas#L51) · [body 374](../../../Source/Common/Core/BoldContainers.pas#L374) | [`TBoldArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L65) | 🔵 replaced: List&lt;T&gt; moves the slots. |  |
+| `SetCapacity` | method, private | [52](../../../Source/Common/Core/BoldContainers.pas#L52) · [body 413](../../../Source/Common/Core/BoldContainers.pas#L413) | [`TBoldArray.SetCapacity`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L100) | 🟢 ported |  |
+| `Add` | method, protected | [54](../../../Source/Common/Core/BoldContainers.pas#L54) · [body 227](../../../Source/Common/Core/BoldContainers.pas#L227) | [`TBoldArray.Add`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L150) | 🟢 ported |  |
+| `AddArray` | method, protected | [55](../../../Source/Common/Core/BoldContainers.pas#L55) · [body 235](../../../Source/Common/Core/BoldContainers.pas#L235) | [`TBoldArray.AddArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L157) | 🟢 ported |  |
+| `Dispose` | method, protected | [56](../../../Source/Common/Core/BoldContainers.pas#L56) · [body 273](../../../Source/Common/Core/BoldContainers.pas#L273) | [`TBoldArray.Dispose`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L165) | 🟢 ported |  |
+| `Get` | method, protected | [57](../../../Source/Common/Core/BoldContainers.pas#L57) · [body 307](../../../Source/Common/Core/BoldContainers.pas#L307) | [`TBoldArray.Get`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L170) | 🟢 ported |  |
+| `GetCount` | method, protected | [58](../../../Source/Common/Core/BoldContainers.pas#L58) · [body 319](../../../Source/Common/Core/BoldContainers.pas#L319) | [`TBoldArray.GetCount`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L114) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `GetGrowDelta` | method, protected | [59](../../../Source/Common/Core/BoldContainers.pas#L59) · [body 324](../../../Source/Common/Core/BoldContainers.pas#L324) | [`TBoldArray.GetGrowDelta`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L111) | 🟢 ported |  |
+| `GetItemSize` | method, protected | [60](../../../Source/Common/Core/BoldContainers.pas#L60) | [`TBoldArray.GetItemSize`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L94) | 🟢 ported |  |
+| `IndexOf` | method, protected | [61](../../../Source/Common/Core/BoldContainers.pas#L61) · [body 332](../../../Source/Common/Core/BoldContainers.pas#L332) | [`TBoldArray.IndexOf`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L177) | 🟢 ported: Compares references (or values for integers) where Delphi compares the item bytes. |  |
+| `Insert` | method, protected | [62](../../../Source/Common/Core/BoldContainers.pas#L62) · [body 344](../../../Source/Common/Core/BoldContainers.pas#L344) | [`TBoldArray.Insert`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L193) | 🟢 ported |  |
+| `Put` | method, protected | [63](../../../Source/Common/Core/BoldContainers.pas#L63) · [body 386](../../../Source/Common/Core/BoldContainers.pas#L386) | [`TBoldArray.Put`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L204) | 🟢 ported |  |
+| `Remove` | method, protected | [64](../../../Source/Common/Core/BoldContainers.pas#L64) · [body 395](../../../Source/Common/Core/BoldContainers.pas#L395) | [`TBoldArray.Remove`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L216) | 🟢 ported |  |
+| `RemoveWithNil` | method, protected | [65](../../../Source/Common/Core/BoldContainers.pas#L65) · [body 402](../../../Source/Common/Core/BoldContainers.pas#L402) | [`TBoldArray.RemoveWithNil`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L229) | 🟢 ported |  |
+| `SetCount` | method, protected | [66](../../../Source/Common/Core/BoldContainers.pas#L66) · [body 424](../../../Source/Common/Core/BoldContainers.pas#L424) | [`TBoldArray.SetCount`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L118) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Slice` | method, protected | [67](../../../Source/Common/Core/BoldContainers.pas#L67) · [body 435](../../../Source/Common/Core/BoldContainers.pas#L435) | [`TBoldArray.Slice`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L247) | 🟢 ported |  |
+| `Create` | constructor | [69](../../../Source/Common/Core/BoldContainers.pas#L69) · [body 208](../../../Source/Common/Core/BoldContainers.pas#L208) | [`TBoldArray.TBoldArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L70) | 🟢 ported |  |
+| `Destroy` | destructor | [70](../../../Source/Common/Core/BoldContainers.pas#L70) · [body 214](../../../Source/Common/Core/BoldContainers.pas#L214) | [`TBoldArray.Dispose`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L77) | 🟢 ported |  |
+| `Clear` | method | [71](../../../Source/Common/Core/BoldContainers.pas#L71) · [body 252](../../../Source/Common/Core/BoldContainers.pas#L252) | [`TBoldArray.Clear`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L262) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Delete` | method | [72](../../../Source/Common/Core/BoldContainers.pas#L72) · [body 262](../../../Source/Common/Core/BoldContainers.pas#L262) | [`TBoldArray.Delete`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L277) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `DeleteRange` | method | [73](../../../Source/Common/Core/BoldContainers.pas#L73) · [body 650](../../../Source/Common/Core/BoldContainers.pas#L650) | [`TBoldArray.DeleteRange`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L290) | ✅ verified: The Delphi version moves the wrong number of items after the range; this removes exactly the range. | ✔ [`BoldContainersTests.DeleteRange_removes_both_ends`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L45) |
+| `Exchange` | method | [74](../../../Source/Common/Core/BoldContainers.pas#L74) · [body 283](../../../Source/Common/Core/BoldContainers.pas#L283) | [`TBoldArray.Exchange`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L309) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Move` | method | [75](../../../Source/Common/Core/BoldContainers.pas#L75) · [body 355](../../../Source/Common/Core/BoldContainers.pas#L355) | [`TBoldArray.Move`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L317) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Pack` | method | [76](../../../Source/Common/Core/BoldContainers.pas#L76) · [body 381](../../../Source/Common/Core/BoldContainers.pas#L381) | [`TBoldArray.Pack`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L329) | 🟢 ported |  |
+| `Sort` | method | [77](../../../Source/Common/Core/BoldContainers.pas#L77) · [body 220](../../../Source/Common/Core/BoldContainers.pas#L220) | [`TBoldArray.Sort`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L332) | ✅ verified: Delphi's quicksort is not stable; this sort keeps equal items in order. | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Capacity` | property | [78](../../../Source/Common/Core/BoldContainers.pas#L78) | [`TBoldArray.Capacity`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L84) | 🟢 ported |  |
+| `ItemSize` | property | [79](../../../Source/Common/Core/BoldContainers.pas#L79) | [`TBoldArray.ItemSize`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L91) | 🟢 ported |  |
 
 ## TBoldPointerArray
 
-class at [line 83](../../../Source/Common/Core/BoldContainers.pas#L83); ⚪ not started.
+class at [line 83](../../../Source/Common/Core/BoldContainers.pas#L83); ✅ verified, C# [`TBoldPointerArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L349).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Get` | method, private | [85](../../../Source/Common/Core/BoldContainers.pas#L85) · [body 455](../../../Source/Common/Core/BoldContainers.pas#L455) |  | ⚪ not started |  |
-| `Put` | method, private | [86](../../../Source/Common/Core/BoldContainers.pas#L86) · [body 475](../../../Source/Common/Core/BoldContainers.pas#L475) |  | ⚪ not started |  |
-| `GetItemSize` | method, protected | [88](../../../Source/Common/Core/BoldContainers.pas#L88) · [body 460](../../../Source/Common/Core/BoldContainers.pas#L460) |  | ⚪ not started |  |
-| `Add` | method | [90](../../../Source/Common/Core/BoldContainers.pas#L90) · [body 450](../../../Source/Common/Core/BoldContainers.pas#L450) |  | ⚪ not started |  |
-| `IndexOf` | method | [91](../../../Source/Common/Core/BoldContainers.pas#L91) · [body 465](../../../Source/Common/Core/BoldContainers.pas#L465) |  | ⚪ not started |  |
-| `Insert` | method | [92](../../../Source/Common/Core/BoldContainers.pas#L92) · [body 470](../../../Source/Common/Core/BoldContainers.pas#L470) |  | ⚪ not started |  |
-| `Remove` | method | [93](../../../Source/Common/Core/BoldContainers.pas#L93) · [body 480](../../../Source/Common/Core/BoldContainers.pas#L480) |  | ⚪ not started |  |
-| `RemoveWithNil` | method | [94](../../../Source/Common/Core/BoldContainers.pas#L94) · [body 485](../../../Source/Common/Core/BoldContainers.pas#L485) |  | ⚪ not started |  |
-| `Items` | property | [95](../../../Source/Common/Core/BoldContainers.pas#L95) |  | ⚪ not started |  |
+| `Get` | method, private | [85](../../../Source/Common/Core/BoldContainers.pas#L85) · [body 455](../../../Source/Common/Core/BoldContainers.pas#L455) | [`TBoldPointerArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L372) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `Put` | method, private | [86](../../../Source/Common/Core/BoldContainers.pas#L86) · [body 475](../../../Source/Common/Core/BoldContainers.pas#L475) | [`TBoldPointerArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L372) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `GetItemSize` | method, protected | [88](../../../Source/Common/Core/BoldContainers.pas#L88) · [body 460](../../../Source/Common/Core/BoldContainers.pas#L460) | [`TBoldPointerArray.GetItemSize`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L352) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `Add` | method | [90](../../../Source/Common/Core/BoldContainers.pas#L90) · [body 450](../../../Source/Common/Core/BoldContainers.pas#L450) | [`TBoldPointerArray.Add`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L355) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `IndexOf` | method | [91](../../../Source/Common/Core/BoldContainers.pas#L91) · [body 465](../../../Source/Common/Core/BoldContainers.pas#L465) | [`TBoldPointerArray.IndexOf`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L358) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `Insert` | method | [92](../../../Source/Common/Core/BoldContainers.pas#L92) · [body 470](../../../Source/Common/Core/BoldContainers.pas#L470) | [`TBoldPointerArray.Insert`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L361) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `Remove` | method | [93](../../../Source/Common/Core/BoldContainers.pas#L93) · [body 480](../../../Source/Common/Core/BoldContainers.pas#L480) | [`TBoldPointerArray.Remove`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L364) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `RemoveWithNil` | method | [94](../../../Source/Common/Core/BoldContainers.pas#L94) · [body 485](../../../Source/Common/Core/BoldContainers.pas#L485) | [`TBoldPointerArray.RemoveWithNil`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L367) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
+| `Items` | property | [95](../../../Source/Common/Core/BoldContainers.pas#L95) | [`TBoldPointerArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L372) | ✅ verified | ✔ [`BoldContainersTests.Pointer_array_keeps_nil_and_bad_indexes_raise`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L74) |
 
 ## TBoldObjectArray
 
-class at [line 99](../../../Source/Common/Core/BoldContainers.pas#L99); ⚪ not started.
+class at [line 99](../../../Source/Common/Core/BoldContainers.pas#L99); ✅ verified, C# [`TBoldObjectArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L381).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Get` | method, private | [101](../../../Source/Common/Core/BoldContainers.pas#L101) · [body 506](../../../Source/Common/Core/BoldContainers.pas#L506) |  | ⚪ not started |  |
-| `Put` | method, private | [102](../../../Source/Common/Core/BoldContainers.pas#L102) · [body 526](../../../Source/Common/Core/BoldContainers.pas#L526) |  | ⚪ not started |  |
-| `Dispose` | method, protected | [104](../../../Source/Common/Core/BoldContainers.pas#L104) · [body 497](../../../Source/Common/Core/BoldContainers.pas#L497) |  | ⚪ not started |  |
-| `GetItemSize` | method, protected | [105](../../../Source/Common/Core/BoldContainers.pas#L105) · [body 511](../../../Source/Common/Core/BoldContainers.pas#L511) |  | ⚪ not started |  |
-| `Add` | method | [107](../../../Source/Common/Core/BoldContainers.pas#L107) · [body 492](../../../Source/Common/Core/BoldContainers.pas#L492) |  | ⚪ not started |  |
-| `IndexOf` | method | [108](../../../Source/Common/Core/BoldContainers.pas#L108) · [body 516](../../../Source/Common/Core/BoldContainers.pas#L516) |  | ⚪ not started |  |
-| `Insert` | method | [109](../../../Source/Common/Core/BoldContainers.pas#L109) · [body 521](../../../Source/Common/Core/BoldContainers.pas#L521) |  | ⚪ not started |  |
-| `Remove` | method | [110](../../../Source/Common/Core/BoldContainers.pas#L110) · [body 531](../../../Source/Common/Core/BoldContainers.pas#L531) |  | ⚪ not started |  |
-| `RemoveWithNil` | method | [111](../../../Source/Common/Core/BoldContainers.pas#L111) · [body 536](../../../Source/Common/Core/BoldContainers.pas#L536) |  | ⚪ not started |  |
-| `Items` | property | [112](../../../Source/Common/Core/BoldContainers.pas#L112) |  | ⚪ not started |  |
+| `Get` | method, private | [101](../../../Source/Common/Core/BoldContainers.pas#L101) · [body 506](../../../Source/Common/Core/BoldContainers.pas#L506) | [`TBoldObjectArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L408) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `Put` | method, private | [102](../../../Source/Common/Core/BoldContainers.pas#L102) · [body 526](../../../Source/Common/Core/BoldContainers.pas#L526) | [`TBoldObjectArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L408) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `Dispose` | method, protected | [104](../../../Source/Common/Core/BoldContainers.pas#L104) · [body 497](../../../Source/Common/Core/BoldContainers.pas#L497) | [`TBoldObjectArray.Dispose`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L388) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `GetItemSize` | method, protected | [105](../../../Source/Common/Core/BoldContainers.pas#L105) · [body 511](../../../Source/Common/Core/BoldContainers.pas#L511) | [`TBoldObjectArray.GetItemSize`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L384) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `Add` | method | [107](../../../Source/Common/Core/BoldContainers.pas#L107) · [body 492](../../../Source/Common/Core/BoldContainers.pas#L492) | [`TBoldObjectArray.Add`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L391) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `IndexOf` | method | [108](../../../Source/Common/Core/BoldContainers.pas#L108) · [body 516](../../../Source/Common/Core/BoldContainers.pas#L516) | [`TBoldObjectArray.IndexOf`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L394) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `Insert` | method | [109](../../../Source/Common/Core/BoldContainers.pas#L109) · [body 521](../../../Source/Common/Core/BoldContainers.pas#L521) | [`TBoldObjectArray.Insert`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L397) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `Remove` | method | [110](../../../Source/Common/Core/BoldContainers.pas#L110) · [body 531](../../../Source/Common/Core/BoldContainers.pas#L531) | [`TBoldObjectArray.Remove`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L400) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `RemoveWithNil` | method | [111](../../../Source/Common/Core/BoldContainers.pas#L111) · [body 536](../../../Source/Common/Core/BoldContainers.pas#L536) | [`TBoldObjectArray.RemoveWithNil`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L403) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
+| `Items` | property | [112](../../../Source/Common/Core/BoldContainers.pas#L112) | [`TBoldObjectArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L408) | ✅ verified | ✔ [`BoldContainersTests.Owning_object_array_disposes_removed_items`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L59) |
 
 ## TBoldInterfaceArray
 
-class at [line 116](../../../Source/Common/Core/BoldContainers.pas#L116); ⚪ not started.
+class at [line 116](../../../Source/Common/Core/BoldContainers.pas#L116); 🟢 ported, C# [`TBoldInterfaceArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L417).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Get` | method, private | [118](../../../Source/Common/Core/BoldContainers.pas#L118) · [body 559](../../../Source/Common/Core/BoldContainers.pas#L559) |  | ⚪ not started |  |
-| `Put` | method, private | [119](../../../Source/Common/Core/BoldContainers.pas#L119) · [body 584](../../../Source/Common/Core/BoldContainers.pas#L584) |  | ⚪ not started |  |
-| `Dispose` | method, protected | [121](../../../Source/Common/Core/BoldContainers.pas#L121) · [body 550](../../../Source/Common/Core/BoldContainers.pas#L550) |  | ⚪ not started |  |
-| `GetItemSize` | method, protected | [122](../../../Source/Common/Core/BoldContainers.pas#L122) · [body 567](../../../Source/Common/Core/BoldContainers.pas#L567) |  | ⚪ not started |  |
-| `Add` | method | [124](../../../Source/Common/Core/BoldContainers.pas#L124) · [body 543](../../../Source/Common/Core/BoldContainers.pas#L543) |  | ⚪ not started |  |
-| `IndexOf` | method | [125](../../../Source/Common/Core/BoldContainers.pas#L125) · [body 572](../../../Source/Common/Core/BoldContainers.pas#L572) |  | ⚪ not started |  |
-| `Insert` | method | [126](../../../Source/Common/Core/BoldContainers.pas#L126) · [body 577](../../../Source/Common/Core/BoldContainers.pas#L577) |  | ⚪ not started |  |
-| `Remove` | method | [127](../../../Source/Common/Core/BoldContainers.pas#L127) · [body 591](../../../Source/Common/Core/BoldContainers.pas#L591) |  | ⚪ not started |  |
-| `RemoveWithNil` | method | [128](../../../Source/Common/Core/BoldContainers.pas#L128) · [body 596](../../../Source/Common/Core/BoldContainers.pas#L596) |  | ⚪ not started |  |
-| `Items` | property | [129](../../../Source/Common/Core/BoldContainers.pas#L129) |  | ⚪ not started |  |
+| `Get` | method, private | [118](../../../Source/Common/Core/BoldContainers.pas#L118) · [body 559](../../../Source/Common/Core/BoldContainers.pas#L559) | [`TBoldInterfaceArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L445) | 🟢 ported |  |
+| `Put` | method, private | [119](../../../Source/Common/Core/BoldContainers.pas#L119) · [body 584](../../../Source/Common/Core/BoldContainers.pas#L584) | [`TBoldInterfaceArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L445) | 🟢 ported |  |
+| `Dispose` | method, protected | [121](../../../Source/Common/Core/BoldContainers.pas#L121) · [body 550](../../../Source/Common/Core/BoldContainers.pas#L550) | [`TBoldInterfaceArray.Dispose`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L423) | 🔵 replaced: Releasing an interface reference needs nothing in .NET. |  |
+| `GetItemSize` | method, protected | [122](../../../Source/Common/Core/BoldContainers.pas#L122) · [body 567](../../../Source/Common/Core/BoldContainers.pas#L567) | [`TBoldInterfaceArray.GetItemSize`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L420) | 🟢 ported |  |
+| `Add` | method | [124](../../../Source/Common/Core/BoldContainers.pas#L124) · [body 543](../../../Source/Common/Core/BoldContainers.pas#L543) | [`TBoldInterfaceArray.Add`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L428) | 🟢 ported |  |
+| `IndexOf` | method | [125](../../../Source/Common/Core/BoldContainers.pas#L125) · [body 572](../../../Source/Common/Core/BoldContainers.pas#L572) | [`TBoldInterfaceArray.IndexOf`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L431) | 🟢 ported |  |
+| `Insert` | method | [126](../../../Source/Common/Core/BoldContainers.pas#L126) · [body 577](../../../Source/Common/Core/BoldContainers.pas#L577) | [`TBoldInterfaceArray.Insert`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L434) | 🟢 ported |  |
+| `Remove` | method | [127](../../../Source/Common/Core/BoldContainers.pas#L127) · [body 591](../../../Source/Common/Core/BoldContainers.pas#L591) | [`TBoldInterfaceArray.Remove`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L437) | 🟢 ported |  |
+| `RemoveWithNil` | method | [128](../../../Source/Common/Core/BoldContainers.pas#L128) · [body 596](../../../Source/Common/Core/BoldContainers.pas#L596) | [`TBoldInterfaceArray.RemoveWithNil`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L440) | 🟢 ported |  |
+| `Items` | property | [129](../../../Source/Common/Core/BoldContainers.pas#L129) | [`TBoldInterfaceArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L445) | 🟢 ported |  |
 
 ## TBoldIntegerArray
 
-class at [line 133](../../../Source/Common/Core/BoldContainers.pas#L133); ⚪ not started.
+class at [line 133](../../../Source/Common/Core/BoldContainers.pas#L133); ✅ verified, C# [`TBoldIntegerArray`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L454).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Get` | method, private | [135](../../../Source/Common/Core/BoldContainers.pas#L135) · [body 614](../../../Source/Common/Core/BoldContainers.pas#L614) |  | ⚪ not started |  |
-| `Put` | method, private | [136](../../../Source/Common/Core/BoldContainers.pas#L136) · [body 638](../../../Source/Common/Core/BoldContainers.pas#L638) |  | ⚪ not started |  |
-| `Dispose` | method, protected | [138](../../../Source/Common/Core/BoldContainers.pas#L138) · [body 609](../../../Source/Common/Core/BoldContainers.pas#L609) |  | ⚪ not started |  |
-| `GetItemSize` | method, protected | [139](../../../Source/Common/Core/BoldContainers.pas#L139) · [body 619](../../../Source/Common/Core/BoldContainers.pas#L619) |  | ⚪ not started |  |
-| `Add` | method | [141](../../../Source/Common/Core/BoldContainers.pas#L141) · [body 604](../../../Source/Common/Core/BoldContainers.pas#L604) |  | ⚪ not started |  |
-| `IndexOf` | method | [142](../../../Source/Common/Core/BoldContainers.pas#L142) · [body 624](../../../Source/Common/Core/BoldContainers.pas#L624) |  | ⚪ not started |  |
-| `Insert` | method | [143](../../../Source/Common/Core/BoldContainers.pas#L143) · [body 633](../../../Source/Common/Core/BoldContainers.pas#L633) |  | ⚪ not started |  |
-| `Remove` | method | [144](../../../Source/Common/Core/BoldContainers.pas#L144) · [body 643](../../../Source/Common/Core/BoldContainers.pas#L643) |  | ⚪ not started |  |
-| `Items` | property | [145](../../../Source/Common/Core/BoldContainers.pas#L145) |  | ⚪ not started |  |
+| `Get` | method, private | [135](../../../Source/Common/Core/BoldContainers.pas#L135) · [body 614](../../../Source/Common/Core/BoldContainers.pas#L614) | [`TBoldIntegerArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L481) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Put` | method, private | [136](../../../Source/Common/Core/BoldContainers.pas#L136) · [body 638](../../../Source/Common/Core/BoldContainers.pas#L638) | [`TBoldIntegerArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L481) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Dispose` | method, protected | [138](../../../Source/Common/Core/BoldContainers.pas#L138) · [body 609](../../../Source/Common/Core/BoldContainers.pas#L609) | [`TBoldIntegerArray.Dispose`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L462) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `GetItemSize` | method, protected | [139](../../../Source/Common/Core/BoldContainers.pas#L139) · [body 619](../../../Source/Common/Core/BoldContainers.pas#L619) | [`TBoldIntegerArray.GetItemSize`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L459) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Add` | method | [141](../../../Source/Common/Core/BoldContainers.pas#L141) · [body 604](../../../Source/Common/Core/BoldContainers.pas#L604) | [`TBoldIntegerArray.Add`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L467) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `IndexOf` | method | [142](../../../Source/Common/Core/BoldContainers.pas#L142) · [body 624](../../../Source/Common/Core/BoldContainers.pas#L624) | [`TBoldIntegerArray.IndexOf`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L470) | ✅ verified: The Delphi version stops at the first item that differs (= instead of &lt;&gt;); this finds the item. | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Insert` | method | [143](../../../Source/Common/Core/BoldContainers.pas#L143) · [body 633](../../../Source/Common/Core/BoldContainers.pas#L633) | [`TBoldIntegerArray.Insert`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L473) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Remove` | method | [144](../../../Source/Common/Core/BoldContainers.pas#L144) · [body 643](../../../Source/Common/Core/BoldContainers.pas#L643) | [`TBoldIntegerArray.Remove`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L476) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+| `Items` | property | [145](../../../Source/Common/Core/BoldContainers.pas#L145) | [`TBoldIntegerArray.this`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L481) | ✅ verified | ✔ [`BoldContainersTests.Integer_array_adds_moves_and_sorts`](../../tests/Bold.Core.Tests/Common/Core/BoldContainersTests.cs#L19) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldArray.EmptyItem`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L139) (property)
+- [`TBoldIntegerArray.EmptyItem`](../../src/Bold.Core/Common/Core/BoldContainers.cs#L456) (property)
 
 ## Dependencies
 

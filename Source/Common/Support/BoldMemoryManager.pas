@@ -1,4 +1,4 @@
-unit BoldMemoryManager; { C# port: CSharp/src/Bold.Core/Common/Support/BoldMemoryManager.cs; symbols and status: CSharp/port/units/BoldMemoryManager.md }
+unit BoldMemoryManager; { C# port: replaced by .NET (the .NET runtime allocates and the garbage collector frees memory); see CSharp/port/units/BoldMemoryManager.md }
 
 interface
 

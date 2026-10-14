@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldMemoryManager.pas`](../../../Source/Common/Support/BoldMemoryManager.pas) (481 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldMemoryManager.cs` |
-| Project | Bold.Core |
+| C# | replaced by .NET: the .NET runtime allocates and the garbage collector frees memory |
+| Project | not decided |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 40 symbols done, 0 verified |
+| Status | 🔵 replaced: 40 of 40 symbols done, 0 verified |
 
-⚪ 40 not started
+🔵 40 replaced
 
 ## Unit level
 
@@ -18,53 +18,53 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BoldMemoryManagerPageSize` | const | [46](../../../Source/Common/Support/BoldMemoryManager.pas#L46) |  | ⚪ not started |  |
-| `BoldMemoryManagerLSBZero` | const | [47](../../../Source/Common/Support/BoldMemoryManager.pas#L47) |  | ⚪ not started |  |
-| `BoldMemoryManagerLSBFactor` | const | [48](../../../Source/Common/Support/BoldMemoryManager.pas#L48) |  | ⚪ not started |  |
-| `BoldMemoryManagerMaxPage` | const | [49](../../../Source/Common/Support/BoldMemoryManager.pas#L49) |  | ⚪ not started |  |
-| `BoldMemoryManagerMask` | const | [50](../../../Source/Common/Support/BoldMemoryManager.pas#L50) |  | ⚪ not started |  |
-| `TBoldMemoryManagerPageCounters` | array | [57](../../../Source/Common/Support/BoldMemoryManager.pas#L57) |  | ⚪ not started |  |
-| `TBoldMemoryManagerPagePointers` | array | [58](../../../Source/Common/Support/BoldMemoryManager.pas#L58) |  | ⚪ not started |  |
-| `TBoldMemoryManager` | class | [61](../../../Source/Common/Support/BoldMemoryManager.pas#L61) |  | ⚪ not started |  |
-| `BoldMemoryManager_` | routine | [104](../../../Source/Common/Support/BoldMemoryManager.pas#L104) · [body 151](../../../Source/Common/Support/BoldMemoryManager.pas#L151) |  | ⚪ not started |  |
-| `Log` | routine, implementation | [121](../../../Source/Common/Support/BoldMemoryManager.pas#L121) |  | ⚪ not started |  |
-| `TPage` | array, implementation | [139](../../../Source/Common/Support/BoldMemoryManager.pas#L139) |  | ⚪ not started |  |
-| `DestroyIfEmpty` | routine, implementation | [145](../../../Source/Common/Support/BoldMemoryManager.pas#L145) |  | ⚪ not started |  |
-| `pInteger` | pointer, implementation | [270](../../../Source/Common/Support/BoldMemoryManager.pas#L270) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [474](../../../Source/Common/Support/BoldMemoryManager.pas#L474) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [476](../../../Source/Common/Support/BoldMemoryManager.pas#L476) |  | ⚪ not started |  |
+| `BoldMemoryManagerPageSize` | const | [46](../../../Source/Common/Support/BoldMemoryManager.pas#L46) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `BoldMemoryManagerLSBZero` | const | [47](../../../Source/Common/Support/BoldMemoryManager.pas#L47) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `BoldMemoryManagerLSBFactor` | const | [48](../../../Source/Common/Support/BoldMemoryManager.pas#L48) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `BoldMemoryManagerMaxPage` | const | [49](../../../Source/Common/Support/BoldMemoryManager.pas#L49) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `BoldMemoryManagerMask` | const | [50](../../../Source/Common/Support/BoldMemoryManager.pas#L50) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `TBoldMemoryManagerPageCounters` | array | [57](../../../Source/Common/Support/BoldMemoryManager.pas#L57) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `TBoldMemoryManagerPagePointers` | array | [58](../../../Source/Common/Support/BoldMemoryManager.pas#L58) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `TBoldMemoryManager` | class | [61](../../../Source/Common/Support/BoldMemoryManager.pas#L61) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `BoldMemoryManager_` | routine | [104](../../../Source/Common/Support/BoldMemoryManager.pas#L104) · [body 151](../../../Source/Common/Support/BoldMemoryManager.pas#L151) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `Log` | routine, implementation | [121](../../../Source/Common/Support/BoldMemoryManager.pas#L121) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `TPage` | array, implementation | [139](../../../Source/Common/Support/BoldMemoryManager.pas#L139) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `DestroyIfEmpty` | routine, implementation | [145](../../../Source/Common/Support/BoldMemoryManager.pas#L145) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `pInteger` | pointer, implementation | [270](../../../Source/Common/Support/BoldMemoryManager.pas#L270) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `initialization` | initialization, implementation | [474](../../../Source/Common/Support/BoldMemoryManager.pas#L474) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `finalization` | finalization, implementation | [476](../../../Source/Common/Support/BoldMemoryManager.pas#L476) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
 
 ## TBoldMemoryManager
 
-class at [line 61](../../../Source/Common/Support/BoldMemoryManager.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/Common/Support/BoldMemoryManager.pas#L61); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AllocateNewPage` | method, private | [74](../../../Source/Common/Support/BoldMemoryManager.pas#L74) · [body 179](../../../Source/Common/Support/BoldMemoryManager.pas#L179) |  | ⚪ not started |  |
-| `GarbageCollectPage` | method, private | [75](../../../Source/Common/Support/BoldMemoryManager.pas#L75) · [body 203](../../../Source/Common/Support/BoldMemoryManager.pas#L203) |  | ⚪ not started |  |
-| `LinkIn` | method, private | [76](../../../Source/Common/Support/BoldMemoryManager.pas#L76) · [body 165](../../../Source/Common/Support/BoldMemoryManager.pas#L165) |  | ⚪ not started |  |
-| `LinkOut` | method, private | [77](../../../Source/Common/Support/BoldMemoryManager.pas#L77) · [body 172](../../../Source/Common/Support/BoldMemoryManager.pas#L172) |  | ⚪ not started |  |
-| `GetAllocated` | method, private | [79](../../../Source/Common/Support/BoldMemoryManager.pas#L79) · [body 436](../../../Source/Common/Support/BoldMemoryManager.pas#L436) |  | ⚪ not started |  |
-| `GetMemoryInfo` | method, private | [80](../../../Source/Common/Support/BoldMemoryManager.pas#L80) · [body 401](../../../Source/Common/Support/BoldMemoryManager.pas#L401) |  | ⚪ not started |  |
-| `GetOverhead` | method, private | [81](../../../Source/Common/Support/BoldMemoryManager.pas#L81) · [body 243](../../../Source/Common/Support/BoldMemoryManager.pas#L243) |  | ⚪ not started |  |
-| `GetInUse` | method, private | [82](../../../Source/Common/Support/BoldMemoryManager.pas#L82) · [body 256](../../../Source/Common/Support/BoldMemoryManager.pas#L256) |  | ⚪ not started |  |
-| `GetAllocatedPages` | method, private | [83](../../../Source/Common/Support/BoldMemoryManager.pas#L83) · [body 441](../../../Source/Common/Support/BoldMemoryManager.pas#L441) |  | ⚪ not started |  |
-| `Pages` | property, protected | [85](../../../Source/Common/Support/BoldMemoryManager.pas#L85) |  | ⚪ not started |  |
-| `PageSizes` | property, protected | [86](../../../Source/Common/Support/BoldMemoryManager.pas#L86) |  | ⚪ not started |  |
-| `Create` | constructor | [88](../../../Source/Common/Support/BoldMemoryManager.pas#L88) · [body 375](../../../Source/Common/Support/BoldMemoryManager.pas#L375) |  | ⚪ not started |  |
-| `Destroy` | destructor | [89](../../../Source/Common/Support/BoldMemoryManager.pas#L89) · [body 383](../../../Source/Common/Support/BoldMemoryManager.pas#L383) |  | ⚪ not started |  |
-| `GarbageCollect` | method | [90](../../../Source/Common/Support/BoldMemoryManager.pas#L90) · [body 347](../../../Source/Common/Support/BoldMemoryManager.pas#L347) |  | ⚪ not started |  |
-| `AllocateMemory` | method | [91](../../../Source/Common/Support/BoldMemoryManager.pas#L91) · [body 273](../../../Source/Common/Support/BoldMemoryManager.pas#L273) |  | ⚪ not started |  |
-| `AllocateMemoryZeroFill` | method | [92](../../../Source/Common/Support/BoldMemoryManager.pas#L92) · [body 468](../../../Source/Common/Support/BoldMemoryManager.pas#L468) |  | ⚪ not started |  |
-| `DeAllocateMemory` | method | [93](../../../Source/Common/Support/BoldMemoryManager.pas#L93) · [body 314](../../../Source/Common/Support/BoldMemoryManager.pas#L314) |  | ⚪ not started |  |
-| `ReallocateMemoryZeroFill` | method | [94](../../../Source/Common/Support/BoldMemoryManager.pas#L94) · [body 450](../../../Source/Common/Support/BoldMemoryManager.pas#L450) |  | ⚪ not started |  |
-| `Overhead` | property | [95](../../../Source/Common/Support/BoldMemoryManager.pas#L95) |  | ⚪ not started |  |
-| `Allocated` | property | [96](../../../Source/Common/Support/BoldMemoryManager.pas#L96) |  | ⚪ not started |  |
-| `InUse` | property | [97](../../../Source/Common/Support/BoldMemoryManager.pas#L97) |  | ⚪ not started |  |
-| `AllocatedPages` | property | [98](../../../Source/Common/Support/BoldMemoryManager.pas#L98) |  | ⚪ not started |  |
-| `MemoryInfo` | property | [99](../../../Source/Common/Support/BoldMemoryManager.pas#L99) |  | ⚪ not started |  |
-| `BytesInBigBlocks` | property | [100](../../../Source/Common/Support/BoldMemoryManager.pas#L100) |  | ⚪ not started |  |
-| `BigBlockCount` | property | [101](../../../Source/Common/Support/BoldMemoryManager.pas#L101) |  | ⚪ not started |  |
+| `AllocateNewPage` | method, private | [74](../../../Source/Common/Support/BoldMemoryManager.pas#L74) · [body 179](../../../Source/Common/Support/BoldMemoryManager.pas#L179) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `GarbageCollectPage` | method, private | [75](../../../Source/Common/Support/BoldMemoryManager.pas#L75) · [body 203](../../../Source/Common/Support/BoldMemoryManager.pas#L203) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `LinkIn` | method, private | [76](../../../Source/Common/Support/BoldMemoryManager.pas#L76) · [body 165](../../../Source/Common/Support/BoldMemoryManager.pas#L165) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `LinkOut` | method, private | [77](../../../Source/Common/Support/BoldMemoryManager.pas#L77) · [body 172](../../../Source/Common/Support/BoldMemoryManager.pas#L172) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `GetAllocated` | method, private | [79](../../../Source/Common/Support/BoldMemoryManager.pas#L79) · [body 436](../../../Source/Common/Support/BoldMemoryManager.pas#L436) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `GetMemoryInfo` | method, private | [80](../../../Source/Common/Support/BoldMemoryManager.pas#L80) · [body 401](../../../Source/Common/Support/BoldMemoryManager.pas#L401) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `GetOverhead` | method, private | [81](../../../Source/Common/Support/BoldMemoryManager.pas#L81) · [body 243](../../../Source/Common/Support/BoldMemoryManager.pas#L243) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `GetInUse` | method, private | [82](../../../Source/Common/Support/BoldMemoryManager.pas#L82) · [body 256](../../../Source/Common/Support/BoldMemoryManager.pas#L256) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `GetAllocatedPages` | method, private | [83](../../../Source/Common/Support/BoldMemoryManager.pas#L83) · [body 441](../../../Source/Common/Support/BoldMemoryManager.pas#L441) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `Pages` | property, protected | [85](../../../Source/Common/Support/BoldMemoryManager.pas#L85) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `PageSizes` | property, protected | [86](../../../Source/Common/Support/BoldMemoryManager.pas#L86) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `Create` | constructor | [88](../../../Source/Common/Support/BoldMemoryManager.pas#L88) · [body 375](../../../Source/Common/Support/BoldMemoryManager.pas#L375) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `Destroy` | destructor | [89](../../../Source/Common/Support/BoldMemoryManager.pas#L89) · [body 383](../../../Source/Common/Support/BoldMemoryManager.pas#L383) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `GarbageCollect` | method | [90](../../../Source/Common/Support/BoldMemoryManager.pas#L90) · [body 347](../../../Source/Common/Support/BoldMemoryManager.pas#L347) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `AllocateMemory` | method | [91](../../../Source/Common/Support/BoldMemoryManager.pas#L91) · [body 273](../../../Source/Common/Support/BoldMemoryManager.pas#L273) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `AllocateMemoryZeroFill` | method | [92](../../../Source/Common/Support/BoldMemoryManager.pas#L92) · [body 468](../../../Source/Common/Support/BoldMemoryManager.pas#L468) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `DeAllocateMemory` | method | [93](../../../Source/Common/Support/BoldMemoryManager.pas#L93) · [body 314](../../../Source/Common/Support/BoldMemoryManager.pas#L314) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `ReallocateMemoryZeroFill` | method | [94](../../../Source/Common/Support/BoldMemoryManager.pas#L94) · [body 450](../../../Source/Common/Support/BoldMemoryManager.pas#L450) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `Overhead` | property | [95](../../../Source/Common/Support/BoldMemoryManager.pas#L95) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `Allocated` | property | [96](../../../Source/Common/Support/BoldMemoryManager.pas#L96) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `InUse` | property | [97](../../../Source/Common/Support/BoldMemoryManager.pas#L97) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `AllocatedPages` | property | [98](../../../Source/Common/Support/BoldMemoryManager.pas#L98) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `MemoryInfo` | property | [99](../../../Source/Common/Support/BoldMemoryManager.pas#L99) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `BytesInBigBlocks` | property | [100](../../../Source/Common/Support/BoldMemoryManager.pas#L100) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
+| `BigBlockCount` | property | [101](../../../Source/Common/Support/BoldMemoryManager.pas#L101) |  | 🔵 replaced (via unit replaced): the .NET runtime allocates and the garbage collector frees memory |  |
 
 ## Dependencies
 

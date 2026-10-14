@@ -277,6 +277,7 @@ public sealed class ReportWriter(PortAnalysis analysis)
         {
             string csharp = unit.CSharpFiles.Count > 0
                 ? string.Join("<br>", unit.CSharpFiles.Select(f => Md.CodeLink(f, page, f)))
+                : unit.Map?.IsReplaced == true ? $"replaced by .NET: {Md.Escape(unit.Map.Replace!)}"
                 : unit.Map?.CSharpFile is { } planned ? $"not started; planned as {Md.Code(planned)}" : "not planned yet";
             text.Append($"| C# | {csharp} |\n");
             text.Append($"| Project | {Md.Escape(unit.Map?.Project ?? "not decided")} |\n");

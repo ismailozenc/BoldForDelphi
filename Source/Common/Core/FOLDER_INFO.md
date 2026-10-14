@@ -30,9 +30,9 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldAggeregates](../../../CSharp/port/units/BoldAggeregates.md) | Bold.Core: Common/Core/BoldAggeregates.cs (not started) | Later (after M12, or when needed) |
-| [BoldBase](../../../CSharp/port/units/BoldBase.md) | Bold.Core: Common/Core/BoldBase.cs (not started) | M1 Load models |
-| [BoldCommonConst](../../../CSharp/port/units/BoldCommonConst.md) | Bold.Core: Common/Core/BoldCommonConst.cs (not started) | M1 Load models |
-| [BoldContainers](../../../CSharp/port/units/BoldContainers.md) | Bold.Core: Common/Core/BoldContainers.cs (not started) | M1 Load models |
+| [BoldBase](../../../CSharp/port/units/BoldBase.md) | [Bold.Core: Common/Core/BoldBase.cs](../../../CSharp/src/Bold.Core/Common/Core/BoldBase.cs) | M1 Load models |
+| [BoldCommonConst](../../../CSharp/port/units/BoldCommonConst.md) | [Bold.Core: Common/Core/BoldCommonConst.cs](../../../CSharp/src/Bold.Core/Common/Core/BoldCommonConst.cs) | M1 Load models |
+| [BoldContainers](../../../CSharp/port/units/BoldContainers.md) | [Bold.Core: Common/Core/BoldContainers.cs](../../../CSharp/src/Bold.Core/Common/Core/BoldContainers.cs) | M1 Load models |
 | [BoldDefs](../../../CSharp/port/units/BoldDefs.md) | [Bold.Core: Common/Core/BoldDefs.cs](../../../CSharp/src/Bold.Core/Common/Core/BoldDefs.cs) | M1 Load models |
 | [BoldStreams](../../../CSharp/port/units/BoldStreams.md) | Bold.Core: Common/Core/BoldStreams.cs (not started) | M2 Runtime model and subscriptions |
 | [BoldThreadSafeQueue](../../../CSharp/port/units/BoldThreadSafeQueue.md) | Bold.Core: Common/Core/BoldThreadSafeQueue.cs (not started) | M9 Multi-user |

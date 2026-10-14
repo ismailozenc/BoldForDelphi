@@ -111,6 +111,12 @@ public sealed class PortMapUnit
     /// <summary>Why the unit is not ported. Set only for units that are not ported.</summary>
     public string? Drop { get; set; }
 
+    /// <summary>What .NET feature replaces the whole unit, for units whose job .NET already does (no C# file needed).</summary>
+    public string? Replace { get; set; }
+
+    [JsonIgnore]
+    public bool IsReplaced => Replace is not null;
+
     /// <summary>Anything a reader should know, such as why the unit moved to another project.</summary>
     public string? Note { get; set; }
 
@@ -153,6 +159,11 @@ public sealed class PortMapUnit
         if (Drop is not null)
         {
             parts.Add($"\"drop\": {PortMap.Json(Drop)}");
+        }
+
+        if (Replace is not null)
+        {
+            parts.Add($"\"replace\": {PortMap.Json(Replace)}");
         }
 
         if (Note is not null)

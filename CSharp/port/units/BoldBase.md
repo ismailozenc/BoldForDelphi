@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Core/BoldBase.pas`](../../../Source/Common/Core/BoldBase.pas) (216 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Core/BoldBase.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Core/BoldBase.Aliases.cs`](../../src/Bold.Core/Common/Core/BoldBase.Aliases.cs)<br>[`CSharp/src/Bold.Core/Common/Core/BoldBase.cs`](../../src/Bold.Core/Common/Core/BoldBase.cs) |
 | Project | Bold.Core |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 48 symbols done, 0 verified |
+| Status | 🟡 partial: 46 of 48 symbols done, 44 verified |
 
-⚪ 48 not started
+✅ 44 verified · 🟢 2 ported · 🟡 2 partial
 
 ## Unit level
 
@@ -18,89 +18,95 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldMemoryManagedObject` | class | [15](../../../Source/Common/Core/BoldBase.pas#L15) |  | ⚪ not started |  |
-| `TBoldInterfacedObject` | class | [22](../../../Source/Common/Core/BoldBase.pas#L22) |  | ⚪ not started |  |
-| `TBoldRefCountedObject` | class | [32](../../../Source/Common/Core/BoldBase.pas#L32) |  | ⚪ not started |  |
-| `TBoldNonRefCountedObject` | class | [47](../../../Source/Common/Core/BoldBase.pas#L47) |  | ⚪ not started |  |
-| `TBoldElementFlag` | alias | [53](../../../Source/Common/Core/BoldBase.pas#L53) |  | ⚪ not started |  |
-| `BoldElementFlag0` | const | [57](../../../Source/Common/Core/BoldBase.pas#L57) |  | ⚪ not started |  |
-| `BoldElementFlag1` | const | [58](../../../Source/Common/Core/BoldBase.pas#L58) |  | ⚪ not started |  |
-| `BoldElementFlag2` | const | [59](../../../Source/Common/Core/BoldBase.pas#L59) |  | ⚪ not started |  |
-| `BoldElementFlag3` | const | [60](../../../Source/Common/Core/BoldBase.pas#L60) |  | ⚪ not started |  |
-| `BoldElementFlag4` | const | [61](../../../Source/Common/Core/BoldBase.pas#L61) |  | ⚪ not started |  |
-| `BoldElementFlag5` | const | [62](../../../Source/Common/Core/BoldBase.pas#L62) |  | ⚪ not started |  |
-| `BoldElementFlag6` | const | [63](../../../Source/Common/Core/BoldBase.pas#L63) |  | ⚪ not started |  |
-| `BoldElementFlag7` | const | [64](../../../Source/Common/Core/BoldBase.pas#L64) |  | ⚪ not started |  |
-| `BoldElementFlag8` | const | [65](../../../Source/Common/Core/BoldBase.pas#L65) |  | ⚪ not started |  |
-| `BoldElementFlag9` | const | [66](../../../Source/Common/Core/BoldBase.pas#L66) |  | ⚪ not started |  |
-| `BoldElementFlag10` | const | [67](../../../Source/Common/Core/BoldBase.pas#L67) |  | ⚪ not started |  |
-| `BoldElementFlag11` | const | [68](../../../Source/Common/Core/BoldBase.pas#L68) |  | ⚪ not started |  |
-| `BoldElementFlag12` | const | [69](../../../Source/Common/Core/BoldBase.pas#L69) |  | ⚪ not started |  |
-| `BoldElementFlag13` | const | [70](../../../Source/Common/Core/BoldBase.pas#L70) |  | ⚪ not started |  |
-| `BoldElementFlag14` | const | [71](../../../Source/Common/Core/BoldBase.pas#L71) |  | ⚪ not started |  |
-| `BoldElementFlag15` | const | [72](../../../Source/Common/Core/BoldBase.pas#L72) |  | ⚪ not started |  |
-| `BoldElementFlag16` | const | [73](../../../Source/Common/Core/BoldBase.pas#L73) |  | ⚪ not started |  |
-| `BoldElementFlag17` | const | [74](../../../Source/Common/Core/BoldBase.pas#L74) |  | ⚪ not started |  |
-| `BoldElementFlag18` | const | [75](../../../Source/Common/Core/BoldBase.pas#L75) |  | ⚪ not started |  |
-| `BoldElementFlag19` | const | [76](../../../Source/Common/Core/BoldBase.pas#L76) |  | ⚪ not started |  |
-| `BoldElementFlag20` | const | [77](../../../Source/Common/Core/BoldBase.pas#L77) |  | ⚪ not started |  |
-| `BoldElementFlag21` | const | [78](../../../Source/Common/Core/BoldBase.pas#L78) |  | ⚪ not started |  |
-| `BoldElementFlag22` | const | [79](../../../Source/Common/Core/BoldBase.pas#L79) |  | ⚪ not started |  |
-| `BoldElementFlag23` | const | [80](../../../Source/Common/Core/BoldBase.pas#L80) |  | ⚪ not started |  |
-| `TBoldFlaggedObject` | class | [84](../../../Source/Common/Core/BoldBase.pas#L84) |  | ⚪ not started |  |
+| `TBoldMemoryManagedObject` | class | [15](../../../Source/Common/Core/BoldBase.pas#L15) | [`TBoldMemoryManagedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L14) | ✅ verified | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `TBoldInterfacedObject` | class | [22](../../../Source/Common/Core/BoldBase.pas#L22) | [`TBoldInterfacedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L26) | ✅ verified | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `TBoldRefCountedObject` | class | [32](../../../Source/Common/Core/BoldBase.pas#L32) | [`TBoldRefCountedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L37) | ✅ verified | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `TBoldNonRefCountedObject` | class | [47](../../../Source/Common/Core/BoldBase.pas#L47) | [`TBoldNonRefCountedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L64) | ✅ verified | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `TBoldElementFlag` | alias | [53](../../../Source/Common/Core/BoldBase.pas#L53) | [`global using TBoldElementFlag`](../../src/Bold.Core/Common/Core/BoldBase.Aliases.cs#L6) | ✅ verified: Global using alias of int, in BoldBase.Aliases.cs. | ✔ [`BoldBaseTests.Element_flags_are_independent_bits`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L48) |
+| `BoldElementFlag0` | const | [57](../../../Source/Common/Core/BoldBase.pas#L57) | [`BoldBase.BoldElementFlag0`](../../src/Bold.Core/Common/Core/BoldBase.cs#L106) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag1` | const | [58](../../../Source/Common/Core/BoldBase.pas#L58) | [`BoldBase.BoldElementFlag1`](../../src/Bold.Core/Common/Core/BoldBase.cs#L107) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag2` | const | [59](../../../Source/Common/Core/BoldBase.pas#L59) | [`BoldBase.BoldElementFlag2`](../../src/Bold.Core/Common/Core/BoldBase.cs#L108) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag3` | const | [60](../../../Source/Common/Core/BoldBase.pas#L60) | [`BoldBase.BoldElementFlag3`](../../src/Bold.Core/Common/Core/BoldBase.cs#L109) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag4` | const | [61](../../../Source/Common/Core/BoldBase.pas#L61) | [`BoldBase.BoldElementFlag4`](../../src/Bold.Core/Common/Core/BoldBase.cs#L110) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag5` | const | [62](../../../Source/Common/Core/BoldBase.pas#L62) | [`BoldBase.BoldElementFlag5`](../../src/Bold.Core/Common/Core/BoldBase.cs#L111) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag6` | const | [63](../../../Source/Common/Core/BoldBase.pas#L63) | [`BoldBase.BoldElementFlag6`](../../src/Bold.Core/Common/Core/BoldBase.cs#L112) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag7` | const | [64](../../../Source/Common/Core/BoldBase.pas#L64) | [`BoldBase.BoldElementFlag7`](../../src/Bold.Core/Common/Core/BoldBase.cs#L113) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag8` | const | [65](../../../Source/Common/Core/BoldBase.pas#L65) | [`BoldBase.BoldElementFlag8`](../../src/Bold.Core/Common/Core/BoldBase.cs#L114) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag9` | const | [66](../../../Source/Common/Core/BoldBase.pas#L66) | [`BoldBase.BoldElementFlag9`](../../src/Bold.Core/Common/Core/BoldBase.cs#L115) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag10` | const | [67](../../../Source/Common/Core/BoldBase.pas#L67) | [`BoldBase.BoldElementFlag10`](../../src/Bold.Core/Common/Core/BoldBase.cs#L116) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag11` | const | [68](../../../Source/Common/Core/BoldBase.pas#L68) | [`BoldBase.BoldElementFlag11`](../../src/Bold.Core/Common/Core/BoldBase.cs#L117) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag12` | const | [69](../../../Source/Common/Core/BoldBase.pas#L69) | [`BoldBase.BoldElementFlag12`](../../src/Bold.Core/Common/Core/BoldBase.cs#L118) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag13` | const | [70](../../../Source/Common/Core/BoldBase.pas#L70) | [`BoldBase.BoldElementFlag13`](../../src/Bold.Core/Common/Core/BoldBase.cs#L119) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag14` | const | [71](../../../Source/Common/Core/BoldBase.pas#L71) | [`BoldBase.BoldElementFlag14`](../../src/Bold.Core/Common/Core/BoldBase.cs#L120) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag15` | const | [72](../../../Source/Common/Core/BoldBase.pas#L72) | [`BoldBase.BoldElementFlag15`](../../src/Bold.Core/Common/Core/BoldBase.cs#L121) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag16` | const | [73](../../../Source/Common/Core/BoldBase.pas#L73) | [`BoldBase.BoldElementFlag16`](../../src/Bold.Core/Common/Core/BoldBase.cs#L122) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag17` | const | [74](../../../Source/Common/Core/BoldBase.pas#L74) | [`BoldBase.BoldElementFlag17`](../../src/Bold.Core/Common/Core/BoldBase.cs#L123) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag18` | const | [75](../../../Source/Common/Core/BoldBase.pas#L75) | [`BoldBase.BoldElementFlag18`](../../src/Bold.Core/Common/Core/BoldBase.cs#L124) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag19` | const | [76](../../../Source/Common/Core/BoldBase.pas#L76) | [`BoldBase.BoldElementFlag19`](../../src/Bold.Core/Common/Core/BoldBase.cs#L125) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag20` | const | [77](../../../Source/Common/Core/BoldBase.pas#L77) | [`BoldBase.BoldElementFlag20`](../../src/Bold.Core/Common/Core/BoldBase.cs#L126) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag21` | const | [78](../../../Source/Common/Core/BoldBase.pas#L78) | [`BoldBase.BoldElementFlag21`](../../src/Bold.Core/Common/Core/BoldBase.cs#L127) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag22` | const | [79](../../../Source/Common/Core/BoldBase.pas#L79) | [`BoldBase.BoldElementFlag22`](../../src/Bold.Core/Common/Core/BoldBase.cs#L128) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `BoldElementFlag23` | const | [80](../../../Source/Common/Core/BoldBase.pas#L80) | [`BoldBase.BoldElementFlag23`](../../src/Bold.Core/Common/Core/BoldBase.cs#L129) | ✅ verified | ✔ [`BoldBaseTests.Constants_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L27) |
+| `TBoldFlaggedObject` | class | [84](../../../Source/Common/Core/BoldBase.pas#L84) | [`TBoldFlaggedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L75) | ✅ verified | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
 
 ## TBoldMemoryManagedObject
 
-class at [line 15](../../../Source/Common/Core/BoldBase.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Common/Core/BoldBase.pas#L15); ✅ verified, C# [`TBoldMemoryManagedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `NewInstance` | class method | [17](../../../Source/Common/Core/BoldBase.pas#L17) · [body 205](../../../Source/Common/Core/BoldBase.pas#L205) |  | ⚪ not started |  |
-| `FreeInstance` | method | [18](../../../Source/Common/Core/BoldBase.pas#L18) · [body 195](../../../Source/Common/Core/BoldBase.pas#L195) |  | ⚪ not started |  |
+| `NewInstance` | class method | [17](../../../Source/Common/Core/BoldBase.pas#L17) · [body 205](../../../Source/Common/Core/BoldBase.pas#L205) | [`TBoldMemoryManagedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L14) | ✅ verified: The .NET runtime allocates objects. | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `FreeInstance` | method | [18](../../../Source/Common/Core/BoldBase.pas#L18) · [body 195](../../../Source/Common/Core/BoldBase.pas#L195) | [`TBoldMemoryManagedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L14) | ✅ verified: The garbage collector frees objects. | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
 
 ## TBoldInterfacedObject
 
-class at [line 22](../../../Source/Common/Core/BoldBase.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/Common/Core/BoldBase.pas#L22); ✅ verified, C# [`TBoldInterfacedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L26).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `QueryInterface` | method, protected | [24](../../../Source/Common/Core/BoldBase.pas#L24) · [body 105](../../../Source/Common/Core/BoldBase.pas#L105) |  | ⚪ not started |  |
-| `_AddRef` | method, protected | [25](../../../Source/Common/Core/BoldBase.pas#L25) |  | ⚪ not started |  |
-| `_Release` | method, protected | [26](../../../Source/Common/Core/BoldBase.pas#L26) |  | ⚪ not started |  |
-| `SupportsInterface` | method | [28](../../../Source/Common/Core/BoldBase.pas#L28) · [body 113](../../../Source/Common/Core/BoldBase.pas#L113) |  | ⚪ not started |  |
+| `QueryInterface` | method, protected | [24](../../../Source/Common/Core/BoldBase.pas#L24) · [body 105](../../../Source/Common/Core/BoldBase.pas#L105) | [`TBoldInterfacedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L26) | ✅ verified: Use a C# type test (obj is IFoo foo). | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `_AddRef` | method, protected | [25](../../../Source/Common/Core/BoldBase.pas#L25) | [`TBoldInterfacedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L26) | ✅ verified: No reference counting in .NET. | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `_Release` | method, protected | [26](../../../Source/Common/Core/BoldBase.pas#L26) | [`TBoldInterfacedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L26) | ✅ verified: No reference counting in .NET. | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `SupportsInterface` | method | [28](../../../Source/Common/Core/BoldBase.pas#L28) · [body 113](../../../Source/Common/Core/BoldBase.pas#L113) | [`TBoldInterfacedObject.SupportsInterface`](../../src/Bold.Core/Common/Core/BoldBase.cs#L30) | ✅ verified: Takes the interface type where Delphi takes its GUID. | ✔ [`BoldBaseTests.SupportsInterface_tests_the_type`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L89) |
 
 ## TBoldRefCountedObject
 
-class at [line 32](../../../Source/Common/Core/BoldBase.pas#L32); ⚪ not started.
+class at [line 32](../../../Source/Common/Core/BoldBase.pas#L32); ✅ verified, C# [`TBoldRefCountedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L37).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_AddRef` | method, protected | [35](../../../Source/Common/Core/BoldBase.pas#L35) · [body 142](../../../Source/Common/Core/BoldBase.pas#L142) |  | ⚪ not started |  |
-| `_Release` | method, protected | [36](../../../Source/Common/Core/BoldBase.pas#L36) · [body 147](../../../Source/Common/Core/BoldBase.pas#L147) |  | ⚪ not started |  |
-| `AfterConstruction` | method | [39](../../../Source/Common/Core/BoldBase.pas#L39) · [body 122](../../../Source/Common/Core/BoldBase.pas#L122) |  | ⚪ not started |  |
-| `NewInstance` | class method | [40](../../../Source/Common/Core/BoldBase.pas#L40) · [body 135](../../../Source/Common/Core/BoldBase.pas#L135) |  | ⚪ not started |  |
-| `BeforeDestruction` | method | [42](../../../Source/Common/Core/BoldBase.pas#L42) · [body 128](../../../Source/Common/Core/BoldBase.pas#L128) |  | ⚪ not started |  |
-| `RefCount` | property | [43](../../../Source/Common/Core/BoldBase.pas#L43) |  | ⚪ not started |  |
+| `_AddRef` | method, protected | [35](../../../Source/Common/Core/BoldBase.pas#L35) · [body 142](../../../Source/Common/Core/BoldBase.pas#L142) | [`TBoldRefCountedObject._AddRef`](../../src/Bold.Core/Common/Core/BoldBase.cs#L46) | 🟡 partial: Counts only; reaching zero does not destroy the object, the garbage collector does. | ✔ [`BoldBaseTests.Destroying_a_referenced_object_raises`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L77) |
+| `_Release` | method, protected | [36](../../../Source/Common/Core/BoldBase.pas#L36) · [body 147](../../../Source/Common/Core/BoldBase.pas#L147) | [`TBoldRefCountedObject._Release`](../../src/Bold.Core/Common/Core/BoldBase.cs#L49) | 🟡 partial: Counts only; reaching zero does not destroy the object, the garbage collector does. | ✔ [`BoldBaseTests.Destroying_a_referenced_object_raises`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L77) |
+| `AfterConstruction` | method | [39](../../../Source/Common/Core/BoldBase.pas#L39) · [body 122](../../../Source/Common/Core/BoldBase.pas#L122) | [`TBoldRefCountedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L37) | ✅ verified: Delphi starts the count at 1 during construction; the count starts at 0 here. | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `NewInstance` | class method | [40](../../../Source/Common/Core/BoldBase.pas#L40) · [body 135](../../../Source/Common/Core/BoldBase.pas#L135) | [`TBoldRefCountedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L37) | ✅ verified: The .NET runtime allocates objects. | ✔ [`BoldBaseTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L38) |
+| `BeforeDestruction` | method | [42](../../../Source/Common/Core/BoldBase.pas#L42) · [body 128](../../../Source/Common/Core/BoldBase.pas#L128) | [`TBoldRefCountedObject.BeforeDestruction`](../../src/Bold.Core/Common/Core/BoldBase.cs#L53) | ✅ verified | ✔ [`BoldBaseTests.Destroying_a_referenced_object_raises`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L77) |
+| `RefCount` | property | [43](../../../Source/Common/Core/BoldBase.pas#L43) | [`TBoldRefCountedObject.RefCount`](../../src/Bold.Core/Common/Core/BoldBase.cs#L42) | ✅ verified | ✔ [`BoldBaseTests.Destroying_a_referenced_object_raises`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L77) |
 
 ## TBoldNonRefCountedObject
 
-class at [line 47](../../../Source/Common/Core/BoldBase.pas#L47); ⚪ not started.
+class at [line 47](../../../Source/Common/Core/BoldBase.pas#L47); ✅ verified, C# [`TBoldNonRefCountedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L64).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_AddRef` | method, protected | [49](../../../Source/Common/Core/BoldBase.pas#L49) · [body 156](../../../Source/Common/Core/BoldBase.pas#L156) |  | ⚪ not started |  |
-| `_Release` | method, protected | [50](../../../Source/Common/Core/BoldBase.pas#L50) · [body 161](../../../Source/Common/Core/BoldBase.pas#L161) |  | ⚪ not started |  |
+| `_AddRef` | method, protected | [49](../../../Source/Common/Core/BoldBase.pas#L49) · [body 156](../../../Source/Common/Core/BoldBase.pas#L156) | [`TBoldNonRefCountedObject._AddRef`](../../src/Bold.Core/Common/Core/BoldBase.cs#L67) | 🟢 ported |  |
+| `_Release` | method, protected | [50](../../../Source/Common/Core/BoldBase.pas#L50) · [body 161](../../../Source/Common/Core/BoldBase.pas#L161) | [`TBoldNonRefCountedObject._Release`](../../src/Bold.Core/Common/Core/BoldBase.cs#L70) | 🟢 ported |  |
 
 ## TBoldFlaggedObject
 
-class at [line 84](../../../Source/Common/Core/BoldBase.pas#L84); ⚪ not started.
+class at [line 84](../../../Source/Common/Core/BoldBase.pas#L84); ✅ verified, C# [`TBoldFlaggedObject`](../../src/Bold.Core/Common/Core/BoldBase.cs#L75).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetInternalState` | method, protected | [88](../../../Source/Common/Core/BoldBase.pas#L88) · [body 181](../../../Source/Common/Core/BoldBase.pas#L181) |  | ⚪ not started |  |
-| `GetInternalState` | method, protected | [89](../../../Source/Common/Core/BoldBase.pas#L89) · [body 188](../../../Source/Common/Core/BoldBase.pas#L188) |  | ⚪ not started |  |
-| `SetElementFlag` | method, protected | [90](../../../Source/Common/Core/BoldBase.pas#L90) · [body 173](../../../Source/Common/Core/BoldBase.pas#L173) |  | ⚪ not started |  |
-| `GetElementFlag` | method, protected | [91](../../../Source/Common/Core/BoldBase.pas#L91) · [body 168](../../../Source/Common/Core/BoldBase.pas#L168) |  | ⚪ not started |  |
+| `SetInternalState` | method, protected | [88](../../../Source/Common/Core/BoldBase.pas#L88) · [body 181](../../../Source/Common/Core/BoldBase.pas#L181) | [`TBoldFlaggedObject.SetInternalState`](../../src/Bold.Core/Common/Core/BoldBase.cs#L80) | ✅ verified | ✔ [`BoldBaseTests.Internal_state_is_packed_beside_the_flags`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L63) |
+| `GetInternalState` | method, protected | [89](../../../Source/Common/Core/BoldBase.pas#L89) · [body 188](../../../Source/Common/Core/BoldBase.pas#L188) | [`TBoldFlaggedObject.GetInternalState`](../../src/Bold.Core/Common/Core/BoldBase.cs#L84) | ✅ verified | ✔ [`BoldBaseTests.Internal_state_is_packed_beside_the_flags`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L63) |
+| `SetElementFlag` | method, protected | [90](../../../Source/Common/Core/BoldBase.pas#L90) · [body 173](../../../Source/Common/Core/BoldBase.pas#L173) | [`TBoldFlaggedObject.SetElementFlag`](../../src/Bold.Core/Common/Core/BoldBase.cs#L87) | ✅ verified | ✔ [`BoldBaseTests.Element_flags_are_independent_bits`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L48) |
+| `GetElementFlag` | method, protected | [91](../../../Source/Common/Core/BoldBase.pas#L91) · [body 168](../../../Source/Common/Core/BoldBase.pas#L168) | [`TBoldFlaggedObject.GetElementFlag`](../../src/Bold.Core/Common/Core/BoldBase.cs#L100) | ✅ verified | ✔ [`BoldBaseTests.Element_flags_are_independent_bits`](../../tests/Bold.Core.Tests/Common/Core/BoldBaseTests.cs#L48) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldRefCountedObject.FRefCount`](../../src/Bold.Core/Common/Core/BoldBase.cs#L39) (field)
 
 ## Dependencies
 

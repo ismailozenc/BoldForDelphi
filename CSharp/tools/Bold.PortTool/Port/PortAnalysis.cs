@@ -120,6 +120,11 @@ public sealed class UnitStatus
                 return Indicator.Dropped;
             }
 
+            if (Map?.IsReplaced == true && Symbols.All(s => s.Indicator is Indicator.Replaced or Indicator.Verified))
+            {
+                return Indicator.Replaced;
+            }
+
             if (Symbols.Any(s => s.Indicator == Indicator.Failing))
             {
                 return Indicator.Failing;
@@ -720,6 +725,12 @@ public sealed class PortAnalysis
                 {
                     status.Status = propertyMarker.Status;
                     status.Via = $"property {symbol.AccessorOf.Key}";
+                }
+                else if (map?.IsReplaced == true)
+                {
+                    status.Status = PortStatus.Replaced;
+                    status.Note = map.Replace;
+                    status.Via = "unit replaced";
                 }
                 else if (map?.IsDropped == true)
                 {
