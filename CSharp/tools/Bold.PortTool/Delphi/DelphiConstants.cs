@@ -25,8 +25,11 @@ public static class DelphiConstants
         ["Boolean"] = (0, 1),
     };
 
-    /// <summary>The values of the unit's interface constants and resource strings, by name (case-insensitive).</summary>
-    public static Dictionary<string, object?> Evaluate(DelphiUnit unit)
+    /// <summary>
+    /// The values of the unit's interface constants and resource strings, by name (case-insensitive).
+    /// <paramref name="external"/> resolves identifiers the unit does not declare, such as constants of used units.
+    /// </summary>
+    public static Dictionary<string, object?> Evaluate(DelphiUnit unit, Func<string, object?>? external = null)
     {
         var symbols = unit.Symbols
             .Where(s => s.Kind is SymbolKind.Const or SymbolKind.ResourceString)
@@ -59,7 +62,12 @@ public static class DelphiConstants
                 return value;
             }
 
-            return enums.TryGetValue(name, out long ordinal) ? ordinal : null;
+            if (enums.TryGetValue(name, out long ordinal))
+            {
+                return ordinal;
+            }
+
+            return symbols.ContainsKey(name) ? null : external?.Invoke(name);
         }
 
         foreach (string name in symbols.Keys)

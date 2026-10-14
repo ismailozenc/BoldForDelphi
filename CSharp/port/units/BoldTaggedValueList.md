@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/TaggedValues/BoldTaggedValueList.pas`](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas) (178 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs) |
 | Project | Bold.Core |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 26 symbols done, 0 verified |
+| Status | ✅ verified: 26 of 26 symbols done, 26 verified |
 
-⚪ 26 not started
+✅ 26 verified
 
 ## Unit level
 
@@ -18,60 +18,60 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldTaggedValueList` | class | [20](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L20) |  | ⚪ not started |  |
-| `TBoldTaggedValueDefinition` | class | [39](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L39) |  | ⚪ not started |  |
-| `TBoldTaggedValuePerClassList` | class | [52](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L52) |  | ⚪ not started |  |
-| `TBoldTaggedValueDefinitionIndex` | class | [64](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L64) |  | ⚪ not started |  |
+| `TBoldTaggedValueList` | class | [20](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L20) | [`TBoldTaggedValueList`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L8) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `TBoldTaggedValueDefinition` | class | [39](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L39) | [`TBoldTaggedValueDefinition`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L71) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `TBoldTaggedValuePerClassList` | class | [52](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L52) | [`TBoldTaggedValuePerClassList`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L98) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `TBoldTaggedValueDefinitionIndex` | class | [64](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L64) | [`TBoldTaggedValueDefinitionIndex`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L151) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
 
 ## TBoldTaggedValueList
 
-class at [line 20](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L20); ✅ verified, C# [`TBoldTaggedValueList`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCount` | method, private | [24](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L24) · [body 111](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L111) |  | ⚪ not started |  |
-| `GetDefinition` | method, private | [25](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L25) · [body 127](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L127) |  | ⚪ not started |  |
-| `GetDefaultValueForTag` | method, private | [26](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L26) · [body 116](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L116) |  | ⚪ not started |  |
-| `GetDefinitionForTag` | method, private | [27](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L27) · [body 132](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L132) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L29) · [body 97](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L97) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L30) · [body 104](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L104) |  | ⚪ not started |  |
-| `Add` | method | [31](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L31) · [body 88](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L88) |  | ⚪ not started |  |
-| `Definition` | property | [32](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L32) |  | ⚪ not started |  |
-| `DefaultValueForTag` | property | [33](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L33) |  | ⚪ not started |  |
-| `DefinitionForTag` | property | [34](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L34) |  | ⚪ not started |  |
-| `Count` | property | [35](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L35) |  | ⚪ not started |  |
+| `GetCount` | method, private | [24](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L24) · [body 111](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L111) | [`TBoldTaggedValueList.GetCount`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L29) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `GetDefinition` | method, private | [25](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L25) · [body 127](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L127) | [`TBoldTaggedValueList.GetDefinition`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L32) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `GetDefaultValueForTag` | method, private | [26](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L26) · [body 116](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L116) | [`TBoldTaggedValueList.GetDefaultValueForTag`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L35) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `GetDefinitionForTag` | method, private | [27](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L27) · [body 132](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L132) | [`TBoldTaggedValueList.GetDefinitionForTag`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L44) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Create` | constructor | [29](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L29) · [body 97](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L97) | [`TBoldTaggedValueList.TBoldTaggedValueList`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L14) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Destroy` | destructor | [30](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L30) · [body 104](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L104) | [`TBoldTaggedValueList.Dispose`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L21) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Add` | method | [31](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L31) · [body 88](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L88) | [`TBoldTaggedValueList.Add`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L48) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Definition` | property | [32](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L32) | [`TBoldTaggedValueList.Definition`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L56) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36)<br>✔ [`TaggedValueTests.Lists_have_the_Delphi_counts_and_unknown_tags_raise`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L47) |
+| `DefaultValueForTag` | property | [33](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L33) | [`TBoldTaggedValueList.DefaultValueForTag`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L60) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36)<br>✔ [`TaggedValueTests.Lists_have_the_Delphi_counts_and_unknown_tags_raise`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L47) |
+| `DefinitionForTag` | property | [34](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L34) | [`TBoldTaggedValueList.DefinitionForTag`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L63) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Count` | property | [35](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L35) | [`TBoldTaggedValueList.Count`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L66) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36)<br>✔ [`TaggedValueTests.Lists_have_the_Delphi_counts_and_unknown_tags_raise`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L47) |
 
 ## TBoldTaggedValueDefinition
 
-class at [line 39](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L39); ⚪ not started.
+class at [line 39](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L39); ✅ verified, C# [`TBoldTaggedValueDefinition`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L71).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [45](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L45) · [body 78](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L78) |  | ⚪ not started |  |
-| `Tag` | property | [46](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L46) |  | ⚪ not started |  |
-| `DefaultValue` | property | [47](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L47) |  | ⚪ not started |  |
-| `TypeName` | property | [48](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L48) |  | ⚪ not started |  |
+| `Create` | constructor | [45](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L45) · [body 78](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L78) | [`TBoldTaggedValueDefinition.TBoldTaggedValueDefinition`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L78) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Tag` | property | [46](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L46) | [`TBoldTaggedValueDefinition.Tag`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L87) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `DefaultValue` | property | [47](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L47) | [`TBoldTaggedValueDefinition.DefaultValue`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L90) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `TypeName` | property | [48](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L48) | [`TBoldTaggedValueDefinition.TypeName`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L93) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
 
 ## TBoldTaggedValuePerClassList
 
-class at [line 52](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L52); ⚪ not started.
+class at [line 52](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L52); ✅ verified, C# [`TBoldTaggedValuePerClassList`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L98).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetListForClassName` | method, private | [55](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L55) · [body 160](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L160) |  | ⚪ not started |  |
-| `GetDefaultForClassAndTag` | method, private | [56](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L56) · [body 155](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L155) |  | ⚪ not started |  |
-| `Create` | constructor | [58](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L58) · [body 139](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L139) |  | ⚪ not started |  |
-| `Destroy` | destructor | [59](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L59) · [body 145](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L145) |  | ⚪ not started |  |
-| `ListForClassName` | property | [60](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L60) |  | ⚪ not started |  |
-| `DefaultForClassAndTag` | property | [61](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L61) |  | ⚪ not started |  |
+| `GetListForClassName` | method, private | [55](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L55) · [body 160](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L160) | [`TBoldTaggedValuePerClassList.GetListForClassName`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L127) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `GetDefaultForClassAndTag` | method, private | [56](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L56) · [body 155](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L155) | [`TBoldTaggedValuePerClassList.GetDefaultForClassAndTag`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L140) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Create` | constructor | [58](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L58) · [body 139](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L139) | [`TBoldTaggedValuePerClassList.TBoldTaggedValuePerClassList`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L103) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `Destroy` | destructor | [59](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L59) · [body 145](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L145) | [`TBoldTaggedValuePerClassList.Dispose`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L109) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `ListForClassName` | property | [60](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L60) | [`TBoldTaggedValuePerClassList.ListForClassName`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L143) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
+| `DefaultForClassAndTag` | property | [61](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L61) | [`TBoldTaggedValuePerClassList.DefaultForClassAndTag`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L146) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
 
 ## TBoldTaggedValueDefinitionIndex
 
-class at [line 64](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L64); ⚪ not started.
+class at [line 64](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L64); ✅ verified, C# [`TBoldTaggedValueDefinitionIndex`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L151).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [66](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L66) · [body 173](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L173) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [66](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L66) · [body 173](../../../Source/Common/TaggedValues/BoldTaggedValueList.pas#L173) | [`TBoldTaggedValueDefinitionIndex.ItemAsKeyString`](../../src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs#L154) | ✅ verified | ✔ [`TaggedValueTests.Bold_defaults_per_element_kind`](../../tests/Bold.Core.Tests/Common/TaggedValues/TaggedValueTests.cs#L36) |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/UML/BoldUMLTypes.pas`](../../../Source/Common/UML/BoldUMLTypes.pas) (205 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/UML/BoldUMLTypes.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/UML/BoldUMLTypes.cs`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs) |
 | Project | Bold.Core |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 30 symbols done, 0 verified |
+| Status | ✅ verified: 30 of 30 symbols done, 30 verified |
 
-⚪ 30 not started
+✅ 30 verified
 
 ## Unit level
 
@@ -18,50 +18,50 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldParameterDirectionKind` | enum | [17](../../../Source/Common/UML/BoldUMLTypes.pas#L17) |  | ⚪ not started |  |
-| `TAggregationKind` | enum | [18](../../../Source/Common/UML/BoldUMLTypes.pas#L18) |  | ⚪ not started |  |
-| `TVisibilityKind` | enum | [19](../../../Source/Common/UML/BoldUMLTypes.pas#L19) |  | ⚪ not started |  |
-| `TChangeableKind` | enum | [20](../../../Source/Common/UML/BoldUMLTypes.pas#L20) |  | ⚪ not started |  |
-| `TScopeKind` | enum | [21](../../../Source/Common/UML/BoldUMLTypes.pas#L21) |  | ⚪ not started |  |
-| `TOrderingKind` | enum | [22](../../../Source/Common/UML/BoldUMLTypes.pas#L22) |  | ⚪ not started |  |
-| `TPseudostateKind` | enum | [23](../../../Source/Common/UML/BoldUMLTypes.pas#L23) |  | ⚪ not started |  |
-| `TCallConcurrencyKind` | enum | [25](../../../Source/Common/UML/BoldUMLTypes.pas#L25) |  | ⚪ not started |  |
-| `TMessageDirectionKind` | enum | [26](../../../Source/Common/UML/BoldUMLTypes.pas#L26) |  | ⚪ not started |  |
-| `TBoldUMLRange` | class | [28](../../../Source/Common/UML/BoldUMLTypes.pas#L28) |  | ⚪ not started |  |
-| `TBoldUMLMultiplicity` | class | [46](../../../Source/Common/UML/BoldUMLTypes.pas#L46) |  | ⚪ not started |  |
+| `TBoldParameterDirectionKind` | enum | [17](../../../Source/Common/UML/BoldUMLTypes.pas#L17) | [`TBoldParameterDirectionKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L7) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TAggregationKind` | enum | [18](../../../Source/Common/UML/BoldUMLTypes.pas#L18) | [`TAggregationKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L10) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TVisibilityKind` | enum | [19](../../../Source/Common/UML/BoldUMLTypes.pas#L19) | [`TVisibilityKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L13) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TChangeableKind` | enum | [20](../../../Source/Common/UML/BoldUMLTypes.pas#L20) | [`TChangeableKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L16) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TScopeKind` | enum | [21](../../../Source/Common/UML/BoldUMLTypes.pas#L21) | [`TScopeKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L19) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TOrderingKind` | enum | [22](../../../Source/Common/UML/BoldUMLTypes.pas#L22) | [`TOrderingKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L22) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TPseudostateKind` | enum | [23](../../../Source/Common/UML/BoldUMLTypes.pas#L23) | [`TPseudostateKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L25) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TCallConcurrencyKind` | enum | [25](../../../Source/Common/UML/BoldUMLTypes.pas#L25) | [`TCallConcurrencyKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L28) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TMessageDirectionKind` | enum | [26](../../../Source/Common/UML/BoldUMLTypes.pas#L26) | [`TMessageDirectionKind`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L31) | ✅ verified | ✔ [`BoldUMLTypesTests.Enums_have_the_Delphi_members_in_order`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L17) |
+| `TBoldUMLRange` | class | [28](../../../Source/Common/UML/BoldUMLTypes.pas#L28) | [`TBoldUMLRange`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L35) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `TBoldUMLMultiplicity` | class | [46](../../../Source/Common/UML/BoldUMLTypes.pas#L46) | [`TBoldUMLMultiplicity`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L139) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
 
 ## TBoldUMLRange
 
-class at [line 28](../../../Source/Common/UML/BoldUMLTypes.pas#L28); ⚪ not started.
+class at [line 28](../../../Source/Common/UML/BoldUMLTypes.pas#L28); ✅ verified, C# [`TBoldUMLRange`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L35).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, private | [33](../../../Source/Common/UML/BoldUMLTypes.pas#L33) · [body 82](../../../Source/Common/UML/BoldUMLTypes.pas#L82) |  | ⚪ not started |  |
-| `SetAsString` | method, private | [34](../../../Source/Common/UML/BoldUMLTypes.pas#L34) · [body 92](../../../Source/Common/UML/BoldUMLTypes.pas#L92) |  | ⚪ not started |  |
-| `SetUpper` | method, private | [35](../../../Source/Common/UML/BoldUMLTypes.pas#L35) · [body 124](../../../Source/Common/UML/BoldUMLTypes.pas#L124) |  | ⚪ not started |  |
-| `SetUpperUnlimited` | method, private | [36](../../../Source/Common/UML/BoldUMLTypes.pas#L36) · [body 130](../../../Source/Common/UML/BoldUMLTypes.pas#L130) |  | ⚪ not started |  |
-| `FormatAsString` | method | [38](../../../Source/Common/UML/BoldUMLTypes.pas#L38) · [body 68](../../../Source/Common/UML/BoldUMLTypes.pas#L68) |  | ⚪ not started |  |
-| `InRange` | method | [39](../../../Source/Common/UML/BoldUMLTypes.pas#L39) · [body 87](../../../Source/Common/UML/BoldUMLTypes.pas#L87) |  | ⚪ not started |  |
-| `AsString` | property | [40](../../../Source/Common/UML/BoldUMLTypes.pas#L40) |  | ⚪ not started |  |
-| `Lower` | property | [41](../../../Source/Common/UML/BoldUMLTypes.pas#L41) |  | ⚪ not started |  |
-| `Upper` | property | [42](../../../Source/Common/UML/BoldUMLTypes.pas#L42) |  | ⚪ not started |  |
-| `UpperUnlimited` | property | [43](../../../Source/Common/UML/BoldUMLTypes.pas#L43) |  | ⚪ not started |  |
+| `GetAsString` | method, private | [33](../../../Source/Common/UML/BoldUMLTypes.pas#L33) · [body 82](../../../Source/Common/UML/BoldUMLTypes.pas#L82) | [`TBoldUMLRange.GetAsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L42) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `SetAsString` | method, private | [34](../../../Source/Common/UML/BoldUMLTypes.pas#L34) · [body 92](../../../Source/Common/UML/BoldUMLTypes.pas#L92) | [`TBoldUMLRange.SetAsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L46) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `SetUpper` | method, private | [35](../../../Source/Common/UML/BoldUMLTypes.pas#L35) · [body 124](../../../Source/Common/UML/BoldUMLTypes.pas#L124) | [`TBoldUMLRange.SetUpper`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L77) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `SetUpperUnlimited` | method, private | [36](../../../Source/Common/UML/BoldUMLTypes.pas#L36) · [body 130](../../../Source/Common/UML/BoldUMLTypes.pas#L130) | [`TBoldUMLRange.SetUpperUnlimited`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L84) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `FormatAsString` | method | [38](../../../Source/Common/UML/BoldUMLTypes.pas#L38) · [body 68](../../../Source/Common/UML/BoldUMLTypes.pas#L68) | [`TBoldUMLRange.FormatAsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L95) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `InRange` | method | [39](../../../Source/Common/UML/BoldUMLTypes.pas#L39) · [body 87](../../../Source/Common/UML/BoldUMLTypes.pas#L87) | [`TBoldUMLRange.InRange`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L106) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `AsString` | property | [40](../../../Source/Common/UML/BoldUMLTypes.pas#L40) | [`TBoldUMLRange.AsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L109) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `Lower` | property | [41](../../../Source/Common/UML/BoldUMLTypes.pas#L41) | [`TBoldUMLRange.Lower`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L116) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `Upper` | property | [42](../../../Source/Common/UML/BoldUMLTypes.pas#L42) | [`TBoldUMLRange.Upper`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L123) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
+| `UpperUnlimited` | property | [43](../../../Source/Common/UML/BoldUMLTypes.pas#L43) | [`TBoldUMLRange.UpperUnlimited`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L130) | ✅ verified | ✔ [`BoldUMLTypesTests.Range_parses_and_formats`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L31) |
 
 ## TBoldUMLMultiplicity
 
-class at [line 46](../../../Source/Common/UML/BoldUMLTypes.pas#L46); ⚪ not started.
+class at [line 46](../../../Source/Common/UML/BoldUMLTypes.pas#L46); ✅ verified, C# [`TBoldUMLMultiplicity`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L139).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetRange` | method, private | [48](../../../Source/Common/UML/BoldUMLTypes.pas#L48) · [body 168](../../../Source/Common/UML/BoldUMLTypes.pas#L168) |  | ⚪ not started |  |
-| `GetAsString` | method, private | [49](../../../Source/Common/UML/BoldUMLTypes.pas#L49) · [body 163](../../../Source/Common/UML/BoldUMLTypes.pas#L163) |  | ⚪ not started |  |
-| `SetAsString` | method, private | [50](../../../Source/Common/UML/BoldUMLTypes.pas#L50) · [body 182](../../../Source/Common/UML/BoldUMLTypes.pas#L182) |  | ⚪ not started |  |
-| `Create` | constructor | [52](../../../Source/Common/UML/BoldUMLTypes.pas#L52) · [body 145](../../../Source/Common/UML/BoldUMLTypes.pas#L145) |  | ⚪ not started |  |
-| `FormatAsString` | method | [53](../../../Source/Common/UML/BoldUMLTypes.pas#L53) · [body 150](../../../Source/Common/UML/BoldUMLTypes.pas#L150) |  | ⚪ not started |  |
-| `InRange` | method | [54](../../../Source/Common/UML/BoldUMLTypes.pas#L54) · [body 173](../../../Source/Common/UML/BoldUMLTypes.pas#L173) |  | ⚪ not started |  |
-| `AsString` | property | [55](../../../Source/Common/UML/BoldUMLTypes.pas#L55) |  | ⚪ not started |  |
-| `AddRange` | method | [56](../../../Source/Common/UML/BoldUMLTypes.pas#L56) · [body 139](../../../Source/Common/UML/BoldUMLTypes.pas#L139) |  | ⚪ not started |  |
-| `Range` | property | [57](../../../Source/Common/UML/BoldUMLTypes.pas#L57) |  | ⚪ not started |  |
+| `GetRange` | method, private | [48](../../../Source/Common/UML/BoldUMLTypes.pas#L48) · [body 168](../../../Source/Common/UML/BoldUMLTypes.pas#L168) | [`TBoldUMLMultiplicity.GetRange`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L148) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `GetAsString` | method, private | [49](../../../Source/Common/UML/BoldUMLTypes.pas#L49) · [body 163](../../../Source/Common/UML/BoldUMLTypes.pas#L163) | [`TBoldUMLMultiplicity.GetAsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L151) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `SetAsString` | method, private | [50](../../../Source/Common/UML/BoldUMLTypes.pas#L50) · [body 182](../../../Source/Common/UML/BoldUMLTypes.pas#L182) | [`TBoldUMLMultiplicity.SetAsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L154) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `Create` | constructor | [52](../../../Source/Common/UML/BoldUMLTypes.pas#L52) · [body 145](../../../Source/Common/UML/BoldUMLTypes.pas#L145) | [`TBoldUMLMultiplicity.TBoldUMLMultiplicity`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L142) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `FormatAsString` | method | [53](../../../Source/Common/UML/BoldUMLTypes.pas#L53) · [body 150](../../../Source/Common/UML/BoldUMLTypes.pas#L150) | [`TBoldUMLMultiplicity.FormatAsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L168) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `InRange` | method | [54](../../../Source/Common/UML/BoldUMLTypes.pas#L54) · [body 173](../../../Source/Common/UML/BoldUMLTypes.pas#L173) | [`TBoldUMLMultiplicity.InRange`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L185) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `AsString` | property | [55](../../../Source/Common/UML/BoldUMLTypes.pas#L55) | [`TBoldUMLMultiplicity.AsString`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L199) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `AddRange` | method | [56](../../../Source/Common/UML/BoldUMLTypes.pas#L56) · [body 139](../../../Source/Common/UML/BoldUMLTypes.pas#L139) | [`TBoldUMLMultiplicity.AddRange`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L206) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
+| `Range` | property | [57](../../../Source/Common/UML/BoldUMLTypes.pas#L57) | [`TBoldUMLMultiplicity.Range`](../../src/Bold.Core/Common/UML/BoldUMLTypes.cs#L214) | ✅ verified | ✔ [`BoldUMLTypesTests.Multiplicity_holds_several_ranges`](../../tests/Bold.Core.Tests/Common/UML/BoldUMLTypesTests.cs#L45) |
 
 ## Dependencies
 

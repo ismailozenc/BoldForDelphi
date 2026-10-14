@@ -13,8 +13,36 @@ public static class DelphiSource
         DelphiParser.ParseFile(RepoPaths.Full(path), full => Path.GetRelativePath(RepoPaths.Root, full).Replace('\\', '/'))
         ?? throw new InvalidOperationException($"{path} is not a Delphi unit"));
 
-    /// <summary>The values of the unit's constants and resource strings; null where the expression cannot be evaluated.</summary>
-    public static Dictionary<string, object?> Constants(string relativePath) => DelphiConstants.Evaluate(Unit(relativePath));
+    private static readonly ConcurrentDictionary<string, Dictionary<string, object?>> ConstantCache = new(StringComparer.OrdinalIgnoreCase);
+
+    private static readonly Lazy<Dictionary<string, string>> UnitPaths = new(() =>
+        Directory.EnumerateFiles(RepoPaths.Full("Source"), "*.pas", SearchOption.AllDirectories)
+            .GroupBy(f => Path.GetFileNameWithoutExtension(f), StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(g => g.Key, g => Path.GetRelativePath(RepoPaths.Root, g.First()).Replace('\\', '/'), StringComparer.OrdinalIgnoreCase));
+
+    /// <summary>
+    /// The values of the unit's constants and resource strings; null where the expression cannot be evaluated.
+    /// Identifiers declared by units in the interface uses clause (such as BoldDefs constants) are resolved too.
+    /// </summary>
+    public static Dictionary<string, object?> Constants(string relativePath) => ConstantCache.GetOrAdd(relativePath, path =>
+    {
+        DelphiUnit unit = Unit(path);
+        object? External(string name)
+        {
+            foreach (string used in unit.UsesInterface)
+            {
+                if (UnitPaths.Value.TryGetValue(used, out string? usedPath)
+                    && Constants(usedPath).TryGetValue(name, out object? value))
+                {
+                    return value;
+                }
+            }
+
+            return null;
+        }
+
+        return DelphiConstants.Evaluate(unit, External);
+    });
 
     /// <summary>A type, routine or constant declared at unit level.</summary>
     public static DelphiSymbol Symbol(string relativePath, string name) =>

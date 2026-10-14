@@ -26,8 +26,8 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldDefaultTaggedValues](../../../CSharp/port/units/BoldDefaultTaggedValues.md) | Bold.Core: Common/TaggedValues/BoldDefaultTaggedValues.cs (not started) | M1 Load models |
-| [BoldTaggedValueList](../../../CSharp/port/units/BoldTaggedValueList.md) | Bold.Core: Common/TaggedValues/BoldTaggedValueList.cs (not started) | M1 Load models |
-| [BoldTaggedValueSupport](../../../CSharp/port/units/BoldTaggedValueSupport.md) | Bold.Core: Common/TaggedValues/BoldTaggedValueSupport.cs (not started) | M1 Load models |
-| [BoldUMLTaggedValues](../../../CSharp/port/units/BoldUMLTaggedValues.md) | Bold.Core: Common/TaggedValues/BoldUMLTaggedValues.cs (not started) | M1 Load models |
+| [BoldDefaultTaggedValues](../../../CSharp/port/units/BoldDefaultTaggedValues.md) | [Bold.Core: Common/TaggedValues/BoldDefaultTaggedValues.cs](../../../CSharp/src/Bold.Core/Common/TaggedValues/BoldDefaultTaggedValues.cs) | M1 Load models |
+| [BoldTaggedValueList](../../../CSharp/port/units/BoldTaggedValueList.md) | [Bold.Core: Common/TaggedValues/BoldTaggedValueList.cs](../../../CSharp/src/Bold.Core/Common/TaggedValues/BoldTaggedValueList.cs) | M1 Load models |
+| [BoldTaggedValueSupport](../../../CSharp/port/units/BoldTaggedValueSupport.md) | [Bold.Core: Common/TaggedValues/BoldTaggedValueSupport.cs](../../../CSharp/src/Bold.Core/Common/TaggedValues/BoldTaggedValueSupport.cs) | M1 Load models |
+| [BoldUMLTaggedValues](../../../CSharp/port/units/BoldUMLTaggedValues.md) | [Bold.Core: Common/TaggedValues/BoldUMLTaggedValues.cs](../../../CSharp/src/Bold.Core/Common/TaggedValues/BoldUMLTaggedValues.cs) | M1 Load models |
 <!-- END C# PORT -->
