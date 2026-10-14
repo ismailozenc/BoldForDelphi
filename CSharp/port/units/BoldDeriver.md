@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Subscription/BoldDeriver.pas`](../../../Source/Common/Subscription/BoldDeriver.pas) (263 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Subscription/BoldDeriver.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Subscription/BoldDeriver.cs`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs) |
 | Project | Bold.Core |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 38 symbols done, 0 verified |
+| Status | ✅ verified: 38 of 38 symbols done, 38 verified |
 
-⚪ 38 not started
+✅ 38 verified
 
 ## Unit level
 
@@ -18,65 +18,72 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDeriveAndResubscribe` | event type | [16](../../../Source/Common/Subscription/BoldDeriver.pas#L16) |  | ⚪ not started |  |
-| `TBoldReverseDerive` | event type | [17](../../../Source/Common/Subscription/BoldDeriver.pas#L17) |  | ⚪ not started |  |
-| `TBoldDeriverState` | enum | [20](../../../Source/Common/Subscription/BoldDeriver.pas#L20) |  | ⚪ not started |  |
-| `TBoldAbstractDeriver` | class | [23](../../../Source/Common/Subscription/BoldDeriver.pas#L23) |  | ⚪ not started |  |
-| `TBoldEventPluggedDeriver` | class | [55](../../../Source/Common/Subscription/BoldDeriver.pas#L55) |  | ⚪ not started |  |
-| `TBoldDeriver` | class | [72](../../../Source/Common/Subscription/BoldDeriver.pas#L72) |  | ⚪ not started |  |
-| `bdsIsDeriving` | const | [81](../../../Source/Common/Subscription/BoldDeriver.pas#L81) |  | ⚪ not started |  |
+| `TBoldDeriveAndResubscribe` | event type | [16](../../../Source/Common/Subscription/BoldDeriver.pas#L16) | [`TBoldDeriveAndResubscribe`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L8) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `TBoldReverseDerive` | event type | [17](../../../Source/Common/Subscription/BoldDeriver.pas#L17) | [`TBoldReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L12) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `TBoldDeriverState` | enum | [20](../../../Source/Common/Subscription/BoldDeriver.pas#L20) | [`TBoldDeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L15) | ✅ verified | ✔ [`BoldDeriverTests.States_have_the_Delphi_members`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L15) |
+| `TBoldAbstractDeriver` | class | [23](../../../Source/Common/Subscription/BoldDeriver.pas#L23) | [`TBoldAbstractDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L26) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `TBoldEventPluggedDeriver` | class | [55](../../../Source/Common/Subscription/BoldDeriver.pas#L55) | [`TBoldEventPluggedDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L221) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `TBoldDeriver` | class | [72](../../../Source/Common/Subscription/BoldDeriver.pas#L72) | [`TBoldDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L283) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `bdsIsDeriving` | const | [81](../../../Source/Common/Subscription/BoldDeriver.pas#L81) | [`BoldDeriver.bdsIsDeriving`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L303) | ✅ verified: A static readonly set; C# has no set constants. | ✔ [`BoldDeriverTests.States_have_the_Delphi_members`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L15) |
 
 ## TBoldAbstractDeriver
 
-class at [line 23](../../../Source/Common/Subscription/BoldDeriver.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/Common/Subscription/BoldDeriver.pas#L23); ✅ verified, C# [`TBoldAbstractDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L26).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetDeriverState` | method, private | [27](../../../Source/Common/Subscription/BoldDeriver.pas#L27) · [body 177](../../../Source/Common/Subscription/BoldDeriver.pas#L177) |  | ⚪ not started |  |
-| `SetSubscribe` | method, private | [28](../../../Source/Common/Subscription/BoldDeriver.pas#L28) · [body 205](../../../Source/Common/Subscription/BoldDeriver.pas#L205) |  | ⚪ not started |  |
-| `GetIsDeriving` | method, private | [29](../../../Source/Common/Subscription/BoldDeriver.pas#L29) · [body 135](../../../Source/Common/Subscription/BoldDeriver.pas#L135) |  | ⚪ not started |  |
-| `SetInternalDeriverState` | method, protected | [31](../../../Source/Common/Subscription/BoldDeriver.pas#L31) |  | ⚪ not started |  |
-| `GetInternalDeriverState` | method, protected | [32](../../../Source/Common/Subscription/BoldDeriver.pas#L32) |  | ⚪ not started |  |
-| `Receive` | method, protected | [33](../../../Source/Common/Subscription/BoldDeriver.pas#L33) · [body 152](../../../Source/Common/Subscription/BoldDeriver.pas#L152) |  | ⚪ not started |  |
-| `DeriverState` | property, protected | [35](../../../Source/Common/Subscription/BoldDeriver.pas#L35) |  | ⚪ not started |  |
-| `DoDeriveAndSubscribe` | method, protected | [36](../../../Source/Common/Subscription/BoldDeriver.pas#L36) |  | ⚪ not started |  |
-| `DoNotifyOutOfDate` | method, protected | [37](../../../Source/Common/Subscription/BoldDeriver.pas#L37) · [body 119](../../../Source/Common/Subscription/BoldDeriver.pas#L119) |  | ⚪ not started |  |
-| `DoReverseDerive` | method, protected | [38](../../../Source/Common/Subscription/BoldDeriver.pas#L38) · [body 124](../../../Source/Common/Subscription/BoldDeriver.pas#L124) |  | ⚪ not started |  |
-| `GetCanReverseDerive` | method, protected | [39](../../../Source/Common/Subscription/BoldDeriver.pas#L39) |  | ⚪ not started |  |
-| `InternalDeriverState` | property, protected | [40](../../../Source/Common/Subscription/BoldDeriver.pas#L40) |  | ⚪ not started |  |
-| `Create` | constructor | [42](../../../Source/Common/Subscription/BoldDeriver.pas#L42) · [body 92](../../../Source/Common/Subscription/BoldDeriver.pas#L92) |  | ⚪ not started |  |
-| `MarkSubscriptionOutOfdate` | method | [43](../../../Source/Common/Subscription/BoldDeriver.pas#L43) · [body 140](../../../Source/Common/Subscription/BoldDeriver.pas#L140) |  | ⚪ not started |  |
-| `MarkOutOfdate` | method | [44](../../../Source/Common/Subscription/BoldDeriver.pas#L44) · [body 145](../../../Source/Common/Subscription/BoldDeriver.pas#L145) |  | ⚪ not started |  |
-| `EnsureCurrent` | method | [45](../../../Source/Common/Subscription/BoldDeriver.pas#L45) · [body 129](../../../Source/Common/Subscription/BoldDeriver.pas#L129) |  | ⚪ not started |  |
-| `Derive` | method | [46](../../../Source/Common/Subscription/BoldDeriver.pas#L46) · [body 99](../../../Source/Common/Subscription/BoldDeriver.pas#L99) |  | ⚪ not started |  |
-| `ReverseDerive` | method | [47](../../../Source/Common/Subscription/BoldDeriver.pas#L47) · [body 172](../../../Source/Common/Subscription/BoldDeriver.pas#L172) |  | ⚪ not started |  |
-| `DerivedObject` | property | [48](../../../Source/Common/Subscription/BoldDeriver.pas#L48) |  | ⚪ not started |  |
-| `Subscribe` | property | [49](../../../Source/Common/Subscription/BoldDeriver.pas#L49) |  | ⚪ not started |  |
-| `IsDeriving` | property | [50](../../../Source/Common/Subscription/BoldDeriver.pas#L50) |  | ⚪ not started |  |
-| `CanReverseDerive` | property | [51](../../../Source/Common/Subscription/BoldDeriver.pas#L51) |  | ⚪ not started |  |
+| `SetDeriverState` | method, private | [27](../../../Source/Common/Subscription/BoldDeriver.pas#L27) · [body 177](../../../Source/Common/Subscription/BoldDeriver.pas#L177) | [`TBoldAbstractDeriver.SetDeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L40) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `SetSubscribe` | method, private | [28](../../../Source/Common/Subscription/BoldDeriver.pas#L28) · [body 205](../../../Source/Common/Subscription/BoldDeriver.pas#L205) | [`TBoldAbstractDeriver.SetSubscribe`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L72) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `GetIsDeriving` | method, private | [29](../../../Source/Common/Subscription/BoldDeriver.pas#L29) · [body 135](../../../Source/Common/Subscription/BoldDeriver.pas#L135) | [`TBoldAbstractDeriver.GetIsDeriving`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L93) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `SetInternalDeriverState` | method, protected | [31](../../../Source/Common/Subscription/BoldDeriver.pas#L31) | [`TBoldAbstractDeriver.SetInternalDeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L95) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `GetInternalDeriverState` | method, protected | [32](../../../Source/Common/Subscription/BoldDeriver.pas#L32) | [`TBoldAbstractDeriver.GetInternalDeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L96) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `Receive` | method, protected | [33](../../../Source/Common/Subscription/BoldDeriver.pas#L33) · [body 152](../../../Source/Common/Subscription/BoldDeriver.pas#L152) | [`TBoldAbstractDeriver.Receive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L100) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `DeriverState` | property, protected | [35](../../../Source/Common/Subscription/BoldDeriver.pas#L35) | [`TBoldAbstractDeriver.DeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L128) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `DoDeriveAndSubscribe` | method, protected | [36](../../../Source/Common/Subscription/BoldDeriver.pas#L36) | [`TBoldAbstractDeriver.DoDeriveAndSubscribe`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L134) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `DoNotifyOutOfDate` | method, protected | [37](../../../Source/Common/Subscription/BoldDeriver.pas#L37) · [body 119](../../../Source/Common/Subscription/BoldDeriver.pas#L119) | [`TBoldAbstractDeriver.DoNotifyOutOfDate`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L137) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `DoReverseDerive` | method, protected | [38](../../../Source/Common/Subscription/BoldDeriver.pas#L38) · [body 124](../../../Source/Common/Subscription/BoldDeriver.pas#L124) | [`TBoldAbstractDeriver.DoReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L143) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `GetCanReverseDerive` | method, protected | [39](../../../Source/Common/Subscription/BoldDeriver.pas#L39) | [`TBoldAbstractDeriver.GetCanReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L145) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `InternalDeriverState` | property, protected | [40](../../../Source/Common/Subscription/BoldDeriver.pas#L40) | [`TBoldAbstractDeriver.InternalDeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L148) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `Create` | constructor | [42](../../../Source/Common/Subscription/BoldDeriver.pas#L42) · [body 92](../../../Source/Common/Subscription/BoldDeriver.pas#L92) | [`TBoldAbstractDeriver.TBoldAbstractDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L32) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `MarkSubscriptionOutOfdate` | method | [43](../../../Source/Common/Subscription/BoldDeriver.pas#L43) · [body 140](../../../Source/Common/Subscription/BoldDeriver.pas#L140) | [`TBoldAbstractDeriver.MarkSubscriptionOutOfdate`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L155) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `MarkOutOfdate` | method | [44](../../../Source/Common/Subscription/BoldDeriver.pas#L44) · [body 145](../../../Source/Common/Subscription/BoldDeriver.pas#L145) | [`TBoldAbstractDeriver.MarkOutOfdate`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L159) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `EnsureCurrent` | method | [45](../../../Source/Common/Subscription/BoldDeriver.pas#L45) · [body 129](../../../Source/Common/Subscription/BoldDeriver.pas#L129) | [`TBoldAbstractDeriver.EnsureCurrent`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L168) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `Derive` | method | [46](../../../Source/Common/Subscription/BoldDeriver.pas#L46) · [body 99](../../../Source/Common/Subscription/BoldDeriver.pas#L99) | [`TBoldAbstractDeriver.Derive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L178) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `ReverseDerive` | method | [47](../../../Source/Common/Subscription/BoldDeriver.pas#L47) · [body 172](../../../Source/Common/Subscription/BoldDeriver.pas#L172) | [`TBoldAbstractDeriver.ReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L204) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `DerivedObject` | property | [48](../../../Source/Common/Subscription/BoldDeriver.pas#L48) | [`TBoldAbstractDeriver.DerivedObject`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L206) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `Subscribe` | property | [49](../../../Source/Common/Subscription/BoldDeriver.pas#L49) | [`TBoldAbstractDeriver.Subscribe`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L209) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `IsDeriving` | property | [50](../../../Source/Common/Subscription/BoldDeriver.pas#L50) | [`TBoldAbstractDeriver.IsDeriving`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L215) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `CanReverseDerive` | property | [51](../../../Source/Common/Subscription/BoldDeriver.pas#L51) | [`TBoldAbstractDeriver.CanReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L216) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
 
 ## TBoldEventPluggedDeriver
 
-class at [line 55](../../../Source/Common/Subscription/BoldDeriver.pas#L55); ⚪ not started.
+class at [line 55](../../../Source/Common/Subscription/BoldDeriver.pas#L55); ✅ verified, C# [`TBoldEventPluggedDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L221).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DoDeriveAndSubscribe` | method, protected | [61](../../../Source/Common/Subscription/BoldDeriver.pas#L61) · [body 221](../../../Source/Common/Subscription/BoldDeriver.pas#L221) |  | ⚪ not started |  |
-| `DoNotifyOutOfDate` | method, protected | [62](../../../Source/Common/Subscription/BoldDeriver.pas#L62) · [body 230](../../../Source/Common/Subscription/BoldDeriver.pas#L230) |  | ⚪ not started |  |
-| `DoReverseDerive` | method, protected | [63](../../../Source/Common/Subscription/BoldDeriver.pas#L63) · [body 236](../../../Source/Common/Subscription/BoldDeriver.pas#L236) |  | ⚪ not started |  |
-| `GetCanReverseDerive` | method, protected | [64](../../../Source/Common/Subscription/BoldDeriver.pas#L64) · [body 247](../../../Source/Common/Subscription/BoldDeriver.pas#L247) |  | ⚪ not started |  |
-| `OnDeriveAndSubscribe` | property | [66](../../../Source/Common/Subscription/BoldDeriver.pas#L66) |  | ⚪ not started |  |
-| `OnReverseDerive` | property | [67](../../../Source/Common/Subscription/BoldDeriver.pas#L67) |  | ⚪ not started |  |
-| `OnNotifyOutOfdate` | property | [68](../../../Source/Common/Subscription/BoldDeriver.pas#L68) |  | ⚪ not started |  |
+| `DoDeriveAndSubscribe` | method, protected | [61](../../../Source/Common/Subscription/BoldDeriver.pas#L61) · [body 221](../../../Source/Common/Subscription/BoldDeriver.pas#L221) | [`TBoldEventPluggedDeriver.DoDeriveAndSubscribe`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L234) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `DoNotifyOutOfDate` | method, protected | [62](../../../Source/Common/Subscription/BoldDeriver.pas#L62) · [body 230](../../../Source/Common/Subscription/BoldDeriver.pas#L230) | [`TBoldEventPluggedDeriver.DoNotifyOutOfDate`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L238) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `DoReverseDerive` | method, protected | [63](../../../Source/Common/Subscription/BoldDeriver.pas#L63) · [body 236](../../../Source/Common/Subscription/BoldDeriver.pas#L236) | [`TBoldEventPluggedDeriver.DoReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L241) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `GetCanReverseDerive` | method, protected | [64](../../../Source/Common/Subscription/BoldDeriver.pas#L64) · [body 247](../../../Source/Common/Subscription/BoldDeriver.pas#L247) | [`TBoldEventPluggedDeriver.GetCanReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L257) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `OnDeriveAndSubscribe` | property | [66](../../../Source/Common/Subscription/BoldDeriver.pas#L66) | [`TBoldEventPluggedDeriver.OnDeriveAndSubscribe`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L260) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `OnReverseDerive` | property | [67](../../../Source/Common/Subscription/BoldDeriver.pas#L67) | [`TBoldEventPluggedDeriver.OnReverseDerive`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L267) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `OnNotifyOutOfdate` | property | [68](../../../Source/Common/Subscription/BoldDeriver.pas#L68) | [`TBoldEventPluggedDeriver.OnNotifyOutOfdate`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L274) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
 
 ## TBoldDeriver
 
-class at [line 72](../../../Source/Common/Subscription/BoldDeriver.pas#L72); ⚪ not started.
+class at [line 72](../../../Source/Common/Subscription/BoldDeriver.pas#L72); ✅ verified, C# [`TBoldDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L283).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetInternalDeriverState` | method, protected | [76](../../../Source/Common/Subscription/BoldDeriver.pas#L76) · [body 252](../../../Source/Common/Subscription/BoldDeriver.pas#L252) |  | ⚪ not started |  |
-| `GetInternalDeriverState` | method, protected | [77](../../../Source/Common/Subscription/BoldDeriver.pas#L77) · [body 258](../../../Source/Common/Subscription/BoldDeriver.pas#L258) |  | ⚪ not started |  |
+| `SetInternalDeriverState` | method, protected | [76](../../../Source/Common/Subscription/BoldDeriver.pas#L76) · [body 252](../../../Source/Common/Subscription/BoldDeriver.pas#L252) | [`TBoldDeriver.SetInternalDeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L293) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+| `GetInternalDeriverState` | method, protected | [77](../../../Source/Common/Subscription/BoldDeriver.pas#L77) · [body 258](../../../Source/Common/Subscription/BoldDeriver.pas#L258) | [`TBoldDeriver.GetInternalDeriverState`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L296) | ✅ verified | ✔ [`BoldDeriverTests.Deriver_rederives_when_a_subscription_fires`](../../tests/Bold.Core.Tests/Common/Subscription/BoldDeriverTests.cs#L28) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldEventPluggedDeriver.TBoldEventPluggedDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L227) (constructor)
+- [`TBoldDeriver.TBoldDeriver`](../../src/Bold.Core/Common/Subscription/BoldDeriver.cs#L287) (constructor)
 
 ## Dependencies
 

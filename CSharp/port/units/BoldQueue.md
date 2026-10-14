@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Queue/BoldQueue.pas`](../../../Source/Common/Queue/BoldQueue.pas) (444 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Queue/BoldQueue.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Queue/BoldQueue.cs`](../../src/Bold.Core/Common/Queue/BoldQueue.cs) |
 | Project | Bold.Core |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 48 symbols done, 0 verified |
+| Status | ✅ verified: 48 of 48 symbols done, 48 verified |
 
-⚪ 48 not started
+✅ 48 verified
 
 ## Unit level
 
@@ -18,68 +18,78 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `befIsInDisplayList` | const | [12](../../../Source/Common/Queue/BoldQueue.pas#L12) |  | ⚪ not started |  |
-| `befStronglyDependedOfPrioritized` | const | [13](../../../Source/Common/Queue/BoldQueue.pas#L13) |  | ⚪ not started |  |
-| `befFollowerSelected` | const | [15](../../../Source/Common/Queue/BoldQueue.pas#L15) |  | ⚪ not started |  |
-| `TBoldQueueDisplayMode` | enum | [22](../../../Source/Common/Queue/BoldQueue.pas#L22) |  | ⚪ not started |  |
-| `TBoldQueueable` | class | [25](../../../Source/Common/Queue/BoldQueue.pas#L25) |  | ⚪ not started |  |
-| `TBoldQueue` | class | [59](../../../Source/Common/Queue/BoldQueue.pas#L59) |  | ⚪ not started |  |
-| `BoldQueueFinalized` | routine | [85](../../../Source/Common/Queue/BoldQueue.pas#L85) · [body 97](../../../Source/Common/Queue/BoldQueue.pas#L97) |  | ⚪ not started |  |
-| `BoldInstalledQueue` | routine | [86](../../../Source/Common/Queue/BoldQueue.pas#L86) · [body 102](../../../Source/Common/Queue/BoldQueue.pas#L102) |  | ⚪ not started |  |
+| `befIsInDisplayList` | const | [12](../../../Source/Common/Queue/BoldQueue.pas#L12) | [`BoldQueue.befIsInDisplayList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L445) | ✅ verified | ✔ [`BoldQueueTests.Flags_and_modes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L68) |
+| `befStronglyDependedOfPrioritized` | const | [13](../../../Source/Common/Queue/BoldQueue.pas#L13) | [`BoldQueue.befStronglyDependedOfPrioritized`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L446) | ✅ verified | ✔ [`BoldQueueTests.Flags_and_modes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L68) |
+| `befFollowerSelected` | const | [15](../../../Source/Common/Queue/BoldQueue.pas#L15) | [`BoldQueue.befFollowerSelected`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L447) | ✅ verified | ✔ [`BoldQueueTests.Flags_and_modes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L68) |
+| `TBoldQueueDisplayMode` | enum | [22](../../../Source/Common/Queue/BoldQueue.pas#L22) | [`TBoldQueueDisplayMode`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L7) | ✅ verified | ✔ [`BoldQueueTests.Flags_and_modes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L68) |
+| `TBoldQueueable` | class | [25](../../../Source/Common/Queue/BoldQueue.pas#L25) | [`TBoldQueueable`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L14) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `TBoldQueue` | class | [59](../../../Source/Common/Queue/BoldQueue.pas#L59) | [`TBoldQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L284) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `BoldQueueFinalized` | routine | [85](../../../Source/Common/Queue/BoldQueue.pas#L85) · [body 97](../../../Source/Common/Queue/BoldQueue.pas#L97) | [`BoldQueue.BoldQueueFinalized`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L454) | ✅ verified | ✔ [`BoldQueueTests.Flags_and_modes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L68) |
+| `BoldInstalledQueue` | routine | [86](../../../Source/Common/Queue/BoldQueue.pas#L86) · [body 102](../../../Source/Common/Queue/BoldQueue.pas#L102) | [`BoldQueue.BoldInstalledQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L457) | ✅ verified | ✔ [`BoldQueueTests.Flags_and_modes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L68) |
 
 ## TBoldQueueable
 
-class at [line 25](../../../Source/Common/Queue/BoldQueue.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/Common/Queue/BoldQueue.pas#L25); ✅ verified, C# [`TBoldQueueable`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AddToApplyList` | method, protected | [30](../../../Source/Common/Queue/BoldQueue.pas#L30) · [body 126](../../../Source/Common/Queue/BoldQueue.pas#L126) |  | ⚪ not started |  |
-| `RemoveFromApplyList` | method, protected | [31](../../../Source/Common/Queue/BoldQueue.pas#L31) · [body 132](../../../Source/Common/Queue/BoldQueue.pas#L132) |  | ⚪ not started |  |
-| `AddToDisplayList` | method, protected | [32](../../../Source/Common/Queue/BoldQueue.pas#L32) · [body 138](../../../Source/Common/Queue/BoldQueue.pas#L138) |  | ⚪ not started |  |
-| `RemoveFromDisplayList` | method, protected | [33](../../../Source/Common/Queue/BoldQueue.pas#L33) · [body 148](../../../Source/Common/Queue/BoldQueue.pas#L148) |  | ⚪ not started |  |
-| `MostPrioritizedQueuable` | method, protected | [34](../../../Source/Common/Queue/BoldQueue.pas#L34) · [body 162](../../../Source/Common/Queue/BoldQueue.pas#L162) |  | ⚪ not started |  |
-| `MostPrioritizedQueuableOrSelf` | method, protected | [35](../../../Source/Common/Queue/BoldQueue.pas#L35) · [body 155](../../../Source/Common/Queue/BoldQueue.pas#L155) |  | ⚪ not started |  |
-| `AfterInPriority` | method, protected | [36](../../../Source/Common/Queue/BoldQueue.pas#L36) · [body 380](../../../Source/Common/Queue/BoldQueue.pas#L380) |  | ⚪ not started |  |
-| `Display` | method, protected | [37](../../../Source/Common/Queue/BoldQueue.pas#L37) |  | ⚪ not started |  |
-| `StronglyPrioritizedSibbling` | method, protected | [38](../../../Source/Common/Queue/BoldQueue.pas#L38) · [body 389](../../../Source/Common/Queue/BoldQueue.pas#L389) |  | ⚪ not started |  |
-| `DisplayOne` | class method, protected | [39](../../../Source/Common/Queue/BoldQueue.pas#L39) · [body 188](../../../Source/Common/Queue/BoldQueue.pas#L188) |  | ⚪ not started |  |
-| `Create` | constructor | [41](../../../Source/Common/Queue/BoldQueue.pas#L41) · [body 112](../../../Source/Common/Queue/BoldQueue.pas#L112) |  | ⚪ not started |  |
-| `Destroy` | destructor | [42](../../../Source/Common/Queue/BoldQueue.pas#L42) · [body 118](../../../Source/Common/Queue/BoldQueue.pas#L118) |  | ⚪ not started |  |
-| `DisplayAll` | class method | [43](../../../Source/Common/Queue/BoldQueue.pas#L43) · [body 196](../../../Source/Common/Queue/BoldQueue.pas#L196) |  | ⚪ not started |  |
-| `ApplyAll` | class method | [44](../../../Source/Common/Queue/BoldQueue.pas#L44) · [body 204](../../../Source/Common/Queue/BoldQueue.pas#L204) |  | ⚪ not started |  |
-| `ApplyAllMatching` | class method | [45](../../../Source/Common/Queue/BoldQueue.pas#L45) · [body 237](../../../Source/Common/Queue/BoldQueue.pas#L237) |  | ⚪ not started |  |
-| `DiscardChangeAll` | class method | [46](../../../Source/Common/Queue/BoldQueue.pas#L46) · [body 251](../../../Source/Common/Queue/BoldQueue.pas#L251) |  | ⚪ not started |  |
-| `DiscardChangeAllMatching` | class method | [47](../../../Source/Common/Queue/BoldQueue.pas#L47) · [body 265](../../../Source/Common/Queue/BoldQueue.pas#L265) |  | ⚪ not started |  |
-| `AddToPreDisplayQueue` | class method | [48](../../../Source/Common/Queue/BoldQueue.pas#L48) · [body 279](../../../Source/Common/Queue/BoldQueue.pas#L279) |  | ⚪ not started |  |
-| `RemoveFromPreDisplayQueue` | class method | [49](../../../Source/Common/Queue/BoldQueue.pas#L49) · [body 286](../../../Source/Common/Queue/BoldQueue.pas#L286) |  | ⚪ not started |  |
-| `Apply` | method | [50](../../../Source/Common/Queue/BoldQueue.pas#L50) |  | ⚪ not started |  |
-| `DiscardChange` | method | [51](../../../Source/Common/Queue/BoldQueue.pas#L51) |  | ⚪ not started |  |
-| `MatchObject` | property | [52](../../../Source/Common/Queue/BoldQueue.pas#L52) |  | ⚪ not started |  |
-| `IsInDisplayList` | property | [53](../../../Source/Common/Queue/BoldQueue.pas#L53) |  | ⚪ not started |  |
-| `PrioritizedQueuable` | property | [54](../../../Source/Common/Queue/BoldQueue.pas#L54) |  | ⚪ not started |  |
-| `StronglyDependedOfPrioritized` | property | [55](../../../Source/Common/Queue/BoldQueue.pas#L55) |  | ⚪ not started |  |
+| `AddToApplyList` | method, protected | [30](../../../Source/Common/Queue/BoldQueue.pas#L30) · [body 126](../../../Source/Common/Queue/BoldQueue.pas#L126) | [`TBoldQueueable.AddToApplyList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L38) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `RemoveFromApplyList` | method, protected | [31](../../../Source/Common/Queue/BoldQueue.pas#L31) · [body 132](../../../Source/Common/Queue/BoldQueue.pas#L132) | [`TBoldQueueable.RemoveFromApplyList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L47) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `AddToDisplayList` | method, protected | [32](../../../Source/Common/Queue/BoldQueue.pas#L32) · [body 138](../../../Source/Common/Queue/BoldQueue.pas#L138) | [`TBoldQueueable.AddToDisplayList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L56) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `RemoveFromDisplayList` | method, protected | [33](../../../Source/Common/Queue/BoldQueue.pas#L33) · [body 148](../../../Source/Common/Queue/BoldQueue.pas#L148) | [`TBoldQueueable.RemoveFromDisplayList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L67) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `MostPrioritizedQueuable` | method, protected | [34](../../../Source/Common/Queue/BoldQueue.pas#L34) · [body 162](../../../Source/Common/Queue/BoldQueue.pas#L162) | [`TBoldQueueable.MostPrioritizedQueuable`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L79) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `MostPrioritizedQueuableOrSelf` | method, protected | [35](../../../Source/Common/Queue/BoldQueue.pas#L35) · [body 155](../../../Source/Common/Queue/BoldQueue.pas#L155) | [`TBoldQueueable.MostPrioritizedQueuableOrSelf`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L107) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `AfterInPriority` | method, protected | [36](../../../Source/Common/Queue/BoldQueue.pas#L36) · [body 380](../../../Source/Common/Queue/BoldQueue.pas#L380) | [`TBoldQueueable.AfterInPriority`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L115) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `Display` | method, protected | [37](../../../Source/Common/Queue/BoldQueue.pas#L37) | [`TBoldQueueable.Display`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L126) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `StronglyPrioritizedSibbling` | method, protected | [38](../../../Source/Common/Queue/BoldQueue.pas#L38) · [body 389](../../../Source/Common/Queue/BoldQueue.pas#L389) | [`TBoldQueueable.StronglyPrioritizedSibbling`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L129) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `DisplayOne` | class method, protected | [39](../../../Source/Common/Queue/BoldQueue.pas#L39) · [body 188](../../../Source/Common/Queue/BoldQueue.pas#L188) | [`TBoldQueueable.DisplayOne`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L133) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `Create` | constructor | [41](../../../Source/Common/Queue/BoldQueue.pas#L41) · [body 112](../../../Source/Common/Queue/BoldQueue.pas#L112) | [`TBoldQueueable.TBoldQueueable`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L20) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `Destroy` | destructor | [42](../../../Source/Common/Queue/BoldQueue.pas#L42) · [body 118](../../../Source/Common/Queue/BoldQueue.pas#L118) | [`TBoldQueueable.Dispose`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L26) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `DisplayAll` | class method | [43](../../../Source/Common/Queue/BoldQueue.pas#L43) · [body 196](../../../Source/Common/Queue/BoldQueue.pas#L196) | [`TBoldQueueable.DisplayAll`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L137) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `ApplyAll` | class method | [44](../../../Source/Common/Queue/BoldQueue.pas#L44) · [body 204](../../../Source/Common/Queue/BoldQueue.pas#L204) | [`TBoldQueueable.ApplyAll`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L153) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80)<br>✔ [`BoldQueueTests.Apply_list_applies_and_keeps_failures`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L97) |
+| `ApplyAllMatching` | class method | [45](../../../Source/Common/Queue/BoldQueue.pas#L45) · [body 237](../../../Source/Common/Queue/BoldQueue.pas#L237) | [`TBoldQueueable.ApplyAllMatching`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L188) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80)<br>✔ [`BoldQueueTests.Apply_list_applies_and_keeps_failures`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L97) |
+| `DiscardChangeAll` | class method | [46](../../../Source/Common/Queue/BoldQueue.pas#L46) · [body 251](../../../Source/Common/Queue/BoldQueue.pas#L251) | [`TBoldQueueable.DiscardChangeAll`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L206) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80)<br>✔ [`BoldQueueTests.Apply_list_applies_and_keeps_failures`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L97) |
+| `DiscardChangeAllMatching` | class method | [47](../../../Source/Common/Queue/BoldQueue.pas#L47) · [body 265](../../../Source/Common/Queue/BoldQueue.pas#L265) | [`TBoldQueueable.DiscardChangeAllMatching`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L224) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80)<br>✔ [`BoldQueueTests.Apply_list_applies_and_keeps_failures`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L97) |
+| `AddToPreDisplayQueue` | class method | [48](../../../Source/Common/Queue/BoldQueue.pas#L48) · [body 279](../../../Source/Common/Queue/BoldQueue.pas#L279) | [`TBoldQueueable.AddToPreDisplayQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L242) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80)<br>✔ [`BoldQueueTests.Pre_display_events_run_on_demand`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L125) |
+| `RemoveFromPreDisplayQueue` | class method | [49](../../../Source/Common/Queue/BoldQueue.pas#L49) · [body 286](../../../Source/Common/Queue/BoldQueue.pas#L286) | [`TBoldQueueable.RemoveFromPreDisplayQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L251) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80)<br>✔ [`BoldQueueTests.Pre_display_events_run_on_demand`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L125) |
+| `Apply` | method | [50](../../../Source/Common/Queue/BoldQueue.pas#L50) | [`TBoldQueueable.Apply`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L259) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `DiscardChange` | method | [51](../../../Source/Common/Queue/BoldQueue.pas#L51) | [`TBoldQueueable.DiscardChange`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L260) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `MatchObject` | property | [52](../../../Source/Common/Queue/BoldQueue.pas#L52) | [`TBoldQueueable.MatchObject`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L261) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `IsInDisplayList` | property | [53](../../../Source/Common/Queue/BoldQueue.pas#L53) | [`TBoldQueueable.IsInDisplayList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L262) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `PrioritizedQueuable` | property | [54](../../../Source/Common/Queue/BoldQueue.pas#L54) | [`TBoldQueueable.PrioritizedQueuable`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L265) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `StronglyDependedOfPrioritized` | property | [55](../../../Source/Common/Queue/BoldQueue.pas#L55) | [`TBoldQueueable.StronglyDependedOfPrioritized`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L272) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
 
 ## TBoldQueue
 
-class at [line 59](../../../Source/Common/Queue/BoldQueue.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/Common/Queue/BoldQueue.pas#L59); ✅ verified, C# [`TBoldQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L284).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DisplayOne` | method, protected | [67](../../../Source/Common/Queue/BoldQueue.pas#L67) · [body 338](../../../Source/Common/Queue/BoldQueue.pas#L338) |  | ⚪ not started |  |
-| `DisplayAll` | method, protected | [68](../../../Source/Common/Queue/BoldQueue.pas#L68) · [body 333](../../../Source/Common/Queue/BoldQueue.pas#L333) |  | ⚪ not started |  |
-| `AddToApplyList` | method, protected | [69](../../../Source/Common/Queue/BoldQueue.pas#L69) · [body 301](../../../Source/Common/Queue/BoldQueue.pas#L301) |  | ⚪ not started |  |
-| `RemoveFromApplyList` | method, protected | [70](../../../Source/Common/Queue/BoldQueue.pas#L70) · [body 407](../../../Source/Common/Queue/BoldQueue.pas#L407) |  | ⚪ not started |  |
-| `AddToDisplayList` | method, protected | [71](../../../Source/Common/Queue/BoldQueue.pas#L71) · [body 306](../../../Source/Common/Queue/BoldQueue.pas#L306) |  | ⚪ not started |  |
-| `RemoveFromDisplayList` | method, protected | [72](../../../Source/Common/Queue/BoldQueue.pas#L72) · [body 423](../../../Source/Common/Queue/BoldQueue.pas#L423) |  | ⚪ not started |  |
-| `EnsureDequeing` | method, protected | [73](../../../Source/Common/Queue/BoldQueue.pas#L73) · [body 397](../../../Source/Common/Queue/BoldQueue.pas#L397) |  | ⚪ not started |  |
-| `Create` | constructor | [75](../../../Source/Common/Queue/BoldQueue.pas#L75) · [body 312](../../../Source/Common/Queue/BoldQueue.pas#L312) |  | ⚪ not started |  |
-| `Destroy` | destructor | [76](../../../Source/Common/Queue/BoldQueue.pas#L76) · [body 325](../../../Source/Common/Queue/BoldQueue.pas#L325) |  | ⚪ not started |  |
-| `AddEventToPredisplayQueue` | method | [77](../../../Source/Common/Queue/BoldQueue.pas#L77) · [body 294](../../../Source/Common/Queue/BoldQueue.pas#L294) |  | ⚪ not started |  |
-| `RemoveFromPreDisplayQueue` | method | [78](../../../Source/Common/Queue/BoldQueue.pas#L78) · [body 439](../../../Source/Common/Queue/BoldQueue.pas#L439) |  | ⚪ not started |  |
-| `PerformPreDisplayQueue` | method | [79](../../../Source/Common/Queue/BoldQueue.pas#L79) · [body 402](../../../Source/Common/Queue/BoldQueue.pas#L402) |  | ⚪ not started |  |
-| `DeActivateDisplayQueue` | method | [80](../../../Source/Common/Queue/BoldQueue.pas#L80) |  | ⚪ not started |  |
-| `ActivateDisplayQueue` | method | [81](../../../Source/Common/Queue/BoldQueue.pas#L81) |  | ⚪ not started |  |
-| `DisplayMode` | property | [82](../../../Source/Common/Queue/BoldQueue.pas#L82) |  | ⚪ not started |  |
+| `DisplayOne` | method, protected | [67](../../../Source/Common/Queue/BoldQueue.pas#L67) · [body 338](../../../Source/Common/Queue/BoldQueue.pas#L338) | [`TBoldQueue.DisplayOne`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L316) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `DisplayAll` | method, protected | [68](../../../Source/Common/Queue/BoldQueue.pas#L68) · [body 333](../../../Source/Common/Queue/BoldQueue.pas#L333) | [`TBoldQueue.DisplayAll`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L366) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `AddToApplyList` | method, protected | [69](../../../Source/Common/Queue/BoldQueue.pas#L69) · [body 301](../../../Source/Common/Queue/BoldQueue.pas#L301) | [`TBoldQueue.AddToApplyList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L369) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `RemoveFromApplyList` | method, protected | [70](../../../Source/Common/Queue/BoldQueue.pas#L70) · [body 407](../../../Source/Common/Queue/BoldQueue.pas#L407) | [`TBoldQueue.RemoveFromApplyList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L373) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `AddToDisplayList` | method, protected | [71](../../../Source/Common/Queue/BoldQueue.pas#L71) · [body 306](../../../Source/Common/Queue/BoldQueue.pas#L306) | [`TBoldQueue.AddToDisplayList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L376) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `RemoveFromDisplayList` | method, protected | [72](../../../Source/Common/Queue/BoldQueue.pas#L72) · [body 423](../../../Source/Common/Queue/BoldQueue.pas#L423) | [`TBoldQueue.RemoveFromDisplayList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L383) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `EnsureDequeing` | method, protected | [73](../../../Source/Common/Queue/BoldQueue.pas#L73) · [body 397](../../../Source/Common/Queue/BoldQueue.pas#L397) | [`TBoldQueue.EnsureDequeing`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L408) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `Create` | constructor | [75](../../../Source/Common/Queue/BoldQueue.pas#L75) · [body 312](../../../Source/Common/Queue/BoldQueue.pas#L312) | [`TBoldQueue.TBoldQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L293) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `Destroy` | destructor | [76](../../../Source/Common/Queue/BoldQueue.pas#L76) · [body 325](../../../Source/Common/Queue/BoldQueue.pas#L325) | [`TBoldQueue.Dispose`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L303) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `AddEventToPredisplayQueue` | method | [77](../../../Source/Common/Queue/BoldQueue.pas#L77) · [body 294](../../../Source/Common/Queue/BoldQueue.pas#L294) | [`TBoldQueue.AddEventToPredisplayQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L413) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `RemoveFromPreDisplayQueue` | method | [78](../../../Source/Common/Queue/BoldQueue.pas#L78) · [body 439](../../../Source/Common/Queue/BoldQueue.pas#L439) | [`TBoldQueue.RemoveFromPreDisplayQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L420) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `PerformPreDisplayQueue` | method | [79](../../../Source/Common/Queue/BoldQueue.pas#L79) · [body 402](../../../Source/Common/Queue/BoldQueue.pas#L402) | [`TBoldQueue.PerformPreDisplayQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L423) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80)<br>✔ [`BoldQueueTests.Pre_display_events_run_on_demand`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L125) |
+| `DeActivateDisplayQueue` | method | [80](../../../Source/Common/Queue/BoldQueue.pas#L80) | [`TBoldQueue.DeActivateDisplayQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L425) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `ActivateDisplayQueue` | method | [81](../../../Source/Common/Queue/BoldQueue.pas#L81) | [`TBoldQueue.ActivateDisplayQueue`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L426) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+| `DisplayMode` | property | [82](../../../Source/Common/Queue/BoldQueue.pas#L82) | [`TBoldQueue.DisplayMode`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L429) | ✅ verified | ✔ [`BoldQueueTests.Display_list_shows_prioritized_items_first`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L80) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldQueue.fDisplayList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L289) (field)
+- [`TBoldQueue.fApplyList`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L290) (field)
+- [`TBoldQueue.DisplayListCount`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L436) (property)
+- [`TBoldQueue.ApplyListCount`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L439) (property)
+- [`BoldQueue.HandleException`](../../src/Bold.Core/Common/Queue/BoldQueue.cs#L450) (property)
 
 ## Dependencies
 

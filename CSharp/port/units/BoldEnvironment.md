@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Environment/BoldEnvironment.pas`](../../../Source/Common/Environment/BoldEnvironment.pas) (259 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Environment/BoldEnvironment.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Environment/BoldEnvironment.Aliases.cs`](../../src/Bold.Core/Common/Environment/BoldEnvironment.Aliases.cs)<br>[`CSharp/src/Bold.Core/Common/Environment/BoldEnvironment.cs`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs) |
 | Project | Bold.Core |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 39 symbols done, 0 verified |
+| Status | 🟢 ported: 39 of 39 symbols done, 35 verified |
 | Note | The VCL hook (BoldEnvironmentVCL) becomes a callback interface here; Bold.WinForms supplies it. |
 
-⚪ 39 not started
+✅ 35 verified · 🟢 3 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -19,66 +19,73 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldQueueClass` | class reference | [16](../../../Source/Common/Environment/BoldEnvironment.pas#L16) |  | ⚪ not started |  |
-| `TBoldApplicationSubscriber` | class | [19](../../../Source/Common/Environment/BoldEnvironment.pas#L19) |  | ⚪ not started |  |
-| `TBoldEnvironmentConfiguration` | class | [28](../../../Source/Common/Environment/BoldEnvironment.pas#L28) |  | ⚪ not started |  |
-| `TBoldFreestandingEnvironmentConfiguration` | class | [62](../../../Source/Common/Environment/BoldEnvironment.pas#L62) |  | ⚪ not started |  |
-| `BoldInternalRunningInIDE` | var | [71](../../../Source/Common/Environment/BoldEnvironment.pas#L71) |  | ⚪ not started |  |
-| `BoldInternalVCLConfiguration` | var | [73](../../../Source/Common/Environment/BoldEnvironment.pas#L73) |  | ⚪ not started |  |
-| `BoldInternalCustomConfiguration` | var | [74](../../../Source/Common/Environment/BoldEnvironment.pas#L74) |  | ⚪ not started |  |
-| `BoldInternalFreestandingConfiguration` | var | [75](../../../Source/Common/Environment/BoldEnvironment.pas#L75) |  | ⚪ not started |  |
-| `BoldEffectiveEnvironment` | routine | [77](../../../Source/Common/Environment/BoldEnvironment.pas#L77) · [body 92](../../../Source/Common/Environment/BoldEnvironment.pas#L92) |  | ⚪ not started |  |
-| `BoldEnvironmentsFinalized` | routine | [78](../../../Source/Common/Environment/BoldEnvironment.pas#L78) · [body 104](../../../Source/Common/Environment/BoldEnvironment.pas#L104) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [250](../../../Source/Common/Environment/BoldEnvironment.pas#L250) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [253](../../../Source/Common/Environment/BoldEnvironment.pas#L253) |  | ⚪ not started |  |
+| `TBoldQueueClass` | class reference | [16](../../../Source/Common/Environment/BoldEnvironment.pas#L16) | [`global using TBoldQueueClass`](../../src/Bold.Core/Common/Environment/BoldEnvironment.Aliases.cs#L5) | 🟢 ported: Global using alias of System.Type, in BoldEnvironment.Aliases.cs. |  |
+| `TBoldApplicationSubscriber` | class | [19](../../../Source/Common/Environment/BoldEnvironment.pas#L19) | [`TBoldApplicationSubscriber`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L12) | ✅ verified: A System.ComponentModel.Component; its owner, when it is a container, holds it. | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `TBoldEnvironmentConfiguration` | class | [28](../../../Source/Common/Environment/BoldEnvironment.pas#L28) | [`TBoldEnvironmentConfiguration`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L43) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `TBoldFreestandingEnvironmentConfiguration` | class | [62](../../../Source/Common/Environment/BoldEnvironment.pas#L62) | [`TBoldFreestandingEnvironmentConfiguration`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L142) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `BoldInternalRunningInIDE` | var | [71](../../../Source/Common/Environment/BoldEnvironment.pas#L71) | [`BoldEnvironment.BoldInternalRunningInIDE`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L163) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `BoldInternalVCLConfiguration` | var | [73](../../../Source/Common/Environment/BoldEnvironment.pas#L73) | [`BoldEnvironment.BoldInternalVCLConfiguration`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L166) | 🟢 ported: The WinForms environment in the port. |  |
+| `BoldInternalCustomConfiguration` | var | [74](../../../Source/Common/Environment/BoldEnvironment.pas#L74) | [`BoldEnvironment.BoldInternalCustomConfiguration`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L168) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `BoldInternalFreestandingConfiguration` | var | [75](../../../Source/Common/Environment/BoldEnvironment.pas#L75) | [`BoldEnvironment.BoldInternalFreestandingConfiguration`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L171) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `BoldEffectiveEnvironment` | routine | [77](../../../Source/Common/Environment/BoldEnvironment.pas#L77) · [body 92](../../../Source/Common/Environment/BoldEnvironment.pas#L92) | [`BoldEnvironment.BoldEffectiveEnvironment`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L176) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `BoldEnvironmentsFinalized` | routine | [78](../../../Source/Common/Environment/BoldEnvironment.pas#L78) · [body 104](../../../Source/Common/Environment/BoldEnvironment.pas#L104) | [`BoldEnvironment.BoldEnvironmentsFinalized`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L181) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `initialization` | initialization, implementation | [250](../../../Source/Common/Environment/BoldEnvironment.pas#L250) | [`[assembly: Delphi] in BoldEnvironment.cs`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L5) | 🟢 ported: The freestanding configuration is a static field initializer. |  |
+| `finalization` | finalization, implementation | [253](../../../Source/Common/Environment/BoldEnvironment.pas#L253) | [`[assembly: Delphi] in BoldEnvironment.cs`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L6) | 🔵 replaced: Freed the configurations at unit finalization; call BoldEnvironment.FinalizeEnvironments to do it explicitly. |  |
 
 ## TBoldApplicationSubscriber
 
-class at [line 19](../../../Source/Common/Environment/BoldEnvironment.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Common/Environment/BoldEnvironment.pas#L19); ✅ verified, C# [`TBoldApplicationSubscriber`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BeforeDestruction` | method | [23](../../../Source/Common/Environment/BoldEnvironment.pas#L23) · [body 241](../../../Source/Common/Environment/BoldEnvironment.pas#L241) |  | ⚪ not started |  |
-| `OnApplicationDestroyed` | property | [24](../../../Source/Common/Environment/BoldEnvironment.pas#L24) |  | ⚪ not started |  |
+| `BeforeDestruction` | method | [23](../../../Source/Common/Environment/BoldEnvironment.pas#L23) · [body 241](../../../Source/Common/Environment/BoldEnvironment.pas#L241) | [`TBoldApplicationSubscriber.BeforeDestruction`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L18) | ✅ verified: Runs from Dispose. | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `OnApplicationDestroyed` | property | [24](../../../Source/Common/Environment/BoldEnvironment.pas#L24) | [`TBoldApplicationSubscriber.OnApplicationDestroyed`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L31) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
 
 ## TBoldEnvironmentConfiguration
 
-class at [line 28](../../../Source/Common/Environment/BoldEnvironment.pas#L28); ⚪ not started.
+class at [line 28](../../../Source/Common/Environment/BoldEnvironment.pas#L28); ✅ verified, C# [`TBoldEnvironmentConfiguration`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L43).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FinalizeQueue` | method, private | [33](../../../Source/Common/Environment/BoldEnvironment.pas#L33) · [body 168](../../../Source/Common/Environment/BoldEnvironment.pas#L168) |  | ⚪ not started |  |
-| `DeactivateQueue` | method, private | [35](../../../Source/Common/Environment/BoldEnvironment.pas#L35) · [body 212](../../../Source/Common/Environment/BoldEnvironment.pas#L212) |  | ⚪ not started |  |
-| `GetRunningInIDE` | method, private | [37](../../../Source/Common/Environment/BoldEnvironment.pas#L37) · [body 142](../../../Source/Common/Environment/BoldEnvironment.pas#L142) |  | ⚪ not started |  |
-| `GetQueue` | method, protected | [39](../../../Source/Common/Environment/BoldEnvironment.pas#L39) · [body 157](../../../Source/Common/Environment/BoldEnvironment.pas#L157) |  | ⚪ not started |  |
-| `GetQueueClass` | method, protected | [40](../../../Source/Common/Environment/BoldEnvironment.pas#L40) · [body 201](../../../Source/Common/Environment/BoldEnvironment.pas#L201) |  | ⚪ not started |  |
-| `SetQueue` | method, protected | [41](../../../Source/Common/Environment/BoldEnvironment.pas#L41) · [body 196](../../../Source/Common/Environment/BoldEnvironment.pas#L196) |  | ⚪ not started |  |
-| `GetName` | method, protected | [42](../../../Source/Common/Environment/BoldEnvironment.pas#L42) |  | ⚪ not started |  |
-| `GetRootComponent` | method, protected | [43](../../../Source/Common/Environment/BoldEnvironment.pas#L43) · [body 121](../../../Source/Common/Environment/BoldEnvironment.pas#L121) |  | ⚪ not started |  |
-| `Destroy` | destructor | [45](../../../Source/Common/Environment/BoldEnvironment.pas#L45) · [body 189](../../../Source/Common/Environment/BoldEnvironment.pas#L189) |  | ⚪ not started |  |
-| `HandleDesigntimeException` | method | [46](../../../Source/Common/Environment/BoldEnvironment.pas#L46) · [body 126](../../../Source/Common/Environment/BoldEnvironment.pas#L126) |  | ⚪ not started |  |
-| `UpdateDesigner` | method | [47](../../../Source/Common/Environment/BoldEnvironment.pas#L47) · [body 147](../../../Source/Common/Environment/BoldEnvironment.pas#L147) |  | ⚪ not started |  |
-| `IsFormOrDataModule` | method | [48](../../../Source/Common/Environment/BoldEnvironment.pas#L48) · [body 132](../../../Source/Common/Environment/BoldEnvironment.pas#L132) |  | ⚪ not started |  |
-| `AskUser` | method | [49](../../../Source/Common/Environment/BoldEnvironment.pas#L49) · [body 111](../../../Source/Common/Environment/BoldEnvironment.pas#L111) |  | ⚪ not started |  |
-| `ProcessMessages` | method | [50](../../../Source/Common/Environment/BoldEnvironment.pas#L50) · [body 137](../../../Source/Common/Environment/BoldEnvironment.pas#L137) |  | ⚪ not started |  |
-| `BringToFront` | method | [51](../../../Source/Common/Environment/BoldEnvironment.pas#L51) · [body 116](../../../Source/Common/Environment/BoldEnvironment.pas#L116) |  | ⚪ not started |  |
-| `FocusMainForm` | method | [52](../../../Source/Common/Environment/BoldEnvironment.pas#L52) · [body 152](../../../Source/Common/Environment/BoldEnvironment.pas#L152) |  | ⚪ not started |  |
-| `TriggerQueueMechanism` | method | [53](../../../Source/Common/Environment/BoldEnvironment.pas#L53) · [body 206](../../../Source/Common/Environment/BoldEnvironment.pas#L206) |  | ⚪ not started |  |
-| `RootComponent` | property | [54](../../../Source/Common/Environment/BoldEnvironment.pas#L54) |  | ⚪ not started |  |
-| `Name` | property | [55](../../../Source/Common/Environment/BoldEnvironment.pas#L55) |  | ⚪ not started |  |
-| `RunningInIDE` | property | [56](../../../Source/Common/Environment/BoldEnvironment.pas#L56) |  | ⚪ not started |  |
-| `QueueFinalized` | property | [57](../../../Source/Common/Environment/BoldEnvironment.pas#L57) |  | ⚪ not started |  |
-| `Queue` | property | [58](../../../Source/Common/Environment/BoldEnvironment.pas#L58) |  | ⚪ not started |  |
+| `FinalizeQueue` | method, private | [33](../../../Source/Common/Environment/BoldEnvironment.pas#L33) · [body 168](../../../Source/Common/Environment/BoldEnvironment.pas#L168) | [`TBoldEnvironmentConfiguration.FinalizeQueue`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L55) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `DeactivateQueue` | method, private | [35](../../../Source/Common/Environment/BoldEnvironment.pas#L35) · [body 212](../../../Source/Common/Environment/BoldEnvironment.pas#L212) | [`TBoldEnvironmentConfiguration.DeactivateQueue`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L74) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `GetRunningInIDE` | method, private | [37](../../../Source/Common/Environment/BoldEnvironment.pas#L37) · [body 142](../../../Source/Common/Environment/BoldEnvironment.pas#L142) | [`TBoldEnvironmentConfiguration.GetRunningInIDE`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L84) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `GetQueue` | method, protected | [39](../../../Source/Common/Environment/BoldEnvironment.pas#L39) · [body 157](../../../Source/Common/Environment/BoldEnvironment.pas#L157) | [`TBoldEnvironmentConfiguration.GetQueue`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L88) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `GetQueueClass` | method, protected | [40](../../../Source/Common/Environment/BoldEnvironment.pas#L40) · [body 201](../../../Source/Common/Environment/BoldEnvironment.pas#L201) | [`TBoldEnvironmentConfiguration.GetQueueClass`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L102) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `SetQueue` | method, protected | [41](../../../Source/Common/Environment/BoldEnvironment.pas#L41) · [body 196](../../../Source/Common/Environment/BoldEnvironment.pas#L196) | [`TBoldEnvironmentConfiguration.SetQueue`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L105) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `GetName` | method, protected | [42](../../../Source/Common/Environment/BoldEnvironment.pas#L42) | [`TBoldEnvironmentConfiguration.GetName`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L108) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `GetRootComponent` | method, protected | [43](../../../Source/Common/Environment/BoldEnvironment.pas#L43) · [body 121](../../../Source/Common/Environment/BoldEnvironment.pas#L121) | [`TBoldEnvironmentConfiguration.GetRootComponent`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L111) | ✅ verified: Returns object; a container root holds the application subscriber. | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `Destroy` | destructor | [45](../../../Source/Common/Environment/BoldEnvironment.pas#L45) · [body 189](../../../Source/Common/Environment/BoldEnvironment.pas#L189) | [`TBoldEnvironmentConfiguration.Dispose`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L114) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `HandleDesigntimeException` | method | [46](../../../Source/Common/Environment/BoldEnvironment.pas#L46) · [body 126](../../../Source/Common/Environment/BoldEnvironment.pas#L126) | [`TBoldEnvironmentConfiguration.HandleDesigntimeException`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L124) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `UpdateDesigner` | method | [47](../../../Source/Common/Environment/BoldEnvironment.pas#L47) · [body 147](../../../Source/Common/Environment/BoldEnvironment.pas#L147) | [`TBoldEnvironmentConfiguration.UpdateDesigner`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L125) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `IsFormOrDataModule` | method | [48](../../../Source/Common/Environment/BoldEnvironment.pas#L48) · [body 132](../../../Source/Common/Environment/BoldEnvironment.pas#L132) | [`TBoldEnvironmentConfiguration.IsFormOrDataModule`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L126) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `AskUser` | method | [49](../../../Source/Common/Environment/BoldEnvironment.pas#L49) · [body 111](../../../Source/Common/Environment/BoldEnvironment.pas#L111) | [`TBoldEnvironmentConfiguration.AskUser`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L127) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `ProcessMessages` | method | [50](../../../Source/Common/Environment/BoldEnvironment.pas#L50) · [body 137](../../../Source/Common/Environment/BoldEnvironment.pas#L137) | [`TBoldEnvironmentConfiguration.ProcessMessages`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L128) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `BringToFront` | method | [51](../../../Source/Common/Environment/BoldEnvironment.pas#L51) · [body 116](../../../Source/Common/Environment/BoldEnvironment.pas#L116) | [`TBoldEnvironmentConfiguration.BringToFront`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L129) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `FocusMainForm` | method | [52](../../../Source/Common/Environment/BoldEnvironment.pas#L52) · [body 152](../../../Source/Common/Environment/BoldEnvironment.pas#L152) | [`TBoldEnvironmentConfiguration.FocusMainForm`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L130) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `TriggerQueueMechanism` | method | [53](../../../Source/Common/Environment/BoldEnvironment.pas#L53) · [body 206](../../../Source/Common/Environment/BoldEnvironment.pas#L206) | [`TBoldEnvironmentConfiguration.TriggerQueueMechanism`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L131) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `RootComponent` | property | [54](../../../Source/Common/Environment/BoldEnvironment.pas#L54) | [`TBoldEnvironmentConfiguration.RootComponent`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L133) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `Name` | property | [55](../../../Source/Common/Environment/BoldEnvironment.pas#L55) | [`TBoldEnvironmentConfiguration.Name`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L134) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `RunningInIDE` | property | [56](../../../Source/Common/Environment/BoldEnvironment.pas#L56) | [`TBoldEnvironmentConfiguration.RunningInIDE`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L135) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `QueueFinalized` | property | [57](../../../Source/Common/Environment/BoldEnvironment.pas#L57) | [`TBoldEnvironmentConfiguration.QueueFinalized`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L136) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `Queue` | property | [58](../../../Source/Common/Environment/BoldEnvironment.pas#L58) | [`TBoldEnvironmentConfiguration.Queue`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L137) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
 
 ## TBoldFreestandingEnvironmentConfiguration
 
-class at [line 62](../../../Source/Common/Environment/BoldEnvironment.pas#L62); ⚪ not started.
+class at [line 62](../../../Source/Common/Environment/BoldEnvironment.pas#L62); ✅ verified, C# [`TBoldFreestandingEnvironmentConfiguration`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L142).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [64](../../../Source/Common/Environment/BoldEnvironment.pas#L64) · [body 233](../../../Source/Common/Environment/BoldEnvironment.pas#L233) |  | ⚪ not started |  |
-| `BringToFront` | method | [66](../../../Source/Common/Environment/BoldEnvironment.pas#L66) · [body 221](../../../Source/Common/Environment/BoldEnvironment.pas#L221) |  | ⚪ not started |  |
-| `FocusMainForm` | method | [67](../../../Source/Common/Environment/BoldEnvironment.pas#L67) · [body 227](../../../Source/Common/Environment/BoldEnvironment.pas#L227) |  | ⚪ not started |  |
+| `GetName` | method, protected | [64](../../../Source/Common/Environment/BoldEnvironment.pas#L64) · [body 233](../../../Source/Common/Environment/BoldEnvironment.pas#L233) | [`TBoldFreestandingEnvironmentConfiguration.GetName`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L145) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `BringToFront` | method | [66](../../../Source/Common/Environment/BoldEnvironment.pas#L66) · [body 221](../../../Source/Common/Environment/BoldEnvironment.pas#L221) | [`TBoldFreestandingEnvironmentConfiguration.BringToFront`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L148) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+| `FocusMainForm` | method | [67](../../../Source/Common/Environment/BoldEnvironment.pas#L67) · [body 227](../../../Source/Common/Environment/BoldEnvironment.pas#L227) | [`TBoldFreestandingEnvironmentConfiguration.FocusMainForm`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L154) | ✅ verified | ✔ [`BoldQueueTests.Environments_choose_the_custom_one_and_free_their_queue`](../../tests/Bold.Core.Tests/Common/Queue/BoldQueueTests.cs#L142) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldApplicationSubscriber.Dispose`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L20) (method)
+- [`BoldEnvironment.FinalizeEnvironments`](../../src/Bold.Core/Common/Environment/BoldEnvironment.cs#L184) (method)
 
 ## Dependencies
 

@@ -51,12 +51,12 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldBase64](../../../CSharp/port/units/BoldBase64.md) | Bold.Core: Common/Support/BoldBase64.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldBase64](../../../CSharp/port/units/BoldBase64.md) | [Bold.Core: Common/Support/BoldBase64.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldBase64.cs) | M2 Runtime model and subscriptions |
 | [BoldCollections](../../../CSharp/port/units/BoldCollections.md) | Bold.Core: Common/Support/BoldCollections.cs (not started) | M5 SQL persistence |
 | [BoldCommonBitmaps](../../../CSharp/port/units/BoldCommonBitmaps.md) | Bold.WinForms: Common/Support/BoldCommonBitmaps.cs (not started) | M8 WinForms |
 | [BoldControlPackDefs](../../../CSharp/port/units/BoldControlPackDefs.md) | Bold.WinForms: Common/Support/BoldControlPackDefs.cs (not started) | M8 WinForms |
 | [BoldControlsDefs](../../../CSharp/port/units/BoldControlsDefs.md) | Bold.WinForms: Common/Support/BoldControlsDefs.cs (not started) | M8 WinForms |
-| [BoldExternalizedReferences](../../../CSharp/port/units/BoldExternalizedReferences.md) | Bold.Core: Common/Support/BoldExternalizedReferences.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldExternalizedReferences](../../../CSharp/port/units/BoldExternalizedReferences.md) | [Bold.Core: Common/Support/BoldExternalizedReferences.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldExternalizedReferences.cs) | M2 Runtime model and subscriptions |
 | [BoldFileHandler](../../../CSharp/port/units/BoldFileHandler.md) | Bold.Core: Common/Support/BoldFileHandler.cs (not started) | M6 Typed classes |
 | [BoldGUIDUtils](../../../CSharp/port/units/BoldGUIDUtils.md) | Bold.Core: Common/Support/BoldGUIDUtils.cs (not started) | M5 SQL persistence |
 | [BoldGuard](../../../CSharp/port/units/BoldGuard.md) | replaced by .NET: C# using statements and the garbage collector free objects | M1 Load models |
@@ -79,5 +79,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldSupportConst](../../../CSharp/port/units/BoldSupportConst.md) | Bold.Core: Common/Support/BoldSupportConst.cs (not started) | Later (after M12, or when needed) |
 | [BoldTemplateExpander](../../../CSharp/port/units/BoldTemplateExpander.md) | Bold.Core: Common/Support/BoldTemplateExpander.cs (not started) | M6 Typed classes |
 | [BoldUtils](../../../CSharp/port/units/BoldUtils.md) | [Bold.Core: Common/Support/BoldUtils.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldUtils.cs) | M1 Load models |
-| [BoldXMLStreaming](../../../CSharp/port/units/BoldXMLStreaming.md) | Bold.Core: Common/Support/BoldXMLStreaming.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldXMLStreaming](../../../CSharp/port/units/BoldXMLStreaming.md) | [Bold.Core: Common/Support/BoldXMLStreaming.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldXMLStreaming.cs) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

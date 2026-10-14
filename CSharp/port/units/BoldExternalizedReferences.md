@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldExternalizedReferences.pas`](../../../Source/Common/Support/BoldExternalizedReferences.pas) (143 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldExternalizedReferences.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldExternalizedReferences.cs`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs) |
 | Project | Bold.Core |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | ✅ verified: 18 of 18 symbols done, 18 verified |
 
-⚪ 18 not started
+✅ 18 verified
 
 ## Unit level
 
@@ -18,52 +18,58 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldExternalizedReferenceList` | class | [15](../../../Source/Common/Support/BoldExternalizedReferences.pas#L15) |  | ⚪ not started |  |
-| `TBoldExternalLink` | class, implementation | [42](../../../Source/Common/Support/BoldExternalizedReferences.pas#L42) |  | ⚪ not started |  |
-| `TBoldExternalizedIndexList` | class, implementation | [52](../../../Source/Common/Support/BoldExternalizedReferences.pas#L52) |  | ⚪ not started |  |
-| `TBoldExternalizedReferenceHashIndex` | class, implementation | [59](../../../Source/Common/Support/BoldExternalizedReferences.pas#L59) |  | ⚪ not started |  |
+| `TBoldExternalizedReferenceList` | class | [15](../../../Source/Common/Support/BoldExternalizedReferences.pas#L15) | [`TBoldExternalizedReferenceList`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L11) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `TBoldExternalLink` | class, implementation | [42](../../../Source/Common/Support/BoldExternalizedReferences.pas#L42) | [`TBoldExternalizedReferenceList.TBoldExternalLink`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L17) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `TBoldExternalizedIndexList` | class, implementation | [52](../../../Source/Common/Support/BoldExternalizedReferences.pas#L52) | [`TBoldExternalizedReferenceList.TBoldExternalizedIndexList`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L24) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `TBoldExternalizedReferenceHashIndex` | class, implementation | [59](../../../Source/Common/Support/BoldExternalizedReferences.pas#L59) | [`TBoldExternalizedReferenceList.TBoldExternalizedReferenceHashIndex`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L41) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
 
 ## TBoldExternalizedReferenceList
 
-class at [line 15](../../../Source/Common/Support/BoldExternalizedReferences.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Common/Support/BoldExternalizedReferences.pas#L15); ✅ verified, C# [`TBoldExternalizedReferenceList`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetManageReferencedObject` | method, private | [19](../../../Source/Common/Support/BoldExternalizedReferences.pas#L19) · [body 93](../../../Source/Common/Support/BoldExternalizedReferences.pas#L93) |  | ⚪ not started |  |
-| `GetCount` | method, private | [20](../../../Source/Common/Support/BoldExternalizedReferences.pas#L20) · [body 76](../../../Source/Common/Support/BoldExternalizedReferences.pas#L76) |  | ⚪ not started |  |
-| `GetReferencedObject` | method, private | [21](../../../Source/Common/Support/BoldExternalizedReferences.pas#L21) · [body 81](../../../Source/Common/Support/BoldExternalizedReferences.pas#L81) |  | ⚪ not started |  |
-| `SetReferencedObject` | method, private | [22](../../../Source/Common/Support/BoldExternalizedReferences.pas#L22) · [body 98](../../../Source/Common/Support/BoldExternalizedReferences.pas#L98) |  | ⚪ not started |  |
-| `Create` | constructor | [24](../../../Source/Common/Support/BoldExternalizedReferences.pas#L24) · [body 64](../../../Source/Common/Support/BoldExternalizedReferences.pas#L64) |  | ⚪ not started |  |
-| `Destroy` | destructor | [25](../../../Source/Common/Support/BoldExternalizedReferences.pas#L25) · [body 70](../../../Source/Common/Support/BoldExternalizedReferences.pas#L70) |  | ⚪ not started |  |
-| `ManageReferencedObject` | property | [26](../../../Source/Common/Support/BoldExternalizedReferences.pas#L26) |  | ⚪ not started |  |
-| `ReferencedObjects` | property | [27](../../../Source/Common/Support/BoldExternalizedReferences.pas#L27) |  | ⚪ not started |  |
-| `Count` | property | [28](../../../Source/Common/Support/BoldExternalizedReferences.pas#L28) |  | ⚪ not started |  |
+| `SetManageReferencedObject` | method, private | [19](../../../Source/Common/Support/BoldExternalizedReferences.pas#L19) · [body 93](../../../Source/Common/Support/BoldExternalizedReferences.pas#L93) | [`TBoldExternalizedReferenceList.SetManageReferencedObject`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L61) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `GetCount` | method, private | [20](../../../Source/Common/Support/BoldExternalizedReferences.pas#L20) · [body 76](../../../Source/Common/Support/BoldExternalizedReferences.pas#L76) | [`TBoldExternalizedReferenceList.GetCount`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L64) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `GetReferencedObject` | method, private | [21](../../../Source/Common/Support/BoldExternalizedReferences.pas#L21) · [body 81](../../../Source/Common/Support/BoldExternalizedReferences.pas#L81) | [`TBoldExternalizedReferenceList.GetReferencedObject`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L67) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `SetReferencedObject` | method, private | [22](../../../Source/Common/Support/BoldExternalizedReferences.pas#L22) · [body 98](../../../Source/Common/Support/BoldExternalizedReferences.pas#L98) | [`TBoldExternalizedReferenceList.SetReferencedObject`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L71) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `Create` | constructor | [24](../../../Source/Common/Support/BoldExternalizedReferences.pas#L24) · [body 64](../../../Source/Common/Support/BoldExternalizedReferences.pas#L64) | [`TBoldExternalizedReferenceList.TBoldExternalizedReferenceList`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L48) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `Destroy` | destructor | [25](../../../Source/Common/Support/BoldExternalizedReferences.pas#L25) · [body 70](../../../Source/Common/Support/BoldExternalizedReferences.pas#L70) | [`TBoldExternalizedReferenceList.Dispose`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L54) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `ManageReferencedObject` | property | [26](../../../Source/Common/Support/BoldExternalizedReferences.pas#L26) | [`TBoldExternalizedReferenceList.ManageReferencedObject`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L92) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `ReferencedObjects` | property | [27](../../../Source/Common/Support/BoldExternalizedReferences.pas#L27) | [`TBoldExternalizedReferenceList.ReferencedObjects`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L99) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `Count` | property | [28](../../../Source/Common/Support/BoldExternalizedReferences.pas#L28) | [`TBoldExternalizedReferenceList.Count`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L105) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
 
 ## TBoldExternalLink
 
-class at [line 42](../../../Source/Common/Support/BoldExternalizedReferences.pas#L42); ⚪ not started.
+class at [line 42](../../../Source/Common/Support/BoldExternalizedReferences.pas#L42); ✅ verified, C# [`TBoldExternalizedReferenceList.TBoldExternalLink`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L17).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Referee` | property | [47](../../../Source/Common/Support/BoldExternalizedReferences.pas#L47) |  | ⚪ not started |  |
-| `Referenced` | property | [48](../../../Source/Common/Support/BoldExternalizedReferences.pas#L48) |  | ⚪ not started |  |
+| `Referee` | property | [47](../../../Source/Common/Support/BoldExternalizedReferences.pas#L47) | [`TBoldExternalizedReferenceList.TBoldExternalLink.Referee`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L19) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `Referenced` | property | [48](../../../Source/Common/Support/BoldExternalizedReferences.pas#L48) | [`TBoldExternalizedReferenceList.TBoldExternalLink.Referenced`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L20) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
 
 ## TBoldExternalizedIndexList
 
-class at [line 52](../../../Source/Common/Support/BoldExternalizedReferences.pas#L52); ⚪ not started.
+class at [line 52](../../../Source/Common/Support/BoldExternalizedReferences.pas#L52); ✅ verified, C# [`TBoldExternalizedReferenceList.TBoldExternalizedIndexList`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L24).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [54](../../../Source/Common/Support/BoldExternalizedReferences.pas#L54) · [body 129](../../../Source/Common/Support/BoldExternalizedReferences.pas#L129) |  | ⚪ not started |  |
-| `FindByReferee` | method | [55](../../../Source/Common/Support/BoldExternalizedReferences.pas#L55) · [body 136](../../../Source/Common/Support/BoldExternalizedReferences.pas#L136) |  | ⚪ not started |  |
+| `create` | constructor | [54](../../../Source/Common/Support/BoldExternalizedReferences.pas#L54) · [body 129](../../../Source/Common/Support/BoldExternalizedReferences.pas#L129) | [`TBoldExternalizedReferenceList.TBoldExternalizedIndexList.TBoldExternalizedIndexList`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L29) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+| `FindByReferee` | method | [55](../../../Source/Common/Support/BoldExternalizedReferences.pas#L55) · [body 136](../../../Source/Common/Support/BoldExternalizedReferences.pas#L136) | [`TBoldExternalizedReferenceList.TBoldExternalizedIndexList.FindByReferee`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L36) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
 
 ## TBoldExternalizedReferenceHashIndex
 
-class at [line 59](../../../Source/Common/Support/BoldExternalizedReferences.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/Common/Support/BoldExternalizedReferences.pas#L59); ✅ verified, C# [`TBoldExternalizedReferenceList.TBoldExternalizedReferenceHashIndex`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L41).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyObject` | method, protected | [61](../../../Source/Common/Support/BoldExternalizedReferences.pas#L61) · [body 121](../../../Source/Common/Support/BoldExternalizedReferences.pas#L121) |  | ⚪ not started |  |
+| `ItemAsKeyObject` | method, protected | [61](../../../Source/Common/Support/BoldExternalizedReferences.pas#L61) · [body 121](../../../Source/Common/Support/BoldExternalizedReferences.pas#L121) | [`TBoldExternalizedReferenceList.TBoldExternalizedReferenceHashIndex.ItemAsKeyObject`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L44) | ✅ verified | ✔ [`BoldStreamingSupportTests.Externalized_references_replace_and_free`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L54) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldExternalizedReferenceList.SetReferencedObjects`](../../src/Bold.Core/Common/Support/BoldExternalizedReferences.cs#L102) (method)
 
 ## Dependencies
 

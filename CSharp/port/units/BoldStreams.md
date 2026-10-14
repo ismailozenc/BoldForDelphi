@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Core/BoldStreams.pas`](../../../Source/Common/Core/BoldStreams.pas) (18 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Core/BoldStreams.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Core/BoldStreams.cs`](../../src/Bold.Core/Common/Core/BoldStreams.cs) |
 | Project | Bold.Core |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-⚪ 3 not started
+✅ 3 verified
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IBoldStreamable` | interface | [10](../../../Source/Common/Core/BoldStreams.pas#L10) |  | ⚪ not started |  |
+| `IBoldStreamable` | interface | [10](../../../Source/Common/Core/BoldStreams.pas#L10) | [`IBoldStreamable`](../../src/Bold.Core/Common/Core/BoldStreams.cs#L8) | ✅ verified | ✔ [`BoldSubscriptionTests.Streamable_names_its_stream`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L176) |
 
 ## IBoldStreamable
 
-interface at [line 10](../../../Source/Common/Core/BoldStreams.pas#L10); ⚪ not started.
+interface at [line 10](../../../Source/Common/Core/BoldStreams.pas#L10); ✅ verified, C# [`IBoldStreamable`](../../src/Bold.Core/Common/Core/BoldStreams.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method | [12](../../../Source/Common/Core/BoldStreams.pas#L12) |  | ⚪ not started |  |
-| `StreamName` | property | [13](../../../Source/Common/Core/BoldStreams.pas#L13) |  | ⚪ not started |  |
+| `GetStreamName` | method | [12](../../../Source/Common/Core/BoldStreams.pas#L12) | [`IBoldStreamable.GetStreamName`](../../src/Bold.Core/Common/Core/BoldStreams.cs#L11) | ✅ verified | ✔ [`BoldSubscriptionTests.Streamable_names_its_stream`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L176) |
+| `StreamName` | property | [13](../../../Source/Common/Core/BoldStreams.pas#L13) | [`IBoldStreamable.StreamName`](../../src/Bold.Core/Common/Core/BoldStreams.cs#L14) | ✅ verified | ✔ [`BoldSubscriptionTests.Streamable_names_its_stream`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L176) |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Queue/BoldEventQueue.pas`](../../../Source/Common/Queue/BoldEventQueue.pas) (133 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Queue/BoldEventQueue.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Queue/BoldEventQueue.cs`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs) |
 | Project | Bold.Core |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | ✅ verified: 15 of 15 symbols done, 15 verified |
 
-⚪ 15 not started
+✅ 15 verified
 
 ## Unit level
 
@@ -18,42 +18,48 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldEventQueueItem` | class | [17](../../../Source/Common/Queue/BoldEventQueue.pas#L17) |  | ⚪ not started |  |
-| `TBoldEventQueue` | class | [31](../../../Source/Common/Queue/BoldEventQueue.pas#L31) |  | ⚪ not started |  |
-| `TBoldEventQueueItemReceiverIndex` | class | [44](../../../Source/Common/Queue/BoldEventQueue.pas#L44) |  | ⚪ not started |  |
+| `TBoldEventQueueItem` | class | [17](../../../Source/Common/Queue/BoldEventQueue.pas#L17) | [`TBoldEventQueueItem`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L8) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `TBoldEventQueue` | class | [31](../../../Source/Common/Queue/BoldEventQueue.pas#L31) | [`TBoldEventQueue`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L35) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `TBoldEventQueueItemReceiverIndex` | class | [44](../../../Source/Common/Queue/BoldEventQueue.pas#L44) | [`TBoldEventQueueItemReceiverIndex`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L93) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
 
 ## TBoldEventQueueItem
 
-class at [line 17](../../../Source/Common/Queue/BoldEventQueue.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Common/Queue/BoldEventQueue.pas#L17); ✅ verified, C# [`TBoldEventQueueItem`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [23](../../../Source/Common/Queue/BoldEventQueue.pas#L23) · [body 57](../../../Source/Common/Queue/BoldEventQueue.pas#L57) |  | ⚪ not started |  |
-| `Event` | property | [24](../../../Source/Common/Queue/BoldEventQueue.pas#L24) |  | ⚪ not started |  |
-| `Sender` | property | [25](../../../Source/Common/Queue/BoldEventQueue.pas#L25) |  | ⚪ not started |  |
-| `Receiver` | property | [26](../../../Source/Common/Queue/BoldEventQueue.pas#L26) |  | ⚪ not started |  |
-| `SendEvent` | method | [27](../../../Source/Common/Queue/BoldEventQueue.pas#L27) · [body 64](../../../Source/Common/Queue/BoldEventQueue.pas#L64) |  | ⚪ not started |  |
+| `Create` | constructor | [23](../../../Source/Common/Queue/BoldEventQueue.pas#L23) · [body 57](../../../Source/Common/Queue/BoldEventQueue.pas#L57) | [`TBoldEventQueueItem.TBoldEventQueueItem`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L15) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `Event` | property | [24](../../../Source/Common/Queue/BoldEventQueue.pas#L24) | [`TBoldEventQueueItem.Event`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L22) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `Sender` | property | [25](../../../Source/Common/Queue/BoldEventQueue.pas#L25) | [`TBoldEventQueueItem.Sender`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L23) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `Receiver` | property | [26](../../../Source/Common/Queue/BoldEventQueue.pas#L26) | [`TBoldEventQueueItem.Receiver`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L24) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `SendEvent` | method | [27](../../../Source/Common/Queue/BoldEventQueue.pas#L27) · [body 64](../../../Source/Common/Queue/BoldEventQueue.pas#L64) | [`TBoldEventQueueItem.SendEvent`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L27) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
 
 ## TBoldEventQueue
 
-class at [line 31](../../../Source/Common/Queue/BoldEventQueue.pas#L31); ⚪ not started.
+class at [line 31](../../../Source/Common/Queue/BoldEventQueue.pas#L31); ✅ verified, C# [`TBoldEventQueue`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L35).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [35](../../../Source/Common/Queue/BoldEventQueue.pas#L35) · [body 76](../../../Source/Common/Queue/BoldEventQueue.pas#L76) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/Common/Queue/BoldEventQueue.pas#L36) · [body 102](../../../Source/Common/Queue/BoldEventQueue.pas#L102) |  | ⚪ not started |  |
-| `Add` | method | [37](../../../Source/Common/Queue/BoldEventQueue.pas#L37) · [body 71](../../../Source/Common/Queue/BoldEventQueue.pas#L71) |  | ⚪ not started |  |
-| `DequeueOne` | method | [38](../../../Source/Common/Queue/BoldEventQueue.pas#L38) · [body 92](../../../Source/Common/Queue/BoldEventQueue.pas#L92) |  | ⚪ not started |  |
-| `DequeueAll` | method | [39](../../../Source/Common/Queue/BoldEventQueue.pas#L39) · [body 82](../../../Source/Common/Queue/BoldEventQueue.pas#L82) |  | ⚪ not started |  |
-| `RemoveAllForReceiver` | method | [40](../../../Source/Common/Queue/BoldEventQueue.pas#L40) · [body 108](../../../Source/Common/Queue/BoldEventQueue.pas#L108) |  | ⚪ not started |  |
+| `Create` | constructor | [35](../../../Source/Common/Queue/BoldEventQueue.pas#L35) · [body 76](../../../Source/Common/Queue/BoldEventQueue.pas#L76) | [`TBoldEventQueue.TBoldEventQueue`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L40) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `Destroy` | destructor | [36](../../../Source/Common/Queue/BoldEventQueue.pas#L36) · [body 102](../../../Source/Common/Queue/BoldEventQueue.pas#L102) | [`TBoldEventQueue.Dispose`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L46) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `Add` | method | [37](../../../Source/Common/Queue/BoldEventQueue.pas#L37) · [body 71](../../../Source/Common/Queue/BoldEventQueue.pas#L71) | [`TBoldEventQueue.Add`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L53) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `DequeueOne` | method | [38](../../../Source/Common/Queue/BoldEventQueue.pas#L38) · [body 92](../../../Source/Common/Queue/BoldEventQueue.pas#L92) | [`TBoldEventQueue.DequeueOne`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L58) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `DequeueAll` | method | [39](../../../Source/Common/Queue/BoldEventQueue.pas#L39) · [body 82](../../../Source/Common/Queue/BoldEventQueue.pas#L82) | [`TBoldEventQueue.DequeueAll`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L67) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+| `RemoveAllForReceiver` | method | [40](../../../Source/Common/Queue/BoldEventQueue.pas#L40) · [body 108](../../../Source/Common/Queue/BoldEventQueue.pas#L108) | [`TBoldEventQueue.RemoveAllForReceiver`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L77) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
 
 ## TBoldEventQueueItemReceiverIndex
 
-class at [line 44](../../../Source/Common/Queue/BoldEventQueue.pas#L44); ⚪ not started.
+class at [line 44](../../../Source/Common/Queue/BoldEventQueue.pas#L44); ✅ verified, C# [`TBoldEventQueueItemReceiverIndex`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L93).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyObject` | method, protected | [46](../../../Source/Common/Queue/BoldEventQueue.pas#L46) · [body 128](../../../Source/Common/Queue/BoldEventQueue.pas#L128) |  | ⚪ not started |  |
+| `ItemAsKeyObject` | method, protected | [46](../../../Source/Common/Queue/BoldEventQueue.pas#L46) · [body 128](../../../Source/Common/Queue/BoldEventQueue.pas#L128) | [`TBoldEventQueueItemReceiverIndex.ItemAsKeyObject`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L96) | ✅ verified | ✔ [`BoldSubscriptionTests.Post_notify_events_wait_for_the_outermost_notification`](../../tests/Bold.Core.Tests/Common/Subscription/BoldSubscriptionTests.cs#L124) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldEventQueue.Count`](../../src/Bold.Core/Common/Queue/BoldEventQueue.cs#L88) (property)
 
 ## Dependencies
 

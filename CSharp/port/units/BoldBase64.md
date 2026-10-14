@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldBase64.pas`](../../../Source/Common/Support/BoldBase64.pas) (330 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldBase64.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldBase64.cs`](../../src/Bold.Core/Common/Support/BoldBase64.cs) |
 | Project | Bold.Core |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 14 symbols done, 0 verified |
+| Status | ✅ verified: 14 of 14 symbols done, 14 verified |
 
-⚪ 14 not started
+✅ 14 verified
 
 ## Unit level
 
@@ -18,27 +18,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBase64` | class | [49](../../../Source/Common/Support/BoldBase64.pas#L49) |  | ⚪ not started |  |
-| `BASE64_OK` | const | [64](../../../Source/Common/Support/BoldBase64.pas#L64) |  | ⚪ not started |  |
-| `BASE64_ERROR` | const | [65](../../../Source/Common/Support/BoldBase64.pas#L65) |  | ⚪ not started |  |
-| `BASE64_INVALID` | const | [66](../../../Source/Common/Support/BoldBase64.pas#L66) |  | ⚪ not started |  |
-| `BASE64_LENGTH` | const | [67](../../../Source/Common/Support/BoldBase64.pas#L67) |  | ⚪ not started |  |
-| `BASE64_DATALEFT` | const | [68](../../../Source/Common/Support/BoldBase64.pas#L68) |  | ⚪ not started |  |
-| `BASE64_PADDING` | const | [69](../../../Source/Common/Support/BoldBase64.pas#L69) |  | ⚪ not started |  |
+| `TBase64` | class | [49](../../../Source/Common/Support/BoldBase64.pas#L49) | [`TBase64`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L11) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21) |
+| `BASE64_OK` | const | [64](../../../Source/Common/Support/BoldBase64.pas#L64) | [`BoldBase64.BASE64_OK`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L237) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_codes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L11) |
+| `BASE64_ERROR` | const | [65](../../../Source/Common/Support/BoldBase64.pas#L65) | [`BoldBase64.BASE64_ERROR`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L238) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_codes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L11) |
+| `BASE64_INVALID` | const | [66](../../../Source/Common/Support/BoldBase64.pas#L66) | [`BoldBase64.BASE64_INVALID`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L239) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_codes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L11) |
+| `BASE64_LENGTH` | const | [67](../../../Source/Common/Support/BoldBase64.pas#L67) | [`BoldBase64.BASE64_LENGTH`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L240) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_codes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L11) |
+| `BASE64_DATALEFT` | const | [68](../../../Source/Common/Support/BoldBase64.pas#L68) | [`BoldBase64.BASE64_DATALEFT`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L241) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_codes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L11) |
+| `BASE64_PADDING` | const | [69](../../../Source/Common/Support/BoldBase64.pas#L69) | [`BoldBase64.BASE64_PADDING`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L242) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_codes_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L11) |
 
 ## TBase64
 
-class at [line 49](../../../Source/Common/Support/BoldBase64.pas#L49); ⚪ not started.
+class at [line 49](../../../Source/Common/Support/BoldBase64.pas#L49); ✅ verified, C# [`TBase64`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ValueToCharacter` | method, private | [52](../../../Source/Common/Support/BoldBase64.pas#L52) · [body 91](../../../Source/Common/Support/BoldBase64.pas#L91) |  | ⚪ not started |  |
-| `CharacterToValue` | method, private | [53](../../../Source/Common/Support/BoldBase64.pas#L53) · [body 105](../../../Source/Common/Support/BoldBase64.pas#L105) |  | ⚪ not started |  |
-| `filterLine` | method, private | [54](../../../Source/Common/Support/BoldBase64.pas#L54) · [body 215](../../../Source/Common/Support/BoldBase64.pas#L215) |  | ⚪ not started |  |
-| `Create` | constructor | [57](../../../Source/Common/Support/BoldBase64.pas#L57) · [body 79](../../../Source/Common/Support/BoldBase64.pas#L79) |  | ⚪ not started |  |
-| `EncodeData` | method | [58](../../../Source/Common/Support/BoldBase64.pas#L58) · [body 120](../../../Source/Common/Support/BoldBase64.pas#L120) |  | ⚪ not started |  |
-| `DecodeData` | method | [59](../../../Source/Common/Support/BoldBase64.pas#L59) · [body 232](../../../Source/Common/Support/BoldBase64.pas#L232) |  | ⚪ not started |  |
-| `FilterdecodeInput` | property | [60](../../../Source/Common/Support/BoldBase64.pas#L60) |  | ⚪ not started |  |
+| `ValueToCharacter` | method, private | [52](../../../Source/Common/Support/BoldBase64.pas#L52) · [body 91](../../../Source/Common/Support/BoldBase64.pas#L91) | [`TBase64.ValueToCharacter`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L26) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21) |
+| `CharacterToValue` | method, private | [53](../../../Source/Common/Support/BoldBase64.pas#L53) · [body 105](../../../Source/Common/Support/BoldBase64.pas#L105) | [`TBase64.CharacterToValue`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L38) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21) |
+| `filterLine` | method, private | [54](../../../Source/Common/Support/BoldBase64.pas#L54) · [body 215](../../../Source/Common/Support/BoldBase64.pas#L215) | [`TBase64.filterLine`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L53) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21) |
+| `Create` | constructor | [57](../../../Source/Common/Support/BoldBase64.pas#L57) · [body 79](../../../Source/Common/Support/BoldBase64.pas#L79) | [`TBase64.TBase64`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L20) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21) |
+| `EncodeData` | method | [58](../../../Source/Common/Support/BoldBase64.pas#L58) · [body 120](../../../Source/Common/Support/BoldBase64.pas#L120) | [`TBase64.EncodeData`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L69) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21) |
+| `DecodeData` | method | [59](../../../Source/Common/Support/BoldBase64.pas#L59) · [body 232](../../../Source/Common/Support/BoldBase64.pas#L232) | [`TBase64.DecodeData`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L137) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21)<br>✔ [`BoldStreamingSupportTests.Base64_reports_bad_input`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L33) |
+| `FilterdecodeInput` | property | [60](../../../Source/Common/Support/BoldBase64.pas#L60) | [`TBase64.FilterdecodeInput`](../../src/Bold.Core/Common/Support/BoldBase64.cs#L227) | ✅ verified | ✔ [`BoldStreamingSupportTests.Base64_matches_the_standard_and_round_trips`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L21)<br>✔ [`BoldStreamingSupportTests.Base64_reports_bad_input`](../../tests/Bold.Core.Tests/Common/Support/BoldStreamingSupportTests.cs#L33) |
 
 ## Dependencies
 

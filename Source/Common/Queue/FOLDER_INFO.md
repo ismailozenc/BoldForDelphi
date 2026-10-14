@@ -26,6 +26,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldAbstractDequeuer](../../../CSharp/port/units/BoldAbstractDequeuer.md) | Bold.Core: Common/Queue/BoldAbstractDequeuer.cs (not started) | M9 Multi-user |
-| [BoldEventQueue](../../../CSharp/port/units/BoldEventQueue.md) | Bold.Core: Common/Queue/BoldEventQueue.cs (not started) | M2 Runtime model and subscriptions |
-| [BoldQueue](../../../CSharp/port/units/BoldQueue.md) | Bold.Core: Common/Queue/BoldQueue.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldEventQueue](../../../CSharp/port/units/BoldEventQueue.md) | [Bold.Core: Common/Queue/BoldEventQueue.cs](../../../CSharp/src/Bold.Core/Common/Queue/BoldEventQueue.cs) | M2 Runtime model and subscriptions |
+| [BoldQueue](../../../CSharp/port/units/BoldQueue.md) | [Bold.Core: Common/Queue/BoldQueue.cs](../../../CSharp/src/Bold.Core/Common/Queue/BoldQueue.cs) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

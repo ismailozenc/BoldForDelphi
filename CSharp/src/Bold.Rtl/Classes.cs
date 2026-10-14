@@ -8,6 +8,9 @@ public enum TDuplicates { dupIgnore, dupAccept, dupError }
 /// <summary>Compares two list items, as Delphi's TListSortCompare.</summary>
 public delegate int TListSortCompare(object? Item1, object? Item2);
 
+/// <summary>Delphi's TNotifyEvent: a method taking the sender.</summary>
+public delegate void TNotifyEvent(object? Sender);
+
 /// <summary>Compares two entries of a string list by index, as Delphi's TStringListSortCompare.</summary>
 public delegate int TStringListSortCompare(TStringList List, int Index1, int Index2);
 
