@@ -40,7 +40,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldBlobTextMapper](../../CSharp/port/units/BoldBlobTextMapper.md) | Bold.Persistence.Sql: Unassigned/BoldBlobTextMapper.cs (not started) | M5 SQL persistence |
+| [BoldBlobTextMapper](../../CSharp/port/units/BoldBlobTextMapper.md) | not ported: unassigned code that nothing in Bold uses; the standing decision drops unassigned code |  |
 | [BoldDataSetIP](../../CSharp/port/units/BoldDataSetIP.md) | not ported: TDataSet for the InfoPower grid, a third-party VCL library; nothing uses it |  |
 | [BoldOclSymbolLister](../../CSharp/port/units/BoldOclSymbolLister.md) | not ported: a developer form that lists the OCL operations; the OCL tests list them instead |  |
 | [BoldUMLModelEditorDebuggerPlugin](../../CSharp/port/units/BoldUMLModelEditorDebuggerPlugin.md) | not ported: Delphi model editor plugin that opens the object space debugger |  |

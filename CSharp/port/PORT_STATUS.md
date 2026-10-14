@@ -19,7 +19,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 382 to port, 99 not ported. The units to port declare 16761 symbols. 105 `[Delphi]` markers in the C# code; 46 test methods.
+481 Delphi units: 381 to port, 100 not ported. The units to port declare 16755 symbols. 105 `[Delphi]` markers in the C# code; 46 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
@@ -29,7 +29,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | 🟡 partial | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 16656 | ▰▰▰▰▰▰▰▰▰▰ 99% |
+| ⚪ not started | 16650 | ▰▰▰▰▰▰▰▰▰▰ 99% |
 | ⚫ dropped | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
@@ -40,7 +40,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M2 Runtime model and subscriptions | 24 | 1965 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M3 Object space in memory | 41 | 2630 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M4 OCL | 13 | 1289 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| M5 SQL persistence | 63 | 2690 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| M5 SQL persistence | 62 | 2684 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M6 Typed classes | 7 | 258 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M7 Handles | 24 | 582 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M8 WinForms | 69 | 2668 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -61,7 +61,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.ObjectSpace | 38 | 3880 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Olle | 6 | 319 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Persistence | 13 | 784 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| Bold.Persistence.Sql | 59 | 2632 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| Bold.Persistence.Sql | 58 | 2626 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Propagation | 23 | 521 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Propagator.Server | 22 | 531 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.SourceGenerators | 19 | 412 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -236,7 +236,6 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldObjectUpgraderHandle](units/BoldObjectUpgraderHandle.md) | ⚪ not started | 0/18 | 0 | Bold.Persistence.Sql | M5 | [Source/Persistence/ObjectUpgrading/BoldObjectUpgraderHandle.pas](../../Source/Persistence/ObjectUpgrading/BoldObjectUpgraderHandle.pas) | planned: src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldObjectUpgraderHandle.cs |
 | [BoldAttributeAutoInc](units/BoldAttributeAutoInc.md) | ⚪ not started | 0/7 | 0 | Bold.Persistence.Sql | M5 | [Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas](../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas) | planned: src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs |
 | [BoldPMAutoInc](units/BoldPMAutoInc.md) | ⚪ not started | 0/11 | 0 | Bold.Persistence.Sql | M5 | [Source/Unassigned/AutoInc/BoldPMAutoInc.pas](../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas) | planned: src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs |
-| [BoldBlobTextMapper](units/BoldBlobTextMapper.md) | ⚪ not started | 0/6 | 0 | Bold.Persistence.Sql | M5 | [Source/Unassigned/BoldBlobTextMapper.pas](../../Source/Unassigned/BoldBlobTextMapper.pas) | planned: src/Bold.Persistence.Sql/Unassigned/BoldBlobTextMapper.cs |
 | [BoldGlobalId](units/BoldGlobalId.md) | ⚪ not started | 0/17 | 0 | Bold.ValueSpace | M5 | [Source/ValueSpace/Id/BoldGlobalId.pas](../../Source/ValueSpace/Id/BoldGlobalId.pas) | planned: src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs |
 | [BoldStringId](units/BoldStringId.md) | ⚪ not started | 0/15 | 0 | Bold.ValueSpace | M5 | [Source/ValueSpace/Id/BoldStringId.pas](../../Source/ValueSpace/Id/BoldStringId.pas) | planned: src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs |
 | [BoldFileHandler](units/BoldFileHandler.md) | ⚪ not started | 0/54 | 0 | Bold.Core | M6 | [Source/Common/Support/BoldFileHandler.pas](../../Source/Common/Support/BoldFileHandler.pas) | planned: src/Bold.Core/Common/Support/BoldFileHandler.cs |
@@ -551,6 +550,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldUMLModelEditReg](units/BoldUMLModelEditReg.md) | ⚫ dropped | 17/17 | 0 | not ported: IDE / design-time code |  | [Source/UMLModel/Ide/BoldUMLModelEditReg.pas](../../Source/UMLModel/Ide/BoldUMLModelEditReg.pas) |  |
 | [BoldUMLModelHandleReg](units/BoldUMLModelHandleReg.md) | ⚫ dropped | 3/3 | 0 | not ported: IDE / design-time code |  | [Source/UMLModel/Ide/BoldUMLModelHandleReg.pas](../../Source/UMLModel/Ide/BoldUMLModelHandleReg.pas) |  |
 | [BoldUMXMILinkreg](units/BoldUMXMILinkreg.md) | ⚫ dropped | 6/6 | 0 | not ported: IDE registration |  | [Source/UMLModel/ModelLinks/XMI/BoldUMXMILinkreg.pas](../../Source/UMLModel/ModelLinks/XMI/BoldUMXMILinkreg.pas) |  |
+| [BoldBlobTextMapper](units/BoldBlobTextMapper.md) | ⚫ dropped | 6/6 | 0 | not ported: unassigned code that nothing in Bold uses; the standing decision drops unassigned code |  | [Source/Unassigned/BoldBlobTextMapper.pas](../../Source/Unassigned/BoldBlobTextMapper.pas) |  |
 | [BoldDataSetIP](units/BoldDataSetIP.md) | ⚫ dropped | 14/14 | 0 | not ported: TDataSet for the InfoPower grid, a third-party VCL library; nothing uses it |  | [Source/Unassigned/BoldDataSetIP.pas](../../Source/Unassigned/BoldDataSetIP.pas) |  |
 | [BoldOclSymbolLister](units/BoldOclSymbolLister.md) | ⚫ dropped | 4/4 | 0 | not ported: a developer form that lists the OCL operations; the OCL tests list them instead |  | [Source/Unassigned/BoldOclSymbolLister.pas](../../Source/Unassigned/BoldOclSymbolLister.pas) |  |
 | [BoldUMLModelEditorDebuggerPlugin](units/BoldUMLModelEditorDebuggerPlugin.md) | ⚫ dropped | 8/8 | 0 | not ported: Delphi model editor plugin that opens the object space debugger |  | [Source/Unassigned/BoldUMLModelEditorDebuggerPlugin.pas](../../Source/Unassigned/BoldUMLModelEditorDebuggerPlugin.pas) |  |

@@ -1,4 +1,4 @@
-unit BoldBlobTextMapper; { C# port: CSharp/src/Bold.Persistence.Sql/Unassigned/BoldBlobTextMapper.cs; symbols and status: CSharp/port/units/BoldBlobTextMapper.md }
+unit BoldBlobTextMapper; { C# port: not ported (unassigned code that nothing in Bold uses; the standing decision drops unassigned code); see CSharp/port/units/BoldBlobTextMapper.md }
 
 interface
 

@@ -480,7 +480,7 @@
     { "unit": "BoldUMLPlugins", "file": "Source/UMLModel/Plugins/BoldUMLPlugins.pas", "project": "Bold.ModelEditor", "milestone": "M12" },
     { "unit": "BoldAttributeAutoInc", "file": "Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas", "project": "Bold.Persistence.Sql", "milestone": "M5" },
     { "unit": "BoldPMAutoInc", "file": "Source/Unassigned/AutoInc/BoldPMAutoInc.pas", "project": "Bold.Persistence.Sql", "milestone": "M5" },
-    { "unit": "BoldBlobTextMapper", "file": "Source/Unassigned/BoldBlobTextMapper.pas", "project": "Bold.Persistence.Sql", "milestone": "M5", "note": "Optional mapper from Source/Unassigned; nothing in Bold uses it." },
+    { "unit": "BoldBlobTextMapper", "file": "Source/Unassigned/BoldBlobTextMapper.pas", "project": null, "milestone": null, "drop": "unassigned code that nothing in Bold uses; the standing decision drops unassigned code" },
     { "unit": "BoldDataSetIP", "file": "Source/Unassigned/BoldDataSetIP.pas", "project": null, "milestone": null, "drop": "TDataSet for the InfoPower grid, a third-party VCL library; nothing uses it" },
     { "unit": "BoldOclSymbolLister", "file": "Source/Unassigned/BoldOclSymbolLister.pas", "project": null, "milestone": null, "drop": "a developer form that lists the OCL operations; the OCL tests list them instead" },
     { "unit": "BoldUMLModelEditorDebuggerPlugin", "file": "Source/Unassigned/BoldUMLModelEditorDebuggerPlugin.pas", "project": null, "milestone": null, "drop": "Delphi model editor plugin that opens the object space debugger" },

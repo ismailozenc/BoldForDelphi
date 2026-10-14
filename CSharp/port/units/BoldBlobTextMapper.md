@@ -5,33 +5,14 @@
 | | |
 |---|---|
 | Delphi | [`Source/Unassigned/BoldBlobTextMapper.pas`](../../../Source/Unassigned/BoldBlobTextMapper.pas) (70 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Unassigned/BoldBlobTextMapper.cs` |
-| Project | Bold.Persistence.Sql |
-| Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 6 symbols done, 0 verified |
-| Note | Optional mapper from Source/Unassigned; nothing in Bold uses it. |
+| C# | not ported: unassigned code that nothing in Bold uses; the standing decision drops unassigned code |
+| Status | ⚫ dropped: 6 symbols |
 
-⚪ 6 not started
+## Declared types
 
-## Unit level
+The members of these types are not listed: nothing in this unit is ported.
 
-Types, routines, constants, variables and the initialization and finalization sections.
-
-| Delphi | Kind | Lines | C# | Status | Tests |
-|---|---|---|---|---|---|
-| `TBoldBlobTextMapper` | class | [31](../../../Source/Unassigned/BoldBlobTextMapper.pas#L31) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [65](../../../Source/Unassigned/BoldBlobTextMapper.pas#L65) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [67](../../../Source/Unassigned/BoldBlobTextMapper.pas#L67) |  | ⚪ not started |  |
-
-## TBoldBlobTextMapper
-
-class at [line 31](../../../Source/Unassigned/BoldBlobTextMapper.pas#L31); ⚪ not started.
-
-| Delphi | Kind | Lines | C# | Status | Tests |
-|---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [33](../../../Source/Unassigned/BoldBlobTextMapper.pas#L33) · [body 47](../../../Source/Unassigned/BoldBlobTextMapper.pas#L47) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [34](../../../Source/Unassigned/BoldBlobTextMapper.pas#L34) · [body 52](../../../Source/Unassigned/BoldBlobTextMapper.pas#L52) |  | ⚪ not started |  |
-| `ValueToParam` | method | [36](../../../Source/Unassigned/BoldBlobTextMapper.pas#L36) · [body 57](../../../Source/Unassigned/BoldBlobTextMapper.pas#L57) |  | ⚪ not started |  |
+- `TBoldBlobTextMapper` (class, [line 31](../../../Source/Unassigned/BoldBlobTextMapper.pas#L31), 3 members)
 
 ## Dependencies
 
