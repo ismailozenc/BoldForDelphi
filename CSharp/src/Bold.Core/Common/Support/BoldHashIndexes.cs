@@ -18,7 +18,10 @@ public class TBoldStringKey
     public static uint HashString(string KeyString, TBoldStringCompareMode CompareMode) =>
         HashBuffer(KeyString ?? "", (KeyString ?? "").Length, CompareMode);
 
-    /// <summary>The hash of the first <paramref name="length"/> characters of <paramref name="P"/>.</summary>
+    /// <summary>
+    /// The hash of the first <paramref name="length"/> characters of <paramref name="P"/>. Delphi's "or" and "xor" have the
+    /// same precedence, so each step is ((h shl 3) and MaxInt or h shr 29) xor c.
+    /// </summary>
     [Delphi(PortStatus.Ported, Note = "Takes a string where Delphi takes PChar.")]
     public static uint HashBuffer(string P, int length, TBoldStringCompareMode CompareMode)
     {
@@ -28,14 +31,14 @@ public class TBoldStringKey
             case TBoldStringCompareMode.bscCaseDependent:
                 for (int i = 0; i < length; i++)
                 {
-                    result = ((result << 3) & 2147483647) | ((result >> (32 - 3)) ^ P[i]);
+                    result = (((result << 3) & 2147483647) | (result >> (32 - 3))) ^ P[i];
                 }
 
                 break;
             case TBoldStringCompareMode.bscCaseIndependent:
                 for (int i = 0; i < length; i++)
                 {
-                    result = ((result << 3) & 2147483647) | ((result >> (32 - 3)) ^ (uint)(P[i] | 32));
+                    result = (((result << 3) & 2147483647) | (result >> (32 - 3))) ^ (uint)(P[i] | 32);
                 }
 
                 break;

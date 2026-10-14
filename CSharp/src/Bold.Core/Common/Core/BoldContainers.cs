@@ -1,5 +1,6 @@
 // Delphi: Source/Common/Core/BoldContainers.pas
 // Port map: CSharp/port/units/BoldContainers.md
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldContainers", Symbol = "QuickSort", Note = "TBoldArray.Sort uses the stable List<T>.Sort.")]
 [assembly: Delphi(PortStatus.Ported, Unit = "BoldContainers", Symbol = "TBoldContainerOptions", Note = "Global using alias of DelphiSet<TBoldContainerOption>, in BoldContainers.Aliases.cs.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldContainers", Symbol = "PByteArray", Note = "The arrays hold .NET references, not raw bytes.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldContainers", Symbol = "TByteArray", Note = "The arrays hold .NET references, not raw bytes.")]

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/MoldModel/Core/BoldMoldConsts.pas`](../../../Source/MoldModel/Core/BoldMoldConsts.pas) (53 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs` |
+| C# | [`CSharp/src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs) |
 | Project | Bold.Model |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 34 symbols done, 0 verified |
+| Status | ✅ verified: 34 of 34 symbols done, 34 verified |
 
-⚪ 34 not started
+✅ 34 verified
 
 ## Unit level
 
@@ -18,40 +18,40 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sRecursiveAssignment` | resourcestring | [6](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L6) |  | ⚪ not started |  |
-| `sClassIsRelation` | resourcestring | [7](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L7) |  | ⚪ not started |  |
-| `sErrorOnPos` | resourcestring | [10](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L10) |  | ⚪ not started |  |
-| `sUnexpectedEOF` | resourcestring | [11](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L11) |  | ⚪ not started |  |
-| `sBadCharacter` | resourcestring | [12](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L12) |  | ⚪ not started |  |
-| `sSyntaxError` | resourcestring | [13](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L13) |  | ⚪ not started |  |
-| `sAKeywordExpected` | resourcestring | [14](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L14) |  | ⚪ not started |  |
-| `sQuotedStringExpected` | resourcestring | [15](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L15) |  | ⚪ not started |  |
-| `sKeyWordTokenExpected` | resourcestring | [16](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L16) |  | ⚪ not started |  |
-| `sIntegerExpected` | resourcestring | [17](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L17) |  | ⚪ not started |  |
-| `sBooleanExpected` | resourcestring | [18](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L18) |  | ⚪ not started |  |
-| `sLogGeneratingInPath` | resourcestring | [21](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L21) |  | ⚪ not started |  |
-| `sLogGeneratingFile` | resourcestring | [22](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L22) |  | ⚪ not started |  |
-| `sLogInitializingVars` | resourcestring | [23](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L23) |  | ⚪ not started |  |
-| `sLogExpandingTemplate` | resourcestring | [24](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L24) |  | ⚪ not started |  |
-| `sLogConsiderNameChange1` | resourcestring | [25](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L25) |  | ⚪ not started |  |
-| `sLogConsiderNameChange2` | resourcestring | [26](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L26) |  | ⚪ not started |  |
-| `sLogNoDelphiMappingForType` | resourcestring | [27](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L27) |  | ⚪ not started |  |
-| `sLogNoCOMMappingForType` | resourcestring | [28](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L28) |  | ⚪ not started |  |
-| `sLogNoNativeMappingForType` | resourcestring | [29](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L29) |  | ⚪ not started |  |
-| `sNoValueTypeMappingForType` | resourcestring | [30](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L30) |  | ⚪ not started |  |
-| `sProcessingClassXFileY` | resourcestring | [31](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L31) |  | ⚪ not started |  |
-| `sMoveToComponent_NoSuperClass` | resourcestring | [32](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L32) |  | ⚪ not started |  |
-| `sMoveToComponent_NoMoldModel` | resourcestring | [33](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L33) |  | ⚪ not started |  |
-| `sCollidingFileName` | resourcestring | [34](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L34) |  | ⚪ not started |  |
-| `sNoTemplateForPersistenceInterfaces` | resourcestring | [35](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L35) |  | ⚪ not started |  |
-| `sUnknownRoleType` | resourcestring | [38](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L38) |  | ⚪ not started |  |
-| `sCannotTrimAfterLinkRolesEnsured` | resourcestring | [39](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L39) |  | ⚪ not started |  |
-| `sMemberHasNoDispID` | resourcestring | [40](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L40) |  | ⚪ not started |  |
-| `sEditTypeNames` | resourcestring | [43](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L43) |  | ⚪ not started |  |
-| `sNameHasInvalidChars` | resourcestring | [46](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L46) |  | ⚪ not started |  |
-| `sNameTooLong` | resourcestring | [47](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L47) |  | ⚪ not started |  |
-| `sNameCannotBeEmpty` | resourcestring | [48](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L48) |  | ⚪ not started |  |
-| `sInvalidFirstChar` | resourcestring | [49](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L49) |  | ⚪ not started |  |
+| `sRecursiveAssignment` | resourcestring | [6](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L6) | [`BoldMoldConsts.sRecursiveAssignment`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L9) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sClassIsRelation` | resourcestring | [7](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L7) | [`BoldMoldConsts.sClassIsRelation`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L10) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sErrorOnPos` | resourcestring | [10](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L10) | [`BoldMoldConsts.sErrorOnPos`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L11) | ✅ verified | ✔ [`BoldBldTests.Bad_input_reports_the_line`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L139)<br>✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sUnexpectedEOF` | resourcestring | [11](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L11) | [`BoldMoldConsts.sUnexpectedEOF`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L12) | ✅ verified | ✔ [`BoldBldTests.Bad_input_reports_the_line`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L139)<br>✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sBadCharacter` | resourcestring | [12](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L12) | [`BoldMoldConsts.sBadCharacter`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L13) | ✅ verified | ✔ [`BoldBldTests.Bad_input_reports_the_line`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L139)<br>✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sSyntaxError` | resourcestring | [13](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L13) | [`BoldMoldConsts.sSyntaxError`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L14) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sAKeywordExpected` | resourcestring | [14](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L14) | [`BoldMoldConsts.sAKeywordExpected`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L15) | ✅ verified | ✔ [`BoldBldTests.Bad_input_reports_the_line`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L139)<br>✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sQuotedStringExpected` | resourcestring | [15](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L15) | [`BoldMoldConsts.sQuotedStringExpected`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L16) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sKeyWordTokenExpected` | resourcestring | [16](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L16) | [`BoldMoldConsts.sKeyWordTokenExpected`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L17) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sIntegerExpected` | resourcestring | [17](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L17) | [`BoldMoldConsts.sIntegerExpected`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L18) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sBooleanExpected` | resourcestring | [18](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L18) | [`BoldMoldConsts.sBooleanExpected`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L19) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogGeneratingInPath` | resourcestring | [21](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L21) | [`BoldMoldConsts.sLogGeneratingInPath`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L20) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogGeneratingFile` | resourcestring | [22](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L22) | [`BoldMoldConsts.sLogGeneratingFile`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L21) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogInitializingVars` | resourcestring | [23](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L23) | [`BoldMoldConsts.sLogInitializingVars`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L22) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogExpandingTemplate` | resourcestring | [24](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L24) | [`BoldMoldConsts.sLogExpandingTemplate`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L23) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogConsiderNameChange1` | resourcestring | [25](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L25) | [`BoldMoldConsts.sLogConsiderNameChange1`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L24) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogConsiderNameChange2` | resourcestring | [26](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L26) | [`BoldMoldConsts.sLogConsiderNameChange2`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L25) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogNoDelphiMappingForType` | resourcestring | [27](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L27) | [`BoldMoldConsts.sLogNoDelphiMappingForType`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L26) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogNoCOMMappingForType` | resourcestring | [28](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L28) | [`BoldMoldConsts.sLogNoCOMMappingForType`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L27) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sLogNoNativeMappingForType` | resourcestring | [29](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L29) | [`BoldMoldConsts.sLogNoNativeMappingForType`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L28) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sNoValueTypeMappingForType` | resourcestring | [30](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L30) | [`BoldMoldConsts.sNoValueTypeMappingForType`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L29) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sProcessingClassXFileY` | resourcestring | [31](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L31) | [`BoldMoldConsts.sProcessingClassXFileY`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L30) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sMoveToComponent_NoSuperClass` | resourcestring | [32](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L32) | [`BoldMoldConsts.sMoveToComponent_NoSuperClass`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L31) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sMoveToComponent_NoMoldModel` | resourcestring | [33](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L33) | [`BoldMoldConsts.sMoveToComponent_NoMoldModel`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L32) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sCollidingFileName` | resourcestring | [34](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L34) | [`BoldMoldConsts.sCollidingFileName`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L33) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sNoTemplateForPersistenceInterfaces` | resourcestring | [35](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L35) | [`BoldMoldConsts.sNoTemplateForPersistenceInterfaces`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L34) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sUnknownRoleType` | resourcestring | [38](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L38) | [`BoldMoldConsts.sUnknownRoleType`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L35) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sCannotTrimAfterLinkRolesEnsured` | resourcestring | [39](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L39) | [`BoldMoldConsts.sCannotTrimAfterLinkRolesEnsured`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L36) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sMemberHasNoDispID` | resourcestring | [40](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L40) | [`BoldMoldConsts.sMemberHasNoDispID`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L37) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sEditTypeNames` | resourcestring | [43](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L43) | [`BoldMoldConsts.sEditTypeNames`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L38) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sNameHasInvalidChars` | resourcestring | [46](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L46) | [`BoldMoldConsts.sNameHasInvalidChars`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L39) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sNameTooLong` | resourcestring | [47](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L47) | [`BoldMoldConsts.sNameTooLong`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L40) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sNameCannotBeEmpty` | resourcestring | [48](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L48) | [`BoldMoldConsts.sNameCannotBeEmpty`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L41) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
+| `sInvalidFirstChar` | resourcestring | [49](../../../Source/MoldModel/Core/BoldMoldConsts.pas#L49) | [`BoldMoldConsts.sInvalidFirstChar`](../../src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs#L42) | ✅ verified | ✔ [`BoldNameExpanderTests.Mold_messages_have_the_Delphi_values`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L9) |
 
 ## Dependencies
 

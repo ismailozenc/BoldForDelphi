@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/MoldModel/Bld/BoldBld.pas`](../../../Source/MoldModel/Bld/BoldBld.pas) (1150 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Model/MoldModel/Bld/BoldBld.cs` |
+| C# | [`CSharp/src/Bold.Model/MoldModel/Bld/BoldBld.cs`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs) |
 | Project | Bold.Model |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 73 symbols done, 0 verified |
+| Status | 🟢 ported: 73 of 73 symbols done, 69 verified |
 
-⚪ 73 not started
+✅ 69 verified · 🟢 1 ported · 🔵 3 replaced
 
 ## Unit level
 
@@ -18,163 +18,183 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EBoldBLDParseError` | class | [17](../../../Source/MoldModel/Bld/BoldBld.pas#L17) |  | ⚪ not started |  |
-| `TMoldBLDRW` | class | [20](../../../Source/MoldModel/Bld/BoldBld.pas#L20) |  | ⚪ not started |  |
-| `BooleanToMultiplicityString` | routine | [28](../../../Source/MoldModel/Bld/BoldBld.pas#L28) · [body 1142](../../../Source/MoldModel/Bld/BoldBld.pas#L1142) |  | ⚪ not started |  |
-| `TElementClass` | class reference, implementation | [57](../../../Source/MoldModel/Bld/BoldBld.pas#L57) |  | ⚪ not started |  |
-| `TElementClassRecord` | record, implementation | [59](../../../Source/MoldModel/Bld/BoldBld.pas#L59) |  | ⚪ not started |  |
-| `TWriter` | class, implementation | [66](../../../Source/MoldModel/Bld/BoldBld.pas#L66) |  | ⚪ not started |  |
-| `BLDTokenKind` | enum, implementation | [83](../../../Source/MoldModel/Bld/BoldBld.pas#L83) |  | ⚪ not started |  |
-| `TToken` | class, implementation | [85](../../../Source/MoldModel/Bld/BoldBld.pas#L85) |  | ⚪ not started |  |
-| `TReader` | class, implementation | [93](../../../Source/MoldModel/Bld/BoldBld.pas#L93) |  | ⚪ not started |  |
-| `TElement` | class, implementation | [129](../../../Source/MoldModel/Bld/BoldBld.pas#L129) |  | ⚪ not started |  |
-| `TModel` | class, implementation | [137](../../../Source/MoldModel/Bld/BoldBld.pas#L137) |  | ⚪ not started |  |
-| `TElementList` | class, implementation | [143](../../../Source/MoldModel/Bld/BoldBld.pas#L143) |  | ⚪ not started |  |
-| `TPClass` | class, implementation | [149](../../../Source/MoldModel/Bld/BoldBld.pas#L149) |  | ⚪ not started |  |
-| `TAttribute` | class, implementation | [155](../../../Source/MoldModel/Bld/BoldBld.pas#L155) |  | ⚪ not started |  |
-| `TMethod` | class, implementation | [161](../../../Source/MoldModel/Bld/BoldBld.pas#L161) |  | ⚪ not started |  |
-| `TRole` | class, implementation | [167](../../../Source/MoldModel/Bld/BoldBld.pas#L167) |  | ⚪ not started |  |
-| `TQualifier` | class, implementation | [173](../../../Source/MoldModel/Bld/BoldBld.pas#L173) |  | ⚪ not started |  |
-| `TAssociation` | class, implementation | [179](../../../Source/MoldModel/Bld/BoldBld.pas#L179) |  | ⚪ not started |  |
-| `TypeTableByMoldElement` | routine, implementation | [184](../../../Source/MoldModel/Bld/BoldBld.pas#L184) · [body 1116](../../../Source/MoldModel/Bld/BoldBld.pas#L1116) |  | ⚪ not started |  |
-| `TypeTableByName` | routine, implementation | [185](../../../Source/MoldModel/Bld/BoldBld.pas#L185) · [body 1129](../../../Source/MoldModel/Bld/BoldBld.pas#L1129) |  | ⚪ not started |  |
-| `typetableIndex` | alias, implementation | [1103](../../../Source/MoldModel/Bld/BoldBld.pas#L1103) |  | ⚪ not started |  |
+| `EBoldBLDParseError` | class | [17](../../../Source/MoldModel/Bld/BoldBld.pas#L17) | [`EBoldBLDParseError`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L14) | ✅ verified | ✔ [`BoldBldTests.Bad_input_reports_the_line`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L139) |
+| `TMoldBLDRW` | class | [20](../../../Source/MoldModel/Bld/BoldBld.pas#L20) | [`TMoldBLDRW`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L21) | 🟢 ported |  |
+| `BooleanToMultiplicityString` | routine | [28](../../../Source/MoldModel/Bld/BoldBld.pas#L28) · [body 1142](../../../Source/MoldModel/Bld/BoldBld.pas#L1142) | [`BoldBld.BooleanToMultiplicityString`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1122) | ✅ verified | ✔ [`BoldBldTests.Old_boolean_multiplicity`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L155) |
+| `TElementClass` | class reference, implementation | [57](../../../Source/MoldModel/Bld/BoldBld.pas#L57) | [`[assembly: Delphi] in BoldBld.cs`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L8) | 🔵 replaced: Each element reader is a singleton object; the type table holds those objects instead of class references. |  |
+| `TElementClassRecord` | record, implementation | [59](../../../Source/MoldModel/Bld/BoldBld.pas#L59) | [`TMoldBLDRW.TElementClassRecord`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L468) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TWriter` | class, implementation | [66](../../../Source/MoldModel/Bld/BoldBld.pas#L66) | [`TMoldBLDRW.TWriter`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L89) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `BLDTokenKind` | enum, implementation | [83](../../../Source/MoldModel/Bld/BoldBld.pas#L83) | [`TMoldBLDRW.BLDTokenKind`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L182) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TToken` | class, implementation | [85](../../../Source/MoldModel/Bld/BoldBld.pas#L85) | [`TMoldBLDRW.TToken`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L185) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TReader` | class, implementation | [93](../../../Source/MoldModel/Bld/BoldBld.pas#L93) | [`TMoldBLDRW.TReader`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L194) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TElement` | class, implementation | [129](../../../Source/MoldModel/Bld/BoldBld.pas#L129) | [`TMoldBLDRW.TElement`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L472) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TModel` | class, implementation | [137](../../../Source/MoldModel/Bld/BoldBld.pas#L137) | [`TMoldBLDRW.TModel`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L499) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TElementList` | class, implementation | [143](../../../Source/MoldModel/Bld/BoldBld.pas#L143) | [`TMoldBLDRW.TElementList`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L581) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TPClass` | class, implementation | [149](../../../Source/MoldModel/Bld/BoldBld.pas#L149) | [`TMoldBLDRW.TPClass`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L604) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TAttribute` | class, implementation | [155](../../../Source/MoldModel/Bld/BoldBld.pas#L155) | [`TMoldBLDRW.TAttribute`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L700) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TMethod` | class, implementation | [161](../../../Source/MoldModel/Bld/BoldBld.pas#L161) | [`TMoldBLDRW.TMethod`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L811) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TRole` | class, implementation | [167](../../../Source/MoldModel/Bld/BoldBld.pas#L167) | [`TMoldBLDRW.TRole`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L880) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TQualifier` | class, implementation | [173](../../../Source/MoldModel/Bld/BoldBld.pas#L173) | [`TMoldBLDRW.TQualifier`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L984) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TAssociation` | class, implementation | [179](../../../Source/MoldModel/Bld/BoldBld.pas#L179) | [`TMoldBLDRW.TAssociation`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1020) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TypeTableByMoldElement` | routine, implementation | [184](../../../Source/MoldModel/Bld/BoldBld.pas#L184) · [body 1116](../../../Source/MoldModel/Bld/BoldBld.pas#L1116) | [`TMoldBLDRW.TypeTableByMoldElement`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1089) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `TypeTableByName` | routine, implementation | [185](../../../Source/MoldModel/Bld/BoldBld.pas#L185) · [body 1129](../../../Source/MoldModel/Bld/BoldBld.pas#L1129) | [`TMoldBLDRW.TypeTableByName`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1103) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `typetableIndex` | alias, implementation | [1103](../../../Source/MoldModel/Bld/BoldBld.pas#L1103) | [`[assembly: Delphi] in BoldBld.cs`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L6) | 🔵 replaced: The bounds of the type table array; the C# array has its own. |  |
 
 ## TMoldBLDRW
 
-class at [line 20](../../../Source/MoldModel/Bld/BoldBld.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/MoldModel/Bld/BoldBld.pas#L20); 🟢 ported, C# [`TMoldBLDRW`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L21).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ModelFromFile` | class method | [21](../../../Source/MoldModel/Bld/BoldBld.pas#L21) · [body 256](../../../Source/MoldModel/Bld/BoldBld.pas#L256) |  | ⚪ not started |  |
-| `ModelToFile` | class method | [22](../../../Source/MoldModel/Bld/BoldBld.pas#L22) · [body 203](../../../Source/MoldModel/Bld/BoldBld.pas#L203) |  | ⚪ not started |  |
-| `ModelToStrings` | class method | [23](../../../Source/MoldModel/Bld/BoldBld.pas#L23) · [body 188](../../../Source/MoldModel/Bld/BoldBld.pas#L188) |  | ⚪ not started |  |
-| `StringsToModel` | class method | [24](../../../Source/MoldModel/Bld/BoldBld.pas#L24) · [body 216](../../../Source/MoldModel/Bld/BoldBld.pas#L216) |  | ⚪ not started |  |
+| `ModelFromFile` | class method | [21](../../../Source/MoldModel/Bld/BoldBld.pas#L21) · [body 256](../../../Source/MoldModel/Bld/BoldBld.pas#L256) | [`TMoldBLDRW.ModelFromFile`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L34) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21)<br>✔ [`BoldBldTests.File_round_trip_keeps_national_characters`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L99) |
+| `ModelToFile` | class method | [22](../../../Source/MoldModel/Bld/BoldBld.pas#L22) · [body 203](../../../Source/MoldModel/Bld/BoldBld.pas#L203) | [`TMoldBLDRW.ModelToFile`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L42) | ✅ verified | ✔ [`BoldBldTests.File_round_trip_keeps_national_characters`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L99) |
+| `ModelToStrings` | class method | [23](../../../Source/MoldModel/Bld/BoldBld.pas#L23) · [body 188](../../../Source/MoldModel/Bld/BoldBld.pas#L188) | [`TMoldBLDRW.ModelToStrings`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L51) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62)<br>✔ [`BoldBldTests.Fixture_round_trips_by_meaning`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L81) |
+| `StringsToModel` | class method | [24](../../../Source/MoldModel/Bld/BoldBld.pas#L24) · [body 216](../../../Source/MoldModel/Bld/BoldBld.pas#L216) | [`TMoldBLDRW.StringsToModel`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L65) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21)<br>✔ [`BoldBldTests.Fixture_round_trips_by_meaning`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L81)<br>✔ [`BoldBldTests.No_lines_give_an_empty_model`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L126) |
 
 ## TWriter
 
-class at [line 66](../../../Source/MoldModel/Bld/BoldBld.pas#L66); ⚪ not started.
+class at [line 66](../../../Source/MoldModel/Bld/BoldBld.pas#L66); ✅ verified, C# [`TMoldBLDRW.TWriter`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L89).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DoIndent` | method, private | [71](../../../Source/MoldModel/Bld/BoldBld.pas#L71) · [body 278](../../../Source/MoldModel/Bld/BoldBld.pas#L278) |  | ⚪ not started |  |
-| `PutStartBlock` | method, private | [72](../../../Source/MoldModel/Bld/BoldBld.pas#L72) · [body 289](../../../Source/MoldModel/Bld/BoldBld.pas#L289) |  | ⚪ not started |  |
-| `PutEndBlock` | method, private | [73](../../../Source/MoldModel/Bld/BoldBld.pas#L73) · [body 296](../../../Source/MoldModel/Bld/BoldBld.pas#L296) |  | ⚪ not started |  |
-| `Put` | method, private | [74](../../../Source/MoldModel/Bld/BoldBld.pas#L74) · [body 303](../../../Source/MoldModel/Bld/BoldBld.pas#L303) |  | ⚪ not started |  |
-| `PutQuotedString` | method, private | [75](../../../Source/MoldModel/Bld/BoldBld.pas#L75) · [body 308](../../../Source/MoldModel/Bld/BoldBld.pas#L308) |  | ⚪ not started |  |
-| `Putinteger` | method, private | [76](../../../Source/MoldModel/Bld/BoldBld.pas#L76) · [body 329](../../../Source/MoldModel/Bld/BoldBld.pas#L329) |  | ⚪ not started |  |
-| `PutBoolean` | method, private | [77](../../../Source/MoldModel/Bld/BoldBld.pas#L77) · [body 335](../../../Source/MoldModel/Bld/BoldBld.pas#L335) |  | ⚪ not started |  |
-| `PutClassReference` | method, private | [78](../../../Source/MoldModel/Bld/BoldBld.pas#L78) · [body 344](../../../Source/MoldModel/Bld/BoldBld.pas#L344) |  | ⚪ not started |  |
-| `Create` | constructor | [80](../../../Source/MoldModel/Bld/BoldBld.pas#L80) · [body 270](../../../Source/MoldModel/Bld/BoldBld.pas#L270) |  | ⚪ not started |  |
+| `DoIndent` | method, private | [71](../../../Source/MoldModel/Bld/BoldBld.pas#L71) · [body 278](../../../Source/MoldModel/Bld/BoldBld.pas#L278) | [`TMoldBLDRW.TWriter.DoIndent`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L104) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `PutStartBlock` | method, private | [72](../../../Source/MoldModel/Bld/BoldBld.pas#L72) · [body 289](../../../Source/MoldModel/Bld/BoldBld.pas#L289) | [`TMoldBLDRW.TWriter.PutStartBlock`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L115) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `PutEndBlock` | method, private | [73](../../../Source/MoldModel/Bld/BoldBld.pas#L73) · [body 296](../../../Source/MoldModel/Bld/BoldBld.pas#L296) | [`TMoldBLDRW.TWriter.PutEndBlock`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L123) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Put` | method, private | [74](../../../Source/MoldModel/Bld/BoldBld.pas#L74) · [body 303](../../../Source/MoldModel/Bld/BoldBld.pas#L303) | [`TMoldBLDRW.TWriter.Put`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L131) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `PutQuotedString` | method, private | [75](../../../Source/MoldModel/Bld/BoldBld.pas#L75) · [body 308](../../../Source/MoldModel/Bld/BoldBld.pas#L308) | [`TMoldBLDRW.TWriter.PutQuotedString`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L135) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Putinteger` | method, private | [76](../../../Source/MoldModel/Bld/BoldBld.pas#L76) · [body 329](../../../Source/MoldModel/Bld/BoldBld.pas#L329) | [`TMoldBLDRW.TWriter.PutInteger`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L164) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `PutBoolean` | method, private | [77](../../../Source/MoldModel/Bld/BoldBld.pas#L77) · [body 335](../../../Source/MoldModel/Bld/BoldBld.pas#L335) | [`TMoldBLDRW.TWriter.PutBoolean`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L171) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `PutClassReference` | method, private | [78](../../../Source/MoldModel/Bld/BoldBld.pas#L78) · [body 344](../../../Source/MoldModel/Bld/BoldBld.pas#L344) | [`TMoldBLDRW.TWriter.PutClassReference`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L178) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Create` | constructor | [80](../../../Source/MoldModel/Bld/BoldBld.pas#L80) · [body 270](../../../Source/MoldModel/Bld/BoldBld.pas#L270) | [`TMoldBLDRW.TWriter.TWriter`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L96) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
 
 ## TReader
 
-class at [line 93](../../../Source/MoldModel/Bld/BoldBld.pas#L93); ⚪ not started.
+class at [line 93](../../../Source/MoldModel/Bld/BoldBld.pas#L93); ✅ verified, C# [`TMoldBLDRW.TReader`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L194).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetToken` | method, private | [104](../../../Source/MoldModel/Bld/BoldBld.pas#L104) · [body 421](../../../Source/MoldModel/Bld/BoldBld.pas#L421) |  | ⚪ not started |  |
-| `Skip` | method, private | [105](../../../Source/MoldModel/Bld/BoldBld.pas#L105) · [body 367](../../../Source/MoldModel/Bld/BoldBld.pas#L367) |  | ⚪ not started |  |
-| `GetCharacter` | method, private | [106](../../../Source/MoldModel/Bld/BoldBld.pas#L106) · [body 373](../../../Source/MoldModel/Bld/BoldBld.pas#L373) |  | ⚪ not started |  |
-| `GetCharacterNotEof` | method, private | [107](../../../Source/MoldModel/Bld/BoldBld.pas#L107) · [body 403](../../../Source/MoldModel/Bld/BoldBld.pas#L403) |  | ⚪ not started |  |
-| `NextCharacter` | method, private | [108](../../../Source/MoldModel/Bld/BoldBld.pas#L108) · [body 411](../../../Source/MoldModel/Bld/BoldBld.pas#L411) |  | ⚪ not started |  |
-| `EatStartBlock` | method, private | [109](../../../Source/MoldModel/Bld/BoldBld.pas#L109) · [body 512](../../../Source/MoldModel/Bld/BoldBld.pas#L512) |  | ⚪ not started |  |
-| `TryKeyword` | method, private | [110](../../../Source/MoldModel/Bld/BoldBld.pas#L110) · [body 518](../../../Source/MoldModel/Bld/BoldBld.pas#L518) |  | ⚪ not started |  |
-| `GetKeyword` | method, private | [111](../../../Source/MoldModel/Bld/BoldBld.pas#L111) · [body 538](../../../Source/MoldModel/Bld/BoldBld.pas#L538) |  | ⚪ not started |  |
-| `Eat` | method, private | [112](../../../Source/MoldModel/Bld/BoldBld.pas#L112) · [body 498](../../../Source/MoldModel/Bld/BoldBld.pas#L498) |  | ⚪ not started |  |
-| `EatKeyword` | method, private | [113](../../../Source/MoldModel/Bld/BoldBld.pas#L113) · [body 506](../../../Source/MoldModel/Bld/BoldBld.pas#L506) |  | ⚪ not started |  |
-| `GetQuotedString` | method, private | [114](../../../Source/MoldModel/Bld/BoldBld.pas#L114) · [body 529](../../../Source/MoldModel/Bld/BoldBld.pas#L529) |  | ⚪ not started |  |
-| `Getinteger` | method, private | [115](../../../Source/MoldModel/Bld/BoldBld.pas#L115) · [body 547](../../../Source/MoldModel/Bld/BoldBld.pas#L547) |  | ⚪ not started |  |
-| `GetBoolean` | method, private | [116](../../../Source/MoldModel/Bld/BoldBld.pas#L116) · [body 556](../../../Source/MoldModel/Bld/BoldBld.pas#L556) |  | ⚪ not started |  |
-| `GetClassReference` | method, private | [117](../../../Source/MoldModel/Bld/BoldBld.pas#L117) · [body 567](../../../Source/MoldModel/Bld/BoldBld.pas#L567) |  | ⚪ not started |  |
-| `EOS` | property, private | [118](../../../Source/MoldModel/Bld/BoldBld.pas#L118) |  | ⚪ not started |  |
-| `LineNumber` | property, private | [119](../../../Source/MoldModel/Bld/BoldBld.pas#L119) |  | ⚪ not started |  |
-| `Line` | property, private | [120](../../../Source/MoldModel/Bld/BoldBld.pas#L120) |  | ⚪ not started |  |
-| `FormatVersion` | property | [123](../../../Source/MoldModel/Bld/BoldBld.pas#L123) |  | ⚪ not started |  |
-| `Create` | constructor | [124](../../../Source/MoldModel/Bld/BoldBld.pas#L124) · [body 353](../../../Source/MoldModel/Bld/BoldBld.pas#L353) |  | ⚪ not started |  |
-| `Destroy` | destructor | [125](../../../Source/MoldModel/Bld/BoldBld.pas#L125) · [body 361](../../../Source/MoldModel/Bld/BoldBld.pas#L361) |  | ⚪ not started |  |
+| `GetToken` | method, private | [104](../../../Source/MoldModel/Bld/BoldBld.pas#L104) · [body 421](../../../Source/MoldModel/Bld/BoldBld.pas#L421) | [`TMoldBLDRW.TReader.GetToken`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L286) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `Skip` | method, private | [105](../../../Source/MoldModel/Bld/BoldBld.pas#L105) · [body 367](../../../Source/MoldModel/Bld/BoldBld.pas#L367) | [`TMoldBLDRW.TReader.Skip`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L228) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `GetCharacter` | method, private | [106](../../../Source/MoldModel/Bld/BoldBld.pas#L106) · [body 373](../../../Source/MoldModel/Bld/BoldBld.pas#L373) | [`TMoldBLDRW.TReader.GetCharacter`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L238) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `GetCharacterNotEof` | method, private | [107](../../../Source/MoldModel/Bld/BoldBld.pas#L107) · [body 403](../../../Source/MoldModel/Bld/BoldBld.pas#L403) | [`TMoldBLDRW.TReader.GetCharacterNotEof`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L268) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `NextCharacter` | method, private | [108](../../../Source/MoldModel/Bld/BoldBld.pas#L108) · [body 411](../../../Source/MoldModel/Bld/BoldBld.pas#L411) | [`TMoldBLDRW.TReader.NextCharacter`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L279) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `EatStartBlock` | method, private | [109](../../../Source/MoldModel/Bld/BoldBld.pas#L109) · [body 512](../../../Source/MoldModel/Bld/BoldBld.pas#L512) | [`TMoldBLDRW.TReader.EatStartBlock`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L383) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `TryKeyword` | method, private | [110](../../../Source/MoldModel/Bld/BoldBld.pas#L110) · [body 518](../../../Source/MoldModel/Bld/BoldBld.pas#L518) | [`TMoldBLDRW.TReader.TryKeyword`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L391) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `GetKeyword` | method, private | [111](../../../Source/MoldModel/Bld/BoldBld.pas#L111) · [body 538](../../../Source/MoldModel/Bld/BoldBld.pas#L538) | [`TMoldBLDRW.TReader.GetKeyword`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L416) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `Eat` | method, private | [112](../../../Source/MoldModel/Bld/BoldBld.pas#L112) · [body 498](../../../Source/MoldModel/Bld/BoldBld.pas#L498) | [`TMoldBLDRW.TReader.Eat`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L363) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `EatKeyword` | method, private | [113](../../../Source/MoldModel/Bld/BoldBld.pas#L113) · [body 506](../../../Source/MoldModel/Bld/BoldBld.pas#L506) | [`TMoldBLDRW.TReader.EatKeyword`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L374) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `GetQuotedString` | method, private | [114](../../../Source/MoldModel/Bld/BoldBld.pas#L114) · [body 529](../../../Source/MoldModel/Bld/BoldBld.pas#L529) | [`TMoldBLDRW.TReader.GetQuotedString`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L403) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `Getinteger` | method, private | [115](../../../Source/MoldModel/Bld/BoldBld.pas#L115) · [body 547](../../../Source/MoldModel/Bld/BoldBld.pas#L547) | [`TMoldBLDRW.TReader.GetInteger`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L429) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `GetBoolean` | method, private | [116](../../../Source/MoldModel/Bld/BoldBld.pas#L116) · [body 556](../../../Source/MoldModel/Bld/BoldBld.pas#L556) | [`TMoldBLDRW.TReader.GetBoolean`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L442) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `GetClassReference` | method, private | [117](../../../Source/MoldModel/Bld/BoldBld.pas#L117) · [body 567](../../../Source/MoldModel/Bld/BoldBld.pas#L567) | [`TMoldBLDRW.TReader.GetClassReference`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L460) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `EOS` | property, private | [118](../../../Source/MoldModel/Bld/BoldBld.pas#L118) | [`TMoldBLDRW.TReader.EOS`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L216) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `LineNumber` | property, private | [119](../../../Source/MoldModel/Bld/BoldBld.pas#L119) | [`TMoldBLDRW.TReader.LineNumber`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L219) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `Line` | property, private | [120](../../../Source/MoldModel/Bld/BoldBld.pas#L120) | [`TMoldBLDRW.TReader.Line`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L222) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `FormatVersion` | property | [123](../../../Source/MoldModel/Bld/BoldBld.pas#L123) | [`TMoldBLDRW.TReader.FormatVersion`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L225) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `Create` | constructor | [124](../../../Source/MoldModel/Bld/BoldBld.pas#L124) · [body 353](../../../Source/MoldModel/Bld/BoldBld.pas#L353) | [`TMoldBLDRW.TReader.TReader`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L208) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `Destroy` | destructor | [125](../../../Source/MoldModel/Bld/BoldBld.pas#L125) · [body 361](../../../Source/MoldModel/Bld/BoldBld.pas#L361) | [`[assembly: Delphi] in BoldBld.cs`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L7) | 🔵 replaced: Freed the current token; the garbage collector does that in .NET. |  |
 
 ## TElement
 
-class at [line 129](../../../Source/MoldModel/Bld/BoldBld.pas#L129); ⚪ not started.
+class at [line 129](../../../Source/MoldModel/Bld/BoldBld.pas#L129); ✅ verified, C# [`TMoldBLDRW.TElement`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L472).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [131](../../../Source/MoldModel/Bld/BoldBld.pas#L131) · [body 658](../../../Source/MoldModel/Bld/BoldBld.pas#L658) |  | ⚪ not started |  |
-| `Read` | class method | [132](../../../Source/MoldModel/Bld/BoldBld.pas#L132) · [body 663](../../../Source/MoldModel/Bld/BoldBld.pas#L663) |  | ⚪ not started |  |
-| `CreateAndRead` | class method | [133](../../../Source/MoldModel/Bld/BoldBld.pas#L133) · [body 668](../../../Source/MoldModel/Bld/BoldBld.pas#L668) |  | ⚪ not started |  |
+| `Write` | class method | [131](../../../Source/MoldModel/Bld/BoldBld.pas#L131) · [body 658](../../../Source/MoldModel/Bld/BoldBld.pas#L658) | [`TMoldBLDRW.TElement.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L475) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [132](../../../Source/MoldModel/Bld/BoldBld.pas#L132) · [body 663](../../../Source/MoldModel/Bld/BoldBld.pas#L663) | [`TMoldBLDRW.TElement.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L478) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+| `CreateAndRead` | class method | [133](../../../Source/MoldModel/Bld/BoldBld.pas#L133) · [body 668](../../../Source/MoldModel/Bld/BoldBld.pas#L668) | [`TMoldBLDRW.TElement.CreateAndRead`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L485) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TModel
 
-class at [line 137](../../../Source/MoldModel/Bld/BoldBld.pas#L137); ⚪ not started.
+class at [line 137](../../../Source/MoldModel/Bld/BoldBld.pas#L137); ✅ verified, C# [`TMoldBLDRW.TModel`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L499).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [138](../../../Source/MoldModel/Bld/BoldBld.pas#L138) · [body 579](../../../Source/MoldModel/Bld/BoldBld.pas#L579) |  | ⚪ not started |  |
-| `Read` | class method | [139](../../../Source/MoldModel/Bld/BoldBld.pas#L139) · [body 603](../../../Source/MoldModel/Bld/BoldBld.pas#L603) |  | ⚪ not started |  |
+| `Write` | class method | [138](../../../Source/MoldModel/Bld/BoldBld.pas#L138) · [body 579](../../../Source/MoldModel/Bld/BoldBld.pas#L579) | [`TMoldBLDRW.TModel.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L504) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [139](../../../Source/MoldModel/Bld/BoldBld.pas#L139) · [body 603](../../../Source/MoldModel/Bld/BoldBld.pas#L603) | [`TMoldBLDRW.TModel.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L523) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TElementList
 
-class at [line 143](../../../Source/MoldModel/Bld/BoldBld.pas#L143); ⚪ not started.
+class at [line 143](../../../Source/MoldModel/Bld/BoldBld.pas#L143); ✅ verified, C# [`TMoldBLDRW.TElementList`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L581).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [144](../../../Source/MoldModel/Bld/BoldBld.pas#L144) · [body 684](../../../Source/MoldModel/Bld/BoldBld.pas#L684) |  | ⚪ not started |  |
-| `Read` | class method | [145](../../../Source/MoldModel/Bld/BoldBld.pas#L145) · [body 692](../../../Source/MoldModel/Bld/BoldBld.pas#L692) |  | ⚪ not started |  |
+| `Write` | class method | [144](../../../Source/MoldModel/Bld/BoldBld.pas#L144) · [body 684](../../../Source/MoldModel/Bld/BoldBld.pas#L684) | [`TMoldBLDRW.TElementList.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L584) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [145](../../../Source/MoldModel/Bld/BoldBld.pas#L145) · [body 692](../../../Source/MoldModel/Bld/BoldBld.pas#L692) | [`TMoldBLDRW.TElementList.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L594) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TPClass
 
-class at [line 149](../../../Source/MoldModel/Bld/BoldBld.pas#L149); ⚪ not started.
+class at [line 149](../../../Source/MoldModel/Bld/BoldBld.pas#L149); ✅ verified, C# [`TMoldBLDRW.TPClass`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L604).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [150](../../../Source/MoldModel/Bld/BoldBld.pas#L150) · [body 699](../../../Source/MoldModel/Bld/BoldBld.pas#L699) |  | ⚪ not started |  |
-| `Read` | class method | [151](../../../Source/MoldModel/Bld/BoldBld.pas#L151) · [body 726](../../../Source/MoldModel/Bld/BoldBld.pas#L726) |  | ⚪ not started |  |
+| `Write` | class method | [150](../../../Source/MoldModel/Bld/BoldBld.pas#L150) · [body 699](../../../Source/MoldModel/Bld/BoldBld.pas#L699) | [`TMoldBLDRW.TPClass.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L609) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [151](../../../Source/MoldModel/Bld/BoldBld.pas#L151) · [body 726](../../../Source/MoldModel/Bld/BoldBld.pas#L726) | [`TMoldBLDRW.TPClass.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L630) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TAttribute
 
-class at [line 155](../../../Source/MoldModel/Bld/BoldBld.pas#L155); ⚪ not started.
+class at [line 155](../../../Source/MoldModel/Bld/BoldBld.pas#L155); ✅ verified, C# [`TMoldBLDRW.TAttribute`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L700).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [156](../../../Source/MoldModel/Bld/BoldBld.pas#L156) · [body 783](../../../Source/MoldModel/Bld/BoldBld.pas#L783) |  | ⚪ not started |  |
-| `Read` | class method | [157](../../../Source/MoldModel/Bld/BoldBld.pas#L157) · [body 804](../../../Source/MoldModel/Bld/BoldBld.pas#L804) |  | ⚪ not started |  |
+| `Write` | class method | [156](../../../Source/MoldModel/Bld/BoldBld.pas#L156) · [body 783](../../../Source/MoldModel/Bld/BoldBld.pas#L783) | [`TMoldBLDRW.TAttribute.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L705) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [157](../../../Source/MoldModel/Bld/BoldBld.pas#L157) · [body 804](../../../Source/MoldModel/Bld/BoldBld.pas#L804) | [`TMoldBLDRW.TAttribute.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L721) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TMethod
 
-class at [line 161](../../../Source/MoldModel/Bld/BoldBld.pas#L161); ⚪ not started.
+class at [line 161](../../../Source/MoldModel/Bld/BoldBld.pas#L161); ✅ verified, C# [`TMoldBLDRW.TMethod`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L811).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [162](../../../Source/MoldModel/Bld/BoldBld.pas#L162) · [body 872](../../../Source/MoldModel/Bld/BoldBld.pas#L872) |  | ⚪ not started |  |
-| `Read` | class method | [163](../../../Source/MoldModel/Bld/BoldBld.pas#L163) · [body 893](../../../Source/MoldModel/Bld/BoldBld.pas#L893) |  | ⚪ not started |  |
+| `Write` | class method | [162](../../../Source/MoldModel/Bld/BoldBld.pas#L162) · [body 872](../../../Source/MoldModel/Bld/BoldBld.pas#L872) | [`TMoldBLDRW.TMethod.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L816) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [163](../../../Source/MoldModel/Bld/BoldBld.pas#L163) · [body 893](../../../Source/MoldModel/Bld/BoldBld.pas#L893) | [`TMoldBLDRW.TMethod.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L832) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TRole
 
-class at [line 167](../../../Source/MoldModel/Bld/BoldBld.pas#L167); ⚪ not started.
+class at [line 167](../../../Source/MoldModel/Bld/BoldBld.pas#L167); ✅ verified, C# [`TMoldBLDRW.TRole`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L880).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [168](../../../Source/MoldModel/Bld/BoldBld.pas#L168) · [body 930](../../../Source/MoldModel/Bld/BoldBld.pas#L930) |  | ⚪ not started |  |
-| `Read` | class method | [169](../../../Source/MoldModel/Bld/BoldBld.pas#L169) · [body 957](../../../Source/MoldModel/Bld/BoldBld.pas#L957) |  | ⚪ not started |  |
+| `Write` | class method | [168](../../../Source/MoldModel/Bld/BoldBld.pas#L168) · [body 930](../../../Source/MoldModel/Bld/BoldBld.pas#L930) | [`TMoldBLDRW.TRole.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L885) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [169](../../../Source/MoldModel/Bld/BoldBld.pas#L169) · [body 957](../../../Source/MoldModel/Bld/BoldBld.pas#L957) | [`TMoldBLDRW.TRole.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L907) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TQualifier
 
-class at [line 173](../../../Source/MoldModel/Bld/BoldBld.pas#L173); ⚪ not started.
+class at [line 173](../../../Source/MoldModel/Bld/BoldBld.pas#L173); ✅ verified, C# [`TMoldBLDRW.TQualifier`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L984).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [174](../../../Source/MoldModel/Bld/BoldBld.pas#L174) · [body 1019](../../../Source/MoldModel/Bld/BoldBld.pas#L1019) |  | ⚪ not started |  |
-| `Read` | class method | [175](../../../Source/MoldModel/Bld/BoldBld.pas#L175) · [body 1032](../../../Source/MoldModel/Bld/BoldBld.pas#L1032) |  | ⚪ not started |  |
+| `Write` | class method | [174](../../../Source/MoldModel/Bld/BoldBld.pas#L174) · [body 1019](../../../Source/MoldModel/Bld/BoldBld.pas#L1019) | [`TMoldBLDRW.TQualifier.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L989) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [175](../../../Source/MoldModel/Bld/BoldBld.pas#L175) · [body 1032](../../../Source/MoldModel/Bld/BoldBld.pas#L1032) | [`TMoldBLDRW.TQualifier.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1000) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
 
 ## TAssociation
 
-class at [line 179](../../../Source/MoldModel/Bld/BoldBld.pas#L179); ⚪ not started.
+class at [line 179](../../../Source/MoldModel/Bld/BoldBld.pas#L179); ✅ verified, C# [`TMoldBLDRW.TAssociation`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1020).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Write` | class method | [180](../../../Source/MoldModel/Bld/BoldBld.pas#L180) · [body 1048](../../../Source/MoldModel/Bld/BoldBld.pas#L1048) |  | ⚪ not started |  |
-| `Read` | class method | [181](../../../Source/MoldModel/Bld/BoldBld.pas#L181) · [body 1070](../../../Source/MoldModel/Bld/BoldBld.pas#L1070) |  | ⚪ not started |  |
+| `Write` | class method | [180](../../../Source/MoldModel/Bld/BoldBld.pas#L180) · [body 1048](../../../Source/MoldModel/Bld/BoldBld.pas#L1048) | [`TMoldBLDRW.TAssociation.Write`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1025) | ✅ verified | ✔ [`BoldBldTests.Fixture_writes_back_as_Delphi_wrote_it`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L62) |
+| `Read` | class method | [181](../../../Source/MoldModel/Bld/BoldBld.pas#L181) · [body 1070](../../../Source/MoldModel/Bld/BoldBld.pas#L1070) | [`TMoldBLDRW.TAssociation.Read`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1042) | ✅ verified | ✔ [`BoldBldTests.Fixture_loads_with_the_manifest_counts`](../../tests/Bold.Model.Tests/MoldModel/Bld/BoldBldTests.cs#L21) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TMoldBLDRW.CURRENTVERSION`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L25) (const)
+- [`TMoldBLDRW.TToken.Kind`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L187) (field)
+- [`TMoldBLDRW.TToken.StringValue`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L188) (field)
+- [`TMoldBLDRW.TToken.IntegerValue`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L189) (field)
+- [`TMoldBLDRW.TReader.FFormatVersion`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L197) (field)
+- [`TMoldBLDRW.TReader.Position`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L202) (field)
+- [`TMoldBLDRW.TReader.CurrentToken`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L203) (field)
+- [`TMoldBLDRW.TReader.CurrentModel`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L205) (field)
+- [`TMoldBLDRW.TModel.Instance`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L501) (field)
+- [`TMoldBLDRW.TPClass.Instance`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L606) (field)
+- [`TMoldBLDRW.TAttribute.Instance`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L702) (field)
+- [`TMoldBLDRW.TMethod.Instance`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L813) (field)
+- [`TMoldBLDRW.TRole.Instance`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L882) (field)
+- [`TMoldBLDRW.TQualifier.Instance`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L986) (field)
+- [`TMoldBLDRW.TAssociation.Instance`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L1022) (field)
 
 ## Dependencies
 

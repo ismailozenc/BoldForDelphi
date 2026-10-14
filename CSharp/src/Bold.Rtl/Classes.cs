@@ -425,11 +425,23 @@ public abstract class TStrings : IEnumerable<string>
         }
     }
 
+    /// <summary>
+    /// The encoding of LoadFromFile and SaveToFile when none is given: Windows-1252, the ANSI code page Delphi used
+    /// for the files Bold wrote. A file with a byte order mark is read in the encoding the mark names.
+    /// </summary>
+    public static Encoding DefaultEncoding { get; set; } = CreateAnsiEncoding();
+
+    private static Encoding CreateAnsiEncoding()
+    {
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+        return Encoding.GetEncoding(1252);
+    }
+
     public void LoadFromFile(string fileName, Encoding? encoding = null) =>
-        Text = File.ReadAllText(fileName, encoding ?? Encoding.Latin1);
+        Text = File.ReadAllText(fileName, encoding ?? DefaultEncoding);
 
     public void SaveToFile(string fileName, Encoding? encoding = null) =>
-        File.WriteAllText(fileName, Text, encoding ?? Encoding.Latin1);
+        File.WriteAllText(fileName, Text, encoding ?? DefaultEncoding);
 
     public string[] ToStringArray()
     {

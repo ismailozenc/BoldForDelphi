@@ -1,6 +1,8 @@
 // Delphi: Source/Common/TaggedValues/BoldDefaultTaggedValues.pas
 // Port map: CSharp/port/units/BoldDefaultTaggedValues.md
 
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldDefaultTaggedValues", Symbol = "initialization", Note = "The unit's initialization section is empty.")]
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldDefaultTaggedValues", Symbol = "finalization", Note = "Frees the global list; the garbage collector does that in .NET.")]
 namespace Bold;
 
 /// <summary>Bold's tagged value names, their values and the default tagged values of each UML element kind.</summary>

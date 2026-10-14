@@ -159,12 +159,23 @@ public class BoldIndexTests
     [Covers(typeof(TBoldStringCompareMode))]
     public void String_hash_matches_the_Delphi_formula()
     {
-        // Delphi: Result := ((Result shl 3) and MaxInt) or (Result shr 29) xor Ord(c), for "AB".
-        uint expected = 0;
-        foreach (char c in "AB")
+        // Delphi: Result := ((Result shl 3) and MaxInt) or (Result shr 29) xor Ord(c). "or" and "xor" bind equally and
+        // left to right, so the xor applies to the whole "or". Worked by hand for "AB" and for a long string, where the
+        // high bits make the grouping matter.
+        static uint DelphiHash(string s)
         {
-            expected = ((expected << 3) & 2147483647) | ((expected >> 29) ^ c);
+            uint h = 0;
+            foreach (char c in s)
+            {
+                h = (((h << 3) & 2147483647) | (h >> 29)) ^ c;
+            }
+
+            return h;
         }
+
+        uint expected = DelphiHash("AB");
+        Assert.That(expected, Is.EqualTo((65u << 3) ^ 66u));
+        Assert.That(TBoldStringKey.HashString("ABCDEFGHIJKLMNOP", TBoldStringCompareMode.bscCaseDependent), Is.EqualTo(DelphiHash("ABCDEFGHIJKLMNOP")));
 
         Assert.That(TBoldStringKey.HashString("AB", TBoldStringCompareMode.bscCaseDependent), Is.EqualTo(expected));
         Assert.That(TBoldStringKey.HashString("ab", TBoldStringCompareMode.bscCaseIndependent),

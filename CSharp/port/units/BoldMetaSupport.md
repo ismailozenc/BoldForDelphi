@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/MoldModel/Core/BoldMetaSupport.pas`](../../../Source/MoldModel/Core/BoldMetaSupport.pas) (174 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs` |
+| C# | [`CSharp/src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs) |
 | Project | Bold.Model |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | ✅ verified: 9 of 9 symbols done, 9 verified |
 
-⚪ 9 not started
+✅ 9 verified
 
 ## Unit level
 
@@ -18,22 +18,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldMetaSupport` | class | [15](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L15) |  | ⚪ not started |  |
-| `TBoldNamePairRecord` | record | [23](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L23) |  | ⚪ not started |  |
-| `BoldObjectSpaceInterfacenames` | const | [29](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L29) |  | ⚪ not started |  |
-| `BoldWideStringTypeName` | const | [52](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L52) |  | ⚪ not started |  |
-| `BoldWordBoolTypeName` | const | [53](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L53) |  | ⚪ not started |  |
-| `TBoldCOMIDLTypeNameMapping` | record, implementation | [62](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L62) |  | ⚪ not started |  |
+| `TBoldMetaSupport` | class | [15](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L15) | [`TBoldMetaSupport`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L12) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
+| `TBoldNamePairRecord` | record | [23](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L23) | [`TBoldNamePairRecord`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L8) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
+| `BoldObjectSpaceInterfacenames` | const | [29](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L29) | [`BoldMetaSupport.BoldObjectSpaceInterfacenames`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L130) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
+| `BoldWideStringTypeName` | const | [52](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L52) | [`BoldMetaSupport.BoldWideStringTypeName`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L126) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
+| `BoldWordBoolTypeName` | const | [53](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L53) | [`BoldMetaSupport.BoldWordBoolTypeName`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L127) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
+| `TBoldCOMIDLTypeNameMapping` | record, implementation | [62](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L62) | [`TBoldMetaSupport.TBoldCOMIDLTypeNameMapping`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L15) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
 
 ## TBoldMetaSupport
 
-class at [line 15](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L15); ✅ verified, C# [`TBoldMetaSupport`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ParameterTypeToInterfaceType` | class method | [17](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L17) · [body 133](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L133) |  | ⚪ not started |  |
-| `ParameterTypeToIDLType` | class method | [18](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L18) · [body 115](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L115) |  | ⚪ not started |  |
-| `ParameterTypeToCOMType` | class method | [19](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L19) · [body 94](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L94) |  | ⚪ not started |  |
+| `ParameterTypeToInterfaceType` | class method | [17](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L17) · [body 133](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L133) | [`TBoldMetaSupport.ParameterTypeToInterfaceType`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L45) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
+| `ParameterTypeToIDLType` | class method | [18](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L18) · [body 115](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L115) | [`TBoldMetaSupport.ParameterTypeToIDLType`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L79) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
+| `ParameterTypeToCOMType` | class method | [19](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L19) · [body 94](../../../Source/MoldModel/Core/BoldMetaSupport.pas#L94) | [`TBoldMetaSupport.ParameterTypeToCOMType`](../../src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs#L101) | ✅ verified | ✔ [`BoldNameExpanderTests.Parameter_types_map_to_COM_and_IDL`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L132) |
 
 ## Dependencies
 

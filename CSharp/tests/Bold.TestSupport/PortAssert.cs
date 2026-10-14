@@ -12,9 +12,10 @@ public static class PortAssert
 {
     /// <summary>
     /// Every public constant of <paramref name="unitClass"/> that carries a [Delphi] marker has the value of the Delphi
-    /// constant (or resource string) of the same name in <paramref name="delphiFile"/>.
+    /// constant (or resource string) of the same name in <paramref name="delphiFile"/>. Constants the evaluator cannot
+    /// read (such as typed array constants) are named in <paramref name="checkedElsewhere"/> and checked by their own test.
     /// </summary>
-    public static void ConstantsMatchDelphi(Type unitClass, string delphiFile)
+    public static void ConstantsMatchDelphi(Type unitClass, string delphiFile, params string[] checkedElsewhere)
     {
         var expected = DelphiSource.Constants(delphiFile);
         var failures = new List<string>();
@@ -28,6 +29,11 @@ public static class PortAssert
             }
 
             string name = marker.Symbol ?? field.Name;
+            if (checkedElsewhere.Contains(name, StringComparer.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
             if (!expected.TryGetValue(name, out object? value))
             {
                 failures.Add($"{name}: {delphiFile} has no such constant");

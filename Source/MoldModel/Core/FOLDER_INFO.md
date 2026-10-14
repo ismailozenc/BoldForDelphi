@@ -26,8 +26,8 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldMeta](../../../CSharp/port/units/BoldMeta.md) | Bold.Model: MoldModel/Core/BoldMeta.cs (not started) | M1 Load models |
-| [BoldMetaSupport](../../../CSharp/port/units/BoldMetaSupport.md) | Bold.Model: MoldModel/Core/BoldMetaSupport.cs (not started) | M1 Load models |
-| [BoldMoldConsts](../../../CSharp/port/units/BoldMoldConsts.md) | Bold.Model: MoldModel/Core/BoldMoldConsts.cs (not started) | M1 Load models |
-| [BoldNameExpander](../../../CSharp/port/units/BoldNameExpander.md) | Bold.Model: MoldModel/Core/BoldNameExpander.cs (not started) | M1 Load models |
+| [BoldMeta](../../../CSharp/port/units/BoldMeta.md) | [Bold.Model: MoldModel/Core/BoldMeta.cs](../../../CSharp/src/Bold.Model/MoldModel/Core/BoldMeta.cs) | M1 Load models |
+| [BoldMetaSupport](../../../CSharp/port/units/BoldMetaSupport.md) | [Bold.Model: MoldModel/Core/BoldMetaSupport.cs](../../../CSharp/src/Bold.Model/MoldModel/Core/BoldMetaSupport.cs) | M1 Load models |
+| [BoldMoldConsts](../../../CSharp/port/units/BoldMoldConsts.md) | [Bold.Model: MoldModel/Core/BoldMoldConsts.cs](../../../CSharp/src/Bold.Model/MoldModel/Core/BoldMoldConsts.cs) | M1 Load models |
+| [BoldNameExpander](../../../CSharp/port/units/BoldNameExpander.md) | [Bold.Model: MoldModel/Core/BoldNameExpander.cs](../../../CSharp/src/Bold.Model/MoldModel/Core/BoldNameExpander.cs) | M1 Load models |
 <!-- END C# PORT -->

@@ -1,6 +1,8 @@
 // Delphi: Source/Common/Support/BoldSharedStrings.pas
 // Port map: CSharp/port/units/BoldSharedStrings.md
 
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldSharedStrings", Symbol = "initialization", Note = "The unit's initialization section is empty.")]
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldSharedStrings", Symbol = "finalization", Note = "Frees the global manager; the garbage collector does that in .NET.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldSharedStrings", Symbol = "StringRefCount", Note = ".NET strings have no reference count; holders count how often they were handed out instead.")]
 
 namespace Bold;

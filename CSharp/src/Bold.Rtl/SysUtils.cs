@@ -24,6 +24,18 @@ public static partial class SysUtils
 
     private static readonly CultureInfo Invariant = CultureInfo.InvariantCulture;
 
+    /// <summary>
+    /// Delphi FreeAndNil: clears the variable first, then disposes the object when it is IDisposable. Code that runs
+    /// during the dispose sees the variable as nil, as in Delphi.
+    /// </summary>
+    public static void FreeAndNil<T>(ref T? obj)
+        where T : class
+    {
+        T? temp = obj;
+        obj = null;
+        (temp as IDisposable)?.Dispose();
+    }
+
     // ---- Strings ----
 
     /// <summary>1-based position of <paramref name="substr"/> in <paramref name="s"/>, 0 when absent.</summary>

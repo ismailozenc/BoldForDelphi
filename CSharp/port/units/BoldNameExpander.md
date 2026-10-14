@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/MoldModel/Core/BoldNameExpander.pas`](../../../Source/MoldModel/Core/BoldNameExpander.pas) (452 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Model/MoldModel/Core/BoldNameExpander.cs` |
+| C# | [`CSharp/src/Bold.Model/MoldModel/Core/BoldNameExpander.Aliases.cs`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.Aliases.cs)<br>[`CSharp/src/Bold.Model/MoldModel/Core/BoldNameExpander.cs`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs) |
 | Project | Bold.Model |
 | Milestone | M1 Load models |
-| Status | ⚪ not started: 0 of 38 symbols done, 0 verified |
+| Status | 🟢 ported: 38 of 38 symbols done, 29 verified |
 
-⚪ 38 not started
+✅ 29 verified · 🟢 7 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,72 +18,82 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldNameExpanderClass` | class reference | [21](../../../Source/MoldModel/Core/BoldNameExpander.pas#L21) |  | ⚪ not started |  |
-| `TBoldSQLNameExpanderClass` | class reference | [22](../../../Source/MoldModel/Core/BoldNameExpander.pas#L22) |  | ⚪ not started |  |
-| `TBoldDelphiNameExpanderClass` | class reference | [23](../../../Source/MoldModel/Core/BoldNameExpander.pas#L23) |  | ⚪ not started |  |
-| `TBoldExpressionNameExpanderClass` | class reference | [24](../../../Source/MoldModel/Core/BoldNameExpander.pas#L24) |  | ⚪ not started |  |
-| `TExpansionType` | enum | [26](../../../Source/MoldModel/Core/BoldNameExpander.pas#L26) |  | ⚪ not started |  |
-| `TBoldCharacterSet` | set | [27](../../../Source/MoldModel/Core/BoldNameExpander.pas#L27) |  | ⚪ not started |  |
-| `TBoldAbstractNameExpander` | class | [30](../../../Source/MoldModel/Core/BoldNameExpander.pas#L30) |  | ⚪ not started |  |
-| `TBoldSQLNameExpander` | class | [46](../../../Source/MoldModel/Core/BoldNameExpander.pas#L46) |  | ⚪ not started |  |
-| `TBoldDelphiNameExpander` | class | [55](../../../Source/MoldModel/Core/BoldNameExpander.pas#L55) |  | ⚪ not started |  |
-| `TBoldExpressionNameExpander` | class | [64](../../../Source/MoldModel/Core/BoldNameExpander.pas#L64) |  | ⚪ not started |  |
-| `BoldSQLNameExpanderClass` | var | [73](../../../Source/MoldModel/Core/BoldNameExpander.pas#L73) |  | ⚪ not started |  |
-| `BoldDelphiNameExpanderClass` | var | [74](../../../Source/MoldModel/Core/BoldNameExpander.pas#L74) |  | ⚪ not started |  |
-| `BoldExpressionNameExpanderClass` | var | [75](../../../Source/MoldModel/Core/BoldNameExpander.pas#L75) |  | ⚪ not started |  |
-| `BoldNameExpanderMapAnsiCharacters` | var | [77](../../../Source/MoldModel/Core/BoldNameExpander.pas#L77) |  | ⚪ not started |  |
-| `BoldSQLNameExpanderNameLimit` | var | [78](../../../Source/MoldModel/Core/BoldNameExpander.pas#L78) |  | ⚪ not started |  |
-| `BoldSQLNameExpanderUpperCaseNames` | var | [79](../../../Source/MoldModel/Core/BoldNameExpander.pas#L79) |  | ⚪ not started |  |
-| `BoldExpandName` | routine | [81](../../../Source/MoldModel/Core/BoldNameExpander.pas#L81) · [body 98](../../../Source/MoldModel/Core/BoldNameExpander.pas#L98) |  | ⚪ not started |  |
-| `BoldExpandPrefix` | routine | [82](../../../Source/MoldModel/Core/BoldNameExpander.pas#L82) · [body 149](../../../Source/MoldModel/Core/BoldNameExpander.pas#L149) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [445](../../../Source/MoldModel/Core/BoldNameExpander.pas#L445) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [447](../../../Source/MoldModel/Core/BoldNameExpander.pas#L447) |  | ⚪ not started |  |
+| `TBoldNameExpanderClass` | class reference | [21](../../../Source/MoldModel/Core/BoldNameExpander.pas#L21) | [`global using TBoldNameExpanderClass`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.Aliases.cs#L6) | 🟢 ported: Global using alias of System.Type, in BoldNameExpander.Aliases.cs. |  |
+| `TBoldSQLNameExpanderClass` | class reference | [22](../../../Source/MoldModel/Core/BoldNameExpander.pas#L22) | [`global using TBoldSQLNameExpanderClass`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.Aliases.cs#L7) | 🟢 ported: Global using alias of System.Type, in BoldNameExpander.Aliases.cs. |  |
+| `TBoldDelphiNameExpanderClass` | class reference | [23](../../../Source/MoldModel/Core/BoldNameExpander.pas#L23) | [`global using TBoldDelphiNameExpanderClass`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.Aliases.cs#L8) | 🟢 ported: Global using alias of System.Type, in BoldNameExpander.Aliases.cs. |  |
+| `TBoldExpressionNameExpanderClass` | class reference | [24](../../../Source/MoldModel/Core/BoldNameExpander.pas#L24) | [`global using TBoldExpressionNameExpanderClass`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.Aliases.cs#L9) | 🟢 ported: Global using alias of System.Type, in BoldNameExpander.Aliases.cs. |  |
+| `TExpansionType` | enum | [26](../../../Source/MoldModel/Core/BoldNameExpander.pas#L26) | [`TExpansionType`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L15) | ✅ verified | ✔ [`BoldNameExpanderTests.Expansion_types_have_the_Delphi_members`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L16) |
+| `TBoldCharacterSet` | set | [27](../../../Source/MoldModel/Core/BoldNameExpander.pas#L27) | [`global using TBoldCharacterSet`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.Aliases.cs#L5) | 🟢 ported: Global using alias of DelphiSet&lt;char&gt;, in BoldNameExpander.Aliases.cs; characters above 255 are never in it. |  |
+| `TBoldAbstractNameExpander` | class | [30](../../../Source/MoldModel/Core/BoldNameExpander.pas#L30) | [`TBoldAbstractNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L22) | 🟢 ported |  |
+| `TBoldSQLNameExpander` | class | [46](../../../Source/MoldModel/Core/BoldNameExpander.pas#L46) | [`TBoldSQLNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L169) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `TBoldDelphiNameExpander` | class | [55](../../../Source/MoldModel/Core/BoldNameExpander.pas#L55) | [`TBoldDelphiNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L186) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `TBoldExpressionNameExpander` | class | [64](../../../Source/MoldModel/Core/BoldNameExpander.pas#L64) | [`TBoldExpressionNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L202) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `BoldSQLNameExpanderClass` | var | [73](../../../Source/MoldModel/Core/BoldNameExpander.pas#L73) | [`BoldNameExpander.BoldSQLNameExpanderClass`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L221) | ✅ verified | ✔ [`BoldNameExpanderTests.National_characters_and_settings`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L43) |
+| `BoldDelphiNameExpanderClass` | var | [74](../../../Source/MoldModel/Core/BoldNameExpander.pas#L74) | [`BoldNameExpander.BoldDelphiNameExpanderClass`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L224) | ✅ verified | ✔ [`BoldNameExpanderTests.National_characters_and_settings`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L43) |
+| `BoldExpressionNameExpanderClass` | var | [75](../../../Source/MoldModel/Core/BoldNameExpander.pas#L75) | [`BoldNameExpander.BoldExpressionNameExpanderClass`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L227) | ✅ verified | ✔ [`BoldNameExpanderTests.National_characters_and_settings`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L43) |
+| `BoldNameExpanderMapAnsiCharacters` | var | [77](../../../Source/MoldModel/Core/BoldNameExpander.pas#L77) | [`BoldNameExpander.BoldNameExpanderMapAnsiCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L230) | ✅ verified | ✔ [`BoldNameExpanderTests.National_characters_and_settings`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L43) |
+| `BoldSQLNameExpanderNameLimit` | var | [78](../../../Source/MoldModel/Core/BoldNameExpander.pas#L78) | [`BoldNameExpander.BoldSQLNameExpanderNameLimit`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L233) | ✅ verified | ✔ [`BoldNameExpanderTests.National_characters_and_settings`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L43) |
+| `BoldSQLNameExpanderUpperCaseNames` | var | [79](../../../Source/MoldModel/Core/BoldNameExpander.pas#L79) | [`BoldNameExpander.BoldSQLNameExpanderUpperCaseNames`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L236) | ✅ verified | ✔ [`BoldNameExpanderTests.National_characters_and_settings`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L43) |
+| `BoldExpandName` | routine | [81](../../../Source/MoldModel/Core/BoldNameExpander.pas#L81) · [body 98](../../../Source/MoldModel/Core/BoldNameExpander.pas#L98) | [`BoldNameExpander.BoldExpandName`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L284) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `BoldExpandPrefix` | routine | [82](../../../Source/MoldModel/Core/BoldNameExpander.pas#L82) · [body 149](../../../Source/MoldModel/Core/BoldNameExpander.pas#L149) | [`BoldNameExpander.BoldExpandPrefix`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L316) | ✅ verified | ✔ [`BoldNameExpanderTests.Table_prefix_is_replaced_before_expansion`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L122) |
+| `initialization` | initialization, implementation | [445](../../../Source/MoldModel/Core/BoldNameExpander.pas#L445) | [`[assembly: Delphi] in BoldNameExpander.cs`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L4) | 🔵 replaced: The unit's initialization section is empty. |  |
+| `finalization` | finalization, implementation | [447](../../../Source/MoldModel/Core/BoldNameExpander.pas#L447) | [`[assembly: Delphi] in BoldNameExpander.cs`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L5) | 🔵 replaced: Frees the cached expanders; the garbage collector does that in .NET. |  |
 
 ## TBoldAbstractNameExpander
 
-class at [line 30](../../../Source/MoldModel/Core/BoldNameExpander.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/MoldModel/Core/BoldNameExpander.pas#L30); 🟢 ported, C# [`TBoldAbstractNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValidCharacters` | method, protected | [32](../../../Source/MoldModel/Core/BoldNameExpander.pas#L32) · [body 266](../../../Source/MoldModel/Core/BoldNameExpander.pas#L266) |  | ⚪ not started |  |
-| `GetMapCharacter` | method, protected | [33](../../../Source/MoldModel/Core/BoldNameExpander.pas#L33) · [body 198](../../../Source/MoldModel/Core/BoldNameExpander.pas#L198) |  | ⚪ not started |  |
-| `GetLanguageIsCaseSensitive` | method, protected | [34](../../../Source/MoldModel/Core/BoldNameExpander.pas#L34) · [body 193](../../../Source/MoldModel/Core/BoldNameExpander.pas#L193) |  | ⚪ not started |  |
-| `ExpandName` | method | [36](../../../Source/MoldModel/Core/BoldNameExpander.pas#L36) · [body 169](../../../Source/MoldModel/Core/BoldNameExpander.pas#L169) |  | ⚪ not started |  |
-| `MapCharacters` | method | [37](../../../Source/MoldModel/Core/BoldNameExpander.pas#L37) · [body 271](../../../Source/MoldModel/Core/BoldNameExpander.pas#L271) |  | ⚪ not started |  |
-| `TruncateName` | method | [38](../../../Source/MoldModel/Core/BoldNameExpander.pas#L38) · [body 285](../../../Source/MoldModel/Core/BoldNameExpander.pas#L285) |  | ⚪ not started |  |
-| `ValidateName` | method | [39](../../../Source/MoldModel/Core/BoldNameExpander.pas#L39) · [body 314](../../../Source/MoldModel/Core/BoldNameExpander.pas#L314) |  | ⚪ not started |  |
-| `ValidCharacters` | property | [40](../../../Source/MoldModel/Core/BoldNameExpander.pas#L40) |  | ⚪ not started |  |
-| `MapCharacter` | property | [41](../../../Source/MoldModel/Core/BoldNameExpander.pas#L41) |  | ⚪ not started |  |
-| `LanguageIsCaseSensitive` | property | [42](../../../Source/MoldModel/Core/BoldNameExpander.pas#L42) |  | ⚪ not started |  |
+| `GetValidCharacters` | method, protected | [32](../../../Source/MoldModel/Core/BoldNameExpander.pas#L32) · [body 266](../../../Source/MoldModel/Core/BoldNameExpander.pas#L266) | [`TBoldAbstractNameExpander.GetValidCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L51) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `GetMapCharacter` | method, protected | [33](../../../Source/MoldModel/Core/BoldNameExpander.pas#L33) · [body 198](../../../Source/MoldModel/Core/BoldNameExpander.pas#L198) | [`TBoldAbstractNameExpander.GetMapCharacter`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L55) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `GetLanguageIsCaseSensitive` | method, protected | [34](../../../Source/MoldModel/Core/BoldNameExpander.pas#L34) · [body 193](../../../Source/MoldModel/Core/BoldNameExpander.pas#L193) | [`TBoldAbstractNameExpander.GetLanguageIsCaseSensitive`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L63) | 🟢 ported |  |
+| `ExpandName` | method | [36](../../../Source/MoldModel/Core/BoldNameExpander.pas#L36) · [body 169](../../../Source/MoldModel/Core/BoldNameExpander.pas#L169) | [`TBoldAbstractNameExpander.ExpandName`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L67) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `MapCharacters` | method | [37](../../../Source/MoldModel/Core/BoldNameExpander.pas#L37) · [body 271](../../../Source/MoldModel/Core/BoldNameExpander.pas#L271) | [`TBoldAbstractNameExpander.MapCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L91) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `TruncateName` | method | [38](../../../Source/MoldModel/Core/BoldNameExpander.pas#L38) · [body 285](../../../Source/MoldModel/Core/BoldNameExpander.pas#L285) | [`TBoldAbstractNameExpander.TruncateName`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L113) | ✅ verified | ✔ [`BoldNameExpanderTests.Long_names_end_in_a_checksum_of_the_full_name`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L72) |
+| `ValidateName` | method | [39](../../../Source/MoldModel/Core/BoldNameExpander.pas#L39) · [body 314](../../../Source/MoldModel/Core/BoldNameExpander.pas#L314) | [`TBoldAbstractNameExpander.ValidateName`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L139) | ✅ verified | ✔ [`BoldNameExpanderTests.Delphi_names_validate`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L109) |
+| `ValidCharacters` | property | [40](../../../Source/MoldModel/Core/BoldNameExpander.pas#L40) | [`TBoldAbstractNameExpander.ValidCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L158) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `MapCharacter` | property | [41](../../../Source/MoldModel/Core/BoldNameExpander.pas#L41) | [`TBoldAbstractNameExpander.MapCharacter`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L161) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `LanguageIsCaseSensitive` | property | [42](../../../Source/MoldModel/Core/BoldNameExpander.pas#L42) | [`TBoldAbstractNameExpander.LanguageIsCaseSensitive`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L164) | ✅ verified | ✔ [`BoldNameExpanderTests.Delphi_names_validate`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L109) |
 
 ## TBoldSQLNameExpander
 
-class at [line 46](../../../Source/MoldModel/Core/BoldNameExpander.pas#L46); ⚪ not started.
+class at [line 46](../../../Source/MoldModel/Core/BoldNameExpander.pas#L46); ✅ verified, C# [`TBoldSQLNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L169).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValidCharacters` | method, protected | [48](../../../Source/MoldModel/Core/BoldNameExpander.pas#L48) · [body 346](../../../Source/MoldModel/Core/BoldNameExpander.pas#L346) |  | ⚪ not started |  |
-| `ExpandName` | method | [51](../../../Source/MoldModel/Core/BoldNameExpander.pas#L51) · [body 339](../../../Source/MoldModel/Core/BoldNameExpander.pas#L339) |  | ⚪ not started |  |
+| `GetValidCharacters` | method, protected | [48](../../../Source/MoldModel/Core/BoldNameExpander.pas#L48) · [body 346](../../../Source/MoldModel/Core/BoldNameExpander.pas#L346) | [`TBoldSQLNameExpander.GetValidCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L174) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `ExpandName` | method | [51](../../../Source/MoldModel/Core/BoldNameExpander.pas#L51) · [body 339](../../../Source/MoldModel/Core/BoldNameExpander.pas#L339) | [`TBoldSQLNameExpander.ExpandName`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L177) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
 
 ## TBoldDelphiNameExpander
 
-class at [line 55](../../../Source/MoldModel/Core/BoldNameExpander.pas#L55); ⚪ not started.
+class at [line 55](../../../Source/MoldModel/Core/BoldNameExpander.pas#L55); ✅ verified, C# [`TBoldDelphiNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L186).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValidCharacters` | method, protected | [57](../../../Source/MoldModel/Core/BoldNameExpander.pas#L57) · [body 379](../../../Source/MoldModel/Core/BoldNameExpander.pas#L379) |  | ⚪ not started |  |
-| `MapCharacters` | method | [59](../../../Source/MoldModel/Core/BoldNameExpander.pas#L59) · [body 385](../../../Source/MoldModel/Core/BoldNameExpander.pas#L385) |  | ⚪ not started |  |
-| `ValidateName` | method | [60](../../../Source/MoldModel/Core/BoldNameExpander.pas#L60) · [body 393](../../../Source/MoldModel/Core/BoldNameExpander.pas#L393) |  | ⚪ not started |  |
+| `GetValidCharacters` | method, protected | [57](../../../Source/MoldModel/Core/BoldNameExpander.pas#L57) · [body 379](../../../Source/MoldModel/Core/BoldNameExpander.pas#L379) | [`TBoldDelphiNameExpander.GetValidCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L189) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `MapCharacters` | method | [59](../../../Source/MoldModel/Core/BoldNameExpander.pas#L59) · [body 385](../../../Source/MoldModel/Core/BoldNameExpander.pas#L385) | [`TBoldDelphiNameExpander.MapCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L192) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `ValidateName` | method | [60](../../../Source/MoldModel/Core/BoldNameExpander.pas#L60) · [body 393](../../../Source/MoldModel/Core/BoldNameExpander.pas#L393) | [`TBoldDelphiNameExpander.ValidateName`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L196) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
 
 ## TBoldExpressionNameExpander
 
-class at [line 64](../../../Source/MoldModel/Core/BoldNameExpander.pas#L64); ⚪ not started.
+class at [line 64](../../../Source/MoldModel/Core/BoldNameExpander.pas#L64); ✅ verified, C# [`TBoldExpressionNameExpander`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L202).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValidCharacters` | method, protected | [66](../../../Source/MoldModel/Core/BoldNameExpander.pas#L66) · [body 413](../../../Source/MoldModel/Core/BoldNameExpander.pas#L413) |  | ⚪ not started |  |
-| `MapCharacters` | method | [68](../../../Source/MoldModel/Core/BoldNameExpander.pas#L68) · [body 418](../../../Source/MoldModel/Core/BoldNameExpander.pas#L418) |  | ⚪ not started |  |
-| `ValidateName` | method | [69](../../../Source/MoldModel/Core/BoldNameExpander.pas#L69) · [body 426](../../../Source/MoldModel/Core/BoldNameExpander.pas#L426) |  | ⚪ not started |  |
+| `GetValidCharacters` | method, protected | [66](../../../Source/MoldModel/Core/BoldNameExpander.pas#L66) · [body 413](../../../Source/MoldModel/Core/BoldNameExpander.pas#L413) | [`TBoldExpressionNameExpander.GetValidCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L205) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `MapCharacters` | method | [68](../../../Source/MoldModel/Core/BoldNameExpander.pas#L68) · [body 418](../../../Source/MoldModel/Core/BoldNameExpander.pas#L418) | [`TBoldExpressionNameExpander.MapCharacters`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L208) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+| `ValidateName` | method | [69](../../../Source/MoldModel/Core/BoldNameExpander.pas#L69) · [body 426](../../../Source/MoldModel/Core/BoldNameExpander.pas#L426) | [`TBoldExpressionNameExpander.ValidateName`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L212) | ✅ verified | ✔ [`BoldNameExpanderTests.Names_expand_and_map`](../../tests/Bold.Model.Tests/MoldModel/Core/BoldNameExpanderTests.cs#L34) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldAbstractNameExpander.IdentifierChars`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L42) (field)
+- [`TBoldAbstractNameExpander.FirstIdentifierChars`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L45) (field)
+- [`TBoldAbstractNameExpander.InSet`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L48) (method)
+- [`BoldNameExpander.MapFirstCharacter`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L252) (method)
+- [`BoldNameExpander.ValidateIdentifier`](../../src/Bold.Model/MoldModel/Core/BoldNameExpander.cs#L262) (method)
 
 ## Dependencies
 
