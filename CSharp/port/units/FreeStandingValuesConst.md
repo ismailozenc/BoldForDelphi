@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas`](../../../Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas) (13 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-⚪ 3 not started
+✅ 3 verified
 
 ## Unit level
 
@@ -18,9 +18,9 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sNoClassregisteredForName` | resourcestring | [6](../../../Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas#L6) |  | ⚪ not started |  |
-| `sAbstractError` | resourcestring | [7](../../../Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas#L7) |  | ⚪ not started |  |
-| `sUnknownTypeOfSource` | resourcestring | [8](../../../Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas#L8) |  | ⚪ not started |  |
+| `sNoClassregisteredForName` | resourcestring | [6](../../../Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas#L6) | [`FreeStandingValuesConst.sNoClassregisteredForName`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs#L9) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Messages_have_the_Delphi_values`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L32) |
+| `sAbstractError` | resourcestring | [7](../../../Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas#L7) | [`FreeStandingValuesConst.sAbstractError`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs#L10) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Messages_have_the_Delphi_values`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L32) |
+| `sUnknownTypeOfSource` | resourcestring | [8](../../../Source/FreestandingValueSpace/Core/FreeStandingValuesConst.pas#L8) | [`FreeStandingValuesConst.sUnknownTypeOfSource`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs#L11) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Messages_have_the_Delphi_values`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L32) |
 
 ## Dependencies
 

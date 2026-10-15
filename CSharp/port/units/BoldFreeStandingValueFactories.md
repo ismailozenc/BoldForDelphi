@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas`](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas) (90 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 8 symbols done, 0 verified |
+| Status | 🟢 ported: 8 of 8 symbols done, 7 verified |
 
-⚪ 8 not started
+✅ 7 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,21 +18,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldFreeStandingElementFactory` | class | [15](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L15) |  | ⚪ not started |  |
-| `FreeStandingValueFactory` | var | [26](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L26) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [65](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L65) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [86](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L86) |  | ⚪ not started |  |
+| `TBoldFreeStandingElementFactory` | class | [15](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L15) | [`TBoldFreeStandingElementFactory`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L11) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Factory_creates_the_registered_class_for_each_stream_name`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L42) |
+| `FreeStandingValueFactory` | var | [26](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L26) | [`BoldFreeStandingValueFactories.FreeStandingValueFactory`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L50) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Factory_creates_the_registered_class_for_each_stream_name`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L42) |
+| `initialization` | initialization, implementation | [65](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L65) | [`[assembly: Delphi] in BoldFreeStandingValueFactories.cs`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L4) | ✅ verified: Creates the factory and registers the free-standing classes from the Bold.ValueSpace module initializer. | ✔ [`BoldFreeStandingValuesTests.Factory_creates_the_registered_class_for_each_stream_name`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L42) |
+| `finalization` | finalization, implementation | [86](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L86) | [`[assembly: Delphi] in BoldFreeStandingValueFactories.cs`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L5) | 🔵 replaced: Freed the factory; the garbage collector does that in .NET. |  |
 
 ## TBoldFreeStandingElementFactory
 
-class at [line 15](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L15); ✅ verified, C# [`TBoldFreeStandingElementFactory`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [19](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L19) · [body 37](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L37) |  | ⚪ not started |  |
-| `Destroy` | destructor | [20](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L20) · [body 43](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L43) |  | ⚪ not started |  |
-| `RegisterFreeStandingClass` | method | [21](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L21) · [body 49](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L49) |  | ⚪ not started |  |
-| `CreateInstance` | method | [22](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L22) · [body 54](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L54) |  | ⚪ not started |  |
+| `Create` | constructor | [19](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L19) · [body 37](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L37) | [`TBoldFreeStandingElementFactory.TBoldFreeStandingElementFactory`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L16) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Factory_creates_the_registered_class_for_each_stream_name`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L42) |
+| `Destroy` | destructor | [20](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L20) · [body 43](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L43) | [`TBoldFreeStandingElementFactory.Dispose`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L22) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Factory_creates_the_registered_class_for_each_stream_name`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L42) |
+| `RegisterFreeStandingClass` | method | [21](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L21) · [body 49](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L49) | [`TBoldFreeStandingElementFactory.RegisterFreeStandingClass`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L30) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Factory_creates_the_registered_class_for_each_stream_name`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L42) |
+| `CreateInstance` | method | [22](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L22) · [body 54](../../../Source/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.pas#L54) | [`TBoldFreeStandingElementFactory.CreateInstance`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L35) | ✅ verified | ✔ [`BoldFreeStandingValuesTests.Factory_creates_the_registered_class_for_each_stream_name`](../../tests/Bold.ValueSpace.Tests/FreestandingValueSpace/Core/BoldFreeStandingValuesTests.cs#L42) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldFreeStandingValueFactories.Initialize`](../../src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs#L53) (method)
 
 ## Dependencies
 

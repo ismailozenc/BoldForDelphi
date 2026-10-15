@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas`](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas) (1030 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 112 symbols done, 0 verified |
+| Status | 🟢 ported: 112 of 112 symbols done, 111 verified |
 
-⚪ 112 not started
+✅ 111 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,286 +18,310 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDefaultXMLStreamerRegistry` | class | [42](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L42) |  | ⚪ not started |  |
-| `TBoldXMLModelElementStreamer` | class | [48](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L48) |  | ⚪ not started |  |
-| `TBoldXMLModelElementStreamerList` | class | [56](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L56) |  | ⚪ not started |  |
-| `TBoldXMLMemberStreamer` | class | [65](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L65) |  | ⚪ not started |  |
-| `TBoldXMLClassStreamer` | class | [84](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L84) |  | ⚪ not started |  |
-| `TBoldDefaultXMLStreamManager` | class | [100](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L100) |  | ⚪ not started |  |
-| `TBoldXMLValueStreamer` | class | [123](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L123) |  | ⚪ not started |  |
-| `TBoldXMLNullableValueStreamer` | class | [130](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L130) |  | ⚪ not started |  |
-| `TBoldXMLStringContentStreamer` | class | [140](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L140) |  | ⚪ not started |  |
-| `TBoldXMLIntegerContentStreamer` | class | [148](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L148) |  | ⚪ not started |  |
-| `TBoldXMLFloatContentStreamer` | class | [156](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L156) |  | ⚪ not started |  |
-| `TBoldXMLCurrencyContentStreamer` | class | [164](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L164) |  | ⚪ not started |  |
-| `TBoldXMLBooleanContentStreamer` | class | [172](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L172) |  | ⚪ not started |  |
-| `TBoldXMLDateContentStreamer` | class | [180](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L180) |  | ⚪ not started |  |
-| `TBoldXMLTimeContentStreamer` | class | [188](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L188) |  | ⚪ not started |  |
-| `TBoldXMLDateTimeContentStreamer` | class | [196](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L196) |  | ⚪ not started |  |
-| `TBoldXMLBlobContentStreamer` | class | [204](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L204) |  | ⚪ not started |  |
-| `TBoldXMLTypedBlobStreamer` | class | [212](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L212) |  | ⚪ not started |  |
-| `TBoldXMLRoleStreamer` | class | [220](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L220) |  | ⚪ not started |  |
-| `TBoldXMLIdRefStreamer` | class | [230](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L230) |  | ⚪ not started |  |
-| `TBoldXMLIdRefPairStreamer` | class | [238](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L238) |  | ⚪ not started |  |
-| `TBoldXMLIdListRefStreamer` | class | [246](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L246) |  | ⚪ not started |  |
-| `TBoldXMLIdListRefPairStreamer` | class | [254](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L254) |  | ⚪ not started |  |
-| `TBoldExpressionNameIndex` | class, implementation | [288](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L288) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [1011](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1011) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [1027](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1027) |  | ⚪ not started |  |
+| `TBoldDefaultXMLStreamerRegistry` | class | [42](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L42) | [`TBoldDefaultXMLStreamerRegistry`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L13) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLModelElementStreamer` | class | [48](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L48) | [`TBoldXMLModelElementStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L29) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLModelElementStreamerList` | class | [56](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L56) | [`TBoldXMLModelElementStreamerList`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L37) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLMemberStreamer` | class | [65](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L65) | [`TBoldXMLMemberStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L66) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLClassStreamer` | class | [84](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L84) | [`TBoldXMLClassStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L116) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldDefaultXMLStreamManager` | class | [100](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L100) | [`TBoldDefaultXMLStreamManager`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L225) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLValueStreamer` | class | [123](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L123) | [`TBoldXMLValueStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L310) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLNullableValueStreamer` | class | [130](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L130) | [`TBoldXMLNullableValueStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L332) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLStringContentStreamer` | class | [140](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L140) | [`TBoldXMLStringContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L376) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLIntegerContentStreamer` | class | [148](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L148) | [`TBoldXMLIntegerContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L384) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLFloatContentStreamer` | class | [156](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L156) | [`TBoldXMLFloatContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L392) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLCurrencyContentStreamer` | class | [164](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L164) | [`TBoldXMLCurrencyContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L400) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLBooleanContentStreamer` | class | [172](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L172) | [`TBoldXMLBooleanContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L408) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLDateContentStreamer` | class | [180](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L180) | [`TBoldXMLDateContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L416) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLTimeContentStreamer` | class | [188](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L188) | [`TBoldXMLTimeContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L424) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLDateTimeContentStreamer` | class | [196](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L196) | [`TBoldXMLDateTimeContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L432) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLBlobContentStreamer` | class | [204](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L204) | [`TBoldXMLBlobContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L440) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLTypedBlobStreamer` | class | [212](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L212) | [`TBoldXMLTypedBlobStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L449) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLRoleStreamer` | class | [220](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L220) | [`TBoldXMLRoleStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L470) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLIdRefStreamer` | class | [230](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L230) | [`TBoldXMLIdRefStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L498) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLIdRefPairStreamer` | class | [238](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L238) | [`TBoldXMLIdRefPairStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L524) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLIdListRefStreamer` | class | [246](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L246) | [`TBoldXMLIdListRefStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L546) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLIdListRefPairStreamer` | class | [254](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L254) | [`TBoldXMLIdListRefPairStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L572) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldExpressionNameIndex` | class, implementation | [288](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L288) | [`TBoldXMLModelElementStreamerList.TBoldExpressionNameIndex`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L42) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `initialization` | initialization, implementation | [1011](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1011) | [`[assembly: Delphi] in BoldDefaultXMLStreaming.cs`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L6) | ✅ verified: Registers the value streamers from the Bold.ValueSpace module initializer. | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `finalization` | finalization, implementation | [1027](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1027) | [`[assembly: Delphi] in BoldDefaultXMLStreaming.cs`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L7) | 🔵 replaced: Freed the main registry; the garbage collector does that in .NET. |  |
 
 ## TBoldDefaultXMLStreamerRegistry
 
-class at [line 42](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L42); ⚪ not started.
+class at [line 42](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L42); ✅ verified, C# [`TBoldDefaultXMLStreamerRegistry`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `MainStreamerRegistry` | class method | [44](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L44) · [body 669](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L669) |  | ⚪ not started |  |
+| `MainStreamerRegistry` | class method | [44](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L44) · [body 669](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L669) | [`TBoldDefaultXMLStreamerRegistry.MainStreamerRegistry`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L23) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLModelElementStreamer
 
-class at [line 48](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L48); ✅ verified, C# [`TBoldXMLModelElementStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ExpressionName` | property | [52](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L52) |  | ⚪ not started |  |
+| `ExpressionName` | property | [52](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L52) | [`TBoldXMLModelElementStreamer.ExpressionName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L33) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLModelElementStreamerList
 
-class at [line 56](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L56); ⚪ not started.
+class at [line 56](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L56); ✅ verified, C# [`TBoldXMLModelElementStreamerList`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L37).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamerByName` | method, private | [58](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L58) · [body 1006](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1006) |  | ⚪ not started |  |
-| `Create` | constructor | [60](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L60) · [body 1000](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1000) |  | ⚪ not started |  |
-| `StreamerByName` | property | [61](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L61) |  | ⚪ not started |  |
+| `GetStreamerByName` | method, private | [58](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L58) · [body 1006](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1006) | [`TBoldXMLModelElementStreamerList.GetStreamerByName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L55) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Create` | constructor | [60](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L60) · [body 1000](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L1000) | [`TBoldXMLModelElementStreamerList.TBoldXMLModelElementStreamerList`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L49) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `StreamerByName` | property | [61](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L61) | [`TBoldXMLModelElementStreamerList.StreamerByName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L59) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLMemberStreamer
 
-class at [line 65](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L65); ⚪ not started.
+class at [line 65](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L65); ✅ verified, C# [`TBoldXMLMemberStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L66).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [73](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L73) · [body 812](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L812) |  | ⚪ not started |  |
-| `Destroy` | destructor | [74](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L74) · [body 822](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L822) |  | ⚪ not started |  |
-| `WriteValue` | method | [75](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L75) · [body 836](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L836) |  | ⚪ not started |  |
-| `ReadValue` | method | [76](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L76) · [body 828](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L828) |  | ⚪ not started |  |
-| `TypeStreamName` | property | [77](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L77) |  | ⚪ not started |  |
-| `Persistent` | property | [78](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L78) |  | ⚪ not started |  |
-| `MemberId` | property | [79](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L79) |  | ⚪ not started |  |
-| `Index` | property | [80](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L80) |  | ⚪ not started |  |
+| `Create` | constructor | [73](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L73) · [body 812](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L812) | [`TBoldXMLMemberStreamer.TBoldXMLMemberStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L75) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Destroy` | destructor | [74](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L74) · [body 822](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L822) | [`TBoldXMLMemberStreamer.MemberId`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L87) | ✅ verified: The garbage collector frees the member id. | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteValue` | method | [75](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L75) · [body 836](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L836) | [`TBoldXMLMemberStreamer.WriteValue`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L91) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadValue` | method | [76](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L76) · [body 828](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L828) | [`TBoldXMLMemberStreamer.ReadValue`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L101) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TypeStreamName` | property | [77](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L77) | [`TBoldXMLMemberStreamer.TypeStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L109) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Persistent` | property | [78](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L78) | [`TBoldXMLMemberStreamer.Persistent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L110) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `MemberId` | property | [79](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L79) | [`TBoldXMLMemberStreamer.MemberId`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L87) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Index` | property | [80](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L80) | [`TBoldXMLMemberStreamer.Index`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L111) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLClassStreamer
 
-class at [line 84](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L84); ⚪ not started.
+class at [line 84](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L84); ✅ verified, C# [`TBoldXMLClassStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L116).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMemberStreamer` | method, private | [88](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L88) · [body 695](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L695) |  | ⚪ not started |  |
-| `GetMemberStreamerByName` | method, private | [89](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L89) · [body 703](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L703) |  | ⚪ not started |  |
-| `Create` | constructor | [91](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L91) · [body 678](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L678) |  | ⚪ not started |  |
-| `Destroy` | destructor | [92](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L92) · [body 689](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L689) |  | ⚪ not started |  |
-| `WriteObject` | method | [93](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L93) · [body 766](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L766) |  | ⚪ not started |  |
-| `ReadObject` | method | [94](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L94) · [body 711](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L711) |  | ⚪ not started |  |
-| `MemberStreamers` | property | [95](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L95) |  | ⚪ not started |  |
-| `MemberStreamerByName` | property | [96](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L96) |  | ⚪ not started |  |
+| `GetMemberStreamer` | method, private | [88](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L88) · [body 695](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L695) | [`TBoldXMLClassStreamer.GetMemberStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L135) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `GetMemberStreamerByName` | method, private | [89](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L89) · [body 703](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L703) | [`TBoldXMLClassStreamer.GetMemberStreamerByName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L139) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Create` | constructor | [91](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L91) · [body 678](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L678) | [`TBoldXMLClassStreamer.TBoldXMLClassStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L122) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Destroy` | destructor | [92](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L92) · [body 689](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L689) | [`TBoldXMLClassStreamer.GetMemberStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L135) | ✅ verified: The garbage collector frees the member streamers. | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteObject` | method | [93](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L93) · [body 766](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L766) | [`TBoldXMLClassStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L144) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadObject` | method | [94](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L94) · [body 711](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L711) | [`TBoldXMLClassStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L179) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `MemberStreamers` | property | [95](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L95) | [`TBoldXMLClassStreamer.MemberStreamers`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L216) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `MemberStreamerByName` | property | [96](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L96) | [`TBoldXMLClassStreamer.MemberStreamerByName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L217) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldDefaultXMLStreamManager
 
-class at [line 100](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L100); ⚪ not started.
+class at [line 100](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L100); ✅ verified, C# [`TBoldDefaultXMLStreamManager`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L225).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetClassStreamer` | method, private | [107](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L107) · [body 320](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L320) |  | ⚪ not started |  |
-| `GetClassStreamerByName` | method, private | [108](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L108) · [body 328](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L328) |  | ⚪ not started |  |
-| `Create` | constructor | [110](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L110) · [body 299](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L299) |  | ⚪ not started |  |
-| `Destroy` | destructor | [111](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L111) · [body 314](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L314) |  | ⚪ not started |  |
-| `WriteValueSpace` | method | [112](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L112) · [body 356](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L356) |  | ⚪ not started |  |
-| `ReadValueSpace` | method | [113](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L113) · [body 336](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L336) |  | ⚪ not started |  |
-| `Model` | property | [114](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L114) |  | ⚪ not started |  |
-| `ClassStreamers` | property | [115](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L115) |  | ⚪ not started |  |
-| `ClassStreamerByName` | property | [116](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L116) |  | ⚪ not started |  |
-| `IgnorePersistenceState` | property | [117](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L117) |  | ⚪ not started |  |
-| `PersistenceStatesToOverwrite` | property | [118](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L118) |  | ⚪ not started |  |
-| `PersistenceStatesToBeStreamed` | property | [119](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L119) |  | ⚪ not started |  |
+| `GetClassStreamer` | method, private | [107](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L107) · [body 320](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L320) | [`TBoldDefaultXMLStreamManager.GetClassStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L251) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `GetClassStreamerByName` | method, private | [108](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L108) · [body 328](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L328) | [`TBoldDefaultXMLStreamManager.GetClassStreamerByName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L257) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Create` | constructor | [110](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L110) · [body 299](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L299) | [`TBoldDefaultXMLStreamManager.TBoldDefaultXMLStreamManager`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L234) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Destroy` | destructor | [111](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L111) · [body 314](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L314) | [`TBoldDefaultXMLStreamManager.GetClassStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L251) | ✅ verified: The garbage collector frees the class streamers. | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteValueSpace` | method | [112](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L112) · [body 356](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L356) | [`TBoldDefaultXMLStreamManager.WriteValueSpace`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L262) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadValueSpace` | method | [113](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L113) · [body 336](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L336) | [`TBoldDefaultXMLStreamManager.ReadValueSpace`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L277) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `Model` | property | [114](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L114) | [`TBoldDefaultXMLStreamManager.Model`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L294) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ClassStreamers` | property | [115](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L115) | [`TBoldDefaultXMLStreamManager.ClassStreamers`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L295) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ClassStreamerByName` | property | [116](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L116) | [`TBoldDefaultXMLStreamManager.ClassStreamerByName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L296) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `IgnorePersistenceState` | property | [117](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L117) | [`TBoldDefaultXMLStreamManager.IgnorePersistenceState`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L299) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160)<br>✔ [`BoldDefaultXMLStreamingTests.Streaming_follows_the_persistence_state_settings`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L195) |
+| `PersistenceStatesToOverwrite` | property | [118](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L118) | [`TBoldDefaultXMLStreamManager.PersistenceStatesToOverwrite`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L302) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160)<br>✔ [`BoldDefaultXMLStreamingTests.Streaming_follows_the_persistence_state_settings`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L195) |
+| `PersistenceStatesToBeStreamed` | property | [119](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L119) | [`TBoldDefaultXMLStreamManager.PersistenceStatesToBeStreamed`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L305) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160)<br>✔ [`BoldDefaultXMLStreamingTests.Streaming_follows_the_persistence_state_settings`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L195) |
 
 ## TBoldXMLValueStreamer
 
-class at [line 123](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L123); ⚪ not started.
+class at [line 123](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L123); ✅ verified, C# [`TBoldXMLValueStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L310).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteInterface` | method | [125](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L125) · [body 389](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L389) |  | ⚪ not started |  |
-| `ReadInterface` | method | [126](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L126) · [body 376](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L376) |  | ⚪ not started |  |
+| `WriteInterface` | method | [125](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L125) · [body 389](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L389) | [`TBoldXMLValueStreamer.WriteInterface`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L313) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadInterface` | method | [126](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L126) · [body 376](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L376) | [`TBoldXMLValueStreamer.ReadInterface`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L320) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLNullableValueStreamer
 
-class at [line 130](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L130); ⚪ not started.
+class at [line 130](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L130); ✅ verified, C# [`TBoldXMLNullableValueStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L332).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteContent` | method, protected | [132](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L132) · [body 418](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L418) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [133](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L133) · [body 401](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L401) |  | ⚪ not started |  |
-| `WriteInterface` | method | [135](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L135) · [body 422](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L422) |  | ⚪ not started |  |
-| `ReadInterface` | method | [136](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L136) · [body 405](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L405) |  | ⚪ not started |  |
+| `WriteContent` | method, protected | [132](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L132) · [body 418](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L418) | [`TBoldXMLNullableValueStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L335) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [133](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L133) · [body 401](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L401) | [`TBoldXMLNullableValueStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L340) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteInterface` | method | [135](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L135) · [body 422](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L422) | [`TBoldXMLNullableValueStreamer.WriteInterface`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L345) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadInterface` | method | [136](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L136) · [body 405](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L405) | [`TBoldXMLNullableValueStreamer.ReadInterface`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L360) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLStringContentStreamer
 
-class at [line 140](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L140); ⚪ not started.
+class at [line 140](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L140); ✅ verified, C# [`TBoldXMLStringContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L376).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [142](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L142) · [body 437](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L437) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [143](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L143) · [body 448](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L448) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [144](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L144) · [body 442](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L442) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [142](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L142) · [body 437](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L437) | [`TBoldXMLStringContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L378) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [143](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L143) · [body 448](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L448) | [`TBoldXMLStringContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L380) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [144](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L144) · [body 442](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L442) | [`TBoldXMLStringContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L379) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLIntegerContentStreamer
 
-class at [line 148](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L148); ⚪ not started.
+class at [line 148](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L148); ✅ verified, C# [`TBoldXMLIntegerContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L384).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [150](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L150) · [body 456](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L456) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [151](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L151) · [body 467](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L467) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [152](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L152) · [body 461](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L461) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [150](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L150) · [body 456](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L456) | [`TBoldXMLIntegerContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L386) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [151](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L151) · [body 467](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L467) | [`TBoldXMLIntegerContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L388) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [152](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L152) · [body 461](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L461) | [`TBoldXMLIntegerContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L387) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLFloatContentStreamer
 
-class at [line 156](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L156); ⚪ not started.
+class at [line 156](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L156); ✅ verified, C# [`TBoldXMLFloatContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L392).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [158](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L158) · [body 851](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L851) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [159](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L159) · [body 861](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L861) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [160](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L160) · [body 856](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L856) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [158](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L158) · [body 851](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L851) | [`TBoldXMLFloatContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L394) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [159](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L159) · [body 861](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L861) | [`TBoldXMLFloatContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L396) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [160](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L160) · [body 856](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L856) | [`TBoldXMLFloatContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L395) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLCurrencyContentStreamer
 
-class at [line 164](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L164); ⚪ not started.
+class at [line 164](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L164); ✅ verified, C# [`TBoldXMLCurrencyContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L400).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [166](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L166) · [body 868](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L868) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [167](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L167) · [body 878](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L878) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [168](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L168) · [body 873](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L873) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [166](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L166) · [body 868](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L868) | [`TBoldXMLCurrencyContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L402) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [167](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L167) · [body 878](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L878) | [`TBoldXMLCurrencyContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L404) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [168](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L168) · [body 873](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L873) | [`TBoldXMLCurrencyContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L403) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLBooleanContentStreamer
 
-class at [line 172](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L172); ⚪ not started.
+class at [line 172](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L172); ✅ verified, C# [`TBoldXMLBooleanContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L408).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [174](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L174) · [body 885](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L885) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [175](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L175) · [body 896](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L896) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [176](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L176) · [body 890](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L890) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [174](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L174) · [body 885](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L885) | [`TBoldXMLBooleanContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L410) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [175](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L175) · [body 896](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L896) | [`TBoldXMLBooleanContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L412) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [176](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L176) · [body 890](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L890) | [`TBoldXMLBooleanContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L411) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLDateContentStreamer
 
-class at [line 180](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L180); ⚪ not started.
+class at [line 180](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L180); ✅ verified, C# [`TBoldXMLDateContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L416).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [182](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L182) · [body 904](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L904) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [183](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L183) · [body 914](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L914) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [184](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L184) · [body 909](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L909) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [182](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L182) · [body 904](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L904) | [`TBoldXMLDateContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L418) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [183](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L183) · [body 914](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L914) | [`TBoldXMLDateContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L420) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [184](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L184) · [body 909](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L909) | [`TBoldXMLDateContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L419) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLTimeContentStreamer
 
-class at [line 188](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L188); ⚪ not started.
+class at [line 188](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L188); ✅ verified, C# [`TBoldXMLTimeContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L424).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [190](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L190) · [body 921](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L921) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [191](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L191) · [body 931](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L931) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [192](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L192) · [body 926](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L926) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [190](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L190) · [body 921](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L921) | [`TBoldXMLTimeContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L426) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [191](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L191) · [body 931](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L931) | [`TBoldXMLTimeContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L428) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [192](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L192) · [body 926](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L926) | [`TBoldXMLTimeContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L427) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLDateTimeContentStreamer
 
-class at [line 196](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L196); ⚪ not started.
+class at [line 196](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L196); ✅ verified, C# [`TBoldXMLDateTimeContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L432).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [198](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L198) · [body 938](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L938) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [199](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L199) · [body 948](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L948) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [200](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L200) · [body 943](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L943) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [198](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L198) · [body 938](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L938) | [`TBoldXMLDateTimeContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L434) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [199](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L199) · [body 948](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L948) | [`TBoldXMLDateTimeContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L436) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [200](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L200) · [body 943](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L943) | [`TBoldXMLDateTimeContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L435) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLBlobContentStreamer
 
-class at [line 204](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L204); ⚪ not started.
+class at [line 204](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L204); ✅ verified, C# [`TBoldXMLBlobContentStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L440).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [206](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L206) · [body 955](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L955) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [207](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L207) · [body 965](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L965) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [208](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L208) · [body 960](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L960) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [206](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L206) · [body 955](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L955) | [`TBoldXMLBlobContentStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L442) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [207](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L207) · [body 965](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L965) | [`TBoldXMLBlobContentStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L444) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [208](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L208) · [body 960](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L960) | [`TBoldXMLBlobContentStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L443) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLTypedBlobStreamer
 
-class at [line 212](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L212); ⚪ not started.
+class at [line 212](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L212); ✅ verified, C# [`TBoldXMLTypedBlobStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L449).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [214](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L214) · [body 973](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L973) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [215](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L215) · [body 984](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L984) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [216](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L216) · [body 978](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L978) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [214](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L214) · [body 973](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L973) | [`TBoldXMLTypedBlobStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L451) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [215](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L215) · [body 984](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L984) | [`TBoldXMLTypedBlobStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L461) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [216](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L216) · [body 978](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L978) | [`TBoldXMLTypedBlobStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L454) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLRoleStreamer
 
-class at [line 220](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L220); ⚪ not started.
+class at [line 220](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L220); ✅ verified, C# [`TBoldXMLRoleStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L470).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteContent` | method, protected | [222](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L222) · [body 489](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L489) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [223](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L223) · [body 475](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L475) |  | ⚪ not started |  |
-| `WriteInterface` | method | [225](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L225) · [body 493](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L493) |  | ⚪ not started |  |
-| `ReadInterface` | method | [226](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L226) · [body 479](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L479) |  | ⚪ not started |  |
+| `WriteContent` | method, protected | [222](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L222) · [body 489](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L489) | [`TBoldXMLRoleStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L473) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [223](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L223) · [body 475](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L475) | [`TBoldXMLRoleStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L478) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteInterface` | method | [225](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L225) · [body 493](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L493) | [`TBoldXMLRoleStreamer.WriteInterface`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L483) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadInterface` | method | [226](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L226) · [body 479](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L479) | [`TBoldXMLRoleStreamer.ReadInterface`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L490) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLIdRefStreamer
 
-class at [line 230](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L230); ⚪ not started.
+class at [line 230](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L230); ✅ verified, C# [`TBoldXMLIdRefStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L498).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [232](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L232) · [body 505](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L505) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [233](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L233) · [body 527](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L527) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [234](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L234) · [body 510](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L510) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [232](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L232) · [body 505](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L505) | [`TBoldXMLIdRefStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L500) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [233](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L233) · [body 527](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L527) | [`TBoldXMLIdRefStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L515) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [234](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L234) · [body 510](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L510) | [`TBoldXMLIdRefStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L503) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLIdRefPairStreamer
 
-class at [line 238](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L238); ⚪ not started.
+class at [line 238](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L238); ✅ verified, C# [`TBoldXMLIdRefPairStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L524).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [240](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L240) · [body 543](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L543) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [241](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L241) · [body 565](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L565) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [242](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L242) · [body 548](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L548) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [240](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L240) · [body 543](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L543) | [`TBoldXMLIdRefPairStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L526) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [241](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L241) · [body 565](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L565) | [`TBoldXMLIdRefPairStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L537) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [242](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L242) · [body 548](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L548) | [`TBoldXMLIdRefPairStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L529) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLIdListRefStreamer
 
-class at [line 246](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L246); ⚪ not started.
+class at [line 246](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L246); ✅ verified, C# [`TBoldXMLIdListRefStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L546).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [248](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L248) · [body 580](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L580) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [249](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L249) · [body 598](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L598) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [250](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L250) · [body 585](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L585) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [248](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L248) · [body 580](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L580) | [`TBoldXMLIdListRefStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L548) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [249](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L249) · [body 598](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L598) | [`TBoldXMLIdListRefStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L558) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [250](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L250) · [body 585](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L585) | [`TBoldXMLIdListRefStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L551) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLIdListRefPairStreamer
 
-class at [line 254](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L254); ⚪ not started.
+class at [line 254](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L254); ✅ verified, C# [`TBoldXMLIdListRefPairStreamer`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L572).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [256](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L256) · [body 618](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L618) |  | ⚪ not started |  |
-| `WriteContent` | method, protected | [257](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L257) · [body 640](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L640) |  | ⚪ not started |  |
-| `ReadContent` | method, protected | [258](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L258) · [body 623](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L623) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [256](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L256) · [body 618](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L618) | [`TBoldXMLIdListRefPairStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L574) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `WriteContent` | method, protected | [257](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L257) · [body 640](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L640) | [`TBoldXMLIdListRefPairStreamer.WriteContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L585) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadContent` | method, protected | [258](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L258) · [body 623](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L623) | [`TBoldXMLIdListRefPairStreamer.ReadContent`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L577) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldExpressionNameIndex
 
-class at [line 288](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L288); ⚪ not started.
+class at [line 288](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L288); ✅ verified, C# [`TBoldXMLModelElementStreamerList.TBoldExpressionNameIndex`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L42).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [290](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L290) · [body 992](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L992) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [290](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L290) · [body 992](../../../Source/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.pas#L992) | [`TBoldXMLModelElementStreamerList.TBoldExpressionNameIndex.ItemAsKeyString`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L45) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldDefaultXMLStreamerRegistry.TBoldDefaultXMLStreamerRegistry`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L17) (constructor)
+- [`TBoldXMLModelElementStreamer.fExpressionName`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L31) (field)
+- [`TBoldXMLModelElementStreamerList.Items`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L61) (method)
+- [`TBoldXMLClassStreamer.fOwner`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L119) (field)
+- [`BoldDefaultXMLStreaming.BoldNodeName_persistencestate`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L608) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_existencestate`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L609) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_timestamp`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L610) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_globalid`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L611) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_members`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L612) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_content`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L613) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_ContentType`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L614) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_id`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L615) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_id1`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L616) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_id2`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L617) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_idlist`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L618) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_idlist1`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L619) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_idlist2`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L620) (const)
+- [`BoldDefaultXMLStreaming.BoldNodeName_OrderNo`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L621) (const)
+- [`BoldDefaultXMLStreaming.RegisterStreamers`](../../src/Bold.ValueSpace/ValueSpace/XMLStreaming/BoldDefaultXMLStreaming.cs#L623) (method)
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/Id/ValueSpaceConst.pas`](../../../Source/ValueSpace/Id/ValueSpaceConst.pas) (15 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | ✅ verified: 4 of 4 symbols done, 4 verified |
 
-⚪ 4 not started
+✅ 4 verified
 
 ## Unit level
 
@@ -18,10 +18,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sInvalidEvent` | resourcestring | [6](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L6) |  | ⚪ not started |  |
-| `sInvalidID` | resourcestring | [7](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L7) |  | ⚪ not started |  |
-| `sInvalidIndex` | resourcestring | [9](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L9) |  | ⚪ not started |  |
-| `sUnrecognizedClassName` | resourcestring | [10](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L10) |  | ⚪ not started |  |
+| `sInvalidEvent` | resourcestring | [6](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L6) | [`ValueSpaceConst.sInvalidEvent`](../../src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs#L9) | ✅ verified | ✔ [`BoldIdTests.Messages_have_the_Delphi_values`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L12) |
+| `sInvalidID` | resourcestring | [7](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L7) | [`ValueSpaceConst.sInvalidID`](../../src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs#L10) | ✅ verified | ✔ [`BoldIdTests.Messages_have_the_Delphi_values`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L12) |
+| `sInvalidIndex` | resourcestring | [9](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L9) | [`ValueSpaceConst.sInvalidIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs#L11) | ✅ verified | ✔ [`BoldIdTests.Messages_have_the_Delphi_values`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L12) |
+| `sUnrecognizedClassName` | resourcestring | [10](../../../Source/ValueSpace/Id/ValueSpaceConst.pas#L10) | [`ValueSpaceConst.sUnrecognizedClassName`](../../src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs#L12) | ✅ verified | ✔ [`BoldIdTests.Messages_have_the_Delphi_values`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L12) |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/Id/BoldId.pas`](../../../Source/ValueSpace/Id/BoldId.pas) (976 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldId.Aliases.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.Aliases.cs)<br>[`CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 124 symbols done, 0 verified |
+| Status | 🟢 ported: 124 of 124 symbols done, 100 verified |
 
-⚪ 124 not started
+✅ 100 verified · 🟢 24 ported
 
 ## Unit level
 
@@ -18,249 +18,266 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldObjectIdClass` | class reference | [26](../../../Source/ValueSpace/Id/BoldId.pas#L26) |  | ⚪ not started |  |
-| `TBoldID` | class | [29](../../../Source/ValueSpace/Id/BoldId.pas#L29) |  | ⚪ not started |  |
-| `TBoldMemberID` | class | [35](../../../Source/ValueSpace/Id/BoldId.pas#L35) |  | ⚪ not started |  |
-| `TBoldSubMemberID` | class | [46](../../../Source/ValueSpace/Id/BoldId.pas#L46) |  | ⚪ not started |  |
-| `TBoldObjectId` | class | [56](../../../Source/ValueSpace/Id/BoldId.pas#L56) |  | ⚪ not started |  |
-| `TBoldInternalObjectId` | class | [82](../../../Source/ValueSpace/Id/BoldId.pas#L82) |  | ⚪ not started |  |
-| `TBoldExternalObjectID` | class | [99](../../../Source/ValueSpace/Id/BoldId.pas#L99) |  | ⚪ not started |  |
-| `TBoldIdList` | class | [105](../../../Source/ValueSpace/Id/BoldId.pas#L105) |  | ⚪ not started |  |
-| `TBoldObjectIdHashIndex` | class | [108](../../../Source/ValueSpace/Id/BoldId.pas#L108) |  | ⚪ not started |  |
-| `TBoldObjectIdList` | class | [118](../../../Source/ValueSpace/Id/BoldId.pas#L118) |  | ⚪ not started |  |
-| `TBoldMemberIdList` | class | [149](../../../Source/ValueSpace/Id/BoldId.pas#L149) |  | ⚪ not started |  |
-| `TBoldIDTranslationList` | class | [158](../../../Source/ValueSpace/Id/BoldId.pas#L158) |  | ⚪ not started |  |
-| `EBoldOperationFailedForIdList` | class | [186](../../../Source/ValueSpace/Id/BoldId.pas#L186) |  | ⚪ not started |  |
-| `TBoldXMLObjectIdStreamer` | class | [196](../../../Source/ValueSpace/Id/BoldId.pas#L196) |  | ⚪ not started |  |
-| `TBoldXMLInternalObjectIdStreamer` | class, implementation | [223](../../../Source/ValueSpace/Id/BoldId.pas#L223) |  | ⚪ not started |  |
-| `TBoldXMLObjectIdListStreamer` | class, implementation | [233](../../../Source/ValueSpace/Id/BoldId.pas#L233) |  | ⚪ not started |  |
-| `TBoldXMLTranslationListStreamer` | class, implementation | [243](../../../Source/ValueSpace/Id/BoldId.pas#L243) |  | ⚪ not started |  |
-| `TBoldXMLMemberIdStreamer` | class, implementation | [253](../../../Source/ValueSpace/Id/BoldId.pas#L253) |  | ⚪ not started |  |
-| `TBoldXMLMemberIdListStreamer` | class, implementation | [263](../../../Source/ValueSpace/Id/BoldId.pas#L263) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [968](../../../Source/ValueSpace/Id/BoldId.pas#L968) |  | ⚪ not started |  |
+| `TBoldObjectIdClass` | class reference | [26](../../../Source/ValueSpace/Id/BoldId.pas#L26) | [`global using TBoldObjectIdClass`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.Aliases.cs#L5) | 🟢 ported: Global using alias of System.Type, in BoldId.Aliases.cs. |  |
+| `TBoldID` | class | [29](../../../Source/ValueSpace/Id/BoldId.pas#L29) | [`TBoldID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L13) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
+| `TBoldMemberID` | class | [35](../../../Source/ValueSpace/Id/BoldId.pas#L35) | [`TBoldMemberID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L21) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
+| `TBoldSubMemberID` | class | [46](../../../Source/ValueSpace/Id/BoldId.pas#L46) | [`TBoldSubMemberID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L40) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
+| `TBoldObjectId` | class | [56](../../../Source/ValueSpace/Id/BoldId.pas#L56) | [`TBoldObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L71) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `TBoldInternalObjectId` | class | [82](../../../Source/ValueSpace/Id/BoldId.pas#L82) | [`TBoldInternalObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L124) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `TBoldExternalObjectID` | class | [99](../../../Source/ValueSpace/Id/BoldId.pas#L99) | [`TBoldExternalObjectID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L168) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `TBoldIdList` | class | [105](../../../Source/ValueSpace/Id/BoldId.pas#L105) | [`TBoldIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L184) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `TBoldObjectIdHashIndex` | class | [108](../../../Source/ValueSpace/Id/BoldId.pas#L108) | [`TBoldObjectIdHashIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L190) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `TBoldObjectIdList` | class | [118](../../../Source/ValueSpace/Id/BoldId.pas#L118) | [`TBoldObjectIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L213) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `TBoldMemberIdList` | class | [149](../../../Source/ValueSpace/Id/BoldId.pas#L149) | [`TBoldMemberIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L392) | ✅ verified | ✔ [`BoldIdTests.Member_id_list_returns_member_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L147) |
+| `TBoldIDTranslationList` | class | [158](../../../Source/ValueSpace/Id/BoldId.pas#L158) | [`TBoldIDTranslationList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L408) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `EBoldOperationFailedForIdList` | class | [186](../../../Source/ValueSpace/Id/BoldId.pas#L186) | [`EBoldOperationFailedForIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L476) | ✅ verified | ✔ [`BoldIdTests.Operation_failed_exception_keeps_a_copy_of_the_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L158) |
+| `TBoldXMLObjectIdStreamer` | class | [196](../../../Source/ValueSpace/Id/BoldId.pas#L196) | [`TBoldXMLObjectIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L494) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLInternalObjectIdStreamer` | class, implementation | [223](../../../Source/ValueSpace/Id/BoldId.pas#L223) | [`TBoldXMLInternalObjectIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L536) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLObjectIdListStreamer` | class, implementation | [233](../../../Source/ValueSpace/Id/BoldId.pas#L233) | [`TBoldXMLObjectIdListStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L560) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLTranslationListStreamer` | class, implementation | [243](../../../Source/ValueSpace/Id/BoldId.pas#L243) | [`TBoldXMLTranslationListStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L591) | 🟢 ported |  |
+| `TBoldXMLMemberIdStreamer` | class, implementation | [253](../../../Source/ValueSpace/Id/BoldId.pas#L253) | [`TBoldXMLMemberIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L617) | 🟢 ported |  |
+| `TBoldXMLMemberIdListStreamer` | class, implementation | [263](../../../Source/ValueSpace/Id/BoldId.pas#L263) | [`TBoldXMLMemberIdListStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L635) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [968](../../../Source/ValueSpace/Id/BoldId.pas#L968) | [`[assembly: Delphi] in BoldId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L7) | ✅ verified: Registers the id streamers from the Bold.ValueSpace module initializer. | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldID
 
-class at [line 29](../../../Source/ValueSpace/Id/BoldId.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/ValueSpace/Id/BoldId.pas#L29); ✅ verified, C# [`TBoldID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [31](../../../Source/ValueSpace/Id/BoldId.pas#L31) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [31](../../../Source/ValueSpace/Id/BoldId.pas#L31) | [`TBoldID.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L16) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
 
 ## TBoldMemberID
 
-class at [line 35](../../../Source/ValueSpace/Id/BoldId.pas#L35); ⚪ not started.
+class at [line 35](../../../Source/ValueSpace/Id/BoldId.pas#L35); ✅ verified, C# [`TBoldMemberID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L21).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [39](../../../Source/ValueSpace/Id/BoldId.pas#L39) · [body 302](../../../Source/ValueSpace/Id/BoldId.pas#L302) |  | ⚪ not started |  |
-| `create` | constructor | [41](../../../Source/ValueSpace/Id/BoldId.pas#L41) · [body 297](../../../Source/ValueSpace/Id/BoldId.pas#L297) |  | ⚪ not started |  |
-| `MemberIndex` | property | [42](../../../Source/ValueSpace/Id/BoldId.pas#L42) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [39](../../../Source/ValueSpace/Id/BoldId.pas#L39) · [body 302](../../../Source/ValueSpace/Id/BoldId.pas#L302) | [`TBoldMemberID.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L32) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
+| `create` | constructor | [41](../../../Source/ValueSpace/Id/BoldId.pas#L41) · [body 297](../../../Source/ValueSpace/Id/BoldId.pas#L297) | [`TBoldMemberID.TBoldMemberID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L26) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
+| `MemberIndex` | property | [42](../../../Source/ValueSpace/Id/BoldId.pas#L42) | [`TBoldMemberID.MemberIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L35) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
 
 ## TBoldSubMemberID
 
-class at [line 46](../../../Source/ValueSpace/Id/BoldId.pas#L46); ⚪ not started.
+class at [line 46](../../../Source/ValueSpace/Id/BoldId.pas#L46); ✅ verified, C# [`TBoldSubMemberID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L40).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [51](../../../Source/ValueSpace/Id/BoldId.pas#L51) · [body 308](../../../Source/ValueSpace/Id/BoldId.pas#L308) |  | ⚪ not started |  |
-| `Destroy` | destructor | [52](../../../Source/ValueSpace/Id/BoldId.pas#L52) · [body 315](../../../Source/ValueSpace/Id/BoldId.pas#L315) |  | ⚪ not started |  |
+| `Create` | constructor | [51](../../../Source/ValueSpace/Id/BoldId.pas#L51) · [body 308](../../../Source/ValueSpace/Id/BoldId.pas#L308) | [`TBoldSubMemberID.TBoldSubMemberID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L46) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
+| `Destroy` | destructor | [52](../../../Source/ValueSpace/Id/BoldId.pas#L52) · [body 315](../../../Source/ValueSpace/Id/BoldId.pas#L315) | [`TBoldSubMemberID.Dispose`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L54) | ✅ verified | ✔ [`BoldIdTests.Member_ids_carry_their_index`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L21) |
 
 ## TBoldObjectId
 
-class at [line 56](../../../Source/ValueSpace/Id/BoldId.pas#L56); ⚪ not started.
+class at [line 56](../../../Source/ValueSpace/Id/BoldId.pas#L56); ✅ verified, C# [`TBoldObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L71).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getTopSortedIndex` | method, private | [59](../../../Source/ValueSpace/Id/BoldId.pas#L59) · [body 923](../../../Source/ValueSpace/Id/BoldId.pas#L923) |  | ⚪ not started |  |
-| `GetTopSortedIndexExact` | method, private | [60](../../../Source/ValueSpace/Id/BoldId.pas#L60) · [body 928](../../../Source/ValueSpace/Id/BoldId.pas#L928) |  | ⚪ not started |  |
-| `SetClassIdData` | method, private | [61](../../../Source/ValueSpace/Id/BoldId.pas#L61) · [body 933](../../../Source/ValueSpace/Id/BoldId.pas#L933) |  | ⚪ not started |  |
-| `GetAsString` | method, protected | [63](../../../Source/ValueSpace/Id/BoldId.pas#L63) |  | ⚪ not started |  |
-| `GetIsStorable` | method, protected | [64](../../../Source/ValueSpace/Id/BoldId.pas#L64) |  | ⚪ not started |  |
-| `GetHash` | method, protected | [65](../../../Source/ValueSpace/Id/BoldId.pas#L65) |  | ⚪ not started |  |
-| `GetIsEqual` | method, protected | [66](../../../Source/ValueSpace/Id/BoldId.pas#L66) |  | ⚪ not started |  |
-| `GetTimeStamp` | method, protected | [67](../../../Source/ValueSpace/Id/BoldId.pas#L67) · [body 621](../../../Source/ValueSpace/Id/BoldId.pas#L621) |  | ⚪ not started |  |
-| `CreateWithClassID` | constructor | [69](../../../Source/ValueSpace/Id/BoldId.pas#L69) · [body 331](../../../Source/ValueSpace/Id/BoldId.pas#L331) |  | ⚪ not started |  |
-| `CloneWithClassId` | method | [70](../../../Source/ValueSpace/Id/BoldId.pas#L70) |  | ⚪ not started |  |
-| `Clone` | method | [71](../../../Source/ValueSpace/Id/BoldId.pas#L71) · [body 326](../../../Source/ValueSpace/Id/BoldId.pas#L326) |  | ⚪ not started |  |
-| `TopSortedIndex` | property | [72](../../../Source/ValueSpace/Id/BoldId.pas#L72) |  | ⚪ not started |  |
-| `TopSortedIndexExact` | property | [73](../../../Source/ValueSpace/Id/BoldId.pas#L73) |  | ⚪ not started |  |
-| `AsString` | property | [74](../../../Source/ValueSpace/Id/BoldId.pas#L74) |  | ⚪ not started |  |
-| `IsStorable` | property | [75](../../../Source/ValueSpace/Id/BoldId.pas#L75) |  | ⚪ not started |  |
-| `IsEqual` | property | [76](../../../Source/ValueSpace/Id/BoldId.pas#L76) |  | ⚪ not started |  |
-| `Hash` | property | [77](../../../Source/ValueSpace/Id/BoldId.pas#L77) |  | ⚪ not started |  |
-| `TimeStamp` | property | [78](../../../Source/ValueSpace/Id/BoldId.pas#L78) |  | ⚪ not started |  |
+| `getTopSortedIndex` | method, private | [59](../../../Source/ValueSpace/Id/BoldId.pas#L59) · [body 923](../../../Source/ValueSpace/Id/BoldId.pas#L923) | [`TBoldObjectId.getTopSortedIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L87) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetTopSortedIndexExact` | method, private | [60](../../../Source/ValueSpace/Id/BoldId.pas#L60) · [body 928](../../../Source/ValueSpace/Id/BoldId.pas#L928) | [`TBoldObjectId.GetTopSortedIndexExact`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L90) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `SetClassIdData` | method, private | [61](../../../Source/ValueSpace/Id/BoldId.pas#L61) · [body 933](../../../Source/ValueSpace/Id/BoldId.pas#L933) | [`TBoldObjectId.SetClassIdData`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L93) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetAsString` | method, protected | [63](../../../Source/ValueSpace/Id/BoldId.pas#L63) | [`TBoldObjectId.GetAsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L96) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetIsStorable` | method, protected | [64](../../../Source/ValueSpace/Id/BoldId.pas#L64) | [`TBoldObjectId.GetIsStorable`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L97) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetHash` | method, protected | [65](../../../Source/ValueSpace/Id/BoldId.pas#L65) | [`TBoldObjectId.GetHash`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L98) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetIsEqual` | method, protected | [66](../../../Source/ValueSpace/Id/BoldId.pas#L66) | [`TBoldObjectId.GetIsEqual`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L99) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetTimeStamp` | method, protected | [67](../../../Source/ValueSpace/Id/BoldId.pas#L67) · [body 621](../../../Source/ValueSpace/Id/BoldId.pas#L621) | [`TBoldObjectId.GetTimeStamp`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L103) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `CreateWithClassID` | constructor | [69](../../../Source/ValueSpace/Id/BoldId.pas#L69) · [body 331](../../../Source/ValueSpace/Id/BoldId.pas#L331) | [`TBoldObjectId.TBoldObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L81) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `CloneWithClassId` | method | [70](../../../Source/ValueSpace/Id/BoldId.pas#L70) | [`TBoldObjectId.CloneWithClassId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L106) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `Clone` | method | [71](../../../Source/ValueSpace/Id/BoldId.pas#L71) · [body 326](../../../Source/ValueSpace/Id/BoldId.pas#L326) | [`TBoldObjectId.Clone`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L109) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `TopSortedIndex` | property | [72](../../../Source/ValueSpace/Id/BoldId.pas#L72) | [`TBoldObjectId.TopSortedIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L111) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `TopSortedIndexExact` | property | [73](../../../Source/ValueSpace/Id/BoldId.pas#L73) | [`TBoldObjectId.TopSortedIndexExact`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L112) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `AsString` | property | [74](../../../Source/ValueSpace/Id/BoldId.pas#L74) | [`TBoldObjectId.AsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L113) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `IsStorable` | property | [75](../../../Source/ValueSpace/Id/BoldId.pas#L75) | [`TBoldObjectId.IsStorable`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L114) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `IsEqual` | property | [76](../../../Source/ValueSpace/Id/BoldId.pas#L76) | [`TBoldObjectId.IsEqual`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L115) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `Hash` | property | [77](../../../Source/ValueSpace/Id/BoldId.pas#L77) | [`TBoldObjectId.Hash`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L116) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `TimeStamp` | property | [78](../../../Source/ValueSpace/Id/BoldId.pas#L78) | [`TBoldObjectId.TimeStamp`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L117) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
 
 ## TBoldInternalObjectId
 
-class at [line 82](../../../Source/ValueSpace/Id/BoldId.pas#L82); ⚪ not started.
+class at [line 82](../../../Source/ValueSpace/Id/BoldId.pas#L82); ✅ verified, C# [`TBoldInternalObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L124).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [86](../../../Source/ValueSpace/Id/BoldId.pas#L86) · [body 360](../../../Source/ValueSpace/Id/BoldId.pas#L360) |  | ⚪ not started |  |
-| `GetHash` | method, protected | [87](../../../Source/ValueSpace/Id/BoldId.pas#L87) · [body 376](../../../Source/ValueSpace/Id/BoldId.pas#L376) |  | ⚪ not started |  |
-| `GetIsStorable` | method, protected | [88](../../../Source/ValueSpace/Id/BoldId.pas#L88) · [body 365](../../../Source/ValueSpace/Id/BoldId.pas#L365) |  | ⚪ not started |  |
-| `GetIsEqual` | method, protected | [89](../../../Source/ValueSpace/Id/BoldId.pas#L89) · [body 370](../../../Source/ValueSpace/Id/BoldId.pas#L370) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [90](../../../Source/ValueSpace/Id/BoldId.pas#L90) · [body 381](../../../Source/ValueSpace/Id/BoldId.pas#L381) |  | ⚪ not started |  |
-| `CreateWithClassID` | constructor | [93](../../../Source/ValueSpace/Id/BoldId.pas#L93) · [body 351](../../../Source/ValueSpace/Id/BoldId.pas#L351) |  | ⚪ not started |  |
-| `CreateWithClassIDandInternalId` | constructor | [94](../../../Source/ValueSpace/Id/BoldId.pas#L94) · [body 339](../../../Source/ValueSpace/Id/BoldId.pas#L339) |  | ⚪ not started |  |
-| `CloneWithClassId` | method | [95](../../../Source/ValueSpace/Id/BoldId.pas#L95) · [body 345](../../../Source/ValueSpace/Id/BoldId.pas#L345) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [86](../../../Source/ValueSpace/Id/BoldId.pas#L86) · [body 360](../../../Source/ValueSpace/Id/BoldId.pas#L360) | [`TBoldInternalObjectId.GetAsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L149) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetHash` | method, protected | [87](../../../Source/ValueSpace/Id/BoldId.pas#L87) · [body 376](../../../Source/ValueSpace/Id/BoldId.pas#L376) | [`TBoldInternalObjectId.GetHash`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L150) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetIsStorable` | method, protected | [88](../../../Source/ValueSpace/Id/BoldId.pas#L88) · [body 365](../../../Source/ValueSpace/Id/BoldId.pas#L365) | [`TBoldInternalObjectId.GetIsStorable`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L151) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetIsEqual` | method, protected | [89](../../../Source/ValueSpace/Id/BoldId.pas#L89) · [body 370](../../../Source/ValueSpace/Id/BoldId.pas#L370) | [`TBoldInternalObjectId.GetIsEqual`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L154) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `GetStreamName` | method, protected | [90](../../../Source/ValueSpace/Id/BoldId.pas#L90) · [body 381](../../../Source/ValueSpace/Id/BoldId.pas#L381) | [`TBoldInternalObjectId.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L158) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `CreateWithClassID` | constructor | [93](../../../Source/ValueSpace/Id/BoldId.pas#L93) · [body 351](../../../Source/ValueSpace/Id/BoldId.pas#L351) | [`TBoldInternalObjectId.TBoldInternalObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L136) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `CreateWithClassIDandInternalId` | constructor | [94](../../../Source/ValueSpace/Id/BoldId.pas#L94) · [body 339](../../../Source/ValueSpace/Id/BoldId.pas#L339) | [`TBoldInternalObjectId.TBoldInternalObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L143) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
+| `CloneWithClassId` | method | [95](../../../Source/ValueSpace/Id/BoldId.pas#L95) · [body 345](../../../Source/ValueSpace/Id/BoldId.pas#L345) | [`TBoldInternalObjectId.CloneWithClassId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L162) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
 
 ## TBoldExternalObjectID
 
-class at [line 99](../../../Source/ValueSpace/Id/BoldId.pas#L99); ⚪ not started.
+class at [line 99](../../../Source/ValueSpace/Id/BoldId.pas#L99); ✅ verified, C# [`TBoldExternalObjectID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L168).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetIsStorable` | method, protected | [101](../../../Source/ValueSpace/Id/BoldId.pas#L101) · [body 387](../../../Source/ValueSpace/Id/BoldId.pas#L387) |  | ⚪ not started |  |
+| `GetIsStorable` | method, protected | [101](../../../Source/ValueSpace/Id/BoldId.pas#L101) · [body 387](../../../Source/ValueSpace/Id/BoldId.pas#L387) | [`TBoldExternalObjectID.GetIsStorable`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L180) | ✅ verified | ✔ [`BoldIdTests.Internal_ids_are_numbered_and_not_storable`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L34) |
 
 ## TBoldObjectIdHashIndex
 
-class at [line 108](../../../Source/ValueSpace/Id/BoldId.pas#L108); ⚪ not started.
+class at [line 108](../../../Source/ValueSpace/Id/BoldId.pas#L108); ✅ verified, C# [`TBoldObjectIdHashIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L190).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsBoldObjectId` | method, protected | [110](../../../Source/ValueSpace/Id/BoldId.pas#L110) · [body 275](../../../Source/ValueSpace/Id/BoldId.pas#L275) |  | ⚪ not started |  |
-| `HashItem` | method, protected | [111](../../../Source/ValueSpace/Id/BoldId.pas#L111) · [body 281](../../../Source/ValueSpace/Id/BoldId.pas#L281) |  | ⚪ not started |  |
-| `Match` | method, protected | [112](../../../Source/ValueSpace/Id/BoldId.pas#L112) · [body 286](../../../Source/ValueSpace/Id/BoldId.pas#L286) |  | ⚪ not started |  |
-| `Hash` | method, protected | [113](../../../Source/ValueSpace/Id/BoldId.pas#L113) · [body 941](../../../Source/ValueSpace/Id/BoldId.pas#L941) |  | ⚪ not started |  |
-| `FindById` | method, protected | [114](../../../Source/ValueSpace/Id/BoldId.pas#L114) · [body 291](../../../Source/ValueSpace/Id/BoldId.pas#L291) |  | ⚪ not started |  |
+| `ItemAsBoldObjectId` | method, protected | [110](../../../Source/ValueSpace/Id/BoldId.pas#L110) · [body 275](../../../Source/ValueSpace/Id/BoldId.pas#L275) | [`TBoldObjectIdHashIndex.ItemAsBoldObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L193) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `HashItem` | method, protected | [111](../../../Source/ValueSpace/Id/BoldId.pas#L111) · [body 281](../../../Source/ValueSpace/Id/BoldId.pas#L281) | [`TBoldObjectIdHashIndex.HashItem`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L196) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `Match` | method, protected | [112](../../../Source/ValueSpace/Id/BoldId.pas#L112) · [body 286](../../../Source/ValueSpace/Id/BoldId.pas#L286) | [`TBoldObjectIdHashIndex.Match`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L199) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `Hash` | method, protected | [113](../../../Source/ValueSpace/Id/BoldId.pas#L113) · [body 941](../../../Source/ValueSpace/Id/BoldId.pas#L941) | [`TBoldObjectIdHashIndex.Hash`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L202) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `FindById` | method, protected | [114](../../../Source/ValueSpace/Id/BoldId.pas#L114) · [body 291](../../../Source/ValueSpace/Id/BoldId.pas#L291) | [`TBoldObjectIdHashIndex.FindById`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L205) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
 
 ## TBoldObjectIdList
 
-class at [line 118](../../../Source/ValueSpace/Id/BoldId.pas#L118); ⚪ not started.
+class at [line 118](../../../Source/ValueSpace/Id/BoldId.pas#L118); ✅ verified, C# [`TBoldObjectIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L213).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetObjectIDIndex` | method, private | [120](../../../Source/ValueSpace/Id/BoldId.pas#L120) · [body 908](../../../Source/ValueSpace/Id/BoldId.pas#L908) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [122](../../../Source/ValueSpace/Id/BoldId.pas#L122) · [body 502](../../../Source/ValueSpace/Id/BoldId.pas#L502) |  | ⚪ not started |  |
-| `GetIDByID` | method, protected | [123](../../../Source/ValueSpace/Id/BoldId.pas#L123) · [body 412](../../../Source/ValueSpace/Id/BoldId.pas#L412) |  | ⚪ not started |  |
-| `GetIndexByID` | method, protected | [124](../../../Source/ValueSpace/Id/BoldId.pas#L124) · [body 430](../../../Source/ValueSpace/Id/BoldId.pas#L430) |  | ⚪ not started |  |
-| `GetObjectId` | method, protected | [125](../../../Source/ValueSpace/Id/BoldId.pas#L125) · [body 455](../../../Source/ValueSpace/Id/BoldId.pas#L455) |  | ⚪ not started |  |
-| `GetIdInList` | method, protected | [126](../../../Source/ValueSpace/Id/BoldId.pas#L126) · [body 441](../../../Source/ValueSpace/Id/BoldId.pas#L441) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [127](../../../Source/ValueSpace/Id/BoldId.pas#L127) · [body 507](../../../Source/ValueSpace/Id/BoldId.pas#L507) |  | ⚪ not started |  |
-| `ObjectIDIndex` | property, protected | [128](../../../Source/ValueSpace/Id/BoldId.pas#L128) |  | ⚪ not started |  |
-| `Create` | constructor | [130](../../../Source/ValueSpace/Id/BoldId.pas#L130) · [body 393](../../../Source/ValueSpace/Id/BoldId.pas#L393) |  | ⚪ not started |  |
-| `Add` | method | [131](../../../Source/ValueSpace/Id/BoldId.pas#L131) · [body 460](../../../Source/ValueSpace/Id/BoldId.pas#L460) |  | ⚪ not started |  |
-| `AddIfNotInList` | method | [132](../../../Source/ValueSpace/Id/BoldId.pas#L132) · [body 471](../../../Source/ValueSpace/Id/BoldId.pas#L471) |  | ⚪ not started |  |
-| `AddList` | method | [133](../../../Source/ValueSpace/Id/BoldId.pas#L133) · [body 915](../../../Source/ValueSpace/Id/BoldId.pas#L915) |  | ⚪ not started |  |
-| `Insert` | method | [134](../../../Source/ValueSpace/Id/BoldId.pas#L134) · [body 477](../../../Source/ValueSpace/Id/BoldId.pas#L477) |  | ⚪ not started |  |
-| `ContainsSameIDs` | method | [135](../../../Source/ValueSpace/Id/BoldId.pas#L135) · [body 400](../../../Source/ValueSpace/Id/BoldId.pas#L400) |  | ⚪ not started |  |
-| `Clone` | method | [136](../../../Source/ValueSpace/Id/BoldId.pas#L136) · [body 446](../../../Source/ValueSpace/Id/BoldId.pas#L446) |  | ⚪ not started |  |
-| `CommaSeparatedIdList` | method | [137](../../../Source/ValueSpace/Id/BoldId.pas#L137) · [body 946](../../../Source/ValueSpace/Id/BoldId.pas#L946) |  | ⚪ not started |  |
-| `remove` | method | [138](../../../Source/ValueSpace/Id/BoldId.pas#L138) · [body 959](../../../Source/ValueSpace/Id/BoldId.pas#L959) |  | ⚪ not started |  |
-| `ReplaceID` | method | [139](../../../Source/ValueSpace/Id/BoldId.pas#L139) · [body 489](../../../Source/ValueSpace/Id/BoldId.pas#L489) |  | ⚪ not started |  |
-| `ExactifyIds` | method | [140](../../../Source/ValueSpace/Id/BoldId.pas#L140) · [body 596](../../../Source/ValueSpace/Id/BoldId.pas#L596) |  | ⚪ not started |  |
-| `ApplyTranslationList` | method | [141](../../../Source/ValueSpace/Id/BoldId.pas#L141) · [body 606](../../../Source/ValueSpace/Id/BoldId.pas#L606) |  | ⚪ not started |  |
-| `IDByID` | property | [142](../../../Source/ValueSpace/Id/BoldId.pas#L142) |  | ⚪ not started |  |
-| `IndexByID` | property | [143](../../../Source/ValueSpace/Id/BoldId.pas#L143) |  | ⚪ not started |  |
-| `ObjectIds` | property | [144](../../../Source/ValueSpace/Id/BoldId.pas#L144) |  | ⚪ not started |  |
-| `IdInList` | property | [145](../../../Source/ValueSpace/Id/BoldId.pas#L145) |  | ⚪ not started |  |
+| `GetObjectIDIndex` | method, private | [120](../../../Source/ValueSpace/Id/BoldId.pas#L120) · [body 908](../../../Source/ValueSpace/Id/BoldId.pas#L908) | [`TBoldObjectIdList.GetObjectIDIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L225) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `GetCount` | method, protected | [122](../../../Source/ValueSpace/Id/BoldId.pas#L122) · [body 502](../../../Source/ValueSpace/Id/BoldId.pas#L502) | [`TBoldObjectIdList.GetCount`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L236) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `GetIDByID` | method, protected | [123](../../../Source/ValueSpace/Id/BoldId.pas#L123) · [body 412](../../../Source/ValueSpace/Id/BoldId.pas#L412) | [`TBoldObjectIdList.GetIDByID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L239) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `GetIndexByID` | method, protected | [124](../../../Source/ValueSpace/Id/BoldId.pas#L124) · [body 430](../../../Source/ValueSpace/Id/BoldId.pas#L430) | [`TBoldObjectIdList.GetIndexByID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L258) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `GetObjectId` | method, protected | [125](../../../Source/ValueSpace/Id/BoldId.pas#L125) · [body 455](../../../Source/ValueSpace/Id/BoldId.pas#L455) | [`TBoldObjectIdList.GetObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L265) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `GetIdInList` | method, protected | [126](../../../Source/ValueSpace/Id/BoldId.pas#L126) · [body 441](../../../Source/ValueSpace/Id/BoldId.pas#L441) | [`TBoldObjectIdList.GetIdInList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L268) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `GetStreamName` | method, protected | [127](../../../Source/ValueSpace/Id/BoldId.pas#L127) · [body 507](../../../Source/ValueSpace/Id/BoldId.pas#L507) | [`TBoldObjectIdList.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L271) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `ObjectIDIndex` | property, protected | [128](../../../Source/ValueSpace/Id/BoldId.pas#L128) | [`TBoldObjectIdList.ObjectIDIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L274) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `Create` | constructor | [130](../../../Source/ValueSpace/Id/BoldId.pas#L130) · [body 393](../../../Source/ValueSpace/Id/BoldId.pas#L393) | [`TBoldObjectIdList.TBoldObjectIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L218) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `Add` | method | [131](../../../Source/ValueSpace/Id/BoldId.pas#L131) · [body 460](../../../Source/ValueSpace/Id/BoldId.pas#L460) | [`TBoldObjectIdList.Add`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L278) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `AddIfNotInList` | method | [132](../../../Source/ValueSpace/Id/BoldId.pas#L132) · [body 471](../../../Source/ValueSpace/Id/BoldId.pas#L471) | [`TBoldObjectIdList.AddIfNotInList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L281) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `AddList` | method | [133](../../../Source/ValueSpace/Id/BoldId.pas#L133) · [body 915](../../../Source/ValueSpace/Id/BoldId.pas#L915) | [`TBoldObjectIdList.AddList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L290) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `Insert` | method | [134](../../../Source/ValueSpace/Id/BoldId.pas#L134) · [body 477](../../../Source/ValueSpace/Id/BoldId.pas#L477) | [`TBoldObjectIdList.Insert`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L299) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `ContainsSameIDs` | method | [135](../../../Source/ValueSpace/Id/BoldId.pas#L135) · [body 400](../../../Source/ValueSpace/Id/BoldId.pas#L400) | [`TBoldObjectIdList.ContainsSameIDs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L303) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `Clone` | method | [136](../../../Source/ValueSpace/Id/BoldId.pas#L136) · [body 446](../../../Source/ValueSpace/Id/BoldId.pas#L446) | [`TBoldObjectIdList.Clone`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L315) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `CommaSeparatedIdList` | method | [137](../../../Source/ValueSpace/Id/BoldId.pas#L137) · [body 946](../../../Source/ValueSpace/Id/BoldId.pas#L946) | [`TBoldObjectIdList.CommaSeparatedIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L327) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `remove` | method | [138](../../../Source/ValueSpace/Id/BoldId.pas#L138) · [body 959](../../../Source/ValueSpace/Id/BoldId.pas#L959) | [`TBoldObjectIdList.remove`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L331) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `ReplaceID` | method | [139](../../../Source/ValueSpace/Id/BoldId.pas#L139) · [body 489](../../../Source/ValueSpace/Id/BoldId.pas#L489) | [`TBoldObjectIdList.ReplaceID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L342) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `ExactifyIds` | method | [140](../../../Source/ValueSpace/Id/BoldId.pas#L140) · [body 596](../../../Source/ValueSpace/Id/BoldId.pas#L596) | [`TBoldObjectIdList.ExactifyIds`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L357) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62)<br>✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `ApplyTranslationList` | method | [141](../../../Source/ValueSpace/Id/BoldId.pas#L141) · [body 606](../../../Source/ValueSpace/Id/BoldId.pas#L606) | [`TBoldObjectIdList.ApplyTranslationList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L369) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62)<br>✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `IDByID` | property | [142](../../../Source/ValueSpace/Id/BoldId.pas#L142) | [`TBoldObjectIdList.IDByID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L381) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `IndexByID` | property | [143](../../../Source/ValueSpace/Id/BoldId.pas#L143) | [`TBoldObjectIdList.IndexByID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L382) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `ObjectIds` | property | [144](../../../Source/ValueSpace/Id/BoldId.pas#L144) | [`TBoldObjectIdList.this`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L385) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
+| `IdInList` | property | [145](../../../Source/ValueSpace/Id/BoldId.pas#L145) | [`TBoldObjectIdList.IdInList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L387) | ✅ verified | ✔ [`BoldIdTests.Object_id_list_holds_clones_and_finds_equal_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L62) |
 
 ## TBoldMemberIdList
 
-class at [line 149](../../../Source/ValueSpace/Id/BoldId.pas#L149); ⚪ not started.
+class at [line 149](../../../Source/ValueSpace/Id/BoldId.pas#L149); ✅ verified, C# [`TBoldMemberIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L392).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method | [150](../../../Source/ValueSpace/Id/BoldId.pas#L150) · [body 512](../../../Source/ValueSpace/Id/BoldId.pas#L512) |  | ⚪ not started |  |
-| `GetMemberIds` | method, protected | [152](../../../Source/ValueSpace/Id/BoldId.pas#L152) · [body 517](../../../Source/ValueSpace/Id/BoldId.pas#L517) |  | ⚪ not started |  |
-| `MemberIds` | property | [154](../../../Source/ValueSpace/Id/BoldId.pas#L154) |  | ⚪ not started |  |
+| `GetStreamName` | method | [150](../../../Source/ValueSpace/Id/BoldId.pas#L150) · [body 512](../../../Source/ValueSpace/Id/BoldId.pas#L512) | [`TBoldMemberIdList.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L395) | ✅ verified | ✔ [`BoldIdTests.Member_id_list_returns_member_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L147) |
+| `GetMemberIds` | method, protected | [152](../../../Source/ValueSpace/Id/BoldId.pas#L152) · [body 517](../../../Source/ValueSpace/Id/BoldId.pas#L517) | [`TBoldMemberIdList.GetMemberIds`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L398) | ✅ verified | ✔ [`BoldIdTests.Member_id_list_returns_member_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L147) |
+| `MemberIds` | property | [154](../../../Source/ValueSpace/Id/BoldId.pas#L154) | [`TBoldMemberIdList.this`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L401) | ✅ verified | ✔ [`BoldIdTests.Member_id_list_returns_member_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L147) |
 
 ## TBoldIDTranslationList
 
-class at [line 158](../../../Source/ValueSpace/Id/BoldId.pas#L158); ⚪ not started.
+class at [line 158](../../../Source/ValueSpace/Id/BoldId.pas#L158); ✅ verified, C# [`TBoldIDTranslationList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L408).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetOldId` | method, private | [167](../../../Source/ValueSpace/Id/BoldId.pas#L167) · [body 538](../../../Source/ValueSpace/Id/BoldId.pas#L538) |  | ⚪ not started |  |
-| `GetNewId` | method, private | [168](../../../Source/ValueSpace/Id/BoldId.pas#L168) · [body 543](../../../Source/ValueSpace/Id/BoldId.pas#L543) |  | ⚪ not started |  |
-| `GetCount` | method, private | [169](../../../Source/ValueSpace/Id/BoldId.pas#L169) · [body 548](../../../Source/ValueSpace/Id/BoldId.pas#L548) |  | ⚪ not started |  |
-| `GetTranslateToOldId` | method, private | [170](../../../Source/ValueSpace/Id/BoldId.pas#L170) · [body 559](../../../Source/ValueSpace/Id/BoldId.pas#L559) |  | ⚪ not started |  |
-| `GetTranslateToNewId` | method, private | [171](../../../Source/ValueSpace/Id/BoldId.pas#L171) · [body 575](../../../Source/ValueSpace/Id/BoldId.pas#L575) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [173](../../../Source/ValueSpace/Id/BoldId.pas#L173) · [body 591](../../../Source/ValueSpace/Id/BoldId.pas#L591) |  | ⚪ not started |  |
-| `Create` | constructor | [175](../../../Source/ValueSpace/Id/BoldId.pas#L175) · [body 525](../../../Source/ValueSpace/Id/BoldId.pas#L525) |  | ⚪ not started |  |
-| `Destroy` | destructor | [176](../../../Source/ValueSpace/Id/BoldId.pas#L176) · [body 531](../../../Source/ValueSpace/Id/BoldId.pas#L531) |  | ⚪ not started |  |
-| `AddTranslation` | method | [177](../../../Source/ValueSpace/Id/BoldId.pas#L177) · [body 553](../../../Source/ValueSpace/Id/BoldId.pas#L553) |  | ⚪ not started |  |
-| `Count` | property | [178](../../../Source/ValueSpace/Id/BoldId.pas#L178) |  | ⚪ not started |  |
-| `TranslateToOldId` | property | [179](../../../Source/ValueSpace/Id/BoldId.pas#L179) |  | ⚪ not started |  |
-| `TranslateToNewId` | property | [180](../../../Source/ValueSpace/Id/BoldId.pas#L180) |  | ⚪ not started |  |
-| `OldIds` | property | [181](../../../Source/ValueSpace/Id/BoldId.pas#L181) |  | ⚪ not started |  |
-| `NewIds` | property | [182](../../../Source/ValueSpace/Id/BoldId.pas#L182) |  | ⚪ not started |  |
+| `GetOldId` | method, private | [167](../../../Source/ValueSpace/Id/BoldId.pas#L167) · [body 538](../../../Source/ValueSpace/Id/BoldId.pas#L538) | [`TBoldIDTranslationList.GetOldId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L428) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `GetNewId` | method, private | [168](../../../Source/ValueSpace/Id/BoldId.pas#L168) · [body 543](../../../Source/ValueSpace/Id/BoldId.pas#L543) | [`TBoldIDTranslationList.GetNewId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L429) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `GetCount` | method, private | [169](../../../Source/ValueSpace/Id/BoldId.pas#L169) · [body 548](../../../Source/ValueSpace/Id/BoldId.pas#L548) | [`TBoldIDTranslationList.GetCount`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L430) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `GetTranslateToOldId` | method, private | [170](../../../Source/ValueSpace/Id/BoldId.pas#L170) · [body 559](../../../Source/ValueSpace/Id/BoldId.pas#L559) | [`TBoldIDTranslationList.GetTranslateToOldId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L434) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `GetTranslateToNewId` | method, private | [171](../../../Source/ValueSpace/Id/BoldId.pas#L171) · [body 575](../../../Source/ValueSpace/Id/BoldId.pas#L575) | [`TBoldIDTranslationList.GetTranslateToNewId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L446) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `GetStreamName` | method, protected | [173](../../../Source/ValueSpace/Id/BoldId.pas#L173) · [body 591](../../../Source/ValueSpace/Id/BoldId.pas#L591) | [`TBoldIDTranslationList.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L458) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `Create` | constructor | [175](../../../Source/ValueSpace/Id/BoldId.pas#L175) · [body 525](../../../Source/ValueSpace/Id/BoldId.pas#L525) | [`TBoldIDTranslationList.TBoldIDTranslationList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L414) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `Destroy` | destructor | [176](../../../Source/ValueSpace/Id/BoldId.pas#L176) · [body 531](../../../Source/ValueSpace/Id/BoldId.pas#L531) | [`TBoldIDTranslationList.Dispose`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L421) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `AddTranslation` | method | [177](../../../Source/ValueSpace/Id/BoldId.pas#L177) · [body 553](../../../Source/ValueSpace/Id/BoldId.pas#L553) | [`TBoldIDTranslationList.AddTranslation`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L461) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `Count` | property | [178](../../../Source/ValueSpace/Id/BoldId.pas#L178) | [`TBoldIDTranslationList.Count`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L467) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `TranslateToOldId` | property | [179](../../../Source/ValueSpace/Id/BoldId.pas#L179) | [`TBoldIDTranslationList.TranslateToOldId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L468) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `TranslateToNewId` | property | [180](../../../Source/ValueSpace/Id/BoldId.pas#L180) | [`TBoldIDTranslationList.TranslateToNewId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L469) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `OldIds` | property | [181](../../../Source/ValueSpace/Id/BoldId.pas#L181) | [`TBoldIDTranslationList.OldIds`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L470) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
+| `NewIds` | property | [182](../../../Source/ValueSpace/Id/BoldId.pas#L182) | [`TBoldIDTranslationList.NewIds`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L471) | ✅ verified | ✔ [`BoldIdTests.Translation_list_maps_old_ids_to_new_ones`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L112) |
 
 ## EBoldOperationFailedForIdList
 
-class at [line 186](../../../Source/ValueSpace/Id/BoldId.pas#L186); ⚪ not started.
+class at [line 186](../../../Source/ValueSpace/Id/BoldId.pas#L186); ✅ verified, C# [`EBoldOperationFailedForIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L476).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [190](../../../Source/ValueSpace/Id/BoldId.pas#L190) · [body 628](../../../Source/ValueSpace/Id/BoldId.pas#L628) |  | ⚪ not started |  |
-| `Destroy` | destructor | [191](../../../Source/ValueSpace/Id/BoldId.pas#L191) · [body 634](../../../Source/ValueSpace/Id/BoldId.pas#L634) |  | ⚪ not started |  |
-| `IdList` | property | [192](../../../Source/ValueSpace/Id/BoldId.pas#L192) |  | ⚪ not started |  |
+| `Create` | constructor | [190](../../../Source/ValueSpace/Id/BoldId.pas#L190) · [body 628](../../../Source/ValueSpace/Id/BoldId.pas#L628) | [`EBoldOperationFailedForIdList.EBoldOperationFailedForIdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L481) | ✅ verified | ✔ [`BoldIdTests.Operation_failed_exception_keeps_a_copy_of_the_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L158) |
+| `Destroy` | destructor | [191](../../../Source/ValueSpace/Id/BoldId.pas#L191) · [body 634](../../../Source/ValueSpace/Id/BoldId.pas#L634) | [`EBoldOperationFailedForIdList.IdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L489) | ✅ verified: The garbage collector frees the id list. | ✔ [`BoldIdTests.Operation_failed_exception_keeps_a_copy_of_the_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L158) |
+| `IdList` | property | [192](../../../Source/ValueSpace/Id/BoldId.pas#L192) | [`EBoldOperationFailedForIdList.IdList`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L489) | ✅ verified | ✔ [`BoldIdTests.Operation_failed_exception_keeps_a_copy_of_the_ids`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldIdTests.cs#L158) |
 
 ## TBoldXMLObjectIdStreamer
 
-class at [line 196](../../../Source/ValueSpace/Id/BoldId.pas#L196); ⚪ not started.
+class at [line 196](../../../Source/ValueSpace/Id/BoldId.pas#L196); ✅ verified, C# [`TBoldXMLObjectIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L494).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteObject` | method | [198](../../../Source/ValueSpace/Id/BoldId.pas#L198) · [body 684](../../../Source/ValueSpace/Id/BoldId.pas#L684) |  | ⚪ not started |  |
-| `ReadObject` | method | [199](../../../Source/ValueSpace/Id/BoldId.pas#L199) · [body 643](../../../Source/ValueSpace/Id/BoldId.pas#L643) |  | ⚪ not started |  |
+| `WriteObject` | method | [198](../../../Source/ValueSpace/Id/BoldId.pas#L198) · [body 684](../../../Source/ValueSpace/Id/BoldId.pas#L684) | [`TBoldXMLObjectIdStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L497) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `ReadObject` | method | [199](../../../Source/ValueSpace/Id/BoldId.pas#L199) · [body 643](../../../Source/ValueSpace/Id/BoldId.pas#L643) | [`TBoldXMLObjectIdStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L511) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldXMLInternalObjectIdStreamer
 
-class at [line 223](../../../Source/ValueSpace/Id/BoldId.pas#L223); ⚪ not started.
+class at [line 223](../../../Source/ValueSpace/Id/BoldId.pas#L223); ✅ verified, C# [`TBoldXMLInternalObjectIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L536).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [225](../../../Source/ValueSpace/Id/BoldId.pas#L225) · [body 713](../../../Source/ValueSpace/Id/BoldId.pas#L713) |  | ⚪ not started |  |
-| `WriteObject` | method | [227](../../../Source/ValueSpace/Id/BoldId.pas#L227) · [body 729](../../../Source/ValueSpace/Id/BoldId.pas#L729) |  | ⚪ not started |  |
-| `ReadObject` | method | [228](../../../Source/ValueSpace/Id/BoldId.pas#L228) · [body 718](../../../Source/ValueSpace/Id/BoldId.pas#L718) |  | ⚪ not started |  |
-| `CreateObject` | method | [229](../../../Source/ValueSpace/Id/BoldId.pas#L229) · [body 708](../../../Source/ValueSpace/Id/BoldId.pas#L708) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [225](../../../Source/ValueSpace/Id/BoldId.pas#L225) · [body 713](../../../Source/ValueSpace/Id/BoldId.pas#L713) | [`TBoldXMLInternalObjectIdStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L539) | 🟢 ported |  |
+| `WriteObject` | method | [227](../../../Source/ValueSpace/Id/BoldId.pas#L227) · [body 729](../../../Source/ValueSpace/Id/BoldId.pas#L729) | [`TBoldXMLInternalObjectIdStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L542) | 🟢 ported |  |
+| `ReadObject` | method | [228](../../../Source/ValueSpace/Id/BoldId.pas#L228) · [body 718](../../../Source/ValueSpace/Id/BoldId.pas#L718) | [`TBoldXMLInternalObjectIdStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L549) | 🟢 ported |  |
+| `CreateObject` | method | [229](../../../Source/ValueSpace/Id/BoldId.pas#L229) · [body 708](../../../Source/ValueSpace/Id/BoldId.pas#L708) | [`TBoldXMLInternalObjectIdStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L556) | 🟢 ported |  |
 
 ## TBoldXMLObjectIdListStreamer
 
-class at [line 233](../../../Source/ValueSpace/Id/BoldId.pas#L233); ⚪ not started.
+class at [line 233](../../../Source/ValueSpace/Id/BoldId.pas#L233); ✅ verified, C# [`TBoldXMLObjectIdListStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L560).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [235](../../../Source/ValueSpace/Id/BoldId.pas#L235) · [body 747](../../../Source/ValueSpace/Id/BoldId.pas#L747) |  | ⚪ not started |  |
-| `WriteObject` | method | [237](../../../Source/ValueSpace/Id/BoldId.pas#L237) · [body 776](../../../Source/ValueSpace/Id/BoldId.pas#L776) |  | ⚪ not started |  |
-| `ReadObject` | method | [238](../../../Source/ValueSpace/Id/BoldId.pas#L238) · [body 752](../../../Source/ValueSpace/Id/BoldId.pas#L752) |  | ⚪ not started |  |
-| `CreateObject` | method | [239](../../../Source/ValueSpace/Id/BoldId.pas#L239) · [body 742](../../../Source/ValueSpace/Id/BoldId.pas#L742) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [235](../../../Source/ValueSpace/Id/BoldId.pas#L235) · [body 747](../../../Source/ValueSpace/Id/BoldId.pas#L747) | [`TBoldXMLObjectIdListStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L563) | 🟢 ported |  |
+| `WriteObject` | method | [237](../../../Source/ValueSpace/Id/BoldId.pas#L237) · [body 776](../../../Source/ValueSpace/Id/BoldId.pas#L776) | [`TBoldXMLObjectIdListStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L566) | 🟢 ported |  |
+| `ReadObject` | method | [238](../../../Source/ValueSpace/Id/BoldId.pas#L238) · [body 752](../../../Source/ValueSpace/Id/BoldId.pas#L752) | [`TBoldXMLObjectIdListStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L577) | 🟢 ported |  |
+| `CreateObject` | method | [239](../../../Source/ValueSpace/Id/BoldId.pas#L239) · [body 742](../../../Source/ValueSpace/Id/BoldId.pas#L742) | [`TBoldXMLObjectIdListStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L587) | 🟢 ported |  |
 
 ## TBoldXMLTranslationListStreamer
 
-class at [line 243](../../../Source/ValueSpace/Id/BoldId.pas#L243); ⚪ not started.
+class at [line 243](../../../Source/ValueSpace/Id/BoldId.pas#L243); 🟢 ported, C# [`TBoldXMLTranslationListStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L591).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [245](../../../Source/ValueSpace/Id/BoldId.pas#L245) · [body 800](../../../Source/ValueSpace/Id/BoldId.pas#L800) |  | ⚪ not started |  |
-| `WriteObject` | method | [247](../../../Source/ValueSpace/Id/BoldId.pas#L247) · [body 818](../../../Source/ValueSpace/Id/BoldId.pas#L818) |  | ⚪ not started |  |
-| `ReadObject` | method | [248](../../../Source/ValueSpace/Id/BoldId.pas#L248) · [body 805](../../../Source/ValueSpace/Id/BoldId.pas#L805) |  | ⚪ not started |  |
-| `CreateObject` | method | [249](../../../Source/ValueSpace/Id/BoldId.pas#L249) · [body 795](../../../Source/ValueSpace/Id/BoldId.pas#L795) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [245](../../../Source/ValueSpace/Id/BoldId.pas#L245) · [body 800](../../../Source/ValueSpace/Id/BoldId.pas#L800) | [`TBoldXMLTranslationListStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L594) | 🟢 ported |  |
+| `WriteObject` | method | [247](../../../Source/ValueSpace/Id/BoldId.pas#L247) · [body 818](../../../Source/ValueSpace/Id/BoldId.pas#L818) | [`TBoldXMLTranslationListStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L597) | 🟢 ported |  |
+| `ReadObject` | method | [248](../../../Source/ValueSpace/Id/BoldId.pas#L248) · [body 805](../../../Source/ValueSpace/Id/BoldId.pas#L805) | [`TBoldXMLTranslationListStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L605) | 🟢 ported |  |
+| `CreateObject` | method | [249](../../../Source/ValueSpace/Id/BoldId.pas#L249) · [body 795](../../../Source/ValueSpace/Id/BoldId.pas#L795) | [`TBoldXMLTranslationListStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L613) | 🟢 ported |  |
 
 ## TBoldXMLMemberIdStreamer
 
-class at [line 253](../../../Source/ValueSpace/Id/BoldId.pas#L253); ⚪ not started.
+class at [line 253](../../../Source/ValueSpace/Id/BoldId.pas#L253); 🟢 ported, C# [`TBoldXMLMemberIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L617).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [255](../../../Source/ValueSpace/Id/BoldId.pas#L255) · [body 836](../../../Source/ValueSpace/Id/BoldId.pas#L836) |  | ⚪ not started |  |
-| `WriteObject` | method | [257](../../../Source/ValueSpace/Id/BoldId.pas#L257) · [body 848](../../../Source/ValueSpace/Id/BoldId.pas#L848) |  | ⚪ not started |  |
-| `ReadObject` | method | [258](../../../Source/ValueSpace/Id/BoldId.pas#L258) · [body 841](../../../Source/ValueSpace/Id/BoldId.pas#L841) |  | ⚪ not started |  |
-| `CreateObject` | method | [259](../../../Source/ValueSpace/Id/BoldId.pas#L259) · [body 831](../../../Source/ValueSpace/Id/BoldId.pas#L831) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [255](../../../Source/ValueSpace/Id/BoldId.pas#L255) · [body 836](../../../Source/ValueSpace/Id/BoldId.pas#L836) | [`TBoldXMLMemberIdStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L620) | 🟢 ported |  |
+| `WriteObject` | method | [257](../../../Source/ValueSpace/Id/BoldId.pas#L257) · [body 848](../../../Source/ValueSpace/Id/BoldId.pas#L848) | [`TBoldXMLMemberIdStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L623) | 🟢 ported |  |
+| `ReadObject` | method | [258](../../../Source/ValueSpace/Id/BoldId.pas#L258) · [body 841](../../../Source/ValueSpace/Id/BoldId.pas#L841) | [`TBoldXMLMemberIdStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L627) | 🟢 ported |  |
+| `CreateObject` | method | [259](../../../Source/ValueSpace/Id/BoldId.pas#L259) · [body 831](../../../Source/ValueSpace/Id/BoldId.pas#L831) | [`TBoldXMLMemberIdStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L631) | 🟢 ported |  |
 
 ## TBoldXMLMemberIdListStreamer
 
-class at [line 263](../../../Source/ValueSpace/Id/BoldId.pas#L263); ⚪ not started.
+class at [line 263](../../../Source/ValueSpace/Id/BoldId.pas#L263); 🟢 ported, C# [`TBoldXMLMemberIdListStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L635).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [265](../../../Source/ValueSpace/Id/BoldId.pas#L265) · [body 862](../../../Source/ValueSpace/Id/BoldId.pas#L862) |  | ⚪ not started |  |
-| `WriteObject` | method | [267](../../../Source/ValueSpace/Id/BoldId.pas#L267) · [body 888](../../../Source/ValueSpace/Id/BoldId.pas#L888) |  | ⚪ not started |  |
-| `ReadObject` | method | [268](../../../Source/ValueSpace/Id/BoldId.pas#L268) · [body 867](../../../Source/ValueSpace/Id/BoldId.pas#L867) |  | ⚪ not started |  |
-| `CreateObject` | method | [269](../../../Source/ValueSpace/Id/BoldId.pas#L269) · [body 857](../../../Source/ValueSpace/Id/BoldId.pas#L857) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [265](../../../Source/ValueSpace/Id/BoldId.pas#L265) · [body 862](../../../Source/ValueSpace/Id/BoldId.pas#L862) | [`TBoldXMLMemberIdListStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L638) | 🟢 ported |  |
+| `WriteObject` | method | [267](../../../Source/ValueSpace/Id/BoldId.pas#L267) · [body 888](../../../Source/ValueSpace/Id/BoldId.pas#L888) | [`TBoldXMLMemberIdListStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L641) | 🟢 ported |  |
+| `ReadObject` | method | [268](../../../Source/ValueSpace/Id/BoldId.pas#L268) · [body 867](../../../Source/ValueSpace/Id/BoldId.pas#L867) | [`TBoldXMLMemberIdListStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L651) | 🟢 ported |  |
+| `CreateObject` | method | [269](../../../Source/ValueSpace/Id/BoldId.pas#L269) · [body 857](../../../Source/ValueSpace/Id/BoldId.pas#L857) | [`TBoldXMLMemberIdListStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L661) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldMemberID.fMemberIndex`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L23) (field)
+- [`TBoldObjectId.TBoldObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L76) (constructor)
+- [`TBoldObjectId.ToString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L119) (method)
+- [`TBoldInternalObjectId.fInternalIdentifier`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L127) (field)
+- [`TBoldInternalObjectId.TBoldInternalObjectId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L130) (constructor)
+- [`TBoldExternalObjectID.TBoldExternalObjectID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L170) (constructor)
+- [`TBoldExternalObjectID.TBoldExternalObjectID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L174) (constructor)
+- [`TBoldIDTranslationList.fOldIds`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L410) (field)
+- [`TBoldIDTranslationList.fNewIds`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L411) (field)
+- [`BoldId.TOPSORTEDINDEXTMASK`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L667) (const)
+- [`BoldId.CLASSIDEXACTMASK`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L668) (const)
+- [`BoldId.RegisterStreamers`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs#L670) (method)
 
 ## Dependencies
 

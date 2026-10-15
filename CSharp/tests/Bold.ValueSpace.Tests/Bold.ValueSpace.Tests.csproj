@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of Bold.ValueSpace: ids, value interfaces, free-standing values and XML streaming of value spaces. Test files mirror the Delphi paths.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+  </ItemGroup>
+</Project>

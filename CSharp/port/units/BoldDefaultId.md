@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/Id/BoldDefaultId.pas`](../../../Source/ValueSpace/Id/BoldDefaultId.pas) (219 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 29 symbols done, 0 verified |
+| Status | 🟢 ported: 29 of 29 symbols done, 19 verified |
 
-⚪ 29 not started
+✅ 19 verified · 🟢 10 ported
 
 ## Unit level
 
@@ -18,63 +18,76 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDefaultID` | class | [15](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L15) |  | ⚪ not started |  |
-| `TBoldTimestampedDefaultId` | class | [32](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L32) |  | ⚪ not started |  |
-| `TBoldObjectIdClass` | class reference, implementation | [53](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L53) |  | ⚪ not started |  |
-| `TBoldXMLDefaultIdStreamer` | class, implementation | [61](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L61) |  | ⚪ not started |  |
-| `TBoldXMLTimestampedDefaultIdStreamer` | class, implementation | [71](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L71) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [215](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L215) |  | ⚪ not started |  |
+| `TBoldDefaultID` | class | [15](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L15) | [`TBoldDefaultID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L11) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `TBoldTimestampedDefaultId` | class | [32](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L32) | [`TBoldTimestampedDefaultId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L75) | ✅ verified | ✔ [`BoldDefaultIdTests.Timestamped_ids_carry_their_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L36) |
+| `TBoldObjectIdClass` | class reference, implementation | [53](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L53) | [`[assembly: Delphi] in BoldDefaultId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L4) | 🟢 ported: The global System.Type alias from BoldId.Aliases.cs. |  |
+| `TBoldXMLDefaultIdStreamer` | class, implementation | [61](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L61) | [`TBoldXMLDefaultIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L118) | ✅ verified | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
+| `TBoldXMLTimestampedDefaultIdStreamer` | class, implementation | [71](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L71) | [`TBoldXMLTimestampedDefaultIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L142) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [215](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L215) | [`[assembly: Delphi] in BoldDefaultId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L5) | ✅ verified: Registers the id streamers from the Bold.ValueSpace module initializer. | ✔ [`BoldDefaultXMLStreamingTests.Value_space_round_trips_through_XML`](../../tests/Bold.ValueSpace.Tests/ValueSpace/XMLStreaming/BoldDefaultXMLStreamingTests.cs#L160) |
 
 ## TBoldDefaultID
 
-class at [line 15](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L15); ✅ verified, C# [`TBoldDefaultID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetAsInteger` | method, protected | [18](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L18) · [body 103](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L103) |  | ⚪ not started |  |
-| `GetAsInteger` | method, protected | [19](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L19) · [body 86](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L86) |  | ⚪ not started |  |
-| `GetAsString` | method, protected | [20](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L20) · [body 81](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L81) |  | ⚪ not started |  |
-| `GetHash` | method, protected | [21](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L21) · [body 98](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L98) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [22](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L22) · [body 114](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L114) |  | ⚪ not started |  |
-| `CloneWithClassId` | method | [24](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L24) · [body 108](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L108) |  | ⚪ not started |  |
-| `CloneWithTimeStamp` | method | [25](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L25) · [body 210](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L210) |  | ⚪ not started |  |
-| `CloneWithClassIdAndTimeStamp` | method | [26](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L26) · [body 143](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L143) |  | ⚪ not started |  |
-| `GetIsEqual` | method | [27](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L27) · [body 91](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L91) |  | ⚪ not started |  |
-| `AsInteger` | property | [28](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L28) |  | ⚪ not started |  |
+| `SetAsInteger` | method, protected | [18](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L18) · [body 103](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L103) | [`TBoldDefaultID.SetAsInteger`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L25) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `GetAsInteger` | method, protected | [19](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L19) · [body 86](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L86) | [`TBoldDefaultID.GetAsInteger`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L26) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `GetAsString` | method, protected | [20](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L20) · [body 81](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L81) | [`TBoldDefaultID.GetAsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L27) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `GetHash` | method, protected | [21](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L21) · [body 98](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L98) | [`TBoldDefaultID.GetHash`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L31) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `GetStreamName` | method, protected | [22](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L22) · [body 114](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L114) | [`TBoldDefaultID.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L34) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `CloneWithClassId` | method | [24](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L24) · [body 108](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L108) | [`TBoldDefaultID.CloneWithClassId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L38) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `CloneWithTimeStamp` | method | [25](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L25) · [body 210](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L210) | [`TBoldDefaultID.CloneWithTimeStamp`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L46) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `CloneWithClassIdAndTimeStamp` | method | [26](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L26) · [body 143](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L143) | [`TBoldDefaultID.CloneWithClassIdAndTimeStamp`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L50) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `GetIsEqual` | method | [27](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L27) · [body 91](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L91) | [`TBoldDefaultID.GetIsEqual`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L61) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
+| `AsInteger` | property | [28](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L28) | [`TBoldDefaultID.AsInteger`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L66) | ✅ verified | ✔ [`BoldDefaultIdTests.Default_ids_compare_by_value_and_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L9) |
 
 ## TBoldTimestampedDefaultId
 
-class at [line 32](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L32); ⚪ not started.
+class at [line 32](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L32); ✅ verified, C# [`TBoldTimestampedDefaultId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L75).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [36](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L36) · [body 133](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L133) |  | ⚪ not started |  |
-| `GetTimeStamp` | method, protected | [37](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L37) · [body 138](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L138) |  | ⚪ not started |  |
-| `createWithTimeAndClassId` | constructor | [39](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L39) · [body 127](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L127) |  | ⚪ not started |  |
-| `CloneWithClassId` | method | [40](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L40) · [body 121](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L121) |  | ⚪ not started |  |
-| `TimeStamp` | property | [41](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L41) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [36](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L36) · [body 133](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L133) | [`TBoldTimestampedDefaultId.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L96) | ✅ verified | ✔ [`BoldDefaultIdTests.Timestamped_ids_carry_their_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L36) |
+| `GetTimeStamp` | method, protected | [37](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L37) · [body 138](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L138) | [`TBoldTimestampedDefaultId.GetTimeStamp`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L99) | ✅ verified | ✔ [`BoldDefaultIdTests.Timestamped_ids_carry_their_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L36) |
+| `createWithTimeAndClassId` | constructor | [39](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L39) · [body 127](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L127) | [`TBoldTimestampedDefaultId.TBoldTimestampedDefaultId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L89) | ✅ verified | ✔ [`BoldDefaultIdTests.Timestamped_ids_carry_their_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L36) |
+| `CloneWithClassId` | method | [40](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L40) · [body 121](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L121) | [`TBoldTimestampedDefaultId.CloneWithClassId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L102) | ✅ verified | ✔ [`BoldDefaultIdTests.Timestamped_ids_carry_their_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L36) |
+| `TimeStamp` | property | [41](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L41) | [`TBoldTimestampedDefaultId.TimeStamp`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L110) | ✅ verified | ✔ [`BoldDefaultIdTests.Timestamped_ids_carry_their_timestamp`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldDefaultIdTests.cs#L36) |
 
 ## TBoldXMLDefaultIdStreamer
 
-class at [line 61](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L61); ✅ verified, C# [`TBoldXMLDefaultIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L118).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [63](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L63) · [body 160](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L160) |  | ⚪ not started |  |
-| `WriteObject` | method | [65](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L65) · [body 175](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L175) |  | ⚪ not started |  |
-| `ReadObject` | method | [66](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L66) · [body 165](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L165) |  | ⚪ not started |  |
-| `CreateObject` | method | [67](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L67) · [body 155](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L155) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [63](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L63) · [body 160](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L160) | [`TBoldXMLDefaultIdStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L121) | 🟢 ported |  |
+| `WriteObject` | method | [65](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L65) · [body 175](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L175) | [`TBoldXMLDefaultIdStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L124) | 🟢 ported |  |
+| `ReadObject` | method | [66](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L66) · [body 165](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L165) | [`TBoldXMLDefaultIdStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L131) | 🟢 ported |  |
+| `CreateObject` | method | [67](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L67) · [body 155](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L155) | [`TBoldXMLDefaultIdStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L138) | 🟢 ported |  |
 
 ## TBoldXMLTimestampedDefaultIdStreamer
 
-class at [line 71](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L71); ⚪ not started.
+class at [line 71](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L71); 🟢 ported, C# [`TBoldXMLTimestampedDefaultIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L142).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [73](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L73) · [body 192](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L192) |  | ⚪ not started |  |
-| `WriteObject` | method | [75](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L75) · [body 204](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L204) |  | ⚪ not started |  |
-| `ReadObject` | method | [76](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L76) · [body 197](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L197) |  | ⚪ not started |  |
-| `CreateObject` | method | [77](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L77) · [body 187](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L187) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [73](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L73) · [body 192](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L192) | [`TBoldXMLTimestampedDefaultIdStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L145) | 🟢 ported |  |
+| `WriteObject` | method | [75](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L75) · [body 204](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L204) | [`TBoldXMLTimestampedDefaultIdStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L148) | 🟢 ported |  |
+| `ReadObject` | method | [76](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L76) · [body 197](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L197) | [`TBoldXMLTimestampedDefaultIdStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L155) | 🟢 ported |  |
+| `CreateObject` | method | [77](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L77) · [body 187](../../../Source/ValueSpace/Id/BoldDefaultId.pas#L187) | [`TBoldXMLTimestampedDefaultIdStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L162) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldDefaultID.fDBValue`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L13) (field)
+- [`TBoldDefaultID.TBoldDefaultID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L16) (constructor)
+- [`TBoldDefaultID.TBoldDefaultID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L20) (constructor)
+- [`TBoldTimestampedDefaultId.TBoldTimestampedDefaultId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L79) (constructor)
+- [`TBoldTimestampedDefaultId.TBoldTimestampedDefaultId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L83) (constructor)
+- [`BoldDefaultId.BoldNodeName_DbValue`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L168) (const)
+- [`BoldDefaultId.BoldNodeName_Timestamp`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L169) (const)
+- [`BoldDefaultId.RegisterStreamers`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs#L171) (method)
 
 ## Dependencies
 

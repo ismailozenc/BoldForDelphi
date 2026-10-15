@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/Interfaces/BoldValueInterfaces.pas`](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas) (168 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 85 symbols done, 0 verified |
+| Status | 🟢 ported: 85 of 85 symbols done, 81 verified |
 
-⚪ 85 not started
+✅ 81 verified · 🟢 4 ported
 
 ## Unit level
 
@@ -18,210 +18,210 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IBoldValue` | interface | [29](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L29) |  | ⚪ not started |  |
-| `IBoldNullableValue` | interface | [39](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L39) |  | ⚪ not started |  |
-| `IBoldStringContent` | interface | [47](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L47) |  | ⚪ not started |  |
-| `IBoldStringRepresentable` | interface | [54](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L54) |  | ⚪ not started |  |
-| `IBoldIntegerContent` | interface | [61](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L61) |  | ⚪ not started |  |
-| `IBoldFloatContent` | interface | [68](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L68) |  | ⚪ not started |  |
-| `IBoldCurrencyContent` | interface | [75](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L75) |  | ⚪ not started |  |
-| `IBoldBooleanContent` | interface | [82](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L82) |  | ⚪ not started |  |
-| `IBoldDateContent` | interface | [89](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L89) |  | ⚪ not started |  |
-| `IBoldTimeContent` | interface | [96](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L96) |  | ⚪ not started |  |
-| `IBoldDateTimeContent` | interface | [103](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L103) |  | ⚪ not started |  |
-| `IBoldBlobContent` | interface | [110](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L110) |  | ⚪ not started |  |
-| `IBoldTypedBlob` | interface | [117](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L117) |  | ⚪ not started |  |
-| `IBoldObjectIdRef` | interface | [124](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L124) |  | ⚪ not started |  |
-| `IBoldObjectIdListRef` | interface | [134](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L134) |  | ⚪ not started |  |
-| `IBoldObjectIdListRefPair` | interface | [143](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L143) |  | ⚪ not started |  |
-| `IBoldObjectIdRefPair` | interface | [154](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L154) |  | ⚪ not started |  |
+| `IBoldValue` | interface | [29](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L29) | [`IBoldValue`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L8) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldNullableValue` | interface | [39](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L39) | [`IBoldNullableValue`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L27) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldStringContent` | interface | [47](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L47) | [`IBoldStringContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L36) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldStringRepresentable` | interface | [54](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L54) | [`IBoldStringRepresentable`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L51) | 🟢 ported |  |
+| `IBoldIntegerContent` | interface | [61](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L61) | [`IBoldIntegerContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L60) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldFloatContent` | interface | [68](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L68) | [`IBoldFloatContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L75) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldCurrencyContent` | interface | [75](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L75) | [`IBoldCurrencyContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L90) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldBooleanContent` | interface | [82](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L82) | [`IBoldBooleanContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L105) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldDateContent` | interface | [89](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L89) | [`IBoldDateContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L120) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldTimeContent` | interface | [96](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L96) | [`IBoldTimeContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L135) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldDateTimeContent` | interface | [103](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L103) | [`IBoldDateTimeContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L150) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldBlobContent` | interface | [110](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L110) | [`IBoldBlobContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L165) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldTypedBlob` | interface | [117](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L117) | [`IBoldTypedBlob`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L180) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldObjectIdRef` | interface | [124](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L124) | [`IBoldObjectIdRef`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L195) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldObjectIdListRef` | interface | [134](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L134) | [`IBoldObjectIdListRef`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L213) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldObjectIdListRefPair` | interface | [143](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L143) | [`IBoldObjectIdListRefPair`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L224) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IBoldObjectIdRefPair` | interface | [154](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L154) | [`IBoldObjectIdRefPair`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L237) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldValue
 
-interface at [line 29](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L29); ⚪ not started.
+interface at [line 29](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L29); ✅ verified, C# [`IBoldValue`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentName` | method | [31](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L31) |  | ⚪ not started |  |
-| `AssignContent` | method | [32](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L32) |  | ⚪ not started |  |
-| `GetBoldPersistenceState` | method | [33](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L33) |  | ⚪ not started |  |
-| `SetBoldPersistenceState` | method | [34](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L34) |  | ⚪ not started |  |
-| `BoldPersistenceState` | property | [35](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L35) |  | ⚪ not started |  |
-| `ContentName` | property | [36](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L36) |  | ⚪ not started |  |
+| `GetContentName` | method | [31](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L31) | [`IBoldValue.GetContentName`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L10) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `AssignContent` | method | [32](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L32) | [`IBoldValue.AssignContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L11) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetBoldPersistenceState` | method | [33](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L33) | [`IBoldValue.GetBoldPersistenceState`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L12) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetBoldPersistenceState` | method | [34](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L34) | [`IBoldValue.SetBoldPersistenceState`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L13) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `BoldPersistenceState` | property | [35](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L35) | [`IBoldValue.BoldPersistenceState`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L16) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `ContentName` | property | [36](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L36) | [`IBoldValue.ContentName`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L22) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldNullableValue
 
-interface at [line 39](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L39); ⚪ not started.
+interface at [line 39](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L39); ✅ verified, C# [`IBoldNullableValue`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L27).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetContentToNull` | method | [41](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L41) |  | ⚪ not started |  |
-| `GetContentIsNull` | method | [42](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L42) |  | ⚪ not started |  |
-| `IsNull` | property | [43](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L43) |  | ⚪ not started |  |
+| `SetContentToNull` | method | [41](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L41) | [`IBoldNullableValue.SetContentToNull`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L29) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetContentIsNull` | method | [42](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L42) | [`IBoldNullableValue.GetContentIsNull`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L30) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IsNull` | property | [43](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L43) | [`IBoldNullableValue.IsNull`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L31) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldStringContent
 
-interface at [line 47](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L47); ⚪ not started.
+interface at [line 47](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L47); ✅ verified, C# [`IBoldStringContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L36).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetContentAsString` | method | [49](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L49) |  | ⚪ not started |  |
-| `GetContentAsString` | method | [50](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L50) |  | ⚪ not started |  |
-| `asString` | property | [51](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L51) |  | ⚪ not started |  |
+| `SetContentAsString` | method | [49](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L49) | [`IBoldStringContent.SetContentAsString`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L38) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetContentAsString` | method | [50](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L50) | [`IBoldStringContent.GetContentAsString`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L39) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asString` | property | [51](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L51) | [`IBoldStringContent.asString`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L42) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldStringRepresentable
 
-interface at [line 54](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L54); ⚪ not started.
+interface at [line 54](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L54); 🟢 ported, C# [`IBoldStringRepresentable`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L51).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStringRepresentation` | method | [56](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L56) |  | ⚪ not started |  |
-| `SetStringRepresentation` | method | [57](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L57) |  | ⚪ not started |  |
-| `StringRepresentation` | property | [58](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L58) |  | ⚪ not started |  |
+| `GetStringRepresentation` | method | [56](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L56) | [`IBoldStringRepresentable.GetStringRepresentation`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L53) | 🟢 ported |  |
+| `SetStringRepresentation` | method | [57](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L57) | [`IBoldStringRepresentable.SetStringRepresentation`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L54) | 🟢 ported |  |
+| `StringRepresentation` | property | [58](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L58) | [`IBoldStringRepresentable.StringRepresentation`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L55) | 🟢 ported |  |
 
 ## IBoldIntegerContent
 
-interface at [line 61](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L61); ⚪ not started.
+interface at [line 61](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L61); ✅ verified, C# [`IBoldIntegerContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L60).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsInteger` | method | [63](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L63) |  | ⚪ not started |  |
-| `SetContentAsInteger` | method | [64](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L64) |  | ⚪ not started |  |
-| `asInteger` | property | [65](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L65) |  | ⚪ not started |  |
+| `GetContentAsInteger` | method | [63](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L63) | [`IBoldIntegerContent.GetContentAsInteger`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L63) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsInteger` | method | [64](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L64) | [`IBoldIntegerContent.SetContentAsInteger`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L62) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asInteger` | property | [65](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L65) | [`IBoldIntegerContent.asInteger`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L66) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldFloatContent
 
-interface at [line 68](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L68); ⚪ not started.
+interface at [line 68](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L68); ✅ verified, C# [`IBoldFloatContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L75).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsFloat` | method | [70](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L70) |  | ⚪ not started |  |
-| `SetContentAsFloat` | method | [71](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L71) |  | ⚪ not started |  |
-| `asFloat` | property | [72](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L72) |  | ⚪ not started |  |
+| `GetContentAsFloat` | method | [70](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L70) | [`IBoldFloatContent.GetContentAsFloat`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L78) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsFloat` | method | [71](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L71) | [`IBoldFloatContent.SetContentAsFloat`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L77) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asFloat` | property | [72](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L72) | [`IBoldFloatContent.asFloat`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L81) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldCurrencyContent
 
-interface at [line 75](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L75); ⚪ not started.
+interface at [line 75](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L75); ✅ verified, C# [`IBoldCurrencyContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L90).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsCurrency` | method | [77](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L77) |  | ⚪ not started |  |
-| `SetContentAsCurrency` | method | [78](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L78) |  | ⚪ not started |  |
-| `asCurrency` | property | [79](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L79) |  | ⚪ not started |  |
+| `GetContentAsCurrency` | method | [77](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L77) | [`IBoldCurrencyContent.GetContentAsCurrency`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L93) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsCurrency` | method | [78](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L78) | [`IBoldCurrencyContent.SetContentAsCurrency`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L92) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asCurrency` | property | [79](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L79) | [`IBoldCurrencyContent.asCurrency`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L96) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldBooleanContent
 
-interface at [line 82](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L82); ⚪ not started.
+interface at [line 82](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L82); ✅ verified, C# [`IBoldBooleanContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L105).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsBoolean` | method | [84](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L84) |  | ⚪ not started |  |
-| `SetContentAsBoolean` | method | [85](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L85) |  | ⚪ not started |  |
-| `asBoolean` | property | [86](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L86) |  | ⚪ not started |  |
+| `GetContentAsBoolean` | method | [84](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L84) | [`IBoldBooleanContent.GetContentAsBoolean`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L108) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsBoolean` | method | [85](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L85) | [`IBoldBooleanContent.SetContentAsBoolean`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L107) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asBoolean` | property | [86](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L86) | [`IBoldBooleanContent.asBoolean`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L111) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldDateContent
 
-interface at [line 89](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L89); ⚪ not started.
+interface at [line 89](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L89); ✅ verified, C# [`IBoldDateContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L120).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsDate` | method | [91](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L91) |  | ⚪ not started |  |
-| `SetContentAsDate` | method | [92](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L92) |  | ⚪ not started |  |
-| `asDate` | property | [93](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L93) |  | ⚪ not started |  |
+| `GetContentAsDate` | method | [91](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L91) | [`IBoldDateContent.GetContentAsDate`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L123) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsDate` | method | [92](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L92) | [`IBoldDateContent.SetContentAsDate`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L122) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asDate` | property | [93](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L93) | [`IBoldDateContent.asDate`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L126) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldTimeContent
 
-interface at [line 96](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L96); ⚪ not started.
+interface at [line 96](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L96); ✅ verified, C# [`IBoldTimeContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L135).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsTime` | method | [98](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L98) |  | ⚪ not started |  |
-| `SetContentAsTime` | method | [99](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L99) |  | ⚪ not started |  |
-| `asTime` | property | [100](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L100) |  | ⚪ not started |  |
+| `GetContentAsTime` | method | [98](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L98) | [`IBoldTimeContent.GetContentAsTime`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L138) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsTime` | method | [99](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L99) | [`IBoldTimeContent.SetContentAsTime`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L137) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asTime` | property | [100](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L100) | [`IBoldTimeContent.asTime`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L141) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldDateTimeContent
 
-interface at [line 103](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L103); ⚪ not started.
+interface at [line 103](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L103); ✅ verified, C# [`IBoldDateTimeContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L150).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsDateTime` | method | [105](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L105) |  | ⚪ not started |  |
-| `SetContentAsDateTime` | method | [106](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L106) |  | ⚪ not started |  |
-| `asDateTime` | property | [107](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L107) |  | ⚪ not started |  |
+| `GetContentAsDateTime` | method | [105](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L105) | [`IBoldDateTimeContent.GetContentAsDateTime`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L153) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsDateTime` | method | [106](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L106) | [`IBoldDateTimeContent.SetContentAsDateTime`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L152) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asDateTime` | property | [107](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L107) | [`IBoldDateTimeContent.asDateTime`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L156) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldBlobContent
 
-interface at [line 110](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L110); ⚪ not started.
+interface at [line 110](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L110); ✅ verified, C# [`IBoldBlobContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L165).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentAsBlob` | method | [112](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L112) |  | ⚪ not started |  |
-| `SetContentAsBlob` | method | [113](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L113) |  | ⚪ not started |  |
-| `asBlob` | property | [114](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L114) |  | ⚪ not started |  |
+| `GetContentAsBlob` | method | [112](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L112) | [`IBoldBlobContent.GetContentAsBlob`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L168) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentAsBlob` | method | [113](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L113) | [`IBoldBlobContent.SetContentAsBlob`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L167) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `asBlob` | property | [114](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L114) | [`IBoldBlobContent.asBlob`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L171) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldTypedBlob
 
-interface at [line 117](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L117); ⚪ not started.
+interface at [line 117](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L117); ✅ verified, C# [`IBoldTypedBlob`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L180).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContentTypeContent` | method | [119](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L119) |  | ⚪ not started |  |
-| `SetContentTypeContent` | method | [120](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L120) |  | ⚪ not started |  |
-| `ContentTypeContent` | property | [121](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L121) |  | ⚪ not started |  |
+| `GetContentTypeContent` | method | [119](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L119) | [`IBoldTypedBlob.GetContentTypeContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L183) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetContentTypeContent` | method | [120](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L120) | [`IBoldTypedBlob.SetContentTypeContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L182) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `ContentTypeContent` | property | [121](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L121) | [`IBoldTypedBlob.ContentTypeContent`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L186) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldObjectIdRef
 
-interface at [line 124](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L124); ⚪ not started.
+interface at [line 124](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L124); ✅ verified, C# [`IBoldObjectIdRef`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L195).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetFromId` | method | [126](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L126) |  | ⚪ not started |  |
-| `GetId` | method | [127](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L127) |  | ⚪ not started |  |
-| `GetOrderNo` | method | [128](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L128) |  | ⚪ not started |  |
-| `SetOrderNo` | method | [129](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L129) |  | ⚪ not started |  |
-| `Id` | property | [130](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L130) |  | ⚪ not started |  |
-| `OrderNo` | property | [131](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L131) |  | ⚪ not started |  |
+| `SetFromId` | method | [126](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L126) | [`IBoldObjectIdRef.SetFromId`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L197) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetId` | method | [127](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L127) | [`IBoldObjectIdRef.GetId`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L198) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetOrderNo` | method | [128](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L128) | [`IBoldObjectIdRef.GetOrderNo`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L199) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetOrderNo` | method | [129](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L129) | [`IBoldObjectIdRef.SetOrderNo`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L200) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `Id` | property | [130](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L130) | [`IBoldObjectIdRef.Id`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L201) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `OrderNo` | property | [131](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L131) | [`IBoldObjectIdRef.OrderNo`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L204) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldObjectIdListRef
 
-interface at [line 134](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L134); ⚪ not started.
+interface at [line 134](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L134); ✅ verified, C# [`IBoldObjectIdListRef`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L213).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetFromIdList` | method | [136](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L136) |  | ⚪ not started |  |
-| `GetIdList` | method | [137](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L137) |  | ⚪ not started |  |
-| `IdList` | property | [138](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L138) |  | ⚪ not started |  |
-| `GetCount` | method | [139](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L139) |  | ⚪ not started |  |
-| `Count` | property | [140](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L140) |  | ⚪ not started |  |
+| `SetFromIdList` | method | [136](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L136) | [`IBoldObjectIdListRef.SetFromIdList`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L215) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetIdList` | method | [137](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L137) | [`IBoldObjectIdListRef.GetIdList`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L216) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IdList` | property | [138](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L138) | [`IBoldObjectIdListRef.IdList`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L217) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetCount` | method | [139](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L139) | [`IBoldObjectIdListRef.GetCount`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L218) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `Count` | property | [140](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L140) | [`IBoldObjectIdListRef.Count`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L219) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldObjectIdListRefPair
 
-interface at [line 143](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L143); ⚪ not started.
+interface at [line 143](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L143); ✅ verified, C# [`IBoldObjectIdListRefPair`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L224).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetIdList1` | method | [145](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L145) |  | ⚪ not started |  |
-| `GetIdList2` | method | [146](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L146) |  | ⚪ not started |  |
-| `SetFromIdLists` | method | [147](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L147) |  | ⚪ not started |  |
-| `GetCount` | method | [148](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L148) |  | ⚪ not started |  |
-| `Count` | property | [149](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L149) |  | ⚪ not started |  |
-| `IdList1` | property | [150](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L150) |  | ⚪ not started |  |
-| `IdList2` | property | [151](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L151) |  | ⚪ not started |  |
+| `GetIdList1` | method | [145](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L145) | [`IBoldObjectIdListRefPair.GetIdList1`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L226) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetIdList2` | method | [146](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L146) | [`IBoldObjectIdListRefPair.GetIdList2`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L227) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetFromIdLists` | method | [147](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L147) | [`IBoldObjectIdListRefPair.SetFromIdLists`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L228) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetCount` | method | [148](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L148) | [`IBoldObjectIdListRefPair.GetCount`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L229) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `Count` | property | [149](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L149) | [`IBoldObjectIdListRefPair.Count`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L230) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IdList1` | property | [150](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L150) | [`IBoldObjectIdListRefPair.IdList1`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L231) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `IdList2` | property | [151](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L151) | [`IBoldObjectIdListRefPair.IdList2`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L232) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## IBoldObjectIdRefPair
 
-interface at [line 154](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L154); ⚪ not started.
+interface at [line 154](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L154); ✅ verified, C# [`IBoldObjectIdRefPair`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L237).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetFromIds` | method | [156](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L156) |  | ⚪ not started |  |
-| `GetId1` | method | [157](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L157) |  | ⚪ not started |  |
-| `Id1` | property | [158](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L158) |  | ⚪ not started |  |
-| `GetId2` | method | [159](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L159) |  | ⚪ not started |  |
-| `Id2` | property | [160](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L160) |  | ⚪ not started |  |
-| `GetOrderNo` | method | [161](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L161) |  | ⚪ not started |  |
-| `SetOrderNo` | method | [162](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L162) |  | ⚪ not started |  |
-| `OrderNo` | property | [163](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L163) |  | ⚪ not started |  |
+| `SetFromIds` | method | [156](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L156) | [`IBoldObjectIdRefPair.SetFromIds`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L239) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetId1` | method | [157](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L157) | [`IBoldObjectIdRefPair.GetId1`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L240) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `Id1` | property | [158](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L158) | [`IBoldObjectIdRefPair.Id1`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L241) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetId2` | method | [159](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L159) | [`IBoldObjectIdRefPair.GetId2`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L242) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `Id2` | property | [160](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L160) | [`IBoldObjectIdRefPair.Id2`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L243) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `GetOrderNo` | method | [161](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L161) | [`IBoldObjectIdRefPair.GetOrderNo`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L244) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `SetOrderNo` | method | [162](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L162) | [`IBoldObjectIdRefPair.SetOrderNo`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L245) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
+| `OrderNo` | property | [163](../../../Source/ValueSpace/Interfaces/BoldValueInterfaces.pas#L163) | [`IBoldObjectIdRefPair.OrderNo`](../../src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs#L248) | ✅ verified | ✔ [`BoldValueSpaceInterfacesTests.Value_interface_properties_reach_the_accessors`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Interfaces/BoldValueSpaceInterfacesTests.cs#L113) |
 
 ## Dependencies
 

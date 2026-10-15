@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldValueInterfaces](../../../CSharp/port/units/BoldValueInterfaces.md) | Bold.ValueSpace: ValueSpace/Interfaces/BoldValueInterfaces.cs (not started) | M2 Runtime model and subscriptions |
-| [BoldValueSpaceInterfaces](../../../CSharp/port/units/BoldValueSpaceInterfaces.md) | Bold.ValueSpace: ValueSpace/Interfaces/BoldValueSpaceInterfaces.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldValueInterfaces](../../../CSharp/port/units/BoldValueInterfaces.md) | [Bold.ValueSpace: ValueSpace/Interfaces/BoldValueInterfaces.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueInterfaces.cs) | M2 Runtime model and subscriptions |
+| [BoldValueSpaceInterfaces](../../../CSharp/port/units/BoldValueSpaceInterfaces.md) | [Bold.ValueSpace: ValueSpace/Interfaces/BoldValueSpaceInterfaces.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Interfaces/BoldValueSpaceInterfaces.cs) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

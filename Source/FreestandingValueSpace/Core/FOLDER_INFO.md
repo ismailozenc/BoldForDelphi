@@ -25,7 +25,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldFreeStandingValueFactories](../../../CSharp/port/units/BoldFreeStandingValueFactories.md) | Bold.ValueSpace: FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs (not started) | M2 Runtime model and subscriptions |
-| [BoldFreeStandingValues](../../../CSharp/port/units/BoldFreeStandingValues.md) | Bold.ValueSpace: FreestandingValueSpace/Core/BoldFreeStandingValues.cs (not started) | M2 Runtime model and subscriptions |
-| [FreeStandingValuesConst](../../../CSharp/port/units/FreeStandingValuesConst.md) | Bold.ValueSpace: FreestandingValueSpace/Core/FreeStandingValuesConst.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldFreeStandingValueFactories](../../../CSharp/port/units/BoldFreeStandingValueFactories.md) | [Bold.ValueSpace: FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs](../../../CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValueFactories.cs) | M2 Runtime model and subscriptions |
+| [BoldFreeStandingValues](../../../CSharp/port/units/BoldFreeStandingValues.md) | [Bold.ValueSpace: FreestandingValueSpace/Core/BoldFreeStandingValues.cs](../../../CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/BoldFreeStandingValues.cs) | M2 Runtime model and subscriptions |
+| [FreeStandingValuesConst](../../../CSharp/port/units/FreeStandingValuesConst.md) | [Bold.ValueSpace: FreestandingValueSpace/Core/FreeStandingValuesConst.cs](../../../CSharp/src/Bold.ValueSpace/FreestandingValueSpace/Core/FreeStandingValuesConst.cs) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

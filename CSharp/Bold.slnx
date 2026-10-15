@@ -36,6 +36,7 @@
     <Project Path="tests/Bold.PortTool.Tests/Bold.PortTool.Tests.csproj" />
     <Project Path="tests/Bold.Rtl.Tests/Bold.Rtl.Tests.csproj" />
     <Project Path="tests/Bold.TestSupport/Bold.TestSupport.csproj" />
+    <Project Path="tests/Bold.ValueSpace.Tests/Bold.ValueSpace.Tests.csproj" />
   </Folder>
   <Folder Name="/tools/">
     <Project Path="tools/Bold.PortTool/Bold.PortTool.csproj" />
