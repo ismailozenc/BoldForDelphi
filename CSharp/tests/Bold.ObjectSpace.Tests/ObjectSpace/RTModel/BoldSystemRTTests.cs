@@ -82,10 +82,9 @@ public class BoldSystemRTTests
         Assert.That(system.ConformsTo(system), Is.True);
         Assert.That(system.ConformsTo(system.TypeTypeInfo), Is.False);
 
-        // Without registered attribute classes (BoldAttributes is ported in M3), every attribute reports it has no class.
-        Assert.That(system.SystemIsRunnable, Is.False);
-        Assert.That(system.InitializationLog.ToStringArray(), Has.All.Contains("has no registered DelphiType"));
-        Assert.That(system.InitializationLog.ToStringArray(), Has.Some.EqualTo("Attribute Person.age: Integer has no registered DelphiType"));
+        // BoldAttributes registers the attribute classes, so every attribute finds its class.
+        Assert.That(system.SystemIsRunnable, Is.True, string.Join("\n", system.InitializationLog.ToStringArray()));
+        Assert.That(system.InitializationLog.ToStringArray(), Has.None.Contains("has no registered DelphiType"));
 
         string[] classNames = Enumerable.Range(0, system.TopSortedClasses.Count).Select(i => system.TopSortedClasses[i].ExpressionName).ToArray();
         Assert.That(classNames[0], Is.EqualTo(system.RootClassTypeInfo.ExpressionName));
@@ -178,7 +177,7 @@ public class BoldSystemRTTests
         Assert.That(person.DefaultStringRepresentation, Is.EqualTo(s.Person.EffectiveDefaultStringRepresentation));
         Assert.That(person.Stereotype, Is.EqualTo(""));
         Assert.That(person.QualifiedName, Is.EqualTo("Person"));
-        Assert.That(person.ObjectClass, Is.Null, "TBoldObject is ported in M3");
+        Assert.That(person.ObjectClass, Is.EqualTo(typeof(TBoldObject)), "no generated code: plain objects");
         Assert.That(person.SystemTypeInfo, Is.SameAs(system));
         Assert.That(person.BoldValueType, Is.EqualTo(TBoldValueTypeSet.bvtClass));
 
@@ -239,7 +238,7 @@ public class BoldSystemRTTests
         Assert.That(age.IsAttribute && !age.IsRole && !age.IsSingleRole && !age.IsMultiRole, Is.True);
         Assert.That(age.BoldType, Is.SameAs(system.AttributeTypeInfoByExpressionName("Integer")));
         Assert.That(age.StreamName, Is.EqualTo("Integer"));
-        Assert.That(age.MemberClass, Is.Null, "no attribute class is registered yet");
+        Assert.That(age.MemberClass, Is.EqualTo(typeof(TBAInteger)));
         Assert.That(age.HasInitialValue, Is.True);
         Assert.That(age.InitialValue, Is.EqualTo("18"));
         Assert.That(age.Length, Is.EqualTo(s.Person.Attributes.ItemsByName("age")!.Length));
@@ -299,8 +298,8 @@ public class BoldSystemRTTests
         Assert.That(employer.BoldType, Is.SameAs(company));
         Assert.That(employees.IsMultiRole && employees.DelayedFetch, Is.True);
         Assert.That(employees.BoldType, Is.SameAs(person.ListTypeInfo));
-        Assert.That(employees.MemberClass, Is.Null, "TBoldObjectList is ported in M3");
-        Assert.That(employer.MemberClass, Is.Null, "TBoldObjectReference is ported in M3");
+        Assert.That(employees.MemberClass, Is.EqualTo(typeof(TBoldObjectList)));
+        Assert.That(employer.MemberClass, Is.EqualTo(typeof(TBoldObjectReference)));
         Assert.That(employees.Mandatory, Is.True);
         Assert.That(employees.Multiplicity, Is.EqualTo("1..3"));
         Assert.That(employer.AsString, Is.EqualTo("Person.employer"));
@@ -390,7 +389,7 @@ public class BoldSystemRTTests
         Assert.That(persons.DelphiName, Is.EqualTo("TPersonList"));
         Assert.That(persons.AsString, Is.EqualTo("Collection(Person)"));
         Assert.That(persons.ListElementTypeInfo, Is.SameAs(person));
-        Assert.That(persons.ListClass, Is.Null, "TBoldObjectList is ported in M3");
+        Assert.That(persons.ListClass, Is.EqualTo(typeof(TBoldObjectList)));
         Assert.That(persons.BoldType, Is.SameAs(system.TypeTypeInfo));
         Assert.That(persons.BoldValueType, Is.EqualTo(TBoldValueTypeSet.bvtList));
         Assert.That(managers.ConformsTo(persons) && managers.ConformsTo(untyped), Is.True);
@@ -405,12 +404,14 @@ public class BoldSystemRTTests
         Assert.That(integer.ConformsTo(floatType), Is.True, "integer conforms to float and currency");
         Assert.That(integer.ConformsTo(system.AttributeTypeInfoByExpressionName("Currency")), Is.True);
         Assert.That(floatType.ConformsTo(integer), Is.False);
-        Assert.That(str.ConformsTo(str), Is.False, "without an attribute class nothing conforms");
+        Assert.That(str.ConformsTo(str), Is.True, "the same attribute class conforms");
+        Assert.That(str.ConformsTo(integer), Is.False);
         Assert.That(str.ConformsTo(untyped), Is.True);
-        Assert.That(str.ConformsTo(system.ListTypeInfoByElement(str)), Is.False);
-        Assert.That(str.AttributeClass, Is.Null);
-        Assert.That(str.IsAbstract, Is.True, "an unregistered attribute type is abstract");
-        Assert.That(str.SuperAttributeTypeInfo, Is.Null);
+        Assert.That(str.ConformsTo(system.ListTypeInfoByElement(str)), Is.True, "an attribute conforms to a list of its type");
+        Assert.That(str.AttributeClass, Is.EqualTo(typeof(TBAString)));
+        Assert.That(str.IsAbstract, Is.False, "TBAString is registered as concrete");
+        Assert.That(system.AttributeTypeInfoByExpressionName("Numeric")!.IsAbstract, Is.True, "TBANumeric is registered as abstract");
+        Assert.That(integer.SuperAttributeTypeInfo, Is.SameAs(system.AttributeTypeInfoByExpressionName("Numeric")));
         Assert.That(str.BoldIsA(str), Is.True);
         Assert.That(str.BoldIsA(integer) || str.BoldIsA(person), Is.False);
         Assert.That(str.BoldType, Is.SameAs(system.TypeTypeInfo));

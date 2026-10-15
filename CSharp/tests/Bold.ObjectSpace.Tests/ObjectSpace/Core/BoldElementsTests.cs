@@ -272,7 +272,7 @@ public class BoldElementsTests
         system.SetKind(TBoldValueTypeSet.bvtSystem);
         Assert.That(system.BoldValueType, Is.EqualTo(TBoldValueTypeSet.bvtSystem));
         Assert.That(system.Mutable, Is.False, "meta elements are immutable");
-        Assert.Throws<EBoldFeatureNotImplementedYet>(() => type.GetAsList(new TBoldIndirectElement()), "needs TBoldTypeList (M3)");
+        Assert.Throws<InvalidCastException>(() => type.GetAsList(new TBoldIndirectElement()), "a type list needs a TBoldSystemTypeInfo (Delphi: EInvalidCast)");
 
         Assert.That(a.EvaluateExpressionAsDirectElement("self"), Is.SameAs(a));
         Assert.That(a.EvaluateExpressionAsDirectElement("new"), Is.Null, "a new result is not an existing element");

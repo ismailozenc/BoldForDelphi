@@ -310,6 +310,27 @@ public static partial class SysUtils
     public static bool TryStrToFloat(string? s, out double value) =>
         double.TryParse(Trim(s), NumberStyles.Float, Invariant, out value);
 
+    /// <summary>Delphi StrToCurr: a decimal rounded to Currency's four decimals.</summary>
+    public static decimal StrToCurr(string? s) =>
+        TryStrToCurr(s, out decimal value) ? value : throw new EConvertError($"'{s}' is not a valid floating point value");
+
+    public static bool TryStrToCurr(string? s, out decimal value)
+    {
+        bool ok = decimal.TryParse(Trim(s), NumberStyles.Float, Invariant, out value);
+        if (ok)
+        {
+            value = Math.Round(value, 4, MidpointRounding.ToEven);
+        }
+
+        return ok;
+    }
+
+    /// <summary>Delphi CurrToStr: up to four decimals, no trailing zeros.</summary>
+    public static string CurrToStr(decimal value) => Math.Round(value, 4, MidpointRounding.ToEven).ToString("0.####", Invariant);
+
+    /// <summary>A double as Delphi Currency: rounded to four decimals.</summary>
+    public static decimal DoubleToCurr(double value) => Math.Round((decimal)value, 4, MidpointRounding.ToEven);
+
     /// <summary>Delphi FloatToStr: up to 15 significant digits, no trailing zeros.</summary>
     public static string FloatToStr(double value) => FormatGeneral(value, 15);
 

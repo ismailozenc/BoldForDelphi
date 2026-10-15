@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas`](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas) (811 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 71 symbols done, 0 verified |
+| Status | 🟢 ported: 71 of 71 symbols done, 0 verified |
 
-⚪ 71 not started
+🟢 69 ported · 🔵 1 replaced · ⚫ 1 dropped
 
 ## Unit level
 
@@ -18,126 +18,137 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `brMLString` | const | [17](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L17) |  | ⚪ not started |  |
-| `TBAStringClass` | class reference | [28](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L28) |  | ⚪ not started |  |
-| `TBAMLValueSetValue` | class | [31](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L31) |  | ⚪ not started |  |
-| `TBAMLValueSetValueList` | class | [47](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L47) |  | ⚪ not started |  |
-| `TBAMLValueSet` | class | [55](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L55) |  | ⚪ not started |  |
-| `TBALanguage` | class | [70](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L70) |  | ⚪ not started |  |
-| `TBAMLString` | class | [77](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L77) |  | ⚪ not started |  |
-| `TBAMLString_Proxy` | class | [107](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L107) |  | ⚪ not started |  |
-| `TBAMLSubString` | class | [115](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L115) |  | ⚪ not started |  |
-| `BoldPrimaryLanguage` | routine | [120](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L120) · [body 223](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L223) |  | ⚪ not started |  |
-| `BoldSetPrimaryLanguageByName` | routine | [121](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L121) · [body 235](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L235) |  | ⚪ not started |  |
-| `BoldSecondaryLanguage` | routine | [123](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L123) · [body 229](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L229) |  | ⚪ not started |  |
-| `BoldSetSecondaryLanguageByName` | routine | [124](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L124) · [body 241](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L241) |  | ⚪ not started |  |
-| `BoldLanguageList` | routine | [125](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L125) · [body 187](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L187) |  | ⚪ not started |  |
-| `BoldMLStringSecondaryFallBack` | var | [128](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L128) |  | ⚪ not started |  |
-| `BoldMLStringUnknownFallback` | var | [129](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L129) |  | ⚪ not started |  |
-| `BoldMLLanguageClassName` | var | [131](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L131) |  | ⚪ not started |  |
-| `BoldMLLanguageNameAttributeName` | var | [132](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L132) |  | ⚪ not started |  |
-| `BoldMLLanguageNumberAttributeName` | var | [133](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L133) |  | ⚪ not started |  |
-| `EnsureLanguageList` | routine, implementation | [157](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L157) |  | ⚪ not started |  |
-| `ValidateLanguage` | routine, implementation | [193](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L193) |  | ⚪ not started |  |
-| `EnsureValuesForElement` | routine, implementation | [202](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L202) |  | ⚪ not started |  |
-| `charArray` | array, implementation | [575](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L575) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [776](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L776) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [785](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L785) |  | ⚪ not started |  |
+| `brMLString` | const | [17](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L17) | [`BoldMLAttributes.brMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L22) | 🟢 ported |  |
+| `TBAStringClass` | class reference | [28](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L28) | [`[assembly: Delphi] in BoldMLAttributes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L12) | 🟢 ported: System.Type: the string class of a multi-language string's parts. |  |
+| `TBAMLValueSetValue` | class | [31](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L31) | [`TBAMLValueSetValue`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L157) | 🟢 ported |  |
+| `TBAMLValueSetValueList` | class | [47](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L47) | [`TBAMLValueSetValueList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L215) | 🟢 ported |  |
+| `TBAMLValueSet` | class | [55](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L55) | [`TBAMLValueSet`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L252) | 🟢 ported |  |
+| `TBALanguage` | class | [70](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L70) | [`TBALanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L339) | 🟢 ported |  |
+| `TBAMLString` | class | [77](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L77) | [`TBAMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L376) | 🟢 ported |  |
+| `TBAMLString_Proxy` | class | [107](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L107) | [`TBAMLString_Proxy`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L676) | 🟢 ported |  |
+| `TBAMLSubString` | class | [115](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L115) | [`TBAMLSubString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L690) | 🟢 ported |  |
+| `BoldPrimaryLanguage` | routine | [120](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L120) · [body 223](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L223) | [`BoldMLAttributes.BoldPrimaryLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L112) | 🟢 ported |  |
+| `BoldSetPrimaryLanguageByName` | routine | [121](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L121) · [body 235](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L235) | [`BoldMLAttributes.BoldSetPrimaryLanguageByName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L127) | 🟢 ported |  |
+| `BoldSecondaryLanguage` | routine | [123](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L123) · [body 229](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L229) | [`BoldMLAttributes.BoldSecondaryLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L120) | 🟢 ported |  |
+| `BoldSetSecondaryLanguageByName` | routine | [124](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L124) · [body 241](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L241) | [`BoldMLAttributes.BoldSetSecondaryLanguageByName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L134) | 🟢 ported |  |
+| `BoldLanguageList` | routine | [125](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L125) · [body 187](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L187) | [`BoldMLAttributes.BoldLanguageList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L71) | 🟢 ported |  |
+| `BoldMLStringSecondaryFallBack` | var | [128](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L128) | [`BoldMLAttributes.BoldMLStringSecondaryFallBack`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L24) | 🟢 ported |  |
+| `BoldMLStringUnknownFallback` | var | [129](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L129) | [`BoldMLAttributes.BoldMLStringUnknownFallback`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L25) | 🟢 ported |  |
+| `BoldMLLanguageClassName` | var | [131](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L131) | [`BoldMLAttributes.BoldMLLanguageClassName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L26) | 🟢 ported |  |
+| `BoldMLLanguageNameAttributeName` | var | [132](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L132) | [`BoldMLAttributes.BoldMLLanguageNameAttributeName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L27) | 🟢 ported |  |
+| `BoldMLLanguageNumberAttributeName` | var | [133](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L133) | [`BoldMLAttributes.BoldMLLanguageNumberAttributeName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L28) | 🟢 ported |  |
+| `EnsureLanguageList` | routine, implementation | [157](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L157) | [`BoldMLAttributes.EnsureLanguageList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L38) | 🟢 ported |  |
+| `ValidateLanguage` | routine, implementation | [193](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L193) | [`BoldMLAttributes.ValidateLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L79) | 🟢 ported |  |
+| `EnsureValuesForElement` | routine, implementation | [202](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L202) | [`BoldMLAttributes.EnsureValuesForElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L90) | 🟢 ported |  |
+| `charArray` | array, implementation | [575](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L575) | [`[assembly: Delphi] in BoldMLAttributes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L13) | ⚫ dropped: An unused type in the implementation section. |  |
+| `initialization` | initialization, implementation | [776](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L776) | [`BoldMLAttributes.Initialization`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L145) | 🟢 ported: A module initializer, so the classes are registered before any model is used. |  |
+| `finalization` | finalization, implementation | [785](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L785) | [`[assembly: Delphi] in BoldMLAttributes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L14) | 🟢 ported: Freed the language members and removed the descriptors; the process owns them until it ends. |  |
 
 ## TBAMLValueSetValue
 
-class at [line 31](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L31); ⚪ not started.
+class at [line 31](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L31); 🟢 ported, C# [`TBAMLValueSetValue`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L157).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStringRepresentationCount` | method, protected | [35](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L35) · [body 262](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L262) |  | ⚪ not started |  |
-| `GetStringRepresentation` | method, protected | [36](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L36) · [body 267](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L267) |  | ⚪ not started |  |
-| `SetStringRepresentation` | method, protected | [37](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L37) · [body 275](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L275) |  | ⚪ not started |  |
-| `AddMLString` | method, protected | [38](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L38) · [body 291](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L291) |  | ⚪ not started |  |
-| `GetMLString` | method, protected | [39](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L39) · [body 283](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L283) |  | ⚪ not started |  |
-| `Create` | constructor | [41](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L41) · [body 249](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L249) |  | ⚪ not started |  |
-| `SubscribeToStringRepresentation` | method | [42](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L42) · [body 667](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L667) |  | ⚪ not started |  |
-| `Destroy` | destructor | [43](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L43) · [body 256](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L256) |  | ⚪ not started |  |
+| `GetStringRepresentationCount` | method, protected | [35](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L35) · [body 262](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L262) | [`TBAMLValueSetValue.GetStringRepresentationCount`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L169) | 🟢 ported |  |
+| `GetStringRepresentation` | method, protected | [36](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L36) · [body 267](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L267) | [`TBAMLValueSetValue.GetStringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L172) | 🟢 ported |  |
+| `SetStringRepresentation` | method, protected | [37](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L37) · [body 275](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L275) | [`TBAMLValueSetValue.SetStringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L178) | 🟢 ported |  |
+| `AddMLString` | method, protected | [38](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L38) · [body 291](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L291) | [`TBAMLValueSetValue.AddMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L191) | 🟢 ported |  |
+| `GetMLString` | method, protected | [39](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L39) · [body 283](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L283) | [`TBAMLValueSetValue.GetMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L194) | 🟢 ported |  |
+| `Create` | constructor | [41](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L41) · [body 249](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L249) | [`TBAMLValueSetValue.TBAMLValueSetValue`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L162) | 🟢 ported |  |
+| `SubscribeToStringRepresentation` | method | [42](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L42) · [body 667](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L667) | [`TBAMLValueSetValue.SubscribeToStringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L200) | 🟢 ported |  |
+| `Destroy` | destructor | [43](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L43) · [body 256](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L256) | [`TBAMLValueSetValue.GetStringRepresentationCount`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L169) | 🔵 replaced: Freed the member list; the garbage collector does that in .NET. |  |
 
 ## TBAMLValueSetValueList
 
-class at [line 47](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L47); ⚪ not started.
+class at [line 47](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L47); 🟢 ported, C# [`TBAMLValueSetValueList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L215).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FindByStringAndLanguage` | method, protected | [49](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L49) · [body 314](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L314) |  | ⚪ not started |  |
-| `AddMembers` | method, protected | [50](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L50) · [body 298](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L298) |  | ⚪ not started |  |
+| `FindByStringAndLanguage` | method, protected | [49](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L49) · [body 314](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L314) | [`TBAMLValueSetValueList.FindByStringAndLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L220) | 🟢 ported |  |
+| `AddMembers` | method, protected | [50](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L50) · [body 298](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L298) | [`TBAMLValueSetValueList.AddMembers`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L235) | 🟢 ported |  |
 
 ## TBAMLValueSet
 
-class at [line 55](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L55); ⚪ not started.
+class at [line 55](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L55); 🟢 ported, C# [`TBAMLValueSet`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L252).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStringRepresentationByLanguage` | method, protected | [57](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L57) · [body 378](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L378) |  | ⚪ not started |  |
-| `SetStringRepresentationByLanguage` | method, protected | [58](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L58) · [body 386](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L386) |  | ⚪ not started |  |
-| `GetStringBylanguage` | method, protected | [59](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L59) · [body 343](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L343) |  | ⚪ not started |  |
-| `InitializeMember` | method, protected | [60](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L60) · [body 359](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L359) |  | ⚪ not started |  |
-| `DefaultSubscribe` | method | [62](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L62) · [body 331](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L331) |  | ⚪ not started |  |
-| `SubscribeToStringRepresentation` | method | [63](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L63) · [body 677](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L677) |  | ⚪ not started |  |
-| `SubscribeToLanguage` | method | [64](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L64) · [body 337](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L337) |  | ⚪ not started |  |
-| `CompareToEnumLiteral` | method | [65](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L65) · [body 760](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L760) |  | ⚪ not started |  |
-| `StringRepresentationByLanguage` | property | [66](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L66) |  | ⚪ not started |  |
+| `GetStringRepresentationByLanguage` | method, protected | [57](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L57) · [body 378](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L378) | [`TBAMLValueSet.GetStringRepresentationByLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L259) | 🟢 ported |  |
+| `SetStringRepresentationByLanguage` | method, protected | [58](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L58) · [body 386](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L386) | [`TBAMLValueSet.SetStringRepresentationByLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L264) | 🟢 ported |  |
+| `GetStringBylanguage` | method, protected | [59](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L59) · [body 343](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L343) | [`TBAMLValueSet.GetStringBylanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L274) | 🟢 ported |  |
+| `InitializeMember` | method, protected | [60](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L60) · [body 359](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L359) | [`TBAMLValueSet.InitializeMember`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L283) | 🟢 ported |  |
+| `DefaultSubscribe` | method | [62](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L62) · [body 331](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L331) | [`TBAMLValueSet.DefaultSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L298) | 🟢 ported |  |
+| `SubscribeToStringRepresentation` | method | [63](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L63) · [body 677](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L677) | [`TBAMLValueSet.SubscribeToStringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L305) | 🟢 ported: Indexes Values by the value's integer, as Delphi does. |  |
+| `SubscribeToLanguage` | method | [64](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L64) · [body 337](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L337) | [`TBAMLValueSet.SubscribeToLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L309) | 🟢 ported |  |
+| `CompareToEnumLiteral` | method | [65](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L65) · [body 760](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L760) | [`TBAMLValueSet.CompareToEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L317) | 🟢 ported |  |
+| `StringRepresentationByLanguage` | property | [66](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L66) | [`TBAMLValueSet.StringRepresentationByLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L334) | 🟢 ported: An indexed property in Delphi; here a getter method, with SetStringRepresentationByLanguage to set. |  |
 
 ## TBALanguage
 
-class at [line 70](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L70); ⚪ not started.
+class at [line 70](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L70); 🟢 ported, C# [`TBALanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L339).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValues` | method, protected | [72](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L72) · [body 401](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L401) |  | ⚪ not started |  |
-| `InitializeMember` | method, protected | [73](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L73) · [body 636](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L636) |  | ⚪ not started |  |
+| `GetValues` | method, protected | [72](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L72) · [body 401](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L401) | [`TBALanguage.GetValues`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L346) | 🟢 ported |  |
+| `InitializeMember` | method, protected | [73](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L73) · [body 636](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L636) | [`TBALanguage.InitializeMember`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L354) | 🟢 ported |  |
 
 ## TBAMLString
 
-class at [line 77](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L77); ⚪ not started.
+class at [line 77](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L77); 🟢 ported, C# [`TBAMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L376).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `InternalSetDataValue` | method, private | [80](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L80) · [body 519](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L519) |  | ⚪ not started |  |
-| `GetContentAsBlob` | method, private | [81](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L81) · [body 428](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L428) |  | ⚪ not started |  |
-| `SetContentAsBlob` | method, private | [82](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L82) · [body 433](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L433) |  | ⚪ not started |  |
-| `GetStringBylanguage` | method, private | [83](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L83) · [body 453](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L453) |  | ⚪ not started |  |
-| `AssignContentValue` | method, protected | [85](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L85) · [body 693](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L693) |  | ⚪ not started |  |
-| `GetStringRepresentation` | method, protected | [86](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L86) · [body 470](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L470) |  | ⚪ not started |  |
-| `SetStringRepresentation` | method, protected | [87](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L87) · [body 553](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L553) |  | ⚪ not started |  |
-| `ReceiveEventFromOwned` | method, protected | [88](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L88) · [body 438](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L438) |  | ⚪ not started |  |
-| `ReceiveQueryFromOwned` | method, protected | [89](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L89) · [body 684](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L684) |  | ⚪ not started |  |
-| `StringClass` | method, protected | [90](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L90) · [body 614](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L614) |  | ⚪ not started |  |
-| `InitializeMember` | method, protected | [91](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L91) · [body 660](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L660) |  | ⚪ not started |  |
-| `ProxyClass` | method, protected | [92](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L92) · [body 715](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L715) |  | ⚪ not started |  |
-| `Destroy` | destructor | [94](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L94) · [body 408](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L408) |  | ⚪ not started |  |
-| `GetStreamName` | method | [95](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L95) · [body 577](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L577) |  | ⚪ not started |  |
-| `ValidateString` | method | [96](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L96) · [body 627](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L627) |  | ⚪ not started |  |
-| `ValidateCharacter` | method | [97](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L97) · [body 619](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L619) |  | ⚪ not started |  |
-| `Assign` | method | [98](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L98) · [body 420](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L420) |  | ⚪ not started |  |
-| `DefaultSubscribe` | method | [99](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L99) · [body 561](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L561) |  | ⚪ not started |  |
-| `SubscribeToStringRepresentation` | method | [100](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L100) · [body 582](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L582) |  | ⚪ not started |  |
-| `SubscribeToLanguage` | method | [101](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L101) · [body 568](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L568) |  | ⚪ not started |  |
-| `ProxyInterface` | method | [102](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L102) · [body 720](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L720) |  | ⚪ not started |  |
-| `AsStringByLanguage` | property | [103](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L103) |  | ⚪ not started |  |
+| `InternalSetDataValue` | method, private | [80](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L80) · [body 519](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L519) | [`TBAMLString.InternalSetDataValue`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L386) | 🟢 ported |  |
+| `GetContentAsBlob` | method, private | [81](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L81) · [body 428](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L428) | [`TBAMLString.GetContentAsBlob`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L419) | 🟢 ported |  |
+| `SetContentAsBlob` | method, private | [82](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L82) · [body 433](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L433) | [`TBAMLString.SetContentAsBlob`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L420) | 🟢 ported |  |
+| `GetStringBylanguage` | method, private | [83](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L83) · [body 453](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L453) | [`TBAMLString.GetStringBylanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L424) | 🟢 ported |  |
+| `AssignContentValue` | method, protected | [85](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L85) · [body 693](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L693) | [`TBAMLString.AssignContentValue`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L443) | 🟢 ported |  |
+| `GetStringRepresentation` | method, protected | [86](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L86) · [body 470](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L470) | [`TBAMLString.GetStringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L463) | 🟢 ported |  |
+| `SetStringRepresentation` | method, protected | [87](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L87) · [body 553](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L553) | [`TBAMLString.SetStringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L519) | 🟢 ported |  |
+| `ReceiveEventFromOwned` | method, protected | [88](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L88) · [body 438](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L438) | [`TBAMLString.ReceiveEventFromOwned`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L533) | 🟢 ported |  |
+| `ReceiveQueryFromOwned` | method, protected | [89](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L89) · [body 684](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L684) | [`TBAMLString.ReceiveQueryFromOwned`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L553) | 🟢 ported |  |
+| `StringClass` | method, protected | [90](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L90) · [body 614](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L614) | [`TBAMLString.StringClass`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L557) | 🟢 ported |  |
+| `InitializeMember` | method, protected | [91](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L91) · [body 660](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L660) | [`TBAMLString.InitializeMember`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L560) | 🟢 ported |  |
+| `ProxyClass` | method, protected | [92](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L92) · [body 715](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L715) | [`TBAMLString.ProxyClass`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L567) | 🟢 ported |  |
+| `Destroy` | destructor | [94](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L94) · [body 408](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L408) | [`TBAMLString.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L570) | 🟢 ported |  |
+| `GetStreamName` | method | [95](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L95) · [body 577](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L577) | [`TBAMLString.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L584) | 🟢 ported |  |
+| `ValidateString` | method | [96](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L96) · [body 627](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L627) | [`TBAMLString.ValidateString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L587) | 🟢 ported |  |
+| `ValidateCharacter` | method | [97](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L97) · [body 619](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L619) | [`TBAMLString.ValidateCharacter`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L591) | 🟢 ported |  |
+| `Assign` | method | [98](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L98) · [body 420](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L420) | [`TBAMLString.Assign`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L595) | 🟢 ported |  |
+| `DefaultSubscribe` | method | [99](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L99) · [body 561](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L561) | [`TBAMLString.DefaultSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L608) | 🟢 ported |  |
+| `SubscribeToStringRepresentation` | method | [100](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L100) · [body 582](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L582) | [`TBAMLString.SubscribeToStringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L617) | 🟢 ported |  |
+| `SubscribeToLanguage` | method | [101](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L101) · [body 568](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L568) | [`TBAMLString.SubscribeToLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L646) | 🟢 ported |  |
+| `ProxyInterface` | method | [102](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L102) · [body 720](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L720) | [`TBAMLString.ProxyInterface`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L653) | 🟢 ported |  |
+| `AsStringByLanguage` | property | [103](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L103) | [`TBAMLString.AsStringByLanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L671) | 🟢 ported: An indexed property in Delphi; here a method. |  |
 
 ## TBAMLString_Proxy
 
-class at [line 107](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L107); ⚪ not started.
+class at [line 107](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L107); 🟢 ported, C# [`TBAMLString_Proxy`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L676).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetProxedMLString` | method, private | [109](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L109) · [body 710](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L710) |  | ⚪ not started |  |
-| `ProxedMLString` | property, protected | [111](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L111) |  | ⚪ not started |  |
+| `GetProxedMLString` | method, private | [109](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L109) · [body 710](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L710) | [`TBAMLString_Proxy.GetProxedMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L679) | 🟢 ported |  |
+| `ProxedMLString` | property, protected | [111](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L111) | [`TBAMLString_Proxy.ProxedMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L682) | 🟢 ported: Delphi implements IBoldBlobContent by delegation to this property; here the proxy implements it and forwards. |  |
 
 ## TBAMLSubString
 
-class at [line 115](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L115); ⚪ not started.
+class at [line 115](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L115); 🟢 ported, C# [`TBAMLSubString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L690).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `StartModify` | method, protected | [117](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L117) · [body 734](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L734) |  | ⚪ not started |  |
+| `StartModify` | method, protected | [117](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L117) · [body 734](../../../Source/ObjectSpace/BORepresentation/BoldMLAttributes.pas#L734) | [`TBAMLSubString.StartModify`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L697) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBAMLValueSet.TBAMLValueSet`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L254) (constructor)
+- [`TBALanguage.TBALanguage`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L341) (constructor)
+- [`TBAMLString.TBAMLString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L380) (constructor)
+- [`TBAMLString_Proxy.GetContentAsBlob`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L684) (method)
+- [`TBAMLString_Proxy.SetContentAsBlob`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L685) (method)
+- [`TBAMLSubString.TBAMLSubString`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldMLAttributes.cs#L692) (constructor)
 
 ## Dependencies
 

@@ -54,6 +54,15 @@ public static partial class SysUtils
 
     public static DateTime Time() => DateTime.FromOADate(0) + DateTime.Now.TimeOfDay;
 
+    /// <summary>Delphi Int(TDateTime) / DateOf: the date part, midnight.</summary>
+    public static DateTime DateOf(DateTime Value) => Value.Date;
+
+    /// <summary>Delphi Frac(TDateTime) / TimeOf: the time part on day zero (1899-12-30).</summary>
+    public static DateTime TimeOf(DateTime Value) => DateTime.FromOADate(0) + Value.TimeOfDay;
+
+    /// <summary>Delphi TDateTime 0: 1899-12-30 00:00.</summary>
+    public static DateTime ZeroDateTime => DateTime.FromOADate(0);
+
     public static DateTime EncodeDate(int Year, int Month, int Day)
     {
         if (Year < 1 || Year > 9999 || Month < 1 || Month > 12 || Day < 1 || Day > DateTime.DaysInMonth(Year, Month))

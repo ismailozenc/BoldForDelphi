@@ -153,7 +153,7 @@ public abstract class TBoldElement : TBoldSubscribableObject
             : SysUtils.Format(BoldCoreConsts.sAssignNilNotSupported, GetType().Name));
 
     [Delphi(PortStatus.Ported)]
-    protected void MutableError(string NewValue) =>
+    protected internal void MutableError(string NewValue) =>
         throw new EBold(SysUtils.Format(BoldCoreConsts.sTriedToChangeImmutableElement, GetType().Name, AsString, NewValue));
 
     [Delphi(PortStatus.Ported)]

@@ -946,7 +946,7 @@ public abstract class TBoldAttribute : TBoldMember
     protected static bool EitherIsNull(TBoldAttribute Attribute1, TBoldAttribute Attribute2) => Attribute1.IsNull || Attribute2.IsNull;
 
     [Delphi(PortStatus.Ported)]
-    protected void EnsureNotNull()
+    protected internal void EnsureNotNull()
     {
         if (IsNull)
         {
@@ -993,7 +993,7 @@ public abstract class TBoldAttribute : TBoldMember
     }
 
     [Delphi(PortStatus.Ported)]
-    protected void SetToNonNull() => SetElementFlag(befIsNull, false);
+    protected internal void SetToNonNull() => SetElementFlag(befIsNull, false);
 
     [Delphi(PortStatus.Ported)]
     public override int CompareToAs(TBoldCompareType CompType, TBoldElement? BoldElement)

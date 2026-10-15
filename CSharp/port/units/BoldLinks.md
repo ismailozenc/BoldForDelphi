@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Multi.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Multi.cs)<br>[`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs)<br>[`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | 🟢 ported: 178 of 178 symbols done, 0 verified |
+| Status | 🟢 ported: 178 of 178 symbols done, 4 verified |
 
-🟢 178 ported
+✅ 4 verified · 🟢 174 ported
 
 ## Unit level
 
@@ -18,10 +18,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDirectSingleLinkController` | class | [25](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L25) | [`TBoldDirectSingleLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L16) | 🟢 ported |  |
+| `TBoldDirectSingleLinkController` | class | [25](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L25) | [`TBoldDirectSingleLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L16) | ✅ verified | ✔ [`BoldSystemTests.Single_and_multi_links_keep_both_ends`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/BORepresentation/BoldSystemTests.cs#L42) |
 | `TBoldIndirectSingleLinkController` | class | [52](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L52) | [`TBoldIndirectSingleLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L325) | 🟢 ported |  |
 | `TBoldMultiLinkController` | class | [77](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L77) | [`TBoldMultiLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Multi.cs#L13) | 🟢 ported |  |
-| `TBoldDirectMultiLinkController` | class | [91](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L91) | [`TBoldDirectMultiLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L15) | 🟢 ported |  |
+| `TBoldDirectMultiLinkController` | class | [91](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L91) | [`TBoldDirectMultiLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L15) | ✅ verified | ✔ [`BoldSystemTests.Single_and_multi_links_keep_both_ends`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/BORepresentation/BoldSystemTests.cs#L42) |
 | `TBoldIndirectMultiLinkController` | class | [131](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L131) | [`TBoldIndirectMultiLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Multi.cs#L97) | 🟢 ported |  |
 | `TBoldLinkObjectListController` | class | [177](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L177) | [`TBoldLinkObjectListController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Multi.cs#L802) | 🟢 ported |  |
 | `TBoldLinkObjectSingleLinkController` | class | [202](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L202) | [`TBoldLinkObjectSingleLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Multi.cs#L877) | 🟢 ported |  |
@@ -35,7 +35,7 @@ Types, routines, constants, variables and the initialization and finalization se
 
 ## TBoldDirectSingleLinkController
 
-class at [line 25](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L25); 🟢 ported, C# [`TBoldDirectSingleLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L16).
+class at [line 25](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L25); ✅ verified, C# [`TBoldDirectSingleLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L16).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
@@ -55,7 +55,7 @@ class at [line 25](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L2
 | `LinkTo` | method | [44](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L44) · [body 1161](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L1161) | [`TBoldDirectSingleLinkController.LinkTo`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L88) | 🟢 ported |  |
 | `ProxyInterface` | method | [45](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L45) · [body 1355](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L1355) | [`TBoldDirectSingleLinkController.ProxyInterface`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L287) | 🟢 ported |  |
 | `GetLocator` | method | [46](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L46) · [body 1129](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L1129) | [`TBoldDirectSingleLinkController.GetLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L51) | 🟢 ported |  |
-| `SetLocator` | method | [47](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L47) · [body 1256](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L1256) | [`TBoldDirectSingleLinkController.SetLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L195) | 🟢 ported |  |
+| `SetLocator` | method | [47](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L47) · [body 1256](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L1256) | [`TBoldDirectSingleLinkController.SetLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L195) | ✅ verified | ✔ [`BoldSystemTests.Single_and_multi_links_keep_both_ends`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/BORepresentation/BoldSystemTests.cs#L42) |
 | `OrderNo` | property | [48](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L48) | [`TBoldDirectSingleLinkController.OrderNo`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.Single.cs#L320) | 🟢 ported |  |
 
 ## TBoldIndirectSingleLinkController
@@ -96,7 +96,7 @@ class at [line 77](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L7
 
 ## TBoldDirectMultiLinkController
 
-class at [line 91](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L91); 🟢 ported, C# [`TBoldDirectMultiLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L15).
+class at [line 91](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L91); ✅ verified, C# [`TBoldDirectMultiLinkController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
@@ -123,7 +123,7 @@ class at [line 91](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L9
 | `GetLocatorByQualifiersAndSubscribe` | method | [116](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L116) · [body 555](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L555) | [`TBoldDirectMultiLinkController.GetLocatorByQualifiersAndSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L87) | 🟢 ported |  |
 | `IncludesLocator` | method | [117](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L117) · [body 571](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L571) | [`TBoldDirectMultiLinkController.IncludesLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L107) | 🟢 ported |  |
 | `IndexOfLocator` | method | [118](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L118) · [body 576](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L576) | [`TBoldDirectMultiLinkController.IndexOfLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L110) | 🟢 ported |  |
-| `AddLocator` | method | [119](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L119) · [body 500](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L500) | [`TBoldDirectMultiLinkController.AddLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L36) | 🟢 ported |  |
+| `AddLocator` | method | [119](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L119) · [body 500](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L500) | [`TBoldDirectMultiLinkController.AddLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L36) | ✅ verified | ✔ [`BoldSystemTests.Single_and_multi_links_keep_both_ends`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/BORepresentation/BoldSystemTests.cs#L42) |
 | `MakeDbCurrent` | method | [120](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L120) · [body 538](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L538) | [`TBoldDirectMultiLinkController.MakeDbCurrent`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L70) | 🟢 ported |  |
 | `InsertLocator` | method | [121](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L121) · [body 582](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L582) | [`TBoldDirectMultiLinkController.InsertLocator`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L117) | 🟢 ported |  |
 | `Move` | method | [122](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L122) · [body 624](../../../Source/ObjectSpace/BORepresentation/BoldLinks.pas#L624) | [`TBoldDirectMultiLinkController.Move`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldLinks.cs#L174) | 🟢 ported |  |
