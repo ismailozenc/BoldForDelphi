@@ -33,6 +33,7 @@
   <Folder Name="/tests/">
     <Project Path="tests/Bold.Core.Tests/Bold.Core.Tests.csproj" />
     <Project Path="tests/Bold.Model.Tests/Bold.Model.Tests.csproj" />
+    <Project Path="tests/Bold.ObjectSpace.Tests/Bold.ObjectSpace.Tests.csproj" />
     <Project Path="tests/Bold.PortTool.Tests/Bold.PortTool.Tests.csproj" />
     <Project Path="tests/Bold.Rtl.Tests/Bold.Rtl.Tests.csproj" />
     <Project Path="tests/Bold.TestSupport/Bold.TestSupport.csproj" />

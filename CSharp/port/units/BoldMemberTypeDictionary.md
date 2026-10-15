@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas`](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas) (146 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 22 symbols done, 0 verified |
+| Status | ✅ verified: 22 of 22 symbols done, 22 verified |
 
-⚪ 22 not started
+✅ 22 verified
 
 ## Unit level
 
@@ -18,56 +18,62 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldMemberTypeList` | class | [14](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L14) |  | ⚪ not started |  |
-| `TBoldMemberTypeDescriptor` | class | [30](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L30) |  | ⚪ not started |  |
-| `BoldMemberTypes` | routine | [43](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L43) · [body 86](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L86) |  | ⚪ not started |  |
-| `BoldMemberTypesAssigned` | routine | [44](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L44) · [body 93](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L93) |  | ⚪ not started |  |
-| `TMemberNameIndex` | class, implementation | [61](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L61) |  | ⚪ not started |  |
-| `TMemberClassIndex` | class, implementation | [67](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L67) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [141](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L141) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [143](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L143) |  | ⚪ not started |  |
+| `TBoldMemberTypeList` | class | [14](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L14) | [`TBoldMemberTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L11) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `TBoldMemberTypeDescriptor` | class | [30](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L30) | [`TBoldMemberTypeDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L72) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `BoldMemberTypes` | routine | [43](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L43) · [body 86](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L86) | [`BoldMemberTypeDictionary.BoldMemberTypes`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L94) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `BoldMemberTypesAssigned` | routine | [44](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L44) · [body 93](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L93) | [`BoldMemberTypeDictionary.BoldMemberTypesAssigned`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L97) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `TMemberNameIndex` | class, implementation | [61](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L61) | [`TBoldMemberTypeList.TMemberNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L53) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `TMemberClassIndex` | class, implementation | [67](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L67) | [`TBoldMemberTypeList.TMemberClassIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L60) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `initialization` | initialization, implementation | [141](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L141) | [`[assembly: Delphi] in BoldMemberTypeDictionary.cs`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L4) | ✅ verified: Empty in Delphi; the list is created on first use. | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `finalization` | finalization, implementation | [143](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L143) | [`[assembly: Delphi] in BoldMemberTypeDictionary.cs`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L5) | ✅ verified: Freed the global list; the garbage collector does that in .NET. | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
 
 ## TBoldMemberTypeList
 
-class at [line 14](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L14); ✅ verified, C# [`TBoldMemberTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorByClass` | method, private | [16](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L16) · [body 112](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L112) |  | ⚪ not started |  |
-| `GetMemberTypeDescriptors` | method, private | [17](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L17) · [body 128](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L128) |  | ⚪ not started |  |
-| `GetDescriptorByDelphiName` | method, private | [18](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L18) · [body 107](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L107) |  | ⚪ not started |  |
-| `Create` | constructor | [20](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L20) · [body 99](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L99) |  | ⚪ not started |  |
-| `AddMemberTypeDescriptor` | method | [21](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L21) · [body 117](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L117) |  | ⚪ not started |  |
-| `RemoveDescriptorByClass` | method | [23](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L23) · [body 123](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L123) |  | ⚪ not started |  |
-| `DescriptorByDelphiName` | property | [24](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L24) |  | ⚪ not started |  |
-| `DescriptorByClass` | property | [25](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L25) |  | ⚪ not started |  |
-| `Descriptors` | property | [26](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L26) |  | ⚪ not started |  |
+| `GetDescriptorByClass` | method, private | [16](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L16) · [body 112](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L112) | [`TBoldMemberTypeList.GetDescriptorByClass`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L25) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `GetMemberTypeDescriptors` | method, private | [17](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L17) · [body 128](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L128) | [`TBoldMemberTypeList.GetMemberTypeDescriptors`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L29) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `GetDescriptorByDelphiName` | method, private | [18](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L18) · [body 107](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L107) | [`TBoldMemberTypeList.GetDescriptorByDelphiName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L32) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `Create` | constructor | [20](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L20) · [body 99](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L99) | [`TBoldMemberTypeList.TBoldMemberTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L17) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `AddMemberTypeDescriptor` | method | [21](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L21) · [body 117](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L117) | [`TBoldMemberTypeList.AddMemberTypeDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L36) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `RemoveDescriptorByClass` | method | [23](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L23) · [body 123](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L123) | [`TBoldMemberTypeList.RemoveDescriptorByClass`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L40) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `DescriptorByDelphiName` | property | [24](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L24) | [`TBoldMemberTypeList.DescriptorByDelphiName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L44) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `DescriptorByClass` | property | [25](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L25) | [`TBoldMemberTypeList.DescriptorByClass`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L47) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `Descriptors` | property | [26](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L26) | [`TBoldMemberTypeList.Descriptors`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L50) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
 
 ## TBoldMemberTypeDescriptor
 
-class at [line 30](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L30); ✅ verified, C# [`TBoldMemberTypeDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L72).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [35](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L35) · [body 134](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L134) |  | ⚪ not started |  |
-| `MemberClass` | property | [37](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L37) |  | ⚪ not started |  |
-| `AbstractionLevel` | property | [38](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L38) |  | ⚪ not started |  |
+| `Create` | constructor | [35](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L35) · [body 134](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L134) | [`TBoldMemberTypeDescriptor.TBoldMemberTypeDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L78) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `MemberClass` | property | [37](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L37) | [`TBoldMemberTypeDescriptor.MemberClass`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L84) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+| `AbstractionLevel` | property | [38](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L38) | [`TBoldMemberTypeDescriptor.AbstractionLevel`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L85) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
 
 ## TMemberNameIndex
 
-class at [line 61](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L61); ✅ verified, C# [`TBoldMemberTypeList.TMemberNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L53).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [63](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L63) · [body 73](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L73) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [63](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L63) · [body 73](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L73) | [`TBoldMemberTypeList.TMemberNameIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L56) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
 
 ## TMemberClassIndex
 
-class at [line 67](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L67); ⚪ not started.
+class at [line 67](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L67); ✅ verified, C# [`TBoldMemberTypeList.TMemberClassIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L60).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyClass` | method, protected | [69](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L69) · [body 79](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L79) |  | ⚪ not started |  |
+| `ItemAsKeyClass` | method, protected | [69](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L69) · [body 79](../../../Source/ObjectSpace/RTModel/BoldMemberTypeDictionary.pas#L79) | [`TBoldMemberTypeList.TMemberClassIndex.ItemAsKeyClass`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L63) | ✅ verified | ✔ [`BoldMemberTypeDictionaryTests.Member_types_are_found_by_class_and_class_name`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldMemberTypeDictionaryTests.cs#L17) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldMemberTypeList.TMemberClassIndex.FindByMemberClass`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs#L66) (method)
 
 ## Dependencies
 

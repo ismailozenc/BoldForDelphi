@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldOclError.pas`](../../../Source/ObjectSpace/Ocl/BoldOclError.pas) (152 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 67 symbols done, 0 verified |
+| Status | ✅ verified: 67 of 67 symbols done, 67 verified |
 
-⚪ 67 not started
+✅ 67 verified
 
 ## Unit level
 
@@ -18,87 +18,99 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `boeUserSpecifiedCollections` | resourcestring | [12](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L12) |  | ⚪ not started |  |
-| `boeTimeExpressionsUnIMpl` | resourcestring | [13](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L13) |  | ⚪ not started |  |
-| `boeUserSpecifiedEnumsUnImpl` | resourcestring | [14](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L14) |  | ⚪ not started |  |
-| `boePackageSpecUnImpl` | resourcestring | [15](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L15) |  | ⚪ not started |  |
-| `boeConversionError` | resourcestring | [16](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L16) |  | ⚪ not started |  |
-| `boeInvalidMemberName` | resourcestring | [17](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L17) |  | ⚪ not started |  |
-| `boeInvalidMethodName` | resourcestring | [18](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L18) |  | ⚪ not started |  |
-| `boeInvalidLoopVariable` | resourcestring | [19](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L19) |  | ⚪ not started |  |
-| `boeOperationWithOutContext` | resourcestring | [20](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L20) |  | ⚪ not started |  |
-| `boeInvalidQualifier` | resourcestring | [21](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L21) |  | ⚪ not started |  |
-| `boeInvalidTimeSpecifier` | resourcestring | [22](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L22) |  | ⚪ not started |  |
-| `boeOperationNotDefinedOnArgTypes` | resourcestring | [23](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L23) |  | ⚪ not started |  |
-| `boeNoConform` | resourcestring | [24](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L24) |  | ⚪ not started |  |
-| `boeSystemAsOperationArgument` | resourcestring | [25](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L25) |  | ⚪ not started |  |
-| `boeUndefinedOperation` | resourcestring | [26](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L26) |  | ⚪ not started |  |
-| `boeWrongNumberOfArgs` | resourcestring | [27](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L27) |  | ⚪ not started |  |
-| `boeInvalidOperationOnAttr` | resourcestring | [28](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L28) |  | ⚪ not started |  |
-| `boeMethodsNotImplemented` | resourcestring | [29](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L29) |  | ⚪ not started |  |
-| `boeUnknownClass` | resourcestring | [30](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L30) |  | ⚪ not started |  |
-| `boeUnknownMember` | resourcestring | [31](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L31) |  | ⚪ not started |  |
-| `boeUnknownMemberType` | resourcestring | [32](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L32) |  | ⚪ not started |  |
-| `boeNotAnOperation` | resourcestring | [33](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L33) |  | ⚪ not started |  |
-| `boeUnknownVariable` | resourcestring | [34](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L34) |  | ⚪ not started |  |
-| `boeOperationWithLoopvar` | resourcestring | [35](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L35) |  | ⚪ not started |  |
-| `boeNonListArgumentToCopyArg1Elem` | resourcestring | [36](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L36) |  | ⚪ not started |  |
-| `boeNoCommonSuperClass` | resourcestring | [37](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L37) |  | ⚪ not started |  |
-| `boeNoRootElement` | resourcestring | [38](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L38) |  | ⚪ not started |  |
-| `boeUnKnownRoot` | resourcestring | [39](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L39) |  | ⚪ not started |  |
-| `boeExpressionNeedsContext` | resourcestring | [40](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L40) |  | ⚪ not started |  |
-| `boeExpressionNeedsRoot` | resourcestring | [41](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L41) |  | ⚪ not started |  |
-| `boeVariableNotAssigned` | resourcestring | [42](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L42) |  | ⚪ not started |  |
-| `boeSubscribeBeforeEval` | resourcestring | [43](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L43) |  | ⚪ not started |  |
-| `boeCollectionNotValidLiteral` | resourcestring | [44](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L44) |  | ⚪ not started |  |
-| `boeElementnotConformToCollection` | resourcestring | [46](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L46) |  | ⚪ not started |  |
-| `boeRangeMustBeInt` | resourcestring | [47](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L47) |  | ⚪ not started |  |
-| `boeInvalidCharacter` | resourcestring | [48](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L48) |  | ⚪ not started |  |
-| `boeUnMatchedParentesis` | resourcestring | [49](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L49) |  | ⚪ not started |  |
-| `boeunterminatedQoute` | resourcestring | [50](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L50) |  | ⚪ not started |  |
-| `boeUnKnownIterator` | resourcestring | [51](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L51) |  | ⚪ not started |  |
-| `boeUnknownContext` | resourcestring | [52](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L52) |  | ⚪ not started |  |
-| `boeUnKnownTypeOfLoopVar` | resourcestring | [53](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L53) |  | ⚪ not started |  |
-| `boeModelIsNoModel` | resourcestring | [54](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L54) |  | ⚪ not started |  |
-| `boeInvalidTypeNameName` | resourcestring | [55](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L55) |  | ⚪ not started |  |
-| `boeunknownType` | resourcestring | [56](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L56) |  | ⚪ not started |  |
-| `boeunknownTypeButMember` | resourcestring | [57](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L57) |  | ⚪ not started |  |
-| `boeMemberofType` | resourcestring | [58](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L58) |  | ⚪ not started |  |
-| `boeMemberofAttr` | resourcestring | [59](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L59) |  | ⚪ not started |  |
-| `boeEnvSizeError` | resourcestring | [60](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L60) |  | ⚪ not started |  |
-| `boeunknownExprtypeinDeduce` | resourcestring | [61](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L61) |  | ⚪ not started |  |
-| `boeOperationNotOclable` | resourcestring | [66](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L66) |  | ⚪ not started |  |
-| `borteAtIndexOutOfBounds` | resourcestring | [72](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L72) |  | ⚪ not started |  |
-| `borteDivisionByZero` | resourcestring | [73](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L73) |  | ⚪ not started |  |
-| `borteInvalidCast` | resourcestring | [74](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L74) |  | ⚪ not started |  |
-| `borteOperationNotDefinedOnArgTypes` | resourcestring | [75](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L75) |  | ⚪ not started |  |
-| `borteNonClassAttribute` | resourcestring | [76](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L76) |  | ⚪ not started |  |
-| `bortePadStringEmpty` | resourcestring | [77](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L77) |  | ⚪ not started |  |
-| `boeArgrtIsNotList` | resourcestring | [78](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L78) |  | ⚪ not started |  |
-| `boeArgrtIsNottype` | resourcestring | [79](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L79) |  | ⚪ not started |  |
-| `boertRangeNotAssigned` | resourcestring | [80](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L80) |  | ⚪ not started |  |
-| `EBoldOCLAbort` | class | [84](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L84) |  | ⚪ not started |  |
-| `EBoldOCLError` | class | [94](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L94) |  | ⚪ not started |  |
-| `EBoldOCLInternalError` | class | [103](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L103) |  | ⚪ not started |  |
-| `EBoldOclRunTimeError` | class | [105](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L105) |  | ⚪ not started |  |
+| `boeUserSpecifiedCollections` | resourcestring | [12](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L12) | [`BoldOclError.boeUserSpecifiedCollections`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L9) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeTimeExpressionsUnIMpl` | resourcestring | [13](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L13) | [`BoldOclError.boeTimeExpressionsUnIMpl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L10) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUserSpecifiedEnumsUnImpl` | resourcestring | [14](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L14) | [`BoldOclError.boeUserSpecifiedEnumsUnImpl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L11) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boePackageSpecUnImpl` | resourcestring | [15](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L15) | [`BoldOclError.boePackageSpecUnImpl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L12) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeConversionError` | resourcestring | [16](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L16) | [`BoldOclError.boeConversionError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L13) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidMemberName` | resourcestring | [17](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L17) | [`BoldOclError.boeInvalidMemberName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L14) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidMethodName` | resourcestring | [18](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L18) | [`BoldOclError.boeInvalidMethodName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L15) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidLoopVariable` | resourcestring | [19](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L19) | [`BoldOclError.boeInvalidLoopVariable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L16) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeOperationWithOutContext` | resourcestring | [20](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L20) | [`BoldOclError.boeOperationWithOutContext`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L17) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidQualifier` | resourcestring | [21](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L21) | [`BoldOclError.boeInvalidQualifier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L18) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidTimeSpecifier` | resourcestring | [22](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L22) | [`BoldOclError.boeInvalidTimeSpecifier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L19) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeOperationNotDefinedOnArgTypes` | resourcestring | [23](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L23) | [`BoldOclError.boeOperationNotDefinedOnArgTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L20) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeNoConform` | resourcestring | [24](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L24) | [`BoldOclError.boeNoConform`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L21) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeSystemAsOperationArgument` | resourcestring | [25](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L25) | [`BoldOclError.boeSystemAsOperationArgument`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L22) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUndefinedOperation` | resourcestring | [26](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L26) | [`BoldOclError.boeUndefinedOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L23) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeWrongNumberOfArgs` | resourcestring | [27](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L27) | [`BoldOclError.boeWrongNumberOfArgs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L24) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidOperationOnAttr` | resourcestring | [28](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L28) | [`BoldOclError.boeInvalidOperationOnAttr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L25) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeMethodsNotImplemented` | resourcestring | [29](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L29) | [`BoldOclError.boeMethodsNotImplemented`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L26) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnknownClass` | resourcestring | [30](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L30) | [`BoldOclError.boeUnknownClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L27) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnknownMember` | resourcestring | [31](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L31) | [`BoldOclError.boeUnknownMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L28) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnknownMemberType` | resourcestring | [32](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L32) | [`BoldOclError.boeUnknownMemberType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L29) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeNotAnOperation` | resourcestring | [33](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L33) | [`BoldOclError.boeNotAnOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L30) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnknownVariable` | resourcestring | [34](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L34) | [`BoldOclError.boeUnknownVariable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L31) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeOperationWithLoopvar` | resourcestring | [35](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L35) | [`BoldOclError.boeOperationWithLoopvar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L32) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeNonListArgumentToCopyArg1Elem` | resourcestring | [36](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L36) | [`BoldOclError.boeNonListArgumentToCopyArg1Elem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L33) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeNoCommonSuperClass` | resourcestring | [37](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L37) | [`BoldOclError.boeNoCommonSuperClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L34) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeNoRootElement` | resourcestring | [38](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L38) | [`BoldOclError.boeNoRootElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L35) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnKnownRoot` | resourcestring | [39](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L39) | [`BoldOclError.boeUnKnownRoot`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L36) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeExpressionNeedsContext` | resourcestring | [40](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L40) | [`BoldOclError.boeExpressionNeedsContext`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L37) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeExpressionNeedsRoot` | resourcestring | [41](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L41) | [`BoldOclError.boeExpressionNeedsRoot`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L38) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeVariableNotAssigned` | resourcestring | [42](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L42) | [`BoldOclError.boeVariableNotAssigned`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L39) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeSubscribeBeforeEval` | resourcestring | [43](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L43) | [`BoldOclError.boeSubscribeBeforeEval`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L40) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeCollectionNotValidLiteral` | resourcestring | [44](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L44) | [`BoldOclError.boeCollectionNotValidLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L41) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeElementnotConformToCollection` | resourcestring | [46](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L46) | [`BoldOclError.boeElementnotConformToCollection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L42) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeRangeMustBeInt` | resourcestring | [47](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L47) | [`BoldOclError.boeRangeMustBeInt`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L43) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidCharacter` | resourcestring | [48](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L48) | [`BoldOclError.boeInvalidCharacter`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L44) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnMatchedParentesis` | resourcestring | [49](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L49) | [`BoldOclError.boeUnMatchedParentesis`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L45) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeunterminatedQoute` | resourcestring | [50](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L50) | [`BoldOclError.boeunterminatedQoute`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L46) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnKnownIterator` | resourcestring | [51](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L51) | [`BoldOclError.boeUnKnownIterator`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L47) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnknownContext` | resourcestring | [52](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L52) | [`BoldOclError.boeUnknownContext`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L48) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeUnKnownTypeOfLoopVar` | resourcestring | [53](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L53) | [`BoldOclError.boeUnKnownTypeOfLoopVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L49) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeModelIsNoModel` | resourcestring | [54](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L54) | [`BoldOclError.boeModelIsNoModel`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L50) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeInvalidTypeNameName` | resourcestring | [55](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L55) | [`BoldOclError.boeInvalidTypeNameName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L51) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeunknownType` | resourcestring | [56](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L56) | [`BoldOclError.boeunknownType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L52) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeunknownTypeButMember` | resourcestring | [57](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L57) | [`BoldOclError.boeunknownTypeButMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L53) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeMemberofType` | resourcestring | [58](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L58) | [`BoldOclError.boeMemberofType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L54) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeMemberofAttr` | resourcestring | [59](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L59) | [`BoldOclError.boeMemberofAttr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L55) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeEnvSizeError` | resourcestring | [60](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L60) | [`BoldOclError.boeEnvSizeError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L56) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeunknownExprtypeinDeduce` | resourcestring | [61](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L61) | [`BoldOclError.boeunknownExprtypeinDeduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L57) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeOperationNotOclable` | resourcestring | [66](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L66) | [`BoldOclError.boeOperationNotOclable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L59) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `borteAtIndexOutOfBounds` | resourcestring | [72](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L72) | [`BoldOclError.borteAtIndexOutOfBounds`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L60) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `borteDivisionByZero` | resourcestring | [73](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L73) | [`BoldOclError.borteDivisionByZero`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L61) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `borteInvalidCast` | resourcestring | [74](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L74) | [`BoldOclError.borteInvalidCast`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L62) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `borteOperationNotDefinedOnArgTypes` | resourcestring | [75](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L75) | [`BoldOclError.borteOperationNotDefinedOnArgTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L63) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `borteNonClassAttribute` | resourcestring | [76](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L76) | [`BoldOclError.borteNonClassAttribute`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L64) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `bortePadStringEmpty` | resourcestring | [77](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L77) | [`BoldOclError.bortePadStringEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L65) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeArgrtIsNotList` | resourcestring | [78](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L78) | [`BoldOclError.boeArgrtIsNotList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L66) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boeArgrtIsNottype` | resourcestring | [79](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L79) | [`BoldOclError.boeArgrtIsNottype`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L67) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `boertRangeNotAssigned` | resourcestring | [80](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L80) | [`BoldOclError.boertRangeNotAssigned`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L68) | ✅ verified | ✔ [`BoldOclErrorTests.Messages_have_the_Delphi_values`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L9) |
+| `EBoldOCLAbort` | class | [84](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L84) | [`EBoldOCLAbort`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L80) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
+| `EBoldOCLError` | class | [94](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L94) | [`EBoldOCLError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L105) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
+| `EBoldOCLInternalError` | class | [103](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L103) | [`EBoldOCLInternalError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L129) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
+| `EBoldOclRunTimeError` | class | [105](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L105) | [`EBoldOclRunTimeError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L132) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
 
 ## EBoldOCLAbort
 
-class at [line 84](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L84); ⚪ not started.
+class at [line 84](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L84); ✅ verified, C# [`EBoldOCLAbort`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L80).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FixError` | method | [90](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L90) · [body 110](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L110) |  | ⚪ not started |  |
-| `ErrorPointer` | method | [91](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L91) · [body 127](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L127) |  | ⚪ not started |  |
+| `FixError` | method | [90](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L90) · [body 110](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L110) | [`EBoldOCLAbort.FixError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L88) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
+| `ErrorPointer` | method | [91](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L91) · [body 127](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L127) | [`EBoldOCLAbort.ErrorPointer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L100) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
 
 ## EBoldOCLError
 
-class at [line 94](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L94); ⚪ not started.
+class at [line 94](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L94); ✅ verified, C# [`EBoldOCLError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L105).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FixError` | method | [99](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L99) · [body 132](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L132) |  | ⚪ not started |  |
-| `ErrorPointer` | method | [100](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L100) · [body 146](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L146) |  | ⚪ not started |  |
+| `FixError` | method | [99](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L99) · [body 132](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L132) | [`EBoldOCLError.FixError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L113) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
+| `ErrorPointer` | method | [100](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L100) · [body 146](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L146) | [`EBoldOCLError.ErrorPointer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L125) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldOclError.PositionOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L71) (method)
+- [`EBoldOCLAbort.Position`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L82) (field)
+- [`EBoldOCLAbort.Ocl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L83) (field)
+- [`EBoldOCLAbort.ErrorFixed`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L84) (field)
+- [`EBoldOCLError.Position`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L107) (field)
+- [`EBoldOCLError.Ocl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L108) (field)
+- [`EBoldOCLError.ErrorFixed`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L109) (field)
 
 ## Dependencies
 

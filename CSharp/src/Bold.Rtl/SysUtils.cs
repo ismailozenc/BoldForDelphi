@@ -6,6 +6,9 @@ namespace Bold;
 /// <summary>Raised by conversions such as StrToInt, as Delphi's EConvertError.</summary>
 public class EConvertError(string? message = null, Exception? innerException = null) : Exception(message, innerException);
 
+/// <summary>The silent exception, as Delphi's EAbort: it stops an operation without an error message.</summary>
+public class EAbort(string? message = null, Exception? innerException = null) : Exception(message, innerException);
+
 /// <summary>Raised by list operations with a bad index, as Delphi's EListError.</summary>
 public class EListError(string? message = null, Exception? innerException = null) : Exception(message, innerException);
 

@@ -25,7 +25,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldCoreConsts](../../../CSharp/port/units/BoldCoreConsts.md) | Bold.Persistence: ObjectSpace/Core/BoldCoreConsts.cs (not started) | M2 Runtime model and subscriptions |
-| [BoldElements](../../../CSharp/port/units/BoldElements.md) | Bold.ObjectSpace: ObjectSpace/Core/BoldElements.cs (not started) | M2 Runtime model and subscriptions |
-| [BoldMetaElementList](../../../CSharp/port/units/BoldMetaElementList.md) | Bold.ObjectSpace: ObjectSpace/Core/BoldMetaElementList.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldCoreConsts](../../../CSharp/port/units/BoldCoreConsts.md) | [Bold.Persistence: ObjectSpace/Core/BoldCoreConsts.cs](../../../CSharp/src/Bold.Persistence/ObjectSpace/Core/BoldCoreConsts.cs) | M2 Runtime model and subscriptions |
+| [BoldElements](../../../CSharp/port/units/BoldElements.md) | [Bold.ObjectSpace: ObjectSpace/Core/BoldElements.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/Core/BoldElements.cs) | M2 Runtime model and subscriptions |
+| [BoldMetaElementList](../../../CSharp/port/units/BoldMetaElementList.md) | [Bold.ObjectSpace: ObjectSpace/Core/BoldMetaElementList.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

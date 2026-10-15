@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas`](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas) (188 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 33 symbols done, 0 verified |
+| Status | ✅ verified: 33 of 33 symbols done, 33 verified |
 
-⚪ 33 not started
+✅ 33 verified
 
 ## Unit level
 
@@ -18,81 +18,81 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TInstallBusinessClasses` | event type | [14](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L14) |  | ⚪ not started |  |
-| `TInstallObjectListClasses` | event type | [15](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L15) |  | ⚪ not started |  |
-| `TBoldGeneratedCodeList` | class | [19](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L19) |  | ⚪ not started |  |
-| `TBoldGeneratedCodeDescriptor` | class | [31](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L31) |  | ⚪ not started |  |
-| `TBoldGeneratedClassList` | class | [46](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L46) |  | ⚪ not started |  |
-| `TBoldGeneratedClassDescriptor` | class | [57](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L57) |  | ⚪ not started |  |
-| `GeneratedCodes` | routine | [67](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L67) · [body 95](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L95) |  | ⚪ not started |  |
-| `BoldGeneratedCodesAssigned` | routine | [68](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L68) · [body 102](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L102) |  | ⚪ not started |  |
-| `TGeneratedCodeExpressionNameIndex` | class, implementation | [84](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L84) |  | ⚪ not started |  |
-| `TGeneratedClassExpressionNameIndex` | class, implementation | [142](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L142) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [182](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L182) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [185](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L185) |  | ⚪ not started |  |
+| `TInstallBusinessClasses` | event type | [14](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L14) | [`TInstallBusinessClasses`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L11) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TInstallObjectListClasses` | event type | [15](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L15) | [`TInstallObjectListClasses`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L15) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TBoldGeneratedCodeList` | class | [19](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L19) | [`TBoldGeneratedCodeList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L19) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TBoldGeneratedCodeDescriptor` | class | [31](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L31) | [`TBoldGeneratedCodeDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L62) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TBoldGeneratedClassList` | class | [46](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L46) | [`TBoldGeneratedClassList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L87) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TBoldGeneratedClassDescriptor` | class | [57](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L57) | [`TBoldGeneratedClassDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L121) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `GeneratedCodes` | routine | [67](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L67) · [body 95](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L95) | [`BoldGeneratedCodeDictionary.GeneratedCodes`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L144) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `BoldGeneratedCodesAssigned` | routine | [68](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L68) · [body 102](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L102) | [`BoldGeneratedCodeDictionary.BoldGeneratedCodesAssigned`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L148) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TGeneratedCodeExpressionNameIndex` | class, implementation | [84](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L84) | [`TBoldGeneratedCodeList.TGeneratedCodeExpressionNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L53) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TGeneratedClassExpressionNameIndex` | class, implementation | [142](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L142) | [`TBoldGeneratedClassList.TGeneratedClassExpressionNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L112) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `initialization` | initialization, implementation | [182](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L182) | [`[assembly: Delphi] in BoldGeneratedCodeDictionary.cs`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L4) | ✅ verified: The global list is created by its static field initializer. | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `finalization` | finalization, implementation | [185](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L185) | [`[assembly: Delphi] in BoldGeneratedCodeDictionary.cs`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L5) | ✅ verified: Freed the global list; the garbage collector does that in .NET. | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
 
 ## TBoldGeneratedCodeList
 
-class at [line 19](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L19); ✅ verified, C# [`TBoldGeneratedCodeList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorByExpressionName` | method, private | [21](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L21) · [body 115](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L115) |  | ⚪ not started |  |
-| `GetModelDescriptors` | method, private | [22](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L22) · [body 120](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L120) |  | ⚪ not started |  |
-| `Create` | constructor | [24](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L24) · [body 108](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L108) |  | ⚪ not started |  |
-| `AddGeneratedCodeDescriptorWithFunc` | method | [25](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L25) · [body 125](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L125) |  | ⚪ not started |  |
-| `DescriptorByExpressionName` | property | [26](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L26) |  | ⚪ not started |  |
-| `ModelEntries` | property | [27](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L27) |  | ⚪ not started |  |
+| `GetDescriptorByExpressionName` | method, private | [21](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L21) · [body 115](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L115) | [`TBoldGeneratedCodeList.GetDescriptorByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L31) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `GetModelDescriptors` | method, private | [22](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L22) · [body 120](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L120) | [`TBoldGeneratedCodeList.GetModelDescriptors`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L35) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `Create` | constructor | [24](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L24) · [body 108](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L108) | [`TBoldGeneratedCodeList.TBoldGeneratedCodeList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L24) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `AddGeneratedCodeDescriptorWithFunc` | method | [25](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L25) · [body 125](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L125) | [`TBoldGeneratedCodeList.AddGeneratedCodeDescriptorWithFunc`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L38) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `DescriptorByExpressionName` | property | [26](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L26) | [`TBoldGeneratedCodeList.DescriptorByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L47) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `ModelEntries` | property | [27](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L27) | [`TBoldGeneratedCodeList.ModelEntries`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L50) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
 
 ## TBoldGeneratedCodeDescriptor
 
-class at [line 31](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L31); ⚪ not started.
+class at [line 31](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L31); ✅ verified, C# [`TBoldGeneratedCodeDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L62).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [38](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L38) · [body 132](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L132) |  | ⚪ not started |  |
-| `InstallBusinessClasses` | property | [39](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L39) |  | ⚪ not started |  |
-| `InstallObjectListClasses` | property | [40](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L40) |  | ⚪ not started |  |
-| `ExpressionName` | property | [41](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L41) |  | ⚪ not started |  |
-| `CRC` | property | [42](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L42) |  | ⚪ not started |  |
+| `Create` | constructor | [38](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L38) · [body 132](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L132) | [`TBoldGeneratedCodeDescriptor.TBoldGeneratedCodeDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L70) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `InstallBusinessClasses` | property | [39](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L39) | [`TBoldGeneratedCodeDescriptor.InstallBusinessClasses`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L79) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `InstallObjectListClasses` | property | [40](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L40) | [`TBoldGeneratedCodeDescriptor.InstallObjectListClasses`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L80) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `ExpressionName` | property | [41](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L41) | [`TBoldGeneratedCodeDescriptor.ExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L81) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `CRC` | property | [42](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L42) | [`TBoldGeneratedCodeDescriptor.CRC`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L82) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
 
 ## TBoldGeneratedClassList
 
-class at [line 46](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L46); ⚪ not started.
+class at [line 46](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L46); ✅ verified, C# [`TBoldGeneratedClassList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L87).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorByExpressionName` | method, private | [48](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L48) · [body 160](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L160) |  | ⚪ not started |  |
-| `Create` | constructor | [50](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L50) · [body 154](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L154) |  | ⚪ not started |  |
-| `AddEntry` | method | [51](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L51) · [body 165](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L165) |  | ⚪ not started |  |
-| `AddObjectEntry` | method | [52](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L52) · [body 170](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L170) |  | ⚪ not started |  |
-| `EntryByExpressionName` | property | [53](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L53) |  | ⚪ not started |  |
+| `GetDescriptorByExpressionName` | method, private | [48](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L48) · [body 160](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L160) | [`TBoldGeneratedClassList.GetDescriptorByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L99) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `Create` | constructor | [50](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L50) · [body 154](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L154) | [`TBoldGeneratedClassList.TBoldGeneratedClassList`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L92) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `AddEntry` | method | [51](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L51) · [body 165](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L165) | [`TBoldGeneratedClassList.AddEntry`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L103) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `AddObjectEntry` | method | [52](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L52) · [body 170](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L170) | [`TBoldGeneratedClassList.AddObjectEntry`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L106) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `EntryByExpressionName` | property | [53](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L53) | [`TBoldGeneratedClassList.EntryByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L109) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
 
 ## TBoldGeneratedClassDescriptor
 
-class at [line 57](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L57); ⚪ not started.
+class at [line 57](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L57); ✅ verified, C# [`TBoldGeneratedClassDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L121).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [62](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L62) · [body 176](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L176) |  | ⚪ not started |  |
-| `ExpressionName` | property | [63](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L63) |  | ⚪ not started |  |
-| `TheClass` | property | [64](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L64) |  | ⚪ not started |  |
+| `Create` | constructor | [62](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L62) · [body 176](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L176) | [`TBoldGeneratedClassDescriptor.TBoldGeneratedClassDescriptor`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L127) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `ExpressionName` | property | [63](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L63) | [`TBoldGeneratedClassDescriptor.ExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L133) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
+| `TheClass` | property | [64](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L64) | [`TBoldGeneratedClassDescriptor.TheClass`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L134) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
 
 ## TGeneratedCodeExpressionNameIndex
 
-class at [line 84](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L84); ⚪ not started.
+class at [line 84](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L84); ✅ verified, C# [`TBoldGeneratedCodeList.TGeneratedCodeExpressionNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L53).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [86](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L86) · [body 89](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L89) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [86](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L86) · [body 89](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L89) | [`TBoldGeneratedCodeList.TGeneratedCodeExpressionNameIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L56) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
 
 ## TGeneratedClassExpressionNameIndex
 
-class at [line 142](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L142); ⚪ not started.
+class at [line 142](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L142); ✅ verified, C# [`TBoldGeneratedClassList.TGeneratedClassExpressionNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L112).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [144](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L144) · [body 147](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L147) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [144](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L144) · [body 147](../../../Source/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.pas#L147) | [`TBoldGeneratedClassList.TGeneratedClassExpressionNameIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs#L115) | ✅ verified | ✔ [`BoldGeneratedCodeDictionaryTests.Generated_code_registers_its_classes_by_model`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/RTModel/BoldGeneratedCodeDictionaryTests.cs#L17) |
 
 ## Dependencies
 

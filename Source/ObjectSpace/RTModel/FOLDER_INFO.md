@@ -25,7 +25,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldGeneratedCodeDictionary](../../../CSharp/port/units/BoldGeneratedCodeDictionary.md) | Bold.ObjectSpace: ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs (not started) | M2 Runtime model and subscriptions |
-| [BoldMemberTypeDictionary](../../../CSharp/port/units/BoldMemberTypeDictionary.md) | Bold.ObjectSpace: ObjectSpace/RTModel/BoldMemberTypeDictionary.cs (not started) | M2 Runtime model and subscriptions |
+| [BoldGeneratedCodeDictionary](../../../CSharp/port/units/BoldGeneratedCodeDictionary.md) | [Bold.ObjectSpace: ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldGeneratedCodeDictionary.cs) | M2 Runtime model and subscriptions |
+| [BoldMemberTypeDictionary](../../../CSharp/port/units/BoldMemberTypeDictionary.md) | [Bold.ObjectSpace: ObjectSpace/RTModel/BoldMemberTypeDictionary.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/RTModel/BoldMemberTypeDictionary.cs) | M2 Runtime model and subscriptions |
 | [BoldSystemRT](../../../CSharp/port/units/BoldSystemRT.md) | Bold.ObjectSpace: ObjectSpace/RTModel/BoldSystemRT.cs (not started) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

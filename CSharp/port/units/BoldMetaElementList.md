@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Core/BoldMetaElementList.pas`](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas) (157 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M2 Runtime model and subscriptions |
-| Status | ⚪ not started: 0 of 27 symbols done, 0 verified |
+| Status | ✅ verified: 27 of 27 symbols done, 27 verified |
 
-⚪ 27 not started
+✅ 27 verified
 
 ## Unit level
 
@@ -18,68 +18,68 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldMetaElementList` | class | [15](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L15) |  | ⚪ not started |  |
-| `TBoldElementTypeInfoList` | class | [31](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L31) |  | ⚪ not started |  |
-| `TBoldValueTypeNameIndex` | class, implementation | [59](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L59) |  | ⚪ not started |  |
-| `TDelphiNameIndex` | class, implementation | [65](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L65) |  | ⚪ not started |  |
-| `TModelNameIndex` | class, implementation | [70](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L70) |  | ⚪ not started |  |
+| `TBoldMetaElementList` | class | [15](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L15) | [`TBoldMetaElementList`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L8) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `TBoldElementTypeInfoList` | class | [31](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L31) | [`TBoldElementTypeInfoList`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L72) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `TBoldValueTypeNameIndex` | class, implementation | [59](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L59) | [`TBoldMetaElementList.TBoldValueTypeNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L49) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `TDelphiNameIndex` | class, implementation | [65](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L65) | [`TBoldMetaElementList.TDelphiNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L56) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `TModelNameIndex` | class, implementation | [70](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L70) | [`TBoldMetaElementList.TModelNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L63) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
 
 ## TBoldMetaElementList
 
-class at [line 15](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L15); ✅ verified, C# [`TBoldMetaElementList`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [17](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L17) · [body 105](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L105) |  | ⚪ not started |  |
-| `GetItemByExpressionName` | method, private | [18](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L18) · [body 110](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L110) |  | ⚪ not started |  |
-| `GetItemByDelphiName` | method, private | [19](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L19) · [body 115](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L115) |  | ⚪ not started |  |
-| `GetItemByModelName` | method, private | [20](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L20) · [body 125](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L125) |  | ⚪ not started |  |
-| `Create` | constructor | [22](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L22) · [body 96](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L96) |  | ⚪ not started |  |
-| `Add` | method | [23](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L23) · [body 120](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L120) |  | ⚪ not started |  |
-| `Items` | property | [24](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L24) |  | ⚪ not started |  |
-| `ItemsByExpressionName` | property | [25](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L25) |  | ⚪ not started |  |
-| `ItemsByDelphiName` | property | [26](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L26) |  | ⚪ not started |  |
-| `ItemsByModelName` | property | [27](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L27) |  | ⚪ not started |  |
+| `GetItem` | method, private | [17](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L17) · [body 105](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L105) | [`TBoldMetaElementList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L24) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `GetItemByExpressionName` | method, private | [18](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L18) · [body 110](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L110) | [`TBoldMetaElementList.GetItemByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L27) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `GetItemByDelphiName` | method, private | [19](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L19) · [body 115](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L115) | [`TBoldMetaElementList.GetItemByDelphiName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L31) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `GetItemByModelName` | method, private | [20](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L20) · [body 125](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L125) | [`TBoldMetaElementList.GetItemByModelName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L35) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `Create` | constructor | [22](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L22) · [body 96](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L96) | [`TBoldMetaElementList.TBoldMetaElementList`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L15) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `Add` | method | [23](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L23) · [body 120](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L120) | [`TBoldMetaElementList.Add`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L39) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `Items` | property | [24](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L24) | [`TBoldMetaElementList.this`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L42) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `ItemsByExpressionName` | property | [25](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L25) | [`TBoldMetaElementList.ItemsByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L44) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `ItemsByDelphiName` | property | [26](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L26) | [`TBoldMetaElementList.ItemsByDelphiName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L45) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `ItemsByModelName` | property | [27](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L27) | [`TBoldMetaElementList.ItemsByModelName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L46) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
 
 ## TBoldElementTypeInfoList
 
-class at [line 31](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L31); ⚪ not started.
+class at [line 31](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L31); ✅ verified, C# [`TBoldElementTypeInfoList`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L72).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [33](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L33) · [body 137](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L137) |  | ⚪ not started |  |
-| `GetItemByExpressionName` | method, private | [34](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L34) · [body 147](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L147) |  | ⚪ not started |  |
-| `GetItemByDelphiName` | method, private | [35](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L35) · [body 142](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L142) |  | ⚪ not started |  |
-| `GetItemByModelName` | method, private | [36](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L36) · [body 152](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L152) |  | ⚪ not started |  |
-| `Add` | method | [38](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L38) · [body 132](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L132) |  | ⚪ not started |  |
-| `Items` | property | [39](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L39) |  | ⚪ not started |  |
-| `ItemsByExpressionName` | property | [40](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L40) |  | ⚪ not started |  |
-| `ItemsByDelphiName` | property | [41](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L41) |  | ⚪ not started |  |
-| `ItemsByModelName` | property | [42](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L42) |  | ⚪ not started |  |
+| `GetItem` | method, private | [33](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L33) · [body 137](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L137) | [`TBoldElementTypeInfoList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L75) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `GetItemByExpressionName` | method, private | [34](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L34) · [body 147](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L147) | [`TBoldElementTypeInfoList.GetItemByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L78) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `GetItemByDelphiName` | method, private | [35](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L35) · [body 142](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L142) | [`TBoldElementTypeInfoList.GetItemByDelphiName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L81) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `GetItemByModelName` | method, private | [36](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L36) · [body 152](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L152) | [`TBoldElementTypeInfoList.GetItemByModelName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L84) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `Add` | method | [38](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L38) · [body 132](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L132) | [`TBoldElementTypeInfoList.Add`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L87) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `Items` | property | [39](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L39) | [`TBoldElementTypeInfoList.this`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L90) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `ItemsByExpressionName` | property | [40](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L40) | [`TBoldElementTypeInfoList.ItemsByExpressionName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L92) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `ItemsByDelphiName` | property | [41](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L41) | [`TBoldElementTypeInfoList.ItemsByDelphiName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L93) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
+| `ItemsByModelName` | property | [42](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L42) | [`TBoldElementTypeInfoList.ItemsByModelName`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L94) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
 
 ## TBoldValueTypeNameIndex
 
-class at [line 59](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L59); ✅ verified, C# [`TBoldMetaElementList.TBoldValueTypeNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L49).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [61](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L61) · [body 76](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L76) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [61](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L61) · [body 76](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L76) | [`TBoldMetaElementList.TBoldValueTypeNameIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L52) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
 
 ## TDelphiNameIndex
 
-class at [line 65](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L65); ⚪ not started.
+class at [line 65](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L65); ✅ verified, C# [`TBoldMetaElementList.TDelphiNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L56).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [67](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L67) · [body 83](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L83) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [67](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L67) · [body 83](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L83) | [`TBoldMetaElementList.TDelphiNameIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L59) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
 
 ## TModelNameIndex
 
-class at [line 70](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L70); ⚪ not started.
+class at [line 70](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L70); ✅ verified, C# [`TBoldMetaElementList.TModelNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L63).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [72](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L72) · [body 89](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L89) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [72](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L72) · [body 89](../../../Source/ObjectSpace/Core/BoldMetaElementList.pas#L89) | [`TBoldMetaElementList.TModelNameIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/Core/BoldMetaElementList.cs#L66) | ✅ verified | ✔ [`BoldMetaElementListTests.Finds_elements_by_their_three_names`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Core/BoldMetaElementListTests.cs#L19) |
 
 ## Dependencies
 

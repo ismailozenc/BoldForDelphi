@@ -47,7 +47,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldORed](../../../CSharp/port/units/BoldORed.md) | Bold.ObjectSpace: ObjectSpace/Ocl/BoldORed.cs (not started) | M4 OCL |
 | [BoldOcl](../../../CSharp/port/units/BoldOcl.md) | Bold.ObjectSpace: ObjectSpace/Ocl/BoldOcl.cs (not started) | M4 OCL |
 | [BoldOclClasses](../../../CSharp/port/units/BoldOclClasses.md) | Bold.ObjectSpace: ObjectSpace/Ocl/BoldOclClasses.cs (not started) | M4 OCL |
-| [BoldOclError](../../../CSharp/port/units/BoldOclError.md) | Bold.ObjectSpace: ObjectSpace/Ocl/BoldOclError.cs (not started) | M4 OCL |
+| [BoldOclError](../../../CSharp/port/units/BoldOclError.md) | [Bold.ObjectSpace: ObjectSpace/Ocl/BoldOclError.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs) | M4 OCL |
 | [BoldOclEvaluator](../../../CSharp/port/units/BoldOclEvaluator.md) | Bold.ObjectSpace: ObjectSpace/Ocl/BoldOclEvaluator.cs (not started) | M4 OCL |
 | [BoldOclLightWeightNodeMaker](../../../CSharp/port/units/BoldOclLightWeightNodeMaker.md) | Bold.ObjectSpace: ObjectSpace/Ocl/BoldOclLightWeightNodeMaker.cs (not started) | M4 OCL |
 | [BoldOclLightWeightNodes](../../../CSharp/port/units/BoldOclLightWeightNodes.md) | Bold.ObjectSpace: ObjectSpace/Ocl/BoldOclLightWeightNodes.cs (not started) | M4 OCL |
