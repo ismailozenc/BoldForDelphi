@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldAbstractModel](../../../CSharp/port/units/BoldAbstractModel.md) | Bold.Model: MoldModel/Handles/BoldAbstractModel.cs (not started) | M3 Object space in memory |
-| [BoldTypeNameHandle](../../../CSharp/port/units/BoldTypeNameHandle.md) | Bold.Model: MoldModel/Handles/BoldTypeNameHandle.cs (not started) | M3 Object space in memory |
+| [BoldAbstractModel](../../../CSharp/port/units/BoldAbstractModel.md) | [Bold.Model: MoldModel/Handles/BoldAbstractModel.cs](../../../CSharp/src/Bold.Model/MoldModel/Handles/BoldAbstractModel.cs) | M3 Object space in memory |
+| [BoldTypeNameHandle](../../../CSharp/port/units/BoldTypeNameHandle.md) | [Bold.Model: MoldModel/Handles/BoldTypeNameHandle.cs](../../../CSharp/src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs) | M3 Object space in memory |
 <!-- END C# PORT -->

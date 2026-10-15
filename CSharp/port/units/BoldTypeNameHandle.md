@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/MoldModel/Handles/BoldTypeNameHandle.pas`](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas) (50 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs` |
+| C# | [`CSharp/src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs`](../../src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs) |
 | Project | Bold.Model |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 5 symbols done, 0 verified |
+| Status | ✅ verified: 5 of 5 symbols done, 5 verified |
 
-⚪ 5 not started
+✅ 5 verified
 
 ## Unit level
 
@@ -18,18 +18,18 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldTypeNameHandle` | class | [14](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L14) |  | ⚪ not started |  |
+| `TBoldTypeNameHandle` | class | [14](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L14) | [`TBoldTypeNameHandle`](../../src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs#L8) | ✅ verified: A System.ComponentModel.Component where Delphi has a TComponent. | ✔ [`BoldAbstractModelTests.Type_name_handle_has_default_mappings_and_copies_on_set`](../../tests/Bold.Model.Tests/MoldModel/Handles/BoldAbstractModelTests.cs#L9) |
 
 ## TBoldTypeNameHandle
 
-class at [line 14](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L14); ✅ verified, C# [`TBoldTypeNameHandle`](../../src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetDictionary` | method, private | [17](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L17) · [body 45](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L45) |  | ⚪ not started |  |
-| `Create` | constructor | [19](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L19) · [body 32](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L32) |  | ⚪ not started |  |
-| `Destroy` | destructor | [20](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L20) · [body 39](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L39) |  | ⚪ not started |  |
-| `Dictionary` | property, published | [22](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L22) |  | ⚪ not started |  |
+| `SetDictionary` | method, private | [17](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L17) · [body 45](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L45) | [`TBoldTypeNameHandle.SetDictionary`](../../src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs#L22) | ✅ verified: Copies the mappings, as Delphi's TCollection.Assign: clears this dictionary and adds a copy of each. | ✔ [`BoldAbstractModelTests.Type_name_handle_has_default_mappings_and_copies_on_set`](../../tests/Bold.Model.Tests/MoldModel/Handles/BoldAbstractModelTests.cs#L9) |
+| `Create` | constructor | [19](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L19) · [body 32](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L32) | [`TBoldTypeNameHandle.TBoldTypeNameHandle`](../../src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs#L13) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldAbstractModelTests.Type_name_handle_has_default_mappings_and_copies_on_set`](../../tests/Bold.Model.Tests/MoldModel/Handles/BoldAbstractModelTests.cs#L9) |
+| `Destroy` | destructor | [20](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L20) · [body 39](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L39) | [`TBoldTypeNameHandle.SetDictionary`](../../src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs#L22) | ✅ verified: Freed the dictionary; the garbage collector does that in .NET. | ✔ [`BoldAbstractModelTests.Type_name_handle_has_default_mappings_and_copies_on_set`](../../tests/Bold.Model.Tests/MoldModel/Handles/BoldAbstractModelTests.cs#L9) |
+| `Dictionary` | property, published | [22](../../../Source/MoldModel/Handles/BoldTypeNameHandle.pas#L22) | [`TBoldTypeNameHandle.Dictionary`](../../src/Bold.Model/MoldModel/Handles/BoldTypeNameHandle.cs#L37) | ✅ verified | ✔ [`BoldAbstractModelTests.Type_name_handle_has_default_mappings_and_copies_on_set`](../../tests/Bold.Model.Tests/MoldModel/Handles/BoldAbstractModelTests.cs#L9) |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldSorter.pas`](../../../Source/Common/Support/BoldSorter.pas) (41 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldSorter.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldSorter.cs`](../../src/Bold.Core/Common/Support/BoldSorter.cs) |
 | Project | Bold.Core |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-⚪ 3 not started
+✅ 3 verified
 
 ## Unit level
 
@@ -18,9 +18,9 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSortCompare` | event type | [7](../../../Source/Common/Support/BoldSorter.pas#L7) |  | ⚪ not started |  |
-| `TBoldSortExchange` | event type | [8](../../../Source/Common/Support/BoldSorter.pas#L8) |  | ⚪ not started |  |
-| `BoldSort` | routine | [10](../../../Source/Common/Support/BoldSorter.pas#L10) · [body 14](../../../Source/Common/Support/BoldSorter.pas#L14) |  | ⚪ not started |  |
+| `TBoldSortCompare` | event type | [7](../../../Source/Common/Support/BoldSorter.pas#L7) | [`TBoldSortCompare`](../../src/Bold.Core/Common/Support/BoldSorter.cs#L8) | ✅ verified | ✔ [`BoldMathAndSorterTests.BoldSort_sorts_through_callbacks`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L24) |
+| `TBoldSortExchange` | event type | [8](../../../Source/Common/Support/BoldSorter.pas#L8) | [`TBoldSortExchange`](../../src/Bold.Core/Common/Support/BoldSorter.cs#L12) | ✅ verified | ✔ [`BoldMathAndSorterTests.BoldSort_sorts_through_callbacks`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L24) |
+| `BoldSort` | routine | [10](../../../Source/Common/Support/BoldSorter.pas#L10) · [body 14](../../../Source/Common/Support/BoldSorter.pas#L14) | [`BoldSorter.BoldSort`](../../src/Bold.Core/Common/Support/BoldSorter.cs#L19) | ✅ verified | ✔ [`BoldMathAndSorterTests.BoldSort_sorts_through_callbacks`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L24) |
 
 ## Dependencies
 

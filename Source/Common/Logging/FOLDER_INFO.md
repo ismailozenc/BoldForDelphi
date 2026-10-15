@@ -34,10 +34,10 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldLogForm](../../../CSharp/port/units/BoldLogForm.md) | Bold.WinForms: Common/Logging/BoldLogForm.cs (not started) | M8 WinForms |
-| [BoldLogHandler](../../../CSharp/port/units/BoldLogHandler.md) | Bold.Core: Common/Logging/BoldLogHandler.cs (not started) | M3 Object space in memory |
+| [BoldLogHandler](../../../CSharp/port/units/BoldLogHandler.md) | [Bold.Core: Common/Logging/BoldLogHandler.cs](../../../CSharp/src/Bold.Core/Common/Logging/BoldLogHandler.cs) | M3 Object space in memory |
 | [BoldLogHandlerForm](../../../CSharp/port/units/BoldLogHandlerForm.md) | Bold.WinForms: Common/Logging/BoldLogHandlerForm.cs (not started) | M8 WinForms |
 | [BoldLogHandlerSimple](../../../CSharp/port/units/BoldLogHandlerSimple.md) | Bold.Core: Common/Logging/BoldLogHandlerSimple.cs (not started) | Later (after M12, or when needed) |
-| [BoldLogReceiverInterface](../../../CSharp/port/units/BoldLogReceiverInterface.md) | Bold.Core: Common/Logging/BoldLogReceiverInterface.cs (not started) | M3 Object space in memory |
+| [BoldLogReceiverInterface](../../../CSharp/port/units/BoldLogReceiverInterface.md) | [Bold.Core: Common/Logging/BoldLogReceiverInterface.cs](../../../CSharp/src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs) | M3 Object space in memory |
 | [BoldSmallLogFrame](../../../CSharp/port/units/BoldSmallLogFrame.md) | Bold.WinForms: Common/Logging/BoldSmallLogFrame.cs (not started) | M8 WinForms |
 | [BoldThreadSafeLog](../../../CSharp/port/units/BoldThreadSafeLog.md) | Bold.Core: Common/Logging/BoldThreadSafeLog.cs (not started) | M9 Multi-user |
 <!-- END C# PORT -->

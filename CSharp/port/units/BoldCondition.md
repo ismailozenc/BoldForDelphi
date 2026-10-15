@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/Condition/BoldCondition.pas`](../../../Source/ValueSpace/Condition/BoldCondition.pas) (435 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 51 symbols done, 0 verified |
+| Status | 🟡 partial: 49 of 51 symbols done, 49 verified |
 
-⚪ 51 not started
+✅ 49 verified · 🟡 2 partial
 
 ## Unit level
 
@@ -18,127 +18,159 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCondition` | class | [22](../../../Source/ValueSpace/Condition/BoldCondition.pas#L22) |  | ⚪ not started |  |
-| `TBoldConditionWithClass` | class | [36](../../../Source/ValueSpace/Condition/BoldCondition.pas#L36) |  | ⚪ not started |  |
-| `TBoldSQLCondition` | class | [48](../../../Source/ValueSpace/Condition/BoldCondition.pas#L48) |  | ⚪ not started |  |
-| `TBoldTimestampCondition` | class | [64](../../../Source/ValueSpace/Condition/BoldCondition.pas#L64) |  | ⚪ not started |  |
-| `TBoldChangePointCondition` | class | [73](../../../Source/ValueSpace/Condition/BoldCondition.pas#L73) |  | ⚪ not started |  |
-| `TBoldXMLConditionStreamer` | class | [88](../../../Source/ValueSpace/Condition/BoldCondition.pas#L88) |  | ⚪ not started |  |
-| `TBoldXMLConditionWithClassStreamer` | class | [95](../../../Source/ValueSpace/Condition/BoldCondition.pas#L95) |  | ⚪ not started |  |
-| `TBoldXMLSQLConditionStreamer` | class, implementation | [134](../../../Source/ValueSpace/Condition/BoldCondition.pas#L134) |  | ⚪ not started |  |
-| `TBoldXMLTimestampConditionStreamer` | class, implementation | [144](../../../Source/ValueSpace/Condition/BoldCondition.pas#L144) |  | ⚪ not started |  |
-| `TBoldXMLChangePointConditionStreamer` | class, implementation | [154](../../../Source/ValueSpace/Condition/BoldCondition.pas#L154) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [429](../../../Source/ValueSpace/Condition/BoldCondition.pas#L429) |  | ⚪ not started |  |
+| `TBoldCondition` | class | [22](../../../Source/ValueSpace/Condition/BoldCondition.pas#L22) | [`TBoldCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L13) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `TBoldConditionWithClass` | class | [36](../../../Source/ValueSpace/Condition/BoldCondition.pas#L36) | [`TBoldConditionWithClass`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L36) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `TBoldSQLCondition` | class | [48](../../../Source/ValueSpace/Condition/BoldCondition.pas#L48) | [`TBoldSQLCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L56) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `TBoldTimestampCondition` | class | [64](../../../Source/ValueSpace/Condition/BoldCondition.pas#L64) | [`TBoldTimestampCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L80) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `TBoldChangePointCondition` | class | [73](../../../Source/ValueSpace/Condition/BoldCondition.pas#L73) | [`TBoldChangePointCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L92) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `TBoldXMLConditionStreamer` | class | [88](../../../Source/ValueSpace/Condition/BoldCondition.pas#L88) | [`TBoldXMLConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L110) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `TBoldXMLConditionWithClassStreamer` | class | [95](../../../Source/ValueSpace/Condition/BoldCondition.pas#L95) | [`TBoldXMLConditionWithClassStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L134) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `TBoldXMLSQLConditionStreamer` | class, implementation | [134](../../../Source/ValueSpace/Condition/BoldCondition.pas#L134) | [`TBoldXMLSQLConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L163) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `TBoldXMLTimestampConditionStreamer` | class, implementation | [144](../../../Source/ValueSpace/Condition/BoldCondition.pas#L144) | [`TBoldXMLTimestampConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L235) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `TBoldXMLChangePointConditionStreamer` | class, implementation | [154](../../../Source/ValueSpace/Condition/BoldCondition.pas#L154) | [`TBoldXMLChangePointConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L259) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `initialization` | initialization, implementation | [429](../../../Source/ValueSpace/Condition/BoldCondition.pas#L429) | [`[assembly: Delphi] in BoldCondition.cs`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L7) | ✅ verified: Registers the condition streamers from the Bold.ValueSpace module initializer. | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
 
 ## TBoldCondition
 
-class at [line 22](../../../Source/ValueSpace/Condition/BoldCondition.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/ValueSpace/Condition/BoldCondition.pas#L22); ✅ verified, C# [`TBoldCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [28](../../../Source/ValueSpace/Condition/BoldCondition.pas#L28) · [body 422](../../../Source/ValueSpace/Condition/BoldCondition.pas#L422) |  | ⚪ not started |  |
-| `GetStreamName` | method | [29](../../../Source/ValueSpace/Condition/BoldCondition.pas#L29) |  | ⚪ not started |  |
-| `MaxAnswers` | property | [30](../../../Source/ValueSpace/Condition/BoldCondition.pas#L30) |  | ⚪ not started |  |
-| `Offset` | property | [31](../../../Source/ValueSpace/Condition/BoldCondition.pas#L31) |  | ⚪ not started |  |
-| `AvailableAnswers` | property | [32](../../../Source/ValueSpace/Condition/BoldCondition.pas#L32) |  | ⚪ not started |  |
+| `create` | constructor | [28](../../../Source/ValueSpace/Condition/BoldCondition.pas#L28) · [body 422](../../../Source/ValueSpace/Condition/BoldCondition.pas#L422) | [`TBoldCondition.TBoldCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L20) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `GetStreamName` | method | [29](../../../Source/ValueSpace/Condition/BoldCondition.pas#L29) | [`TBoldCondition.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L27) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `MaxAnswers` | property | [30](../../../Source/ValueSpace/Condition/BoldCondition.pas#L30) | [`TBoldCondition.MaxAnswers`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L29) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `Offset` | property | [31](../../../Source/ValueSpace/Condition/BoldCondition.pas#L31) | [`TBoldCondition.Offset`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L30) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `AvailableAnswers` | property | [32](../../../Source/ValueSpace/Condition/BoldCondition.pas#L32) | [`TBoldCondition.AvailableAnswers`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L31) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
 
 ## TBoldConditionWithClass
 
-class at [line 36](../../../Source/ValueSpace/Condition/BoldCondition.pas#L36); ⚪ not started.
+class at [line 36](../../../Source/ValueSpace/Condition/BoldCondition.pas#L36); ✅ verified, C# [`TBoldConditionWithClass`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L36).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [41](../../../Source/ValueSpace/Condition/BoldCondition.pas#L41) · [body 177](../../../Source/ValueSpace/Condition/BoldCondition.pas#L177) |  | ⚪ not started |  |
-| `GetStreamName` | method | [42](../../../Source/ValueSpace/Condition/BoldCondition.pas#L42) · [body 172](../../../Source/ValueSpace/Condition/BoldCondition.pas#L172) |  | ⚪ not started |  |
-| `TopSortedIndex` | property | [43](../../../Source/ValueSpace/Condition/BoldCondition.pas#L43) |  | ⚪ not started |  |
-| `Time` | property | [44](../../../Source/ValueSpace/Condition/BoldCondition.pas#L44) |  | ⚪ not started |  |
+| `create` | constructor | [41](../../../Source/ValueSpace/Condition/BoldCondition.pas#L41) · [body 177](../../../Source/ValueSpace/Condition/BoldCondition.pas#L177) | [`TBoldConditionWithClass.TBoldConditionWithClass`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L42) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `GetStreamName` | method | [42](../../../Source/ValueSpace/Condition/BoldCondition.pas#L42) · [body 172](../../../Source/ValueSpace/Condition/BoldCondition.pas#L172) | [`TBoldConditionWithClass.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L48) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `TopSortedIndex` | property | [43](../../../Source/ValueSpace/Condition/BoldCondition.pas#L43) | [`TBoldConditionWithClass.TopSortedIndex`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L50) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `Time` | property | [44](../../../Source/ValueSpace/Condition/BoldCondition.pas#L44) | [`TBoldConditionWithClass.Time`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L51) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
 
 ## TBoldSQLCondition
 
-class at [line 48](../../../Source/ValueSpace/Condition/BoldCondition.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/ValueSpace/Condition/BoldCondition.pas#L48); ✅ verified, C# [`TBoldSQLCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L56).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [55](../../../Source/ValueSpace/Condition/BoldCondition.pas#L55) · [body 185](../../../Source/ValueSpace/Condition/BoldCondition.pas#L185) |  | ⚪ not started |  |
-| `GetStreamName` | method | [56](../../../Source/ValueSpace/Condition/BoldCondition.pas#L56) · [body 191](../../../Source/ValueSpace/Condition/BoldCondition.pas#L191) |  | ⚪ not started |  |
-| `WhereFragment` | property | [57](../../../Source/ValueSpace/Condition/BoldCondition.pas#L57) |  | ⚪ not started |  |
-| `OrderBy` | property | [58](../../../Source/ValueSpace/Condition/BoldCondition.pas#L58) |  | ⚪ not started |  |
-| `Params` | property | [59](../../../Source/ValueSpace/Condition/BoldCondition.pas#L59) |  | ⚪ not started |  |
-| `JoinInheritedTables` | property | [60](../../../Source/ValueSpace/Condition/BoldCondition.pas#L60) |  | ⚪ not started |  |
+| `Create` | constructor | [55](../../../Source/ValueSpace/Condition/BoldCondition.pas#L55) · [body 185](../../../Source/ValueSpace/Condition/BoldCondition.pas#L185) | [`TBoldSQLCondition.TBoldSQLCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L64) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `GetStreamName` | method | [56](../../../Source/ValueSpace/Condition/BoldCondition.pas#L56) · [body 191](../../../Source/ValueSpace/Condition/BoldCondition.pas#L191) | [`TBoldSQLCondition.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L70) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `WhereFragment` | property | [57](../../../Source/ValueSpace/Condition/BoldCondition.pas#L57) | [`TBoldSQLCondition.WhereFragment`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L72) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `OrderBy` | property | [58](../../../Source/ValueSpace/Condition/BoldCondition.pas#L58) | [`TBoldSQLCondition.OrderBy`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L73) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `Params` | property | [59](../../../Source/ValueSpace/Condition/BoldCondition.pas#L59) | [`TBoldSQLCondition.Params`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L74) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `JoinInheritedTables` | property | [60](../../../Source/ValueSpace/Condition/BoldCondition.pas#L60) | [`TBoldSQLCondition.JoinInheritedTables`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L75) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
 
 ## TBoldTimestampCondition
 
-class at [line 64](../../../Source/ValueSpace/Condition/BoldCondition.pas#L64); ⚪ not started.
+class at [line 64](../../../Source/ValueSpace/Condition/BoldCondition.pas#L64); ✅ verified, C# [`TBoldTimestampCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L80).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method | [68](../../../Source/ValueSpace/Condition/BoldCondition.pas#L68) · [body 198](../../../Source/ValueSpace/Condition/BoldCondition.pas#L198) |  | ⚪ not started |  |
-| `Timestamp` | property | [69](../../../Source/ValueSpace/Condition/BoldCondition.pas#L69) |  | ⚪ not started |  |
+| `GetStreamName` | method | [68](../../../Source/ValueSpace/Condition/BoldCondition.pas#L68) · [body 198](../../../Source/ValueSpace/Condition/BoldCondition.pas#L198) | [`TBoldTimestampCondition.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L85) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `Timestamp` | property | [69](../../../Source/ValueSpace/Condition/BoldCondition.pas#L69) | [`TBoldTimestampCondition.Timestamp`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L87) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
 
 ## TBoldChangePointCondition
 
-class at [line 73](../../../Source/ValueSpace/Condition/BoldCondition.pas#L73); ⚪ not started.
+class at [line 73](../../../Source/ValueSpace/Condition/BoldCondition.pas#L73); ✅ verified, C# [`TBoldChangePointCondition`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L92).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method | [80](../../../Source/ValueSpace/Condition/BoldCondition.pas#L80) · [body 205](../../../Source/ValueSpace/Condition/BoldCondition.pas#L205) |  | ⚪ not started |  |
-| `IdList` | property | [81](../../../Source/ValueSpace/Condition/BoldCondition.pas#L81) |  | ⚪ not started |  |
-| `StartTime` | property | [82](../../../Source/ValueSpace/Condition/BoldCondition.pas#L82) |  | ⚪ not started |  |
-| `EndTime` | property | [83](../../../Source/ValueSpace/Condition/BoldCondition.pas#L83) |  | ⚪ not started |  |
-| `MemberIdList` | property | [84](../../../Source/ValueSpace/Condition/BoldCondition.pas#L84) |  | ⚪ not started |  |
+| `GetStreamName` | method | [80](../../../Source/ValueSpace/Condition/BoldCondition.pas#L80) · [body 205](../../../Source/ValueSpace/Condition/BoldCondition.pas#L205) | [`TBoldChangePointCondition.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L100) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `IdList` | property | [81](../../../Source/ValueSpace/Condition/BoldCondition.pas#L81) | [`TBoldChangePointCondition.IdList`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L102) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `StartTime` | property | [82](../../../Source/ValueSpace/Condition/BoldCondition.pas#L82) | [`TBoldChangePointCondition.StartTime`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L103) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `EndTime` | property | [83](../../../Source/ValueSpace/Condition/BoldCondition.pas#L83) | [`TBoldChangePointCondition.EndTime`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L104) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `MemberIdList` | property | [84](../../../Source/ValueSpace/Condition/BoldCondition.pas#L84) | [`TBoldChangePointCondition.MemberIdList`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L105) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
 
 ## TBoldXMLConditionStreamer
 
-class at [line 88](../../../Source/ValueSpace/Condition/BoldCondition.pas#L88); ⚪ not started.
+class at [line 88](../../../Source/ValueSpace/Condition/BoldCondition.pas#L88); ✅ verified, C# [`TBoldXMLConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L110).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteObject` | method | [90](../../../Source/ValueSpace/Condition/BoldCondition.pas#L90) · [body 223](../../../Source/ValueSpace/Condition/BoldCondition.pas#L223) |  | ⚪ not started |  |
-| `ReadObject` | method | [91](../../../Source/ValueSpace/Condition/BoldCondition.pas#L91) · [body 212](../../../Source/ValueSpace/Condition/BoldCondition.pas#L212) |  | ⚪ not started |  |
+| `WriteObject` | method | [90](../../../Source/ValueSpace/Condition/BoldCondition.pas#L90) · [body 223](../../../Source/ValueSpace/Condition/BoldCondition.pas#L223) | [`TBoldXMLConditionStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L113) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `ReadObject` | method | [91](../../../Source/ValueSpace/Condition/BoldCondition.pas#L91) · [body 212](../../../Source/ValueSpace/Condition/BoldCondition.pas#L212) | [`TBoldXMLConditionStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L123) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
 
 ## TBoldXMLConditionWithClassStreamer
 
-class at [line 95](../../../Source/ValueSpace/Condition/BoldCondition.pas#L95); ⚪ not started.
+class at [line 95](../../../Source/ValueSpace/Condition/BoldCondition.pas#L95); ✅ verified, C# [`TBoldXMLConditionWithClassStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L134).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [97](../../../Source/ValueSpace/Condition/BoldCondition.pas#L97) · [body 241](../../../Source/ValueSpace/Condition/BoldCondition.pas#L241) |  | ⚪ not started |  |
-| `WriteObject` | method | [99](../../../Source/ValueSpace/Condition/BoldCondition.pas#L99) · [body 256](../../../Source/ValueSpace/Condition/BoldCondition.pas#L256) |  | ⚪ not started |  |
-| `ReadObject` | method | [100](../../../Source/ValueSpace/Condition/BoldCondition.pas#L100) · [body 246](../../../Source/ValueSpace/Condition/BoldCondition.pas#L246) |  | ⚪ not started |  |
-| `CreateObject` | method | [101](../../../Source/ValueSpace/Condition/BoldCondition.pas#L101) · [body 236](../../../Source/ValueSpace/Condition/BoldCondition.pas#L236) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [97](../../../Source/ValueSpace/Condition/BoldCondition.pas#L97) · [body 241](../../../Source/ValueSpace/Condition/BoldCondition.pas#L241) | [`TBoldXMLConditionWithClassStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L137) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `WriteObject` | method | [99](../../../Source/ValueSpace/Condition/BoldCondition.pas#L99) · [body 256](../../../Source/ValueSpace/Condition/BoldCondition.pas#L256) | [`TBoldXMLConditionWithClassStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L140) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `ReadObject` | method | [100](../../../Source/ValueSpace/Condition/BoldCondition.pas#L100) · [body 246](../../../Source/ValueSpace/Condition/BoldCondition.pas#L246) | [`TBoldXMLConditionWithClassStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L149) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
+| `CreateObject` | method | [101](../../../Source/ValueSpace/Condition/BoldCondition.pas#L101) · [body 236](../../../Source/ValueSpace/Condition/BoldCondition.pas#L236) | [`TBoldXMLConditionWithClassStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L158) | ✅ verified | ✔ [`BoldConditionTests.Class_condition_round_trips`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L25) |
 
 ## TBoldXMLSQLConditionStreamer
 
-class at [line 134](../../../Source/ValueSpace/Condition/BoldCondition.pas#L134); ⚪ not started.
+class at [line 134](../../../Source/ValueSpace/Condition/BoldCondition.pas#L134); ✅ verified, C# [`TBoldXMLSQLConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L163).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [136](../../../Source/ValueSpace/Condition/BoldCondition.pas#L136) · [body 273](../../../Source/ValueSpace/Condition/BoldCondition.pas#L273) |  | ⚪ not started |  |
-| `WriteObject` | method | [138](../../../Source/ValueSpace/Condition/BoldCondition.pas#L138) · [body 326](../../../Source/ValueSpace/Condition/BoldCondition.pas#L326) |  | ⚪ not started |  |
-| `ReadObject` | method | [139](../../../Source/ValueSpace/Condition/BoldCondition.pas#L139) · [body 278](../../../Source/ValueSpace/Condition/BoldCondition.pas#L278) |  | ⚪ not started |  |
-| `CreateObject` | method | [140](../../../Source/ValueSpace/Condition/BoldCondition.pas#L140) · [body 268](../../../Source/ValueSpace/Condition/BoldCondition.pas#L268) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [136](../../../Source/ValueSpace/Condition/BoldCondition.pas#L136) · [body 273](../../../Source/ValueSpace/Condition/BoldCondition.pas#L273) | [`TBoldXMLSQLConditionStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L166) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `WriteObject` | method | [138](../../../Source/ValueSpace/Condition/BoldCondition.pas#L138) · [body 326](../../../Source/ValueSpace/Condition/BoldCondition.pas#L326) | [`TBoldXMLSQLConditionStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L170) | 🟡 partial: A parameter value is written as invariant text where Delphi writes TParam's binary buffer. | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `ReadObject` | method | [139](../../../Source/ValueSpace/Condition/BoldCondition.pas#L139) · [body 278](../../../Source/ValueSpace/Condition/BoldCondition.pas#L278) | [`TBoldXMLSQLConditionStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L199) | 🟡 partial: Reads a parameter value written as invariant text, as WriteObject writes it. | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `CreateObject` | method | [140](../../../Source/ValueSpace/Condition/BoldCondition.pas#L140) · [body 268](../../../Source/ValueSpace/Condition/BoldCondition.pas#L268) | [`TBoldXMLSQLConditionStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L231) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
 
 ## TBoldXMLTimestampConditionStreamer
 
-class at [line 144](../../../Source/ValueSpace/Condition/BoldCondition.pas#L144); ⚪ not started.
+class at [line 144](../../../Source/ValueSpace/Condition/BoldCondition.pas#L144); ✅ verified, C# [`TBoldXMLTimestampConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L235).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [146](../../../Source/ValueSpace/Condition/BoldCondition.pas#L146) · [body 367](../../../Source/ValueSpace/Condition/BoldCondition.pas#L367) |  | ⚪ not started |  |
-| `WriteObject` | method | [148](../../../Source/ValueSpace/Condition/BoldCondition.pas#L148) · [body 378](../../../Source/ValueSpace/Condition/BoldCondition.pas#L378) |  | ⚪ not started |  |
-| `ReadObject` | method | [149](../../../Source/ValueSpace/Condition/BoldCondition.pas#L149) · [body 372](../../../Source/ValueSpace/Condition/BoldCondition.pas#L372) |  | ⚪ not started |  |
-| `CreateObject` | method | [150](../../../Source/ValueSpace/Condition/BoldCondition.pas#L150) · [body 362](../../../Source/ValueSpace/Condition/BoldCondition.pas#L362) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [146](../../../Source/ValueSpace/Condition/BoldCondition.pas#L146) · [body 367](../../../Source/ValueSpace/Condition/BoldCondition.pas#L367) | [`TBoldXMLTimestampConditionStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L238) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `WriteObject` | method | [148](../../../Source/ValueSpace/Condition/BoldCondition.pas#L148) · [body 378](../../../Source/ValueSpace/Condition/BoldCondition.pas#L378) | [`TBoldXMLTimestampConditionStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L241) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `ReadObject` | method | [149](../../../Source/ValueSpace/Condition/BoldCondition.pas#L149) · [body 372](../../../Source/ValueSpace/Condition/BoldCondition.pas#L372) | [`TBoldXMLTimestampConditionStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L248) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `CreateObject` | method | [150](../../../Source/ValueSpace/Condition/BoldCondition.pas#L150) · [body 362](../../../Source/ValueSpace/Condition/BoldCondition.pas#L362) | [`TBoldXMLTimestampConditionStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L255) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
 
 ## TBoldXMLChangePointConditionStreamer
 
-class at [line 154](../../../Source/ValueSpace/Condition/BoldCondition.pas#L154); ⚪ not started.
+class at [line 154](../../../Source/ValueSpace/Condition/BoldCondition.pas#L154); ✅ verified, C# [`TBoldXMLChangePointConditionStreamer`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L259).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [156](../../../Source/ValueSpace/Condition/BoldCondition.pas#L156) · [body 391](../../../Source/ValueSpace/Condition/BoldCondition.pas#L391) |  | ⚪ not started |  |
-| `WriteObject` | method | [158](../../../Source/ValueSpace/Condition/BoldCondition.pas#L158) · [body 408](../../../Source/ValueSpace/Condition/BoldCondition.pas#L408) |  | ⚪ not started |  |
-| `ReadObject` | method | [159](../../../Source/ValueSpace/Condition/BoldCondition.pas#L159) · [body 396](../../../Source/ValueSpace/Condition/BoldCondition.pas#L396) |  | ⚪ not started |  |
-| `CreateObject` | method | [160](../../../Source/ValueSpace/Condition/BoldCondition.pas#L160) · [body 386](../../../Source/ValueSpace/Condition/BoldCondition.pas#L386) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [156](../../../Source/ValueSpace/Condition/BoldCondition.pas#L156) · [body 391](../../../Source/ValueSpace/Condition/BoldCondition.pas#L391) | [`TBoldXMLChangePointConditionStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L262) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `WriteObject` | method | [158](../../../Source/ValueSpace/Condition/BoldCondition.pas#L158) · [body 408](../../../Source/ValueSpace/Condition/BoldCondition.pas#L408) | [`TBoldXMLChangePointConditionStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L265) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `ReadObject` | method | [159](../../../Source/ValueSpace/Condition/BoldCondition.pas#L159) · [body 396](../../../Source/ValueSpace/Condition/BoldCondition.pas#L396) | [`TBoldXMLChangePointConditionStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L276) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+| `CreateObject` | method | [160](../../../Source/ValueSpace/Condition/BoldCondition.pas#L160) · [body 386](../../../Source/ValueSpace/Condition/BoldCondition.pas#L386) | [`TBoldXMLChangePointConditionStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L287) | ✅ verified | ✔ [`BoldConditionTests.Timestamp_and_change_point_conditions_round_trip`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L81) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldCondition.BoldNodeName_MaxAnswers`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L293) (const)
+- [`BoldCondition.BoldNodeName_Offset`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L294) (const)
+- [`BoldCondition.BoldNodeName_AvailableAnswers`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L295) (const)
+- [`BoldCondition.BoldNodeName_TopSortedIndex`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L296) (const)
+- [`BoldCondition.BoldNodeName_Time`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L297) (const)
+- [`BoldCondition.BoldNodeName_WhereFragment`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L298) (const)
+- [`BoldCondition.BoldNodeName_OrderBy`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L299) (const)
+- [`BoldCondition.BoldNodeName_JoinInheritedTables`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L300) (const)
+- [`BoldCondition.BoldNodeName_Param`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L301) (const)
+- [`BoldCondition.BoldNodeName_Params`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L302) (const)
+- [`BoldCondition.BoldNodeName_Name`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L303) (const)
+- [`BoldCondition.BoldNodeName_DataType`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L304) (const)
+- [`BoldCondition.BoldNodeName_ParamType`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L305) (const)
+- [`BoldCondition.BoldNodeName_Data`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L306) (const)
+- [`BoldCondition.BoldNodeName_Timestamp`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L307) (const)
+- [`BoldCondition.BoldNodeName_IdList`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L308) (const)
+- [`BoldCondition.BoldNodeName_StartTime`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L309) (const)
+- [`BoldCondition.BoldNodeName_EndTime`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L310) (const)
+- [`BoldCondition.BoldNodeName_MemberIds`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L311) (const)
+- [`BoldCondition.SQLConditionName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L313) (const)
+- [`BoldCondition.ClassConditionName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L314) (const)
+- [`BoldCondition.TimestampConditionName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L315) (const)
+- [`BoldCondition.OclConditionName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L316) (const)
+- [`BoldCondition.ChangePointConditionName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L317) (const)
+- [`BoldCondition.ParamValueToText`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L320) (method)
+- [`BoldCondition.ParamValueFromText`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L328) (method)
+- [`BoldCondition.RegisterStreamers`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L344) (method)
 
 ## Dependencies
 

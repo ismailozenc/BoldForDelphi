@@ -23,5 +23,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldObjectSpaceExternalEvents](../../../CSharp/port/units/BoldObjectSpaceExternalEvents.md) | Bold.ValueSpace: ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs (not started) | M3 Object space in memory |
+| [BoldObjectSpaceExternalEvents](../../../CSharp/port/units/BoldObjectSpaceExternalEvents.md) | [Bold.ValueSpace: ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs) | M3 Object space in memory |
 <!-- END C# PORT -->

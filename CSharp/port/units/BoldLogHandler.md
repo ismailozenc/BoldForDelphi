@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Logging/BoldLogHandler.pas`](../../../Source/Common/Logging/BoldLogHandler.pas) (320 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Logging/BoldLogHandler.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Logging/BoldLogHandler.Aliases.cs`](../../src/Bold.Core/Common/Logging/BoldLogHandler.Aliases.cs)<br>[`CSharp/src/Bold.Core/Common/Logging/BoldLogHandler.cs`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs) |
 | Project | Bold.Core |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 39 symbols done, 0 verified |
+| Status | ✅ verified: 39 of 39 symbols done, 39 verified |
 
-⚪ 39 not started
+✅ 39 verified
 
 ## Unit level
 
@@ -18,59 +18,80 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLogHandlerClass` | class reference | [15](../../../Source/Common/Logging/BoldLogHandler.pas#L15) |  | ⚪ not started |  |
-| `TBoldLogHandler` | class | [18](../../../Source/Common/Logging/BoldLogHandler.pas#L18) |  | ⚪ not started |  |
-| `TBoldLogReceiverSubscriber` | class | [57](../../../Source/Common/Logging/BoldLogHandler.pas#L57) |  | ⚪ not started |  |
-| `BoldLog` | routine | [68](../../../Source/Common/Logging/BoldLogHandler.pas#L68) · [body 98](../../../Source/Common/Logging/BoldLogHandler.pas#L98) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [315](../../../Source/Common/Logging/BoldLogHandler.pas#L315) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [317](../../../Source/Common/Logging/BoldLogHandler.pas#L317) |  | ⚪ not started |  |
+| `TBoldLogHandlerClass` | class reference | [15](../../../Source/Common/Logging/BoldLogHandler.pas#L15) | [`global using TBoldLogHandlerClass`](../../src/Bold.Core/Common/Logging/BoldLogHandler.Aliases.cs#L5) | ✅ verified: Global using alias of System.Type, in BoldLogHandler.Aliases.cs. | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `TBoldLogHandler` | class | [18](../../../Source/Common/Logging/BoldLogHandler.pas#L18) | [`TBoldLogHandler`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L15) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `TBoldLogReceiverSubscriber` | class | [57](../../../Source/Common/Logging/BoldLogHandler.pas#L57) | [`TBoldLogReceiverSubscriber`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L176) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `BoldLog` | routine | [68](../../../Source/Common/Logging/BoldLogHandler.pas#L68) · [body 98](../../../Source/Common/Logging/BoldLogHandler.pas#L98) | [`BoldLogHandler.BoldLog`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L255) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `initialization` | initialization, implementation | [315](../../../Source/Common/Logging/BoldLogHandler.pas#L315) | [`[assembly: Delphi] in BoldLogHandler.cs`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L5) | ✅ verified: Empty in Delphi. | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `finalization` | finalization, implementation | [317](../../../Source/Common/Logging/BoldLogHandler.pas#L317) | [`[assembly: Delphi] in BoldLogHandler.cs`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L6) | ✅ verified: Freed the global log; the garbage collector does that in .NET. | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
 
 ## TBoldLogHandler
 
-class at [line 18](../../../Source/Common/Logging/BoldLogHandler.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/Common/Logging/BoldLogHandler.pas#L18); ✅ verified, C# [`TBoldLogHandler`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetProgress` | method, private | [23](../../../Source/Common/Logging/BoldLogHandler.pas#L23) · [body 208](../../../Source/Common/Logging/BoldLogHandler.pas#L208) |  | ⚪ not started |  |
-| `SetLogHeader` | method, private | [24](../../../Source/Common/Logging/BoldLogHandler.pas#L24) · [body 213](../../../Source/Common/Logging/BoldLogHandler.pas#L213) |  | ⚪ not started |  |
-| `SetProgressMax` | method, private | [25](../../../Source/Common/Logging/BoldLogHandler.pas#L25) · [body 203](../../../Source/Common/Logging/BoldLogHandler.pas#L203) |  | ⚪ not started |  |
-| `IndentSpaces` | method, protected | [27](../../../Source/Common/Logging/BoldLogHandler.pas#L27) · [body 115](../../../Source/Common/Logging/BoldLogHandler.pas#L115) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/Common/Logging/BoldLogHandler.pas#L29) · [body 105](../../../Source/Common/Logging/BoldLogHandler.pas#L105) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/Common/Logging/BoldLogHandler.pas#L30) · [body 110](../../../Source/Common/Logging/BoldLogHandler.pas#L110) |  | ⚪ not started |  |
-| `Log` | method | [31](../../../Source/Common/Logging/BoldLogHandler.pas#L31) · [body 157](../../../Source/Common/Logging/BoldLogHandler.pas#L157) |  | ⚪ not started |  |
-| `LogFmt` | method | [32](../../../Source/Common/Logging/BoldLogHandler.pas#L32) · [body 162](../../../Source/Common/Logging/BoldLogHandler.pas#L162) |  | ⚪ not started |  |
-| `LogIndent` | method | [33](../../../Source/Common/Logging/BoldLogHandler.pas#L33) · [body 167](../../../Source/Common/Logging/BoldLogHandler.pas#L167) |  | ⚪ not started |  |
-| `LogDedent` | method | [34](../../../Source/Common/Logging/BoldLogHandler.pas#L34) · [body 173](../../../Source/Common/Logging/BoldLogHandler.pas#L173) |  | ⚪ not started |  |
-| `LogFmtIndent` | method | [35](../../../Source/Common/Logging/BoldLogHandler.pas#L35) · [body 179](../../../Source/Common/Logging/BoldLogHandler.pas#L179) |  | ⚪ not started |  |
-| `LogFmtDedent` | method | [36](../../../Source/Common/Logging/BoldLogHandler.pas#L36) · [body 185](../../../Source/Common/Logging/BoldLogHandler.pas#L185) |  | ⚪ not started |  |
-| `Clear` | method | [37](../../../Source/Common/Logging/BoldLogHandler.pas#L37) · [body 127](../../../Source/Common/Logging/BoldLogHandler.pas#L127) |  | ⚪ not started |  |
-| `Hide` | method | [38](../../../Source/Common/Logging/BoldLogHandler.pas#L38) · [body 137](../../../Source/Common/Logging/BoldLogHandler.pas#L137) |  | ⚪ not started |  |
-| `Show` | method | [39](../../../Source/Common/Logging/BoldLogHandler.pas#L39) · [body 132](../../../Source/Common/Logging/BoldLogHandler.pas#L132) |  | ⚪ not started |  |
-| `StartLog` | method | [40](../../../Source/Common/Logging/BoldLogHandler.pas#L40) · [body 142](../../../Source/Common/Logging/BoldLogHandler.pas#L142) |  | ⚪ not started |  |
-| `EndLog` | method | [41](../../../Source/Common/Logging/BoldLogHandler.pas#L41) · [body 151](../../../Source/Common/Logging/BoldLogHandler.pas#L151) |  | ⚪ not started |  |
-| `Indent` | method | [42](../../../Source/Common/Logging/BoldLogHandler.pas#L42) · [body 191](../../../Source/Common/Logging/BoldLogHandler.pas#L191) |  | ⚪ not started |  |
-| `Dedent` | method | [43](../../../Source/Common/Logging/BoldLogHandler.pas#L43) · [body 196](../../../Source/Common/Logging/BoldLogHandler.pas#L196) |  | ⚪ not started |  |
-| `Separator` | method | [44](../../../Source/Common/Logging/BoldLogHandler.pas#L44) · [body 120](../../../Source/Common/Logging/BoldLogHandler.pas#L120) |  | ⚪ not started |  |
-| `ProgressStep` | method | [45](../../../Source/Common/Logging/BoldLogHandler.pas#L45) · [body 218](../../../Source/Common/Logging/BoldLogHandler.pas#L218) |  | ⚪ not started |  |
-| `Sync` | method | [46](../../../Source/Common/Logging/BoldLogHandler.pas#L46) · [body 310](../../../Source/Common/Logging/BoldLogHandler.pas#L310) |  | ⚪ not started |  |
-| `RegisterLogReceiver` | method | [47](../../../Source/Common/Logging/BoldLogHandler.pas#L47) · [body 223](../../../Source/Common/Logging/BoldLogHandler.pas#L223) |  | ⚪ not started |  |
-| `UnregisterLogReceiver` | method | [48](../../../Source/Common/Logging/BoldLogHandler.pas#L48) · [body 228](../../../Source/Common/Logging/BoldLogHandler.pas#L228) |  | ⚪ not started |  |
-| `InterruptProcess` | method | [49](../../../Source/Common/Logging/BoldLogHandler.pas#L49) · [body 234](../../../Source/Common/Logging/BoldLogHandler.pas#L234) |  | ⚪ not started |  |
-| `ProcessInterruption` | method | [50](../../../Source/Common/Logging/BoldLogHandler.pas#L50) · [body 241](../../../Source/Common/Logging/BoldLogHandler.pas#L241) |  | ⚪ not started |  |
-| `ProgressMax` | property | [51](../../../Source/Common/Logging/BoldLogHandler.pas#L51) |  | ⚪ not started |  |
-| `Progress` | property | [52](../../../Source/Common/Logging/BoldLogHandler.pas#L52) |  | ⚪ not started |  |
-| `LogHeader` | property | [53](../../../Source/Common/Logging/BoldLogHandler.pas#L53) |  | ⚪ not started |  |
+| `SetProgress` | method, private | [23](../../../Source/Common/Logging/BoldLogHandler.pas#L23) · [body 208](../../../Source/Common/Logging/BoldLogHandler.pas#L208) | [`TBoldLogHandler.SetProgress`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L30) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `SetLogHeader` | method, private | [24](../../../Source/Common/Logging/BoldLogHandler.pas#L24) · [body 213](../../../Source/Common/Logging/BoldLogHandler.pas#L213) | [`TBoldLogHandler.SetLogHeader`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L33) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `SetProgressMax` | method, private | [25](../../../Source/Common/Logging/BoldLogHandler.pas#L25) · [body 203](../../../Source/Common/Logging/BoldLogHandler.pas#L203) | [`TBoldLogHandler.SetProgressMax`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L37) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `IndentSpaces` | method, protected | [27](../../../Source/Common/Logging/BoldLogHandler.pas#L27) · [body 115](../../../Source/Common/Logging/BoldLogHandler.pas#L115) | [`TBoldLogHandler.IndentSpaces`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L41) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Create` | constructor | [29](../../../Source/Common/Logging/BoldLogHandler.pas#L29) · [body 105](../../../Source/Common/Logging/BoldLogHandler.pas#L105) | [`TBoldLogHandler.TBoldLogHandler`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L22) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Destroy` | destructor | [30](../../../Source/Common/Logging/BoldLogHandler.pas#L30) · [body 110](../../../Source/Common/Logging/BoldLogHandler.pas#L110) | [`TBoldLogHandler.Dispose`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L27) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Log` | method | [31](../../../Source/Common/Logging/BoldLogHandler.pas#L31) · [body 157](../../../Source/Common/Logging/BoldLogHandler.pas#L157) | [`TBoldLogHandler.Log`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L45) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `LogFmt` | method | [32](../../../Source/Common/Logging/BoldLogHandler.pas#L32) · [body 162](../../../Source/Common/Logging/BoldLogHandler.pas#L162) | [`TBoldLogHandler.LogFmt`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L49) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `LogIndent` | method | [33](../../../Source/Common/Logging/BoldLogHandler.pas#L33) · [body 167](../../../Source/Common/Logging/BoldLogHandler.pas#L167) | [`TBoldLogHandler.LogIndent`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L52) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `LogDedent` | method | [34](../../../Source/Common/Logging/BoldLogHandler.pas#L34) · [body 173](../../../Source/Common/Logging/BoldLogHandler.pas#L173) | [`TBoldLogHandler.LogDedent`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L59) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `LogFmtIndent` | method | [35](../../../Source/Common/Logging/BoldLogHandler.pas#L35) · [body 179](../../../Source/Common/Logging/BoldLogHandler.pas#L179) | [`TBoldLogHandler.LogFmtIndent`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L66) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `LogFmtDedent` | method | [36](../../../Source/Common/Logging/BoldLogHandler.pas#L36) · [body 185](../../../Source/Common/Logging/BoldLogHandler.pas#L185) | [`TBoldLogHandler.LogFmtDedent`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L73) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Clear` | method | [37](../../../Source/Common/Logging/BoldLogHandler.pas#L37) · [body 127](../../../Source/Common/Logging/BoldLogHandler.pas#L127) | [`TBoldLogHandler.Clear`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L80) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Hide` | method | [38](../../../Source/Common/Logging/BoldLogHandler.pas#L38) · [body 137](../../../Source/Common/Logging/BoldLogHandler.pas#L137) | [`TBoldLogHandler.Hide`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L83) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Show` | method | [39](../../../Source/Common/Logging/BoldLogHandler.pas#L39) · [body 132](../../../Source/Common/Logging/BoldLogHandler.pas#L132) | [`TBoldLogHandler.Show`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L86) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `StartLog` | method | [40](../../../Source/Common/Logging/BoldLogHandler.pas#L40) · [body 142](../../../Source/Common/Logging/BoldLogHandler.pas#L142) | [`TBoldLogHandler.StartLog`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L90) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `EndLog` | method | [41](../../../Source/Common/Logging/BoldLogHandler.pas#L41) · [body 151](../../../Source/Common/Logging/BoldLogHandler.pas#L151) | [`TBoldLogHandler.EndLog`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L100) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Indent` | method | [42](../../../Source/Common/Logging/BoldLogHandler.pas#L42) · [body 191](../../../Source/Common/Logging/BoldLogHandler.pas#L191) | [`TBoldLogHandler.Indent`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L107) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Dedent` | method | [43](../../../Source/Common/Logging/BoldLogHandler.pas#L43) · [body 196](../../../Source/Common/Logging/BoldLogHandler.pas#L196) | [`TBoldLogHandler.Dedent`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L110) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Separator` | method | [44](../../../Source/Common/Logging/BoldLogHandler.pas#L44) · [body 120](../../../Source/Common/Logging/BoldLogHandler.pas#L120) | [`TBoldLogHandler.Separator`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L121) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `ProgressStep` | method | [45](../../../Source/Common/Logging/BoldLogHandler.pas#L45) · [body 218](../../../Source/Common/Logging/BoldLogHandler.pas#L218) | [`TBoldLogHandler.ProgressStep`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L129) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Sync` | method | [46](../../../Source/Common/Logging/BoldLogHandler.pas#L46) · [body 310](../../../Source/Common/Logging/BoldLogHandler.pas#L310) | [`TBoldLogHandler.Sync`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L132) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `RegisterLogReceiver` | method | [47](../../../Source/Common/Logging/BoldLogHandler.pas#L47) · [body 223](../../../Source/Common/Logging/BoldLogHandler.pas#L223) | [`TBoldLogHandler.RegisterLogReceiver`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L136) | ✅ verified: Subscribes to the global log (BoldLog), as Delphi does, whichever handler it is called on. | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `UnregisterLogReceiver` | method | [48](../../../Source/Common/Logging/BoldLogHandler.pas#L48) · [body 228](../../../Source/Common/Logging/BoldLogHandler.pas#L228) | [`TBoldLogHandler.UnregisterLogReceiver`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L139) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `InterruptProcess` | method | [49](../../../Source/Common/Logging/BoldLogHandler.pas#L49) · [body 234](../../../Source/Common/Logging/BoldLogHandler.pas#L234) | [`TBoldLogHandler.InterruptProcess`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L143) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `ProcessInterruption` | method | [50](../../../Source/Common/Logging/BoldLogHandler.pas#L50) · [body 241](../../../Source/Common/Logging/BoldLogHandler.pas#L241) | [`TBoldLogHandler.ProcessInterruption`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L152) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `ProgressMax` | property | [51](../../../Source/Common/Logging/BoldLogHandler.pas#L51) | [`TBoldLogHandler.ProgressMax`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L169) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Progress` | property | [52](../../../Source/Common/Logging/BoldLogHandler.pas#L52) | [`TBoldLogHandler.Progress`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L170) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `LogHeader` | property | [53](../../../Source/Common/Logging/BoldLogHandler.pas#L53) | [`TBoldLogHandler.LogHeader`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L171) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
 
 ## TBoldLogReceiverSubscriber
 
-class at [line 57](../../../Source/Common/Logging/BoldLogHandler.pas#L57); ⚪ not started.
+class at [line 57](../../../Source/Common/Logging/BoldLogHandler.pas#L57); ✅ verified, C# [`TBoldLogReceiverSubscriber`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L176).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Receive` | method, protected | [61](../../../Source/Common/Logging/BoldLogHandler.pas#L61) · [body 268](../../../Source/Common/Logging/BoldLogHandler.pas#L268) |  | ⚪ not started |  |
-| `ReceiveExtended` | method, protected | [62](../../../Source/Common/Logging/BoldLogHandler.pas#L62) · [body 274](../../../Source/Common/Logging/BoldLogHandler.pas#L274) |  | ⚪ not started |  |
-| `GetHandlesExtendedEvents` | method, protected | [63](../../../Source/Common/Logging/BoldLogHandler.pas#L63) · [body 263](../../../Source/Common/Logging/BoldLogHandler.pas#L263) |  | ⚪ not started |  |
-| `Create` | constructor | [65](../../../Source/Common/Logging/BoldLogHandler.pas#L65) · [body 255](../../../Source/Common/Logging/BoldLogHandler.pas#L255) |  | ⚪ not started |  |
+| `Receive` | method, protected | [61](../../../Source/Common/Logging/BoldLogHandler.pas#L61) · [body 268](../../../Source/Common/Logging/BoldLogHandler.pas#L268) | [`TBoldLogReceiverSubscriber.Receive`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L190) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `ReceiveExtended` | method, protected | [62](../../../Source/Common/Logging/BoldLogHandler.pas#L62) · [body 274](../../../Source/Common/Logging/BoldLogHandler.pas#L274) | [`TBoldLogReceiverSubscriber.ReceiveExtended`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L195) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `GetHandlesExtendedEvents` | method, protected | [63](../../../Source/Common/Logging/BoldLogHandler.pas#L63) · [body 263](../../../Source/Common/Logging/BoldLogHandler.pas#L263) | [`TBoldLogReceiverSubscriber.GetHandlesExtendedEvents`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L226) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Create` | constructor | [65](../../../Source/Common/Logging/BoldLogHandler.pas#L65) · [body 255](../../../Source/Common/Logging/BoldLogHandler.pas#L255) | [`TBoldLogReceiverSubscriber.TBoldLogReceiverSubscriber`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L181) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldLogHandler.bleFirst`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L232) (const)
+- [`BoldLogHandler.bleSetProgress`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L233) (const)
+- [`BoldLogHandler.bleSetLogHeader`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L234) (const)
+- [`BoldLogHandler.bleSetProgressMax`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L235) (const)
+- [`BoldLogHandler.bleClear`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L236) (const)
+- [`BoldLogHandler.bleHide`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L237) (const)
+- [`BoldLogHandler.bleLog`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L238) (const)
+- [`BoldLogHandler.bleProgressStep`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L239) (const)
+- [`BoldLogHandler.bleShow`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L240) (const)
+- [`BoldLogHandler.bleStartLog`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L241) (const)
+- [`BoldLogHandler.bleEndLog`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L242) (const)
+- [`BoldLogHandler.bleProcessInterruption`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L243) (const)
+- [`BoldLogHandler.bleRemoveReceiver`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L244) (const)
+- [`BoldLogHandler.bleSync`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L245) (const)
+- [`BoldLogHandler.bleLast`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L246) (const)
+- [`BoldLogHandler.G_BoldLogHandlerClass`](../../src/Bold.Core/Common/Logging/BoldLogHandler.cs#L251) (field)
 
 ## Dependencies
 

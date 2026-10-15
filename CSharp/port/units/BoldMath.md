@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldMath.pas`](../../../Source/Common/Support/BoldMath.pas) (65 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldMath.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldMath.cs`](../../src/Bold.Core/Common/Support/BoldMath.cs) |
 | Project | Bold.Core |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 5 symbols done, 0 verified |
+| Status | ✅ verified: 5 of 5 symbols done, 5 verified |
 
-⚪ 5 not started
+✅ 5 verified
 
 ## Unit level
 
@@ -18,11 +18,11 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Floor` | routine | [5](../../../Source/Common/Support/BoldMath.pas#L5) · [body 17](../../../Source/Common/Support/BoldMath.pas#L17) |  | ⚪ not started |  |
-| `MaxIntValue` | routine | [6](../../../Source/Common/Support/BoldMath.pas#L6) · [body 24](../../../Source/Common/Support/BoldMath.pas#L24) |  | ⚪ not started |  |
-| `MaxValue` | routine | [7](../../../Source/Common/Support/BoldMath.pas#L7) · [body 34](../../../Source/Common/Support/BoldMath.pas#L34) |  | ⚪ not started |  |
-| `MinValue` | routine | [8](../../../Source/Common/Support/BoldMath.pas#L8) · [body 45](../../../Source/Common/Support/BoldMath.pas#L45) |  | ⚪ not started |  |
-| `MinIntValue` | routine | [9](../../../Source/Common/Support/BoldMath.pas#L9) · [body 55](../../../Source/Common/Support/BoldMath.pas#L55) |  | ⚪ not started |  |
+| `Floor` | routine | [5](../../../Source/Common/Support/BoldMath.pas#L5) · [body 17](../../../Source/Common/Support/BoldMath.pas#L17) | [`BoldMath.Floor`](../../src/Bold.Core/Common/Support/BoldMath.cs#L11) | ✅ verified: double where Delphi has Extended. | ✔ [`BoldMathAndSorterTests.Floor_and_extremes`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L9) |
+| `MaxIntValue` | routine | [6](../../../Source/Common/Support/BoldMath.pas#L6) · [body 24](../../../Source/Common/Support/BoldMath.pas#L24) | [`BoldMath.MaxIntValue`](../../src/Bold.Core/Common/Support/BoldMath.cs#L23) | ✅ verified | ✔ [`BoldMathAndSorterTests.Floor_and_extremes`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L9) |
+| `MaxValue` | routine | [7](../../../Source/Common/Support/BoldMath.pas#L7) · [body 34](../../../Source/Common/Support/BoldMath.pas#L34) | [`BoldMath.MaxValue`](../../src/Bold.Core/Common/Support/BoldMath.cs#L38) | ✅ verified | ✔ [`BoldMathAndSorterTests.Floor_and_extremes`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L9) |
+| `MinValue` | routine | [8](../../../Source/Common/Support/BoldMath.pas#L8) · [body 45](../../../Source/Common/Support/BoldMath.pas#L45) | [`BoldMath.MinValue`](../../src/Bold.Core/Common/Support/BoldMath.cs#L53) | ✅ verified | ✔ [`BoldMathAndSorterTests.Floor_and_extremes`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L9) |
+| `MinIntValue` | routine | [9](../../../Source/Common/Support/BoldMath.pas#L9) · [body 55](../../../Source/Common/Support/BoldMath.pas#L55) | [`BoldMath.MinIntValue`](../../src/Bold.Core/Common/Support/BoldMath.cs#L68) | ✅ verified | ✔ [`BoldMathAndSorterTests.Floor_and_extremes`](../../tests/Bold.Core.Tests/Common/Support/BoldMathAndSorterTests.cs#L9) |
 
 ## Dependencies
 

@@ -23,5 +23,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldCondition](../../../CSharp/port/units/BoldCondition.md) | Bold.ValueSpace: ValueSpace/Condition/BoldCondition.cs (not started) | M3 Object space in memory |
+| [BoldCondition](../../../CSharp/port/units/BoldCondition.md) | [Bold.ValueSpace: ValueSpace/Condition/BoldCondition.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs) | M3 Object space in memory |
 <!-- END C# PORT -->

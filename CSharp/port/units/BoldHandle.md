@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Handles/BoldHandle.pas`](../../../Source/Common/Handles/BoldHandle.pas) (56 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Handles/BoldHandle.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Handles/BoldHandle.cs`](../../src/Bold.Core/Common/Handles/BoldHandle.cs) |
 | Project | Bold.Core |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 8 symbols done, 0 verified |
+| Status | ✅ verified: 8 of 8 symbols done, 8 verified |
 | Note | Moved down to Bold.Core: persistence handles derive from TBoldHandle. |
 
-⚪ 8 not started
+✅ 8 verified
 
 ## Unit level
 
@@ -19,21 +19,21 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldHandle` | class | [16](../../../Source/Common/Handles/BoldHandle.pas#L16) |  | ⚪ not started |  |
-| `BoldHandleList` | var | [26](../../../Source/Common/Handles/BoldHandle.pas#L26) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [50](../../../Source/Common/Handles/BoldHandle.pas#L50) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [53](../../../Source/Common/Handles/BoldHandle.pas#L53) |  | ⚪ not started |  |
+| `TBoldHandle` | class | [16](../../../Source/Common/Handles/BoldHandle.pas#L16) | [`TBoldHandle`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L11) | ✅ verified | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
+| `BoldHandleList` | var | [26](../../../Source/Common/Handles/BoldHandle.pas#L26) | [`BoldHandle.BoldHandleList`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L45) | ✅ verified | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
+| `initialization` | initialization, implementation | [50](../../../Source/Common/Handles/BoldHandle.pas#L50) | [`[assembly: Delphi] in BoldHandle.cs`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L4) | ✅ verified: The handle list is created by its static field initializer. | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
+| `finalization` | finalization, implementation | [53](../../../Source/Common/Handles/BoldHandle.pas#L53) | [`[assembly: Delphi] in BoldHandle.cs`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L5) | ✅ verified: Freed the handle list; the garbage collector does that in .NET. | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
 
 ## TBoldHandle
 
-class at [line 16](../../../Source/Common/Handles/BoldHandle.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/Common/Handles/BoldHandle.pas#L16); ✅ verified, C# [`TBoldHandle`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetHandledObject` | method, protected | [18](../../../Source/Common/Handles/BoldHandle.pas#L18) |  | ⚪ not started |  |
-| `Create` | constructor | [20](../../../Source/Common/Handles/BoldHandle.pas#L20) · [body 35](../../../Source/Common/Handles/BoldHandle.pas#L35) |  | ⚪ not started |  |
-| `Destroy` | destructor | [21](../../../Source/Common/Handles/BoldHandle.pas#L21) · [body 42](../../../Source/Common/Handles/BoldHandle.pas#L42) |  | ⚪ not started |  |
-| `HandledObject` | property | [22](../../../Source/Common/Handles/BoldHandle.pas#L22) |  | ⚪ not started |  |
+| `GetHandledObject` | method, protected | [18](../../../Source/Common/Handles/BoldHandle.pas#L18) | [`TBoldHandle.GetHandledObject`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L35) | ✅ verified | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
+| `Create` | constructor | [20](../../../Source/Common/Handles/BoldHandle.pas#L20) · [body 35](../../../Source/Common/Handles/BoldHandle.pas#L35) | [`TBoldHandle.TBoldHandle`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L15) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
+| `Destroy` | destructor | [21](../../../Source/Common/Handles/BoldHandle.pas#L21) · [body 42](../../../Source/Common/Handles/BoldHandle.pas#L42) | [`TBoldHandle.Dispose`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L23) | ✅ verified | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
+| `HandledObject` | property | [22](../../../Source/Common/Handles/BoldHandle.pas#L22) | [`TBoldHandle.HandledObject`](../../src/Bold.Core/Common/Handles/BoldHandle.cs#L38) | ✅ verified | ✔ [`BoldHandleTests.Handles_are_listed_while_alive`](../../tests/Bold.Core.Tests/Common/Handles/BoldHandleTests.cs#L16) |
 
 ## Dependencies
 

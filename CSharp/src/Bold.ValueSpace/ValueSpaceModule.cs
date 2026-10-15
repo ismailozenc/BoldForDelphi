@@ -15,5 +15,6 @@ internal static class ValueSpaceModule
         BoldDefaultId.RegisterStreamers();
         BoldDefaultXMLStreaming.RegisterStreamers();
         BoldFreeStandingValueFactories.Initialize();
+        BoldCondition.RegisterStreamers();
     }
 }

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas`](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas) (170 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs)<br>[`CSharp/src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | ✅ verified: 9 of 9 symbols done, 9 verified |
 
-⚪ 9 not started
+✅ 9 verified
 
 ## Unit level
 
@@ -18,22 +18,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldEventType` | alias | [10](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L10) |  | ⚪ not started |  |
-| `TBoldExternalEvent` | alias | [11](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L11) |  | ⚪ not started |  |
-| `TBoldObjectSpaceSubscriptionType` | enum | [14](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L14) |  | ⚪ not started |  |
-| `TBoldObjectSpaceExternalEvent` | class | [17](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L17) |  | ⚪ not started |  |
+| `TBoldEventType` | alias | [10](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L10) | [`global using TBoldEventType`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs#L5) | ✅ verified: Global using alias of char, in BoldObjectSpaceExternalEvents.Aliases.cs. | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
+| `TBoldExternalEvent` | alias | [11](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L11) | [`global using TBoldExternalEvent`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs#L6) | ✅ verified: Global using alias of string, in BoldObjectSpaceExternalEvents.Aliases.cs. | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
+| `TBoldObjectSpaceSubscriptionType` | enum | [14](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L14) | [`TBoldObjectSpaceSubscriptionType`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L11) | ✅ verified | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
+| `TBoldObjectSpaceExternalEvent` | class | [17](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L17) | [`TBoldObjectSpaceExternalEvent`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L21) | ✅ verified | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
 
 ## TBoldObjectSpaceExternalEvent
 
-class at [line 17](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L17); ✅ verified, C# [`TBoldObjectSpaceExternalEvent`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L21).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetID` | class method, private | [19](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L19) · [body 75](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L75) |  | ⚪ not started |  |
-| `GetParameter` | class method, private | [20](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L20) · [body 159](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L159) |  | ⚪ not started |  |
-| `GetEventType` | class method, private | [21](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L21) · [body 47](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L47) |  | ⚪ not started |  |
-| `EncodeExternalEvent` | class method | [23](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L23) · [body 106](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L106) |  | ⚪ not started |  |
-| `DecodeExternalEvent` | class method | [25](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L25) · [body 136](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L136) |  | ⚪ not started |  |
+| `GetID` | class method, private | [19](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L19) · [body 75](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L75) | [`TBoldObjectSpaceExternalEvent.GetID`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L33) | ✅ verified | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
+| `GetParameter` | class method, private | [20](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L20) · [body 159](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L159) | [`TBoldObjectSpaceExternalEvent.GetParameter`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L72) | ✅ verified | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
+| `GetEventType` | class method, private | [21](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L21) · [body 47](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L47) | [`TBoldObjectSpaceExternalEvent.GetEventType`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L80) | ✅ verified | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
+| `EncodeExternalEvent` | class method | [23](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L23) · [body 106](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L106) | [`TBoldObjectSpaceExternalEvent.EncodeExternalEvent`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L107) | ✅ verified | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
+| `DecodeExternalEvent` | class method | [25](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L25) · [body 136](../../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas#L136) | [`TBoldObjectSpaceExternalEvent.DecodeExternalEvent`](../../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs#L125) | ✅ verified | ✔ [`BoldObjectSpaceExternalEventsTests.Events_encode_and_decode`](../../tests/Bold.ValueSpace.Tests/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEventsTests.cs#L13) |
 
 ## Dependencies
 

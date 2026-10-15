@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Logging/BoldLogReceiverInterface.pas`](../../../Source/Common/Logging/BoldLogReceiverInterface.pas) (34 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs) |
 | Project | Bold.Core |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 16 symbols done, 0 verified |
+| Status | ✅ verified: 16 of 16 symbols done, 16 verified |
 
-⚪ 16 not started
+✅ 16 verified
 
 ## Unit level
 
@@ -18,29 +18,29 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IBoldLogReceiver` | interface | [13](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L13) |  | ⚪ not started |  |
+| `IBoldLogReceiver` | interface | [13](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L13) | [`IBoldLogReceiver`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L8) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
 
 ## IBoldLogReceiver
 
-interface at [line 13](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L13); ⚪ not started.
+interface at [line 13](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L13); ✅ verified, C# [`IBoldLogReceiver`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetProgress` | method | [15](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L15) |  | ⚪ not started |  |
-| `SetLogHeader` | method | [16](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L16) |  | ⚪ not started |  |
-| `SetProgressMax` | method | [17](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L17) |  | ⚪ not started |  |
-| `Clear` | method | [18](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L18) |  | ⚪ not started |  |
-| `Hide` | method | [19](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L19) |  | ⚪ not started |  |
-| `Log` | method | [20](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L20) |  | ⚪ not started |  |
-| `ProgressStep` | method | [21](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L21) |  | ⚪ not started |  |
-| `Show` | method | [22](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L22) |  | ⚪ not started |  |
-| `StartLog` | method | [23](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L23) |  | ⚪ not started |  |
-| `EndLog` | method | [24](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L24) |  | ⚪ not started |  |
-| `Sync` | method | [25](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L25) |  | ⚪ not started |  |
-| `ProcessInterruption` | method | [26](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L26) |  | ⚪ not started |  |
-| `ProgressMax` | property | [27](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L27) |  | ⚪ not started |  |
-| `Progress` | property | [28](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L28) |  | ⚪ not started |  |
-| `LogHeader` | property | [29](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L29) |  | ⚪ not started |  |
+| `SetProgress` | method | [15](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L15) | [`IBoldLogReceiver.SetProgress`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L10) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `SetLogHeader` | method | [16](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L16) | [`IBoldLogReceiver.SetLogHeader`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L11) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `SetProgressMax` | method | [17](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L17) | [`IBoldLogReceiver.SetProgressMax`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L12) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Clear` | method | [18](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L18) | [`IBoldLogReceiver.Clear`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L13) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Hide` | method | [19](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L19) | [`IBoldLogReceiver.Hide`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L14) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Log` | method | [20](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L20) | [`IBoldLogReceiver.Log`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L15) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `ProgressStep` | method | [21](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L21) | [`IBoldLogReceiver.ProgressStep`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L16) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Show` | method | [22](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L22) | [`IBoldLogReceiver.Show`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L17) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `StartLog` | method | [23](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L23) | [`IBoldLogReceiver.StartLog`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L18) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `EndLog` | method | [24](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L24) | [`IBoldLogReceiver.EndLog`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L19) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Sync` | method | [25](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L25) | [`IBoldLogReceiver.Sync`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L20) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `ProcessInterruption` | method | [26](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L26) | [`IBoldLogReceiver.ProcessInterruption`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L21) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `ProgressMax` | property | [27](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L27) | [`IBoldLogReceiver.ProgressMax`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L22) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `Progress` | property | [28](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L28) | [`IBoldLogReceiver.Progress`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L23) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
+| `LogHeader` | property | [29](../../../Source/Common/Logging/BoldLogReceiverInterface.pas#L29) | [`IBoldLogReceiver.LogHeader`](../../src/Bold.Core/Common/Logging/BoldLogReceiverInterface.cs#L24) | ✅ verified | ✔ [`BoldLogHandlerTests.Receivers_get_every_log_event_until_unregistered`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerTests.cs#L31) |
 
 ## Dependencies
 
