@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas`](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas) (635 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 24 symbols done, 0 verified |
+| Status | 🟢 ported: 24 of 24 symbols done, 0 verified |
 
-⚪ 24 not started
+🟢 23 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,44 +18,50 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSystemPersistenceHandler` | class | [22](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L22) |  | ⚪ not started |  |
-| `TBoldTimeMappingCache` | class | [50](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L50) |  | ⚪ not started |  |
+| `TBoldSystemPersistenceHandler` | class | [22](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L22) | [`TBoldSystemPersistenceHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L14) | 🟢 ported |  |
+| `TBoldTimeMappingCache` | class | [50](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L50) | [`TBoldTimeMappingCache`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L526) | 🟢 ported |  |
 
 ## TBoldSystemPersistenceHandler
 
-class at [line 22](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L22); 🟢 ported, C# [`TBoldSystemPersistenceHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DoPreUpdate` | method, private | [27](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L27) · [body 87](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L87) |  | ⚪ not started |  |
-| `GetPersistenceController` | method, private | [28](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L28) · [body 490](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L490) |  | ⚪ not started |  |
-| `PMFetch` | method, private | [29](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L29) · [body 569](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L569) |  | ⚪ not started |  |
-| `GetTimeStampOfLatestUpdate` | method, protected | [31](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L31) · [body 485](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L485) |  | ⚪ not started |  |
-| `PersistenceController` | property, protected | [32](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L32) |  | ⚪ not started |  |
-| `Create` | constructor | [34](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L34) · [body 79](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L79) |  | ⚪ not started |  |
-| `Destroy` | destructor | [35](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L35) · [body 540](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L540) |  | ⚪ not started |  |
-| `EnsureEnclosure` | method | [36](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L36) · [body 93](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L93) |  | ⚪ not started |  |
-| `FetchLinksWithObjects` | method | [37](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L37) · [body 226](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L226) |  | ⚪ not started |  |
-| `FetchList` | method | [38](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L38) · [body 564](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L564) |  | ⚪ not started |  |
-| `FetchObjectById` | method | [39](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L39) · [body 307](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L307) |  | ⚪ not started |  |
-| `FetchMember` | method | [40](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L40) · [body 495](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L495) |  | ⚪ not started |  |
-| `FetchClass` | method | [41](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L41) · [body 514](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L514) |  | ⚪ not started |  |
-| `GetAllWithCondition` | method | [42](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L42) · [body 320](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L320) |  | ⚪ not started |  |
-| `GetAllInClassWithSQL` | method | [43](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L43) · [body 344](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L344) |  | ⚪ not started |  |
-| `GetTimeForTimestamp` | method | [44](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L44) · [body 547](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L547) |  | ⚪ not started |  |
-| `GetTimestampForTime` | method | [45](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L45) · [body 557](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L557) |  | ⚪ not started |  |
-| `UpdateDatabaseWithList` | method | [46](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L46) · [body 386](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L386) |  | ⚪ not started |  |
+| `DoPreUpdate` | method, private | [27](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L27) · [body 87](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L87) | [`TBoldSystemPersistenceHandler.DoPreUpdate`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L33) | 🟢 ported |  |
+| `GetPersistenceController` | method, private | [28](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L28) · [body 490](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L490) | [`TBoldSystemPersistenceHandler.GetPersistenceController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L433) | 🟢 ported |  |
+| `PMFetch` | method, private | [29](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L29) · [body 569](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L569) | [`TBoldSystemPersistenceHandler.PMFetch`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L502) | 🟢 ported |  |
+| `GetTimeStampOfLatestUpdate` | method, protected | [31](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L31) · [body 485](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L485) | [`TBoldSystemPersistenceHandler.GetTimeStampOfLatestUpdate`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L430) | 🟢 ported |  |
+| `PersistenceController` | property, protected | [32](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L32) | [`TBoldSystemPersistenceHandler.PersistenceController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L518) | 🟢 ported |  |
+| `Create` | constructor | [34](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L34) · [body 79](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L79) | [`TBoldSystemPersistenceHandler.TBoldSystemPersistenceHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L21) | 🟢 ported |  |
+| `Destroy` | destructor | [35](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L35) · [body 540](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L540) | [`TBoldSystemPersistenceHandler.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L30) | 🔵 replaced: Freed the caches; the garbage collector does that in .NET. |  |
+| `EnsureEnclosure` | method | [36](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L36) · [body 93](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L93) | [`TBoldSystemPersistenceHandler.EnsureEnclosure`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L40) | 🟢 ported |  |
+| `FetchLinksWithObjects` | method | [37](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L37) · [body 226](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L226) | [`TBoldSystemPersistenceHandler.FetchLinksWithObjects`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L162) | 🟢 ported |  |
+| `FetchList` | method | [38](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L38) · [body 564](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L564) | [`TBoldSystemPersistenceHandler.FetchList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L498) | 🟢 ported |  |
+| `FetchObjectById` | method | [39](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L39) · [body 307](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L307) | [`TBoldSystemPersistenceHandler.FetchObjectById`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L251) | 🟢 ported |  |
+| `FetchMember` | method | [40](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L40) · [body 495](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L495) | [`TBoldSystemPersistenceHandler.FetchMember`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L437) | 🟢 ported |  |
+| `FetchClass` | method | [41](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L41) · [body 514](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L514) | [`TBoldSystemPersistenceHandler.FetchClass`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L460) | 🟢 ported |  |
+| `GetAllWithCondition` | method | [42](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L42) · [body 320](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L320) | [`TBoldSystemPersistenceHandler.GetAllWithCondition`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L267) | 🟢 ported |  |
+| `GetAllInClassWithSQL` | method | [43](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L43) · [body 344](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L344) | [`TBoldSystemPersistenceHandler.GetAllInClassWithSQL`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L290) | 🟢 ported |  |
+| `GetTimeForTimestamp` | method | [44](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L44) · [body 547](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L547) | [`TBoldSystemPersistenceHandler.GetTimeForTimestamp`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L477) | 🟢 ported |  |
+| `GetTimestampForTime` | method | [45](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L45) · [body 557](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L557) | [`TBoldSystemPersistenceHandler.GetTimestampForTime`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L490) | 🟢 ported: Does not use its cache, as in Delphi. |  |
+| `UpdateDatabaseWithList` | method | [46](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L46) · [body 386](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L386) | [`TBoldSystemPersistenceHandler.UpdateDatabaseWithList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L319) | 🟢 ported |  |
 
 ## TBoldTimeMappingCache
 
-class at [line 50](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L50); ⚪ not started.
+class at [line 50](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L50); 🟢 ported, C# [`TBoldTimeMappingCache`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L526).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [57](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L57) · [body 599](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L599) |  | ⚪ not started |  |
-| `TimeForTimestamp` | method | [58](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L58) · [body 605](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L605) |  | ⚪ not started |  |
-| `TimestampForTime` | method | [59](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L59) · [body 620](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L620) |  | ⚪ not started |  |
-| `Add` | method | [60](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L60) · [body 589](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L589) |  | ⚪ not started |  |
+| `Create` | constructor | [57](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L57) · [body 599](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L599) | [`TBoldTimeMappingCache.TBoldTimeMappingCache`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L534) | 🟢 ported |  |
+| `TimeForTimestamp` | method | [58](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L58) · [body 605](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L605) | [`TBoldTimeMappingCache.TimeForTimestamp`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L541) | 🟢 ported |  |
+| `TimestampForTime` | method | [59](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L59) · [body 620](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L620) | [`TBoldTimeMappingCache.TimestampForTime`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L556) | 🟢 ported |  |
+| `Add` | method | [60](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L60) · [body 589](../../../Source/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.pas#L589) | [`TBoldTimeMappingCache.Add`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L572) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldSystemPersistenceHandler.TimeToTimestampCache`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemPersistenceHandler.cs#L521) (property)
 
 ## Dependencies
 

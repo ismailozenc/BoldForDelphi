@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas`](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas) (466 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 61 symbols done, 0 verified |
+| Status | 🟢 ported: 61 of 61 symbols done, 0 verified |
 
-⚪ 61 not started
+🟢 59 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,123 +18,129 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldRegionDefinitions` | class | [21](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L21) |  | ⚪ not started |  |
-| `TBoldRegionCoreDefinition` | class | [44](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L44) |  | ⚪ not started |  |
-| `TBoldConcreteRegionDefinition` | class | [62](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L62) |  | ⚪ not started |  |
-| `TBoldSubregionReference` | class | [84](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L84) |  | ⚪ not started |  |
-| `TBoldRegionElementInclusion` | class | [100](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L100) |  | ⚪ not started |  |
-| `TBoldConcreteRegionDefinitionList` | class | [112](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L112) |  | ⚪ not started |  |
-| `TBoldSubregionReferenceList` | class | [120](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L120) |  | ⚪ not started |  |
-| `TBoldRegionElementInclusionList` | class | [127](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L127) |  | ⚪ not started |  |
-| `beRegionDefinitionClearing` | const | [135](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L135) |  | ⚪ not started |  |
-| `GetEnsuredItem` | routine, implementation | [142](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L142) |  | ⚪ not started |  |
+| `TBoldRegionDefinitions` | class | [21](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L21) | [`TBoldRegionDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L15) | 🟢 ported |  |
+| `TBoldRegionCoreDefinition` | class | [44](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L44) | [`TBoldRegionCoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L100) | 🟢 ported |  |
+| `TBoldConcreteRegionDefinition` | class | [62](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L62) | [`TBoldConcreteRegionDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L151) | 🟢 ported |  |
+| `TBoldSubregionReference` | class | [84](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L84) | [`TBoldSubregionReference`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L211) | 🟢 ported |  |
+| `TBoldRegionElementInclusion` | class | [100](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L100) | [`TBoldRegionElementInclusion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L251) | 🟢 ported |  |
+| `TBoldConcreteRegionDefinitionList` | class | [112](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L112) | [`TBoldConcreteRegionDefinitionList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L279) | 🟢 ported |  |
+| `TBoldSubregionReferenceList` | class | [120](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L120) | [`TBoldSubregionReferenceList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L303) | 🟢 ported |  |
+| `TBoldRegionElementInclusionList` | class | [127](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L127) | [`TBoldRegionElementInclusionList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L313) | 🟢 ported |  |
+| `beRegionDefinitionClearing` | const | [135](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L135) | [`BoldRegionDefinitions.beRegionDefinitionClearing`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L325) | 🟢 ported |  |
+| `GetEnsuredItem` | routine, implementation | [142](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L142) | [`[assembly: Delphi] in BoldRegionDefinitions.cs`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L6) | 🟢 ported: BoldRegionDefinitions.GetEnsuredItem, generic over the item class. |  |
 
 ## TBoldRegionDefinitions
 
-class at [line 21](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L21); 🟢 ported, C# [`TBoldRegionDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AddRegionElementInclusion` | method, private | [26](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L26) · [body 191](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L191) |  | ⚪ not started |  |
-| `AddConcreteRegionDefinition` | method, private | [27](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L27) · [body 180](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L180) |  | ⚪ not started |  |
-| `AddCoreDefinition` | method, private | [28](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L28) · [body 185](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L185) |  | ⚪ not started |  |
-| `GetRegionInclusionsByMember` | method, private | [29](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L29) · [body 283](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L283) |  | ⚪ not started |  |
-| `GetConcreteRegionDefinitionsByRootClass` | method, private | [30](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L30) · [body 266](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L266) |  | ⚪ not started |  |
-| `GetCoreDefinition` | method, private | [31](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L31) · [body 272](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L272) |  | ⚪ not started |  |
-| `Create` | constructor | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L33) · [body 232](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L232) |  | ⚪ not started |  |
-| `Destroy` | destructor | [34](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L34) · [body 239](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L239) |  | ⚪ not started |  |
-| `Clear` | method | [35](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L35) · [body 197](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L197) |  | ⚪ not started |  |
-| `ExpandDefinitions` | method | [36](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L36) · [body 256](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L256) |  | ⚪ not started |  |
-| `RegionInclusionsByMember` | property | [37](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L37) |  | ⚪ not started |  |
-| `ConcreteRegionDefinitionsByRootClass` | property | [38](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L38) |  | ⚪ not started |  |
-| `EnsuredCoreDefinition` | method | [39](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L39) · [body 249](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L249) |  | ⚪ not started |  |
-| `CoreDefinition` | property | [40](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L40) |  | ⚪ not started |  |
-| `CoreDefinitions` | property | [41](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L41) |  | ⚪ not started |  |
+| `AddRegionElementInclusion` | method, private | [26](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L26) · [body 191](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L191) | [`TBoldRegionDefinitions.AddRegionElementInclusion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L35) | 🟢 ported |  |
+| `AddConcreteRegionDefinition` | method, private | [27](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L27) · [body 180](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L180) | [`TBoldRegionDefinitions.AddConcreteRegionDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L38) | 🟢 ported |  |
+| `AddCoreDefinition` | method, private | [28](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L28) · [body 185](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L185) | [`TBoldRegionDefinitions.AddCoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L41) | 🟢 ported |  |
+| `GetRegionInclusionsByMember` | method, private | [29](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L29) · [body 283](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L283) | [`TBoldRegionDefinitions.GetRegionInclusionsByMember`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L44) | 🟢 ported |  |
+| `GetConcreteRegionDefinitionsByRootClass` | method, private | [30](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L30) · [body 266](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L266) | [`TBoldRegionDefinitions.GetConcreteRegionDefinitionsByRootClass`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L51) | 🟢 ported |  |
+| `GetCoreDefinition` | method, private | [31](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L31) · [body 272](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L272) | [`TBoldRegionDefinitions.GetCoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L55) | 🟢 ported |  |
+| `Create` | constructor | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L33) · [body 232](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L232) | [`TBoldRegionDefinitions.TBoldRegionDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L22) | 🟢 ported |  |
+| `Destroy` | destructor | [34](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L34) · [body 239](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L239) | [`TBoldRegionDefinitions.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L27) | 🟢 ported |  |
+| `Clear` | method | [35](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L35) · [body 197](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L197) | [`TBoldRegionDefinitions.Clear`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L71) | 🟢 ported |  |
+| `ExpandDefinitions` | method | [36](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L36) · [body 256](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L256) | [`TBoldRegionDefinitions.ExpandDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L81) | 🟢 ported |  |
+| `RegionInclusionsByMember` | property | [37](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L37) | [`TBoldRegionDefinitions.RegionInclusionsByMember`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L92) | 🟢 ported |  |
+| `ConcreteRegionDefinitionsByRootClass` | property | [38](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L38) | [`TBoldRegionDefinitions.ConcreteRegionDefinitionsByRootClass`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L93) | 🟢 ported |  |
+| `EnsuredCoreDefinition` | method | [39](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L39) · [body 249](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L249) | [`TBoldRegionDefinitions.EnsuredCoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L90) | 🟢 ported |  |
+| `CoreDefinition` | property | [40](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L40) | [`TBoldRegionDefinitions.CoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L94) | 🟢 ported |  |
+| `CoreDefinitions` | property | [41](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L41) | [`TBoldRegionDefinitions.CoreDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L95) | 🟢 ported |  |
 
 ## TBoldRegionCoreDefinition
 
-class at [line 44](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L44); ⚪ not started.
+class at [line 44](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L44); 🟢 ported, C# [`TBoldRegionCoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L100).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ExpandDefinitions` | method, protected | [51](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L51) · [body 340](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L340) |  | ⚪ not started |  |
-| `Create` | constructor | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L53) · [body 311](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L311) |  | ⚪ not started |  |
-| `Destroy` | destructor | [54](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L54) · [body 321](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L321) |  | ⚪ not started |  |
-| `EnsuredConcreteDefinition` | method | [55](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L55) · [body 332](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L332) |  | ⚪ not started |  |
-| `Name` | property | [56](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L56) |  | ⚪ not started |  |
-| `Owner` | property | [57](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L57) |  | ⚪ not started |  |
-| `ConcreteDefinitions` | property | [58](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L58) |  | ⚪ not started |  |
-| `UsedBy` | property | [59](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L59) |  | ⚪ not started |  |
+| `ExpandDefinitions` | method, protected | [51](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L51) · [body 340](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L340) | [`TBoldRegionCoreDefinition.ExpandDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L118) | 🟢 ported |  |
+| `Create` | constructor | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L53) · [body 311](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L311) | [`TBoldRegionCoreDefinition.TBoldRegionCoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L108) | 🟢 ported |  |
+| `Destroy` | destructor | [54](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L54) · [body 321](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L321) | [`[assembly: Delphi] in BoldRegionDefinitions.cs`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L4) | 🔵 replaced: Freed the concrete definitions and lists; the garbage collector does that in .NET. |  |
+| `EnsuredConcreteDefinition` | method | [55](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L55) · [body 332](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L332) | [`TBoldRegionCoreDefinition.EnsuredConcreteDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L136) | 🟢 ported |  |
+| `Name` | property | [56](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L56) | [`TBoldRegionCoreDefinition.Name`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L143) | 🟢 ported |  |
+| `Owner` | property | [57](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L57) | [`TBoldRegionCoreDefinition.Owner`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L144) | 🟢 ported |  |
+| `ConcreteDefinitions` | property | [58](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L58) | [`TBoldRegionCoreDefinition.ConcreteDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L145) | 🟢 ported |  |
+| `UsedBy` | property | [59](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L59) | [`TBoldRegionCoreDefinition.UsedBy`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L146) | 🟢 ported |  |
 
 ## TBoldConcreteRegionDefinition
 
-class at [line 62](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L62); ⚪ not started.
+class at [line 62](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L62); 🟢 ported, C# [`TBoldConcreteRegionDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L151).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, private | [69](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L69) · [body 413](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L413) |  | ⚪ not started |  |
-| `CopyFromDefinition` | method, protected | [71](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L71) · [body 366](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L366) |  | ⚪ not started |  |
-| `Create` | constructor | [73](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L73) · [body 388](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L388) |  | ⚪ not started |  |
-| `Destroy` | destructor | [74](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L74) · [body 404](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L404) |  | ⚪ not started |  |
-| `Clear` | method | [75](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L75) · [body 376](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L376) |  | ⚪ not started |  |
-| `CoreDefinition` | property | [76](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L76) |  | ⚪ not started |  |
-| `RootClass` | property | [77](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L77) |  | ⚪ not started |  |
-| `Elements` | property | [78](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L78) |  | ⚪ not started |  |
-| `Subregions` | property | [79](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L79) |  | ⚪ not started |  |
-| `ParentRegions` | property | [80](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L80) |  | ⚪ not started |  |
-| `AsString` | property | [81](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L81) |  | ⚪ not started |  |
+| `GetAsString` | method, private | [69](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L69) · [body 413](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L413) | [`TBoldConcreteRegionDefinition.GetAsString`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L178) | 🟢 ported |  |
+| `CopyFromDefinition` | method, protected | [71](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L71) · [body 366](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L366) | [`TBoldConcreteRegionDefinition.CopyFromDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L181) | 🟢 ported |  |
+| `Create` | constructor | [73](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L73) · [body 388](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L388) | [`TBoldConcreteRegionDefinition.TBoldConcreteRegionDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L161) | 🟢 ported |  |
+| `Destroy` | destructor | [74](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L74) · [body 404](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L404) | [`[assembly: Delphi] in BoldRegionDefinitions.cs`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L5) | 🔵 replaced: Cleared and freed the lists; the garbage collector does that in .NET. |  |
+| `Clear` | method | [75](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L75) · [body 376](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L376) | [`TBoldConcreteRegionDefinition.Clear`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L195) | 🟢 ported |  |
+| `CoreDefinition` | property | [76](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L76) | [`TBoldConcreteRegionDefinition.CoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L201) | 🟢 ported |  |
+| `RootClass` | property | [77](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L77) | [`TBoldConcreteRegionDefinition.RootClass`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L202) | 🟢 ported |  |
+| `Elements` | property | [78](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L78) | [`TBoldConcreteRegionDefinition.Elements`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L203) | 🟢 ported |  |
+| `Subregions` | property | [79](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L79) | [`TBoldConcreteRegionDefinition.Subregions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L204) | 🟢 ported |  |
+| `ParentRegions` | property | [80](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L80) | [`TBoldConcreteRegionDefinition.ParentRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L205) | 🟢 ported |  |
+| `AsString` | property | [81](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L81) | [`TBoldConcreteRegionDefinition.AsString`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L206) | 🟢 ported |  |
 
 ## TBoldSubregionReference
 
-class at [line 84](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L84); ⚪ not started.
+class at [line 84](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L84); 🟢 ported, C# [`TBoldSubregionReference`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L211).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Clone` | method, protected | [91](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L91) · [body 421](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L421) |  | ⚪ not started |  |
-| `Create` | constructor | [93](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L93) · [body 426](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L426) |  | ⚪ not started |  |
-| `ParentRegion` | property | [94](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L94) |  | ⚪ not started |  |
-| `SubregionRootNavigation` | property | [95](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L95) |  | ⚪ not started |  |
-| `SubregionCoreDefinition` | property | [96](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L96) |  | ⚪ not started |  |
-| `IsDependent` | property | [97](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L97) |  | ⚪ not started |  |
+| `Clone` | method, protected | [91](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L91) · [body 421](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L421) | [`TBoldSubregionReference.Clone`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L240) | 🟢 ported |  |
+| `Create` | constructor | [93](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L93) · [body 426](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L426) | [`TBoldSubregionReference.TBoldSubregionReference`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L220) | 🟢 ported |  |
+| `ParentRegion` | property | [94](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L94) | [`TBoldSubregionReference.ParentRegion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L243) | 🟢 ported |  |
+| `SubregionRootNavigation` | property | [95](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L95) | [`TBoldSubregionReference.SubregionRootNavigation`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L244) | 🟢 ported |  |
+| `SubregionCoreDefinition` | property | [96](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L96) | [`TBoldSubregionReference.SubregionCoreDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L245) | 🟢 ported |  |
+| `IsDependent` | property | [97](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L97) | [`TBoldSubregionReference.IsDependent`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L246) | 🟢 ported |  |
 
 ## TBoldRegionElementInclusion
 
-class at [line 100](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L100); ⚪ not started.
+class at [line 100](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L100); 🟢 ported, C# [`TBoldRegionElementInclusion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L251).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Clone` | method, protected | [105](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L105) · [body 448](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L448) |  | ⚪ not started |  |
-| `Create` | constructor | [107](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L107) · [body 453](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L453) |  | ⚪ not started |  |
-| `Region` | property | [108](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L108) |  | ⚪ not started |  |
-| `Member` | property | [109](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L109) |  | ⚪ not started |  |
+| `Clone` | method, protected | [105](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L105) · [body 448](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L448) | [`TBoldRegionElementInclusion.Clone`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L272) | 🟢 ported |  |
+| `Create` | constructor | [107](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L107) · [body 453](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L453) | [`TBoldRegionElementInclusion.TBoldRegionElementInclusion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L257) | 🟢 ported |  |
+| `Region` | property | [108](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L108) | [`TBoldRegionElementInclusion.Region`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L274) | 🟢 ported |  |
+| `Member` | property | [109](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L109) | [`TBoldRegionElementInclusion.Member`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L275) | 🟢 ported |  |
 
 ## TBoldConcreteRegionDefinitionList
 
-class at [line 112](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L112); ⚪ not started.
+class at [line 112](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L112); 🟢 ported, C# [`TBoldConcreteRegionDefinitionList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L279).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [114](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L114) · [body 173](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L173) |  | ⚪ not started |  |
-| `FindByRootClass` | method | [116](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L116) · [body 159](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L159) |  | ⚪ not started |  |
-| `Items` | property | [117](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L117) |  | ⚪ not started |  |
+| `GetItem` | method, private | [114](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L114) · [body 173](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L173) | [`TBoldConcreteRegionDefinitionList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L282) | 🟢 ported |  |
+| `FindByRootClass` | method | [116](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L116) · [body 159](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L159) | [`TBoldConcreteRegionDefinitionList.FindByRootClass`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L285) | 🟢 ported |  |
+| `Items` | property | [117](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L117) | [`TBoldConcreteRegionDefinitionList.this`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L299) | 🟢 ported |  |
 
 ## TBoldSubregionReferenceList
 
-class at [line 120](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L120); ⚪ not started.
+class at [line 120](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L120); 🟢 ported, C# [`TBoldSubregionReferenceList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L303).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [122](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L122) · [body 303](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L303) |  | ⚪ not started |  |
-| `Items` | property | [124](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L124) |  | ⚪ not started |  |
+| `GetItem` | method, private | [122](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L122) · [body 303](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L303) | [`TBoldSubregionReferenceList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L306) | 🟢 ported |  |
+| `Items` | property | [124](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L124) | [`TBoldSubregionReferenceList.this`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L309) | 🟢 ported |  |
 
 ## TBoldRegionElementInclusionList
 
-class at [line 127](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L127); ⚪ not started.
+class at [line 127](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L127); 🟢 ported, C# [`TBoldRegionElementInclusionList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L313).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [129](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L129) · [body 295](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L295) |  | ⚪ not started |  |
-| `Items` | property | [131](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L131) |  | ⚪ not started |  |
+| `GetItem` | method, private | [129](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L129) · [body 295](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L295) | [`TBoldRegionElementInclusionList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L316) | 🟢 ported |  |
+| `Items` | property | [131](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.pas#L131) | [`TBoldRegionElementInclusionList.this`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L319) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldRegionDefinitions.GetEnsuredItem`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs#L328) (method)
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas`](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas) (203 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 10 symbols done, 0 verified |
+| Status | 🟢 ported: 10 of 10 symbols done, 0 verified |
 
-⚪ 10 not started
+🟢 10 ported
 
 ## Unit level
 
@@ -18,23 +18,23 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOldValueHandler` | class | [15](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L15) |  | ⚪ not started |  |
+| `TBoldOldValueHandler` | class | [15](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L15) | [`TBoldOldValueHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L11) | 🟢 ported |  |
 
 ## TBoldOldValueHandler
 
-class at [line 15](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L15); 🟢 ported, C# [`TBoldOldValueHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetOldValues` | method, protected | [19](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L19) · [body 74](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L74) |  | ⚪ not started |  |
-| `GetIsEmpty` | method, protected | [20](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L20) · [body 50](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L50) |  | ⚪ not started |  |
-| `PurgeEqualValues` | method, protected | [21](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L21) · [body 116](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L116) |  | ⚪ not started |  |
-| `Create` | constructor | [23](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L23) · [body 38](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L38) |  | ⚪ not started |  |
-| `Destroy` | destructor | [24](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L24) · [body 44](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L44) |  | ⚪ not started |  |
-| `MemberValuePreChange` | method | [25](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L25) · [body 93](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L93) |  | ⚪ not started |  |
-| `MemberPersistenceStatePreChange` | method | [26](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L26) · [body 79](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L79) |  | ⚪ not started |  |
-| `ObjectExistenceChange` | method | [27](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L27) · [body 104](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L104) |  | ⚪ not started |  |
-| `ObjectExistencePersistenceStateChange` | method | [28](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L28) · [body 110](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L110) |  | ⚪ not started |  |
+| `GetOldValues` | method, protected | [19](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L19) · [body 74](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L74) | [`TBoldOldValueHandler.GetOldValues`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L53) | 🟢 ported |  |
+| `GetIsEmpty` | method, protected | [20](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L20) · [body 50](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L50) | [`TBoldOldValueHandler.GetIsEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L32) | 🟢 ported |  |
+| `PurgeEqualValues` | method, protected | [21](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L21) · [body 116](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L116) | [`TBoldOldValueHandler.PurgeEqualValues`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L89) | 🟢 ported |  |
+| `Create` | constructor | [23](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L23) · [body 38](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L38) | [`TBoldOldValueHandler.TBoldOldValueHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L16) | 🟢 ported |  |
+| `Destroy` | destructor | [24](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L24) · [body 44](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L44) | [`TBoldOldValueHandler.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L23) | 🟢 ported |  |
+| `MemberValuePreChange` | method | [25](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L25) · [body 93](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L93) | [`TBoldOldValueHandler.MemberValuePreChange`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L68) | 🟢 ported |  |
+| `MemberPersistenceStatePreChange` | method | [26](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L26) · [body 79](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L79) | [`TBoldOldValueHandler.MemberPersistenceStatePreChange`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L57) | 🟢 ported |  |
+| `ObjectExistenceChange` | method | [27](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L27) · [body 104](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L104) | [`TBoldOldValueHandler.ObjectExistenceChange`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L78) | 🟢 ported: Empty in Delphi too. |  |
+| `ObjectExistencePersistenceStateChange` | method | [28](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L28) · [body 110](../../../Source/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.pas#L110) | [`TBoldOldValueHandler.ObjectExistencePersistenceStateChange`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldSystemOldValuehandler.cs#L83) | 🟢 ported: Empty in Delphi too. |  |
 
 ## Dependencies
 

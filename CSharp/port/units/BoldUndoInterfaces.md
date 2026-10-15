@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas`](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas) (70 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 42 symbols done, 0 verified |
+| Status | 🟢 ported: 42 of 42 symbols done, 0 verified |
 
-⚪ 42 not started
+🟢 42 ported
 
 ## Unit level
 
@@ -18,69 +18,69 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUndoState` | enum | [14](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L14) |  | ⚪ not started |  |
-| `IBoldUndoBlock` | interface | [16](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L16) |  | ⚪ not started |  |
-| `IBoldUndoList` | interface | [26](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L26) |  | ⚪ not started |  |
-| `IBoldUndoHandler` | interface | [45](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L45) |  | ⚪ not started |  |
+| `TBoldUndoState` | enum | [14](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L14) | [`TBoldUndoState`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L8) | 🟢 ported |  |
+| `IBoldUndoBlock` | interface | [16](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L16) | [`IBoldUndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L12) | 🟢 ported |  |
+| `IBoldUndoList` | interface | [26](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L26) | [`IBoldUndoList`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L24) | 🟢 ported |  |
+| `IBoldUndoHandler` | interface | [45](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L45) | [`IBoldUndoHandler`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L45) | 🟢 ported |  |
 
 ## IBoldUndoBlock
 
-interface at [line 16](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L16); ⚪ not started.
+interface at [line 16](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L16); 🟢 ported, C# [`IBoldUndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method | [18](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L18) |  | ⚪ not started |  |
-| `GetValueSpace` | method | [19](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L19) |  | ⚪ not started |  |
-| `GetContainsChanges` | method | [20](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L20) |  | ⚪ not started |  |
-| `Name` | property | [21](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L21) |  | ⚪ not started |  |
-| `ValueSpace` | property | [22](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L22) |  | ⚪ not started |  |
-| `ContainsChanges` | property | [23](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L23) |  | ⚪ not started |  |
+| `GetName` | method | [18](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L18) | [`IBoldUndoBlock.GetName`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L14) | 🟢 ported |  |
+| `GetValueSpace` | method | [19](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L19) | [`IBoldUndoBlock.GetValueSpace`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L15) | 🟢 ported |  |
+| `GetContainsChanges` | method | [20](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L20) | [`IBoldUndoBlock.GetContainsChanges`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L16) | 🟢 ported |  |
+| `Name` | property | [21](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L21) | [`IBoldUndoBlock.Name`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L17) | 🟢 ported |  |
+| `ValueSpace` | property | [22](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L22) | [`IBoldUndoBlock.ValueSpace`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L18) | 🟢 ported |  |
+| `ContainsChanges` | property | [23](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L23) | [`IBoldUndoBlock.ContainsChanges`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L19) | 🟢 ported |  |
 
 ## IBoldUndoList
 
-interface at [line 26](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L26); ⚪ not started.
+interface at [line 26](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L26); 🟢 ported, C# [`IBoldUndoList`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L24).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCount` | method | [28](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L28) |  | ⚪ not started |  |
-| `GetItems` | method | [29](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L29) |  | ⚪ not started |  |
-| `GetItemsByName` | method | [30](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L30) |  | ⚪ not started |  |
-| `GetTopBlock` | method | [31](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L31) |  | ⚪ not started |  |
-| `IndexOf` | method | [32](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L32) |  | ⚪ not started |  |
-| `CanMoveBlock` | method | [33](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L33) |  | ⚪ not started |  |
-| `MergeBlocks` | method | [34](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L34) |  | ⚪ not started |  |
-| `MoveToTop` | method | [35](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L35) |  | ⚪ not started |  |
-| `MoveBlock` | method | [36](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L36) |  | ⚪ not started |  |
-| `RenameBlock` | method | [37](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L37) |  | ⚪ not started |  |
-| `RemoveBlock` | method | [38](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L38) |  | ⚪ not started |  |
-| `Count` | property | [39](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L39) |  | ⚪ not started |  |
-| `Items` | property | [40](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L40) |  | ⚪ not started |  |
-| `ItemsByName` | property | [41](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L41) |  | ⚪ not started |  |
-| `TopBlock` | property | [42](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L42) |  | ⚪ not started |  |
+| `GetCount` | method | [28](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L28) | [`IBoldUndoList.GetCount`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L26) | 🟢 ported |  |
+| `GetItems` | method | [29](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L29) | [`IBoldUndoList.GetItems`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L27) | 🟢 ported |  |
+| `GetItemsByName` | method | [30](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L30) | [`IBoldUndoList.GetItemsByName`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L28) | 🟢 ported |  |
+| `GetTopBlock` | method | [31](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L31) | [`IBoldUndoList.GetTopBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L29) | 🟢 ported |  |
+| `IndexOf` | method | [32](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L32) | [`IBoldUndoList.IndexOf`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L30) | 🟢 ported |  |
+| `CanMoveBlock` | method | [33](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L33) | [`IBoldUndoList.CanMoveBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L31) | 🟢 ported |  |
+| `MergeBlocks` | method | [34](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L34) | [`IBoldUndoList.MergeBlocks`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L32) | 🟢 ported |  |
+| `MoveToTop` | method | [35](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L35) | [`IBoldUndoList.MoveToTop`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L33) | 🟢 ported |  |
+| `MoveBlock` | method | [36](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L36) | [`IBoldUndoList.MoveBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L34) | 🟢 ported |  |
+| `RenameBlock` | method | [37](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L37) | [`IBoldUndoList.RenameBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L35) | 🟢 ported |  |
+| `RemoveBlock` | method | [38](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L38) | [`IBoldUndoList.RemoveBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L36) | 🟢 ported |  |
+| `Count` | property | [39](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L39) | [`IBoldUndoList.Count`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L37) | 🟢 ported |  |
+| `Items` | property | [40](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L40) | [`IBoldUndoList.this`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L38) | 🟢 ported |  |
+| `ItemsByName` | property | [41](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L41) | [`IBoldUndoList.ItemsByName`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L39) | 🟢 ported |  |
+| `TopBlock` | property | [42](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L42) | [`IBoldUndoList.TopBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L40) | 🟢 ported |  |
 
 ## IBoldUndoHandler
 
-interface at [line 45](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L45); ⚪ not started.
+interface at [line 45](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L45); 🟢 ported, C# [`IBoldUndoHandler`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L45).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetUndoList` | method | [47](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L47) |  | ⚪ not started |  |
-| `GetRedoList` | method | [48](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L48) |  | ⚪ not started |  |
-| `GetUniqueBlockName` | method | [49](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L49) |  | ⚪ not started |  |
-| `CanUndoBlock` | method | [50](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L50) |  | ⚪ not started |  |
-| `CanRedoBlock` | method | [51](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L51) |  | ⚪ not started |  |
-| `GetEnabled` | method | [52](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L52) |  | ⚪ not started |  |
-| `SetEnabled` | method | [53](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L53) |  | ⚪ not started |  |
-| `UndoLatest` | method | [54](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L54) |  | ⚪ not started |  |
-| `RedoLatest` | method | [55](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L55) |  | ⚪ not started |  |
-| `UndoBlock` | method | [56](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L56) |  | ⚪ not started |  |
-| `RedoBlock` | method | [57](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L57) |  | ⚪ not started |  |
-| `SetNamedCheckPoint` | method | [58](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L58) |  | ⚪ not started |  |
-| `SetCheckPoint` | method | [59](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L59) |  | ⚪ not started |  |
-| `ClearAllUndoBlocks` | method | [60](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L60) |  | ⚪ not started |  |
-| `UndoList` | property | [61](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L61) |  | ⚪ not started |  |
-| `RedoList` | property | [62](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L62) |  | ⚪ not started |  |
-| `Enabled` | property | [63](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L63) |  | ⚪ not started |  |
+| `GetUndoList` | method | [47](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L47) | [`IBoldUndoHandler.GetUndoList`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L47) | 🟢 ported |  |
+| `GetRedoList` | method | [48](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L48) | [`IBoldUndoHandler.GetRedoList`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L48) | 🟢 ported |  |
+| `GetUniqueBlockName` | method | [49](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L49) | [`IBoldUndoHandler.GetUniqueBlockName`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L49) | 🟢 ported |  |
+| `CanUndoBlock` | method | [50](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L50) | [`IBoldUndoHandler.CanUndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L50) | 🟢 ported |  |
+| `CanRedoBlock` | method | [51](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L51) | [`IBoldUndoHandler.CanRedoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L51) | 🟢 ported |  |
+| `GetEnabled` | method | [52](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L52) | [`IBoldUndoHandler.GetEnabled`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L52) | 🟢 ported |  |
+| `SetEnabled` | method | [53](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L53) | [`IBoldUndoHandler.SetEnabled`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L53) | 🟢 ported |  |
+| `UndoLatest` | method | [54](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L54) | [`IBoldUndoHandler.UndoLatest`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L54) | 🟢 ported |  |
+| `RedoLatest` | method | [55](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L55) | [`IBoldUndoHandler.RedoLatest`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L55) | 🟢 ported |  |
+| `UndoBlock` | method | [56](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L56) | [`IBoldUndoHandler.UndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L56) | 🟢 ported |  |
+| `RedoBlock` | method | [57](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L57) | [`IBoldUndoHandler.RedoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L57) | 🟢 ported |  |
+| `SetNamedCheckPoint` | method | [58](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L58) | [`IBoldUndoHandler.SetNamedCheckPoint`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L58) | 🟢 ported |  |
+| `SetCheckPoint` | method | [59](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L59) | [`IBoldUndoHandler.SetCheckPoint`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L59) | 🟢 ported |  |
+| `ClearAllUndoBlocks` | method | [60](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L60) | [`IBoldUndoHandler.ClearAllUndoBlocks`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L60) | 🟢 ported |  |
+| `UndoList` | property | [61](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L61) | [`IBoldUndoHandler.UndoList`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L61) | 🟢 ported |  |
+| `RedoList` | property | [62](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L62) | [`IBoldUndoHandler.RedoList`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L62) | 🟢 ported |  |
+| `Enabled` | property | [63](../../../Source/ObjectSpace/Interfaces/BoldUndoInterfaces.pas#L63) | [`IBoldUndoHandler.Enabled`](../../src/Bold.ObjectSpace/ObjectSpace/Interfaces/BoldUndoInterfaces.cs#L63) | 🟢 ported |  |
 
 ## Dependencies
 

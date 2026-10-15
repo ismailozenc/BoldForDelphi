@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/BORepresentation/BoldDomainElement.pas`](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas) (259 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.Aliases.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.Aliases.cs)<br>[`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 35 symbols done, 0 verified |
+| Status | 🟢 ported: 35 of 35 symbols done, 0 verified |
 
-⚪ 35 not started
+🟢 35 ported
 
 ## Unit level
 
@@ -18,76 +18,89 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDomainElementProxyMode` | enum | [13](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L13) |  | ⚪ not started |  |
-| `TBoldDomainElementClass` | class reference | [25](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L25) |  | ⚪ not started |  |
-| `TBoldDomainElement` | class | [30](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L30) |  | ⚪ not started |  |
-| `TBoldDomainElement_Proxy` | class | [54](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L54) |  | ⚪ not started |  |
-| `TBoldDomainElementCollectionTraverser` | class | [67](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L67) |  | ⚪ not started |  |
-| `TBoldDomainElementCollection` | class | [75](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L75) |  | ⚪ not started |  |
-| `TBoldDomainElementCollectionIndex` | class, implementation | [97](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L97) |  | ⚪ not started |  |
+| `TBoldDomainElementProxyMode` | enum | [13](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L13) | [`TBoldDomainElementProxyMode`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L10) | 🟢 ported |  |
+| `TBoldDomainElementClass` | class reference | [25](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L25) | [`global using TBoldDomainElementClass`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.Aliases.cs#L5) | 🟢 ported: Global using alias of System.Type, in BoldDomainElement.Aliases.cs. |  |
+| `TBoldDomainElement` | class | [30](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L30) | [`TBoldDomainElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L17) | 🟢 ported |  |
+| `TBoldDomainElement_Proxy` | class | [54](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L54) | [`TBoldDomainElement_Proxy`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L109) | 🟢 ported |  |
+| `TBoldDomainElementCollectionTraverser` | class | [67](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L67) | [`TBoldDomainElementCollectionTraverser`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L130) | 🟢 ported |  |
+| `TBoldDomainElementCollection` | class | [75](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L75) | [`TBoldDomainElementCollection`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L146) | 🟢 ported |  |
+| `TBoldDomainElementCollectionIndex` | class, implementation | [97](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L97) | [`TBoldDomainElementCollection.TBoldDomainElementCollectionIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L171) | 🟢 ported |  |
 
 ## TBoldDomainElement
 
-class at [line 30](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L30); 🟢 ported, C# [`TBoldDomainElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L17).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDisplayName` | method, protected | [34](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L34) |  | ⚪ not started |  |
-| `GetBoldDirty` | method, protected | [35](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L35) |  | ⚪ not started |  |
-| `MayCommit` | method, protected | [36](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L36) · [body 191](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L191) |  | ⚪ not started |  |
-| `ReceiveEventFromOwned` | method, protected | [37](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L37) · [body 167](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L167) |  | ⚪ not started |  |
-| `ReceiveQueryFromOwned` | method, protected | [38](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L38) · [body 172](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L172) |  | ⚪ not started |  |
-| `StateError` | method, protected | [39](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L39) · [body 104](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L104) |  | ⚪ not started |  |
-| `Create` | constructor | [41](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L41) · [body 143](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L143) |  | ⚪ not started |  |
-| `ProxyInterface` | method | [42](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L42) · [body 196](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L196) |  | ⚪ not started |  |
-| `CanCommit` | method | [43](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L43) · [body 186](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L186) |  | ⚪ not started |  |
-| `SendEvent` | method | [44](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L44) · [body 149](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L149) |  | ⚪ not started |  |
-| `SendExtendedEvent` | method | [45](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L45) · [body 179](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L179) |  | ⚪ not started |  |
-| `SendQuery` | method | [46](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L46) · [body 156](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L156) |  | ⚪ not started |  |
-| `BoldDirty` | property | [47](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L47) |  | ⚪ not started |  |
-| `BoldPersistent` | property | [48](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L48) |  | ⚪ not started |  |
-| `OwningElement` | property | [49](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L49) |  | ⚪ not started |  |
-| `DisplayName` | property | [50](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L50) |  | ⚪ not started |  |
+| `GetDisplayName` | method, protected | [34](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L34) | [`TBoldDomainElement.GetDisplayName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L27) | 🟢 ported |  |
+| `GetBoldDirty` | method, protected | [35](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L35) | [`TBoldDomainElement.GetBoldDirty`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L28) | 🟢 ported |  |
+| `MayCommit` | method, protected | [36](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L36) · [body 191](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L191) | [`TBoldDomainElement.MayCommit`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L31) | 🟢 ported |  |
+| `ReceiveEventFromOwned` | method, protected | [37](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L37) · [body 167](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L167) | [`TBoldDomainElement.ReceiveEventFromOwned`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L35) | 🟢 ported |  |
+| `ReceiveQueryFromOwned` | method, protected | [38](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L38) · [body 172](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L172) | [`TBoldDomainElement.ReceiveQueryFromOwned`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L41) | 🟢 ported |  |
+| `StateError` | method, protected | [39](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L39) · [body 104](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L104) | [`TBoldDomainElement.StateError`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L45) | 🟢 ported |  |
+| `Create` | constructor | [41](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L41) · [body 143](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L143) | [`TBoldDomainElement.TBoldDomainElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L22) | 🟢 ported |  |
+| `ProxyInterface` | method | [42](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L42) · [body 196](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L196) | [`TBoldDomainElement.ProxyInterface`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L53) | 🟢 ported: Takes the interface type where Delphi takes its GUID; the interface comes out as an object. |  |
+| `CanCommit` | method | [43](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L43) · [body 186](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L186) | [`TBoldDomainElement.CanCommit`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L61) | 🟢 ported |  |
+| `SendEvent` | method | [44](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L44) · [body 149](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L149) | [`TBoldDomainElement.SendEvent`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L64) | 🟢 ported |  |
+| `SendExtendedEvent` | method | [45](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L45) · [body 179](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L179) | [`TBoldDomainElement.SendExtendedEvent`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L71) | 🟢 ported |  |
+| `SendQuery` | method | [46](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L46) · [body 156](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L156) | [`TBoldDomainElement.SendQuery`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L79) | 🟢 ported |  |
+| `BoldDirty` | property | [47](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L47) | [`TBoldDomainElement.BoldDirty`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L85) | 🟢 ported |  |
+| `BoldPersistent` | property | [48](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L48) | [`TBoldDomainElement.BoldPersistent`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L86) | 🟢 ported |  |
+| `OwningElement` | property | [49](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L49) | [`TBoldDomainElement.OwningElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L87) | 🟢 ported |  |
+| `DisplayName` | property | [50](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L50) | [`TBoldDomainElement.DisplayName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L88) | 🟢 ported |  |
 
 ## TBoldDomainElement_Proxy
 
-class at [line 54](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L54); ⚪ not started.
+class at [line 54](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L54); 🟢 ported, C# [`TBoldDomainElement_Proxy`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L109).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `UnsupportedMode` | method, protected | [59](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L59) · [body 210](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L210) |  | ⚪ not started |  |
-| `Create` | constructor | [61](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L61) · [body 203](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L203) |  | ⚪ not started |  |
-| `ProxedElement` | property | [62](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L62) |  | ⚪ not started |  |
-| `Mode` | property | [63](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L63) |  | ⚪ not started |  |
+| `UnsupportedMode` | method, protected | [59](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L59) · [body 210](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L210) | [`TBoldDomainElement_Proxy.UnsupportedMode`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L122) | 🟢 ported |  |
+| `Create` | constructor | [61](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L61) · [body 203](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L203) | [`TBoldDomainElement_Proxy.TBoldDomainElement_Proxy`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L115) | 🟢 ported |  |
+| `ProxedElement` | property | [62](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L62) | [`TBoldDomainElement_Proxy.ProxedElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L125) | 🟢 ported |  |
+| `Mode` | property | [63](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L63) | [`TBoldDomainElement_Proxy.Mode`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L126) | 🟢 ported |  |
 
 ## TBoldDomainElementCollectionTraverser
 
-class at [line 67](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L67); ⚪ not started.
+class at [line 67](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L67); 🟢 ported, C# [`TBoldDomainElementCollectionTraverser`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L130).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [69](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L69) · [body 253](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L253) |  | ⚪ not started |  |
-| `Item` | property | [71](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L71) |  | ⚪ not started |  |
+| `GetItem` | method, private | [69](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L69) · [body 253](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L253) | [`TBoldDomainElementCollectionTraverser.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L138) | 🟢 ported |  |
+| `Item` | property | [71](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L71) | [`TBoldDomainElementCollectionTraverser.Item`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L141) | 🟢 ported |  |
 
 ## TBoldDomainElementCollection
 
-class at [line 75](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L75); ⚪ not started.
+class at [line 75](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L75); 🟢 ported, C# [`TBoldDomainElementCollection`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L146).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TraverserClass` | method, protected | [77](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L77) · [body 246](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L246) |  | ⚪ not started |  |
-| `create` | constructor | [79](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L79) · [body 222](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L222) |  | ⚪ not started |  |
-| `Add` | method | [80](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L80) · [body 217](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L217) |  | ⚪ not started |  |
-| `Includes` | method | [81](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L81) · [body 235](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L235) |  | ⚪ not started |  |
-| `CreateTraverser` | method | [82](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L82) · [body 229](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L229) |  | ⚪ not started |  |
+| `TraverserClass` | method, protected | [77](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L77) · [body 246](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L246) | [`TBoldDomainElementCollection.TraverserClass`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L158) | 🟢 ported |  |
+| `create` | constructor | [79](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L79) · [body 222](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L222) | [`TBoldDomainElementCollection.TBoldDomainElementCollection`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L151) | 🟢 ported |  |
+| `Add` | method | [80](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L80) · [body 217](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L217) | [`TBoldDomainElementCollection.Add`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L161) | 🟢 ported |  |
+| `Includes` | method | [81](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L81) · [body 235](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L235) | [`TBoldDomainElementCollection.Includes`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L164) | 🟢 ported |  |
+| `CreateTraverser` | method | [82](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L82) · [body 229](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L229) | [`TBoldDomainElementCollection.CreateTraverser`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L168) | 🟢 ported |  |
 
 ## TBoldDomainElementCollectionIndex
 
-class at [line 97](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L97); ⚪ not started.
+class at [line 97](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L97); 🟢 ported, C# [`TBoldDomainElementCollection.TBoldDomainElementCollectionIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L171).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyObject` | method, protected | [99](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L99) · [body 241](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L241) |  | ⚪ not started |  |
+| `ItemAsKeyObject` | method, protected | [99](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L99) · [body 241](../../../Source/ObjectSpace/BORepresentation/BoldDomainElement.pas#L241) | [`TBoldDomainElementCollection.TBoldDomainElementCollectionIndex.ItemAsKeyObject`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L174) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldDomainElement.SetBoldPersistentFlag`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L91) (method)
+- [`TBoldDomainElement.SetOwningElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L94) (method)
+- [`TBoldDomainElement.GetElementFlagOf`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L98) (method)
+- [`TBoldDomainElement.SetElementFlagOf`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L100) (method)
+- [`TBoldDomainElement.HasSubscribersOf`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L102) (property)
+- [`TBoldDomainElement.FreePublisherOf`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L104) (method)
+- [`TBoldDomainElementCollectionTraverser.TBoldDomainElementCollectionTraverser`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L132) (constructor)
+- [`TBoldDomainElementCollection.TBoldDomainElementCollectionIndex.FindByElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldDomainElement.cs#L176) (method)
 
 ## Dependencies
 

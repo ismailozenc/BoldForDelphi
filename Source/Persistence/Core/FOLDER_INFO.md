@@ -31,11 +31,11 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldAbstractSnooper](../../../CSharp/port/units/BoldAbstractSnooper.md) | Bold.Persistence: Persistence/Core/BoldAbstractSnooper.cs (not started) | M3 Object space in memory |
-| [BoldPersistenceController](../../../CSharp/port/units/BoldPersistenceController.md) | Bold.Persistence: Persistence/Core/BoldPersistenceController.cs (not started) | M3 Object space in memory |
+| [BoldPersistenceController](../../../CSharp/port/units/BoldPersistenceController.md) | [Bold.Persistence: Persistence/Core/BoldPersistenceController.cs](../../../CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs) | M3 Object space in memory |
 | [BoldPersistenceHandle](../../../CSharp/port/units/BoldPersistenceHandle.md) | Bold.Persistence: Persistence/Core/BoldPersistenceHandle.cs (not started) | M3 Object space in memory |
 | [BoldPersistenceHandlePTWithModel](../../../CSharp/port/units/BoldPersistenceHandlePTWithModel.md) | Bold.Persistence: Persistence/Core/BoldPersistenceHandlePTWithModel.cs (not started) | M3 Object space in memory |
 | [BoldPersistenceHandlePassthrough](../../../CSharp/port/units/BoldPersistenceHandlePassthrough.md) | Bold.Persistence: Persistence/Core/BoldPersistenceHandlePassthrough.cs (not started) | M3 Object space in memory |
 | [BoldPersistenceNotifier](../../../CSharp/port/units/BoldPersistenceNotifier.md) | Bold.Persistence: Persistence/Core/BoldPersistenceNotifier.cs (not started) | M3 Object space in memory |
-| [BoldUpdatePrecondition](../../../CSharp/port/units/BoldUpdatePrecondition.md) | Bold.Persistence: Persistence/Core/BoldUpdatePrecondition.cs (not started) | M3 Object space in memory |
+| [BoldUpdatePrecondition](../../../CSharp/port/units/BoldUpdatePrecondition.md) | [Bold.Persistence: Persistence/Core/BoldUpdatePrecondition.cs](../../../CSharp/src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs) | M3 Object space in memory |
 | [PersistenceConsts](../../../CSharp/port/units/PersistenceConsts.md) | [Bold.Persistence: Persistence/Core/PersistenceConsts.cs](../../../CSharp/src/Bold.Persistence/Persistence/Core/PersistenceConsts.cs) | M3 Object space in memory |
 <!-- END C# PORT -->

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas`](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas) (372 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 26 symbols done, 0 verified |
+| Status | 🟢 ported: 26 of 26 symbols done, 0 verified |
 
-⚪ 26 not started
+🟢 25 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,39 +18,39 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EBoldBadLockExpression` | class | [15](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L15) |  | ⚪ not started |  |
-| `EBoldLockExpressionSyntaxError` | class | [17](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L17) |  | ⚪ not started |  |
-| `TBoldRegionDefinitionSymbolType` | enum | [20](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L20) |  | ⚪ not started |  |
-| `TBoldRegionParserErrorType` | enum | [21](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L21) |  | ⚪ not started |  |
-| `TBoldRegionParser` | class | [23](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L23) |  | ⚪ not started |  |
+| `EBoldBadLockExpression` | class | [15](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L15) | [`EBoldBadLockExpression`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L10) | 🟢 ported |  |
+| `EBoldLockExpressionSyntaxError` | class | [17](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L17) | [`EBoldLockExpressionSyntaxError`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L14) | 🟢 ported |  |
+| `TBoldRegionDefinitionSymbolType` | enum | [20](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L20) | [`TBoldRegionDefinitionSymbolType`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L17) | 🟢 ported |  |
+| `TBoldRegionParserErrorType` | enum | [21](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L21) | [`TBoldRegionParserErrorType`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L20) | 🟢 ported |  |
+| `TBoldRegionParser` | class | [23](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L23) | [`TBoldRegionParser`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L29) | 🟢 ported |  |
 
 ## TBoldRegionParser
 
-class at [line 23](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L23); 🟢 ported, C# [`TBoldRegionParser`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetEOS` | method, private | [31](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L31) · [body 173](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L173) |  | ⚪ not started |  |
-| `ParseCurrentExpression` | method, private | [32](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L32) · [body 315](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L315) |  | ⚪ not started |  |
-| `ParseMembersAndSubregions` | method, private | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L33) · [body 269](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L269) |  | ⚪ not started |  |
-| `ParseMembers` | method, private | [34](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L34) · [body 222](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L222) |  | ⚪ not started |  |
-| `ParseSubregions` | method, private | [35](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L35) · [body 239](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L239) |  | ⚪ not started |  |
-| `GetNextToken` | method, private | [36](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L36) · [body 309](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L309) |  | ⚪ not started |  |
-| `AddError` | method, private | [37](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L37) · [body 341](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L341) |  | ⚪ not started |  |
-| `CheckRegionReferences` | method, private | [38](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L38) · [body 354](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L354) |  | ⚪ not started |  |
-| `Eat` | method, protected | [40](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L40) · [body 90](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L90) |  | ⚪ not started |  |
-| `GetSymbol` | method, protected | [41](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L41) · [body 178](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L178) |  | ⚪ not started |  |
-| `Skip` | method, protected | [42](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L42) · [body 285](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L285) |  | ⚪ not started |  |
-| `TryToEat` | method, protected | [43](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L43) · [body 291](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L291) |  | ⚪ not started |  |
-| `EOS` | property, protected | [44](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L44) |  | ⚪ not started |  |
-| `NextToken` | property, protected | [45](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L45) |  | ⚪ not started |  |
-| `GenerateDefaultRegions` | method, protected | [46](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L46) · [body 104](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L104) |  | ⚪ not started |  |
-| `Create` | constructor | [48](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L48) · [body 82](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L82) |  | ⚪ not started |  |
-| `Destroy` | destructor | [49](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L49) · [body 335](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L335) |  | ⚪ not started |  |
-| `Parse` | method | [50](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L50) · [body 199](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L199) |  | ⚪ not started |  |
-| `RegionDefinitions` | property | [51](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L51) |  | ⚪ not started |  |
-| `SystemTypeInfo` | property | [52](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L52) |  | ⚪ not started |  |
-| `Errors` | property | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L53) |  | ⚪ not started |  |
+| `GetEOS` | method, private | [31](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L31) · [body 173](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L173) | [`TBoldRegionParser.GetEOS`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L146) | 🟢 ported |  |
+| `ParseCurrentExpression` | method, private | [32](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L32) · [body 315](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L315) | [`TBoldRegionParser.ParseCurrentExpression`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L302) | 🟢 ported |  |
+| `ParseMembersAndSubregions` | method, private | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L33) · [body 269](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L269) | [`TBoldRegionParser.ParseMembersAndSubregions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L255) | 🟢 ported |  |
+| `ParseMembers` | method, private | [34](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L34) · [body 222](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L222) | [`TBoldRegionParser.ParseMembers`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L205) | 🟢 ported |  |
+| `ParseSubregions` | method, private | [35](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L35) · [body 239](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L239) | [`TBoldRegionParser.ParseSubregions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L225) | 🟢 ported |  |
+| `GetNextToken` | method, private | [36](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L36) · [body 309](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L309) | [`TBoldRegionParser.GetNextToken`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L299) | 🟢 ported |  |
+| `AddError` | method, private | [37](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L37) · [body 341](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L341) | [`TBoldRegionParser.AddError`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L323) | 🟢 ported |  |
+| `CheckRegionReferences` | method, private | [38](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L38) · [body 354](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L354) | [`TBoldRegionParser.CheckRegionReferences`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L336) | 🟢 ported |  |
+| `Eat` | method, protected | [40](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L40) · [body 90](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L90) | [`TBoldRegionParser.Eat`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L60) | 🟢 ported |  |
+| `GetSymbol` | method, protected | [41](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L41) · [body 178](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L178) | [`TBoldRegionParser.GetSymbol`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L152) | 🟢 ported |  |
+| `Skip` | method, protected | [42](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L42) · [body 285](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L285) | [`TBoldRegionParser.Skip`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L273) | 🟢 ported |  |
+| `TryToEat` | method, protected | [43](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L43) · [body 291](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L291) | [`TBoldRegionParser.TryToEat`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L282) | 🟢 ported |  |
+| `EOS` | property, protected | [44](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L44) | [`TBoldRegionParser.EOS`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L353) | 🟢 ported |  |
+| `NextToken` | property, protected | [45](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L45) | [`TBoldRegionParser.NextToken`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L354) | 🟢 ported |  |
+| `GenerateDefaultRegions` | method, protected | [46](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L46) · [body 104](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L104) | [`TBoldRegionParser.GenerateDefaultRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L83) | 🟢 ported |  |
+| `Create` | constructor | [48](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L48) · [body 82](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L82) | [`TBoldRegionParser.TBoldRegionParser`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L48) | 🟢 ported |  |
+| `Destroy` | destructor | [49](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L49) · [body 335](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L335) | [`TBoldRegionParser.Errors`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L56) | 🔵 replaced: Freed the error list; the garbage collector does that in .NET. |  |
+| `Parse` | method | [50](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L50) · [body 199](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L199) | [`TBoldRegionParser.Parse`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L180) | 🟢 ported |  |
+| `RegionDefinitions` | property | [51](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L51) | [`TBoldRegionParser.RegionDefinitions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L355) | 🟢 ported |  |
+| `SystemTypeInfo` | property | [52](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L52) | [`TBoldRegionParser.SystemTypeInfo`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L356) | 🟢 ported |  |
+| `Errors` | property | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.pas#L53) | [`TBoldRegionParser.Errors`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs#L56) | 🟢 ported |  |
 
 ## Dependencies
 

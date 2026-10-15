@@ -450,10 +450,14 @@ public abstract class TBoldElementTypeInfo : TBoldMetaElement
     protected void SetValueType(TBoldValueTypeSet NewValue) =>
         SetInternalState(unchecked((uint)BoldElements.BoldValueTypeMask), BoldElements.BoldValueTypeShift, (uint)NewValue);
 
-    /// <summary>A new type list holding this type. Needs TBoldTypeList, ported with BoldSystem in M3.</summary>
-    [Delphi(PortStatus.Partial, Note = "Raises EBoldFeatureNotImplementedYet until BoldTypeList (M3) is ported.")]
-    public override void GetAsList(TBoldIndirectElement ResultList) =>
-        throw new EBoldFeatureNotImplementedYet("TBoldElementTypeInfo.GetAsList needs TBoldTypeList, which is not ported yet.");
+    /// <summary>A new type list holding this type.</summary>
+    [Delphi(PortStatus.Ported)]
+    public override void GetAsList(TBoldIndirectElement ResultList)
+    {
+        TBoldTypeList list = TBoldTypeListFactory.CreateList(this);
+        list.Add(this);
+        ResultList.SetOwnedValue(list);
+    }
 
     [Delphi(PortStatus.Ported)]
     public abstract bool ConformsTo(TBoldElementTypeInfo? Element);

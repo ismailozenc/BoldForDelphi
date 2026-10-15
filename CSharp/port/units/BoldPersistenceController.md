@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Core/BoldPersistenceController.pas`](../../../Source/Persistence/Core/BoldPersistenceController.pas) (80 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 14 symbols done, 0 verified |
+| Status | 🟢 ported: 14 of 14 symbols done, 0 verified |
 
-⚪ 14 not started
+🟢 14 ported
 
 ## Unit level
 
@@ -18,27 +18,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceController` | class | [18](../../../Source/Persistence/Core/BoldPersistenceController.pas#L18) |  | ⚪ not started |  |
-| `NOTVALIDCLIENTID` | const | [38](../../../Source/Persistence/Core/BoldPersistenceController.pas#L38) |  | ⚪ not started |  |
+| `TBoldPersistenceController` | class | [18](../../../Source/Persistence/Core/BoldPersistenceController.pas#L18) | [`TBoldPersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L11) | 🟢 ported |  |
+| `NOTVALIDCLIENTID` | const | [38](../../../Source/Persistence/Core/BoldPersistenceController.pas#L38) | [`BoldPersistenceController.NOTVALIDCLIENTID`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L70) | 🟢 ported |  |
 
 ## TBoldPersistenceController
 
-class at [line 18](../../../Source/Persistence/Core/BoldPersistenceController.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/Persistence/Core/BoldPersistenceController.pas#L18); 🟢 ported, C# [`TBoldPersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `PMExactifyIds` | method | [20](../../../Source/Persistence/Core/BoldPersistenceController.pas#L20) |  | ⚪ not started |  |
-| `PMFetch` | method | [21](../../../Source/Persistence/Core/BoldPersistenceController.pas#L21) |  | ⚪ not started |  |
-| `PMFetchIDListWithCondition` | method | [22](../../../Source/Persistence/Core/BoldPersistenceController.pas#L22) |  | ⚪ not started |  |
-| `PMUpdate` | method | [23](../../../Source/Persistence/Core/BoldPersistenceController.pas#L23) |  | ⚪ not started |  |
-| `PMTranslateToGlobalIds` | method | [24](../../../Source/Persistence/Core/BoldPersistenceController.pas#L24) |  | ⚪ not started |  |
-| `PMTranslateToLocalIds` | method | [25](../../../Source/Persistence/Core/BoldPersistenceController.pas#L25) |  | ⚪ not started |  |
-| `PMSetReadOnlyness` | method | [26](../../../Source/Persistence/Core/BoldPersistenceController.pas#L26) |  | ⚪ not started |  |
-| `SubscribeToPeristenceEvents` | method | [27](../../../Source/Persistence/Core/BoldPersistenceController.pas#L27) · [body 65](../../../Source/Persistence/Core/BoldPersistenceController.pas#L65) |  | ⚪ not started |  |
-| `MultilinksAreStoredInObject` | method | [29](../../../Source/Persistence/Core/BoldPersistenceController.pas#L29) · [body 48](../../../Source/Persistence/Core/BoldPersistenceController.pas#L48) |  | ⚪ not started |  |
-| `ReserveNewIds` | method | [30](../../../Source/Persistence/Core/BoldPersistenceController.pas#L30) |  | ⚪ not started |  |
-| `PMTimestampForTime` | method | [32](../../../Source/Persistence/Core/BoldPersistenceController.pas#L32) · [body 59](../../../Source/Persistence/Core/BoldPersistenceController.pas#L59) |  | ⚪ not started |  |
-| `PMTimeForTimestamp` | method | [33](../../../Source/Persistence/Core/BoldPersistenceController.pas#L33) · [body 53](../../../Source/Persistence/Core/BoldPersistenceController.pas#L53) |  | ⚪ not started |  |
+| `PMExactifyIds` | method | [20](../../../Source/Persistence/Core/BoldPersistenceController.pas#L20) | [`TBoldPersistenceController.PMExactifyIds`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L14) | 🟢 ported |  |
+| `PMFetch` | method | [21](../../../Source/Persistence/Core/BoldPersistenceController.pas#L21) | [`TBoldPersistenceController.PMFetch`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L17) | 🟢 ported |  |
+| `PMFetchIDListWithCondition` | method | [22](../../../Source/Persistence/Core/BoldPersistenceController.pas#L22) | [`TBoldPersistenceController.PMFetchIDListWithCondition`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L21) | 🟢 ported |  |
+| `PMUpdate` | method | [23](../../../Source/Persistence/Core/BoldPersistenceController.pas#L23) | [`TBoldPersistenceController.PMUpdate`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L25) | 🟢 ported |  |
+| `PMTranslateToGlobalIds` | method | [24](../../../Source/Persistence/Core/BoldPersistenceController.pas#L24) | [`TBoldPersistenceController.PMTranslateToGlobalIds`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L29) | 🟢 ported |  |
+| `PMTranslateToLocalIds` | method | [25](../../../Source/Persistence/Core/BoldPersistenceController.pas#L25) | [`TBoldPersistenceController.PMTranslateToLocalIds`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L32) | 🟢 ported |  |
+| `PMSetReadOnlyness` | method | [26](../../../Source/Persistence/Core/BoldPersistenceController.pas#L26) | [`TBoldPersistenceController.PMSetReadOnlyness`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L35) | 🟢 ported |  |
+| `SubscribeToPeristenceEvents` | method | [27](../../../Source/Persistence/Core/BoldPersistenceController.pas#L27) · [body 65](../../../Source/Persistence/Core/BoldPersistenceController.pas#L65) | [`TBoldPersistenceController.SubscribeToPeristenceEvents`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L39) | 🟢 ported |  |
+| `MultilinksAreStoredInObject` | method | [29](../../../Source/Persistence/Core/BoldPersistenceController.pas#L29) · [body 48](../../../Source/Persistence/Core/BoldPersistenceController.pas#L48) | [`TBoldPersistenceController.MultilinksAreStoredInObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L51) | 🟢 ported |  |
+| `ReserveNewIds` | method | [30](../../../Source/Persistence/Core/BoldPersistenceController.pas#L30) | [`TBoldPersistenceController.ReserveNewIds`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L54) | 🟢 ported |  |
+| `PMTimestampForTime` | method | [32](../../../Source/Persistence/Core/BoldPersistenceController.pas#L32) · [body 59](../../../Source/Persistence/Core/BoldPersistenceController.pas#L59) | [`TBoldPersistenceController.PMTimestampForTime`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L58) | 🟢 ported |  |
+| `PMTimeForTimestamp` | method | [33](../../../Source/Persistence/Core/BoldPersistenceController.pas#L33) · [body 53](../../../Source/Persistence/Core/BoldPersistenceController.pas#L53) | [`TBoldPersistenceController.PMTimeForTimestamp`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs#L62) | 🟢 ported |  |
 
 ## Dependencies
 

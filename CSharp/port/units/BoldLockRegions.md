@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas`](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas) (926 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 70 symbols done, 0 verified |
+| Status | 🟢 ported: 70 of 70 symbols done, 0 verified |
 
-⚪ 70 not started
+🟢 69 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,125 +18,131 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `breNone` | const | [21](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L21) |  | ⚪ not started |  |
-| `breParentsChanged` | const | [22](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L22) |  | ⚪ not started |  |
-| `breSubregionsChanged` | const | [23](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L23) |  | ⚪ not started |  |
-| `TBoldRegionEvent` | event type | [31](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L31) |  | ⚪ not started |  |
-| `TBoldRegion` | class | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L33) |  | ⚪ not started |  |
-| `TBoldRegionFactory` | class | [57](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L57) |  | ⚪ not started |  |
-| `TBoldRegionLookup` | class | [75](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L75) |  | ⚪ not started |  |
-| `TBoldOrderedRegionLookup` | class | [90](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L90) |  | ⚪ not started |  |
-| `TBoldRegionList` | class | [99](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L99) |  | ⚪ not started |  |
-| `TBoldRegionExpander` | class | [115](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L115) |  | ⚪ not started |  |
-| `BoldRegionExpansionDebugLogHandler` | var | [138](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L138) |  | ⚪ not started |  |
-| `TBoldRegionIndex` | class, implementation | [157](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L157) |  | ⚪ not started |  |
-| `NavigateAndSubscribe` | routine, implementation | [162](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L162) |  | ⚪ not started |  |
-| `DoReverseNavigationAndSubscribe` | routine, implementation | [182](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L182) |  | ⚪ not started |  |
-| `DoNavigationAndSubscribe` | routine, implementation | [190](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L190) |  | ⚪ not started |  |
+| `breNone` | const | [21](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L21) | [`BoldLockRegions.breNone`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L668) | 🟢 ported |  |
+| `breParentsChanged` | const | [22](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L22) | [`BoldLockRegions.breParentsChanged`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L669) | 🟢 ported |  |
+| `breSubregionsChanged` | const | [23](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L23) | [`BoldLockRegions.breSubregionsChanged`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L670) | 🟢 ported |  |
+| `TBoldRegionEvent` | event type | [31](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L31) | [`TBoldRegionEvent`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L10) | 🟢 ported |  |
+| `TBoldRegion` | class | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L33) | [`TBoldRegion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L14) | 🟢 ported |  |
+| `TBoldRegionFactory` | class | [57](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L57) | [`TBoldRegionFactory`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L139) | 🟢 ported |  |
+| `TBoldRegionLookup` | class | [75](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L75) | [`TBoldRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L256) | 🟢 ported |  |
+| `TBoldOrderedRegionLookup` | class | [90](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L90) | [`TBoldOrderedRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L479) | 🟢 ported |  |
+| `TBoldRegionList` | class | [99](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L99) | [`TBoldRegionList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L497) | 🟢 ported |  |
+| `TBoldRegionExpander` | class | [115](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L115) | [`TBoldRegionExpander`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L538) | 🟢 ported |  |
+| `BoldRegionExpansionDebugLogHandler` | var | [138](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L138) | [`BoldLockRegions.BoldRegionExpansionDebugLogHandler`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L673) | 🟢 ported |  |
+| `TBoldRegionIndex` | class, implementation | [157](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L157) | [`TBoldRegionLookup.TBoldRegionIndex`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L470) | 🟢 ported |  |
+| `NavigateAndSubscribe` | routine, implementation | [162](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L162) | [`BoldLockRegions.NavigateAndSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L677) | 🟢 ported |  |
+| `DoReverseNavigationAndSubscribe` | routine, implementation | [182](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L182) | [`BoldLockRegions.DoReverseNavigationAndSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L700) | 🟢 ported |  |
+| `DoNavigationAndSubscribe` | routine, implementation | [190](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L190) | [`BoldLockRegions.DoNavigationAndSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L705) | 🟢 ported |  |
 
 ## TBoldRegion
 
-class at [line 33](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L33); ⚪ not started.
+class at [line 33](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L33); 🟢 ported, C# [`TBoldRegion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FillSubregions` | method, private | [38](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L38) · [body 228](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L228) |  | ⚪ not started |  |
-| `GetRoot` | method, private | [39](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L39) · [body 280](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L280) |  | ⚪ not started |  |
-| `PlaceRootSubscriptions` | method, private | [40](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L40) · [body 285](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L285) |  | ⚪ not started |  |
-| `GetAsString` | method, protected | [42](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L42) · [body 263](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L263) |  | ⚪ not started |  |
-| `Receive` | method, protected | [43](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L43) · [body 290](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L290) |  | ⚪ not started |  |
-| `Create` | constructor | [45](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L45) · [body 197](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L197) |  | ⚪ not started |  |
-| `Destroy` | destructor | [46](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L46) · [body 208](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L208) |  | ⚪ not started |  |
-| `GetElements` | method | [47](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L47) · [body 271](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L271) |  | ⚪ not started |  |
-| `FillDependentSubregions` | method | [48](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L48) · [body 216](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L216) |  | ⚪ not started |  |
-| `FillIndependentSubregions` | method | [49](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L49) · [body 222](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L222) |  | ⚪ not started |  |
-| `Definition` | property | [50](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L50) |  | ⚪ not started |  |
-| `Root` | property | [51](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L51) |  | ⚪ not started |  |
-| `RootLocator` | property | [52](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L52) |  | ⚪ not started |  |
-| `AsString` | property | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L53) |  | ⚪ not started |  |
-| `Factory` | property | [54](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L54) |  | ⚪ not started |  |
+| `FillSubregions` | method, private | [38](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L38) · [body 228](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L228) | [`TBoldRegion.FillSubregions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L44) | 🟢 ported |  |
+| `GetRoot` | method, private | [39](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L39) · [body 280](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L280) | [`TBoldRegion.GetRoot`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L88) | 🟢 ported |  |
+| `PlaceRootSubscriptions` | method, private | [40](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L40) · [body 285](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L285) | [`TBoldRegion.PlaceRootSubscriptions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L91) | 🟢 ported |  |
+| `GetAsString` | method, protected | [42](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L42) · [body 263](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L263) | [`TBoldRegion.GetAsString`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L66) | 🟢 ported |  |
+| `Receive` | method, protected | [43](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L43) · [body 290](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L290) | [`TBoldRegion.Receive`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L98) | 🟢 ported |  |
+| `Create` | constructor | [45](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L45) · [body 197](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L197) | [`TBoldRegion.TBoldRegion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L21) | 🟢 ported |  |
+| `Destroy` | destructor | [46](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L46) · [body 208](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L208) | [`TBoldRegion.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L30) | 🟢 ported |  |
+| `GetElements` | method | [47](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L47) · [body 271](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L271) | [`TBoldRegion.GetElements`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L78) | 🟢 ported |  |
+| `FillDependentSubregions` | method | [48](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L48) · [body 216](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L216) | [`TBoldRegion.FillDependentSubregions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L37) | 🟢 ported |  |
+| `FillIndependentSubregions` | method | [49](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L49) · [body 222](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L222) | [`TBoldRegion.FillIndependentSubregions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L40) | 🟢 ported |  |
+| `Definition` | property | [50](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L50) | [`TBoldRegion.Definition`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L130) | 🟢 ported |  |
+| `Root` | property | [51](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L51) | [`TBoldRegion.Root`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L131) | 🟢 ported |  |
+| `RootLocator` | property | [52](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L52) | [`TBoldRegion.RootLocator`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L132) | 🟢 ported |  |
+| `AsString` | property | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L53) | [`TBoldRegion.AsString`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L133) | 🟢 ported |  |
+| `Factory` | property | [54](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L54) | [`TBoldRegion.Factory`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L134) | 🟢 ported |  |
 
 ## TBoldRegionFactory
 
-class at [line 57](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L57); ⚪ not started.
+class at [line 57](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L57); 🟢 ported, C# [`TBoldRegionFactory`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L139).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `RegionId` | method, private | [62](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L62) · [body 401](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L401) |  | ⚪ not started |  |
-| `NotifyRegionChanged` | method, private | [63](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L63) · [body 395](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L395) |  | ⚪ not started |  |
-| `RootObjectLocatorFromRegionId` | method, private | [64](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L64) · [body 409](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L409) |  | ⚪ not started |  |
-| `CoreDefintionFromRegionId` | method, private | [65](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L65) · [body 324](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L324) |  | ⚪ not started |  |
-| `Create` | constructor | [67](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L67) · [body 332](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L332) |  | ⚪ not started |  |
-| `Destroy` | destructor | [68](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L68) · [body 340](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L340) |  | ⚪ not started |  |
-| `GetRegion` | method | [69](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L69) · [body 346](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L346) |  | ⚪ not started |  |
-| `GetRegionsForElement` | method | [70](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L70) · [body 371](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L371) |  | ⚪ not started |  |
-| `GetRegionByName` | method | [71](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L71) · [body 362](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L362) |  | ⚪ not started |  |
-| `OnRegionChanged` | property | [72](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L72) |  | ⚪ not started |  |
+| `RegionId` | method, private | [62](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L62) · [body 401](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L401) | [`TBoldRegionFactory.RegionId`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L212) | 🟢 ported |  |
+| `NotifyRegionChanged` | method, private | [63](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L63) · [body 395](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L395) | [`TBoldRegionFactory.NotifyRegionChanged`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L208) | 🟢 ported |  |
+| `RootObjectLocatorFromRegionId` | method, private | [64](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L64) · [body 409](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L409) | [`TBoldRegionFactory.RootObjectLocatorFromRegionId`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L219) | 🟢 ported |  |
+| `CoreDefintionFromRegionId` | method, private | [65](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L65) · [body 324](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L324) | [`TBoldRegionFactory.CoreDefintionFromRegionId`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L160) | 🟢 ported |  |
+| `Create` | constructor | [67](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L67) · [body 332](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L332) | [`TBoldRegionFactory.TBoldRegionFactory`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L146) | 🟢 ported |  |
+| `Destroy` | destructor | [68](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L68) · [body 340](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L340) | [`TBoldRegionFactory.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L153) | 🟢 ported |  |
+| `GetRegion` | method | [69](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L69) · [body 346](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L346) | [`TBoldRegionFactory.GetRegion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L166) | 🟢 ported |  |
+| `GetRegionsForElement` | method | [70](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L70) · [body 371](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L371) | [`TBoldRegionFactory.GetRegionsForElement`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L187) | 🟢 ported |  |
+| `GetRegionByName` | method | [71](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L71) · [body 362](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L362) | [`TBoldRegionFactory.GetRegionByName`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L182) | 🟢 ported |  |
+| `OnRegionChanged` | property | [72](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L72) | [`TBoldRegionFactory.OnRegionChanged`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L247) | 🟢 ported |  |
 
 ## TBoldRegionLookup
 
-class at [line 75](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L75); ⚪ not started.
+class at [line 75](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L75); 🟢 ported, C# [`TBoldRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L256).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ExpandOneLevelRegionsForNavigation` | method, private | [77](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L77) · [body 609](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L609) |  | ⚪ not started |  |
-| `AddIfNotInLookup` | method, private | [78](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L78) · [body 666](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L666) |  | ⚪ not started |  |
-| `Create` | constructor | [80](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L80) · [body 462](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L462) |  | ⚪ not started |  |
-| `FindByID` | method | [81](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L81) · [body 604](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L604) |  | ⚪ not started |  |
-| `AddRegionLookup` | method | [82](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L82) · [body 446](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L446) |  | ⚪ not started |  |
-| `AddRegionLookupWithFilter` | method | [83](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L83) · [body 672](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L672) |  | ⚪ not started |  |
-| `AddRegionList` | method | [84](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L84) · [body 658](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L658) |  | ⚪ not started |  |
-| `FetchAndExpandOneLevelSubRegions` | method | [85](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L85) · [body 532](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L532) |  | ⚪ not started |  |
-| `FetchAndExpandOneLevelParentRegions` | method | [86](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L86) · [body 483](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L483) |  | ⚪ not started |  |
-| `FillObjectList` | method | [87](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L87) · [body 467](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L467) |  | ⚪ not started |  |
+| `ExpandOneLevelRegionsForNavigation` | method, private | [77](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L77) · [body 609](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L609) | [`TBoldRegionLookup.ExpandOneLevelRegionsForNavigation`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L334) | 🟢 ported |  |
+| `AddIfNotInLookup` | method, private | [78](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L78) · [body 666](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L666) | [`TBoldRegionLookup.AddIfNotInLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L315) | 🟢 ported |  |
+| `Create` | constructor | [80](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L80) · [body 462](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L462) | [`TBoldRegionLookup.TBoldRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L262) | 🟢 ported |  |
+| `FindByID` | method | [81](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L81) · [body 604](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L604) | [`TBoldRegionLookup.FindByID`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L282) | 🟢 ported |  |
+| `AddRegionLookup` | method | [82](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L82) · [body 446](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L446) | [`TBoldRegionLookup.AddRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L285) | 🟢 ported |  |
+| `AddRegionLookupWithFilter` | method | [83](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L83) · [body 672](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L672) | [`TBoldRegionLookup.AddRegionLookupWithFilter`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L294) | 🟢 ported |  |
+| `AddRegionList` | method | [84](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L84) · [body 658](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L658) | [`TBoldRegionLookup.AddRegionList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L306) | 🟢 ported |  |
+| `FetchAndExpandOneLevelSubRegions` | method | [85](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L85) · [body 532](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L532) | [`TBoldRegionLookup.FetchAndExpandOneLevelSubRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L367) | 🟢 ported |  |
+| `FetchAndExpandOneLevelParentRegions` | method | [86](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L86) · [body 483](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L483) | [`TBoldRegionLookup.FetchAndExpandOneLevelParentRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L429) | 🟢 ported |  |
+| `FillObjectList` | method | [87](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L87) · [body 467](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L467) | [`TBoldRegionLookup.FillObjectList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L324) | 🟢 ported |  |
 
 ## TBoldOrderedRegionLookup
 
-class at [line 90](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L90); ⚪ not started.
+class at [line 90](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L90); 🟢 ported, C# [`TBoldOrderedRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L479).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetFirstRegion` | method, private | [92](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L92) · [body 921](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L921) |  | ⚪ not started |  |
-| `Create` | constructor | [94](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L94) · [body 915](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L915) |  | ⚪ not started |  |
-| `FirstRegion` | property | [95](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L95) |  | ⚪ not started |  |
+| `GetFirstRegion` | method, private | [92](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L92) · [body 921](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L921) | [`TBoldOrderedRegionLookup.GetFirstRegion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L490) | 🟢 ported |  |
+| `Create` | constructor | [94](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L94) · [body 915](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L915) | [`TBoldOrderedRegionLookup.TBoldOrderedRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L484) | 🟢 ported |  |
+| `FirstRegion` | property | [95](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L95) | [`TBoldOrderedRegionLookup.FirstRegion`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L492) | 🟢 ported |  |
 
 ## TBoldRegionList
 
-class at [line 99](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L99); ⚪ not started.
+class at [line 99](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L99); 🟢 ported, C# [`TBoldRegionList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L497).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [101](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L101) · [body 765](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L765) |  | ⚪ not started |  |
-| `AddList` | method | [103](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L103) · [body 692](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L692) |  | ⚪ not started |  |
-| `AddRegionLookup` | method | [104](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L104) · [body 701](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L701) |  | ⚪ not started |  |
-| `Assign` | method | [105](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L105) · [body 717](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L717) |  | ⚪ not started |  |
-| `Items` | property | [107](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L107) |  | ⚪ not started |  |
+| `GetItems` | method, private | [101](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L101) · [body 765](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L765) | [`TBoldRegionList.GetItems`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L500) | 🟢 ported |  |
+| `AddList` | method | [103](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L103) · [body 692](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L692) | [`TBoldRegionList.AddList`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L503) | 🟢 ported |  |
+| `AddRegionLookup` | method | [104](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L104) · [body 701](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L701) | [`TBoldRegionList.AddRegionLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L515) | 🟢 ported |  |
+| `Assign` | method | [105](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L105) · [body 717](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L717) | [`TBoldRegionList.Assign`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L526) | 🟢 ported |  |
+| `Items` | property | [107](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L107) | [`TBoldRegionList.this`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L533) | 🟢 ported |  |
 
 ## TBoldRegionExpander
 
-class at [line 115](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L115); ⚪ not started.
+class at [line 115](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L115); 🟢 ported, C# [`TBoldRegionExpander`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L538).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SignalProgress` | method, private | [122](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L122) · [body 892](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L892) |  | ⚪ not started |  |
-| `Clear` | method, protected | [124](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L124) · [body 772](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L772) |  | ⚪ not started |  |
-| `ExtractSimilarRegions` | method, protected | [125](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L125) · [body 814](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L814) |  | ⚪ not started |  |
-| `Create` | constructor | [127](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L127) · [body 780](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L780) |  | ⚪ not started |  |
-| `Destroy` | destructor | [128](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L128) · [body 790](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L790) |  | ⚪ not started |  |
-| `ExpandParentRegions` | method | [129](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L129) · [body 837](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L837) |  | ⚪ not started |  |
-| `ExpandSubregions` | method | [130](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L130) · [body 865](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L865) |  | ⚪ not started |  |
-| `ExpandRegionEnclosure` | method | [131](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L131) · [body 899](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L899) |  | ⚪ not started |  |
-| `NewParentRegions` | property | [132](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L132) |  | ⚪ not started |  |
-| `NewSubRegions` | property | [133](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L133) |  | ⚪ not started |  |
-| `OnProgress` | property | [134](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L134) |  | ⚪ not started |  |
+| `SignalProgress` | method, private | [122](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L122) · [body 892](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L892) | [`TBoldRegionExpander.SignalProgress`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L556) | 🟢 ported |  |
+| `Clear` | method, protected | [124](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L124) · [body 772](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L772) | [`TBoldRegionExpander.Clear`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L560) | 🟢 ported |  |
+| `ExtractSimilarRegions` | method, protected | [125](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L125) · [body 814](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L814) | [`TBoldRegionExpander.ExtractSimilarRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L570) | 🟢 ported |  |
+| `Create` | constructor | [127](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L127) · [body 780](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L780) | [`TBoldRegionExpander.TBoldRegionExpander`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L547) | 🟢 ported |  |
+| `Destroy` | destructor | [128](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L128) · [body 790](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L790) | [`TBoldRegionExpander.NewParentRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L553) | 🔵 replaced: Freed the lookups; the garbage collector does that in .NET. |  |
+| `ExpandParentRegions` | method | [129](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L129) · [body 837](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L837) | [`TBoldRegionExpander.ExpandParentRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L597) | 🟢 ported |  |
+| `ExpandSubregions` | method | [130](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L130) · [body 865](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L865) | [`TBoldRegionExpander.ExpandSubregions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L622) | 🟢 ported |  |
+| `ExpandRegionEnclosure` | method | [131](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L131) · [body 899](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L899) | [`TBoldRegionExpander.ExpandRegionEnclosure`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L646) | 🟢 ported |  |
+| `NewParentRegions` | property | [132](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L132) | [`TBoldRegionExpander.NewParentRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L553) | 🟢 ported |  |
+| `NewSubRegions` | property | [133](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L133) | [`TBoldRegionExpander.NewSubRegions`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L655) | 🟢 ported |  |
+| `OnProgress` | property | [134](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L134) | [`TBoldRegionExpander.OnProgress`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L658) | 🟢 ported |  |
 
 ## TBoldRegionIndex
 
-class at [line 157](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L157); ⚪ not started.
+class at [line 157](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L157); 🟢 ported, C# [`TBoldRegionLookup.TBoldRegionIndex`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L470).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [159](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L159) · [body 439](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L439) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [159](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L159) · [body 439](../../../Source/ObjectSpace/PessimisticLocking/BoldLockRegions.pas#L439) | [`TBoldRegionLookup.TBoldRegionIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L473) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldRegionFactory.fLookup`](../../src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs#L142) (field)
 
 ## Dependencies
 

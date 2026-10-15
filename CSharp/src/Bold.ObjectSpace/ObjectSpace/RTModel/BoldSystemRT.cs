@@ -329,7 +329,7 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
     /// Builds the runtime model. With <paramref name="UseGeneratedCode"/> the classes registered for the model in the
     /// generated code dictionary are installed (and their CRC checked with <paramref name="CheckCodeCheckSum"/>).
     /// </summary>
-    [Delphi(PortStatus.Partial, Note = "The type list, object list and default object classes come from BoldSystem and BoldTypeList (M3); until they are ported those class references are null.")]
+    [Delphi(PortStatus.Ported)]
     public TBoldSystemTypeInfo(TMoldModel moldModel, bool UseGeneratedCode, bool CheckCodeCheckSum, TBoldTypeNameDictionary TypeNameDictionary)
         : base(moldModel, null)
     {
@@ -343,7 +343,7 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
 
         fAttributeTypes = new TBoldElementTypeInfoList();
         fListTypes = new TBoldListTypeInfoList();
-        ListTypes.Add(new TBoldListTypeInfo(fTypeTypeInfo, this, BoldSystemRT.TBoldTypeListClass));
+        ListTypes.Add(new TBoldListTypeInfo(fTypeTypeInfo, this, typeof(TBoldTypeList)));
         SetElementFlag(BoldElements.befSystemPersistent, true);
         SetElementFlag(BoldElements.befGenerateDefaultRegions, moldModel.GenerateDefaultRegions);
         fTopSortedClasses = new TBoldClassTypeInfoList();
@@ -377,7 +377,7 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
         }
 
         // The super list that all other lists conform to (used by OCL); its element type is nil.
-        ListTypes.Add(new TBoldListTypeInfo(null, this, BoldSystemRT.TBoldObjectListClass));
+        ListTypes.Add(new TBoldListTypeInfo(null, this, typeof(TBoldObjectList)));
 
         // Superclasses are built first, so the classes come out topologically sorted.
         moldModel.EnsureTopSorted();
@@ -509,7 +509,7 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
     /// Installs the attribute type of the mapping at <paramref name="pos"/>: its class comes from the member type
     /// dictionary, and a registered superclass is installed first (added to the dictionary when it has no mapping).
     /// </summary>
-    [Delphi(PortStatus.Partial, Note = "Compares the attribute class's parent with TBoldAttribute, which is null until BoldSystem (M3) is ported.")]
+    [Delphi(PortStatus.Ported)]
     private void InstallAttributeType(TBoldTypeNameDictionary TypeNameDictionary, int pos)
     {
         TBoldTypeNameMapping Mapping = TypeNameDictionary.Mapping(pos);
@@ -532,7 +532,7 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
         if (AttributeDescriptor is not null)
         {
             MemberClass = AttributeDescriptor.MemberClass;
-            if (MemberClass.BaseType != BoldSystemRT.TBoldAttributeClass)
+            if (MemberClass.BaseType != typeof(TBoldAttribute))
             {
                 string SuperClassName = MemberClass.BaseType!.Name;
                 SuperType = AttributeTypeInfoByDelphiName(SuperClassName);
@@ -583,7 +583,7 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
         TempAttributeType = new TBoldAttributeTypeInfo(Mapping.ModelName, Mapping.ExpressionName, MemberClass, SuperType,
             Mapping.ExpandedDelphiName, this, IsAbstract);
         AttributeTypes.Add(TempAttributeType);
-        ListTypes.Add(new TBoldListTypeInfo(TempAttributeType, this, BoldSystemRT.TBoldMemberListClass));
+        ListTypes.Add(new TBoldListTypeInfo(TempAttributeType, this, typeof(TBoldMemberList)));
     }
 
     /// <summary>The OCL evaluator, created on first use. Needs TBoldOCL (M4).</summary>
@@ -741,7 +741,7 @@ public class TBoldClassTypeInfo : TBoldElementTypeInfoWithConstraint
     /// Sets the flags, superclass, object class and list type of the class, then creates its members (unless
     /// <paramref name="SkipMembers"/>) and its methods, own ones first and then inherited ones.
     /// </summary>
-    [Delphi(PortStatus.Partial, Note = "The default list class is TBoldObjectList from BoldSystem (M3); null until it is ported.")]
+    [Delphi(PortStatus.Ported)]
     protected virtual void Initialize(TMoldClass? MoldClass, TBoldTypeNameDictionary? TypeNameDictionary, TBoldGeneratedClassList? BoldObjectClasses,
         TBoldGeneratedClassList? BoldObjectListClasses, bool SkipMembers)
     {
@@ -767,7 +767,7 @@ public class TBoldClassTypeInfo : TBoldElementTypeInfoWithConstraint
         SystemTypeInfo.TopSortedClasses.Add(this);
 
         TBoldGeneratedClassDescriptor? ListClassDescriptor = BoldObjectListClasses!.EntryByExpressionName(ExpressionName);
-        TClass? ListClass = ListClassDescriptor is not null ? ListClassDescriptor.TheClass : BoldSystemRT.TBoldObjectListClass;
+        TClass? ListClass = ListClassDescriptor is not null ? ListClassDescriptor.TheClass : typeof(TBoldObjectList);
         SystemTypeInfo.ListTypes.Add(new TBoldListTypeInfo(this, SystemTypeInfo, ListClass));
 
         FFirstOwnMemberIndex = moldClass.FirstOwnBoldMemberIndex;
@@ -819,11 +819,11 @@ public class TBoldClassTypeInfo : TBoldElementTypeInfoWithConstraint
     }
 
     /// <summary>The generated class registered for this class, else the superclass's, else TBoldObject.</summary>
-    [Delphi(PortStatus.Partial, Note = "The default is TBoldObject from BoldSystem (M3); null until it is ported.")]
+    [Delphi(PortStatus.Ported)]
     private void SetObjectClass(TBoldGeneratedClassList BoldObjectClasses)
     {
         FObjectClass = BoldObjectClasses.EntryByExpressionName(ExpressionName)?.TheClass;
-        FObjectClass ??= SuperClassTypeInfo is not null ? SuperClassTypeInfo.ObjectClass : BoldSystemRT.TBoldObjectClass;
+        FObjectClass ??= SuperClassTypeInfo is not null ? SuperClassTypeInfo.ObjectClass : typeof(TBoldObject);
     }
 
     [Delphi(PortStatus.Ported)]
@@ -1354,9 +1354,9 @@ public class TBoldRoleRTInfo : TBoldMemberRTInfo
     protected bool GetIsQualified() => Qualifiers is not null && Qualifiers.Count > 0;
 
     /// <summary>The list class for a multi role; TBoldObjectReference for a single one.</summary>
-    [Delphi(PortStatus.Partial, Note = "TBoldObjectReference comes from BoldSystem (M3); null until it is ported.")]
+    [Delphi(PortStatus.Ported)]
     protected override TClass? GetMemberClass() =>
-        IsMultiRole ? ((TBoldListTypeInfo)BoldType!).ListClass : BoldSystemRT.TBoldObjectReferenceClass;
+        IsMultiRole ? ((TBoldListTypeInfo)BoldType!).ListClass : typeof(TBoldObjectReference);
 
     [Delphi(PortStatus.Ported)]
     protected TBoldMemberRTInfoList? GetQualifiers() => fQualifiers;
@@ -1756,13 +1756,6 @@ public static partial class BoldSystemRT
     [Delphi(PortStatus.Ported)] public const int LITE_VERSION_CLASS_LIMIT = 15;
     [Delphi(PortStatus.Ported)] public const int CLASS_TYPE_INFO_MEM_SIZE = 24;
 
-    // Delphi refers to these classes from BoldSystem, BoldTypeList and BoldOcl directly. Those units are ported in M3
-    // and M4, in this assembly; they will set these (or the references here become typeof(...)) when they are.
-    internal static TClass? TBoldObjectClass = null;
-    internal static TClass? TBoldObjectListClass = null;
-    internal static TClass? TBoldObjectReferenceClass = null;
-    internal static TClass? TBoldAttributeClass = null;
-    internal static TClass? TBoldMemberListClass = null;
-    internal static TClass? TBoldTypeListClass = null;
+    // Delphi refers to BoldOcl directly; it is ported in M4, in this assembly, and sets this when it is.
     internal static Func<TBoldSystemTypeInfo, TBoldEvaluator>? CreateOclEvaluator = null;
 }

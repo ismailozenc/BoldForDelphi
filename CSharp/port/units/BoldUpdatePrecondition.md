@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Core/BoldUpdatePrecondition.pas`](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas) (260 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 33 symbols done, 0 verified |
+| Status | 🟢 ported: 33 of 33 symbols done, 0 verified |
 
-⚪ 33 not started
+🟢 33 ported
 
 ## Unit level
 
@@ -18,67 +18,74 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUpdatePrecondition` | class | [14](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L14) |  | ⚪ not started |  |
-| `TBoldOptimisticLockingPrecondition` | class | [27](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L27) |  | ⚪ not started |  |
-| `TBoldXMLPreConditionStreamer` | class, implementation | [66](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L66) |  | ⚪ not started |  |
-| `TBoldXMLOptimisticLockingPreConditionStreamer` | class, implementation | [73](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L73) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [258](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L258) |  | ⚪ not started |  |
+| `TBoldUpdatePrecondition` | class | [14](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L14) | [`TBoldUpdatePrecondition`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L10) | 🟢 ported |  |
+| `TBoldOptimisticLockingPrecondition` | class | [27](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L27) | [`TBoldOptimisticLockingPrecondition`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L34) | 🟢 ported |  |
+| `TBoldXMLPreConditionStreamer` | class, implementation | [66](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L66) | [`TBoldXMLPreConditionStreamer`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L97) | 🟢 ported |  |
+| `TBoldXMLOptimisticLockingPreConditionStreamer` | class, implementation | [73](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L73) | [`TBoldXMLOptimisticLockingPreConditionStreamer`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L108) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [258](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L258) | [`[assembly: Delphi] in BoldUpdatePrecondition.cs`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L4) | 🟢 ported: Registers the precondition streamer from the Bold.Persistence module initializer. |  |
 
 ## TBoldUpdatePrecondition
 
-class at [line 14](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L14); 🟢 ported, C# [`TBoldUpdatePrecondition`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [17](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L17) |  | ⚪ not started |  |
-| `GetFailureReason` | method, protected | [18](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L18) · [body 94](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L94) |  | ⚪ not started |  |
-| `GetFailed` | method, protected | [19](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L19) · [body 89](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L89) |  | ⚪ not started |  |
-| `Create` | constructor | [21](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L21) · [body 84](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L84) |  | ⚪ not started |  |
-| `AssignOutValues` | method | [22](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L22) |  | ⚪ not started |  |
-| `Failed` | property | [23](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L23) |  | ⚪ not started |  |
-| `FailureReason` | property | [24](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L24) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [17](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L17) | [`TBoldUpdatePrecondition.GetStreamName`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L17) | 🟢 ported |  |
+| `GetFailureReason` | method, protected | [18](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L18) · [body 94](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L94) | [`TBoldUpdatePrecondition.GetFailureReason`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L18) | 🟢 ported |  |
+| `GetFailed` | method, protected | [19](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L19) · [body 89](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L89) | [`TBoldUpdatePrecondition.GetFailed`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L19) | 🟢 ported |  |
+| `Create` | constructor | [21](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L21) · [body 84](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L84) | [`TBoldUpdatePrecondition.TBoldUpdatePrecondition`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L13) | 🟢 ported |  |
+| `AssignOutValues` | method | [22](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L22) | [`TBoldUpdatePrecondition.AssignOutValues`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L23) | 🟢 ported |  |
+| `Failed` | property | [23](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L23) | [`TBoldUpdatePrecondition.Failed`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L25) | 🟢 ported |  |
+| `FailureReason` | property | [24](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L24) | [`TBoldUpdatePrecondition.FailureReason`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L26) | 🟢 ported |  |
 
 ## TBoldOptimisticLockingPrecondition
 
-class at [line 27](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L27); ⚪ not started.
+class at [line 27](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L27); 🟢 ported, C# [`TBoldOptimisticLockingPrecondition`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L34).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValueSpace` | method, private | [31](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L31) · [body 168](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L168) |  | ⚪ not started |  |
-| `GetFreeStandingValueSpace` | method, private | [32](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L32) · [body 143](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L143) |  | ⚪ not started |  |
-| `GetFailureList` | method, private | [33](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L33) · [body 131](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L131) |  | ⚪ not started |  |
-| `GetHasOptimisticLocks` | method, private | [34](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L34) · [body 150](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L150) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [36](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L36) · [body 163](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L163) |  | ⚪ not started |  |
-| `GetFailureReason` | method, protected | [37](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L37) · [body 138](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L138) |  | ⚪ not started |  |
-| `GetFailed` | method, protected | [38](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L38) · [body 126](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L126) |  | ⚪ not started |  |
-| `FreeStandingValueSpace` | property, protected | [39](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L39) |  | ⚪ not started |  |
-| `Destroy` | destructor | [41](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L41) · [body 119](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L119) |  | ⚪ not started |  |
-| `AssignOutValues` | method | [42](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L42) · [body 107](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L107) |  | ⚪ not started |  |
-| `AddFailedObject` | method | [43](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L43) · [body 101](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L101) |  | ⚪ not started |  |
-| `ClearValueSpace` | method | [44](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L44) · [body 114](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L114) |  | ⚪ not started |  |
-| `ValueSpace` | property | [45](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L45) |  | ⚪ not started |  |
-| `FailureList` | property | [46](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L46) |  | ⚪ not started |  |
-| `HasOptimisticLocks` | property | [47](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L47) |  | ⚪ not started |  |
+| `GetValueSpace` | method, private | [31](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L31) · [body 168](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L168) | [`TBoldOptimisticLockingPrecondition.GetValueSpace`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L47) | 🟢 ported |  |
+| `GetFreeStandingValueSpace` | method, private | [32](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L32) · [body 143](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L143) | [`TBoldOptimisticLockingPrecondition.GetFreeStandingValueSpace`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L48) | 🟢 ported |  |
+| `GetFailureList` | method, private | [33](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L33) · [body 131](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L131) | [`TBoldOptimisticLockingPrecondition.GetFailureList`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L49) | 🟢 ported |  |
+| `GetHasOptimisticLocks` | method, private | [34](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L34) · [body 150](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L150) | [`TBoldOptimisticLockingPrecondition.GetHasOptimisticLocks`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L53) | 🟢 ported |  |
+| `GetStreamName` | method, protected | [36](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L36) · [body 163](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L163) | [`TBoldOptimisticLockingPrecondition.GetStreamName`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L60) | 🟢 ported |  |
+| `GetFailureReason` | method, protected | [37](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L37) · [body 138](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L138) | [`TBoldOptimisticLockingPrecondition.GetFailureReason`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L63) | 🟢 ported |  |
+| `GetFailed` | method, protected | [38](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L38) · [body 126](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L126) | [`TBoldOptimisticLockingPrecondition.GetFailed`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L65) | 🟢 ported |  |
+| `FreeStandingValueSpace` | property, protected | [39](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L39) | [`TBoldOptimisticLockingPrecondition.FreeStandingValueSpace`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L67) | 🟢 ported |  |
+| `Destroy` | destructor | [41](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L41) · [body 119](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L119) | [`TBoldOptimisticLockingPrecondition.Dispose`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L40) | 🟢 ported |  |
+| `AssignOutValues` | method | [42](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L42) · [body 107](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L107) | [`TBoldOptimisticLockingPrecondition.AssignOutValues`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L70) | 🟢 ported |  |
+| `AddFailedObject` | method | [43](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L43) · [body 101](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L101) | [`TBoldOptimisticLockingPrecondition.AddFailedObject`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L79) | 🟢 ported |  |
+| `ClearValueSpace` | method | [44](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L44) · [body 114](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L114) | [`TBoldOptimisticLockingPrecondition.ClearValueSpace`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L88) | 🟢 ported |  |
+| `ValueSpace` | property | [45](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L45) | [`TBoldOptimisticLockingPrecondition.ValueSpace`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L90) | 🟢 ported |  |
+| `FailureList` | property | [46](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L46) | [`TBoldOptimisticLockingPrecondition.FailureList`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L91) | 🟢 ported |  |
+| `HasOptimisticLocks` | property | [47](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L47) | [`TBoldOptimisticLockingPrecondition.HasOptimisticLocks`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L92) | 🟢 ported |  |
 
 ## TBoldXMLPreConditionStreamer
 
-class at [line 66](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L66); ⚪ not started.
+class at [line 66](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L66); 🟢 ported, C# [`TBoldXMLPreConditionStreamer`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L97).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteObject` | method | [68](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L68) · [body 182](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L182) |  | ⚪ not started |  |
-| `ReadObject` | method | [69](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L69) · [body 175](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L175) |  | ⚪ not started |  |
+| `WriteObject` | method | [68](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L68) · [body 182](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L182) | [`TBoldXMLPreConditionStreamer.WriteObject`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L100) | 🟢 ported |  |
+| `ReadObject` | method | [69](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L69) · [body 175](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L175) | [`TBoldXMLPreConditionStreamer.ReadObject`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L103) | 🟢 ported |  |
 
 ## TBoldXMLOptimisticLockingPreConditionStreamer
 
-class at [line 73](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L73); ⚪ not started.
+class at [line 73](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L73); 🟢 ported, C# [`TBoldXMLOptimisticLockingPreConditionStreamer`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L108).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [75](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L75) · [body 197](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L197) |  | ⚪ not started |  |
-| `WriteObject` | method | [77](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L77) · [body 226](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L226) |  | ⚪ not started |  |
-| `ReadObject` | method | [78](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L78) · [body 202](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L202) |  | ⚪ not started |  |
-| `CreateObject` | method | [79](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L79) · [body 192](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L192) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [75](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L75) · [body 197](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L197) | [`TBoldXMLOptimisticLockingPreConditionStreamer.GetStreamName`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L111) | 🟢 ported |  |
+| `WriteObject` | method | [77](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L77) · [body 226](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L226) | [`TBoldXMLOptimisticLockingPreConditionStreamer.WriteObject`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L115) | 🟢 ported |  |
+| `ReadObject` | method | [78](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L78) · [body 202](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L202) | [`TBoldXMLOptimisticLockingPreConditionStreamer.ReadObject`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L132) | 🟢 ported |  |
+| `CreateObject` | method | [79](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L79) · [body 192](../../../Source/Persistence/Core/BoldUpdatePrecondition.pas#L192) | [`TBoldXMLOptimisticLockingPreConditionStreamer.CreateObject`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L149) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldUpdatePrecondition.OptimisticLockingPreConditionStreamName`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L155) (const)
+- [`BoldUpdatePrecondition.RegisterStreamers`](../../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs#L157) (method)
 
 ## Dependencies
 

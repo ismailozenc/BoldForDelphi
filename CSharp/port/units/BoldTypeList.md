@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/BORepresentation/BoldTypeList.pas`](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas) (267 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 37 symbols done, 0 verified |
+| Status | 🟢 ported: 37 of 37 symbols done, 0 verified |
 
-⚪ 37 not started
+🟢 36 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,64 +18,70 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldTypeList` | class | [18](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L18) |  | ⚪ not started |  |
-| `TBoldTypeListFactory` | class | [42](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L42) |  | ⚪ not started |  |
-| `TBoldTypeListController` | class, implementation | [58](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L58) |  | ⚪ not started |  |
+| `TBoldTypeList` | class | [18](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L18) | [`TBoldTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L11) | 🟢 ported |  |
+| `TBoldTypeListFactory` | class | [42](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L42) | [`TBoldTypeListFactory`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L94) | 🟢 ported |  |
+| `TBoldTypeListController` | class, implementation | [58](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L58) | [`TBoldTypeListController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L107) | 🟢 ported |  |
 
 ## TBoldTypeList
 
-class at [line 18](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L18); 🟢 ported, C# [`TBoldTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AddElement` | method, protected | [20](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L20) · [body 82](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L82) |  | ⚪ not started |  |
-| `AllocateData` | method, protected | [21](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L21) · [body 88](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L88) |  | ⚪ not started |  |
-| `FreeData` | method, protected | [22](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L22) · [body 106](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L106) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [23](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L23) · [body 111](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L111) |  | ⚪ not started |  |
-| `GetElement` | method, protected | [24](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L24) · [body 116](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L116) |  | ⚪ not started |  |
-| `IncludesElement` | method, protected | [25](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L25) · [body 121](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L121) |  | ⚪ not started |  |
-| `IndexOfElement` | method, protected | [26](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L26) · [body 126](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L126) |  | ⚪ not started |  |
-| `InitializeMember` | method, protected | [27](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L27) · [body 131](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L131) |  | ⚪ not started |  |
-| `InsertElement` | method, protected | [28](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L28) · [body 138](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L138) |  | ⚪ not started |  |
-| `SetElement` | method, protected | [29](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L29) · [body 176](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L176) |  | ⚪ not started |  |
-| `InternalAddNew` | method, protected | [30](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L30) · [body 148](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L148) |  | ⚪ not started |  |
-| `ProxyClass` | method, protected | [31](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L31) · [body 166](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L166) |  | ⚪ not started |  |
-| `InternalClear` | method, protected | [32](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L32) · [body 153](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L153) |  | ⚪ not started |  |
-| `Assign` | method | [34](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L34) · [body 93](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L93) |  | ⚪ not started |  |
-| `DefaultSubscribe` | method | [35](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L35) · [body 101](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L101) |  | ⚪ not started |  |
-| `Move` | method | [36](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L36) · [body 161](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L161) |  | ⚪ not started |  |
-| `InsertNew` | method | [37](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L37) · [body 143](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L143) |  | ⚪ not started |  |
-| `RemoveByIndex` | method | [38](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L38) · [body 171](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L171) |  | ⚪ not started |  |
+| `AddElement` | method, protected | [20](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L20) · [body 82](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L82) | [`TBoldTypeList.AddElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L18) | 🟢 ported |  |
+| `AllocateData` | method, protected | [21](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L21) · [body 88](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L88) | [`TBoldTypeList.AllocateData`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L27) | 🟢 ported |  |
+| `FreeData` | method, protected | [22](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L22) · [body 106](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L106) | [`TBoldTypeList.FreeData`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L48) | 🟢 ported |  |
+| `GetCount` | method, protected | [23](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L23) · [body 111](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L111) | [`TBoldTypeList.GetCount`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L52) | 🟢 ported |  |
+| `GetElement` | method, protected | [24](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L24) · [body 116](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L116) | [`TBoldTypeList.GetElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L53) | 🟢 ported |  |
+| `IncludesElement` | method, protected | [25](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L25) · [body 121](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L121) | [`TBoldTypeList.IncludesElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L54) | 🟢 ported |  |
+| `IndexOfElement` | method, protected | [26](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L26) · [body 126](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L126) | [`TBoldTypeList.IndexOfElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L55) | 🟢 ported |  |
+| `InitializeMember` | method, protected | [27](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L27) · [body 131](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L131) | [`TBoldTypeList.InitializeMember`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L59) | 🟢 ported |  |
+| `InsertElement` | method, protected | [28](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L28) · [body 138](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L138) | [`TBoldTypeList.InsertElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L66) | 🟢 ported |  |
+| `SetElement` | method, protected | [29](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L29) · [body 176](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L176) | [`TBoldTypeList.SetElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L89) | 🟢 ported |  |
+| `InternalAddNew` | method, protected | [30](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L30) · [body 148](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L148) | [`TBoldTypeList.InternalAddNew`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L72) | 🟢 ported |  |
+| `ProxyClass` | method, protected | [31](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L31) · [body 166](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L166) | [`TBoldTypeList.ProxyClass`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L86) | 🟢 ported |  |
+| `InternalClear` | method, protected | [32](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L32) · [body 153](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L153) | [`TBoldTypeList.InternalClear`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L75) | 🟢 ported |  |
+| `Assign` | method | [34](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L34) · [body 93](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L93) | [`TBoldTypeList.Assign`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L32) | 🟢 ported |  |
+| `DefaultSubscribe` | method | [35](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L35) · [body 101](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L101) | [`TBoldTypeList.DefaultSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L45) | 🟢 ported |  |
+| `Move` | method | [36](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L36) · [body 161](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L161) | [`TBoldTypeList.Move`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L83) | 🟢 ported |  |
+| `InsertNew` | method | [37](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L37) · [body 143](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L143) | [`TBoldTypeList.InsertNew`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L69) | 🟢 ported |  |
+| `RemoveByIndex` | method | [38](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L38) · [body 171](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L171) | [`TBoldTypeList.RemoveByIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L88) | 🟢 ported |  |
 
 ## TBoldTypeListFactory
 
-class at [line 42](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L42); ⚪ not started.
+class at [line 42](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L42); 🟢 ported, C# [`TBoldTypeListFactory`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L94).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateList` | class method | [44](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L44) · [body 261](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L261) |  | ⚪ not started |  |
+| `CreateList` | class method | [44](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L44) · [body 261](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L261) | [`TBoldTypeListFactory.CreateList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L98) | 🟢 ported |  |
 
 ## TBoldTypeListController
 
-class at [line 58](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L58); ⚪ not started.
+class at [line 58](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L58); 🟢 ported, C# [`TBoldTypeListController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L107).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCount` | method, protected | [62](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L62) · [body 213](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L213) |  | ⚪ not started |  |
-| `GetCanCreateNew` | method, protected | [63](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L63) · [body 208](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L208) |  | ⚪ not started |  |
-| `CreateNew` | method, protected | [64](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L64) · [body 197](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L197) |  | ⚪ not started |  |
-| `List` | property, protected | [65](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L65) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [66](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L66) · [body 223](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L223) |  | ⚪ not started |  |
-| `Create` | constructor | [68](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L68) · [body 191](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L191) |  | ⚪ not started |  |
-| `Destroy` | destructor | [69](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L69) · [body 202](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L202) |  | ⚪ not started |  |
-| `AddElement` | method | [70](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L70) · [body 183](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L183) |  | ⚪ not started |  |
-| `GetElement` | method | [71](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L71) · [body 218](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L218) |  | ⚪ not started |  |
-| `IncludesElement` | method | [72](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L72) · [body 229](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L229) |  | ⚪ not started |  |
-| `IndexOfElement` | method | [73](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L73) · [body 234](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L234) |  | ⚪ not started |  |
-| `InsertElement` | method | [74](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L74) · [body 239](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L239) |  | ⚪ not started |  |
-| `Move` | method | [75](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L75) · [body 244](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L244) |  | ⚪ not started |  |
-| `RemoveByIndex` | method | [76](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L76) · [body 249](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L249) |  | ⚪ not started |  |
-| `SetElement` | method | [77](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L77) · [body 254](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L254) |  | ⚪ not started |  |
+| `GetCount` | method, protected | [62](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L62) · [body 213](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L213) | [`TBoldTypeListController.GetCount`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L121) | 🟢 ported |  |
+| `GetCanCreateNew` | method, protected | [63](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L63) · [body 208](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L208) | [`TBoldTypeListController.GetCanCreateNew`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L122) | 🟢 ported |  |
+| `CreateNew` | method, protected | [64](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L64) · [body 197](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L197) | [`TBoldTypeListController.CreateNew`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L123) | 🟢 ported |  |
+| `List` | property, protected | [65](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L65) | [`TBoldTypeListController.List`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L119) | 🟢 ported |  |
+| `GetStreamName` | method, protected | [66](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L66) · [body 223](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L223) | [`TBoldTypeListController.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L124) | 🟢 ported |  |
+| `Create` | constructor | [68](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L68) · [body 191](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L191) | [`TBoldTypeListController.TBoldTypeListController`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L112) | 🟢 ported |  |
+| `Destroy` | destructor | [69](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L69) · [body 202](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L202) | [`TBoldTypeListController.List`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L119) | 🔵 replaced: Freed the list; the garbage collector does that in .NET. |  |
+| `AddElement` | method | [70](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L70) · [body 183](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L183) | [`TBoldTypeListController.AddElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L127) | 🟢 ported |  |
+| `GetElement` | method | [71](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L71) · [body 218](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L218) | [`TBoldTypeListController.GetElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L137) | 🟢 ported |  |
+| `IncludesElement` | method | [72](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L72) · [body 229](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L229) | [`TBoldTypeListController.IncludesElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L138) | 🟢 ported |  |
+| `IndexOfElement` | method | [73](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L73) · [body 234](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L234) | [`TBoldTypeListController.IndexOfElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L139) | 🟢 ported |  |
+| `InsertElement` | method | [74](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L74) · [body 239](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L239) | [`TBoldTypeListController.InsertElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L140) | 🟢 ported |  |
+| `Move` | method | [75](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L75) · [body 244](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L244) | [`TBoldTypeListController.Move`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L141) | 🟢 ported |  |
+| `RemoveByIndex` | method | [76](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L76) · [body 249](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L249) | [`TBoldTypeListController.RemoveByIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L142) | 🟢 ported |  |
+| `SetElement` | method | [77](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L77) · [body 254](../../../Source/ObjectSpace/BORepresentation/BoldTypeList.pas#L254) | [`TBoldTypeListController.SetElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L143) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldTypeList.TBoldTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldTypeList.cs#L13) (constructor)
 
 ## Dependencies
 

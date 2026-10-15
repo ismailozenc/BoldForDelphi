@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas`](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas) (405 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 41 symbols done, 0 verified |
+| Status | 🟢 ported: 41 of 41 symbols done, 0 verified |
 
-⚪ 41 not started
+🟢 41 ported
 
 ## Unit level
 
@@ -18,75 +18,75 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldObjectAttributeIndexList` | class | [19](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L19) |  | ⚪ not started |  |
-| `TBoldObjectLocatorList` | class | [34](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L34) |  | ⚪ not started |  |
-| `TBoldMembersHashIndex` | class | [56](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L56) |  | ⚪ not started |  |
-| `TBoldMembersKey` | class, implementation | [90](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L90) |  | ⚪ not started |  |
+| `TBoldObjectAttributeIndexList` | class | [19](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L19) | [`TBoldObjectAttributeIndexList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L10) | 🟢 ported |  |
+| `TBoldObjectLocatorList` | class | [34](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L34) | [`TBoldObjectLocatorList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L64) | 🟢 ported |  |
+| `TBoldMembersHashIndex` | class | [56](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L56) | [`TBoldMembersHashIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L183) | 🟢 ported |  |
+| `TBoldMembersKey` | class, implementation | [90](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L90) | [`TBoldMembersKey`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L308) | 🟢 ported |  |
 
 ## TBoldObjectAttributeIndexList
 
-class at [line 19](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L19); 🟢 ported, C# [`TBoldObjectAttributeIndexList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetHasMembersIndex` | method, private | [21](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L21) · [body 154](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L154) |  | ⚪ not started |  |
-| `GetMembersIndex` | method, private | [22](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L22) · [body 177](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L177) |  | ⚪ not started |  |
-| `CreateMembersIndex` | method, private | [23](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L23) · [body 149](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L149) |  | ⚪ not started |  |
-| `NotifyMemberIndexBad` | method, private | [24](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L24) · [body 166](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L166) |  | ⚪ not started |  |
-| `EnsureLazyCreateIndexes` | method, protected | [26](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L26) · [body 160](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L160) |  | ⚪ not started |  |
-| `InitMembersIndex` | method | [28](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L28) · [body 140](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L140) |  | ⚪ not started |  |
-| `HasMembersIndex` | property | [29](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L29) |  | ⚪ not started |  |
-| `GetLocatorByAttributesAndSubscribe` | method | [30](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L30) · [body 134](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L134) |  | ⚪ not started |  |
+| `GetHasMembersIndex` | method, private | [21](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L21) · [body 154](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L154) | [`TBoldObjectAttributeIndexList.GetHasMembersIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L15) | 🟢 ported |  |
+| `GetMembersIndex` | method, private | [22](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L22) · [body 177](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L177) | [`TBoldObjectAttributeIndexList.GetMembersIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L18) | 🟢 ported |  |
+| `CreateMembersIndex` | method, private | [23](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L23) · [body 149](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L149) | [`TBoldObjectAttributeIndexList.CreateMembersIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L21) | 🟢 ported |  |
+| `NotifyMemberIndexBad` | method, private | [24](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L24) · [body 166](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L166) | [`TBoldObjectAttributeIndexList.NotifyMemberIndexBad`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L25) | 🟢 ported |  |
+| `EnsureLazyCreateIndexes` | method, protected | [26](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L26) · [body 160](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L160) | [`TBoldObjectAttributeIndexList.EnsureLazyCreateIndexes`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L35) | 🟢 ported |  |
+| `InitMembersIndex` | method | [28](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L28) · [body 140](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L140) | [`TBoldObjectAttributeIndexList.InitMembersIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L41) | 🟢 ported |  |
+| `HasMembersIndex` | property | [29](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L29) | [`TBoldObjectAttributeIndexList.HasMembersIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L54) | 🟢 ported |  |
+| `GetLocatorByAttributesAndSubscribe` | method | [30](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L30) · [body 134](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L134) | [`TBoldObjectAttributeIndexList.GetLocatorByAttributesAndSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L58) | 🟢 ported |  |
 
 ## TBoldObjectLocatorList
 
-class at [line 34](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L34); ⚪ not started.
+class at [line 34](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L34); 🟢 ported, C# [`TBoldObjectLocatorList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L64).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLocatorIndex` | method, private | [36](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L36) · [body 206](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L206) |  | ⚪ not started |  |
-| `GetLocators` | method, private | [37](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L37) · [body 201](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L201) |  | ⚪ not started |  |
-| `SetLocators` | method, private | [38](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L38) · [body 272](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L272) |  | ⚪ not started |  |
-| `GetLocatorInList` | method, private | [39](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L39) · [body 223](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L223) |  | ⚪ not started |  |
-| `LocatorIndex` | property, private | [40](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L40) |  | ⚪ not started |  |
-| `EnsureLazyCreateIndexes` | method, protected | [42](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L42) · [body 258](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L258) |  | ⚪ not started |  |
-| `Create` | constructor | [44](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L44) · [body 185](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L185) |  | ⚪ not started |  |
-| `CreateFromObjectList` | constructor | [45](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L45) · [body 192](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L192) |  | ⚪ not started |  |
-| `Add` | method | [46](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L46) · [body 253](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L253) |  | ⚪ not started |  |
-| `Clone` | method | [47](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L47) · [body 214](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L214) |  | ⚪ not started |  |
-| `Ensure` | method | [48](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L48) · [body 264](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L264) |  | ⚪ not started |  |
-| `FillObjectList` | method | [49](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L49) · [body 244](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L244) |  | ⚪ not started |  |
-| `MergeObjectList` | method | [50](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L50) · [body 235](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L235) |  | ⚪ not started |  |
-| `Locators` | property | [51](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L51) |  | ⚪ not started |  |
-| `LocatorInList` | property | [52](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L52) |  | ⚪ not started |  |
+| `GetLocatorIndex` | method, private | [36](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L36) · [body 206](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L206) | [`TBoldObjectLocatorList.GetLocatorIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L92) | 🟢 ported |  |
+| `GetLocators` | method, private | [37](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L37) · [body 201](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L201) | [`TBoldObjectLocatorList.GetLocators`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L86) | 🟢 ported |  |
+| `SetLocators` | method, private | [38](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L38) · [body 272](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L272) | [`TBoldObjectLocatorList.SetLocators`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L89) | 🟢 ported |  |
+| `GetLocatorInList` | method, private | [39](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L39) · [body 223](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L223) | [`TBoldObjectLocatorList.GetLocatorInList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L116) | 🟢 ported |  |
+| `LocatorIndex` | property, private | [40](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L40) | [`TBoldObjectLocatorList.LocatorIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L169) | 🟢 ported |  |
+| `EnsureLazyCreateIndexes` | method, protected | [42](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L42) · [body 258](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L258) | [`TBoldObjectLocatorList.EnsureLazyCreateIndexes`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L154) | 🟢 ported |  |
+| `Create` | constructor | [44](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L44) · [body 185](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L185) | [`TBoldObjectLocatorList.TBoldObjectLocatorList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L69) | 🟢 ported |  |
+| `CreateFromObjectList` | constructor | [45](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L45) · [body 192](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L192) | [`TBoldObjectLocatorList.TBoldObjectLocatorList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L76) | 🟢 ported |  |
+| `Add` | method | [46](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L46) · [body 253](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L253) | [`TBoldObjectLocatorList.Add`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L151) | 🟢 ported |  |
+| `Clone` | method | [47](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L47) · [body 214](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L214) | [`TBoldObjectLocatorList.Clone`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L103) | 🟢 ported |  |
+| `Ensure` | method | [48](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L48) · [body 264](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L264) | [`TBoldObjectLocatorList.Ensure`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L161) | 🟢 ported |  |
+| `FillObjectList` | method | [49](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L49) · [body 244](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L244) | [`TBoldObjectLocatorList.FillObjectList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L139) | 🟢 ported |  |
+| `MergeObjectList` | method | [50](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L50) · [body 235](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L235) | [`TBoldObjectLocatorList.MergeObjectList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L127) | 🟢 ported |  |
+| `Locators` | property | [51](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L51) | [`TBoldObjectLocatorList.this`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L172) | 🟢 ported |  |
+| `LocatorInList` | property | [52](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L52) | [`TBoldObjectLocatorList.LocatorInList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L178) | 🟢 ported |  |
 
 ## TBoldMembersHashIndex
 
-class at [line 56](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L56); ⚪ not started.
+class at [line 56](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L56); 🟢 ported, C# [`TBoldMembersHashIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L183).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_receiveMemberChanged` | method, private | [62](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L62) · [body 117](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L117) |  | ⚪ not started |  |
-| `Create` | constructor, protected | [64](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L64) · [body 278](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L278) |  | ⚪ not started |  |
-| `HashItem` | method, protected | [65](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L65) · [body 303](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L303) |  | ⚪ not started |  |
-| `Match` | method, protected | [66](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L66) · [body 323](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L323) |  | ⚪ not started |  |
-| `Hash` | method, protected | [67](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L67) · [body 400](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L400) |  | ⚪ not started |  |
-| `LocatorFromItem` | method, protected | [68](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L68) · [body 352](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L352) |  | ⚪ not started |  |
-| `ObjectFromItem` | method, protected | [69](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L69) · [body 341](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L341) |  | ⚪ not started |  |
-| `Destroy` | destructor | [71](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L71) · [body 292](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L292) |  | ⚪ not started |  |
-| `Clear` | method | [72](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L72) · [body 125](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L125) |  | ⚪ not started |  |
-| `Add` | method | [73](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L73) · [body 100](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L100) |  | ⚪ not started |  |
-| `GetLocatorByAttributesAndSubscribe` | method | [74](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L74) · [body 358](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L358) |  | ⚪ not started |  |
+| `_receiveMemberChanged` | method, private | [62](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L62) · [body 117](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L117) | [`TBoldMembersHashIndex._receiveMemberChanged`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L230) | 🟢 ported |  |
+| `Create` | constructor, protected | [64](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L64) · [body 278](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L278) | [`TBoldMembersHashIndex.TBoldMembersHashIndex`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L191) | 🟢 ported |  |
+| `HashItem` | method, protected | [65](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L65) · [body 303](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L303) | [`TBoldMembersHashIndex.HashItem`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L244) | 🟢 ported |  |
+| `Match` | method, protected | [66](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L66) · [body 323](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L323) | [`TBoldMembersHashIndex.Match`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L257) | 🟢 ported |  |
+| `Hash` | method, protected | [67](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L67) · [body 400](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L400) | [`TBoldMembersHashIndex.Hash`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L273) | 🟢 ported |  |
+| `LocatorFromItem` | method, protected | [68](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L68) · [body 352](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L352) | [`TBoldMembersHashIndex.LocatorFromItem`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L276) | 🟢 ported |  |
+| `ObjectFromItem` | method, protected | [69](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L69) · [body 341](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L341) | [`TBoldMembersHashIndex.ObjectFromItem`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L279) | 🟢 ported |  |
+| `Destroy` | destructor | [71](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L71) · [body 292](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L292) | [`TBoldMembersHashIndex.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L205) | 🟢 ported |  |
+| `Clear` | method | [72](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L72) · [body 125](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L125) | [`TBoldMembersHashIndex.Clear`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L237) | 🟢 ported |  |
+| `Add` | method | [73](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L73) · [body 100](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L100) | [`TBoldMembersHashIndex.Add`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L217) | 🟢 ported |  |
+| `GetLocatorByAttributesAndSubscribe` | method | [74](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L74) · [body 358](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L358) | [`TBoldMembersHashIndex.GetLocatorByAttributesAndSubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L283) | 🟢 ported |  |
 
 ## TBoldMembersKey
 
-class at [line 90](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L90); ⚪ not started.
+class at [line 90](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L90); 🟢 ported, C# [`TBoldMembersKey`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L308).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [95](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L95) · [body 384](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L384) |  | ⚪ not started |  |
-| `AttributeList` | property | [96](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L96) |  | ⚪ not started |  |
-| `Hash` | method | [97](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L97) · [body 395](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L395) |  | ⚪ not started |  |
+| `Create` | constructor | [95](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L95) · [body 384](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L384) | [`TBoldMembersKey.TBoldMembersKey`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L314) | 🟢 ported |  |
+| `AttributeList` | property | [96](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L96) | [`TBoldMembersKey.AttributeList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L326) | 🟢 ported |  |
+| `Hash` | method | [97](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L97) · [body 395](../../../Source/ObjectSpace/BORepresentation/BoldObjectSpaceLists.pas#L395) | [`TBoldMembersKey.Hash`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldObjectSpaceLists.cs#L329) | 🟢 ported |  |
 
 ## Dependencies
 

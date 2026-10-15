@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas`](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas) (487 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | 🟢 ported: 18 of 18 symbols done, 0 verified |
 
-⚪ 18 not started
+🟢 18 ported
 
 ## Unit level
 
@@ -18,31 +18,31 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOptimisticLockHandler` | class | [16](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L16) |  | ⚪ not started |  |
+| `TBoldOptimisticLockHandler` | class | [16](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L16) | [`TBoldOptimisticLockHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L14) | 🟢 ported |  |
 
 ## TBoldOptimisticLockHandler
 
-class at [line 16](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L16); 🟢 ported, C# [`TBoldOptimisticLockHandler`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetRemotedfromIdRefValue` | method, private | [18](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L18) · [body 221](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L221) |  | ⚪ not started |  |
-| `GetRegionsForRemoteMember` | method, private | [19](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L19) · [body 360](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L360) |  | ⚪ not started |  |
-| `GetRegionsForDirtyOtherEnds` | method, private | [21](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L21) · [body 98](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L98) |  | ⚪ not started |  |
-| `CopyValue` | method, private | [22](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L22) · [body 77](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L77) |  | ⚪ not started |  |
-| `RetrieveOptimisticLockingvalues` | method, private | [23](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L23) · [body 236](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L236) |  | ⚪ not started |  |
-| `GetRegionsForElement` | method, private | [24](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L24) · [body 201](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L201) |  | ⚪ not started |  |
-| `GetRegionsForDirtyMembersInList` | method, private | [25](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L25) · [body 193](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L193) |  | ⚪ not started |  |
-| `GetRegionsForDirtyMembers` | method, private | [26](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L26) · [body 413](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L413) |  | ⚪ not started |  |
-| `GetLockingValuesForRegions` | method, private | [27](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L27) · [body 180](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L180) |  | ⚪ not started |  |
-| `GetLockingValuesForRegion` | method, private | [28](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L28) · [body 132](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L132) |  | ⚪ not started |  |
-| `AddOptimisticRegionLocks` | method, private | [29](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L29) · [body 61](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L61) |  | ⚪ not started |  |
-| `AddRegionObjectsToEnclosure` | method, private | [30](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L30) · [body 434](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L434) |  | ⚪ not started |  |
-| `AddRegionsObjectsToEnclosure` | method, private | [31](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L31) · [body 467](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L467) |  | ⚪ not started |  |
-| `GetRegionFactory` | method, private | [32](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L32) · [body 482](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L482) |  | ⚪ not started |  |
-| `AddOptimisticLocks` | method | [34](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L34) · [body 54](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L54) |  | ⚪ not started |  |
-| `EnsureEnclosure` | method | [35](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L35) · [body 388](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L388) |  | ⚪ not started |  |
-| `RegionFactory` | property | [36](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L36) |  | ⚪ not started |  |
+| `GetRemotedfromIdRefValue` | method, private | [18](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L18) · [body 221](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L221) | [`TBoldOptimisticLockHandler.GetRemotedfromIdRefValue`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L159) | 🟢 ported |  |
+| `GetRegionsForRemoteMember` | method, private | [19](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L19) · [body 360](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L360) | [`TBoldOptimisticLockHandler.GetRegionsForRemoteMember`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L254) | 🟢 ported |  |
+| `GetRegionsForDirtyOtherEnds` | method, private | [21](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L21) · [body 98](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L98) | [`TBoldOptimisticLockHandler.GetRegionsForDirtyOtherEnds`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L52) | 🟢 ported |  |
+| `CopyValue` | method, private | [22](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L22) · [body 77](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L77) | [`TBoldOptimisticLockHandler.CopyValue`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L40) | 🟢 ported |  |
+| `RetrieveOptimisticLockingvalues` | method, private | [23](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L23) · [body 236](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L236) | [`TBoldOptimisticLockHandler.RetrieveOptimisticLockingvalues`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L171) | 🟢 ported |  |
+| `GetRegionsForElement` | method, private | [24](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L24) · [body 201](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L201) | [`TBoldOptimisticLockHandler.GetRegionsForElement`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L143) | 🟢 ported |  |
+| `GetRegionsForDirtyMembersInList` | method, private | [25](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L25) · [body 193](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L193) | [`TBoldOptimisticLockHandler.GetRegionsForDirtyMembersInList`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L134) | 🟢 ported |  |
+| `GetRegionsForDirtyMembers` | method, private | [26](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L26) · [body 413](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L413) | [`TBoldOptimisticLockHandler.GetRegionsForDirtyMembers`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L302) | 🟢 ported |  |
+| `GetLockingValuesForRegions` | method, private | [27](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L27) · [body 180](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L180) | [`TBoldOptimisticLockHandler.GetLockingValuesForRegions`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L123) | 🟢 ported |  |
+| `GetLockingValuesForRegion` | method, private | [28](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L28) · [body 132](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L132) | [`TBoldOptimisticLockHandler.GetLockingValuesForRegion`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L79) | 🟢 ported |  |
+| `AddOptimisticRegionLocks` | method, private | [29](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L29) · [body 61](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L61) | [`TBoldOptimisticLockHandler.AddOptimisticRegionLocks`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L28) | 🟢 ported |  |
+| `AddRegionObjectsToEnclosure` | method, private | [30](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L30) · [body 434](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L434) | [`TBoldOptimisticLockHandler.AddRegionObjectsToEnclosure`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L319) | 🟢 ported |  |
+| `AddRegionsObjectsToEnclosure` | method, private | [31](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L31) · [body 467](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L467) | [`TBoldOptimisticLockHandler.AddRegionsObjectsToEnclosure`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L345) | 🟢 ported |  |
+| `GetRegionFactory` | method, private | [32](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L32) · [body 482](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L482) | [`TBoldOptimisticLockHandler.GetRegionFactory`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L356) | 🟢 ported |  |
+| `AddOptimisticLocks` | method | [34](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L34) · [body 54](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L54) | [`TBoldOptimisticLockHandler.AddOptimisticLocks`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L17) | 🟢 ported |  |
+| `EnsureEnclosure` | method | [35](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L35) · [body 388](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L388) | [`TBoldOptimisticLockHandler.EnsureEnclosure`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L285) | 🟢 ported |  |
+| `RegionFactory` | property | [36](../../../Source/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.pas#L36) | [`TBoldOptimisticLockHandler.RegionFactory`](../../src/Bold.ObjectSpace/ObjectSpace/BORepresentation/BoldOptimisticLockingSupport.cs#L358) | 🟢 ported |  |
 
 ## Dependencies
 

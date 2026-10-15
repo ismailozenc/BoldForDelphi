@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Undo/BoldUndoHandler.pas`](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas) (1260 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 80 symbols done, 0 verified |
+| Status | 🟢 ported: 80 of 80 symbols done, 0 verified |
 
-⚪ 80 not started
+🟢 80 ported
 
 ## Unit level
 
@@ -18,107 +18,113 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUndoBlock` | class | [22](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L22) |  | ⚪ not started |  |
-| `TBoldUndoBlockList` | class | [53](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L53) |  | ⚪ not started |  |
-| `TBoldUndoHandler` | class | [93](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L93) |  | ⚪ not started |  |
+| `TBoldUndoBlock` | class | [22](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L22) | [`TBoldUndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L10) | 🟢 ported |  |
+| `TBoldUndoBlockList` | class | [53](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L53) | [`TBoldUndoBlockList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L206) | 🟢 ported |  |
+| `TBoldUndoHandler` | class | [93](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L93) | [`TBoldUndoHandler`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L473) | 🟢 ported |  |
 
 ## TBoldUndoBlock
 
-class at [line 22](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L22); 🟢 ported, C# [`TBoldUndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetFSValueSpace` | method, private | [30](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L30) · [body 1214](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1214) |  | ⚪ not started |  |
-| `SetFSValueSpace` | method, private | [31](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L31) · [body 1227](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1227) |  | ⚪ not started |  |
-| `GetName` | method, private | [32](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L32) · [body 1238](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1238) |  | ⚪ not started |  |
-| `GetValueSpace` | method, private | [33](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L33) · [body 1243](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1243) |  | ⚪ not started |  |
-| `GetContainsChanges` | method, private | [34](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L34) · [body 1248](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1248) |  | ⚪ not started |  |
-| `HasObjectContentsForAnyObjectInList` | method, protected | [36](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L36) · [body 1133](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1133) |  | ⚪ not started |  |
-| `HandleMember` | method, protected | [37](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L37) · [body 1107](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1107) |  | ⚪ not started |  |
-| `HandleObject` | method, protected | [38](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L38) · [body 1192](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1192) |  | ⚪ not started |  |
-| `IsDependantOn` | method, protected | [39](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L39) · [body 1019](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1019) |  | ⚪ not started |  |
-| `CreateNamedBlock` | constructor | [41](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L41) · [body 1010](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1010) |  | ⚪ not started |  |
-| `Destroy` | destructor | [42](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L42) · [body 1221](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1221) |  | ⚪ not started |  |
-| `ApplytranslationList` | method | [43](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L43) · [body 1253](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1253) |  | ⚪ not started |  |
-| `Merge` | method | [44](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L44) · [body 1046](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1046) |  | ⚪ not started |  |
-| `ValueExists(TBoldObjectId,integer)` | method | [45](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L45) · [body 1097](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1097) |  | ⚪ not started |  |
-| `ValueExists(TBoldObjectID,integer,IBoldValue)` | method | [46](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L46) · [body 1085](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1085) |  | ⚪ not started |  |
-| `BlockName` | property | [47](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L47) |  | ⚪ not started |  |
-| `FSValueSpace` | property | [48](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L48) |  | ⚪ not started |  |
-| `ValueSpace` | property | [49](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L49) |  | ⚪ not started |  |
-| `ContainsChanges` | property | [50](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L50) |  | ⚪ not started |  |
+| `GetFSValueSpace` | method, private | [30](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L30) · [body 1214](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1214) | [`TBoldUndoBlock.GetFSValueSpace`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L171) | 🟢 ported |  |
+| `SetFSValueSpace` | method, private | [31](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L31) · [body 1227](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1227) | [`TBoldUndoBlock.SetFSValueSpace`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L174) | 🟢 ported |  |
+| `GetName` | method, private | [32](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L32) · [body 1238](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1238) | [`TBoldUndoBlock.GetName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L184) | 🟢 ported |  |
+| `GetValueSpace` | method, private | [33](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L33) · [body 1243](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1243) | [`TBoldUndoBlock.GetValueSpace`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L185) | 🟢 ported |  |
+| `GetContainsChanges` | method, private | [34](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L34) · [body 1248](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1248) | [`TBoldUndoBlock.GetContainsChanges`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L186) | 🟢 ported |  |
+| `HasObjectContentsForAnyObjectInList` | method, protected | [36](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L36) · [body 1133](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1133) | [`TBoldUndoBlock.HasObjectContentsForAnyObjectInList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L138) | 🟢 ported |  |
+| `HandleMember` | method, protected | [37](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L37) · [body 1107](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1107) | [`TBoldUndoBlock.HandleMember`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L115) | 🟢 ported |  |
+| `HandleObject` | method, protected | [38](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L38) · [body 1192](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1192) | [`TBoldUndoBlock.HandleObject`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L153) | 🟢 ported |  |
+| `IsDependantOn` | method, protected | [39](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L39) · [body 1019](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1019) | [`TBoldUndoBlock.IsDependantOn`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L34) | 🟢 ported |  |
+| `CreateNamedBlock` | constructor | [41](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L41) · [body 1010](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1010) | [`TBoldUndoBlock.TBoldUndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L17) | 🟢 ported |  |
+| `Destroy` | destructor | [42](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L42) · [body 1221](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1221) | [`TBoldUndoBlock.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L25) | 🟢 ported |  |
+| `ApplytranslationList` | method | [43](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L43) · [body 1253](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1253) | [`TBoldUndoBlock.ApplytranslationList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L189) | 🟢 ported |  |
+| `Merge` | method | [44](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L44) · [body 1046](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1046) | [`TBoldUndoBlock.Merge`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L55) | 🟢 ported |  |
+| `ValueExists(TBoldObjectId,integer)` | method | [45](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L45) · [body 1097](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1097) | [`TBoldUndoBlock.ValueExists`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L107) | 🟢 ported |  |
+| `ValueExists(TBoldObjectID,integer,IBoldValue)` | method | [46](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L46) · [body 1085](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L1085) | [`TBoldUndoBlock.ValueExists`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L94) | 🟢 ported |  |
+| `BlockName` | property | [47](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L47) | [`TBoldUndoBlock.BlockName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L191) | 🟢 ported |  |
+| `FSValueSpace` | property | [48](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L48) | [`TBoldUndoBlock.FSValueSpace`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L194) | 🟢 ported |  |
+| `ValueSpace` | property | [49](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L49) | [`TBoldUndoBlock.ValueSpace`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L200) | 🟢 ported |  |
+| `ContainsChanges` | property | [50](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L50) | [`TBoldUndoBlock.ContainsChanges`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L201) | 🟢 ported |  |
 
 ## TBoldUndoBlockList
 
-class at [line 53](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L53); ⚪ not started.
+class at [line 53](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L53); 🟢 ported, C# [`TBoldUndoBlockList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L206).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBlocksByIndex` | method, private | [56](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L56) · [body 786](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L786) |  | ⚪ not started |  |
-| `GetBlocksByName` | method, private | [57](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L57) · [body 795](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L795) |  | ⚪ not started |  |
-| `GetCount` | method, private | [58](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L58) · [body 807](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L807) |  | ⚪ not started |  |
-| `GetCurrentBlock` | method, private | [59](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L59) · [body 886](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L886) |  | ⚪ not started |  |
-| `GetAssertedBlocksByName` | method, private | [60](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L60) · [body 895](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L895) |  | ⚪ not started |  |
-| `GetAssertedBlocksByIndex` | method, private | [61](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L61) · [body 990](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L990) |  | ⚪ not started |  |
-| `GetItems` | method, private | [62](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L62) · [body 922](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L922) |  | ⚪ not started |  |
-| `GetItemsByName` | method, private | [63](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L63) · [body 916](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L916) |  | ⚪ not started |  |
-| `GetTopBlock` | method, private | [64](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L64) · [body 927](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L927) |  | ⚪ not started |  |
-| `Clear` | method, protected | [66](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L66) · [body 753](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L753) |  | ⚪ not started |  |
-| `AddBlock` | method, protected | [67](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L67) · [body 710](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L710) |  | ⚪ not started |  |
-| `AssertedBlocksByName` | property, protected | [68](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L68) |  | ⚪ not started |  |
-| `AssertedBlocksByIndex` | property, protected | [69](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L69) |  | ⚪ not started |  |
-| `AssertedIndexOf` | method, protected | [70](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L70) · [body 908](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L908) |  | ⚪ not started |  |
-| `InternalRemoveBlock` | method, protected | [71](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L71) · [body 823](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L823) |  | ⚪ not started |  |
-| `ApplytranslationList` | method | [73](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L73) · [body 932](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L932) |  | ⚪ not started |  |
-| `Create` | constructor | [74](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L74) · [body 766](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L766) |  | ⚪ not started |  |
-| `Destroy` | destructor | [75](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L75) · [body 771](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L771) |  | ⚪ not started |  |
-| `MoveBlock` | method | [76](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L76) · [body 778](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L778) |  | ⚪ not started |  |
-| `IndexOf` | method | [77](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L77) · [body 812](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L812) |  | ⚪ not started |  |
-| `RemoveBlock` | method | [78](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L78) · [body 998](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L998) |  | ⚪ not started |  |
-| `RenameBlock` | method | [79](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L79) · [body 834](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L834) |  | ⚪ not started |  |
-| `MoveToTop` | method | [80](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L80) · [body 817](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L817) |  | ⚪ not started |  |
-| `MergeBlocks` | method | [81](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L81) · [body 846](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L846) |  | ⚪ not started |  |
-| `BlocksbyIndex` | property | [82](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L82) |  | ⚪ not started |  |
-| `BlocksByName` | property | [83](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L83) |  | ⚪ not started |  |
-| `CanMoveBlock` | method | [84](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L84) · [body 725](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L725) |  | ⚪ not started |  |
-| `CanMergeBlock` | method | [85](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L85) · [body 859](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L859) |  | ⚪ not started |  |
-| `CanMoveToTop` | method | [86](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L86) · [body 903](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L903) |  | ⚪ not started |  |
-| `GetDependantBlocks` | method | [87](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L87) · [body 956](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L956) |  | ⚪ not started |  |
-| `MergeAll` | method | [88](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L88) · [body 941](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L941) |  | ⚪ not started |  |
-| `Count` | property | [89](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L89) |  | ⚪ not started |  |
-| `CurrentBlock` | property | [90](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L90) |  | ⚪ not started |  |
+| `GetBlocksByIndex` | method, private | [56](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L56) · [body 786](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L786) | [`TBoldUndoBlockList.GetBlocksByIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L223) | 🟢 ported |  |
+| `GetBlocksByName` | method, private | [57](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L57) · [body 795](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L795) | [`TBoldUndoBlockList.GetBlocksByName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L226) | 🟢 ported |  |
+| `GetCount` | method, private | [58](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L58) · [body 807](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L807) | [`TBoldUndoBlockList.GetCount`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L232) | 🟢 ported |  |
+| `GetCurrentBlock` | method, private | [59](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L59) · [body 886](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L886) | [`TBoldUndoBlockList.GetCurrentBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L236) | 🟢 ported |  |
+| `GetAssertedBlocksByName` | method, private | [60](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L60) · [body 895](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L895) | [`TBoldUndoBlockList.GetAssertedBlocksByName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L239) | 🟢 ported |  |
+| `GetAssertedBlocksByIndex` | method, private | [61](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L61) · [body 990](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L990) | [`TBoldUndoBlockList.GetAssertedBlocksByIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L243) | 🟢 ported |  |
+| `GetItems` | method, private | [62](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L62) · [body 922](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L922) | [`TBoldUndoBlockList.GetItems`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L246) | 🟢 ported |  |
+| `GetItemsByName` | method, private | [63](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L63) · [body 916](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L916) | [`TBoldUndoBlockList.GetItemsByName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L247) | 🟢 ported |  |
+| `GetTopBlock` | method, private | [64](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L64) · [body 927](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L927) | [`TBoldUndoBlockList.GetTopBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L248) | 🟢 ported |  |
+| `Clear` | method, protected | [66](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L66) · [body 753](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L753) | [`TBoldUndoBlockList.Clear`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L251) | 🟢 ported |  |
+| `AddBlock` | method, protected | [67](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L67) · [body 710](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L710) | [`TBoldUndoBlockList.AddBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L262) | 🟢 ported |  |
+| `AssertedBlocksByName` | property, protected | [68](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L68) | [`TBoldUndoBlockList.AssertedBlocksByName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L460) | 🟢 ported |  |
+| `AssertedBlocksByIndex` | property, protected | [69](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L69) | [`TBoldUndoBlockList.AssertedBlocksByIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L461) | 🟢 ported |  |
+| `AssertedIndexOf` | method, protected | [70](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L70) · [body 908](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L908) | [`TBoldUndoBlockList.AssertedIndexOf`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L276) | 🟢 ported |  |
+| `InternalRemoveBlock` | method, protected | [71](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L71) · [body 823](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L823) | [`TBoldUndoBlockList.InternalRemoveBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L288) | 🟢 ported |  |
+| `ApplytranslationList` | method | [73](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L73) · [body 932](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L932) | [`TBoldUndoBlockList.ApplytranslationList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L296) | 🟢 ported |  |
+| `Create` | constructor | [74](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L74) · [body 766](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L766) | [`TBoldUndoBlockList.TBoldUndoBlockList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L211) | 🟢 ported |  |
+| `Destroy` | destructor | [75](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L75) · [body 771](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L771) | [`TBoldUndoBlockList.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L216) | 🟢 ported |  |
+| `MoveBlock` | method | [76](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L76) · [body 778](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L778) | [`TBoldUndoBlockList.MoveBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L305) | 🟢 ported |  |
+| `IndexOf` | method | [77](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L77) · [body 812](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L812) | [`TBoldUndoBlockList.IndexOf`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L316) | 🟢 ported |  |
+| `RemoveBlock` | method | [78](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L78) · [body 998](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L998) | [`TBoldUndoBlockList.RemoveBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L320) | 🟢 ported |  |
+| `RenameBlock` | method | [79](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L79) · [body 834](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L834) | [`TBoldUndoBlockList.RenameBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L332) | 🟢 ported |  |
+| `MoveToTop` | method | [80](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L80) · [body 817](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L817) | [`TBoldUndoBlockList.MoveToTop`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L345) | 🟢 ported |  |
+| `MergeBlocks` | method | [81](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L81) · [body 846](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L846) | [`TBoldUndoBlockList.MergeBlocks`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L349) | 🟢 ported |  |
+| `BlocksbyIndex` | property | [82](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L82) | [`TBoldUndoBlockList.BlocksbyIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L462) | 🟢 ported |  |
+| `BlocksByName` | property | [83](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L83) | [`TBoldUndoBlockList.BlocksByName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L463) | 🟢 ported |  |
+| `CanMoveBlock` | method | [84](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L84) · [body 725](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L725) | [`TBoldUndoBlockList.CanMoveBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L364) | 🟢 ported |  |
+| `CanMergeBlock` | method | [85](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L85) · [body 859](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L859) | [`TBoldUndoBlockList.CanMergeBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L392) | 🟢 ported |  |
+| `CanMoveToTop` | method | [86](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L86) · [body 903](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L903) | [`TBoldUndoBlockList.CanMoveToTop`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L416) | 🟢 ported |  |
+| `GetDependantBlocks` | method | [87](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L87) · [body 956](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L956) | [`TBoldUndoBlockList.GetDependantBlocks`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L420) | 🟢 ported |  |
+| `MergeAll` | method | [88](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L88) · [body 941](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L941) | [`TBoldUndoBlockList.MergeAll`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L450) | 🟢 ported |  |
+| `Count` | property | [89](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L89) | [`TBoldUndoBlockList.Count`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L464) | 🟢 ported |  |
+| `CurrentBlock` | property | [90](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L90) | [`TBoldUndoBlockList.CurrentBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L465) | 🟢 ported |  |
 
 ## TBoldUndoHandler
 
-class at [line 93](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L93); ⚪ not started.
+class at [line 93](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L93); 🟢 ported, C# [`TBoldUndoHandler`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L473).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DoUndo` | method, private | [99](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L99) · [body 358](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L358) |  | ⚪ not started |  |
-| `DoUndoInTransaction` | method, private | [101](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L101) · [body 620](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L620) |  | ⚪ not started |  |
-| `GetUndoList` | method, private | [102](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L102) · [body 661](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L661) |  | ⚪ not started |  |
-| `GetRedoList` | method, private | [103](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L103) · [body 656](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L656) |  | ⚪ not started |  |
-| `CanUndoBlock` | method, private | [104](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L104) · [body 651](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L651) |  | ⚪ not started |  |
-| `CanRedoBlock` | method, private | [105](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L105) · [body 646](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L646) |  | ⚪ not started |  |
-| `GetEnabled` | method, private | [106](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L106) · [body 698](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L698) |  | ⚪ not started |  |
-| `SetEnabled` | method, private | [107](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L107) · [body 703](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L703) |  | ⚪ not started |  |
-| `Create` | constructor | [109](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L109) · [body 142](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L142) |  | ⚪ not started |  |
-| `Destroy` | destructor | [110](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L110) · [body 150](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L150) |  | ⚪ not started |  |
-| `GetUniqueBlockName` | method | [111](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L111) · [body 666](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L666) |  | ⚪ not started |  |
-| `SetNamedCheckPoint` | method | [112](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L112) · [body 217](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L217) |  | ⚪ not started |  |
-| `SetCheckPoint` | method | [113](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L113) · [body 687](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L687) |  | ⚪ not started |  |
-| `HandleMember` | method | [114](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L114) · [body 188](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L188) |  | ⚪ not started |  |
-| `HandleObject` | method | [115](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L115) · [body 348](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L348) |  | ⚪ not started |  |
-| `UndoBlock` | method | [116](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L116) · [body 227](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L227) |  | ⚪ not started |  |
-| `RedoBlock` | method | [117](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L117) · [body 324](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L324) |  | ⚪ not started |  |
-| `UnDoLatest` | method | [118](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L118) · [body 342](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L342) |  | ⚪ not started |  |
-| `Redolatest` | method | [119](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L119) · [body 336](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L336) |  | ⚪ not started |  |
-| `ApplytranslationList` | method | [120](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L120) · [body 680](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L680) |  | ⚪ not started |  |
-| `PrepareUpdate` | method | [121](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L121) · [body 197](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L197) |  | ⚪ not started |  |
-| `ClearAllUndoBlocks` | method | [122](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L122) · [body 692](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L692) |  | ⚪ not started |  |
-| `UndoBlocks` | property | [123](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L123) |  | ⚪ not started |  |
-| `RedoBlocks` | property | [124](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L124) |  | ⚪ not started |  |
-| `UndoState` | property | [125](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L125) |  | ⚪ not started |  |
+| `DoUndo` | method, private | [99](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L99) · [body 358](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L358) | [`TBoldUndoHandler.DoUndo`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L619) | 🟢 ported |  |
+| `DoUndoInTransaction` | method, private | [101](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L101) · [body 620](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L620) | [`TBoldUndoHandler.DoUndoInTransaction`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L846) | 🟢 ported |  |
+| `GetUndoList` | method, private | [102](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L102) · [body 661](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L661) | [`TBoldUndoHandler.GetUndoList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L877) | 🟢 ported |  |
+| `GetRedoList` | method, private | [103](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L103) · [body 656](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L656) | [`TBoldUndoHandler.GetRedoList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L876) | 🟢 ported |  |
+| `CanUndoBlock` | method, private | [104](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L104) · [body 651](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L651) | [`TBoldUndoHandler.CanUndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L875) | 🟢 ported |  |
+| `CanRedoBlock` | method, private | [105](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L105) · [body 646](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L646) | [`TBoldUndoHandler.CanRedoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L874) | 🟢 ported |  |
+| `GetEnabled` | method, private | [106](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L106) · [body 698](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L698) | [`TBoldUndoHandler.GetEnabled`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L911) | 🟢 ported |  |
+| `SetEnabled` | method, private | [107](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L107) · [body 703](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L703) | [`TBoldUndoHandler.SetEnabled`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L912) | 🟢 ported |  |
+| `Create` | constructor | [109](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L109) · [body 142](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L142) | [`TBoldUndoHandler.TBoldUndoHandler`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L483) | 🟢 ported |  |
+| `Destroy` | destructor | [110](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L110) · [body 150](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L150) | [`TBoldUndoHandler.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L490) | 🟢 ported |  |
+| `GetUniqueBlockName` | method | [111](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L111) · [body 666](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L666) | [`TBoldUndoHandler.GetUniqueBlockName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L881) | 🟢 ported |  |
+| `SetNamedCheckPoint` | method | [112](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L112) · [body 217](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L217) | [`TBoldUndoHandler.SetNamedCheckPoint`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L531) | 🟢 ported |  |
+| `SetCheckPoint` | method | [113](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L113) · [body 687](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L687) | [`TBoldUndoHandler.SetCheckPoint`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L902) | 🟢 ported |  |
+| `HandleMember` | method | [114](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L114) · [body 188](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L188) | [`TBoldUndoHandler.HandleMember`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L498) | 🟢 ported |  |
+| `HandleObject` | method | [115](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L115) · [body 348](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L348) | [`TBoldUndoHandler.HandleObject`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L605) | 🟢 ported |  |
+| `UndoBlock` | method | [116](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L116) · [body 227](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L227) | [`TBoldUndoHandler.UndoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L549) | 🟢 ported |  |
+| `RedoBlock` | method | [117](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L117) · [body 324](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L324) | [`TBoldUndoHandler.RedoBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L568) | 🟢 ported |  |
+| `UnDoLatest` | method | [118](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L118) · [body 342](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L342) | [`TBoldUndoHandler.UndoLatest`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L596) | 🟢 ported |  |
+| `Redolatest` | method | [119](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L119) · [body 336](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L336) | [`TBoldUndoHandler.RedoLatest`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L587) | 🟢 ported |  |
+| `ApplytranslationList` | method | [120](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L120) · [body 680](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L680) | [`TBoldUndoHandler.ApplytranslationList`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L895) | 🟢 ported |  |
+| `PrepareUpdate` | method | [121](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L121) · [body 197](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L197) | [`TBoldUndoHandler.PrepareUpdate`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L509) | 🟢 ported |  |
+| `ClearAllUndoBlocks` | method | [122](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L122) · [body 692](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L692) | [`TBoldUndoHandler.ClearAllUndoBlocks`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L905) | 🟢 ported |  |
+| `UndoBlocks` | property | [123](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L123) | [`TBoldUndoHandler.UndoBlocks`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L914) | 🟢 ported |  |
+| `RedoBlocks` | property | [124](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L124) | [`TBoldUndoHandler.RedoBlocks`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L915) | 🟢 ported |  |
+| `UndoState` | property | [125](../../../Source/ObjectSpace/Undo/BoldUndoHandler.pas#L125) | [`TBoldUndoHandler.UndoState`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L918) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUndoBlock.FName`](../../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs#L12) (field)
 
 ## Dependencies
 

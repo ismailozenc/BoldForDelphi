@@ -29,7 +29,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 |---|---|---|
 | [BoldLockHandler](../../../CSharp/port/units/BoldLockHandler.md) | Bold.Propagation: ObjectSpace/PessimisticLocking/BoldLockHandler.cs (not started) | M9 Multi-user |
 | [BoldLockHolder](../../../CSharp/port/units/BoldLockHolder.md) | Bold.Propagation: ObjectSpace/PessimisticLocking/BoldLockHolder.cs (not started) | M9 Multi-user |
-| [BoldLockRegions](../../../CSharp/port/units/BoldLockRegions.md) | Bold.ObjectSpace: ObjectSpace/PessimisticLocking/BoldLockRegions.cs (not started) | M3 Object space in memory |
-| [BoldRegionDefinitionParser](../../../CSharp/port/units/BoldRegionDefinitionParser.md) | Bold.ObjectSpace: ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs (not started) | M3 Object space in memory |
-| [BoldRegionDefinitions](../../../CSharp/port/units/BoldRegionDefinitions.md) | Bold.ObjectSpace: ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs (not started) | M3 Object space in memory |
+| [BoldLockRegions](../../../CSharp/port/units/BoldLockRegions.md) | [Bold.ObjectSpace: ObjectSpace/PessimisticLocking/BoldLockRegions.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldLockRegions.cs) | M3 Object space in memory |
+| [BoldRegionDefinitionParser](../../../CSharp/port/units/BoldRegionDefinitionParser.md) | [Bold.ObjectSpace: ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitionParser.cs) | M3 Object space in memory |
+| [BoldRegionDefinitions](../../../CSharp/port/units/BoldRegionDefinitions.md) | [Bold.ObjectSpace: ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs](../../../CSharp/src/Bold.ObjectSpace/ObjectSpace/PessimisticLocking/BoldRegionDefinitions.cs) | M3 Object space in memory |
 <!-- END C# PORT -->
