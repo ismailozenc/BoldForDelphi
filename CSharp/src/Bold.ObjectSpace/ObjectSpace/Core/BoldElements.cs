@@ -427,7 +427,7 @@ public abstract class TBoldMetaElement : TBoldElement
 [Delphi(PortStatus.Ported)]
 public abstract class TBoldElementTypeInfo : TBoldMetaElement
 {
-    private readonly TBoldElementTypeInfo? fSystemTypeInfo;
+    private TBoldElementTypeInfo? fSystemTypeInfo;
 
     [Delphi(PortStatus.Ported)]
     protected TBoldElementTypeInfo(string ModelName, string ExpressionName, string DelphiName, TBoldElementTypeInfo? SystemTypeInfo)
@@ -435,6 +435,9 @@ public abstract class TBoldElementTypeInfo : TBoldMetaElement
     {
         fSystemTypeInfo = SystemTypeInfo;
     }
+
+    /// <summary>Lets the system type be its own system type; Delphi passes Self to the inherited constructor, which C# cannot.</summary>
+    private protected void SetSystemTypeInfo(TBoldElementTypeInfo SystemTypeInfo) => fSystemTypeInfo = SystemTypeInfo;
 
     [Delphi(PortStatus.Ported)]
     private TBoldValueTypeSet GetValueType() =>
