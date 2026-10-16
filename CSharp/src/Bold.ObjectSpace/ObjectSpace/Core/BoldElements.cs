@@ -484,7 +484,7 @@ public class TBoldIndirectElement : TBoldFlaggedObject, IDisposable
 
     /// <summary>Frees the value when it is owned.</summary>
     [Delphi(PortStatus.Ported)]
-    public void Dispose()
+    public virtual void Dispose()
     {
         if (OwnsValue)
         {

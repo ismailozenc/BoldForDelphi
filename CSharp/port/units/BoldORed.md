@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldORed.pas`](../../../Source/ObjectSpace/Ocl/BoldORed.pas) (388 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 163 symbols done, 0 verified |
+| Status | 🟢 ported: 163 of 163 symbols done, 0 verified |
 
-⚪ 163 not started
+🟢 163 ported
 
 ## Unit level
 
@@ -18,190 +18,206 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ALexExpressionListMain` | const | [2](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L2) |  | ⚪ not started |  |
-| `ALexExpressionListStringLiteral` | const | [3](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L3) |  | ⚪ not started |  |
-| `ALexINTEGER` | const | [6](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L6) |  | ⚪ not started |  |
-| `ALexFLOAT` | const | [7](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L7) |  | ⚪ not started |  |
-| `ALexNAME` | const | [8](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L8) |  | ⚪ not started |  |
-| `ALexTYPENAME` | const | [9](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L9) |  | ⚪ not started |  |
-| `ALexDATE` | const | [10](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L10) |  | ⚪ not started |  |
-| `ALexTIME` | const | [11](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L11) |  | ⚪ not started |  |
-| `ALexStringSt` | const | [12](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L12) |  | ⚪ not started |  |
-| `ALexLBrack` | const | [13](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L13) |  | ⚪ not started |  |
-| `ALexRBrack` | const | [14](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L14) |  | ⚪ not started |  |
-| `ALexLParen` | const | [15](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L15) |  | ⚪ not started |  |
-| `ALexRParen` | const | [16](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L16) |  | ⚪ not started |  |
-| `ALexLBrace` | const | [17](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L17) |  | ⚪ not started |  |
-| `ALexRBrace` | const | [18](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L18) |  | ⚪ not started |  |
-| `ALexGreater` | const | [19](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L19) |  | ⚪ not started |  |
-| `ALexLess` | const | [20](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L20) |  | ⚪ not started |  |
-| `ALexEqual` | const | [21](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L21) |  | ⚪ not started |  |
-| `ALexGTEqual` | const | [22](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L22) |  | ⚪ not started |  |
-| `ALexLTEqual` | const | [23](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L23) |  | ⚪ not started |  |
-| `ALexNEqual` | const | [24](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L24) |  | ⚪ not started |  |
-| `ALexPlus` | const | [25](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L25) |  | ⚪ not started |  |
-| `ALexMinus` | const | [26](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L26) |  | ⚪ not started |  |
-| `ALexMult` | const | [27](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L27) |  | ⚪ not started |  |
-| `ALexDiv` | const | [28](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L28) |  | ⚪ not started |  |
-| `ALexDot` | const | [29](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L29) |  | ⚪ not started |  |
-| `ALexArrow` | const | [30](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L30) |  | ⚪ not started |  |
-| `ALexComma` | const | [31](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L31) |  | ⚪ not started |  |
-| `ALexCommercialAt` | const | [32](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L32) |  | ⚪ not started |  |
-| `ALexIF` | const | [33](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L33) |  | ⚪ not started |  |
-| `ALexTHEN` | const | [34](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L34) |  | ⚪ not started |  |
-| `ALexELSE` | const | [35](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L35) |  | ⚪ not started |  |
-| `ALexENDIF` | const | [36](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L36) |  | ⚪ not started |  |
-| `ALexENUM` | const | [37](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L37) |  | ⚪ not started |  |
-| `ALexHASH` | const | [38](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L38) |  | ⚪ not started |  |
-| `ALexBAR` | const | [39](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L39) |  | ⚪ not started |  |
-| `ALexDOUBLECOLON` | const | [40](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L40) |  | ⚪ not started |  |
-| `ALexDOUBLEDOT` | const | [41](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L41) |  | ⚪ not started |  |
-| `ALexCOLON` | const | [42](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L42) |  | ⚪ not started |  |
-| `ALexBAG` | const | [43](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L43) |  | ⚪ not started |  |
-| `ALexSET` | const | [44](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L44) |  | ⚪ not started |  |
-| `ALexSEQUENCE` | const | [45](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L45) |  | ⚪ not started |  |
-| `ALexCOLLECTION` | const | [46](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L46) |  | ⚪ not started |  |
-| `ALexIntDIV` | const | [47](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L47) |  | ⚪ not started |  |
-| `ALexMOD` | const | [48](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L48) |  | ⚪ not started |  |
-| `ALexAND` | const | [49](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L49) |  | ⚪ not started |  |
-| `ALexOR` | const | [50](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L50) |  | ⚪ not started |  |
-| `ALexNOT` | const | [51](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L51) |  | ⚪ not started |  |
-| `ALexXOR` | const | [52](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L52) |  | ⚪ not started |  |
-| `ALexIMPLIES` | const | [53](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L53) |  | ⚪ not started |  |
-| `ALexString` | const | [54](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L54) |  | ⚪ not started |  |
-| `ALexStringEnd` | const | [55](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L55) |  | ⚪ not started |  |
-| `AYaccGoal` | const | [58](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L58) |  | ⚪ not started |  |
-| `AYaccexpressionPost` | const | [59](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L59) |  | ⚪ not started |  |
-| `AYaccexpressionAnd` | const | [60](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L60) |  | ⚪ not started |  |
-| `AYaccexpressionOr` | const | [61](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L61) |  | ⚪ not started |  |
-| `AYaccexpressionXor` | const | [62](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L62) |  | ⚪ not started |  |
-| `AYaccexpressionImp` | const | [63](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L63) |  | ⚪ not started |  |
-| `AYaccexpressionEQ` | const | [64](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L64) |  | ⚪ not started |  |
-| `AYaccexpressionLT` | const | [65](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L65) |  | ⚪ not started |  |
-| `AYaccexpressionGT` | const | [66](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L66) |  | ⚪ not started |  |
-| `AYaccexpressionLE` | const | [67](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L67) |  | ⚪ not started |  |
-| `AYaccexpressionGE` | const | [68](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L68) |  | ⚪ not started |  |
-| `AYaccexpressionNE` | const | [69](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L69) |  | ⚪ not started |  |
-| `AYaccexpressionAdd` | const | [70](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L70) |  | ⚪ not started |  |
-| `AYaccexpressionSub` | const | [71](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L71) |  | ⚪ not started |  |
-| `AYaccexpressionDiv` | const | [72](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L72) |  | ⚪ not started |  |
-| `AYaccexpressionMul` | const | [73](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L73) |  | ⚪ not started |  |
-| `AYaccexpressionDivI` | const | [74](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L74) |  | ⚪ not started |  |
-| `AYaccexpressionMod` | const | [75](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L75) |  | ⚪ not started |  |
-| `AYaccexpressionNeg` | const | [76](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L76) |  | ⚪ not started |  |
-| `AYaccexpressionNOT` | const | [77](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L77) |  | ⚪ not started |  |
-| `AYaccifExpression` | const | [78](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L78) |  | ⚪ not started |  |
-| `AYaccpostFixFirst` | const | [79](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L79) |  | ⚪ not started |  |
-| `AYaccpostFixMember` | const | [80](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L80) |  | ⚪ not started |  |
-| `AYaccpostFixMethod` | const | [81](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L81) |  | ⚪ not started |  |
-| `AYaccpostFixOperation` | const | [82](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L82) |  | ⚪ not started |  |
-| `AYaccpostFixOperationParams` | const | [83](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L83) |  | ⚪ not started |  |
-| `AYaccprimaryExpLittCollection` | const | [84](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L84) |  | ⚪ not started |  |
-| `AYaccprimaryExpLitt` | const | [85](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L85) |  | ⚪ not started |  |
-| `AYaccprimaryExpParen` | const | [86](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L86) |  | ⚪ not started |  |
-| `AYaccprimaryExpIf` | const | [87](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L87) |  | ⚪ not started |  |
-| `AYaccPrimaryNoParams` | const | [88](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L88) |  | ⚪ not started |  |
-| `AYaccPrimaryWithParams` | const | [89](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L89) |  | ⚪ not started |  |
-| `AYaccfeatureCallParameters1` | const | [90](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L90) |  | ⚪ not started |  |
-| `AYaccfeatureCallParameters2` | const | [91](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L91) |  | ⚪ not started |  |
-| `AYaccfeatureCallParameters3` | const | [92](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L92) |  | ⚪ not started |  |
-| `AYaccliteral_String` | const | [93](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L93) |  | ⚪ not started |  |
-| `AYaccliteral_EmptyString` | const | [94](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L94) |  | ⚪ not started |  |
-| `AYaccliteral_Number` | const | [95](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L95) |  | ⚪ not started |  |
-| `AYaccliteral_float` | const | [96](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L96) |  | ⚪ not started |  |
-| `AYaccliteral_Date` | const | [97](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L97) |  | ⚪ not started |  |
-| `AYaccliteral_Time` | const | [98](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L98) |  | ⚪ not started |  |
-| `AYaccliteral_Name` | const | [99](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L99) |  | ⚪ not started |  |
-| `AYaccsimpleTypeSpecifier_Ety` | const | [100](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L100) |  | ⚪ not started |  |
-| `AYaccsimpleTypeSpecifier_Path` | const | [101](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L101) |  | ⚪ not started |  |
-| `AYaccsimpleTypeSpecifier_Enum` | const | [102](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L102) |  | ⚪ not started |  |
-| `AYaccliteralCollection` | const | [103](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L103) |  | ⚪ not started |  |
-| `AYaccexpressionListOrRange_List` | const | [104](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L104) |  | ⚪ not started |  |
-| `AYaccexpressionList` | const | [105](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L105) |  | ⚪ not started |  |
-| `AYaccexpressionList_Rec` | const | [106](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L106) |  | ⚪ not started |  |
-| `AYaccexpressionListOrRange_Range` | const | [107](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L107) |  | ⚪ not started |  |
-| `AYaccenumerationType` | const | [108](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L108) |  | ⚪ not started |  |
-| `AYaccenumTypeList` | const | [109](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L109) |  | ⚪ not started |  |
-| `AYaccenumTypeList_Rec` | const | [110](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L110) |  | ⚪ not started |  |
-| `AYaccqualifiers_Ety` | const | [111](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L111) |  | ⚪ not started |  |
-| `AYaccqualifiers` | const | [112](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L112) |  | ⚪ not started |  |
-| `AYaccpathTypeName` | const | [113](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L113) |  | ⚪ not started |  |
-| `AYacctypeNameList` | const | [114](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L114) |  | ⚪ not started |  |
-| `AYacctypeNameList_Rec` | const | [115](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L115) |  | ⚪ not started |  |
-| `AYaccpathName` | const | [116](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L116) |  | ⚪ not started |  |
-| `AYaccpathName_Rec` | const | [117](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L117) |  | ⚪ not started |  |
-| `AYaccanyName_Type` | const | [118](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L118) |  | ⚪ not started |  |
-| `AYaccanyName_Name` | const | [119](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L119) |  | ⚪ not started |  |
-| `AYacctimeExpression` | const | [120](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L120) |  | ⚪ not started |  |
-| `AYacctimeExpression_Ety` | const | [121](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L121) |  | ⚪ not started |  |
-| `AYaccactualParameterList_ety` | const | [122](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L122) |  | ⚪ not started |  |
-| `AYaccActualParameterlist_nonEty` | const | [123](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L123) |  | ⚪ not started |  |
-| `AYaccNonEmptyactualParameterList` | const | [124](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L124) |  | ⚪ not started |  |
-| `AYaccNonEmptyactualParameterList_Rec` | const | [125](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L125) |  | ⚪ not started |  |
-| `AYacccollectionKind_Set` | const | [126](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L126) |  | ⚪ not started |  |
-| `AYacccollectionKind_Bag` | const | [127](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L127) |  | ⚪ not started |  |
-| `AYacccollectionKind_Sequence` | const | [128](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L128) |  | ⚪ not started |  |
-| `AYacccollectionKind_Collection` | const | [129](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L129) |  | ⚪ not started |  |
-| `ALexClass` | class | [2](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L2) |  | ⚪ not started |  |
-| `AYaccStackElement` | class | [8](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L8) |  | ⚪ not started |  |
-| `AYaccClass` | class | [26](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L26) |  | ⚪ not started |  |
-| `TBoldOclCollectionType` | enum, implementation | [25](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L25) |  | ⚪ not started |  |
-| `MakeList` | routine, implementation | [3](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L3) |  | ⚪ not started |  |
-| `PushList` | routine, implementation | [10](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L10) |  | ⚪ not started |  |
-| `MakeEmptyList` | routine, implementation | [17](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L17) |  | ⚪ not started |  |
-| `ReleaseList` | routine, implementation | [23](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L23) |  | ⚪ not started |  |
-| `RetrieveNodeList` | routine, implementation | [39](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L39) |  | ⚪ not started |  |
-| `Make1Operation` | routine, implementation | [54](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L54) |  | ⚪ not started |  |
-| `Make2Operation` | routine, implementation | [64](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L64) |  | ⚪ not started |  |
-| `Make3Operation` | routine, implementation | [75](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L75) |  | ⚪ not started |  |
-| `MakeUnaryMinus` | routine, implementation | [88](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L88) |  | ⚪ not started |  |
-| `MakeCollectionKind` | routine, implementation | [105](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L105) |  | ⚪ not started |  |
-| `MakeTimeExpression` | routine, implementation | [114](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L114) |  | ⚪ not started |  |
-| `MakeName` | routine, implementation | [121](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L121) |  | ⚪ not started |  |
-| `MakeDeclarator` | routine, implementation | [128](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L128) |  | ⚪ not started |  |
-| `MakeRange` | routine, implementation | [139](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L139) |  | ⚪ not started |  |
-| `MakeLiteralCollection` | routine, implementation | [146](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L146) |  | ⚪ not started |  |
-| `MakeSimpleEnumType` | routine, implementation | [167](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L167) |  | ⚪ not started |  |
-| `MakeSimplePath` | routine, implementation | [173](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L173) |  | ⚪ not started |  |
-| `MakeLiteralName` | routine, implementation | [182](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L182) |  | ⚪ not started |  |
-| `MakeLiteralString` | routine, implementation | [190](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L190) |  | ⚪ not started |  |
-| `MakeLiteralInt` | routine, implementation | [212](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L212) |  | ⚪ not started |  |
-| `MakeLiteralDate` | routine, implementation | [232](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L232) |  | ⚪ not started |  |
-| `MakeLiteralTime` | routine, implementation | [252](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L252) |  | ⚪ not started |  |
-| `MakeLiteralfloat` | routine, implementation | [274](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L274) |  | ⚪ not started |  |
-| `MakeFeatureCall` | routine, implementation | [298](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L298) |  | ⚪ not started |  |
-| `MakeMember` | routine, implementation | [319](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L319) |  | ⚪ not started |  |
-| `MakeMethod` | routine, implementation | [350](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L350) |  | ⚪ not started |  |
-| `MakeLoopVar` | routine, implementation | [383](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L383) |  | ⚪ not started |  |
-| `MakeOperation` | routine, implementation | [403](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L403) |  | ⚪ not started |  |
+| `ALexExpressionListMain` | const | [2](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L2) | [`BoldORed.ALexExpressionListMain`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L12) | 🟢 ported |  |
+| `ALexExpressionListStringLiteral` | const | [3](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L3) | [`BoldORed.ALexExpressionListStringLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L13) | 🟢 ported |  |
+| `ALexINTEGER` | const | [6](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L6) | [`BoldORed.ALexINTEGER`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L14) | 🟢 ported |  |
+| `ALexFLOAT` | const | [7](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L7) | [`BoldORed.ALexFLOAT`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L15) | 🟢 ported |  |
+| `ALexNAME` | const | [8](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L8) | [`BoldORed.ALexNAME`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L16) | 🟢 ported |  |
+| `ALexTYPENAME` | const | [9](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L9) | [`BoldORed.ALexTYPENAME`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L17) | 🟢 ported |  |
+| `ALexDATE` | const | [10](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L10) | [`BoldORed.ALexDATE`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L18) | 🟢 ported |  |
+| `ALexTIME` | const | [11](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L11) | [`BoldORed.ALexTIME`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L19) | 🟢 ported |  |
+| `ALexStringSt` | const | [12](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L12) | [`BoldORed.ALexStringSt`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L20) | 🟢 ported |  |
+| `ALexLBrack` | const | [13](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L13) | [`BoldORed.ALexLBrack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L21) | 🟢 ported |  |
+| `ALexRBrack` | const | [14](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L14) | [`BoldORed.ALexRBrack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L22) | 🟢 ported |  |
+| `ALexLParen` | const | [15](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L15) | [`BoldORed.ALexLParen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L23) | 🟢 ported |  |
+| `ALexRParen` | const | [16](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L16) | [`BoldORed.ALexRParen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L24) | 🟢 ported |  |
+| `ALexLBrace` | const | [17](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L17) | [`BoldORed.ALexLBrace`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L25) | 🟢 ported |  |
+| `ALexRBrace` | const | [18](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L18) | [`BoldORed.ALexRBrace`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L26) | 🟢 ported |  |
+| `ALexGreater` | const | [19](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L19) | [`BoldORed.ALexGreater`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L27) | 🟢 ported |  |
+| `ALexLess` | const | [20](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L20) | [`BoldORed.ALexLess`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L28) | 🟢 ported |  |
+| `ALexEqual` | const | [21](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L21) | [`BoldORed.ALexEqual`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L29) | 🟢 ported |  |
+| `ALexGTEqual` | const | [22](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L22) | [`BoldORed.ALexGTEqual`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L30) | 🟢 ported |  |
+| `ALexLTEqual` | const | [23](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L23) | [`BoldORed.ALexLTEqual`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L31) | 🟢 ported |  |
+| `ALexNEqual` | const | [24](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L24) | [`BoldORed.ALexNEqual`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L32) | 🟢 ported |  |
+| `ALexPlus` | const | [25](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L25) | [`BoldORed.ALexPlus`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L33) | 🟢 ported |  |
+| `ALexMinus` | const | [26](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L26) | [`BoldORed.ALexMinus`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L34) | 🟢 ported |  |
+| `ALexMult` | const | [27](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L27) | [`BoldORed.ALexMult`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L35) | 🟢 ported |  |
+| `ALexDiv` | const | [28](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L28) | [`BoldORed.ALexDiv`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L36) | 🟢 ported |  |
+| `ALexDot` | const | [29](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L29) | [`BoldORed.ALexDot`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L37) | 🟢 ported |  |
+| `ALexArrow` | const | [30](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L30) | [`BoldORed.ALexArrow`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L38) | 🟢 ported |  |
+| `ALexComma` | const | [31](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L31) | [`BoldORed.ALexComma`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L39) | 🟢 ported |  |
+| `ALexCommercialAt` | const | [32](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L32) | [`BoldORed.ALexCommercialAt`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L40) | 🟢 ported |  |
+| `ALexIF` | const | [33](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L33) | [`BoldORed.ALexIF`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L41) | 🟢 ported |  |
+| `ALexTHEN` | const | [34](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L34) | [`BoldORed.ALexTHEN`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L42) | 🟢 ported |  |
+| `ALexELSE` | const | [35](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L35) | [`BoldORed.ALexELSE`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L43) | 🟢 ported |  |
+| `ALexENDIF` | const | [36](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L36) | [`BoldORed.ALexENDIF`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L44) | 🟢 ported |  |
+| `ALexENUM` | const | [37](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L37) | [`BoldORed.ALexENUM`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L45) | 🟢 ported |  |
+| `ALexHASH` | const | [38](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L38) | [`BoldORed.ALexHASH`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L46) | 🟢 ported |  |
+| `ALexBAR` | const | [39](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L39) | [`BoldORed.ALexBAR`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L47) | 🟢 ported |  |
+| `ALexDOUBLECOLON` | const | [40](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L40) | [`BoldORed.ALexDOUBLECOLON`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L48) | 🟢 ported |  |
+| `ALexDOUBLEDOT` | const | [41](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L41) | [`BoldORed.ALexDOUBLEDOT`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L49) | 🟢 ported |  |
+| `ALexCOLON` | const | [42](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L42) | [`BoldORed.ALexCOLON`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L50) | 🟢 ported |  |
+| `ALexBAG` | const | [43](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L43) | [`BoldORed.ALexBAG`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L51) | 🟢 ported |  |
+| `ALexSET` | const | [44](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L44) | [`BoldORed.ALexSET`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L52) | 🟢 ported |  |
+| `ALexSEQUENCE` | const | [45](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L45) | [`BoldORed.ALexSEQUENCE`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L53) | 🟢 ported |  |
+| `ALexCOLLECTION` | const | [46](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L46) | [`BoldORed.ALexCOLLECTION`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L54) | 🟢 ported |  |
+| `ALexIntDIV` | const | [47](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L47) | [`BoldORed.ALexIntDIV`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L55) | 🟢 ported |  |
+| `ALexMOD` | const | [48](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L48) | [`BoldORed.ALexMOD`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L56) | 🟢 ported |  |
+| `ALexAND` | const | [49](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L49) | [`BoldORed.ALexAND`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L57) | 🟢 ported |  |
+| `ALexOR` | const | [50](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L50) | [`BoldORed.ALexOR`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L58) | 🟢 ported |  |
+| `ALexNOT` | const | [51](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L51) | [`BoldORed.ALexNOT`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L59) | 🟢 ported |  |
+| `ALexXOR` | const | [52](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L52) | [`BoldORed.ALexXOR`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L60) | 🟢 ported |  |
+| `ALexIMPLIES` | const | [53](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L53) | [`BoldORed.ALexIMPLIES`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L61) | 🟢 ported |  |
+| `ALexString` | const | [54](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L54) | [`BoldORed.ALexString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L62) | 🟢 ported |  |
+| `ALexStringEnd` | const | [55](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L55) | [`BoldORed.ALexStringEnd`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L63) | 🟢 ported |  |
+| `AYaccGoal` | const | [58](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L58) | [`BoldORed.AYaccGoal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L65) | 🟢 ported |  |
+| `AYaccexpressionPost` | const | [59](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L59) | [`BoldORed.AYaccexpressionPost`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L66) | 🟢 ported |  |
+| `AYaccexpressionAnd` | const | [60](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L60) | [`BoldORed.AYaccexpressionAnd`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L67) | 🟢 ported |  |
+| `AYaccexpressionOr` | const | [61](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L61) | [`BoldORed.AYaccexpressionOr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L68) | 🟢 ported |  |
+| `AYaccexpressionXor` | const | [62](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L62) | [`BoldORed.AYaccexpressionXor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L69) | 🟢 ported |  |
+| `AYaccexpressionImp` | const | [63](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L63) | [`BoldORed.AYaccexpressionImp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L70) | 🟢 ported |  |
+| `AYaccexpressionEQ` | const | [64](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L64) | [`BoldORed.AYaccexpressionEQ`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L71) | 🟢 ported |  |
+| `AYaccexpressionLT` | const | [65](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L65) | [`BoldORed.AYaccexpressionLT`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L72) | 🟢 ported |  |
+| `AYaccexpressionGT` | const | [66](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L66) | [`BoldORed.AYaccexpressionGT`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L73) | 🟢 ported |  |
+| `AYaccexpressionLE` | const | [67](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L67) | [`BoldORed.AYaccexpressionLE`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L74) | 🟢 ported |  |
+| `AYaccexpressionGE` | const | [68](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L68) | [`BoldORed.AYaccexpressionGE`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L75) | 🟢 ported |  |
+| `AYaccexpressionNE` | const | [69](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L69) | [`BoldORed.AYaccexpressionNE`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L76) | 🟢 ported |  |
+| `AYaccexpressionAdd` | const | [70](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L70) | [`BoldORed.AYaccexpressionAdd`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L77) | 🟢 ported |  |
+| `AYaccexpressionSub` | const | [71](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L71) | [`BoldORed.AYaccexpressionSub`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L78) | 🟢 ported |  |
+| `AYaccexpressionDiv` | const | [72](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L72) | [`BoldORed.AYaccexpressionDiv`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L79) | 🟢 ported |  |
+| `AYaccexpressionMul` | const | [73](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L73) | [`BoldORed.AYaccexpressionMul`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L80) | 🟢 ported |  |
+| `AYaccexpressionDivI` | const | [74](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L74) | [`BoldORed.AYaccexpressionDivI`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L81) | 🟢 ported |  |
+| `AYaccexpressionMod` | const | [75](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L75) | [`BoldORed.AYaccexpressionMod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L82) | 🟢 ported |  |
+| `AYaccexpressionNeg` | const | [76](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L76) | [`BoldORed.AYaccexpressionNeg`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L83) | 🟢 ported |  |
+| `AYaccexpressionNOT` | const | [77](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L77) | [`BoldORed.AYaccexpressionNOT`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L84) | 🟢 ported |  |
+| `AYaccifExpression` | const | [78](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L78) | [`BoldORed.AYaccifExpression`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L85) | 🟢 ported |  |
+| `AYaccpostFixFirst` | const | [79](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L79) | [`BoldORed.AYaccpostFixFirst`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L86) | 🟢 ported |  |
+| `AYaccpostFixMember` | const | [80](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L80) | [`BoldORed.AYaccpostFixMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L87) | 🟢 ported |  |
+| `AYaccpostFixMethod` | const | [81](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L81) | [`BoldORed.AYaccpostFixMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L88) | 🟢 ported |  |
+| `AYaccpostFixOperation` | const | [82](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L82) | [`BoldORed.AYaccpostFixOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L89) | 🟢 ported |  |
+| `AYaccpostFixOperationParams` | const | [83](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L83) | [`BoldORed.AYaccpostFixOperationParams`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L90) | 🟢 ported |  |
+| `AYaccprimaryExpLittCollection` | const | [84](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L84) | [`BoldORed.AYaccprimaryExpLittCollection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L91) | 🟢 ported |  |
+| `AYaccprimaryExpLitt` | const | [85](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L85) | [`BoldORed.AYaccprimaryExpLitt`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L92) | 🟢 ported |  |
+| `AYaccprimaryExpParen` | const | [86](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L86) | [`BoldORed.AYaccprimaryExpParen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L93) | 🟢 ported |  |
+| `AYaccprimaryExpIf` | const | [87](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L87) | [`BoldORed.AYaccprimaryExpIf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L94) | 🟢 ported |  |
+| `AYaccPrimaryNoParams` | const | [88](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L88) | [`BoldORed.AYaccPrimaryNoParams`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L95) | 🟢 ported |  |
+| `AYaccPrimaryWithParams` | const | [89](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L89) | [`BoldORed.AYaccPrimaryWithParams`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L96) | 🟢 ported |  |
+| `AYaccfeatureCallParameters1` | const | [90](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L90) | [`BoldORed.AYaccfeatureCallParameters1`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L97) | 🟢 ported |  |
+| `AYaccfeatureCallParameters2` | const | [91](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L91) | [`BoldORed.AYaccfeatureCallParameters2`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L98) | 🟢 ported |  |
+| `AYaccfeatureCallParameters3` | const | [92](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L92) | [`BoldORed.AYaccfeatureCallParameters3`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L99) | 🟢 ported |  |
+| `AYaccliteral_String` | const | [93](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L93) | [`BoldORed.AYaccliteral_String`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L100) | 🟢 ported |  |
+| `AYaccliteral_EmptyString` | const | [94](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L94) | [`BoldORed.AYaccliteral_EmptyString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L101) | 🟢 ported |  |
+| `AYaccliteral_Number` | const | [95](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L95) | [`BoldORed.AYaccliteral_Number`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L102) | 🟢 ported |  |
+| `AYaccliteral_float` | const | [96](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L96) | [`BoldORed.AYaccliteral_float`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L103) | 🟢 ported |  |
+| `AYaccliteral_Date` | const | [97](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L97) | [`BoldORed.AYaccliteral_Date`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L104) | 🟢 ported |  |
+| `AYaccliteral_Time` | const | [98](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L98) | [`BoldORed.AYaccliteral_Time`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L105) | 🟢 ported |  |
+| `AYaccliteral_Name` | const | [99](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L99) | [`BoldORed.AYaccliteral_Name`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L106) | 🟢 ported |  |
+| `AYaccsimpleTypeSpecifier_Ety` | const | [100](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L100) | [`BoldORed.AYaccsimpleTypeSpecifier_Ety`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L107) | 🟢 ported |  |
+| `AYaccsimpleTypeSpecifier_Path` | const | [101](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L101) | [`BoldORed.AYaccsimpleTypeSpecifier_Path`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L108) | 🟢 ported |  |
+| `AYaccsimpleTypeSpecifier_Enum` | const | [102](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L102) | [`BoldORed.AYaccsimpleTypeSpecifier_Enum`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L109) | 🟢 ported |  |
+| `AYaccliteralCollection` | const | [103](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L103) | [`BoldORed.AYaccliteralCollection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L110) | 🟢 ported |  |
+| `AYaccexpressionListOrRange_List` | const | [104](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L104) | [`BoldORed.AYaccexpressionListOrRange_List`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L111) | 🟢 ported |  |
+| `AYaccexpressionList` | const | [105](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L105) | [`BoldORed.AYaccexpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L112) | 🟢 ported |  |
+| `AYaccexpressionList_Rec` | const | [106](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L106) | [`BoldORed.AYaccexpressionList_Rec`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L113) | 🟢 ported |  |
+| `AYaccexpressionListOrRange_Range` | const | [107](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L107) | [`BoldORed.AYaccexpressionListOrRange_Range`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L114) | 🟢 ported |  |
+| `AYaccenumerationType` | const | [108](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L108) | [`BoldORed.AYaccenumerationType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L115) | 🟢 ported |  |
+| `AYaccenumTypeList` | const | [109](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L109) | [`BoldORed.AYaccenumTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L116) | 🟢 ported |  |
+| `AYaccenumTypeList_Rec` | const | [110](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L110) | [`BoldORed.AYaccenumTypeList_Rec`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L117) | 🟢 ported |  |
+| `AYaccqualifiers_Ety` | const | [111](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L111) | [`BoldORed.AYaccqualifiers_Ety`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L118) | 🟢 ported |  |
+| `AYaccqualifiers` | const | [112](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L112) | [`BoldORed.AYaccqualifiers`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L119) | 🟢 ported |  |
+| `AYaccpathTypeName` | const | [113](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L113) | [`BoldORed.AYaccpathTypeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L120) | 🟢 ported |  |
+| `AYacctypeNameList` | const | [114](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L114) | [`BoldORed.AYacctypeNameList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L121) | 🟢 ported |  |
+| `AYacctypeNameList_Rec` | const | [115](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L115) | [`BoldORed.AYacctypeNameList_Rec`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L122) | 🟢 ported |  |
+| `AYaccpathName` | const | [116](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L116) | [`BoldORed.AYaccpathName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L123) | 🟢 ported |  |
+| `AYaccpathName_Rec` | const | [117](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L117) | [`BoldORed.AYaccpathName_Rec`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L124) | 🟢 ported |  |
+| `AYaccanyName_Type` | const | [118](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L118) | [`BoldORed.AYaccanyName_Type`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L125) | 🟢 ported |  |
+| `AYaccanyName_Name` | const | [119](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L119) | [`BoldORed.AYaccanyName_Name`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L126) | 🟢 ported |  |
+| `AYacctimeExpression` | const | [120](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L120) | [`BoldORed.AYacctimeExpression`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L127) | 🟢 ported |  |
+| `AYacctimeExpression_Ety` | const | [121](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L121) | [`BoldORed.AYacctimeExpression_Ety`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L128) | 🟢 ported |  |
+| `AYaccactualParameterList_ety` | const | [122](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L122) | [`BoldORed.AYaccactualParameterList_ety`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L129) | 🟢 ported |  |
+| `AYaccActualParameterlist_nonEty` | const | [123](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L123) | [`BoldORed.AYaccActualParameterlist_nonEty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L130) | 🟢 ported |  |
+| `AYaccNonEmptyactualParameterList` | const | [124](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L124) | [`BoldORed.AYaccNonEmptyactualParameterList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L131) | 🟢 ported |  |
+| `AYaccNonEmptyactualParameterList_Rec` | const | [125](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L125) | [`BoldORed.AYaccNonEmptyactualParameterList_Rec`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L132) | 🟢 ported |  |
+| `AYacccollectionKind_Set` | const | [126](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L126) | [`BoldORed.AYacccollectionKind_Set`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L133) | 🟢 ported |  |
+| `AYacccollectionKind_Bag` | const | [127](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L127) | [`BoldORed.AYacccollectionKind_Bag`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L134) | 🟢 ported |  |
+| `AYacccollectionKind_Sequence` | const | [128](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L128) | [`BoldORed.AYacccollectionKind_Sequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L135) | 🟢 ported |  |
+| `AYacccollectionKind_Collection` | const | [129](../../../Source/ObjectSpace/Ocl/BoldOCon.inc#L129) | [`BoldORed.AYacccollectionKind_Collection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L136) | 🟢 ported |  |
+| `ALexClass` | class | [2](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L2) | [`ALexClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L643) | 🟢 ported |  |
+| `AYaccStackElement` | class | [8](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L8) | [`AYaccStackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L706) | 🟢 ported |  |
+| `AYaccClass` | class | [26](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L26) | [`AYaccClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L762) | 🟢 ported |  |
+| `TBoldOclCollectionType` | enum, implementation | [25](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L25) | [`TBoldOclCollectionType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L630) | 🟢 ported |  |
+| `MakeList` | routine, implementation | [3](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L3) | [`BoldORed.MakeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L142) | 🟢 ported |  |
+| `PushList` | routine, implementation | [10](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L10) | [`BoldORed.PushList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L151) | 🟢 ported |  |
+| `MakeEmptyList` | routine, implementation | [17](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L17) | [`BoldORed.MakeEmptyList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L160) | 🟢 ported |  |
+| `ReleaseList` | routine, implementation | [23](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L23) | [`BoldORed.ReleaseList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L169) | 🟢 ported |  |
+| `RetrieveNodeList` | routine, implementation | [39](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L39) | [`BoldORed.RetrieveNodeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L173) | 🟢 ported |  |
+| `Make1Operation` | routine, implementation | [54](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L54) | [`BoldORed.Make1Operation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L190) | 🟢 ported |  |
+| `Make2Operation` | routine, implementation | [64](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L64) | [`BoldORed.Make2Operation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L200) | 🟢 ported |  |
+| `Make3Operation` | routine, implementation | [75](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L75) | [`BoldORed.Make3Operation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L211) | 🟢 ported |  |
+| `MakeUnaryMinus` | routine, implementation | [88](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L88) | [`BoldORed.MakeUnaryMinus`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L224) | 🟢 ported |  |
+| `MakeCollectionKind` | routine, implementation | [105](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L105) | [`BoldORed.MakeCollectionKind`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L227) | 🟢 ported |  |
+| `MakeTimeExpression` | routine, implementation | [114](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L114) | [`BoldORed.MakeTimeExpression`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L237) | 🟢 ported |  |
+| `MakeName` | routine, implementation | [121](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L121) | [`BoldORed.MakeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L242) | 🟢 ported |  |
+| `MakeDeclarator` | routine, implementation | [128](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L128) | [`BoldORed.MakeDeclarator`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L255) | 🟢 ported |  |
+| `MakeRange` | routine, implementation | [139](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L139) | [`BoldORed.MakeRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L273) | 🟢 ported |  |
+| `MakeLiteralCollection` | routine, implementation | [146](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L146) | [`BoldORed.MakeLiteralCollection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L282) | 🟢 ported |  |
+| `MakeSimpleEnumType` | routine, implementation | [167](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L167) | [`BoldORed.MakeSimpleEnumType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L305) | 🟢 ported |  |
+| `MakeSimplePath` | routine, implementation | [173](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L173) | [`BoldORed.MakeSimplePath`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L309) | 🟢 ported |  |
+| `MakeLiteralName` | routine, implementation | [182](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L182) | [`BoldORed.MakeLiteralName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L323) | 🟢 ported |  |
+| `MakeLiteralString` | routine, implementation | [190](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L190) | [`BoldORed.MakeLiteralString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L332) | 🟢 ported |  |
+| `MakeLiteralInt` | routine, implementation | [212](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L212) | [`BoldORed.MakeLiteralInt`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L354) | 🟢 ported |  |
+| `MakeLiteralDate` | routine, implementation | [232](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L232) | [`BoldORed.MakeLiteralDate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L374) | 🟢 ported |  |
+| `MakeLiteralTime` | routine, implementation | [252](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L252) | [`BoldORed.MakeLiteralTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L398) | 🟢 ported |  |
+| `MakeLiteralfloat` | routine, implementation | [274](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L274) | [`BoldORed.MakeLiteralfloat`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L421) | 🟢 ported: Parses with '.' as the decimal separator; Delphi swaps in the locale's separator first. |  |
+| `MakeFeatureCall` | routine, implementation | [298](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L298) | [`BoldORed.MakeFeatureCall`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L441) | 🟢 ported |  |
+| `MakeMember` | routine, implementation | [319](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L319) | [`BoldORed.MakeMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L462) | 🟢 ported |  |
+| `MakeMethod` | routine, implementation | [350](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L350) | [`BoldORed.MakeMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L499) | 🟢 ported |  |
+| `MakeLoopVar` | routine, implementation | [383](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L383) | [`BoldORed.MakeLoopVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L536) | 🟢 ported |  |
+| `MakeOperation` | routine, implementation | [403](../../../Source/ObjectSpace/Ocl/BoldOclConstructors.inc#L403) | [`BoldORed.MakeOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L559) | 🟢 ported |  |
 
 ## ALexClass
 
-class at [line 2](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L2); ⚪ not started.
+class at [line 2](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L2); 🟢 ported, C# [`ALexClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L643).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TokenToString` | method | [4](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L4) · [body 1](../../../Source/ObjectSpace/Ocl/BoldOFun.inc#L1) |  | ⚪ not started |  |
+| `TokenToString` | method | [4](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L4) · [body 1](../../../Source/ObjectSpace/Ocl/BoldOFun.inc#L1) | [`ALexClass.TokenToString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L646) | 🟢 ported |  |
 
 ## AYaccStackElement
 
-class at [line 8](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L8); ⚪ not started.
+class at [line 8](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L8); 🟢 ported, C# [`AYaccStackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L706).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Clone` | method | [19](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L19) · [body 50](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L50) |  | ⚪ not started |  |
-| `FreeAllOwnedElements` | method | [20](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L20) · [body 62](../../../Source/ObjectSpace/Ocl/BoldOFun.inc#L62) |  | ⚪ not started |  |
-| `Create` | constructor | [21](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L21) · [body 29](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L29) |  | ⚪ not started |  |
-| `CreateOffs` | constructor | [22](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L22) · [body 43](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L43) |  | ⚪ not started |  |
+| `Clone` | method | [19](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L19) · [body 50](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L50) | [`AYaccStackElement.Clone`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L730) | 🟢 ported |  |
+| `FreeAllOwnedElements` | method | [20](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L20) · [body 62](../../../Source/ObjectSpace/Ocl/BoldOFun.inc#L62) | [`AYaccStackElement.FreeAllOwnedElements`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L744) | 🟢 ported |  |
+| `Create` | constructor | [21](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L21) · [body 29](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L29) | [`AYaccStackElement.AYaccStackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L720) | 🟢 ported |  |
+| `CreateOffs` | constructor | [22](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L22) · [body 43](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L43) | [`AYaccStackElement.CreateOffs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L726) | 🟢 ported |  |
 
 ## AYaccClass
 
-class at [line 26](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L26); ⚪ not started.
+class at [line 26](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L26); 🟢 ported, C# [`AYaccClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L762).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `StackElement` | method | [29](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L29) · [body 63](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L63) |  | ⚪ not started |  |
-| `Reduce` | method | [30](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L30) · [body 78](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L78) |  | ⚪ not started |  |
+| `StackElement` | method | [29](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L29) · [body 63](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L63) | [`AYaccClass.StackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L767) | 🟢 ported |  |
+| `Reduce` | method | [30](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L30) · [body 78](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L78) | [`AYaccClass.Reduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L771) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`AYaccStackElement.start`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L708) (field)
+- [`AYaccStackElement.stop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L709) (field)
+- [`AYaccStackElement.Node`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L710) (field)
+- [`AYaccStackElement.Name`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L711) (field)
+- [`AYaccStackElement.SimpleTypeSpecifierIsEnum`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L712) (field)
+- [`AYaccStackElement.DeclaratorTypeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L713) (field)
+- [`AYaccStackElement.List`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L714) (field)
+- [`AYaccStackElement.Offset`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L715) (field)
+- [`AYaccStackElement.CollectionKind`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L716) (field)
+- [`AYaccStackElement.nameIstype`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L717) (field)
+- [`AYaccClass.finalValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L764) (field)
 
 ## Dependencies
 

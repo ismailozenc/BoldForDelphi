@@ -19,18 +19,18 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 381 to port, 100 not ported. The units to port declare 16755 symbols. 6214 `[Delphi]` markers in the C# code; 229 test methods.
+481 Delphi units: 381 to port, 100 not ported. The units to port declare 16755 symbols. 6779 `[Delphi]` markers in the C# code; 229 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
 | ✅ verified | 4295 | ▰▰▰▱▱▱▱▱▱▱ 26% |
-| 🟢 ported | 1862 | ▰▱▱▱▱▱▱▱▱▱ 11% |
-| 🔵 replaced | 96 | ▱▱▱▱▱▱▱▱▱▱ 1% |
+| 🟢 ported | 2373 | ▰▱▱▱▱▱▱▱▱▱ 14% |
+| 🔵 replaced | 149 | ▱▱▱▱▱▱▱▱▱▱ 1% |
 | 🟡 partial | 10 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 1 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 10486 | ▰▰▰▰▰▰▱▱▱▱ 63% |
-| ⚫ dropped | 5 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| ⚪ not started | 9921 | ▰▰▰▰▰▰▱▱▱▱ 59% |
+| ⚫ dropped | 6 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
 
@@ -39,7 +39,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M1 Load models | 24 | 1642 | 1635 | 1332 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M2 Runtime model and subscriptions | 24 | 1965 | 1964 | 1900 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M3 Object space in memory | 41 | 2630 | 2592 | 996 | ▰▰▰▰▰▰▰▰▰▰ 99% |
-| M4 OCL | 13 | 1289 | 67 | 67 | ▰▱▱▱▱▱▱▱▱▱ 5% |
+| M4 OCL | 13 | 1289 | 632 | 67 | ▰▰▰▰▰▱▱▱▱▱ 49% |
 | M5 SQL persistence | 62 | 2684 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M6 Typed classes | 7 | 258 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M7 Handles | 24 | 582 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -58,7 +58,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.Handles | 23 | 567 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Model | 9 | 729 | 729 | 629 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.ModelEditor | 22 | 584 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| Bold.ObjectSpace | 38 | 3880 | 2657 | 1109 | ▰▰▰▰▰▰▰▱▱▱ 68% |
+| Bold.ObjectSpace | 38 | 3880 | 3222 | 1109 | ▰▰▰▰▰▰▰▰▱▱ 83% |
 | Bold.Olle | 6 | 319 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Persistence | 13 | 784 | 748 | 699 | ▰▰▰▰▰▰▰▰▰▰ 95% |
 | Bold.Persistence.Sql | 58 | 2626 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -163,9 +163,9 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldPersistenceControllerSystem](units/BoldPersistenceControllerSystem.md) | 🟢 ported | 40/40 | 39 | Bold.ObjectSpace | M3 | [Source/Persistence/System/BoldPersistenceControllerSystem.pas](../../Source/Persistence/System/BoldPersistenceControllerSystem.pas) | [src/Bold.ObjectSpace/Persistence/System/BoldPersistenceControllerSystem.cs](../src/Bold.ObjectSpace/Persistence/System/BoldPersistenceControllerSystem.cs) |
 | [BoldCondition](units/BoldCondition.md) | 🟡 partial | 49/51 | 49 | Bold.ValueSpace | M3 | [Source/ValueSpace/Condition/BoldCondition.pas](../../Source/ValueSpace/Condition/BoldCondition.pas) | [src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs](../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs) |
 | [BoldObjectSpaceExternalEvents](units/BoldObjectSpaceExternalEvents.md) | ✅ verified | 9/9 | 9 | Bold.ValueSpace | M3 | [Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas](../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas) | [src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs](../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs)<br>[src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs](../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs) |
-| [BoldORed](units/BoldORed.md) | ⚪ not started | 0/163 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldORed.pas](../../Source/ObjectSpace/Ocl/BoldORed.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs |
+| [BoldORed](units/BoldORed.md) | 🟢 ported | 163/163 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldORed.pas](../../Source/ObjectSpace/Ocl/BoldORed.pas) | [src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs](../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs) |
 | [BoldOcl](units/BoldOcl.md) | ⚪ not started | 0/37 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOcl.pas](../../Source/ObjectSpace/Ocl/BoldOcl.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs |
-| [BoldOclClasses](units/BoldOclClasses.md) | ⚪ not started | 0/180 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclClasses.pas](../../Source/ObjectSpace/Ocl/BoldOclClasses.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs |
+| [BoldOclClasses](units/BoldOclClasses.md) | 🟢 ported | 180/180 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclClasses.pas](../../Source/ObjectSpace/Ocl/BoldOclClasses.pas) | [src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs](../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs) |
 | [BoldOclError](units/BoldOclError.md) | ✅ verified | 67/67 | 67 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclError.pas](../../Source/ObjectSpace/Ocl/BoldOclError.pas) | [src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs](../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs) |
 | [BoldOclEvaluator](units/BoldOclEvaluator.md) | ⚪ not started | 0/27 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclEvaluator.pas](../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs |
 | [BoldOclLightWeightNodeMaker](units/BoldOclLightWeightNodeMaker.md) | ⚪ not started | 0/29 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclLightWeightNodeMaker.pas](../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodeMaker.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodeMaker.cs |
@@ -173,9 +173,9 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldOclRTDebug](units/BoldOclRTDebug.md) | ⚪ not started | 0/4 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclRTDebug.pas](../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs |
 | [BoldOclSemantics](units/BoldOclSemantics.md) | ⚪ not started | 0/26 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclSemantics.pas](../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs |
 | [BoldOclSymbolImplementations](units/BoldOclSymbolImplementations.md) | ⚪ not started | 0/324 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas](../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs |
-| [BoldSSExcept](units/BoldSSExcept.md) | ⚪ not started | 0/6 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldSSExcept.pas](../../Source/ObjectSpace/Ocl/BoldSSExcept.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs |
-| [BoldSSLexU](units/BoldSSLexU.md) | ⚪ not started | 0/109 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldSSLexU.pas](../../Source/ObjectSpace/Ocl/BoldSSLexU.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs |
-| [BoldSSYaccU](units/BoldSSYaccU.md) | ⚪ not started | 0/107 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldSSYaccU.pas](../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs |
+| [BoldSSExcept](units/BoldSSExcept.md) | 🟢 ported | 6/6 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldSSExcept.pas](../../Source/ObjectSpace/Ocl/BoldSSExcept.pas) | [src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs](../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs) |
+| [BoldSSLexU](units/BoldSSLexU.md) | 🟢 ported | 109/109 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldSSLexU.pas](../../Source/ObjectSpace/Ocl/BoldSSLexU.pas) | [src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs](../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs) |
+| [BoldSSYaccU](units/BoldSSYaccU.md) | 🟢 ported | 107/107 | 0 | Bold.ObjectSpace | M4 | [Source/ObjectSpace/Ocl/BoldSSYaccU.pas](../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas) | [src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs](../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs) |
 | [BoldCollections](units/BoldCollections.md) | ⚪ not started | 0/24 | 0 | Bold.Core | M5 | [Source/Common/Support/BoldCollections.pas](../../Source/Common/Support/BoldCollections.pas) | planned: src/Bold.Core/Common/Support/BoldCollections.cs |
 | [BoldGUIDUtils](units/BoldGUIDUtils.md) | ⚪ not started | 0/2 | 0 | Bold.Core | M5 | [Source/Common/Support/BoldGUIDUtils.pas](../../Source/Common/Support/BoldGUIDUtils.pas) | planned: src/Bold.Core/Common/Support/BoldGUIDUtils.cs |
 | [BoldAbstractObjectUpgrader](units/BoldAbstractObjectUpgrader.md) | ⚪ not started | 0/28 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/Core/BoldAbstractObjectUpgrader.pas](../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas) | planned: src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs |

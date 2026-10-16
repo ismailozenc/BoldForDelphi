@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldSSExcept.pas`](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas) (91 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 6 symbols done, 0 verified |
+| Status | 🟢 ported: 6 of 6 symbols done, 0 verified |
 
-⚪ 6 not started
+🟢 6 ported
 
 ## Unit level
 
@@ -18,19 +18,26 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SSExceptionError` | enum | [11](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L11) |  | ⚪ not started |  |
-| `SSException` | class | [44](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L44) |  | ⚪ not started |  |
+| `SSExceptionError` | enum | [11](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L11) | [`SSExceptionError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L9) | 🟢 ported |  |
+| `SSException` | class | [44](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L44) | [`SSException`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L39) | 🟢 ported |  |
 
 ## SSException
 
-class at [line 44](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L44); ⚪ not started.
+class at [line 44](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L44); 🟢 ported, C# [`SSException`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L39).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [49](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L49) · [body 58](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L58) |  | ⚪ not started |  |
-| `CreateName` | constructor | [50](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L50) · [body 64](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L64) |  | ⚪ not started |  |
-| `CreateLong` | constructor | [51](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L51) · [body 71](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L71) |  | ⚪ not started |  |
-| `CreateLongLongNameLen` | constructor | [52](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L52) · [body 78](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L78) |  | ⚪ not started |  |
+| `Create` | constructor | [49](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L49) · [body 58](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L58) | [`SSException.SSException`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L45) | 🟢 ported |  |
+| `CreateName` | constructor | [50](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L50) · [body 64](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L64) | [`SSException.CreateName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L59) | 🟢 ported |  |
+| `CreateLong` | constructor | [51](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L51) · [body 71](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L71) | [`SSException.CreateLong`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L62) | 🟢 ported |  |
+| `CreateLongLongNameLen` | constructor | [52](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L52) · [body 78](../../../Source/ObjectSpace/Ocl/BoldSSExcept.pas#L78) | [`SSException.CreateLongLongNameLen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L67) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`SSException.Position`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L41) (field)
+- [`SSException.Id`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSExcept.cs#L42) (field)
 
 ## Dependencies
 

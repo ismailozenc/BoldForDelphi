@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldSSYaccU.pas`](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas) (1151 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 107 symbols done, 0 verified |
+| Status | 🟢 ported: 107 of 107 symbols done, 0 verified |
 
-⚪ 107 not started
+🟢 85 ported · 🔵 22 replaced
 
 ## Unit level
 
@@ -18,155 +18,196 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SSYaccPairTableMaxSize` | const | [15](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L15) |  | ⚪ not started |  |
-| `SSYaccPairTableId` | const | [16](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L16) |  | ⚪ not started |  |
-| `SSYaccPairTableRowFlagsSync` | const | [17](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L17) |  | ⚪ not started |  |
-| `SSYaccPairTableRowFlagsError` | const | [18](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L18) |  | ⚪ not started |  |
-| `SSYaccPairTableRowFlagsSyncAll` | const | [19](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L19) |  | ⚪ not started |  |
-| `SSYaccPairTableRowFlagsDuplicate` | const | [20](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L20) |  | ⚪ not started |  |
-| `SSYaccPairTableRowFlagsSyncPossible` | const | [21](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L21) |  | ⚪ not started |  |
-| `SSYaccPairTableEntryMask` | const | [22](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L22) |  | ⚪ not started |  |
-| `SSYaccPairTableEntrySync` | const | [23](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L23) |  | ⚪ not started |  |
-| `SSYaccPairTableEntryShift` | const | [24](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L24) |  | ⚪ not started |  |
-| `SSYaccPairTableEntryReduce` | const | [25](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L25) |  | ⚪ not started |  |
-| `SSYaccPairTableEntryAccept` | const | [26](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L26) |  | ⚪ not started |  |
-| `SSYaccPairTableEntryConflict` | const | [27](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L27) |  | ⚪ not started |  |
-| `SSYaccPairTableEntryMax` | const | [28](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L28) |  | ⚪ not started |  |
-| `SSYaccEofString` | const | [29](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L29) |  | ⚪ not started |  |
-| `SSYaccErrorString` | const | [30](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L30) |  | ⚪ not started |  |
-| `SSYaccEofToken` | const | [31](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L31) |  | ⚪ not started |  |
-| `SSYaccErrorToken` | const | [32](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L32) |  | ⚪ not started |  |
-| `SSYaccMsgFileOpen` | const | [33](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L33) |  | ⚪ not started |  |
-| `SSYaccMsgParse` | const | [34](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L34) |  | ⚪ not started |  |
-| `SSYaccMsgEof` | const | [35](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L35) |  | ⚪ not started |  |
-| `SSYaccMsgMissingTable` | const | [36](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L36) |  | ⚪ not started |  |
-| `SSYaccMsgMissingLexer` | const | [37](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L37) |  | ⚪ not started |  |
-| `SSYaccMsgRead` | const | [38](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L38) |  | ⚪ not started |  |
-| `SSYaccMsgTableSize` | const | [39](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L39) |  | ⚪ not started |  |
-| `SSYaccMsgElement` | const | [40](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L40) |  | ⚪ not started |  |
-| `SSYaccMsgSyncErrToken` | const | [41](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L41) |  | ⚪ not started |  |
-| `SSYaccMsgSyncErrEof` | const | [42](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L42) |  | ⚪ not started |  |
-| `SSYaccMsgFindResource` | const | [43](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L43) |  | ⚪ not started |  |
-| `SSYaccMsgBadResource` | const | [44](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L44) |  | ⚪ not started |  |
-| `SSArrayOfLongint` | array | [47](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L47) |  | ⚪ not started |  |
-| `PSSArrayOfLongint` | pointer | [48](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L48) |  | ⚪ not started |  |
-| `SSSetOfLongint` | class | [51](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L51) |  | ⚪ not started |  |
-| `SSYaccPairTable` | record | [65](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L65) |  | ⚪ not started |  |
-| `SSYaccPairTableRow` | record | [74](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L74) |  | ⚪ not started |  |
-| `SSYaccPairTableEntry` | record | [81](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L81) |  | ⚪ not started |  |
-| `SSYaccPairTableProd` | record | [87](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L87) |  | ⚪ not started |  |
-| `SSYaccAction` | enum | [93](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L93) |  | ⚪ not started |  |
-| `PSSYaccPairTable` | pointer | [94](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L94) |  | ⚪ not started |  |
-| `PSSYaccPairTableRow` | pointer | [95](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L95) |  | ⚪ not started |  |
-| `PSSYaccPairTableProd` | pointer | [96](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L96) |  | ⚪ not started |  |
-| `PSSYaccPairTableEntry` | pointer | [97](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L97) |  | ⚪ not started |  |
-| `SSYaccEntryArray` | array | [98](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L98) |  | ⚪ not started |  |
-| `PSSYaccEntryArray` | pointer | [99](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L99) |  | ⚪ not started |  |
-| `SSYaccProdArray` | array | [100](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L100) |  | ⚪ not started |  |
-| `PSSYaccProdArray` | pointer | [101](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L101) |  | ⚪ not started |  |
-| `SSYaccRowArray` | array | [102](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L102) |  | ⚪ not started |  |
-| `SSYaccRowOffsetArray` | array | [103](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L103) |  | ⚪ not started |  |
-| `PSSYaccRowArray` | pointer | [104](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L104) |  | ⚪ not started |  |
-| `PSSYaccRowOffsetArray` | pointer | [105](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L105) |  | ⚪ not started |  |
-| `SSYaccStackElement` | class | [108](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L108) |  | ⚪ not started |  |
-| `SSYaccStack` | class | [122](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L122) |  | ⚪ not started |  |
-| `SSYaccTable` | class | [130](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L130) |  | ⚪ not started |  |
-| `SSYaccLexemeCache` | class | [148](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L148) |  | ⚪ not started |  |
-| `SSYacc` | class | [159](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L159) |  | ⚪ not started |  |
+| `SSYaccPairTableMaxSize` | const | [15](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L15) | [`BoldSSYaccU.SSYaccPairTableMaxSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L30) | 🟢 ported |  |
+| `SSYaccPairTableId` | const | [16](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L16) | [`BoldSSYaccU.SSYaccPairTableId`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L31) | 🟢 ported |  |
+| `SSYaccPairTableRowFlagsSync` | const | [17](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L17) | [`BoldSSYaccU.SSYaccPairTableRowFlagsSync`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L32) | 🟢 ported |  |
+| `SSYaccPairTableRowFlagsError` | const | [18](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L18) | [`BoldSSYaccU.SSYaccPairTableRowFlagsError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L33) | 🟢 ported |  |
+| `SSYaccPairTableRowFlagsSyncAll` | const | [19](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L19) | [`BoldSSYaccU.SSYaccPairTableRowFlagsSyncAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L34) | 🟢 ported |  |
+| `SSYaccPairTableRowFlagsDuplicate` | const | [20](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L20) | [`BoldSSYaccU.SSYaccPairTableRowFlagsDuplicate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L35) | 🟢 ported |  |
+| `SSYaccPairTableRowFlagsSyncPossible` | const | [21](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L21) | [`BoldSSYaccU.SSYaccPairTableRowFlagsSyncPossible`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L36) | 🟢 ported |  |
+| `SSYaccPairTableEntryMask` | const | [22](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L22) | [`BoldSSYaccU.SSYaccPairTableEntryMask`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L37) | 🟢 ported |  |
+| `SSYaccPairTableEntrySync` | const | [23](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L23) | [`BoldSSYaccU.SSYaccPairTableEntrySync`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L38) | 🟢 ported |  |
+| `SSYaccPairTableEntryShift` | const | [24](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L24) | [`BoldSSYaccU.SSYaccPairTableEntryShift`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L39) | 🟢 ported |  |
+| `SSYaccPairTableEntryReduce` | const | [25](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L25) | [`BoldSSYaccU.SSYaccPairTableEntryReduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L40) | 🟢 ported |  |
+| `SSYaccPairTableEntryAccept` | const | [26](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L26) | [`BoldSSYaccU.SSYaccPairTableEntryAccept`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L41) | 🟢 ported |  |
+| `SSYaccPairTableEntryConflict` | const | [27](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L27) | [`BoldSSYaccU.SSYaccPairTableEntryConflict`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L42) | 🟢 ported |  |
+| `SSYaccPairTableEntryMax` | const | [28](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L28) | [`BoldSSYaccU.SSYaccPairTableEntryMax`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L43) | 🟢 ported |  |
+| `SSYaccEofString` | const | [29](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L29) | [`BoldSSYaccU.SSYaccEofString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L44) | 🟢 ported |  |
+| `SSYaccErrorString` | const | [30](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L30) | [`BoldSSYaccU.SSYaccErrorString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L45) | 🟢 ported |  |
+| `SSYaccEofToken` | const | [31](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L31) | [`BoldSSYaccU.SSYaccEofToken`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L46) | 🟢 ported |  |
+| `SSYaccErrorToken` | const | [32](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L32) | [`BoldSSYaccU.SSYaccErrorToken`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L47) | 🟢 ported |  |
+| `SSYaccMsgFileOpen` | const | [33](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L33) | [`BoldSSYaccU.SSYaccMsgFileOpen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L48) | 🟢 ported |  |
+| `SSYaccMsgParse` | const | [34](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L34) | [`BoldSSYaccU.SSYaccMsgParse`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L49) | 🟢 ported |  |
+| `SSYaccMsgEof` | const | [35](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L35) | [`BoldSSYaccU.SSYaccMsgEof`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L50) | 🟢 ported |  |
+| `SSYaccMsgMissingTable` | const | [36](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L36) | [`BoldSSYaccU.SSYaccMsgMissingTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L51) | 🟢 ported |  |
+| `SSYaccMsgMissingLexer` | const | [37](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L37) | [`BoldSSYaccU.SSYaccMsgMissingLexer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L52) | 🟢 ported |  |
+| `SSYaccMsgRead` | const | [38](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L38) | [`BoldSSYaccU.SSYaccMsgRead`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L53) | 🟢 ported |  |
+| `SSYaccMsgTableSize` | const | [39](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L39) | [`BoldSSYaccU.SSYaccMsgTableSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L54) | 🟢 ported |  |
+| `SSYaccMsgElement` | const | [40](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L40) | [`BoldSSYaccU.SSYaccMsgElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L55) | 🟢 ported |  |
+| `SSYaccMsgSyncErrToken` | const | [41](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L41) | [`BoldSSYaccU.SSYaccMsgSyncErrToken`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L56) | 🟢 ported |  |
+| `SSYaccMsgSyncErrEof` | const | [42](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L42) | [`BoldSSYaccU.SSYaccMsgSyncErrEof`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L57) | 🟢 ported |  |
+| `SSYaccMsgFindResource` | const | [43](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L43) | [`BoldSSYaccU.SSYaccMsgFindResource`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L58) | 🟢 ported |  |
+| `SSYaccMsgBadResource` | const | [44](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L44) | [`BoldSSYaccU.SSYaccMsgBadResource`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L59) | 🟢 ported |  |
+| `SSArrayOfLongint` | array | [47](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L47) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L6) | 🔵 replaced: SSSetOfLongint keeps a List&lt;int&gt;. |  |
+| `PSSArrayOfLongint` | pointer | [48](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L48) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L7) | 🔵 replaced: No pointers; SSSetOfLongint keeps a List&lt;int&gt;. |  |
+| `SSSetOfLongint` | class | [51](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L51) | [`SSSetOfLongint`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L64) | 🟢 ported |  |
+| `SSYaccPairTable` | record | [65](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L65) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L8) | 🔵 replaced: Read from the table bytes: TableType 0, Prods 4, States 8, RowOffset 12, ProdOffset 16. |  |
+| `SSYaccPairTableRow` | record | [74](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L74) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L9) | 🔵 replaced: Read from the table bytes: Flags 0, Gotos 4, Actions 8, then the entries. |  |
+| `SSYaccPairTableEntry` | record | [81](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L81) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L10) | 🔵 replaced: Read from the table bytes: Entry 0, Token 4 (SSYaccTable.EntryAt). |  |
+| `SSYaccPairTableProd` | record | [87](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L87) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L11) | 🔵 replaced: Read from the table bytes: Size 0, Leftside 4 (SSYaccTable.ProdSize, ProdLeftside). |  |
+| `SSYaccAction` | enum | [93](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L93) | [`SSYaccAction`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L104) | 🟢 ported |  |
+| `PSSYaccPairTable` | pointer | [94](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L94) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L12) | 🔵 replaced: No pointers: the table is a byte array. |  |
+| `PSSYaccPairTableRow` | pointer | [95](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L95) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L13) | 🔵 replaced: No pointers: rows are byte offsets. |  |
+| `PSSYaccPairTableProd` | pointer | [96](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L96) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L14) | 🔵 replaced: No pointers: productions are read by index. |  |
+| `PSSYaccPairTableEntry` | pointer | [97](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L97) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L15) | 🔵 replaced: No pointers: entries are byte offsets. |  |
+| `SSYaccEntryArray` | array | [98](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L98) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L16) | 🔵 replaced: Read from the table bytes after each row header. |  |
+| `PSSYaccEntryArray` | pointer | [99](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L99) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L17) | 🔵 replaced: No pointers: byte offsets. |  |
+| `SSYaccProdArray` | array | [100](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L100) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L18) | 🔵 replaced: Read from the table bytes at ProdOffset. |  |
+| `PSSYaccProdArray` | pointer | [101](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L101) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L19) | 🔵 replaced: No pointers: the offset PProdArray. |  |
+| `SSYaccRowArray` | array | [102](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L102) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L20) | 🔵 replaced: An int[] of row offsets (SSYaccTable.PPRowArray). |  |
+| `SSYaccRowOffsetArray` | array | [103](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L103) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L21) | 🔵 replaced: Read from the table bytes after the table header. |  |
+| `PSSYaccRowArray` | pointer | [104](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L104) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L22) | 🔵 replaced: No pointers: an int[] of row offsets. |  |
+| `PSSYaccRowOffsetArray` | pointer | [105](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L105) | [`[assembly: Delphi] in BoldSSYaccU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L23) | 🔵 replaced: No pointers: a byte offset. |  |
+| `SSYaccStackElement` | class | [108](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L108) | [`SSYaccStackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L115) | 🟢 ported |  |
+| `SSYaccStack` | class | [122](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L122) | [`SSYaccStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L152) | 🟢 ported |  |
+| `SSYaccTable` | class | [130](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L130) | [`SSYaccTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L179) | 🟢 ported |  |
+| `SSYaccLexemeCache` | class | [148](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L148) | [`SSYaccLexemeCache`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L306) | 🟢 ported: A List where Delphi derives from TList. |  |
+| `SSYacc` | class | [159](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L159) | [`SSYacc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L344) | 🟢 ported |  |
 
 ## SSSetOfLongint
 
-class at [line 51](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L51); ⚪ not started.
+class at [line 51](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L51); 🟢 ported, C# [`SSSetOfLongint`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L64).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [58](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L58) · [body 1037](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1037) |  | ⚪ not started |  |
-| `Insert` | method | [59](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L59) · [body 1046](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1046) |  | ⚪ not started |  |
-| `Contains` | method | [60](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L60) · [body 1077](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1077) |  | ⚪ not started |  |
-| `Destroy` | destructor | [61](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L61) · [body 1090](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1090) |  | ⚪ not started |  |
+| `Create` | constructor | [58](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L58) · [body 1037](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1037) | [`SSSetOfLongint.SSSetOfLongint`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L72) | 🟢 ported |  |
+| `Insert` | method | [59](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L59) · [body 1046](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1046) | [`SSSetOfLongint.Insert`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L81) | 🟢 ported |  |
+| `Contains` | method | [60](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L60) · [body 1077](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1077) | [`SSSetOfLongint.Contains`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L99) | 🟢 ported |  |
+| `Destroy` | destructor | [61](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L61) · [body 1090](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1090) | [`SSSetOfLongint.Insert`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L81) | 🔵 replaced: Freed the array; the garbage collector does that in .NET. |  |
 
 ## SSYaccStackElement
 
-class at [line 108](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L108); ⚪ not started.
+class at [line 108](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L108); 🟢 ported, C# [`SSYaccStackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L115).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [114](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L114) · [body 384](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L384) |  | ⚪ not started |  |
-| `RefInc` | method | [115](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L115) · [body 401](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L401) |  | ⚪ not started |  |
-| `RefDec` | method | [116](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L116) · [body 406](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L406) |  | ⚪ not started |  |
-| `SetLexeme` | method | [117](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L117) · [body 392](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L392) |  | ⚪ not started |  |
-| `Destroy` | destructor | [118](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L118) · [body 412](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L412) |  | ⚪ not started |  |
+| `Create` | constructor | [114](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L114) · [body 384](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L384) | [`SSYaccStackElement.SSYaccStackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L122) | 🟢 ported |  |
+| `RefInc` | method | [115](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L115) · [body 401](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L401) | [`SSYaccStackElement.RefInc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L132) | 🟢 ported |  |
+| `RefDec` | method | [116](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L116) · [body 406](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L406) | [`SSYaccStackElement.RefDec`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L135) | 🟢 ported |  |
+| `SetLexeme` | method | [117](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L117) · [body 392](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L392) | [`SSYaccStackElement.SetLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L142) | 🟢 ported |  |
+| `Destroy` | destructor | [118](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L118) · [body 412](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L412) | [`SSYaccStackElement.Release`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L130) | 🟢 ported: Releases the lexeme's reference; nothing is freed by hand in .NET. |  |
 
 ## SSYaccStack
 
-class at [line 122](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L122); ⚪ not started.
+class at [line 122](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L122); 🟢 ported, C# [`SSYaccStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L152).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Top` | method | [124](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L124) · [body 419](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L419) |  | ⚪ not started |  |
-| `Push` | method | [125](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L125) · [body 424](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L424) |  | ⚪ not started |  |
-| `Destroy` | destructor | [126](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L126) · [body 430](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L430) |  | ⚪ not started |  |
+| `Top` | method | [124](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L124) · [body 419](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L419) | [`SSYaccStack.Top`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L154) | 🟢 ported |  |
+| `Push` | method | [125](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L125) · [body 424](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L424) | [`SSYaccStack.Push`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L157) | 🟢 ported |  |
+| `Destroy` | destructor | [126](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L126) · [body 430](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L430) | [`SSYaccStack.Release`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L164) | 🟢 ported: Releases the elements' references; nothing is freed by hand in .NET. |  |
 
 ## SSYaccTable
 
-class at [line 130](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L130); ⚪ not started.
+class at [line 130](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L130); 🟢 ported, C# [`SSYaccTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L179).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [138](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L138) · [body 226](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L226) |  | ⚪ not started |  |
-| `CreateResource` | constructor | [139](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L139) · [body 277](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L277) |  | ⚪ not started |  |
-| `LarTables` | method | [140](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L140) · [body 372](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L372) |  | ⚪ not started |  |
-| `Productions` | method | [141](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L141) · [body 367](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L367) |  | ⚪ not started |  |
-| `RowSize` | method | [142](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L142) · [body 341](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L341) |  | ⚪ not started |  |
-| `GetLarTables` | method | [143](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L143) · [body 351](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L351) |  | ⚪ not started |  |
-| `Destroy` | destructor | [144](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L144) · [body 377](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L377) |  | ⚪ not started |  |
+| `Create` | constructor | [138](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L138) · [body 226](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L226) | [`SSYaccTable.SSYaccTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L194) | 🟢 ported |  |
+| `CreateResource` | constructor | [139](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L139) · [body 277](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L277) | [`SSYaccTable.CreateResource`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L211) | 🟢 ported: Takes the resource's bytes (a manifest resource here) where Delphi takes a module handle and resource names. |  |
+| `LarTables` | method | [140](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L140) · [body 372](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L372) | [`SSYaccTable.LarTables`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L259) | 🟢 ported |  |
+| `Productions` | method | [141](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L141) · [body 367](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L367) | [`SSYaccTable.Productions`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L262) | 🟢 ported |  |
+| `RowSize` | method | [142](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L142) · [body 341](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L341) | [`SSYaccTable.RowSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L266) | 🟢 ported: Takes the row's offset. |  |
+| `GetLarTables` | method | [143](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L143) · [body 351](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L351) | [`SSYaccTable.GetLarTables`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L278) | 🟢 ported: Takes the offset of the first lookahead table. |  |
+| `Destroy` | destructor | [144](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L144) · [body 377](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L377) | [`SSYaccTable.LarTables`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L259) | 🔵 replaced: Freed the table; the garbage collector does that in .NET. |  |
 
 ## SSYaccLexemeCache
 
-class at [line 148](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L148); ⚪ not started.
+class at [line 148](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L148); 🟢 ported, C# [`SSYaccLexemeCache`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L306).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [151](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L151) · [body 1114](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1114) |  | ⚪ not started |  |
-| `Dequeue` | method | [152](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L152) · [body 1119](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1119) |  | ⚪ not started |  |
-| `Enqueue` | method | [153](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L153) · [body 1132](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1132) |  | ⚪ not started |  |
-| `Get` | method | [154](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L154) · [body 1138](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1138) |  | ⚪ not started |  |
-| `Destroy` | destructor | [155](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L155) · [body 1146](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1146) |  | ⚪ not started |  |
+| `Create` | constructor | [151](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L151) · [body 1114](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1114) | [`SSYaccLexemeCache.SSYaccLexemeCache`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L309) | 🟢 ported |  |
+| `Dequeue` | method | [152](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L152) · [body 1119](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1119) | [`SSYaccLexemeCache.Dequeue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L315) | 🟢 ported: Takes the first lexeme; Delphi's line reading it is commented out, which leaves the result undefined. |  |
+| `Enqueue` | method | [153](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L153) · [body 1132](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1132) | [`SSYaccLexemeCache.Enqueue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L329) | 🟢 ported |  |
+| `Get` | method | [154](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L154) · [body 1138](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1138) | [`SSYaccLexemeCache.Get`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L336) | 🟢 ported: Null beyond the end, where Delphi's TList raises. |  |
+| `Destroy` | destructor | [155](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L155) · [body 1146](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1146) | [`SSYaccLexemeCache.Dequeue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L315) | 🔵 replaced: Empty in Delphi. |  |
 
 ## SSYacc
 
-class at [line 159](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L159); ⚪ not started.
+class at [line 159](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L159); 🟢 ported, C# [`SSYacc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L344).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateLex` | constructor | [182](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L182) · [body 469](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L469) |  | ⚪ not started |  |
-| `SetEof` | method | [184](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L184) · [body 495](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L495) |  | ⚪ not started |  |
-| `SyncErr` | method | [185](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L185) · [body 882](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L882) |  | ⚪ not started |  |
-| `Parse` | method | [186](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L186) · [body 646](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L646) |  | ⚪ not started |  |
-| `DoShift` | method | [187](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L187) · [body 703](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L703) |  | ⚪ not started |  |
-| `DoReduce` | method | [188](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L188) · [body 719](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L719) |  | ⚪ not started |  |
-| `DoConflict` | method | [189](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L189) · [body 756](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L756) |  | ⚪ not started |  |
-| `DoLarError` | method | [190](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L190) · [body 584](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L584) |  | ⚪ not started |  |
-| `Pop` | method | [192](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L192) · [body 860](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L860) |  | ⚪ not started |  |
-| `DoGoto` | method | [193](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L193) · [body 621](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L621) |  | ⚪ not started |  |
-| `GetLexemeCache` | method | [194](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L194) · [body 735](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L735) |  | ⚪ not started |  |
-| `LookupGoto` | method | [195](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L195) · [body 592](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L592) |  | ⚪ not started |  |
-| `LookupAction` | method | [196](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L196) · [body 512](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L512) |  | ⚪ not started |  |
-| `GetLexeme` | method | [197](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L197) · [body 806](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L806) |  | ⚪ not started |  |
-| `DoGetLexeme` | method | [198](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L198) · [body 793](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L793) |  | ⚪ not started |  |
-| `SetLookahead` | method | [199](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L199) · [body 837](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L837) |  | ⚪ not started |  |
-| `SetLarLookahead` | method | [200](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L200) · [body 846](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L846) |  | ⚪ not started |  |
-| `SetElement` | method | [201](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L201) · [body 828](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L828) |  | ⚪ not started |  |
-| `GetAction` | method | [202](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L202) · [body 554](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L554) |  | ⚪ not started |  |
-| `ElementFromProduction` | method | [204](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L204) · [body 993](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L993) |  | ⚪ not started |  |
-| `NextLexeme` | method | [207](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L207) · [body 629](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L629) |  | ⚪ not started |  |
-| `Shift` | method | [208](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L208) · [body 855](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L855) |  | ⚪ not started |  |
-| `StackElement` | method | [209](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L209) · [body 641](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L641) |  | ⚪ not started |  |
-| `LarLook` | method | [210](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L210) · [body 579](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L579) |  | ⚪ not started |  |
-| `Error` | method | [211](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L211) · [body 876](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L876) |  | ⚪ not started |  |
-| `LarError` | method | [212](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L212) · [body 568](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L568) |  | ⚪ not started |  |
-| `Reduce` | method | [213](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L213) · [body 573](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L573) |  | ⚪ not started |  |
-| `Destroy` | destructor | [215](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L215) · [body 1022](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1022) |  | ⚪ not started |  |
+| `CreateLex` | constructor | [182](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L182) · [body 469](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L469) | [`SSYacc.SSYacc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L368) | 🟢 ported |  |
+| `SetEof` | method | [184](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L184) · [body 495](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L495) | [`SSYacc.SetEof`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L392) | 🟢 ported |  |
+| `SyncErr` | method | [185](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L185) · [body 882](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L882) | [`SSYacc.SyncErr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L401) | 🟢 ported |  |
+| `Parse` | method | [186](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L186) · [body 646](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L646) | [`SSYacc.Parse`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L480) | 🟢 ported |  |
+| `DoShift` | method | [187](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L187) · [body 703](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L703) | [`SSYacc.DoShift`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L541) | 🟢 ported |  |
+| `DoReduce` | method | [188](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L188) · [body 719](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L719) | [`SSYacc.DoReduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L562) | 🟢 ported |  |
+| `DoConflict` | method | [189](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L189) · [body 756](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L756) | [`SSYacc.DoConflict`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L577) | 🟢 ported |  |
+| `DoLarError` | method | [190](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L190) · [body 584](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L584) | [`SSYacc.DoLarError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L612) | 🟢 ported |  |
+| `Pop` | method | [192](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L192) · [body 860](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L860) | [`SSYacc.Pop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L626) | 🟢 ported |  |
+| `DoGoto` | method | [193](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L193) · [body 621](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L621) | [`SSYacc.DoGoto`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L642) | 🟢 ported |  |
+| `GetLexemeCache` | method | [194](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L194) · [body 735](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L735) | [`SSYacc.GetLexemeCache`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L651) | 🟢 ported |  |
+| `LookupGoto` | method | [195](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L195) · [body 592](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L592) | [`SSYacc.LookupGoto`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L677) | 🟢 ported |  |
+| `LookupAction` | method | [196](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L196) · [body 512](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L512) | [`SSYacc.LookupAction`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L697) | 🟢 ported |  |
+| `GetLexeme` | method | [197](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L197) · [body 806](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L806) | [`SSYacc.GetLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L730) | 🟢 ported |  |
+| `DoGetLexeme` | method | [198](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L198) · [body 793](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L793) | [`SSYacc.DoGetLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L753) | 🟢 ported |  |
+| `SetLookahead` | method | [199](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L199) · [body 837](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L837) | [`SSYacc.SetLookahead`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L771) | 🟢 ported |  |
+| `SetLarLookahead` | method | [200](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L200) · [body 846](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L846) | [`SSYacc.SetLarLookahead`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L779) | 🟢 ported |  |
+| `SetElement` | method | [201](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L201) · [body 828](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L828) | [`SSYacc.SetElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L787) | 🟢 ported |  |
+| `GetAction` | method | [202](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L202) · [body 554](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L554) | [`SSYacc.GetAction`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L799) | 🟢 ported: Takes the entry's action bits where Delphi takes a pointer to the entry. |  |
+| `ElementFromProduction` | method | [204](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L204) · [body 993](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L993) | [`SSYacc.ElementFromProduction`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L808) | 🟢 ported |  |
+| `NextLexeme` | method | [207](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L207) · [body 629](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L629) | [`SSYacc.NextLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L820) | 🟢 ported |  |
+| `Shift` | method | [208](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L208) · [body 855](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L855) | [`SSYacc.Shift`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L823) | 🟢 ported |  |
+| `StackElement` | method | [209](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L209) · [body 641](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L641) | [`SSYacc.StackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L824) | 🟢 ported |  |
+| `LarLook` | method | [210](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L210) · [body 579](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L579) | [`SSYacc.LarLook`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L825) | 🟢 ported |  |
+| `Error` | method | [211](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L211) · [body 876](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L876) | [`SSYacc.Error`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L829) | 🟢 ported |  |
+| `LarError` | method | [212](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L212) · [body 568](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L568) | [`SSYacc.LarError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L836) | 🟢 ported |  |
+| `Reduce` | method | [213](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L213) · [body 573](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L573) | [`SSYacc.Reduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L840) | 🟢 ported |  |
+| `Destroy` | destructor | [215](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L215) · [body 1022](../../../Source/ObjectSpace/Ocl/BoldSSYaccU.pas#L1022) | [`SSYacc.SetEof`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L392) | 🔵 replaced: Released the lexemes, stack and cache; the garbage collector does that in .NET. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`SSSetOfLongint.Incr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L66) (field)
+- [`SSSetOfLongint.Size`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L67) (field)
+- [`SSSetOfLongint.Count`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L68) (field)
+- [`SSSetOfLongint.PArray`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L69) (field)
+- [`SSYaccStackElement.Lexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L117) (field)
+- [`SSYaccStackElement.State`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L118) (field)
+- [`SSYaccStackElement.Use`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L119) (field)
+- [`SSYaccTable.LarTableList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L186) (field)
+- [`SSYaccTable.Size`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L187) (field)
+- [`SSYaccTable.PPRowArray`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L188) (field)
+- [`SSYaccTable.PTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L189) (field)
+- [`SSYaccTable.PProdArray`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L190) (field)
+- [`SSYaccTable.RowFlags`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L289) (method)
+- [`SSYaccTable.RowGotos`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L290) (method)
+- [`SSYaccTable.RowActions`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L291) (method)
+- [`SSYaccTable.ProdSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L300) (method)
+- [`SSYaccTable.ProdLeftside`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L301) (method)
+- [`SSYacc.Lex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L346) (field)
+- [`SSYacc.ErrorInd`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L347) (field)
+- [`SSYacc.AbortInd`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L348) (field)
+- [`SSYacc.EndOfInput`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L349) (field)
+- [`SSYacc.Cache`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L350) (field)
+- [`SSYacc.State`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L351) (field)
+- [`SSYacc.ShiftedSinceError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L352) (field)
+- [`SSYacc.Leftside`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L353) (field)
+- [`SSYacc.Production`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L354) (field)
+- [`SSYacc.ProductionSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L355) (field)
+- [`SSYacc.Table`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L356) (field)
+- [`SSYacc.Lookahead`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L357) (field)
+- [`SSYacc.LarLookahead`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L358) (field)
+- [`SSYacc.Stack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L359) (field)
+- [`SSYacc.EndLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L360) (field)
+- [`SSYacc.Action`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L361) (field)
+- [`SSYacc.LexemeCache`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L362) (field)
+- [`SSYacc.Element`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L363) (field)
+- [`SSYacc.ExprList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L364) (field)
 
 ## Dependencies
 

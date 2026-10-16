@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldSSLexU.pas`](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas) (1125 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 109 symbols done, 0 verified |
+| Status | 🟢 ported: 109 of 109 symbols done, 0 verified |
 
-⚪ 109 not started
+🟢 81 ported · 🔵 27 replaced · ⚫ 1 dropped
 
 ## Unit level
 
@@ -18,171 +18,225 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SSAux` | routine | [11](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L11) · [body 1117](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1117) |  | ⚪ not started |  |
-| `SSHugeInc` | routine | [13](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L13) · [body 654](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L654) |  | ⚪ not started |  |
-| `SSHugeCopy` | routine | [14](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L14) · [body 805](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L805) |  | ⚪ not started |  |
-| `SSHugeIncVal` | const | [21](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L21) |  | ⚪ not started |  |
-| `SSLexMaxRead` | const | [22](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L22) |  | ⚪ not started |  |
-| `SSLexMaxCopy` | const | [23](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L23) |  | ⚪ not started |  |
-| `SSLexConsumerBof` | const | [24](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L24) |  | ⚪ not started |  |
-| `SSLexMaxBlock` | const | [25](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L25) |  | ⚪ not started |  |
-| `SSLexStateInvalid` | const | [26](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L26) |  | ⚪ not started |  |
-| `SSLexBufferMax` | const | [27](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L27) |  | ⚪ not started |  |
-| `SSLexThreshold` | const | [28](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L28) |  | ⚪ not started |  |
-| `SSLexStructMax` | const | [29](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L29) |  | ⚪ not started |  |
-| `SSLexPairTable` | const | [30](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L30) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsContextStart` | const | [31](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L31) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsStartOfLine` | const | [32](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L32) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsPop` | const | [33](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L33) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsFinal` | const | [34](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L34) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsPush` | const | [35](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L35) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsIgnore` | const | [36](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L36) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsContextEnd` | const | [37](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L37) |  | ⚪ not started |  |
-| `SSLexFinalStateFlagsReduce` | const | [38](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L38) |  | ⚪ not started |  |
-| `SSLexMsgFileOpen` | const | [40](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L40) |  | ⚪ not started |  |
-| `SSLexMsgFileRead` | const | [41](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L41) |  | ⚪ not started |  |
-| `SSLexMsgLexemeLength` | const | [42](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L42) |  | ⚪ not started |  |
-| `SSLexMsgBadTable` | const | [43](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L43) |  | ⚪ not started |  |
-| `SSLexMsgError` | const | [44](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L44) |  | ⚪ not started |  |
-| `SSLexMsgBadList` | const | [45](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L45) |  | ⚪ not started |  |
-| `SSLexMsgMissingPart` | const | [46](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L46) |  | ⚪ not started |  |
-| `SSLexMsgFindResource` | const | [47](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L47) |  | ⚪ not started |  |
-| `SSLexMsgBadResource` | const | [48](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L48) |  | ⚪ not started |  |
-| `SSLifoMsgStackTop` | const | [50](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L50) |  | ⚪ not started |  |
-| `SSLifoMsgStackPop` | const | [51](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L51) |  | ⚪ not started |  |
-| `SSLexMsgOutOfMemory` | const | [53](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L53) |  | ⚪ not started |  |
-| `SSArrayOfPointer` | array | [56](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L56) |  | ⚪ not started |  |
-| `PSSArrayOfPointer` | pointer | [57](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L57) |  | ⚪ not started |  |
-| `SSStack` | class | [61](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L61) |  | ⚪ not started |  |
-| `SSLexTableBase` | record | [79](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L79) |  | ⚪ not started |  |
-| `SSLexTableHeader` | record | [86](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L86) |  | ⚪ not started |  |
-| `SSLexTableRow` | record | [98](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L98) |  | ⚪ not started |  |
-| `SSLexTableRowEntry` | record | [103](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L103) |  | ⚪ not started |  |
-| `SSLexTableIndex` | record | [110](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L110) |  | ⚪ not started |  |
-| `SSLexFinalState` | record | [115](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L115) |  | ⚪ not started |  |
-| `PSSLexTableBase` | pointer | [123](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L123) |  | ⚪ not started |  |
-| `PSSLexTableHeader` | pointer | [124](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L124) |  | ⚪ not started |  |
-| `PSSLexTableRow` | pointer | [125](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L125) |  | ⚪ not started |  |
-| `PSSLexTableRowEntry` | pointer | [126](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L126) |  | ⚪ not started |  |
-| `PSSLexTableIndex` | pointer | [127](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L127) |  | ⚪ not started |  |
-| `PSSLexFinalState` | pointer | [128](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L128) |  | ⚪ not started |  |
-| `SSLexRowArray` | array | [129](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L129) |  | ⚪ not started |  |
-| `SSLexFinalArray` | array | [130](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L130) |  | ⚪ not started |  |
-| `SSLexRowOffsetArray` | array | [131](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L131) |  | ⚪ not started |  |
-| `SSLexRowEntryArray` | array | [132](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L132) |  | ⚪ not started |  |
-| `PSSLexRowArray` | pointer | [133](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L133) |  | ⚪ not started |  |
-| `PSSLexFinalArray` | pointer | [134](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L134) |  | ⚪ not started |  |
-| `PSSLexRowOffsetArray` | pointer | [135](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L135) |  | ⚪ not started |  |
-| `PSSLexRowEntryArray` | pointer | [136](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L136) |  | ⚪ not started |  |
-| `SSLexExpressionList` | class | [139](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L139) |  | ⚪ not started |  |
-| `SSLexExpressionListStack` | class | [159](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L159) |  | ⚪ not started |  |
-| `SSLexTable` | class | [166](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L166) |  | ⚪ not started |  |
-| `SSLexLexeme` | class | [178](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L178) |  | ⚪ not started |  |
-| `SSLexConsumerMode` | enum | [194](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L194) |  | ⚪ not started |  |
-| `SSLexConsumer` | class | [195](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L195) |  | ⚪ not started |  |
-| `SSLexStringConsumer` | class | [239](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L239) |  | ⚪ not started |  |
-| `SSLexFileConsumer` | class | [245](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L245) |  | ⚪ not started |  |
-| `SSLex` | class | [259](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L259) |  | ⚪ not started |  |
+| `SSAux` | routine | [11](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L11) · [body 1117](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1117) | [`BoldSSLexU.SSAux`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L69) | 🟢 ported |  |
+| `SSHugeInc` | routine | [13](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L13) · [body 654](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L654) | [`BoldSSLexU.SSHugeInc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L75) | 🟢 ported: Offsets into a byte array stand for pointers. |  |
+| `SSHugeCopy` | routine | [14](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L14) · [body 805](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L805) | [`BoldSSLexU.SSHugeCopy`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L78) | 🟢 ported: Copies between byte arrays at offsets. |  |
+| `SSHugeIncVal` | const | [21](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L21) | [`BoldSSLexU.SSHugeIncVal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L36) | 🟢 ported |  |
+| `SSLexMaxRead` | const | [22](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L22) | [`BoldSSLexU.SSLexMaxRead`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L37) | 🟢 ported |  |
+| `SSLexMaxCopy` | const | [23](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L23) | [`BoldSSLexU.SSLexMaxCopy`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L38) | 🟢 ported |  |
+| `SSLexConsumerBof` | const | [24](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L24) | [`BoldSSLexU.SSLexConsumerBof`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L39) | 🟢 ported |  |
+| `SSLexMaxBlock` | const | [25](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L25) | [`BoldSSLexU.SSLexMaxBlock`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L40) | 🟢 ported |  |
+| `SSLexStateInvalid` | const | [26](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L26) | [`BoldSSLexU.SSLexStateInvalid`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L41) | 🟢 ported |  |
+| `SSLexBufferMax` | const | [27](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L27) | [`BoldSSLexU.SSLexBufferMax`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L42) | 🟢 ported |  |
+| `SSLexThreshold` | const | [28](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L28) | [`BoldSSLexU.SSLexThreshold`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L43) | 🟢 ported |  |
+| `SSLexStructMax` | const | [29](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L29) | [`BoldSSLexU.SSLexStructMax`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L44) | 🟢 ported |  |
+| `SSLexPairTable` | const | [30](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L30) | [`BoldSSLexU.SSLexPairTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L45) | 🟢 ported |  |
+| `SSLexFinalStateFlagsContextStart` | const | [31](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L31) | [`BoldSSLexU.SSLexFinalStateFlagsContextStart`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L46) | 🟢 ported |  |
+| `SSLexFinalStateFlagsStartOfLine` | const | [32](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L32) | [`BoldSSLexU.SSLexFinalStateFlagsStartOfLine`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L47) | 🟢 ported |  |
+| `SSLexFinalStateFlagsPop` | const | [33](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L33) | [`BoldSSLexU.SSLexFinalStateFlagsPop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L48) | 🟢 ported |  |
+| `SSLexFinalStateFlagsFinal` | const | [34](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L34) | [`BoldSSLexU.SSLexFinalStateFlagsFinal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L49) | 🟢 ported |  |
+| `SSLexFinalStateFlagsPush` | const | [35](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L35) | [`BoldSSLexU.SSLexFinalStateFlagsPush`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L50) | 🟢 ported |  |
+| `SSLexFinalStateFlagsIgnore` | const | [36](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L36) | [`BoldSSLexU.SSLexFinalStateFlagsIgnore`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L51) | 🟢 ported |  |
+| `SSLexFinalStateFlagsContextEnd` | const | [37](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L37) | [`BoldSSLexU.SSLexFinalStateFlagsContextEnd`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L52) | 🟢 ported |  |
+| `SSLexFinalStateFlagsReduce` | const | [38](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L38) | [`BoldSSLexU.SSLexFinalStateFlagsReduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L53) | 🟢 ported |  |
+| `SSLexMsgFileOpen` | const | [40](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L40) | [`BoldSSLexU.SSLexMsgFileOpen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L54) | 🟢 ported |  |
+| `SSLexMsgFileRead` | const | [41](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L41) | [`BoldSSLexU.SSLexMsgFileRead`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L55) | 🟢 ported |  |
+| `SSLexMsgLexemeLength` | const | [42](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L42) | [`BoldSSLexU.SSLexMsgLexemeLength`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L56) | 🟢 ported |  |
+| `SSLexMsgBadTable` | const | [43](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L43) | [`BoldSSLexU.SSLexMsgBadTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L57) | 🟢 ported |  |
+| `SSLexMsgError` | const | [44](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L44) | [`BoldSSLexU.SSLexMsgError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L58) | 🟢 ported |  |
+| `SSLexMsgBadList` | const | [45](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L45) | [`BoldSSLexU.SSLexMsgBadList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L59) | 🟢 ported |  |
+| `SSLexMsgMissingPart` | const | [46](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L46) | [`BoldSSLexU.SSLexMsgMissingPart`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L60) | 🟢 ported |  |
+| `SSLexMsgFindResource` | const | [47](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L47) | [`BoldSSLexU.SSLexMsgFindResource`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L61) | 🟢 ported |  |
+| `SSLexMsgBadResource` | const | [48](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L48) | [`BoldSSLexU.SSLexMsgBadResource`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L62) | 🟢 ported |  |
+| `SSLifoMsgStackTop` | const | [50](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L50) | [`BoldSSLexU.SSLifoMsgStackTop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L63) | 🟢 ported |  |
+| `SSLifoMsgStackPop` | const | [51](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L51) | [`BoldSSLexU.SSLifoMsgStackPop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L64) | 🟢 ported |  |
+| `SSLexMsgOutOfMemory` | const | [53](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L53) | [`BoldSSLexU.SSLexMsgOutOfMemory`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L65) | 🟢 ported |  |
+| `SSArrayOfPointer` | array | [56](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L56) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L8) | 🔵 replaced: SSStack keeps a List&lt;object?&gt;. |  |
+| `PSSArrayOfPointer` | pointer | [57](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L57) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L9) | 🔵 replaced: No pointers; SSStack keeps a List&lt;object?&gt;. |  |
+| `SSStack` | class | [61](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L61) | [`SSStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L87) | 🟢 ported |  |
+| `SSLexTableBase` | record | [79](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L79) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L10) | 🔵 replaced: Read from the table bytes: Size at 0, TableType at 4, 36 bytes in all (SSLexTable.BaseSize). |  |
+| `SSLexTableHeader` | record | [86](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L86) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L11) | 🔵 replaced: Read from the table bytes: TableType 0, Size 4, Rows 40, Push 44, Index 48, Final 52 (SSLexExpressionList). |  |
+| `SSLexTableRow` | record | [98](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L98) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L12) | 🔵 replaced: Read from the table bytes: a row is its entry count followed by the entries. |  |
+| `SSLexTableRowEntry` | record | [103](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L103) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L13) | 🔵 replaced: Read from the table bytes: StartPoint, EndPoint, State (12 bytes). |  |
+| `SSLexTableIndex` | record | [110](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L110) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L14) | 🔵 replaced: Read from the table bytes as the row offsets. |  |
+| `SSLexFinalState` | record | [115](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L115) | [`SSLexFinalState`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L133) | 🟢 ported |  |
+| `PSSLexTableBase` | pointer | [123](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L123) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L15) | 🔵 replaced: No pointers: byte offsets into the table. |  |
+| `PSSLexTableHeader` | pointer | [124](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L124) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L16) | 🔵 replaced: No pointers: byte offsets into the table. |  |
+| `PSSLexTableRow` | pointer | [125](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L125) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L17) | 🔵 replaced: No pointers: byte offsets into the table. |  |
+| `PSSLexTableRowEntry` | pointer | [126](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L126) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L18) | 🔵 replaced: No pointers: byte offsets into the table. |  |
+| `PSSLexTableIndex` | pointer | [127](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L127) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L19) | 🔵 replaced: No pointers: byte offsets into the table. |  |
+| `PSSLexFinalState` | pointer | [128](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L128) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L20) | 🔵 replaced: LookupFinal returns the SSLexFinalState struct read from the table. |  |
+| `SSLexRowArray` | array | [129](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L129) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L21) | 🔵 replaced: An int[] of row offsets (SSLexExpressionList.PPRows). |  |
+| `SSLexFinalArray` | array | [130](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L130) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L22) | 🔵 replaced: Read from the table bytes at PFinalStates. |  |
+| `SSLexRowOffsetArray` | array | [131](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L131) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L23) | 🔵 replaced: Read from the table bytes at Index. |  |
+| `SSLexRowEntryArray` | array | [132](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L132) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L24) | 🔵 replaced: Read from the table bytes after each row's count. |  |
+| `PSSLexRowArray` | pointer | [133](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L133) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L25) | 🔵 replaced: No pointers: an int[] of row offsets. |  |
+| `PSSLexFinalArray` | pointer | [134](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L134) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L26) | 🔵 replaced: No pointers: a byte offset into the table. |  |
+| `PSSLexRowOffsetArray` | pointer | [135](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L135) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L27) | 🔵 replaced: No pointers: a byte offset into the table. |  |
+| `PSSLexRowEntryArray` | pointer | [136](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L136) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L28) | 🔵 replaced: No pointers: a byte offset into the table. |  |
+| `SSLexExpressionList` | class | [139](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L139) | [`SSLexExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L137) | 🟢 ported |  |
+| `SSLexExpressionListStack` | class | [159](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L159) | [`SSLexExpressionListStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L234) | 🟢 ported |  |
+| `SSLexTable` | class | [166](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L166) | [`SSLexTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L242) | 🟢 ported |  |
+| `SSLexLexeme` | class | [178](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L178) | [`SSLexLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L310) | 🟢 ported |  |
+| `SSLexConsumerMode` | enum | [194](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L194) | [`SSLexConsumerMode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L348) | 🟢 ported |  |
+| `SSLexConsumer` | class | [195](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L195) | [`SSLexConsumer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L356) | 🟢 ported |  |
+| `SSLexStringConsumer` | class | [239](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L239) | [`SSLexStringConsumer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L521) | 🟢 ported |  |
+| `SSLexFileConsumer` | class | [245](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L245) | [`[assembly: Delphi] in BoldSSLexU.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L29) | ⚫ dropped: Its methods are commented out in Delphi; it adds only a Handle field. |  |
+| `SSLex` | class | [259](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L259) | [`SSLex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L535) | 🟢 ported |  |
 
 ## SSStack
 
-class at [line 61](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L61); 🟢 ported, C# [`SSStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L87).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [68](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L68) · [body 1049](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1049) |  | ⚪ not started |  |
-| `Pop` | method | [69](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L69) · [body 1058](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1058) |  | ⚪ not started |  |
-| `Top` | method | [71](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L71) · [body 1075](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1075) |  | ⚪ not started |  |
-| `Push` | method | [72](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L72) · [body 1087](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1087) |  | ⚪ not started |  |
-| `Destroy` | destructor | [73](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L73) · [body 1108](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1108) |  | ⚪ not started |  |
+| `Create` | constructor | [68](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L68) · [body 1049](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1049) | [`SSStack.SSStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L95) | 🟢 ported |  |
+| `Pop` | method | [69](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L69) · [body 1058](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1058) | [`SSStack.Pop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L104) | 🟢 ported |  |
+| `Top` | method | [71](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L71) · [body 1075](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1075) | [`SSStack.Top`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L116) | 🟢 ported |  |
+| `Push` | method | [72](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L72) · [body 1087](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1087) | [`SSStack.Push`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L119) | 🟢 ported |  |
+| `Destroy` | destructor | [73](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L73) · [body 1108](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1108) | [`SSStack.Pop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L104) | 🔵 replaced: Freed the pointer array; the garbage collector does that in .NET. |  |
 
 ## SSLexExpressionList
 
-class at [line 139](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L139); ⚪ not started.
+class at [line 139](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L139); 🟢 ported, C# [`SSLexExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L137).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [149](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L149) · [body 868](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L868) |  | ⚪ not started |  |
-| `CreateBuffer` | constructor | [150](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L150) · [body 759](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L759) |  | ⚪ not started |  |
-| `Open` | method | [151](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L151) · [body 793](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L793) |  | ⚪ not started |  |
-| `Destroy` | destructor | [152](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L152) · [body 874](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L874) |  | ⚪ not started |  |
-| `LookupState` | method | [154](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L154) · [body 811](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L811) |  | ⚪ not started |  |
-| `LookupFinal` | method | [155](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L155) · [body 846](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L846) |  | ⚪ not started |  |
+| `Create` | constructor | [149](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L149) · [body 868](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L868) | [`SSLexExpressionList.SSLexExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L151) | 🟢 ported |  |
+| `CreateBuffer` | constructor | [150](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L150) · [body 759](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L759) | [`SSLexExpressionList.CreateBuffer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L158) | 🟢 ported |  |
+| `Open` | method | [151](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L151) · [body 793](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L793) | [`SSLexExpressionList.Open`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L184) | 🟢 ported |  |
+| `Destroy` | destructor | [152](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L152) · [body 874](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L874) | [`SSLexExpressionList.Open`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L184) | 🔵 replaced: Freed the buffer; the garbage collector does that in .NET. |  |
+| `LookupState` | method | [154](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L154) · [body 811](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L811) | [`SSLexExpressionList.LookupState`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L196) | 🟢 ported |  |
+| `LookupFinal` | method | [155](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L155) · [body 846](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L846) | [`SSLexExpressionList.LookupFinal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L225) | 🟢 ported |  |
 
 ## SSLexExpressionListStack
 
-class at [line 159](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L159); ⚪ not started.
+class at [line 159](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L159); 🟢 ported, C# [`SSLexExpressionListStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L234).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Top` | method | [161](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L161) · [body 1039](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1039) |  | ⚪ not started |  |
-| `Push` | method | [162](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L162) · [body 1044](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1044) |  | ⚪ not started |  |
+| `Top` | method | [161](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L161) · [body 1039](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1039) | [`SSLexExpressionListStack.Top`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L236) | 🟢 ported |  |
+| `Push` | method | [162](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L162) · [body 1044](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1044) | [`SSLexExpressionListStack.Push`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L237) | 🟢 ported |  |
 
 ## SSLexTable
 
-class at [line 166](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L166); ⚪ not started.
+class at [line 166](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L166); 🟢 ported, C# [`SSLexTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L242).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [171](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L171) · [body 659](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L659) |  | ⚪ not started |  |
-| `CreateResource` | constructor | [172](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L172) · [body 701](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L701) |  | ⚪ not started |  |
-| `GetExpressionList` | method | [173](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L173) · [body 781](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L781) |  | ⚪ not started |  |
-| `Destroy` | destructor | [174](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L174) · [body 851](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L851) |  | ⚪ not started |  |
+| `Create` | constructor | [171](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L171) · [body 659](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L659) | [`SSLexTable.SSLexTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L251) | 🟢 ported |  |
+| `CreateResource` | constructor | [172](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L172) · [body 701](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L701) | [`SSLexTable.CreateResource`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L268) | 🟢 ported: Takes the resource's bytes (a manifest resource here) where Delphi takes a module handle and resource names. |  |
+| `GetExpressionList` | method | [173](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L173) · [body 781](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L781) | [`SSLexTable.GetExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L302) | 🟢 ported |  |
+| `Destroy` | destructor | [174](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L174) · [body 851](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L851) | [`SSLexTable.GetExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L302) | 🔵 replaced: Freed the lists; the garbage collector does that in .NET. |  |
 
 ## SSLexLexeme
 
-class at [line 178](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L178); ⚪ not started.
+class at [line 178](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L178); 🟢 ported, C# [`SSLexLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L310).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [187](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L187) · [body 616](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L616) |  | ⚪ not started |  |
-| `RefInc` | method | [188](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L188) · [body 628](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L628) |  | ⚪ not started |  |
-| `RefDec` | method | [189](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L189) · [body 634](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L634) |  | ⚪ not started |  |
-| `Destroy` | destructor | [190](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L190) · [body 641](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L641) |  | ⚪ not started |  |
+| `Create` | constructor | [187](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L187) · [body 616](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L616) | [`SSLexLexeme.SSLexLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L320) | 🟢 ported |  |
+| `RefInc` | method | [188](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L188) · [body 628](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L628) | [`SSLexLexeme.RefInc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L331) | 🟢 ported |  |
+| `RefDec` | method | [189](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L189) · [body 634](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L634) | [`SSLexLexeme.RefDec`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L338) | 🟢 ported |  |
+| `Destroy` | destructor | [190](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L190) · [body 641](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L641) | [`SSLexLexeme.RefInc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L331) | 🔵 replaced: Freed the text; the garbage collector does that in .NET. |  |
 
 ## SSLexConsumer
 
-class at [line 195](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L195); ⚪ not started.
+class at [line 195](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L195); 🟢 ported, C# [`SSLexConsumer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L356).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [218](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L218) · [body 290](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L290) |  | ⚪ not started |  |
-| `Destroy` | destructor | [220](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L220) · [body 304](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L304) |  | ⚪ not started |  |
-| `Next` | method | [222](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L222) · [body 360](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L360) |  | ⚪ not started |  |
-| `NextBuffer` | method | [223](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L223) · [body 649](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L649) |  | ⚪ not started |  |
-| `MarkFinal` | method | [225](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L225) · [body 311](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L311) |  | ⚪ not started |  |
-| `FlushLexeme` | method | [226](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L226) · [body 341](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L341) |  | ⚪ not started |  |
-| `FlushLexemeAll` | method | [227](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L227) · [body 351](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L351) |  | ⚪ not started |  |
-| `SetContextFinal` | method | [228](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L228) · [body 325](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L325) |  | ⚪ not started |  |
-| `MarkContextFinal` | method | [229](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L229) · [body 318](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L318) |  | ⚪ not started |  |
-| `FlushStartOfLine` | method | [230](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L230) · [body 332](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L332) |  | ⚪ not started |  |
-| `Lexeme` | method | [231](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L231) · [body 600](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L600) |  | ⚪ not started |  |
-| `LexemeAll` | method | [232](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L232) · [body 609](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L609) |  | ⚪ not started |  |
+| `Create` | constructor | [218](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L218) · [body 290](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L290) | [`SSLexConsumer.SSLexConsumer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L380) | 🟢 ported |  |
+| `Destroy` | destructor | [220](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L220) · [body 304](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L304) | [`SSLexConsumer.MarkFinal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L393) | 🔵 replaced: Freed the buffer; the garbage collector does that in .NET. |  |
+| `Next` | method | [222](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L222) · [body 360](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L360) | [`SSLexConsumer.Next`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L448) | 🟢 ported |  |
+| `NextBuffer` | method | [223](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L223) · [body 649](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L649) | [`SSLexConsumer.NextBuffer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L497) | 🟢 ported |  |
+| `MarkFinal` | method | [225](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L225) · [body 311](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L311) | [`SSLexConsumer.MarkFinal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L393) | 🟢 ported |  |
+| `FlushLexeme` | method | [226](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L226) · [body 341](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L341) | [`SSLexConsumer.FlushLexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L427) | 🟢 ported |  |
+| `FlushLexemeAll` | method | [227](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L227) · [body 351](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L351) | [`SSLexConsumer.FlushLexemeAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L438) | 🟢 ported |  |
+| `SetContextFinal` | method | [228](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L228) · [body 325](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L325) | [`SSLexConsumer.SetContextFinal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L409) | 🟢 ported |  |
+| `MarkContextFinal` | method | [229](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L229) · [body 318](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L318) | [`SSLexConsumer.MarkContextFinal`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L401) | 🟢 ported |  |
+| `FlushStartOfLine` | method | [230](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L230) · [body 332](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L332) | [`SSLexConsumer.FlushStartOfLine`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L417) | 🟢 ported |  |
+| `Lexeme` | method | [231](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L231) · [body 600](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L600) | [`SSLexConsumer.Lexeme`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L501) | 🟢 ported |  |
+| `LexemeAll` | method | [232](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L232) · [body 609](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L609) | [`SSLexConsumer.LexemeAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L511) | 🟢 ported |  |
 
 ## SSLexStringConsumer
 
-class at [line 239](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L239); ⚪ not started.
+class at [line 239](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L239); 🟢 ported, C# [`SSLexStringConsumer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L521).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [241](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L241) · [body 476](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L476) |  | ⚪ not started |  |
+| `Create` | constructor | [241](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L241) · [body 476](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L476) | [`SSLexStringConsumer.SSLexStringConsumer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L524) | 🟢 ported |  |
 
 ## SSLex
 
-class at [line 259](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L259); ⚪ not started.
+class at [line 259](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L259); 🟢 ported, C# [`SSLex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L535).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [267](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L267) · [body 881](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L881) |  | ⚪ not started |  |
-| `PopExpressionList` | method | [269](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L269) · [body 904](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L904) |  | ⚪ not started |  |
-| `Next` | method | [270](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L270) · [body 910](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L910) |  | ⚪ not started |  |
-| `PushExpressionList` | method | [271](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L271) · [body 990](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L990) |  | ⚪ not started |  |
-| `GotoExpressionList` | method | [272](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L272) · [body 996](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L996) |  | ⚪ not started |  |
-| `ProcessExpressionList` | method | [273](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L273) · [body 979](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L979) |  | ⚪ not started |  |
-| `Error` | method | [276](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L276) · [body 1011](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1011) |  | ⚪ not started |  |
-| `Complete` | method | [277](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L277) · [body 1027](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1027) |  | ⚪ not started |  |
-| `TokenToString` | method | [278](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L278) · [body 1022](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1022) |  | ⚪ not started |  |
-| `Destroy` | destructor | [279](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L279) · [body 1033](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1033) |  | ⚪ not started |  |
+| `Create` | constructor | [267](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L267) · [body 881](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L881) | [`SSLex.SSLex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L545) | 🟢 ported |  |
+| `PopExpressionList` | method | [269](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L269) · [body 904](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L904) | [`SSLex.PopExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L561) | 🟢 ported |  |
+| `Next` | method | [270](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L270) · [body 910](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L910) | [`SSLex.Next`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L569) | 🟢 ported |  |
+| `PushExpressionList` | method | [271](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L271) · [body 990](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L990) | [`SSLex.PushExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L646) | 🟢 ported |  |
+| `GotoExpressionList` | method | [272](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L272) · [body 996](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L996) | [`SSLex.GotoExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L653) | 🟢 ported |  |
+| `ProcessExpressionList` | method | [273](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L273) · [body 979](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L979) | [`SSLex.ProcessExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L660) | 🟢 ported: Takes the final state as a value where Delphi takes a pointer to it. |  |
+| `Error` | method | [276](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L276) · [body 1011](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1011) | [`SSLex.Error`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L680) | 🟢 ported |  |
+| `Complete` | method | [277](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L277) · [body 1027](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1027) | [`SSLex.Complete`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L688) | 🟢 ported |  |
+| `TokenToString` | method | [278](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L278) · [body 1022](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1022) | [`SSLex.TokenToString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L696) | 🟢 ported |  |
+| `Destroy` | destructor | [279](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L279) · [body 1033](../../../Source/ObjectSpace/Ocl/BoldSSLexU.pas#L1033) | [`SSLex.PopExpressionList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L561) | 🔵 replaced: Freed the stack; the garbage collector does that in .NET. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldSSLexU.ReadInt`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L82) (method)
+- [`SSStack.Incr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L89) (field)
+- [`SSStack.Size`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L90) (field)
+- [`SSStack.TopOfStack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L91) (field)
+- [`SSStack.PArray`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L92) (field)
+- [`SSLexExpressionList.Buffer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L139) (field)
+- [`SSLexExpressionList.Size`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L140) (field)
+- [`SSLexExpressionList.Index`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L141) (field)
+- [`SSLexExpressionList.Final`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L142) (field)
+- [`SSLexExpressionList.Rows`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L143) (field)
+- [`SSLexExpressionList.PPRows`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L144) (field)
+- [`SSLexExpressionList.PFinalStates`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L145) (field)
+- [`SSLexExpressionList.HeaderSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L147) (const)
+- [`SSLexExpressionList.FinalStateSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L148) (const)
+- [`SSLexExpressionList.ReadHeader`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L172) (method)
+- [`SSLexTable.BaseSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L244) (const)
+- [`SSLexTable.ExpressionLists`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L246) (field)
+- [`SSLexTable.NumLists`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L247) (field)
+- [`SSLexLexeme.Buffer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L312) (field)
+- [`SSLexLexeme.Use`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L313) (field)
+- [`SSLexLexeme.Line`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L314) (field)
+- [`SSLexLexeme.Offset`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L315) (field)
+- [`SSLexLexeme.Length`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L316) (field)
+- [`SSLexLexeme.Token`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L317) (field)
+- [`SSLexConsumer.Buffer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L358) (field)
+- [`SSLexConsumer.Bof`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L359) (field)
+- [`SSLexConsumer.Line`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L360) (field)
+- [`SSLexConsumer.Offset`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L361) (field)
+- [`SSLexConsumer.BuffLen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L362) (field)
+- [`SSLexConsumer.BuffInc`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L363) (field)
+- [`SSLexConsumer.Current`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L364) (field)
+- [`SSLexConsumer.MarkLine`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L365) (field)
+- [`SSLexConsumer.MarkOffset`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L366) (field)
+- [`SSLexConsumer.ScanLine`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L367) (field)
+- [`SSLexConsumer.ScanOffset`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L368) (field)
+- [`SSLexConsumer.EndOfData`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L369) (field)
+- [`SSLexConsumer.Start`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L370) (field)
+- [`SSLexConsumer.Index`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L371) (field)
+- [`SSLexConsumer.DataLen`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L372) (field)
+- [`SSLexConsumer.Mark`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L373) (field)
+- [`SSLexConsumer.MarkContext`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L374) (field)
+- [`SSLexConsumer.MarkContextLine`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L375) (field)
+- [`SSLexConsumer.MarkContextOffset`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L376) (field)
+- [`SSLexConsumer.Mode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L377) (field)
+- [`SSLex.State`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L537) (field)
+- [`SSLex.Table`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L538) (field)
+- [`SSLex.Consumer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L539) (field)
+- [`SSLex.List`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L540) (field)
+- [`SSLex.Stack`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSLexU.cs#L541) (field)
 
 ## Dependencies
 

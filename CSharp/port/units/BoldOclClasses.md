@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldOclClasses.pas`](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas) (1116 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 180 symbols done, 0 verified |
+| Status | 🟢 ported: 180 of 180 symbols done, 0 verified |
 
-⚪ 180 not started
+🟢 176 ported · 🔵 4 replaced
 
 ## Unit level
 
@@ -18,361 +18,404 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBOCollectionKind` | enum | [15](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L15) |  | ⚪ not started |  |
-| `TBoldOCLIteratorSpecifier` | enum | [16](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L16) |  | ⚪ not started |  |
-| `TBoldOclDeduceMethod` | enum | [18](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L18) |  | ⚪ not started |  |
-| `TBoldOCL_Operation` | event type | [22](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L22) |  | ⚪ not started |  |
-| `TBoldOClSymbolClass` | class reference | [43](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L43) |  | ⚪ not started |  |
-| `TBoldOclSymbolParameters` | record | [48](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L48) |  | ⚪ not started |  |
-| `TBoldOclNodeList` | class | [59](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L59) |  | ⚪ not started |  |
-| `TBoldOclEnvironment` | class | [79](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L79) |  | ⚪ not started |  |
-| `TBoldOclVisitor` | class | [100](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L100) |  | ⚪ not started |  |
-| `TBoldOclNode` | class | [123](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L123) |  | ⚪ not started |  |
-| `TBoldOclTypeNode` | class | [140](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L140) |  | ⚪ not started |  |
-| `TBoldOCLListCoercion` | class | [147](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L147) |  | ⚪ not started |  |
-| `TBoldOclOperation` | class | [155](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L155) |  | ⚪ not started |  |
-| `TBoldOclIteration` | class | [167](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L167) |  | ⚪ not started |  |
-| `TBoldOclMember` | class | [175](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L175) |  | ⚪ not started |  |
-| `TBoldOclMethod` | class | [189](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L189) |  | ⚪ not started |  |
-| `TBoldOclVariableBinding` | class | [198](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L198) |  | ⚪ not started |  |
-| `TBoldOclVariableReference` | class | [209](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L209) |  | ⚪ not started |  |
-| `TBoldOclLiteral` | class | [217](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L217) |  | ⚪ not started |  |
-| `TBoldOclCollectionLiteral` | class | [223](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L223) |  | ⚪ not started |  |
-| `TBoldOclStrLiteral` | class | [234](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L234) |  | ⚪ not started |  |
-| `TBoldOclNumericLiteral` | class | [241](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L241) |  | ⚪ not started |  |
-| `TBoldOclIntLiteral` | class | [248](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L248) |  | ⚪ not started |  |
-| `TBoldOCLMomentLiteral` | class | [255](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L255) |  | ⚪ not started |  |
-| `TBoldOclDateLiteral` | class | [263](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L263) |  | ⚪ not started |  |
-| `TBoldOclTimeLiteral` | class | [273](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L273) |  | ⚪ not started |  |
-| `TBoldOclEnumLiteral` | class | [283](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L283) |  | ⚪ not started |  |
-| `TBoldSymbolDictionary` | class | [290](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L290) |  | ⚪ not started |  |
-| `TBoldOclSymbolHelp` | class | [304](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L304) |  | ⚪ not started |  |
-| `TBoldOclSymbol` | class | [362](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L362) |  | ⚪ not started |  |
-| `TSymbolNameIndex` | class, implementation | [1019](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1019) |  | ⚪ not started |  |
+| `TBOCollectionKind` | enum | [15](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L15) | [`TBOCollectionKind`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L14) | 🟢 ported |  |
+| `TBoldOCLIteratorSpecifier` | enum | [16](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L16) | [`TBoldOCLIteratorSpecifier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L23) | 🟢 ported |  |
+| `TBoldOclDeduceMethod` | enum | [18](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L18) | [`TBoldOclDeduceMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L39) | 🟢 ported |  |
+| `TBoldOCL_Operation` | event type | [22](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L22) | [`TBoldOCL_Operation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L59) | 🟢 ported |  |
+| `TBoldOClSymbolClass` | class reference | [43](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L43) | [`[assembly: Delphi] in BoldOclClasses.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L8) | 🔵 replaced: Class references become System.Type or factory delegates; the symbol table holds instances. |  |
+| `TBoldOclSymbolParameters` | record | [48](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L48) | [`TBoldOclSymbolParameters`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L63) | 🟢 ported: A class where Delphi has a record passed as const (by reference). |  |
+| `TBoldOclNodeList` | class | [59](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L59) | [`TBoldOclNodeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L75) | 🟢 ported |  |
+| `TBoldOclEnvironment` | class | [79](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L79) | [`TBoldOclEnvironment`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L147) | 🟢 ported |  |
+| `TBoldOclVisitor` | class | [100](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L100) | [`TBoldOclVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L223) | 🟢 ported |  |
+| `TBoldOclNode` | class | [123](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L123) | [`TBoldOclNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L247) | 🟢 ported |  |
+| `TBoldOclTypeNode` | class | [140](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L140) | [`TBoldOclTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L305) | 🟢 ported |  |
+| `TBoldOCLListCoercion` | class | [147](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L147) | [`TBoldOCLListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L313) | 🟢 ported |  |
+| `TBoldOclOperation` | class | [155](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L155) | [`TBoldOclOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L330) | 🟢 ported |  |
+| `TBoldOclIteration` | class | [167](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L167) | [`TBoldOclIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L360) | 🟢 ported |  |
+| `TBoldOclMember` | class | [175](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L175) | [`TBoldOclMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L377) | 🟢 ported |  |
+| `TBoldOclMethod` | class | [189](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L189) | [`TBoldOclMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L407) | 🟢 ported |  |
+| `TBoldOclVariableBinding` | class | [198](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L198) | [`TBoldOclVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L429) | 🟢 ported |  |
+| `TBoldOclVariableReference` | class | [209](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L209) | [`TBoldOclVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L448) | 🟢 ported |  |
+| `TBoldOclLiteral` | class | [217](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L217) | [`TBoldOclLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L457) | 🟢 ported |  |
+| `TBoldOclCollectionLiteral` | class | [223](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L223) | [`TBoldOclCollectionLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L464) | 🟢 ported |  |
+| `TBoldOclStrLiteral` | class | [234](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L234) | [`TBoldOclStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L488) | 🟢 ported |  |
+| `TBoldOclNumericLiteral` | class | [241](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L241) | [`TBoldOclNumericLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L495) | 🟢 ported |  |
+| `TBoldOclIntLiteral` | class | [248](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L248) | [`TBoldOclIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L502) | 🟢 ported |  |
+| `TBoldOCLMomentLiteral` | class | [255](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L255) | [`TBoldOCLMomentLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L509) | 🟢 ported |  |
+| `TBoldOclDateLiteral` | class | [263](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L263) | [`TBoldOclDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L516) | 🟢 ported |  |
+| `TBoldOclTimeLiteral` | class | [273](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L273) | [`TBoldOclTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L531) | 🟢 ported |  |
+| `TBoldOclEnumLiteral` | class | [283](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L283) | [`TBoldOclEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L547) | 🟢 ported |  |
+| `TBoldSymbolDictionary` | class | [290](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L290) | [`TBoldSymbolDictionary`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L562) | 🟢 ported |  |
+| `TBoldOclSymbolHelp` | class | [304](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L304) | [`TBoldOclSymbolHelp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L593) | 🟢 ported |  |
+| `TBoldOclSymbol` | class | [362](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L362) | [`TBoldOclSymbol`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L816) | 🟢 ported |  |
+| `TSymbolNameIndex` | class, implementation | [1019](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1019) | [`TSymbolNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L555) | 🟢 ported |  |
 
 ## TBoldOclNodeList
 
-class at [line 59](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L59); 🟢 ported, C# [`TBoldOclNodeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L75).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [62](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L62) · [body 434](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L434) |  | ⚪ not started |  |
-| `PutItem` | method, private | [63](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L63) · [body 440](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L440) |  | ⚪ not started |  |
-| `Items` | property | [65](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L65) |  | ⚪ not started |  |
-| `Create` | constructor | [66](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L66) · [body 422](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L422) |  | ⚪ not started |  |
-| `Destroy` | destructor | [67](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L67) · [body 428](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L428) |  | ⚪ not started |  |
-| `Add` | method | [68](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L68) · [body 445](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L445) |  | ⚪ not started |  |
-| `Clear` | method | [69](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L69) · [body 450](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L450) |  | ⚪ not started |  |
-| `ClearAndFree` | method | [70](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L70) · [body 455](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L455) |  | ⚪ not started |  |
-| `Delete` | method | [71](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L71) · [body 467](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L467) |  | ⚪ not started |  |
-| `Insert` | method | [72](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L72) · [body 473](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L473) |  | ⚪ not started |  |
-| `Move` | method | [73](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L73) · [body 478](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L478) |  | ⚪ not started |  |
-| `Remove` | method | [74](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L74) · [body 483](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L483) |  | ⚪ not started |  |
-| `Count` | method | [75](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L75) · [body 488](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L488) |  | ⚪ not started |  |
+| `GetItem` | method, private | [62](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L62) · [body 434](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L434) | [`TBoldOclNodeList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L86) | 🟢 ported |  |
+| `PutItem` | method, private | [63](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L63) · [body 440](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L440) | [`TBoldOclNodeList.PutItem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L88) | 🟢 ported |  |
+| `Items` | property | [65](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L65) | [`TBoldOclNodeList.this`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L91) | 🟢 ported |  |
+| `Create` | constructor | [66](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L66) · [body 422](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L422) | [`TBoldOclNodeList.TBoldOclNodeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L80) | 🟢 ported |  |
+| `Destroy` | destructor | [67](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L67) · [body 428](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L428) | [`TBoldOclNodeList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L86) | 🔵 replaced: Freed the list; the garbage collector does that in .NET. |  |
+| `Add` | method | [68](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L68) · [body 445](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L445) | [`TBoldOclNodeList.Add`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L98) | 🟢 ported |  |
+| `Clear` | method | [69](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L69) · [body 450](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L450) | [`TBoldOclNodeList.Clear`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L104) | 🟢 ported |  |
+| `ClearAndFree` | method | [70](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L70) · [body 455](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L455) | [`TBoldOclNodeList.ClearAndFree`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L108) | 🟢 ported |  |
+| `Delete` | method | [71](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L71) · [body 467](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L467) | [`TBoldOclNodeList.Delete`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L119) | 🟢 ported |  |
+| `Insert` | method | [72](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L72) · [body 473](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L473) | [`TBoldOclNodeList.Insert`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L120) | 🟢 ported |  |
+| `Move` | method | [73](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L73) · [body 478](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L478) | [`TBoldOclNodeList.Move`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L123) | 🟢 ported |  |
+| `Remove` | method | [74](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L74) · [body 483](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L483) | [`TBoldOclNodeList.Remove`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L131) | 🟢 ported |  |
+| `Count` | method | [75](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L75) · [body 488](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L488) | [`TBoldOclNodeList.Count`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L142) | 🟢 ported |  |
 
 ## TBoldOclEnvironment
 
-class at [line 79](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L79); ⚪ not started.
+class at [line 79](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L79); 🟢 ported, C# [`TBoldOclEnvironment`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L147).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCount` | method, private | [84](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L84) · [body 690](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L690) |  | ⚪ not started |  |
-| `GetBindings` | method, private | [85](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L85) · [body 1063](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1063) |  | ⚪ not started |  |
-| `Create` | constructor | [87](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L87) · [body 669](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L669) |  | ⚪ not started |  |
-| `Count` | property | [88](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L88) |  | ⚪ not started |  |
-| `Destroy` | destructor | [89](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L89) · [body 677](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L677) |  | ⚪ not started |  |
-| `pushBinding` | method | [90](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L90) · [body 695](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L695) |  | ⚪ not started |  |
-| `popBinding` | method | [91](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L91) · [body 701](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L701) |  | ⚪ not started |  |
-| `Lookup` | method | [92](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L92) · [body 707](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L707) |  | ⚪ not started |  |
-| `lookupSelf` | method | [93](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L93) · [body 727](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L727) |  | ⚪ not started |  |
-| `CurrentImplicitVariable` | method | [94](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L94) · [body 732](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L732) |  | ⚪ not started |  |
-| `MakeGenSymName` | method | [95](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L95) · [body 737](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L737) |  | ⚪ not started |  |
-| `Bindings` | property | [96](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L96) |  | ⚪ not started |  |
+| `GetCount` | method, private | [84](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L84) · [body 690](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L690) | [`TBoldOclEnvironment.GetCount`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L172) | 🟢 ported |  |
+| `GetBindings` | method, private | [85](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L85) · [body 1063](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1063) | [`TBoldOclEnvironment.GetBindings`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L173) | 🟢 ported |  |
+| `Create` | constructor | [87](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L87) · [body 669](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L669) | [`TBoldOclEnvironment.TBoldOclEnvironment`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L154) | 🟢 ported |  |
+| `Count` | property | [88](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L88) | [`TBoldOclEnvironment.Count`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L174) | 🟢 ported |  |
+| `Destroy` | destructor | [89](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L89) · [body 677](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L677) | [`TBoldOclEnvironment.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L162) | 🟢 ported |  |
+| `pushBinding` | method | [90](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L90) · [body 695](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L695) | [`TBoldOclEnvironment.pushBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L177) | 🟢 ported |  |
+| `popBinding` | method | [91](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L91) · [body 701](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L701) | [`TBoldOclEnvironment.popBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L184) | 🟢 ported |  |
+| `Lookup` | method | [92](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L92) · [body 707](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L707) | [`TBoldOclEnvironment.Lookup`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L193) | 🟢 ported |  |
+| `lookupSelf` | method | [93](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L93) · [body 727](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L727) | [`TBoldOclEnvironment.lookupSelf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L207) | 🟢 ported |  |
+| `CurrentImplicitVariable` | method | [94](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L94) · [body 732](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L732) | [`TBoldOclEnvironment.CurrentImplicitVariable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L208) | 🟢 ported |  |
+| `MakeGenSymName` | method | [95](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L95) · [body 737](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L737) | [`TBoldOclEnvironment.MakeGenSymName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L211) | 🟢 ported |  |
+| `Bindings` | property | [96](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L96) | [`TBoldOclEnvironment.this`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L218) | 🟢 ported |  |
 
 ## TBoldOclVisitor
 
-class at [line 100](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L100); ⚪ not started.
+class at [line 100](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L100); 🟢 ported, C# [`TBoldOclVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L223).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `VisitTBoldOclNode` | method | [102](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L102) · [body 645](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L645) |  | ⚪ not started |  |
-| `VisitTBoldOclListCoercion` | method | [103](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L103) · [body 647](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L647) |  | ⚪ not started |  |
-| `VisitTBoldOclCollectionLiteral` | method | [104](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L104) · [body 648](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L648) |  | ⚪ not started |  |
-| `VisitTBoldOclOperation` | method | [105](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L105) · [body 649](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L649) |  | ⚪ not started |  |
-| `VisitTBoldOclIteration` | method | [106](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L106) · [body 650](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L650) |  | ⚪ not started |  |
-| `VisitTBoldOclMember` | method | [107](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L107) · [body 651](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L651) |  | ⚪ not started |  |
-| `VisitTBoldOclMethod` | method | [108](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L108) · [body 652](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L652) |  | ⚪ not started |  |
-| `VisitTBoldOclLiteral` | method | [109](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L109) · [body 653](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L653) |  | ⚪ not started |  |
-| `VisitTBoldOclStrLiteral` | method | [110](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L110) · [body 654](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L654) |  | ⚪ not started |  |
-| `VisitTBoldOclNumericLiteral` | method | [111](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L111) · [body 655](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L655) |  | ⚪ not started |  |
-| `VisitTBoldOclEnumLiteral` | method | [112](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L112) · [body 656](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L656) |  | ⚪ not started |  |
-| `VisitTBoldOclIntLiteral` | method | [113](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L113) · [body 657](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L657) |  | ⚪ not started |  |
-| `VisitTBoldOclMomentLiteral` | method | [114](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L114) · [body 661](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L661) |  | ⚪ not started |  |
-| `VisitTBoldOclDateLiteral` | method | [115](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L115) · [body 660](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L660) |  | ⚪ not started |  |
-| `VisitTBoldOclTimeLiteral` | method | [116](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L116) · [body 662](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L662) |  | ⚪ not started |  |
-| `VisitTBoldOclVariableBinding` | method | [117](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L117) · [body 659](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L659) |  | ⚪ not started |  |
-| `VisitTBoldOclVariableReference` | method | [118](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L118) · [body 658](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L658) |  | ⚪ not started |  |
-| `VisitTBoldOclTypeNode` | method | [119](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L119) · [body 646](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L646) |  | ⚪ not started |  |
+| `VisitTBoldOclNode` | method | [102](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L102) · [body 645](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L645) | [`TBoldOclVisitor.VisitTBoldOclNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L225) | 🟢 ported |  |
+| `VisitTBoldOclListCoercion` | method | [103](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L103) · [body 647](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L647) | [`TBoldOclVisitor.VisitTBoldOclListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L226) | 🟢 ported |  |
+| `VisitTBoldOclCollectionLiteral` | method | [104](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L104) · [body 648](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L648) | [`TBoldOclVisitor.VisitTBoldOclCollectionLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L227) | 🟢 ported |  |
+| `VisitTBoldOclOperation` | method | [105](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L105) · [body 649](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L649) | [`TBoldOclVisitor.VisitTBoldOclOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L228) | 🟢 ported |  |
+| `VisitTBoldOclIteration` | method | [106](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L106) · [body 650](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L650) | [`TBoldOclVisitor.VisitTBoldOclIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L229) | 🟢 ported |  |
+| `VisitTBoldOclMember` | method | [107](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L107) · [body 651](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L651) | [`TBoldOclVisitor.VisitTBoldOclMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L230) | 🟢 ported |  |
+| `VisitTBoldOclMethod` | method | [108](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L108) · [body 652](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L652) | [`TBoldOclVisitor.VisitTBoldOclMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L231) | 🟢 ported |  |
+| `VisitTBoldOclLiteral` | method | [109](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L109) · [body 653](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L653) | [`TBoldOclVisitor.VisitTBoldOclLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L232) | 🟢 ported |  |
+| `VisitTBoldOclStrLiteral` | method | [110](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L110) · [body 654](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L654) | [`TBoldOclVisitor.VisitTBoldOclStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L233) | 🟢 ported |  |
+| `VisitTBoldOclNumericLiteral` | method | [111](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L111) · [body 655](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L655) | [`TBoldOclVisitor.VisitTBoldOclNumericLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L234) | 🟢 ported |  |
+| `VisitTBoldOclEnumLiteral` | method | [112](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L112) · [body 656](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L656) | [`TBoldOclVisitor.VisitTBoldOclEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L235) | 🟢 ported |  |
+| `VisitTBoldOclIntLiteral` | method | [113](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L113) · [body 657](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L657) | [`TBoldOclVisitor.VisitTBoldOclIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L236) | 🟢 ported |  |
+| `VisitTBoldOclMomentLiteral` | method | [114](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L114) · [body 661](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L661) | [`TBoldOclVisitor.VisitTBoldOclMomentLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L237) | 🟢 ported |  |
+| `VisitTBoldOclDateLiteral` | method | [115](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L115) · [body 660](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L660) | [`TBoldOclVisitor.VisitTBoldOclDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L238) | 🟢 ported |  |
+| `VisitTBoldOclTimeLiteral` | method | [116](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L116) · [body 662](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L662) | [`TBoldOclVisitor.VisitTBoldOclTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L239) | 🟢 ported |  |
+| `VisitTBoldOclVariableBinding` | method | [117](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L117) · [body 659](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L659) | [`TBoldOclVisitor.VisitTBoldOclVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L240) | 🟢 ported |  |
+| `VisitTBoldOclVariableReference` | method | [118](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L118) · [body 658](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L658) | [`TBoldOclVisitor.VisitTBoldOclVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L241) | 🟢 ported |  |
+| `VisitTBoldOclTypeNode` | method | [119](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L119) · [body 646](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L646) | [`TBoldOclVisitor.VisitTBoldOclTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L242) | 🟢 ported |  |
 
 ## TBoldOclNode
 
-class at [line 123](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L123); ⚪ not started.
+class at [line 123](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L123); 🟢 ported, C# [`TBoldOclNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L247).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldType` | method, protected | [126](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L126) · [body 748](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L748) |  | ⚪ not started |  |
-| `GetBoldType` | method, protected | [127](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L127) · [body 743](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L743) |  | ⚪ not started |  |
-| `Create` | constructor | [130](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L130) · [body 502](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L502) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [131](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L131) · [body 497](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L497) |  | ⚪ not started |  |
-| `BoldType` | property | [132](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L132) |  | ⚪ not started |  |
-| `NeedsListCoercion` | property | [133](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L133) |  | ⚪ not started |  |
-| `IsConstant` | property | [134](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L134) |  | ⚪ not started |  |
-| `Resubscribe` | property | [135](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L135) |  | ⚪ not started |  |
-| `HastemporaryDummyValue` | property | [136](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L136) |  | ⚪ not started |  |
+| `SetBoldType` | method, protected | [126](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L126) · [body 748](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L748) | [`TBoldOclNode.SetBoldType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L259) | 🟢 ported |  |
+| `GetBoldType` | method, protected | [127](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L127) · [body 743](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L743) | [`TBoldOclNode.GetBoldType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L260) | 🟢 ported |  |
+| `Create` | constructor | [130](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L130) · [body 502](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L502) | [`TBoldOclNode.TBoldOclNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L254) | 🟢 ported |  |
+| `AcceptVisitor` | method | [131](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L131) · [body 497](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L497) | [`TBoldOclNode.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L263) | 🟢 ported |  |
+| `BoldType` | property | [132](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L132) | [`TBoldOclNode.BoldType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L268) | 🟢 ported |  |
+| `NeedsListCoercion` | property | [133](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L133) | [`TBoldOclNode.NeedsListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L275) | 🟢 ported |  |
+| `IsConstant` | property | [134](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L134) | [`TBoldOclNode.IsConstant`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L282) | 🟢 ported |  |
+| `Resubscribe` | property | [135](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L135) | [`TBoldOclNode.Resubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L289) | 🟢 ported |  |
+| `HastemporaryDummyValue` | property | [136](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L136) | [`TBoldOclNode.HastemporaryDummyValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L296) | 🟢 ported |  |
 
 ## TBoldOclTypeNode
 
-class at [line 140](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L140); ⚪ not started.
+class at [line 140](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L140); 🟢 ported, C# [`TBoldOclTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L305).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [143](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L143) · [body 575](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L575) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [143](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L143) · [body 575](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L575) | [`TBoldOclTypeNode.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L308) | 🟢 ported |  |
 
 ## TBoldOCLListCoercion
 
-class at [line 147](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L147); ⚪ not started.
+class at [line 147](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L147); 🟢 ported, C# [`TBoldOCLListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L313).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Destroy` | destructor | [150](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L150) · [body 1110](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1110) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [151](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L151) · [body 580](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L580) |  | ⚪ not started |  |
+| `Destroy` | destructor | [150](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L150) · [body 1110](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1110) | [`TBoldOCLListCoercion.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L318) | 🟢 ported |  |
+| `AcceptVisitor` | method | [151](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L151) · [body 580](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L580) | [`TBoldOCLListCoercion.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L325) | 🟢 ported |  |
 
 ## TBoldOclOperation
 
-class at [line 155](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L155); ⚪ not started.
+class at [line 155](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L155); 🟢 ported, C# [`TBoldOclOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L330).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Destroy` | destructor | [162](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L162) · [body 530](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L530) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [163](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L163) · [body 590](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L590) |  | ⚪ not started |  |
+| `Destroy` | destructor | [162](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L162) · [body 530](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L530) | [`TBoldOclOperation.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L339) | 🟢 ported |  |
+| `AcceptVisitor` | method | [163](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L163) · [body 590](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L590) | [`TBoldOclOperation.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L355) | 🟢 ported |  |
 
 ## TBoldOclIteration
 
-class at [line 167](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L167); ⚪ not started.
+class at [line 167](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L167); 🟢 ported, C# [`TBoldOclIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L360).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Destroy` | destructor | [170](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L170) · [body 551](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L551) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [171](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L171) · [body 595](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L595) |  | ⚪ not started |  |
+| `Destroy` | destructor | [170](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L170) · [body 551](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L551) | [`TBoldOclIteration.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L365) | 🟢 ported |  |
+| `AcceptVisitor` | method | [171](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L171) · [body 595](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L595) | [`TBoldOclIteration.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L372) | 🟢 ported |  |
 
 ## TBoldOclMember
 
-class at [line 175](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L175); ⚪ not started.
+class at [line 175](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L175); 🟢 ported, C# [`TBoldOclMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L377).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [183](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L183) · [body 565](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L565) |  | ⚪ not started |  |
-| `Destroy` | destructor | [184](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L184) · [body 508](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L508) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [185](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L185) · [body 600](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L600) |  | ⚪ not started |  |
+| `Create` | constructor | [183](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L183) · [body 565](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L565) | [`TBoldOclMember.TBoldOclMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L387) | 🟢 ported |  |
+| `Destroy` | destructor | [184](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L184) · [body 508](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L508) | [`TBoldOclMember.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L393) | 🟢 ported |  |
+| `AcceptVisitor` | method | [185](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L185) · [body 600](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L600) | [`TBoldOclMember.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L402) | 🟢 ported |  |
 
 ## TBoldOclMethod
 
-class at [line 189](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L189); ⚪ not started.
+class at [line 189](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L189); 🟢 ported, C# [`TBoldOclMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L407).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Destroy` | destructor | [193](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L193) · [body 557](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L557) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [194](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L194) · [body 605](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L605) |  | ⚪ not started |  |
+| `Destroy` | destructor | [193](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L193) · [body 557](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L557) | [`TBoldOclMethod.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L413) | 🟢 ported |  |
+| `AcceptVisitor` | method | [194](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L194) · [body 605](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L605) | [`TBoldOclMethod.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L424) | 🟢 ported |  |
 
 ## TBoldOclVariableBinding
 
-class at [line 198](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L198); ⚪ not started.
+class at [line 198](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L198); 🟢 ported, C# [`TBoldOclVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L429).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Destroy` | destructor | [204](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L204) · [body 545](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L545) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [205](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L205) · [body 635](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L635) |  | ⚪ not started |  |
+| `Destroy` | destructor | [204](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L204) · [body 545](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L545) | [`TBoldOclVariableBinding.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L437) | 🟢 ported |  |
+| `AcceptVisitor` | method | [205](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L205) · [body 635](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L635) | [`TBoldOclVariableBinding.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L443) | 🟢 ported |  |
 
 ## TBoldOclVariableReference
 
-class at [line 209](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L209); ⚪ not started.
+class at [line 209](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L209); 🟢 ported, C# [`TBoldOclVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L448).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [213](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L213) · [body 640](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L640) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [213](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L213) · [body 640](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L640) | [`TBoldOclVariableReference.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L452) | 🟢 ported |  |
 
 ## TBoldOclLiteral
 
-class at [line 217](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L217); ⚪ not started.
+class at [line 217](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L217); 🟢 ported, C# [`TBoldOclLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L457).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [219](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L219) · [body 610](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L610) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [219](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L219) · [body 610](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L610) | [`TBoldOclLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L459) | 🟢 ported |  |
 
 ## TBoldOclCollectionLiteral
 
-class at [line 223](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L223); ⚪ not started.
+class at [line 223](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L223); 🟢 ported, C# [`TBoldOclCollectionLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L464).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Destroy` | destructor | [229](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L229) · [body 517](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L517) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [230](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L230) · [body 585](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L585) |  | ⚪ not started |  |
+| `Destroy` | destructor | [229](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L229) · [body 517](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L517) | [`TBoldOclCollectionLiteral.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L473) | 🟢 ported |  |
+| `AcceptVisitor` | method | [230](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L230) · [body 585](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L585) | [`TBoldOclCollectionLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L484) | 🟢 ported |  |
 
 ## TBoldOclStrLiteral
 
-class at [line 234](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L234); ⚪ not started.
+class at [line 234](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L234); 🟢 ported, C# [`TBoldOclStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L488).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [237](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L237) · [body 615](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L615) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [237](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L237) · [body 615](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L615) | [`TBoldOclStrLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L491) | 🟢 ported |  |
 
 ## TBoldOclNumericLiteral
 
-class at [line 241](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L241); ⚪ not started.
+class at [line 241](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L241); 🟢 ported, C# [`TBoldOclNumericLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L495).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [244](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L244) · [body 620](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L620) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [244](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L244) · [body 620](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L620) | [`TBoldOclNumericLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L498) | 🟢 ported |  |
 
 ## TBoldOclIntLiteral
 
-class at [line 248](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L248); ⚪ not started.
+class at [line 248](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L248); 🟢 ported, C# [`TBoldOclIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L502).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [251](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L251) · [body 630](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L630) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [251](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L251) · [body 630](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L630) | [`TBoldOclIntLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L505) | 🟢 ported |  |
 
 ## TBoldOCLMomentLiteral
 
-class at [line 255](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L255); ⚪ not started.
+class at [line 255](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L255); 🟢 ported, C# [`TBoldOCLMomentLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L509).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [259](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L259) · [body 1071](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1071) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [259](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L259) · [body 1071](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1071) | [`TBoldOCLMomentLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L512) | 🟢 ported |  |
 
 ## TBoldOclDateLiteral
 
-class at [line 263](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L263); ⚪ not started.
+class at [line 263](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L263); 🟢 ported, C# [`TBoldOclDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L516).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDateTimeValue` | method, private | [265](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L265) · [body 1083](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1083) |  | ⚪ not started |  |
-| `SetDateTimeValue` | method, private | [266](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L266) · [body 1088](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1088) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [268](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L268) · [body 1078](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1078) |  | ⚪ not started |  |
-| `DateValue` | property | [269](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L269) |  | ⚪ not started |  |
+| `GetDateTimeValue` | method, private | [265](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L265) · [body 1083](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1083) | [`TBoldOclDateLiteral.GetDateTimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L518) | 🟢 ported |  |
+| `SetDateTimeValue` | method, private | [266](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L266) · [body 1088](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1088) | [`TBoldOclDateLiteral.SetDateTimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L519) | 🟢 ported |  |
+| `AcceptVisitor` | method | [268](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L268) · [body 1078](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1078) | [`TBoldOclDateLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L520) | 🟢 ported |  |
+| `DateValue` | property | [269](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L269) | [`TBoldOclDateLiteral.DateValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L523) | 🟢 ported |  |
 
 ## TBoldOclTimeLiteral
 
-class at [line 273](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L273); ⚪ not started.
+class at [line 273](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L273); 🟢 ported, C# [`TBoldOclTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L531).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDateTimeValue` | method, private | [275](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L275) · [body 1100](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1100) |  | ⚪ not started |  |
-| `SetDateTimeValue` | method, private | [276](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L276) · [body 1105](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1105) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [278](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L278) · [body 1095](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1095) |  | ⚪ not started |  |
-| `TimeValue` | property | [279](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L279) |  | ⚪ not started |  |
+| `GetDateTimeValue` | method, private | [275](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L275) · [body 1100](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1100) | [`TBoldOclTimeLiteral.GetDateTimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L533) | 🟢 ported |  |
+| `SetDateTimeValue` | method, private | [276](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L276) · [body 1105](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1105) | [`TBoldOclTimeLiteral.SetDateTimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L534) | 🟢 ported |  |
+| `AcceptVisitor` | method | [278](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L278) · [body 1095](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1095) | [`TBoldOclTimeLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L535) | 🟢 ported |  |
+| `TimeValue` | property | [279](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L279) | [`TBoldOclTimeLiteral.TimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L538) | 🟢 ported |  |
 
 ## TBoldOclEnumLiteral
 
-class at [line 283](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L283); ⚪ not started.
+class at [line 283](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L283); 🟢 ported, C# [`TBoldOclEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L547).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [286](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L286) · [body 625](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L625) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [286](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L286) · [body 625](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L625) | [`TBoldOclEnumLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L550) | 🟢 ported |  |
 
 ## TBoldSymbolDictionary
 
-class at [line 290](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L290); ⚪ not started.
+class at [line 290](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L290); 🟢 ported, C# [`TBoldSymbolDictionary`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L562).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSymbol` | method, private | [293](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L293) · [body 1045](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1045) |  | ⚪ not started |  |
-| `GetSymbolByIndex` | method, private | [294](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L294) · [body 1050](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1050) |  | ⚪ not started |  |
-| `Create` | constructor | [296](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L296) · [body 1031](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1031) |  | ⚪ not started |  |
-| `Destroy` | destructor | [297](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L297) · [body 1039](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1039) |  | ⚪ not started |  |
-| `help` | property | [298](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L298) |  | ⚪ not started |  |
-| `SymbolByName` | property | [299](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L299) |  | ⚪ not started |  |
-| `Symbols` | property | [300](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L300) |  | ⚪ not started |  |
+| `GetSymbol` | method, private | [293](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L293) · [body 1045](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1045) | [`TBoldSymbolDictionary.GetSymbol`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L578) | 🟢 ported |  |
+| `GetSymbolByIndex` | method, private | [294](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L294) · [body 1050](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1050) | [`TBoldSymbolDictionary.GetSymbolByIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L580) | 🟢 ported |  |
+| `Create` | constructor | [296](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L296) · [body 1031](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1031) | [`TBoldSymbolDictionary.TBoldSymbolDictionary`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L569) | 🟢 ported |  |
+| `Destroy` | destructor | [297](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L297) · [body 1039](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1039) | [`TBoldSymbolDictionary.GetSymbol`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L578) | 🔵 replaced: Freed the helper; the garbage collector does that in .NET. |  |
+| `help` | property | [298](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L298) | [`TBoldSymbolDictionary.help`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L582) | 🟢 ported |  |
+| `SymbolByName` | property | [299](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L299) | [`TBoldSymbolDictionary.SymbolByName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L585) | 🟢 ported: An indexed property in Delphi; here a method. |  |
+| `Symbols` | property | [300](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L300) | [`TBoldSymbolDictionary.Symbols`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L588) | 🟢 ported: An indexed property in Delphi; here a method. |  |
 
 ## TBoldOclSymbolHelp
 
-class at [line 304](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L304); ⚪ not started.
+class at [line 304](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L304); 🟢 ported, C# [`TBoldOclSymbolHelp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L593).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `fMakeNew` | method, private | [326](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L326) · [body 806](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L806) |  | ⚪ not started |  |
-| `create` | constructor | [328](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L328) · [body 753](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L753) |  | ⚪ not started |  |
-| `CreateNewMember` | method | [329](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L329) · [body 1055](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1055) |  | ⚪ not started |  |
-| `SystemTypeInfo` | property | [330](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L330) |  | ⚪ not started |  |
-| `NumericType` | property | [331](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L331) |  | ⚪ not started |  |
-| `BooleanType` | property | [332](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L332) |  | ⚪ not started |  |
-| `IntegerType` | property | [333](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L333) |  | ⚪ not started |  |
-| `RealType` | property | [334](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L334) |  | ⚪ not started |  |
-| `DateType` | property | [335](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L335) |  | ⚪ not started |  |
-| `TimeType` | property | [336](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L336) |  | ⚪ not started |  |
-| `DateTimeType` | property | [337](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L337) |  | ⚪ not started |  |
-| `CurrencyType` | property | [338](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L338) |  | ⚪ not started |  |
-| `MomentType` | property | [339](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L339) |  | ⚪ not started |  |
-| `ConstraintType` | property | [340](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L340) |  | ⚪ not started |  |
-| `StringType` | property | [341](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L341) |  | ⚪ not started |  |
-| `ListType` | property | [342](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L342) |  | ⚪ not started |  |
-| `ObjectType` | property | [343](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L343) |  | ⚪ not started |  |
-| `TypeType` | property | [344](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L344) |  | ⚪ not started |  |
-| `NumericListType` | property | [345](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L345) |  | ⚪ not started |  |
-| `MomentListType` | property | [346](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L346) |  | ⚪ not started |  |
-| `StringListType` | property | [347](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L347) |  | ⚪ not started |  |
-| `TypeListType` | property | [348](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L348) |  | ⚪ not started |  |
-| `ObjectListType` | property | [349](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L349) |  | ⚪ not started |  |
-| `MakeNewNumeric` | method | [350](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L350) · [body 824](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L824) |  | ⚪ not started |  |
-| `MakeNewTime` | method | [351](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L351) · [body 852](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L852) |  | ⚪ not started |  |
-| `MakeNewDateTime` | method | [352](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L352) · [body 859](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L859) |  | ⚪ not started |  |
-| `MakeNewDate` | method | [353](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L353) · [body 866](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L866) |  | ⚪ not started |  |
-| `MakeNewBoolean` | method | [354](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L354) · [body 873](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L873) |  | ⚪ not started |  |
-| `MakeNewInteger` | method | [355](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L355) · [body 845](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L845) |  | ⚪ not started |  |
-| `MakeNewString` | method | [356](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L356) · [body 838](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L838) |  | ⚪ not started |  |
-| `MakeNewCurrency` | method | [357](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L357) · [body 831](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L831) |  | ⚪ not started |  |
-| `TransferOrClone` | method | [358](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L358) · [body 880](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L880) |  | ⚪ not started |  |
+| `fMakeNew` | method, private | [326](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L326) · [body 806](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L806) | [`TBoldOclSymbolHelp.fMakeNew`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L682) | 🟢 ported |  |
+| `create` | constructor | [328](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L328) · [body 753](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L753) | [`TBoldOclSymbolHelp.TBoldOclSymbolHelp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L618) | 🟢 ported |  |
+| `CreateNewMember` | method | [329](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L329) · [body 1055](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1055) | [`TBoldOclSymbolHelp.CreateNewMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L703) | 🟢 ported |  |
+| `SystemTypeInfo` | property | [330](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L330) | [`TBoldOclSymbolHelp.SystemTypeInfo`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L714) | 🟢 ported |  |
+| `NumericType` | property | [331](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L331) | [`TBoldOclSymbolHelp.NumericType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L715) | 🟢 ported |  |
+| `BooleanType` | property | [332](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L332) | [`TBoldOclSymbolHelp.BooleanType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L716) | 🟢 ported |  |
+| `IntegerType` | property | [333](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L333) | [`TBoldOclSymbolHelp.IntegerType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L717) | 🟢 ported |  |
+| `RealType` | property | [334](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L334) | [`TBoldOclSymbolHelp.RealType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L718) | 🟢 ported |  |
+| `DateType` | property | [335](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L335) | [`TBoldOclSymbolHelp.DateType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L719) | 🟢 ported |  |
+| `TimeType` | property | [336](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L336) | [`TBoldOclSymbolHelp.TimeType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L720) | 🟢 ported |  |
+| `DateTimeType` | property | [337](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L337) | [`TBoldOclSymbolHelp.DateTimeType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L721) | 🟢 ported |  |
+| `CurrencyType` | property | [338](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L338) | [`TBoldOclSymbolHelp.CurrencyType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L722) | 🟢 ported |  |
+| `MomentType` | property | [339](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L339) | [`TBoldOclSymbolHelp.MomentType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L723) | 🟢 ported |  |
+| `ConstraintType` | property | [340](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L340) | [`TBoldOclSymbolHelp.ConstraintType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L724) | 🟢 ported |  |
+| `StringType` | property | [341](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L341) | [`TBoldOclSymbolHelp.StringType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L725) | 🟢 ported |  |
+| `ListType` | property | [342](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L342) | [`TBoldOclSymbolHelp.ListType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L726) | 🟢 ported |  |
+| `ObjectType` | property | [343](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L343) | [`TBoldOclSymbolHelp.ObjectType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L727) | 🟢 ported |  |
+| `TypeType` | property | [344](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L344) | [`TBoldOclSymbolHelp.TypeType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L728) | 🟢 ported |  |
+| `NumericListType` | property | [345](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L345) | [`TBoldOclSymbolHelp.NumericListType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L729) | 🟢 ported |  |
+| `MomentListType` | property | [346](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L346) | [`TBoldOclSymbolHelp.MomentListType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L730) | 🟢 ported |  |
+| `StringListType` | property | [347](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L347) | [`TBoldOclSymbolHelp.StringListType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L731) | 🟢 ported |  |
+| `TypeListType` | property | [348](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L348) | [`TBoldOclSymbolHelp.TypeListType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L732) | 🟢 ported |  |
+| `ObjectListType` | property | [349](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L349) | [`TBoldOclSymbolHelp.ObjectListType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L733) | 🟢 ported |  |
+| `MakeNewNumeric` | method | [350](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L350) · [body 824](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L824) | [`TBoldOclSymbolHelp.MakeNewNumeric`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L736) | 🟢 ported |  |
+| `MakeNewTime` | method | [351](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L351) · [body 852](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L852) | [`TBoldOclSymbolHelp.MakeNewTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L743) | 🟢 ported |  |
+| `MakeNewDateTime` | method | [352](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L352) · [body 859](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L859) | [`TBoldOclSymbolHelp.MakeNewDateTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L750) | 🟢 ported |  |
+| `MakeNewDate` | method | [353](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L353) · [body 866](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L866) | [`TBoldOclSymbolHelp.MakeNewDate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L757) | 🟢 ported |  |
+| `MakeNewBoolean` | method | [354](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L354) · [body 873](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L873) | [`TBoldOclSymbolHelp.MakeNewBoolean`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L764) | 🟢 ported |  |
+| `MakeNewInteger` | method | [355](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L355) · [body 845](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L845) | [`TBoldOclSymbolHelp.MakeNewInteger`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L771) | 🟢 ported |  |
+| `MakeNewString` | method | [356](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L356) · [body 838](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L838) | [`TBoldOclSymbolHelp.MakeNewString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L778) | 🟢 ported |  |
+| `MakeNewCurrency` | method | [357](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L357) · [body 831](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L831) | [`TBoldOclSymbolHelp.MakeNewCurrency`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L785) | 🟢 ported |  |
+| `TransferOrClone` | method | [358](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L358) · [body 880](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L880) | [`TBoldOclSymbolHelp.TransferOrClone`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L793) | 🟢 ported |  |
 
 ## TBoldOclSymbol
 
-class at [line 362](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L362); ⚪ not started.
+class at [line 362](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L362); 🟢 ported, C# [`TBoldOclSymbol`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L816).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `InternalInit` | method, protected | [374](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L374) · [body 894](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L894) |  | ⚪ not started |  |
-| `GetFormalArguments` | method, protected | [381](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L381) · [body 917](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L917) |  | ⚪ not started |  |
-| `GetNumberOfArgs` | method, protected | [382](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L382) · [body 922](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L922) |  | ⚪ not started |  |
-| `Init` | method, protected | [383](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L383) |  | ⚪ not started |  |
-| `XBoolean` | method, protected | [384](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L384) · [body 949](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L949) |  | ⚪ not started |  |
-| `XCurrency` | method, protected | [385](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L385) · [body 985](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L985) |  | ⚪ not started |  |
-| `XInteger` | method, protected | [386](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L386) · [body 957](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L957) |  | ⚪ not started |  |
-| `XList` | method, protected | [387](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L387) · [body 1009](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1009) |  | ⚪ not started |  |
-| `XDateTime` | method, protected | [388](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L388) · [body 965](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L965) |  | ⚪ not started |  |
-| `XNumeric` | method, protected | [389](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L389) · [body 977](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L977) |  | ⚪ not started |  |
-| `XString` | method, protected | [390](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L390) · [body 993](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L993) |  | ⚪ not started |  |
-| `XType` | method, protected | [391](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L391) · [body 1001](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1001) |  | ⚪ not started |  |
-| `Help` | property, protected | [392](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L392) |  | ⚪ not started |  |
-| `Create` | constructor | [394](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L394) · [body 932](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L932) |  | ⚪ not started |  |
-| `Destroy` | destructor | [395](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L395) · [body 943](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L943) |  | ⚪ not started |  |
-| `Evaluate` | method | [396](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L396) |  | ⚪ not started |  |
-| `SQL` | method | [397](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L397) · [body 927](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L927) |  | ⚪ not started |  |
-| `DeduceMethod` | property | [398](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L398) |  | ⚪ not started |  |
-| `FormalArguments` | property | [399](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L399) |  | ⚪ not started |  |
-| `HelpContext` | property | [400](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L400) |  | ⚪ not started |  |
-| `isDotNotation` | property | [401](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L401) |  | ⚪ not started |  |
-| `IsPostfix` | property | [402](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L402) |  | ⚪ not started |  |
-| `NumberOfArgs` | property | [403](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L403) |  | ⚪ not started |  |
-| `ResultType` | property | [404](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L404) |  | ⚪ not started |  |
-| `SymbolName` | property | [405](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L405) |  | ⚪ not started |  |
-| `ArgsNeedCommonType` | property | [406](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L406) |  | ⚪ not started |  |
+| `InternalInit` | method, protected | [374](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L374) · [body 894](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L894) | [`TBoldOclSymbol.InternalInit`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L841) | 🟢 ported |  |
+| `GetFormalArguments` | method, protected | [381](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L381) · [body 917](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L917) | [`TBoldOclSymbol.GetFormalArguments`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L860) | 🟢 ported |  |
+| `GetNumberOfArgs` | method, protected | [382](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L382) · [body 922](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L922) | [`TBoldOclSymbol.GetNumberOfArgs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L861) | 🟢 ported |  |
+| `Init` | method, protected | [383](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L383) | [`TBoldOclSymbol.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L862) | 🟢 ported |  |
+| `XBoolean` | method, protected | [384](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L384) · [body 949](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L949) | [`TBoldOclSymbol.XBoolean`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L864) | 🟢 ported |  |
+| `XCurrency` | method, protected | [385](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L385) · [body 985](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L985) | [`TBoldOclSymbol.XCurrency`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L865) | 🟢 ported |  |
+| `XInteger` | method, protected | [386](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L386) · [body 957](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L957) | [`TBoldOclSymbol.XInteger`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L866) | 🟢 ported |  |
+| `XList` | method, protected | [387](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L387) · [body 1009](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1009) | [`TBoldOclSymbol.XList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L867) | 🟢 ported |  |
+| `XDateTime` | method, protected | [388](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L388) · [body 965](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L965) | [`TBoldOclSymbol.XDateTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L870) | 🟢 ported |  |
+| `XNumeric` | method, protected | [389](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L389) · [body 977](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L977) | [`TBoldOclSymbol.XNumeric`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L878) | 🟢 ported |  |
+| `XString` | method, protected | [390](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L390) · [body 993](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L993) | [`TBoldOclSymbol.XString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L879) | 🟢 ported |  |
+| `XType` | method, protected | [391](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L391) · [body 1001](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1001) | [`TBoldOclSymbol.XType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L880) | 🟢 ported |  |
+| `Help` | property, protected | [392](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L392) | [`TBoldOclSymbol.Help`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L881) | 🟢 ported |  |
+| `Create` | constructor | [394](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L394) · [body 932](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L932) | [`TBoldOclSymbol.TBoldOclSymbol`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L830) | 🟢 ported |  |
+| `Destroy` | destructor | [395](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L395) · [body 943](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L943) | [`TBoldOclSymbol.InternalInit`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L841) | 🔵 replaced: Freed the argument list; the garbage collector does that in .NET. |  |
+| `Evaluate` | method | [396](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L396) | [`TBoldOclSymbol.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L884) | 🟢 ported |  |
+| `SQL` | method | [397](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L397) · [body 927](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L927) | [`TBoldOclSymbol.SQL`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L888) | 🟢 ported |  |
+| `DeduceMethod` | property | [398](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L398) | [`TBoldOclSymbol.DeduceMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L890) | 🟢 ported |  |
+| `FormalArguments` | property | [399](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L399) | [`TBoldOclSymbol.FormalArguments`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L893) | 🟢 ported: An indexed property in Delphi; here a method. |  |
+| `HelpContext` | property | [400](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L400) | [`TBoldOclSymbol.HelpContext`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L895) | 🟢 ported |  |
+| `isDotNotation` | property | [401](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L401) | [`TBoldOclSymbol.isDotNotation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L896) | 🟢 ported |  |
+| `IsPostfix` | property | [402](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L402) | [`TBoldOclSymbol.IsPostfix`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L897) | 🟢 ported |  |
+| `NumberOfArgs` | property | [403](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L403) | [`TBoldOclSymbol.NumberOfArgs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L898) | 🟢 ported |  |
+| `ResultType` | property | [404](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L404) | [`TBoldOclSymbol.ResultType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L899) | 🟢 ported |  |
+| `SymbolName` | property | [405](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L405) | [`TBoldOclSymbol.SymbolName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L900) | 🟢 ported |  |
+| `ArgsNeedCommonType` | property | [406](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L406) | [`TBoldOclSymbol.ArgsNeedCommonType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L901) | 🟢 ported |  |
 
 ## TSymbolNameIndex
 
-class at [line 1019](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1019); ⚪ not started.
+class at [line 1019](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1019); 🟢 ported, C# [`TSymbolNameIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L555).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [1021](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1021) · [body 1025](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1025) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [1021](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1021) · [body 1025](../../../Source/ObjectSpace/Ocl/BoldOclClasses.pas#L1025) | [`TSymbolNameIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L557) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldOclSymbolParameters.Nodes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L65) (field)
+- [`TBoldOclSymbolParameters.Values`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L66) (field)
+- [`TBoldOclSymbolParameters.Result`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L67) (field)
+- [`TBoldOclSymbolParameters.Subscriber`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L68) (field)
+- [`TBoldOclSymbolParameters.System`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L69) (field)
+- [`TBoldOclSymbolParameters.SystemTypeInfo`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L70) (field)
+- [`TBoldOclNode.fBoldType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L249) (field)
+- [`TBoldOclNode.Position`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L251) (field)
+- [`TBoldOclTypeNode.typeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L307) (field)
+- [`TBoldOCLListCoercion.Child`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L315) (field)
+- [`TBoldOclOperation.IteratorSpecifier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L332) (field)
+- [`TBoldOclOperation.IsMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L333) (field)
+- [`TBoldOclOperation.Args`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L334) (field)
+- [`TBoldOclOperation.Symbol`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L335) (field)
+- [`TBoldOclOperation.OperationName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L336) (field)
+- [`TBoldOclIteration.LoopVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L362) (field)
+- [`TBoldOclMember.MemberOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L379) (field)
+- [`TBoldOclMember.MemberName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L380) (field)
+- [`TBoldOclMember.MemberType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L381) (field)
+- [`TBoldOclMember.MemberIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L382) (field)
+- [`TBoldOclMember.Qualifier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L383) (field)
+- [`TBoldOclMember.RTInfo`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L384) (field)
+- [`TBoldOclMethod.MethodOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L409) (field)
+- [`TBoldOclMethod.MethodOf_AddedToArgs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L410) (field)
+- [`TBoldOclVariableBinding.VariableName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L431) (field)
+- [`TBoldOclVariableBinding.TypeNameList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L434) (field)
+- [`TBoldOclVariableReference.VariableName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L450) (field)
+- [`TBoldOclVariableReference.VariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L451) (field)
+- [`TBoldOclCollectionLiteral.CollectionKind`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L466) (field)
+- [`TBoldOclCollectionLiteral.IsRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L467) (field)
+- [`TBoldOclCollectionLiteral.RangeStart`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L468) (field)
+- [`TBoldOclCollectionLiteral.RangeStop`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L469) (field)
+- [`TBoldOclCollectionLiteral.Elements`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L470) (field)
+- [`TBoldOclStrLiteral.StrValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L490) (field)
+- [`TBoldOclNumericLiteral.FloatValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L497) (field)
+- [`TBoldOclIntLiteral.IntValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L504) (field)
+- [`TBoldOCLMomentLiteral.fDateTimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L511) (field)
+- [`TBoldOclEnumLiteral.name`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclClasses.cs#L549) (field)
 
 ## Dependencies
 
