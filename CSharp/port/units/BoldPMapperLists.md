@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Core/BoldPMapperLists.pas`](../../../Source/PMapper/Core/BoldPMapperLists.pas) (376 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 57 symbols done, 0 verified |
+| Status | 🟢 ported: 57 of 57 symbols done, 0 verified |
 
-⚪ 57 not started
+🟢 56 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,140 +18,140 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceMapperDescriptor` | class | [22](../../../Source/PMapper/Core/BoldPMapperLists.pas#L22) |  | ⚪ not started |  |
-| `TBoldMemberPersistenceMapperDescriptorList` | class | [33](../../../Source/PMapper/Core/BoldPMapperLists.pas#L33) |  | ⚪ not started |  |
-| `TBoldMemberPersistenceMapperDescriptor` | class | [48](../../../Source/PMapper/Core/BoldPMapperLists.pas#L48) |  | ⚪ not started |  |
-| `TBoldSystemPersistenceMapperDescriptorList` | class | [61](../../../Source/PMapper/Core/BoldPMapperLists.pas#L61) |  | ⚪ not started |  |
-| `TBoldSystemPersistenceMapperDescriptor` | class | [73](../../../Source/PMapper/Core/BoldPMapperLists.pas#L73) |  | ⚪ not started |  |
-| `TBoldObjectPersistenceMapperDescriptorList` | class | [82](../../../Source/PMapper/Core/BoldPMapperLists.pas#L82) |  | ⚪ not started |  |
-| `TBoldObjectPersistenceMapperDescriptor` | class | [94](../../../Source/PMapper/Core/BoldPMapperLists.pas#L94) |  | ⚪ not started |  |
-| `BoldMemberPersistenceMappers` | routine | [103](../../../Source/PMapper/Core/BoldPMapperLists.pas#L103) · [body 185](../../../Source/PMapper/Core/BoldPMapperLists.pas#L185) |  | ⚪ not started |  |
-| `BoldMemberPersistenceMappersAssigned` | routine | [104](../../../Source/PMapper/Core/BoldPMapperLists.pas#L104) · [body 192](../../../Source/PMapper/Core/BoldPMapperLists.pas#L192) |  | ⚪ not started |  |
-| `BoldSystemPersistenceMappers` | routine | [105](../../../Source/PMapper/Core/BoldPMapperLists.pas#L105) · [body 198](../../../Source/PMapper/Core/BoldPMapperLists.pas#L198) |  | ⚪ not started |  |
-| `BoldSystemPersistenceMappersAssigned` | routine | [106](../../../Source/PMapper/Core/BoldPMapperLists.pas#L106) · [body 205](../../../Source/PMapper/Core/BoldPMapperLists.pas#L205) |  | ⚪ not started |  |
-| `BoldObjectPersistenceMappers` | routine | [107](../../../Source/PMapper/Core/BoldPMapperLists.pas#L107) · [body 211](../../../Source/PMapper/Core/BoldPMapperLists.pas#L211) |  | ⚪ not started |  |
-| `BoldObjectPersistenceMappersAssigned` | routine | [108](../../../Source/PMapper/Core/BoldPMapperLists.pas#L108) · [body 218](../../../Source/PMapper/Core/BoldPMapperLists.pas#L218) |  | ⚪ not started |  |
-| `TBoldMemberPMapperNameIndex` | class, implementation | [129](../../../Source/PMapper/Core/BoldPMapperLists.pas#L129) |  | ⚪ not started |  |
-| `TBoldMemberPMapperClassIndex` | class, implementation | [135](../../../Source/PMapper/Core/BoldPMapperLists.pas#L135) |  | ⚪ not started |  |
-| `TBoldSystemPMapperNameIndex` | class, implementation | [141](../../../Source/PMapper/Core/BoldPMapperLists.pas#L141) |  | ⚪ not started |  |
-| `TBoldObjectPMapperNameIndex` | class, implementation | [147](../../../Source/PMapper/Core/BoldPMapperLists.pas#L147) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [368](../../../Source/PMapper/Core/BoldPMapperLists.pas#L368) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [370](../../../Source/PMapper/Core/BoldPMapperLists.pas#L370) |  | ⚪ not started |  |
+| `TBoldPersistenceMapperDescriptor` | class | [22](../../../Source/PMapper/Core/BoldPMapperLists.pas#L22) | [`TBoldPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L12) | 🟢 ported |  |
+| `TBoldMemberPersistenceMapperDescriptorList` | class | [33](../../../Source/PMapper/Core/BoldPMapperLists.pas#L33) | [`TBoldMemberPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L30) | 🟢 ported |  |
+| `TBoldMemberPersistenceMapperDescriptor` | class | [48](../../../Source/PMapper/Core/BoldPMapperLists.pas#L48) | [`TBoldMemberPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L88) | 🟢 ported |  |
+| `TBoldSystemPersistenceMapperDescriptorList` | class | [61](../../../Source/PMapper/Core/BoldPMapperLists.pas#L61) | [`TBoldSystemPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L109) | 🟢 ported |  |
+| `TBoldSystemPersistenceMapperDescriptor` | class | [73](../../../Source/PMapper/Core/BoldPMapperLists.pas#L73) | [`TBoldSystemPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L143) | 🟢 ported |  |
+| `TBoldObjectPersistenceMapperDescriptorList` | class | [82](../../../Source/PMapper/Core/BoldPMapperLists.pas#L82) | [`TBoldObjectPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L157) | 🟢 ported |  |
+| `TBoldObjectPersistenceMapperDescriptor` | class | [94](../../../Source/PMapper/Core/BoldPMapperLists.pas#L94) | [`TBoldObjectPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L191) | 🟢 ported |  |
+| `BoldMemberPersistenceMappers` | routine | [103](../../../Source/PMapper/Core/BoldPMapperLists.pas#L103) · [body 185](../../../Source/PMapper/Core/BoldPMapperLists.pas#L185) | [`BoldPMapperLists.BoldMemberPersistenceMappers`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L239) | 🟢 ported |  |
+| `BoldMemberPersistenceMappersAssigned` | routine | [104](../../../Source/PMapper/Core/BoldPMapperLists.pas#L104) · [body 192](../../../Source/PMapper/Core/BoldPMapperLists.pas#L192) | [`BoldPMapperLists.BoldMemberPersistenceMappersAssigned`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L241) | 🟢 ported |  |
+| `BoldSystemPersistenceMappers` | routine | [105](../../../Source/PMapper/Core/BoldPMapperLists.pas#L105) · [body 198](../../../Source/PMapper/Core/BoldPMapperLists.pas#L198) | [`BoldPMapperLists.BoldSystemPersistenceMappers`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L244) | 🟢 ported |  |
+| `BoldSystemPersistenceMappersAssigned` | routine | [106](../../../Source/PMapper/Core/BoldPMapperLists.pas#L106) · [body 205](../../../Source/PMapper/Core/BoldPMapperLists.pas#L205) | [`BoldPMapperLists.BoldSystemPersistenceMappersAssigned`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L246) | 🟢 ported |  |
+| `BoldObjectPersistenceMappers` | routine | [107](../../../Source/PMapper/Core/BoldPMapperLists.pas#L107) · [body 211](../../../Source/PMapper/Core/BoldPMapperLists.pas#L211) | [`BoldPMapperLists.BoldObjectPersistenceMappers`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L249) | 🟢 ported |  |
+| `BoldObjectPersistenceMappersAssigned` | routine | [108](../../../Source/PMapper/Core/BoldPMapperLists.pas#L108) · [body 218](../../../Source/PMapper/Core/BoldPMapperLists.pas#L218) | [`BoldPMapperLists.BoldObjectPersistenceMappersAssigned`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L251) | 🟢 ported |  |
+| `TBoldMemberPMapperNameIndex` | class, implementation | [129](../../../Source/PMapper/Core/BoldPMapperLists.pas#L129) | [`TBoldMemberPMapperNameIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L204) | 🟢 ported |  |
+| `TBoldMemberPMapperClassIndex` | class, implementation | [135](../../../Source/PMapper/Core/BoldPMapperLists.pas#L135) | [`TBoldMemberPMapperClassIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L211) | 🟢 ported |  |
+| `TBoldSystemPMapperNameIndex` | class, implementation | [141](../../../Source/PMapper/Core/BoldPMapperLists.pas#L141) | [`TBoldSystemPMapperNameIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L218) | 🟢 ported |  |
+| `TBoldObjectPMapperNameIndex` | class, implementation | [147](../../../Source/PMapper/Core/BoldPMapperLists.pas#L147) | [`TBoldObjectPMapperNameIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L225) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [368](../../../Source/PMapper/Core/BoldPMapperLists.pas#L368) | [`[assembly: Delphi] in BoldPMapperLists.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L5) | 🟢 ported: Empty in Delphi. |  |
+| `finalization` | finalization, implementation | [370](../../../Source/PMapper/Core/BoldPMapperLists.pas#L370) | [`[assembly: Delphi] in BoldPMapperLists.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L6) | 🔵 replaced: Freed the registries; the garbage collector does that in .NET. |  |
 
 ## TBoldPersistenceMapperDescriptor
 
-class at [line 22](../../../Source/PMapper/Core/BoldPMapperLists.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/PMapper/Core/BoldPMapperLists.pas#L22); 🟢 ported, C# [`TBoldPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [27](../../../Source/PMapper/Core/BoldPMapperLists.pas#L27) · [body 177](../../../Source/PMapper/Core/BoldPMapperLists.pas#L177) |  | ⚪ not started |  |
-| `Name` | property | [28](../../../Source/PMapper/Core/BoldPMapperLists.pas#L28) |  | ⚪ not started |  |
-| `PersistenceMapperClass` | property | [29](../../../Source/PMapper/Core/BoldPMapperLists.pas#L29) |  | ⚪ not started |  |
+| `Create` | constructor | [27](../../../Source/PMapper/Core/BoldPMapperLists.pas#L27) · [body 177](../../../Source/PMapper/Core/BoldPMapperLists.pas#L177) | [`TBoldPersistenceMapperDescriptor.TBoldPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L18) | 🟢 ported |  |
+| `Name` | property | [28](../../../Source/PMapper/Core/BoldPMapperLists.pas#L28) | [`TBoldPersistenceMapperDescriptor.Name`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L24) | 🟢 ported |  |
+| `PersistenceMapperClass` | property | [29](../../../Source/PMapper/Core/BoldPMapperLists.pas#L29) | [`TBoldPersistenceMapperDescriptor.PersistenceMapperClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L25) | 🟢 ported |  |
 
 ## TBoldMemberPersistenceMapperDescriptorList
 
-class at [line 33](../../../Source/PMapper/Core/BoldPMapperLists.pas#L33); ⚪ not started.
+class at [line 33](../../../Source/PMapper/Core/BoldPMapperLists.pas#L33); 🟢 ported, C# [`TBoldMemberPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L30).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorBydelphiName` | method, private | [35](../../../Source/PMapper/Core/BoldPMapperLists.pas#L35) · [body 232](../../../Source/PMapper/Core/BoldPMapperLists.pas#L232) |  | ⚪ not started |  |
-| `GetDescriptors` | method, private | [36](../../../Source/PMapper/Core/BoldPMapperLists.pas#L36) · [body 237](../../../Source/PMapper/Core/BoldPMapperLists.pas#L237) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/PMapper/Core/BoldPMapperLists.pas#L38) · [body 224](../../../Source/PMapper/Core/BoldPMapperLists.pas#L224) |  | ⚪ not started |  |
-| `AddDescriptor` | method | [39](../../../Source/PMapper/Core/BoldPMapperLists.pas#L39) · [body 242](../../../Source/PMapper/Core/BoldPMapperLists.pas#L242) |  | ⚪ not started |  |
-| `RemoveDescriptorByClass` | method | [41](../../../Source/PMapper/Core/BoldPMapperLists.pas#L41) · [body 250](../../../Source/PMapper/Core/BoldPMapperLists.pas#L250) |  | ⚪ not started |  |
-| `DescriptorForModelNameWithDefaultSupport` | method | [42](../../../Source/PMapper/Core/BoldPMapperLists.pas#L42) · [body 344](../../../Source/PMapper/Core/BoldPMapperLists.pas#L344) |  | ⚪ not started |  |
-| `DescriptorByDelphiName` | property | [43](../../../Source/PMapper/Core/BoldPMapperLists.pas#L43) |  | ⚪ not started |  |
-| `Descriptors` | property | [44](../../../Source/PMapper/Core/BoldPMapperLists.pas#L44) |  | ⚪ not started |  |
+| `GetDescriptorBydelphiName` | method, private | [35](../../../Source/PMapper/Core/BoldPMapperLists.pas#L35) · [body 232](../../../Source/PMapper/Core/BoldPMapperLists.pas#L232) | [`TBoldMemberPersistenceMapperDescriptorList.GetDescriptorBydelphiName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L44) | 🟢 ported |  |
+| `GetDescriptors` | method, private | [36](../../../Source/PMapper/Core/BoldPMapperLists.pas#L36) · [body 237](../../../Source/PMapper/Core/BoldPMapperLists.pas#L237) | [`TBoldMemberPersistenceMapperDescriptorList.GetDescriptors`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L48) | 🟢 ported |  |
+| `Create` | constructor | [38](../../../Source/PMapper/Core/BoldPMapperLists.pas#L38) · [body 224](../../../Source/PMapper/Core/BoldPMapperLists.pas#L224) | [`TBoldMemberPersistenceMapperDescriptorList.TBoldMemberPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L36) | 🟢 ported |  |
+| `AddDescriptor` | method | [39](../../../Source/PMapper/Core/BoldPMapperLists.pas#L39) · [body 242](../../../Source/PMapper/Core/BoldPMapperLists.pas#L242) | [`TBoldMemberPersistenceMapperDescriptorList.AddDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L51) | 🟢 ported |  |
+| `RemoveDescriptorByClass` | method | [41](../../../Source/PMapper/Core/BoldPMapperLists.pas#L41) · [body 250](../../../Source/PMapper/Core/BoldPMapperLists.pas#L250) | [`TBoldMemberPersistenceMapperDescriptorList.RemoveDescriptorByClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L55) | 🟢 ported |  |
+| `DescriptorForModelNameWithDefaultSupport` | method | [42](../../../Source/PMapper/Core/BoldPMapperLists.pas#L42) · [body 344](../../../Source/PMapper/Core/BoldPMapperLists.pas#L344) | [`TBoldMemberPersistenceMapperDescriptorList.DescriptorForModelNameWithDefaultSupport`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L63) | 🟢 ported |  |
+| `DescriptorByDelphiName` | property | [43](../../../Source/PMapper/Core/BoldPMapperLists.pas#L43) | [`TBoldMemberPersistenceMapperDescriptorList.DescriptorByDelphiName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L80) | 🟢 ported: An indexed property in Delphi. |  |
+| `Descriptors` | property | [44](../../../Source/PMapper/Core/BoldPMapperLists.pas#L44) | [`TBoldMemberPersistenceMapperDescriptorList.Descriptors`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L83) | 🟢 ported: An indexed property in Delphi. |  |
 
 ## TBoldMemberPersistenceMapperDescriptor
 
-class at [line 48](../../../Source/PMapper/Core/BoldPMapperLists.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/PMapper/Core/BoldPMapperLists.pas#L48); 🟢 ported, C# [`TBoldMemberPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L88).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMemberPersistenceMapperClass` | method, private | [51](../../../Source/PMapper/Core/BoldPMapperLists.pas#L51) · [body 264](../../../Source/PMapper/Core/BoldPMapperLists.pas#L264) |  | ⚪ not started |  |
-| `Create` | constructor | [53](../../../Source/PMapper/Core/BoldPMapperLists.pas#L53) · [body 257](../../../Source/PMapper/Core/BoldPMapperLists.pas#L257) |  | ⚪ not started |  |
-| `MemberPersistenceMapperClass` | property | [55](../../../Source/PMapper/Core/BoldPMapperLists.pas#L55) |  | ⚪ not started |  |
-| `AbstractionLevel` | property | [56](../../../Source/PMapper/Core/BoldPMapperLists.pas#L56) |  | ⚪ not started |  |
-| `CanStore` | method | [57](../../../Source/PMapper/Core/BoldPMapperLists.pas#L57) · [body 269](../../../Source/PMapper/Core/BoldPMapperLists.pas#L269) |  | ⚪ not started |  |
+| `GetMemberPersistenceMapperClass` | method, private | [51](../../../Source/PMapper/Core/BoldPMapperLists.pas#L51) · [body 264](../../../Source/PMapper/Core/BoldPMapperLists.pas#L264) | [`TBoldMemberPersistenceMapperDescriptor.GetMemberPersistenceMapperClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L99) | 🟢 ported |  |
+| `Create` | constructor | [53](../../../Source/PMapper/Core/BoldPMapperLists.pas#L53) · [body 257](../../../Source/PMapper/Core/BoldPMapperLists.pas#L257) | [`TBoldMemberPersistenceMapperDescriptor.TBoldMemberPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L93) | 🟢 ported |  |
+| `MemberPersistenceMapperClass` | property | [55](../../../Source/PMapper/Core/BoldPMapperLists.pas#L55) | [`TBoldMemberPersistenceMapperDescriptor.MemberPersistenceMapperClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L100) | 🟢 ported |  |
+| `AbstractionLevel` | property | [56](../../../Source/PMapper/Core/BoldPMapperLists.pas#L56) | [`TBoldMemberPersistenceMapperDescriptor.AbstractionLevel`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L101) | 🟢 ported |  |
+| `CanStore` | method | [57](../../../Source/PMapper/Core/BoldPMapperLists.pas#L57) · [body 269](../../../Source/PMapper/Core/BoldPMapperLists.pas#L269) | [`TBoldMemberPersistenceMapperDescriptor.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L104) | 🟢 ported |  |
 
 ## TBoldSystemPersistenceMapperDescriptorList
 
-class at [line 61](../../../Source/PMapper/Core/BoldPMapperLists.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/PMapper/Core/BoldPMapperLists.pas#L61); 🟢 ported, C# [`TBoldSystemPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L109).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorByName` | method, private | [63](../../../Source/PMapper/Core/BoldPMapperLists.pas#L63) · [body 282](../../../Source/PMapper/Core/BoldPMapperLists.pas#L282) |  | ⚪ not started |  |
-| `GetDescriptors` | method, private | [64](../../../Source/PMapper/Core/BoldPMapperLists.pas#L64) · [body 287](../../../Source/PMapper/Core/BoldPMapperLists.pas#L287) |  | ⚪ not started |  |
-| `Create` | constructor | [66](../../../Source/PMapper/Core/BoldPMapperLists.pas#L66) · [body 275](../../../Source/PMapper/Core/BoldPMapperLists.pas#L275) |  | ⚪ not started |  |
-| `RemoveDescriptorByName` | method | [67](../../../Source/PMapper/Core/BoldPMapperLists.pas#L67) · [body 292](../../../Source/PMapper/Core/BoldPMapperLists.pas#L292) |  | ⚪ not started |  |
-| `DescriptorByName` | property | [68](../../../Source/PMapper/Core/BoldPMapperLists.pas#L68) |  | ⚪ not started |  |
-| `Descriptors` | property | [69](../../../Source/PMapper/Core/BoldPMapperLists.pas#L69) |  | ⚪ not started |  |
+| `GetDescriptorByName` | method, private | [63](../../../Source/PMapper/Core/BoldPMapperLists.pas#L63) · [body 282](../../../Source/PMapper/Core/BoldPMapperLists.pas#L282) | [`TBoldSystemPersistenceMapperDescriptorList.GetDescriptorByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L121) | 🟢 ported |  |
+| `GetDescriptors` | method, private | [64](../../../Source/PMapper/Core/BoldPMapperLists.pas#L64) · [body 287](../../../Source/PMapper/Core/BoldPMapperLists.pas#L287) | [`TBoldSystemPersistenceMapperDescriptorList.GetDescriptors`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L125) | 🟢 ported |  |
+| `Create` | constructor | [66](../../../Source/PMapper/Core/BoldPMapperLists.pas#L66) · [body 275](../../../Source/PMapper/Core/BoldPMapperLists.pas#L275) | [`TBoldSystemPersistenceMapperDescriptorList.TBoldSystemPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L114) | 🟢 ported |  |
+| `RemoveDescriptorByName` | method | [67](../../../Source/PMapper/Core/BoldPMapperLists.pas#L67) · [body 292](../../../Source/PMapper/Core/BoldPMapperLists.pas#L292) | [`TBoldSystemPersistenceMapperDescriptorList.RemoveDescriptorByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L128) | 🟢 ported |  |
+| `DescriptorByName` | property | [68](../../../Source/PMapper/Core/BoldPMapperLists.pas#L68) | [`TBoldSystemPersistenceMapperDescriptorList.DescriptorByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L135) | 🟢 ported: An indexed property in Delphi. |  |
+| `Descriptors` | property | [69](../../../Source/PMapper/Core/BoldPMapperLists.pas#L69) | [`TBoldSystemPersistenceMapperDescriptorList.Descriptors`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L138) | 🟢 ported: An indexed property in Delphi. |  |
 
 ## TBoldSystemPersistenceMapperDescriptor
 
-class at [line 73](../../../Source/PMapper/Core/BoldPMapperLists.pas#L73); ⚪ not started.
+class at [line 73](../../../Source/PMapper/Core/BoldPMapperLists.pas#L73); 🟢 ported, C# [`TBoldSystemPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L143).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSystemPersistenceMapperClass` | method, private | [75](../../../Source/PMapper/Core/BoldPMapperLists.pas#L75) · [body 304](../../../Source/PMapper/Core/BoldPMapperLists.pas#L304) |  | ⚪ not started |  |
-| `Create` | constructor | [77](../../../Source/PMapper/Core/BoldPMapperLists.pas#L77) · [body 299](../../../Source/PMapper/Core/BoldPMapperLists.pas#L299) |  | ⚪ not started |  |
-| `SystemPersistenceMapperClass` | property | [78](../../../Source/PMapper/Core/BoldPMapperLists.pas#L78) |  | ⚪ not started |  |
+| `GetSystemPersistenceMapperClass` | method, private | [75](../../../Source/PMapper/Core/BoldPMapperLists.pas#L75) · [body 304](../../../Source/PMapper/Core/BoldPMapperLists.pas#L304) | [`TBoldSystemPersistenceMapperDescriptor.GetSystemPersistenceMapperClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L151) | 🟢 ported |  |
+| `Create` | constructor | [77](../../../Source/PMapper/Core/BoldPMapperLists.pas#L77) · [body 299](../../../Source/PMapper/Core/BoldPMapperLists.pas#L299) | [`TBoldSystemPersistenceMapperDescriptor.TBoldSystemPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L146) | 🟢 ported |  |
+| `SystemPersistenceMapperClass` | property | [78](../../../Source/PMapper/Core/BoldPMapperLists.pas#L78) | [`TBoldSystemPersistenceMapperDescriptor.SystemPersistenceMapperClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L152) | 🟢 ported |  |
 
 ## TBoldObjectPersistenceMapperDescriptorList
 
-class at [line 82](../../../Source/PMapper/Core/BoldPMapperLists.pas#L82); ⚪ not started.
+class at [line 82](../../../Source/PMapper/Core/BoldPMapperLists.pas#L82); 🟢 ported, C# [`TBoldObjectPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L157).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorByName` | method, private | [84](../../../Source/PMapper/Core/BoldPMapperLists.pas#L84) · [body 317](../../../Source/PMapper/Core/BoldPMapperLists.pas#L317) |  | ⚪ not started |  |
-| `GetDescriptors` | method, private | [85](../../../Source/PMapper/Core/BoldPMapperLists.pas#L85) · [body 322](../../../Source/PMapper/Core/BoldPMapperLists.pas#L322) |  | ⚪ not started |  |
-| `Create` | constructor | [87](../../../Source/PMapper/Core/BoldPMapperLists.pas#L87) · [body 310](../../../Source/PMapper/Core/BoldPMapperLists.pas#L310) |  | ⚪ not started |  |
-| `RemoveDescriptorByName` | method | [88](../../../Source/PMapper/Core/BoldPMapperLists.pas#L88) · [body 327](../../../Source/PMapper/Core/BoldPMapperLists.pas#L327) |  | ⚪ not started |  |
-| `DescriptorByName` | property | [89](../../../Source/PMapper/Core/BoldPMapperLists.pas#L89) |  | ⚪ not started |  |
-| `Descriptors` | property | [90](../../../Source/PMapper/Core/BoldPMapperLists.pas#L90) |  | ⚪ not started |  |
+| `GetDescriptorByName` | method, private | [84](../../../Source/PMapper/Core/BoldPMapperLists.pas#L84) · [body 317](../../../Source/PMapper/Core/BoldPMapperLists.pas#L317) | [`TBoldObjectPersistenceMapperDescriptorList.GetDescriptorByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L169) | 🟢 ported |  |
+| `GetDescriptors` | method, private | [85](../../../Source/PMapper/Core/BoldPMapperLists.pas#L85) · [body 322](../../../Source/PMapper/Core/BoldPMapperLists.pas#L322) | [`TBoldObjectPersistenceMapperDescriptorList.GetDescriptors`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L173) | 🟢 ported |  |
+| `Create` | constructor | [87](../../../Source/PMapper/Core/BoldPMapperLists.pas#L87) · [body 310](../../../Source/PMapper/Core/BoldPMapperLists.pas#L310) | [`TBoldObjectPersistenceMapperDescriptorList.TBoldObjectPersistenceMapperDescriptorList`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L162) | 🟢 ported |  |
+| `RemoveDescriptorByName` | method | [88](../../../Source/PMapper/Core/BoldPMapperLists.pas#L88) · [body 327](../../../Source/PMapper/Core/BoldPMapperLists.pas#L327) | [`TBoldObjectPersistenceMapperDescriptorList.RemoveDescriptorByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L176) | 🟢 ported |  |
+| `DescriptorByName` | property | [89](../../../Source/PMapper/Core/BoldPMapperLists.pas#L89) | [`TBoldObjectPersistenceMapperDescriptorList.DescriptorByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L183) | 🟢 ported: An indexed property in Delphi. |  |
+| `Descriptors` | property | [90](../../../Source/PMapper/Core/BoldPMapperLists.pas#L90) | [`TBoldObjectPersistenceMapperDescriptorList.Descriptors`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L186) | 🟢 ported: An indexed property in Delphi. |  |
 
 ## TBoldObjectPersistenceMapperDescriptor
 
-class at [line 94](../../../Source/PMapper/Core/BoldPMapperLists.pas#L94); ⚪ not started.
+class at [line 94](../../../Source/PMapper/Core/BoldPMapperLists.pas#L94); 🟢 ported, C# [`TBoldObjectPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L191).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetObjectPersistenceMapperClass` | method, private | [96](../../../Source/PMapper/Core/BoldPMapperLists.pas#L96) · [body 339](../../../Source/PMapper/Core/BoldPMapperLists.pas#L339) |  | ⚪ not started |  |
-| `Create` | constructor | [98](../../../Source/PMapper/Core/BoldPMapperLists.pas#L98) · [body 334](../../../Source/PMapper/Core/BoldPMapperLists.pas#L334) |  | ⚪ not started |  |
-| `ObjectPersistenceMapper` | property | [99](../../../Source/PMapper/Core/BoldPMapperLists.pas#L99) |  | ⚪ not started |  |
+| `GetObjectPersistenceMapperClass` | method, private | [96](../../../Source/PMapper/Core/BoldPMapperLists.pas#L96) · [body 339](../../../Source/PMapper/Core/BoldPMapperLists.pas#L339) | [`TBoldObjectPersistenceMapperDescriptor.GetObjectPersistenceMapperClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L199) | 🟢 ported |  |
+| `Create` | constructor | [98](../../../Source/PMapper/Core/BoldPMapperLists.pas#L98) · [body 334](../../../Source/PMapper/Core/BoldPMapperLists.pas#L334) | [`TBoldObjectPersistenceMapperDescriptor.TBoldObjectPersistenceMapperDescriptor`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L194) | 🟢 ported |  |
+| `ObjectPersistenceMapper` | property | [99](../../../Source/PMapper/Core/BoldPMapperLists.pas#L99) | [`TBoldObjectPersistenceMapperDescriptor.ObjectPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L200) | 🟢 ported |  |
 
 ## TBoldMemberPMapperNameIndex
 
-class at [line 129](../../../Source/PMapper/Core/BoldPMapperLists.pas#L129); ⚪ not started.
+class at [line 129](../../../Source/PMapper/Core/BoldPMapperLists.pas#L129); 🟢 ported, C# [`TBoldMemberPMapperNameIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L204).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [131](../../../Source/PMapper/Core/BoldPMapperLists.pas#L131) · [body 153](../../../Source/PMapper/Core/BoldPMapperLists.pas#L153) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [131](../../../Source/PMapper/Core/BoldPMapperLists.pas#L131) · [body 153](../../../Source/PMapper/Core/BoldPMapperLists.pas#L153) | [`TBoldMemberPMapperNameIndex.ItemAsKeyString`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L207) | 🟢 ported |  |
 
 ## TBoldMemberPMapperClassIndex
 
-class at [line 135](../../../Source/PMapper/Core/BoldPMapperLists.pas#L135); ⚪ not started.
+class at [line 135](../../../Source/PMapper/Core/BoldPMapperLists.pas#L135); 🟢 ported, C# [`TBoldMemberPMapperClassIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L211).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyClass` | method, protected | [137](../../../Source/PMapper/Core/BoldPMapperLists.pas#L137) · [body 159](../../../Source/PMapper/Core/BoldPMapperLists.pas#L159) |  | ⚪ not started |  |
+| `ItemAsKeyClass` | method, protected | [137](../../../Source/PMapper/Core/BoldPMapperLists.pas#L137) · [body 159](../../../Source/PMapper/Core/BoldPMapperLists.pas#L159) | [`TBoldMemberPMapperClassIndex.ItemAsKeyClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L214) | 🟢 ported |  |
 
 ## TBoldSystemPMapperNameIndex
 
-class at [line 141](../../../Source/PMapper/Core/BoldPMapperLists.pas#L141); ⚪ not started.
+class at [line 141](../../../Source/PMapper/Core/BoldPMapperLists.pas#L141); 🟢 ported, C# [`TBoldSystemPMapperNameIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L218).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [143](../../../Source/PMapper/Core/BoldPMapperLists.pas#L143) · [body 165](../../../Source/PMapper/Core/BoldPMapperLists.pas#L165) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [143](../../../Source/PMapper/Core/BoldPMapperLists.pas#L143) · [body 165](../../../Source/PMapper/Core/BoldPMapperLists.pas#L165) | [`TBoldSystemPMapperNameIndex.ItemAsKeyString`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L221) | 🟢 ported |  |
 
 ## TBoldObjectPMapperNameIndex
 
-class at [line 147](../../../Source/PMapper/Core/BoldPMapperLists.pas#L147); ⚪ not started.
+class at [line 147](../../../Source/PMapper/Core/BoldPMapperLists.pas#L147); 🟢 ported, C# [`TBoldObjectPMapperNameIndex`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L225).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [149](../../../Source/PMapper/Core/BoldPMapperLists.pas#L149) · [body 171](../../../Source/PMapper/Core/BoldPMapperLists.pas#L171) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [149](../../../Source/PMapper/Core/BoldPMapperLists.pas#L149) · [body 171](../../../Source/PMapper/Core/BoldPMapperLists.pas#L171) | [`TBoldObjectPMapperNameIndex.ItemAsKeyString`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapperLists.cs#L228) | 🟢 ported |  |
 
 ## Dependencies
 

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of Bold.Persistence.Sql: the database interfaces, the ADO.NET layer, the mappers and SQL generation, on SQLite (decision D4). Test files mirror the Delphi paths.</Description>
+  </PropertyGroup>
+  <!-- Offline builds have no package feed: they use the small native SQLite provider in Support/; normal builds use Microsoft.Data.Sqlite. -->
+  <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
+    <DefineConstants>$(DefineConstants);BOLD_OFFLINE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+    <Compile Remove="Support/NativeSqlite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+  </ItemGroup>
+</Project>

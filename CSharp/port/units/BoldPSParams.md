@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Core/BoldPSParams.pas`](../../../Source/PMapper/Core/BoldPSParams.pas) (19 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPSParams.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPSParams.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSParams.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 2 symbols done, 0 verified |
+| Status | 🟢 ported: 2 of 2 symbols done, 0 verified |
 
-⚪ 2 not started
+🟢 2 ported
 
 ## Unit level
 
@@ -18,15 +18,15 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPSParams` | class | [6](../../../Source/PMapper/Core/BoldPSParams.pas#L6) |  | ⚪ not started |  |
+| `TBoldPSParams` | class | [6](../../../Source/PMapper/Core/BoldPSParams.pas#L6) | [`TBoldPSParams`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSParams.cs#L8) | 🟢 ported |  |
 
 ## TBoldPSParams
 
-class at [line 6](../../../Source/PMapper/Core/BoldPSParams.pas#L6); ⚪ not started.
+class at [line 6](../../../Source/PMapper/Core/BoldPSParams.pas#L6); 🟢 ported, C# [`TBoldPSParams`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSParams.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [9](../../../Source/PMapper/Core/BoldPSParams.pas#L9) · [body 14](../../../Source/PMapper/Core/BoldPSParams.pas#L14) |  | ⚪ not started |  |
+| `Create` | constructor | [9](../../../Source/PMapper/Core/BoldPSParams.pas#L9) · [body 14](../../../Source/PMapper/Core/BoldPSParams.pas#L14) | [`TBoldPSParams.TBoldPSParams`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSParams.cs#L11) | 🟢 ported |  |
 
 ## Dependencies
 

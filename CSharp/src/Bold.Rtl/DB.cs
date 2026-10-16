@@ -174,6 +174,33 @@ public class TParam
         }
     }
 
+    public decimal AsBCD
+    {
+        get => AsCurrency;
+        set
+        {
+            fValue = value;
+            DataType = TFieldType.ftBCD;
+        }
+    }
+
+    public int AsWord
+    {
+        get => AsInteger;
+        set
+        {
+            fValue = value;
+            DataType = TFieldType.ftWord;
+        }
+    }
+
+    /// <summary>Takes the field's type and the value, as Delphi's AssignFieldValue.</summary>
+    public void AssignFieldValue(TField Field, object? Value)
+    {
+        DataType = Field.DataType;
+        this.Value = Value;
+    }
+
     /// <summary>Copies name, types and value from <paramref name="Source"/>.</summary>
     public void Assign(TParam Source)
     {

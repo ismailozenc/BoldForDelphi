@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Default/BoldPSParamsDefault.pas`](../../../Source/PMapper/Default/BoldPSParamsDefault.pas) (15 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldPSParamsDefault.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldPSParamsDefault.cs`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSParamsDefault.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 1 symbols done, 0 verified |
+| Status | 🟢 ported: 1 of 1 symbols done, 0 verified |
 
-⚪ 1 not started
+🟢 1 ported
 
 ## Unit level
 
@@ -18,7 +18,7 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPSDefaultParams` | class | [9](../../../Source/PMapper/Default/BoldPSParamsDefault.pas#L9) |  | ⚪ not started |  |
+| `TBoldPSDefaultParams` | class | [9](../../../Source/PMapper/Default/BoldPSParamsDefault.pas#L9) | [`TBoldPSDefaultParams`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSParamsDefault.cs#L8) | 🟢 ported |  |
 
 ## Dependencies
 

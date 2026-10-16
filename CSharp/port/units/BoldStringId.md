@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/Id/BoldStringId.pas`](../../../Source/ValueSpace/Id/BoldStringId.pas) (117 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | ✅ verified: 15 of 15 symbols done, 15 verified |
 
-⚪ 15 not started
+✅ 15 verified
 
 ## Unit level
 
@@ -18,35 +18,45 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldStringID` | class | [9](../../../Source/ValueSpace/Id/BoldStringId.pas#L9) |  | ⚪ not started |  |
-| `TBoldXMLStringIdStreamer` | class, implementation | [34](../../../Source/ValueSpace/Id/BoldStringId.pas#L34) |  | ⚪ not started |  |
-| `HashString` | routine, implementation | [45](../../../Source/ValueSpace/Id/BoldStringId.pas#L45) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [115](../../../Source/ValueSpace/Id/BoldStringId.pas#L115) |  | ⚪ not started |  |
+| `TBoldStringID` | class | [9](../../../Source/ValueSpace/Id/BoldStringId.pas#L9) | [`TBoldStringID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L10) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `TBoldXMLStringIdStreamer` | class, implementation | [34](../../../Source/ValueSpace/Id/BoldStringId.pas#L34) | [`TBoldXMLStringIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L52) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `HashString` | routine, implementation | [45](../../../Source/ValueSpace/Id/BoldStringId.pas#L45) | [`BoldStringId.HashString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L82) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `initialization` | initialization, implementation | [115](../../../Source/ValueSpace/Id/BoldStringId.pas#L115) | [`[assembly: Delphi] in BoldStringId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L4) | ✅ verified: Registers the streamer from the Bold.ValueSpace module initializer. | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
 
 ## TBoldStringID
 
-class at [line 9](../../../Source/ValueSpace/Id/BoldStringId.pas#L9); ⚪ not started.
+class at [line 9](../../../Source/ValueSpace/Id/BoldStringId.pas#L9); ✅ verified, C# [`TBoldStringID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetAsString` | method, protected | [12](../../../Source/ValueSpace/Id/BoldStringId.pas#L12) · [body 84](../../../Source/ValueSpace/Id/BoldStringId.pas#L84) |  | ⚪ not started |  |
-| `GetAsString` | method, protected | [13](../../../Source/ValueSpace/Id/BoldStringId.pas#L13) · [body 63](../../../Source/ValueSpace/Id/BoldStringId.pas#L63) |  | ⚪ not started |  |
-| `GetHash` | method, protected | [14](../../../Source/ValueSpace/Id/BoldStringId.pas#L14) · [body 68](../../../Source/ValueSpace/Id/BoldStringId.pas#L68) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [15](../../../Source/ValueSpace/Id/BoldStringId.pas#L15) · [body 79](../../../Source/ValueSpace/Id/BoldStringId.pas#L79) |  | ⚪ not started |  |
-| `CloneWithClassId` | method | [17](../../../Source/ValueSpace/Id/BoldStringId.pas#L17) · [body 56](../../../Source/ValueSpace/Id/BoldStringId.pas#L56) |  | ⚪ not started |  |
-| `GetIsEqual` | method | [18](../../../Source/ValueSpace/Id/BoldStringId.pas#L18) · [body 73](../../../Source/ValueSpace/Id/BoldStringId.pas#L73) |  | ⚪ not started |  |
-| `AsString` | property | [19](../../../Source/ValueSpace/Id/BoldStringId.pas#L19) |  | ⚪ not started |  |
+| `SetAsString` | method, protected | [12](../../../Source/ValueSpace/Id/BoldStringId.pas#L12) · [body 84](../../../Source/ValueSpace/Id/BoldStringId.pas#L84) | [`TBoldStringID.SetAsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L24) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `GetAsString` | method, protected | [13](../../../Source/ValueSpace/Id/BoldStringId.pas#L13) · [body 63](../../../Source/ValueSpace/Id/BoldStringId.pas#L63) | [`TBoldStringID.GetAsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L25) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `GetHash` | method, protected | [14](../../../Source/ValueSpace/Id/BoldStringId.pas#L14) · [body 68](../../../Source/ValueSpace/Id/BoldStringId.pas#L68) | [`TBoldStringID.GetHash`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L26) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `GetStreamName` | method, protected | [15](../../../Source/ValueSpace/Id/BoldStringId.pas#L15) · [body 79](../../../Source/ValueSpace/Id/BoldStringId.pas#L79) | [`TBoldStringID.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L27) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `CloneWithClassId` | method | [17](../../../Source/ValueSpace/Id/BoldStringId.pas#L17) · [body 56](../../../Source/ValueSpace/Id/BoldStringId.pas#L56) | [`TBoldStringID.CloneWithClassId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L31) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `GetIsEqual` | method | [18](../../../Source/ValueSpace/Id/BoldStringId.pas#L18) · [body 73](../../../Source/ValueSpace/Id/BoldStringId.pas#L73) | [`TBoldStringID.GetIsEqual`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L40) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `AsString` | property | [19](../../../Source/ValueSpace/Id/BoldStringId.pas#L19) | [`TBoldStringID.AsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L44) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
 
 ## TBoldXMLStringIdStreamer
 
-class at [line 34](../../../Source/ValueSpace/Id/BoldStringId.pas#L34); ⚪ not started.
+class at [line 34](../../../Source/ValueSpace/Id/BoldStringId.pas#L34); ✅ verified, C# [`TBoldXMLStringIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L52).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [36](../../../Source/ValueSpace/Id/BoldStringId.pas#L36) · [body 95](../../../Source/ValueSpace/Id/BoldStringId.pas#L95) |  | ⚪ not started |  |
-| `WriteObject` | method | [38](../../../Source/ValueSpace/Id/BoldStringId.pas#L38) · [body 108](../../../Source/ValueSpace/Id/BoldStringId.pas#L108) |  | ⚪ not started |  |
-| `ReadObject` | method | [39](../../../Source/ValueSpace/Id/BoldStringId.pas#L39) · [body 100](../../../Source/ValueSpace/Id/BoldStringId.pas#L100) |  | ⚪ not started |  |
-| `CreateObject` | method | [40](../../../Source/ValueSpace/Id/BoldStringId.pas#L40) · [body 90](../../../Source/ValueSpace/Id/BoldStringId.pas#L90) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [36](../../../Source/ValueSpace/Id/BoldStringId.pas#L36) · [body 95](../../../Source/ValueSpace/Id/BoldStringId.pas#L95) | [`TBoldXMLStringIdStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L55) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `WriteObject` | method | [38](../../../Source/ValueSpace/Id/BoldStringId.pas#L38) · [body 108](../../../Source/ValueSpace/Id/BoldStringId.pas#L108) | [`TBoldXMLStringIdStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L58) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `ReadObject` | method | [39](../../../Source/ValueSpace/Id/BoldStringId.pas#L39) · [body 100](../../../Source/ValueSpace/Id/BoldStringId.pas#L100) | [`TBoldXMLStringIdStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L65) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+| `CreateObject` | method | [40](../../../Source/ValueSpace/Id/BoldStringId.pas#L40) · [body 90](../../../Source/ValueSpace/Id/BoldStringId.pas#L90) | [`TBoldXMLStringIdStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L72) | ✅ verified | ✔ [`BoldStringIdTests.String_ids_compare_by_value_and_stream`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L13) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldStringID.fIdValue`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L12) (field)
+- [`TBoldStringID.TBoldStringID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L15) (constructor)
+- [`TBoldStringID.TBoldStringID`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L19) (constructor)
+- [`BoldStringId.BoldNodeName_IdValue`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L78) (const)
+- [`BoldStringId.RegisterStreamers`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs#L93) (method)
 
 ## Dependencies
 

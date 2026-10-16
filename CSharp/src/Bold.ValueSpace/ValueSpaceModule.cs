@@ -13,6 +13,8 @@ internal static class ValueSpaceModule
     {
         BoldId.RegisterStreamers();
         BoldDefaultId.RegisterStreamers();
+        BoldStringId.RegisterStreamers();
+        BoldGlobalId.RegisterStreamers();
         BoldDefaultXMLStreaming.RegisterStreamers();
         BoldFreeStandingValueFactories.Initialize();
         BoldCondition.RegisterStreamers();

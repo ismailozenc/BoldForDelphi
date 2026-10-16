@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ValueSpace/Id/BoldGlobalId.pas`](../../../Source/ValueSpace/Id/BoldGlobalId.pas) (131 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs` |
+| C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 17 symbols done, 0 verified |
+| Status | ✅ verified: 17 of 17 symbols done, 17 verified |
 
-⚪ 17 not started
+✅ 17 verified
 
 ## Unit level
 
@@ -18,37 +18,46 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BOLDGLOBALIDNAME` | const | [10](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L10) |  | ⚪ not started |  |
-| `TBoldGlobalId` | class | [15](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L15) |  | ⚪ not started |  |
-| `TBoldXMLGlobalIdStreamer` | class, implementation | [48](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L48) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [128](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L128) |  | ⚪ not started |  |
+| `BOLDGLOBALIDNAME` | const | [10](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L10) | [`BoldGlobalId.BOLDGLOBALIDNAME`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L79) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `TBoldGlobalId` | class | [15](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L15) | [`TBoldGlobalId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L10) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `TBoldXMLGlobalIdStreamer` | class, implementation | [48](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L48) | [`TBoldXMLGlobalIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L50) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `initialization` | initialization, implementation | [128](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L128) | [`[assembly: Delphi] in BoldGlobalId.cs`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L4) | ✅ verified: Registers the streamer from the Bold.ValueSpace module initializer. | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
 
 ## TBoldGlobalId
 
-class at [line 15](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L15); ✅ verified, C# [`TBoldGlobalId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [20](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L20) · [body 71](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L71) |  | ⚪ not started |  |
-| `GetHash` | method, protected | [21](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L21) · [body 76](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L76) |  | ⚪ not started |  |
-| `GetIsStorable` | method, protected | [22](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L22) · [body 87](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L87) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [23](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L23) · [body 92](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L92) |  | ⚪ not started |  |
-| `CreateWithInfo` | constructor | [25](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L25) · [body 64](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L64) |  | ⚪ not started |  |
-| `CloneWithClassId` | method | [26](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L26) · [body 59](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L59) |  | ⚪ not started |  |
-| `GetIsEqual` | method | [27](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L27) · [body 81](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L81) |  | ⚪ not started |  |
-| `ClassExpressionName` | property | [28](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L28) |  | ⚪ not started |  |
-| `AsString` | property | [29](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L29) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [20](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L20) · [body 71](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L71) | [`TBoldGlobalId.GetAsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L28) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `GetHash` | method, protected | [21](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L21) · [body 76](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L76) | [`TBoldGlobalId.GetHash`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L29) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `GetIsStorable` | method, protected | [22](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L22) · [body 87](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L87) | [`TBoldGlobalId.GetIsStorable`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L30) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `GetStreamName` | method, protected | [23](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L23) · [body 92](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L92) | [`TBoldGlobalId.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L31) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `CreateWithInfo` | constructor | [25](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L25) · [body 64](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L64) | [`TBoldGlobalId.TBoldGlobalId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L21) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `CloneWithClassId` | method | [26](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L26) · [body 59](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L59) | [`TBoldGlobalId.CloneWithClassId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L34) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `GetIsEqual` | method | [27](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L27) · [body 81](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L81) | [`TBoldGlobalId.GetIsEqual`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L37) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `ClassExpressionName` | property | [28](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L28) | [`TBoldGlobalId.ClassExpressionName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L39) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `AsString` | property | [29](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L29) | [`TBoldGlobalId.AsString`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L40) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
 
 ## TBoldXMLGlobalIdStreamer
 
-class at [line 48](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L48); ✅ verified, C# [`TBoldXMLGlobalIdStreamer`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L50).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [50](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L50) · [body 104](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L104) |  | ⚪ not started |  |
-| `WriteObject` | method | [52](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L52) · [body 121](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L121) |  | ⚪ not started |  |
-| `ReadObject` | method | [53](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L53) · [body 109](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L109) |  | ⚪ not started |  |
-| `CreateObject` | method | [54](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L54) · [body 99](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L99) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [50](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L50) · [body 104](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L104) | [`TBoldXMLGlobalIdStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L53) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `WriteObject` | method | [52](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L52) · [body 121](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L121) | [`TBoldXMLGlobalIdStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L56) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `ReadObject` | method | [53](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L53) · [body 109](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L109) | [`TBoldXMLGlobalIdStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L64) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+| `CreateObject` | method | [54](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L54) · [body 99](../../../Source/ValueSpace/Id/BoldGlobalId.pas#L99) | [`TBoldXMLGlobalIdStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L73) | ✅ verified | ✔ [`BoldStringIdTests.Global_ids_are_not_storable_and_take_the_class_name_from_the_model`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Id/BoldStringIdTests.cs#L38) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldGlobalId.TBoldGlobalId`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L16) (constructor)
+- [`TBoldGlobalId.SetFromStream`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L42) (method)
+- [`BoldGlobalId.BoldNodeName_Id`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L80) (const)
+- [`BoldGlobalId.RegisterStreamers`](../../src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs#L82) (method)
 
 ## Dependencies
 

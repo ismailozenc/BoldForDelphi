@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Core/BoldAbstractObjectUpgrader.pas`](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas) (148 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 28 symbols done, 0 verified |
+| Status | 🟢 ported: 28 of 28 symbols done, 0 verified |
 
-⚪ 28 not started
+🟢 28 ported
 
 ## Unit level
 
@@ -18,55 +18,61 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldObjectUpgraderConfigItemClass` | class reference | [16](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L16) |  | ⚪ not started |  |
-| `TBoldObjectUpgraderConfigClass` | class reference | [17](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L17) |  | ⚪ not started |  |
-| `TBoldObjectUpgraderConfigurationItem` | class | [19](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L19) |  | ⚪ not started |  |
-| `TBoldObjectUpgraderConfiguration` | class | [35](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L35) |  | ⚪ not started |  |
-| `TBoldAbstractObjectUpgrader` | class | [49](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L49) |  | ⚪ not started |  |
+| `TBoldObjectUpgraderConfigItemClass` | class reference | [16](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L16) | [`[assembly: Delphi] in BoldAbstractObjectUpgrader.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L4) | 🟢 ported: A System.Type of the item class. |  |
+| `TBoldObjectUpgraderConfigClass` | class reference | [17](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L17) | [`[assembly: Delphi] in BoldAbstractObjectUpgrader.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L5) | 🟢 ported: A System.Type of the configuration class. |  |
+| `TBoldObjectUpgraderConfigurationItem` | class | [19](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L19) | [`TBoldObjectUpgraderConfigurationItem`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L11) | 🟢 ported |  |
+| `TBoldObjectUpgraderConfiguration` | class | [35](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L35) | [`TBoldObjectUpgraderConfiguration`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L43) | 🟢 ported |  |
+| `TBoldAbstractObjectUpgrader` | class | [49](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L49) | [`TBoldAbstractObjectUpgrader`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L78) | 🟢 ported |  |
 
 ## TBoldObjectUpgraderConfigurationItem
 
-class at [line 19](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L19); 🟢 ported, C# [`TBoldObjectUpgraderConfigurationItem`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetExpressionName` | method, private | [22](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L22) · [body 95](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L95) |  | ⚪ not started |  |
-| `SetUpgradeOlderThanVersion` | method, private | [23](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L23) · [body 100](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L100) |  | ⚪ not started |  |
-| `GetConfig` | method, private | [24](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L24) · [body 81](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L81) |  | ⚪ not started |  |
-| `GetDisplayName` | method, protected | [26](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L26) · [body 86](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L86) |  | ⚪ not started |  |
-| `Assign` | method | [28](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L28) · [body 72](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L72) |  | ⚪ not started |  |
-| `Config` | property | [29](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L29) |  | ⚪ not started |  |
-| `ExpressionName` | property, published | [31](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L31) |  | ⚪ not started |  |
-| `UpgradeOlderThanVersion` | property, published | [32](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L32) |  | ⚪ not started |  |
+| `SetExpressionName` | method, private | [22](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L22) · [body 95](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L95) | [`TBoldObjectUpgraderConfigurationItem.SetExpressionName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L16) | 🟢 ported |  |
+| `SetUpgradeOlderThanVersion` | method, private | [23](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L23) · [body 100](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L100) | [`TBoldObjectUpgraderConfigurationItem.SetUpgradeOlderThanVersion`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L19) | 🟢 ported |  |
+| `GetConfig` | method, private | [24](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L24) · [body 81](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L81) | [`TBoldObjectUpgraderConfigurationItem.GetConfig`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L20) | 🟢 ported |  |
+| `GetDisplayName` | method, protected | [26](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L26) · [body 86](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L86) | [`TBoldObjectUpgraderConfigurationItem.GetDisplayName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L23) | 🟢 ported |  |
+| `Assign` | method | [28](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L28) · [body 72](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L72) | [`TBoldObjectUpgraderConfigurationItem.Assign`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L27) | 🟢 ported |  |
+| `Config` | property | [29](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L29) | [`TBoldObjectUpgraderConfigurationItem.Config`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L36) | 🟢 ported |  |
+| `ExpressionName` | property, published | [31](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L31) | [`TBoldObjectUpgraderConfigurationItem.ExpressionName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L37) | 🟢 ported |  |
+| `UpgradeOlderThanVersion` | property, published | [32](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L32) | [`TBoldObjectUpgraderConfigurationItem.UpgradeOlderThanVersion`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L38) | 🟢 ported |  |
 
 ## TBoldObjectUpgraderConfiguration
 
-class at [line 35](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L35); ⚪ not started.
+class at [line 35](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L35); 🟢 ported, C# [`TBoldObjectUpgraderConfiguration`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L43).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [37](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L37) · [body 127](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L127) |  | ⚪ not started |  |
-| `GetConfigOwner` | method, private | [38](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L38) · [body 112](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L112) |  | ⚪ not started |  |
-| `GetItemByName` | method, private | [39](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L39) · [body 117](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L117) |  | ⚪ not started |  |
-| `GetItemClass` | method, protected | [41](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L41) · [body 122](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L122) |  | ⚪ not started |  |
-| `create` | constructor | [43](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L43) · [body 107](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L107) |  | ⚪ not started |  |
-| `ConfigOwner` | property | [44](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L44) |  | ⚪ not started |  |
-| `ItemByName` | property | [45](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L45) |  | ⚪ not started |  |
-| `items` | property | [46](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L46) |  | ⚪ not started |  |
+| `GetItems` | method, private | [37](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L37) · [body 127](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L127) | [`TBoldObjectUpgraderConfiguration.GetItems`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L58) | 🟢 ported |  |
+| `GetConfigOwner` | method, private | [38](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L38) · [body 112](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L112) | [`TBoldObjectUpgraderConfiguration.GetConfigOwner`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L59) | 🟢 ported |  |
+| `GetItemByName` | method, private | [39](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L39) · [body 117](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L117) | [`TBoldObjectUpgraderConfiguration.GetItemByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L62) | 🟢 ported |  |
+| `GetItemClass` | method, protected | [41](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L41) · [body 122](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L122) | [`TBoldObjectUpgraderConfiguration.GetItemClass`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L65) | 🟢 ported: The item class is passed to the constructor in .NET; this reports it. |  |
+| `create` | constructor | [43](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L43) · [body 107](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L107) | [`TBoldObjectUpgraderConfiguration.TBoldObjectUpgraderConfiguration`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L47) | 🟢 ported |  |
+| `ConfigOwner` | property | [44](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L44) | [`TBoldObjectUpgraderConfiguration.ConfigOwner`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L67) | 🟢 ported |  |
+| `ItemByName` | property | [45](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L45) | [`TBoldObjectUpgraderConfiguration.ItemByName`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L70) | 🟢 ported: An indexed property in Delphi. |  |
+| `items` | property | [46](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L46) | [`TBoldObjectUpgraderConfiguration.this`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L73) | 🟢 ported |  |
 
 ## TBoldAbstractObjectUpgrader
 
-class at [line 49](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L49); ⚪ not started.
+class at [line 49](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L49); 🟢 ported, C# [`TBoldAbstractObjectUpgrader`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L78).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [53](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L53) · [body 134](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L134) |  | ⚪ not started |  |
-| `UpgradeObjectById` | method | [54](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L54) |  | ⚪ not started |  |
-| `NeedsManualUpdate` | method | [55](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L55) · [body 140](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L140) |  | ⚪ not started |  |
-| `StartTransaction` | method | [56](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L56) |  | ⚪ not started |  |
-| `EndTransaction` | method | [57](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L57) |  | ⚪ not started |  |
-| `FailTransaction` | method | [58](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L58) |  | ⚪ not started |  |
-| `Config` | property | [59](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L59) |  | ⚪ not started |  |
+| `create` | constructor | [53](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L53) · [body 134](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L134) | [`TBoldAbstractObjectUpgrader.TBoldAbstractObjectUpgrader`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L83) | 🟢 ported |  |
+| `UpgradeObjectById` | method | [54](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L54) | [`TBoldAbstractObjectUpgrader.UpgradeObjectById`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L88) | 🟢 ported |  |
+| `NeedsManualUpdate` | method | [55](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L55) · [body 140](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L140) | [`TBoldAbstractObjectUpgrader.NeedsManualUpdate`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L92) | 🟢 ported |  |
+| `StartTransaction` | method | [56](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L56) | [`TBoldAbstractObjectUpgrader.StartTransaction`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L94) | 🟢 ported |  |
+| `EndTransaction` | method | [57](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L57) | [`TBoldAbstractObjectUpgrader.EndTransaction`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L95) | 🟢 ported |  |
+| `FailTransaction` | method | [58](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L58) | [`TBoldAbstractObjectUpgrader.FailTransaction`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L96) | 🟢 ported |  |
+| `Config` | property | [59](../../../Source/PMapper/Core/BoldAbstractObjectUpgrader.pas#L59) | [`TBoldAbstractObjectUpgrader.Config`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L97) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldObjectUpgraderConfiguration.TBoldObjectUpgraderConfiguration`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldAbstractObjectUpgrader.cs#L53) (constructor)
 
 ## Dependencies
 

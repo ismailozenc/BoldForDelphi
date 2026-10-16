@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Core/BoldPMapper.pas`](../../../Source/PMapper/Core/BoldPMapper.pas) (26 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPMapper.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPMapper.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapper.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
 
-⚪ 3 not started
+🟢 3 ported
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceMapperClass` | class reference | [10](../../../Source/PMapper/Core/BoldPMapper.pas#L10) |  | ⚪ not started |  |
-| `TBoldPersistenceMapper` | class | [13](../../../Source/PMapper/Core/BoldPMapper.pas#L13) |  | ⚪ not started |  |
+| `TBoldPersistenceMapperClass` | class reference | [10](../../../Source/PMapper/Core/BoldPMapper.pas#L10) | [`[assembly: Delphi] in BoldPMapper.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapper.cs#L4) | 🟢 ported: A System.Type of the mapper class. |  |
+| `TBoldPersistenceMapper` | class | [13](../../../Source/PMapper/Core/BoldPMapper.pas#L13) | [`TBoldPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapper.cs#L10) | 🟢 ported |  |
 
 ## TBoldPersistenceMapper
 
-class at [line 13](../../../Source/PMapper/Core/BoldPMapper.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/PMapper/Core/BoldPMapper.pas#L13); 🟢 ported, C# [`TBoldPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapper.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreatePersistentStorage` | method, protected | [15](../../../Source/PMapper/Core/BoldPMapper.pas#L15) · [body 21](../../../Source/PMapper/Core/BoldPMapper.pas#L21) |  | ⚪ not started |  |
+| `CreatePersistentStorage` | method, protected | [15](../../../Source/PMapper/Core/BoldPMapper.pas#L15) · [body 21](../../../Source/PMapper/Core/BoldPMapper.pas#L21) | [`TBoldPersistenceMapper.CreatePersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPMapper.cs#L14) | 🟢 ported |  |
 
 ## Dependencies
 

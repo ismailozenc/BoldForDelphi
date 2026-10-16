@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldGUIDUtils.pas`](../../../Source/Common/Support/BoldGUIDUtils.pas) (36 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldGUIDUtils.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldGUIDUtils.cs`](../../src/Bold.Core/Common/Support/BoldGUIDUtils.cs) |
 | Project | Bold.Core |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 2 symbols done, 0 verified |
+| Status | ✅ verified: 2 of 2 symbols done, 2 verified |
 
-⚪ 2 not started
+✅ 2 verified
 
 ## Unit level
 
@@ -18,8 +18,8 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BoldCreateGUIDAsString` | routine | [4](../../../Source/Common/Support/BoldGUIDUtils.pas#L4) · [body 20](../../../Source/Common/Support/BoldGUIDUtils.pas#L20) |  | ⚪ not started |  |
-| `BoldCreateGUIDWithBracketsAsString` | routine | [5](../../../Source/Common/Support/BoldGUIDUtils.pas#L5) · [body 15](../../../Source/Common/Support/BoldGUIDUtils.pas#L15) |  | ⚪ not started |  |
+| `BoldCreateGUIDAsString` | routine | [4](../../../Source/Common/Support/BoldGUIDUtils.pas#L4) · [body 20](../../../Source/Common/Support/BoldGUIDUtils.pas#L20) | [`BoldGUIDUtils.BoldCreateGUIDAsString`](../../src/Bold.Core/Common/Support/BoldGUIDUtils.cs#L11) | ✅ verified: Guid.NewGuid where Delphi calls CoCreateGuid and StringFromCLSID; same upper-case braced format. | ✔ [`BoldCollectionsTests.GUIDs_are_upper_case_and_braced`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L37) |
+| `BoldCreateGUIDWithBracketsAsString` | routine | [5](../../../Source/Common/Support/BoldGUIDUtils.pas#L5) · [body 15](../../../Source/Common/Support/BoldGUIDUtils.pas#L15) | [`BoldGUIDUtils.BoldCreateGUIDWithBracketsAsString`](../../src/Bold.Core/Common/Support/BoldGUIDUtils.cs#L18) | ✅ verified | ✔ [`BoldCollectionsTests.GUIDs_are_upper_case_and_braced`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L37) |
 
 ## Dependencies
 

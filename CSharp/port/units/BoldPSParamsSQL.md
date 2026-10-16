@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/SQL/BoldPSParamsSQL.pas`](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas) (23 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
 
-⚪ 3 not started
+🟢 3 ported
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPSSQLParams` | class | [11](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L11) |  | ⚪ not started |  |
+| `TBoldPSSQLParams` | class | [11](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L11) | [`TBoldPSSQLParams`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs#L8) | 🟢 ported |  |
 
 ## TBoldPSSQLParams
 
-class at [line 11](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L11); ⚪ not started.
+class at [line 11](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L11); 🟢 ported, C# [`TBoldPSSQLParams`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Database` | property | [16](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L16) |  | ⚪ not started |  |
-| `IgnoreUnknownTables` | property | [17](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L17) |  | ⚪ not started |  |
+| `Database` | property | [16](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L16) | [`TBoldPSSQLParams.Database`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs#L13) | 🟢 ported |  |
+| `IgnoreUnknownTables` | property | [17](../../../Source/PMapper/SQL/BoldPSParamsSQL.pas#L17) | [`TBoldPSSQLParams.IgnoreUnknownTables`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs#L14) | 🟢 ported |  |
 
 ## Dependencies
 

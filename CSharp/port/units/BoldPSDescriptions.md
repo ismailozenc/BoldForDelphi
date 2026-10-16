@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Core/BoldPSDescriptions.pas`](../../../Source/PMapper/Core/BoldPSDescriptions.pas) (35 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 5 symbols done, 0 verified |
+| Status | 🟢 ported: 5 of 5 symbols done, 0 verified |
 
-⚪ 5 not started
+🟢 5 ported
 
 ## Unit level
 
@@ -18,25 +18,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPSDescriptionElement` | class | [13](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L13) |  | ⚪ not started |  |
-| `TBoldPSSystemDescription` | class | [22](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L22) |  | ⚪ not started |  |
+| `TBoldPSDescriptionElement` | class | [13](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L13) | [`TBoldPSDescriptionElement`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs#L8) | 🟢 ported |  |
+| `TBoldPSSystemDescription` | class | [22](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L22) | [`TBoldPSSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs#L23) | 🟢 ported |  |
 
 ## TBoldPSDescriptionElement
 
-class at [line 13](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L13); 🟢 ported, C# [`TBoldPSDescriptionElement`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [17](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L17) · [body 30](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L30) |  | ⚪ not started |  |
-| `Owner` | property | [18](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L18) |  | ⚪ not started |  |
+| `Create` | constructor | [17](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L17) · [body 30](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L30) | [`TBoldPSDescriptionElement.TBoldPSDescriptionElement`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs#L13) | 🟢 ported |  |
+| `Owner` | property | [18](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L18) | [`TBoldPSDescriptionElement.Owner`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs#L18) | 🟢 ported |  |
 
 ## TBoldPSSystemDescription
 
-class at [line 22](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L22); 🟢 ported, C# [`TBoldPSSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs#L23).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreatePersistentStorage` | method | [24](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L24) |  | ⚪ not started |  |
+| `CreatePersistentStorage` | method | [24](../../../Source/PMapper/Core/BoldPSDescriptions.pas#L24) | [`TBoldPSSystemDescription.CreatePersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/Core/BoldPSDescriptions.cs#L26) | 🟢 ported |  |
 
 ## Dependencies
 

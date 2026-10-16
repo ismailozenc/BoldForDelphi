@@ -28,9 +28,9 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [ADOConsts](../../../CSharp/port/units/ADOConsts.md) | Bold.Persistence.Sql: Persistence/ADO/ADOConsts.cs (not started) | M5 SQL persistence |
-| [BoldADOInterfaces](../../../CSharp/port/units/BoldADOInterfaces.md) | Bold.Persistence.Sql: Persistence/ADO/BoldADOInterfaces.cs (not started) | M5 SQL persistence |
-| [BoldDatabaseAdapterADO](../../../CSharp/port/units/BoldDatabaseAdapterADO.md) | Bold.Persistence.Sql: Persistence/ADO/BoldDatabaseAdapterADO.cs (not started) | M5 SQL persistence |
+| [ADOConsts](../../../CSharp/port/units/ADOConsts.md) | [Bold.Persistence.Sql: Persistence/ADO/ADOConsts.cs](../../../CSharp/src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs) | M5 SQL persistence |
+| [BoldADOInterfaces](../../../CSharp/port/units/BoldADOInterfaces.md) | [Bold.Persistence.Sql: Persistence/ADO/BoldADOInterfaces.cs](../../../CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldADOInterfaces.cs) | M5 SQL persistence |
+| [BoldDatabaseAdapterADO](../../../CSharp/port/units/BoldDatabaseAdapterADO.md) | [Bold.Persistence.Sql: Persistence/ADO/BoldDatabaseAdapterADO.cs](../../../CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs) | M5 SQL persistence |
 | [BoldPersistenceHandleADO](../../../CSharp/port/units/BoldPersistenceHandleADO.md) | Bold.Persistence.Sql: Persistence/ADO/BoldPersistenceHandleADO.cs (not started) | M5 SQL persistence |
 | [BoldPersistenceHandleADOReg](../../../CSharp/port/units/BoldPersistenceHandleADOReg.md) | not ported: IDE registration |  |
 <!-- END C# PORT -->

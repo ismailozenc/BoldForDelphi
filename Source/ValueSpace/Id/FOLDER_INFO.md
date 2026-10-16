@@ -28,8 +28,8 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldDefaultId](../../../CSharp/port/units/BoldDefaultId.md) | [Bold.ValueSpace: ValueSpace/Id/BoldDefaultId.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldDefaultId.cs) | M2 Runtime model and subscriptions |
-| [BoldGlobalId](../../../CSharp/port/units/BoldGlobalId.md) | Bold.ValueSpace: ValueSpace/Id/BoldGlobalId.cs (not started) | M5 SQL persistence |
+| [BoldGlobalId](../../../CSharp/port/units/BoldGlobalId.md) | [Bold.ValueSpace: ValueSpace/Id/BoldGlobalId.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldGlobalId.cs) | M5 SQL persistence |
 | [BoldId](../../../CSharp/port/units/BoldId.md) | [Bold.ValueSpace: ValueSpace/Id/BoldId.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldId.cs) | M2 Runtime model and subscriptions |
-| [BoldStringId](../../../CSharp/port/units/BoldStringId.md) | Bold.ValueSpace: ValueSpace/Id/BoldStringId.cs (not started) | M5 SQL persistence |
+| [BoldStringId](../../../CSharp/port/units/BoldStringId.md) | [Bold.ValueSpace: ValueSpace/Id/BoldStringId.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Id/BoldStringId.cs) | M5 SQL persistence |
 | [ValueSpaceConst](../../../CSharp/port/units/ValueSpaceConst.md) | [Bold.ValueSpace: ValueSpace/Id/ValueSpaceConst.cs](../../../CSharp/src/Bold.ValueSpace/ValueSpace/Id/ValueSpaceConst.cs) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

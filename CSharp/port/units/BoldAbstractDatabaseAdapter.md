@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas`](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas) (106 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | 🟢 ported: 15 of 15 symbols done, 13 verified |
 
-⚪ 15 not started
+✅ 13 verified · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,28 +18,28 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `beDatabaseAdapterChanged` | const | [12](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L12) |  | ⚪ not started |  |
-| `TBoldAbstractDatabaseAdapter` | class | [19](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L19) |  | ⚪ not started |  |
+| `beDatabaseAdapterChanged` | const | [12](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L12) | [`BoldAbstractDatabaseAdapter.beDatabaseAdapterChanged`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L12) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `TBoldAbstractDatabaseAdapter` | class | [19](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L19) | [`TBoldAbstractDatabaseAdapter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L17) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
 
 ## TBoldAbstractDatabaseAdapter
 
-class at [line 19](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L19); ✅ verified, C# [`TBoldAbstractDatabaseAdapter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L17).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetSQLDatabaseConfig` | method, private | [24](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L24) · [body 101](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L101) |  | ⚪ not started |  |
-| `SetInternalDatabase` | method, private | [25](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L25) · [body 78](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L78) |  | ⚪ not started |  |
-| `ReleaseBoldDatabase` | method, protected | [27](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L27) |  | ⚪ not started |  |
-| `Changed` | method, protected | [28](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L28) · [body 49](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L49) |  | ⚪ not started |  |
-| `Notification` | method, protected | [29](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L29) · [body 66](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L66) |  | ⚪ not started |  |
-| `SetDataBaseEngine` | method, protected | [30](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L30) · [body 90](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L90) |  | ⚪ not started |  |
-| `DatabaseEngine` | property, protected | [31](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L31) |  | ⚪ not started |  |
-| `InternalDatabase` | property, protected | [32](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L32) |  | ⚪ not started |  |
-| `GetDataBaseInterface` | method, protected | [33](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L33) |  | ⚪ not started |  |
-| `Create` | constructor | [35](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L35) · [body 54](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L54) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L36) · [body 60](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L60) |  | ⚪ not started |  |
-| `DatabaseInterface` | property | [37](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L37) |  | ⚪ not started |  |
-| `SQLDatabaseConfig` | property, published | [39](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L39) |  | ⚪ not started |  |
+| `SetSQLDatabaseConfig` | method, private | [24](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L24) · [body 101](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L101) | [`TBoldAbstractDatabaseAdapter.SetSQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L31) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `SetInternalDatabase` | method, private | [25](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L25) · [body 78](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L78) | [`TBoldAbstractDatabaseAdapter.SetInternalDatabase`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L35) | ✅ verified: The connection is any object (an ADO.NET connection wrapper) where Delphi has a TComponent. | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `ReleaseBoldDatabase` | method, protected | [27](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L27) | [`TBoldAbstractDatabaseAdapter.ReleaseBoldDatabase`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L45) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `Changed` | method, protected | [28](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L28) · [body 49](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L49) | [`TBoldAbstractDatabaseAdapter.Changed`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L46) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `Notification` | method, protected | [29](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L29) · [body 66](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L66) | [`[assembly: Delphi] in BoldAbstractDatabaseAdapter.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L5) | 🔵 replaced: Released the database when the connection component was freed; .NET has no free notification, so set InternalDatabase to null instead. |  |
+| `SetDataBaseEngine` | method, protected | [30](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L30) · [body 90](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L90) | [`TBoldAbstractDatabaseAdapter.SetDataBaseEngine`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L50) | ✅ verified: Always applies the preset; Delphi skips it while loading a form. | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `DatabaseEngine` | property, protected | [31](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L31) | [`TBoldAbstractDatabaseAdapter.DatabaseEngine`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L60) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `InternalDatabase` | property, protected | [32](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L32) | [`TBoldAbstractDatabaseAdapter.InternalDatabase`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L61) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `GetDataBaseInterface` | method, protected | [33](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L33) | [`TBoldAbstractDatabaseAdapter.GetDataBaseInterface`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L62) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `Create` | constructor | [35](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L35) · [body 54](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L54) | [`TBoldAbstractDatabaseAdapter.TBoldAbstractDatabaseAdapter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L24) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `Destroy` | destructor | [36](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L36) · [body 60](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L60) | [`[assembly: Delphi] in BoldAbstractDatabaseAdapter.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L4) | 🔵 replaced: Freed the configuration; the garbage collector does that in .NET. |  |
+| `DatabaseInterface` | property | [37](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L37) | [`TBoldAbstractDatabaseAdapter.DatabaseInterface`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L63) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `SQLDatabaseConfig` | property, published | [39](../../../Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas#L39) | [`TBoldAbstractDatabaseAdapter.SQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractDatabaseAdapter.cs#L64) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
 
 ## Dependencies
 

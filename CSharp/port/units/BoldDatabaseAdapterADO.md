@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ADO/BoldDatabaseAdapterADO.pas`](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas) (74 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 7 symbols done, 0 verified |
+| Status | ✅ verified: 7 of 7 symbols done, 7 verified |
 
-⚪ 7 not started
+✅ 7 verified
 
 ## Unit level
 
@@ -18,20 +18,20 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDatabaseAdapterADO` | class | [16](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L16) |  | ⚪ not started |  |
+| `TBoldDatabaseAdapterADO` | class | [16](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L16) | [`TBoldDatabaseAdapterADO`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L8) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
 
 ## TBoldDatabaseAdapterADO
 
-class at [line 16](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L16); ✅ verified, C# [`TBoldDatabaseAdapterADO`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetDataBase` | method, private | [19](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L19) · [body 69](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L69) |  | ⚪ not started |  |
-| `GetDataBase` | method, private | [20](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L20) · [body 50](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L50) |  | ⚪ not started |  |
-| `ReleaseBoldDatabase` | method, protected | [22](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L22) · [body 64](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L64) |  | ⚪ not started |  |
-| `GetDataBaseInterface` | method, protected | [23](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L23) · [body 55](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L55) |  | ⚪ not started |  |
-| `Destroy` | destructor | [25](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L25) · [body 42](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L42) |  | ⚪ not started |  |
-| `Connection` | property, published | [27](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L27) |  | ⚪ not started |  |
+| `SetDataBase` | method, private | [19](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L19) · [body 69](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L69) | [`TBoldDatabaseAdapterADO.SetDataBase`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L26) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `GetDataBase` | method, private | [20](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L20) · [body 50](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L50) | [`TBoldDatabaseAdapterADO.GetDataBase`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L27) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `ReleaseBoldDatabase` | method, protected | [22](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L22) · [body 64](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L64) | [`TBoldDatabaseAdapterADO.ReleaseBoldDatabase`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L30) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `GetDataBaseInterface` | method, protected | [23](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L23) · [body 55](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L55) | [`TBoldDatabaseAdapterADO.GetDataBaseInterface`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L38) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `Destroy` | destructor | [25](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L25) · [body 42](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L42) | [`TBoldDatabaseAdapterADO.Dispose`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L14) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `Connection` | property, published | [27](../../../Source/Persistence/ADO/BoldDatabaseAdapterADO.pas#L27) | [`TBoldDatabaseAdapterADO.Connection`](../../src/Bold.Persistence.Sql/Persistence/ADO/BoldDatabaseAdapterADO.cs#L48) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
 
 ## Dependencies
 

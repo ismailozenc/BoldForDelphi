@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ADO/ADOConsts.pas`](../../../Source/Persistence/ADO/ADOConsts.pas) (18 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs`](../../src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 6 symbols done, 0 verified |
+| Status | 🟢 ported: 6 of 6 symbols done, 1 verified |
 
-⚪ 6 not started
+✅ 1 verified · 🟢 5 ported
 
 ## Unit level
 
@@ -18,12 +18,12 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sAdapterNotConnected` | resourcestring | [7](../../../Source/Persistence/ADO/ADOConsts.pas#L7) |  | ⚪ not started |  |
-| `sCreatedNewAdapter` | resourcestring | [8](../../../Source/Persistence/ADO/ADOConsts.pas#L8) |  | ⚪ not started |  |
-| `sCanOnlyTransferToADOAdapter` | resourcestring | [9](../../../Source/Persistence/ADO/ADOConsts.pas#L9) |  | ⚪ not started |  |
-| `sCreatedNewDB` | resourcestring | [10](../../../Source/Persistence/ADO/ADOConsts.pas#L10) |  | ⚪ not started |  |
-| `sCouldNotTransferConnectionString` | resourcestring | [11](../../../Source/Persistence/ADO/ADOConsts.pas#L11) |  | ⚪ not started |  |
-| `sTransferManually` | resourcestring | [12](../../../Source/Persistence/ADO/ADOConsts.pas#L12) |  | ⚪ not started |  |
+| `sAdapterNotConnected` | resourcestring | [7](../../../Source/Persistence/ADO/ADOConsts.pas#L7) | [`ADOConsts.sAdapterNotConnected`](../../src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs#L9) | ✅ verified | ✔ [`BoldADOInterfacesTests.The_adapter_makes_the_database_for_its_connection`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L123) |
+| `sCreatedNewAdapter` | resourcestring | [8](../../../Source/Persistence/ADO/ADOConsts.pas#L8) | [`ADOConsts.sCreatedNewAdapter`](../../src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs#L10) | 🟢 ported |  |
+| `sCanOnlyTransferToADOAdapter` | resourcestring | [9](../../../Source/Persistence/ADO/ADOConsts.pas#L9) | [`ADOConsts.sCanOnlyTransferToADOAdapter`](../../src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs#L11) | 🟢 ported |  |
+| `sCreatedNewDB` | resourcestring | [10](../../../Source/Persistence/ADO/ADOConsts.pas#L10) | [`ADOConsts.sCreatedNewDB`](../../src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs#L12) | 🟢 ported |  |
+| `sCouldNotTransferConnectionString` | resourcestring | [11](../../../Source/Persistence/ADO/ADOConsts.pas#L11) | [`ADOConsts.sCouldNotTransferConnectionString`](../../src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs#L13) | 🟢 ported |  |
+| `sTransferManually` | resourcestring | [12](../../../Source/Persistence/ADO/ADOConsts.pas#L12) | [`ADOConsts.sTransferManually`](../../src/Bold.Persistence.Sql/Persistence/ADO/ADOConsts.cs#L14) | 🟢 ported |  |
 
 ## Dependencies
 

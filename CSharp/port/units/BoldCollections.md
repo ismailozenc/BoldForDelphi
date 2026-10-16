@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldCollections.pas`](../../../Source/Common/Support/BoldCollections.pas) (170 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldCollections.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldCollections.cs`](../../src/Bold.Core/Common/Support/BoldCollections.cs) |
 | Project | Bold.Core |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 24 symbols done, 0 verified |
+| Status | 🟢 ported: 24 of 24 symbols done, 22 verified |
 
-⚪ 24 not started
+✅ 22 verified · 🟢 1 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,58 +18,58 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUniquelyNamedCollectionItemClass` | class reference | [15](../../../Source/Common/Support/BoldCollections.pas#L15) |  | ⚪ not started |  |
-| `TBoldUniqueNameItemIndex` | class | [19](../../../Source/Common/Support/BoldCollections.pas#L19) |  | ⚪ not started |  |
-| `TBoldUniquelyNamedCollectionItem` | class | [26](../../../Source/Common/Support/BoldCollections.pas#L26) |  | ⚪ not started |  |
-| `TBoldUniquelyNamedCollectionItemWithNameStorage` | class | [43](../../../Source/Common/Support/BoldCollections.pas#L43) |  | ⚪ not started |  |
-| `TBoldCollectionWithUniquelyNamedItems` | class | [53](../../../Source/Common/Support/BoldCollections.pas#L53) |  | ⚪ not started |  |
+| `TBoldUniquelyNamedCollectionItemClass` | class reference | [15](../../../Source/Common/Support/BoldCollections.pas#L15) | [`[assembly: Delphi] in BoldCollections.cs`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L4) | 🟢 ported: A System.Type of the item class. |  |
+| `TBoldUniqueNameItemIndex` | class | [19](../../../Source/Common/Support/BoldCollections.pas#L19) | [`TBoldUniqueNameItemIndex`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L11) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `TBoldUniquelyNamedCollectionItem` | class | [26](../../../Source/Common/Support/BoldCollections.pas#L26) | [`TBoldUniquelyNamedCollectionItem`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L19) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `TBoldUniquelyNamedCollectionItemWithNameStorage` | class | [43](../../../Source/Common/Support/BoldCollections.pas#L43) | [`TBoldUniquelyNamedCollectionItemWithNameStorage`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L65) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `TBoldCollectionWithUniquelyNamedItems` | class | [53](../../../Source/Common/Support/BoldCollections.pas#L53) | [`TBoldCollectionWithUniquelyNamedItems`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L75) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
 
 ## TBoldUniqueNameItemIndex
 
-class at [line 19](../../../Source/Common/Support/BoldCollections.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Common/Support/BoldCollections.pas#L19); ✅ verified, C# [`TBoldUniqueNameItemIndex`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [21](../../../Source/Common/Support/BoldCollections.pas#L21) · [body 115](../../../Source/Common/Support/BoldCollections.pas#L115) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [21](../../../Source/Common/Support/BoldCollections.pas#L21) · [body 115](../../../Source/Common/Support/BoldCollections.pas#L115) | [`TBoldUniqueNameItemIndex.ItemAsKeyString`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L14) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
 
 ## TBoldUniquelyNamedCollectionItem
 
-class at [line 26](../../../Source/Common/Support/BoldCollections.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/Common/Support/BoldCollections.pas#L26); ✅ verified, C# [`TBoldUniquelyNamedCollectionItem`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `InternalSetUniqueName` | method, private | [28](../../../Source/Common/Support/BoldCollections.pas#L28) · [body 102](../../../Source/Common/Support/BoldCollections.pas#L102) |  | ⚪ not started |  |
-| `EnsureNameUnique` | method, private | [29](../../../Source/Common/Support/BoldCollections.pas#L29) · [body 78](../../../Source/Common/Support/BoldCollections.pas#L78) |  | ⚪ not started |  |
-| `GetCollection` | method, private | [30](../../../Source/Common/Support/BoldCollections.pas#L30) · [body 84](../../../Source/Common/Support/BoldCollections.pas#L84) |  | ⚪ not started |  |
-| `GetDisplayName` | method, protected | [32](../../../Source/Common/Support/BoldCollections.pas#L32) · [body 89](../../../Source/Common/Support/BoldCollections.pas#L89) |  | ⚪ not started |  |
-| `GetUniqueName` | method, protected | [33](../../../Source/Common/Support/BoldCollections.pas#L33) |  | ⚪ not started |  |
-| `SetUniqueName` | method, protected | [34](../../../Source/Common/Support/BoldCollections.pas#L34) |  | ⚪ not started |  |
-| `UniqueName` | property, protected | [35](../../../Source/Common/Support/BoldCollections.pas#L35) |  | ⚪ not started |  |
-| `Collection` | property, protected | [36](../../../Source/Common/Support/BoldCollections.pas#L36) |  | ⚪ not started |  |
-| `GetNamePath` | method | [38](../../../Source/Common/Support/BoldCollections.pas#L38) · [body 94](../../../Source/Common/Support/BoldCollections.pas#L94) |  | ⚪ not started |  |
+| `InternalSetUniqueName` | method, private | [28](../../../Source/Common/Support/BoldCollections.pas#L28) · [body 102](../../../Source/Common/Support/BoldCollections.pas#L102) | [`TBoldUniquelyNamedCollectionItem.InternalSetUniqueName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L22) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `EnsureNameUnique` | method, private | [29](../../../Source/Common/Support/BoldCollections.pas#L29) · [body 78](../../../Source/Common/Support/BoldCollections.pas#L78) | [`TBoldUniquelyNamedCollectionItem.EnsureNameUnique`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L34) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `GetCollection` | method, private | [30](../../../Source/Common/Support/BoldCollections.pas#L30) · [body 84](../../../Source/Common/Support/BoldCollections.pas#L84) | [`TBoldUniquelyNamedCollectionItem.GetCollection`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L43) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `GetDisplayName` | method, protected | [32](../../../Source/Common/Support/BoldCollections.pas#L32) · [body 89](../../../Source/Common/Support/BoldCollections.pas#L89) | [`TBoldUniquelyNamedCollectionItem.GetDisplayName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L45) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `GetUniqueName` | method, protected | [33](../../../Source/Common/Support/BoldCollections.pas#L33) | [`TBoldUniquelyNamedCollectionItem.GetUniqueName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L46) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `SetUniqueName` | method, protected | [34](../../../Source/Common/Support/BoldCollections.pas#L34) | [`TBoldUniquelyNamedCollectionItem.SetUniqueName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L47) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `UniqueName` | property, protected | [35](../../../Source/Common/Support/BoldCollections.pas#L35) | [`TBoldUniquelyNamedCollectionItem.UniqueName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L50) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `Collection` | property, protected | [36](../../../Source/Common/Support/BoldCollections.pas#L36) | [`TBoldUniquelyNamedCollectionItem.Collection`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L56) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `GetNamePath` | method | [38](../../../Source/Common/Support/BoldCollections.pas#L38) · [body 94](../../../Source/Common/Support/BoldCollections.pas#L94) | [`TBoldUniquelyNamedCollectionItem.GetNamePath`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L59) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
 
 ## TBoldUniquelyNamedCollectionItemWithNameStorage
 
-class at [line 43](../../../Source/Common/Support/BoldCollections.pas#L43); ⚪ not started.
+class at [line 43](../../../Source/Common/Support/BoldCollections.pas#L43); ✅ verified, C# [`TBoldUniquelyNamedCollectionItemWithNameStorage`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L65).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetUniqueName` | method, protected | [47](../../../Source/Common/Support/BoldCollections.pas#L47) · [body 160](../../../Source/Common/Support/BoldCollections.pas#L160) |  | ⚪ not started |  |
-| `SetUniqueName` | method, protected | [48](../../../Source/Common/Support/BoldCollections.pas#L48) · [body 165](../../../Source/Common/Support/BoldCollections.pas#L165) |  | ⚪ not started |  |
+| `GetUniqueName` | method, protected | [47](../../../Source/Common/Support/BoldCollections.pas#L47) · [body 160](../../../Source/Common/Support/BoldCollections.pas#L160) | [`TBoldUniquelyNamedCollectionItemWithNameStorage.GetUniqueName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L69) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `SetUniqueName` | method, protected | [48](../../../Source/Common/Support/BoldCollections.pas#L48) · [body 165](../../../Source/Common/Support/BoldCollections.pas#L165) | [`TBoldUniquelyNamedCollectionItemWithNameStorage.SetUniqueName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L70) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
 
 ## TBoldCollectionWithUniquelyNamedItems
 
-class at [line 53](../../../Source/Common/Support/BoldCollections.pas#L53); ⚪ not started.
+class at [line 53](../../../Source/Common/Support/BoldCollections.pas#L53); ✅ verified, C# [`TBoldCollectionWithUniquelyNamedItems`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L75).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItemByName` | method, private | [56](../../../Source/Common/Support/BoldCollections.pas#L56) · [body 134](../../../Source/Common/Support/BoldCollections.pas#L134) |  | ⚪ not started |  |
-| `GetItemIndex` | method, private | [57](../../../Source/Common/Support/BoldCollections.pas#L57) · [body 139](../../../Source/Common/Support/BoldCollections.pas#L139) |  | ⚪ not started |  |
-| `Update` | method, protected | [59](../../../Source/Common/Support/BoldCollections.pas#L59) · [body 152](../../../Source/Common/Support/BoldCollections.pas#L152) |  | ⚪ not started |  |
-| `ItemIndex` | property, protected | [60](../../../Source/Common/Support/BoldCollections.pas#L60) |  | ⚪ not started |  |
-| `Create` | constructor | [62](../../../Source/Common/Support/BoldCollections.pas#L62) · [body 123](../../../Source/Common/Support/BoldCollections.pas#L123) |  | ⚪ not started |  |
-| `Destroy` | destructor | [63](../../../Source/Common/Support/BoldCollections.pas#L63) · [body 128](../../../Source/Common/Support/BoldCollections.pas#L128) |  | ⚪ not started |  |
-| `ItemByName` | property | [64](../../../Source/Common/Support/BoldCollections.pas#L64) |  | ⚪ not started |  |
+| `GetItemByName` | method, private | [56](../../../Source/Common/Support/BoldCollections.pas#L56) · [body 134](../../../Source/Common/Support/BoldCollections.pas#L134) | [`TBoldCollectionWithUniquelyNamedItems.GetItemByName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L86) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `GetItemIndex` | method, private | [57](../../../Source/Common/Support/BoldCollections.pas#L57) · [body 139](../../../Source/Common/Support/BoldCollections.pas#L139) | [`TBoldCollectionWithUniquelyNamedItems.GetItemIndex`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L89) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `Update` | method, protected | [59](../../../Source/Common/Support/BoldCollections.pas#L59) · [body 152](../../../Source/Common/Support/BoldCollections.pas#L152) | [`TBoldCollectionWithUniquelyNamedItems.Update`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L105) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `ItemIndex` | property, protected | [60](../../../Source/Common/Support/BoldCollections.pas#L60) | [`TBoldCollectionWithUniquelyNamedItems.ItemIndex`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L107) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `Create` | constructor | [62](../../../Source/Common/Support/BoldCollections.pas#L62) · [body 123](../../../Source/Common/Support/BoldCollections.pas#L123) | [`TBoldCollectionWithUniquelyNamedItems.TBoldCollectionWithUniquelyNamedItems`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L80) | ✅ verified | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
+| `Destroy` | destructor | [63](../../../Source/Common/Support/BoldCollections.pas#L63) · [body 128](../../../Source/Common/Support/BoldCollections.pas#L128) | [`[assembly: Delphi] in BoldCollections.cs`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L5) | 🔵 replaced: Freed the name index; the garbage collector does that in .NET. |  |
+| `ItemByName` | property | [64](../../../Source/Common/Support/BoldCollections.pas#L64) | [`TBoldCollectionWithUniquelyNamedItems.ItemByName`](../../src/Bold.Core/Common/Support/BoldCollections.cs#L110) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldCollectionsTests.Items_have_unique_names_found_through_the_index`](../../tests/Bold.Core.Tests/Common/Support/BoldCollectionsTests.cs#L17) |
 
 ## Dependencies
 

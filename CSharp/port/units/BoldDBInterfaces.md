@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/DB/BoldDBInterfaces.pas`](../../../Source/Persistence/DB/BoldDBInterfaces.pas) (968 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 308 symbols done, 0 verified |
+| Status | 🟢 ported: 308 of 308 symbols done, 20 verified |
 
-⚪ 308 not started
+✅ 20 verified · 🟢 286 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,405 +18,405 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldFieldWrapperClass` | class reference | [22](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L22) |  | ⚪ not started |  |
-| `TBoldGetDatabaseEvent` | event type | [24](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L24) |  | ⚪ not started |  |
-| `IBoldField` | interface | [27](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L27) |  | ⚪ not started |  |
-| `IBoldParameter` | interface | [70](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L70) |  | ⚪ not started |  |
-| `IBoldDataSet` | interface | [125](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L125) |  | ⚪ not started |  |
-| `IBoldExecQuery` | interface | [159](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L159) |  | ⚪ not started |  |
-| `IBoldParameterized` | interface | [177](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L177) |  | ⚪ not started |  |
-| `IBoldQuery` | interface | [189](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L189) |  | ⚪ not started |  |
-| `IBoldTable` | interface | [205](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L205) |  | ⚪ not started |  |
-| `IBoldDataBase` | interface | [223](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L223) |  | ⚪ not started |  |
-| `TBoldParameterWrapper` | class | [257](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L257) |  | ⚪ not started |  |
-| `TBoldDbParameter` | class | [266](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L266) |  | ⚪ not started |  |
-| `TBoldDataSetWrapper` | class | [308](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L308) |  | ⚪ not started |  |
-| `TBoldDatabaseWrapper` | class | [342](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L342) |  | ⚪ not started |  |
-| `TBoldFieldWrapper` | class | [360](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L360) |  | ⚪ not started |  |
-| `BoldLogSQL` | routine | [396](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L396) · [body 412](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L412) |  | ⚪ not started |  |
-| `BoldSQLLogHandler` | var | [399](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L399) |  | ⚪ not started |  |
-| `BoldSQLLogCount` | var | [400](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L400) |  | ⚪ not started |  |
+| `TBoldFieldWrapperClass` | class reference | [22](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L22) | [`[assembly: Delphi] in BoldDBInterfaces.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L6) | 🟢 ported: A System.Type of the field wrapper class. |  |
+| `TBoldGetDatabaseEvent` | event type | [24](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L24) | [`TBoldGetDatabaseEvent`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L14) | 🟢 ported |  |
+| `IBoldField` | interface | [27](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L27) | [`IBoldField`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L18) | 🟢 ported |  |
+| `IBoldParameter` | interface | [70](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L70) | [`IBoldParameter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L62) | 🟢 ported |  |
+| `IBoldDataSet` | interface | [125](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L125) | [`IBoldDataSet`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L116) | 🟢 ported |  |
+| `IBoldExecQuery` | interface | [159](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L159) | [`IBoldExecQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L152) | 🟢 ported |  |
+| `IBoldParameterized` | interface | [177](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L177) | [`IBoldParameterized`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L173) | 🟢 ported |  |
+| `IBoldQuery` | interface | [189](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L189) | [`IBoldQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L188) | 🟢 ported |  |
+| `IBoldTable` | interface | [205](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L205) | [`IBoldTable`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L207) | 🟢 ported |  |
+| `IBoldDataBase` | interface | [223](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L223) | [`IBoldDataBase`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L227) | 🟢 ported |  |
+| `TBoldParameterWrapper` | class | [257](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L257) | [`TBoldParameterWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L264) | 🟢 ported |  |
+| `TBoldDbParameter` | class | [266](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L266) | [`TBoldDbParameter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L279) | 🟢 ported |  |
+| `TBoldDataSetWrapper` | class | [308](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L308) | [`TBoldDataSetWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L340) | 🟢 ported |  |
+| `TBoldDatabaseWrapper` | class | [342](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L342) | [`TBoldDatabaseWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L414) | 🟢 ported |  |
+| `TBoldFieldWrapper` | class | [360](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L360) | [`TBoldFieldWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L483) | 🟢 ported |  |
+| `BoldLogSQL` | routine | [396](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L396) · [body 412](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L412) | [`BoldDBInterfaces.BoldLogSQL`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L555) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `BoldSQLLogHandler` | var | [399](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L399) | [`BoldDBInterfaces.BoldSQLLogHandler`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L550) | 🟢 ported |  |
+| `BoldSQLLogCount` | var | [400](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L400) | [`BoldDBInterfaces.BoldSQLLogCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L551) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
 
 ## IBoldField
 
-interface at [line 27](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L27); ⚪ not started.
+interface at [line 27](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L27); 🟢 ported, C# [`IBoldField`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetField` | method | [29](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L29) |  | ⚪ not started |  |
-| `GetFieldName` | method | [30](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L30) |  | ⚪ not started |  |
-| `GetAsVariant` | method | [31](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L31) |  | ⚪ not started |  |
-| `SetAsVariant` | method | [32](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L32) |  | ⚪ not started |  |
-| `GetAsString` | method | [33](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L33) |  | ⚪ not started |  |
-| `SetAsString` | method | [34](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L34) |  | ⚪ not started |  |
-| `GetAsInteger` | method | [35](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L35) |  | ⚪ not started |  |
-| `SetAsInteger` | method | [36](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L36) |  | ⚪ not started |  |
-| `GetAsBoolean` | method | [37](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L37) |  | ⚪ not started |  |
-| `GetAsCurrency` | method | [38](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L38) |  | ⚪ not started |  |
-| `GetAsDateTime` | method | [39](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L39) |  | ⚪ not started |  |
-| `GetAsFloat` | method | [40](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L40) |  | ⚪ not started |  |
-| `GetIsNull` | method | [41](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L41) |  | ⚪ not started |  |
-| `SetAsBoolean` | method | [42](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L42) |  | ⚪ not started |  |
-| `SetAsCurrency` | method | [43](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L43) |  | ⚪ not started |  |
-| `SetAsDateTime` | method | [44](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L44) |  | ⚪ not started |  |
-| `SetAsFloat` | method | [45](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L45) |  | ⚪ not started |  |
-| `GetAsDate` | method | [46](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L46) |  | ⚪ not started |  |
-| `GetAsTime` | method | [47](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L47) |  | ⚪ not started |  |
-| `SetAsTime` | method | [48](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L48) |  | ⚪ not started |  |
-| `SetAsDate` | method | [49](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L49) |  | ⚪ not started |  |
-| `SetAsBlob` | method | [50](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L50) |  | ⚪ not started |  |
-| `GetAsBlob` | method | [51](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L51) |  | ⚪ not started |  |
-| `Field` | property | [53](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L53) |  | ⚪ not started |  |
-| `AsVariant` | property | [54](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L54) |  | ⚪ not started |  |
-| `Value` | property | [55](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L55) |  | ⚪ not started |  |
-| `AsString` | property | [56](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L56) |  | ⚪ not started |  |
-| `AsInteger` | property | [57](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L57) |  | ⚪ not started |  |
-| `AsBoolean` | property | [58](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L58) |  | ⚪ not started |  |
-| `AsCurrency` | property | [59](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L59) |  | ⚪ not started |  |
-| `AsDateTime` | property | [60](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L60) |  | ⚪ not started |  |
-| `AsFloat` | property | [61](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L61) |  | ⚪ not started |  |
-| `AsDate` | property | [62](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L62) |  | ⚪ not started |  |
-| `AsTime` | property | [63](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L63) |  | ⚪ not started |  |
-| `AsBlob` | property | [64](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L64) |  | ⚪ not started |  |
-| `IsNull` | property | [65](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L65) |  | ⚪ not started |  |
-| `FieldName` | property | [66](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L66) |  | ⚪ not started |  |
+| `GetField` | method | [29](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L29) | [`IBoldField.GetField`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L20) | 🟢 ported |  |
+| `GetFieldName` | method | [30](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L30) | [`IBoldField.GetFieldName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L21) | 🟢 ported |  |
+| `GetAsVariant` | method | [31](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L31) | [`IBoldField.GetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L22) | 🟢 ported |  |
+| `SetAsVariant` | method | [32](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L32) | [`IBoldField.SetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L23) | 🟢 ported |  |
+| `GetAsString` | method | [33](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L33) | [`IBoldField.GetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L24) | 🟢 ported |  |
+| `SetAsString` | method | [34](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L34) | [`IBoldField.SetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L25) | 🟢 ported |  |
+| `GetAsInteger` | method | [35](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L35) | [`IBoldField.GetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L26) | 🟢 ported |  |
+| `SetAsInteger` | method | [36](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L36) | [`IBoldField.SetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L27) | 🟢 ported |  |
+| `GetAsBoolean` | method | [37](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L37) | [`IBoldField.GetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L28) | 🟢 ported |  |
+| `GetAsCurrency` | method | [38](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L38) | [`IBoldField.GetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L29) | 🟢 ported |  |
+| `GetAsDateTime` | method | [39](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L39) | [`IBoldField.GetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L30) | 🟢 ported |  |
+| `GetAsFloat` | method | [40](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L40) | [`IBoldField.GetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L31) | 🟢 ported |  |
+| `GetIsNull` | method | [41](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L41) | [`IBoldField.GetIsNull`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L32) | 🟢 ported |  |
+| `SetAsBoolean` | method | [42](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L42) | [`IBoldField.SetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L33) | 🟢 ported |  |
+| `SetAsCurrency` | method | [43](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L43) | [`IBoldField.SetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L34) | 🟢 ported |  |
+| `SetAsDateTime` | method | [44](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L44) | [`IBoldField.SetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L35) | 🟢 ported |  |
+| `SetAsFloat` | method | [45](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L45) | [`IBoldField.SetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L36) | 🟢 ported |  |
+| `GetAsDate` | method | [46](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L46) | [`IBoldField.GetAsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L37) | 🟢 ported |  |
+| `GetAsTime` | method | [47](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L47) | [`IBoldField.GetAsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L38) | 🟢 ported |  |
+| `SetAsTime` | method | [48](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L48) | [`IBoldField.SetAsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L39) | 🟢 ported |  |
+| `SetAsDate` | method | [49](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L49) | [`IBoldField.SetAsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L40) | 🟢 ported |  |
+| `SetAsBlob` | method | [50](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L50) | [`IBoldField.SetAsBlob`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L41) | 🟢 ported |  |
+| `GetAsBlob` | method | [51](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L51) | [`IBoldField.GetAsBlob`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L42) | 🟢 ported |  |
+| `Field` | property | [53](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L53) | [`IBoldField.Field`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L44) | 🟢 ported |  |
+| `AsVariant` | property | [54](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L54) | [`IBoldField.AsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L45) | 🟢 ported |  |
+| `Value` | property | [55](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L55) | [`IBoldField.Value`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L46) | 🟢 ported |  |
+| `AsString` | property | [56](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L56) | [`IBoldField.AsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L47) | 🟢 ported |  |
+| `AsInteger` | property | [57](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L57) | [`IBoldField.AsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L48) | 🟢 ported |  |
+| `AsBoolean` | property | [58](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L58) | [`IBoldField.AsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L49) | 🟢 ported |  |
+| `AsCurrency` | property | [59](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L59) | [`IBoldField.AsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L50) | 🟢 ported |  |
+| `AsDateTime` | property | [60](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L60) | [`IBoldField.AsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L51) | 🟢 ported |  |
+| `AsFloat` | property | [61](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L61) | [`IBoldField.AsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L52) | 🟢 ported |  |
+| `AsDate` | property | [62](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L62) | [`IBoldField.AsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L53) | 🟢 ported |  |
+| `AsTime` | property | [63](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L63) | [`IBoldField.AsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L54) | 🟢 ported |  |
+| `AsBlob` | property | [64](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L64) | [`IBoldField.AsBlob`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L55) | 🟢 ported |  |
+| `IsNull` | property | [65](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L65) | [`IBoldField.IsNull`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L56) | 🟢 ported |  |
+| `FieldName` | property | [66](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L66) | [`IBoldField.FieldName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L57) | 🟢 ported |  |
 
 ## IBoldParameter
 
-interface at [line 70](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L70); ⚪ not started.
+interface at [line 70](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L70); 🟢 ported, C# [`IBoldParameter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L62).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsVariant` | method | [72](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L72) |  | ⚪ not started |  |
-| `SetAsVariant` | method | [73](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L73) |  | ⚪ not started |  |
-| `GetName` | method | [74](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L74) |  | ⚪ not started |  |
-| `Clear` | method | [75](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L75) |  | ⚪ not started |  |
-| `GetDataType` | method | [76](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L76) |  | ⚪ not started |  |
-| `SetDataType` | method | [77](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L77) |  | ⚪ not started |  |
-| `GetAsBCD` | method | [78](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L78) |  | ⚪ not started |  |
-| `GetAsBoolean` | method | [79](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L79) |  | ⚪ not started |  |
-| `GetAsDateTime` | method | [80](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L80) |  | ⚪ not started |  |
-| `GetAsCurrency` | method | [81](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L81) |  | ⚪ not started |  |
-| `GetAsFloat` | method | [82](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L82) |  | ⚪ not started |  |
-| `GetAsInteger` | method | [83](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L83) |  | ⚪ not started |  |
-| `GetAsMemo` | method | [84](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L84) |  | ⚪ not started |  |
-| `GetAsString` | method | [85](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L85) |  | ⚪ not started |  |
-| `GetIsNull` | method | [87](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L87) |  | ⚪ not started |  |
-| `SetAsBCD` | method | [88](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L88) |  | ⚪ not started |  |
-| `SetAsBlob` | method | [89](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L89) |  | ⚪ not started |  |
-| `SetAsBoolean` | method | [90](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L90) |  | ⚪ not started |  |
-| `SetAsCurrency` | method | [91](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L91) |  | ⚪ not started |  |
-| `SetAsDate` | method | [92](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L92) |  | ⚪ not started |  |
-| `SetAsDateTime` | method | [93](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L93) |  | ⚪ not started |  |
-| `SetAsFloat` | method | [94](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L94) |  | ⚪ not started |  |
-| `SetAsInteger` | method | [95](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L95) |  | ⚪ not started |  |
-| `SetAsMemo` | method | [96](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L96) |  | ⚪ not started |  |
-| `SetAsString` | method | [97](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L97) |  | ⚪ not started |  |
-| `SetAsSmallInt` | method | [99](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L99) |  | ⚪ not started |  |
-| `SetAsTime` | method | [100](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L100) |  | ⚪ not started |  |
-| `SetAsWord` | method | [101](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L101) |  | ⚪ not started |  |
-| `SetText` | method | [102](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L102) |  | ⚪ not started |  |
-| `AssignFieldValue` | method | [103](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L103) |  | ⚪ not started |  |
-| `asVariant` | property | [104](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L104) |  | ⚪ not started |  |
-| `Name` | property | [105](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L105) |  | ⚪ not started |  |
-| `DataType` | property | [106](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L106) |  | ⚪ not started |  |
-| `AsBCD` | property | [107](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L107) |  | ⚪ not started |  |
-| `AsBoolean` | property | [109](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L109) |  | ⚪ not started |  |
-| `AsCurrency` | property | [110](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L110) |  | ⚪ not started |  |
-| `AsDate` | property | [111](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L111) |  | ⚪ not started |  |
-| `AsDateTime` | property | [112](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L112) |  | ⚪ not started |  |
-| `AsFloat` | property | [113](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L113) |  | ⚪ not started |  |
-| `AsInteger` | property | [114](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L114) |  | ⚪ not started |  |
-| `AsSmallInt` | property | [115](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L115) |  | ⚪ not started |  |
-| `AsMemo` | property | [116](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L116) |  | ⚪ not started |  |
-| `AsString` | property | [117](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L117) |  | ⚪ not started |  |
-| `AsTime` | property | [118](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L118) |  | ⚪ not started |  |
-| `AsWord` | property | [119](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L119) |  | ⚪ not started |  |
-| `IsNull` | property | [121](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L121) |  | ⚪ not started |  |
-| `Text` | property | [122](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L122) |  | ⚪ not started |  |
+| `GetAsVariant` | method | [72](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L72) | [`IBoldParameter.GetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L64) | 🟢 ported |  |
+| `SetAsVariant` | method | [73](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L73) | [`IBoldParameter.SetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L65) | 🟢 ported |  |
+| `GetName` | method | [74](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L74) | [`IBoldParameter.GetName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L66) | 🟢 ported |  |
+| `Clear` | method | [75](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L75) | [`IBoldParameter.Clear`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L67) | 🟢 ported |  |
+| `GetDataType` | method | [76](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L76) | [`IBoldParameter.GetDataType`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L68) | 🟢 ported |  |
+| `SetDataType` | method | [77](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L77) | [`IBoldParameter.SetDataType`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L69) | 🟢 ported |  |
+| `GetAsBCD` | method | [78](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L78) | [`IBoldParameter.GetAsBCD`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L70) | 🟢 ported |  |
+| `GetAsBoolean` | method | [79](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L79) | [`IBoldParameter.GetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L71) | 🟢 ported |  |
+| `GetAsDateTime` | method | [80](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L80) | [`IBoldParameter.GetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L72) | 🟢 ported |  |
+| `GetAsCurrency` | method | [81](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L81) | [`IBoldParameter.GetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L73) | 🟢 ported |  |
+| `GetAsFloat` | method | [82](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L82) | [`IBoldParameter.GetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L74) | 🟢 ported |  |
+| `GetAsInteger` | method | [83](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L83) | [`IBoldParameter.GetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L75) | 🟢 ported |  |
+| `GetAsMemo` | method | [84](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L84) | [`IBoldParameter.GetAsMemo`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L76) | 🟢 ported |  |
+| `GetAsString` | method | [85](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L85) | [`IBoldParameter.GetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L77) | 🟢 ported |  |
+| `GetIsNull` | method | [87](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L87) | [`IBoldParameter.GetIsNull`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L78) | 🟢 ported |  |
+| `SetAsBCD` | method | [88](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L88) | [`IBoldParameter.SetAsBCD`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L79) | 🟢 ported |  |
+| `SetAsBlob` | method | [89](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L89) | [`IBoldParameter.SetAsBlob`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L80) | 🟢 ported: A blob is a string of byte characters. |  |
+| `SetAsBoolean` | method | [90](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L90) | [`IBoldParameter.SetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L81) | 🟢 ported |  |
+| `SetAsCurrency` | method | [91](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L91) | [`IBoldParameter.SetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L82) | 🟢 ported |  |
+| `SetAsDate` | method | [92](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L92) | [`IBoldParameter.SetAsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L83) | 🟢 ported |  |
+| `SetAsDateTime` | method | [93](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L93) | [`IBoldParameter.SetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L84) | 🟢 ported |  |
+| `SetAsFloat` | method | [94](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L94) | [`IBoldParameter.SetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L85) | 🟢 ported |  |
+| `SetAsInteger` | method | [95](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L95) | [`IBoldParameter.SetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L86) | 🟢 ported |  |
+| `SetAsMemo` | method | [96](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L96) | [`IBoldParameter.SetAsMemo`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L87) | 🟢 ported |  |
+| `SetAsString` | method | [97](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L97) | [`IBoldParameter.SetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L88) | 🟢 ported |  |
+| `SetAsSmallInt` | method | [99](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L99) | [`IBoldParameter.SetAsSmallInt`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L89) | 🟢 ported |  |
+| `SetAsTime` | method | [100](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L100) | [`IBoldParameter.SetAsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L90) | 🟢 ported |  |
+| `SetAsWord` | method | [101](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L101) | [`IBoldParameter.SetAsWord`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L91) | 🟢 ported |  |
+| `SetText` | method | [102](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L102) | [`IBoldParameter.SetText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L92) | 🟢 ported |  |
+| `AssignFieldValue` | method | [103](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L103) | [`IBoldParameter.AssignFieldValue`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L93) | 🟢 ported |  |
+| `asVariant` | property | [104](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L104) | [`IBoldParameter.asVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L95) | 🟢 ported |  |
+| `Name` | property | [105](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L105) | [`IBoldParameter.Name`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L96) | 🟢 ported |  |
+| `DataType` | property | [106](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L106) | [`IBoldParameter.DataType`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L97) | 🟢 ported |  |
+| `AsBCD` | property | [107](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L107) | [`IBoldParameter.AsBCD`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L98) | 🟢 ported |  |
+| `AsBoolean` | property | [109](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L109) | [`IBoldParameter.AsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L99) | 🟢 ported |  |
+| `AsCurrency` | property | [110](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L110) | [`IBoldParameter.AsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L100) | 🟢 ported |  |
+| `AsDate` | property | [111](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L111) | [`IBoldParameter.AsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L101) | 🟢 ported |  |
+| `AsDateTime` | property | [112](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L112) | [`IBoldParameter.AsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L102) | 🟢 ported |  |
+| `AsFloat` | property | [113](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L113) | [`IBoldParameter.AsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L103) | 🟢 ported |  |
+| `AsInteger` | property | [114](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L114) | [`IBoldParameter.AsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L104) | 🟢 ported |  |
+| `AsSmallInt` | property | [115](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L115) | [`IBoldParameter.AsSmallInt`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L105) | 🟢 ported |  |
+| `AsMemo` | property | [116](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L116) | [`IBoldParameter.AsMemo`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L106) | 🟢 ported |  |
+| `AsString` | property | [117](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L117) | [`IBoldParameter.AsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L107) | 🟢 ported |  |
+| `AsTime` | property | [118](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L118) | [`IBoldParameter.AsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L108) | 🟢 ported |  |
+| `AsWord` | property | [119](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L119) | [`IBoldParameter.AsWord`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L109) | 🟢 ported |  |
+| `IsNull` | property | [121](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L121) | [`IBoldParameter.IsNull`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L110) | 🟢 ported |  |
+| `Text` | property | [122](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L122) | [`IBoldParameter.Text`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L111) | 🟢 ported |  |
 
 ## IBoldDataSet
 
-interface at [line 125](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L125); ⚪ not started.
+interface at [line 125](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L125); 🟢 ported, C# [`IBoldDataSet`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L116).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Append` | method | [127](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L127) |  | ⚪ not started |  |
-| `Close` | method | [128](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L128) |  | ⚪ not started |  |
-| `FieldByName` | method | [129](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L129) |  | ⚪ not started |  |
-| `FindField` | method | [130](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L130) |  | ⚪ not started |  |
-| `First` | method | [131](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L131) |  | ⚪ not started |  |
-| `GetDataSet` | method | [132](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L132) |  | ⚪ not started |  |
-| `GetEof` | method | [133](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L133) |  | ⚪ not started |  |
-| `GetFieldDefs` | method | [134](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L134) |  | ⚪ not started |  |
-| `GetFields` | method | [135](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L135) |  | ⚪ not started |  |
-| `GetFieldCount` | method | [136](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L136) |  | ⚪ not started |  |
-| `GetFieldValue` | method | [137](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L137) |  | ⚪ not started |  |
-| `Next` | method | [138](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L138) |  | ⚪ not started |  |
-| `Open` | method | [139](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L139) |  | ⚪ not started |  |
-| `Edit` | method | [140](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L140) |  | ⚪ not started |  |
-| `Delete` | method | [141](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L141) |  | ⚪ not started |  |
-| `MoveBy` | method | [142](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L142) |  | ⚪ not started |  |
-| `Locate` | method | [143](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L143) |  | ⚪ not started |  |
-| `GetImplementor` | method | [144](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L144) |  | ⚪ not started |  |
-| `GetState` | method | [145](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L145) |  | ⚪ not started |  |
-| `Post` | method | [147](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L147) |  | ⚪ not started |  |
-| `SetFieldValue` | method | [148](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L148) |  | ⚪ not started |  |
-| `AsDataSet` | property | [149](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L149) |  | ⚪ not started |  |
-| `Eof` | property | [150](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L150) |  | ⚪ not started |  |
-| `FieldDefs` | property | [151](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L151) |  | ⚪ not started |  |
-| `Fields` | property | [152](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L152) |  | ⚪ not started |  |
-| `FieldCount` | property | [153](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L153) |  | ⚪ not started |  |
-| `FieldValues` | property | [154](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L154) |  | ⚪ not started |  |
-| `Implementor` | property | [155](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L155) |  | ⚪ not started |  |
-| `State` | property | [156](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L156) |  | ⚪ not started |  |
+| `Append` | method | [127](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L127) | [`IBoldDataSet.Append`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L118) | 🟢 ported |  |
+| `Close` | method | [128](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L128) | [`IBoldDataSet.Close`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L119) | 🟢 ported |  |
+| `FieldByName` | method | [129](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L129) | [`IBoldDataSet.FieldByName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L120) | 🟢 ported |  |
+| `FindField` | method | [130](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L130) | [`IBoldDataSet.FindField`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L121) | 🟢 ported |  |
+| `First` | method | [131](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L131) | [`IBoldDataSet.First`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L122) | 🟢 ported |  |
+| `GetDataSet` | method | [132](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L132) | [`IBoldDataSet.GetDataSet`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L123) | 🟢 ported |  |
+| `GetEof` | method | [133](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L133) | [`IBoldDataSet.GetEof`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L124) | 🟢 ported |  |
+| `GetFieldDefs` | method | [134](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L134) | [`IBoldDataSet.GetFieldDefs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L125) | 🟢 ported |  |
+| `GetFields` | method | [135](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L135) | [`IBoldDataSet.GetFields`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L126) | 🟢 ported |  |
+| `GetFieldCount` | method | [136](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L136) | [`IBoldDataSet.GetFieldCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L127) | 🟢 ported |  |
+| `GetFieldValue` | method | [137](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L137) | [`IBoldDataSet.GetFieldValue`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L128) | 🟢 ported |  |
+| `Next` | method | [138](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L138) | [`IBoldDataSet.Next`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L129) | 🟢 ported |  |
+| `Open` | method | [139](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L139) | [`IBoldDataSet.Open`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L130) | 🟢 ported |  |
+| `Edit` | method | [140](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L140) | [`IBoldDataSet.Edit`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L131) | 🟢 ported |  |
+| `Delete` | method | [141](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L141) | [`IBoldDataSet.Delete`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L132) | 🟢 ported |  |
+| `MoveBy` | method | [142](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L142) | [`IBoldDataSet.MoveBy`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L133) | 🟢 ported |  |
+| `Locate` | method | [143](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L143) | [`IBoldDataSet.Locate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L134) | 🟢 ported |  |
+| `GetImplementor` | method | [144](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L144) | [`IBoldDataSet.GetImplementor`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L135) | 🟢 ported |  |
+| `GetState` | method | [145](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L145) | [`IBoldDataSet.GetState`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L136) | 🟢 ported |  |
+| `Post` | method | [147](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L147) | [`IBoldDataSet.Post`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L137) | 🟢 ported |  |
+| `SetFieldValue` | method | [148](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L148) | [`IBoldDataSet.SetFieldValue`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L138) | 🟢 ported |  |
+| `AsDataSet` | property | [149](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L149) | [`IBoldDataSet.AsDataSet`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L140) | 🟢 ported |  |
+| `Eof` | property | [150](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L150) | [`IBoldDataSet.Eof`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L141) | 🟢 ported |  |
+| `FieldDefs` | property | [151](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L151) | [`IBoldDataSet.FieldDefs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L142) | 🟢 ported |  |
+| `Fields` | property | [152](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L152) | [`IBoldDataSet.Fields`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L143) | 🟢 ported: An indexed property in Delphi; use GetFields(Index). |  |
+| `FieldCount` | property | [153](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L153) | [`IBoldDataSet.FieldCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L144) | 🟢 ported |  |
+| `FieldValues` | property | [154](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L154) | [`IBoldDataSet.this`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L145) | 🟢 ported |  |
+| `Implementor` | property | [155](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L155) | [`IBoldDataSet.Implementor`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L146) | 🟢 ported |  |
+| `State` | property | [156](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L156) | [`IBoldDataSet.State`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L147) | 🟢 ported |  |
 
 ## IBoldExecQuery
 
-interface at [line 159](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L159); ⚪ not started.
+interface at [line 159](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L159); 🟢 ported, C# [`IBoldExecQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L152).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLText` | method | [161](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L161) |  | ⚪ not started |  |
-| `StartSQLBatch` | method | [162](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L162) |  | ⚪ not started |  |
-| `EndSQLBatch` | method | [163](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L163) |  | ⚪ not started |  |
-| `FailSQLBatch` | method | [164](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L164) |  | ⚪ not started |  |
-| `ExecSQL` | method | [165](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L165) |  | ⚪ not started |  |
-| `AssignSQL` | method | [166](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L166) |  | ⚪ not started |  |
-| `AssignSQLText` | method | [167](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L167) |  | ⚪ not started |  |
-| `ClearParams` | method | [168](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L168) |  | ⚪ not started |  |
-| `ParamByName` | method | [169](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L169) |  | ⚪ not started |  |
-| `GetRowsAffected` | method | [170](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L170) |  | ⚪ not started |  |
-| `GetImplementor` | method | [171](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L171) |  | ⚪ not started |  |
-| `RowsAffected` | property | [172](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L172) |  | ⚪ not started |  |
-| `Implementor` | property | [173](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L173) |  | ⚪ not started |  |
-| `SQLText` | property | [174](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L174) |  | ⚪ not started |  |
+| `GetSQLText` | method | [161](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L161) | [`IBoldExecQuery.GetSQLText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L154) | 🟢 ported |  |
+| `StartSQLBatch` | method | [162](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L162) | [`IBoldExecQuery.StartSQLBatch`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L155) | 🟢 ported |  |
+| `EndSQLBatch` | method | [163](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L163) | [`IBoldExecQuery.EndSQLBatch`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L156) | 🟢 ported |  |
+| `FailSQLBatch` | method | [164](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L164) | [`IBoldExecQuery.FailSQLBatch`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L157) | 🟢 ported |  |
+| `ExecSQL` | method | [165](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L165) | [`IBoldExecQuery.ExecSQL`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L158) | 🟢 ported |  |
+| `AssignSQL` | method | [166](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L166) | [`IBoldExecQuery.AssignSQL`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L159) | 🟢 ported |  |
+| `AssignSQLText` | method | [167](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L167) | [`IBoldExecQuery.AssignSQLText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L160) | 🟢 ported |  |
+| `ClearParams` | method | [168](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L168) | [`IBoldExecQuery.ClearParams`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L161) | 🟢 ported |  |
+| `ParamByName` | method | [169](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L169) | [`IBoldExecQuery.ParamByName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L162) | 🟢 ported |  |
+| `GetRowsAffected` | method | [170](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L170) | [`IBoldExecQuery.GetRowsAffected`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L163) | 🟢 ported |  |
+| `GetImplementor` | method | [171](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L171) | [`IBoldExecQuery.GetImplementor`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L164) | 🟢 ported |  |
+| `RowsAffected` | property | [172](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L172) | [`IBoldExecQuery.RowsAffected`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L166) | 🟢 ported |  |
+| `Implementor` | property | [173](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L173) | [`IBoldExecQuery.Implementor`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L167) | 🟢 ported |  |
+| `SQLText` | property | [174](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L174) | [`IBoldExecQuery.SQLText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L168) | 🟢 ported |  |
 
 ## IBoldParameterized
 
-interface at [line 177](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L177); ⚪ not started.
+interface at [line 177](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L177); 🟢 ported, C# [`IBoldParameterized`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L173).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ClearParams` | method | [179](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L179) |  | ⚪ not started |  |
-| `AssignParams` | method | [180](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L180) |  | ⚪ not started |  |
-| `ParamByName` | method | [181](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L181) |  | ⚪ not started |  |
-| `GetParamCount` | method | [182](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L182) |  | ⚪ not started |  |
-| `GetParams` | method | [183](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L183) |  | ⚪ not started |  |
-| `Createparam` | method | [184](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L184) |  | ⚪ not started |  |
-| `Params` | property | [185](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L185) |  | ⚪ not started |  |
-| `ParamCount` | property | [186](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L186) |  | ⚪ not started |  |
+| `ClearParams` | method | [179](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L179) | [`IBoldParameterized.ClearParams`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L175) | 🟢 ported |  |
+| `AssignParams` | method | [180](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L180) | [`IBoldParameterized.AssignParams`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L176) | 🟢 ported |  |
+| `ParamByName` | method | [181](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L181) | [`IBoldParameterized.ParamByName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L177) | 🟢 ported |  |
+| `GetParamCount` | method | [182](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L182) | [`IBoldParameterized.GetParamCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L178) | 🟢 ported |  |
+| `GetParams` | method | [183](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L183) | [`IBoldParameterized.GetParams`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L179) | 🟢 ported |  |
+| `Createparam` | method | [184](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L184) | [`IBoldParameterized.Createparam`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L180) | 🟢 ported |  |
+| `Params` | property | [185](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L185) | [`IBoldParameterized.Params`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L182) | 🟢 ported: An indexed property in Delphi; use GetParams(i). |  |
+| `ParamCount` | property | [186](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L186) | [`IBoldParameterized.ParamCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L183) | 🟢 ported |  |
 
 ## IBoldQuery
 
-interface at [line 189](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L189); ⚪ not started.
+interface at [line 189](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L189); 🟢 ported, C# [`IBoldQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L188).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLText` | method | [191](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L191) |  | ⚪ not started |  |
-| `GetRequestLiveQuery` | method | [192](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L192) |  | ⚪ not started |  |
-| `SetRequestLiveQuery` | method | [193](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L193) |  | ⚪ not started |  |
-| `GetRecordCount` | method | [194](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L194) |  | ⚪ not started |  |
-| `AssignSQLText` | method | [195](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L195) |  | ⚪ not started |  |
-| `AssignSQL` | method | [196](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L196) |  | ⚪ not started |  |
-| `ClearParams` | method | [197](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L197) |  | ⚪ not started |  |
-| `AssignParams` | method | [198](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L198) |  | ⚪ not started |  |
-| `ParamByName` | method | [199](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L199) |  | ⚪ not started |  |
-| `RequestLiveQuery` | property | [200](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L200) |  | ⚪ not started |  |
-| `RecordCount` | property | [201](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L201) |  | ⚪ not started |  |
-| `SQLText` | property | [202](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L202) |  | ⚪ not started |  |
+| `GetSQLText` | method | [191](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L191) | [`IBoldQuery.GetSQLText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L190) | 🟢 ported |  |
+| `GetRequestLiveQuery` | method | [192](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L192) | [`IBoldQuery.GetRequestLiveQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L191) | 🟢 ported |  |
+| `SetRequestLiveQuery` | method | [193](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L193) | [`IBoldQuery.SetRequestLiveQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L192) | 🟢 ported |  |
+| `GetRecordCount` | method | [194](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L194) | [`IBoldQuery.GetRecordCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L193) | 🟢 ported |  |
+| `AssignSQLText` | method | [195](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L195) | [`IBoldQuery.AssignSQLText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L194) | 🟢 ported |  |
+| `AssignSQL` | method | [196](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L196) | [`IBoldQuery.AssignSQL`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L195) | 🟢 ported |  |
+| `ClearParams` | method | [197](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L197) | [`IBoldQuery.ClearParams`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L196) | 🟢 ported |  |
+| `AssignParams` | method | [198](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L198) | [`IBoldQuery.AssignParams`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L197) | 🟢 ported |  |
+| `ParamByName` | method | [199](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L199) | [`IBoldQuery.ParamByName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L198) | 🟢 ported |  |
+| `RequestLiveQuery` | property | [200](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L200) | [`IBoldQuery.RequestLiveQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L200) | 🟢 ported |  |
+| `RecordCount` | property | [201](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L201) | [`IBoldQuery.RecordCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L201) | 🟢 ported |  |
+| `SQLText` | property | [202](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L202) | [`IBoldQuery.SQLText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L202) | 🟢 ported |  |
 
 ## IBoldTable
 
-interface at [line 205](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L205); ⚪ not started.
+interface at [line 205](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L205); 🟢 ported, C# [`IBoldTable`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L207).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AddIndex` | method | [207](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L207) |  | ⚪ not started |  |
-| `GetIndexDefs` | method | [208](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L208) |  | ⚪ not started |  |
-| `SetTableName` | method | [209](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L209) |  | ⚪ not started |  |
-| `GetTableName` | method | [210](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L210) |  | ⚪ not started |  |
-| `SetExclusive` | method | [211](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L211) |  | ⚪ not started |  |
-| `GetExclusive` | method | [212](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L212) |  | ⚪ not started |  |
-| `CreateTable` | method | [213](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L213) |  | ⚪ not started |  |
-| `DeleteTable` | method | [214](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L214) |  | ⚪ not started |  |
-| `GetExists` | method | [215](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L215) |  | ⚪ not started |  |
-| `IndexDefs` | property | [217](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L217) |  | ⚪ not started |  |
-| `Tablename` | property | [218](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L218) |  | ⚪ not started |  |
-| `Exclusive` | property | [219](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L219) |  | ⚪ not started |  |
-| `Exists` | property | [220](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L220) |  | ⚪ not started |  |
+| `AddIndex` | method | [207](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L207) | [`IBoldTable.AddIndex`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L209) | 🟢 ported |  |
+| `GetIndexDefs` | method | [208](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L208) | [`IBoldTable.GetIndexDefs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L210) | 🟢 ported |  |
+| `SetTableName` | method | [209](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L209) | [`IBoldTable.SetTableName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L211) | 🟢 ported |  |
+| `GetTableName` | method | [210](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L210) | [`IBoldTable.GetTableName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L212) | 🟢 ported |  |
+| `SetExclusive` | method | [211](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L211) | [`IBoldTable.SetExclusive`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L213) | 🟢 ported |  |
+| `GetExclusive` | method | [212](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L212) | [`IBoldTable.GetExclusive`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L214) | 🟢 ported |  |
+| `CreateTable` | method | [213](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L213) | [`IBoldTable.CreateTable`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L215) | 🟢 ported |  |
+| `DeleteTable` | method | [214](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L214) | [`IBoldTable.DeleteTable`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L216) | 🟢 ported |  |
+| `GetExists` | method | [215](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L215) | [`IBoldTable.GetExists`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L217) | 🟢 ported |  |
+| `IndexDefs` | property | [217](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L217) | [`IBoldTable.IndexDefs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L219) | 🟢 ported |  |
+| `Tablename` | property | [218](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L218) | [`IBoldTable.Tablename`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L220) | 🟢 ported |  |
+| `Exclusive` | property | [219](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L219) | [`IBoldTable.Exclusive`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L221) | 🟢 ported |  |
+| `Exists` | property | [220](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L220) | [`IBoldTable.Exists`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L222) | 🟢 ported |  |
 
 ## IBoldDataBase
 
-interface at [line 223](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L223); ⚪ not started.
+interface at [line 223](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L223); 🟢 ported, C# [`IBoldDataBase`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L227).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `StartTransaction` | method | [225](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L225) |  | ⚪ not started |  |
-| `Commit` | method | [226](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L226) |  | ⚪ not started |  |
-| `RollBack` | method | [227](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L227) |  | ⚪ not started |  |
-| `Open` | method | [228](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L228) |  | ⚪ not started |  |
-| `Close` | method | [229](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L229) |  | ⚪ not started |  |
-| `GetInTransaction` | method | [230](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L230) |  | ⚪ not started |  |
-| `GetIsSQLBased` | method | [231](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L231) |  | ⚪ not started |  |
-| `AllTableNames` | method | [232](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L232) |  | ⚪ not started |  |
-| `SetlogInPrompt` | method | [233](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L233) |  | ⚪ not started |  |
-| `GetLogInPrompt` | method | [234](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L234) |  | ⚪ not started |  |
-| `SetKeepConnection` | method | [235](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L235) |  | ⚪ not started |  |
-| `GetKeepConnection` | method | [236](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L236) |  | ⚪ not started |  |
-| `GetConnected` | method | [237](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L237) |  | ⚪ not started |  |
-| `SupportsDefaultColumnValues` | method | [238](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L238) |  | ⚪ not started |  |
-| `InTransaction` | property | [239](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L239) |  | ⚪ not started |  |
-| `IsSqlBased` | property | [240](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L240) |  | ⚪ not started |  |
-| `LogInPrompt` | property | [241](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L241) |  | ⚪ not started |  |
-| `KeepConnection` | property | [242](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L242) |  | ⚪ not started |  |
-| `Connected` | property | [243](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L243) |  | ⚪ not started |  |
-| `GetQuery` | method | [244](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L244) |  | ⚪ not started |  |
-| `ReleaseQuery` | method | [245](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L245) |  | ⚪ not started |  |
-| `GetExecQuery` | method | [246](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L246) |  | ⚪ not started |  |
-| `ReleaseExecQuery` | method | [247](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L247) |  | ⚪ not started |  |
-| `GetTable` | method | [248](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L248) |  | ⚪ not started |  |
-| `ReleaseTable` | method | [249](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L249) |  | ⚪ not started |  |
-| `SupportsTableCreation` | method | [250](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L250) |  | ⚪ not started |  |
-| `ReleaseCachedObjects` | method | [251](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L251) |  | ⚪ not started |  |
-| `TableExists` | method | [252](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L252) |  | ⚪ not started |  |
-| `GetSQLDatabaseConfig` | method | [253](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L253) |  | ⚪ not started |  |
-| `SQLDatabaseConfig` | property | [254](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L254) |  | ⚪ not started |  |
+| `StartTransaction` | method | [225](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L225) | [`IBoldDataBase.StartTransaction`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L229) | 🟢 ported |  |
+| `Commit` | method | [226](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L226) | [`IBoldDataBase.Commit`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L230) | 🟢 ported |  |
+| `RollBack` | method | [227](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L227) | [`IBoldDataBase.RollBack`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L231) | 🟢 ported |  |
+| `Open` | method | [228](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L228) | [`IBoldDataBase.Open`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L232) | 🟢 ported |  |
+| `Close` | method | [229](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L229) | [`IBoldDataBase.Close`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L233) | 🟢 ported |  |
+| `GetInTransaction` | method | [230](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L230) | [`IBoldDataBase.GetInTransaction`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L234) | 🟢 ported |  |
+| `GetIsSQLBased` | method | [231](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L231) | [`IBoldDataBase.GetIsSQLBased`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L235) | 🟢 ported |  |
+| `AllTableNames` | method | [232](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L232) | [`IBoldDataBase.AllTableNames`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L236) | 🟢 ported |  |
+| `SetlogInPrompt` | method | [233](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L233) | [`IBoldDataBase.SetlogInPrompt`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L237) | 🟢 ported |  |
+| `GetLogInPrompt` | method | [234](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L234) | [`IBoldDataBase.GetLogInPrompt`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L238) | 🟢 ported |  |
+| `SetKeepConnection` | method | [235](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L235) | [`IBoldDataBase.SetKeepConnection`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L239) | 🟢 ported |  |
+| `GetKeepConnection` | method | [236](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L236) | [`IBoldDataBase.GetKeepConnection`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L240) | 🟢 ported |  |
+| `GetConnected` | method | [237](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L237) | [`IBoldDataBase.GetConnected`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L241) | 🟢 ported |  |
+| `SupportsDefaultColumnValues` | method | [238](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L238) | [`IBoldDataBase.SupportsDefaultColumnValues`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L242) | 🟢 ported |  |
+| `InTransaction` | property | [239](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L239) | [`IBoldDataBase.InTransaction`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L254) | 🟢 ported |  |
+| `IsSqlBased` | property | [240](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L240) | [`IBoldDataBase.IsSqlBased`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L255) | 🟢 ported |  |
+| `LogInPrompt` | property | [241](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L241) | [`IBoldDataBase.LogInPrompt`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L256) | 🟢 ported |  |
+| `KeepConnection` | property | [242](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L242) | [`IBoldDataBase.KeepConnection`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L257) | 🟢 ported |  |
+| `Connected` | property | [243](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L243) | [`IBoldDataBase.Connected`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L258) | 🟢 ported |  |
+| `GetQuery` | method | [244](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L244) | [`IBoldDataBase.GetQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L243) | 🟢 ported |  |
+| `ReleaseQuery` | method | [245](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L245) | [`IBoldDataBase.ReleaseQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L244) | 🟢 ported |  |
+| `GetExecQuery` | method | [246](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L246) | [`IBoldDataBase.GetExecQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L245) | 🟢 ported |  |
+| `ReleaseExecQuery` | method | [247](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L247) | [`IBoldDataBase.ReleaseExecQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L246) | 🟢 ported |  |
+| `GetTable` | method | [248](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L248) | [`IBoldDataBase.GetTable`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L247) | 🟢 ported |  |
+| `ReleaseTable` | method | [249](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L249) | [`IBoldDataBase.ReleaseTable`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L248) | 🟢 ported |  |
+| `SupportsTableCreation` | method | [250](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L250) | [`IBoldDataBase.SupportsTableCreation`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L249) | 🟢 ported |  |
+| `ReleaseCachedObjects` | method | [251](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L251) | [`IBoldDataBase.ReleaseCachedObjects`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L250) | 🟢 ported |  |
+| `TableExists` | method | [252](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L252) | [`IBoldDataBase.TableExists`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L251) | 🟢 ported |  |
+| `GetSQLDatabaseConfig` | method | [253](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L253) | [`IBoldDataBase.GetSQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L252) | 🟢 ported |  |
+| `SQLDatabaseConfig` | property | [254](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L254) | [`IBoldDataBase.SQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L259) | 🟢 ported |  |
 
 ## TBoldParameterWrapper
 
-class at [line 257](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L257); ⚪ not started.
+class at [line 257](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L257); 🟢 ported, C# [`TBoldParameterWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L264).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DatasetWrapper` | property, protected | [261](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L261) |  | ⚪ not started |  |
-| `create` | constructor | [263](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L263) · [body 962](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L962) |  | ⚪ not started |  |
+| `DatasetWrapper` | property, protected | [261](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L261) | [`TBoldParameterWrapper.DatasetWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L274) | 🟢 ported |  |
+| `create` | constructor | [263](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L263) · [body 962](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L962) | [`TBoldParameterWrapper.TBoldParameterWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L269) | 🟢 ported |  |
 
 ## TBoldDbParameter
 
-class at [line 266](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L266); ⚪ not started.
+class at [line 266](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L266); 🟢 ported, C# [`TBoldDbParameter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L279).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsVariant` | method, private | [269](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L269) · [body 496](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L496) |  | ⚪ not started |  |
-| `SetAsVariant` | method, private | [270](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L270) · [body 584](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L584) |  | ⚪ not started |  |
-| `GetName` | method, private | [271](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L271) · [body 511](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L511) |  | ⚪ not started |  |
-| `Clear` | method, private | [272](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L272) · [body 438](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L438) |  | ⚪ not started |  |
-| `GetDataType` | method, private | [273](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L273) · [body 501](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L501) |  | ⚪ not started |  |
-| `SetDataType` | method, private | [274](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L274) · [body 599](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L599) |  | ⚪ not started |  |
-| `GetAsBCD` | method, private | [275](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L275) · [body 454](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L454) |  | ⚪ not started |  |
-| `GetAsBoolean` | method, private | [276](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L276) · [body 459](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L459) |  | ⚪ not started |  |
-| `GetAsCurrency` | method, private | [277](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L277) · [body 464](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L464) |  | ⚪ not started |  |
-| `GetAsFloat` | method, private | [278](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L278) · [body 474](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L474) |  | ⚪ not started |  |
-| `GetAsInteger` | method, private | [279](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L279) · [body 479](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L479) |  | ⚪ not started |  |
-| `GetAsMemo` | method, private | [280](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L280) · [body 484](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L484) |  | ⚪ not started |  |
-| `GetAsString` | method, private | [281](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L281) · [body 489](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L489) |  | ⚪ not started |  |
-| `GetIsNull` | method, private | [282](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L282) · [body 506](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L506) |  | ⚪ not started |  |
-| `SetAsBCD` | method, private | [283](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L283) · [body 521](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L521) |  | ⚪ not started |  |
-| `SetAsBlob` | method, private | [284](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L284) · [body 526](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L526) |  | ⚪ not started |  |
-| `SetAsBoolean` | method, private | [285](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L285) · [body 531](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L531) |  | ⚪ not started |  |
-| `SetAsCurrency` | method, private | [286](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L286) · [body 536](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L536) |  | ⚪ not started |  |
-| `SetAsDate` | method, private | [287](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L287) · [body 541](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L541) |  | ⚪ not started |  |
-| `SetAsFloat` | method, private | [288](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L288) · [body 551](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L551) |  | ⚪ not started |  |
-| `SetAsInteger` | method, private | [289](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L289) · [body 556](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L556) |  | ⚪ not started |  |
-| `SetAsMemo` | method, private | [290](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L290) · [body 561](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L561) |  | ⚪ not started |  |
-| `SetAsString` | method, private | [291](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L291) · [body 571](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L571) |  | ⚪ not started |  |
-| `SetAsSmallInt` | method, private | [292](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L292) · [body 566](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L566) |  | ⚪ not started |  |
-| `SetAsTime` | method, private | [293](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L293) · [body 579](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L579) |  | ⚪ not started |  |
-| `SetAsWord` | method, private | [295](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L295) · [body 594](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L594) |  | ⚪ not started |  |
-| `SetText` | method, private | [296](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L296) · [body 604](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L604) |  | ⚪ not started |  |
-| `AssignFieldValue` | method, private | [297](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L297) · [body 433](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L433) |  | ⚪ not started |  |
-| `GetParameter` | method, private | [298](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L298) · [body 516](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L516) |  | ⚪ not started |  |
-| `Parameter` | property, protected | [300](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L300) |  | ⚪ not started |  |
-| `SetAsDateTime` | method, protected | [301](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L301) · [body 546](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L546) |  | ⚪ not started |  |
-| `GetAsDateTime` | method, protected | [302](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L302) · [body 469](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L469) |  | ⚪ not started |  |
-| `Create` | constructor | [304](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L304) · [body 443](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L443) |  | ⚪ not started |  |
-| `Destroy` | destructor | [305](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L305) · [body 449](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L449) |  | ⚪ not started |  |
+| `GetAsVariant` | method, private | [269](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L269) · [body 496](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L496) | [`TBoldDbParameter.GetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L292) | 🟢 ported |  |
+| `SetAsVariant` | method, private | [270](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L270) · [body 584](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L584) | [`TBoldDbParameter.SetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L293) | 🟢 ported |  |
+| `GetName` | method, private | [271](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L271) · [body 511](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L511) | [`TBoldDbParameter.GetName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L294) | 🟢 ported |  |
+| `Clear` | method, private | [272](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L272) · [body 438](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L438) | [`TBoldDbParameter.Clear`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L295) | 🟢 ported |  |
+| `GetDataType` | method, private | [273](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L273) · [body 501](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L501) | [`TBoldDbParameter.GetDataType`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L296) | 🟢 ported |  |
+| `SetDataType` | method, private | [274](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L274) · [body 599](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L599) | [`TBoldDbParameter.SetDataType`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L297) | 🟢 ported |  |
+| `GetAsBCD` | method, private | [275](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L275) · [body 454](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L454) | [`TBoldDbParameter.GetAsBCD`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L298) | 🟢 ported |  |
+| `GetAsBoolean` | method, private | [276](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L276) · [body 459](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L459) | [`TBoldDbParameter.GetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L299) | 🟢 ported |  |
+| `GetAsCurrency` | method, private | [277](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L277) · [body 464](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L464) | [`TBoldDbParameter.GetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L300) | 🟢 ported |  |
+| `GetAsFloat` | method, private | [278](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L278) · [body 474](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L474) | [`TBoldDbParameter.GetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L301) | 🟢 ported |  |
+| `GetAsInteger` | method, private | [279](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L279) · [body 479](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L479) | [`TBoldDbParameter.GetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L302) | 🟢 ported |  |
+| `GetAsMemo` | method, private | [280](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L280) · [body 484](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L484) | [`TBoldDbParameter.GetAsMemo`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L303) | 🟢 ported |  |
+| `GetAsString` | method, private | [281](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L281) · [body 489](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L489) | [`TBoldDbParameter.GetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L307) | ✅ verified | ✔ [`BoldADOInterfacesTests.Empty_strings_are_written_as_the_marker`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L68) |
+| `GetIsNull` | method, private | [282](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L282) · [body 506](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L506) | [`TBoldDbParameter.GetIsNull`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L313) | 🟢 ported |  |
+| `SetAsBCD` | method, private | [283](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L283) · [body 521](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L521) | [`TBoldDbParameter.SetAsBCD`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L314) | 🟢 ported |  |
+| `SetAsBlob` | method, private | [284](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L284) · [body 526](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L526) | [`TBoldDbParameter.SetAsBlob`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L315) | 🟢 ported |  |
+| `SetAsBoolean` | method, private | [285](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L285) · [body 531](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L531) | [`TBoldDbParameter.SetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L316) | 🟢 ported |  |
+| `SetAsCurrency` | method, private | [286](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L286) · [body 536](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L536) | [`TBoldDbParameter.SetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L317) | 🟢 ported |  |
+| `SetAsDate` | method, private | [287](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L287) · [body 541](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L541) | [`TBoldDbParameter.SetAsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L318) | 🟢 ported |  |
+| `SetAsFloat` | method, private | [288](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L288) · [body 551](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L551) | [`TBoldDbParameter.SetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L319) | 🟢 ported |  |
+| `SetAsInteger` | method, private | [289](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L289) · [body 556](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L556) | [`TBoldDbParameter.SetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L320) | 🟢 ported |  |
+| `SetAsMemo` | method, private | [290](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L290) · [body 561](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L561) | [`TBoldDbParameter.SetAsMemo`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L321) | 🟢 ported |  |
+| `SetAsString` | method, private | [291](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L291) · [body 571](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L571) | [`TBoldDbParameter.SetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L325) | ✅ verified | ✔ [`BoldADOInterfacesTests.Empty_strings_are_written_as_the_marker`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L68) |
+| `SetAsSmallInt` | method, private | [292](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L292) · [body 566](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L566) | [`TBoldDbParameter.SetAsSmallInt`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L327) | 🟢 ported |  |
+| `SetAsTime` | method, private | [293](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L293) · [body 579](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L579) | [`TBoldDbParameter.SetAsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L328) | 🟢 ported |  |
+| `SetAsWord` | method, private | [295](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L295) · [body 594](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L594) | [`TBoldDbParameter.SetAsWord`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L329) | 🟢 ported |  |
+| `SetText` | method, private | [296](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L296) · [body 604](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L604) | [`TBoldDbParameter.SetText`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L330) | 🟢 ported |  |
+| `AssignFieldValue` | method, private | [297](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L297) · [body 433](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L433) | [`TBoldDbParameter.AssignFieldValue`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L331) | 🟢 ported |  |
+| `GetParameter` | method, private | [298](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L298) · [body 516](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L516) | [`TBoldDbParameter.GetParameter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L332) | 🟢 ported |  |
+| `Parameter` | property, protected | [300](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L300) | [`TBoldDbParameter.Parameter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L333) | 🟢 ported |  |
+| `SetAsDateTime` | method, protected | [301](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L301) · [body 546](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L546) | [`TBoldDbParameter.SetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L334) | 🟢 ported |  |
+| `GetAsDateTime` | method, protected | [302](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L302) · [body 469](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L469) | [`TBoldDbParameter.GetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L335) | 🟢 ported |  |
+| `Create` | constructor | [304](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L304) · [body 443](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L443) | [`TBoldDbParameter.TBoldDbParameter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L284) | 🟢 ported |  |
+| `Destroy` | destructor | [305](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L305) · [body 449](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L449) | [`[assembly: Delphi] in BoldDBInterfaces.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L7) | 🔵 replaced: Did nothing beyond the inherited destructor. |  |
 
 ## TBoldDataSetWrapper
 
-class at [line 308](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L308); ⚪ not started.
+class at [line 308](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L308); 🟢 ported, C# [`TBoldDataSetWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L340).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetFieldWrapperClass` | method, protected | [313](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L313) · [body 713](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L713) |  | ⚪ not started |  |
-| `GetDataSet` | method, protected | [314](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L314) |  | ⚪ not started |  |
-| `GetEof` | method, protected | [315](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L315) · [body 685](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L685) |  | ⚪ not started |  |
-| `GetFields` | method, protected | [316](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L316) · [body 700](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L700) |  | ⚪ not started |  |
-| `GetFieldCount` | method, protected | [317](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L317) · [body 690](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L690) |  | ⚪ not started |  |
-| `GetFieldValue` | method, protected | [318](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L318) · [body 708](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L708) |  | ⚪ not started |  |
-| `SetFieldValue` | method, protected | [319](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L319) · [body 755](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L755) |  | ⚪ not started |  |
-| `GetFieldDefs` | method, protected | [320](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L320) · [body 695](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L695) |  | ⚪ not started |  |
-| `Append` | method, protected | [321](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L321) · [body 611](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L611) |  | ⚪ not started |  |
-| `Createparam` | method, protected | [322](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L322) · [body 627](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L627) |  | ⚪ not started |  |
-| `Close` | method, protected | [323](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L323) · [body 616](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L616) |  | ⚪ not started |  |
-| `FieldByName` | method, protected | [324](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L324) · [body 642](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L642) |  | ⚪ not started |  |
-| `FindField` | method, protected | [325](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L325) · [body 665](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L665) |  | ⚪ not started |  |
-| `First` | method, protected | [326](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L326) · [body 680](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L680) |  | ⚪ not started |  |
-| `Delete` | method, protected | [327](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L327) · [body 632](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L632) |  | ⚪ not started |  |
-| `Next` | method, protected | [328](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L328) · [body 739](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L739) |  | ⚪ not started |  |
-| `Open` | method, protected | [329](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L329) · [body 744](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L744) |  | ⚪ not started |  |
-| `Edit` | method, protected | [330](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L330) · [body 637](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L637) |  | ⚪ not started |  |
-| `MoveBy` | method, protected | [331](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L331) · [body 734](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L734) |  | ⚪ not started |  |
-| `Locate` | method, protected | [332](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L332) · [body 728](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L728) |  | ⚪ not started |  |
-| `Post` | method, protected | [333](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L333) · [body 750](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L750) |  | ⚪ not started |  |
-| `GetImplementor` | method, protected | [334](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L334) · [body 718](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L718) |  | ⚪ not started |  |
-| `GetState` | method, protected | [335](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L335) · [body 723](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L723) |  | ⚪ not started |  |
-| `Create` | constructor | [337](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L337) · [body 621](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L621) |  | ⚪ not started |  |
-| `DatabaseWrapper` | property | [338](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L338) |  | ⚪ not started |  |
-| `DataSet` | property | [339](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L339) |  | ⚪ not started |  |
+| `GetFieldWrapperClass` | method, protected | [313](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L313) · [body 713](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L713) | [`TBoldDataSetWrapper.GetFieldWrapperClass`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L352) | 🟢 ported: Returns the System.Type of the field wrapper (a TBoldFieldWrapper with a (TField, TBoldDataSetWrapper) constructor). |  |
+| `GetDataSet` | method, protected | [314](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L314) | [`TBoldDataSetWrapper.GetDataSet`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L356) | 🟢 ported |  |
+| `GetEof` | method, protected | [315](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L315) · [body 685](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L685) | [`TBoldDataSetWrapper.GetEof`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L357) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `GetFields` | method, protected | [316](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L316) · [body 700](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L700) | [`TBoldDataSetWrapper.GetFields`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L358) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `GetFieldCount` | method, protected | [317](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L317) · [body 690](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L690) | [`TBoldDataSetWrapper.GetFieldCount`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L359) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `GetFieldValue` | method, protected | [318](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L318) · [body 708](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L708) | [`TBoldDataSetWrapper.GetFieldValue`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L360) | 🟢 ported |  |
+| `SetFieldValue` | method, protected | [319](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L319) · [body 755](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L755) | [`TBoldDataSetWrapper.SetFieldValue`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L361) | 🟢 ported |  |
+| `GetFieldDefs` | method, protected | [320](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L320) · [body 695](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L695) | [`TBoldDataSetWrapper.GetFieldDefs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L362) | 🟢 ported |  |
+| `Append` | method, protected | [321](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L321) · [body 611](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L611) | [`TBoldDataSetWrapper.Append`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L363) | 🟢 ported |  |
+| `Createparam` | method, protected | [322](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L322) · [body 627](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L627) | [`TBoldDataSetWrapper.Createparam`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L366) | 🟢 ported |  |
+| `Close` | method, protected | [323](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L323) · [body 616](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L616) | [`TBoldDataSetWrapper.Close`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L369) | 🟢 ported |  |
+| `FieldByName` | method, protected | [324](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L324) · [body 642](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L642) | [`TBoldDataSetWrapper.FieldByName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L373) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `FindField` | method, protected | [325](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L325) · [body 665](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L665) | [`TBoldDataSetWrapper.FindField`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L389) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `First` | method, protected | [326](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L326) · [body 680](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L680) | [`TBoldDataSetWrapper.First`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L391) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `Delete` | method, protected | [327](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L327) · [body 632](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L632) | [`TBoldDataSetWrapper.Delete`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L392) | 🟢 ported |  |
+| `Next` | method, protected | [328](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L328) · [body 739](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L739) | [`TBoldDataSetWrapper.Next`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L393) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `Open` | method, protected | [329](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L329) · [body 744](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L744) | [`TBoldDataSetWrapper.Open`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L396) | 🟢 ported |  |
+| `Edit` | method, protected | [330](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L330) · [body 637](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L637) | [`TBoldDataSetWrapper.Edit`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L402) | 🟢 ported |  |
+| `MoveBy` | method, protected | [331](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L331) · [body 734](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L734) | [`TBoldDataSetWrapper.MoveBy`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L403) | 🟢 ported |  |
+| `Locate` | method, protected | [332](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L332) · [body 728](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L728) | [`TBoldDataSetWrapper.Locate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L404) | 🟢 ported |  |
+| `Post` | method, protected | [333](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L333) · [body 750](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L750) | [`TBoldDataSetWrapper.Post`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L405) | 🟢 ported |  |
+| `GetImplementor` | method, protected | [334](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L334) · [body 718](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L718) | [`TBoldDataSetWrapper.GetImplementor`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L406) | 🟢 ported |  |
+| `GetState` | method, protected | [335](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L335) · [body 723](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L723) | [`TBoldDataSetWrapper.GetState`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L407) | 🟢 ported |  |
+| `Create` | constructor | [337](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L337) · [body 621](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L621) | [`TBoldDataSetWrapper.TBoldDataSetWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L346) | 🟢 ported |  |
+| `DatabaseWrapper` | property | [338](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L338) | [`TBoldDataSetWrapper.DatabaseWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L408) | 🟢 ported |  |
+| `DataSet` | property | [339](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L339) | [`TBoldDataSetWrapper.DataSet`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L409) | 🟢 ported |  |
 
 ## TBoldDatabaseWrapper
 
-class at [line 342](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L342); ⚪ not started.
+class at [line 342](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L342); 🟢 ported, C# [`TBoldDatabaseWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L414).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SupportsDefaultColumnValues` | method, protected | [346](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L346) · [body 938](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L938) |  | ⚪ not started |  |
-| `AllTableNames` | method, protected | [347](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L347) |  | ⚪ not started |  |
-| `TableExists` | method, protected | [348](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L348) · [body 943](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L943) |  | ⚪ not started |  |
-| `GetQuery` | method, protected | [349](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L349) |  | ⚪ not started |  |
-| `ReleaseQuery` | method, protected | [350](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L350) |  | ⚪ not started |  |
-| `GetExecQuery` | method, protected | [351](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L351) · [body 907](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L907) |  | ⚪ not started |  |
-| `ReleaseExecQuery` | method, protected | [352](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L352) · [body 926](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L926) |  | ⚪ not started |  |
-| `GetSQLDatabaseConfig` | method, protected | [353](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L353) · [body 921](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L921) |  | ⚪ not started |  |
-| `Create` | constructor | [355](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L355) · [body 894](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L894) |  | ⚪ not started |  |
-| `Destroy` | destructor | [356](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L356) · [body 901](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L901) |  | ⚪ not started |  |
-| `SQLDatabaseConfig` | property | [357](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L357) |  | ⚪ not started |  |
+| `SupportsDefaultColumnValues` | method, protected | [346](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L346) · [body 938](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L938) | [`TBoldDatabaseWrapper.SupportsDefaultColumnValues`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L425) | 🟢 ported |  |
+| `AllTableNames` | method, protected | [347](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L347) | [`TBoldDatabaseWrapper.AllTableNames`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L426) | 🟢 ported |  |
+| `TableExists` | method, protected | [348](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L348) · [body 943](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L943) | [`TBoldDatabaseWrapper.TableExists`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L430) | ✅ verified | ✔ [`BoldADOInterfacesTests.Transactions_and_table_names`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L87) |
+| `GetQuery` | method, protected | [349](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L349) | [`TBoldDatabaseWrapper.GetQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L446) | 🟢 ported |  |
+| `ReleaseQuery` | method, protected | [350](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L350) | [`TBoldDatabaseWrapper.ReleaseQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L447) | 🟢 ported |  |
+| `GetExecQuery` | method, protected | [351](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L351) · [body 907](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L907) | [`TBoldDatabaseWrapper.GetExecQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L451) | 🟢 ported |  |
+| `ReleaseExecQuery` | method, protected | [352](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L352) · [body 926](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L926) | [`TBoldDatabaseWrapper.ReleaseExecQuery`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L465) | 🟢 ported |  |
+| `GetSQLDatabaseConfig` | method, protected | [353](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L353) · [body 921](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L921) | [`TBoldDatabaseWrapper.GetSQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L477) | ✅ verified | ✔ [`BoldADOInterfacesTests.Transactions_and_table_names`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L87) |
+| `Create` | constructor | [355](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L355) · [body 894](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L894) | [`TBoldDatabaseWrapper.TBoldDatabaseWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L419) | 🟢 ported |  |
+| `Destroy` | destructor | [356](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L356) · [body 901](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L901) | [`[assembly: Delphi] in BoldDBInterfaces.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L8) | 🔵 replaced: Freed the configuration copy; the garbage collector does that in .NET. |  |
+| `SQLDatabaseConfig` | property | [357](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L357) | [`TBoldDatabaseWrapper.SQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L478) | 🟢 ported |  |
 
 ## TBoldFieldWrapper
 
-class at [line 360](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L360); ⚪ not started.
+class at [line 360](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L360); 🟢 ported, C# [`TBoldFieldWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L483).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetField` | method, private | [365](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L365) · [body 828](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L828) |  | ⚪ not started |  |
-| `GetAsVariant` | method, private | [366](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L366) · [body 823](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L823) |  | ⚪ not started |  |
-| `SetAsVariant` | method, private | [367](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L367) · [body 876](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L876) |  | ⚪ not started |  |
-| `SetAsString` | method, private | [368](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L368) · [body 868](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L868) |  | ⚪ not started |  |
-| `GetAsInteger` | method, private | [369](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L369) · [body 806](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L806) |  | ⚪ not started |  |
-| `SetAsInteger` | method, private | [370](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L370) · [body 863](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L863) |  | ⚪ not started |  |
-| `GetAsBoolean` | method, private | [371](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L371) · [body 781](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L781) |  | ⚪ not started |  |
-| `GetAsCurrency` | method, private | [372](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L372) · [body 786](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L786) |  | ⚪ not started |  |
-| `GetAsDateTime` | method, private | [373](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L373) · [body 796](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L796) |  | ⚪ not started |  |
-| `GetAsFloat` | method, private | [374](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L374) · [body 801](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L801) |  | ⚪ not started |  |
-| `GetIsNull` | method, private | [375](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L375) · [body 838](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L838) |  | ⚪ not started |  |
-| `SetAsBoolean` | method, private | [376](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L376) · [body 843](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L843) |  | ⚪ not started |  |
-| `SetAsCurrency` | method, private | [377](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L377) · [body 848](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L848) |  | ⚪ not started |  |
-| `SetAsDateTime` | method, private | [378](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L378) · [body 853](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L853) |  | ⚪ not started |  |
-| `SetAsFloat` | method, private | [379](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L379) · [body 858](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L858) |  | ⚪ not started |  |
-| `GetFieldName` | method, private | [380](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L380) · [body 833](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L833) |  | ⚪ not started |  |
-| `GetAsDate` | method, private | [381](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L381) · [body 791](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L791) |  | ⚪ not started |  |
-| `GetAsTime` | method, private | [382](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L382) · [body 818](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L818) |  | ⚪ not started |  |
-| `SetAsTime` | method, private | [383](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L383) · [body 887](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L887) |  | ⚪ not started |  |
-| `SetAsDate` | method, private | [384](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L384) · [body 882](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L882) |  | ⚪ not started |  |
-| `SetAsBlob` | method, private | [385](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L385) · [body 763](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L763) |  | ⚪ not started |  |
-| `GetAsBlob` | method, private | [386](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L386) · [body 776](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L776) |  | ⚪ not started |  |
-| `GetAsString` | method, protected | [388](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L388) · [body 811](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L811) |  | ⚪ not started |  |
-| `DataSetWrapper` | property, protected | [389](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L389) |  | ⚪ not started |  |
-| `create` | constructor | [391](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L391) · [body 768](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L768) |  | ⚪ not started |  |
-| `Field` | property | [392](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L392) |  | ⚪ not started |  |
-| `FieldName` | property | [393](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L393) |  | ⚪ not started |  |
+| `GetField` | method, private | [365](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L365) · [body 828](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L828) | [`TBoldFieldWrapper.GetField`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L521) | 🟢 ported |  |
+| `GetAsVariant` | method, private | [366](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L366) · [body 823](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L823) | [`TBoldFieldWrapper.GetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L520) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `SetAsVariant` | method, private | [367](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L367) · [body 876](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L876) | [`TBoldFieldWrapper.SetAsVariant`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L534) | 🟢 ported |  |
+| `SetAsString` | method, private | [368](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L368) · [body 868](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L868) | [`TBoldFieldWrapper.SetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L531) | ✅ verified | ✔ [`BoldADOInterfacesTests.Empty_strings_are_written_as_the_marker`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L68) |
+| `GetAsInteger` | method, private | [369](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L369) · [body 806](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L806) | [`TBoldFieldWrapper.GetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L509) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `SetAsInteger` | method, private | [370](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L370) · [body 863](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L863) | [`TBoldFieldWrapper.SetAsInteger`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L528) | 🟢 ported |  |
+| `GetAsBoolean` | method, private | [371](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L371) · [body 781](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L781) | [`TBoldFieldWrapper.GetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L504) | 🟢 ported |  |
+| `GetAsCurrency` | method, private | [372](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L372) · [body 786](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L786) | [`TBoldFieldWrapper.GetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L505) | 🟢 ported |  |
+| `GetAsDateTime` | method, private | [373](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L373) · [body 796](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L796) | [`TBoldFieldWrapper.GetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L507) | 🟢 ported |  |
+| `GetAsFloat` | method, private | [374](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L374) · [body 801](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L801) | [`TBoldFieldWrapper.GetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L508) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `GetIsNull` | method, private | [375](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L375) · [body 838](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L838) | [`TBoldFieldWrapper.GetIsNull`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L523) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `SetAsBoolean` | method, private | [376](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L376) · [body 843](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L843) | [`TBoldFieldWrapper.SetAsBoolean`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L524) | 🟢 ported |  |
+| `SetAsCurrency` | method, private | [377](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L377) · [body 848](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L848) | [`TBoldFieldWrapper.SetAsCurrency`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L525) | 🟢 ported |  |
+| `SetAsDateTime` | method, private | [378](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L378) · [body 853](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L853) | [`TBoldFieldWrapper.SetAsDateTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L526) | 🟢 ported |  |
+| `SetAsFloat` | method, private | [379](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L379) · [body 858](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L858) | [`TBoldFieldWrapper.SetAsFloat`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L527) | 🟢 ported |  |
+| `GetFieldName` | method, private | [380](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L380) · [body 833](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L833) | [`TBoldFieldWrapper.GetFieldName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L522) | 🟢 ported |  |
+| `GetAsDate` | method, private | [381](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L381) · [body 791](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L791) | [`TBoldFieldWrapper.GetAsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L506) | 🟢 ported |  |
+| `GetAsTime` | method, private | [382](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L382) · [body 818](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L818) | [`TBoldFieldWrapper.GetAsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L519) | 🟢 ported |  |
+| `SetAsTime` | method, private | [383](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L383) · [body 887](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L887) | [`TBoldFieldWrapper.SetAsTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L541) | 🟢 ported |  |
+| `SetAsDate` | method, private | [384](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L384) · [body 882](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L882) | [`TBoldFieldWrapper.SetAsDate`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L540) | 🟢 ported |  |
+| `SetAsBlob` | method, private | [385](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L385) · [body 763](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L763) | [`TBoldFieldWrapper.SetAsBlob`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L499) | 🟢 ported |  |
+| `GetAsBlob` | method, private | [386](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L386) · [body 776](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L776) | [`TBoldFieldWrapper.GetAsBlob`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L502) | ✅ verified: A byte array reads as a string of byte characters. | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `GetAsString` | method, protected | [388](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L388) · [body 811](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L811) | [`TBoldFieldWrapper.GetAsString`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L513) | ✅ verified | ✔ [`BoldADOInterfacesTests.Queries_write_and_read_rows_with_parameters`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ADO/BoldADOInterfacesTests.cs#L21) |
+| `DataSetWrapper` | property, protected | [389](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L389) | [`TBoldFieldWrapper.DataSetWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L542) | 🟢 ported |  |
+| `create` | constructor | [391](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L391) · [body 768](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L768) | [`TBoldFieldWrapper.TBoldFieldWrapper`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L490) | 🟢 ported |  |
+| `Field` | property | [392](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L392) | [`TBoldFieldWrapper.Field`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L543) | 🟢 ported |  |
+| `FieldName` | property | [393](../../../Source/Persistence/DB/BoldDBInterfaces.pas#L393) | [`TBoldFieldWrapper.FieldName`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldDBInterfaces.cs#L544) | 🟢 ported |  |
 
 ## Dependencies
 
