@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas`](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas) (86 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | 🟢 ported: 9 of 9 symbols done, 8 verified |
 
-⚪ 9 not started
+✅ 8 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,22 +18,32 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldExternalPersistenceHandleEventDriven` | class | [17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L17) |  | ⚪ not started |  |
+| `TBoldExternalPersistenceHandleEventDriven` | class | [17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L17) | [`TBoldExternalPersistenceHandleEventDriven`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L12) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
 
 ## TBoldExternalPersistenceHandleEventDriven
 
-class at [line 17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L17); ✅ verified, C# [`TBoldExternalPersistenceHandleEventDriven`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetConfig` | method, private | [21](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L21) · [body 75](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L75) |  | ⚪ not started |  |
-| `GetPersistenceController` | method, private | [22](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L22) · [body 81](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L81) |  | ⚪ not started |  |
-| `CreatePersistenceController` | method, protected | [24](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L24) · [body 64](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L64) |  | ⚪ not started |  |
-| `Create` | constructor | [26](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L26) · [body 51](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L51) |  | ⚪ not started |  |
-| `Destroy` | destructor | [27](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L27) · [body 58](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L58) |  | ⚪ not started |  |
-| `PersistenceController` | property | [28](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L28) |  | ⚪ not started |  |
-| `Config` | property, published | [30](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L30) |  | ⚪ not started |  |
-| `MaxFetchBlockSize` | property, published | [31](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L31) |  | ⚪ not started |  |
+| `SetConfig` | method, private | [21](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L21) · [body 75](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L75) | [`TBoldExternalPersistenceHandleEventDriven.SetConfig`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L32) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `GetPersistenceController` | method, private | [22](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L22) · [body 81](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L81) | [`TBoldExternalPersistenceHandleEventDriven.GetPersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L41) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `CreatePersistenceController` | method, protected | [24](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L24) · [body 64](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L64) | [`TBoldExternalPersistenceHandleEventDriven.CreatePersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L23) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `Create` | constructor | [26](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L26) · [body 51](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L51) | [`TBoldExternalPersistenceHandleEventDriven.TBoldExternalPersistenceHandleEventDriven`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L18) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `Destroy` | destructor | [27](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L27) · [body 58](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L58) | [`[assembly: Delphi] in BoldExternalPersistenceHandleEventDriven.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L6) | 🔵 replaced: Freed the configuration; the garbage collector does that in .NET. |  |
+| `PersistenceController` | property | [28](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L28) | [`TBoldExternalPersistenceHandleEventDriven.PersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L43) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `Config` | property, published | [30](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L30) | [`TBoldExternalPersistenceHandleEventDriven.Config`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L44) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `MaxFetchBlockSize` | property, published | [31](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.pas#L31) | [`TBoldExternalPersistenceHandleEventDriven.MaxFetchBlockSize`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L45) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldExternalPersistenceHandleEventDriven.OnStartUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L48) (property)
+- [`TBoldExternalPersistenceHandleEventDriven.OnEndUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L51) (property)
+- [`TBoldExternalPersistenceHandleEventDriven.OnFailUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L54) (property)
+- [`TBoldExternalPersistenceHandleEventDriven.OnActivate`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L57) (property)
+- [`TBoldExternalPersistenceHandleEventDriven.OnDeActivate`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleEventDriven.cs#L60) (property)
 
 ## Dependencies
 

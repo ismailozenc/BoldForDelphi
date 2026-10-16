@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas`](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas) (85 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🟢 ported: 12 of 12 symbols done, 8 verified |
 
-⚪ 12 not started
+✅ 8 verified · 🟢 4 ported
 
 ## Unit level
 
@@ -18,32 +18,32 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldObjectPersistenceAdapterClass` | class reference | [13](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L13) |  | ⚪ not started |  |
-| `IPersistentBoldObject` | interface | [15](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L15) |  | ⚪ not started |  |
-| `TBoldObjectPersistenceAdapter` | class | [20](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L20) |  | ⚪ not started |  |
+| `TBoldObjectPersistenceAdapterClass` | class reference | [13](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L13) | [`[assembly: Delphi] in BoldExternalPersistenceSupport.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L5) | 🟢 ported: A System.Type of the adapter class. |  |
+| `IPersistentBoldObject` | interface | [15](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L15) | [`IPersistentBoldObject`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L11) | 🟢 ported |  |
+| `TBoldObjectPersistenceAdapter` | class | [20](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L20) | [`TBoldObjectPersistenceAdapter`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L19) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
 
 ## IPersistentBoldObject
 
-interface at [line 15](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L15); ⚪ not started.
+interface at [line 15](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L15); 🟢 ported, C# [`IPersistentBoldObject`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsObjectContents` | method | [16](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L16) |  | ⚪ not started |  |
-| `AsObjectContents` | property | [17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L17) |  | ⚪ not started |  |
+| `GetAsObjectContents` | method | [16](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L16) | [`IPersistentBoldObject.GetAsObjectContents`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L13) | 🟢 ported |  |
+| `AsObjectContents` | property | [17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L17) | [`IPersistentBoldObject.AsObjectContents`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L14) | 🟢 ported |  |
 
 ## TBoldObjectPersistenceAdapter
 
-class at [line 20](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L20); ✅ verified, C# [`TBoldObjectPersistenceAdapter`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsObjectContents` | method, protected | [26](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L26) · [body 68](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L68) |  | ⚪ not started |  |
-| `Create` | constructor | [28](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L28) · [body 46](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L46) |  | ⚪ not started |  |
-| `RegisterPersistenceInterface` | class method | [29](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L29) · [body 73](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L73) |  | ⚪ not started |  |
-| `FindRegisteredPersistenceInterface` | class method | [30](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L30) · [body 54](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L54) |  | ⚪ not started |  |
-| `ValueSpace` | property | [31](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L31) |  | ⚪ not started |  |
-| `AdaptedInterface` | property | [32](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L32) |  | ⚪ not started |  |
-| `MoldClass` | property | [33](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L33) |  | ⚪ not started |  |
+| `GetAsObjectContents` | method, protected | [26](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L26) · [body 68](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L68) | [`TBoldObjectPersistenceAdapter.GetAsObjectContents`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L35) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `Create` | constructor | [28](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L28) · [body 46](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L46) | [`TBoldObjectPersistenceAdapter.TBoldObjectPersistenceAdapter`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L27) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `RegisterPersistenceInterface` | class method | [29](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L29) · [body 73](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L73) | [`TBoldObjectPersistenceAdapter.RegisterPersistenceInterface`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L39) | ✅ verified: A class procedure in Delphi; the adapter class is a System.Type. | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `FindRegisteredPersistenceInterface` | class method | [30](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L30) · [body 54](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L54) | [`TBoldObjectPersistenceAdapter.FindRegisteredPersistenceInterface`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L49) | ✅ verified: A class function in Delphi; the adapter class is a System.Type. | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `ValueSpace` | property | [31](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L31) | [`TBoldObjectPersistenceAdapter.ValueSpace`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L57) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `AdaptedInterface` | property | [32](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L32) | [`TBoldObjectPersistenceAdapter.AdaptedInterface`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L58) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
+| `MoldClass` | property | [33](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.pas#L33) | [`TBoldObjectPersistenceAdapter.MoldClass`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceSupport.cs#L59) | ✅ verified | ✔ [`BoldExternalPersistenceTests.External_objects_get_internal_rows_and_are_read_and_written_through_the_events`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L75) |
 
 ## Dependencies
 

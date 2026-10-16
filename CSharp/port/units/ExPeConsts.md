@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ExternalPersistence/ExPeConsts.pas`](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas) (51 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 28 symbols done, 0 verified |
+| Status | 🟢 ported: 28 of 28 symbols done, 0 verified |
 
-⚪ 28 not started
+🟢 28 ported
 
 ## Unit level
 
@@ -18,34 +18,34 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sKeyTypeNotAutoHandled` | resourcestring | [6](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L6) |  | ⚪ not started |  |
-| `sValueNotCurrency` | resourcestring | [9](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L9) |  | ⚪ not started |  |
-| `sValueNotDate` | resourcestring | [10](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L10) |  | ⚪ not started |  |
-| `sValueNotInteger` | resourcestring | [11](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L11) |  | ⚪ not started |  |
-| `sKeyNotInteger` | resourcestring | [12](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L12) |  | ⚪ not started |  |
-| `sKeyNotString` | resourcestring | [13](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L13) |  | ⚪ not started |  |
-| `sValueNotString` | resourcestring | [14](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L14) |  | ⚪ not started |  |
-| `sNotSupportedWithMultipleKeys` | resourcestring | [17](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L17) |  | ⚪ not started |  |
-| `sNotSupportedWithNoKeys` | resourcestring | [18](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L18) |  | ⚪ not started |  |
-| `sNoSuchRole` | resourcestring | [19](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L19) |  | ⚪ not started |  |
-| `sInvalidClassName` | resourcestring | [22](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L22) |  | ⚪ not started |  |
-| `sUnknownDataType` | resourcestring | [25](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L25) |  | ⚪ not started |  |
-| `sLinkToUnconfiguredTable` | resourcestring | [26](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L26) |  | ⚪ not started |  |
-| `sUnknownVarTypeLoadingID` | resourcestring | [27](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L27) |  | ⚪ not started |  |
-| `sUnknownVarTypeLoadingSingleID` | resourcestring | [28](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L28) |  | ⚪ not started |  |
-| `sUnknownVarTypeLoadingObject` | resourcestring | [29](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L29) |  | ⚪ not started |  |
-| `sRoleHasNoColumnNames` | resourcestring | [31](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L31) |  | ⚪ not started |  |
-| `sRoleEndCountMismatch` | resourcestring | [32](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L32) |  | ⚪ not started |  |
-| `sObjectNoLongerInDB` | resourcestring | [33](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L33) |  | ⚪ not started |  |
-| `sAssignKeyValueRequiresOneKey` | resourcestring | [36](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L36) |  | ⚪ not started |  |
-| `sCreateObjectsNotAllowed` | resourcestring | [37](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L37) |  | ⚪ not started |  |
-| `sDeleteObjectsNotAllowed` | resourcestring | [38](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L38) |  | ⚪ not started |  |
-| `sReadObjectNotImplementedForClass` | resourcestring | [39](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L39) |  | ⚪ not started |  |
-| `sGetExternalKeyNotImplementedForClass` | resourcestring | [40](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L40) |  | ⚪ not started |  |
-| `sModifyObjectsNotAllowed` | resourcestring | [41](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L41) |  | ⚪ not started |  |
-| `sEditConfiguration` | resourcestring | [44](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L44) |  | ⚪ not started |  |
-| `sCannotCreateNameNow` | resourcestring | [45](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L45) |  | ⚪ not started |  |
-| `sBoldModelNotAssigned` | resourcestring | [46](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L46) |  | ⚪ not started |  |
+| `sKeyTypeNotAutoHandled` | resourcestring | [6](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L6) | [`ExPeConsts.sKeyTypeNotAutoHandled`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L9) | 🟢 ported |  |
+| `sValueNotCurrency` | resourcestring | [9](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L9) | [`ExPeConsts.sValueNotCurrency`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L11) | 🟢 ported |  |
+| `sValueNotDate` | resourcestring | [10](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L10) | [`ExPeConsts.sValueNotDate`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L12) | 🟢 ported |  |
+| `sValueNotInteger` | resourcestring | [11](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L11) | [`ExPeConsts.sValueNotInteger`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L13) | 🟢 ported |  |
+| `sKeyNotInteger` | resourcestring | [12](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L12) | [`ExPeConsts.sKeyNotInteger`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L14) | 🟢 ported |  |
+| `sKeyNotString` | resourcestring | [13](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L13) | [`ExPeConsts.sKeyNotString`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L15) | 🟢 ported |  |
+| `sValueNotString` | resourcestring | [14](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L14) | [`ExPeConsts.sValueNotString`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L16) | 🟢 ported |  |
+| `sNotSupportedWithMultipleKeys` | resourcestring | [17](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L17) | [`ExPeConsts.sNotSupportedWithMultipleKeys`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L18) | 🟢 ported |  |
+| `sNotSupportedWithNoKeys` | resourcestring | [18](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L18) | [`ExPeConsts.sNotSupportedWithNoKeys`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L19) | 🟢 ported |  |
+| `sNoSuchRole` | resourcestring | [19](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L19) | [`ExPeConsts.sNoSuchRole`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L20) | 🟢 ported |  |
+| `sInvalidClassName` | resourcestring | [22](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L22) | [`ExPeConsts.sInvalidClassName`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L22) | 🟢 ported |  |
+| `sUnknownDataType` | resourcestring | [25](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L25) | [`ExPeConsts.sUnknownDataType`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L24) | 🟢 ported |  |
+| `sLinkToUnconfiguredTable` | resourcestring | [26](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L26) | [`ExPeConsts.sLinkToUnconfiguredTable`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L25) | 🟢 ported |  |
+| `sUnknownVarTypeLoadingID` | resourcestring | [27](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L27) | [`ExPeConsts.sUnknownVarTypeLoadingID`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L26) | 🟢 ported |  |
+| `sUnknownVarTypeLoadingSingleID` | resourcestring | [28](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L28) | [`ExPeConsts.sUnknownVarTypeLoadingSingleID`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L27) | 🟢 ported |  |
+| `sUnknownVarTypeLoadingObject` | resourcestring | [29](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L29) | [`ExPeConsts.sUnknownVarTypeLoadingObject`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L28) | 🟢 ported |  |
+| `sRoleHasNoColumnNames` | resourcestring | [31](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L31) | [`ExPeConsts.sRoleHasNoColumnNames`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L29) | 🟢 ported |  |
+| `sRoleEndCountMismatch` | resourcestring | [32](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L32) | [`ExPeConsts.sRoleEndCountMismatch`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L30) | 🟢 ported |  |
+| `sObjectNoLongerInDB` | resourcestring | [33](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L33) | [`ExPeConsts.sObjectNoLongerInDB`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L31) | 🟢 ported |  |
+| `sAssignKeyValueRequiresOneKey` | resourcestring | [36](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L36) | [`ExPeConsts.sAssignKeyValueRequiresOneKey`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L33) | 🟢 ported |  |
+| `sCreateObjectsNotAllowed` | resourcestring | [37](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L37) | [`ExPeConsts.sCreateObjectsNotAllowed`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L34) | 🟢 ported |  |
+| `sDeleteObjectsNotAllowed` | resourcestring | [38](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L38) | [`ExPeConsts.sDeleteObjectsNotAllowed`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L35) | 🟢 ported |  |
+| `sReadObjectNotImplementedForClass` | resourcestring | [39](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L39) | [`ExPeConsts.sReadObjectNotImplementedForClass`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L36) | 🟢 ported |  |
+| `sGetExternalKeyNotImplementedForClass` | resourcestring | [40](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L40) | [`ExPeConsts.sGetExternalKeyNotImplementedForClass`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L37) | 🟢 ported |  |
+| `sModifyObjectsNotAllowed` | resourcestring | [41](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L41) | [`ExPeConsts.sModifyObjectsNotAllowed`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L38) | 🟢 ported |  |
+| `sEditConfiguration` | resourcestring | [44](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L44) | [`ExPeConsts.sEditConfiguration`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L40) | 🟢 ported |  |
+| `sCannotCreateNameNow` | resourcestring | [45](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L45) | [`ExPeConsts.sCannotCreateNameNow`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L41) | 🟢 ported |  |
+| `sBoldModelNotAssigned` | resourcestring | [46](../../../Source/Persistence/ExternalPersistence/ExPeConsts.pas#L46) | [`ExPeConsts.sBoldModelNotAssigned`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/ExPeConsts.cs#L42) | 🟢 ported |  |
 
 ## Dependencies
 

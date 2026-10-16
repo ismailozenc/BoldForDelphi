@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas`](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas) (82 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | 🟢 ported: 9 of 9 symbols done, 8 verified |
 
-⚪ 9 not started
+✅ 8 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,22 +18,32 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldExternalPersistenceHandleDataSet` | class | [13](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L13) |  | ⚪ not started |  |
+| `TBoldExternalPersistenceHandleDataSet` | class | [13](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L13) | [`TBoldExternalPersistenceHandleDataSet`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L11) | ✅ verified | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
 
 ## TBoldExternalPersistenceHandleDataSet
 
-class at [line 13](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L13); ✅ verified, C# [`TBoldExternalPersistenceHandleDataSet`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetConfig` | method, private | [17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L17) · [body 75](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L75) |  | ⚪ not started |  |
-| `GetPersistenceController` | method, private | [18](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L18) · [body 70](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L70) |  | ⚪ not started |  |
-| `CreatePersistenceController` | method, protected | [20](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L20) · [body 59](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L59) |  | ⚪ not started |  |
-| `Create` | constructor | [22](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L22) · [body 46](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L46) |  | ⚪ not started |  |
-| `Destroy` | destructor | [23](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L23) · [body 53](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L53) |  | ⚪ not started |  |
-| `PersistenceController` | property | [24](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L24) |  | ⚪ not started |  |
-| `Config` | property, published | [26](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L26) |  | ⚪ not started |  |
-| `MaxFetchBlockSize` | property, published | [27](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L27) |  | ⚪ not started |  |
+| `SetConfig` | method, private | [17](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L17) · [body 75](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L75) | [`TBoldExternalPersistenceHandleDataSet.SetConfig`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L34) | ✅ verified | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
+| `GetPersistenceController` | method, private | [18](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L18) · [body 70](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L70) | [`TBoldExternalPersistenceHandleDataSet.GetPersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L31) | ✅ verified | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
+| `CreatePersistenceController` | method, protected | [20](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L20) · [body 59](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L59) | [`TBoldExternalPersistenceHandleDataSet.CreatePersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L22) | ✅ verified | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
+| `Create` | constructor | [22](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L22) · [body 46](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L46) | [`TBoldExternalPersistenceHandleDataSet.TBoldExternalPersistenceHandleDataSet`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L17) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
+| `Destroy` | destructor | [23](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L23) · [body 53](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L53) | [`[assembly: Delphi] in BoldExternalPersistenceHandleDataSet.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L5) | 🔵 replaced: Freed the configuration; the garbage collector does that in .NET. |  |
+| `PersistenceController` | property | [24](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L24) | [`TBoldExternalPersistenceHandleDataSet.PersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L42) | ✅ verified | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
+| `Config` | property, published | [26](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L26) | [`TBoldExternalPersistenceHandleDataSet.Config`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L43) | ✅ verified | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
+| `MaxFetchBlockSize` | property, published | [27](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.pas#L27) | [`TBoldExternalPersistenceHandleDataSet.MaxFetchBlockSize`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L44) | ✅ verified | ✔ [`BoldExternalPersistenceTests.A_data_set_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L141) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldExternalPersistenceHandleDataSet.OnStartUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L47) (property)
+- [`TBoldExternalPersistenceHandleDataSet.OnEndUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L50) (property)
+- [`TBoldExternalPersistenceHandleDataSet.OnFailUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L53) (property)
+- [`TBoldExternalPersistenceHandleDataSet.OnActivate`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L56) (property)
+- [`TBoldExternalPersistenceHandleDataSet.OnDeActivate`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleDataSet.cs#L59) (property)
 
 ## Dependencies
 

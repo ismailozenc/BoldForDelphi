@@ -39,6 +39,9 @@ internal sealed class SqliteHandle : IDisposable
     public readonly TBoldPersistenceHandleDB Handle = new();
     private readonly TBoldAbstractModelForSqlTests fModel;
 
+    /// <summary>The model component of the handle.</summary>
+    public TBoldAbstractModel Model => fModel;
+
     public SqliteHandle(TMoldModel model, bool createSchema = true, string? file = null)
     {
         File = file ?? Path.Combine(Path.GetTempPath(), $"bold-{Guid.NewGuid():N}.db");

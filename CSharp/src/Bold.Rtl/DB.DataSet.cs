@@ -226,6 +226,15 @@ public abstract class TDataSet
     public int FieldCount => fFields.Count;
     public IReadOnlyList<TField> Fields => fFields;
 
+    /// <summary>Delphi's IsEmpty: no records.</summary>
+    public bool IsEmpty => fRecords.Count == 0 && fState != TDataSetState.dsInsert;
+
+    /// <summary>Whether the records may not be changed.</summary>
+    public bool ReadOnly { get; set; }
+
+    /// <summary>Delphi's CanModify: open and not read-only.</summary>
+    public virtual bool CanModify => Active && !ReadOnly;
+
     /// <summary>The 1-based current record number, 0 when there is none.</summary>
     public int RecNo => fRecNo + 1;
 

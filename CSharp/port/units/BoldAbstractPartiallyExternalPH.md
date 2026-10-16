@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas`](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas) (130 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 16 symbols done, 0 verified |
+| Status | 🟢 ported: 16 of 16 symbols done, 0 verified |
 
-⚪ 16 not started
+🟢 16 ported
 
 ## Unit level
 
@@ -18,29 +18,29 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractpartiallyExternalPH` | class | [13](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L13) |  | ⚪ not started |  |
+| `TBoldAbstractpartiallyExternalPH` | class | [13](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L13) | [`TBoldAbstractpartiallyExternalPH`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L10) | 🟢 ported |  |
 
 ## TBoldAbstractpartiallyExternalPH
 
-class at [line 13](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L13); 🟢 ported, C# [`TBoldAbstractpartiallyExternalPH`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDeletedObjects` | method, private | [15](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L15) · [body 45](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L45) |  | ⚪ not started |  |
-| `GetNewObjects` | method, private | [16](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L16) · [body 63](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L63) |  | ⚪ not started |  |
-| `GetPersistenceController` | method, private | [17](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L17) · [body 114](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L114) |  | ⚪ not started |  |
-| `GetHasDeletedObjects` | method, private | [18](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L18) · [body 53](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L53) |  | ⚪ not started |  |
-| `GetHasNewObjects` | method, private | [19](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L19) · [body 58](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L58) |  | ⚪ not started |  |
-| `GetObjectIdByExternalKey` | method, private | [20](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L20) · [body 71](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L71) |  | ⚪ not started |  |
-| `SetMultiLink` | method | [22](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L22) · [body 119](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L119) |  | ⚪ not started |  |
-| `SetSingleLink` | method | [23](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L23) · [body 125](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L125) |  | ⚪ not started |  |
-| `GetObjectIdByExternalKeyString` | method | [24](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L24) · [body 103](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L103) |  | ⚪ not started |  |
-| `GetObjectIdByExternalKeyInteger` | method | [25](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L25) · [body 92](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L92) |  | ⚪ not started |  |
-| `PersistenceController` | property | [26](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L26) |  | ⚪ not started |  |
-| `DeletedObjects` | property | [27](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L27) |  | ⚪ not started |  |
-| `HasDeletedObjects` | property | [28](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L28) |  | ⚪ not started |  |
-| `NewObjects` | property | [29](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L29) |  | ⚪ not started |  |
-| `HasNewObjects` | property | [30](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L30) |  | ⚪ not started |  |
+| `GetDeletedObjects` | method, private | [15](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L15) · [body 45](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L45) | [`TBoldAbstractpartiallyExternalPH.GetDeletedObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L13) | 🟢 ported |  |
+| `GetNewObjects` | method, private | [16](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L16) · [body 63](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L63) | [`TBoldAbstractpartiallyExternalPH.GetNewObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L22) | 🟢 ported |  |
+| `GetPersistenceController` | method, private | [17](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L17) · [body 114](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L114) | [`TBoldAbstractpartiallyExternalPH.GetPersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L46) | 🟢 ported |  |
+| `GetHasDeletedObjects` | method, private | [18](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L18) · [body 53](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L53) | [`TBoldAbstractpartiallyExternalPH.GetHasDeletedObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L16) | 🟢 ported |  |
+| `GetHasNewObjects` | method, private | [19](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L19) · [body 58](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L58) | [`TBoldAbstractpartiallyExternalPH.GetHasNewObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L19) | 🟢 ported |  |
+| `GetObjectIdByExternalKey` | method, private | [20](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L20) · [body 71](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L71) | [`TBoldAbstractpartiallyExternalPH.GetObjectIdByExternalKey`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L26) | 🟢 ported |  |
+| `SetMultiLink` | method | [22](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L22) · [body 119](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L119) | [`TBoldAbstractpartiallyExternalPH.SetMultiLink`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L49) | 🟢 ported |  |
+| `SetSingleLink` | method | [23](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L23) · [body 125](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L125) | [`TBoldAbstractpartiallyExternalPH.SetSingleLink`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L53) | 🟢 ported |  |
+| `GetObjectIdByExternalKeyString` | method | [24](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L24) · [body 103](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L103) | [`TBoldAbstractpartiallyExternalPH.GetObjectIdByExternalKeyString`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L42) | 🟢 ported |  |
+| `GetObjectIdByExternalKeyInteger` | method | [25](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L25) · [body 92](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L92) | [`TBoldAbstractpartiallyExternalPH.GetObjectIdByExternalKeyInteger`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L38) | 🟢 ported |  |
+| `PersistenceController` | property | [26](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L26) | [`TBoldAbstractpartiallyExternalPH.PersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L56) | 🟢 ported |  |
+| `DeletedObjects` | property | [27](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L27) | [`TBoldAbstractpartiallyExternalPH.DeletedObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L57) | 🟢 ported |  |
+| `HasDeletedObjects` | property | [28](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L28) | [`TBoldAbstractpartiallyExternalPH.HasDeletedObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L58) | 🟢 ported |  |
+| `NewObjects` | property | [29](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L29) | [`TBoldAbstractpartiallyExternalPH.NewObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L59) | 🟢 ported |  |
+| `HasNewObjects` | property | [30](../../../Source/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.pas#L30) | [`TBoldAbstractpartiallyExternalPH.HasNewObjects`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldAbstractPartiallyExternalPH.cs#L60) | 🟢 ported |  |
 
 ## Dependencies
 

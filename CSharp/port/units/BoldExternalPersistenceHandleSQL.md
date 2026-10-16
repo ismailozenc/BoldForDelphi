@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas`](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas) (89 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 10 symbols done, 0 verified |
+| Status | 🟢 ported: 10 of 10 symbols done, 9 verified |
 
-⚪ 10 not started
+✅ 9 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,23 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldExternalPersistenceHandleSQL` | class | [19](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L19) |  | ⚪ not started |  |
+| `TBoldExternalPersistenceHandleSQL` | class | [19](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L19) | [`TBoldExternalPersistenceHandleSQL`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L12) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
 
 ## TBoldExternalPersistenceHandleSQL
 
-class at [line 19](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L19); ✅ verified, C# [`TBoldExternalPersistenceHandleSQL`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPersistenceController` | method, private | [23](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L23) · [body 84](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L84) |  | ⚪ not started |  |
-| `GetClassesToHandle` | method, private | [24](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L24) · [body 73](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L73) |  | ⚪ not started |  |
-| `SetClassesToHandle` | method, private | [25](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L25) · [body 78](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L78) |  | ⚪ not started |  |
-| `CreatePersistenceController` | method, protected | [27](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L27) · [body 62](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L62) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L29) · [body 50](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L50) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L30) · [body 56](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L56) |  | ⚪ not started |  |
-| `PersistenceController` | property | [31](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L31) |  | ⚪ not started |  |
-| `ClassesToHandle` | property, published | [33](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L33) |  | ⚪ not started |  |
-| `DatabaseAdapter` | property, published | [34](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L34) |  | ⚪ not started |  |
+| `GetPersistenceController` | method, private | [23](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L23) · [body 84](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L84) | [`TBoldExternalPersistenceHandleSQL.GetPersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L44) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+| `GetClassesToHandle` | method, private | [24](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L24) · [body 73](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L73) | [`TBoldExternalPersistenceHandleSQL.GetClassesToHandle`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L32) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+| `SetClassesToHandle` | method, private | [25](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L25) · [body 78](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L78) | [`TBoldExternalPersistenceHandleSQL.SetClassesToHandle`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L35) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+| `CreatePersistenceController` | method, protected | [27](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L27) · [body 62](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L62) | [`TBoldExternalPersistenceHandleSQL.CreatePersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L23) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+| `Create` | constructor | [29](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L29) · [body 50](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L50) | [`TBoldExternalPersistenceHandleSQL.TBoldExternalPersistenceHandleSQL`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L18) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+| `Destroy` | destructor | [30](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L30) · [body 56](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L56) | [`[assembly: Delphi] in BoldExternalPersistenceHandleSQL.cs`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L6) | 🔵 replaced: Freed the class list; the garbage collector does that in .NET. |  |
+| `PersistenceController` | property | [31](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L31) | [`TBoldExternalPersistenceHandleSQL.PersistenceController`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L46) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+| `ClassesToHandle` | property, published | [33](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L33) | [`TBoldExternalPersistenceHandleSQL.ClassesToHandle`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L47) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+| `DatabaseAdapter` | property, published | [34](../../../Source/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.pas#L34) | [`TBoldExternalPersistenceHandleSQL.DatabaseAdapter`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L48) | ✅ verified | ✔ [`BoldExternalPersistenceTests.Another_SQL_database_holds_the_external_members`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ExternalPersistence/BoldExternalPersistenceTests.cs#L170) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldExternalPersistenceHandleSQL.OnStartUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L51) (property)
+- [`TBoldExternalPersistenceHandleSQL.OnEndUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L54) (property)
+- [`TBoldExternalPersistenceHandleSQL.OnFailUpdates`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L57) (property)
+- [`TBoldExternalPersistenceHandleSQL.OnActivate`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L60) (property)
+- [`TBoldExternalPersistenceHandleSQL.OnDeActivate`](../../src/Bold.Persistence.Sql/Persistence/ExternalPersistence/BoldExternalPersistenceHandleSQL.cs#L63) (property)
 
 ## Dependencies
 
