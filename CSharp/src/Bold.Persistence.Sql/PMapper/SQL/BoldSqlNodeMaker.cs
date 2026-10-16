@@ -39,12 +39,12 @@ public class TBoldSqlNodeMaker : TBoldOLWNodeVisitor
 
     // abstract class
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWNode(TBoldOLWNode N)
+    protected internal override void VisitTBoldOLWNode(TBoldOLWNode N)
     {
     }
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWListCoercion(TBoldOLWListCoercion N)
+    protected internal override void VisitTBoldOLWListCoercion(TBoldOLWListCoercion N)
     {
         N.Child!.AcceptVisitor(this);
         fRootNode = new TBoldSqlListCoercion(N.Position, RootNode!);
@@ -52,7 +52,7 @@ public class TBoldSqlNodeMaker : TBoldOLWNodeVisitor
 
     /// <summary>A plain operation (iterations are made in VisitTBoldOLWIteration).</summary>
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWOperation(TBoldOLWOperation N)
+    protected internal override void VisitTBoldOLWOperation(TBoldOLWOperation N)
     {
         if (N.GetType() == typeof(TBoldOLWOperation))
         {
@@ -68,7 +68,7 @@ public class TBoldSqlNodeMaker : TBoldOLWNodeVisitor
     }
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWIteration(TBoldOLWIteration N)
+    protected internal override void VisitTBoldOLWIteration(TBoldOLWIteration N)
     {
         N.LoopVar!.AcceptVisitor(this);
         var SqlIteration = new TBoldSqlIteration(N.Position, N.OperationName, (TBoldSqlVariableBinding)RootNode!);
@@ -82,7 +82,7 @@ public class TBoldSqlNodeMaker : TBoldOLWNodeVisitor
     }
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWMember(TBoldOLWMember N)
+    protected internal override void VisitTBoldOLWMember(TBoldOLWMember N)
     {
         N.MemberOf!.AcceptVisitor(this);
         var SqlMember = new TBoldSqlMember(N.Position, N.MemberName, N.MemberIndex, RootNode!, N.IsBoolean);
@@ -97,31 +97,31 @@ public class TBoldSqlNodeMaker : TBoldOLWNodeVisitor
 
     // Abstract class
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWLiteral(TBoldOLWLiteral N)
+    protected internal override void VisitTBoldOLWLiteral(TBoldOLWLiteral N)
     {
     }
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWStrLiteral(TBoldOLWStrLiteral N) => fRootNode = new TBoldSqlStrLiteral(N.Position, N.StrValue);
+    protected internal override void VisitTBoldOLWStrLiteral(TBoldOLWStrLiteral N) => fRootNode = new TBoldSqlStrLiteral(N.Position, N.StrValue);
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWFloatLiteral(TBoldOLWFloatLiteral N) => fRootNode = new TBoldSqlFloatLiteral(N.Position, N.FloatValue);
+    protected internal override void VisitTBoldOLWFloatLiteral(TBoldOLWFloatLiteral N) => fRootNode = new TBoldSqlFloatLiteral(N.Position, N.FloatValue);
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWEnumLiteral(TBoldOLWEnumLiteral N) => fRootNode = new TBoldSqlEnumLiteral(N.Position, N.Name);
+    protected internal override void VisitTBoldOLWEnumLiteral(TBoldOLWEnumLiteral N) => fRootNode = new TBoldSqlEnumLiteral(N.Position, N.Name);
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWDateLiteral(TBoldOLWDateLiteral N) => fRootNode = new TBoldSqlDateLiteral(N.Position, N.DateValue);
+    protected internal override void VisitTBoldOLWDateLiteral(TBoldOLWDateLiteral N) => fRootNode = new TBoldSqlDateLiteral(N.Position, N.DateValue);
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWTimeLiteral(TBoldOLWTimeLiteral N) => fRootNode = new TBoldSqlTimeLiteral(N.Position, N.TimeValue);
+    protected internal override void VisitTBoldOLWTimeLiteral(TBoldOLWTimeLiteral N) => fRootNode = new TBoldSqlTimeLiteral(N.Position, N.TimeValue);
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWIntLiteral(TBoldOLWIntLiteral N) => fRootNode = new TBoldSqlIntLiteral(N.Position, N.IntValue);
+    protected internal override void VisitTBoldOLWIntLiteral(TBoldOLWIntLiteral N) => fRootNode = new TBoldSqlIntLiteral(N.Position, N.IntValue);
 
     /// <summary>The SQL binding of the variable's name, made (with the variable's value) the first time.</summary>
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWVariableBinding(TBoldOLWVariableBinding N)
+    protected internal override void VisitTBoldOLWVariableBinding(TBoldOLWVariableBinding N)
     {
         TBoldSqlVariableBinding? VarBind = null;
         for (int i = 0; i < SQLVarBindings.Count; i++)
@@ -144,7 +144,7 @@ public class TBoldSqlNodeMaker : TBoldOLWNodeVisitor
 
     /// <summary>A reference to the variable's SQL binding; a binding first met here is external.</summary>
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWVariableReference(TBoldOLWVariableReference N)
+    protected internal override void VisitTBoldOLWVariableReference(TBoldOLWVariableReference N)
     {
         TBoldSqlVariableBinding? VarBind = SQLBindingForVarBinding(N.VariableBinding!);
         if (VarBind is null)
@@ -163,7 +163,7 @@ public class TBoldSqlNodeMaker : TBoldOLWNodeVisitor
     }
 
     [Delphi(PortStatus.Ported)]
-    protected override void VisitTBoldOLWTypeNode(TBoldOLWTypeNode N) => fRootNode = new TBoldSqlTypeNode(N.Position, N.TypeName, N.TopSortedIndex);
+    protected internal override void VisitTBoldOLWTypeNode(TBoldOLWTypeNode N) => fRootNode = new TBoldSqlTypeNode(N.Position, N.TypeName, N.TopSortedIndex);
 
     [Delphi(PortStatus.Ported)]
     public TBoldSqlVariableBinding? SQLBindingForVarBinding(TBoldOLWVariableBinding VarBinding)

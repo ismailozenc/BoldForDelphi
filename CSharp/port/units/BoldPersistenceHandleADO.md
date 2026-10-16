@@ -5,58 +5,15 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ADO/BoldPersistenceHandleADO.pas`](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas) (332 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldPersistenceHandleADO.cs` |
-| Project | Bold.Persistence.Sql |
-| Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 32 symbols done, 0 verified |
+| C# | not ported: deprecated in Delphi Bold (a TBoldDBPersistenceHandle from BoldPersistenceHandleDB\_deprecated); use TBoldPersistenceHandleDB with TBoldDatabaseAdapterADO |
+| Status | ⚫ dropped: 32 symbols |
 
-⚪ 32 not started
+## Declared types
 
-## Unit level
+The members of these types are not listed: nothing in this unit is ported.
 
-Types, routines, constants, variables and the initialization and finalization sections.
-
-| Delphi | Kind | Lines | C# | Status | Tests |
-|---|---|---|---|---|---|
-| `TBoldNetWorkProtocol` | enum | [15](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L15) |  | ⚪ not started |  |
-| `TBoldPersistenceHandleADO` | class | [17](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L17) |  | ⚪ not started |  |
-| `BoldNetWorkProtocolStringRep` | const | [67](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L67) |  | ⚪ not started |  |
-| `BoldStringToNetworkProtocol` | routine | [69](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L69) · [body 80](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L80) |  | ⚪ not started |  |
-
-## TBoldPersistenceHandleADO
-
-class at [line 17](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L17); ⚪ not started.
-
-| Delphi | Kind | Lines | C# | Status | Tests |
-|---|---|---|---|---|---|
-| `SetDataSource` | method, private | [30](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L30) · [body 172](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L172) |  | ⚪ not started |  |
-| `SetProvider` | method, private | [31](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L31) · [body 213](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L213) |  | ⚪ not started |  |
-| `SetPersistSecurityInfo` | method, private | [32](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L32) · [body 206](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L206) |  | ⚪ not started |  |
-| `SetNetWorkProtocol` | method, private | [33](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L33) · [body 199](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L199) |  | ⚪ not started |  |
-| `SetHostName` | method, private | [34](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L34) · [body 185](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L185) |  | ⚪ not started |  |
-| `SetInitialCatalog` | method, private | [35](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L35) · [body 193](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L193) |  | ⚪ not started |  |
-| `SetExtendedProperties` | method, private | [36](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L36) · [body 178](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L178) |  | ⚪ not started |  |
-| `SetADOConnection` | method, private | [37](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L37) · [body 155](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L155) |  | ⚪ not started |  |
-| `getEffectiveConnection` | method, private | [38](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L38) · [body 234](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L234) |  | ⚪ not started |  |
-| `AddExtendedProperties` | method, protected | [40](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L40) · [body 96](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L96) |  | ⚪ not started |  |
-| `UpdateInternalConnectionString` | method, protected | [41](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L41) · [body 118](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L118) |  | ⚪ not started |  |
-| `Notification` | method, protected | [42](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L42) · [body 219](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L219) |  | ⚪ not started |  |
-| `EffectiveConnection` | property, protected | [43](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L43) |  | ⚪ not started |  |
-| `SetPassword` | method, protected | [44](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L44) · [body 249](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L249) |  | ⚪ not started |  |
-| `SetUserName` | method, protected | [45](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L45) · [body 255](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L255) |  | ⚪ not started |  |
-| `InternalTransferproperties` | method, protected | [47](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L47) · [body 268](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L268) |  | ⚪ not started |  |
-| `Create` | constructor | [50](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L50) · [body 140](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L140) |  | ⚪ not started |  |
-| `Destroy` | destructor | [51](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L51) · [body 147](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L147) |  | ⚪ not started |  |
-| `GetDataBaseInterface` | method | [52](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L52) · [body 261](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L261) |  | ⚪ not started |  |
-| `Assign` | method | [53](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L53) · [body 111](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L111) |  | ⚪ not started |  |
-| `DataSource` | property, published | [55](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L55) |  | ⚪ not started |  |
-| `Provider` | property, published | [56](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L56) |  | ⚪ not started |  |
-| `PersistSecurityInfo` | property, published | [57](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L57) |  | ⚪ not started |  |
-| `NetWorkProtocol` | property, published | [58](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L58) |  | ⚪ not started |  |
-| `HostName` | property, published | [59](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L59) |  | ⚪ not started |  |
-| `InitialCatalog` | property, published | [60](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L60) |  | ⚪ not started |  |
-| `ExtendedProperties` | property, published | [61](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L61) |  | ⚪ not started |  |
-| `ADOConnection` | property, published | [62](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L62) |  | ⚪ not started |  |
+- `TBoldNetWorkProtocol` (enum, [line 15](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L15))
+- `TBoldPersistenceHandleADO` (class, [line 17](../../../Source/Persistence/ADO/BoldPersistenceHandleADO.pas#L17), 28 members)
 
 ## Dependencies
 

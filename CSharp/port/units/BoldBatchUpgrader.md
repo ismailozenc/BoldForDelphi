@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas`](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas) (220 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | ✅ verified: 15 of 15 symbols done, 15 verified |
 
-⚪ 15 not started
+✅ 15 verified
 
 ## Unit level
 
@@ -18,28 +18,28 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldBatchUpgrader` | class | [15](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L15) |  | ⚪ not started |  |
+| `TBoldBatchUpgrader` | class | [15](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L15) | [`TBoldBatchUpgrader`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L10) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
 
 ## TBoldBatchUpgrader
 
-class at [line 15](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L15); ✅ verified, C# [`TBoldBatchUpgrader`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `UpgradeObjectIdList` | method, private | [26](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L26) · [body 125](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L125) |  | ⚪ not started |  |
-| `UpgradeObjectIdListInTransaction` | method, private | [27](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L27) · [body 188](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L188) |  | ⚪ not started |  |
-| `UpgradeClass` | method, private | [28](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L28) · [body 91](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L91) |  | ⚪ not started |  |
-| `AutoUpgradeObjects` | method, private | [29](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L29) · [body 55](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L55) |  | ⚪ not started |  |
-| `SystemMapper` | property, private | [30](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L30) |  | ⚪ not started |  |
-| `Create` | constructor | [32](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L32) · [body 77](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L77) |  | ⚪ not started |  |
-| `UpgradeObjects` | method | [33](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L33) · [body 200](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L200) |  | ⚪ not started |  |
-| `Upgrader` | property | [34](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L34) |  | ⚪ not started |  |
-| `BatchSize` | property | [35](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L35) |  | ⚪ not started |  |
-| `MaxExecuteTime` | property | [36](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L36) |  | ⚪ not started |  |
-| `IntervalBetweenBatches` | property | [37](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L37) |  | ⚪ not started |  |
-| `IsUpgrading` | property | [38](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L38) |  | ⚪ not started |  |
-| `UpgradedObjects` | property | [39](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L39) |  | ⚪ not started |  |
-| `AutoUpgradedObjects` | property | [40](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L40) |  | ⚪ not started |  |
+| `UpgradeObjectIdList` | method, private | [26](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L26) · [body 125](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L125) | [`TBoldBatchUpgrader.UpgradeObjectIdList`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L92) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `UpgradeObjectIdListInTransaction` | method, private | [27](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L27) · [body 188](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L188) | [`TBoldBatchUpgrader.UpgradeObjectIdListInTransaction`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L147) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `UpgradeClass` | method, private | [28](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L28) · [body 91](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L91) | [`TBoldBatchUpgrader.UpgradeClass`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L63) | ✅ verified: Qualifies the columns with the root table; Delphi's unqualified BOLD\_TYPE is ambiguous for a class with its own table, which has the column too. | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `AutoUpgradeObjects` | method, private | [29](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L29) · [body 55](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L55) | [`TBoldBatchUpgrader.AutoUpgradeObjects`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L24) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `SystemMapper` | property, private | [30](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L30) | [`TBoldBatchUpgrader.SystemMapper`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L195) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `Create` | constructor | [32](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L32) · [body 77](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L77) | [`TBoldBatchUpgrader.TBoldBatchUpgrader`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L45) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `UpgradeObjects` | method | [33](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L33) · [body 200](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L200) | [`TBoldBatchUpgrader.UpgradeObjects`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L164) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `Upgrader` | property | [34](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L34) | [`TBoldBatchUpgrader.Upgrader`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L196) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `BatchSize` | property | [35](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L35) | [`TBoldBatchUpgrader.BatchSize`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L197) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `MaxExecuteTime` | property | [36](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L36) | [`TBoldBatchUpgrader.MaxExecuteTime`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L198) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `IntervalBetweenBatches` | property | [37](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L37) | [`TBoldBatchUpgrader.IntervalBetweenBatches`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L199) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `IsUpgrading` | property | [38](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L38) | [`TBoldBatchUpgrader.IsUpgrading`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L200) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `UpgradedObjects` | property | [39](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L39) | [`TBoldBatchUpgrader.UpgradedObjects`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L201) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
+| `AutoUpgradedObjects` | property | [40](../../../Source/Persistence/ObjectUpgrading/BoldBatchUpgrader.pas#L40) | [`TBoldBatchUpgrader.AutoUpgradedObjects`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs#L202) | ✅ verified | ✔ [`BoldObjectUpgraderTests.The_batch_upgrader_upgrades_old_objects_by_SQL_or_through_the_event`](../../tests/Bold.Persistence.Sql.Tests/Persistence/ObjectUpgrading/BoldObjectUpgraderTests.cs#L89) |
 
 ## Dependencies
 

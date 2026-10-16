@@ -1,4 +1,4 @@
-unit BoldPersistenceHandleADO; { C# port: CSharp/src/Bold.Persistence.Sql/Persistence/ADO/BoldPersistenceHandleADO.cs; symbols and status: CSharp/port/units/BoldPersistenceHandleADO.md }
+unit BoldPersistenceHandleADO; { C# port: not ported (deprecated in Delphi Bold (a TBoldDBPersistenceHandle from BoldPersistenceHandleDB_deprecated); use TBoldPersistenceHandleDB with TBoldDatabaseAdapterADO); see CSharp/port/units/BoldPersistenceHandleADO.md }
 
 interface
 

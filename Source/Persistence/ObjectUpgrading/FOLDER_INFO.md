@@ -27,7 +27,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldAbstractObjectUpgraderHandle](../../../CSharp/port/units/BoldAbstractObjectUpgraderHandle.md) | [Bold.Persistence.Sql: Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs](../../../CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs) | M5 SQL persistence |
-| [BoldBatchUpgrader](../../../CSharp/port/units/BoldBatchUpgrader.md) | Bold.Persistence.Sql: Persistence/ObjectUpgrading/BoldBatchUpgrader.cs (not started) | M5 SQL persistence |
-| [BoldObjectUpgrader](../../../CSharp/port/units/BoldObjectUpgrader.md) | Bold.Persistence.Sql: Persistence/ObjectUpgrading/BoldObjectUpgrader.cs (not started) | M5 SQL persistence |
-| [BoldObjectUpgraderHandle](../../../CSharp/port/units/BoldObjectUpgraderHandle.md) | Bold.Persistence.Sql: Persistence/ObjectUpgrading/BoldObjectUpgraderHandle.cs (not started) | M5 SQL persistence |
+| [BoldBatchUpgrader](../../../CSharp/port/units/BoldBatchUpgrader.md) | [Bold.Persistence.Sql: Persistence/ObjectUpgrading/BoldBatchUpgrader.cs](../../../CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldBatchUpgrader.cs) | M5 SQL persistence |
+| [BoldObjectUpgrader](../../../CSharp/port/units/BoldObjectUpgrader.md) | [Bold.Persistence.Sql: Persistence/ObjectUpgrading/BoldObjectUpgrader.cs](../../../CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldObjectUpgrader.cs) | M5 SQL persistence |
+| [BoldObjectUpgraderHandle](../../../CSharp/port/units/BoldObjectUpgraderHandle.md) | [Bold.Persistence.Sql: Persistence/ObjectUpgrading/BoldObjectUpgraderHandle.cs](../../../CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldObjectUpgraderHandle.cs) | M5 SQL persistence |
 <!-- END C# PORT -->

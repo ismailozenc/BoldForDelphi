@@ -330,7 +330,7 @@
     { "unit": "ADOConsts", "file": "Source/Persistence/ADO/ADOConsts.pas", "project": "Bold.Persistence.Sql", "milestone": "M5" },
     { "unit": "BoldADOInterfaces", "file": "Source/Persistence/ADO/BoldADOInterfaces.pas", "project": "Bold.Persistence.Sql", "milestone": "M5" },
     { "unit": "BoldDatabaseAdapterADO", "file": "Source/Persistence/ADO/BoldDatabaseAdapterADO.pas", "project": "Bold.Persistence.Sql", "milestone": "M5" },
-    { "unit": "BoldPersistenceHandleADO", "file": "Source/Persistence/ADO/BoldPersistenceHandleADO.pas", "project": "Bold.Persistence.Sql", "milestone": "M5" },
+    { "unit": "BoldPersistenceHandleADO", "file": "Source/Persistence/ADO/BoldPersistenceHandleADO.pas", "project": null, "milestone": null, "drop": "deprecated in Delphi Bold (a TBoldDBPersistenceHandle from BoldPersistenceHandleDB_deprecated); use TBoldPersistenceHandleDB with TBoldDatabaseAdapterADO" },
     { "unit": "BoldPersistenceHandleADOReg", "file": "Source/Persistence/ADO/BoldPersistenceHandleADOReg.pas", "project": null, "milestone": null, "drop": "IDE registration" },
     { "unit": "BoldAbstractSnooper", "file": "Source/Persistence/Core/BoldAbstractSnooper.pas", "project": "Bold.Persistence", "milestone": "M3" },
     { "unit": "BoldPersistenceController", "file": "Source/Persistence/Core/BoldPersistenceController.pas", "project": "Bold.Persistence", "milestone": "M3" },

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Default/BoldCustomBlobMapper.pas`](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas) (322 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | 🟢 ported: 18 of 18 symbols done, 0 verified |
 
-⚪ 18 not started
+🟢 17 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,31 +18,39 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPMBlobWithSeparateTable` | class | [17](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L17) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [315](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L315) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [318](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L318) |  | ⚪ not started |  |
+| `TBoldPMBlobWithSeparateTable` | class | [17](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L17) | [`TBoldPMBlobWithSeparateTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L29) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [315](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L315) | [`BoldCustomBlobMapper.Initialization`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L19) | 🟢 ported |  |
+| `finalization` | finalization, implementation | [318](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L318) | [`[assembly: Delphi] in BoldCustomBlobMapper.cs`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L5) | 🔵 replaced: Removed the registration; the registry lives as long as the process in .NET. |  |
 
 ## TBoldPMBlobWithSeparateTable
 
-class at [line 17](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L17); 🟢 ported, C# [`TBoldPMBlobWithSeparateTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBlobValue` | method, private | [19](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L19) · [body 255](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L255) |  | ⚪ not started |  |
-| `IdListToString` | method, private | [20](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L20) · [body 275](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L275) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [22](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L22) · [body 65](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L65) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [23](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L23) · [body 75](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L75) |  | ⚪ not started |  |
-| `GetColumnCount` | method, protected | [24](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L24) · [body 86](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L86) |  | ⚪ not started |  |
-| `GetColumnSize` | method, protected | [25](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L25) · [body 91](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L91) |  | ⚪ not started |  |
-| `GetInitialColumnName` | method, protected | [26](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L26) · [body 101](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L101) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [27](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L27) · [body 288](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L288) |  | ⚪ not started |  |
-| `InitializePSDescriptions` | method, protected | [28](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L28) · [body 296](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L296) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [30](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L30) · [body 112](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L112) |  | ⚪ not started |  |
-| `PMFetch` | method | [31](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L31) · [body 124](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L124) |  | ⚪ not started |  |
-| `PMCreate` | method | [32](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L32) · [body 168](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L168) |  | ⚪ not started |  |
-| `PMUpdate` | method | [33](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L33) · [body 198](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L198) |  | ⚪ not started |  |
-| `PMDelete` | method | [34](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L34) · [body 234](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L234) |  | ⚪ not started |  |
-| `CanStore` | class method | [35](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L35) · [body 250](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L250) |  | ⚪ not started |  |
+| `GetBlobValue` | method, private | [19](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L19) · [body 255](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L255) | [`TBoldPMBlobWithSeparateTable.GetBlobValue`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L52) | 🟢 ported |  |
+| `IdListToString` | method, private | [20](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L20) · [body 275](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L275) | [`TBoldPMBlobWithSeparateTable.IdListToString`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L63) | 🟢 ported |  |
+| `GetColumnBDEFieldType` | method, protected | [22](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L22) · [body 65](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L65) | [`TBoldPMBlobWithSeparateTable.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L66) | 🟢 ported |  |
+| `GetColumnTypeAsSQL` | method, protected | [23](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L23) · [body 75](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L75) | [`TBoldPMBlobWithSeparateTable.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L75) | 🟢 ported |  |
+| `GetColumnCount` | method, protected | [24](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L24) · [body 86](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L86) | [`TBoldPMBlobWithSeparateTable.GetColumnCount`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L84) | 🟢 ported |  |
+| `GetColumnSize` | method, protected | [25](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L25) · [body 91](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L91) | [`TBoldPMBlobWithSeparateTable.GetColumnSize`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L87) | 🟢 ported |  |
+| `GetInitialColumnName` | method, protected | [26](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L26) · [body 101](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L101) | [`TBoldPMBlobWithSeparateTable.GetInitialColumnName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L96) | 🟢 ported |  |
+| `CompareField` | method, protected | [27](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L27) · [body 288](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L288) | [`TBoldPMBlobWithSeparateTable.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L105) | 🟢 ported |  |
+| `InitializePSDescriptions` | method, protected | [28](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L28) · [body 296](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L296) | [`TBoldPMBlobWithSeparateTable.InitializePSDescriptions`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L110) | 🟢 ported |  |
+| `CreateFromMold` | constructor | [30](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L30) · [body 112](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L112) | [`TBoldPMBlobWithSeparateTable.TBoldPMBlobWithSeparateTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L32) | 🟢 ported |  |
+| `PMFetch` | method | [31](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L31) · [body 124](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L124) | [`TBoldPMBlobWithSeparateTable.PMFetch`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L130) | 🟢 ported |  |
+| `PMCreate` | method | [32](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L32) · [body 168](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L168) | [`TBoldPMBlobWithSeparateTable.PMCreate`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L161) | 🟢 ported: This fork's Delphi does not set the data (the assignment is commented out); it is set here. |  |
+| `PMUpdate` | method | [33](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L33) · [body 198](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L198) | [`TBoldPMBlobWithSeparateTable.PMUpdate`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L184) | 🟢 ported: This fork's Delphi does not set the data (the assignment is commented out); it is set here. |  |
+| `PMDelete` | method | [34](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L34) · [body 234](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L234) | [`TBoldPMBlobWithSeparateTable.PMDelete`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L220) | 🟢 ported |  |
+| `CanStore` | class method | [35](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L35) · [body 250](../../../Source/PMapper/Default/BoldCustomBlobMapper.pas#L250) | [`TBoldPMBlobWithSeparateTable.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L236) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldCustomBlobMapper.BLOBDATA_TABLENAME`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L12) (const)
+- [`BoldCustomBlobMapper.BLOBDATA_DATACOLUMNNAME`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L13) (const)
+- [`BoldCustomBlobMapper.BLOBDATA_MEMBERCOLUMNNAME`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldCustomBlobMapper.cs#L14) (const)
 
 ## Dependencies
 
