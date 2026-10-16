@@ -12,9 +12,12 @@ internal sealed class ObjectSpaceSample : IDisposable
     public readonly TBoldSystemTypeInfo SystemTypeInfo;
     public readonly TBoldSystem System;
 
-    public ObjectSpaceSample(Action<TMoldModel>? extend = null)
+    private readonly List<TBoldSystem> fExtraSystems = [];
+
+    public ObjectSpaceSample(Action<TMoldModel>? extend = null, Func<TMoldModel, TBoldPersistenceController?>? controller = null)
     {
         Types.AddDefaultMappings();
+        Model.TypeNameDictionary = Types;
         var person = new TMoldClass(Model, "Person") { SuperClass = Model.RootClass };
         var building = new TMoldClass(Model, "Building") { SuperClass = Model.RootClass };
         new TMoldAttribute(person, "firstName").SetBoldTV(BoldDefaultTaggedValues.TAG_LENGTH, "20");
@@ -38,8 +41,30 @@ internal sealed class ObjectSpaceSample : IDisposable
         _ = new TMoldRole(friendship, "friends") { MoldClass = person, Multiplicity = "0..*", Ordered = true };
 
         extend?.Invoke(Model);
+
+        // A model from UML gets the persistence tagged value from the defaults; a hand-made one needs it set.
+        for (int c = 0; c < Model.Classes.Count; c++)
+        {
+            for (int a = 0; a < Model.Classes[c].Attributes.Count; a++)
+            {
+                Model.Classes[c].Attributes[a].SetStdTV(BoldUMLTaggedValues.TAG_PERSISTENCE, BoldUMLTaggedValues.TV_PERSISTENCE_PERSISTENT);
+            }
+        }
+
+        for (int i = 0; i < Model.Associations.Count; i++)
+        {
+            Model.Associations[i].SetStdTV(BoldUMLTaggedValues.TAG_PERSISTENCE, BoldUMLTaggedValues.TV_PERSISTENCE_PERSISTENT);
+        }
         SystemTypeInfo = new TBoldSystemTypeInfo(Model, false, false, Types);
-        System = new TBoldSystem(null, SystemTypeInfo, null);
+        System = new TBoldSystem(null, SystemTypeInfo, controller?.Invoke(Model));
+    }
+
+    /// <summary>Another system on the same model; disposed with the sample.</summary>
+    public TBoldSystem NewSystem(TBoldPersistenceController? controller)
+    {
+        var system = new TBoldSystem(null, SystemTypeInfo, controller);
+        fExtraSystems.Add(system);
+        return system;
     }
 
     public TBoldObject NewPerson() => System.CreateNewObjectByExpressionName("Person");
@@ -47,6 +72,12 @@ internal sealed class ObjectSpaceSample : IDisposable
 
     public void Dispose()
     {
+        foreach (TBoldSystem extra in fExtraSystems)
+        {
+            extra.Discard();
+            extra.Dispose();
+        }
+
         System.Discard();
         System.Dispose();
         SystemTypeInfo.Dispose();

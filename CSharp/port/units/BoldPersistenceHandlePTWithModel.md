@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | 🟢 ported: 7 of 7 symbols done, 0 verified |
+| Status | ✅ verified: 7 of 7 symbols done, 7 verified |
 
-🟢 7 ported
+✅ 7 verified
 
 ## Unit level
 
@@ -18,20 +18,20 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandlePassthroughWithModel` | class | [14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14) | [`TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L11) | 🟢 ported |  |
+| `TBoldPersistenceHandlePassthroughWithModel` | class | [14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14) | [`TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L11) | ✅ verified | ✔ [`BoldPersistenceNotifierTests.Pass_through_handles_chain_controllers_activation_and_models`](../../tests/Bold.ObjectSpace.Tests/Persistence/Core/BoldPersistenceNotifierTests.cs#L80) |
 
 ## TBoldPersistenceHandlePassthroughWithModel
 
-class at [line 14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14); 🟢 ported, C# [`TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L11).
+class at [line 14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14); ✅ verified, C# [`TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldModel` | method, private | [18](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L18) · [body 42](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L42) | [`TBoldPersistenceHandlePassthroughWithModel.SetBoldModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L39) | 🟢 ported |  |
-| `ModelChanged` | method, private | [19](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L19) · [body 57](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L57) | [`TBoldPersistenceHandlePassthroughWithModel.ModelChanged`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L57) | 🟢 ported |  |
-| `_Receive` | method, private | [20](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L20) · [body 69](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L69) | [`TBoldPersistenceHandlePassthroughWithModel._Receive`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L64) | 🟢 ported |  |
-| `Create` | constructor | [22](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L22) · [body 36](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L36) | [`TBoldPersistenceHandlePassthroughWithModel.TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L20) | 🟢 ported |  |
-| `Destroy` | destructor | [23](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L23) · [body 63](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L63) | [`TBoldPersistenceHandlePassthroughWithModel.Dispose`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L27) | 🟢 ported |  |
-| `BoldModel` | property | [24](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L24) | [`TBoldPersistenceHandlePassthroughWithModel.BoldModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L79) | 🟢 ported |  |
+| `SetBoldModel` | method, private | [18](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L18) · [body 42](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L42) | [`TBoldPersistenceHandlePassthroughWithModel.SetBoldModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L39) | ✅ verified | ✔ [`BoldPersistenceNotifierTests.Pass_through_handles_chain_controllers_activation_and_models`](../../tests/Bold.ObjectSpace.Tests/Persistence/Core/BoldPersistenceNotifierTests.cs#L80) |
+| `ModelChanged` | method, private | [19](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L19) · [body 57](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L57) | [`TBoldPersistenceHandlePassthroughWithModel.ModelChanged`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L57) | ✅ verified | ✔ [`BoldPersistenceNotifierTests.Pass_through_handles_chain_controllers_activation_and_models`](../../tests/Bold.ObjectSpace.Tests/Persistence/Core/BoldPersistenceNotifierTests.cs#L80) |
+| `_Receive` | method, private | [20](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L20) · [body 69](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L69) | [`TBoldPersistenceHandlePassthroughWithModel._Receive`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L64) | ✅ verified | ✔ [`BoldPersistenceNotifierTests.Pass_through_handles_chain_controllers_activation_and_models`](../../tests/Bold.ObjectSpace.Tests/Persistence/Core/BoldPersistenceNotifierTests.cs#L80) |
+| `Create` | constructor | [22](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L22) · [body 36](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L36) | [`TBoldPersistenceHandlePassthroughWithModel.TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L20) | ✅ verified | ✔ [`BoldPersistenceNotifierTests.Pass_through_handles_chain_controllers_activation_and_models`](../../tests/Bold.ObjectSpace.Tests/Persistence/Core/BoldPersistenceNotifierTests.cs#L80) |
+| `Destroy` | destructor | [23](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L23) · [body 63](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L63) | [`TBoldPersistenceHandlePassthroughWithModel.Dispose`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L27) | ✅ verified | ✔ [`BoldPersistenceNotifierTests.Pass_through_handles_chain_controllers_activation_and_models`](../../tests/Bold.ObjectSpace.Tests/Persistence/Core/BoldPersistenceNotifierTests.cs#L80) |
+| `BoldModel` | property | [24](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L24) | [`TBoldPersistenceHandlePassthroughWithModel.BoldModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L79) | ✅ verified | ✔ [`BoldPersistenceNotifierTests.Pass_through_handles_chain_controllers_activation_and_models`](../../tests/Bold.ObjectSpace.Tests/Persistence/Core/BoldPersistenceNotifierTests.cs#L80) |
 
 ## Dependencies
 

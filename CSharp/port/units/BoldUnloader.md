@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Unloader/BoldUnloader.pas`](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas) (183 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | ✅ verified: 18 of 18 symbols done, 18 verified |
 
-⚪ 18 not started
+✅ 18 verified
 
 ## Unit level
 
@@ -18,31 +18,31 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldInvalidateMemberEvent` | event type | [14](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L14) |  | ⚪ not started |  |
-| `TBoldUnloadObjectEvent` | event type | [15](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L15) |  | ⚪ not started |  |
-| `TBoldUnLoader` | class | [19](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L19) |  | ⚪ not started |  |
+| `TBoldInvalidateMemberEvent` | event type | [14](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L14) | [`TBoldInvalidateMemberEvent`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L10) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `TBoldUnloadObjectEvent` | event type | [15](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L15) | [`TBoldUnloadObjectEvent`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L14) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `TBoldUnLoader` | class | [19](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L19) | [`TBoldUnLoader`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L22) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
 
 ## TBoldUnLoader
 
-class at [line 19](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L19); ✅ verified, C# [`TBoldUnLoader`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Scan` | method, private | [30](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L30) · [body 93](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L93) |  | ⚪ not started |  |
-| `ScanObject` | method, private | [31](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L31) · [body 109](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L109) |  | ⚪ not started |  |
-| `SetActive` | method, private | [32](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L32) · [body 58](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L58) |  | ⚪ not started |  |
-| `SetBoldSystem` | method, private | [33](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L33) · [body 75](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L75) |  | ⚪ not started |  |
-| `StartScan` | method, private | [34](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L34) · [body 81](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L81) |  | ⚪ not started |  |
-| `StartWait` | method, private | [35](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L35) · [body 87](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L87) |  | ⚪ not started |  |
-| `Destroy` | destructor | [37](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L37) · [body 173](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L173) |  | ⚪ not started |  |
-| `Tick` | method | [38](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L38) · [body 156](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L156) |  | ⚪ not started |  |
-| `BoldSystem` | property | [39](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L39) |  | ⚪ not started |  |
-| `ScanPerTick` | property | [40](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L40) |  | ⚪ not started |  |
-| `MinAgeForUnload` | property | [41](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L41) |  | ⚪ not started |  |
-| `UnloadDelayedFetch` | property | [42](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L42) |  | ⚪ not started |  |
-| `Active` | property | [43](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L43) |  | ⚪ not started |  |
-| `OnMayInvalidate` | property | [44](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L44) |  | ⚪ not started |  |
-| `OnMayUnload` | property | [45](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L45) |  | ⚪ not started |  |
+| `Scan` | method, private | [30](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L30) · [body 93](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L93) | [`TBoldUnLoader.Scan`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L44) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `ScanObject` | method, private | [31](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L31) · [body 109](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L109) | [`TBoldUnLoader.ScanObject`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L61) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `SetActive` | method, private | [32](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L32) · [body 58](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L58) | [`TBoldUnLoader.SetActive`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L99) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `SetBoldSystem` | method, private | [33](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L33) · [body 75](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L75) | [`TBoldUnLoader.SetBoldSystem`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L124) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `StartScan` | method, private | [34](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L34) · [body 81](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L81) | [`TBoldUnLoader.StartScan`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L131) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `StartWait` | method, private | [35](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L35) · [body 87](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L87) | [`TBoldUnLoader.StartWait`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L138) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `Destroy` | destructor | [37](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L37) · [body 173](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L173) | [`TBoldUnLoader.Dispose`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L35) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `Tick` | method | [38](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L38) · [body 156](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L156) | [`TBoldUnLoader.Tick`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L147) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `BoldSystem` | property | [39](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L39) | [`TBoldUnLoader.BoldSystem`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L171) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `ScanPerTick` | property | [40](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L40) | [`TBoldUnLoader.ScanPerTick`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L177) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `MinAgeForUnload` | property | [41](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L41) | [`TBoldUnLoader.MinAgeForUnload`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L178) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `UnloadDelayedFetch` | property | [42](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L42) | [`TBoldUnLoader.UnloadDelayedFetch`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L179) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `Active` | property | [43](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L43) | [`TBoldUnLoader.Active`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L182) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `OnMayInvalidate` | property | [44](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L44) | [`TBoldUnLoader.OnMayInvalidate`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L188) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
+| `OnMayUnload` | property | [45](../../../Source/ObjectSpace/Unloader/BoldUnloader.pas#L45) | [`TBoldUnLoader.OnMayUnload`](../../src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs#L189) | ✅ verified | ✔ [`BoldUnloaderTests.Untouched_clean_objects_are_unloaded_and_fetched_again`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Unloader/BoldUnloaderTests.cs#L11) |
 
 ## Dependencies
 

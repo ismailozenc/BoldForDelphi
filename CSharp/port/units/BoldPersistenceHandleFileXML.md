@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | 🟢 ported: 7 of 7 symbols done, 0 verified |
+| Status | 🟢 ported: 7 of 7 symbols done, 5 verified |
 
-🟢 7 ported
+✅ 5 verified · 🟢 2 ported
 
 ## Unit level
 
@@ -18,27 +18,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandleFileXML` | class | [15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15) | [`TBoldPersistenceHandleFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L11) | 🟢 ported |  |
-| `TBoldPersistenceControllerFileXML` | class | [21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21) | [`TBoldPersistenceControllerFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L28) | 🟢 ported |  |
+| `TBoldPersistenceHandleFileXML` | class | [15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15) | [`TBoldPersistenceHandleFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L11) | ✅ verified | ✔ [`BoldPersistenceHandleFileXMLTests.The_handle_creates_an_XML_controller_for_its_model`](../../tests/Bold.ObjectSpace.Tests/Persistence/File/BoldPersistenceHandleFileXMLTests.cs#L75) |
+| `TBoldPersistenceControllerFileXML` | class | [21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21) | [`TBoldPersistenceControllerFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L28) | ✅ verified | ✔ [`BoldPersistenceHandleFileXMLTests.Objects_saved_to_an_XML_file_load_into_a_new_system`](../../tests/Bold.ObjectSpace.Tests/Persistence/File/BoldPersistenceHandleFileXMLTests.cs#L27) |
 | `XML_LINKEXTENSION` | const | [28](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L28) | [`BoldPersistenceHandleFileXML.XML_LINKEXTENSION`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L76) | 🟢 ported |  |
 | `XML_LINKDESC` | const | [29](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L29) | [`BoldPersistenceHandleFileXML.XML_LINKDESC`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L77) | 🟢 ported |  |
 
 ## TBoldPersistenceHandleFileXML
 
-class at [line 15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15); 🟢 ported, C# [`TBoldPersistenceHandleFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L11).
+class at [line 15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15); ✅ verified, C# [`TBoldPersistenceHandleFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreatePersistenceController` | method, protected | [17](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L17) · [body 46](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L46) | [`TBoldPersistenceHandleFileXML.CreatePersistenceController`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L20) | 🟢 ported |  |
+| `CreatePersistenceController` | method, protected | [17](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L17) · [body 46](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L46) | [`TBoldPersistenceHandleFileXML.CreatePersistenceController`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L20) | ✅ verified | ✔ [`BoldPersistenceHandleFileXMLTests.The_handle_creates_an_XML_controller_for_its_model`](../../tests/Bold.ObjectSpace.Tests/Persistence/File/BoldPersistenceHandleFileXMLTests.cs#L75) |
 
 ## TBoldPersistenceControllerFileXML
 
-class at [line 21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21); 🟢 ported, C# [`TBoldPersistenceControllerFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L28).
+class at [line 21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21); ✅ verified, C# [`TBoldPersistenceControllerFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L28).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteValueSpace` | method, protected | [23](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L23) · [body 82](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L82) | [`TBoldPersistenceControllerFileXML.WriteValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L56) | 🟢 ported |  |
-| `ReadValueSpace` | method, protected | [24](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L24) · [body 55](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L55) | [`TBoldPersistenceControllerFileXML.ReadValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L32) | 🟢 ported |  |
+| `WriteValueSpace` | method, protected | [23](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L23) · [body 82](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L82) | [`TBoldPersistenceControllerFileXML.WriteValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L56) | ✅ verified | ✔ [`BoldPersistenceHandleFileXMLTests.Objects_saved_to_an_XML_file_load_into_a_new_system`](../../tests/Bold.ObjectSpace.Tests/Persistence/File/BoldPersistenceHandleFileXMLTests.cs#L27) |
+| `ReadValueSpace` | method, protected | [24](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L24) · [body 55](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L55) | [`TBoldPersistenceControllerFileXML.ReadValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L32) | ✅ verified | ✔ [`BoldPersistenceHandleFileXMLTests.Objects_saved_to_an_XML_file_load_into_a_new_system`](../../tests/Bold.ObjectSpace.Tests/Persistence/File/BoldPersistenceHandleFileXMLTests.cs#L27) |
 
 ## C# additions
 
