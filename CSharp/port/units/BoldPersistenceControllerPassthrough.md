@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas`](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas) (141 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | 🟢 ported: 15 of 15 symbols done, 0 verified |
 | Note | Moved from Persistence/Propagation to Bold.Persistence, below the propagation code. |
 
-⚪ 15 not started
+🟢 15 ported
 
 ## Unit level
 
@@ -19,28 +19,28 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceControllerPassthrough` | class | [19](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L19) |  | ⚪ not started |  |
+| `TBoldPersistenceControllerPassthrough` | class | [19](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L19) | [`TBoldPersistenceControllerPassthrough`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L10) | 🟢 ported |  |
 
 ## TBoldPersistenceControllerPassthrough
 
-class at [line 19](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L19); 🟢 ported, C# [`TBoldPersistenceControllerPassthrough`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getNextPersistenceController` | method, private | [22](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L22) · [body 54](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L54) |  | ⚪ not started |  |
-| `Create` | constructor | [24](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L24) · [body 49](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L49) |  | ⚪ not started |  |
-| `PMExactifyIds` | method | [25](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L25) · [body 62](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L62) |  | ⚪ not started |  |
-| `PMFetch` | method | [26](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L26) · [body 69](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L69) |  | ⚪ not started |  |
-| `PMFetchIDListWithCondition` | method | [27](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L27) · [body 77](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L77) |  | ⚪ not started |  |
-| `PMUpdate` | method | [28](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L28) · [body 105](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L105) |  | ⚪ not started |  |
-| `PMTranslateToGlobalIds` | method | [29](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L29) · [body 91](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L91) |  | ⚪ not started |  |
-| `PMTranslateToLocalIds` | method | [30](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L30) · [body 98](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L98) |  | ⚪ not started |  |
-| `PMSetReadOnlyness` | method | [31](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L31) · [body 85](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L85) |  | ⚪ not started |  |
-| `SubscribeToPeristenceEvents` | method | [32](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L32) · [body 117](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L117) |  | ⚪ not started |  |
-| `ReserveNewIds` | method | [33](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L33) · [body 123](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L123) |  | ⚪ not started |  |
-| `PMTimestampForTime` | method | [35](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L35) · [body 135](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L135) |  | ⚪ not started |  |
-| `PMTimeForTimestamp` | method | [36](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L36) · [body 129](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L129) |  | ⚪ not started |  |
-| `NextPersistenceController` | property | [37](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L37) |  | ⚪ not started |  |
+| `getNextPersistenceController` | method, private | [22](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L22) · [body 54](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L54) | [`TBoldPersistenceControllerPassthrough.getNextPersistenceController`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L21) | 🟢 ported |  |
+| `Create` | constructor | [24](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L24) · [body 49](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L49) | [`TBoldPersistenceControllerPassthrough.TBoldPersistenceControllerPassthrough`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L15) | 🟢 ported |  |
+| `PMExactifyIds` | method | [25](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L25) · [body 62](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L62) | [`TBoldPersistenceControllerPassthrough.PMExactifyIds`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L25) | 🟢 ported |  |
+| `PMFetch` | method | [26](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L26) · [body 69](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L69) | [`TBoldPersistenceControllerPassthrough.PMFetch`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L29) | 🟢 ported |  |
+| `PMFetchIDListWithCondition` | method | [27](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L27) · [body 77](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L77) | [`TBoldPersistenceControllerPassthrough.PMFetchIDListWithCondition`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L34) | 🟢 ported |  |
+| `PMUpdate` | method | [28](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L28) · [body 105](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L105) | [`TBoldPersistenceControllerPassthrough.PMUpdate`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L39) | 🟢 ported |  |
+| `PMTranslateToGlobalIds` | method | [29](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L29) · [body 91](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L91) | [`TBoldPersistenceControllerPassthrough.PMTranslateToGlobalIds`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L44) | 🟢 ported |  |
+| `PMTranslateToLocalIds` | method | [30](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L30) · [body 98](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L98) | [`TBoldPersistenceControllerPassthrough.PMTranslateToLocalIds`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L48) | 🟢 ported |  |
+| `PMSetReadOnlyness` | method | [31](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L31) · [body 85](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L85) | [`TBoldPersistenceControllerPassthrough.PMSetReadOnlyness`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L52) | 🟢 ported |  |
+| `SubscribeToPeristenceEvents` | method | [32](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L32) · [body 117](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L117) | [`TBoldPersistenceControllerPassthrough.SubscribeToPeristenceEvents`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L56) | 🟢 ported |  |
+| `ReserveNewIds` | method | [33](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L33) · [body 123](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L123) | [`TBoldPersistenceControllerPassthrough.ReserveNewIds`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L60) | 🟢 ported |  |
+| `PMTimestampForTime` | method | [35](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L35) · [body 135](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L135) | [`TBoldPersistenceControllerPassthrough.PMTimestampForTime`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L64) | 🟢 ported |  |
+| `PMTimeForTimestamp` | method | [36](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L36) · [body 129](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L129) | [`TBoldPersistenceControllerPassthrough.PMTimeForTimestamp`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L68) | 🟢 ported |  |
+| `NextPersistenceController` | property | [37](../../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas#L37) | [`TBoldPersistenceControllerPassthrough.NextPersistenceController`](../../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs#L72) | 🟢 ported |  |
 
 ## Dependencies
 

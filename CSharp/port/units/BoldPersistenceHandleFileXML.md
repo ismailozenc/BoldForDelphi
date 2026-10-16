@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/File/BoldPersistenceHandleFileXML.pas`](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas) (105 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 7 symbols done, 0 verified |
+| Status | 🟢 ported: 7 of 7 symbols done, 0 verified |
 
-⚪ 7 not started
+🟢 7 ported
 
 ## Unit level
 
@@ -18,27 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandleFileXML` | class | [15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15) |  | ⚪ not started |  |
-| `TBoldPersistenceControllerFileXML` | class | [21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21) |  | ⚪ not started |  |
-| `XML_LINKEXTENSION` | const | [28](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L28) |  | ⚪ not started |  |
-| `XML_LINKDESC` | const | [29](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L29) |  | ⚪ not started |  |
+| `TBoldPersistenceHandleFileXML` | class | [15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15) | [`TBoldPersistenceHandleFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L11) | 🟢 ported |  |
+| `TBoldPersistenceControllerFileXML` | class | [21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21) | [`TBoldPersistenceControllerFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L28) | 🟢 ported |  |
+| `XML_LINKEXTENSION` | const | [28](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L28) | [`BoldPersistenceHandleFileXML.XML_LINKEXTENSION`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L76) | 🟢 ported |  |
+| `XML_LINKDESC` | const | [29](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L29) | [`BoldPersistenceHandleFileXML.XML_LINKDESC`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L77) | 🟢 ported |  |
 
 ## TBoldPersistenceHandleFileXML
 
-class at [line 15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L15); 🟢 ported, C# [`TBoldPersistenceHandleFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreatePersistenceController` | method, protected | [17](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L17) · [body 46](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L46) |  | ⚪ not started |  |
+| `CreatePersistenceController` | method, protected | [17](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L17) · [body 46](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L46) | [`TBoldPersistenceHandleFileXML.CreatePersistenceController`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L20) | 🟢 ported |  |
 
 ## TBoldPersistenceControllerFileXML
 
-class at [line 21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L21); 🟢 ported, C# [`TBoldPersistenceControllerFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L28).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteValueSpace` | method, protected | [23](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L23) · [body 82](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L82) |  | ⚪ not started |  |
-| `ReadValueSpace` | method, protected | [24](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L24) · [body 55](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L55) |  | ⚪ not started |  |
+| `WriteValueSpace` | method, protected | [23](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L23) · [body 82](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L82) | [`TBoldPersistenceControllerFileXML.WriteValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L56) | 🟢 ported |  |
+| `ReadValueSpace` | method, protected | [24](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L24) · [body 55](../../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas#L55) | [`TBoldPersistenceControllerFileXML.ReadValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L32) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldPersistenceHandleFileXML.TBoldPersistenceHandleFileXML`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs#L13) (constructor)
 
 ## Dependencies
 

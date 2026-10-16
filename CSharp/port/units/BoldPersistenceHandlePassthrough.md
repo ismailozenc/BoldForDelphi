@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas`](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas) (89 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | 🟢 ported: 9 of 9 symbols done, 0 verified |
 
-⚪ 9 not started
+🟢 9 ported
 
 ## Unit level
 
@@ -18,22 +18,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandlePassthrough` | class | [12](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L12) |  | ⚪ not started |  |
+| `TBoldPersistenceHandlePassthrough` | class | [12](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L12) | [`TBoldPersistenceHandlePassthrough`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L10) | 🟢 ported |  |
 
 ## TBoldPersistenceHandlePassthrough
 
-class at [line 12](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L12); ⚪ not started.
+class at [line 12](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L12); 🟢 ported, C# [`TBoldPersistenceHandlePassthrough`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetNextPersistenceHandle` | method, private | [16](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L16) · [body 43](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L43) |  | ⚪ not started |  |
-| `NextPHandleDeleted` | method, private | [17](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L17) · [body 56](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L56) |  | ⚪ not started |  |
-| `ChainPersistenceController` | method, protected | [19](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L19) · [body 83](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L83) |  | ⚪ not started |  |
-| `SetActive` | method, protected | [20](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L20) · [body 36](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L36) |  | ⚪ not started |  |
-| `InitNextPHandle` | method, protected | [21](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L21) · [body 77](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L77) |  | ⚪ not started |  |
-| `Create` | constructor | [23](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L23) · [body 63](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L63) |  | ⚪ not started |  |
-| `Destroy` | destructor | [24](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L24) · [body 69](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L69) |  | ⚪ not started |  |
-| `NextPersistenceHandle` | property | [25](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L25) |  | ⚪ not started |  |
+| `SetNextPersistenceHandle` | method, private | [16](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L16) · [body 43](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L43) | [`TBoldPersistenceHandlePassthrough.SetNextPersistenceHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L37) | 🟢 ported |  |
+| `NextPHandleDeleted` | method, private | [17](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L17) · [body 56](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L56) | [`TBoldPersistenceHandlePassthrough.NextPHandleDeleted`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L49) | 🟢 ported |  |
+| `ChainPersistenceController` | method, protected | [19](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L19) · [body 83](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L83) | [`TBoldPersistenceHandlePassthrough.ChainPersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L59) | 🟢 ported |  |
+| `SetActive` | method, protected | [20](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L20) · [body 36](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L36) | [`TBoldPersistenceHandlePassthrough.SetActive`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L68) | 🟢 ported |  |
+| `InitNextPHandle` | method, protected | [21](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L21) · [body 77](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L77) | [`TBoldPersistenceHandlePassthrough.InitNextPHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L78) | 🟢 ported |  |
+| `Create` | constructor | [23](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L23) · [body 63](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L63) | [`TBoldPersistenceHandlePassthrough.TBoldPersistenceHandlePassthrough`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L16) | 🟢 ported |  |
+| `Destroy` | destructor | [24](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L24) · [body 69](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L69) | [`TBoldPersistenceHandlePassthrough.Dispose`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L23) | 🟢 ported |  |
+| `NextPersistenceHandle` | property | [25](../../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas#L25) | [`TBoldPersistenceHandlePassthrough.NextPersistenceHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs#L83) | 🟢 ported |  |
 
 ## Dependencies
 

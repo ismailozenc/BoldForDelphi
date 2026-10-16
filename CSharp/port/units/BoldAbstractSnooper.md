@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Core/BoldAbstractSnooper.pas`](../../../Source/Persistence/Core/BoldAbstractSnooper.pas) (398 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 24 symbols done, 0 verified |
+| Status | 🟢 ported: 24 of 24 symbols done, 0 verified |
 
-⚪ 24 not started
+🟢 23 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,37 +18,37 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractSnooper` | class | [18](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L18) |  | ⚪ not started |  |
+| `TBoldAbstractSnooper` | class | [18](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L18) | [`TBoldAbstractSnooper`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L13) | 🟢 ported |  |
 
 ## TBoldAbstractSnooper
 
-class at [line 18](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L18); 🟢 ported, C# [`TBoldAbstractSnooper`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GenerateNonEmbeddedStateChangedEvent` | method, protected | [27](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L27) · [body 269](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L269) |  | ⚪ not started |  |
-| `SubscribeToNonEmbeddedStateChangedEvent` | method, protected | [28](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L28) · [body 282](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L282) |  | ⚪ not started |  |
-| `ObjectIdByMemberIndex` | method, protected | [29](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L29) · [body 288](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L288) |  | ⚪ not started |  |
-| `MemberIsEmbeddedSingleLink` | method, protected | [30](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L30) · [body 302](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L302) |  | ⚪ not started |  |
-| `MemberIsNonEmbeddedLink` | method, protected | [31](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L31) · [body 322](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L322) |  | ⚪ not started |  |
-| `ClassNameFromClassID` | method, protected | [32](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L32) · [body 358](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L358) |  | ⚪ not started |  |
-| `NonEmbeddedStateOfObjectChanged` | method, protected | [33](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L33) · [body 336](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L336) |  | ⚪ not started |  |
-| `ClearEvents` | method, protected | [34](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L34) · [body 363](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L363) |  | ⚪ not started |  |
-| `EnsureDataBaseLock` | method, protected | [35](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L35) · [body 388](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L388) |  | ⚪ not started |  |
-| `ReleaseDataBaseLock` | method, protected | [36](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L36) · [body 393](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L393) |  | ⚪ not started |  |
-| `DoPropagatorFailure` | method, protected | [37](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L37) · [body 370](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L370) |  | ⚪ not started |  |
-| `AddClassEvents` | method, protected | [38](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L38) · [body 376](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L376) |  | ⚪ not started |  |
-| `Create` | constructor | [40](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L40) · [body 61](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L61) |  | ⚪ not started |  |
-| `Destroy` | destructor | [41](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L41) · [body 73](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L73) |  | ⚪ not started |  |
-| `PMFetch` | method | [42](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L42) · [body 81](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L81) |  | ⚪ not started |  |
-| `PMFetchIDListWithCondition` | method | [43](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L43) · [body 145](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L145) |  | ⚪ not started |  |
-| `PMUpdate` | method | [44](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L44) · [body 163](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L163) |  | ⚪ not started |  |
-| `TransmitEvents` | method | [45](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L45) |  | ⚪ not started |  |
-| `MoldModel` | property | [46](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L46) |  | ⚪ not started |  |
-| `Events` | property | [47](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L47) |  | ⚪ not started |  |
-| `Subscriptions` | property | [48](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L48) |  | ⚪ not started |  |
-| `CancelledSubscriptions` | property | [49](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L49) |  | ⚪ not started |  |
-| `OnPropagatorFailure` | property | [50](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L50) |  | ⚪ not started |  |
+| `GenerateNonEmbeddedStateChangedEvent` | method, protected | [27](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L27) · [body 269](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L269) | [`TBoldAbstractSnooper.GenerateNonEmbeddedStateChangedEvent`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L34) | 🟢 ported |  |
+| `SubscribeToNonEmbeddedStateChangedEvent` | method, protected | [28](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L28) · [body 282](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L282) | [`TBoldAbstractSnooper.SubscribeToNonEmbeddedStateChangedEvent`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L52) | 🟢 ported |  |
+| `ObjectIdByMemberIndex` | method, protected | [29](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L29) · [body 288](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L288) | [`TBoldAbstractSnooper.ObjectIdByMemberIndex`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L62) | 🟢 ported |  |
+| `MemberIsEmbeddedSingleLink` | method, protected | [30](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L30) · [body 302](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L302) | [`TBoldAbstractSnooper.MemberIsEmbeddedSingleLink`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L67) | 🟢 ported |  |
+| `MemberIsNonEmbeddedLink` | method, protected | [31](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L31) · [body 322](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L322) | [`TBoldAbstractSnooper.MemberIsNonEmbeddedLink`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L86) | 🟢 ported |  |
+| `ClassNameFromClassID` | method, protected | [32](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L32) · [body 358](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L358) | [`TBoldAbstractSnooper.ClassNameFromClassID`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L98) | 🟢 ported |  |
+| `NonEmbeddedStateOfObjectChanged` | method, protected | [33](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L33) · [body 336](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L336) | [`TBoldAbstractSnooper.NonEmbeddedStateOfObjectChanged`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L102) | 🟢 ported |  |
+| `ClearEvents` | method, protected | [34](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L34) · [body 363](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L363) | [`TBoldAbstractSnooper.ClearEvents`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L116) | 🟢 ported |  |
+| `EnsureDataBaseLock` | method, protected | [35](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L35) · [body 388](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L388) | [`TBoldAbstractSnooper.EnsureDataBaseLock`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L124) | 🟢 ported |  |
+| `ReleaseDataBaseLock` | method, protected | [36](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L36) · [body 393](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L393) | [`TBoldAbstractSnooper.ReleaseDataBaseLock`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L129) | 🟢 ported |  |
+| `DoPropagatorFailure` | method, protected | [37](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L37) · [body 370](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L370) | [`TBoldAbstractSnooper.DoPropagatorFailure`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L134) | 🟢 ported |  |
+| `AddClassEvents` | method, protected | [38](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L38) · [body 376](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L376) | [`TBoldAbstractSnooper.AddClassEvents`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L138) | 🟢 ported |  |
+| `Create` | constructor | [40](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L40) · [body 61](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L61) | [`TBoldAbstractSnooper.TBoldAbstractSnooper`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L23) | 🟢 ported |  |
+| `Destroy` | destructor | [41](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L41) · [body 73](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L73) | [`TBoldAbstractSnooper.GenerateNonEmbeddedStateChangedEvent`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L34) | 🔵 replaced: Freed the string lists; the garbage collector does that in .NET. |  |
+| `PMFetch` | method | [42](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L42) · [body 81](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L81) | [`TBoldAbstractSnooper.PMFetch`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L150) | 🟢 ported |  |
+| `PMFetchIDListWithCondition` | method | [43](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L43) · [body 145](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L145) | [`TBoldAbstractSnooper.PMFetchIDListWithCondition`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L213) | 🟢 ported |  |
+| `PMUpdate` | method | [44](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L44) · [body 163](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L163) | [`TBoldAbstractSnooper.PMUpdate`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L236) | 🟢 ported |  |
+| `TransmitEvents` | method | [45](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L45) | [`TBoldAbstractSnooper.TransmitEvents`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L326) | 🟢 ported |  |
+| `MoldModel` | property | [46](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L46) | [`TBoldAbstractSnooper.MoldModel`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L328) | 🟢 ported |  |
+| `Events` | property | [47](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L47) | [`TBoldAbstractSnooper.Events`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L329) | 🟢 ported |  |
+| `Subscriptions` | property | [48](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L48) | [`TBoldAbstractSnooper.Subscriptions`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L330) | 🟢 ported |  |
+| `CancelledSubscriptions` | property | [49](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L49) | [`TBoldAbstractSnooper.CancelledSubscriptions`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L331) | 🟢 ported |  |
+| `OnPropagatorFailure` | property | [50](../../../Source/Persistence/Core/BoldAbstractSnooper.pas#L50) | [`TBoldAbstractSnooper.OnPropagatorFailure`](../../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs#L334) | 🟢 ported |  |
 
 ## Dependencies
 

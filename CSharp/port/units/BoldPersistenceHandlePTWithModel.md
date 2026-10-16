@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas`](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas) (80 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 7 symbols done, 0 verified |
+| Status | 🟢 ported: 7 of 7 symbols done, 0 verified |
 
-⚪ 7 not started
+🟢 7 ported
 
 ## Unit level
 
@@ -18,20 +18,20 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandlePassthroughWithModel` | class | [14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14) |  | ⚪ not started |  |
+| `TBoldPersistenceHandlePassthroughWithModel` | class | [14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14) | [`TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L11) | 🟢 ported |  |
 
 ## TBoldPersistenceHandlePassthroughWithModel
 
-class at [line 14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L14); 🟢 ported, C# [`TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldModel` | method, private | [18](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L18) · [body 42](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L42) |  | ⚪ not started |  |
-| `ModelChanged` | method, private | [19](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L19) · [body 57](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L57) |  | ⚪ not started |  |
-| `_Receive` | method, private | [20](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L20) · [body 69](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L69) |  | ⚪ not started |  |
-| `Create` | constructor | [22](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L22) · [body 36](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L36) |  | ⚪ not started |  |
-| `Destroy` | destructor | [23](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L23) · [body 63](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L63) |  | ⚪ not started |  |
-| `BoldModel` | property | [24](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L24) |  | ⚪ not started |  |
+| `SetBoldModel` | method, private | [18](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L18) · [body 42](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L42) | [`TBoldPersistenceHandlePassthroughWithModel.SetBoldModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L39) | 🟢 ported |  |
+| `ModelChanged` | method, private | [19](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L19) · [body 57](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L57) | [`TBoldPersistenceHandlePassthroughWithModel.ModelChanged`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L57) | 🟢 ported |  |
+| `_Receive` | method, private | [20](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L20) · [body 69](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L69) | [`TBoldPersistenceHandlePassthroughWithModel._Receive`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L64) | 🟢 ported |  |
+| `Create` | constructor | [22](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L22) · [body 36](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L36) | [`TBoldPersistenceHandlePassthroughWithModel.TBoldPersistenceHandlePassthroughWithModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L20) | 🟢 ported |  |
+| `Destroy` | destructor | [23](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L23) · [body 63](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L63) | [`TBoldPersistenceHandlePassthroughWithModel.Dispose`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L27) | 🟢 ported |  |
+| `BoldModel` | property | [24](../../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas#L24) | [`TBoldPersistenceHandlePassthroughWithModel.BoldModel`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs#L79) | 🟢 ported |  |
 
 ## Dependencies
 

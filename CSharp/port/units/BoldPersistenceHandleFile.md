@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/File/BoldPersistenceHandleFile.pas`](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas) (307 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 28 symbols done, 0 verified |
+| Status | 🟢 ported: 28 of 28 symbols done, 0 verified |
 
-⚪ 28 not started
+🟢 28 ported
 
 ## Unit level
 
@@ -18,48 +18,54 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractPersistenceHandleFile` | class | [24](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L24) |  | ⚪ not started |  |
-| `TBoldPersistenceControllerFile` | class | [39](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L39) |  | ⚪ not started |  |
+| `TBoldAbstractPersistenceHandleFile` | class | [24](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L24) | [`TBoldAbstractPersistenceHandleFile`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L11) | 🟢 ported |  |
+| `TBoldPersistenceControllerFile` | class | [39](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L39) | [`TBoldPersistenceControllerFile`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L53) | 🟢 ported |  |
 
 ## TBoldAbstractPersistenceHandleFile
 
-class at [line 24](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L24); ⚪ not started.
+class at [line 24](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L24); 🟢 ported, C# [`TBoldAbstractPersistenceHandleFile`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetFileName` | method, private | [29](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L29) · [body 302](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L302) |  | ⚪ not started |  |
-| `SetCacheData` | method, private | [30](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L30) · [body 297](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L297) |  | ⚪ not started |  |
-| `SetBoldModel` | method, private | [31](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L31) · [body 292](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L292) |  | ⚪ not started |  |
-| `FileName` | property, published | [33](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L33) |  | ⚪ not started |  |
-| `CacheData` | property, published | [34](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L34) |  | ⚪ not started |  |
-| `BoldModel` | property, published | [35](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L35) |  | ⚪ not started |  |
+| `SetFileName` | method, private | [29](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L29) · [body 302](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L302) | [`TBoldAbstractPersistenceHandleFile.SetFileName`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L22) | 🟢 ported |  |
+| `SetCacheData` | method, private | [30](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L30) · [body 297](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L297) | [`TBoldAbstractPersistenceHandleFile.SetCacheData`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L23) | 🟢 ported |  |
+| `SetBoldModel` | method, private | [31](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L31) · [body 292](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L292) | [`TBoldAbstractPersistenceHandleFile.SetBoldModel`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L24) | 🟢 ported |  |
+| `FileName` | property, published | [33](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L33) | [`TBoldAbstractPersistenceHandleFile.FileName`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L27) | 🟢 ported |  |
+| `CacheData` | property, published | [34](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L34) | [`TBoldAbstractPersistenceHandleFile.CacheData`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L34) | 🟢 ported |  |
+| `BoldModel` | property, published | [35](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L35) | [`TBoldAbstractPersistenceHandleFile.BoldModel`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L41) | 🟢 ported |  |
 
 ## TBoldPersistenceControllerFile
 
-class at [line 39](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L39); ⚪ not started.
+class at [line 39](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L39); 🟢 ported, C# [`TBoldPersistenceControllerFile`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L53).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EnsureValueSpace` | method, private | [46](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L46) · [body 96](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L96) |  | ⚪ not started |  |
-| `UnloadLocalValueSpace` | method, private | [47](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L47) · [body 249](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L249) |  | ⚪ not started |  |
-| `GetValueSpace` | method, private | [48](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L48) · [body 90](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L90) |  | ⚪ not started |  |
-| `WriteValueSpace` | method, protected | [50](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L50) |  | ⚪ not started |  |
-| `ReadValueSpace` | method, protected | [51](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L51) |  | ⚪ not started |  |
-| `Create` | constructor | [53](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L53) · [body 82](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L82) |  | ⚪ not started |  |
-| `Destroy` | destructor | [54](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L54) · [body 284](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L284) |  | ⚪ not started |  |
-| `PMExactifyIds` | method | [55](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L55) · [body 117](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L117) |  | ⚪ not started |  |
-| `PMFetch` | method | [56](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L56) · [body 124](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L124) |  | ⚪ not started |  |
-| `PMFetchIDListWithCondition` | method | [57](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L57) · [body 141](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L141) |  | ⚪ not started |  |
-| `PMUpdate` | method | [58](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L58) · [body 200](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L200) |  | ⚪ not started |  |
-| `PMTranslateToGlobalIds` | method | [59](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L59) · [body 186](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L186) |  | ⚪ not started |  |
-| `PMTranslateToLocalIds` | method | [60](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L60) · [body 193](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L193) |  | ⚪ not started |  |
-| `PMSetReadOnlyness` | method | [61](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L61) · [body 180](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L180) |  | ⚪ not started |  |
-| `MultilinksAreStoredInObject` | method | [62](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L62) · [body 257](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L257) |  | ⚪ not started |  |
-| `ReserveNewIds` | method | [63](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L63) · [body 262](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L262) |  | ⚪ not started |  |
-| `FileName` | property | [65](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L65) |  | ⚪ not started |  |
-| `LocalValueSpace` | property | [66](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L66) |  | ⚪ not started |  |
-| `CacheData` | property | [67](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L67) |  | ⚪ not started |  |
-| `MoldModel` | property | [68](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L68) |  | ⚪ not started |  |
+| `EnsureValueSpace` | method, private | [46](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L46) · [body 96](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L96) | [`TBoldPersistenceControllerFile.EnsureValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L82) | 🟢 ported |  |
+| `UnloadLocalValueSpace` | method, private | [47](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L47) · [body 249](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L249) | [`TBoldPersistenceControllerFile.UnloadLocalValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L102) | 🟢 ported |  |
+| `GetValueSpace` | method, private | [48](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L48) · [body 90](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L90) | [`TBoldPersistenceControllerFile.GetValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L107) | 🟢 ported |  |
+| `WriteValueSpace` | method, protected | [50](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L50) | [`TBoldPersistenceControllerFile.WriteValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L113) | 🟢 ported |  |
+| `ReadValueSpace` | method, protected | [51](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L51) | [`TBoldPersistenceControllerFile.ReadValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L114) | 🟢 ported |  |
+| `Create` | constructor | [53](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L53) · [body 82](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L82) | [`TBoldPersistenceControllerFile.TBoldPersistenceControllerFile`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L62) | 🟢 ported |  |
+| `Destroy` | destructor | [54](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L54) · [body 284](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L284) | [`TBoldPersistenceControllerFile.Dispose`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L70) | 🟢 ported |  |
+| `PMExactifyIds` | method | [55](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L55) · [body 117](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L117) | [`TBoldPersistenceControllerFile.PMExactifyIds`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L117) | 🟢 ported |  |
+| `PMFetch` | method | [56](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L56) · [body 124](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L124) | [`TBoldPersistenceControllerFile.PMFetch`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L121) | 🟢 ported |  |
+| `PMFetchIDListWithCondition` | method | [57](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L57) · [body 141](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L141) | [`TBoldPersistenceControllerFile.PMFetchIDListWithCondition`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L142) | 🟢 ported: Delphi shows a message box for SQL conditions; here the message is written to the trace output. |  |
+| `PMUpdate` | method | [58](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L58) · [body 200](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L200) | [`TBoldPersistenceControllerFile.PMUpdate`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L179) | 🟢 ported |  |
+| `PMTranslateToGlobalIds` | method | [59](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L59) · [body 186](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L186) | [`TBoldPersistenceControllerFile.PMTranslateToGlobalIds`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L205) | 🟢 ported |  |
+| `PMTranslateToLocalIds` | method | [60](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L60) · [body 193](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L193) | [`TBoldPersistenceControllerFile.PMTranslateToLocalIds`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L208) | 🟢 ported |  |
+| `PMSetReadOnlyness` | method | [61](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L61) · [body 180](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L180) | [`TBoldPersistenceControllerFile.PMSetReadOnlyness`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L211) | 🟢 ported |  |
+| `MultilinksAreStoredInObject` | method | [62](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L62) · [body 257](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L257) | [`TBoldPersistenceControllerFile.MultilinksAreStoredInObject`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L214) | 🟢 ported |  |
+| `ReserveNewIds` | method | [63](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L63) · [body 262](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L262) | [`TBoldPersistenceControllerFile.ReserveNewIds`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L218) | 🟢 ported |  |
+| `FileName` | property | [65](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L65) | [`TBoldPersistenceControllerFile.FileName`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L236) | 🟢 ported |  |
+| `LocalValueSpace` | property | [66](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L66) | [`TBoldPersistenceControllerFile.LocalValueSpace`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L237) | 🟢 ported |  |
+| `CacheData` | property | [67](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L67) | [`TBoldPersistenceControllerFile.CacheData`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L238) | 🟢 ported |  |
+| `MoldModel` | property | [68](../../../Source/Persistence/File/BoldPersistenceHandleFile.pas#L68) | [`TBoldPersistenceControllerFile.MoldModel`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L239) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldAbstractPersistenceHandleFile.TBoldAbstractPersistenceHandleFile`](../../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs#L17) (constructor)
 
 ## Dependencies
 

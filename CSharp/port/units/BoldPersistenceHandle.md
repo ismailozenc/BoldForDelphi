@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Core/BoldPersistenceHandle.pas`](../../../Source/Persistence/Core/BoldPersistenceHandle.pas) (124 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 16 symbols done, 0 verified |
+| Status | 🟢 ported: 16 of 16 symbols done, 0 verified |
 
-⚪ 16 not started
+🟢 16 ported
 
 ## Unit level
 
@@ -18,29 +18,29 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandle` | class | [13](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L13) |  | ⚪ not started |  |
+| `TBoldPersistenceHandle` | class | [13](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L13) | [`TBoldPersistenceHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L11) | 🟢 ported |  |
 
 ## TBoldPersistenceHandle
 
-class at [line 13](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L13); 🟢 ported, C# [`TBoldPersistenceHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetActive` | method, private | [18](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L18) · [body 48](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L48) |  | ⚪ not started |  |
-| `GetPersistenceController` | method, private | [19](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L19) · [body 72](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L72) |  | ⚪ not started |  |
-| `GetHasPersistenceController` | method, private | [20](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L20) · [body 119](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L119) |  | ⚪ not started |  |
-| `CheckInactive` | method, protected | [22](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L22) · [body 60](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L60) |  | ⚪ not started |  |
-| `CreatePersistenceController` | method, protected | [23](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L23) |  | ⚪ not started |  |
-| `GetHandledObject` | method, protected | [24](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L24) · [body 43](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L43) |  | ⚪ not started |  |
-| `ReceiveExtendedEvent` | method, protected | [25](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L25) · [body 87](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L87) |  | ⚪ not started |  |
-| `SetActive` | method, protected | [26](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L26) · [body 53](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L53) |  | ⚪ not started |  |
-| `HasPersistenceController` | property, protected | [27](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L27) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L29) · [body 66](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L66) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L30) · [body 79](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L79) |  | ⚪ not started |  |
-| `AddPersistenceSubscription` | method | [31](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L31) · [body 94](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L94) |  | ⚪ not started |  |
-| `ReleasePersistenceController` | method | [32](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L32) · [body 112](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L112) |  | ⚪ not started |  |
-| `Active` | property | [33](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L33) |  | ⚪ not started |  |
-| `PersistenceController` | property | [34](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L34) |  | ⚪ not started |  |
+| `GetActive` | method, private | [18](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L18) · [body 48](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L48) | [`TBoldPersistenceHandle.GetActive`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L38) | 🟢 ported |  |
+| `GetPersistenceController` | method, private | [19](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L19) · [body 72](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L72) | [`TBoldPersistenceHandle.GetPersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L42) | 🟢 ported |  |
+| `GetHasPersistenceController` | method, private | [20](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L20) · [body 119](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L119) | [`TBoldPersistenceHandle.GetHasPersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L44) | 🟢 ported |  |
+| `CheckInactive` | method, protected | [22](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L22) · [body 60](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L60) | [`TBoldPersistenceHandle.CheckInactive`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L48) | 🟢 ported |  |
+| `CreatePersistenceController` | method, protected | [23](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L23) | [`TBoldPersistenceHandle.CreatePersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L57) | 🟢 ported |  |
+| `GetHandledObject` | method, protected | [24](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L24) · [body 43](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L43) | [`TBoldPersistenceHandle.GetHandledObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L60) | 🟢 ported |  |
+| `ReceiveExtendedEvent` | method, protected | [25](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L25) · [body 87](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L87) | [`TBoldPersistenceHandle.ReceiveExtendedEvent`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L63) | 🟢 ported |  |
+| `SetActive` | method, protected | [26](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L26) · [body 53](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L53) | [`TBoldPersistenceHandle.SetActive`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L68) | 🟢 ported |  |
+| `HasPersistenceController` | property, protected | [27](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L27) | [`TBoldPersistenceHandle.HasPersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L77) | 🟢 ported |  |
+| `Create` | constructor | [29](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L29) · [body 66](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L66) | [`TBoldPersistenceHandle.TBoldPersistenceHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L18) | 🟢 ported: The owner is an IContainer where Delphi takes a TComponent owner. |  |
+| `Destroy` | destructor | [30](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L30) · [body 79](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L79) | [`TBoldPersistenceHandle.Dispose`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L25) | 🟢 ported |  |
+| `AddPersistenceSubscription` | method | [31](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L31) · [body 94](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L94) | [`TBoldPersistenceHandle.AddPersistenceSubscription`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L81) | 🟢 ported |  |
+| `ReleasePersistenceController` | method | [32](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L32) · [body 112](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L112) | [`TBoldPersistenceHandle.ReleasePersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L101) | 🟢 ported |  |
+| `Active` | property | [33](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L33) | [`TBoldPersistenceHandle.Active`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L112) | 🟢 ported |  |
+| `PersistenceController` | property | [34](../../../Source/Persistence/Core/BoldPersistenceHandle.pas#L34) | [`TBoldPersistenceHandle.PersistenceController`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs#L118) | 🟢 ported |  |
 
 ## Dependencies
 

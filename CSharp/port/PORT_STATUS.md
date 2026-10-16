@@ -19,17 +19,17 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 381 to port, 100 not ported. The units to port declare 16755 symbols. 6003 `[Delphi]` markers in the C# code; 221 test methods.
+481 Delphi units: 381 to port, 100 not ported. The units to port declare 16755 symbols. 6156 `[Delphi]` markers in the C# code; 221 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
 | ✅ verified | 4037 | ▰▰▱▱▱▱▱▱▱▱ 24% |
-| 🟢 ported | 1910 | ▰▱▱▱▱▱▱▱▱▱ 11% |
-| 🔵 replaced | 96 | ▱▱▱▱▱▱▱▱▱▱ 1% |
+| 🟢 ported | 2059 | ▰▱▱▱▱▱▱▱▱▱ 12% |
+| 🔵 replaced | 99 | ▱▱▱▱▱▱▱▱▱▱ 1% |
 | 🟡 partial | 10 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| 🟠 stub | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| 🟠 stub | 1 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 10697 | ▰▰▰▰▰▰▱▱▱▱ 64% |
+| ⚪ not started | 10544 | ▰▰▰▰▰▰▱▱▱▱ 63% |
 | ⚫ dropped | 5 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
@@ -38,7 +38,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 |---|---:|---:|---:|---:|---|
 | M1 Load models | 24 | 1642 | 1635 | 1332 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M2 Runtime model and subscriptions | 24 | 1965 | 1964 | 1900 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| M3 Object space in memory | 41 | 2630 | 2382 | 738 | ▰▰▰▰▰▰▰▰▰▱ 91% |
+| M3 Object space in memory | 41 | 2630 | 2534 | 738 | ▰▰▰▰▰▰▰▰▰▰ 96% |
 | M4 OCL | 13 | 1289 | 67 | 67 | ▰▱▱▱▱▱▱▱▱▱ 5% |
 | M5 SQL persistence | 62 | 2684 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M6 Typed classes | 7 | 258 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -60,7 +60,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.ModelEditor | 22 | 584 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.ObjectSpace | 38 | 3880 | 2599 | 1001 | ▰▰▰▰▰▰▰▱▱▱ 67% |
 | Bold.Olle | 6 | 319 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| Bold.Persistence | 13 | 784 | 596 | 549 | ▰▰▰▰▰▰▰▰▱▱ 76% |
+| Bold.Persistence | 13 | 784 | 748 | 549 | ▰▰▰▰▰▰▰▰▰▰ 95% |
 | Bold.Persistence.Sql | 58 | 2626 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Propagation | 23 | 521 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Propagator.Server | 22 | 531 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -149,17 +149,17 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldUndoHandler](units/BoldUndoHandler.md) | 🟢 ported | 80/80 | 6 | Bold.ObjectSpace | M3 | [Source/ObjectSpace/Undo/BoldUndoHandler.pas](../../Source/ObjectSpace/Undo/BoldUndoHandler.pas) | [src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs](../src/Bold.ObjectSpace/ObjectSpace/Undo/BoldUndoHandler.cs) |
 | [BoldUnloader](units/BoldUnloader.md) | ⚪ not started | 0/18 | 0 | Bold.ObjectSpace | M3 | [Source/ObjectSpace/Unloader/BoldUnloader.pas](../../Source/ObjectSpace/Unloader/BoldUnloader.pas) | planned: src/Bold.ObjectSpace/ObjectSpace/Unloader/BoldUnloader.cs |
 | [BoldPMConsts](units/BoldPMConsts.md) | ✅ verified | 156/156 | 156 | Bold.Persistence | M3 | [Source/PMapper/Core/BoldPMConsts.pas](../../Source/PMapper/Core/BoldPMConsts.pas) | [src/Bold.Persistence/PMapper/Core/BoldPMConsts.cs](../src/Bold.Persistence/PMapper/Core/BoldPMConsts.cs) |
-| [BoldAbstractSnooper](units/BoldAbstractSnooper.md) | ⚪ not started | 0/24 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldAbstractSnooper.pas](../../Source/Persistence/Core/BoldAbstractSnooper.pas) | planned: src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs |
+| [BoldAbstractSnooper](units/BoldAbstractSnooper.md) | 🟢 ported | 24/24 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldAbstractSnooper.pas](../../Source/Persistence/Core/BoldAbstractSnooper.pas) | [src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs](../src/Bold.Persistence/Persistence/Core/BoldAbstractSnooper.cs) |
 | [BoldPersistenceController](units/BoldPersistenceController.md) | 🟢 ported | 14/14 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceController.pas](../../Source/Persistence/Core/BoldPersistenceController.pas) | [src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs](../src/Bold.Persistence/Persistence/Core/BoldPersistenceController.cs) |
-| [BoldPersistenceHandle](units/BoldPersistenceHandle.md) | ⚪ not started | 0/16 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceHandle.pas](../../Source/Persistence/Core/BoldPersistenceHandle.pas) | planned: src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs |
-| [BoldPersistenceHandlePTWithModel](units/BoldPersistenceHandlePTWithModel.md) | ⚪ not started | 0/7 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas](../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas) | planned: src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs |
-| [BoldPersistenceHandlePassthrough](units/BoldPersistenceHandlePassthrough.md) | ⚪ not started | 0/9 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas](../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas) | planned: src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs |
-| [BoldPersistenceNotifier](units/BoldPersistenceNotifier.md) | ⚪ not started | 0/82 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceNotifier.pas](../../Source/Persistence/Core/BoldPersistenceNotifier.pas) | planned: src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs |
+| [BoldPersistenceHandle](units/BoldPersistenceHandle.md) | 🟢 ported | 16/16 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceHandle.pas](../../Source/Persistence/Core/BoldPersistenceHandle.pas) | [src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs](../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandle.cs) |
+| [BoldPersistenceHandlePTWithModel](units/BoldPersistenceHandlePTWithModel.md) | 🟢 ported | 7/7 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas](../../Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas) | [src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs](../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePTWithModel.cs) |
+| [BoldPersistenceHandlePassthrough](units/BoldPersistenceHandlePassthrough.md) | 🟢 ported | 9/9 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas](../../Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas) | [src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs](../src/Bold.Persistence/Persistence/Core/BoldPersistenceHandlePassthrough.cs) |
+| [BoldPersistenceNotifier](units/BoldPersistenceNotifier.md) | 🟡 partial | 46/82 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldPersistenceNotifier.pas](../../Source/Persistence/Core/BoldPersistenceNotifier.pas) | [src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs](../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs) |
 | [BoldUpdatePrecondition](units/BoldUpdatePrecondition.md) | 🟢 ported | 33/33 | 0 | Bold.Persistence | M3 | [Source/Persistence/Core/BoldUpdatePrecondition.pas](../../Source/Persistence/Core/BoldUpdatePrecondition.pas) | [src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs](../src/Bold.Persistence/Persistence/Core/BoldUpdatePrecondition.cs) |
 | [PersistenceConsts](units/PersistenceConsts.md) | ✅ verified | 40/40 | 40 | Bold.Persistence | M3 | [Source/Persistence/Core/PersistenceConsts.pas](../../Source/Persistence/Core/PersistenceConsts.pas) | [src/Bold.Persistence/Persistence/Core/PersistenceConsts.cs](../src/Bold.Persistence/Persistence/Core/PersistenceConsts.cs) |
-| [BoldPersistenceHandleFile](units/BoldPersistenceHandleFile.md) | ⚪ not started | 0/28 | 0 | Bold.Persistence | M3 | [Source/Persistence/File/BoldPersistenceHandleFile.pas](../../Source/Persistence/File/BoldPersistenceHandleFile.pas) | planned: src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs |
-| [BoldPersistenceHandleFileXML](units/BoldPersistenceHandleFileXML.md) | ⚪ not started | 0/7 | 0 | Bold.Persistence | M3 | [Source/Persistence/File/BoldPersistenceHandleFileXML.pas](../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas) | planned: src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs |
-| [BoldPersistenceControllerPassthrough](units/BoldPersistenceControllerPassthrough.md) | ⚪ not started | 0/15 | 0 | Bold.Persistence | M3 | [Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas](../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas) | planned: src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs |
+| [BoldPersistenceHandleFile](units/BoldPersistenceHandleFile.md) | 🟢 ported | 28/28 | 0 | Bold.Persistence | M3 | [Source/Persistence/File/BoldPersistenceHandleFile.pas](../../Source/Persistence/File/BoldPersistenceHandleFile.pas) | [src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs](../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs) |
+| [BoldPersistenceHandleFileXML](units/BoldPersistenceHandleFileXML.md) | 🟢 ported | 7/7 | 0 | Bold.Persistence | M3 | [Source/Persistence/File/BoldPersistenceHandleFileXML.pas](../../Source/Persistence/File/BoldPersistenceHandleFileXML.pas) | [src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs](../src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs) |
+| [BoldPersistenceControllerPassthrough](units/BoldPersistenceControllerPassthrough.md) | 🟢 ported | 15/15 | 0 | Bold.Persistence | M3 | [Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas](../../Source/Persistence/Propagation/BoldPersistenceControllerPassthrough.pas) | [src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs](../src/Bold.Persistence/Persistence/Propagation/BoldPersistenceControllerPassthrough.cs) |
 | [BoldPersistenceControllerSystem](units/BoldPersistenceControllerSystem.md) | ⚪ not started | 0/40 | 0 | Bold.ObjectSpace | M3 | [Source/Persistence/System/BoldPersistenceControllerSystem.pas](../../Source/Persistence/System/BoldPersistenceControllerSystem.pas) | planned: src/Bold.ObjectSpace/Persistence/System/BoldPersistenceControllerSystem.cs |
 | [BoldCondition](units/BoldCondition.md) | 🟡 partial | 49/51 | 49 | Bold.ValueSpace | M3 | [Source/ValueSpace/Condition/BoldCondition.pas](../../Source/ValueSpace/Condition/BoldCondition.pas) | [src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs](../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs) |
 | [BoldObjectSpaceExternalEvents](units/BoldObjectSpaceExternalEvents.md) | ✅ verified | 9/9 | 9 | Bold.ValueSpace | M3 | [Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas](../../Source/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.pas) | [src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs](../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.Aliases.cs)<br>[src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs](../src/Bold.ValueSpace/ValueSpace/ExternalEvents/BoldObjectSpaceExternalEvents.cs) |

@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldPersistenceHandleFile](../../../CSharp/port/units/BoldPersistenceHandleFile.md) | Bold.Persistence: Persistence/File/BoldPersistenceHandleFile.cs (not started) | M3 Object space in memory |
-| [BoldPersistenceHandleFileXML](../../../CSharp/port/units/BoldPersistenceHandleFileXML.md) | Bold.Persistence: Persistence/File/BoldPersistenceHandleFileXML.cs (not started) | M3 Object space in memory |
+| [BoldPersistenceHandleFile](../../../CSharp/port/units/BoldPersistenceHandleFile.md) | [Bold.Persistence: Persistence/File/BoldPersistenceHandleFile.cs](../../../CSharp/src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFile.cs) | M3 Object space in memory |
+| [BoldPersistenceHandleFileXML](../../../CSharp/port/units/BoldPersistenceHandleFileXML.md) | [Bold.Persistence: Persistence/File/BoldPersistenceHandleFileXML.cs](../../../CSharp/src/Bold.Persistence/Persistence/File/BoldPersistenceHandleFileXML.cs) | M3 Object space in memory |
 <!-- END C# PORT -->

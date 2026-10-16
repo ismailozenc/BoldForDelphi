@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Core/BoldPersistenceNotifier.pas`](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas) (654 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs` |
+| C# | [`CSharp/src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs) |
 | Project | Bold.Persistence |
 | Milestone | M3 Object space in memory |
-| Status | ⚪ not started: 0 of 82 symbols done, 0 verified |
+| Status | 🟡 partial: 46 of 82 symbols done, 0 verified |
 
-⚪ 82 not started
+🟢 44 ported · 🔵 2 replaced · 🟠 1 stub · ⚪ 35 not started
 
 ## Unit level
 
@@ -18,65 +18,65 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAlertExcessiveFetchEvent` | event type | [22](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L22) |  | ⚪ not started |  |
-| `TBoldAbstractPersistenceNotifier` | class | [25](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L25) |  | ⚪ not started |  |
-| `TBoldPersistenceNotifier` | class | [80](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L80) |  | ⚪ not started |  |
-| `TBoldPersistenceProgressNotifier` | class | [101](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L101) |  | ⚪ not started |  |
+| `TBoldAlertExcessiveFetchEvent` | event type | [22](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L22) | [`TBoldAlertExcessiveFetchEvent`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L13) | 🟢 ported |  |
+| `TBoldAbstractPersistenceNotifier` | class | [25](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L25) | [`TBoldAbstractPersistenceNotifier`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L20) | 🟢 ported: A System.ComponentModel.Component where Delphi has a TComponent. |  |
+| `TBoldPersistenceNotifier` | class | [80](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L80) | [`TBoldPersistenceNotifier`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L204) | 🟢 ported |  |
+| `TBoldPersistenceProgressNotifier` | class | [101](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L101) | [`[assembly: Delphi] in BoldPersistenceNotifier.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L6) | 🟠 stub: A VCL progress bar, label and animation driver; it belongs with the WinForms controls (M8). |  |
 | `TExposedWinControl` | class, implementation | [500](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L500) |  | ⚪ not started |  |
 
 ## TBoldAbstractPersistenceNotifier
 
-class at [line 25](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L25); 🟢 ported, C# [`TBoldAbstractPersistenceNotifier`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L20).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetPersistenceHandle` | method, private | [32](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L32) · [body 337](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L337) |  | ⚪ not started |  |
-| `GetEvent` | method, private | [33](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L33) · [body 264](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L264) |  | ⚪ not started |  |
-| `SetEvent` | method, private | [34](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L34) · [body 331](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L331) |  | ⚪ not started |  |
-| `CallIfAssigned` | method, private | [35](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L35) · [body 169](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L169) |  | ⚪ not started |  |
-| `GetFetchLog` | method, private | [36](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L36) · [body 269](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L269) |  | ⚪ not started |  |
-| `EndFetch` | method, protected | [38](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L38) · [body 204](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L204) |  | ⚪ not started |  |
-| `EndUpdate` | method, protected | [39](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L39) · [body 218](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L218) |  | ⚪ not started |  |
-| `EndFetchID` | method, protected | [40](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L40) · [body 211](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L211) |  | ⚪ not started |  |
-| `StartUpdate` | method, protected | [41](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L41) · [body 373](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L373) |  | ⚪ not started |  |
-| `StartFetch` | method, protected | [42](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L42) · [body 354](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L354) |  | ⚪ not started |  |
-| `UpdateObject` | method, protected | [43](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L43) · [body 380](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L380) |  | ⚪ not started |  |
-| `DeleteObject` | method, protected | [44](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L44) · [body 190](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L190) |  | ⚪ not started |  |
-| `CreateObject` | method, protected | [45](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L45) · [body 183](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L183) |  | ⚪ not started |  |
-| `FetchObject` | method, protected | [46](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L46) · [body 239](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L239) |  | ⚪ not started |  |
-| `FetchMember` | method, protected | [47](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L47) · [body 232](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L232) |  | ⚪ not started |  |
-| `StartFetchID` | method, protected | [48](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L48) · [body 366](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L366) |  | ⚪ not started |  |
-| `FetchID` | method, protected | [49](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L49) · [body 225](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L225) |  | ⚪ not started |  |
-| `ProgressStart` | method, protected | [50](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L50) · [body 290](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L290) |  | ⚪ not started |  |
-| `ProgressEnd` | method, protected | [51](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L51) · [body 283](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L283) |  | ⚪ not started |  |
-| `Notification` | method, protected | [52](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L52) · [body 276](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L276) |  | ⚪ not started |  |
-| `ReceiveExtendedEvent` | method, protected | [53](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L53) · [body 297](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L297) |  | ⚪ not started |  |
-| `LogFetchOneObject` | method, protected | [54](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L54) · [body 246](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L246) |  | ⚪ not started |  |
-| `AlertExcessiveFetch` | method, protected | [55](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L55) · [body 387](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L387) |  | ⚪ not started |  |
-| `Loaded` | method, protected | [56](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L56) · [body 393](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L393) |  | ⚪ not started |  |
-| `OnEndFetch` | property, protected | [57](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L57) |  | ⚪ not started |  |
-| `OnEndUpdate` | property, protected | [58](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L58) |  | ⚪ not started |  |
-| `OnEndFetchID` | property, protected | [59](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L59) |  | ⚪ not started |  |
-| `OnStartUpdate` | property, protected | [60](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L60) |  | ⚪ not started |  |
-| `OnStartFetch` | property, protected | [61](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L61) |  | ⚪ not started |  |
-| `OnUpdateObject` | property, protected | [62](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L62) |  | ⚪ not started |  |
-| `OnDeleteObject` | property, protected | [63](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L63) |  | ⚪ not started |  |
-| `OnCreateObject` | property, protected | [64](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L64) |  | ⚪ not started |  |
-| `OnFetchObject` | property, protected | [65](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L65) |  | ⚪ not started |  |
-| `OnFetchMember` | property, protected | [66](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L66) |  | ⚪ not started |  |
-| `OnStartFetchID` | property, protected | [67](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L67) |  | ⚪ not started |  |
-| `OnFetchID` | property, protected | [68](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L68) |  | ⚪ not started |  |
-| `OnProgressStart` | property, protected | [69](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L69) |  | ⚪ not started |  |
-| `OnProgressEnd` | property, protected | [70](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L70) |  | ⚪ not started |  |
-| `OnAlertExcessiveFetch` | property, protected | [71](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L71) |  | ⚪ not started |  |
-| `PersistenceHandle` | property, protected | [72](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L72) |  | ⚪ not started |  |
-| `FetchLog` | property, protected | [73](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L73) |  | ⚪ not started |  |
-| `Create` | constructor | [75](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L75) · [body 177](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L177) |  | ⚪ not started |  |
-| `Destroy` | destructor | [76](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L76) · [body 197](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L197) |  | ⚪ not started |  |
+| `SetPersistenceHandle` | method, private | [32](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L32) · [body 337](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L337) | [`TBoldAbstractPersistenceNotifier.SetPersistenceHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L53) | 🟢 ported: Subscribes at once; Delphi waits for Loaded when the form is streaming in. |  |
+| `GetEvent` | method, private | [33](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L33) · [body 264](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L264) | [`TBoldAbstractPersistenceNotifier.GetEvent`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L68) | 🟢 ported |  |
+| `SetEvent` | method, private | [34](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L34) · [body 331](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L331) | [`TBoldAbstractPersistenceNotifier.SetEvent`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L69) | 🟢 ported |  |
+| `CallIfAssigned` | method, private | [35](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L35) · [body 169](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L169) | [`TBoldAbstractPersistenceNotifier.CallIfAssigned`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L72) | 🟢 ported |  |
+| `GetFetchLog` | method, private | [36](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L36) · [body 269](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L269) | [`TBoldAbstractPersistenceNotifier.GetFetchLog`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L76) | 🟢 ported |  |
+| `EndFetch` | method, protected | [38](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L38) · [body 204](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L204) | [`TBoldAbstractPersistenceNotifier.EndFetch`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L78) | 🟢 ported |  |
+| `EndUpdate` | method, protected | [39](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L39) · [body 218](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L218) | [`TBoldAbstractPersistenceNotifier.EndUpdate`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L79) | 🟢 ported |  |
+| `EndFetchID` | method, protected | [40](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L40) · [body 211](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L211) | [`TBoldAbstractPersistenceNotifier.EndFetchID`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L80) | 🟢 ported |  |
+| `StartUpdate` | method, protected | [41](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L41) · [body 373](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L373) | [`TBoldAbstractPersistenceNotifier.StartUpdate`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L81) | 🟢 ported |  |
+| `StartFetch` | method, protected | [42](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L42) · [body 354](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L354) | [`TBoldAbstractPersistenceNotifier.StartFetch`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L85) | 🟢 ported |  |
+| `UpdateObject` | method, protected | [43](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L43) · [body 380](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L380) | [`TBoldAbstractPersistenceNotifier.UpdateObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L95) | 🟢 ported |  |
+| `DeleteObject` | method, protected | [44](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L44) · [body 190](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L190) | [`TBoldAbstractPersistenceNotifier.DeleteObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L96) | 🟢 ported |  |
+| `CreateObject` | method, protected | [45](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L45) · [body 183](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L183) | [`TBoldAbstractPersistenceNotifier.CreateObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L97) | 🟢 ported |  |
+| `FetchObject` | method, protected | [46](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L46) · [body 239](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L239) | [`TBoldAbstractPersistenceNotifier.FetchObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L98) | 🟢 ported |  |
+| `FetchMember` | method, protected | [47](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L47) · [body 232](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L232) | [`TBoldAbstractPersistenceNotifier.FetchMember`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L99) | 🟢 ported |  |
+| `StartFetchID` | method, protected | [48](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L48) · [body 366](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L366) | [`TBoldAbstractPersistenceNotifier.StartFetchID`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L100) | 🟢 ported |  |
+| `FetchID` | method, protected | [49](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L49) · [body 225](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L225) | [`TBoldAbstractPersistenceNotifier.FetchID`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L101) | 🟢 ported |  |
+| `ProgressStart` | method, protected | [50](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L50) · [body 290](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L290) | [`TBoldAbstractPersistenceNotifier.ProgressStart`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L102) | 🟢 ported |  |
+| `ProgressEnd` | method, protected | [51](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L51) · [body 283](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L283) | [`TBoldAbstractPersistenceNotifier.ProgressEnd`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L103) | 🟢 ported |  |
+| `Notification` | method, protected | [52](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L52) · [body 276](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L276) | [`TBoldAbstractPersistenceNotifier.ReceiveExtendedEvent`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L108) | 🔵 replaced: No component free notifications in .NET; the beDestroying subscription clears the handle. |  |
+| `ReceiveExtendedEvent` | method, protected | [53](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L53) · [body 297](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L297) | [`TBoldAbstractPersistenceNotifier.ReceiveExtendedEvent`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L108) | 🟢 ported |  |
+| `LogFetchOneObject` | method, protected | [54](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L54) · [body 246](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L246) | [`TBoldAbstractPersistenceNotifier.LogFetchOneObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L145) | 🟢 ported: Counts hours as h \* 24 \* 60 \* 1000 ms, as Delphi does. |  |
+| `AlertExcessiveFetch` | method, protected | [55](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L55) · [body 387](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L387) | [`TBoldAbstractPersistenceNotifier.AlertExcessiveFetch`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L168) | 🟢 ported |  |
+| `Loaded` | method, protected | [56](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L56) · [body 393](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L393) | [`TBoldAbstractPersistenceNotifier.ReceiveExtendedEvent`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L108) | 🔵 replaced: No form streaming in .NET; SetPersistenceHandle subscribes at once. |  |
+| `OnEndFetch` | property, protected | [57](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L57) | [`TBoldAbstractPersistenceNotifier.OnEndFetch`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L170) | 🟢 ported |  |
+| `OnEndUpdate` | property, protected | [58](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L58) | [`TBoldAbstractPersistenceNotifier.OnEndUpdate`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L171) | 🟢 ported |  |
+| `OnEndFetchID` | property, protected | [59](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L59) | [`TBoldAbstractPersistenceNotifier.OnEndFetchID`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L172) | 🟢 ported |  |
+| `OnStartUpdate` | property, protected | [60](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L60) | [`TBoldAbstractPersistenceNotifier.OnStartUpdate`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L173) | 🟢 ported |  |
+| `OnStartFetch` | property, protected | [61](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L61) | [`TBoldAbstractPersistenceNotifier.OnStartFetch`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L174) | 🟢 ported |  |
+| `OnUpdateObject` | property, protected | [62](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L62) | [`TBoldAbstractPersistenceNotifier.OnUpdateObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L175) | 🟢 ported |  |
+| `OnDeleteObject` | property, protected | [63](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L63) | [`TBoldAbstractPersistenceNotifier.OnDeleteObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L176) | 🟢 ported |  |
+| `OnCreateObject` | property, protected | [64](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L64) | [`TBoldAbstractPersistenceNotifier.OnCreateObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L177) | 🟢 ported |  |
+| `OnFetchObject` | property, protected | [65](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L65) | [`TBoldAbstractPersistenceNotifier.OnFetchObject`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L178) | 🟢 ported |  |
+| `OnFetchMember` | property, protected | [66](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L66) | [`TBoldAbstractPersistenceNotifier.OnFetchMember`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L179) | 🟢 ported |  |
+| `OnStartFetchID` | property, protected | [67](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L67) | [`TBoldAbstractPersistenceNotifier.OnStartFetchID`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L180) | 🟢 ported |  |
+| `OnFetchID` | property, protected | [68](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L68) | [`TBoldAbstractPersistenceNotifier.OnFetchID`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L181) | 🟢 ported |  |
+| `OnProgressStart` | property, protected | [69](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L69) | [`TBoldAbstractPersistenceNotifier.OnProgressStart`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L182) | 🟢 ported |  |
+| `OnProgressEnd` | property, protected | [70](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L70) | [`TBoldAbstractPersistenceNotifier.OnProgressEnd`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L183) | 🟢 ported |  |
+| `OnAlertExcessiveFetch` | property, protected | [71](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L71) | [`TBoldAbstractPersistenceNotifier.OnAlertExcessiveFetch`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L186) | 🟢 ported |  |
+| `PersistenceHandle` | property, protected | [72](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L72) | [`TBoldAbstractPersistenceNotifier.PersistenceHandle`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L193) | 🟢 ported |  |
+| `FetchLog` | property, protected | [73](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L73) | [`TBoldAbstractPersistenceNotifier.FetchLog`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L199) | 🟢 ported |  |
+| `Create` | constructor | [75](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L75) · [body 177](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L177) | [`TBoldAbstractPersistenceNotifier.TBoldAbstractPersistenceNotifier`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L31) | 🟢 ported: The owner is an IContainer where Delphi takes a TComponent owner. |  |
+| `Destroy` | destructor | [76](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L76) · [body 197](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L197) | [`TBoldAbstractPersistenceNotifier.Dispose`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L38) | 🟢 ported |  |
 
 ## TBoldPersistenceProgressNotifier
 
-class at [line 101](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L101); ⚪ not started.
+class at [line 101](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L101); 🟠 stub, C# [`[assembly: Delphi] in BoldPersistenceNotifier.cs`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L6).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
@@ -114,6 +114,12 @@ class at [line 101](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas
 | `MsgFetchObjects` | property, published | [150](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L150) |  | ⚪ not started |  |
 | `MsgRetrieveIds` | property, published | [151](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L151) |  | ⚪ not started |  |
 | `MsgUpdateDatabase` | property, published | [152](../../../Source/Persistence/Core/BoldPersistenceNotifier.pas#L152) |  | ⚪ not started |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldPersistenceNotifier.TBoldPersistenceNotifier`](../../src/Bold.Persistence/Persistence/Core/BoldPersistenceNotifier.cs#L206) (constructor)
 
 ## Dependencies
 
