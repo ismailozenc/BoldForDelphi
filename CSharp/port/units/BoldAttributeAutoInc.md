@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas`](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas) (67 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 7 symbols done, 0 verified |
+| Status | 🟢 ported: 7 of 7 symbols done, 6 verified |
 
-⚪ 7 not started
+✅ 6 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,20 +18,20 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBAAutoInc` | class | [13](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L13) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [60](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L60) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [63](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L63) |  | ⚪ not started |  |
+| `TBAAutoInc` | class | [13](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L13) | [`TBAAutoInc`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L26) | ✅ verified | ✔ [`BoldAutoIncTests.An_auto_increment_attribute_starts_at_minus_one_and_cannot_be_modified`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L30) |
+| `initialization` | initialization, implementation | [60](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L60) | [`BoldAttributeAutoInc.Initialization`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L20) | ✅ verified: A module initializer, so the class is registered before any model is used. | ✔ [`BoldAutoIncTests.An_auto_increment_attribute_starts_at_minus_one_and_cannot_be_modified`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L30) |
+| `finalization` | finalization, implementation | [63](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L63) | [`[assembly: Delphi] in BoldAttributeAutoInc.cs`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L8) | 🔵 replaced: Removed the registration; the registry lives as long as the process in .NET. |  |
 
 ## TBAAutoInc
 
-class at [line 13](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L13); ✅ verified, C# [`TBAAutoInc`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L26).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CompleteUpdate` | method, protected | [15](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L15) · [body 30](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L30) |  | ⚪ not started |  |
-| `DoSetInitialValue` | method, protected | [16](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L16) · [body 38](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L38) |  | ⚪ not started |  |
-| `InitializeMember` | method, protected | [17](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L17) · [body 47](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L47) |  | ⚪ not started |  |
-| `MayModify` | method, protected | [18](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L18) · [body 54](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L54) |  | ⚪ not started |  |
+| `CompleteUpdate` | method, protected | [15](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L15) · [body 30](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L30) | [`TBAAutoInc.CompleteUpdate`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L30) | ✅ verified | ✔ [`BoldAutoIncTests.An_auto_increment_attribute_starts_at_minus_one_and_cannot_be_modified`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L30) |
+| `DoSetInitialValue` | method, protected | [16](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L16) · [body 38](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L38) | [`TBAAutoInc.DoSetInitialValue`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L38) | ✅ verified | ✔ [`BoldAutoIncTests.An_auto_increment_attribute_starts_at_minus_one_and_cannot_be_modified`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L30) |
+| `InitializeMember` | method, protected | [17](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L17) · [body 47](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L47) | [`TBAAutoInc.InitializeMember`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L45) | ✅ verified | ✔ [`BoldAutoIncTests.An_auto_increment_attribute_starts_at_minus_one_and_cannot_be_modified`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L30) |
+| `MayModify` | method, protected | [18](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L18) · [body 54](../../../Source/Unassigned/AutoInc/BoldAttributeAutoInc.pas#L54) | [`TBAAutoInc.MayModify`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs#L52) | ✅ verified | ✔ [`BoldAutoIncTests.An_auto_increment_attribute_starts_at_minus_one_and_cannot_be_modified`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L30) |
 
 ## Dependencies
 

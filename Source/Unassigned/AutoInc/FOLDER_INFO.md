@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldAttributeAutoInc](../../../CSharp/port/units/BoldAttributeAutoInc.md) | Bold.Persistence.Sql: Unassigned/AutoInc/BoldAttributeAutoInc.cs (not started) | M5 SQL persistence |
-| [BoldPMAutoInc](../../../CSharp/port/units/BoldPMAutoInc.md) | Bold.Persistence.Sql: Unassigned/AutoInc/BoldPMAutoInc.cs (not started) | M5 SQL persistence |
+| [BoldAttributeAutoInc](../../../CSharp/port/units/BoldAttributeAutoInc.md) | [Bold.Persistence.Sql: Unassigned/AutoInc/BoldAttributeAutoInc.cs](../../../CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldAttributeAutoInc.cs) | M5 SQL persistence |
+| [BoldPMAutoInc](../../../CSharp/port/units/BoldPMAutoInc.md) | [Bold.Persistence.Sql: Unassigned/AutoInc/BoldPMAutoInc.cs](../../../CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs) | M5 SQL persistence |
 <!-- END C# PORT -->

@@ -8,6 +8,22 @@ internal sealed class TBoldAbstractModelForSqlTests : TBoldAbstractModel
         var strings = new TStringList();
         TMoldBLDRW.ModelToStrings(model, strings);
         SetFromModel(TMoldBLDRW.StringsToModel(strings));
+        // The model's own type mappings (beyond the defaults), as a type name handle would give them.
+        if (model.TypeNameDictionary is { } types)
+        {
+            for (int i = 0; i < types.Count; i++)
+            {
+                if (TypeNameDictionary.ExactMappingForModelName(types.Mapping(i).ModelName) is null)
+                {
+                    TBoldTypeNameMapping source = types.Mapping(i), copy = TypeNameDictionary.AddMapping();
+                    copy.ModelName = source.ModelName;
+                    copy.ExpressionName = source.ExpressionName;
+                    copy.DelphiName = source.DelphiName;
+                    copy.ContentsName = source.ContentsName;
+                    copy.MapperName = source.MapperName;
+                }
+            }
+        }
     }
 }
 

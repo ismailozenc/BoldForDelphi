@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Unassigned/AutoInc/BoldPMAutoInc.pas`](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas) (128 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🟢 ported: 11 of 11 symbols done, 10 verified |
 
-⚪ 11 not started
+✅ 10 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,24 +18,24 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPMAutoInc` | class | [25](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L25) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [123](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L123) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [125](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L125) |  | ⚪ not started |  |
+| `TBoldPMAutoInc` | class | [25](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L25) | [`TBoldPMAutoInc`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L24) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `initialization` | initialization, implementation | [123](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L123) | [`BoldPMAutoInc.Initialization`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L17) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `finalization` | finalization, implementation | [125](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L125) | [`[assembly: Delphi] in BoldPMAutoInc.cs`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L6) | 🔵 replaced: Removed the registration; the registry lives as long as the process in .NET. |  |
 
 ## TBoldPMAutoInc
 
-class at [line 25](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L25); ✅ verified, C# [`TBoldPMAutoInc`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L24).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnTypeAsSQL` | method, protected | [27](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L27) · [body 53](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L53) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [28](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L28) · [body 47](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L47) |  | ⚪ not started |  |
-| `DefaultDefaultDbValue` | method, protected | [29](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L29) · [body 60](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L60) |  | ⚪ not started |  |
-| `CreatePersistentStorage` | method, protected | [30](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L30) · [body 85](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L85) |  | ⚪ not started |  |
-| `GetGeneratorName` | method, protected | [31](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L31) · [body 116](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L116) |  | ⚪ not started |  |
-| `PMCreate` | method | [33](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L33) · [body 73](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L73) |  | ⚪ not started |  |
-| `PMUpdate` | method | [34](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L34) · [body 78](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L78) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [36](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L36) · [body 65](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L65) |  | ⚪ not started |  |
+| `GetColumnTypeAsSQL` | method, protected | [27](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L27) · [body 53](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L53) | [`TBoldPMAutoInc.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L39) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `GetColumnBDEFieldType` | method, protected | [28](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L28) · [body 47](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L47) | [`TBoldPMAutoInc.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L36) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `DefaultDefaultDbValue` | method, protected | [29](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L29) · [body 60](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L60) | [`TBoldPMAutoInc.DefaultDefaultDbValue`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L51) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `CreatePersistentStorage` | method, protected | [30](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L30) · [body 85](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L85) | [`TBoldPMAutoInc.CreatePersistentStorage`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L71) | ✅ verified: Runs the statements on an exec query; Delphi called ExecSQL on an IBoldQuery, which has none. | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `GetGeneratorName` | method, protected | [31](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L31) · [body 116](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L116) | [`TBoldPMAutoInc.GetGeneratorName`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L99) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `PMCreate` | method | [33](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L33) · [body 73](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L73) | [`TBoldPMAutoInc.PMCreate`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L55) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `PMUpdate` | method | [34](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L34) · [body 78](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L78) | [`TBoldPMAutoInc.PMUpdate`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L62) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
+| `CreateFromMold` | constructor | [36](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L36) · [body 65](../../../Source/Unassigned/AutoInc/BoldPMAutoInc.pas#L65) | [`TBoldPMAutoInc.TBoldPMAutoInc`](../../src/Bold.Persistence.Sql/Unassigned/AutoInc/BoldPMAutoInc.cs#L27) | ✅ verified | ✔ [`BoldAutoIncTests.The_mapper_declares_an_identity_column_and_does_not_write_it`](../../tests/Bold.Persistence.Sql.Tests/Unassigned/AutoInc/BoldAutoIncTests.cs#L44) |
 
 ## Dependencies
 
