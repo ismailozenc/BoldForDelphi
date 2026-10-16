@@ -10,7 +10,8 @@ internal static class TestDatabase
 #if BOLD_OFFLINE
         var connection = new Bold.Tests.Sqlite.SqliteConnection("Data Source=" + DataSource);
 #else
-        var connection = new Microsoft.Data.Sqlite.SqliteConnection("Data Source=" + DataSource);
+        // Without pooling, closing the connection releases the file, so a test can delete it (Windows locks open files).
+        var connection = new Microsoft.Data.Sqlite.SqliteConnection("Data Source=" + DataSource + ";Pooling=False");
 #endif
         connection.Open();
         return connection;
