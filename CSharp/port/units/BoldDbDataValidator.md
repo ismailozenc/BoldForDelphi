@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Validator/BoldDbDataValidator.pas`](../../../Source/PMapper/Validator/BoldDbDataValidator.pas) (590 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | 🟢 ported: 18 of 18 symbols done, 17 verified |
 
-⚪ 18 not started
+✅ 17 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,31 +18,46 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDbDataValidator` | class | [19](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L19) |  | ⚪ not started |  |
+| `TBoldDbDataValidator` | class | [19](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L19) | [`TBoldDbDataValidator`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L87) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
 
 ## TBoldDbDataValidator
 
-class at [line 19](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L19); ✅ verified, C# [`TBoldDbDataValidator`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L87).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetQuery` | method, private | [24](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L24) · [body 559](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L559) |  | ⚪ not started |  |
-| `SuggesttableInsert` | method, private | [25](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L25) · [body 213](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L213) |  | ⚪ not started |  |
-| `MemberIsInherited` | method, protected | [28](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L28) · [body 142](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L142) |  | ⚪ not started |  |
-| `Prepare2TableTest` | method, protected | [29](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L29) · [body 150](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L150) |  | ⚪ not started |  |
-| `AddRemedyForDeleteObjects` | method, protected | [30](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L30) · [body 580](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L580) |  | ⚪ not started |  |
-| `DeActivate` | method, protected | [31](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L31) · [body 573](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L573) |  | ⚪ not started |  |
-| `Query` | property, protected | [32](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L32) |  | ⚪ not started |  |
-| `TypeTestedTables` | property, protected | [33](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L33) |  | ⚪ not started |  |
-| `ExistenceInParentTestedTables` | property, protected | [34](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L34) |  | ⚪ not started |  |
-| `Create` | constructor | [36](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L36) · [body 566](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L566) |  | ⚪ not started |  |
-| `Destroy` | destructor | [37](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L37) · [body 133](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L133) |  | ⚪ not started |  |
-| `ValidateExistence` | method | [38](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L38) · [body 273](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L273) |  | ⚪ not started |  |
-| `ValidateStrayObjects` | method | [39](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L39) · [body 526](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L526) |  | ⚪ not started |  |
-| `ValidateRelations` | method | [40](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L40) · [body 441](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L441) |  | ⚪ not started |  |
-| `ValidateLinkObjectDupes` | method | [41](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L41) · [body 346](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L346) |  | ⚪ not started |  |
-| `ValidateLinkObjects` | method | [42](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L42) · [body 384](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L384) |  | ⚪ not started |  |
-| `Validate` | method | [43](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L43) · [body 177](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L177) |  | ⚪ not started |  |
+| `GetQuery` | method, private | [24](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L24) · [body 559](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L559) | [`TBoldDbDataValidator.GetQuery`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L473) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `SuggesttableInsert` | method, private | [25](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L25) · [body 213](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L213) | [`TBoldDbDataValidator.SuggesttableInsert`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L168) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `MemberIsInherited` | method, protected | [28](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L28) · [body 142](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L142) | [`TBoldDbDataValidator.MemberIsInherited`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L100) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `Prepare2TableTest` | method, protected | [29](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L29) · [body 150](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L150) | [`TBoldDbDataValidator.Prepare2TableTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L105) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `AddRemedyForDeleteObjects` | method, protected | [30](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L30) · [body 580](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L580) | [`TBoldDbDataValidator.AddRemedyForDeleteObjects`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L488) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `DeActivate` | method, protected | [31](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L31) · [body 573](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L573) | [`TBoldDbDataValidator.DeActivate`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L476) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `Query` | property, protected | [32](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L32) | [`TBoldDbDataValidator.Query`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L499) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `TypeTestedTables` | property, protected | [33](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L33) | [`TBoldDbDataValidator.TypeTestedTables`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L500) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `ExistenceInParentTestedTables` | property, protected | [34](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L34) | [`TBoldDbDataValidator.ExistenceInParentTestedTables`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L501) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `Create` | constructor | [36](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L36) · [body 566](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L566) | [`TBoldDbDataValidator.TBoldDbDataValidator`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L94) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `Destroy` | destructor | [37](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L37) · [body 133](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L133) | [`[assembly: Delphi] in BoldDbDataValidator.cs`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L7) | 🔵 replaced: Freed the lists and released the query; DeActivate releases the query, the garbage collector the rest. |  |
+| `ValidateExistence` | method | [38](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L38) · [body 273](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L273) | [`TBoldDbDataValidator.ValidateExistence`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L235) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `ValidateStrayObjects` | method | [39](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L39) · [body 526](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L526) | [`TBoldDbDataValidator.ValidateStrayObjects`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L445) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `ValidateRelations` | method | [40](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L40) · [body 441](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L441) | [`TBoldDbDataValidator.ValidateRelations`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L379) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `ValidateLinkObjectDupes` | method | [41](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L41) · [body 346](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L346) | [`TBoldDbDataValidator.ValidateLinkObjectDupes`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L290) | ✅ verified: Moves to the next row and closes the query; Delphi never did, so the loop did not end (the call is commented out in Validate). | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `ValidateLinkObjects` | method | [42](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L42) · [body 384](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L384) | [`TBoldDbDataValidator.ValidateLinkObjects`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L327) | ✅ verified: Each test starts with an empty id list and closes its query; Delphi reported the earlier ids again. | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+| `Validate` | method | [43](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L43) · [body 177](../../../Source/PMapper/Validator/BoldDbDataValidator.pas#L177) | [`TBoldDbDataValidator.Validate`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L130) | ✅ verified | ✔ [`BoldDbValidatorTests.The_data_validator_finds_broken_links_missing_rows_and_stray_objects`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L31) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldDbDataValidator.Field_BOLD_ID`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L14) (const)
+- [`BoldDbDataValidator.ExistenceInParentTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L17) (const)
+- [`BoldDbDataValidator.ExistenceInChildTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L26) (const)
+- [`BoldDbDataValidator.TypeTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L36) (const)
+- [`BoldDbDataValidator.RelationTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L44) (const)
+- [`BoldDbDataValidator.LinkObjectDupesTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L53) (const)
+- [`BoldDbDataValidator.LinkObjectTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L61) (const)
+- [`BoldDbDataValidator.LinkObjectTest2`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L68) (const)
+- [`BoldDbDataValidator.StrayObjectsTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L73) (const)
+- [`BoldDbDataValidator.SingleSingleEmbeddInconsistencyTest`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs#L79) (const)
 
 ## Dependencies
 

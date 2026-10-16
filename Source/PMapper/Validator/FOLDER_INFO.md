@@ -25,7 +25,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldDbDataValidator](../../../CSharp/port/units/BoldDbDataValidator.md) | Bold.Persistence.Sql: PMapper/Validator/BoldDbDataValidator.cs (not started) | M5 SQL persistence |
-| [BoldDbStructureValidator](../../../CSharp/port/units/BoldDbStructureValidator.md) | Bold.Persistence.Sql: PMapper/Validator/BoldDbStructureValidator.cs (not started) | M5 SQL persistence |
-| [BoldDbValidator](../../../CSharp/port/units/BoldDbValidator.md) | Bold.Persistence.Sql: PMapper/Validator/BoldDbValidator.cs (not started) | M5 SQL persistence |
+| [BoldDbDataValidator](../../../CSharp/port/units/BoldDbDataValidator.md) | [Bold.Persistence.Sql: PMapper/Validator/BoldDbDataValidator.cs](../../../CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbDataValidator.cs) | M5 SQL persistence |
+| [BoldDbStructureValidator](../../../CSharp/port/units/BoldDbStructureValidator.md) | [Bold.Persistence.Sql: PMapper/Validator/BoldDbStructureValidator.cs](../../../CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbStructureValidator.cs) | M5 SQL persistence |
+| [BoldDbValidator](../../../CSharp/port/units/BoldDbValidator.md) | [Bold.Persistence.Sql: PMapper/Validator/BoldDbValidator.cs](../../../CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs) | M5 SQL persistence |
 <!-- END C# PORT -->

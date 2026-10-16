@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Validator/BoldDbValidator.pas`](../../../Source/PMapper/Validator/BoldDbValidator.pas) (238 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | 🟢 ported: 18 of 18 symbols done, 17 verified |
 
-⚪ 18 not started
+✅ 17 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,31 +18,37 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDbValidator` | class | [16](../../../Source/PMapper/Validator/BoldDbValidator.pas#L16) |  | ⚪ not started |  |
+| `TBoldDbValidator` | class | [16](../../../Source/PMapper/Validator/BoldDbValidator.pas#L16) | [`TBoldDbValidator`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L23) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
 
 ## TBoldDbValidator
 
-class at [line 16](../../../Source/PMapper/Validator/BoldDbValidator.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/PMapper/Validator/BoldDbValidator.pas#L16); ✅ verified, C# [`TBoldDbValidator`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L23).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSystemSQLMapper` | method, private | [22](../../../Source/PMapper/Validator/BoldDbValidator.pas#L22) · [body 69](../../../Source/PMapper/Validator/BoldDbValidator.pas#L69) |  | ⚪ not started |  |
-| `SetEnabled` | method, private | [23](../../../Source/PMapper/Validator/BoldDbValidator.pas#L23) · [body 58](../../../Source/PMapper/Validator/BoldDbValidator.pas#L58) |  | ⚪ not started |  |
-| `CheckTypeTableConsistency` | method, private | [24](../../../Source/PMapper/Validator/BoldDbValidator.pas#L24) · [body 87](../../../Source/PMapper/Validator/BoldDbValidator.pas#L87) |  | ⚪ not started |  |
-| `GetDataBase` | method, private | [25](../../../Source/PMapper/Validator/BoldDbValidator.pas#L25) · [body 228](../../../Source/PMapper/Validator/BoldDbValidator.pas#L228) |  | ⚪ not started |  |
-| `DeActivate` | method, protected | [27](../../../Source/PMapper/Validator/BoldDbValidator.pas#L27) · [body 182](../../../Source/PMapper/Validator/BoldDbValidator.pas#L182) |  | ⚪ not started |  |
-| `SetPersistenceHandle` | method, protected | [28](../../../Source/PMapper/Validator/BoldDbValidator.pas#L28) · [body 82](../../../Source/PMapper/Validator/BoldDbValidator.pas#L82) |  | ⚪ not started |  |
-| `TypeTableName` | method, protected | [29](../../../Source/PMapper/Validator/BoldDbValidator.pas#L29) · [body 233](../../../Source/PMapper/Validator/BoldDbValidator.pas#L233) |  | ⚪ not started |  |
-| `SystemSQLMapper` | property, protected | [30](../../../Source/PMapper/Validator/BoldDbValidator.pas#L30) |  | ⚪ not started |  |
-| `DataBase` | property, protected | [31](../../../Source/PMapper/Validator/BoldDbValidator.pas#L31) |  | ⚪ not started |  |
-| `Create` | constructor | [33](../../../Source/PMapper/Validator/BoldDbValidator.pas#L33) · [body 76](../../../Source/PMapper/Validator/BoldDbValidator.pas#L76) |  | ⚪ not started |  |
-| `Destroy` | destructor | [34](../../../Source/PMapper/Validator/BoldDbValidator.pas#L34) · [body 63](../../../Source/PMapper/Validator/BoldDbValidator.pas#L63) |  | ⚪ not started |  |
-| `Activate` | method | [35](../../../Source/PMapper/Validator/BoldDbValidator.pas#L35) · [body 176](../../../Source/PMapper/Validator/BoldDbValidator.pas#L176) |  | ⚪ not started |  |
-| `Validate` | method | [36](../../../Source/PMapper/Validator/BoldDbValidator.pas#L36) |  | ⚪ not started |  |
-| `Execute` | method | [37](../../../Source/PMapper/Validator/BoldDbValidator.pas#L37) · [body 192](../../../Source/PMapper/Validator/BoldDbValidator.pas#L192) |  | ⚪ not started |  |
-| `remedy` | property | [38](../../../Source/PMapper/Validator/BoldDbValidator.pas#L38) |  | ⚪ not started |  |
-| `PersistenceHandle` | property, published | [40](../../../Source/PMapper/Validator/BoldDbValidator.pas#L40) |  | ⚪ not started |  |
-| `Enabled` | property, published | [41](../../../Source/PMapper/Validator/BoldDbValidator.pas#L41) |  | ⚪ not started |  |
+| `GetSystemSQLMapper` | method, private | [22](../../../Source/PMapper/Validator/BoldDbValidator.pas#L22) · [body 69](../../../Source/PMapper/Validator/BoldDbValidator.pas#L69) | [`TBoldDbValidator.GetSystemSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L40) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `SetEnabled` | method, private | [23](../../../Source/PMapper/Validator/BoldDbValidator.pas#L23) · [body 58](../../../Source/PMapper/Validator/BoldDbValidator.pas#L58) | [`TBoldDbValidator.SetEnabled`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L37) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `CheckTypeTableConsistency` | method, private | [24](../../../Source/PMapper/Validator/BoldDbValidator.pas#L24) · [body 87](../../../Source/PMapper/Validator/BoldDbValidator.pas#L87) | [`TBoldDbValidator.CheckTypeTableConsistency`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L50) | ✅ verified: Delphi's message dialog is the BoldDbValidator.ConfirmHandler callback. | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `GetDataBase` | method, private | [25](../../../Source/PMapper/Validator/BoldDbValidator.pas#L25) · [body 228](../../../Source/PMapper/Validator/BoldDbValidator.pas#L228) | [`TBoldDbValidator.GetDataBase`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L203) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `DeActivate` | method, protected | [27](../../../Source/PMapper/Validator/BoldDbValidator.pas#L27) · [body 182](../../../Source/PMapper/Validator/BoldDbValidator.pas#L182) | [`TBoldDbValidator.DeActivate`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L141) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `SetPersistenceHandle` | method, protected | [28](../../../Source/PMapper/Validator/BoldDbValidator.pas#L28) · [body 82](../../../Source/PMapper/Validator/BoldDbValidator.pas#L82) | [`TBoldDbValidator.SetPersistenceHandle`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L43) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `TypeTableName` | method, protected | [29](../../../Source/PMapper/Validator/BoldDbValidator.pas#L29) · [body 233](../../../Source/PMapper/Validator/BoldDbValidator.pas#L233) | [`TBoldDbValidator.TypeTableName`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L207) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `SystemSQLMapper` | property, protected | [30](../../../Source/PMapper/Validator/BoldDbValidator.pas#L30) | [`TBoldDbValidator.SystemSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L211) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `DataBase` | property, protected | [31](../../../Source/PMapper/Validator/BoldDbValidator.pas#L31) | [`TBoldDbValidator.DataBase`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L212) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `Create` | constructor | [33](../../../Source/PMapper/Validator/BoldDbValidator.pas#L33) · [body 76](../../../Source/PMapper/Validator/BoldDbValidator.pas#L76) | [`TBoldDbValidator.TBoldDbValidator`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L31) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `Destroy` | destructor | [34](../../../Source/PMapper/Validator/BoldDbValidator.pas#L34) · [body 63](../../../Source/PMapper/Validator/BoldDbValidator.pas#L63) | [`[assembly: Delphi] in BoldDbValidator.cs`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L7) | 🔵 replaced: Freed the remedy list; the garbage collector does that in .NET. |  |
+| `Activate` | method | [35](../../../Source/PMapper/Validator/BoldDbValidator.pas#L35) · [body 176](../../../Source/PMapper/Validator/BoldDbValidator.pas#L176) | [`TBoldDbValidator.Activate`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L133) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `Validate` | method | [36](../../../Source/PMapper/Validator/BoldDbValidator.pas#L36) | [`TBoldDbValidator.Validate`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L152) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `Execute` | method | [37](../../../Source/PMapper/Validator/BoldDbValidator.pas#L37) · [body 192](../../../Source/PMapper/Validator/BoldDbValidator.pas#L192) | [`TBoldDbValidator.Execute`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L156) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `remedy` | property | [38](../../../Source/PMapper/Validator/BoldDbValidator.pas#L38) | [`TBoldDbValidator.remedy`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L213) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `PersistenceHandle` | property, published | [40](../../../Source/PMapper/Validator/BoldDbValidator.pas#L40) | [`TBoldDbValidator.PersistenceHandle`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L214) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+| `Enabled` | property, published | [41](../../../Source/PMapper/Validator/BoldDbValidator.pas#L41) | [`TBoldDbValidator.Enabled`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L215) | ✅ verified | ✔ [`BoldDbValidatorTests.The_structure_validator_finds_missing_tables_and_columns`](../../tests/Bold.Persistence.Sql.Tests/PMapper/Validator/BoldDbValidatorTests.cs#L12) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldDbValidator.ConfirmHandler`](../../src/Bold.Persistence.Sql/PMapper/Validator/BoldDbValidator.cs#L18) (property)
 
 ## Dependencies
 

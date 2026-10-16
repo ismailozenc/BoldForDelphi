@@ -71,6 +71,23 @@ public class TIndexDefs : IEnumerable<TIndexDef>
 
     public void Clear() => fItems.Clear();
 
+    /// <summary>
+    /// Delphi's GetIndexForFields: the first index whose leading fields (separated by semicolons) are Fields.
+    /// </summary>
+    public TIndexDef? GetIndexForFields(string Fields, bool CaseInsensitive)
+    {
+        StringComparison comparison = CaseInsensitive ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal;
+        foreach (TIndexDef def in fItems)
+        {
+            if (def.Fields.StartsWith(Fields, comparison) && (def.Fields.Length == Fields.Length || def.Fields[Fields.Length] == ';'))
+            {
+                return def;
+            }
+        }
+
+        return null;
+    }
+
     /// <summary>What reads the definitions from the database; the data set sets it (Delphi asks the data set too).</summary>
     public Action<TIndexDefs>? Updater { get; set; }
 
