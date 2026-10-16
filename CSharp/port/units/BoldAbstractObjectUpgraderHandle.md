@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas`](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas) (77 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 10 symbols done, 0 verified |
+| Status | 🟢 ported: 10 of 10 symbols done, 0 verified |
 
-⚪ 10 not started
+🟢 10 ported
 
 ## Unit level
 
@@ -18,23 +18,23 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractObjectUpgraderHandle` | class | [10](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L10) |  | ⚪ not started |  |
+| `TBoldAbstractObjectUpgraderHandle` | class | [10](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L10) | [`TBoldAbstractObjectUpgraderHandle`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L9) | 🟢 ported |  |
 
 ## TBoldAbstractObjectUpgraderHandle
 
-class at [line 10](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L10); ⚪ not started.
+class at [line 10](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L10); 🟢 ported, C# [`TBoldAbstractObjectUpgraderHandle`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L9).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetConfig` | method, private | [14](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L14) · [body 47](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L47) |  | ⚪ not started |  |
-| `SetConfig` | method, private | [15](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L15) · [body 67](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L67) |  | ⚪ not started |  |
-| `GetObjectUpgrader` | method, private | [16](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L16) · [body 60](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L60) |  | ⚪ not started |  |
-| `ConfigClass` | method, protected | [18](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L18) · [body 35](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L35) |  | ⚪ not started |  |
-| `CreateObjectUpgrader` | method, protected | [19](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L19) |  | ⚪ not started |  |
-| `GetHandledObject` | method, protected | [20](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L20) · [body 54](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L54) |  | ⚪ not started |  |
-| `Destroy` | destructor | [22](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L22) · [body 40](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L40) |  | ⚪ not started |  |
-| `ObjectUpgrader` | property | [23](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L23) |  | ⚪ not started |  |
-| `Config` | property, published | [25](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L25) |  | ⚪ not started |  |
+| `GetConfig` | method, private | [14](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L14) · [body 47](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L47) | [`TBoldAbstractObjectUpgraderHandle.GetConfig`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L27) | 🟢 ported: The configuration has no owner here (the handle is not a TPersistent in .NET). |  |
+| `SetConfig` | method, private | [15](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L15) · [body 67](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L67) | [`TBoldAbstractObjectUpgraderHandle.SetConfig`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L30) | 🟢 ported |  |
+| `GetObjectUpgrader` | method, private | [16](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L16) · [body 60](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L60) | [`TBoldAbstractObjectUpgraderHandle.GetObjectUpgrader`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L40) | 🟢 ported |  |
+| `ConfigClass` | method, protected | [18](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L18) · [body 35](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L35) | [`TBoldAbstractObjectUpgraderHandle.ConfigClass`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L43) | 🟢 ported |  |
+| `CreateObjectUpgrader` | method, protected | [19](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L19) | [`TBoldAbstractObjectUpgraderHandle.CreateObjectUpgrader`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L46) | 🟢 ported |  |
+| `GetHandledObject` | method, protected | [20](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L20) · [body 54](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L54) | [`TBoldAbstractObjectUpgraderHandle.GetHandledObject`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L49) | 🟢 ported |  |
+| `Destroy` | destructor | [22](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L22) · [body 40](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L40) | [`TBoldAbstractObjectUpgraderHandle.Dispose`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L15) | 🟢 ported |  |
+| `ObjectUpgrader` | property | [23](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L23) | [`TBoldAbstractObjectUpgraderHandle.ObjectUpgrader`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L51) | 🟢 ported |  |
+| `Config` | property, published | [25](../../../Source/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.pas#L25) | [`TBoldAbstractObjectUpgraderHandle.Config`](../../src/Bold.Persistence.Sql/Persistence/ObjectUpgrading/BoldAbstractObjectUpgraderHandle.cs#L52) | 🟢 ported |  |
 
 ## Dependencies
 

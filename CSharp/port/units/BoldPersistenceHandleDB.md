@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/DB/BoldPersistenceHandleDB.pas`](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas) (146 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | ✅ verified: 12 of 12 symbols done, 11 verified |
 
-⚪ 12 not started
+✅ 11 verified · ⚫ 1 dropped
 
 ## Unit level
 
@@ -18,25 +18,32 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandleDB` | class | [15](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L15) |  | ⚪ not started |  |
+| `TBoldPersistenceHandleDB` | class | [15](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L15) | [`TBoldPersistenceHandleDB`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L18) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
 
 ## TBoldPersistenceHandleDB
 
-class at [line 15](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L15); ✅ verified, C# [`TBoldPersistenceHandleDB`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_ReceiveComponentEvents` | method, private | [19](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L19) · [body 123](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L123) |  | ⚪ not started |  |
-| `SetDatabaseAdapter` | method, private | [20](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L20) · [body 113](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L113) |  | ⚪ not started |  |
-| `PlaceComponentSubscriptions` | method, private | [21](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L21) · [body 96](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L96) |  | ⚪ not started |  |
-| `GetSQLDatabaseConfig` | method, protected | [23](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L23) · [body 88](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L88) |  | ⚪ not started |  |
-| `GetDataBaseInterface` | method, protected | [24](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L24) · [body 69](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L69) |  | ⚪ not started |  |
-| `SetActive` | method, protected | [25](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L25) · [body 106](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L106) |  | ⚪ not started |  |
-| `AssertSQLDatabaseconfig` | method, protected | [26](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L26) · [body 62](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L62) |  | ⚪ not started |  |
-| `GetNewComponentName` | method, protected | [28](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L28) · [body 77](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L77) |  | ⚪ not started |  |
-| `Create` | constructor | [31](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L31) · [body 50](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L50) |  | ⚪ not started |  |
-| `Destroy` | destructor | [32](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L32) · [body 56](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L56) |  | ⚪ not started |  |
-| `DatabaseAdapter` | property, published | [34](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L34) |  | ⚪ not started |  |
+| `_ReceiveComponentEvents` | method, private | [19](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L19) · [body 123](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L123) | [`TBoldPersistenceHandleDB._ReceiveComponentEvents`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L42) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `SetDatabaseAdapter` | method, private | [20](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L20) · [body 113](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L113) | [`TBoldPersistenceHandleDB.SetDatabaseAdapter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L51) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `PlaceComponentSubscriptions` | method, private | [21](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L21) · [body 96](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L96) | [`TBoldPersistenceHandleDB.PlaceComponentSubscriptions`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L61) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `GetSQLDatabaseConfig` | method, protected | [23](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L23) · [body 88](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L88) | [`TBoldPersistenceHandleDB.GetSQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L72) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `GetDataBaseInterface` | method, protected | [24](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L24) · [body 69](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L69) | [`TBoldPersistenceHandleDB.GetDataBaseInterface`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L75) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `SetActive` | method, protected | [25](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L25) · [body 106](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L106) | [`TBoldPersistenceHandleDB.SetActive`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L78) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `AssertSQLDatabaseconfig` | method, protected | [26](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L26) · [body 62](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L62) | [`TBoldPersistenceHandleDB.AssertSQLDatabaseconfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L89) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `GetNewComponentName` | method, protected | [28](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L28) · [body 77](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L77) | [`[assembly: Delphi] in BoldPersistenceHandleDB.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L5) | ⚫ dropped: Named new components in the Delphi form designer. |  |
+| `Create` | constructor | [31](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L31) · [body 50](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L50) | [`TBoldPersistenceHandleDB.TBoldPersistenceHandleDB`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L24) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `Destroy` | destructor | [32](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L32) · [body 56](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L56) | [`TBoldPersistenceHandleDB.Dispose`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L30) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `DatabaseAdapter` | property, published | [34](../../../Source/Persistence/DB/BoldPersistenceHandleDB.pas#L34) | [`TBoldPersistenceHandleDB.DatabaseAdapter`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L97) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldPersistenceHandleDB.breDatabaseAdapterDestroying`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L12) (const)
+- [`BoldPersistenceHandleDB.breDatabaseAdapterChanging`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldPersistenceHandleDB.cs#L13) (const)
 
 ## Dependencies
 

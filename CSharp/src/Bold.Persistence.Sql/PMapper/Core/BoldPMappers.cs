@@ -608,7 +608,7 @@ public abstract class TBoldObjectPersistenceMapper : TBoldPersistenceMapper
 
     [Delphi(PortStatus.Ported)]
     public abstract void PMFetchExactIDList(TBoldObjectIdList ObjectIDList, IBoldValueSpace ValueSpace, TBoldMemberIdList? MemberIdList, int FetchMode,
-        TBoldIDTranslationList TranslationList, TBoldObjectIdList MissingList);
+        TBoldIDTranslationList TranslationList, TBoldObjectIdList? MissingList);
 
     /// <summary>
     /// Fetches ids of any classes: makes them exact, then fetches per class mapper; a single member asked for objects of

@@ -278,7 +278,7 @@ public abstract class TBoldObjectSQLMapper : TBoldObjectPersistenceMapper
         fAllTables ??= new TBoldSQLTableDescriptionList(SystemPersistenceMapper.PSSystemDescription) { OwnsEntries = false };
 
     [Delphi(PortStatus.Ported)]
-    protected void SQLForMembers(TBoldSQLTableDescription? Table, TStrings SQL, TBoldMemberPersistenceMapperList MemberList, TBoldSQLStyle SQLStyle, bool IncludeKey,
+    protected internal void SQLForMembers(TBoldSQLTableDescription? Table, TStrings SQL, TBoldMemberPersistenceMapperList MemberList, TBoldSQLStyle SQLStyle, bool IncludeKey,
         bool StoredInObjectOnly, bool useAlias)
     {
         if (SQLStyle is TBoldSQLStyle.ssColumns or TBoldSQLStyle.ssParameters && IncludeKey)

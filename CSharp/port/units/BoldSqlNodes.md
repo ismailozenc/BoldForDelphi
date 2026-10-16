@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/SQL/BoldSqlNodes.pas`](../../../Source/PMapper/SQL/BoldSqlNodes.pas) (986 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 151 symbols done, 0 verified |
+| Status | 🟢 ported: 151 of 151 symbols done, 0 verified |
 
-⚪ 151 not started
+🟢 144 ported · 🔵 7 replaced
 
 ## Unit level
 
@@ -18,290 +18,290 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSqlNodeVisitor` | class | [33](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L33) |  | ⚪ not started |  |
-| `TBoldSqlNodeList` | class | [52](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L52) |  | ⚪ not started |  |
-| `TBoldSqlNode` | class | [64](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L64) |  | ⚪ not started |  |
-| `TBoldSqlTypeNode` | class | [99](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L99) |  | ⚪ not started |  |
-| `TBoldSqlListCoercion` | class | [110](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L110) |  | ⚪ not started |  |
-| `TBoldSqlOperation` | class | [120](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L120) |  | ⚪ not started |  |
-| `TBoldSqlIteration` | class | [134](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L134) |  | ⚪ not started |  |
-| `TBoldSqlMember` | class | [146](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L146) |  | ⚪ not started |  |
-| `TBoldSqlVariableBinding` | class | [168](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L168) |  | ⚪ not started |  |
-| `TBoldSqlVariableReference` | class | [189](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L189) |  | ⚪ not started |  |
-| `TBoldSqlLiteral` | class | [208](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L208) |  | ⚪ not started |  |
-| `TBoldSqlStrLiteral` | class | [216](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L216) |  | ⚪ not started |  |
-| `TBoldSqlDateLiteral` | class | [227](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L227) |  | ⚪ not started |  |
-| `TBoldSqlTimeLiteral` | class | [238](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L238) |  | ⚪ not started |  |
-| `TBoldSqlFloatLiteral` | class | [251](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L251) |  | ⚪ not started |  |
-| `TBoldSqlIntLiteral` | class | [262](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L262) |  | ⚪ not started |  |
-| `TBoldSqlEnumLiteral` | class | [273](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L273) |  | ⚪ not started |  |
-| `TBoldSqlSymbol` | class | [286](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L286) |  | ⚪ not started |  |
-| `TBoldSQLWCFVariable` | class | [297](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L297) |  | ⚪ not started |  |
+| `TBoldSqlNodeVisitor` | class | [33](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L33) | [`TBoldSqlNodeVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L18) | 🟢 ported |  |
+| `TBoldSqlNodeList` | class | [52](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L52) | [`TBoldSqlNodeList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L39) | 🟢 ported |  |
+| `TBoldSqlNode` | class | [64](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L64) | [`TBoldSqlNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L69) | 🟢 ported |  |
+| `TBoldSqlTypeNode` | class | [99](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L99) | [`TBoldSqlTypeNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L245) | 🟢 ported |  |
+| `TBoldSqlListCoercion` | class | [110](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L110) | [`TBoldSqlListCoercion`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L270) | 🟢 ported |  |
+| `TBoldSqlOperation` | class | [120](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L120) | [`TBoldSqlOperation`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L292) | 🟢 ported |  |
+| `TBoldSqlIteration` | class | [134](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L134) | [`TBoldSqlIteration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L317) | 🟢 ported |  |
+| `TBoldSqlMember` | class | [146](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L146) | [`TBoldSqlMember`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L343) | 🟢 ported |  |
+| `TBoldSqlVariableBinding` | class | [168](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L168) | [`TBoldSqlVariableBinding`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L388) | 🟢 ported |  |
+| `TBoldSqlVariableReference` | class | [189](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L189) | [`TBoldSqlVariableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L429) | 🟢 ported |  |
+| `TBoldSqlLiteral` | class | [208](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L208) | [`TBoldSqlLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L480) | 🟢 ported |  |
+| `TBoldSqlStrLiteral` | class | [216](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L216) | [`TBoldSqlStrLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L496) | 🟢 ported |  |
+| `TBoldSqlDateLiteral` | class | [227](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L227) | [`TBoldSqlDateLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L517) | 🟢 ported |  |
+| `TBoldSqlTimeLiteral` | class | [238](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L238) | [`TBoldSqlTimeLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L541) | 🟢 ported |  |
+| `TBoldSqlFloatLiteral` | class | [251](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L251) | [`TBoldSqlFloatLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L565) | 🟢 ported |  |
+| `TBoldSqlIntLiteral` | class | [262](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L262) | [`TBoldSqlIntLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L589) | 🟢 ported |  |
+| `TBoldSqlEnumLiteral` | class | [273](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L273) | [`TBoldSqlEnumLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L614) | 🟢 ported |  |
+| `TBoldSqlSymbol` | class | [286](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L286) | [`TBoldSqlSymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L640) | 🟢 ported |  |
+| `TBoldSQLWCFVariable` | class | [297](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L297) | [`TBoldSQLWCFVariable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L661) | 🟢 ported |  |
 
 ## TBoldSqlNodeVisitor
 
-class at [line 33](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L33); ⚪ not started.
+class at [line 33](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L33); 🟢 ported, C# [`TBoldSqlNodeVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `VisitTBoldSqlNode` | method, protected | [35](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L35) · [body 713](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L713) |  | ⚪ not started |  |
-| `VisitTBoldSqlListCoercion` | method, protected | [36](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L36) · [body 698](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L698) |  | ⚪ not started |  |
-| `VisitTBoldSqlOperation` | method, protected | [37](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L37) · [body 723](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L723) |  | ⚪ not started |  |
-| `VisitTBoldSqlIteration` | method, protected | [38](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L38) · [body 693](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L693) |  | ⚪ not started |  |
-| `VisitTBoldSqlMember` | method, protected | [39](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L39) · [body 708](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L708) |  | ⚪ not started |  |
-| `VisitTBoldSqlLiteral` | method, protected | [40](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L40) · [body 703](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L703) |  | ⚪ not started |  |
-| `VisitTBoldSqlStrLiteral` | method, protected | [41](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L41) · [body 728](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L728) |  | ⚪ not started |  |
-| `VisitTBoldSqlFloatLiteral` | method, protected | [42](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L42) · [body 718](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L718) |  | ⚪ not started |  |
-| `VisitTBoldSqlEnumLiteral` | method, protected | [43](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L43) · [body 683](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L683) |  | ⚪ not started |  |
-| `VisitTBoldSqlIntLiteral` | method, protected | [44](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L44) · [body 688](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L688) |  | ⚪ not started |  |
-| `VisitTBoldSqlDateLiteral` | method, protected | [45](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L45) · [body 748](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L748) |  | ⚪ not started |  |
-| `VisitTBoldSqlTimeLiteral` | method, protected | [46](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L46) · [body 754](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L754) |  | ⚪ not started |  |
-| `VisitTBoldSqlVariableBinding` | method, protected | [47](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L47) · [body 738](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L738) |  | ⚪ not started |  |
-| `VisitTBoldSqlVariableReference` | method, protected | [48](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L48) · [body 743](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L743) |  | ⚪ not started |  |
-| `VisitTBoldSqlTypeNode` | method, protected | [49](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L49) · [body 733](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L733) |  | ⚪ not started |  |
+| `VisitTBoldSqlNode` | method, protected | [35](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L35) · [body 713](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L713) | [`TBoldSqlNodeVisitor.VisitTBoldSqlNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L20) | 🟢 ported |  |
+| `VisitTBoldSqlListCoercion` | method, protected | [36](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L36) · [body 698](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L698) | [`TBoldSqlNodeVisitor.VisitTBoldSqlListCoercion`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L21) | 🟢 ported |  |
+| `VisitTBoldSqlOperation` | method, protected | [37](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L37) · [body 723](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L723) | [`TBoldSqlNodeVisitor.VisitTBoldSqlOperation`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L22) | 🟢 ported |  |
+| `VisitTBoldSqlIteration` | method, protected | [38](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L38) · [body 693](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L693) | [`TBoldSqlNodeVisitor.VisitTBoldSqlIteration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L23) | 🟢 ported |  |
+| `VisitTBoldSqlMember` | method, protected | [39](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L39) · [body 708](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L708) | [`TBoldSqlNodeVisitor.VisitTBoldSqlMember`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L24) | 🟢 ported |  |
+| `VisitTBoldSqlLiteral` | method, protected | [40](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L40) · [body 703](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L703) | [`TBoldSqlNodeVisitor.VisitTBoldSqlLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L25) | 🟢 ported |  |
+| `VisitTBoldSqlStrLiteral` | method, protected | [41](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L41) · [body 728](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L728) | [`TBoldSqlNodeVisitor.VisitTBoldSqlStrLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L26) | 🟢 ported |  |
+| `VisitTBoldSqlFloatLiteral` | method, protected | [42](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L42) · [body 718](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L718) | [`TBoldSqlNodeVisitor.VisitTBoldSqlFloatLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L27) | 🟢 ported |  |
+| `VisitTBoldSqlEnumLiteral` | method, protected | [43](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L43) · [body 683](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L683) | [`TBoldSqlNodeVisitor.VisitTBoldSqlEnumLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L28) | 🟢 ported |  |
+| `VisitTBoldSqlIntLiteral` | method, protected | [44](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L44) · [body 688](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L688) | [`TBoldSqlNodeVisitor.VisitTBoldSqlIntLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L29) | 🟢 ported |  |
+| `VisitTBoldSqlDateLiteral` | method, protected | [45](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L45) · [body 748](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L748) | [`TBoldSqlNodeVisitor.VisitTBoldSqlDateLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L30) | 🟢 ported |  |
+| `VisitTBoldSqlTimeLiteral` | method, protected | [46](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L46) · [body 754](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L754) | [`TBoldSqlNodeVisitor.VisitTBoldSqlTimeLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L31) | 🟢 ported |  |
+| `VisitTBoldSqlVariableBinding` | method, protected | [47](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L47) · [body 738](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L738) | [`TBoldSqlNodeVisitor.VisitTBoldSqlVariableBinding`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L32) | 🟢 ported |  |
+| `VisitTBoldSqlVariableReference` | method, protected | [48](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L48) · [body 743](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L743) | [`TBoldSqlNodeVisitor.VisitTBoldSqlVariableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L33) | 🟢 ported |  |
+| `VisitTBoldSqlTypeNode` | method, protected | [49](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L49) · [body 733](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L733) | [`TBoldSqlNodeVisitor.VisitTBoldSqlTypeNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L34) | 🟢 ported |  |
 
 ## TBoldSqlNodeList
 
-class at [line 52](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L52); ⚪ not started.
+class at [line 52](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L52); 🟢 ported, C# [`TBoldSqlNodeList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L39).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [54](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L54) · [body 623](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L623) |  | ⚪ not started |  |
-| `PutItem` | method, private | [55](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L55) · [body 628](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L628) |  | ⚪ not started |  |
-| `Destroy` | destructor | [57](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L57) · [body 614](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L614) |  | ⚪ not started |  |
-| `Add` | method | [58](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L58) · [body 608](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L608) |  | ⚪ not started |  |
-| `TraverseList` | method | [59](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L59) · [body 633](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L633) |  | ⚪ not started |  |
-| `Items` | property | [60](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L60) |  | ⚪ not started |  |
+| `GetItem` | method, private | [54](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L54) · [body 623](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L623) | [`TBoldSqlNodeList.GetItem`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L42) | 🟢 ported |  |
+| `PutItem` | method, private | [55](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L55) · [body 628](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L628) | [`TBoldSqlNodeList.PutItem`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L45) | 🟢 ported |  |
+| `Destroy` | destructor | [57](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L57) · [body 614](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L614) | [`[assembly: Delphi] in BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L6) | 🔵 replaced: Freed the nodes; the garbage collector does that in .NET. |  |
+| `Add` | method | [58](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L58) · [body 608](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L608) | [`TBoldSqlNodeList.Add`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L48) | 🟢 ported |  |
+| `TraverseList` | method | [59](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L59) · [body 633](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L633) | [`TBoldSqlNodeList.TraverseList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L55) | 🟢 ported |  |
+| `Items` | property | [60](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L60) | [`TBoldSqlNodeList.this`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L64) | 🟢 ported |  |
 
 ## TBoldSqlNode
 
-class at [line 64](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L64); ⚪ not started.
+class at [line 64](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L64); 🟢 ported, C# [`TBoldSqlNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L69).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetHasObjectMapper` | method, private | [71](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L71) · [body 369](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L369) |  | ⚪ not started |  |
-| `GetHasQuery` | method, private | [72](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L72) · [body 484](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L484) |  | ⚪ not started |  |
-| `GetTableReferences` | method, private | [73](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L73) · [body 517](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L517) |  | ⚪ not started |  |
-| `GetQuery` | method, protected | [75](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L75) · [body 380](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L380) |  | ⚪ not started |  |
-| `GetObjectMapper` | method, protected | [76](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L76) · [body 374](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L374) |  | ⚪ not started |  |
-| `SetObjectMapper` | method, protected | [77](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L77) · [body 421](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L421) |  | ⚪ not started |  |
-| `SetQuery` | method, protected | [78](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L78) · [body 428](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L428) |  | ⚪ not started |  |
-| `Create` | constructor | [80](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L80) · [body 354](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L354) |  | ⚪ not started |  |
-| `Destroy` | destructor | [81](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L81) · [body 361](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L361) |  | ⚪ not started |  |
-| `TableReferenceForTable` | method | [82](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L82) · [body 433](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L433) |  | ⚪ not started |  |
-| `RelinquishQuery` | method | [83](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L83) · [body 489](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L489) |  | ⚪ not started |  |
-| `RelinquishWCF` | method | [84](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L84) · [body 496](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L496) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [85](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L85) · [body 349](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L349) |  | ⚪ not started |  |
-| `NewQuery` | method | [86](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L86) · [body 394](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L394) |  | ⚪ not started |  |
-| `EnsureRetrievalOfMainColumns` | method | [87](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L87) · [body 403](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L403) |  | ⚪ not started |  |
-| `CopyTableReferences` | method | [88](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L88) · [body 413](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L413) |  | ⚪ not started |  |
-| `Position` | property | [89](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L89) |  | ⚪ not started |  |
-| `ObjectMapper` | property | [90](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L90) |  | ⚪ not started |  |
-| `WCF` | property | [91](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L91) |  | ⚪ not started |  |
-| `Query` | property | [92](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L92) |  | ⚪ not started |  |
-| `HasQuery` | property | [93](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L93) |  | ⚪ not started |  |
-| `HasObjectMapper` | property | [94](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L94) |  | ⚪ not started |  |
-| `MainTableRef` | method | [95](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L95) · [body 386](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L386) |  | ⚪ not started |  |
+| `GetHasObjectMapper` | method, private | [71](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L71) · [body 369](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L369) | [`TBoldSqlNode.GetHasObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L85) | 🟢 ported |  |
+| `GetHasQuery` | method, private | [72](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L72) · [body 484](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L484) | [`TBoldSqlNode.GetHasQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L88) | 🟢 ported |  |
+| `GetTableReferences` | method, private | [73](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L73) · [body 517](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L517) | [`TBoldSqlNode.GetTableReferences`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L91) | 🟢 ported |  |
+| `GetQuery` | method, protected | [75](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L75) · [body 380](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L380) | [`TBoldSqlNode.GetQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L94) | 🟢 ported |  |
+| `GetObjectMapper` | method, protected | [76](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L76) · [body 374](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L374) | [`TBoldSqlNode.GetObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L101) | 🟢 ported |  |
+| `SetObjectMapper` | method, protected | [77](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L77) · [body 421](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L421) | [`TBoldSqlNode.SetObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L108) | 🟢 ported |  |
+| `SetQuery` | method, protected | [78](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L78) · [body 428](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L428) | [`TBoldSqlNode.SetQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L118) | 🟢 ported |  |
+| `Create` | constructor | [80](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L80) · [body 354](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L354) | [`TBoldSqlNode.TBoldSqlNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L78) | 🟢 ported |  |
+| `Destroy` | destructor | [81](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L81) · [body 361](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L361) | [`[assembly: Delphi] in BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L7) | 🔵 replaced: Freed the table references, fragment and query; the garbage collector does that in .NET. |  |
+| `TableReferenceForTable` | method | [82](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L82) · [body 433](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L433) | [`TBoldSqlNode.TableReferenceForTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L125) | 🟢 ported |  |
+| `RelinquishQuery` | method | [83](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L83) · [body 489](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L489) | [`TBoldSqlNode.RelinquishQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L169) | 🟢 ported |  |
+| `RelinquishWCF` | method | [84](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L84) · [body 496](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L496) | [`TBoldSqlNode.RelinquishWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L179) | 🟢 ported |  |
+| `AcceptVisitor` | method | [85](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L85) · [body 349](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L349) | [`TBoldSqlNode.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L202) | 🟢 ported |  |
+| `NewQuery` | method | [86](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L86) · [body 394](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L394) | [`TBoldSqlNode.NewQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L206) | 🟢 ported |  |
+| `EnsureRetrievalOfMainColumns` | method | [87](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L87) · [body 403](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L403) | [`TBoldSqlNode.EnsureRetrievalOfMainColumns`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L214) | 🟢 ported |  |
+| `CopyTableReferences` | method | [88](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L88) · [body 413](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L413) | [`TBoldSqlNode.CopyTableReferences`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L223) | 🟢 ported |  |
+| `Position` | property | [89](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L89) | [`TBoldSqlNode.Position`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L235) | 🟢 ported |  |
+| `ObjectMapper` | property | [90](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L90) | [`TBoldSqlNode.ObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L236) | 🟢 ported |  |
+| `WCF` | property | [91](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L91) | [`TBoldSqlNode.WCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L237) | 🟢 ported |  |
+| `Query` | property | [92](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L92) | [`TBoldSqlNode.Query`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L238) | 🟢 ported |  |
+| `HasQuery` | property | [93](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L93) | [`TBoldSqlNode.HasQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L239) | 🟢 ported |  |
+| `HasObjectMapper` | property | [94](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L94) | [`TBoldSqlNode.HasObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L240) | 🟢 ported |  |
+| `MainTableRef` | method | [95](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L95) · [body 386](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L386) | [`TBoldSqlNode.MainTableRef`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L233) | 🟢 ported |  |
 
 ## TBoldSqlTypeNode
 
-class at [line 99](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L99); ⚪ not started.
+class at [line 99](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L99); 🟢 ported, C# [`TBoldSqlTypeNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L245).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [104](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L104) · [body 530](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L530) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [105](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L105) · [body 524](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L524) |  | ⚪ not started |  |
-| `TypeName` | property | [106](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L106) |  | ⚪ not started |  |
-| `TopSortedIndex` | property | [107](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L107) |  | ⚪ not started |  |
+| `Create` | constructor | [104](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L104) · [body 530](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L530) | [`TBoldSqlTypeNode.TBoldSqlTypeNode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L251) | 🟢 ported |  |
+| `AcceptVisitor` | method | [105](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L105) · [body 524](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L524) | [`TBoldSqlTypeNode.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L258) | 🟢 ported |  |
+| `TypeName` | property | [106](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L106) | [`TBoldSqlTypeNode.TypeName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L264) | 🟢 ported |  |
+| `TopSortedIndex` | property | [107](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L107) | [`TBoldSqlTypeNode.TopSortedIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L265) | 🟢 ported |  |
 
 ## TBoldSqlListCoercion
 
-class at [line 110](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L110); ⚪ not started.
+class at [line 110](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L110); 🟢 ported, C# [`TBoldSqlListCoercion`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L270).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [114](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L114) · [body 832](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L832) |  | ⚪ not started |  |
-| `Destroy` | destructor | [115](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L115) · [body 838](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L838) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [116](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L116) · [body 319](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L319) |  | ⚪ not started |  |
-| `Child` | property | [117](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L117) |  | ⚪ not started |  |
+| `Create` | constructor | [114](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L114) · [body 832](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L832) | [`TBoldSqlListCoercion.TBoldSqlListCoercion`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L275) | 🟢 ported |  |
+| `Destroy` | destructor | [115](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L115) · [body 838](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L838) | [`[assembly: Delphi] in BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L8) | 🔵 replaced: Freed the child; the garbage collector does that in .NET. |  |
+| `AcceptVisitor` | method | [116](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L116) · [body 319](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L319) | [`TBoldSqlListCoercion.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L281) | 🟢 ported |  |
+| `Child` | property | [117](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L117) | [`TBoldSqlListCoercion.Child`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L287) | 🟢 ported |  |
 
 ## TBoldSqlOperation
 
-class at [line 120](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L120); ⚪ not started.
+class at [line 120](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L120); 🟢 ported, C# [`TBoldSqlOperation`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L292).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [126](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L126) · [body 333](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L333) |  | ⚪ not started |  |
-| `Destroy` | destructor | [127](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L127) · [body 340](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L340) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [128](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L128) · [body 327](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L327) |  | ⚪ not started |  |
-| `Args` | property | [129](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L129) |  | ⚪ not started |  |
-| `OperationName` | property | [130](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L130) |  | ⚪ not started |  |
-| `Symbol` | property | [131](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L131) |  | ⚪ not started |  |
+| `Create` | constructor | [126](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L126) · [body 333](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L333) | [`TBoldSqlOperation.TBoldSqlOperation`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L298) | 🟢 ported |  |
+| `Destroy` | destructor | [127](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L127) · [body 340](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L340) | [`[assembly: Delphi] in BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L9) | 🔵 replaced: Freed the arguments; the garbage collector does that in .NET. |  |
+| `AcceptVisitor` | method | [128](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L128) · [body 327](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L327) | [`TBoldSqlOperation.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L304) | 🟢 ported |  |
+| `Args` | property | [129](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L129) | [`TBoldSqlOperation.Args`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L310) | 🟢 ported |  |
+| `OperationName` | property | [130](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L130) | [`TBoldSqlOperation.OperationName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L311) | 🟢 ported |  |
+| `Symbol` | property | [131](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L131) | [`TBoldSqlOperation.Symbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L312) | 🟢 ported |  |
 
 ## TBoldSqlIteration
 
-class at [line 134](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L134); ⚪ not started.
+class at [line 134](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L134); 🟢 ported, C# [`TBoldSqlIteration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L317).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [138](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L138) · [body 545](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L545) |  | ⚪ not started |  |
-| `Destroy` | destructor | [139](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L139) · [body 551](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L551) |  | ⚪ not started |  |
-| `TableReferenceForTable` | method | [140](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L140) · [body 557](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L557) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [141](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L141) · [body 539](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L539) |  | ⚪ not started |  |
-| `LoopVar` | property | [142](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L142) |  | ⚪ not started |  |
+| `Create` | constructor | [138](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L138) · [body 545](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L545) | [`TBoldSqlIteration.TBoldSqlIteration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L322) | 🟢 ported |  |
+| `Destroy` | destructor | [139](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L139) · [body 551](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L551) | [`[assembly: Delphi] in BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L10) | 🔵 replaced: Freed the loop variable; the garbage collector does that in .NET. |  |
+| `TableReferenceForTable` | method | [140](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L140) · [body 557](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L557) | [`TBoldSqlIteration.TableReferenceForTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L328) | 🟢 ported |  |
+| `AcceptVisitor` | method | [141](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L141) · [body 539](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L539) | [`TBoldSqlIteration.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L332) | 🟢 ported |  |
+| `LoopVar` | property | [142](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L142) | [`TBoldSqlIteration.LoopVar`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L338) | 🟢 ported |  |
 
 ## TBoldSqlMember
 
-class at [line 146](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L146); ⚪ not started.
+class at [line 146](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L146); 🟢 ported, C# [`TBoldSqlMember`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L343).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [155](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L155) · [body 573](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L573) |  | ⚪ not started |  |
-| `Destroy` | destructor | [156](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L156) · [body 583](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L583) |  | ⚪ not started |  |
-| `TableReferenceForTable` | method | [157](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L157) · [body 597](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L597) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [158](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L158) · [body 567](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L567) |  | ⚪ not started |  |
-| `QueryOfMemberOfIsEnclosing` | method | [159](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L159) · [body 590](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L590) |  | ⚪ not started |  |
-| `MemberOf` | property | [160](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L160) |  | ⚪ not started |  |
-| `MemberName` | property | [161](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L161) |  | ⚪ not started |  |
-| `MemberIndex` | property | [162](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L162) |  | ⚪ not started |  |
-| `Qualifier` | property | [163](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L163) |  | ⚪ not started |  |
-| `MemberMapper` | property | [164](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L164) |  | ⚪ not started |  |
-| `IsBoolean` | property | [165](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L165) |  | ⚪ not started |  |
+| `Create` | constructor | [155](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L155) · [body 573](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L573) | [`TBoldSqlMember.TBoldSqlMember`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L352) | 🟢 ported |  |
+| `Destroy` | destructor | [156](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L156) · [body 583](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L583) | [`[assembly: Delphi] in BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L11) | 🔵 replaced: Freed the owner node and qualifier; the garbage collector does that in .NET. |  |
+| `TableReferenceForTable` | method | [157](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L157) · [body 597](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L597) | [`TBoldSqlMember.TableReferenceForTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L362) | 🟢 ported |  |
+| `AcceptVisitor` | method | [158](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L158) · [body 567](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L567) | [`TBoldSqlMember.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L368) | 🟢 ported |  |
+| `QueryOfMemberOfIsEnclosing` | method | [159](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L159) · [body 590](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L590) | [`TBoldSqlMember.QueryOfMemberOfIsEnclosing`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L376) | 🟢 ported |  |
+| `MemberOf` | property | [160](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L160) | [`TBoldSqlMember.MemberOf`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L378) | 🟢 ported |  |
+| `MemberName` | property | [161](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L161) | [`TBoldSqlMember.MemberName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L379) | 🟢 ported |  |
+| `MemberIndex` | property | [162](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L162) | [`TBoldSqlMember.MemberIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L380) | 🟢 ported |  |
+| `Qualifier` | property | [163](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L163) | [`TBoldSqlMember.Qualifier`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L381) | 🟢 ported |  |
+| `MemberMapper` | property | [164](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L164) | [`TBoldSqlMember.MemberMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L382) | 🟢 ported |  |
+| `IsBoolean` | property | [165](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L165) | [`TBoldSqlMember.IsBoolean`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L383) | 🟢 ported |  |
 
 ## TBoldSqlVariableBinding
 
-class at [line 168](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L168); ⚪ not started.
+class at [line 168](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L168); 🟢 ported, C# [`TBoldSqlVariableBinding`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L388).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [178](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L178) · [body 656](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L656) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [179](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L179) · [body 643](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L643) |  | ⚪ not started |  |
-| `AddRef` | method | [180](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L180) · [body 649](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L649) |  | ⚪ not started |  |
-| `VariableName` | property | [181](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L181) |  | ⚪ not started |  |
-| `TopSortedIndex` | property | [182](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L182) |  | ⚪ not started |  |
-| `ExternalVarvalue` | property | [183](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L183) |  | ⚪ not started |  |
-| `IsLoopVar` | property | [184](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L184) |  | ⚪ not started |  |
-| `IsExternal` | property | [185](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L185) |  | ⚪ not started |  |
-| `Context` | property | [186](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L186) |  | ⚪ not started |  |
+| `Create` | constructor | [178](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L178) · [body 656](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L656) | [`TBoldSqlVariableBinding.TBoldSqlVariableBinding`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L395) | 🟢 ported |  |
+| `AcceptVisitor` | method | [179](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L179) · [body 643](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L643) | [`TBoldSqlVariableBinding.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L402) | 🟢 ported |  |
+| `AddRef` | method | [180](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L180) · [body 649](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L649) | [`TBoldSqlVariableBinding.AddRef`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L410) | 🟢 ported |  |
+| `VariableName` | property | [181](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L181) | [`TBoldSqlVariableBinding.VariableName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L419) | 🟢 ported |  |
+| `TopSortedIndex` | property | [182](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L182) | [`TBoldSqlVariableBinding.TopSortedIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L420) | 🟢 ported |  |
+| `ExternalVarvalue` | property | [183](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L183) | [`TBoldSqlVariableBinding.ExternalVarvalue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L421) | 🟢 ported |  |
+| `IsLoopVar` | property | [184](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L184) | [`TBoldSqlVariableBinding.IsLoopVar`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L422) | 🟢 ported |  |
+| `IsExternal` | property | [185](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L185) | [`TBoldSqlVariableBinding.IsExternal`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L423) | 🟢 ported |  |
+| `Context` | property | [186](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L186) | [`TBoldSqlVariableBinding.Context`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L424) | 🟢 ported |  |
 
 ## TBoldSqlVariableReference
 
-class at [line 189](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L189); ⚪ not started.
+class at [line 189](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L189); 🟢 ported, C# [`TBoldSqlVariableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L429).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetTableReferences` | method, private | [192](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L192) · [body 819](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L819) |  | ⚪ not started |  |
-| `GetQuery` | method, protected | [194](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L194) · [body 779](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L779) |  | ⚪ not started |  |
-| `GetObjectMapper` | method, protected | [195](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L195) · [body 774](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L774) |  | ⚪ not started |  |
-| `SetObjectMapper` | method, protected | [196](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L196) · [body 794](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L794) |  | ⚪ not started |  |
-| `SetQuery` | method, protected | [197](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L197) · [body 800](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L800) |  | ⚪ not started |  |
-| `Create` | constructor | [199](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L199) · [body 768](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L768) |  | ⚪ not started |  |
-| `TableReferenceForTable` | method | [200](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L200) · [body 805](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L805) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [201](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L201) · [body 762](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L762) |  | ⚪ not started |  |
-| `RelinquishQuery` | method | [202](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L202) · [body 789](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L789) |  | ⚪ not started |  |
-| `RelinquishWCF` | method | [203](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L203) · [body 784](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L784) |  | ⚪ not started |  |
-| `IsExternalVariable` | method | [204](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L204) · [body 812](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L812) |  | ⚪ not started |  |
-| `VariableBinding` | property | [205](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L205) |  | ⚪ not started |  |
+| `GetTableReferences` | method, private | [192](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L192) · [body 819](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L819) | [`TBoldSqlVariableReference.GetTableReferences`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L440) | 🟢 ported |  |
+| `GetQuery` | method, protected | [194](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L194) · [body 779](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L779) | [`TBoldSqlVariableReference.GetQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L443) | 🟢 ported |  |
+| `GetObjectMapper` | method, protected | [195](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L195) · [body 774](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L774) | [`TBoldSqlVariableReference.GetObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L446) | 🟢 ported |  |
+| `SetObjectMapper` | method, protected | [196](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L196) · [body 794](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L794) | [`TBoldSqlVariableReference.SetObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L449) | 🟢 ported |  |
+| `SetQuery` | method, protected | [197](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L197) · [body 800](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L800) | [`TBoldSqlVariableReference.SetQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L452) | 🟢 ported |  |
+| `Create` | constructor | [199](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L199) · [body 768](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L768) | [`TBoldSqlVariableReference.TBoldSqlVariableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L434) | 🟢 ported |  |
+| `TableReferenceForTable` | method | [200](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L200) · [body 805](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L805) | [`TBoldSqlVariableReference.TableReferenceForTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L455) | 🟢 ported |  |
+| `AcceptVisitor` | method | [201](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L201) · [body 762](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L762) | [`TBoldSqlVariableReference.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L459) | 🟢 ported |  |
+| `RelinquishQuery` | method | [202](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L202) · [body 789](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L789) | [`TBoldSqlVariableReference.RelinquishQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L466) | 🟢 ported |  |
+| `RelinquishWCF` | method | [203](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L203) · [body 784](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L784) | [`TBoldSqlVariableReference.RelinquishWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L470) | 🟢 ported |  |
+| `IsExternalVariable` | method | [204](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L204) · [body 812](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L812) | [`TBoldSqlVariableReference.IsExternalVariable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L473) | 🟢 ported |  |
+| `VariableBinding` | property | [205](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L205) | [`TBoldSqlVariableReference.VariableBinding`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L475) | 🟢 ported |  |
 
 ## TBoldSqlLiteral
 
-class at [line 208](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L208); ⚪ not started.
+class at [line 208](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L208); 🟢 ported, C# [`TBoldSqlLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L480).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [210](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L210) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [212](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L212) · [body 857](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L857) |  | ⚪ not started |  |
-| `AsString` | property | [213](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L213) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [210](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L210) | [`TBoldSqlLiteral.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L483) | 🟢 ported |  |
+| `AcceptVisitor` | method | [212](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L212) · [body 857](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L857) | [`TBoldSqlLiteral.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L486) | 🟢 ported |  |
+| `AsString` | property | [213](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L213) | [`TBoldSqlLiteral.AsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L492) | 🟢 ported |  |
 
 ## TBoldSqlStrLiteral
 
-class at [line 216](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L216); ⚪ not started.
+class at [line 216](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L216); 🟢 ported, C# [`TBoldSqlStrLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L496).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [220](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L220) · [body 676](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L676) |  | ⚪ not started |  |
-| `Create` | constructor | [222](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L222) · [body 670](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L670) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [223](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L223) · [body 665](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L665) |  | ⚪ not started |  |
-| `StrValue` | property | [224](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L224) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [220](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L220) · [body 676](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L676) | [`TBoldSqlStrLiteral.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L507) | 🟢 ported |  |
+| `Create` | constructor | [222](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L222) · [body 670](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L670) | [`TBoldSqlStrLiteral.TBoldSqlStrLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L501) | 🟢 ported |  |
+| `AcceptVisitor` | method | [223](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L223) · [body 665](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L665) | [`TBoldSqlStrLiteral.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L511) | 🟢 ported |  |
+| `StrValue` | property | [224](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L224) | [`TBoldSqlStrLiteral.StrValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L513) | 🟢 ported |  |
 
 ## TBoldSqlDateLiteral
 
-class at [line 227](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L227); ⚪ not started.
+class at [line 227](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L227); 🟢 ported, C# [`TBoldSqlDateLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L517).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [231](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L231) · [body 961](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L961) |  | ⚪ not started |  |
-| `Create` | constructor | [233](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L233) · [body 954](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L954) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [234](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L234) · [body 948](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L948) |  | ⚪ not started |  |
-| `DateValue` | property | [235](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L235) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [231](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L231) · [body 961](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L961) | [`TBoldSqlDateLiteral.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L528) | 🟢 ported |  |
+| `Create` | constructor | [233](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L233) · [body 954](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L954) | [`TBoldSqlDateLiteral.TBoldSqlDateLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L522) | 🟢 ported |  |
+| `AcceptVisitor` | method | [234](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L234) · [body 948](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L948) | [`TBoldSqlDateLiteral.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L531) | 🟢 ported |  |
+| `DateValue` | property | [235](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L235) | [`TBoldSqlDateLiteral.DateValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L537) | 🟢 ported |  |
 
 ## TBoldSqlTimeLiteral
 
-class at [line 238](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L238); ⚪ not started.
+class at [line 238](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L238); 🟢 ported, C# [`TBoldSqlTimeLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L541).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [242](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L242) · [body 981](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L981) |  | ⚪ not started |  |
-| `Create` | constructor | [244](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L244) · [body 974](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L974) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [245](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L245) · [body 968](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L968) |  | ⚪ not started |  |
-| `TimeValue` | property | [246](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L246) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [242](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L242) · [body 981](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L981) | [`TBoldSqlTimeLiteral.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L552) | 🟢 ported |  |
+| `Create` | constructor | [244](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L244) · [body 974](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L974) | [`TBoldSqlTimeLiteral.TBoldSqlTimeLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L546) | 🟢 ported |  |
+| `AcceptVisitor` | method | [245](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L245) · [body 968](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L968) | [`TBoldSqlTimeLiteral.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L555) | 🟢 ported |  |
+| `TimeValue` | property | [246](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L246) | [`TBoldSqlTimeLiteral.TimeValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L561) | 🟢 ported |  |
 
 ## TBoldSqlFloatLiteral
 
-class at [line 251](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L251); ⚪ not started.
+class at [line 251](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L251); 🟢 ported, C# [`TBoldSqlFloatLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L565).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [255](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L255) · [body 878](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L878) |  | ⚪ not started |  |
-| `Create` | constructor | [257](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L257) · [body 872](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L872) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [258](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L258) · [body 866](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L866) |  | ⚪ not started |  |
-| `FloatValue` | property | [259](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L259) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [255](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L255) · [body 878](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L878) | [`TBoldSqlFloatLiteral.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L576) | 🟢 ported |  |
+| `Create` | constructor | [257](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L257) · [body 872](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L872) | [`TBoldSqlFloatLiteral.TBoldSqlFloatLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L570) | 🟢 ported |  |
+| `AcceptVisitor` | method | [258](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L258) · [body 866](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L866) | [`TBoldSqlFloatLiteral.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L579) | 🟢 ported |  |
+| `FloatValue` | property | [259](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L259) | [`TBoldSqlFloatLiteral.FloatValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L585) | 🟢 ported |  |
 
 ## TBoldSqlIntLiteral
 
-class at [line 262](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L262); ⚪ not started.
+class at [line 262](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L262); 🟢 ported, C# [`TBoldSqlIntLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L589).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [266](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L266) · [body 897](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L897) |  | ⚪ not started |  |
-| `Create` | constructor | [268](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L268) · [body 891](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L891) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [269](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L269) · [body 885](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L885) |  | ⚪ not started |  |
-| `IntValue` | property | [270](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L270) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [266](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L266) · [body 897](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L897) | [`TBoldSqlIntLiteral.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L600) | 🟢 ported |  |
+| `Create` | constructor | [268](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L268) · [body 891](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L891) | [`TBoldSqlIntLiteral.TBoldSqlIntLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L594) | 🟢 ported |  |
+| `AcceptVisitor` | method | [269](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L269) · [body 885](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L885) | [`TBoldSqlIntLiteral.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L603) | 🟢 ported |  |
+| `IntValue` | property | [270](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L270) | [`TBoldSqlIntLiteral.IntValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L609) | 🟢 ported |  |
 
 ## TBoldSqlEnumLiteral
 
-class at [line 273](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L273); ⚪ not started.
+class at [line 273](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L273); 🟢 ported, C# [`TBoldSqlEnumLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L614).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method, protected | [278](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L278) · [body 850](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L850) |  | ⚪ not started |  |
-| `Create` | constructor | [280](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L280) · [body 844](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L844) |  | ⚪ not started |  |
-| `Name` | property | [281](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L281) |  | ⚪ not started |  |
-| `Intvalue` | property | [282](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L282) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [283](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L283) · [body 826](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L826) |  | ⚪ not started |  |
+| `GetAsString` | method, protected | [278](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L278) · [body 850](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L850) | [`TBoldSqlEnumLiteral.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L625) | 🟢 ported |  |
+| `Create` | constructor | [280](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L280) · [body 844](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L844) | [`TBoldSqlEnumLiteral.TBoldSqlEnumLiteral`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L619) | 🟢 ported |  |
+| `Name` | property | [281](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L281) | [`TBoldSqlEnumLiteral.Name`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L634) | 🟢 ported |  |
+| `Intvalue` | property | [282](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L282) | [`TBoldSqlEnumLiteral.Intvalue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L635) | 🟢 ported |  |
+| `AcceptVisitor` | method | [283](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L283) · [body 826](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L826) | [`TBoldSqlEnumLiteral.AcceptVisitor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L628) | 🟢 ported |  |
 
 ## TBoldSqlSymbol
 
-class at [line 286](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L286); ⚪ not started.
+class at [line 286](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L286); 🟢 ported, C# [`TBoldSqlSymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L640).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [288](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L288) |  | ⚪ not started |  |
-| `GetSQLName` | method, protected | [289](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L289) · [body 909](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L909) |  | ⚪ not started |  |
-| `ResolveObjectMapper` | method | [291](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L291) · [body 914](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L914) |  | ⚪ not started |  |
-| `BuildWCFOrQuery` | method | [292](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L292) · [body 904](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L904) |  | ⚪ not started |  |
-| `Name` | property | [293](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L293) |  | ⚪ not started |  |
-| `SQLName` | property | [294](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L294) |  | ⚪ not started |  |
+| `GetName` | method, protected | [288](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L288) | [`TBoldSqlSymbol.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L643) | 🟢 ported |  |
+| `GetSQLName` | method, protected | [289](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L289) · [body 909](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L909) | [`TBoldSqlSymbol.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L646) | 🟢 ported |  |
+| `ResolveObjectMapper` | method | [291](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L291) · [body 914](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L914) | [`TBoldSqlSymbol.ResolveObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L649) | 🟢 ported |  |
+| `BuildWCFOrQuery` | method | [292](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L292) · [body 904](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L904) | [`TBoldSqlSymbol.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L652) | 🟢 ported |  |
+| `Name` | property | [293](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L293) | [`TBoldSqlSymbol.Name`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L655) | 🟢 ported |  |
+| `SQLName` | property | [294](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L294) | [`TBoldSqlSymbol.SQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L656) | 🟢 ported |  |
 
 ## TBoldSQLWCFVariable
 
-class at [line 297](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L297); ⚪ not started.
+class at [line 297](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L297); 🟢 ported, C# [`TBoldSQLWCFVariable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L661).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [302](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L302) · [body 923](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L923) |  | ⚪ not started |  |
-| `GetAsString` | method | [303](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L303) · [body 934](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L934) |  | ⚪ not started |  |
-| `Destroy` | destructor | [304](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L304) · [body 929](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L929) |  | ⚪ not started |  |
+| `Create` | constructor | [302](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L302) · [body 923](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L923) | [`TBoldSQLWCFVariable.TBoldSQLWCFVariable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L667) | 🟢 ported |  |
+| `GetAsString` | method | [303](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L303) · [body 934](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L934) | [`TBoldSQLWCFVariable.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L673) | 🟢 ported |  |
+| `Destroy` | destructor | [304](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L304) · [body 929](../../../Source/PMapper/SQL/BoldSqlNodes.pas#L929) | [`[assembly: Delphi] in BoldSqlNodes.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs#L12) | 🔵 replaced: Empty in Delphi. |  |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Default/BoldPMappersAttributeDefault.pas`](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas) (1048 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 106 symbols done, 0 verified |
+| Status | 🟢 ported: 106 of 106 symbols done, 18 verified |
 
-⚪ 106 not started
+✅ 18 verified · 🟢 87 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,245 +18,268 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPMString` | class | [30](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L30) |  | ⚪ not started |  |
-| `TBoldPMStringBDECodePageBug` | class | [46](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L46) |  | ⚪ not started |  |
-| `TBoldPMInteger` | class | [53](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L53) |  | ⚪ not started |  |
-| `TBoldPMSmallInt` | class | [66](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L66) |  | ⚪ not started |  |
-| `TBoldPMByte` | class | [75](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L75) |  | ⚪ not started |  |
-| `TBoldPMShortInt` | class | [80](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L80) |  | ⚪ not started |  |
-| `TBoldPMWord` | class | [85](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L85) |  | ⚪ not started |  |
-| `TBoldPMLogic` | class | [93](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L93) |  | ⚪ not started |  |
-| `TBoldPMFloat` | class | [105](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L105) |  | ⚪ not started |  |
-| `TBoldPMCurrency` | class | [118](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L118) |  | ⚪ not started |  |
-| `TBoldPMBlob` | class | [131](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L131) |  | ⚪ not started |  |
-| `TBoldPMMemoBlob` | class | [143](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L143) |  | ⚪ not started |  |
-| `TBoldPMNonEmptyBlob` | class | [148](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L148) |  | ⚪ not started |  |
-| `TBoldPMLiveBlob` | class | [156](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L156) |  | ⚪ not started |  |
-| `TBoldPMTypedBlob` | class | [163](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L163) |  | ⚪ not started |  |
-| `TBoldPMLiveTypedBlob` | class | [177](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L177) |  | ⚪ not started |  |
-| `TBoldPMDateTime` | class | [186](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L186) |  | ⚪ not started |  |
-| `TBoldPMDate` | class | [198](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L198) |  | ⚪ not started |  |
-| `TBoldPMTime` | class | [210](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L210) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [991](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L991) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [1020](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L1020) |  | ⚪ not started |  |
+| `TBoldPMString` | class | [30](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L30) | [`TBoldPMString`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L42) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `TBoldPMStringBDECodePageBug` | class | [46](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L46) | [`TBoldPMStringBDECodePageBug`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L139) | 🟢 ported |  |
+| `TBoldPMInteger` | class | [53](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L53) | [`TBoldPMInteger`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L155) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `TBoldPMSmallInt` | class | [66](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L66) | [`TBoldPMSmallInt`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L217) | 🟢 ported |  |
+| `TBoldPMByte` | class | [75](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L75) | [`TBoldPMByte`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L237) | 🟢 ported |  |
+| `TBoldPMShortInt` | class | [80](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L80) | [`TBoldPMShortInt`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L251) | 🟢 ported |  |
+| `TBoldPMWord` | class | [85](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L85) | [`TBoldPMWord`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L265) | 🟢 ported |  |
+| `TBoldPMLogic` | class | [93](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L93) | [`TBoldPMLogic`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L282) | 🟢 ported |  |
+| `TBoldPMFloat` | class | [105](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L105) | [`TBoldPMFloat`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L341) | 🟢 ported |  |
+| `TBoldPMCurrency` | class | [118](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L118) | [`TBoldPMCurrency`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L403) | 🟢 ported |  |
+| `TBoldPMBlob` | class | [131](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L131) | [`TBoldPMBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L465) | 🟢 ported |  |
+| `TBoldPMMemoBlob` | class | [143](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L143) | [`TBoldPMMemoBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L526) | 🟢 ported |  |
+| `TBoldPMNonEmptyBlob` | class | [148](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L148) | [`TBoldPMNonEmptyBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L540) | 🟢 ported |  |
+| `TBoldPMLiveBlob` | class | [156](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L156) | [`TBoldPMLiveBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L589) | 🟢 ported |  |
+| `TBoldPMTypedBlob` | class | [163](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L163) | [`TBoldPMTypedBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L604) | 🟢 ported |  |
+| `TBoldPMLiveTypedBlob` | class | [177](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L177) | [`TBoldPMLiveTypedBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L689) | 🟢 ported |  |
+| `TBoldPMDateTime` | class | [186](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L186) | [`TBoldPMDateTime`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L704) | 🟢 ported |  |
+| `TBoldPMDate` | class | [198](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L198) | [`TBoldPMDate`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L763) | 🟢 ported |  |
+| `TBoldPMTime` | class | [210](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L210) | [`TBoldPMTime`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L822) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [991](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L991) | [`BoldPMappersAttributeDefault.Initialization`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L22) | 🟢 ported |  |
+| `finalization` | finalization, implementation | [1020](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L1020) | [`[assembly: Delphi] in BoldPMappersAttributeDefault.cs`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L5) | 🔵 replaced: Removed the registrations; the registries live as long as the process in .NET. |  |
 
 ## TBoldPMString
 
-class at [line 30](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L30); ✅ verified, C# [`TBoldPMString`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L42).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnTypeAsSQL` | method, protected | [34](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L34) · [body 254](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L254) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [35](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L35) · [body 264](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L264) |  | ⚪ not started |  |
-| `GetColumnSize` | method, protected | [36](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L36) · [body 269](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L269) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [37](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L37) · [body 291](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L291) |  | ⚪ not started |  |
-| `DefaultDefaultDbValue` | method, protected | [38](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L38) · [body 943](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L943) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [40](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L40) · [body 237](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L237) |  | ⚪ not started |  |
-| `CanStore` | class method | [41](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L41) · [body 259](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L259) |  | ⚪ not started |  |
-| `ValueFromField` | method | [42](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L42) · [body 274](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L274) |  | ⚪ not started |  |
-| `ValueToParam` | method | [43](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L43) · [body 309](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L309) |  | ⚪ not started |  |
+| `GetColumnTypeAsSQL` | method, protected | [34](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L34) · [body 254](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L254) | [`TBoldPMString.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L69) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `GetColumnBDEFieldType` | method, protected | [35](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L35) · [body 264](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L264) | [`TBoldPMString.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L72) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `GetColumnSize` | method, protected | [36](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L36) · [body 269](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L269) | [`TBoldPMString.GetColumnSize`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L75) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `CompareField` | method, protected | [37](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L37) · [body 291](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L291) | [`TBoldPMString.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L79) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `DefaultDefaultDbValue` | method, protected | [38](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L38) · [body 943](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L943) | [`TBoldPMString.DefaultDefaultDbValue`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L93) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `CreateFromMold` | constructor | [40](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L40) · [body 237](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L237) | [`TBoldPMString.TBoldPMString`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L47) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `CanStore` | class method | [41](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L41) · [body 259](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L259) | [`TBoldPMString.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L96) | ✅ verified: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `ValueFromField` | method | [42](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L42) · [body 274](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L274) | [`TBoldPMString.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L99) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `ValueToParam` | method | [43](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L43) · [body 309](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L309) | [`TBoldPMString.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L122) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
 
 ## TBoldPMStringBDECodePageBug
 
-class at [line 46](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L46); ⚪ not started.
+class at [line 46](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L46); 🟢 ported, C# [`TBoldPMStringBDECodePageBug`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L139).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ValueToParam` | method | [48](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L48) · [body 973](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L973) |  | ⚪ not started |  |
+| `ValueToParam` | method | [48](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L48) · [body 973](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L973) | [`TBoldPMStringBDECodePageBug.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L149) | 🟢 ported |  |
 
 ## TBoldPMInteger
 
-class at [line 53](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L53); ⚪ not started.
+class at [line 53](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L53); ✅ verified, C# [`TBoldPMInteger`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L155).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnTypeAsSQL` | method, protected | [55](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L55) · [body 322](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L322) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [56](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L56) · [body 333](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L333) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [57](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L57) · [body 338](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L338) |  | ⚪ not started |  |
-| `DefaultDefaultDbValue` | method, protected | [58](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L58) · [body 951](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L951) |  | ⚪ not started |  |
-| `CanStore` | class method | [60](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L60) · [body 327](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L327) |  | ⚪ not started |  |
-| `ValueFromField` | method | [61](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L61) · [body 348](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L348) |  | ⚪ not started |  |
-| `ValueToParam` | method | [62](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L62) · [body 360](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L360) |  | ⚪ not started |  |
+| `GetColumnTypeAsSQL` | method, protected | [55](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L55) · [body 322](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L322) | [`TBoldPMInteger.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L164) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `GetColumnBDEFieldType` | method, protected | [56](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L56) · [body 333](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L333) | [`TBoldPMInteger.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L167) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `CompareField` | method, protected | [57](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L57) · [body 338](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L338) | [`TBoldPMInteger.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L170) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `DefaultDefaultDbValue` | method, protected | [58](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L58) · [body 951](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L951) | [`TBoldPMInteger.DefaultDefaultDbValue`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L178) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `CanStore` | class method | [60](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L60) · [body 327](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L327) | [`TBoldPMInteger.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L181) | ✅ verified: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `ValueFromField` | method | [61](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L61) · [body 348](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L348) | [`TBoldPMInteger.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L184) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
+| `ValueToParam` | method | [62](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L62) · [body 360](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L360) | [`TBoldPMInteger.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L200) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Objects_saved_to_SQLite_load_into_a_new_system`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L46) |
 
 ## TBoldPMSmallInt
 
-class at [line 66](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L66); ⚪ not started.
+class at [line 66](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L66); 🟢 ported, C# [`TBoldPMSmallInt`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L217).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnTypeAsSQL` | method, protected | [68](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L68) · [body 373](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L373) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [69](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L69) · [body 383](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L383) |  | ⚪ not started |  |
-| `CanStore` | class method | [71](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L71) · [body 378](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L378) |  | ⚪ not started |  |
+| `GetColumnTypeAsSQL` | method, protected | [68](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L68) · [body 373](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L373) | [`TBoldPMSmallInt.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L226) | 🟢 ported |  |
+| `GetColumnBDEFieldType` | method, protected | [69](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L69) · [body 383](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L383) | [`TBoldPMSmallInt.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L229) | 🟢 ported |  |
+| `CanStore` | class method | [71](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L71) · [body 378](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L378) | [`TBoldPMSmallInt.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L232) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
 
 ## TBoldPMByte
 
-class at [line 75](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L75); ⚪ not started.
+class at [line 75](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L75); 🟢 ported, C# [`TBoldPMByte`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L237).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CanStore` | class method | [76](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L76) · [body 401](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L401) |  | ⚪ not started |  |
+| `CanStore` | class method | [76](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L76) · [body 401](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L401) | [`TBoldPMByte.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L246) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
 
 ## TBoldPMShortInt
 
-class at [line 80](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L80); ⚪ not started.
+class at [line 80](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L80); 🟢 ported, C# [`TBoldPMShortInt`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L251).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CanStore` | class method | [81](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L81) · [body 389](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L389) |  | ⚪ not started |  |
+| `CanStore` | class method | [81](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L81) · [body 389](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L389) | [`TBoldPMShortInt.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L260) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
 
 ## TBoldPMWord
 
-class at [line 85](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L85); ⚪ not started.
+class at [line 85](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L85); 🟢 ported, C# [`TBoldPMWord`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L265).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [87](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L87) · [body 406](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L406) |  | ⚪ not started |  |
-| `CanStore` | class method | [89](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L89) · [body 395](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L395) |  | ⚪ not started |  |
+| `GetColumnBDEFieldType` | method, protected | [87](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L87) · [body 406](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L406) | [`TBoldPMWord.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L274) | 🟢 ported |  |
+| `CanStore` | class method | [89](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L89) · [body 395](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L395) | [`TBoldPMWord.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L277) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
 
 ## TBoldPMLogic
 
-class at [line 93](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L93); ⚪ not started.
+class at [line 93](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L93); 🟢 ported, C# [`TBoldPMLogic`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L282).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnTypeAsSQL` | method, protected | [95](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L95) · [body 412](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L412) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [96](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L96) · [body 422](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L422) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [97](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L97) · [body 427](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L427) |  | ⚪ not started |  |
-| `CanStore` | class method | [99](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L99) · [body 417](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L417) |  | ⚪ not started |  |
-| `ValueFromField` | method | [100](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L100) · [body 439](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L439) |  | ⚪ not started |  |
-| `ValueToParam` | method | [101](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L101) · [body 451](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L451) |  | ⚪ not started |  |
+| `GetColumnTypeAsSQL` | method, protected | [95](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L95) · [body 412](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L412) | [`TBoldPMLogic.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L291) | 🟢 ported |  |
+| `GetColumnBDEFieldType` | method, protected | [96](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L96) · [body 422](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L422) | [`TBoldPMLogic.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L294) | 🟢 ported |  |
+| `CompareField` | method, protected | [97](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L97) · [body 427](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L427) | [`TBoldPMLogic.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L297) | 🟢 ported |  |
+| `CanStore` | class method | [99](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L99) · [body 417](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L417) | [`TBoldPMLogic.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L305) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [100](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L100) · [body 439](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L439) | [`TBoldPMLogic.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L308) | 🟢 ported |  |
+| `ValueToParam` | method | [101](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L101) · [body 451](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L451) | [`TBoldPMLogic.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L324) | 🟢 ported |  |
 
 ## TBoldPMFloat
 
-class at [line 105](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L105); ⚪ not started.
+class at [line 105](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L105); 🟢 ported, C# [`TBoldPMFloat`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L341).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnTypeAsSQL` | method, protected | [107](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L107) · [body 464](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L464) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [108](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L108) · [body 474](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L474) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [109](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L109) · [body 479](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L479) |  | ⚪ not started |  |
-| `DefaultDefaultDbValue` | method, protected | [110](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L110) · [body 956](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L956) |  | ⚪ not started |  |
-| `CanStore` | class method | [112](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L112) · [body 469](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L469) |  | ⚪ not started |  |
-| `ValueFromField` | method | [113](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L113) · [body 491](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L491) |  | ⚪ not started |  |
-| `ValueToParam` | method | [114](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L114) · [body 503](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L503) |  | ⚪ not started |  |
+| `GetColumnTypeAsSQL` | method, protected | [107](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L107) · [body 464](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L464) | [`TBoldPMFloat.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L350) | 🟢 ported |  |
+| `GetColumnBDEFieldType` | method, protected | [108](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L108) · [body 474](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L474) | [`TBoldPMFloat.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L353) | 🟢 ported |  |
+| `CompareField` | method, protected | [109](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L109) · [body 479](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L479) | [`TBoldPMFloat.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L356) | 🟢 ported |  |
+| `DefaultDefaultDbValue` | method, protected | [110](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L110) · [body 956](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L956) | [`TBoldPMFloat.DefaultDefaultDbValue`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L364) | 🟢 ported |  |
+| `CanStore` | class method | [112](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L112) · [body 469](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L469) | [`TBoldPMFloat.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L367) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [113](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L113) · [body 491](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L491) | [`TBoldPMFloat.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L370) | 🟢 ported |  |
+| `ValueToParam` | method | [114](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L114) · [body 503](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L503) | [`TBoldPMFloat.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L386) | 🟢 ported |  |
 
 ## TBoldPMCurrency
 
-class at [line 118](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L118); ⚪ not started.
+class at [line 118](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L118); 🟢 ported, C# [`TBoldPMCurrency`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L403).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnTypeAsSQL` | method, protected | [120](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L120) · [body 966](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L966) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [121](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L121) · [body 521](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L521) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [122](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L122) · [body 526](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L526) |  | ⚪ not started |  |
-| `DefaultDefaultDbValue` | method, protected | [123](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L123) · [body 961](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L961) |  | ⚪ not started |  |
-| `CanStore` | class method | [125](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L125) · [body 516](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L516) |  | ⚪ not started |  |
-| `ValueFromField` | method | [126](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L126) · [body 537](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L537) |  | ⚪ not started |  |
-| `ValueToParam` | method | [127](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L127) · [body 549](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L549) |  | ⚪ not started |  |
+| `GetColumnTypeAsSQL` | method, protected | [120](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L120) · [body 966](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L966) | [`TBoldPMCurrency.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L412) | 🟢 ported |  |
+| `GetColumnBDEFieldType` | method, protected | [121](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L121) · [body 521](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L521) | [`TBoldPMCurrency.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L415) | 🟢 ported |  |
+| `CompareField` | method, protected | [122](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L122) · [body 526](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L526) | [`TBoldPMCurrency.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L418) | 🟢 ported |  |
+| `DefaultDefaultDbValue` | method, protected | [123](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L123) · [body 961](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L961) | [`TBoldPMCurrency.DefaultDefaultDbValue`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L426) | 🟢 ported |  |
+| `CanStore` | class method | [125](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L125) · [body 516](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L516) | [`TBoldPMCurrency.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L429) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [126](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L126) · [body 537](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L537) | [`TBoldPMCurrency.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L432) | 🟢 ported |  |
+| `ValueToParam` | method | [127](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L127) · [body 549](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L549) | [`TBoldPMCurrency.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L448) | 🟢 ported |  |
 
 ## TBoldPMBlob
 
-class at [line 131](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L131); ⚪ not started.
+class at [line 131](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L131); 🟢 ported, C# [`TBoldPMBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L465).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [133](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L133) · [body 572](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L572) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [134](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L134) · [body 562](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L562) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [135](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L135) · [body 577](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L577) |  | ⚪ not started |  |
-| `CanStore` | class method | [137](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L137) · [body 567](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L567) |  | ⚪ not started |  |
-| `ValueFromField` | method | [138](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L138) · [body 589](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L589) |  | ⚪ not started |  |
-| `ValueToParam` | method | [139](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L139) · [body 601](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L601) |  | ⚪ not started |  |
+| `GetColumnBDEFieldType` | method, protected | [133](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L133) · [body 572](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L572) | [`TBoldPMBlob.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L474) | 🟢 ported |  |
+| `GetColumnTypeAsSQL` | method, protected | [134](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L134) · [body 562](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L562) | [`TBoldPMBlob.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L477) | 🟢 ported |  |
+| `CompareField` | method, protected | [135](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L135) · [body 577](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L577) | [`TBoldPMBlob.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L480) | 🟢 ported |  |
+| `CanStore` | class method | [137](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L137) · [body 567](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L567) | [`TBoldPMBlob.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L488) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [138](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L138) · [body 589](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L589) | [`TBoldPMBlob.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L491) | 🟢 ported |  |
+| `ValueToParam` | method | [139](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L139) · [body 601](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L601) | [`TBoldPMBlob.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L508) | 🟢 ported: This fork's Delphi sets only the parameter's data type (the value assignment is commented out); the value is set here. |  |
 
 ## TBoldPMMemoBlob
 
-class at [line 143](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L143); ⚪ not started.
+class at [line 143](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L143); 🟢 ported, C# [`TBoldPMMemoBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L526).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [145](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L145) · [body 858](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L858) |  | ⚪ not started |  |
+| `GetColumnBDEFieldType` | method, protected | [145](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L145) · [body 858](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L858) | [`TBoldPMMemoBlob.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L535) | 🟢 ported |  |
 
 ## TBoldPMNonEmptyBlob
 
-class at [line 148](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L148); ⚪ not started.
+class at [line 148](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L148); 🟢 ported, C# [`TBoldPMNonEmptyBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L540).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CompareField` | method, protected | [150](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L150) · [body 868](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L868) |  | ⚪ not started |  |
-| `ValueFromField` | method | [152](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L152) · [body 880](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L880) |  | ⚪ not started |  |
-| `ValueToParam` | method | [153](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L153) · [body 892](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L892) |  | ⚪ not started |  |
+| `CompareField` | method, protected | [150](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L150) · [body 868](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L868) | [`TBoldPMNonEmptyBlob.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L549) | 🟢 ported |  |
+| `ValueFromField` | method | [152](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L152) · [body 880](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L880) | [`TBoldPMNonEmptyBlob.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L557) | 🟢 ported |  |
+| `ValueToParam` | method | [153](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L153) · [body 892](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L892) | [`TBoldPMNonEmptyBlob.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L569) | 🟢 ported |  |
 
 ## TBoldPMLiveBlob
 
-class at [line 156](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L156); ⚪ not started.
+class at [line 156](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L156); 🟢 ported, C# [`TBoldPMLiveBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L589).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetRequiresLiveQuery` | method, protected | [158](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L158) · [body 922](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L922) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [160](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L160) · [body 913](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L913) |  | ⚪ not started |  |
+| `GetRequiresLiveQuery` | method, protected | [158](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L158) · [body 922](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L922) | [`TBoldPMLiveBlob.GetRequiresLiveQuery`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L599) | 🟢 ported |  |
+| `CreateFromMold` | constructor | [160](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L160) · [body 913](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L913) | [`TBoldPMLiveBlob.TBoldPMLiveBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L592) | 🟢 ported |  |
 
 ## TBoldPMTypedBlob
 
-class at [line 163](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L163); ⚪ not started.
+class at [line 163](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L163); 🟢 ported, C# [`TBoldPMTypedBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L604).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [165](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L165) · [body 616](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L616) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [166](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L166) · [body 624](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L624) |  | ⚪ not started |  |
-| `GetColumnCount` | method, protected | [167](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L167) · [body 632](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L632) |  | ⚪ not started |  |
-| `GetColumnSize` | method, protected | [168](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L168) · [body 637](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L637) |  | ⚪ not started |  |
-| `GetInitialColumnName` | method, protected | [169](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L169) · [body 645](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L645) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [170](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L170) · [body 658](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L658) |  | ⚪ not started |  |
-| `CanStore` | class method | [172](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L172) · [body 653](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L653) |  | ⚪ not started |  |
-| `ValueFromField` | method | [173](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L173) · [body 672](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L672) |  | ⚪ not started |  |
-| `ValueToParam` | method | [174](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L174) · [body 688](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L688) |  | ⚪ not started |  |
+| `GetColumnBDEFieldType` | method, protected | [165](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L165) · [body 616](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L616) | [`TBoldPMTypedBlob.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L613) | 🟢 ported |  |
+| `GetColumnTypeAsSQL` | method, protected | [166](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L166) · [body 624](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L624) | [`TBoldPMTypedBlob.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L616) | 🟢 ported |  |
+| `GetColumnCount` | method, protected | [167](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L167) · [body 632](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L632) | [`TBoldPMTypedBlob.GetColumnCount`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L620) | 🟢 ported |  |
+| `GetColumnSize` | method, protected | [168](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L168) · [body 637](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L637) | [`TBoldPMTypedBlob.GetColumnSize`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L623) | 🟢 ported |  |
+| `GetInitialColumnName` | method, protected | [169](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L169) · [body 645](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L645) | [`TBoldPMTypedBlob.GetInitialColumnName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L626) | 🟢 ported |  |
+| `CompareField` | method, protected | [170](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L170) · [body 658](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L658) | [`TBoldPMTypedBlob.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L629) | 🟢 ported |  |
+| `CanStore` | class method | [172](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L172) · [body 653](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L653) | [`TBoldPMTypedBlob.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L641) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [173](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L173) · [body 672](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L672) | [`TBoldPMTypedBlob.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L644) | 🟢 ported |  |
+| `ValueToParam` | method | [174](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L174) · [body 688](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L688) | [`TBoldPMTypedBlob.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L666) | 🟢 ported |  |
 
 ## TBoldPMLiveTypedBlob
 
-class at [line 177](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L177); ⚪ not started.
+class at [line 177](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L177); 🟢 ported, C# [`TBoldPMLiveTypedBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L689).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetRequiresLiveQuery` | method, protected | [179](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L179) · [body 938](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L938) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [181](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L181) · [body 929](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L929) |  | ⚪ not started |  |
+| `GetRequiresLiveQuery` | method, protected | [179](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L179) · [body 938](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L938) | [`TBoldPMLiveTypedBlob.GetRequiresLiveQuery`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L699) | 🟢 ported |  |
+| `CreateFromMold` | constructor | [181](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L181) · [body 929](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L929) | [`TBoldPMLiveTypedBlob.TBoldPMLiveTypedBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L692) | 🟢 ported |  |
 
 ## TBoldPMDateTime
 
-class at [line 186](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L186); ⚪ not started.
+class at [line 186](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L186); 🟢 ported, C# [`TBoldPMDateTime`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L704).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [188](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L188) · [body 715](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L715) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [189](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L189) · [body 705](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L705) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [190](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L190) · [body 720](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L720) |  | ⚪ not started |  |
-| `CanStore` | class method | [192](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L192) · [body 710](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L710) |  | ⚪ not started |  |
-| `ValueFromField` | method | [193](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L193) · [body 730](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L730) |  | ⚪ not started |  |
-| `ValueToParam` | method | [194](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L194) · [body 742](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L742) |  | ⚪ not started |  |
+| `GetColumnBDEFieldType` | method, protected | [188](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L188) · [body 715](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L715) | [`TBoldPMDateTime.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L713) | 🟢 ported |  |
+| `GetColumnTypeAsSQL` | method, protected | [189](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L189) · [body 705](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L705) | [`TBoldPMDateTime.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L716) | 🟢 ported |  |
+| `CompareField` | method, protected | [190](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L190) · [body 720](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L720) | [`TBoldPMDateTime.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L719) | 🟢 ported |  |
+| `CanStore` | class method | [192](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L192) · [body 710](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L710) | [`TBoldPMDateTime.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L727) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [193](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L193) · [body 730](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L730) | [`TBoldPMDateTime.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L730) | 🟢 ported |  |
+| `ValueToParam` | method | [194](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L194) · [body 742](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L742) | [`TBoldPMDateTime.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L746) | 🟢 ported |  |
 
 ## TBoldPMDate
 
-class at [line 198](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L198); ⚪ not started.
+class at [line 198](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L198); 🟢 ported, C# [`TBoldPMDate`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L763).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [200](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L200) · [body 760](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L760) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [201](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L201) · [body 765](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L765) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [202](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L202) · [body 775](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L775) |  | ⚪ not started |  |
-| `CanStore` | class method | [204](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L204) · [body 755](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L755) |  | ⚪ not started |  |
-| `ValueFromField` | method | [205](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L205) · [body 780](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L780) |  | ⚪ not started |  |
-| `ValueToParam` | method | [206](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L206) · [body 792](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L792) |  | ⚪ not started |  |
+| `GetColumnBDEFieldType` | method, protected | [200](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L200) · [body 760](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L760) | [`TBoldPMDate.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L772) | 🟢 ported |  |
+| `CompareField` | method, protected | [201](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L201) · [body 765](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L765) | [`TBoldPMDate.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L775) | 🟢 ported |  |
+| `GetColumnTypeAsSQL` | method, protected | [202](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L202) · [body 775](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L775) | [`TBoldPMDate.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L783) | 🟢 ported |  |
+| `CanStore` | class method | [204](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L204) · [body 755](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L755) | [`TBoldPMDate.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L786) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [205](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L205) · [body 780](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L780) | [`TBoldPMDate.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L789) | 🟢 ported |  |
+| `ValueToParam` | method | [206](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L206) · [body 792](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L792) | [`TBoldPMDate.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L805) | 🟢 ported |  |
 
 ## TBoldPMTime
 
-class at [line 210](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L210); ⚪ not started.
+class at [line 210](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L210); 🟢 ported, C# [`TBoldPMTime`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L822).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnBDEFieldType` | method, protected | [212](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L212) · [body 810](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L810) |  | ⚪ not started |  |
-| `CompareField` | method, protected | [213](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L213) · [body 815](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L815) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [214](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L214) · [body 826](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L826) |  | ⚪ not started |  |
-| `CanStore` | class method | [216](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L216) · [body 805](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L805) |  | ⚪ not started |  |
-| `ValueFromField` | method | [217](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L217) · [body 832](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L832) |  | ⚪ not started |  |
-| `ValueToParam` | method | [218](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L218) · [body 844](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L844) |  | ⚪ not started |  |
+| `GetColumnBDEFieldType` | method, protected | [212](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L212) · [body 810](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L810) | [`TBoldPMTime.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L831) | 🟢 ported |  |
+| `CompareField` | method, protected | [213](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L213) · [body 815](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L815) | [`TBoldPMTime.CompareField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L834) | 🟢 ported |  |
+| `GetColumnTypeAsSQL` | method, protected | [214](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L214) · [body 826](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L826) | [`TBoldPMTime.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L842) | 🟢 ported |  |
+| `CanStore` | class method | [216](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L216) · [body 805](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L805) | [`TBoldPMTime.CanStore`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L845) | 🟢 ported: A virtual class function in Delphi; a static method found by reflection (BoldPMappers.ClassCanStore). |  |
+| `ValueFromField` | method | [217](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L217) · [body 832](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L832) | [`TBoldPMTime.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L848) | 🟢 ported |  |
+| `ValueToParam` | method | [218](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L218) · [body 844](../../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas#L844) | [`TBoldPMTime.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L864) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldPMappersAttributeDefault.TwoSeconds`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L13) (field)
+- [`BoldPMappersAttributeDefault.InternalEmptyString`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L16) (const)
+- [`TBoldPMStringBDECodePageBug.TBoldPMStringBDECodePageBug`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L142) (constructor)
+- [`TBoldPMInteger.TBoldPMInteger`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L158) (constructor)
+- [`TBoldPMSmallInt.TBoldPMSmallInt`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L220) (constructor)
+- [`TBoldPMByte.TBoldPMByte`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L240) (constructor)
+- [`TBoldPMShortInt.TBoldPMShortInt`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L254) (constructor)
+- [`TBoldPMWord.TBoldPMWord`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L268) (constructor)
+- [`TBoldPMLogic.TBoldPMLogic`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L285) (constructor)
+- [`TBoldPMFloat.TBoldPMFloat`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L344) (constructor)
+- [`TBoldPMCurrency.TBoldPMCurrency`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L406) (constructor)
+- [`TBoldPMBlob.TBoldPMBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L468) (constructor)
+- [`TBoldPMMemoBlob.TBoldPMMemoBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L529) (constructor)
+- [`TBoldPMNonEmptyBlob.TBoldPMNonEmptyBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L543) (constructor)
+- [`TBoldPMTypedBlob.TBoldPMTypedBlob`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L607) (constructor)
+- [`TBoldPMDateTime.TBoldPMDateTime`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L707) (constructor)
+- [`TBoldPMDate.TBoldPMDate`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L766) (constructor)
+- [`TBoldPMTime.TBoldPMTime`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs#L825) (constructor)
 
 ## Dependencies
 

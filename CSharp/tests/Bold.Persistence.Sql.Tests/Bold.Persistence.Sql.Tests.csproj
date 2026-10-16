@@ -16,6 +16,10 @@
     <Compile Remove="Support/NativeSqlite.cs" />
   </ItemGroup>
   <ItemGroup>
+    <!-- The object space tests' sample model. -->
+    <Compile Include="../Bold.ObjectSpace.Tests/ObjectSpace/BORepresentation/ObjectSpaceSample.cs" Link="Support/ObjectSpaceSample.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
     <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
     <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />

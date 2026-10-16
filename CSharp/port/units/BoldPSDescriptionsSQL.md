@@ -8,10 +8,10 @@
 | C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | 🟢 ported: 93 of 93 symbols done, 0 verified |
+| Status | 🟢 ported: 93 of 93 symbols done, 2 verified |
 | Note | Asks the user through a callback interface in Bold.Core instead of BoldQueryUserDlg. |
 
-🟢 91 ported · 🔵 2 replaced
+✅ 2 verified · 🟢 89 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -48,8 +48,8 @@ class at [line 33](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L33); �
 | `CommitMetaDataTransaction` | method, protected | [45](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L45) · [body 867](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L867) | [`TBoldSQLSystemDescription.CommitMetaDataTransaction`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L115) | 🟢 ported |  |
 | `Create` | constructor | [47](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L47) · [body 220](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L220) | [`TBoldSQLSystemDescription.TBoldSQLSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L53) | 🟢 ported |  |
 | `Destroy` | destructor | [48](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L48) · [body 229](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L229) | [`[assembly: Delphi] in BoldPSDescriptionsSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L7) | 🔵 replaced: Freed the lists; the garbage collector does that in .NET. |  |
-| `CleanPersistentStorage` | method | [49](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L49) · [body 285](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L285) | [`TBoldSQLSystemDescription.CleanPersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L125) | 🟢 ported: Delphi's query dialog is the QueryUserHandler callback. |  |
-| `CreatePersistentStorage` | method | [50](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L50) · [body 243](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L243) | [`TBoldSQLSystemDescription.CreatePersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L250) | 🟢 ported |  |
+| `CleanPersistentStorage` | method | [49](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L49) · [body 285](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L285) | [`TBoldSQLSystemDescription.CleanPersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L125) | ✅ verified: Delphi's query dialog is the QueryUserHandler callback. | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `CreatePersistentStorage` | method | [50](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L50) · [body 243](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L243) | [`TBoldSQLSystemDescription.CreatePersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L250) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
 | `GenerateDatabaseScript` | method | [51](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L51) · [body 826](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L826) | [`TBoldSQLSystemDescription.GenerateDatabaseScript`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L290) | 🟢 ported |  |
 | `SQLDatabaseConfig` | property | [52](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L52) | [`TBoldSQLSystemDescription.SQLDatabaseConfig`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L298) | 🟢 ported |  |
 | `SQLTablesList` | property | [53](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L53) | [`TBoldSQLSystemDescription.SQLTablesList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L299) | 🟢 ported |  |

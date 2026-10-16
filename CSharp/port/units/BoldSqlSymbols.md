@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/SQL/BoldSqlSymbols.pas`](../../../Source/PMapper/SQL/BoldSqlSymbols.pas) (1101 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 116 symbols done, 0 verified |
+| Status | 🟢 ported: 116 of 116 symbols done, 12 verified |
 
-⚪ 116 not started
+✅ 12 verified · 🟢 103 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,444 +18,450 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBSS_Symbol` | class | [11](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L11) |  | ⚪ not started |  |
-| `TBSS_BinarySymbol` | class | [16](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L16) |  | ⚪ not started |  |
-| `TBSS_BinaryBooleanSymbol` | class | [24](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L24) |  | ⚪ not started |  |
-| `TBSS_Equal` | class | [28](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L28) |  | ⚪ not started |  |
-| `TBSS_NotEqual` | class | [33](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L33) |  | ⚪ not started |  |
-| `TBSS_Less` | class | [38](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L38) |  | ⚪ not started |  |
-| `TBSS_Greater` | class | [43](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L43) |  | ⚪ not started |  |
-| `TBSS_LessEQ` | class | [48](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L48) |  | ⚪ not started |  |
-| `TBSS_GreaterEQ` | class | [53](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L53) |  | ⚪ not started |  |
-| `TBSS_SQLLike` | class | [57](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L57) |  | ⚪ not started |  |
-| `TBSS_SQLLikeCaseInsensitive` | class | [62](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L62) |  | ⚪ not started |  |
-| `TBSS_Add` | class | [67](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L67) |  | ⚪ not started |  |
-| `TBSS_Subtract` | class | [72](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L72) |  | ⚪ not started |  |
-| `TBSS_Multiply` | class | [77](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L77) |  | ⚪ not started |  |
-| `TBSS_Divide` | class | [82](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L82) |  | ⚪ not started |  |
-| `TBSS_or` | class | [87](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L87) |  | ⚪ not started |  |
-| `TBSS_and` | class | [90](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L90) |  | ⚪ not started |  |
-| `TBSS_xor` | class | [93](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L93) |  | ⚪ not started |  |
-| `TBSS_implies` | class | [96](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L96) |  | ⚪ not started |  |
-| `TBSS_UnarySymbol` | class | [101](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L101) |  | ⚪ not started |  |
-| `TBSS_not` | class | [106](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L106) |  | ⚪ not started |  |
-| `TBSS_UnaryMinus` | class | [109](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L109) |  | ⚪ not started |  |
-| `TBSS_isNull` | class | [115](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L115) |  | ⚪ not started |  |
-| `TBSS_Abs` | class | [120](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L120) |  | ⚪ not started |  |
-| `TBSS_Floor` | class | [123](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L123) |  | ⚪ not started |  |
-| `TBSS_Round` | class | [126](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L126) |  | ⚪ not started |  |
-| `TBSS_ToUpper` | class | [129](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L129) |  | ⚪ not started |  |
-| `TBSS_toLower` | class | [136](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L136) |  | ⚪ not started |  |
-| `TBSS_Size` | class | [143](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L143) |  | ⚪ not started |  |
-| `TBSS_isEmpty` | class | [148](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L148) |  | ⚪ not started |  |
-| `TBSS_NotEmpty` | class | [153](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L153) |  | ⚪ not started |  |
-| `TBSS_GroupFunctions` | class | [158](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L158) |  | ⚪ not started |  |
-| `TBSS_Sum` | class | [163](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L163) |  | ⚪ not started |  |
-| `TBSS_Maxvalue` | class | [166](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L166) |  | ⚪ not started |  |
-| `TBSS_MinValue` | class | [171](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L171) |  | ⚪ not started |  |
-| `TBSS_Average` | class | [176](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L176) |  | ⚪ not started |  |
-| `TBSS_Iteration` | class | [181](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L181) |  | ⚪ not started |  |
-| `TBSS_Select` | class | [186](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L186) |  | ⚪ not started |  |
-| `TBSS_reject` | class | [191](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L191) |  | ⚪ not started |  |
-| `TBSS_Exists` | class | [196](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L196) |  | ⚪ not started |  |
-| `TBSS_ForAll` | class | [201](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L201) |  | ⚪ not started |  |
-| `TBSS_orderby` | class | [206](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L206) |  | ⚪ not started |  |
-| `TBSS_orderDescending` | class | [211](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L211) |  | ⚪ not started |  |
-| `TBSS_AllInstances` | class | [216](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L216) |  | ⚪ not started |  |
-| `TBSS_PrefixBinarySymbol` | class | [222](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L222) |  | ⚪ not started |  |
-| `TBSS_Div` | class | [227](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L227) |  | ⚪ not started |  |
-| `TBSS_Mod` | class | [229](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L229) |  | ⚪ not started |  |
-| `TBSS_includes` | class | [232](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L232) |  | ⚪ not started |  |
-| `TBSS_Length` | class | [237](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L237) |  | ⚪ not started |  |
-| `TBSS_ListOperations` | class | [240](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L240) |  | ⚪ not started |  |
-| `TBSS_union` | class | [247](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L247) |  | ⚪ not started |  |
-| `TBSS_Intersection` | class | [252](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L252) |  | ⚪ not started |  |
-| `TBSS_SymmetricDifference` | class | [257](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L257) |  | ⚪ not started |  |
-| `TBSS_Difference` | class | [262](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L262) |  | ⚪ not started |  |
-| `TBSS_OclIsTypeOf` | class | [267](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L267) |  | ⚪ not started |  |
-| `TBSS_OclIsKindOf` | class | [272](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L272) |  | ⚪ not started |  |
-| `TBSS_OclAsType` | class | [277](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L277) |  | ⚪ not started |  |
-| `TBSS_FilterOnType` | class | [283](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L283) |  | ⚪ not started |  |
-| `FindSymbolByName` | routine | [380](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L380) · [body 395](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L395) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [1045](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1045) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [1098](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1098) |  | ⚪ not started |  |
+| `TBSS_Symbol` | class | [11](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L11) | [`TBSS_Symbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L53) | 🟢 ported |  |
+| `TBSS_BinarySymbol` | class | [16](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L16) | [`TBSS_BinarySymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L61) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
+| `TBSS_BinaryBooleanSymbol` | class | [24](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L24) | [`TBSS_BinaryBooleanSymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L94) | 🟢 ported |  |
+| `TBSS_Equal` | class | [28](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L28) | [`TBSS_Equal`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L97) | 🟢 ported |  |
+| `TBSS_NotEqual` | class | [33](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L33) | [`TBSS_NotEqual`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L103) | 🟢 ported |  |
+| `TBSS_Less` | class | [38](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L38) | [`TBSS_Less`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L109) | 🟢 ported |  |
+| `TBSS_Greater` | class | [43](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L43) | [`TBSS_Greater`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L115) | 🟢 ported |  |
+| `TBSS_LessEQ` | class | [48](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L48) | [`TBSS_LessEQ`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L121) | 🟢 ported |  |
+| `TBSS_GreaterEQ` | class | [53](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L53) | [`TBSS_GreaterEQ`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L127) | 🟢 ported |  |
+| `TBSS_SQLLike` | class | [57](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L57) | [`TBSS_SQLLike`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L133) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
+| `TBSS_SQLLikeCaseInsensitive` | class | [62](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L62) | [`TBSS_SQLLikeCaseInsensitive`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L140) | 🟢 ported |  |
+| `TBSS_Add` | class | [67](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L67) | [`TBSS_Add`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L153) | 🟢 ported |  |
+| `TBSS_Subtract` | class | [72](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L72) | [`TBSS_Subtract`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L159) | 🟢 ported |  |
+| `TBSS_Multiply` | class | [77](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L77) | [`TBSS_Multiply`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L165) | 🟢 ported |  |
+| `TBSS_Divide` | class | [82](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L82) | [`TBSS_Divide`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L171) | 🟢 ported |  |
+| `TBSS_or` | class | [87](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L87) | [`TBSS_or`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L176) | 🟢 ported |  |
+| `TBSS_and` | class | [90](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L90) | [`TBSS_and`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L177) | 🟢 ported |  |
+| `TBSS_xor` | class | [93](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L93) | [`TBSS_xor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L178) | 🟢 ported |  |
+| `TBSS_implies` | class | [96](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L96) | [`TBSS_implies`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L182) | 🟢 ported |  |
+| `TBSS_UnarySymbol` | class | [101](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L101) | [`TBSS_UnarySymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L191) | 🟢 ported |  |
+| `TBSS_not` | class | [106](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L106) | [`TBSS_not`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L198) | 🟢 ported |  |
+| `TBSS_UnaryMinus` | class | [109](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L109) | [`TBSS_UnaryMinus`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L201) | 🟢 ported |  |
+| `TBSS_isNull` | class | [115](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L115) | [`TBSS_isNull`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L209) | 🟢 ported |  |
+| `TBSS_Abs` | class | [120](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L120) | [`TBSS_Abs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L226) | 🟢 ported |  |
+| `TBSS_Floor` | class | [123](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L123) | [`TBSS_Floor`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L227) | 🟢 ported |  |
+| `TBSS_Round` | class | [126](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L126) | [`TBSS_Round`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L228) | 🟢 ported |  |
+| `TBSS_ToUpper` | class | [129](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L129) | [`TBSS_ToUpper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L231) | 🟢 ported |  |
+| `TBSS_toLower` | class | [136](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L136) | [`TBSS_toLower`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L241) | 🟢 ported |  |
+| `TBSS_Size` | class | [143](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L143) | [`TBSS_Size`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L252) | 🟢 ported |  |
+| `TBSS_isEmpty` | class | [148](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L148) | [`TBSS_isEmpty`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L261) | 🟢 ported |  |
+| `TBSS_NotEmpty` | class | [153](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L153) | [`TBSS_NotEmpty`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L273) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
+| `TBSS_GroupFunctions` | class | [158](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L158) | [`TBSS_GroupFunctions`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L285) | 🟢 ported |  |
+| `TBSS_Sum` | class | [163](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L163) | [`TBSS_Sum`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L304) | 🟢 ported |  |
+| `TBSS_Maxvalue` | class | [166](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L166) | [`TBSS_Maxvalue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L307) | 🟢 ported |  |
+| `TBSS_MinValue` | class | [171](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L171) | [`TBSS_MinValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L313) | 🟢 ported |  |
+| `TBSS_Average` | class | [176](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L176) | [`TBSS_Average`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L319) | 🟢 ported |  |
+| `TBSS_Iteration` | class | [181](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L181) | [`TBSS_Iteration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L326) | 🟢 ported |  |
+| `TBSS_Select` | class | [186](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L186) | [`TBSS_Select`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L334) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
+| `TBSS_reject` | class | [191](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L191) | [`TBSS_reject`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L347) | 🟢 ported |  |
+| `TBSS_Exists` | class | [196](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L196) | [`TBSS_Exists`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L360) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
+| `TBSS_ForAll` | class | [201](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L201) | [`TBSS_ForAll`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L373) | 🟢 ported |  |
+| `TBSS_orderby` | class | [206](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L206) | [`TBSS_orderby`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L386) | 🟢 ported |  |
+| `TBSS_orderDescending` | class | [211](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L211) | [`TBSS_orderDescending`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L412) | 🟢 ported |  |
+| `TBSS_AllInstances` | class | [216](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L216) | [`TBSS_AllInstances`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L421) | 🟢 ported |  |
+| `TBSS_PrefixBinarySymbol` | class | [222](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L222) | [`TBSS_PrefixBinarySymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L432) | 🟢 ported |  |
+| `TBSS_Div` | class | [227](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L227) | [`TBSS_Div`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L439) | 🟢 ported |  |
+| `TBSS_Mod` | class | [229](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L229) | [`TBSS_Mod`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L440) | 🟢 ported |  |
+| `TBSS_includes` | class | [232](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L232) | [`TBSS_includes`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L444) | 🟢 ported |  |
+| `TBSS_Length` | class | [237](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L237) | [`TBSS_Length`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L477) | 🟢 ported |  |
+| `TBSS_ListOperations` | class | [240](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L240) | [`TBSS_ListOperations`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L481) | 🟢 ported |  |
+| `TBSS_union` | class | [247](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L247) | [`TBSS_union`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L533) | 🟢 ported |  |
+| `TBSS_Intersection` | class | [252](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L252) | [`TBSS_Intersection`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L541) | 🟢 ported |  |
+| `TBSS_SymmetricDifference` | class | [257](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L257) | [`TBSS_SymmetricDifference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L549) | 🟢 ported |  |
+| `TBSS_Difference` | class | [262](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L262) | [`TBSS_Difference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L557) | 🟢 ported |  |
+| `TBSS_OclIsTypeOf` | class | [267](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L267) | [`TBSS_OclIsTypeOf`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L565) | 🟢 ported |  |
+| `TBSS_OclIsKindOf` | class | [272](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L272) | [`TBSS_OclIsKindOf`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L579) | 🟢 ported |  |
+| `TBSS_OclAsType` | class | [277](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L277) | [`TBSS_OclAsType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L594) | 🟢 ported |  |
+| `TBSS_FilterOnType` | class | [283](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L283) | [`TBSS_FilterOnType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L618) | 🟢 ported |  |
+| `FindSymbolByName` | routine | [380](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L380) · [body 395](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L395) | [`BoldSqlSymbols.FindSymbolByName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L17) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [1045](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1045) | [`BoldSqlSymbols.Initialization`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L34) | 🟢 ported |  |
+| `finalization` | finalization, implementation | [1098](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1098) | [`[assembly: Delphi] in BoldSqlSymbols.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L6) | 🔵 replaced: Freed the symbols; the garbage collector does that in .NET. |  |
 
 ## TBSS_Symbol
 
-class at [line 11](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L11); ⚪ not started.
+class at [line 11](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L11); 🟢 ported, C# [`TBSS_Symbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L53).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [13](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L13) · [body 412](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L412) |  | ⚪ not started |  |
+| `GetName` | method, protected | [13](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L13) · [body 412](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L412) | [`TBSS_Symbol.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L56) | 🟢 ported |  |
 
 ## TBSS_BinarySymbol
 
-class at [line 16](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L16); ✅ verified, C# [`TBSS_BinarySymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L61).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ConvertQueryToWCF` | method, protected | [18](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L18) · [body 534](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L534) |  | ⚪ not started |  |
-| `CollectArgWCFs` | method, protected | [19](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L19) · [body 526](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L526) |  | ⚪ not started |  |
-| `BuildWCFOrQuery` | method | [21](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L21) · [body 517](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L517) |  | ⚪ not started |  |
+| `ConvertQueryToWCF` | method, protected | [18](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L18) · [body 534](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L534) | [`TBSS_BinarySymbol.ConvertQueryToWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L65) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
+| `CollectArgWCFs` | method, protected | [19](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L19) · [body 526](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L526) | [`TBSS_BinarySymbol.CollectArgWCFs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L73) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
+| `BuildWCFOrQuery` | method | [21](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L21) · [body 517](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L517) | [`TBSS_BinarySymbol.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L87) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
 
 ## TBSS_Equal
 
-class at [line 28](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L28); ⚪ not started.
+class at [line 28](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L28); 🟢 ported, C# [`TBSS_Equal`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L97).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [30](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L30) · [body 447](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L447) |  | ⚪ not started |  |
+| `GetName` | method, protected | [30](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L30) · [body 447](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L447) | [`TBSS_Equal.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L99) | 🟢 ported |  |
 
 ## TBSS_NotEqual
 
-class at [line 33](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L33); ⚪ not started.
+class at [line 33](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L33); 🟢 ported, C# [`TBSS_NotEqual`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L103).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [35](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L35) · [body 454](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L454) |  | ⚪ not started |  |
+| `GetName` | method, protected | [35](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L35) · [body 454](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L454) | [`TBSS_NotEqual.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L105) | 🟢 ported |  |
 
 ## TBSS_Less
 
-class at [line 38](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L38); ⚪ not started.
+class at [line 38](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L38); 🟢 ported, C# [`TBSS_Less`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L109).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [40](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L40) · [body 489](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L489) |  | ⚪ not started |  |
+| `GetName` | method, protected | [40](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L40) · [body 489](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L489) | [`TBSS_Less.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L111) | 🟢 ported |  |
 
 ## TBSS_Greater
 
-class at [line 43](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L43); ⚪ not started.
+class at [line 43](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L43); 🟢 ported, C# [`TBSS_Greater`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L115).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [45](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L45) · [body 496](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L496) |  | ⚪ not started |  |
+| `GetName` | method, protected | [45](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L45) · [body 496](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L496) | [`TBSS_Greater.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L117) | 🟢 ported |  |
 
 ## TBSS_LessEQ
 
-class at [line 48](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L48); 🟢 ported, C# [`TBSS_LessEQ`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L121).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [50](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L50) · [body 503](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L503) |  | ⚪ not started |  |
+| `GetName` | method, protected | [50](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L50) · [body 503](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L503) | [`TBSS_LessEQ.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L123) | 🟢 ported |  |
 
 ## TBSS_GreaterEQ
 
-class at [line 53](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L53); ⚪ not started.
+class at [line 53](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L53); 🟢 ported, C# [`TBSS_GreaterEQ`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L127).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [54](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L54) · [body 510](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L510) |  | ⚪ not started |  |
+| `GetName` | method, protected | [54](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L54) · [body 510](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L510) | [`TBSS_GreaterEQ.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L129) | 🟢 ported |  |
 
 ## TBSS_SQLLike
 
-class at [line 57](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L57); ⚪ not started.
+class at [line 57](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L57); ✅ verified, C# [`TBSS_SQLLike`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L133).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLName` | method, protected | [59](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L59) · [body 577](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L577) |  | ⚪ not started |  |
+| `GetSQLName` | method, protected | [59](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L59) · [body 577](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L577) | [`TBSS_SQLLike.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L135) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
 
 ## TBSS_SQLLikeCaseInsensitive
 
-class at [line 62](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L62); ⚪ not started.
+class at [line 62](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L62); 🟢 ported, C# [`TBSS_SQLLikeCaseInsensitive`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L140).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [64](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L64) · [body 584](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L584) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [64](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L64) · [body 584](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L584) | [`TBSS_SQLLikeCaseInsensitive.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L143) | 🟢 ported |  |
 
 ## TBSS_Add
 
-class at [line 67](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L67); ⚪ not started.
+class at [line 67](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L67); 🟢 ported, C# [`TBSS_Add`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L153).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [69](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L69) · [body 461](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L461) |  | ⚪ not started |  |
+| `GetName` | method, protected | [69](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L69) · [body 461](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L461) | [`TBSS_Add.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L155) | 🟢 ported |  |
 
 ## TBSS_Subtract
 
-class at [line 72](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L72); ⚪ not started.
+class at [line 72](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L72); 🟢 ported, C# [`TBSS_Subtract`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L159).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [74](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L74) · [body 468](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L468) |  | ⚪ not started |  |
+| `GetName` | method, protected | [74](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L74) · [body 468](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L468) | [`TBSS_Subtract.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L161) | 🟢 ported |  |
 
 ## TBSS_Multiply
 
-class at [line 77](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L77); ⚪ not started.
+class at [line 77](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L77); 🟢 ported, C# [`TBSS_Multiply`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L165).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [79](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L79) · [body 475](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L475) |  | ⚪ not started |  |
+| `GetName` | method, protected | [79](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L79) · [body 475](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L475) | [`TBSS_Multiply.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L167) | 🟢 ported |  |
 
 ## TBSS_Divide
 
-class at [line 82](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L82); ⚪ not started.
+class at [line 82](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L82); 🟢 ported, C# [`TBSS_Divide`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L171).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [84](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L84) · [body 482](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L482) |  | ⚪ not started |  |
+| `GetName` | method, protected | [84](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L84) · [body 482](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L482) | [`TBSS_Divide.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L173) | 🟢 ported |  |
 
 ## TBSS_implies
 
-class at [line 96](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L96); ⚪ not started.
+class at [line 96](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L96); 🟢 ported, C# [`TBSS_implies`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L182).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [98](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L98) · [body 595](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L595) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [98](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L98) · [body 595](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L595) | [`TBSS_implies.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L185) | 🟢 ported |  |
 
 ## TBSS_UnarySymbol
 
-class at [line 101](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L101); ⚪ not started.
+class at [line 101](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L101); 🟢 ported, C# [`TBSS_UnarySymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L191).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [103](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L103) · [body 561](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L561) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [103](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L103) · [body 561](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L561) | [`TBSS_UnarySymbol.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L194) | 🟢 ported |  |
 
 ## TBSS_UnaryMinus
 
-class at [line 109](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L109); ⚪ not started.
+class at [line 109](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L109); 🟢 ported, C# [`TBSS_UnaryMinus`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L201).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [111](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L111) · [body 549](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L549) |  | ⚪ not started |  |
-| `GetSQLName` | method, protected | [112](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L112) · [body 554](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L554) |  | ⚪ not started |  |
+| `GetName` | method, protected | [111](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L111) · [body 549](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L549) | [`TBSS_UnaryMinus.GetName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L203) | 🟢 ported |  |
+| `GetSQLName` | method, protected | [112](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L112) · [body 554](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L554) | [`TBSS_UnaryMinus.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L204) | 🟢 ported |  |
 
 ## TBSS_isNull
 
-class at [line 115](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L115); ⚪ not started.
+class at [line 115](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L115); 🟢 ported, C# [`TBSS_isNull`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L209).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [117](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L117) · [body 652](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L652) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [117](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L117) · [body 652](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L652) | [`TBSS_isNull.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L212) | 🟢 ported |  |
 
 ## TBSS_ToUpper
 
-class at [line 129](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L129); ⚪ not started.
+class at [line 129](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L129); 🟢 ported, C# [`TBSS_ToUpper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L231).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLName` | method, protected | [131](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L131) · [body 620](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L620) |  | ⚪ not started |  |
-| `BuildWCFOrQuery` | method | [133](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L133) · [body 613](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L613) |  | ⚪ not started |  |
+| `GetSQLName` | method, protected | [131](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L131) · [body 620](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L620) | [`TBSS_ToUpper.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L233) | 🟢 ported |  |
+| `BuildWCFOrQuery` | method | [133](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L133) · [body 613](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L613) | [`TBSS_ToUpper.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L236) | 🟢 ported |  |
 
 ## TBSS_toLower
 
-class at [line 136](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L136); ⚪ not started.
+class at [line 136](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L136); 🟢 ported, C# [`TBSS_toLower`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L241).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLName` | method, protected | [138](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L138) · [body 634](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L634) |  | ⚪ not started |  |
-| `BuildWCFOrQuery` | method | [140](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L140) · [body 627](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L627) |  | ⚪ not started |  |
+| `GetSQLName` | method, protected | [138](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L138) · [body 634](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L634) | [`TBSS_toLower.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L243) | 🟢 ported |  |
+| `BuildWCFOrQuery` | method | [140](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L140) · [body 627](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L627) | [`TBSS_toLower.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L246) | 🟢 ported |  |
 
 ## TBSS_Size
 
-class at [line 143](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L143); ⚪ not started.
+class at [line 143](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L143); 🟢 ported, C# [`TBSS_Size`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L252).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [145](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L145) · [body 570](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L570) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [145](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L145) · [body 570](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L570) | [`TBSS_Size.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L255) | 🟢 ported |  |
 
 ## TBSS_isEmpty
 
-class at [line 148](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L148); ⚪ not started.
+class at [line 148](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L148); 🟢 ported, C# [`TBSS_isEmpty`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L261).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [150](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L150) · [body 821](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L821) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [150](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L150) · [body 821](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L821) | [`TBSS_isEmpty.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L264) | 🟢 ported |  |
 
 ## TBSS_NotEmpty
 
-class at [line 153](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L153); ⚪ not started.
+class at [line 153](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L153); ✅ verified, C# [`TBSS_NotEmpty`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L273).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [155](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L155) · [body 834](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L834) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [155](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L155) · [body 834](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L834) | [`TBSS_NotEmpty.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L276) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
 
 ## TBSS_GroupFunctions
 
-class at [line 158](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L158); ⚪ not started.
+class at [line 158](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L158); 🟢 ported, C# [`TBSS_GroupFunctions`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L285).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [160](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L160) · [body 671](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L671) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [160](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L160) · [body 671](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L671) | [`TBSS_GroupFunctions.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L288) | 🟢 ported |  |
 
 ## TBSS_Maxvalue
 
-class at [line 166](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L166); ⚪ not started.
+class at [line 166](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L166); 🟢 ported, C# [`TBSS_Maxvalue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L307).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLName` | method, protected | [168](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L168) · [body 744](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L744) |  | ⚪ not started |  |
+| `GetSQLName` | method, protected | [168](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L168) · [body 744](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L744) | [`TBSS_Maxvalue.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L309) | 🟢 ported |  |
 
 ## TBSS_MinValue
 
-class at [line 171](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L171); ⚪ not started.
+class at [line 171](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L171); 🟢 ported, C# [`TBSS_MinValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L313).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLName` | method, protected | [173](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L173) · [body 737](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L737) |  | ⚪ not started |  |
+| `GetSQLName` | method, protected | [173](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L173) · [body 737](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L737) | [`TBSS_MinValue.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L315) | 🟢 ported |  |
 
 ## TBSS_Average
 
-class at [line 176](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L176); ⚪ not started.
+class at [line 176](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L176); 🟢 ported, C# [`TBSS_Average`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L319).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSQLName` | method, protected | [178](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L178) · [body 730](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L730) |  | ⚪ not started |  |
+| `GetSQLName` | method, protected | [178](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L178) · [body 730](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L730) | [`TBSS_Average.GetSQLName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L321) | 🟢 ported |  |
 
 ## TBSS_Iteration
 
-class at [line 181](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L181); ⚪ not started.
+class at [line 181](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L181); 🟢 ported, C# [`TBSS_Iteration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L326).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ResolveObjectMapper` | method | [183](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L183) · [body 428](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L428) |  | ⚪ not started |  |
+| `ResolveObjectMapper` | method | [183](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L183) · [body 428](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L428) | [`TBSS_Iteration.ResolveObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L329) | 🟢 ported |  |
 
 ## TBSS_Select
 
-class at [line 186](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L186); ⚪ not started.
+class at [line 186](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L186); ✅ verified, C# [`TBSS_Select`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L334).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [188](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L188) · [body 419](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L419) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [188](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L188) · [body 419](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L419) | [`TBSS_Select.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L337) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
 
 ## TBSS_reject
 
-class at [line 191](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L191); ⚪ not started.
+class at [line 191](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L191); 🟢 ported, C# [`TBSS_reject`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L347).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [193](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L193) · [body 641](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L641) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [193](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L193) · [body 641](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L641) | [`TBSS_reject.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L350) | 🟢 ported |  |
 
 ## TBSS_Exists
 
-class at [line 196](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L196); ⚪ not started.
+class at [line 196](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L196); ✅ verified, C# [`TBSS_Exists`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L360).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [198](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L198) · [body 751](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L751) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [198](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L198) · [body 751](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L751) | [`TBSS_Exists.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L363) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.OCL_conditions_are_evaluated_in_SQL`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L105) |
 
 ## TBSS_ForAll
 
-class at [line 201](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L201); ⚪ not started.
+class at [line 201](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L201); 🟢 ported, C# [`TBSS_ForAll`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L373).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [203](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L203) · [body 762](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L762) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [203](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L203) · [body 762](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L762) | [`TBSS_ForAll.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L376) | 🟢 ported |  |
 
 ## TBSS_orderby
 
-class at [line 206](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L206); ⚪ not started.
+class at [line 206](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L206); 🟢 ported, C# [`TBSS_orderby`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L386).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [208](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L208) · [body 777](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L777) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [208](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L208) · [body 777](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L777) | [`TBSS_orderby.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L389) | 🟢 ported |  |
 
 ## TBSS_orderDescending
 
-class at [line 211](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L211); ⚪ not started.
+class at [line 211](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L211); 🟢 ported, C# [`TBSS_orderDescending`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L412).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [213](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L213) · [body 814](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L814) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [213](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L213) · [body 814](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L814) | [`TBSS_orderDescending.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L415) | 🟢 ported |  |
 
 ## TBSS_AllInstances
 
-class at [line 216](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L216); ⚪ not started.
+class at [line 216](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L216); 🟢 ported, C# [`TBSS_AllInstances`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L421).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ResolveObjectMapper` | method | [218](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L218) · [body 440](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L440) |  | ⚪ not started |  |
-| `BuildWCFOrQuery` | method | [219](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L219) · [body 435](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L435) |  | ⚪ not started |  |
+| `ResolveObjectMapper` | method | [218](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L218) · [body 440](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L440) | [`TBSS_AllInstances.ResolveObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L424) | 🟢 ported |  |
+| `BuildWCFOrQuery` | method | [219](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L219) · [body 435](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L435) | [`TBSS_AllInstances.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L427) | 🟢 ported |  |
 
 ## TBSS_PrefixBinarySymbol
 
-class at [line 222](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L222); ⚪ not started.
+class at [line 222](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L222); 🟢 ported, C# [`TBSS_PrefixBinarySymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L432).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [224](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L224) · [body 604](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L604) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [224](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L224) · [body 604](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L604) | [`TBSS_PrefixBinarySymbol.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L435) | 🟢 ported |  |
 
 ## TBSS_includes
 
-class at [line 232](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L232); ⚪ not started.
+class at [line 232](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L232); 🟢 ported, C# [`TBSS_includes`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L444).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [234](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L234) · [body 693](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L693) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [234](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L234) · [body 693](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L693) | [`TBSS_includes.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L447) | 🟢 ported |  |
 
 ## TBSS_ListOperations
 
-class at [line 240](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L240); ⚪ not started.
+class at [line 240](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L240); 🟢 ported, C# [`TBSS_ListOperations`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L481).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateBoldIdMatchWCF` | method, protected | [242](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L242) · [body 903](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L903) |  | ⚪ not started |  |
-| `ResolveObjectMapper` | method | [244](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L244) · [body 933](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L933) |  | ⚪ not started |  |
+| `CreateBoldIdMatchWCF` | method, protected | [242](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L242) · [body 903](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L903) | [`TBSS_ListOperations.CreateBoldIdMatchWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L485) | 🟢 ported |  |
+| `ResolveObjectMapper` | method | [244](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L244) · [body 933](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L933) | [`TBSS_ListOperations.ResolveObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L502) | 🟢 ported |  |
 
 ## TBSS_union
 
-class at [line 247](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L247); ⚪ not started.
+class at [line 247](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L247); 🟢 ported, C# [`TBSS_union`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L533).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [249](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L249) · [body 845](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L845) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [249](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L249) · [body 845](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L845) | [`TBSS_union.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L536) | 🟢 ported |  |
 
 ## TBSS_Intersection
 
-class at [line 252](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L252); ⚪ not started.
+class at [line 252](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L252); 🟢 ported, C# [`TBSS_Intersection`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L541).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [254](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L254) · [body 859](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L859) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [254](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L254) · [body 859](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L859) | [`TBSS_Intersection.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L544) | 🟢 ported |  |
 
 ## TBSS_SymmetricDifference
 
-class at [line 257](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L257); ⚪ not started.
+class at [line 257](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L257); 🟢 ported, C# [`TBSS_SymmetricDifference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L549).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [259](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L259) · [body 873](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L873) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [259](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L259) · [body 873](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L873) | [`TBSS_SymmetricDifference.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L552) | 🟢 ported |  |
 
 ## TBSS_Difference
 
-class at [line 262](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L262); ⚪ not started.
+class at [line 262](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L262); 🟢 ported, C# [`TBSS_Difference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L557).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [264](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L264) · [body 887](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L887) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [264](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L264) · [body 887](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L887) | [`TBSS_Difference.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L560) | 🟢 ported |  |
 
 ## TBSS_OclIsTypeOf
 
-class at [line 267](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L267); ⚪ not started.
+class at [line 267](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L267); 🟢 ported, C# [`TBSS_OclIsTypeOf`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L565).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [269](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L269) · [body 952](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L952) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [269](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L269) · [body 952](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L952) | [`TBSS_OclIsTypeOf.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L568) | 🟢 ported |  |
 
 ## TBSS_OclIsKindOf
 
-class at [line 272](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L272); ⚪ not started.
+class at [line 272](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L272); 🟢 ported, C# [`TBSS_OclIsKindOf`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L579).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BuildWCFOrQuery` | method | [274](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L274) · [body 971](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L971) |  | ⚪ not started |  |
+| `BuildWCFOrQuery` | method | [274](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L274) · [body 971](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L971) | [`TBSS_OclIsKindOf.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L582) | 🟢 ported |  |
 
 ## TBSS_OclAsType
 
-class at [line 277](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L277); ⚪ not started.
+class at [line 277](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L277); 🟢 ported, C# [`TBSS_OclAsType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L594).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ResolveObjectMapper` | method | [279](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L279) · [body 1003](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1003) |  | ⚪ not started |  |
-| `BuildWCFOrQuery` | method | [280](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L280) · [body 987](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L987) |  | ⚪ not started |  |
+| `ResolveObjectMapper` | method | [279](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L279) · [body 1003](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1003) | [`TBSS_OclAsType.ResolveObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L597) | 🟢 ported |  |
+| `BuildWCFOrQuery` | method | [280](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L280) · [body 987](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L987) | [`TBSS_OclAsType.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L600) | 🟢 ported |  |
 
 ## TBSS_FilterOnType
 
-class at [line 283](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L283); ⚪ not started.
+class at [line 283](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L283); 🟢 ported, C# [`TBSS_FilterOnType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L618).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ResolveObjectMapper` | method | [285](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L285) · [body 1039](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1039) |  | ⚪ not started |  |
-| `BuildWCFOrQuery` | method | [286](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L286) · [body 1011](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1011) |  | ⚪ not started |  |
+| `ResolveObjectMapper` | method | [285](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L285) · [body 1039](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1039) | [`TBSS_FilterOnType.ResolveObjectMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L621) | 🟢 ported |  |
+| `BuildWCFOrQuery` | method | [286](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L286) · [body 1011](../../../Source/PMapper/SQL/BoldSqlSymbols.pas#L1011) | [`TBSS_FilterOnType.BuildWCFOrQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L624) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBSS_ListOperations.BuildCombination`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlSymbols.cs#L522) (method)
 
 ## Dependencies
 

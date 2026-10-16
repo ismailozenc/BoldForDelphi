@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas`](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas) (336 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 27 symbols done, 0 verified |
+| Status | 🟢 ported: 27 of 27 symbols done, 3 verified |
 
-⚪ 27 not started
+✅ 3 verified · 🟢 24 ported
 
 ## Unit level
 
@@ -18,40 +18,48 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractPersistenceHandleDB` | class | [23](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L23) |  | ⚪ not started |  |
+| `TBoldAbstractPersistenceHandleDB` | class | [23](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L23) | [`TBoldAbstractPersistenceHandleDB`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L18) | 🟢 ported |  |
 
 ## TBoldAbstractPersistenceHandleDB
 
-class at [line 23](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L23); 🟢 ported, C# [`TBoldAbstractPersistenceHandleDB`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetClockLogGranularity` | method, private | [32](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L32) · [body 208](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L208) |  | ⚪ not started |  |
-| `SetClockLogGranularity` | method, private | [33](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L33) · [body 264](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L264) |  | ⚪ not started |  |
-| `SetEvolutionSupport` | method, private | [34](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L34) · [body 302](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L302) |  | ⚪ not started |  |
-| `_ReceiveComponentEvents` | method, private | [35](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L35) · [body 80](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L80) |  | ⚪ not started |  |
-| `SetUpgraderHandle` | method, private | [36](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L36) · [body 312](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L312) |  | ⚪ not started |  |
-| `PlaceComponentSubscriptions` | method, private | [37](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L37) · [body 221](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L221) |  | ⚪ not started |  |
-| `SetBoldModel` | method, private | [38](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L38) · [body 254](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L254) |  | ⚪ not started |  |
-| `GetPersistenceControllerDefault` | method, private | [39](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L39) · [body 216](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L216) |  | ⚪ not started |  |
-| `PreparePSParams` | method, private | [40](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L40) · [body 233](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L233) |  | ⚪ not started |  |
-| `CreatePersistenceController` | method, protected | [42](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L42) · [body 187](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L187) |  | ⚪ not started |  |
-| `SetActive` | method, protected | [43](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L43) · [body 238](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L238) |  | ⚪ not started |  |
-| `GetSQLDatabaseConfig` | method, protected | [44](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L44) |  | ⚪ not started |  |
-| `GetDataBaseInterface` | method, protected | [45](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L45) |  | ⚪ not started |  |
-| `AssertSQLDatabaseconfig` | method, protected | [46](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L46) · [body 329](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L329) |  | ⚪ not started |  |
-| `Create` | constructor | [48](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L48) · [body 147](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L147) |  | ⚪ not started |  |
-| `Destroy` | destructor | [49](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L49) · [body 202](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L202) |  | ⚪ not started |  |
-| `PersistenceControllerDefault` | property | [50](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L50) |  | ⚪ not started |  |
-| `CreateDataBaseSchema` | method | [51](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L51) · [body 153](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L153) |  | ⚪ not started |  |
-| `AddModelEvolutionInfoToDatabase` | method | [52](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L52) · [body 92](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L92) |  | ⚪ not started |  |
-| `DatabaseInterface` | property | [53](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L53) |  | ⚪ not started |  |
-| `SQLDatabaseConfig` | property | [54](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L54) |  | ⚪ not started |  |
-| `BoldModel` | property, published | [56](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L56) |  | ⚪ not started |  |
-| `OnGetCurrentTime` | property, published | [57](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L57) |  | ⚪ not started |  |
-| `ClockLogGranularity` | property, published | [58](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L58) |  | ⚪ not started |  |
-| `EvolutionSupport` | property, published | [59](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L59) |  | ⚪ not started |  |
-| `UpgraderHandle` | property, published | [60](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L60) |  | ⚪ not started |  |
+| `GetClockLogGranularity` | method, private | [32](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L32) · [body 208](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L208) | [`TBoldAbstractPersistenceHandleDB.GetClockLogGranularity`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L45) | 🟢 ported |  |
+| `SetClockLogGranularity` | method, private | [33](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L33) · [body 264](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L264) | [`TBoldAbstractPersistenceHandleDB.SetClockLogGranularity`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L53) | 🟢 ported |  |
+| `SetEvolutionSupport` | method, private | [34](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L34) · [body 302](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L302) | [`TBoldAbstractPersistenceHandleDB.SetEvolutionSupport`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L98) | 🟢 ported |  |
+| `_ReceiveComponentEvents` | method, private | [35](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L35) · [body 80](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L80) | [`TBoldAbstractPersistenceHandleDB._ReceiveComponentEvents`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L112) | 🟢 ported |  |
+| `SetUpgraderHandle` | method, private | [36](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L36) · [body 312](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L312) | [`TBoldAbstractPersistenceHandleDB.SetUpgraderHandle`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L133) | 🟢 ported |  |
+| `PlaceComponentSubscriptions` | method, private | [37](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L37) · [body 221](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L221) | [`TBoldAbstractPersistenceHandleDB.PlaceComponentSubscriptions`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L148) | 🟢 ported |  |
+| `SetBoldModel` | method, private | [38](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L38) · [body 254](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L254) | [`TBoldAbstractPersistenceHandleDB.SetBoldModel`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L161) | 🟢 ported |  |
+| `GetPersistenceControllerDefault` | method, private | [39](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L39) · [body 216](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L216) | [`TBoldAbstractPersistenceHandleDB.GetPersistenceControllerDefault`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L172) | 🟢 ported |  |
+| `PreparePSParams` | method, private | [40](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L40) · [body 233](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L233) | [`TBoldAbstractPersistenceHandleDB.PreparePSParams`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L175) | 🟢 ported |  |
+| `CreatePersistenceController` | method, protected | [42](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L42) · [body 187](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L187) | [`TBoldAbstractPersistenceHandleDB.CreatePersistenceController`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L179) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `SetActive` | method, protected | [43](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L43) · [body 238](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L238) | [`TBoldAbstractPersistenceHandleDB.SetActive`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L199) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `GetSQLDatabaseConfig` | method, protected | [44](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L44) | [`TBoldAbstractPersistenceHandleDB.GetSQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L222) | 🟢 ported |  |
+| `GetDataBaseInterface` | method, protected | [45](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L45) | [`TBoldAbstractPersistenceHandleDB.GetDataBaseInterface`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L225) | 🟢 ported |  |
+| `AssertSQLDatabaseconfig` | method, protected | [46](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L46) · [body 329](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L329) | [`TBoldAbstractPersistenceHandleDB.AssertSQLDatabaseconfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L228) | 🟢 ported |  |
+| `Create` | constructor | [48](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L48) · [body 147](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L147) | [`TBoldAbstractPersistenceHandleDB.TBoldAbstractPersistenceHandleDB`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L28) | 🟢 ported: The owner is an IContainer where Delphi takes a TComponent owner. |  |
+| `Destroy` | destructor | [49](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L49) · [body 202](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L202) | [`TBoldAbstractPersistenceHandleDB.Dispose`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L34) | 🟢 ported |  |
+| `PersistenceControllerDefault` | property | [50](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L50) | [`TBoldAbstractPersistenceHandleDB.PersistenceControllerDefault`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L322) | 🟢 ported |  |
+| `CreateDataBaseSchema` | method | [51](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L51) · [body 153](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L153) | [`TBoldAbstractPersistenceHandleDB.CreateDataBaseSchema`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L238) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `AddModelEvolutionInfoToDatabase` | method | [52](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L52) · [body 92](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L92) | [`TBoldAbstractPersistenceHandleDB.AddModelEvolutionInfoToDatabase`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L278) | 🟢 ported |  |
+| `DatabaseInterface` | property | [53](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L53) | [`TBoldAbstractPersistenceHandleDB.DatabaseInterface`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L323) | 🟢 ported |  |
+| `SQLDatabaseConfig` | property | [54](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L54) | [`TBoldAbstractPersistenceHandleDB.SQLDatabaseConfig`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L324) | 🟢 ported |  |
+| `BoldModel` | property, published | [56](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L56) | [`TBoldAbstractPersistenceHandleDB.BoldModel`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L325) | 🟢 ported |  |
+| `OnGetCurrentTime` | property, published | [57](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L57) | [`TBoldAbstractPersistenceHandleDB.OnGetCurrentTime`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L326) | 🟢 ported |  |
+| `ClockLogGranularity` | property, published | [58](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L58) | [`TBoldAbstractPersistenceHandleDB.ClockLogGranularity`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L327) | 🟢 ported |  |
+| `EvolutionSupport` | property, published | [59](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L59) | [`TBoldAbstractPersistenceHandleDB.EvolutionSupport`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L328) | 🟢 ported |  |
+| `UpgraderHandle` | property, published | [60](../../../Source/Persistence/DB/BoldAbstractPersistenceHandleDB.pas#L60) | [`TBoldAbstractPersistenceHandleDB.UpgraderHandle`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L329) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldAbstractPersistenceHandleDB.breModelChanged`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L11) (const)
+- [`BoldAbstractPersistenceHandleDB.breModelDestroying`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L12) (const)
+- [`BoldAbstractPersistenceHandleDB.breUpgraderHandleDestroying`](../../src/Bold.Persistence.Sql/Persistence/DB/BoldAbstractPersistenceHandleDB.cs#L13) (const)
 
 ## Dependencies
 

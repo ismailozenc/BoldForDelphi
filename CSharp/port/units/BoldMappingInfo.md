@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | 🟢 ported: 9 of 9 symbols done, 0 verified |
+| Status | ✅ verified: 9 of 9 symbols done, 9 verified |
 
-🟢 9 ported
+✅ 9 verified
 
 ## Unit level
 
@@ -18,22 +18,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDefaultMappingInfo` | class | [13](../../../Source/PMapper/Default/BoldMappingInfo.pas#L13) | [`TBoldDefaultMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L9) | 🟢 ported |  |
+| `TBoldDefaultMappingInfo` | class | [13](../../../Source/PMapper/Default/BoldMappingInfo.pas#L13) | [`TBoldDefaultMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L9) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
 
 ## TBoldDefaultMappingInfo
 
-class at [line 13](../../../Source/PMapper/Default/BoldMappingInfo.pas#L13); 🟢 ported, C# [`TBoldDefaultMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L9).
+class at [line 13](../../../Source/PMapper/Default/BoldMappingInfo.pas#L13); ✅ verified, C# [`TBoldDefaultMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L9).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ScriptForClearData` | method, private | [15](../../../Source/PMapper/Default/BoldMappingInfo.pas#L15) · [body 40](../../../Source/PMapper/Default/BoldMappingInfo.pas#L40) | [`TBoldDefaultMappingInfo.ScriptForClearData`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L18) | 🟢 ported |  |
-| `AITableName` | method, private | [16](../../../Source/PMapper/Default/BoldMappingInfo.pas#L16) · [body 35](../../../Source/PMapper/Default/BoldMappingInfo.pas#L35) | [`TBoldDefaultMappingInfo.AITableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L36) | 🟢 ported |  |
-| `MMTableName` | method, private | [17](../../../Source/PMapper/Default/BoldMappingInfo.pas#L17) · [body 67](../../../Source/PMapper/Default/BoldMappingInfo.pas#L67) | [`TBoldDefaultMappingInfo.MMTableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L40) | 🟢 ported |  |
-| `OSTableName` | method, private | [18](../../../Source/PMapper/Default/BoldMappingInfo.pas#L18) · [body 72](../../../Source/PMapper/Default/BoldMappingInfo.pas#L72) | [`TBoldDefaultMappingInfo.OSTableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L44) | 🟢 ported |  |
-| `DbTypeTableName` | method, private | [19](../../../Source/PMapper/Default/BoldMappingInfo.pas#L19) · [body 57](../../../Source/PMapper/Default/BoldMappingInfo.pas#L57) | [`TBoldDefaultMappingInfo.DbTypeTableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L48) | 🟢 ported |  |
-| `ExpandColumn` | method, private | [20](../../../Source/PMapper/Default/BoldMappingInfo.pas#L20) · [body 62](../../../Source/PMapper/Default/BoldMappingInfo.pas#L62) | [`TBoldDefaultMappingInfo.ExpandColumn`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L52) | 🟢 ported |  |
-| `ReadDataFromDB` | method | [22](../../../Source/PMapper/Default/BoldMappingInfo.pas#L22) · [body 77](../../../Source/PMapper/Default/BoldMappingInfo.pas#L77) | [`TBoldDefaultMappingInfo.ReadDataFromDB`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L56) | 🟢 ported |  |
-| `ScriptForWriteData` | method | [23](../../../Source/PMapper/Default/BoldMappingInfo.pas#L23) · [body 158](../../../Source/PMapper/Default/BoldMappingInfo.pas#L158) | [`TBoldDefaultMappingInfo.ScriptForWriteData`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L128) | 🟢 ported |  |
+| `ScriptForClearData` | method, private | [15](../../../Source/PMapper/Default/BoldMappingInfo.pas#L15) · [body 40](../../../Source/PMapper/Default/BoldMappingInfo.pas#L40) | [`TBoldDefaultMappingInfo.ScriptForClearData`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L18) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `AITableName` | method, private | [16](../../../Source/PMapper/Default/BoldMappingInfo.pas#L16) · [body 35](../../../Source/PMapper/Default/BoldMappingInfo.pas#L35) | [`TBoldDefaultMappingInfo.AITableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L36) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `MMTableName` | method, private | [17](../../../Source/PMapper/Default/BoldMappingInfo.pas#L17) · [body 67](../../../Source/PMapper/Default/BoldMappingInfo.pas#L67) | [`TBoldDefaultMappingInfo.MMTableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L40) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `OSTableName` | method, private | [18](../../../Source/PMapper/Default/BoldMappingInfo.pas#L18) · [body 72](../../../Source/PMapper/Default/BoldMappingInfo.pas#L72) | [`TBoldDefaultMappingInfo.OSTableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L44) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `DbTypeTableName` | method, private | [19](../../../Source/PMapper/Default/BoldMappingInfo.pas#L19) · [body 57](../../../Source/PMapper/Default/BoldMappingInfo.pas#L57) | [`TBoldDefaultMappingInfo.DbTypeTableName`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L48) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `ExpandColumn` | method, private | [20](../../../Source/PMapper/Default/BoldMappingInfo.pas#L20) · [body 62](../../../Source/PMapper/Default/BoldMappingInfo.pas#L62) | [`TBoldDefaultMappingInfo.ExpandColumn`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L52) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `ReadDataFromDB` | method | [22](../../../Source/PMapper/Default/BoldMappingInfo.pas#L22) · [body 77](../../../Source/PMapper/Default/BoldMappingInfo.pas#L77) | [`TBoldDefaultMappingInfo.ReadDataFromDB`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L56) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
+| `ScriptForWriteData` | method | [23](../../../Source/PMapper/Default/BoldMappingInfo.pas#L23) · [body 158](../../../Source/PMapper/Default/BoldMappingInfo.pas#L158) | [`TBoldDefaultMappingInfo.ScriptForWriteData`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldMappingInfo.cs#L128) | ✅ verified | ✔ [`BoldPersistenceHandleDBTests.Creating_the_schema_makes_the_system_and_class_tables`](../../tests/Bold.Persistence.Sql.Tests/Persistence/DB/BoldPersistenceHandleDBTests.cs#L21) |
 
 ## C# additions
 
