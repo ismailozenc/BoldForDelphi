@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | 🟢 ported: 163 of 163 symbols done, 0 verified |
+| Status | 🟢 ported: 163 of 163 symbols done, 2 verified |
 
-🟢 163 ported
+✅ 2 verified · 🟢 161 ported
 
 ## Unit level
 
@@ -200,8 +200,8 @@ class at [line 26](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L26); 🟢 porte
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `StackElement` | method | [29](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L29) · [body 63](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L63) | [`AYaccClass.StackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L767) | 🟢 ported |  |
-| `Reduce` | method | [30](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L30) · [body 78](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L78) | [`AYaccClass.Reduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L771) | 🟢 ported |  |
+| `StackElement` | method | [29](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L29) · [body 63](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L63) | [`AYaccClass.StackElement`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L767) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `Reduce` | method | [30](../../../Source/ObjectSpace/Ocl/BoldOCls.inc#L30) · [body 78](../../../Source/ObjectSpace/Ocl/BoldORed.pas#L78) | [`AYaccClass.Reduce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldORed.cs#L771) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
 
 ## C# additions
 

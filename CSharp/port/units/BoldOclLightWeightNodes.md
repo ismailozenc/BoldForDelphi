@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas`](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas) (1576 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 210 symbols done, 0 verified |
+| Status | 🟢 ported: 210 of 210 symbols done, 95 verified |
 
-⚪ 210 not started
+✅ 95 verified · 🟢 109 ported · 🔵 6 replaced
 
 ## Unit level
 
@@ -18,461 +18,511 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOclCondition` | class | [30](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L30) |  | ⚪ not started |  |
-| `TBoldOLWNodeVisitor` | class | [47](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L47) |  | ⚪ not started |  |
-| `TBoldOLWNodeList` | class | [66](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L66) |  | ⚪ not started |  |
-| `TBoldOLWNode` | class | [86](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L86) |  | ⚪ not started |  |
-| `TBoldOLWTypeNode` | class | [97](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L97) |  | ⚪ not started |  |
-| `TBoldOLWListCoercion` | class | [110](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L110) |  | ⚪ not started |  |
-| `TBoldOLWOperation` | class | [122](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L122) |  | ⚪ not started |  |
-| `TBoldOLWIteration` | class | [136](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L136) |  | ⚪ not started |  |
-| `TBoldOLWMember` | class | [149](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L149) |  | ⚪ not started |  |
-| `TBoldOLWVariableBinding` | class | [169](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L169) |  | ⚪ not started |  |
-| `TBoldOLWVariableReference` | class | [188](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L188) |  | ⚪ not started |  |
-| `TBoldOLWLiteral` | class | [199](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L199) |  | ⚪ not started |  |
-| `TBoldOLWStrLiteral` | class | [204](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L204) |  | ⚪ not started |  |
-| `TBoldOLWMomentLiteral` | class | [215](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L215) |  | ⚪ not started |  |
-| `TBoldOLWDateLiteral` | class | [222](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L222) |  | ⚪ not started |  |
-| `TBoldOLWTimeLiteral` | class | [233](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L233) |  | ⚪ not started |  |
-| `TBoldOLWFloatLiteral` | class | [246](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L246) |  | ⚪ not started |  |
-| `TBoldOLWIntLiteral` | class | [257](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L257) |  | ⚪ not started |  |
-| `TBoldOLWEnumLiteral` | class | [268](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L268) |  | ⚪ not started |  |
-| `TBoldXMLOCLConditionStreamer` | class, implementation | [311](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L311) |  | ⚪ not started |  |
-| `TBoldXMLOLWNodeListStreamer` | class, implementation | [321](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L321) |  | ⚪ not started |  |
-| `TBoldXMLOLWNodeStreamer` | class, implementation | [331](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L331) |  | ⚪ not started |  |
-| `TBoldXMLOLWTypeNodeStreamer` | class, implementation | [338](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L338) |  | ⚪ not started |  |
-| `TBoldXMLOLWListCoercionStreamer` | class, implementation | [348](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L348) |  | ⚪ not started |  |
-| `TBoldXMLOLWOperationStreamer` | class, implementation | [358](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L358) |  | ⚪ not started |  |
-| `TBoldXMLOLWIterationStreamer` | class, implementation | [368](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L368) |  | ⚪ not started |  |
-| `TBoldXMLOLWMemberStreamer` | class, implementation | [378](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L378) |  | ⚪ not started |  |
-| `TBoldXMLOLWVariableBindingStreamer` | class, implementation | [388](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L388) |  | ⚪ not started |  |
-| `TBoldXMLOLWVariableReferenceStreamer` | class, implementation | [399](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L399) |  | ⚪ not started |  |
-| `TBoldXMLOLWStrLiteralStreamer` | class, implementation | [409](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L409) |  | ⚪ not started |  |
-| `TBoldXMLOLWFloatLiteralStreamer` | class, implementation | [419](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L419) |  | ⚪ not started |  |
-| `TBoldXMLOLWIntLiteralStreamer` | class, implementation | [429](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L429) |  | ⚪ not started |  |
-| `TBoldXMLOLWDateLiteralStreamer` | class, implementation | [439](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L439) |  | ⚪ not started |  |
-| `TBoldXMLOLWTimeLiteralStreamer` | class, implementation | [449](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L449) |  | ⚪ not started |  |
-| `TBoldXMLOLWEnumLiteralStreamer` | class, implementation | [461](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L461) |  | ⚪ not started |  |
-| `WriteBindingToStream` | routine, implementation | [1092](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1092) |  | ⚪ not started |  |
-| `ReadBindingFromStream` | routine, implementation | [1107](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1107) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [1559](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1559) |  | ⚪ not started |  |
+| `TBoldOclCondition` | class | [30](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L30) | [`TBoldOclCondition`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L104) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
+| `TBoldOLWNodeVisitor` | class | [47](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L47) | [`TBoldOLWNodeVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L129) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `TBoldOLWNodeList` | class | [66](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L66) | [`TBoldOLWNodeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L150) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TBoldOLWNode` | class | [86](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L86) | [`TBoldOLWNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L208) | 🟢 ported |  |
+| `TBoldOLWTypeNode` | class | [97](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L97) | [`TBoldOLWTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L230) | 🟢 ported |  |
+| `TBoldOLWListCoercion` | class | [110](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L110) | [`TBoldOLWListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L252) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `TBoldOLWOperation` | class | [122](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L122) | [`TBoldOLWOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L272) | 🟢 ported |  |
+| `TBoldOLWIteration` | class | [136](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L136) | [`TBoldOLWIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L294) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TBoldOLWMember` | class | [149](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L149) | [`TBoldOLWMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L313) | 🟢 ported |  |
+| `TBoldOLWVariableBinding` | class | [169](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L169) | [`TBoldOLWVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L351) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TBoldOLWVariableReference` | class | [188](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L188) | [`TBoldOLWVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L389) | 🟢 ported |  |
+| `TBoldOLWLiteral` | class | [199](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L199) | [`TBoldOLWLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L408) | 🟢 ported |  |
+| `TBoldOLWStrLiteral` | class | [204](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L204) | [`TBoldOLWStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L421) | 🟢 ported |  |
+| `TBoldOLWMomentLiteral` | class | [215](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L215) | [`TBoldOLWMomentLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L438) | 🟢 ported |  |
+| `TBoldOLWDateLiteral` | class | [222](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L222) | [`TBoldOLWDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L445) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `TBoldOLWTimeLiteral` | class | [233](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L233) | [`TBoldOLWTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L468) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `TBoldOLWFloatLiteral` | class | [246](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L246) | [`TBoldOLWFloatLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L492) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `TBoldOLWIntLiteral` | class | [257](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L257) | [`TBoldOLWIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L512) | 🟢 ported |  |
+| `TBoldOLWEnumLiteral` | class | [268](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L268) | [`TBoldOLWEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L532) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `TBoldXMLOCLConditionStreamer` | class, implementation | [311](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L311) | [`TBoldXMLOCLConditionStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L553) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TBoldXMLOLWNodeListStreamer` | class, implementation | [321](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L321) | [`TBoldXMLOLWNodeListStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L592) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TBoldXMLOLWNodeStreamer` | class, implementation | [331](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L331) | [`TBoldXMLOLWNodeStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L635) | 🟢 ported |  |
+| `TBoldXMLOLWTypeNodeStreamer` | class, implementation | [338](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L338) | [`TBoldXMLOLWTypeNodeStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L653) | 🟢 ported |  |
+| `TBoldXMLOLWListCoercionStreamer` | class, implementation | [348](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L348) | [`TBoldXMLOLWListCoercionStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L681) | 🟢 ported |  |
+| `TBoldXMLOLWOperationStreamer` | class, implementation | [358](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L358) | [`TBoldXMLOLWOperationStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L705) | 🟢 ported |  |
+| `TBoldXMLOLWIterationStreamer` | class, implementation | [368](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L368) | [`TBoldXMLOLWIterationStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L733) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TBoldXMLOLWMemberStreamer` | class, implementation | [378](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L378) | [`TBoldXMLOLWMemberStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L757) | 🟢 ported |  |
+| `TBoldXMLOLWVariableBindingStreamer` | class, implementation | [388](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L388) | [`TBoldXMLOLWVariableBindingStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L791) | 🟢 ported |  |
+| `TBoldXMLOLWVariableReferenceStreamer` | class, implementation | [399](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L399) | [`TBoldXMLOLWVariableReferenceStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L825) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TBoldXMLOLWStrLiteralStreamer` | class, implementation | [409](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L409) | [`TBoldXMLOLWStrLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L849) | 🟢 ported |  |
+| `TBoldXMLOLWFloatLiteralStreamer` | class, implementation | [419](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L419) | [`TBoldXMLOLWFloatLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L873) | 🟢 ported |  |
+| `TBoldXMLOLWIntLiteralStreamer` | class, implementation | [429](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L429) | [`TBoldXMLOLWIntLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L897) | 🟢 ported |  |
+| `TBoldXMLOLWDateLiteralStreamer` | class, implementation | [439](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L439) | [`TBoldXMLOLWDateLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L921) | 🟢 ported |  |
+| `TBoldXMLOLWTimeLiteralStreamer` | class, implementation | [449](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L449) | [`TBoldXMLOLWTimeLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L945) | 🟢 ported |  |
+| `TBoldXMLOLWEnumLiteralStreamer` | class, implementation | [461](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L461) | [`TBoldXMLOLWEnumLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L969) | 🟢 ported |  |
+| `WriteBindingToStream` | routine, implementation | [1092](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1092) | [`BoldOclLightWeightNodes.WriteBindingToStream`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L41) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `ReadBindingFromStream` | routine, implementation | [1107](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1107) | [`BoldOclLightWeightNodes.ReadBindingFromStream`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L58) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `initialization` | initialization, implementation | [1559](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1559) | [`BoldOclLightWeightNodes.RegisterStreamers`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L81) | ✅ verified: Run by a module initializer when the assembly loads. | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
 
 ## TBoldOclCondition
 
-class at [line 30](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L30); ✅ verified, C# [`TBoldOclCondition`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L104).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [37](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L37) · [body 884](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L884) |  | ⚪ not started |  |
-| `Destroy` | destructor | [38](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L38) · [body 891](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L891) |  | ⚪ not started |  |
-| `GetStreamName` | method | [39](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L39) · [body 899](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L899) |  | ⚪ not started |  |
-| `RootNode` | property | [40](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L40) |  | ⚪ not started |  |
-| `Context` | property | [41](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L41) |  | ⚪ not started |  |
-| `Env` | property | [42](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L42) |  | ⚪ not started |  |
-| `OclExpr` | property | [43](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L43) |  | ⚪ not started |  |
+| `Create` | constructor | [37](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L37) · [body 884](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L884) | [`TBoldOclCondition.TBoldOclCondition`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L112) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
+| `Destroy` | destructor | [38](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L38) · [body 891](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L891) | [`[assembly: Delphi] in BoldOclLightWeightNodes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L10) | 🔵 replaced: Freed the id list, environment and root node; the garbage collector does that in .NET. |  |
+| `GetStreamName` | method | [39](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L39) · [body 899](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L899) | [`TBoldOclCondition.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L119) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
+| `RootNode` | property | [40](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L40) | [`TBoldOclCondition.RootNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L121) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
+| `Context` | property | [41](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L41) | [`TBoldOclCondition.Context`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L122) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
+| `Env` | property | [42](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L42) | [`TBoldOclCondition.Env`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L123) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
+| `OclExpr` | property | [43](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L43) | [`TBoldOclCondition.OclExpr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L124) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
 
 ## TBoldOLWNodeVisitor
 
-class at [line 47](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L47); ⚪ not started.
+class at [line 47](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L47); ✅ verified, C# [`TBoldOLWNodeVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L129).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `VisitTBoldOLWNode` | method, protected | [49](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L49) · [body 724](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L724) |  | ⚪ not started |  |
-| `VisitTBoldOLWListCoercion` | method, protected | [50](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L50) · [body 709](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L709) |  | ⚪ not started |  |
-| `VisitTBoldOLWOperation` | method, protected | [51](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L51) · [body 734](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L734) |  | ⚪ not started |  |
-| `VisitTBoldOLWIteration` | method, protected | [52](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L52) · [body 704](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L704) |  | ⚪ not started |  |
-| `VisitTBoldOLWMember` | method, protected | [53](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L53) · [body 719](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L719) |  | ⚪ not started |  |
-| `VisitTBoldOLWLiteral` | method, protected | [54](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L54) · [body 714](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L714) |  | ⚪ not started |  |
-| `VisitTBoldOLWStrLiteral` | method, protected | [55](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L55) · [body 739](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L739) |  | ⚪ not started |  |
-| `VisitTBoldOLWDateLiteral` | method, protected | [56](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L56) · [body 759](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L759) |  | ⚪ not started |  |
-| `VisitTBoldOLWTimeLiteral` | method, protected | [57](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L57) · [body 765](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L765) |  | ⚪ not started |  |
-| `VisitTBoldOLWFloatLiteral` | method, protected | [58](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L58) · [body 729](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L729) |  | ⚪ not started |  |
-| `VisitTBoldOLWEnumLiteral` | method, protected | [59](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L59) · [body 694](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L694) |  | ⚪ not started |  |
-| `VisitTBoldOLWIntLiteral` | method, protected | [60](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L60) · [body 699](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L699) |  | ⚪ not started |  |
-| `VisitTBoldOLWVariableBinding` | method, protected | [61](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L61) · [body 749](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L749) |  | ⚪ not started |  |
-| `VisitTBoldOLWVariableReference` | method, protected | [62](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L62) · [body 754](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L754) |  | ⚪ not started |  |
-| `VisitTBoldOLWTypeNode` | method, protected | [63](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L63) · [body 744](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L744) |  | ⚪ not started |  |
+| `VisitTBoldOLWNode` | method, protected | [49](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L49) · [body 724](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L724) | [`TBoldOLWNodeVisitor.VisitTBoldOLWNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L131) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWListCoercion` | method, protected | [50](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L50) · [body 709](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L709) | [`TBoldOLWNodeVisitor.VisitTBoldOLWListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L132) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWOperation` | method, protected | [51](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L51) · [body 734](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L734) | [`TBoldOLWNodeVisitor.VisitTBoldOLWOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L133) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWIteration` | method, protected | [52](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L52) · [body 704](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L704) | [`TBoldOLWNodeVisitor.VisitTBoldOLWIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L134) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWMember` | method, protected | [53](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L53) · [body 719](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L719) | [`TBoldOLWNodeVisitor.VisitTBoldOLWMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L135) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWLiteral` | method, protected | [54](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L54) · [body 714](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L714) | [`TBoldOLWNodeVisitor.VisitTBoldOLWLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L136) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWStrLiteral` | method, protected | [55](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L55) · [body 739](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L739) | [`TBoldOLWNodeVisitor.VisitTBoldOLWStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L137) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWDateLiteral` | method, protected | [56](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L56) · [body 759](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L759) | [`TBoldOLWNodeVisitor.VisitTBoldOLWDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L138) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWTimeLiteral` | method, protected | [57](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L57) · [body 765](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L765) | [`TBoldOLWNodeVisitor.VisitTBoldOLWTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L139) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWFloatLiteral` | method, protected | [58](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L58) · [body 729](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L729) | [`TBoldOLWNodeVisitor.VisitTBoldOLWFloatLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L140) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWEnumLiteral` | method, protected | [59](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L59) · [body 694](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L694) | [`TBoldOLWNodeVisitor.VisitTBoldOLWEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L141) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWIntLiteral` | method, protected | [60](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L60) · [body 699](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L699) | [`TBoldOLWNodeVisitor.VisitTBoldOLWIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L142) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWVariableBinding` | method, protected | [61](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L61) · [body 749](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L749) | [`TBoldOLWNodeVisitor.VisitTBoldOLWVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L143) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWVariableReference` | method, protected | [62](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L62) · [body 754](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L754) | [`TBoldOLWNodeVisitor.VisitTBoldOLWVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L144) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `VisitTBoldOLWTypeNode` | method, protected | [63](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L63) · [body 744](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L744) | [`TBoldOLWNodeVisitor.VisitTBoldOLWTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L145) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
 
 ## TBoldOLWNodeList
 
-class at [line 66](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L66); ⚪ not started.
+class at [line 66](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L66); ✅ verified, C# [`TBoldOLWNodeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L150).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [70](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L70) · [body 623](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L623) |  | ⚪ not started |  |
-| `PutItem` | method, private | [71](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L71) · [body 633](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L633) |  | ⚪ not started |  |
-| `GetStreamName` | method, private | [72](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L72) · [body 628](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L628) |  | ⚪ not started |  |
-| `GetCount` | method, private | [73](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L73) · [body 613](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L613) |  | ⚪ not started |  |
-| `GetIndexOf` | method, private | [74](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L74) · [body 618](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L618) |  | ⚪ not started |  |
-| `Create` | constructor | [76](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L76) · [body 596](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L596) |  | ⚪ not started |  |
-| `Destroy` | destructor | [77](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L77) · [body 602](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L602) |  | ⚪ not started |  |
-| `Add` | method | [78](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L78) · [body 590](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L590) |  | ⚪ not started |  |
-| `TraverseList` | method | [79](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L79) · [body 638](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L638) |  | ⚪ not started |  |
-| `Items` | property | [80](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L80) |  | ⚪ not started |  |
-| `Count` | property | [81](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L81) |  | ⚪ not started |  |
-| `IndexOf` | property | [82](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L82) |  | ⚪ not started |  |
-| `OwnsObjects` | property | [83](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L83) |  | ⚪ not started |  |
+| `GetItem` | method, private | [70](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L70) · [body 623](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L623) | [`TBoldOLWNodeList.GetItem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L162) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `PutItem` | method, private | [71](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L71) · [body 633](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L633) | [`TBoldOLWNodeList.PutItem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L165) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `GetStreamName` | method, private | [72](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L72) · [body 628](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L628) | [`TBoldOLWNodeList.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L168) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `GetCount` | method, private | [73](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L73) · [body 613](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L613) | [`TBoldOLWNodeList.GetCount`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L171) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `GetIndexOf` | method, private | [74](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L74) · [body 618](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L618) | [`TBoldOLWNodeList.GetIndexOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L174) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `Create` | constructor | [76](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L76) · [body 596](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L596) | [`TBoldOLWNodeList.TBoldOLWNodeList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L156) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `Destroy` | destructor | [77](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L77) · [body 602](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L602) | [`[assembly: Delphi] in BoldOclLightWeightNodes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L11) | 🔵 replaced: Freed the owned nodes; the garbage collector does that in .NET. |  |
+| `Add` | method | [78](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L78) · [body 590](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L590) | [`TBoldOLWNodeList.Add`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L177) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TraverseList` | method | [79](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L79) · [body 638](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L638) | [`TBoldOLWNodeList.TraverseList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L187) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `Items` | property | [80](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L80) | [`TBoldOLWNodeList.this`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L196) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `Count` | property | [81](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L81) | [`TBoldOLWNodeList.Count`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L198) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `IndexOf` | property | [82](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L82) | [`TBoldOLWNodeList.IndexOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L201) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `OwnsObjects` | property | [83](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L83) | [`TBoldOLWNodeList.OwnsObjects`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L203) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
 
 ## TBoldOLWNode
 
-class at [line 86](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L86); ⚪ not started.
+class at [line 86](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L86); 🟢 ported, C# [`TBoldOLWNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L208).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [90](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L90) |  | ⚪ not started |  |
-| `Create` | constructor | [92](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L92) · [body 507](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L507) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [93](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L93) · [body 502](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L502) |  | ⚪ not started |  |
-| `Position` | property | [94](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L94) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [90](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L90) | [`TBoldOLWNode.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L219) | 🟢 ported |  |
+| `Create` | constructor | [92](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L92) · [body 507](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L507) | [`TBoldOLWNode.TBoldOLWNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L213) | 🟢 ported |  |
+| `AcceptVisitor` | method | [93](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L93) · [body 502](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L502) | [`TBoldOLWNode.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L222) | 🟢 ported |  |
+| `Position` | property | [94](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L94) | [`TBoldOLWNode.Position`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L224) | 🟢 ported |  |
 
 ## TBoldOLWTypeNode
 
-class at [line 97](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L97); ⚪ not started.
+class at [line 97](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L97); 🟢 ported, C# [`TBoldOLWTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L230).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [102](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L102) · [body 528](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L528) |  | ⚪ not started |  |
-| `Create` | constructor | [104](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L104) · [body 521](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L521) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [105](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L105) · [body 515](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L515) |  | ⚪ not started |  |
-| `TypeName` | property | [106](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L106) |  | ⚪ not started |  |
-| `TopSortedIndex` | property | [107](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L107) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [102](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L102) · [body 528](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L528) | [`TBoldOLWTypeNode.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L236) | 🟢 ported |  |
+| `Create` | constructor | [104](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L104) · [body 521](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L521) | [`TBoldOLWTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L230) | 🟢 ported: The primary constructor. |  |
+| `AcceptVisitor` | method | [105](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L105) · [body 515](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L515) | [`TBoldOLWTypeNode.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L239) | 🟢 ported |  |
+| `TypeName` | property | [106](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L106) | [`TBoldOLWTypeNode.TypeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L245) | 🟢 ported |  |
+| `TopSortedIndex` | property | [107](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L107) | [`TBoldOLWTypeNode.TopSortedIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L246) | 🟢 ported |  |
 
 ## TBoldOLWListCoercion
 
-class at [line 110](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L110); ⚪ not started.
+class at [line 110](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L110); ✅ verified, C# [`TBoldOLWListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L252).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [114](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L114) · [body 819](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L819) |  | ⚪ not started |  |
-| `Create` | constructor | [116](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L116) · [body 801](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L801) |  | ⚪ not started |  |
-| `Destroy` | destructor | [117](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L117) · [body 807](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L807) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [118](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L118) · [body 813](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L813) |  | ⚪ not started |  |
-| `Child` | property | [119](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L119) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [114](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L114) · [body 819](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L819) | [`TBoldOLWListCoercion.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L257) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `Create` | constructor | [116](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L116) · [body 801](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L801) | [`TBoldOLWListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L252) | ✅ verified: The primary constructor. | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `Destroy` | destructor | [117](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L117) · [body 807](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L807) | [`[assembly: Delphi] in BoldOclLightWeightNodes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L12) | 🔵 replaced: Freed the child; the garbage collector does that in .NET. |  |
+| `AcceptVisitor` | method | [118](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L118) · [body 813](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L813) | [`TBoldOLWListCoercion.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L260) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `Child` | property | [119](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L119) | [`TBoldOLWListCoercion.Child`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L266) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
 
 ## TBoldOLWOperation
 
-class at [line 122](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L122); ⚪ not started.
+class at [line 122](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L122); 🟢 ported, C# [`TBoldOLWOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L272).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [127](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L127) · [body 475](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L475) |  | ⚪ not started |  |
-| `Create` | constructor | [129](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L129) · [body 486](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L486) |  | ⚪ not started |  |
-| `Destroy` | destructor | [130](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L130) · [body 493](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L493) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [131](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L131) · [body 480](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L480) |  | ⚪ not started |  |
-| `Args` | property | [132](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L132) |  | ⚪ not started |  |
-| `OperationName` | property | [133](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L133) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [127](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L127) · [body 475](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L475) | [`TBoldOLWOperation.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L278) | 🟢 ported |  |
+| `Create` | constructor | [129](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L129) · [body 486](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L486) | [`TBoldOLWOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L272) | 🟢 ported: The primary constructor. |  |
+| `Destroy` | destructor | [130](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L130) · [body 493](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L493) | [`[assembly: Delphi] in BoldOclLightWeightNodes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L13) | 🔵 replaced: Freed the arguments; the garbage collector does that in .NET. |  |
+| `AcceptVisitor` | method | [131](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L131) · [body 480](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L480) | [`TBoldOLWOperation.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L281) | 🟢 ported |  |
+| `Args` | property | [132](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L132) | [`TBoldOLWOperation.Args`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L287) | 🟢 ported |  |
+| `OperationName` | property | [133](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L133) | [`TBoldOLWOperation.OperationName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L288) | 🟢 ported |  |
 
 ## TBoldOLWIteration
 
-class at [line 136](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L136); ⚪ not started.
+class at [line 136](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L136); ✅ verified, C# [`TBoldOLWIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L294).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [140](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L140) · [body 553](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L553) |  | ⚪ not started |  |
-| `Create` | constructor | [142](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L142) · [body 541](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L541) |  | ⚪ not started |  |
-| `Destroy` | destructor | [143](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L143) · [body 547](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L547) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [144](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L144) · [body 535](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L535) |  | ⚪ not started |  |
-| `LoopVar` | property | [145](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L145) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [140](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L140) · [body 553](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L553) | [`TBoldOLWIteration.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L299) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `Create` | constructor | [142](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L142) · [body 541](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L541) | [`TBoldOLWIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L294) | ✅ verified: The primary constructor. | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `Destroy` | destructor | [143](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L143) · [body 547](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L547) | [`[assembly: Delphi] in BoldOclLightWeightNodes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L14) | 🔵 replaced: Freed the loop variable; the garbage collector does that in .NET. |  |
+| `AcceptVisitor` | method | [144](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L144) · [body 535](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L535) | [`TBoldOLWIteration.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L302) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `LoopVar` | property | [145](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L145) | [`TBoldOLWIteration.LoopVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L308) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
 
 ## TBoldOLWMember
 
-class at [line 149](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L149); ⚪ not started.
+class at [line 149](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L149); 🟢 ported, C# [`TBoldOLWMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L313).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [157](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L157) · [body 583](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L583) |  | ⚪ not started |  |
-| `Create` | constructor | [159](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L159) · [body 566](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L566) |  | ⚪ not started |  |
-| `Destroy` | destructor | [160](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L160) · [body 576](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L576) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [161](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L161) · [body 560](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L560) |  | ⚪ not started |  |
-| `MemberOf` | property | [162](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L162) |  | ⚪ not started |  |
-| `MemberName` | property | [163](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L163) |  | ⚪ not started |  |
-| `MemberIndex` | property | [164](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L164) |  | ⚪ not started |  |
-| `Qualifier` | property | [165](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L165) |  | ⚪ not started |  |
-| `IsBoolean` | property | [166](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L166) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [157](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L157) · [body 583](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L583) | [`TBoldOLWMember.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L332) | 🟢 ported |  |
+| `Create` | constructor | [159](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L159) · [body 566](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L566) | [`TBoldOLWMember.TBoldOLWMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L322) | 🟢 ported |  |
+| `Destroy` | destructor | [160](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L160) · [body 576](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L576) | [`[assembly: Delphi] in BoldOclLightWeightNodes.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L15) | 🔵 replaced: Freed the context and qualifiers; the garbage collector does that in .NET. |  |
+| `AcceptVisitor` | method | [161](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L161) · [body 560](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L560) | [`TBoldOLWMember.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L335) | 🟢 ported |  |
+| `MemberOf` | property | [162](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L162) | [`TBoldOLWMember.MemberOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L341) | 🟢 ported |  |
+| `MemberName` | property | [163](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L163) | [`TBoldOLWMember.MemberName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L342) | 🟢 ported |  |
+| `MemberIndex` | property | [164](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L164) | [`TBoldOLWMember.MemberIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L343) | 🟢 ported |  |
+| `Qualifier` | property | [165](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L165) | [`TBoldOLWMember.Qualifier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L344) | 🟢 ported |  |
+| `IsBoolean` | property | [166](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L166) | [`TBoldOLWMember.IsBoolean`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L345) | 🟢 ported |  |
 
 ## TBoldOLWVariableBinding
 
-class at [line 169](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L169); ⚪ not started.
+class at [line 169](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L169); ✅ verified, C# [`TBoldOLWVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L351).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [177](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L177) · [body 669](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L669) |  | ⚪ not started |  |
-| `Create` | constructor | [179](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L179) · [body 662](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L662) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [180](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L180) · [body 648](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L648) |  | ⚪ not started |  |
-| `AddRef` | method | [181](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L181) · [body 655](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L655) |  | ⚪ not started |  |
-| `VariableName` | property | [182](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L182) |  | ⚪ not started |  |
-| `TopSortedIndex` | property | [183](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L183) |  | ⚪ not started |  |
-| `ExternalVarvalue` | property | [184](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L184) |  | ⚪ not started |  |
-| `IsLoopVar` | property | [185](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L185) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [177](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L177) · [body 669](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L669) | [`TBoldOLWVariableBinding.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L360) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `Create` | constructor | [179](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L179) · [body 662](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L662) | [`TBoldOLWVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L351) | ✅ verified: The primary constructor. | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `AcceptVisitor` | method | [180](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L180) · [body 648](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L648) | [`TBoldOLWVariableBinding.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L363) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `AddRef` | method | [181](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L181) · [body 655](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L655) | [`TBoldOLWVariableBinding.AddRef`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L371) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `VariableName` | property | [182](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L182) | [`TBoldOLWVariableBinding.VariableName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L380) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `TopSortedIndex` | property | [183](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L183) | [`TBoldOLWVariableBinding.TopSortedIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L381) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `ExternalVarvalue` | property | [184](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L184) | [`TBoldOLWVariableBinding.ExternalVarvalue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L382) | ✅ verified: A Variant in Delphi. | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `IsLoopVar` | property | [185](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L185) | [`TBoldOLWVariableBinding.IsLoopVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L383) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
 
 ## TBoldOLWVariableReference
 
-class at [line 188](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L188); ⚪ not started.
+class at [line 188](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L188); 🟢 ported, C# [`TBoldOLWVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L389).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [192](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L192) · [body 786](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L786) |  | ⚪ not started |  |
-| `Create` | constructor | [194](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L194) · [body 779](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L779) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [195](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L195) · [body 773](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L773) |  | ⚪ not started |  |
-| `VariableBinding` | property | [196](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L196) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [192](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L192) · [body 786](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L786) | [`TBoldOLWVariableReference.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L394) | 🟢 ported |  |
+| `Create` | constructor | [194](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L194) · [body 779](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L779) | [`TBoldOLWVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L389) | 🟢 ported: The primary constructor. |  |
+| `AcceptVisitor` | method | [195](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L195) · [body 773](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L773) | [`TBoldOLWVariableReference.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L397) | 🟢 ported |  |
+| `VariableBinding` | property | [196](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L196) | [`TBoldOLWVariableReference.VariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L403) | 🟢 ported |  |
 
 ## TBoldOLWLiteral
 
-class at [line 199](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L199); ⚪ not started.
+class at [line 199](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L199); 🟢 ported, C# [`TBoldOLWLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L408).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AcceptVisitor` | method | [201](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L201) · [body 837](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L837) |  | ⚪ not started |  |
+| `AcceptVisitor` | method | [201](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L201) · [body 837](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L837) | [`TBoldOLWLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L411) | 🟢 ported |  |
 
 ## TBoldOLWStrLiteral
 
-class at [line 204](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L204); ⚪ not started.
+class at [line 204](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L204); 🟢 ported, C# [`TBoldOLWStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L421).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [208](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L208) · [body 687](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L687) |  | ⚪ not started |  |
-| `Create` | constructor | [210](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L210) · [body 681](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L681) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [211](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L211) · [body 676](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L676) |  | ⚪ not started |  |
-| `StrValue` | property | [212](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L212) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [208](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L208) · [body 687](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L687) | [`TBoldOLWStrLiteral.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L426) | 🟢 ported |  |
+| `Create` | constructor | [210](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L210) · [body 681](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L681) | [`TBoldOLWStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L421) | 🟢 ported: The primary constructor. |  |
+| `AcceptVisitor` | method | [211](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L211) · [body 676](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L676) | [`TBoldOLWStrLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L430) | 🟢 ported |  |
+| `StrValue` | property | [212](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L212) | [`TBoldOLWStrLiteral.StrValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L432) | 🟢 ported |  |
 
 ## TBoldOLWMomentLiteral
 
-class at [line 215](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L215); ⚪ not started.
+class at [line 215](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L215); 🟢 ported, C# [`TBoldOLWMomentLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L438).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [219](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L219) · [body 1506](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1506) |  | ⚪ not started |  |
+| `Create` | constructor | [219](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L219) · [body 1506](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1506) | [`TBoldOLWMomentLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L438) | 🟢 ported: The primary constructor. |  |
 
 ## TBoldOLWDateLiteral
 
-class at [line 222](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L222); ⚪ not started.
+class at [line 222](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L222); ✅ verified, C# [`TBoldOLWDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L445).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDateValue` | method, private | [224](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L224) · [body 1521](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1521) |  | ⚪ not started |  |
-| `SetDateValue` | method, private | [225](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L225) · [body 1531](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1531) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [227](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L227) · [body 1526](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1526) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [229](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L229) · [body 1515](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1515) |  | ⚪ not started |  |
-| `DateValue` | property | [230](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L230) |  | ⚪ not started |  |
+| `GetDateValue` | method, private | [224](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L224) · [body 1521](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1521) | [`TBoldOLWDateLiteral.GetDateValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L448) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `SetDateValue` | method, private | [225](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L225) · [body 1531](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1531) | [`TBoldOLWDateLiteral.SetDateValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L451) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `GetStreamName` | method, protected | [227](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L227) · [body 1526](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1526) | [`TBoldOLWDateLiteral.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L454) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `AcceptVisitor` | method | [229](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L229) · [body 1515](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1515) | [`TBoldOLWDateLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L457) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `DateValue` | property | [230](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L230) | [`TBoldOLWDateLiteral.DateValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L463) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
 
 ## TBoldOLWTimeLiteral
 
-class at [line 233](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L233); ⚪ not started.
+class at [line 233](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L233); ✅ verified, C# [`TBoldOLWTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L468).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetTimeValue` | method, private | [235](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L235) · [body 1549](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1549) |  | ⚪ not started |  |
-| `SetTimeValue` | method, private | [236](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L236) · [body 1554](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1554) |  | ⚪ not started |  |
-| `GetStreamName` | method, protected | [238](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L238) · [body 1544](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1544) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [240](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L240) · [body 1538](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1538) |  | ⚪ not started |  |
-| `TimeValue` | property | [241](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L241) |  | ⚪ not started |  |
+| `GetTimeValue` | method, private | [235](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L235) · [body 1549](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1549) | [`TBoldOLWTimeLiteral.GetTimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L471) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `SetTimeValue` | method, private | [236](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L236) · [body 1554](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1554) | [`TBoldOLWTimeLiteral.SetTimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L474) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `GetStreamName` | method, protected | [238](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L238) · [body 1544](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1544) | [`TBoldOLWTimeLiteral.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L477) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `AcceptVisitor` | method | [240](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L240) · [body 1538](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1538) | [`TBoldOLWTimeLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L480) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `TimeValue` | property | [241](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L241) | [`TBoldOLWTimeLiteral.TimeValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L486) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
 
 ## TBoldOLWFloatLiteral
 
-class at [line 246](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L246); ⚪ not started.
+class at [line 246](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L246); ✅ verified, C# [`TBoldOLWFloatLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L492).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [250](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L250) · [body 858](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L858) |  | ⚪ not started |  |
-| `Create` | constructor | [252](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L252) · [body 852](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L852) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [253](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L253) · [body 846](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L846) |  | ⚪ not started |  |
-| `FloatValue` | property | [254](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L254) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [250](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L250) · [body 858](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L858) | [`TBoldOLWFloatLiteral.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L497) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `Create` | constructor | [252](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L252) · [body 852](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L852) | [`TBoldOLWFloatLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L492) | ✅ verified: The primary constructor. | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `AcceptVisitor` | method | [253](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L253) · [body 846](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L846) | [`TBoldOLWFloatLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L500) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `FloatValue` | property | [254](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L254) | [`TBoldOLWFloatLiteral.FloatValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L506) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
 
 ## TBoldOLWIntLiteral
 
-class at [line 257](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L257); ⚪ not started.
+class at [line 257](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L257); 🟢 ported, C# [`TBoldOLWIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L512).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [261](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L261) · [body 877](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L877) |  | ⚪ not started |  |
-| `Create` | constructor | [263](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L263) · [body 871](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L871) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [264](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L264) · [body 865](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L865) |  | ⚪ not started |  |
-| `IntValue` | property | [265](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L265) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [261](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L261) · [body 877](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L877) | [`TBoldOLWIntLiteral.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L517) | 🟢 ported |  |
+| `Create` | constructor | [263](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L263) · [body 871](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L871) | [`TBoldOLWIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L512) | 🟢 ported: The primary constructor. |  |
+| `AcceptVisitor` | method | [264](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L264) · [body 865](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L865) | [`TBoldOLWIntLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L520) | 🟢 ported |  |
+| `IntValue` | property | [265](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L265) | [`TBoldOLWIntLiteral.IntValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L526) | 🟢 ported |  |
 
 ## TBoldOLWEnumLiteral
 
-class at [line 268](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L268); ⚪ not started.
+class at [line 268](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L268); ✅ verified, C# [`TBoldOLWEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L532).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [273](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L273) · [body 830](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L830) |  | ⚪ not started |  |
-| `Create` | constructor | [275](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L275) · [body 824](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L824) |  | ⚪ not started |  |
-| `Name` | property | [276](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L276) |  | ⚪ not started |  |
-| `Intvalue` | property | [277](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L277) |  | ⚪ not started |  |
-| `AcceptVisitor` | method | [278](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L278) · [body 793](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L793) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [273](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L273) · [body 830](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L830) | [`TBoldOLWEnumLiteral.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L538) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `Create` | constructor | [275](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L275) · [body 824](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L824) | [`TBoldOLWEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L532) | ✅ verified: The primary constructor. | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `Name` | property | [276](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L276) | [`TBoldOLWEnumLiteral.Name`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L547) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `Intvalue` | property | [277](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L277) | [`TBoldOLWEnumLiteral.Intvalue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L548) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
+| `AcceptVisitor` | method | [278](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L278) · [body 793](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L793) | [`TBoldOLWEnumLiteral.AcceptVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L541) | ✅ verified | ✔ [`BoldOclEvaluationTests.Literals_accept_visitors_and_stream`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L225) |
 
 ## TBoldXMLOCLConditionStreamer
 
-class at [line 311](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L311); ⚪ not started.
+class at [line 311](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L311); ✅ verified, C# [`TBoldXMLOCLConditionStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L553).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [314](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L314) · [body 911](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L911) |  | ⚪ not started |  |
-| `WriteObject` | method | [316](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L316) · [body 935](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L935) |  | ⚪ not started |  |
-| `ReadObject` | method | [317](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L317) · [body 916](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L916) |  | ⚪ not started |  |
-| `CreateObject` | method | [318](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L318) · [body 906](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L906) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [314](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L314) · [body 911](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L911) | [`TBoldXMLOCLConditionStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L556) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `WriteObject` | method | [316](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L316) · [body 935](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L935) | [`TBoldXMLOCLConditionStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L573) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `ReadObject` | method | [317](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L317) · [body 916](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L916) | [`TBoldXMLOCLConditionStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L559) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `CreateObject` | method | [318](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L318) · [body 906](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L906) | [`TBoldXMLOCLConditionStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L587) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
 
 ## TBoldXMLOLWNodeListStreamer
 
-class at [line 321](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L321); ⚪ not started.
+class at [line 321](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L321); ✅ verified, C# [`TBoldXMLOLWNodeListStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L592).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [323](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L323) · [body 1394](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1394) |  | ⚪ not started |  |
-| `WriteObject` | method | [325](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L325) · [body 1421](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1421) |  | ⚪ not started |  |
-| `ReadObject` | method | [326](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L326) · [body 1399](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1399) |  | ⚪ not started |  |
-| `CreateObject` | method | [327](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L327) · [body 1389](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1389) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [323](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L323) · [body 1394](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1394) | [`TBoldXMLOLWNodeListStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L595) | 🟢 ported |  |
+| `WriteObject` | method | [325](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L325) · [body 1421](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1421) | [`TBoldXMLOLWNodeListStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L618) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `ReadObject` | method | [326](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L326) · [body 1399](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1399) | [`TBoldXMLOLWNodeListStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L598) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `CreateObject` | method | [327](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L327) · [body 1389](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1389) | [`TBoldXMLOLWNodeListStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L630) | 🟢 ported |  |
 
 ## TBoldXMLOLWNodeStreamer
 
-class at [line 331](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L331); ⚪ not started.
+class at [line 331](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L331); 🟢 ported, C# [`TBoldXMLOLWNodeStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L635).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WriteObject` | method | [334](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L334) · [body 970](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L970) |  | ⚪ not started |  |
-| `ReadObject` | method | [335](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L335) · [body 960](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L960) |  | ⚪ not started |  |
+| `WriteObject` | method | [334](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L334) · [body 970](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L970) | [`TBoldXMLOLWNodeStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L645) | 🟢 ported |  |
+| `ReadObject` | method | [335](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L335) · [body 960](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L960) | [`TBoldXMLOLWNodeStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L638) | 🟢 ported |  |
 
 ## TBoldXMLOLWTypeNodeStreamer
 
-class at [line 338](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L338); ⚪ not started.
+class at [line 338](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L338); 🟢 ported, C# [`TBoldXMLOLWTypeNodeStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L653).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [341](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L341) · [body 987](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L987) |  | ⚪ not started |  |
-| `WriteObject` | method | [343](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L343) · [body 1003](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1003) |  | ⚪ not started |  |
-| `ReadObject` | method | [344](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L344) · [body 992](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L992) |  | ⚪ not started |  |
-| `CreateObject` | method | [345](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L345) · [body 982](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L982) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [341](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L341) · [body 987](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L987) | [`TBoldXMLOLWTypeNodeStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L656) | 🟢 ported |  |
+| `WriteObject` | method | [343](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L343) · [body 1003](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1003) | [`TBoldXMLOLWTypeNodeStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L668) | 🟢 ported |  |
+| `ReadObject` | method | [344](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L344) · [body 992](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L992) | [`TBoldXMLOLWTypeNodeStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L659) | 🟢 ported |  |
+| `CreateObject` | method | [345](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L345) · [body 982](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L982) | [`TBoldXMLOLWTypeNodeStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L677) | 🟢 ported |  |
 
 ## TBoldXMLOLWListCoercionStreamer
 
-class at [line 348](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L348); ⚪ not started.
+class at [line 348](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L348); 🟢 ported, C# [`TBoldXMLOLWListCoercionStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L681).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [351](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L351) · [body 1021](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1021) |  | ⚪ not started |  |
-| `WriteObject` | method | [353](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L353) · [body 1036](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1036) |  | ⚪ not started |  |
-| `ReadObject` | method | [354](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L354) · [body 1026](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1026) |  | ⚪ not started |  |
-| `CreateObject` | method | [355](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L355) · [body 1016](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1016) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [351](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L351) · [body 1021](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1021) | [`TBoldXMLOLWListCoercionStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L684) | 🟢 ported |  |
+| `WriteObject` | method | [353](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L353) · [body 1036](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1036) | [`TBoldXMLOLWListCoercionStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L694) | 🟢 ported |  |
+| `ReadObject` | method | [354](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L354) · [body 1026](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1026) | [`TBoldXMLOLWListCoercionStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L687) | 🟢 ported |  |
+| `CreateObject` | method | [355](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L355) · [body 1016](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1016) | [`TBoldXMLOLWListCoercionStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L701) | 🟢 ported |  |
 
 ## TBoldXMLOLWOperationStreamer
 
-class at [line 358](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L358); ⚪ not started.
+class at [line 358](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L358); 🟢 ported, C# [`TBoldXMLOLWOperationStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L705).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [361](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L361) · [body 1053](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1053) |  | ⚪ not started |  |
-| `WriteObject` | method | [363](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L363) · [body 1069](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1069) |  | ⚪ not started |  |
-| `ReadObject` | method | [364](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L364) · [body 1058](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1058) |  | ⚪ not started |  |
-| `CreateObject` | method | [365](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L365) · [body 1048](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1048) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [361](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L361) · [body 1053](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1053) | [`TBoldXMLOLWOperationStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L708) | 🟢 ported |  |
+| `WriteObject` | method | [363](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L363) · [body 1069](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1069) | [`TBoldXMLOLWOperationStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L720) | 🟢 ported |  |
+| `ReadObject` | method | [364](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L364) · [body 1058](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1058) | [`TBoldXMLOLWOperationStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L711) | 🟢 ported |  |
+| `CreateObject` | method | [365](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L365) · [body 1048](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1048) | [`TBoldXMLOLWOperationStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L729) | 🟢 ported |  |
 
 ## TBoldXMLOLWIterationStreamer
 
-class at [line 368](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L368); ⚪ not started.
+class at [line 368](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L368); ✅ verified, C# [`TBoldXMLOLWIterationStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L733).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [371](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L371) · [body 1087](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1087) |  | ⚪ not started |  |
-| `WriteObject` | method | [373](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L373) · [body 1135](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1135) |  | ⚪ not started |  |
-| `ReadObject` | method | [374](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L374) · [body 1125](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1125) |  | ⚪ not started |  |
-| `CreateObject` | method | [375](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L375) · [body 1082](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1082) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [371](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L371) · [body 1087](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1087) | [`TBoldXMLOLWIterationStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L736) | 🟢 ported |  |
+| `WriteObject` | method | [373](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L373) · [body 1135](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1135) | [`TBoldXMLOLWIterationStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L746) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `ReadObject` | method | [374](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L374) · [body 1125](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1125) | [`TBoldXMLOLWIterationStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L739) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `CreateObject` | method | [375](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L375) · [body 1082](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1082) | [`TBoldXMLOLWIterationStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L753) | 🟢 ported |  |
 
 ## TBoldXMLOLWMemberStreamer
 
-class at [line 378](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L378); ⚪ not started.
+class at [line 378](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L378); 🟢 ported, C# [`TBoldXMLOLWMemberStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L757).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [381](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L381) · [body 1152](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1152) |  | ⚪ not started |  |
-| `WriteObject` | method | [383](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L383) · [body 1171](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1171) |  | ⚪ not started |  |
-| `ReadObject` | method | [384](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L384) · [body 1157](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1157) |  | ⚪ not started |  |
-| `CreateObject` | method | [385](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L385) · [body 1147](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1147) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [381](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L381) · [body 1152](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1152) | [`TBoldXMLOLWMemberStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L760) | 🟢 ported |  |
+| `WriteObject` | method | [383](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L383) · [body 1171](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1171) | [`TBoldXMLOLWMemberStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L775) | 🟢 ported |  |
+| `ReadObject` | method | [384](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L384) · [body 1157](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1157) | [`TBoldXMLOLWMemberStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L763) | 🟢 ported |  |
+| `CreateObject` | method | [385](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L385) · [body 1147](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1147) | [`TBoldXMLOLWMemberStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L787) | 🟢 ported |  |
 
 ## TBoldXMLOLWVariableBindingStreamer
 
-class at [line 388](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L388); ⚪ not started.
+class at [line 388](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L388); 🟢 ported, C# [`TBoldXMLOLWVariableBindingStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L791).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [391](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L391) · [body 1192](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1192) |  | ⚪ not started |  |
-| `WriteObject` | method | [393](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L393) · [body 1211](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1211) |  | ⚪ not started |  |
-| `ReadObject` | method | [394](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L394) · [body 1197](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1197) |  | ⚪ not started |  |
-| `CreateObject` | method | [395](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L395) · [body 1187](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1187) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [391](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L391) · [body 1192](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1192) | [`TBoldXMLOLWVariableBindingStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L794) | 🟢 ported |  |
+| `WriteObject` | method | [393](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L393) · [body 1211](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1211) | [`TBoldXMLOLWVariableBindingStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L809) | 🟢 ported: Writes the external value as invariant text; Delphi converts the Variant with the locale. |  |
+| `ReadObject` | method | [394](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L394) · [body 1197](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1197) | [`TBoldXMLOLWVariableBindingStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L797) | 🟢 ported: The external value comes back as a string, as in Delphi (marked FIXME there). |  |
+| `CreateObject` | method | [395](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L395) · [body 1187](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1187) | [`TBoldXMLOLWVariableBindingStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L821) | 🟢 ported |  |
 
 ## TBoldXMLOLWVariableReferenceStreamer
 
-class at [line 399](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L399); ⚪ not started.
+class at [line 399](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L399); ✅ verified, C# [`TBoldXMLOLWVariableReferenceStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L825).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [402](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L402) · [body 1232](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1232) |  | ⚪ not started |  |
-| `WriteObject` | method | [404](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L404) · [body 1247](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1247) |  | ⚪ not started |  |
-| `ReadObject` | method | [405](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L405) · [body 1237](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1237) |  | ⚪ not started |  |
-| `CreateObject` | method | [406](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L406) · [body 1227](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1227) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [402](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L402) · [body 1232](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1232) | [`TBoldXMLOLWVariableReferenceStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L828) | 🟢 ported |  |
+| `WriteObject` | method | [404](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L404) · [body 1247](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1247) | [`TBoldXMLOLWVariableReferenceStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L838) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `ReadObject` | method | [405](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L405) · [body 1237](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1237) | [`TBoldXMLOLWVariableReferenceStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L831) | ✅ verified | ✔ [`BoldOclEvaluationTests.OCL_conditions_stream_with_shared_bindings`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L185) |
+| `CreateObject` | method | [406](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L406) · [body 1227](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1227) | [`TBoldXMLOLWVariableReferenceStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L845) | 🟢 ported |  |
 
 ## TBoldXMLOLWStrLiteralStreamer
 
-class at [line 409](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L409); ⚪ not started.
+class at [line 409](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L409); 🟢 ported, C# [`TBoldXMLOLWStrLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L849).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [412](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L412) · [body 1264](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1264) |  | ⚪ not started |  |
-| `WriteObject` | method | [414](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L414) · [body 1279](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1279) |  | ⚪ not started |  |
-| `ReadObject` | method | [415](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L415) · [body 1269](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1269) |  | ⚪ not started |  |
-| `CreateObject` | method | [416](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L416) · [body 1259](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1259) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [412](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L412) · [body 1264](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1264) | [`TBoldXMLOLWStrLiteralStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L852) | 🟢 ported |  |
+| `WriteObject` | method | [414](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L414) · [body 1279](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1279) | [`TBoldXMLOLWStrLiteralStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L862) | 🟢 ported |  |
+| `ReadObject` | method | [415](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L415) · [body 1269](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1269) | [`TBoldXMLOLWStrLiteralStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L855) | 🟢 ported |  |
+| `CreateObject` | method | [416](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L416) · [body 1259](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1259) | [`TBoldXMLOLWStrLiteralStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L869) | 🟢 ported |  |
 
 ## TBoldXMLOLWFloatLiteralStreamer
 
-class at [line 419](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L419); ⚪ not started.
+class at [line 419](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L419); 🟢 ported, C# [`TBoldXMLOLWFloatLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L873).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [422](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L422) · [body 1328](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1328) |  | ⚪ not started |  |
-| `WriteObject` | method | [424](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L424) · [body 1343](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1343) |  | ⚪ not started |  |
-| `ReadObject` | method | [425](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L425) · [body 1333](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1333) |  | ⚪ not started |  |
-| `CreateObject` | method | [426](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L426) · [body 1323](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1323) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [422](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L422) · [body 1328](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1328) | [`TBoldXMLOLWFloatLiteralStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L876) | 🟢 ported |  |
+| `WriteObject` | method | [424](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L424) · [body 1343](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1343) | [`TBoldXMLOLWFloatLiteralStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L886) | 🟢 ported |  |
+| `ReadObject` | method | [425](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L425) · [body 1333](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1333) | [`TBoldXMLOLWFloatLiteralStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L879) | 🟢 ported |  |
+| `CreateObject` | method | [426](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L426) · [body 1323](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1323) | [`TBoldXMLOLWFloatLiteralStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L893) | 🟢 ported |  |
 
 ## TBoldXMLOLWIntLiteralStreamer
 
-class at [line 429](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L429); ⚪ not started.
+class at [line 429](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L429); 🟢 ported, C# [`TBoldXMLOLWIntLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L897).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [432](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L432) · [body 1296](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1296) |  | ⚪ not started |  |
-| `WriteObject` | method | [434](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L434) · [body 1311](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1311) |  | ⚪ not started |  |
-| `ReadObject` | method | [435](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L435) · [body 1301](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1301) |  | ⚪ not started |  |
-| `CreateObject` | method | [436](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L436) · [body 1291](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1291) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [432](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L432) · [body 1296](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1296) | [`TBoldXMLOLWIntLiteralStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L900) | 🟢 ported |  |
+| `WriteObject` | method | [434](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L434) · [body 1311](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1311) | [`TBoldXMLOLWIntLiteralStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L910) | 🟢 ported |  |
+| `ReadObject` | method | [435](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L435) · [body 1301](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1301) | [`TBoldXMLOLWIntLiteralStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L903) | 🟢 ported |  |
+| `CreateObject` | method | [436](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L436) · [body 1291](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1291) | [`TBoldXMLOLWIntLiteralStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L917) | 🟢 ported |  |
 
 ## TBoldXMLOLWDateLiteralStreamer
 
-class at [line 439](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L439); ⚪ not started.
+class at [line 439](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L439); 🟢 ported, C# [`TBoldXMLOLWDateLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L921).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [442](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L442) · [body 1445](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1445) |  | ⚪ not started |  |
-| `WriteObject` | method | [444](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L444) · [body 1461](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1461) |  | ⚪ not started |  |
-| `ReadObject` | method | [445](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L445) · [body 1450](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1450) |  | ⚪ not started |  |
-| `CreateObject` | method | [446](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L446) · [body 1440](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1440) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [442](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L442) · [body 1445](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1445) | [`TBoldXMLOLWDateLiteralStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L924) | 🟢 ported |  |
+| `WriteObject` | method | [444](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L444) · [body 1461](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1461) | [`TBoldXMLOLWDateLiteralStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L934) | 🟢 ported |  |
+| `ReadObject` | method | [445](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L445) · [body 1450](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1450) | [`TBoldXMLOLWDateLiteralStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L927) | 🟢 ported |  |
+| `CreateObject` | method | [446](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L446) · [body 1440](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1440) | [`TBoldXMLOLWDateLiteralStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L941) | 🟢 ported |  |
 
 ## TBoldXMLOLWTimeLiteralStreamer
 
-class at [line 449](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L449); ⚪ not started.
+class at [line 449](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L449); 🟢 ported, C# [`TBoldXMLOLWTimeLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L945).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [452](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L452) · [body 1478](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1478) |  | ⚪ not started |  |
-| `WriteObject` | method | [454](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L454) · [body 1494](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1494) |  | ⚪ not started |  |
-| `ReadObject` | method | [455](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L455) · [body 1483](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1483) |  | ⚪ not started |  |
-| `CreateObject` | method | [456](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L456) · [body 1473](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1473) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [452](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L452) · [body 1478](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1478) | [`TBoldXMLOLWTimeLiteralStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L948) | 🟢 ported |  |
+| `WriteObject` | method | [454](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L454) · [body 1494](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1494) | [`TBoldXMLOLWTimeLiteralStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L958) | 🟢 ported |  |
+| `ReadObject` | method | [455](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L455) · [body 1483](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1483) | [`TBoldXMLOLWTimeLiteralStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L951) | 🟢 ported |  |
+| `CreateObject` | method | [456](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L456) · [body 1473](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1473) | [`TBoldXMLOLWTimeLiteralStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L965) | 🟢 ported |  |
 
 ## TBoldXMLOLWEnumLiteralStreamer
 
-class at [line 461](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L461); ⚪ not started.
+class at [line 461](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L461); 🟢 ported, C# [`TBoldXMLOLWEnumLiteralStreamer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L969).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetStreamName` | method, protected | [464](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L464) · [body 1360](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1360) |  | ⚪ not started |  |
-| `WriteObject` | method | [466](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L466) · [body 1376](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1376) |  | ⚪ not started |  |
-| `ReadObject` | method | [467](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L467) · [body 1365](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1365) |  | ⚪ not started |  |
-| `CreateObject` | method | [468](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L468) · [body 1355](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1355) |  | ⚪ not started |  |
+| `GetStreamName` | method, protected | [464](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L464) · [body 1360](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1360) | [`TBoldXMLOLWEnumLiteralStreamer.GetStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L972) | 🟢 ported |  |
+| `WriteObject` | method | [466](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L466) · [body 1376](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1376) | [`TBoldXMLOLWEnumLiteralStreamer.WriteObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L984) | 🟢 ported |  |
+| `ReadObject` | method | [467](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L467) · [body 1365](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1365) | [`TBoldXMLOLWEnumLiteralStreamer.ReadObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L975) | 🟢 ported |  |
+| `CreateObject` | method | [468](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L468) · [body 1355](../../../Source/ObjectSpace/Ocl/BoldOclLightWeightNodes.pas#L1355) | [`TBoldXMLOLWEnumLiteralStreamer.CreateObject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L993) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldOclLightWeightNodes.OCLConditionStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L22) (const)
+- [`BoldOclLightWeightNodes.OLWNodeListStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L23) (const)
+- [`BoldOclLightWeightNodes.OLWNodeStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L24) (const)
+- [`BoldOclLightWeightNodes.OLWTypeNodeStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L25) (const)
+- [`BoldOclLightWeightNodes.OLWListCoercionStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L26) (const)
+- [`BoldOclLightWeightNodes.OLWOperationStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L27) (const)
+- [`BoldOclLightWeightNodes.OLWIterationStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L28) (const)
+- [`BoldOclLightWeightNodes.OLWMemberStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L29) (const)
+- [`BoldOclLightWeightNodes.OLWVariableBindingStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L30) (const)
+- [`BoldOclLightWeightNodes.OLWVariableReferenceStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L31) (const)
+- [`BoldOclLightWeightNodes.OLWStrLiteralStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L32) (const)
+- [`BoldOclLightWeightNodes.OLWFloatLiteralStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L33) (const)
+- [`BoldOclLightWeightNodes.OLWIntLiteralStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L34) (const)
+- [`BoldOclLightWeightNodes.OLWEnumLiteralStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L35) (const)
+- [`BoldOclLightWeightNodes.OLWDateLiteralStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L36) (const)
+- [`BoldOclLightWeightNodes.OLWTimeLiteralStreamName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L37) (const)
+- [`TBoldOclCondition.fRootNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L106) (field)
+- [`TBoldOclCondition.fContext`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L107) (field)
+- [`TBoldOclCondition.fEnv`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L108) (field)
+- [`TBoldOclCondition.fOclExpr`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L109) (field)
+- [`TBoldOLWNodeList.Clear`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L184) (method)
+- [`TBoldOLWNode.fPosition`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L210) (field)
+- [`TBoldOLWTypeNode.fTypeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L232) (field)
+- [`TBoldOLWTypeNode.fTopSortedIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L233) (field)
+- [`TBoldOLWListCoercion.fChild`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L254) (field)
+- [`TBoldOLWOperation.fArgs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L274) (field)
+- [`TBoldOLWOperation.fOperationName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L275) (field)
+- [`TBoldOLWIteration.fLoopVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L296) (field)
+- [`TBoldOLWMember.fMemberIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L315) (field)
+- [`TBoldOLWMember.fMemberName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L316) (field)
+- [`TBoldOLWMember.fmemberOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L317) (field)
+- [`TBoldOLWMember.fQualifier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L318) (field)
+- [`TBoldOLWMember.fIsBoolean`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L319) (field)
+- [`TBoldOLWVariableBinding.fVariableName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L353) (field)
+- [`TBoldOLWVariableBinding.fTopSortedIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L354) (field)
+- [`TBoldOLWVariableBinding.fExternalVarValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L355) (field)
+- [`TBoldOLWVariableBinding.fIsLoopVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L356) (field)
+- [`TBoldOLWVariableBinding.fRefCount`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L357) (field)
+- [`TBoldOLWVariableReference.fVariableBinding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L391) (field)
+- [`TBoldOLWStrLiteral.fStrValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L423) (field)
+- [`TBoldOLWMomentLiteral.fMomentValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L440) (field)
+- [`TBoldOLWFloatLiteral.fFloatValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L494) (field)
+- [`TBoldOLWIntLiteral.fIntValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L514) (field)
+- [`TBoldOLWEnumLiteral.fName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L534) (field)
+- [`TBoldOLWEnumLiteral.fIntValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclLightWeightNodes.cs#L535) (field)
 
 ## Dependencies
 

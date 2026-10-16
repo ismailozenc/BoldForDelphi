@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldOclSemantics.pas`](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas) (940 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 26 symbols done, 0 verified |
+| Status | 🟢 ported: 26 of 26 symbols done, 7 verified |
 
-⚪ 26 not started
+✅ 7 verified · 🟢 19 ported
 
 ## Unit level
 
@@ -18,39 +18,45 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOclSemanticsVisitor` | class | [16](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L16) |  | ⚪ not started |  |
+| `TBoldOclSemanticsVisitor` | class | [16](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L16) | [`TBoldOclSemanticsVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L22) | 🟢 ported |  |
 
 ## TBoldOclSemanticsVisitor
 
-class at [line 16](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L16); 🟢 ported, C# [`TBoldOclSemanticsVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [26](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L26) · [body 69](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L69) |  | ⚪ not started |  |
-| `AddListCoercionOnArgs` | method | [27](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L27) · [body 180](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L180) |  | ⚪ not started |  |
-| `CheckArgumentType` | method | [28](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L28) · [body 84](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L84) |  | ⚪ not started |  |
-| `DeduceBoldType` | method | [29](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L29) · [body 823](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L823) |  | ⚪ not started |  |
-| `FindSymbol` | method | [30](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L30) · [body 175](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L175) |  | ⚪ not started |  |
-| `LeastCommonSuperClass` | method | [31](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L31) · [body 718](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L718) |  | ⚪ not started |  |
-| `LeastCommonSuperType` | method | [32](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L32) · [body 729](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L729) |  | ⚪ not started |  |
-| `PushResubscribe` | method | [33](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L33) · [body 78](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L78) |  | ⚪ not started |  |
-| `TestForOperation` | method | [34](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L34) · [body 395](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L395) |  | ⚪ not started |  |
-| `Traverse` | method | [35](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L35) · [body 103](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L103) |  | ⚪ not started |  |
-| `TraverseList` | method | [36](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L36) · [body 137](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L137) |  | ⚪ not started |  |
-| `VisitTBoldOclCollectionLiteral` | method | [37](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L37) · [body 745](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L745) |  | ⚪ not started |  |
-| `VisitTBoldOclEnumLiteral` | method | [38](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L38) · [body 811](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L811) |  | ⚪ not started |  |
-| `VisitTBoldOclIntLiteral` | method | [39](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L39) · [body 817](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L817) |  | ⚪ not started |  |
-| `VisitTBoldOclDateLiteral` | method | [40](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L40) · [body 928](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L928) |  | ⚪ not started |  |
-| `VisitTBoldOclTimeLiteral` | method | [41](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L41) · [body 934](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L934) |  | ⚪ not started |  |
-| `VisitTBoldOclIteration` | method | [42](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L42) · [body 336](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L336) |  | ⚪ not started |  |
-| `VisitTBoldOclMember` | method | [43](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L43) · [body 510](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L510) |  | ⚪ not started |  |
-| `VisitTBoldOclMethod` | method | [44](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L44) · [body 453](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L453) |  | ⚪ not started |  |
-| `VisitTBoldOclNumericLiteral` | method | [45](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L45) · [body 805](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L805) |  | ⚪ not started |  |
-| `VisitTBoldOclOperation` | method | [46](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L46) · [body 197](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L197) |  | ⚪ not started |  |
-| `VisitTBoldOclStrLiteral` | method | [47](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L47) · [body 712](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L712) |  | ⚪ not started |  |
-| `VisitTBoldOclTypeNode` | method | [48](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L48) · [body 666](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L666) |  | ⚪ not started |  |
-| `VisitTBoldOclVariableReference` | method | [49](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L49) · [body 655](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L655) |  | ⚪ not started |  |
-| `IgnoreNelCompatibility` | property | [50](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L50) |  | ⚪ not started |  |
+| `Create` | constructor | [26](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L26) · [body 69](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L69) | [`TBoldOclSemanticsVisitor.TBoldOclSemanticsVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L33) | 🟢 ported |  |
+| `AddListCoercionOnArgs` | method | [27](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L27) · [body 180](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L180) | [`TBoldOclSemanticsVisitor.AddListCoercionOnArgs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L135) | 🟢 ported |  |
+| `CheckArgumentType` | method | [28](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L28) · [body 84](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L84) | [`TBoldOclSemanticsVisitor.CheckArgumentType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L52) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `DeduceBoldType` | method | [29](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L29) · [body 823](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L823) | [`TBoldOclSemanticsVisitor.DeduceBoldType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L827) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `FindSymbol` | method | [30](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L30) · [body 175](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L175) | [`TBoldOclSemanticsVisitor.FindSymbol`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L131) | 🟢 ported |  |
+| `LeastCommonSuperClass` | method | [31](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L31) · [body 718](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L718) | [`TBoldOclSemanticsVisitor.LeastCommonSuperClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L695) | 🟢 ported |  |
+| `LeastCommonSuperType` | method | [32](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L32) · [body 729](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L729) | [`TBoldOclSemanticsVisitor.LeastCommonSuperType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L712) | 🟢 ported |  |
+| `PushResubscribe` | method | [33](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L33) · [body 78](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L78) | [`TBoldOclSemanticsVisitor.PushResubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L44) | 🟢 ported |  |
+| `TestForOperation` | method | [34](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L34) · [body 395](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L395) | [`TBoldOclSemanticsVisitor.TestForOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L351) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
+| `Traverse` | method | [35](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L35) · [body 103](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L103) | [`TBoldOclSemanticsVisitor.Traverse`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L67) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `TraverseList` | method | [36](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L36) · [body 137](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L137) | [`TBoldOclSemanticsVisitor.TraverseList`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L98) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `VisitTBoldOclCollectionLiteral` | method | [37](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L37) · [body 745](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L745) | [`TBoldOclSemanticsVisitor.VisitTBoldOclCollectionLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L736) | 🟢 ported |  |
+| `VisitTBoldOclEnumLiteral` | method | [38](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L38) · [body 811](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L811) | [`TBoldOclSemanticsVisitor.VisitTBoldOclEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L812) | 🟢 ported |  |
+| `VisitTBoldOclIntLiteral` | method | [39](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L39) · [body 817](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L817) | [`TBoldOclSemanticsVisitor.VisitTBoldOclIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L819) | 🟢 ported |  |
+| `VisitTBoldOclDateLiteral` | method | [40](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L40) · [body 928](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L928) | [`TBoldOclSemanticsVisitor.VisitTBoldOclDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L950) | 🟢 ported |  |
+| `VisitTBoldOclTimeLiteral` | method | [41](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L41) · [body 934](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L934) | [`TBoldOclSemanticsVisitor.VisitTBoldOclTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L957) | 🟢 ported |  |
+| `VisitTBoldOclIteration` | method | [42](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L42) · [body 336](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L336) | [`TBoldOclSemanticsVisitor.VisitTBoldOclIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L283) | 🟢 ported |  |
+| `VisitTBoldOclMember` | method | [43](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L43) · [body 510](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L510) | [`TBoldOclSemanticsVisitor.VisitTBoldOclMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L476) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
+| `VisitTBoldOclMethod` | method | [44](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L44) · [body 453](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L453) | [`TBoldOclSemanticsVisitor.VisitTBoldOclMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L413) | 🟢 ported |  |
+| `VisitTBoldOclNumericLiteral` | method | [45](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L45) · [body 805](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L805) | [`TBoldOclSemanticsVisitor.VisitTBoldOclNumericLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L805) | 🟢 ported |  |
+| `VisitTBoldOclOperation` | method | [46](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L46) · [body 197](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L197) | [`TBoldOclSemanticsVisitor.VisitTBoldOclOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L208) | 🟢 ported |  |
+| `VisitTBoldOclStrLiteral` | method | [47](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L47) · [body 712](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L712) | [`TBoldOclSemanticsVisitor.VisitTBoldOclStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L688) | 🟢 ported |  |
+| `VisitTBoldOclTypeNode` | method | [48](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L48) · [body 666](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L666) | [`TBoldOclSemanticsVisitor.VisitTBoldOclTypeNode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L642) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
+| `VisitTBoldOclVariableReference` | method | [49](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L49) · [body 655](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L655) | [`TBoldOclSemanticsVisitor.VisitTBoldOclVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L625) | 🟢 ported |  |
+| `IgnoreNelCompatibility` | property | [50](../../../Source/ObjectSpace/Ocl/BoldOclSemantics.pas#L50) | [`TBoldOclSemanticsVisitor.IgnoreNelCompatibility`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L963) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldOclSemantics.BoldOclDeduceMethodName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSemantics.cs#L11) (field)
 
 ## Dependencies
 

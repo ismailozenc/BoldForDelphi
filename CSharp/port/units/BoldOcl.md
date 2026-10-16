@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldOcl.pas`](../../../Source/ObjectSpace/Ocl/BoldOcl.pas) (894 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 37 symbols done, 0 verified |
+| Status | 🟢 ported: 37 of 37 symbols done, 26 verified |
 
-⚪ 37 not started
+✅ 26 verified · 🟢 8 ported · 🔵 3 replaced
 
 ## Unit level
 
@@ -18,71 +18,86 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOclEntry` | class | [24](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L24) |  | ⚪ not started |  |
-| `TBoldOClDictionary` | class | [40](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L40) |  | ⚪ not started |  |
-| `TBoldOcl` | class | [50](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L50) |  | ⚪ not started |  |
-| `BoldOCLAllowCapitalMembers` | var | [83](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L83) |  | ⚪ not started |  |
-| `BoldNelCompatibility` | var | [84](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L84) |  | ⚪ not started |  |
-| `BoldOCLLogHandler` | var | [85](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L85) |  | ⚪ not started |  |
-| `BoldOCLRTDebugger` | var | [86](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L86) |  | ⚪ not started |  |
-| `BoldOclParserTablePath` | var | [87](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L87) |  | ⚪ not started |  |
-| `BoldOCLLog` | routine | [89](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L89) · [body 779](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L779) |  | ⚪ not started |  |
-| `BoldForceNelCompatibility` | routine | [90](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L90) · [body 882](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L882) |  | ⚪ not started |  |
-| `OclScannerTable` | routine, implementation | [119](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L119) |  | ⚪ not started |  |
-| `OclParserTable` | routine, implementation | [128](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L128) |  | ⚪ not started |  |
-| `TOCLIndex` | class, implementation | [139](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L139) |  | ⚪ not started |  |
-| `MapResubscribe` | routine, implementation | [548](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L548) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [888](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L888) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [890](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L890) |  | ⚪ not started |  |
+| `TBoldOclEntry` | class | [24](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L24) | [`TBoldOclEntry`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L89) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+| `TBoldOClDictionary` | class | [40](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L40) | [`TBoldOClDictionary`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L120) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+| `TBoldOcl` | class | [50](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L50) | [`TBoldOcl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L146) | 🟢 ported |  |
+| `BoldOCLAllowCapitalMembers` | var | [83](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L83) | [`BoldOcl.BoldOCLAllowCapitalMembers`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L20) | ✅ verified | ✔ [`BoldOclEvaluationTests.Definitions_and_compatibility_switches`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L120) |
+| `BoldNelCompatibility` | var | [84](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L84) | [`BoldOcl.BoldNelCompatibility`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L23) | ✅ verified | ✔ [`BoldOclEvaluationTests.Definitions_and_compatibility_switches`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L120) |
+| `BoldOCLLogHandler` | var | [85](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L85) | [`BoldOcl.BoldOCLLogHandler`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L26) | 🟢 ported |  |
+| `BoldOCLRTDebugger` | var | [86](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L86) | [`BoldOcl.BoldOCLRTDebugger`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L29) | ✅ verified | ✔ [`BoldOclEvaluationTests.The_run_time_debugger_supplies_fixes_and_hears_failures`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L98) |
+| `BoldOclParserTablePath` | var | [87](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L87) | [`BoldOcl.BoldOclParserTablePath`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L32) | 🟢 ported |  |
+| `BoldOCLLog` | routine | [89](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L89) · [body 779](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L779) | [`BoldOcl.BoldOCLLog`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L67) | 🟢 ported |  |
+| `BoldForceNelCompatibility` | routine | [90](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L90) · [body 882](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L882) | [`BoldOcl.BoldForceNelCompatibility`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L77) | ✅ verified | ✔ [`BoldOclEvaluationTests.Definitions_and_compatibility_switches`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L120) |
+| `OclScannerTable` | routine, implementation | [119](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L119) | [`BoldOcl.OclScannerTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L53) | ✅ verified: Reads the assembly's embedded resource where Delphi reads the module's RC resource. | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `OclParserTable` | routine, implementation | [128](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L128) | [`BoldOcl.OclParserTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L58) | ✅ verified: Reads the assembly's embedded resource where Delphi reads the module's RC resource. | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `TOCLIndex` | class, implementation | [139](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L139) | [`TOCLIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L112) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+| `MapResubscribe` | routine, implementation | [548](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L548) | [`BoldOcl.MapResubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L62) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [888](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L888) | [`[assembly: Delphi] in BoldOcl.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L9) | ✅ verified: Empty in Delphi; nothing to do. | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `finalization` | finalization, implementation | [890](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L890) | [`[assembly: Delphi] in BoldOcl.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L10) | 🔵 replaced: Freed the cached tables; the garbage collector does that in .NET. |  |
 
 ## TBoldOclEntry
 
-class at [line 24](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L24); ⚪ not started.
+class at [line 24](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L24); ✅ verified, C# [`TBoldOclEntry`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L89).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [35](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L35) · [body 764](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L764) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L36) · [body 772](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L772) |  | ⚪ not started |  |
+| `Create` | constructor | [35](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L35) · [body 764](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L764) | [`TBoldOclEntry.TBoldOclEntry`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L102) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+| `Destroy` | destructor | [36](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L36) · [body 772](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L772) | [`[assembly: Delphi] in BoldOcl.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L12) | 🔵 replaced: Freed the self variable and the tree; the garbage collector does that in .NET. |  |
 
 ## TBoldOClDictionary
 
-class at [line 40](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L40); ⚪ not started.
+class at [line 40](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L40); ✅ verified, C# [`TBoldOClDictionary`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L120).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetOcl` | method, private | [42](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L42) · [body 753](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L753) |  | ⚪ not started |  |
-| `Create` | constructor | [44](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L44) · [body 746](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L746) |  | ⚪ not started |  |
-| `AddOcl` | method | [45](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L45) · [body 758](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L758) |  | ⚪ not started |  |
-| `OclEntryByExpressionString` | property | [46](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L46) |  | ⚪ not started |  |
+| `GetOcl` | method, private | [42](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L42) · [body 753](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L753) | [`TBoldOClDictionary.GetOcl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L132) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+| `Create` | constructor | [44](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L44) · [body 746](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L746) | [`TBoldOClDictionary.TBoldOClDictionary`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L125) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+| `AddOcl` | method | [45](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L45) · [body 758](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L758) | [`TBoldOClDictionary.AddOcl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L135) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+| `OclEntryByExpressionString` | property | [46](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L46) | [`TBoldOClDictionary.OclEntryByExpressionString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L138) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
 
 ## TBoldOcl
 
-class at [line 50](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L50); ⚪ not started.
+class at [line 50](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L50); 🟢 ported, C# [`TBoldOcl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L146).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SyntacticParse` | method, private | [65](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L65) · [body 220](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L220) |  | ⚪ not started |  |
-| `SemanticCheck` | method, private | [66](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L66) · [body 362](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L362) |  | ⚪ not started |  |
-| `LookupOclDefinition` | method, private | [67](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L67) · [body 786](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L786) |  | ⚪ not started |  |
-| `PSEvaluation` | method, private | [68](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L68) · [body 799](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L799) |  | ⚪ not started |  |
-| `AddVarsToEnv` | method, private | [69](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L69) · [body 862](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L862) |  | ⚪ not started |  |
-| `Create` | constructor | [71](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L71) · [body 150](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L150) |  | ⚪ not started |  |
-| `Destroy` | destructor | [72](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L72) · [body 184](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L184) |  | ⚪ not started |  |
-| `SymbolTable` | property | [73](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L73) |  | ⚪ not started |  |
-| `BoldSystem` | property | [74](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L74) |  | ⚪ not started |  |
-| `DefineVariable` | method | [75](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L75) · [body 194](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L194) |  | ⚪ not started |  |
-| `Evaluate` | method | [76](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L76) · [body 559](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L559) |  | ⚪ not started |  |
-| `ExpressionType` | method | [77](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L77) · [body 498](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L498) |  | ⚪ not started |  |
-| `RTInfo` | method | [78](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L78) · [body 454](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L454) |  | ⚪ not started |  |
-| `SetLookupOclDefinition` | method | [79](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L79) · [body 794](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L794) |  | ⚪ not started |  |
+| `SyntacticParse` | method, private | [65](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L65) · [body 220](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L220) | [`TBoldOcl.SyntacticParse`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L239) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `SemanticCheck` | method, private | [66](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L66) · [body 362](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L362) | [`TBoldOcl.SemanticCheck`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L390) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `LookupOclDefinition` | method, private | [67](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L67) · [body 786](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L786) | [`TBoldOcl.LookupOclDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L747) | ✅ verified | ✔ [`BoldOclEvaluationTests.Definitions_and_compatibility_switches`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L120) |
+| `PSEvaluation` | method, private | [68](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L68) · [body 799](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L799) | [`TBoldOcl.PSEvaluation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L762) | ✅ verified | ✔ [`BoldOclEvaluationTests.Object_list_expressions_evaluate_in_the_persistence_layer`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L148) |
+| `AddVarsToEnv` | method, private | [69](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L69) · [body 862](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L862) | [`TBoldOcl.AddVarsToEnv`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L811) | ✅ verified | ✔ [`BoldOclEvaluationTests.External_variables_are_bound`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L42) |
+| `Create` | constructor | [71](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L71) · [body 150](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L150) | [`TBoldOcl.TBoldOcl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L170) | 🟢 ported |  |
+| `Destroy` | destructor | [72](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L72) · [body 184](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L184) | [`[assembly: Delphi] in BoldOcl.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L11) | 🔵 replaced: Freed the dictionary, symbol table and global environment; the garbage collector does that in .NET. |  |
+| `SymbolTable` | property | [73](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L73) | [`TBoldOcl.SymbolTable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L200) | 🟢 ported |  |
+| `BoldSystem` | property | [74](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L74) | [`TBoldOcl.BoldSystem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L201) | 🟢 ported |  |
+| `DefineVariable` | method | [75](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L75) · [body 194](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L194) | [`TBoldOcl.DefineVariable`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L205) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `Evaluate` | method | [76](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L76) · [body 559](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L559) | [`TBoldOcl.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L573) | ✅ verified | ✔ [`BoldOclEvaluationTests.External_variables_are_bound`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L42)<br>✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `ExpressionType` | method | [77](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L77) · [body 498](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L498) | [`TBoldOcl.ExpressionType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L530) | ✅ verified | ✔ [`BoldOclTests.Expression_types_and_member_info`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L106) |
+| `RTInfo` | method | [78](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L78) · [body 454](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L454) | [`TBoldOcl.RTInfo`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L492) | ✅ verified | ✔ [`BoldOclTests.Expression_types_and_member_info`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L106) |
+| `SetLookupOclDefinition` | method | [79](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L79) · [body 794](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L794) | [`TBoldOcl.SetLookupOclDefinition`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L758) | ✅ verified | ✔ [`BoldOclEvaluationTests.Definitions_and_compatibility_switches`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L120) |
 
 ## TOCLIndex
 
-class at [line 139](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L139); ⚪ not started.
+class at [line 139](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L139); ✅ verified, C# [`TOCLIndex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L112).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [141](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L141) · [body 145](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L145) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [141](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L141) · [body 145](../../../Source/ObjectSpace/Ocl/BoldOcl.pas#L145) | [`TOCLIndex.ItemAsKeyString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L115) | ✅ verified | ✔ [`BoldOclEvaluationTests.Parsed_expressions_are_cached`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L78) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldOcl.IncOclCounter`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L84) (method)
+- [`TBoldOclEntry.OclString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L91) (field)
+- [`TBoldOclEntry.SelfVar`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L92) (field)
+- [`TBoldOclEntry.Model`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L93) (field)
+- [`TBoldOclEntry.Context`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L94) (field)
+- [`TBoldOclEntry.firstSemanticPass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L95) (field)
+- [`TBoldOclEntry.EvaluatedOnce`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L96) (field)
+- [`TBoldOclEntry.OwnedByDictionary`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L97) (field)
+- [`TBoldOclEntry.Ocl`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L98) (field)
+- [`TBoldOclEntry.UsedByOtherEvaluation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOcl.cs#L99) (field)
 
 ## Dependencies
 

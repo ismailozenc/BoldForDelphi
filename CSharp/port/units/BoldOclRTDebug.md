@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldOclRTDebug.pas`](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas) (19 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | ✅ verified: 4 of 4 symbols done, 4 verified |
 
-⚪ 4 not started
+✅ 4 verified
 
 ## Unit level
 
@@ -18,17 +18,17 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOclRTDebugger` | class | [10](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L10) |  | ⚪ not started |  |
+| `TBoldOclRTDebugger` | class | [10](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L10) | [`TBoldOclRTDebugger`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs#L8) | ✅ verified | ✔ [`BoldOclEvaluationTests.The_run_time_debugger_supplies_fixes_and_hears_failures`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L98) |
 
 ## TBoldOclRTDebugger
 
-class at [line 10](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L10); ⚪ not started.
+class at [line 10](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L10); ✅ verified, C# [`TBoldOclRTDebugger`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `HasFixFor` | method | [12](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L12) |  | ⚪ not started |  |
-| `GetFixFor` | method | [13](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L13) |  | ⚪ not started |  |
-| `AddFixFor` | method | [14](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L14) |  | ⚪ not started |  |
+| `HasFixFor` | method | [12](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L12) | [`TBoldOclRTDebugger.HasFixFor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs#L11) | ✅ verified | ✔ [`BoldOclEvaluationTests.The_run_time_debugger_supplies_fixes_and_hears_failures`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L98) |
+| `GetFixFor` | method | [13](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L13) | [`TBoldOclRTDebugger.GetFixFor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs#L14) | ✅ verified | ✔ [`BoldOclEvaluationTests.The_run_time_debugger_supplies_fixes_and_hears_failures`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L98) |
+| `AddFixFor` | method | [14](../../../Source/ObjectSpace/Ocl/BoldOclRTDebug.pas#L14) | [`TBoldOclRTDebugger.AddFixFor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclRTDebug.cs#L18) | ✅ verified | ✔ [`BoldOclEvaluationTests.The_run_time_debugger_supplies_fixes_and_hears_failures`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L98) |
 
 ## Dependencies
 

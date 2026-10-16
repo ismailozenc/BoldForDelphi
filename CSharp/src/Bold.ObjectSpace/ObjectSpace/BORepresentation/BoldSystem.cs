@@ -777,21 +777,8 @@ public class TBoldSystem : TBoldDomainElement
     protected override string GetDisplayName() => BoldType!.ExpressionName;
 
     /// <summary>The OCL evaluator for this system, created on first use.</summary>
-    [Delphi(PortStatus.Ported, Note = "Creates TBoldOcl through BoldSystem.G_CreateOclEvaluator, set by the OCL units.")]
-    protected override TBoldEvaluator? GetEvaluator()
-    {
-        if (fEvaluator is null)
-        {
-            if (G_CreateOclEvaluator is null)
-            {
-                throw new EBoldInternal(SysUtils.Format("%s.GetEvaluator: no OCL evaluator is installed", GetType().Name));
-            }
-
-            fEvaluator = G_CreateOclEvaluator(BoldSystemTypeInfo, this);
-        }
-
-        return fEvaluator;
-    }
+    [Delphi(PortStatus.Ported)]
+    protected override TBoldEvaluator? GetEvaluator() => fEvaluator ??= new TBoldOcl(BoldSystemTypeInfo, this);
 
     [Delphi(PortStatus.Ported)]
     public void MakeDefault() => G_DefaultBoldSystem = this;
@@ -1257,9 +1244,6 @@ public static partial class BoldSystem
     internal static TBoldSystem? G_DefaultBoldSystem;
 
     internal static int IX_BoldObjectId = -1;
-
-    /// <summary>Creates the OCL evaluator of a system; set by the OCL units (BoldOcl), which come after BoldSystem.</summary>
-    internal static Func<TBoldSystemTypeInfo, TBoldSystem, TBoldEvaluator>? G_CreateOclEvaluator = null;
 
     /// <summary>The object's contents in the value space, added with the object's existence and persistence state when missing.</summary>
     [Delphi(PortStatus.Ported)]

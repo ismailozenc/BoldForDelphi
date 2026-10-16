@@ -117,7 +117,7 @@ public class BoldSystemRTTests
         // MetaType list, one per attribute type, the untyped list, one per class.
         Assert.That(system.ListTypes.Count, Is.EqualTo(1 + system.AttributeTypes.Count + 1 + 6));
         Assert.That(system.ListTypeInfoByElement(person)!.ExpressionName, Is.EqualTo("Collection(Person)"));
-        Assert.That(system.ListTypeInfoByElement(null), Is.Null);
+        Assert.That(system.ListTypeInfoByElement(null)!.ListElementTypeInfo, Is.Null, "a null element gives the untyped list");
 
         Assert.That(system.ElementTypeInfoByExpressionName("Collection(Person)"), Is.SameAs(person.ListTypeInfo));
         Assert.That(system.ElementTypeInfoByExpressionName("MetaType"), Is.SameAs(meta));
@@ -138,8 +138,8 @@ public class BoldSystemRTTests
         Assert.That(nil.ConformsTo(person) && nil.BoldIsA(person), Is.True, "nil conforms to every class");
         Assert.That(nil.ConformsTo(integer), Is.False);
 
-        var e = Assert.Throws<EBoldFeatureNotImplementedYet>(() => _ = system.Evaluator)!;
-        Assert.That(e.Message, Does.Contain("TBoldOCL"), "the OCL evaluator is ported in M4");
+        Assert.That(system.Evaluator, Is.InstanceOf<TBoldOcl>());
+        Assert.That(system.Evaluator, Is.SameAs(system.Evaluator), "created once");
         system.ReleaseEvaluator();
     }
 

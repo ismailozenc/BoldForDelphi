@@ -10,4 +10,9 @@
     <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
     <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <!-- The generated OCL scanner and parser tables, linked from the Delphi sources (BoldOcl.rc). -->
+    <EmbeddedResource Include="$(BoldCSharpRoot)../Source/ObjectSpace/Ocl/BoldOcl.dfa" LogicalName="OCLSCANNERTABLE" Link="ObjectSpace/Ocl/BoldOcl.dfa" />
+    <EmbeddedResource Include="$(BoldCSharpRoot)../Source/ObjectSpace/Ocl/BoldOcl.llr" LogicalName="OCLPARSERTABLE" Link="ObjectSpace/Ocl/BoldOcl.llr" />
+  </ItemGroup>
 </Project>

@@ -126,9 +126,9 @@ public class TBoldListTypeInfoList : TBoldElementTypeInfoList
 
     [Delphi(PortStatus.Ported)]
     private TBoldListTypeInfo? GetItemByElement(TBoldElementTypeInfo? Element) =>
-        Element is null ? null : (TBoldListTypeInfo?)((TElementIndex)Indexes(IX_Element)!).FindByElement(Element);
+        (TBoldListTypeInfo?)((TElementIndex)Indexes(IX_Element)!).FindByElement(Element!);
 
-    /// <summary>The list type of <paramref name="Element"/>; null for the untyped list, which has no element type.</summary>
+    /// <summary>The list type of <paramref name="Element"/>; a null element gives the untyped list (Collection).</summary>
     [Delphi(PortStatus.Ported)]
     public TBoldListTypeInfo? ItemByElement(TBoldElementTypeInfo? Element) => GetItemByElement(Element);
 
@@ -586,11 +586,9 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
         ListTypes.Add(new TBoldListTypeInfo(TempAttributeType, this, typeof(TBoldMemberList)));
     }
 
-    /// <summary>The OCL evaluator, created on first use. Needs TBoldOCL (M4).</summary>
-    [Delphi(PortStatus.Partial, Note = "Creates the evaluator through BoldSystemRT.CreateOclEvaluator, which BoldOcl (M4) will set; raises until then.")]
-    protected override TBoldEvaluator? GetEvaluator() =>
-        fEvaluator ??= BoldSystemRT.CreateOclEvaluator?.Invoke(this)
-            ?? throw new EBoldFeatureNotImplementedYet("TBoldSystemTypeInfo.GetEvaluator needs TBoldOCL, which is not ported yet.");
+    /// <summary>The OCL evaluator (without a system, so it checks types but cannot reach class extents), created on first use.</summary>
+    [Delphi(PortStatus.Ported)]
+    protected override TBoldEvaluator? GetEvaluator() => fEvaluator ??= new TBoldOcl(this, null);
 
     [Delphi(PortStatus.Ported)]
     protected override TBoldElementTypeInfo? GetBoldType() => TypeTypeInfo;
@@ -1755,7 +1753,4 @@ public static partial class BoldSystemRT
 {
     [Delphi(PortStatus.Ported)] public const int LITE_VERSION_CLASS_LIMIT = 15;
     [Delphi(PortStatus.Ported)] public const int CLASS_TYPE_INFO_MEM_SIZE = 24;
-
-    // Delphi refers to BoldOcl directly; it is ported in M4, in this assembly, and sets this when it is.
-    internal static Func<TBoldSystemTypeInfo, TBoldEvaluator>? CreateOclEvaluator = null;
 }

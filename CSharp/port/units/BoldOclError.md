@@ -88,7 +88,7 @@ class at [line 84](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L84); ✅ ve
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FixError` | method | [90](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L90) · [body 110](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L110) | [`EBoldOCLAbort.FixError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L88) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
+| `FixError` | method | [90](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L90) · [body 110](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L110) | [`EBoldOCLAbort.FixError`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L88) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19)<br>✔ [`BoldOclTests.Errors_carry_positions`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L120) |
 | `ErrorPointer` | method | [91](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L91) · [body 127](../../../Source/ObjectSpace/Ocl/BoldOclError.pas#L127) | [`EBoldOCLAbort.ErrorPointer`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclError.cs#L100) | ✅ verified | ✔ [`BoldOclErrorTests.Errors_take_their_position_from_the_message`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclErrorTests.cs#L19) |
 
 ## EBoldOCLError

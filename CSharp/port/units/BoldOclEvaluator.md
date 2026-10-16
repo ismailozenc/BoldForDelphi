@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/Ocl/BoldOclEvaluator.pas`](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas) (708 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs` |
+| C# | [`CSharp/src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs) |
 | Project | Bold.ObjectSpace |
 | Milestone | M4 OCL |
-| Status | ⚪ not started: 0 of 27 symbols done, 0 verified |
+| Status | 🟢 ported: 27 of 27 symbols done, 10 verified |
 
-⚪ 27 not started
+✅ 10 verified · 🟢 15 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,40 +18,47 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOclEvaluatorVisitor` | class | [15](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L15) |  | ⚪ not started |  |
-| `MapResubscribe` | routine, implementation | [75](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L75) |  | ⚪ not started |  |
-| `TBoldOCLSortClass` | class, implementation | [84](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L84) |  | ⚪ not started |  |
-| `BoldOCLInternalSortWrapper` | routine, implementation | [89](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L89) |  | ⚪ not started |  |
-| `BoldOCLInternalReverseSortWrapper` | routine, implementation | [94](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L94) |  | ⚪ not started |  |
-| `Sortlist` | routine, implementation | [99](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L99) |  | ⚪ not started |  |
+| `TBoldOclEvaluatorVisitor` | class | [15](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L15) | [`TBoldOclEvaluatorVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L56) | 🟢 ported |  |
+| `MapResubscribe` | routine, implementation | [75](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L75) | [`BoldOclEvaluator.MapResubscribe`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L17) | ✅ verified | ✔ [`BoldOclEvaluationTests.Evaluation_subscribes_to_what_the_result_depends_on`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L60) |
+| `TBoldOCLSortClass` | class, implementation | [84](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L84) | [`TBoldOCLSortClass`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L48) | 🟢 ported |  |
+| `BoldOCLInternalSortWrapper` | routine, implementation | [89](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L89) | [`[assembly: Delphi] in BoldOclEvaluator.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L8) | 🔵 replaced: SortList compares the keys with a lambda. |  |
+| `BoldOCLInternalReverseSortWrapper` | routine, implementation | [94](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L94) | [`[assembly: Delphi] in BoldOclEvaluator.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L9) | 🔵 replaced: SortList compares the keys with a lambda. |  |
+| `Sortlist` | routine, implementation | [99](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L99) | [`BoldOclEvaluator.Sortlist`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L22) | 🟢 ported: A stable sort: equal keys keep the list order, where Delphi's quicksort leaves them in any order. |  |
 
 ## TBoldOclEvaluatorVisitor
 
-class at [line 15](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L15); 🟢 ported, C# [`TBoldOclEvaluatorVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L56).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `MakeNewString` | method, private | [26](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L26) · [body 654](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L654) |  | ⚪ not started |  |
-| `MakeNewDate` | method, private | [27](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L27) · [body 698](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L698) |  | ⚪ not started |  |
-| `MakeNewTime` | method, private | [28](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L28) · [body 703](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L703) |  | ⚪ not started |  |
-| `MakeNewInteger` | method, private | [29](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L29) · [body 664](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L664) |  | ⚪ not started |  |
-| `MakeNewFloat` | method, private | [30](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L30) · [body 659](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L659) |  | ⚪ not started |  |
-| `CreateNewMember` | method, private | [31](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L31) · [body 669](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L669) |  | ⚪ not started |  |
-| `Create` | constructor | [33](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L33) · [body 61](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L61) |  | ⚪ not started |  |
-| `VisitTBoldOclListCoercion` | method | [34](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L34) · [body 138](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L138) |  | ⚪ not started |  |
-| `VisitTBoldOclMethod` | method | [35](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L35) · [body 147](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L147) |  | ⚪ not started |  |
-| `VisitTBoldOclOperation` | method | [37](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L37) · [body 173](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L173) |  | ⚪ not started |  |
-| `VisitTBoldOclIteration` | method | [38](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L38) · [body 278](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L278) |  | ⚪ not started |  |
-| `VisitTBoldOclMember` | method | [39](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L39) · [body 403](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L403) |  | ⚪ not started |  |
-| `VisitTBoldOclVariableReference` | method | [40](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L40) · [body 570](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L570) |  | ⚪ not started |  |
-| `VisitTBoldOclEnumLiteral` | method | [41](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L41) · [body 582](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L582) |  | ⚪ not started |  |
-| `VisitTBoldOclStrLiteral` | method | [42](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L42) · [body 643](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L643) |  | ⚪ not started |  |
-| `VisitTBoldOclNumericLiteral` | method | [43](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L43) · [body 621](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L621) |  | ⚪ not started |  |
-| `VisitTBoldOclDateLiteral` | method | [44](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L44) · [body 676](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L676) |  | ⚪ not started |  |
-| `VisitTBoldOclTimeLiteral` | method | [45](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L45) · [body 687](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L687) |  | ⚪ not started |  |
-| `VisitTBoldOclIntLiteral` | method | [46](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L46) · [body 632](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L632) |  | ⚪ not started |  |
-| `VisitTBoldOclCollectionLiteral` | method | [47](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L47) · [body 587](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L587) |  | ⚪ not started |  |
-| `SubScribeToElem` | method | [48](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L48) · [body 130](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L130) |  | ⚪ not started |  |
+| `MakeNewString` | method, private | [26](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L26) · [body 654](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L654) | [`TBoldOclEvaluatorVisitor.MakeNewString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L84) | 🟢 ported |  |
+| `MakeNewDate` | method, private | [27](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L27) · [body 698](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L698) | [`TBoldOclEvaluatorVisitor.MakeNewDate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L85) | 🟢 ported |  |
+| `MakeNewTime` | method, private | [28](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L28) · [body 703](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L703) | [`TBoldOclEvaluatorVisitor.MakeNewTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L86) | 🟢 ported |  |
+| `MakeNewInteger` | method, private | [29](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L29) · [body 664](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L664) | [`TBoldOclEvaluatorVisitor.MakeNewInteger`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L87) | 🟢 ported |  |
+| `MakeNewFloat` | method, private | [30](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L30) · [body 659](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L659) | [`TBoldOclEvaluatorVisitor.MakeNewFloat`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L88) | 🟢 ported |  |
+| `CreateNewMember` | method, private | [31](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L31) · [body 669](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L669) | [`TBoldOclEvaluatorVisitor.CreateNewMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L92) | 🟢 ported |  |
+| `Create` | constructor | [33](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L33) · [body 61](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L61) | [`TBoldOclEvaluatorVisitor.TBoldOclEvaluatorVisitor`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L69) | 🟢 ported |  |
+| `VisitTBoldOclListCoercion` | method | [34](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L34) · [body 138](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L138) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclListCoercion`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L114) | 🟢 ported |  |
+| `VisitTBoldOclMethod` | method | [35](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L35) · [body 147](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L147) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclMethod`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L128) | 🟢 ported |  |
+| `VisitTBoldOclOperation` | method | [37](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L37) · [body 173](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L173) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclOperation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L135) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `VisitTBoldOclIteration` | method | [38](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L38) · [body 278](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L278) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclIteration`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L257) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
+| `VisitTBoldOclMember` | method | [39](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L39) · [body 403](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L403) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclMember`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L355) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
+| `VisitTBoldOclVariableReference` | method | [40](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L40) · [body 570](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L570) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclVariableReference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L550) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
+| `VisitTBoldOclEnumLiteral` | method | [41](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L41) · [body 582](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L582) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclEnumLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L562) | 🟢 ported |  |
+| `VisitTBoldOclStrLiteral` | method | [42](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L42) · [body 643](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L643) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclStrLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L629) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `VisitTBoldOclNumericLiteral` | method | [43](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L43) · [body 621](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L621) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclNumericLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L605) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `VisitTBoldOclDateLiteral` | method | [44](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L44) · [body 676](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L676) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclDateLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L641) | 🟢 ported |  |
+| `VisitTBoldOclTimeLiteral` | method | [45](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L45) · [body 687](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L687) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclTimeLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L653) | 🟢 ported |  |
+| `VisitTBoldOclIntLiteral` | method | [46](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L46) · [body 632](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L632) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclIntLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L617) | ✅ verified | ✔ [`BoldOclTests.Literals_and_arithmetic_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L39) |
+| `VisitTBoldOclCollectionLiteral` | method | [47](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L47) · [body 587](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L587) | [`TBoldOclEvaluatorVisitor.VisitTBoldOclCollectionLiteral`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L568) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
+| `SubScribeToElem` | method | [48](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L48) · [body 130](../../../Source/ObjectSpace/Ocl/BoldOclEvaluator.pas#L130) | [`TBoldOclEvaluatorVisitor.SubScribeToElem`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L105) | ✅ verified | ✔ [`BoldOclEvaluationTests.Evaluation_subscribes_to_what_the_result_depends_on`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclEvaluationTests.cs#L60) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldOCLSortClass.SortArg`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L50) (field)
+- [`TBoldOCLSortClass.SortObj`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclEvaluator.cs#L51) (field)
 
 ## Dependencies
 
