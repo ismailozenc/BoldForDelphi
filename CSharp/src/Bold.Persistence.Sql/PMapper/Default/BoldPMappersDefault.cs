@@ -255,7 +255,7 @@ public class TBoldSystemDefaultMapper(TMoldModel moldModel, TBoldTypeNameDiction
     }
 
     [Delphi(PortStatus.Ported)]
-    protected override TBoldSQLMappingInfo CreateMappingInfo() =>
+    protected internal override TBoldSQLMappingInfo CreateMappingInfo() =>
         new TBoldDefaultMappingInfo(SQLDataBaseConfig.SystemTablePrefix, SQLDataBaseConfig.MaxDbIdentifierLength, NationalCharConversion);
 
     /// <summary>Describes Bold's system tables, then (inherited) the class tables.</summary>

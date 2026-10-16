@@ -123,7 +123,7 @@ public abstract class TBoldSystemSQLMapper(TMoldModel MoldModel, TBoldTypeNameDi
     }
 
     [Delphi(PortStatus.Ported)]
-    protected abstract TBoldSQLMappingInfo CreateMappingInfo();
+    protected internal abstract TBoldSQLMappingInfo CreateMappingInfo();
 
     /// <summary>Fetches through the inherited fetch, committing a transaction the fetch started.</summary>
     [Delphi(PortStatus.Ported)]

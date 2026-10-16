@@ -30,15 +30,19 @@ internal sealed class TBoldAbstractModelForSqlTests : TBoldAbstractModel
 /// <summary>A database handle on an in-memory SQLite database, with the schema of a model created.</summary>
 internal sealed class SqliteHandle : IDisposable
 {
-    private readonly string fFile = Path.Combine(Path.GetTempPath(), $"bold-{Guid.NewGuid():N}.db");
+    public readonly string File;
+
+    /// <summary>Whether Dispose leaves the database file, for another handle to open.</summary>
+    public bool KeepFile;
     public readonly TADOConnection Connection;
     public readonly TBoldDatabaseAdapterADO Adapter = new();
     public readonly TBoldPersistenceHandleDB Handle = new();
     private readonly TBoldAbstractModelForSqlTests fModel;
 
-    public SqliteHandle(TMoldModel model, bool createSchema = true)
+    public SqliteHandle(TMoldModel model, bool createSchema = true, string? file = null)
     {
-        Connection = TestDatabase.NewADOConnection(fFile);
+        File = file ?? Path.Combine(Path.GetTempPath(), $"bold-{Guid.NewGuid():N}.db");
+        Connection = TestDatabase.NewADOConnection(File);
         Adapter.Connection = Connection;
         Adapter.SQLDatabaseConfig.InitializeDbEngineSettings(TBoldDataBaseEngine.dbeGenericANSISQL92);
         fModel = new TBoldAbstractModelForSqlTests(model);
@@ -65,9 +69,9 @@ internal sealed class SqliteHandle : IDisposable
         fModel.Dispose();
         Connection.Close();
         Connection.Connection.Dispose();
-        if (File.Exists(fFile))
+        if (!KeepFile && System.IO.File.Exists(File))
         {
-            File.Delete(fFile);
+            System.IO.File.Delete(File);
         }
     }
 }

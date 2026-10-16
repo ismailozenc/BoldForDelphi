@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas`](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas) (935 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 99 symbols done, 0 verified |
+| Status | 🟢 ported: 99 of 99 symbols done, 79 verified |
 
-⚪ 99 not started
+✅ 79 verified · 🟢 17 ported · 🔵 3 replaced
 
 ## Unit level
 
@@ -18,203 +18,211 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldScriptOperation` | class | [29](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L29) |  | ⚪ not started |  |
-| `TBoldTableOperation` | class | [37](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L37) |  | ⚪ not started |  |
-| `TBoldAddTable` | class | [45](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L45) |  | ⚪ not started |  |
-| `TBoldDropTable` | class | [54](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L54) |  | ⚪ not started |  |
-| `TBoldDeleteInstances` | class | [59](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L59) |  | ⚪ not started |  |
-| `TBoldColumnOperation` | class | [70](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L70) |  | ⚪ not started |  |
-| `TBoldAddColumn` | class | [78](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L78) |  | ⚪ not started |  |
-| `TBoldDropColumn` | class | [87](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L87) |  | ⚪ not started |  |
-| `TBoldDropIndex` | class | [92](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L92) |  | ⚪ not started |  |
-| `TBoldTwoTableOperation` | class | [103](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L103) |  | ⚪ not started |  |
-| `TBoldCopyInstances` | class | [113](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L113) |  | ⚪ not started |  |
-| `TBoldTwoColumnOperation` | class | [129](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L129) |  | ⚪ not started |  |
-| `TBoldMoveData` | class | [139](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L139) |  | ⚪ not started |  |
-| `TBoldDataBaseEvolutorScript` | class | [155](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L155) |  | ⚪ not started |  |
+| `TBoldScriptOperation` | class | [29](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L29) | [`TBoldScriptOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L14) | 🟢 ported |  |
+| `TBoldTableOperation` | class | [37](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L37) | [`TBoldTableOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L29) | 🟢 ported |  |
+| `TBoldAddTable` | class | [45](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L45) | [`TBoldAddTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L44) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `TBoldDropTable` | class | [54](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L54) | [`TBoldDropTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L74) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `TBoldDeleteInstances` | class | [59](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L59) | [`TBoldDeleteInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L86) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `TBoldColumnOperation` | class | [70](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L70) | [`TBoldColumnOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L111) | 🟢 ported |  |
+| `TBoldAddColumn` | class | [78](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L78) | [`TBoldAddColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L126) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `TBoldDropColumn` | class | [87](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L87) | [`TBoldDropColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L156) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `TBoldDropIndex` | class | [92](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L92) | [`TBoldDropIndex`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L168) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `TBoldTwoTableOperation` | class | [103](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L103) | [`TBoldTwoTableOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L193) | 🟢 ported |  |
+| `TBoldCopyInstances` | class | [113](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L113) | [`TBoldCopyInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L211) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `TBoldTwoColumnOperation` | class | [129](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L129) | [`TBoldTwoColumnOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L297) | 🟢 ported |  |
+| `TBoldMoveData` | class | [139](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L139) | [`TBoldMoveData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L316) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `TBoldDataBaseEvolutorScript` | class | [155](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L155) | [`TBoldDataBaseEvolutorScript`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L400) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
 
 ## TBoldScriptOperation
 
-class at [line 29](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L29); 🟢 ported, C# [`TBoldScriptOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [33](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L33) · [body 911](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L911) |  | ⚪ not started |  |
-| `Script` | property | [34](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L34) |  | ⚪ not started |  |
+| `Create` | constructor | [33](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L33) · [body 911](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L911) | [`TBoldScriptOperation.TBoldScriptOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L19) | 🟢 ported |  |
+| `Script` | property | [34](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L34) | [`TBoldScriptOperation.Script`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L24) | 🟢 ported |  |
 
 ## TBoldTableOperation
 
-class at [line 37](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L37); ⚪ not started.
+class at [line 37](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L37); 🟢 ported, C# [`TBoldTableOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [41](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L41) · [body 776](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L776) |  | ⚪ not started |  |
-| `TableName` | property | [42](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L42) |  | ⚪ not started |  |
+| `Create` | constructor | [41](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L41) · [body 776](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L776) | [`TBoldTableOperation.TBoldTableOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L34) | 🟢 ported |  |
+| `TableName` | property | [42](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L42) | [`TBoldTableOperation.TableName`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L39) | 🟢 ported |  |
 
 ## TBoldAddTable
 
-class at [line 45](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L45); ⚪ not started.
+class at [line 45](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L45); ✅ verified, C# [`TBoldAddTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L44).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [49](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L49) · [body 227](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L227) |  | ⚪ not started |  |
-| `Execute` | method | [50](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L50) · [body 233](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L233) |  | ⚪ not started |  |
-| `TableDescr` | property | [51](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L51) |  | ⚪ not started |  |
+| `Create` | constructor | [49](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L49) · [body 227](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L227) | [`TBoldAddTable.TBoldAddTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L49) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `Execute` | method | [50](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L50) · [body 233](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L233) | [`TBoldAddTable.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L55) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `TableDescr` | property | [51](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L51) | [`TBoldAddTable.TableDescr`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L69) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
 
 ## TBoldDropTable
 
-class at [line 54](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L54); ⚪ not started.
+class at [line 54](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L54); ✅ verified, C# [`TBoldDropTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L74).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Execute` | method | [56](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L56) · [body 927](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L927) |  | ⚪ not started |  |
+| `Execute` | method | [56](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L56) · [body 927](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L927) | [`TBoldDropTable.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L77) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
 
 ## TBoldDeleteInstances
 
-class at [line 59](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L59); ✅ verified, C# [`TBoldDeleteInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L86).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [64](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L64) · [body 761](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L761) |  | ⚪ not started |  |
-| `Execute` | method | [65](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L65) · [body 768](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L768) |  | ⚪ not started |  |
-| `ExpressionName` | property | [66](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L66) |  | ⚪ not started |  |
-| `DbType` | property | [67](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L67) |  | ⚪ not started |  |
+| `Create` | constructor | [64](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L64) · [body 761](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L761) | [`TBoldDeleteInstances.TBoldDeleteInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L92) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `Execute` | method | [65](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L65) · [body 768](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L768) | [`TBoldDeleteInstances.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L99) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `ExpressionName` | property | [66](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L66) | [`TBoldDeleteInstances.ExpressionName`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L105) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `DbType` | property | [67](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L67) | [`TBoldDeleteInstances.DbType`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L106) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
 
 ## TBoldColumnOperation
 
-class at [line 70](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L70); ⚪ not started.
+class at [line 70](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L70); 🟢 ported, C# [`TBoldColumnOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L111).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [74](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L74) · [body 784](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L784) |  | ⚪ not started |  |
-| `ColumnName` | property | [75](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L75) |  | ⚪ not started |  |
+| `Create` | constructor | [74](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L74) · [body 784](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L784) | [`TBoldColumnOperation.TBoldColumnOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L116) | 🟢 ported |  |
+| `ColumnName` | property | [75](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L75) | [`TBoldColumnOperation.ColumnName`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L121) | 🟢 ported |  |
 
 ## TBoldAddColumn
 
-class at [line 78](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L78); ⚪ not started.
+class at [line 78](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L78); ✅ verified, C# [`TBoldAddColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L126).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [82](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L82) · [body 653](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L653) |  | ⚪ not started |  |
-| `Execute` | method | [83](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L83) · [body 659](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L659) |  | ⚪ not started |  |
-| `ColumnDesc` | property | [84](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L84) |  | ⚪ not started |  |
+| `Create` | constructor | [82](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L82) · [body 653](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L653) | [`TBoldAddColumn.TBoldAddColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L131) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `Execute` | method | [83](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L83) · [body 659](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L659) | [`TBoldAddColumn.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L137) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `ColumnDesc` | property | [84](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L84) | [`TBoldAddColumn.ColumnDesc`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L151) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
 
 ## TBoldDropColumn
 
-class at [line 87](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L87); ⚪ not started.
+class at [line 87](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L87); ✅ verified, C# [`TBoldDropColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L156).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Execute` | method | [89](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L89) · [body 919](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L919) |  | ⚪ not started |  |
+| `Execute` | method | [89](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L89) · [body 919](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L919) | [`TBoldDropColumn.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L159) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
 
 ## TBoldDropIndex
 
-class at [line 92](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L92); ⚪ not started.
+class at [line 92](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L92); ✅ verified, C# [`TBoldDropIndex`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L168).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [97](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L97) · [body 896](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L896) |  | ⚪ not started |  |
-| `Execute` | method | [98](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L98) · [body 903](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L903) |  | ⚪ not started |  |
-| `IndexName` | property | [99](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L99) |  | ⚪ not started |  |
-| `TableName` | property | [100](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L100) |  | ⚪ not started |  |
+| `Create` | constructor | [97](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L97) · [body 896](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L896) | [`TBoldDropIndex.TBoldDropIndex`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L174) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `Execute` | method | [98](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L98) · [body 903](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L903) | [`TBoldDropIndex.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L181) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `IndexName` | property | [99](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L99) | [`TBoldDropIndex.IndexName`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L187) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `TableName` | property | [100](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L100) | [`TBoldDropIndex.TableName`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L188) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
 
 ## TBoldTwoTableOperation
 
-class at [line 103](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L103); ⚪ not started.
+class at [line 103](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L103); 🟢 ported, C# [`TBoldTwoTableOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L193).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [108](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L108) · [body 792](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L792) |  | ⚪ not started |  |
-| `SourceTable` | property | [109](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L109) |  | ⚪ not started |  |
-| `TargetTable` | property | [110](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L110) |  | ⚪ not started |  |
+| `Create` | constructor | [108](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L108) · [body 792](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L792) | [`TBoldTwoTableOperation.TBoldTwoTableOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L199) | 🟢 ported |  |
+| `SourceTable` | property | [109](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L109) | [`TBoldTwoTableOperation.SourceTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L205) | 🟢 ported |  |
+| `TargetTable` | property | [110](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L110) | [`TBoldTwoTableOperation.TargetTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L206) | 🟢 ported |  |
 
 ## TBoldCopyInstances
 
-class at [line 113](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L113); ⚪ not started.
+class at [line 113](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L113); ✅ verified, C# [`TBoldCopyInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L211).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [120](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L120) · [body 677](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L677) |  | ⚪ not started |  |
-| `Destroy` | destructor | [121](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L121) · [body 685](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L685) |  | ⚪ not started |  |
-| `Execute` | method | [122](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L122) · [body 691](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L691) |  | ⚪ not started |  |
-| `ExpressionName` | property | [123](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L123) |  | ⚪ not started |  |
-| `SourceDbType` | property | [124](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L124) |  | ⚪ not started |  |
-| `MoveData` | property | [125](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L125) |  | ⚪ not started |  |
-| `IdColumns` | property | [126](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L126) |  | ⚪ not started |  |
+| `Create` | constructor | [120](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L120) · [body 677](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L677) | [`TBoldCopyInstances.TBoldCopyInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L219) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `Destroy` | destructor | [121](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L121) · [body 685](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L685) | [`[assembly: Delphi] in BoldDbEvolutorScript.cs`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L7) | 🔵 replaced: Freed the chained moves; the garbage collector does that in .NET. |  |
+| `Execute` | method | [122](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L122) · [body 691](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L691) | [`TBoldCopyInstances.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L229) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `ExpressionName` | property | [123](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L123) | [`TBoldCopyInstances.ExpressionName`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L289) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `SourceDbType` | property | [124](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L124) | [`TBoldCopyInstances.SourceDbType`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L290) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `MoveData` | property | [125](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L125) | [`TBoldCopyInstances.MoveData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L291) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `IdColumns` | property | [126](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L126) | [`TBoldCopyInstances.IdColumns`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L292) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
 
 ## TBoldTwoColumnOperation
 
-class at [line 129](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L129); ⚪ not started.
+class at [line 129](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L129); 🟢 ported, C# [`TBoldTwoColumnOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L297).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [134](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L134) · [body 801](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L801) |  | ⚪ not started |  |
-| `SourceColumn` | property | [135](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L135) |  | ⚪ not started |  |
-| `TargetColumn` | property | [136](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L136) |  | ⚪ not started |  |
+| `Create` | constructor | [134](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L134) · [body 801](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L801) | [`TBoldTwoColumnOperation.TBoldTwoColumnOperation`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L303) | 🟢 ported |  |
+| `SourceColumn` | property | [135](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L135) | [`TBoldTwoColumnOperation.SourceColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L310) | 🟢 ported |  |
+| `TargetColumn` | property | [136](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L136) | [`TBoldTwoColumnOperation.TargetColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L311) | 🟢 ported |  |
 
 ## TBoldMoveData
 
-class at [line 139](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L139); ⚪ not started.
+class at [line 139](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L139); ✅ verified, C# [`TBoldMoveData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L316).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSignature` | method, private | [144](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L144) · [body 873](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L873) |  | ⚪ not started |  |
-| `Create` | constructor | [146](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L146) · [body 810](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L810) |  | ⚪ not started |  |
-| `Destroy` | destructor | [147](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L147) · [body 817](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L817) |  | ⚪ not started |  |
-| `Execute` | method | [148](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L148) · [body 823](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L823) |  | ⚪ not started |  |
-| `IdColumns` | property | [149](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L149) |  | ⚪ not started |  |
-| `DbTypes` | property | [150](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L150) |  | ⚪ not started |  |
-| `Signature` | property | [151](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L151) |  | ⚪ not started |  |
-| `AlsoMoveData` | property | [152](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L152) |  | ⚪ not started |  |
+| `GetSignature` | method, private | [144](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L144) · [body 873](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L873) | [`TBoldMoveData.GetSignature`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L378) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `Create` | constructor | [146](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L146) · [body 810](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L810) | [`TBoldMoveData.TBoldMoveData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L323) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `Destroy` | destructor | [147](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L147) · [body 817](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L817) | [`[assembly: Delphi] in BoldDbEvolutorScript.cs`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L8) | 🔵 replaced: Freed the chained moves; the garbage collector does that in .NET. |  |
+| `Execute` | method | [148](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L148) · [body 823](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L823) | [`TBoldMoveData.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L332) | ✅ verified: Between tables, sets the target column from the source column; Delphi had them swapped, which only works when the names are the same. | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `IdColumns` | property | [149](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L149) | [`TBoldMoveData.IdColumns`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L392) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `DbTypes` | property | [150](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L150) | [`TBoldMoveData.DbTypes`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L393) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `Signature` | property | [151](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L151) | [`TBoldMoveData.Signature`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L394) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
+| `AlsoMoveData` | property | [152](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L152) | [`TBoldMoveData.AlsoMoveData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L395) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_script_moves_copies_and_deletes_data_in_one_transaction`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L91) |
 
 ## TBoldDataBaseEvolutorScript
 
-class at [line 155](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L155); ⚪ not started.
+class at [line 155](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L155); ✅ verified, C# [`TBoldDataBaseEvolutorScript`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L400).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AddCommandToScript` | method, private | [170](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L170) · [body 614](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L614) |  | ⚪ not started |  |
-| `GetAddedTables` | method, private | [171](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L171) · [body 357](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L357) |  | ⚪ not started |  |
-| `Comment` | method, private | [172](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L172) · [body 380](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L380) |  | ⚪ not started |  |
-| `ExecuteSQL` | method, private | [173](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L173) · [body 388](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L388) |  | ⚪ not started |  |
-| `GetAddedColumns` | method, private | [174](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L174) · [body 408](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L408) |  | ⚪ not started |  |
-| `GetDroppedColumns` | method, private | [175](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L175) · [body 413](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L413) |  | ⚪ not started |  |
-| `GetDroppedTables` | method, private | [176](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L176) · [body 418](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L418) |  | ⚪ not started |  |
-| `GetCopiedInstances` | method, private | [177](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L177) · [body 423](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L423) |  | ⚪ not started |  |
-| `GetMovedData` | method, private | [178](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L178) · [body 428](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L428) |  | ⚪ not started |  |
-| `GetDeletedInstances` | method, private | [179](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L179) · [body 434](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L434) |  | ⚪ not started |  |
-| `GetDroppedIndices` | method, private | [180](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L180) · [body 503](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L503) |  | ⚪ not started |  |
-| `ExtendSchema` | method, private | [181](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L181) · [body 540](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L540) |  | ⚪ not started |  |
-| `AdjustContents` | method, private | [182](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L182) · [body 513](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L513) |  | ⚪ not started |  |
-| `ReduceSchema` | method, private | [183](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L183) · [body 568](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L568) |  | ⚪ not started |  |
-| `ExecuteSQLStatements` | method, private | [184](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L184) · [body 595](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L595) |  | ⚪ not started |  |
-| `StartTransaction` | method, private | [185](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L185) · [body 621](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L621) |  | ⚪ not started |  |
-| `CommitTransaction` | method, private | [186](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L186) · [body 629](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L629) |  | ⚪ not started |  |
-| `RollBackTransaction` | method, private | [187](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L187) · [body 641](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L641) |  | ⚪ not started |  |
-| `Execute` | method, protected | [189](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L189) · [body 368](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L368) |  | ⚪ not started |  |
-| `AddedTables` | property, protected | [190](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L190) |  | ⚪ not started |  |
-| `AddedColumns` | property, protected | [191](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L191) |  | ⚪ not started |  |
-| `DroppedTables` | property, protected | [192](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L192) |  | ⚪ not started |  |
-| `DroppedColumns` | property, protected | [193](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L193) |  | ⚪ not started |  |
-| `DroppedIndices` | property, protected | [194](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L194) |  | ⚪ not started |  |
-| `CopiedInstances` | property, protected | [195](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L195) |  | ⚪ not started |  |
-| `MovedData` | property, protected | [196](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L196) |  | ⚪ not started |  |
-| `DeletedInstances` | property, protected | [197](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L197) |  | ⚪ not started |  |
-| `Create` | constructor | [199](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L199) · [body 270](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L270) |  | ⚪ not started |  |
-| `Destroy` | destructor | [200](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L200) · [body 291](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L291) |  | ⚪ not started |  |
-| `AddTable` | method | [201](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L201) · [body 260](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L260) |  | ⚪ not started |  |
-| `AddColumn` | method | [202](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L202) · [body 250](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L250) |  | ⚪ not started |  |
-| `DropIndex` | method | [203](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L203) · [body 498](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L498) |  | ⚪ not started |  |
-| `DropColumn` | method | [204](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L204) · [body 310](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L310) |  | ⚪ not started |  |
-| `DropTable` | method | [205](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L205) · [body 322](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L322) |  | ⚪ not started |  |
-| `CopyInstances` | method | [206](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L206) · [body 265](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L265) |  | ⚪ not started |  |
-| `DeleteInstances` | method | [207](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L207) · [body 286](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L286) |  | ⚪ not started |  |
-| `MoveData` | method | [208](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L208) · [body 362](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L362) |  | ⚪ not started |  |
-| `GenerateScript` | method | [209](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L209) · [body 346](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L346) |  | ⚪ not started |  |
-| `UpdateDatabase` | method | [210](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L210) · [body 327](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L327) |  | ⚪ not started |  |
-| `OptimizeScript` | method | [211](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L211) · [body 439](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L439) |  | ⚪ not started |  |
-| `AddSQLStatement` | method | [212](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L212) · [body 508](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L508) |  | ⚪ not started |  |
-| `InternalLog` | property | [213](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L213) |  | ⚪ not started |  |
+| `AddCommandToScript` | method, private | [170](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L170) · [body 614](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L614) | [`TBoldDataBaseEvolutorScript.AddCommandToScript`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L422) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetAddedTables` | method, private | [171](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L171) · [body 357](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L357) | [`TBoldDataBaseEvolutorScript.GetAddedTables`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L474) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `Comment` | method, private | [172](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L172) · [body 380](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L380) | [`TBoldDataBaseEvolutorScript.Comment`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L433) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `ExecuteSQL` | method, private | [173](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L173) · [body 388](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L388) | [`TBoldDataBaseEvolutorScript.ExecuteSQL`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L441) | ✅ verified: Without arguments the statement is used as it is; Delphi formatted it with none, which fails on a statement with a %. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetAddedColumns` | method, private | [174](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L174) · [body 408](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L408) | [`TBoldDataBaseEvolutorScript.GetAddedColumns`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L475) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetDroppedColumns` | method, private | [175](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L175) · [body 413](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L413) | [`TBoldDataBaseEvolutorScript.GetDroppedColumns`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L476) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetDroppedTables` | method, private | [176](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L176) · [body 418](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L418) | [`TBoldDataBaseEvolutorScript.GetDroppedTables`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L477) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetCopiedInstances` | method, private | [177](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L177) · [body 423](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L423) | [`TBoldDataBaseEvolutorScript.GetCopiedInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L478) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetMovedData` | method, private | [178](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L178) · [body 428](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L428) | [`TBoldDataBaseEvolutorScript.GetMovedData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L479) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetDeletedInstances` | method, private | [179](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L179) · [body 434](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L434) | [`TBoldDataBaseEvolutorScript.GetDeletedInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L480) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GetDroppedIndices` | method, private | [180](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L180) · [body 503](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L503) | [`TBoldDataBaseEvolutorScript.GetDroppedIndices`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L481) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `ExtendSchema` | method, private | [181](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L181) · [body 540](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L540) | [`TBoldDataBaseEvolutorScript.ExtendSchema`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L691) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `AdjustContents` | method, private | [182](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L182) · [body 513](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L513) | [`TBoldDataBaseEvolutorScript.AdjustContents`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L652) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `ReduceSchema` | method, private | [183](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L183) · [body 568](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L568) | [`TBoldDataBaseEvolutorScript.ReduceSchema`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L734) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `ExecuteSQLStatements` | method, private | [184](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L184) · [body 595](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L595) | [`TBoldDataBaseEvolutorScript.ExecuteSQLStatements`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L781) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `StartTransaction` | method, private | [185](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L185) · [body 621](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L621) | [`TBoldDataBaseEvolutorScript.StartTransaction`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L806) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `CommitTransaction` | method, private | [186](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L186) · [body 629](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L629) | [`TBoldDataBaseEvolutorScript.CommitTransaction`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L816) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `RollBackTransaction` | method, private | [187](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L187) · [body 641](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L641) | [`TBoldDataBaseEvolutorScript.RollBackTransaction`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L831) | ✅ verified: Writes the rollback only to a script; Delphi wrote it with no script too, which fails. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `Execute` | method, protected | [189](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L189) · [body 368](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L368) | [`TBoldDataBaseEvolutorScript.Execute`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L578) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `AddedTables` | property, protected | [190](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L190) | [`TBoldDataBaseEvolutorScript.AddedTables`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L465) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `AddedColumns` | property, protected | [191](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L191) | [`TBoldDataBaseEvolutorScript.AddedColumns`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L466) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DroppedTables` | property, protected | [192](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L192) | [`TBoldDataBaseEvolutorScript.DroppedTables`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L467) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DroppedColumns` | property, protected | [193](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L193) | [`TBoldDataBaseEvolutorScript.DroppedColumns`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L468) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DroppedIndices` | property, protected | [194](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L194) | [`TBoldDataBaseEvolutorScript.DroppedIndices`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L469) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `CopiedInstances` | property, protected | [195](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L195) | [`TBoldDataBaseEvolutorScript.CopiedInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L470) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `MovedData` | property, protected | [196](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L196) | [`TBoldDataBaseEvolutorScript.MovedData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L471) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DeletedInstances` | property, protected | [197](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L197) | [`TBoldDataBaseEvolutorScript.DeletedInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L472) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `Create` | constructor | [199](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L199) · [body 270](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L270) | [`TBoldDataBaseEvolutorScript.TBoldDataBaseEvolutorScript`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L417) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `Destroy` | destructor | [200](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L200) · [body 291](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L291) | [`[assembly: Delphi] in BoldDbEvolutorScript.cs`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L6) | 🔵 replaced: Freed the operation lists; the garbage collector does that in .NET. |  |
+| `AddTable` | method | [201](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L201) · [body 260](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L260) | [`TBoldDataBaseEvolutorScript.AddTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L496) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `AddColumn` | method | [202](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L202) · [body 250](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L250) | [`TBoldDataBaseEvolutorScript.AddColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L485) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DropIndex` | method | [203](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L203) · [body 498](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L498) | [`TBoldDataBaseEvolutorScript.DropIndex`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L522) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DropColumn` | method | [204](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L204) · [body 310](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L310) | [`TBoldDataBaseEvolutorScript.DropColumn`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L508) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DropTable` | method | [205](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L205) · [body 322](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L322) | [`TBoldDataBaseEvolutorScript.DropTable`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L519) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `CopyInstances` | method | [206](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L206) · [body 265](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L265) | [`TBoldDataBaseEvolutorScript.CopyInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L499) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `DeleteInstances` | method | [207](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L207) · [body 286](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L286) | [`TBoldDataBaseEvolutorScript.DeleteInstances`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L503) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `MoveData` | method | [208](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L208) · [body 362](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L362) | [`TBoldDataBaseEvolutorScript.MoveData`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L526) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `GenerateScript` | method | [209](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L209) · [body 346](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L346) | [`TBoldDataBaseEvolutorScript.GenerateScript`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L563) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `UpdateDatabase` | method | [210](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L210) · [body 327](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L327) | [`TBoldDataBaseEvolutorScript.UpdateDatabase`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L536) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `OptimizeScript` | method | [211](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L211) · [body 439](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L439) | [`TBoldDataBaseEvolutorScript.OptimizeScript`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L592) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `AddSQLStatement` | method | [212](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L212) · [body 508](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L508) | [`TBoldDataBaseEvolutorScript.AddSQLStatement`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L648) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+| `InternalLog` | property | [213](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorScript.pas#L213) | [`TBoldDataBaseEvolutorScript.InternalLog`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L845) | ✅ verified | ✔ [`BoldDbEvolutorTests.The_evolutor_adds_and_drops_tables_and_columns_and_keeps_the_data`](../../tests/Bold.Persistence.Sql.Tests/PMapper/DbEvolutor/BoldDbEvolutorTests.cs#L41) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldMoveData.fdbTypes`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L319) (field)
+- [`TBoldDataBaseEvolutorScript.fDataBase`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L411) (field)
+- [`TBoldDataBaseEvolutorScript.fSQLDataBaseConfig`](../../src/Bold.Persistence.Sql/PMapper/DbEvolutor/BoldDbEvolutorScript.cs#L412) (field)
 
 ## Dependencies
 

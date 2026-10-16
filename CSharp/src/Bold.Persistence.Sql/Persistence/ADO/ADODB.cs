@@ -271,6 +271,93 @@ public class TADOTable : TDataSet
     public string TableName { get; set; } = "";
     public TIndexDefs IndexDefs { get; } = new();
 
+    public TADOTable()
+    {
+        IndexDefs.Updater = ReadIndexDefs;
+    }
+
+    /// <summary>
+    /// Reads the table's indexes: from SQLite's pragmas (a single integer primary key is the rowid and has no index, so it
+    /// is read from the columns), from SQL Server's catalog views, or none for other providers.
+    /// </summary>
+    private void ReadIndexDefs(TIndexDefs Defs)
+    {
+        Defs.Clear();
+        if (Connection is null || TableName.Length == 0)
+        {
+            return;
+        }
+
+        string provider = Connection.Connection.GetType().FullName ?? "";
+        var rows = new List<(string Index, string Column, bool Primary, bool Unique)>();
+        if (provider.Contains("Sqlite", StringComparison.OrdinalIgnoreCase))
+        {
+            var indexes = new List<(string Name, bool Unique, bool Primary)>();
+            using (DbCommand command = Connection.CreateCommand())
+            {
+                command.CommandText = $"SELECT name, \"unique\", origin FROM pragma_index_list('{TableName.Replace("'", "''", StringComparison.Ordinal)}')";
+                using DbDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    indexes.Add((Convert.ToString(reader.GetValue(0), CultureInfo.InvariantCulture)!, Convert.ToInt64(reader.GetValue(1), CultureInfo.InvariantCulture) != 0,
+                        Convert.ToString(reader.GetValue(2), CultureInfo.InvariantCulture) == "pk"));
+                }
+            }
+
+            foreach ((string name, bool unique, bool primary) in indexes)
+            {
+                using DbCommand command = Connection.CreateCommand();
+                command.CommandText = $"SELECT name FROM pragma_index_info('{name.Replace("'", "''", StringComparison.Ordinal)}') ORDER BY seqno";
+                using DbDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    rows.Add((name, Convert.ToString(reader.GetValue(0), CultureInfo.InvariantCulture)!, primary, unique));
+                }
+            }
+
+            if (!indexes.Exists(i => i.Primary))
+            {
+                using DbCommand command = Connection.CreateCommand();
+                command.CommandText = $"SELECT name FROM pragma_table_info('{TableName.Replace("'", "''", StringComparison.Ordinal)}') WHERE pk > 0 ORDER BY pk";
+                using DbDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    rows.Add(("PRIMARY", Convert.ToString(reader.GetValue(0), CultureInfo.InvariantCulture)!, true, true));
+                }
+            }
+        }
+        else if (provider.Contains("SqlClient", StringComparison.OrdinalIgnoreCase))
+        {
+            using DbCommand command = Connection.CreateCommand();
+            command.CommandText =
+                "SELECT i.name, c.name, i.is_primary_key, i.is_unique FROM sys.indexes i " +
+                "JOIN sys.index_columns ic ON ic.object_id = i.object_id AND ic.index_id = i.index_id " +
+                "JOIN sys.columns c ON c.object_id = ic.object_id AND c.column_id = ic.column_id " +
+                $"WHERE i.object_id = OBJECT_ID('{TableName.Replace("'", "''", StringComparison.Ordinal)}') ORDER BY i.name, ic.key_ordinal";
+            using DbDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                rows.Add((reader.GetString(0), reader.GetString(1), reader.GetBoolean(2), reader.GetBoolean(3)));
+            }
+        }
+
+        foreach (IGrouping<string, (string Index, string Column, bool Primary, bool Unique)> index in rows.GroupBy(r => r.Index))
+        {
+            var options = new DelphiSet<TIndexOption>();
+            if (index.First().Primary)
+            {
+                options += TIndexOption.ixPrimary;
+            }
+
+            if (index.First().Unique)
+            {
+                options += TIndexOption.ixUnique;
+            }
+
+            Defs.Add(index.Key, string.Join(";", index.Select(r => r.Column)), options);
+        }
+    }
+
     private TADOQuery MakeQuery(string sql)
     {
         var query = new TADOQuery { Connection = Connection };

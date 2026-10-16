@@ -70,6 +70,13 @@ public class TIndexDefs : IEnumerable<TIndexDef>
     }
 
     public void Clear() => fItems.Clear();
+
+    /// <summary>What reads the definitions from the database; the data set sets it (Delphi asks the data set too).</summary>
+    public Action<TIndexDefs>? Updater { get; set; }
+
+    /// <summary>Delphi's TIndexDefs.Update: reads the definitions again, when the data set can.</summary>
+    public void Update() => Updater?.Invoke(this);
+
     public IEnumerator<TIndexDef> GetEnumerator() => fItems.GetEnumerator();
     System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() => GetEnumerator();
 }
