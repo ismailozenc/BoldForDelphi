@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/Default/BoldPSDescriptionsDefault.pas`](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas) (399 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 29 symbols done, 0 verified |
+| Status | 🟢 ported: 29 of 29 symbols done, 0 verified |
 
-⚪ 29 not started
+🟢 29 ported
 
 ## Unit level
 
@@ -18,42 +18,48 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldDefaultSystemDescription` | class | [14](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L14) |  | ⚪ not started |  |
+| `TBoldDefaultSystemDescription` | class | [14](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L14) | [`TBoldDefaultSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L9) | 🟢 ported |  |
 
 ## TBoldDefaultSystemDescription
 
-class at [line 14](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L14); 🟢 ported, C# [`TBoldDefaultSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L9).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetIdTable` | method, private | [27](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L27) · [body 369](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L369) |  | ⚪ not started |  |
-| `SetTimeStamptable` | method, private | [28](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L28) · [body 384](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L384) |  | ⚪ not started |  |
-| `SetTypeTable` | method, private | [29](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L29) · [body 389](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L389) |  | ⚪ not started |  |
-| `SetXFilestable` | method, private | [30](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L30) · [body 394](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L394) |  | ⚪ not started |  |
-| `SetTabletable` | method, private | [31](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L31) · [body 379](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L379) |  | ⚪ not started |  |
-| `SetRootTable` | method, private | [32](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L32) · [body 374](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L374) |  | ⚪ not started |  |
-| `AddFirstID` | method, private | [34](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L34) · [body 121](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L121) |  | ⚪ not started |  |
-| `AddFirstTimeStamp` | method, private | [35](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L35) · [body 164](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L164) |  | ⚪ not started |  |
-| `AddFirstClock` | method, private | [36](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L36) · [body 74](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L74) |  | ⚪ not started |  |
-| `AddTableNames` | method, private | [37](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L37) · [body 209](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L209) |  | ⚪ not started |  |
-| `GenerateScriptForFirstID` | method, private | [39](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L39) · [body 310](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L310) |  | ⚪ not started |  |
-| `GenerateScriptForFirstTimeStamp` | method, private | [40](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L40) · [body 316](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L316) |  | ⚪ not started |  |
-| `GenerateScriptForFirstClock` | method, private | [41](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L41) · [body 302](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L302) |  | ⚪ not started |  |
-| `GenerateScriptForTableNames` | method, private | [42](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L42) · [body 324](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L324) |  | ⚪ not started |  |
-| `InitializeKnownSystemtables` | method, protected | [45](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L45) · [body 337](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L337) |  | ⚪ not started |  |
-| `CreatePersistentStorage` | method | [47](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L47) · [body 261](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L261) |  | ⚪ not started |  |
-| `GenerateDatabaseScript` | method | [48](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L48) · [body 290](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L290) |  | ⚪ not started |  |
-| `IdTable` | property | [49](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L49) |  | ⚪ not started |  |
-| `RootTable` | property | [50](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L50) |  | ⚪ not started |  |
-| `TypeTable` | property | [51](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L51) |  | ⚪ not started |  |
-| `TimeStampTable` | property | [52](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L52) |  | ⚪ not started |  |
-| `XFilestable` | property | [53](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L53) |  | ⚪ not started |  |
-| `Tabletable` | property | [54](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L54) |  | ⚪ not started |  |
-| `LastClockTable` | property | [55](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L55) |  | ⚪ not started |  |
-| `ClockLogTable` | property | [56](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L56) |  | ⚪ not started |  |
-| `MemberMappingTable` | property | [57](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L57) |  | ⚪ not started |  |
-| `AllInstancesMappingTable` | property | [58](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L58) |  | ⚪ not started |  |
-| `ObjectStorageMappingTable` | property | [59](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L59) |  | ⚪ not started |  |
+| `SetIdTable` | method, private | [27](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L27) · [body 369](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L369) | [`TBoldDefaultSystemDescription.SetIdTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L17) | 🟢 ported |  |
+| `SetTimeStamptable` | method, private | [28](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L28) · [body 384](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L384) | [`TBoldDefaultSystemDescription.SetTimeStamptable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L18) | 🟢 ported |  |
+| `SetTypeTable` | method, private | [29](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L29) · [body 389](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L389) | [`TBoldDefaultSystemDescription.SetTypeTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L19) | 🟢 ported |  |
+| `SetXFilestable` | method, private | [30](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L30) · [body 394](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L394) | [`TBoldDefaultSystemDescription.SetXFilestable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L20) | 🟢 ported |  |
+| `SetTabletable` | method, private | [31](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L31) · [body 379](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L379) | [`TBoldDefaultSystemDescription.SetTabletable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L21) | 🟢 ported |  |
+| `SetRootTable` | method, private | [32](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L32) · [body 374](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L374) | [`TBoldDefaultSystemDescription.SetRootTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L22) | 🟢 ported |  |
+| `AddFirstID` | method, private | [34](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L34) · [body 121](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L121) | [`TBoldDefaultSystemDescription.AddFirstID`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L78) | 🟢 ported |  |
+| `AddFirstTimeStamp` | method, private | [35](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L35) · [body 164](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L164) | [`TBoldDefaultSystemDescription.AddFirstTimeStamp`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L93) | 🟢 ported |  |
+| `AddFirstClock` | method, private | [36](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L36) · [body 74](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L74) | [`TBoldDefaultSystemDescription.AddFirstClock`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L112) | 🟢 ported |  |
+| `AddTableNames` | method, private | [37](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L37) · [body 209](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L209) | [`TBoldDefaultSystemDescription.AddTableNames`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L132) | 🟢 ported |  |
+| `GenerateScriptForFirstID` | method, private | [39](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L39) · [body 310](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L310) | [`TBoldDefaultSystemDescription.GenerateScriptForFirstID`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L157) | 🟢 ported |  |
+| `GenerateScriptForFirstTimeStamp` | method, private | [40](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L40) · [body 316](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L316) | [`TBoldDefaultSystemDescription.GenerateScriptForFirstTimeStamp`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L164) | 🟢 ported |  |
+| `GenerateScriptForFirstClock` | method, private | [41](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L41) · [body 302](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L302) | [`TBoldDefaultSystemDescription.GenerateScriptForFirstClock`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L171) | 🟢 ported |  |
+| `GenerateScriptForTableNames` | method, private | [42](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L42) · [body 324](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L324) | [`TBoldDefaultSystemDescription.GenerateScriptForTableNames`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L179) | 🟢 ported |  |
+| `InitializeKnownSystemtables` | method, protected | [45](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L45) · [body 337](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L337) | [`TBoldDefaultSystemDescription.InitializeKnownSystemtables`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L190) | 🟢 ported |  |
+| `CreatePersistentStorage` | method | [47](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L47) · [body 261](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L261) | [`TBoldDefaultSystemDescription.CreatePersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L225) | 🟢 ported |  |
+| `GenerateDatabaseScript` | method | [48](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L48) · [body 290](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L290) | [`TBoldDefaultSystemDescription.GenerateDatabaseScript`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L269) | 🟢 ported |  |
+| `IdTable` | property | [49](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L49) | [`TBoldDefaultSystemDescription.IdTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L286) | 🟢 ported |  |
+| `RootTable` | property | [50](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L50) | [`TBoldDefaultSystemDescription.RootTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L287) | 🟢 ported |  |
+| `TypeTable` | property | [51](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L51) | [`TBoldDefaultSystemDescription.TypeTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L288) | 🟢 ported |  |
+| `TimeStampTable` | property | [52](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L52) | [`TBoldDefaultSystemDescription.TimeStampTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L289) | 🟢 ported |  |
+| `XFilestable` | property | [53](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L53) | [`TBoldDefaultSystemDescription.XFilestable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L290) | 🟢 ported |  |
+| `Tabletable` | property | [54](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L54) | [`TBoldDefaultSystemDescription.Tabletable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L291) | 🟢 ported |  |
+| `LastClockTable` | property | [55](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L55) | [`TBoldDefaultSystemDescription.LastClockTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L292) | 🟢 ported |  |
+| `ClockLogTable` | property | [56](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L56) | [`TBoldDefaultSystemDescription.ClockLogTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L293) | 🟢 ported |  |
+| `MemberMappingTable` | property | [57](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L57) | [`TBoldDefaultSystemDescription.MemberMappingTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L294) | 🟢 ported |  |
+| `AllInstancesMappingTable` | property | [58](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L58) | [`TBoldDefaultSystemDescription.AllInstancesMappingTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L295) | 🟢 ported |  |
+| `ObjectStorageMappingTable` | property | [59](../../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas#L59) | [`TBoldDefaultSystemDescription.ObjectStorageMappingTable`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L296) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldDefaultSystemDescription.TBoldDefaultSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs#L12) (constructor)
 
 ## Dependencies
 

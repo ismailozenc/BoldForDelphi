@@ -19,17 +19,17 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 381 to port, 100 not ported. The units to port declare 16755 symbols. 8339 `[Delphi]` markers in the C# code; 253 test methods.
+481 Delphi units: 381 to port, 100 not ported. The units to port declare 16755 symbols. 8687 `[Delphi]` markers in the C# code; 253 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
 | ✅ verified | 4689 | ▰▰▰▱▱▱▱▱▱▱ 28% |
-| 🟢 ported | 3505 | ▰▰▱▱▱▱▱▱▱▱ 21% |
-| 🔵 replaced | 182 | ▱▱▱▱▱▱▱▱▱▱ 1% |
+| 🟢 ported | 3841 | ▰▰▱▱▱▱▱▱▱▱ 23% |
+| 🔵 replaced | 194 | ▱▱▱▱▱▱▱▱▱▱ 1% |
 | 🟡 partial | 9 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 1 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 8361 | ▰▰▰▰▰▱▱▱▱▱ 50% |
+| ⚪ not started | 8013 | ▰▰▰▰▰▱▱▱▱▱ 48% |
 | ⚫ dropped | 8 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
@@ -40,7 +40,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M2 Runtime model and subscriptions | 24 | 1965 | 1965 | 1901 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M3 Object space in memory | 41 | 2630 | 2592 | 996 | ▰▰▰▰▰▰▰▰▰▰ 99% |
 | M4 OCL | 13 | 1289 | 1289 | 246 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| M5 SQL persistence | 62 | 2684 | 903 | 214 | ▰▰▰▱▱▱▱▱▱▱ 34% |
+| M5 SQL persistence | 62 | 2684 | 1251 | 214 | ▰▰▰▰▰▱▱▱▱▱ 47% |
 | M6 Typed classes | 7 | 258 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M7 Handles | 24 | 582 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M8 WinForms | 69 | 2668 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -61,7 +61,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.ObjectSpace | 38 | 3880 | 3880 | 1289 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.Olle | 6 | 319 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Persistence | 13 | 784 | 748 | 699 | ▰▰▰▰▰▰▰▰▰▰ 95% |
-| Bold.Persistence.Sql | 58 | 2626 | 845 | 158 | ▰▰▰▱▱▱▱▱▱▱ 32% |
+| Bold.Persistence.Sql | 58 | 2626 | 1193 | 158 | ▰▰▰▰▰▱▱▱▱▱ 45% |
 | Bold.Propagation | 23 | 521 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.Propagator.Server | 22 | 531 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.SourceGenerators | 19 | 412 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -191,14 +191,14 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldPMappersAttributeDefault](units/BoldPMappersAttributeDefault.md) | ⚪ not started | 0/106 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/Default/BoldPMappersAttributeDefault.pas](../../Source/PMapper/Default/BoldPMappersAttributeDefault.pas) | planned: src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersAttributeDefault.cs |
 | [BoldPMappersDefault](units/BoldPMappersDefault.md) | ⚪ not started | 0/157 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/Default/BoldPMappersDefault.pas](../../Source/PMapper/Default/BoldPMappersDefault.pas) | planned: src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersDefault.cs |
 | [BoldPMappersLinkDefault](units/BoldPMappersLinkDefault.md) | ⚪ not started | 0/96 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/Default/BoldPMappersLinkDefault.pas](../../Source/PMapper/Default/BoldPMappersLinkDefault.pas) | planned: src/Bold.Persistence.Sql/PMapper/Default/BoldPMappersLinkDefault.cs |
-| [BoldPSDescriptionsDefault](units/BoldPSDescriptionsDefault.md) | ⚪ not started | 0/29 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/Default/BoldPSDescriptionsDefault.pas](../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas) | planned: src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs |
+| [BoldPSDescriptionsDefault](units/BoldPSDescriptionsDefault.md) | 🟢 ported | 29/29 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/Default/BoldPSDescriptionsDefault.pas](../../Source/PMapper/Default/BoldPSDescriptionsDefault.pas) | [src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs](../src/Bold.Persistence.Sql/PMapper/Default/BoldPSDescriptionsDefault.cs) |
 | [BoldPSParamsDefault](units/BoldPSParamsDefault.md) | 🟢 ported | 1/1 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/Default/BoldPSParamsDefault.pas](../../Source/PMapper/Default/BoldPSParamsDefault.pas) | [src/Bold.Persistence.Sql/PMapper/Default/BoldPSParamsDefault.cs](../src/Bold.Persistence.Sql/PMapper/Default/BoldPSParamsDefault.cs) |
-| [BoldPMappersSQL](units/BoldPMappersSQL.md) | ⚪ not started | 0/96 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldPMappersSQL.pas](../../Source/PMapper/SQL/BoldPMappersSQL.pas) | planned: src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs |
-| [BoldPSDescriptionsSQL](units/BoldPSDescriptionsSQL.md) | ⚪ not started | 0/93 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldPSDescriptionsSQL.pas](../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas) | planned: src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs |
+| [BoldPMappersSQL](units/BoldPMappersSQL.md) | 🟢 ported | 96/96 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldPMappersSQL.pas](../../Source/PMapper/SQL/BoldPMappersSQL.pas) | [src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs](../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs) |
+| [BoldPSDescriptionsSQL](units/BoldPSDescriptionsSQL.md) | 🟢 ported | 93/93 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldPSDescriptionsSQL.pas](../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas) | [src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs](../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs) |
 | [BoldPSParamsSQL](units/BoldPSParamsSQL.md) | 🟢 ported | 3/3 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldPSParamsSQL.pas](../../Source/PMapper/SQL/BoldPSParamsSQL.pas) | [src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs](../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSParamsSQL.cs) |
 | [BoldSQLDatabaseConfig](units/BoldSQLDatabaseConfig.md) | 🟢 ported | 91/91 | 87 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldSQLDatabaseConfig.pas](../../Source/PMapper/SQL/BoldSQLDatabaseConfig.pas) | [src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLDatabaseConfig.cs](../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLDatabaseConfig.cs) |
 | [BoldSQLMappingInfo](units/BoldSQLMappingInfo.md) | 🟢 ported | 88/88 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldSQLMappingInfo.pas](../../Source/PMapper/SQL/BoldSQLMappingInfo.pas) | [src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs](../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs) |
-| [BoldSQLQuery](units/BoldSQLQuery.md) | ⚪ not started | 0/130 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldSQLQuery.pas](../../Source/PMapper/SQL/BoldSQLQuery.pas) | planned: src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs |
+| [BoldSQLQuery](units/BoldSQLQuery.md) | 🟢 ported | 130/130 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldSQLQuery.pas](../../Source/PMapper/SQL/BoldSQLQuery.pas) | [src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs](../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs) |
 | [BoldSqlNodeMaker](units/BoldSqlNodeMaker.md) | ⚪ not started | 0/23 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldSqlNodeMaker.pas](../../Source/PMapper/SQL/BoldSqlNodeMaker.pas) | planned: src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodeMaker.cs |
 | [BoldSqlNodes](units/BoldSqlNodes.md) | ⚪ not started | 0/151 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldSqlNodes.pas](../../Source/PMapper/SQL/BoldSqlNodes.pas) | planned: src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodes.cs |
 | [BoldSqlNodesResolver](units/BoldSqlNodesResolver.md) | ⚪ not started | 0/18 | 0 | Bold.Persistence.Sql | M5 | [Source/PMapper/SQL/BoldSqlNodesResolver.pas](../../Source/PMapper/SQL/BoldSqlNodesResolver.pas) | planned: src/Bold.Persistence.Sql/PMapper/SQL/BoldSqlNodesResolver.cs |

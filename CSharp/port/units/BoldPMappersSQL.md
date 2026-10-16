@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/SQL/BoldPMappersSQL.pas`](../../../Source/PMapper/SQL/BoldPMappersSQL.pas) (824 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 96 symbols done, 0 verified |
+| Status | 🟢 ported: 96 of 96 symbols done, 0 verified |
 
-⚪ 96 not started
+🟢 93 ported · 🔵 3 replaced
 
 ## Unit level
 
@@ -18,123 +18,131 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPreInitializeBoldDbType` | event type | [26](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L26) |  | ⚪ not started |  |
-| `EBoldDbTypeMissing` | class | [28](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L28) |  | ⚪ not started |  |
-| `TBoldDBStorageMode` | enum | [31](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L31) |  | ⚪ not started |  |
-| `TBoldSystemSQLMapper` | class | [34](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L34) |  | ⚪ not started |  |
-| `TBoldObjectSQLMapper` | class | [87](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L87) |  | ⚪ not started |  |
-| `TBoldMemberSQLMapper` | class | [120](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L120) |  | ⚪ not started |  |
+| `TBoldPreInitializeBoldDbType` | event type | [26](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L26) | [`TBoldPreInitializeBoldDbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L13) | 🟢 ported |  |
+| `EBoldDbTypeMissing` | class | [28](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L28) | [`EBoldDbTypeMissing`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L16) | 🟢 ported |  |
+| `TBoldDBStorageMode` | enum | [31](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L31) | [`TBoldDBStorageMode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L19) | 🟢 ported |  |
+| `TBoldSystemSQLMapper` | class | [34](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L34) | [`TBoldSystemSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L27) | 🟢 ported |  |
+| `TBoldObjectSQLMapper` | class | [87](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L87) | [`TBoldObjectSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L260) | 🟢 ported |  |
+| `TBoldMemberSQLMapper` | class | [120](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L120) | [`TBoldMemberSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L557) | 🟢 ported |  |
 
 ## TBoldSystemSQLMapper
 
-class at [line 34](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L34); ⚪ not started.
+class at [line 34](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L34); 🟢 ported, C# [`TBoldSystemSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L27).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetIBoldDataBase` | method, private | [42](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L42) · [body 214](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L214) |  | ⚪ not started |  |
-| `GetAllTables` | method, private | [43](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L43) · [body 174](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L174) |  | ⚪ not started |  |
-| `GetPSSystemDescription` | method, private | [44](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L44) · [body 179](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L179) |  | ⚪ not started |  |
-| `GetRootClassObjectPersistenceMapper` | method, private | [45](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L45) · [body 695](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L695) |  | ⚪ not started |  |
-| `GetMappingInfo` | method, private | [46](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L46) · [body 700](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L700) |  | ⚪ not started |  |
-| `InitializeBoldDbType` | method, protected | [48](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L48) |  | ⚪ not started |  |
-| `FillPSParams` | method, protected | [49](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L49) · [body 193](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L193) |  | ⚪ not started |  |
-| `CreatePSParams` | method, protected | [50](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L50) · [body 198](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L198) |  | ⚪ not started |  |
-| `StartTransaction` | method, protected | [51](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L51) · [body 223](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L223) |  | ⚪ not started |  |
-| `Commit` | method, protected | [52](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L52) · [body 235](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L235) |  | ⚪ not started |  |
-| `RollBack` | method, protected | [53](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L53) · [body 244](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L244) |  | ⚪ not started |  |
-| `CreateMappingInfo` | method, protected | [54](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L54) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [56](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L56) · [body 184](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L184) |  | ⚪ not started |  |
-| `Destroy` | destructor | [57](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L57) · [body 707](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L707) |  | ⚪ not started |  |
-| `PMFetch` | method | [58](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L58) · [body 809](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L809) |  | ⚪ not started |  |
-| `BoldDbTypeForTopSortedIndex` | method | [63](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L63) · [body 540](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L540) |  | ⚪ not started |  |
-| `CloseDataBase` | method | [64](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L64) · [body 626](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L626) |  | ⚪ not started |  |
-| `CreatePersistentStorage` | method | [65](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L65) · [body 307](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L307) |  | ⚪ not started |  |
-| `GenerateDatabaseScript` | method | [66](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L66) · [body 754](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L754) |  | ⚪ not started |  |
-| `EnsureTable` | method | [67](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L67) |  | ⚪ not started |  |
-| `GetQuery` | method | [68](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L68) · [body 204](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L204) |  | ⚪ not started |  |
-| `GetExecQuery` | method | [69](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L69) · [body 799](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L799) |  | ⚪ not started |  |
-| `InvokeMemberMappersInitializeSystem` | method | [70](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L70) · [body 270](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L270) |  | ⚪ not started |  |
-| `OpenDatabase` | method | [71](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L71) · [body 253](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L253) |  | ⚪ not started |  |
-| `ReleaseQuery` | method | [72](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L72) · [body 209](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L209) |  | ⚪ not started |  |
-| `ReleaseExecQuery` | method | [73](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L73) · [body 804](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L804) |  | ⚪ not started |  |
-| `TopSortedIndexForBoldDbType` | method | [74](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L74) · [body 546](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L546) |  | ⚪ not started |  |
-| `AllTables` | property | [75](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L75) |  | ⚪ not started |  |
-| `Database` | property | [77](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L77) |  | ⚪ not started |  |
-| `OnPreInitializeBoldDbType` | property | [78](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L78) |  | ⚪ not started |  |
-| `PSSystemDescription` | property | [79](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L79) |  | ⚪ not started |  |
-| `RootClassObjectPersistenceMapper` | property | [80](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L80) |  | ⚪ not started |  |
-| `MappingInfo` | property | [81](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L81) |  | ⚪ not started |  |
-| `NationalCharConversion` | property | [82](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L82) |  | ⚪ not started |  |
-| `SQLDataBaseConfig` | property | [83](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L83) |  | ⚪ not started |  |
+| `GetIBoldDataBase` | method, private | [42](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L42) · [body 214](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L214) | [`TBoldSystemSQLMapper.GetIBoldDataBase`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L44) | 🟢 ported |  |
+| `GetAllTables` | method, private | [43](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L43) · [body 174](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L174) | [`TBoldSystemSQLMapper.GetAllTables`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L55) | 🟢 ported |  |
+| `GetPSSystemDescription` | method, private | [44](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L44) · [body 179](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L179) | [`TBoldSystemSQLMapper.GetPSSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L58) | 🟢 ported |  |
+| `GetRootClassObjectPersistenceMapper` | method, private | [45](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L45) · [body 695](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L695) | [`TBoldSystemSQLMapper.GetRootClassObjectPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L61) | 🟢 ported |  |
+| `GetMappingInfo` | method, private | [46](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L46) · [body 700](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L700) | [`TBoldSystemSQLMapper.GetMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L64) | 🟢 ported |  |
+| `InitializeBoldDbType` | method, protected | [48](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L48) | [`TBoldSystemSQLMapper.InitializeBoldDbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L67) | 🟢 ported |  |
+| `FillPSParams` | method, protected | [49](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L49) · [body 193](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L193) | [`TBoldSystemSQLMapper.FillPSParams`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L70) | 🟢 ported |  |
+| `CreatePSParams` | method, protected | [50](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L50) · [body 198](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L198) | [`TBoldSystemSQLMapper.CreatePSParams`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L73) | 🟢 ported |  |
+| `StartTransaction` | method, protected | [51](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L51) · [body 223](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L223) | [`TBoldSystemSQLMapper.StartTransaction`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L81) | 🟢 ported |  |
+| `Commit` | method, protected | [52](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L52) · [body 235](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L235) | [`TBoldSystemSQLMapper.Commit`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L96) | 🟢 ported |  |
+| `RollBack` | method, protected | [53](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L53) · [body 244](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L244) | [`TBoldSystemSQLMapper.RollBack`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L111) | 🟢 ported |  |
+| `CreateMappingInfo` | method, protected | [54](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L54) | [`TBoldSystemSQLMapper.CreateMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L126) | 🟢 ported |  |
+| `CreateFromMold` | constructor | [56](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L56) · [body 184](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L184) | [`TBoldSystemSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L27) | 🟢 ported: The primary constructor. |  |
+| `Destroy` | destructor | [57](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L57) · [body 707](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L707) | [`[assembly: Delphi] in BoldPMappersSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L6) | 🔵 replaced: Freed the mapping information; the garbage collector does that in .NET. |  |
+| `PMFetch` | method | [58](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L58) · [body 809](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L809) | [`TBoldSystemSQLMapper.PMFetch`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L130) | 🟢 ported |  |
+| `BoldDbTypeForTopSortedIndex` | method | [63](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L63) · [body 540](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L540) | [`TBoldSystemSQLMapper.BoldDbTypeForTopSortedIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L148) | 🟢 ported |  |
+| `CloseDataBase` | method | [64](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L64) · [body 626](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L626) | [`TBoldSystemSQLMapper.CloseDataBase`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L151) | 🟢 ported |  |
+| `CreatePersistentStorage` | method | [65](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L65) · [body 307](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L307) | [`TBoldSystemSQLMapper.CreatePersistentStorage`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L154) | 🟢 ported |  |
+| `GenerateDatabaseScript` | method | [66](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L66) · [body 754](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L754) | [`TBoldSystemSQLMapper.GenerateDatabaseScript`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L162) | 🟢 ported |  |
+| `EnsureTable` | method | [67](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L67) | [`TBoldSystemSQLMapper.EnsureTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L174) | 🟢 ported |  |
+| `GetQuery` | method | [68](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L68) · [body 204](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L204) | [`TBoldSystemSQLMapper.GetQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L177) | 🟢 ported |  |
+| `GetExecQuery` | method | [69](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L69) · [body 799](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L799) | [`TBoldSystemSQLMapper.GetExecQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L180) | 🟢 ported |  |
+| `InvokeMemberMappersInitializeSystem` | method | [70](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L70) · [body 270](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L270) | [`TBoldSystemSQLMapper.InvokeMemberMappersInitializeSystem`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L184) | 🟢 ported |  |
+| `OpenDatabase` | method | [71](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L71) · [body 253](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L253) | [`TBoldSystemSQLMapper.OpenDatabase`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L211) | 🟢 ported |  |
+| `ReleaseQuery` | method | [72](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L72) · [body 209](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L209) | [`TBoldSystemSQLMapper.ReleaseQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L229) | 🟢 ported |  |
+| `ReleaseExecQuery` | method | [73](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L73) · [body 804](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L804) | [`TBoldSystemSQLMapper.ReleaseExecQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L232) | 🟢 ported |  |
+| `TopSortedIndexForBoldDbType` | method | [74](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L74) · [body 546](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L546) | [`TBoldSystemSQLMapper.TopSortedIndexForBoldDbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L235) | 🟢 ported |  |
+| `AllTables` | property | [75](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L75) | [`TBoldSystemSQLMapper.AllTables`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L248) | 🟢 ported |  |
+| `Database` | property | [77](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L77) | [`TBoldSystemSQLMapper.Database`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L249) | 🟢 ported |  |
+| `OnPreInitializeBoldDbType` | property | [78](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L78) | [`TBoldSystemSQLMapper.OnPreInitializeBoldDbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L250) | 🟢 ported |  |
+| `PSSystemDescription` | property | [79](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L79) | [`TBoldSystemSQLMapper.PSSystemDescription`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L251) | 🟢 ported |  |
+| `RootClassObjectPersistenceMapper` | property | [80](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L80) | [`TBoldSystemSQLMapper.RootClassObjectPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L252) | 🟢 ported |  |
+| `MappingInfo` | property | [81](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L81) | [`TBoldSystemSQLMapper.MappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L253) | 🟢 ported |  |
+| `NationalCharConversion` | property | [82](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L82) | [`TBoldSystemSQLMapper.NationalCharConversion`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L254) | 🟢 ported |  |
+| `SQLDataBaseConfig` | property | [83](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L83) | [`TBoldSystemSQLMapper.SQLDataBaseConfig`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L255) | 🟢 ported |  |
 
 ## TBoldObjectSQLMapper
 
-class at [line 87](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L87); ⚪ not started.
+class at [line 87](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L87); 🟢 ported, C# [`TBoldObjectSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L260).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSystemPersistenceMapper` | method, private | [92](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L92) · [body 642](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L642) |  | ⚪ not started |  |
-| `GetAllTables` | method, private | [93](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L93) · [body 779](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L779) |  | ⚪ not started |  |
-| `SQLForMembers` | method, protected | [95](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L95) · [body 351](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L351) |  | ⚪ not started |  |
-| `SQLForKey` | method, protected | [96](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L96) |  | ⚪ not started |  |
-| `SQLForDistributed` | method, protected | [97](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L97) |  | ⚪ not started |  |
-| `JoinSQLTableByKey` | method, protected | [99](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L99) |  | ⚪ not started |  |
-| `SQLForID` | method, protected | [100](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L100) |  | ⚪ not started |  |
-| `TableAlias` | method, protected | [101](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L101) · [body 328](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L328) |  | ⚪ not started |  |
-| `DistributableTable` | method, protected | [102](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L102) |  | ⚪ not started |  |
-| `InitializePSDescriptions` | method, protected | [103](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L103) · [body 714](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L714) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [105](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L105) · [body 315](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L315) |  | ⚪ not started |  |
-| `Destroy` | destructor | [106](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L106) · [body 322](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L322) |  | ⚪ not started |  |
-| `GenerateDatabaseScript` | method | [107](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L107) · [body 765](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L765) |  | ⚪ not started |  |
-| `UpdatesMembersInTable` | method | [108](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L108) |  | ⚪ not started |  |
-| `AllTables` | property | [109](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L109) |  | ⚪ not started |  |
-| `MainTable` | property | [110](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L110) |  | ⚪ not started |  |
-| `RetrieveSelectStatement` | method | [111](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L111) · [body 391](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L391) |  | ⚪ not started |  |
-| `RetrieveTimeStampCondition` | method | [112](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L112) · [body 657](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L657) |  | ⚪ not started |  |
-| `BoldDbType` | property | [113](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L113) |  | ⚪ not started |  |
-| `ValuesFromFieldsByMemberList` | method | [114](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L114) · [body 482](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L482) |  | ⚪ not started |  |
-| `ValuesToParamsByMemberList` | method | [115](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L115) · [body 492](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L492) |  | ⚪ not started |  |
-| `SystemPersistenceMapper` | property | [116](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L116) |  | ⚪ not started |  |
+| `GetSystemPersistenceMapper` | method, private | [92](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L92) · [body 642](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L642) | [`TBoldObjectSQLMapper.GetSystemPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L274) | 🟢 ported |  |
+| `GetAllTables` | method, private | [93](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L93) · [body 779](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L779) | [`TBoldObjectSQLMapper.GetAllTables`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L277) | 🟢 ported |  |
+| `SQLForMembers` | method, protected | [95](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L95) · [body 351](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L351) | [`TBoldObjectSQLMapper.SQLForMembers`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L281) | 🟢 ported |  |
+| `SQLForKey` | method, protected | [96](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L96) | [`TBoldObjectSQLMapper.SQLForKey`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L324) | 🟢 ported |  |
+| `SQLForDistributed` | method, protected | [97](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L97) | [`TBoldObjectSQLMapper.SQLForDistributed`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L327) | 🟢 ported |  |
+| `JoinSQLTableByKey` | method, protected | [99](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L99) | [`TBoldObjectSQLMapper.JoinSQLTableByKey`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L330) | 🟢 ported |  |
+| `SQLForID` | method, protected | [100](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L100) | [`TBoldObjectSQLMapper.SQLForID`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L333) | 🟢 ported |  |
+| `TableAlias` | method, protected | [101](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L101) · [body 328](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L328) | [`TBoldObjectSQLMapper.TableAlias`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L337) | 🟢 ported |  |
+| `DistributableTable` | method, protected | [102](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L102) | [`TBoldObjectSQLMapper.DistributableTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L366) | 🟢 ported |  |
+| `InitializePSDescriptions` | method, protected | [103](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L103) · [body 714](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L714) | [`TBoldObjectSQLMapper.InitializePSDescriptions`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L370) | 🟢 ported |  |
+| `CreateFromMold` | constructor | [105](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L105) · [body 315](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L315) | [`TBoldObjectSQLMapper.TBoldObjectSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L267) | 🟢 ported |  |
+| `Destroy` | destructor | [106](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L106) · [body 322](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L322) | [`[assembly: Delphi] in BoldPMappersSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L7) | 🔵 replaced: Freed the table list; the garbage collector does that in .NET. |  |
+| `GenerateDatabaseScript` | method | [107](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L107) · [body 765](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L765) | [`TBoldObjectSQLMapper.GenerateDatabaseScript`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L416) | 🟢 ported |  |
+| `UpdatesMembersInTable` | method | [108](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L108) | [`TBoldObjectSQLMapper.UpdatesMembersInTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L425) | 🟢 ported |  |
+| `AllTables` | property | [109](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L109) | [`TBoldObjectSQLMapper.AllTables`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L549) | 🟢 ported |  |
+| `MainTable` | property | [110](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L110) | [`TBoldObjectSQLMapper.MainTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L550) | 🟢 ported |  |
+| `RetrieveSelectStatement` | method | [111](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L111) · [body 391](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L391) | [`TBoldObjectSQLMapper.RetrieveSelectStatement`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L429) | 🟢 ported |  |
+| `RetrieveTimeStampCondition` | method | [112](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L112) · [body 657](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L657) | [`TBoldObjectSQLMapper.RetrieveTimeStampCondition`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L499) | 🟢 ported |  |
+| `BoldDbType` | property | [113](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L113) | [`TBoldObjectSQLMapper.BoldDbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L551) | 🟢 ported |  |
+| `ValuesFromFieldsByMemberList` | method | [114](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L114) · [body 482](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L482) | [`TBoldObjectSQLMapper.ValuesFromFieldsByMemberList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L529) | 🟢 ported |  |
+| `ValuesToParamsByMemberList` | method | [115](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L115) · [body 492](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L492) | [`TBoldObjectSQLMapper.ValuesToParamsByMemberList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L540) | 🟢 ported |  |
+| `SystemPersistenceMapper` | property | [116](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L116) | [`TBoldObjectSQLMapper.SystemPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L552) | 🟢 ported |  |
 
 ## TBoldMemberSQLMapper
 
-class at [line 120](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L120); ⚪ not started.
+class at [line 120](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L120); 🟢 ported, C# [`TBoldMemberSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L557).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSystemPersistenceMapper` | method, private | [123](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L123) · [body 647](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L647) |  | ⚪ not started |  |
-| `GetObjectPersistenceMapper` | method, private | [124](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L124) · [body 652](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L652) |  | ⚪ not started |  |
-| `GetColumnDescriptions` | method, private | [125](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L125) · [body 789](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L789) |  | ⚪ not started |  |
-| `GetColumnTypeAsSQL` | method, protected | [130](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L130) |  | ⚪ not started |  |
-| `GetAllowNullAsSQL` | method, protected | [131](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L131) |  | ⚪ not started |  |
-| `GetColumnCount` | method, protected | [132](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L132) |  | ⚪ not started |  |
-| `GetColumnSize` | method, protected | [133](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L133) · [body 528](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L528) |  | ⚪ not started |  |
-| `GetInitialColumnName` | method, protected | [134](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L134) · [body 533](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L533) |  | ⚪ not started |  |
-| `DefaultDefaultDbValue` | method, protected | [135](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L135) · [body 749](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L749) |  | ⚪ not started |  |
-| `InitialColumnRootName` | property, protected | [136](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L136) |  | ⚪ not started |  |
-| `GetRequiresLiveQuery` | method, protected | [137](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L137) · [body 637](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L637) |  | ⚪ not started |  |
-| `SetParamToNullWithDataType` | method, protected | [138](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L138) · [body 561](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L561) |  | ⚪ not started |  |
-| `GetColumnBDEFieldType` | method, protected | [139](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L139) · [body 621](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L621) |  | ⚪ not started |  |
-| `InitialColumnName` | property, protected | [140](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L140) |  | ⚪ not started |  |
-| `CreateFromMold` | constructor | [142](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L142) · [body 501](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L501) |  | ⚪ not started |  |
-| `Destroy` | destructor | [143](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L143) · [body 521](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L521) |  | ⚪ not started |  |
-| `GenerateDatabaseScript` | method | [144](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L144) · [body 774](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L774) |  | ⚪ not started |  |
-| `ColumnDescriptions` | property | [145](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L145) |  | ⚪ not started |  |
-| `AllowNullAsSQL` | property | [146](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L146) |  | ⚪ not started |  |
-| `ColumnCount` | property | [147](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L147) |  | ⚪ not started |  |
-| `ColumnTypeAsSQL` | property | [148](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L148) |  | ⚪ not started |  |
-| `ColumnSize` | property | [149](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L149) |  | ⚪ not started |  |
-| `AllowNull` | property | [150](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L150) |  | ⚪ not started |  |
-| `ValueToParam` | method | [152](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L152) · [body 571](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L571) |  | ⚪ not started |  |
-| `ValueFromField` | method | [153](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L153) · [body 576](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L576) |  | ⚪ not started |  |
-| `ValueToQuery` | method | [154](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L154) · [body 581](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L581) |  | ⚪ not started |  |
-| `ValueFromQuery` | method | [155](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L155) · [body 599](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L599) |  | ⚪ not started |  |
-| `InitializeSystem` | method | [156](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L156) · [body 617](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L617) |  | ⚪ not started |  |
-| `ColumnBDEFieldType` | property | [157](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L157) |  | ⚪ not started |  |
-| `RequiresLiveQuery` | property | [158](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L158) |  | ⚪ not started |  |
-| `SystemPersistenceMapper` | property | [159](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L159) |  | ⚪ not started |  |
-| `ObjectPersistenceMapper` | property | [160](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L160) |  | ⚪ not started |  |
-| `DefaultDbValue` | property | [161](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L161) |  | ⚪ not started |  |
+| `GetSystemPersistenceMapper` | method, private | [123](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L123) · [body 647](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L647) | [`TBoldMemberSQLMapper.GetSystemPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L589) | 🟢 ported |  |
+| `GetObjectPersistenceMapper` | method, private | [124](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L124) · [body 652](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L652) | [`TBoldMemberSQLMapper.GetObjectPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L592) | 🟢 ported |  |
+| `GetColumnDescriptions` | method, private | [125](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L125) · [body 789](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L789) | [`TBoldMemberSQLMapper.GetColumnDescriptions`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L595) | 🟢 ported |  |
+| `GetColumnTypeAsSQL` | method, protected | [130](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L130) | [`TBoldMemberSQLMapper.GetColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L598) | 🟢 ported |  |
+| `GetAllowNullAsSQL` | method, protected | [131](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L131) | [`TBoldMemberSQLMapper.GetAllowNullAsSQL`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L599) | 🟢 ported |  |
+| `GetColumnCount` | method, protected | [132](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L132) | [`TBoldMemberSQLMapper.GetColumnCount`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L600) | 🟢 ported |  |
+| `GetColumnSize` | method, protected | [133](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L133) · [body 528](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L528) | [`TBoldMemberSQLMapper.GetColumnSize`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L603) | 🟢 ported |  |
+| `GetInitialColumnName` | method, protected | [134](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L134) · [body 533](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L533) | [`TBoldMemberSQLMapper.GetInitialColumnName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L607) | 🟢 ported |  |
+| `DefaultDefaultDbValue` | method, protected | [135](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L135) · [body 749](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L749) | [`TBoldMemberSQLMapper.DefaultDefaultDbValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L611) | 🟢 ported |  |
+| `InitialColumnRootName` | property, protected | [136](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L136) | [`TBoldMemberSQLMapper.InitialColumnRootName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L613) | 🟢 ported |  |
+| `GetRequiresLiveQuery` | method, protected | [137](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L137) · [body 637](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L637) | [`TBoldMemberSQLMapper.GetRequiresLiveQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L616) | 🟢 ported |  |
+| `SetParamToNullWithDataType` | method, protected | [138](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L138) · [body 561](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L561) | [`TBoldMemberSQLMapper.SetParamToNullWithDataType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L619) | 🟢 ported |  |
+| `GetColumnBDEFieldType` | method, protected | [139](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L139) · [body 621](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L621) | [`TBoldMemberSQLMapper.GetColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L629) | 🟢 ported |  |
+| `InitialColumnName` | property, protected | [140](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L140) | [`TBoldMemberSQLMapper.InitialColumnName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L633) | 🟢 ported: An indexed property in Delphi. |  |
+| `CreateFromMold` | constructor | [142](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L142) · [body 501](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L501) | [`TBoldMemberSQLMapper.TBoldMemberSQLMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L565) | 🟢 ported |  |
+| `Destroy` | destructor | [143](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L143) · [body 521](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L521) | [`[assembly: Delphi] in BoldPMappersSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L8) | 🔵 replaced: Freed the column list; the garbage collector does that in .NET. |  |
+| `GenerateDatabaseScript` | method | [144](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L144) · [body 774](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L774) | [`TBoldMemberSQLMapper.GenerateDatabaseScript`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L636) | 🟢 ported |  |
+| `ColumnDescriptions` | property | [145](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L145) | [`TBoldMemberSQLMapper.ColumnDescriptions`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L699) | 🟢 ported |  |
+| `AllowNullAsSQL` | property | [146](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L146) | [`TBoldMemberSQLMapper.AllowNullAsSQL`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L700) | 🟢 ported |  |
+| `ColumnCount` | property | [147](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L147) | [`TBoldMemberSQLMapper.ColumnCount`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L701) | 🟢 ported |  |
+| `ColumnTypeAsSQL` | property | [148](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L148) | [`TBoldMemberSQLMapper.ColumnTypeAsSQL`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L704) | 🟢 ported: An indexed property in Delphi. |  |
+| `ColumnSize` | property | [149](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L149) | [`TBoldMemberSQLMapper.ColumnSize`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L707) | 🟢 ported: An indexed property in Delphi. |  |
+| `AllowNull` | property | [150](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L150) | [`TBoldMemberSQLMapper.AllowNull`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L709) | 🟢 ported |  |
+| `ValueToParam` | method | [152](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L152) · [body 571](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L571) | [`TBoldMemberSQLMapper.ValueToParam`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L642) | 🟢 ported |  |
+| `ValueFromField` | method | [153](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L153) · [body 576](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L576) | [`TBoldMemberSQLMapper.ValueFromField`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L646) | 🟢 ported |  |
+| `ValueToQuery` | method | [154](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L154) · [body 581](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L581) | [`TBoldMemberSQLMapper.ValueToQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L652) | 🟢 ported |  |
+| `ValueFromQuery` | method | [155](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L155) · [body 599](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L599) | [`TBoldMemberSQLMapper.ValueFromQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L674) | 🟢 ported |  |
+| `InitializeSystem` | method | [156](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L156) · [body 617](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L617) | [`TBoldMemberSQLMapper.InitializeSystem`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L695) | 🟢 ported |  |
+| `ColumnBDEFieldType` | property | [157](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L157) | [`TBoldMemberSQLMapper.ColumnBDEFieldType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L712) | 🟢 ported: An indexed property in Delphi. |  |
+| `RequiresLiveQuery` | property | [158](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L158) | [`TBoldMemberSQLMapper.RequiresLiveQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L714) | 🟢 ported |  |
+| `SystemPersistenceMapper` | property | [159](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L159) | [`TBoldMemberSQLMapper.SystemPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L715) | 🟢 ported |  |
+| `ObjectPersistenceMapper` | property | [160](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L160) | [`TBoldMemberSQLMapper.ObjectPersistenceMapper`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L716) | 🟢 ported |  |
+| `DefaultDbValue` | property | [161](../../../Source/PMapper/SQL/BoldPMappersSQL.pas#L161) | [`TBoldMemberSQLMapper.DefaultDbValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L717) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldMemberSQLMapper.fAllowNull`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L560) (field)
+- [`TBoldMemberSQLMapper.fInitialColumnRootName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L561) (field)
+- [`TBoldMemberSQLMapper.fDefaultDbValue`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPMappersSQL.cs#L562) (field)
 
 ## Dependencies
 

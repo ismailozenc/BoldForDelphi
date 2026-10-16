@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/SQL/BoldSQLQuery.pas`](../../../Source/PMapper/SQL/BoldSQLQuery.pas) (1144 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 130 symbols done, 0 verified |
+| Status | 🟢 ported: 130 of 130 symbols done, 0 verified |
 
-⚪ 130 not started
+🟢 123 ported · 🔵 7 replaced
 
 ## Unit level
 
@@ -18,325 +18,346 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSQLQueryMode` | enum | [43](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L43) |  | ⚪ not started |  |
-| `TBoldSQLJoin` | class | [46](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L46) |  | ⚪ not started |  |
-| `TBoldSQLTableReference` | class | [59](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L59) |  | ⚪ not started |  |
-| `TBoldSQLColumnReference` | class | [78](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L78) |  | ⚪ not started |  |
-| `TBoldSqlWCF` | class | [91](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L91) |  | ⚪ not started |  |
-| `TBoldSQLWCFBinary` | class | [97](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L97) |  | ⚪ not started |  |
-| `TBoldSQLWCFBinaryInfix` | class | [108](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L108) |  | ⚪ not started |  |
-| `TBoldSQLWCFBinaryPrefix` | class | [115](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L115) |  | ⚪ not started |  |
-| `TBoldSQLWCFUnary` | class | [121](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L121) |  | ⚪ not started |  |
-| `TBoldSQLWCFUnaryPrefix` | class | [131](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L131) |  | ⚪ not started |  |
-| `TBoldSQLWCFUnaryPostfix` | class | [137](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L137) |  | ⚪ not started |  |
-| `TBoldSQLWCFString` | class | [143](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L143) |  | ⚪ not started |  |
-| `TBoldSQLWCFInteger` | class | [152](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L152) |  | ⚪ not started |  |
-| `TBoldSQLWCFFloat` | class | [161](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L161) |  | ⚪ not started |  |
-| `TBoldSQLWCFDate` | class | [171](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L171) |  | ⚪ not started |  |
-| `TBoldSQLWCFTime` | class | [181](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L181) |  | ⚪ not started |  |
-| `TBoldSQLWCFColumnRef` | class | [193](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L193) |  | ⚪ not started |  |
-| `TBoldSQLWCFJoin` | class | [203](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L203) |  | ⚪ not started |  |
-| `TBoldSQLWCFWithQuery` | class | [213](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L213) |  | ⚪ not started |  |
-| `TBoldSQLWCFExists` | class | [228](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L228) |  | ⚪ not started |  |
-| `TBoldSQLWCFInQuery` | class | [235](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L235) |  | ⚪ not started |  |
-| `TBoldSQLWCFGroupFunction` | class | [246](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L246) |  | ⚪ not started |  |
-| `TBoldSQLWCFSize` | class | [255](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L255) |  | ⚪ not started |  |
-| `TBoldSQLWCFGroupFunctionWithColumn` | class | [261](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L261) |  | ⚪ not started |  |
-| `TBoldSQLWCFGenericExpression` | class | [267](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L267) |  | ⚪ not started |  |
-| `TBoldSQLNameSpace` | class | [276](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L276) |  | ⚪ not started |  |
-| `TBoldSQLQuery` | class | [289](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L289) |  | ⚪ not started |  |
-| `TBoldSqlTableReferenceList` | class | [340](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L340) |  | ⚪ not started |  |
+| `TBoldSQLQueryMode` | enum | [43](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L43) | [`TBoldSQLQueryMode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L17) | 🟢 ported |  |
+| `TBoldSQLJoin` | class | [46](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L46) | [`TBoldSQLJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L21) | 🟢 ported |  |
+| `TBoldSQLTableReference` | class | [59](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L59) | [`TBoldSQLTableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L52) | 🟢 ported |  |
+| `TBoldSQLColumnReference` | class | [78](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L78) | [`TBoldSQLColumnReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L115) | 🟢 ported |  |
+| `TBoldSqlWCF` | class | [91](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L91) | [`TBoldSqlWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L137) | 🟢 ported |  |
+| `TBoldSQLWCFBinary` | class | [97](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L97) | [`TBoldSQLWCFBinary`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L144) | 🟢 ported |  |
+| `TBoldSQLWCFBinaryInfix` | class | [108](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L108) | [`TBoldSQLWCFBinaryInfix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L161) | 🟢 ported |  |
+| `TBoldSQLWCFBinaryPrefix` | class | [115](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L115) | [`TBoldSQLWCFBinaryPrefix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L191) | 🟢 ported |  |
+| `TBoldSQLWCFUnary` | class | [121](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L121) | [`TBoldSQLWCFUnary`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L203) | 🟢 ported |  |
+| `TBoldSQLWCFUnaryPrefix` | class | [131](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L131) | [`TBoldSQLWCFUnaryPrefix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L218) | 🟢 ported |  |
+| `TBoldSQLWCFUnaryPostfix` | class | [137](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L137) | [`TBoldSQLWCFUnaryPostfix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L231) | 🟢 ported |  |
+| `TBoldSQLWCFString` | class | [143](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L143) | [`TBoldSQLWCFString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L244) | 🟢 ported |  |
+| `TBoldSQLWCFInteger` | class | [152](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L152) | [`TBoldSQLWCFInteger`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L260) | 🟢 ported |  |
+| `TBoldSQLWCFFloat` | class | [161](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L161) | [`TBoldSQLWCFFloat`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L276) | 🟢 ported |  |
+| `TBoldSQLWCFDate` | class | [171](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L171) | [`TBoldSQLWCFDate`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L299) | 🟢 ported |  |
+| `TBoldSQLWCFTime` | class | [181](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L181) | [`TBoldSQLWCFTime`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L322) | 🟢 ported |  |
+| `TBoldSQLWCFColumnRef` | class | [193](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L193) | [`TBoldSQLWCFColumnRef`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L344) | 🟢 ported |  |
+| `TBoldSQLWCFJoin` | class | [203](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L203) | [`TBoldSQLWCFJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L361) | 🟢 ported |  |
+| `TBoldSQLWCFWithQuery` | class | [213](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L213) | [`TBoldSQLWCFWithQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L379) | 🟢 ported |  |
+| `TBoldSQLWCFExists` | class | [228](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L228) | [`TBoldSQLWCFExists`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L421) | 🟢 ported |  |
+| `TBoldSQLWCFInQuery` | class | [235](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L235) | [`TBoldSQLWCFInQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L441) | 🟢 ported |  |
+| `TBoldSQLWCFGroupFunction` | class | [246](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L246) | [`TBoldSQLWCFGroupFunction`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L466) | 🟢 ported |  |
+| `TBoldSQLWCFSize` | class | [255](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L255) | [`TBoldSQLWCFSize`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L491) | 🟢 ported |  |
+| `TBoldSQLWCFGroupFunctionWithColumn` | class | [261](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L261) | [`TBoldSQLWCFGroupFunctionWithColumn`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L504) | 🟢 ported |  |
+| `TBoldSQLWCFGenericExpression` | class | [267](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L267) | [`TBoldSQLWCFGenericExpression`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L516) | 🟢 ported |  |
+| `TBoldSQLNameSpace` | class | [276](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L276) | [`TBoldSQLNameSpace`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L532) | 🟢 ported |  |
+| `TBoldSQLQuery` | class | [289](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L289) | [`TBoldSQLQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L563) | 🟢 ported |  |
+| `TBoldSqlTableReferenceList` | class | [340](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L340) | [`TBoldSqlTableReferenceList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L898) | 🟢 ported |  |
 
 ## TBoldSQLJoin
 
-class at [line 46](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L46); ⚪ not started.
+class at [line 46](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L46); 🟢 ported, C# [`TBoldSQLJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L21).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getJoinStatement` | method, private | [50](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L50) · [body 725](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L725) |  | ⚪ not started |  |
-| `OrderedMatches` | method, private | [51](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L51) · [body 739](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L739) |  | ⚪ not started |  |
-| `Create` | constructor | [53](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L53) · [body 718](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L718) |  | ⚪ not started |  |
-| `Matches` | method | [54](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L54) · [body 733](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L733) |  | ⚪ not started |  |
-| `JoinStatement` | property | [55](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L55) |  | ⚪ not started |  |
+| `getJoinStatement` | method, private | [50](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L50) · [body 725](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L725) | [`TBoldSQLJoin.getJoinStatement`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L34) | 🟢 ported |  |
+| `OrderedMatches` | method, private | [51](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L51) · [body 739](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L739) | [`TBoldSQLJoin.OrderedMatches`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L39) | 🟢 ported |  |
+| `Create` | constructor | [53](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L53) · [body 718](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L718) | [`TBoldSQLJoin.TBoldSQLJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L27) | 🟢 ported |  |
+| `Matches` | method | [54](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L54) · [body 733](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L733) | [`TBoldSQLJoin.Matches`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L44) | 🟢 ported |  |
+| `JoinStatement` | property | [55](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L55) | [`TBoldSQLJoin.JoinStatement`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L47) | 🟢 ported |  |
 
 ## TBoldSQLTableReference
 
-class at [line 59](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L59); 🟢 ported, C# [`TBoldSQLTableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L52).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAliasName` | method, private | [65](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L65) · [body 690](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L690) |  | ⚪ not started |  |
-| `GetTableAliasDeclaration` | method, private | [66](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L66) · [body 697](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L697) |  | ⚪ not started |  |
-| `EnsureColumnExists` | method, private | [67](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L67) · [body 683](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L683) |  | ⚪ not started |  |
-| `Create` | constructor | [69](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L69) · [body 670](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L670) |  | ⚪ not started |  |
-| `Destroy` | destructor | [70](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L70) · [body 677](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L677) |  | ⚪ not started |  |
-| `GetColumnReference` | method | [71](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L71) · [body 655](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L655) |  | ⚪ not started |  |
-| `TableDescription` | property | [72](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L72) |  | ⚪ not started |  |
-| `AliasName` | property | [73](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L73) |  | ⚪ not started |  |
-| `TableAliasDeclaration` | property | [74](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L74) |  | ⚪ not started |  |
+| `GetAliasName` | method, private | [65](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L65) · [body 690](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L690) | [`TBoldSQLTableReference.GetAliasName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L67) | 🟢 ported |  |
+| `GetTableAliasDeclaration` | method, private | [66](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L66) · [body 697](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L697) | [`TBoldSQLTableReference.GetTableAliasDeclaration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L78) | 🟢 ported |  |
+| `EnsureColumnExists` | method, private | [67](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L67) · [body 683](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L683) | [`TBoldSQLTableReference.EnsureColumnExists`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L81) | 🟢 ported |  |
+| `Create` | constructor | [69](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L69) · [body 670](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L670) | [`TBoldSQLTableReference.TBoldSQLTableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L60) | 🟢 ported |  |
+| `Destroy` | destructor | [70](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L70) · [body 677](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L677) | [`[assembly: Delphi] in BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L6) | 🔵 replaced: Freed the column references; the garbage collector does that in .NET. |  |
+| `GetColumnReference` | method | [71](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L71) · [body 655](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L655) | [`TBoldSQLTableReference.GetColumnReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L91) | 🟢 ported |  |
+| `TableDescription` | property | [72](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L72) | [`TBoldSQLTableReference.TableDescription`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L108) | 🟢 ported |  |
+| `AliasName` | property | [73](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L73) | [`TBoldSQLTableReference.AliasName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L109) | 🟢 ported |  |
+| `TableAliasDeclaration` | property | [74](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L74) | [`TBoldSQLTableReference.TableAliasDeclaration`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L110) | 🟢 ported |  |
 
 ## TBoldSQLColumnReference
 
-class at [line 78](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L78); ⚪ not started.
+class at [line 78](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L78); 🟢 ported, C# [`TBoldSQLColumnReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L115).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPrefixedColumnName` | method, private | [82](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L82) · [body 711](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L711) |  | ⚪ not started |  |
-| `create` | constructor | [84](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L84) · [body 704](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L704) |  | ⚪ not started |  |
-| `TableReference` | property | [85](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L85) |  | ⚪ not started |  |
-| `ColumnDescription` | property | [86](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L86) |  | ⚪ not started |  |
-| `PrefixedColumnName` | property | [87](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L87) |  | ⚪ not started |  |
+| `GetPrefixedColumnName` | method, private | [82](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L82) · [body 711](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L711) | [`TBoldSQLColumnReference.GetPrefixedColumnName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L128) | 🟢 ported |  |
+| `create` | constructor | [84](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L84) · [body 704](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L704) | [`TBoldSQLColumnReference.TBoldSQLColumnReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L121) | 🟢 ported |  |
+| `TableReference` | property | [85](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L85) | [`TBoldSQLColumnReference.TableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L130) | 🟢 ported |  |
+| `ColumnDescription` | property | [86](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L86) | [`TBoldSQLColumnReference.ColumnDescription`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L131) | 🟢 ported |  |
+| `PrefixedColumnName` | property | [87](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L87) | [`TBoldSQLColumnReference.PrefixedColumnName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L132) | 🟢 ported |  |
 
 ## TBoldSqlWCF
 
-class at [line 91](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L91); ⚪ not started.
+class at [line 91](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L91); 🟢 ported, C# [`TBoldSqlWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L137).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method | [93](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L93) |  | ⚪ not started |  |
+| `GetAsString` | method | [93](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L93) | [`TBoldSqlWCF.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L140) | 🟢 ported |  |
 
 ## TBoldSQLWCFBinary
 
-class at [line 97](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L97); ⚪ not started.
+class at [line 97](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L97); 🟢 ported, C# [`TBoldSQLWCFBinary`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L144).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [103](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L103) · [body 775](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L775) |  | ⚪ not started |  |
-| `Destroy` | destructor | [104](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L104) · [body 783](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L783) |  | ⚪ not started |  |
+| `Create` | constructor | [103](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L103) · [body 775](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L775) | [`TBoldSQLWCFBinary.TBoldSQLWCFBinary`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L151) | 🟢 ported |  |
+| `Destroy` | destructor | [104](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L104) · [body 783](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L783) | [`[assembly: Delphi] in BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L7) | 🔵 replaced: Freed the arguments; the garbage collector does that in .NET. |  |
 
 ## TBoldSQLWCFBinaryInfix
 
-class at [line 108](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L108); ⚪ not started.
+class at [line 108](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L108); 🟢 ported, C# [`TBoldSQLWCFBinaryInfix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L161).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateWCFForIdList` | class method | [110](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L110) · [body 797](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L797) |  | ⚪ not started |  |
-| `GetAsString` | method | [111](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L111) · [body 792](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L792) |  | ⚪ not started |  |
+| `CreateWCFForIdList` | class method | [110](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L110) · [body 797](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L797) | [`TBoldSQLWCFBinaryInfix.CreateWCFForIdList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L170) | 🟢 ported |  |
+| `GetAsString` | method | [111](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L111) · [body 792](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L792) | [`TBoldSQLWCFBinaryInfix.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L186) | 🟢 ported |  |
 
 ## TBoldSQLWCFBinaryPrefix
 
-class at [line 115](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L115); ⚪ not started.
+class at [line 115](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L115); 🟢 ported, C# [`TBoldSQLWCFBinaryPrefix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L191).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method | [117](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L117) · [body 823](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L823) |  | ⚪ not started |  |
+| `GetAsString` | method | [117](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L117) · [body 823](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L823) | [`TBoldSQLWCFBinaryPrefix.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L199) | 🟢 ported |  |
 
 ## TBoldSQLWCFUnary
 
-class at [line 121](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L121); ⚪ not started.
+class at [line 121](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L121); 🟢 ported, C# [`TBoldSQLWCFUnary`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L203).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [126](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L126) · [body 1006](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1006) |  | ⚪ not started |  |
-| `Destroy` | destructor | [127](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L127) · [body 1014](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1014) |  | ⚪ not started |  |
+| `Create` | constructor | [126](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L126) · [body 1006](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1006) | [`TBoldSQLWCFUnary.TBoldSQLWCFUnary`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L209) | 🟢 ported |  |
+| `Destroy` | destructor | [127](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L127) · [body 1014](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1014) | [`[assembly: Delphi] in BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L8) | 🔵 replaced: Freed the argument; the garbage collector does that in .NET. |  |
 
 ## TBoldSQLWCFUnaryPrefix
 
-class at [line 131](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L131); ⚪ not started.
+class at [line 131](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L131); 🟢 ported, C# [`TBoldSQLWCFUnaryPrefix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L218).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method | [133](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L133) · [body 1020](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1020) |  | ⚪ not started |  |
+| `GetAsString` | method | [133](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L133) · [body 1020](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1020) | [`TBoldSQLWCFUnaryPrefix.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L226) | 🟢 ported |  |
 
 ## TBoldSQLWCFUnaryPostfix
 
-class at [line 137](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L137); ⚪ not started.
+class at [line 137](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L137); 🟢 ported, C# [`TBoldSQLWCFUnaryPostfix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L231).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAsString` | method | [139](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L139) · [body 1045](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1045) |  | ⚪ not started |  |
+| `GetAsString` | method | [139](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L139) · [body 1045](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1045) | [`TBoldSQLWCFUnaryPostfix.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L239) | 🟢 ported |  |
 
 ## TBoldSQLWCFString
 
-class at [line 143](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L143); ⚪ not started.
+class at [line 143](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L143); 🟢 ported, C# [`TBoldSQLWCFString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L244).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [147](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L147) · [body 830](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L830) |  | ⚪ not started |  |
-| `GetAsString` | method | [148](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L148) · [body 835](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L835) |  | ⚪ not started |  |
+| `Create` | constructor | [147](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L147) · [body 830](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L830) | [`TBoldSQLWCFString.TBoldSQLWCFString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L249) | 🟢 ported |  |
+| `GetAsString` | method | [148](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L148) · [body 835](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L835) | [`TBoldSQLWCFString.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L256) | 🟢 ported |  |
 
 ## TBoldSQLWCFInteger
 
-class at [line 152](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L152); ⚪ not started.
+class at [line 152](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L152); 🟢 ported, C# [`TBoldSQLWCFInteger`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L260).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [156](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L156) · [body 851](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L851) |  | ⚪ not started |  |
-| `GetAsString` | method | [157](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L157) · [body 856](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L856) |  | ⚪ not started |  |
+| `Create` | constructor | [156](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L156) · [body 851](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L851) | [`TBoldSQLWCFInteger.TBoldSQLWCFInteger`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L265) | 🟢 ported |  |
+| `GetAsString` | method | [157](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L157) · [body 856](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L856) | [`TBoldSQLWCFInteger.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L271) | 🟢 ported |  |
 
 ## TBoldSQLWCFFloat
 
-class at [line 161](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L161); ⚪ not started.
+class at [line 161](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L161); 🟢 ported, C# [`TBoldSQLWCFFloat`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L276).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [166](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L166) · [body 863](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L863) |  | ⚪ not started |  |
-| `GetAsString` | method | [167](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L167) · [body 868](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L868) |  | ⚪ not started |  |
+| `Create` | constructor | [166](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L166) · [body 863](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L863) | [`TBoldSQLWCFFloat.TBoldSQLWCFFloat`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L282) | 🟢 ported |  |
+| `GetAsString` | method | [167](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L167) · [body 868](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L868) | [`TBoldSQLWCFFloat.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L288) | 🟢 ported |  |
 
 ## TBoldSQLWCFDate
 
-class at [line 171](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L171); ⚪ not started.
+class at [line 171](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L171); 🟢 ported, C# [`TBoldSQLWCFDate`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L299).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [176](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L176) · [body 1113](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1113) |  | ⚪ not started |  |
-| `GetAsString` | method | [177](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L177) · [body 1118](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1118) |  | ⚪ not started |  |
+| `Create` | constructor | [176](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L176) · [body 1113](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1113) | [`TBoldSQLWCFDate.TBoldSQLWCFDate`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L305) | 🟢 ported |  |
+| `GetAsString` | method | [177](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L177) · [body 1118](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1118) | [`TBoldSQLWCFDate.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L311) | 🟢 ported |  |
 
 ## TBoldSQLWCFTime
 
-class at [line 181](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L181); ⚪ not started.
+class at [line 181](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L181); 🟢 ported, C# [`TBoldSQLWCFTime`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L322).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [186](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L186) · [body 1129](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1129) |  | ⚪ not started |  |
-| `GetAsString` | method | [187](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L187) · [body 1134](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1134) |  | ⚪ not started |  |
+| `Create` | constructor | [186](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L186) · [body 1129](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1129) | [`TBoldSQLWCFTime.TBoldSQLWCFTime`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L328) | 🟢 ported |  |
+| `GetAsString` | method | [187](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L187) · [body 1134](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1134) | [`TBoldSQLWCFTime.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L334) | 🟢 ported |  |
 
 ## TBoldSQLWCFColumnRef
 
-class at [line 193](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L193); ⚪ not started.
+class at [line 193](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L193); 🟢 ported, C# [`TBoldSQLWCFColumnRef`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L344).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [197](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L197) · [body 879](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L879) |  | ⚪ not started |  |
-| `GetAsString` | method | [198](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L198) · [body 884](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L884) |  | ⚪ not started |  |
-| `ColumnRef` | property | [199](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L199) |  | ⚪ not started |  |
+| `Create` | constructor | [197](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L197) · [body 879](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L879) | [`TBoldSQLWCFColumnRef.TBoldSQLWCFColumnRef`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L349) | 🟢 ported |  |
+| `GetAsString` | method | [198](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L198) · [body 884](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L884) | [`TBoldSQLWCFColumnRef.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L355) | 🟢 ported |  |
+| `ColumnRef` | property | [199](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L199) | [`TBoldSQLWCFColumnRef.ColumnRef`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L357) | 🟢 ported |  |
 
 ## TBoldSQLWCFJoin
 
-class at [line 203](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L203); ⚪ not started.
+class at [line 203](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L203); 🟢 ported, C# [`TBoldSQLWCFJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L361).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [208](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L208) · [body 991](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L991) |  | ⚪ not started |  |
-| `GetAsString` | method | [209](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L209) · [body 999](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L999) |  | ⚪ not started |  |
+| `Create` | constructor | [208](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L208) · [body 991](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L991) | [`TBoldSQLWCFJoin.TBoldSQLWCFJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L367) | 🟢 ported |  |
+| `GetAsString` | method | [209](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L209) · [body 999](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L999) | [`TBoldSQLWCFJoin.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L374) | 🟢 ported |  |
 
 ## TBoldSQLWCFWithQuery
 
-class at [line 213](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L213); ⚪ not started.
+class at [line 213](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L213); 🟢 ported, C# [`TBoldSQLWCFWithQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L379).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `QueryAsString` | method, protected | [217](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L217) · [body 941](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L941) |  | ⚪ not started |  |
-| `CopyParams` | method, protected | [218](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L218) · [body 907](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L907) |  | ⚪ not started |  |
-| `Create` | constructor | [221](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L221) · [body 923](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L923) |  | ⚪ not started |  |
-| `Destroy` | destructor | [222](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L222) · [body 929](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L929) |  | ⚪ not started |  |
-| `GetAsString` | method | [223](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L223) · [body 935](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L935) |  | ⚪ not started |  |
-| `Query` | property | [224](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L224) |  | ⚪ not started |  |
+| `QueryAsString` | method, protected | [217](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L217) · [body 941](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L941) | [`TBoldSQLWCFWithQuery.QueryAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L390) | 🟢 ported |  |
+| `CopyParams` | method, protected | [218](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L218) · [body 907](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L907) | [`TBoldSQLWCFWithQuery.CopyParams`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L398) | 🟢 ported |  |
+| `Create` | constructor | [221](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L221) · [body 923](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L923) | [`TBoldSQLWCFWithQuery.TBoldSQLWCFWithQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L384) | 🟢 ported |  |
+| `Destroy` | destructor | [222](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L222) · [body 929](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L929) | [`[assembly: Delphi] in BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L9) | 🔵 replaced: Freed the query; the garbage collector does that in .NET. |  |
+| `GetAsString` | method | [223](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L223) · [body 935](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L935) | [`TBoldSQLWCFWithQuery.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L409) | 🟢 ported |  |
+| `Query` | property | [224](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L224) | [`TBoldSQLWCFWithQuery.Query`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L416) | 🟢 ported |  |
 
 ## TBoldSQLWCFExists
 
-class at [line 228](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L228); ⚪ not started.
+class at [line 228](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L228); 🟢 ported, C# [`TBoldSQLWCFExists`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L421).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [230](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L230) · [body 891](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L891) |  | ⚪ not started |  |
-| `GetAsString` | method | [231](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L231) · [body 899](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L899) |  | ⚪ not started |  |
+| `create` | constructor | [230](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L230) · [body 891](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L891) | [`TBoldSQLWCFExists.TBoldSQLWCFExists`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L424) | 🟢 ported |  |
+| `GetAsString` | method | [231](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L231) · [body 899](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L899) | [`TBoldSQLWCFExists.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L431) | 🟢 ported |  |
 
 ## TBoldSQLWCFInQuery
 
-class at [line 235](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L235); ⚪ not started.
+class at [line 235](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L235); 🟢 ported, C# [`TBoldSQLWCFInQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L441).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [239](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L239) · [body 953](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L953) |  | ⚪ not started |  |
-| `Destroy` | destructor | [240](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L240) · [body 962](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L962) |  | ⚪ not started |  |
-| `GetAsString` | method | [241](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L241) · [body 971](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L971) |  | ⚪ not started |  |
-| `Arg1` | property | [242](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L242) |  | ⚪ not started |  |
+| `Create` | constructor | [239](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L239) · [body 953](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L953) | [`TBoldSQLWCFInQuery.TBoldSQLWCFInQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L446) | 🟢 ported |  |
+| `Destroy` | destructor | [240](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L240) · [body 962](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L962) | [`[assembly: Delphi] in BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L10) | 🔵 replaced: Freed the argument (not the query); the garbage collector does that in .NET. |  |
+| `GetAsString` | method | [241](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L241) · [body 971](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L971) | [`TBoldSQLWCFInQuery.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L454) | 🟢 ported |  |
+| `Arg1` | property | [242](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L242) | [`TBoldSQLWCFInQuery.Arg1`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L461) | 🟢 ported |  |
 
 ## TBoldSQLWCFGroupFunction
 
-class at [line 246](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L246); ⚪ not started.
+class at [line 246](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L246); 🟢 ported, C# [`TBoldSQLWCFGroupFunction`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L466).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `PreGetAsString` | method, protected | [248](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L248) · [body 1058](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1058) |  | ⚪ not started |  |
-| `create` | constructor | [250](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L250) · [body 1052](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1052) |  | ⚪ not started |  |
-| `GetAsString` | method | [251](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L251) · [body 1031](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1031) |  | ⚪ not started |  |
+| `PreGetAsString` | method, protected | [248](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L248) · [body 1058](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1058) | [`TBoldSQLWCFGroupFunction.PreGetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L475) | 🟢 ported |  |
+| `create` | constructor | [250](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L250) · [body 1052](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1052) | [`TBoldSQLWCFGroupFunction.TBoldSQLWCFGroupFunction`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L469) | 🟢 ported |  |
+| `GetAsString` | method | [251](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L251) · [body 1031](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1031) | [`TBoldSQLWCFGroupFunction.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L480) | 🟢 ported |  |
 
 ## TBoldSQLWCFSize
 
-class at [line 255](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L255); ⚪ not started.
+class at [line 255](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L255); 🟢 ported, C# [`TBoldSQLWCFSize`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L491).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `PreGetAsString` | method, protected | [257](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L257) · [body 1026](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1026) |  | ⚪ not started |  |
+| `PreGetAsString` | method, protected | [257](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L257) · [body 1026](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1026) | [`TBoldSQLWCFSize.PreGetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L499) | 🟢 ported |  |
 
 ## TBoldSQLWCFGroupFunctionWithColumn
 
-class at [line 261](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L261); ⚪ not started.
+class at [line 261](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L261); 🟢 ported, C# [`TBoldSQLWCFGroupFunctionWithColumn`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L504).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [263](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L263) · [body 1065](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1065) |  | ⚪ not started |  |
+| `create` | constructor | [263](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L263) · [body 1065](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1065) | [`TBoldSQLWCFGroupFunctionWithColumn.TBoldSQLWCFGroupFunctionWithColumn`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L507) | 🟢 ported |  |
 
 ## TBoldSQLWCFGenericExpression
 
-class at [line 267](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L267); ⚪ not started.
+class at [line 267](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L267); 🟢 ported, C# [`TBoldSQLWCFGenericExpression`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L516).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [271](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L271) · [body 979](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L979) |  | ⚪ not started |  |
-| `GetAsString` | method | [272](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L272) · [body 984](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L984) |  | ⚪ not started |  |
+| `Create` | constructor | [271](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L271) · [body 979](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L979) | [`TBoldSQLWCFGenericExpression.TBoldSQLWCFGenericExpression`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L521) | 🟢 ported |  |
+| `GetAsString` | method | [272](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L272) · [body 984](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L984) | [`TBoldSQLWCFGenericExpression.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L527) | 🟢 ported |  |
 
 ## TBoldSQLNameSpace
 
-class at [line 276](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L276); ⚪ not started.
+class at [line 276](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L276); 🟢 ported, C# [`TBoldSQLNameSpace`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L532).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [281](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L281) · [body 1075](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1075) |  | ⚪ not started |  |
-| `Destroy` | destructor | [282](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L282) · [body 1082](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1082) |  | ⚪ not started |  |
-| `GetUnusedParamNumber` | method | [283](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L283) · [body 1105](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1105) |  | ⚪ not started |  |
-| `GetUniqueAlias` | method | [285](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L285) · [body 1088](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1088) |  | ⚪ not started |  |
+| `Create` | constructor | [281](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L281) · [body 1075](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1075) | [`TBoldSQLNameSpace.TBoldSQLNameSpace`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L538) | 🟢 ported |  |
+| `Destroy` | destructor | [282](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L282) · [body 1082](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1082) | [`[assembly: Delphi] in BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L11) | 🔵 replaced: Freed the name list; the garbage collector does that in .NET. |  |
+| `GetUnusedParamNumber` | method | [283](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L283) · [body 1105](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1105) | [`TBoldSQLNameSpace.GetUnusedParamNumber`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L543) | 🟢 ported |  |
+| `GetUniqueAlias` | method | [285](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L285) · [body 1088](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1088) | [`TBoldSQLNameSpace.GetUniqueAlias`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L546) | 🟢 ported |  |
 
 ## TBoldSQLQuery
 
-class at [line 289](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L289); ⚪ not started.
+class at [line 289](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L289); 🟢 ported, C# [`TBoldSQLQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L563).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnToRetrieve` | method, private | [305](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L305) · [body 552](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L552) |  | ⚪ not started |  |
-| `GetJoin` | method, private | [306](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L306) · [body 577](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L577) |  | ⚪ not started |  |
-| `GetUniqueAlias` | method, private | [307](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L307) · [body 557](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L557) |  | ⚪ not started |  |
-| `GetWCF` | method, private | [308](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L308) · [body 611](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L611) |  | ⚪ not started |  |
-| `GenerateSelect` | method, private | [309](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L309) · [body 440](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L440) |  | ⚪ not started |  |
-| `EnsureTableExists` | method, private | [310](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L310) · [body 605](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L605) |  | ⚪ not started |  |
-| `GetAsString` | method, private | [311](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L311) · [body 637](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L637) |  | ⚪ not started |  |
-| `TableReferences` | property, protected | [313](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L313) |  | ⚪ not started |  |
-| `ColumnToRetrieve` | property, protected | [314](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L314) |  | ⚪ not started |  |
-| `Join` | property, protected | [315](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L315) |  | ⚪ not started |  |
-| `WCF` | property, protected | [316](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L316) |  | ⚪ not started |  |
-| `Create` | constructor | [318](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L318) · [body 400](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L400) |  | ⚪ not started |  |
-| `Destroy` | destructor | [319](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L319) · [body 416](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L416) |  | ⚪ not started |  |
-| `AddJoin` | method | [320](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L320) · [body 582](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L582) |  | ⚪ not started |  |
-| `AddTableReference` | method | [321](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L321) · [body 362](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L362) |  | ⚪ not started |  |
-| `AddColumnToRetrieve` | method | [322](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L322) · [body 541](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L541) |  | ⚪ not started |  |
-| `AddColumnToOrderBy` | method | [323](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L323) · [body 1100](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1100) |  | ⚪ not started |  |
-| `GenerateSQL` | method | [324](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L324) · [body 428](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L428) |  | ⚪ not started |  |
-| `AddParam` | method | [325](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L325) · [body 616](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L616) |  | ⚪ not started |  |
-| `HastableReferenceInList` | method | [326](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L326) · [body 647](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L647) |  | ⚪ not started |  |
-| `RetrieveCountStar` | method | [327](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L327) · [body 1038](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1038) |  | ⚪ not started |  |
-| `AddWCF` | method | [328](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L328) · [body 625](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L625) |  | ⚪ not started |  |
-| `ClearColumnsToRetrieve` | method | [329](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L329) · [body 631](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L631) |  | ⚪ not started |  |
-| `Mode` | property | [330](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L330) |  | ⚪ not started |  |
-| `SystemDescription` | property | [331](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L331) |  | ⚪ not started |  |
-| `MainTable` | property | [332](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L332) |  | ⚪ not started |  |
-| `AsString` | property | [333](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L333) |  | ⚪ not started |  |
-| `SQLDatabaseConfig` | property | [334](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L334) |  | ⚪ not started |  |
-| `Params` | property | [335](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L335) |  | ⚪ not started |  |
-| `IgnoreHistoricObjects` | property | [336](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L336) |  | ⚪ not started |  |
+| `GetColumnToRetrieve` | method, private | [305](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L305) · [body 552](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L552) | [`TBoldSQLQuery.GetColumnToRetrieve`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L596) | 🟢 ported |  |
+| `GetJoin` | method, private | [306](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L306) · [body 577](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L577) | [`TBoldSQLQuery.GetJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L599) | 🟢 ported |  |
+| `GetUniqueAlias` | method, private | [307](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L307) · [body 557](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L557) | [`TBoldSQLQuery.GetUniqueAlias`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L602) | 🟢 ported |  |
+| `GetWCF` | method, private | [308](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L308) · [body 611](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L611) | [`TBoldSQLQuery.GetWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L627) | 🟢 ported |  |
+| `GenerateSelect` | method, private | [309](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L309) · [body 440](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L440) | [`TBoldSQLQuery.GenerateSelect`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L634) | 🟢 ported |  |
+| `EnsureTableExists` | method, private | [310](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L310) · [body 605](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L605) | [`TBoldSQLQuery.EnsureTableExists`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L750) | 🟢 ported |  |
+| `GetAsString` | method, private | [311](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L311) · [body 637](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L637) | [`TBoldSQLQuery.GetAsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L759) | 🟢 ported |  |
+| `TableReferences` | property, protected | [313](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L313) | [`TBoldSQLQuery.TableReferences`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L766) | 🟢 ported |  |
+| `ColumnToRetrieve` | property, protected | [314](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L314) | [`TBoldSQLQuery.ColumnToRetrieve`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L769) | 🟢 ported: An indexed property in Delphi. |  |
+| `Join` | property, protected | [315](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L315) | [`TBoldSQLQuery.Join`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L772) | 🟢 ported: An indexed property in Delphi. |  |
+| `WCF` | property, protected | [316](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L316) | [`TBoldSQLQuery.WCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L775) | 🟢 ported: An indexed property in Delphi. |  |
+| `Create` | constructor | [318](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L318) · [body 400](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L400) | [`TBoldSQLQuery.TBoldSQLQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L580) | 🟢 ported |  |
+| `Destroy` | destructor | [319](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L319) · [body 416](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L416) | [`[assembly: Delphi] in BoldSQLQuery.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L12) | 🔵 replaced: Freed the lists; the garbage collector does that in .NET. |  |
+| `AddJoin` | method | [320](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L320) · [body 582](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L582) | [`TBoldSQLQuery.AddJoin`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L778) | 🟢 ported |  |
+| `AddTableReference` | method | [321](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L321) · [body 362](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L362) | [`TBoldSQLQuery.AddTableReference`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L800) | 🟢 ported |  |
+| `AddColumnToRetrieve` | method | [322](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L322) · [body 541](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L541) | [`TBoldSQLQuery.AddColumnToRetrieve`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L827) | 🟢 ported |  |
+| `AddColumnToOrderBy` | method | [323](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L323) · [body 1100](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1100) | [`TBoldSQLQuery.AddColumnToOrderBy`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L845) | 🟢 ported |  |
+| `GenerateSQL` | method | [324](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L324) · [body 428](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L428) | [`TBoldSQLQuery.GenerateSQL`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L848) | 🟢 ported |  |
+| `AddParam` | method | [325](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L325) · [body 616](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L616) | [`TBoldSQLQuery.AddParam`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L858) | 🟢 ported |  |
+| `HastableReferenceInList` | method | [326](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L326) · [body 647](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L647) | [`TBoldSQLQuery.HastableReferenceInList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L866) | 🟢 ported |  |
+| `RetrieveCountStar` | method | [327](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L327) · [body 1038](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L1038) | [`TBoldSQLQuery.RetrieveCountStar`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L869) | 🟢 ported |  |
+| `AddWCF` | method | [328](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L328) · [body 625](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L625) | [`TBoldSQLQuery.AddWCF`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L872) | 🟢 ported |  |
+| `ClearColumnsToRetrieve` | method | [329](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L329) · [body 631](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L631) | [`TBoldSQLQuery.ClearColumnsToRetrieve`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L881) | 🟢 ported |  |
+| `Mode` | property | [330](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L330) | [`TBoldSQLQuery.Mode`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L887) | 🟢 ported |  |
+| `SystemDescription` | property | [331](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L331) | [`TBoldSQLQuery.SystemDescription`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L888) | 🟢 ported |  |
+| `MainTable` | property | [332](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L332) | [`TBoldSQLQuery.MainTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L889) | 🟢 ported |  |
+| `AsString` | property | [333](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L333) | [`TBoldSQLQuery.AsString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L890) | 🟢 ported |  |
+| `SQLDatabaseConfig` | property | [334](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L334) | [`TBoldSQLQuery.SQLDatabaseConfig`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L891) | 🟢 ported |  |
+| `Params` | property | [335](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L335) | [`TBoldSQLQuery.Params`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L892) | 🟢 ported |  |
+| `IgnoreHistoricObjects` | property | [336](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L336) | [`TBoldSQLQuery.IgnoreHistoricObjects`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L893) | 🟢 ported |  |
 
 ## TBoldSqlTableReferenceList
 
-class at [line 340](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L340); ⚪ not started.
+class at [line 340](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L340); 🟢 ported, C# [`TBoldSqlTableReferenceList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L898).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Get` | method, private | [342](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L342) · [body 755](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L755) |  | ⚪ not started |  |
-| `Put` | method, private | [343](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L343) · [body 767](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L767) |  | ⚪ not started |  |
-| `Add` | method | [345](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L345) · [body 749](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L749) |  | ⚪ not started |  |
-| `Insert` | method | [346](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L346) · [body 761](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L761) |  | ⚪ not started |  |
-| `Items` | property | [347](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L347) |  | ⚪ not started |  |
+| `Get` | method, private | [342](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L342) · [body 755](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L755) | [`TBoldSqlTableReferenceList.Get`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L901) | 🟢 ported |  |
+| `Put` | method, private | [343](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L343) · [body 767](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L767) | [`TBoldSqlTableReferenceList.Put`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L904) | 🟢 ported |  |
+| `Add` | method | [345](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L345) · [body 749](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L749) | [`TBoldSqlTableReferenceList.Add`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L907) | 🟢 ported |  |
+| `Insert` | method | [346](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L346) · [body 761](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L761) | [`TBoldSqlTableReferenceList.Insert`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L910) | 🟢 ported |  |
+| `Items` | property | [347](../../../Source/PMapper/SQL/BoldSQLQuery.pas#L347) | [`TBoldSqlTableReferenceList.this`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L913) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldSQLJoin.fColumnRef1`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L23) (field)
+- [`TBoldSQLJoin.fColumnRef2`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L24) (field)
+- [`TBoldSQLTableReference.fTableDescription`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L54) (field)
+- [`TBoldSQLTableReference.fAliasName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L57) (field)
+- [`TBoldSQLWCFBinary.fArg1`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L146) (field)
+- [`TBoldSQLWCFBinary.fArg2`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L147) (field)
+- [`TBoldSQLWCFBinary.fSymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L148) (field)
+- [`TBoldSQLWCFBinaryInfix.TBoldSQLWCFBinaryInfix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L164) (constructor)
+- [`TBoldSQLWCFBinaryPrefix.TBoldSQLWCFBinaryPrefix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L194) (constructor)
+- [`TBoldSQLWCFUnary.fArg1`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L205) (field)
+- [`TBoldSQLWCFUnary.fSymbol`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L206) (field)
+- [`TBoldSQLWCFUnaryPrefix.TBoldSQLWCFUnaryPrefix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L221) (constructor)
+- [`TBoldSQLWCFUnaryPostfix.TBoldSQLWCFUnaryPostfix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L234) (constructor)
+- [`TBoldSQLWCFWithQuery.fQuery`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L381) (field)
+- [`TBoldSQLWCFSize.TBoldSQLWCFSize`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L494) (constructor)
+- [`TBoldSQLQuery.fGroupOperation`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLQuery.cs#L574) (field)
 
 ## Dependencies
 
