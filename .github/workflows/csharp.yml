@@ -33,11 +33,16 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
+      # Errors are repeated as annotations, so they can be read from the run's summary.
       - name: Restore
-        run: dotnet restore CSharp/Bold.slnx
+        run: |
+          set -o pipefail
+          dotnet restore CSharp/Bold.slnx 2>&1 | tee restore.log || { grep -E ": (error|warning) " restore.log | sort -u | head -50 | sed 's/^/::error::/'; exit 1; }
 
       - name: Build
-        run: dotnet build CSharp/Bold.slnx --configuration Release --no-restore
+        run: |
+          set -o pipefail
+          dotnet build CSharp/Bold.slnx --configuration Release --no-restore 2>&1 | tee build.log || { grep -E ": error " build.log | sort -u | head -50 | sed 's/^/::error::/'; exit 1; }
 
       - name: Test
         run: |

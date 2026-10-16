@@ -7,6 +7,10 @@
     <DefineConstants>$(DefineConstants);BOLD_OFFLINE</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  <!-- The SQLite package is only a test database: advisories about it (or its native library) are reported, not build errors. -->
+  <PropertyGroup>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
   <ItemGroup Condition="'$(BoldOffline)' != 'true'">
     <PackageReference Include="Microsoft.Data.Sqlite" />
     <Compile Remove="Support/NativeSqlite.cs" />

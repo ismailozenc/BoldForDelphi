@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/SQL/BoldSQLMappingInfo.pas`](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas) (586 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs` |
+| C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | ⚪ not started: 0 of 88 symbols done, 0 verified |
+| Status | 🟢 ported: 88 of 88 symbols done, 0 verified |
 
-⚪ 88 not started
+🟢 82 ported · 🔵 6 replaced
 
 ## Unit level
 
@@ -18,185 +18,199 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSQLMappingInfoClass` | class reference | [15](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L15) |  | ⚪ not started |  |
-| `TBoldClassMappingInfo` | class | [17](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L17) |  | ⚪ not started |  |
-| `TBoldMemberMappingInfo` | class | [25](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L25) |  | ⚪ not started |  |
-| `TBoldDbTypeMappingInfo` | class | [42](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L42) |  | ⚪ not started |  |
-| `TBoldAllInstancesMappingInfo` | class | [50](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L50) |  | ⚪ not started |  |
-| `TBoldObjectStorageMappingInfo` | class | [61](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L61) |  | ⚪ not started |  |
-| `TBoldMemberMappingArray` | array | [70](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L70) |  | ⚪ not started |  |
-| `TBoldObjectStorageMappingArray` | array | [71](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L71) |  | ⚪ not started |  |
-| `TBoldAllInstancesMappingArray` | array | [72](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L72) |  | ⚪ not started |  |
-| `TBoldClassMappingArray` | array | [73](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L73) |  | ⚪ not started |  |
-| `TBoldMemberMappingList` | class | [75](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L75) |  | ⚪ not started |  |
-| `TBoldClassMappingList` | class | [86](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L86) |  | ⚪ not started |  |
-| `TBoldAllInstancesMappingList` | class | [95](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L95) |  | ⚪ not started |  |
-| `TBoldObjectStorageMappingList` | class | [102](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L102) |  | ⚪ not started |  |
-| `TBoldDbTypeMappingList` | class | [109](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L109) |  | ⚪ not started |  |
-| `TBoldSQLMappingInfo` | class | [117](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L117) |  | ⚪ not started |  |
-| `TBoldClassMappingIndex` | class, implementation | [174](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L174) |  | ⚪ not started |  |
-| `TBoldMemberMappingIndex` | class, implementation | [179](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L179) |  | ⚪ not started |  |
+| `TBoldSQLMappingInfoClass` | class reference | [15](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L15) | [`[assembly: Delphi] in BoldSQLMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L6) | 🔵 replaced: A class reference; System.Type in .NET. |  |
+| `TBoldClassMappingInfo` | class | [17](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L17) | [`TBoldClassMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L23) | 🟢 ported |  |
+| `TBoldMemberMappingInfo` | class | [25](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L25) | [`TBoldMemberMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L38) | 🟢 ported |  |
+| `TBoldDbTypeMappingInfo` | class | [42](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L42) | [`TBoldDbTypeMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L77) | 🟢 ported |  |
+| `TBoldAllInstancesMappingInfo` | class | [50](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L50) | [`TBoldAllInstancesMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L92) | 🟢 ported |  |
+| `TBoldObjectStorageMappingInfo` | class | [61](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L61) | [`TBoldObjectStorageMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L114) | 🟢 ported |  |
+| `TBoldMemberMappingArray` | array | [70](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L70) | [`[assembly: Delphi] in BoldSQLMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L7) | 🔵 replaced: TBoldMemberMappingInfo[] in .NET. |  |
+| `TBoldObjectStorageMappingArray` | array | [71](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L71) | [`[assembly: Delphi] in BoldSQLMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L8) | 🔵 replaced: TBoldObjectStorageMappingInfo[] in .NET. |  |
+| `TBoldAllInstancesMappingArray` | array | [72](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L72) | [`[assembly: Delphi] in BoldSQLMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L9) | 🔵 replaced: TBoldAllInstancesMappingInfo[] in .NET. |  |
+| `TBoldClassMappingArray` | array | [73](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L73) | [`[assembly: Delphi] in BoldSQLMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L10) | 🔵 replaced: TBoldClassMappingInfo[] in .NET. |  |
+| `TBoldMemberMappingList` | class | [75](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L75) | [`TBoldMemberMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L159) | 🟢 ported |  |
+| `TBoldClassMappingList` | class | [86](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L86) | [`TBoldClassMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L203) | 🟢 ported |  |
+| `TBoldAllInstancesMappingList` | class | [95](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L95) | [`TBoldAllInstancesMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L236) | 🟢 ported |  |
+| `TBoldObjectStorageMappingList` | class | [102](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L102) | [`TBoldObjectStorageMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L246) | 🟢 ported |  |
+| `TBoldDbTypeMappingList` | class | [109](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L109) | [`TBoldDbTypeMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L256) | 🟢 ported |  |
+| `TBoldSQLMappingInfo` | class | [117](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L117) | [`TBoldSQLMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L267) | 🟢 ported |  |
+| `TBoldClassMappingIndex` | class, implementation | [174](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L174) | [`TBoldClassMappingIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L132) | 🟢 ported |  |
+| `TBoldMemberMappingIndex` | class, implementation | [179](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L179) | [`TBoldMemberMappingIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L140) | 🟢 ported |  |
 
 ## TBoldClassMappingInfo
 
-class at [line 17](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L17); 🟢 ported, C# [`TBoldClassMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L23).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [21](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L21) · [body 477](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L477) |  | ⚪ not started |  |
-| `ClassExpressionName` | property | [22](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L22) |  | ⚪ not started |  |
+| `create` | constructor | [21](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L21) · [body 477](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L477) | [`TBoldClassMappingInfo.TBoldClassMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L28) | 🟢 ported |  |
+| `ClassExpressionName` | property | [22](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L22) | [`TBoldClassMappingInfo.ClassExpressionName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L33) | 🟢 ported |  |
 
 ## TBoldMemberMappingInfo
 
-class at [line 25](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L25); 🟢 ported, C# [`TBoldMemberMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L38).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetColumnByIndex` | method, private | [31](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L31) · [body 320](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L320) |  | ⚪ not started |  |
-| `create` | constructor | [33](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L33) · [body 311](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L311) |  | ⚪ not started |  |
-| `CompareMapping` | method | [34](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L34) · [body 304](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L304) |  | ⚪ not started |  |
-| `MemberName` | property | [35](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L35) |  | ⚪ not started |  |
-| `TableName` | property | [36](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L36) |  | ⚪ not started |  |
-| `MapperName` | property | [37](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L37) |  | ⚪ not started |  |
-| `Columns` | property | [38](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L38) |  | ⚪ not started |  |
-| `ColumnByIndex` | property | [39](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L39) |  | ⚪ not started |  |
+| `GetColumnByIndex` | method, private | [31](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L31) · [body 320](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L320) | [`TBoldMemberMappingInfo.GetColumnByIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L56) | 🟢 ported |  |
+| `create` | constructor | [33](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L33) · [body 311](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L311) | [`TBoldMemberMappingInfo.TBoldMemberMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L46) | 🟢 ported |  |
+| `CompareMapping` | method | [34](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L34) · [body 304](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L304) | [`TBoldMemberMappingInfo.CompareMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L63) | 🟢 ported |  |
+| `MemberName` | property | [35](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L35) | [`TBoldMemberMappingInfo.MemberName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L66) | 🟢 ported |  |
+| `TableName` | property | [36](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L36) | [`TBoldMemberMappingInfo.TableName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L67) | 🟢 ported |  |
+| `MapperName` | property | [37](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L37) | [`TBoldMemberMappingInfo.MapperName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L68) | 🟢 ported |  |
+| `Columns` | property | [38](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L38) | [`TBoldMemberMappingInfo.Columns`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L69) | 🟢 ported |  |
+| `ColumnByIndex` | property | [39](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L39) | [`TBoldMemberMappingInfo.ColumnByIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L72) | 🟢 ported: An indexed property in Delphi. |  |
 
 ## TBoldDbTypeMappingInfo
 
-class at [line 42](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L42); ⚪ not started.
+class at [line 42](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L42); 🟢 ported, C# [`TBoldDbTypeMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L77).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [46](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L46) · [body 469](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L469) |  | ⚪ not started |  |
-| `DbType` | property | [47](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L47) |  | ⚪ not started |  |
+| `create` | constructor | [46](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L46) · [body 469](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L469) | [`TBoldDbTypeMappingInfo.TBoldDbTypeMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L82) | 🟢 ported |  |
+| `DbType` | property | [47](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L47) | [`TBoldDbTypeMappingInfo.DbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L87) | 🟢 ported |  |
 
 ## TBoldAllInstancesMappingInfo
 
-class at [line 50](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L50); ⚪ not started.
+class at [line 50](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L50); 🟢 ported, C# [`TBoldAllInstancesMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L92).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [55](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L55) · [body 343](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L343) |  | ⚪ not started |  |
-| `CompareMapping` | method | [56](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L56) · [body 335](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L335) |  | ⚪ not started |  |
-| `TableName` | property | [57](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L57) |  | ⚪ not started |  |
-| `ClassIdRequired` | property | [58](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L58) |  | ⚪ not started |  |
+| `create` | constructor | [55](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L55) · [body 343](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L343) | [`TBoldAllInstancesMappingInfo.TBoldAllInstancesMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L98) | 🟢 ported |  |
+| `CompareMapping` | method | [56](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L56) · [body 335](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L335) | [`TBoldAllInstancesMappingInfo.CompareMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L105) | 🟢 ported |  |
+| `TableName` | property | [57](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L57) | [`TBoldAllInstancesMappingInfo.TableName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L108) | 🟢 ported |  |
+| `ClassIdRequired` | property | [58](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L58) | [`TBoldAllInstancesMappingInfo.ClassIdRequired`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L109) | 🟢 ported |  |
 
 ## TBoldObjectStorageMappingInfo
 
-class at [line 61](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L61); 🟢 ported, C# [`TBoldObjectStorageMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L114).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `create` | constructor | [65](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L65) · [body 359](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L359) |  | ⚪ not started |  |
-| `CompareMapping` | method | [66](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L66) · [body 354](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L354) |  | ⚪ not started |  |
-| `TableName` | property | [67](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L67) |  | ⚪ not started |  |
+| `create` | constructor | [65](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L65) · [body 359](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L359) | [`TBoldObjectStorageMappingInfo.TBoldObjectStorageMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L119) | 🟢 ported |  |
+| `CompareMapping` | method | [66](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L66) · [body 354](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L354) | [`TBoldObjectStorageMappingInfo.CompareMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L125) | 🟢 ported |  |
+| `TableName` | property | [67](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L67) | [`TBoldObjectStorageMappingInfo.TableName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L127) | 🟢 ported |  |
 
 ## TBoldMemberMappingList
 
-class at [line 75](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L75); ⚪ not started.
+class at [line 75](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L75); 🟢 ported, C# [`TBoldMemberMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L159).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMappingsByExpressionNames` | method, private | [77](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L77) · [body 421](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L421) |  | ⚪ not started |  |
-| `GetItems` | method, private | [78](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L78) · [body 416](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L416) |  | ⚪ not started |  |
-| `Create` | constructor | [80](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L80) · [body 396](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L396) |  | ⚪ not started |  |
-| `FillFromList` | method | [81](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L81) · [body 402](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L402) |  | ⚪ not started |  |
-| `items` | property | [82](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L82) |  | ⚪ not started |  |
-| `MappingsByExpressionNames` | property | [83](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L83) |  | ⚪ not started |  |
+| `GetMappingsByExpressionNames` | method, private | [77](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L77) · [body 421](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L421) | [`TBoldMemberMappingList.GetMappingsByExpressionNames`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L168) | 🟢 ported |  |
+| `GetItems` | method, private | [78](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L78) · [body 416](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L416) | [`TBoldMemberMappingList.GetItems`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L182) | 🟢 ported |  |
+| `Create` | constructor | [80](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L80) · [body 396](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L396) | [`TBoldMemberMappingList.TBoldMemberMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L162) | 🟢 ported |  |
+| `FillFromList` | method | [81](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L81) · [body 402](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L402) | [`TBoldMemberMappingList.FillFromList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L185) | 🟢 ported |  |
+| `items` | property | [82](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L82) | [`TBoldMemberMappingList.this`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L194) | 🟢 ported |  |
+| `MappingsByExpressionNames` | property | [83](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L83) | [`TBoldMemberMappingList.MappingsByExpressionNames`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L197) | 🟢 ported: An indexed property in Delphi. |  |
 
 ## TBoldClassMappingList
 
-class at [line 86](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L86); ⚪ not started.
+class at [line 86](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L86); 🟢 ported, C# [`TBoldClassMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L203).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMappingsForClassName` | method, private | [88](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L88) · [body 451](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L451) |  | ⚪ not started |  |
-| `Create` | constructor | [90](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L90) · [body 444](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L444) |  | ⚪ not started |  |
-| `AddMapping` | method | [91](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L91) · [body 439](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L439) |  | ⚪ not started |  |
-| `MappingsForClassName` | property | [92](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L92) |  | ⚪ not started |  |
+| `GetMappingsForClassName` | method, private | [88](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L88) · [body 451](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L451) | [`TBoldClassMappingList.GetMappingsForClassName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L212) | 🟢 ported |  |
+| `Create` | constructor | [90](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L90) · [body 444](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L444) | [`TBoldClassMappingList.TBoldClassMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L206) | 🟢 ported |  |
+| `AddMapping` | method | [91](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L91) · [body 439](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L439) | [`TBoldClassMappingList.AddMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L226) | 🟢 ported |  |
+| `MappingsForClassName` | property | [92](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L92) | [`TBoldClassMappingList.MappingsForClassName`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L229) | 🟢 ported: An indexed property in Delphi. |  |
 
 ## TBoldAllInstancesMappingList
 
-class at [line 95](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L95); ⚪ not started.
+class at [line 95](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L95); 🟢 ported, C# [`TBoldAllInstancesMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L236).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [97](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L97) · [body 520](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L520) |  | ⚪ not started |  |
-| `items` | property | [99](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L99) |  | ⚪ not started |  |
+| `GetItems` | method, private | [97](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L97) · [body 520](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L520) | [`TBoldAllInstancesMappingList.GetItems`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L239) | 🟢 ported |  |
+| `items` | property | [99](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L99) | [`TBoldAllInstancesMappingList.this`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L242) | 🟢 ported |  |
 
 ## TBoldObjectStorageMappingList
 
-class at [line 102](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L102); ⚪ not started.
+class at [line 102](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L102); 🟢 ported, C# [`TBoldObjectStorageMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L246).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [104](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L104) · [body 527](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L527) |  | ⚪ not started |  |
-| `items` | property | [106](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L106) |  | ⚪ not started |  |
+| `GetItems` | method, private | [104](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L104) · [body 527](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L527) | [`TBoldObjectStorageMappingList.GetItems`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L249) | 🟢 ported |  |
+| `items` | property | [106](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L106) | [`TBoldObjectStorageMappingList.this`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L252) | 🟢 ported |  |
 
 ## TBoldDbTypeMappingList
 
-class at [line 109](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L109); ⚪ not started.
+class at [line 109](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L109); 🟢 ported, C# [`TBoldDbTypeMappingList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L256).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [111](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L111) · [body 534](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L534) |  | ⚪ not started |  |
-| `items` | property | [113](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L113) |  | ⚪ not started |  |
+| `GetItems` | method, private | [111](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L111) · [body 534](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L534) | [`TBoldDbTypeMappingList.GetItems`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L259) | 🟢 ported |  |
+| `items` | property | [113](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L113) | [`TBoldDbTypeMappingList.this`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L262) | 🟢 ported |  |
 
 ## TBoldSQLMappingInfo
 
-class at [line 117](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L117); ⚪ not started.
+class at [line 117](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L117); 🟢 ported, C# [`TBoldSQLMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L267).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAllInstancesMappingInfo` | method, private | [122](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L122) · [body 273](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L273) |  | ⚪ not started |  |
-| `GetMemberMappingInfo` | method, private | [123](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L123) · [body 284](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L284) |  | ⚪ not started |  |
-| `GetObjectStorageMappingInfo` | method, private | [124](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L124) · [body 295](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L295) |  | ⚪ not started |  |
-| `GetDbTypeMappingInfo` | method, private | [125](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L125) · [body 512](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L512) |  | ⚪ not started |  |
-| `MemberMappingInfo` | property, protected | [132](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L132) |  | ⚪ not started |  |
-| `AllInstancesMappingInfo` | property, protected | [133](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L133) |  | ⚪ not started |  |
-| `ObjectStorageMappingInfo` | property, protected | [134](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L134) |  | ⚪ not started |  |
-| `DbTypeMapping` | property, protected | [135](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L135) |  | ⚪ not started |  |
-| `ClearDbTypes` | method, protected | [136](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L136) · [body 240](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L240) |  | ⚪ not started |  |
-| `ClearMappingInfo` | method, protected | [137](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L137) · [body 233](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L233) |  | ⚪ not started |  |
-| `Create` | constructor | [139](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L139) · [body 246](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L246) |  | ⚪ not started |  |
-| `Destroy` | destructor | [140](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L140) · [body 259](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L259) |  | ⚪ not started |  |
-| `ReadDataFromDB` | method | [141](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L141) |  | ⚪ not started |  |
-| `WriteDataToDB` | method | [142](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L142) · [body 539](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L539) |  | ⚪ not started |  |
-| `ScriptForWriteData` | method | [143](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L143) |  | ⚪ not started |  |
-| `CloneWithoutDbType` | method | [144](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L144) · [body 566](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L566) |  | ⚪ not started |  |
-| `AddMemberMapping` | method | [145](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L145) · [body 206](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L206) |  | ⚪ not started |  |
-| `AddAllInstancesMapping` | method | [146](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L146) · [body 191](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L191) |  | ⚪ not started |  |
-| `AddObjectStorageMapping` | method | [147](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L147) · [body 221](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L221) |  | ⚪ not started |  |
-| `AddTypeIdMapping` | method | [148](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L148) · [body 484](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L484) |  | ⚪ not started |  |
-| `GetMemberMappings` | method | [150](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L150) · [body 279](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L279) |  | ⚪ not started |  |
-| `GetAllInstancesMapping` | method | [151](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L151) · [body 268](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L268) |  | ⚪ not started |  |
-| `GetObjectStorageMapping` | method | [152](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L152) · [body 290](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L290) |  | ⚪ not started |  |
-| `GetDbTypeMapping` | method | [153](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L153) · [body 501](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L501) |  | ⚪ not started |  |
-| `HighestUsedDbType` | property | [154](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L154) |  | ⚪ not started |  |
-| `MaxDBIdentifierLength` | property | [155](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L155) |  | ⚪ not started |  |
-| `NationalCharConversion` | property | [156](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L156) |  | ⚪ not started |  |
-| `MemberMappings` | property | [157](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L157) |  | ⚪ not started |  |
-| `AllInstancesMappings` | property | [158](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L158) |  | ⚪ not started |  |
-| `ObjectStorageMappings` | property | [159](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L159) |  | ⚪ not started |  |
-| `DbTypeMappings` | property | [160](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L160) |  | ⚪ not started |  |
+| `GetAllInstancesMappingInfo` | method, private | [122](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L122) · [body 273](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L273) | [`TBoldSQLMappingInfo.GetAllInstancesMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L292) | 🟢 ported |  |
+| `GetMemberMappingInfo` | method, private | [123](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L123) · [body 284](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L284) | [`TBoldSQLMappingInfo.GetMemberMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L295) | 🟢 ported |  |
+| `GetObjectStorageMappingInfo` | method, private | [124](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L124) · [body 295](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L295) | [`TBoldSQLMappingInfo.GetObjectStorageMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L298) | 🟢 ported |  |
+| `GetDbTypeMappingInfo` | method, private | [125](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L125) · [body 512](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L512) | [`TBoldSQLMappingInfo.GetDbTypeMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L301) | 🟢 ported |  |
+| `MemberMappingInfo` | property, protected | [132](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L132) | [`TBoldSQLMappingInfo.MemberMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L304) | 🟢 ported: An indexed property in Delphi. |  |
+| `AllInstancesMappingInfo` | property, protected | [133](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L133) | [`TBoldSQLMappingInfo.AllInstancesMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L307) | 🟢 ported: An indexed property in Delphi. |  |
+| `ObjectStorageMappingInfo` | property, protected | [134](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L134) | [`TBoldSQLMappingInfo.ObjectStorageMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L310) | 🟢 ported: An indexed property in Delphi. |  |
+| `DbTypeMapping` | property, protected | [135](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L135) | [`TBoldSQLMappingInfo.DbTypeMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L313) | 🟢 ported: An indexed property in Delphi. |  |
+| `ClearDbTypes` | method, protected | [136](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L136) · [body 240](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L240) | [`TBoldSQLMappingInfo.ClearDbTypes`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L316) | 🟢 ported |  |
+| `ClearMappingInfo` | method, protected | [137](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L137) · [body 233](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L233) | [`TBoldSQLMappingInfo.ClearMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L319) | 🟢 ported |  |
+| `Create` | constructor | [139](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L139) · [body 246](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L246) | [`TBoldSQLMappingInfo.TBoldSQLMappingInfo`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L279) | 🟢 ported |  |
+| `Destroy` | destructor | [140](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L140) · [body 259](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L259) | [`[assembly: Delphi] in BoldSQLMappingInfo.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L5) | 🔵 replaced: Freed the lists; the garbage collector does that in .NET. |  |
+| `ReadDataFromDB` | method | [141](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L141) | [`TBoldSQLMappingInfo.ReadDataFromDB`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L327) | 🟢 ported |  |
+| `WriteDataToDB` | method | [142](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L142) · [body 539](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L539) | [`TBoldSQLMappingInfo.WriteDataToDB`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L330) | 🟢 ported |  |
+| `ScriptForWriteData` | method | [143](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L143) | [`TBoldSQLMappingInfo.ScriptForWriteData`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L358) | 🟢 ported |  |
+| `CloneWithoutDbType` | method | [144](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L144) · [body 566](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L566) | [`TBoldSQLMappingInfo.CloneWithoutDbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L361) | 🟢 ported |  |
+| `AddMemberMapping` | method | [145](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L145) · [body 206](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L206) | [`TBoldSQLMappingInfo.AddMemberMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L384) | 🟢 ported |  |
+| `AddAllInstancesMapping` | method | [146](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L146) · [body 191](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L191) | [`TBoldSQLMappingInfo.AddAllInstancesMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L398) | 🟢 ported |  |
+| `AddObjectStorageMapping` | method | [147](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L147) · [body 221](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L221) | [`TBoldSQLMappingInfo.AddObjectStorageMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L413) | 🟢 ported |  |
+| `AddTypeIdMapping` | method | [148](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L148) · [body 484](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L484) | [`TBoldSQLMappingInfo.AddTypeIdMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L427) | 🟢 ported |  |
+| `GetMemberMappings` | method | [150](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L150) · [body 279](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L279) | [`TBoldSQLMappingInfo.GetMemberMappings`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L451) | 🟢 ported |  |
+| `GetAllInstancesMapping` | method | [151](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L151) · [body 268](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L268) | [`TBoldSQLMappingInfo.GetAllInstancesMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L455) | 🟢 ported |  |
+| `GetObjectStorageMapping` | method | [152](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L152) · [body 290](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L290) | [`TBoldSQLMappingInfo.GetObjectStorageMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L459) | 🟢 ported |  |
+| `GetDbTypeMapping` | method | [153](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L153) · [body 501](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L501) | [`TBoldSQLMappingInfo.GetDbTypeMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L463) | 🟢 ported |  |
+| `HighestUsedDbType` | property | [154](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L154) | [`TBoldSQLMappingInfo.HighestUsedDbType`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L469) | 🟢 ported |  |
+| `MaxDBIdentifierLength` | property | [155](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L155) | [`TBoldSQLMappingInfo.MaxDBIdentifierLength`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L470) | 🟢 ported |  |
+| `NationalCharConversion` | property | [156](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L156) | [`TBoldSQLMappingInfo.NationalCharConversion`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L471) | 🟢 ported |  |
+| `MemberMappings` | property | [157](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L157) | [`TBoldSQLMappingInfo.MemberMappings`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L472) | 🟢 ported |  |
+| `AllInstancesMappings` | property | [158](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L158) | [`TBoldSQLMappingInfo.AllInstancesMappings`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L473) | 🟢 ported |  |
+| `ObjectStorageMappings` | property | [159](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L159) | [`TBoldSQLMappingInfo.ObjectStorageMappings`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L474) | 🟢 ported |  |
+| `DbTypeMappings` | property | [160](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L160) | [`TBoldSQLMappingInfo.DbTypeMappings`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L475) | 🟢 ported |  |
 
 ## TBoldClassMappingIndex
 
-class at [line 174](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L174); ⚪ not started.
+class at [line 174](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L174); 🟢 ported, C# [`TBoldClassMappingIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L132).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [176](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L176) · [body 368](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L368) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [176](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L176) · [body 368](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L368) | [`TBoldClassMappingIndex.ItemAsKeyString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L135) | 🟢 ported |  |
 
 ## TBoldMemberMappingIndex
 
-class at [line 179](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L179); ⚪ not started.
+class at [line 179](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L179); 🟢 ported, C# [`TBoldMemberMappingIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L140).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [181](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L181) · [body 381](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L381) |  | ⚪ not started |  |
-| `KeyStringForExpressionNames` | method, protected | [182](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L182) · [body 389](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L389) |  | ⚪ not started |  |
-| `FindAllByExpressionNames` | method, protected | [183](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L183) · [body 375](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L375) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [181](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L181) · [body 381](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L381) | [`TBoldMemberMappingIndex.ItemAsKeyString`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L143) | 🟢 ported |  |
+| `KeyStringForExpressionNames` | method, protected | [182](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L182) · [body 389](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L389) | [`TBoldMemberMappingIndex.KeyStringForExpressionNames`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L150) | 🟢 ported |  |
+| `FindAllByExpressionNames` | method, protected | [183](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L183) · [body 375](../../../Source/PMapper/SQL/BoldSQLMappingInfo.pas#L375) | [`TBoldMemberMappingIndex.FindAllByExpressionNames`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L153) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldSQLMappingInfo.IX_ClassExpressionNameIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L17) (field)
+- [`BoldSQLMappingInfo.IX_ClassAndMemberExpressionNameIndex`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L18) (field)
+- [`TBoldAllInstancesMappingInfo.fClassIdRequired`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L94) (field)
+- [`TBoldClassMappingList.ItemAt`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L232) (method)
+- [`TBoldSQLMappingInfo.fSystemTablePrefix`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L272) (field)
+- [`TBoldSQLMappingInfo.fMemberMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L273) (field)
+- [`TBoldSQLMappingInfo.fAllInstancesMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L274) (field)
+- [`TBoldSQLMappingInfo.fObjectStorageMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L275) (field)
+- [`TBoldSQLMappingInfo.fDbTypeMapping`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldSQLMappingInfo.cs#L276) (field)
 
 ## Dependencies
 
