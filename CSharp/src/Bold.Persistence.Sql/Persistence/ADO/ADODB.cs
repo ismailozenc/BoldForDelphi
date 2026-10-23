@@ -94,6 +94,22 @@ public class TADOConnection
             return;
         }
 
+        // SQL Server: the catalog view, through a command in the current transaction (GetSchema runs outside it,
+        // which SqlClient refuses while a transaction is pending).
+        if (fConnection.GetType().FullName?.Contains("SqlClient", StringComparison.OrdinalIgnoreCase) == true)
+        {
+            using DbCommand command = CreateCommand();
+            command.CommandText = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'" +
+                (SystemTables ? "" : " AND TABLE_SCHEMA <> 'sys'");
+            using DbDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                List.Add(reader.GetString(0));
+            }
+
+            return;
+        }
+
         DataTable tables = fConnection.GetSchema("Tables");
         foreach (DataRow row in tables.Rows)
         {
