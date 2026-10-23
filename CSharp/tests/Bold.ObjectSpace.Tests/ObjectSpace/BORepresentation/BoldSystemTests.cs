@@ -205,4 +205,49 @@ public class BoldSystemTests
         undo.RedoLatest();
         Assert.That(name.AsString, Is.EqualTo("Anna"));
     }
+
+    [Test]
+    [Covers(typeof(TBoldUndoHandler), "SetNamedCheckPoint", "UndoBlock", "RedoBlock", "CanUndoBlock", "CanRedoBlock", "HandleObject", "HandleMember", "GetRedoList")]
+    [Covers(typeof(TBoldUndoBlockList), "Count", "IndexOf", "RenameBlock", "MergeBlocks", "BlocksByName")]
+    public void Undo_and_redo_links_created_and_deleted_objects()
+    {
+        using var s = new ObjectSpaceSample();
+        var undo = (TBoldUndoHandler)s.System.UndoHandler;
+        undo.SetEnabled(true);
+        TBoldObject ann = s.NewPerson(), house = s.NewBuilding();
+        ann.BoldMemberByExpressionName("firstName").AsString = "Ann";
+
+        undo.SetNamedCheckPoint("link");
+        Home(ann).BoldObject = house;
+        undo.SetNamedCheckPoint("create");
+        TBoldObject bob = s.NewPerson();
+        bob.BoldMemberByExpressionName("firstName").AsString = "Bob";
+        Friends(ann).Add(bob);
+        undo.SetNamedCheckPoint("delete");
+        house.Delete();
+        Assert.That(Home(ann).BoldObject, Is.Null);
+
+        Assert.That(undo.CanUndoBlock("delete"), Is.True);
+        undo.UndoBlock("delete");
+        Assert.That(Count(s, "Building"), Is.EqualTo(1), "undoing a delete brings the object back");
+        Assert.That(Home(ann).BoldObject, Is.SameAs(s.System.Classes(house.BoldClassTypeInfo.TopSortedIndex)![0]), "with its links");
+
+        undo.UndoBlock("create");
+        Assert.That(Count(s, "Person"), Is.EqualTo(1), "undoing a create removes the object");
+        Assert.That(Friends(ann).Count, Is.EqualTo(0), "and its links");
+
+        undo.UndoBlock("link");
+        Assert.That(Home(ann).BoldObject, Is.Null, "undoing a link change restores the old link");
+        Assert.That(ann.BoldMemberByExpressionName("firstName").AsString, Is.EqualTo("Ann"), "changes before the block stay");
+
+        Assert.That(undo.GetRedoList().Count, Is.EqualTo(3));
+        Assert.That(undo.CanRedoBlock("link"), Is.True);
+        undo.RedoBlock("link");
+        Assert.That(Home(ann).BoldObject, Is.Not.Null, "redo reapplies the link");
+        undo.RedoBlock("create");
+        Assert.That(Count(s, "Person"), Is.EqualTo(2), "and recreates the object");
+        Assert.That(Friends(ann).Count, Is.EqualTo(1));
+        Assert.That(Friends(ann)[0]!.BoldMemberByExpressionName("firstName").AsString, Is.EqualTo("Bob"));
+        Assert.That(s.System.AssertLinkIntegrity(), Is.True);
+    }
 }
