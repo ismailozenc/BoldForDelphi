@@ -64,70 +64,70 @@ Types, routines, constants, variables and the initialization and finalization se
 | `TBOS_includes` | class, implementation | [326](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L326) | [`TBOS_includes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L715) | 🟢 ported |  |
 | `TBOS_Count` | class, implementation | [333](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L333) | [`TBOS_Count`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L737) | 🟢 ported |  |
 | `TBOS_IncludesAll` | class, implementation | [340](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L340) | [`TBOS_IncludesAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L765) | 🟢 ported |  |
-| `TBOS_isEmpty` | class, implementation | [347](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L347) | [`TBOS_isEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L796) | 🟢 ported |  |
-| `TBOS_NotEmpty` | class, implementation | [354](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L354) | [`TBOS_NotEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L803) | 🟢 ported |  |
-| `TBOS_isNull` | class, implementation | [361](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L361) | [`TBOS_isNull`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L817) | 🟢 ported |  |
-| `TBOS_Sum` | class, implementation | [368](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L368) | [`TBOS_Sum`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L825) | 🟢 ported |  |
-| `TBOS_SumTime` | class, implementation | [375](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L375) | [`TBOS_SumTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L868) | 🟢 ported |  |
-| `TBOS_Maxvalue` | class, implementation | [382](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L382) | [`TBOS_Maxvalue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L890) | 🟢 ported |  |
-| `TBOS_MinValue` | class, implementation | [389](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L389) | [`TBOS_MinValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L913) | 🟢 ported |  |
-| `TBOS_Average` | class, implementation | [396](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L396) | [`TBOS_Average`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L936) | 🟢 ported |  |
-| `TBOS_Exists` | class, implementation | [403](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L403) | [`TBOS_Exists`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L973) | 🟢 ported |  |
-| `TBOS_ForAll` | class, implementation | [410](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L410) | [`TBOS_ForAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L962) | 🟢 ported |  |
-| `TBOS_union` | class, implementation | [417](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L417) | [`TBOS_union`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L984) | 🟢 ported |  |
-| `TBOS_Intersection` | class, implementation | [424](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L424) | [`TBOS_Intersection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1016) | 🟢 ported |  |
-| `TBOS_difference` | class, implementation | [431](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L431) | [`TBOS_difference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1056) | 🟢 ported |  |
-| `TBOS_Including` | class, implementation | [438](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L438) | [`TBOS_Including`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1089) | 🟢 ported |  |
-| `TBOS_excluding` | class, implementation | [445](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L445) | [`TBOS_excluding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1111) | 🟢 ported |  |
-| `TBOS_SymmetricDifference` | class, implementation | [452](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L452) | [`TBOS_SymmetricDifference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1128) | 🟢 ported |  |
-| `TBOS_Select` | class, implementation | [459](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L459) | [`TBOS_Select`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1171) | 🟢 ported |  |
-| `TBOS_reject` | class, implementation | [466](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L466) | [`TBOS_reject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1187) | 🟢 ported |  |
-| `TBOS_collect` | class, implementation | [473](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L473) | [`TBOS_collect`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1203) | 🟢 ported |  |
-| `TBOS__ListCopier` | class, implementation | [480](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L480) | [`TBOS__ListCopier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1231) | 🟢 ported |  |
-| `TBOS_AsSequence` | class, implementation | [485](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L485) | [`TBOS_AsSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1260) | 🟢 ported |  |
-| `TBOS_AsBag` | class, implementation | [492](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L492) | [`TBOS_AsBag`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1267) | 🟢 ported |  |
-| `TBOS_AsSet` | class, implementation | [499](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L499) | [`TBOS_AsSet`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1274) | 🟢 ported |  |
-| `TBOS_Append` | class, implementation | [506](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L506) | [`TBOS_Append`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1281) | 🟢 ported |  |
-| `TBOS_Prepend` | class, implementation | [512](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L512) | [`TBOS_Prepend`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1294) | 🟢 ported |  |
-| `TBOS_SubSequence` | class, implementation | [518](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L518) | [`TBOS_SubSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1308) | 🟢 ported |  |
-| `TBOS_at` | class, implementation | [525](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L525) | [`TBOS_at`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1331) | 🟢 ported |  |
-| `TBOS_first` | class, implementation | [532](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L532) | [`TBOS_first`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1356) | 🟢 ported |  |
-| `TBOS_last` | class, implementation | [539](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L539) | [`TBOS_last`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1377) | 🟢 ported |  |
-| `TBOS_GenericOrder` | class, implementation | [546](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L546) | [`TBOS_GenericOrder`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1399) | 🟢 ported |  |
-| `TBOS_orderby` | class, implementation | [551](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L551) | [`TBOS_orderby`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1423) | 🟢 ported |  |
-| `TBOS_orderDescending` | class, implementation | [556](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L556) | [`TBOS_orderDescending`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1429) | 🟢 ported |  |
-| `TBOS_asString` | class, implementation | [561](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L561) | [`TBOS_asString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1435) | 🟢 ported |  |
-| `TBOS_dateTimeAsFloat` | class, implementation | [568](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L568) | [`TBOS_dateTimeAsFloat`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1448) | 🟢 ported |  |
-| `TBOS_StringRepresentation` | class, implementation | [576](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L576) | [`TBOS_StringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1455) | 🟢 ported |  |
-| `TBOS_TaggedValue` | class, implementation | [583](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L583) | [`TBOS_TaggedValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1476) | 🟢 ported |  |
-| `TBOS_TypeName` | class, implementation | [591](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L591) | [`TBOS_TypeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1489) | 🟢 ported |  |
-| `TBOS_Attributes` | class, implementation | [598](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L598) | [`TBOS_Attributes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1520) | 🟢 ported |  |
-| `TBOS_AssociationEnds` | class, implementation | [605](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L605) | [`TBOS_AssociationEnds`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1527) | 🟢 ported |  |
-| `TBOS_SuperTypes` | class, implementation | [619](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L619) | [`TBOS_SuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1534) | 🟢 ported |  |
-| `TBOS_AllSuperTypes` | class, implementation | [626](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L626) | [`TBOS_AllSuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1556) | 🟢 ported |  |
-| `TBOS_AllSubClasses` | class, implementation | [633](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L633) | [`TBOS_AllSubClasses`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1583) | 🟢 ported |  |
-| `TBOS_AllInstances` | class, implementation | [641](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L641) | [`TBOS_AllInstances`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1608) | 🟢 ported |  |
-| `TBOS_AllLoadedObjects` | class, implementation | [648](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L648) | [`TBOS_AllLoadedObjects`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1643) | 🟢 ported |  |
-| `TBOS_EmptyLIst` | class, implementation | [655](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L655) | [`TBOS_EmptyLIst`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1687) | 🟢 ported |  |
-| `TBOS_oclType` | class, implementation | [663](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L663) | [`TBOS_oclType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1694) | 🟢 ported |  |
-| `TBOS_oclIsKindOf` | class, implementation | [670](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L670) | [`TBOS_oclIsKindOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1701) | 🟢 ported |  |
-| `TBOS_OclIsTypeOf` | class, implementation | [677](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L677) | [`TBOS_OclIsTypeOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1714) | 🟢 ported |  |
-| `TBOS_OclAsType` | class, implementation | [684](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L684) | [`TBOS_OclAsType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1727) | 🟢 ported |  |
-| `TBOS_safeCast` | class, implementation | [691](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L691) | [`TBOS_safeCast`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1747) | 🟢 ported |  |
-| `TBOS_SQLLike` | class, implementation | [699](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L699) | [`TBOS_SQLLike`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1760) | 🟢 ported |  |
-| `TBOS_SQLLikeCaseInsensitive` | class, implementation | [706](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L706) | [`TBOS_SQLLikeCaseInsensitive`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1770) | 🟢 ported |  |
-| `TBOS_RegExpMatch` | class, implementation | [713](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L713) | [`TBOS_RegExpMatch`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1782) | 🟢 ported |  |
-| `TBOS_InDateRange` | class, implementation | [720](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L720) | [`TBOS_InDateRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1793) | 🟢 ported |  |
-| `TBOS_InTimeRange` | class, implementation | [727](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L727) | [`TBOS_InTimeRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1817) | 🟢 ported |  |
-| `TBOS_Constraints` | class, implementation | [734](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L734) | [`TBOS_Constraints`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1836) | 🟢 ported |  |
-| `TBOS_AtTime` | class, implementation | [741](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L741) | [`TBOS_AtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1882) | 🟢 ported |  |
-| `TBOS_ObjectTimeStamp` | class, implementation | [748](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L748) | [`TBOS_ObjectTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1892) | 🟢 ported |  |
-| `TBOS_AllInstancesAtTime` | class, implementation | [757](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L757) | [`TBOS_AllInstancesAtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1902) | 🟢 ported |  |
-| `TBOS_Existing` | class, implementation | [764](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L764) | [`TBOS_Existing`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1926) | 🟢 ported |  |
-| `TBOS_FilterOnType` | class, implementation | [771](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L771) | [`TBOS_FilterOnType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1936) | 🟢 ported |  |
-| `TBOS_BoldTime` | class, implementation | [778](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L778) | [`TBOS_BoldTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1959) | 🟢 ported |  |
-| `TBOS_TimeStampToTime` | class, implementation | [785](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L785) | [`TBOS_TimeStampToTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1966) | 🟢 ported |  |
-| `TBOS_TimeToTimeStamp` | class, implementation | [792](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L792) | [`TBOS_TimeToTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1976) | 🟢 ported |  |
+| `TBOS_isEmpty` | class, implementation | [347](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L347) | [`TBOS_isEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L803) | 🟢 ported |  |
+| `TBOS_NotEmpty` | class, implementation | [354](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L354) | [`TBOS_NotEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L810) | 🟢 ported |  |
+| `TBOS_isNull` | class, implementation | [361](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L361) | [`TBOS_isNull`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L824) | 🟢 ported |  |
+| `TBOS_Sum` | class, implementation | [368](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L368) | [`TBOS_Sum`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L832) | 🟢 ported |  |
+| `TBOS_SumTime` | class, implementation | [375](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L375) | [`TBOS_SumTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L875) | 🟢 ported |  |
+| `TBOS_Maxvalue` | class, implementation | [382](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L382) | [`TBOS_Maxvalue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L897) | 🟢 ported |  |
+| `TBOS_MinValue` | class, implementation | [389](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L389) | [`TBOS_MinValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L920) | 🟢 ported |  |
+| `TBOS_Average` | class, implementation | [396](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L396) | [`TBOS_Average`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L943) | 🟢 ported |  |
+| `TBOS_Exists` | class, implementation | [403](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L403) | [`TBOS_Exists`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L980) | 🟢 ported |  |
+| `TBOS_ForAll` | class, implementation | [410](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L410) | [`TBOS_ForAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L969) | 🟢 ported |  |
+| `TBOS_union` | class, implementation | [417](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L417) | [`TBOS_union`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L991) | 🟢 ported |  |
+| `TBOS_Intersection` | class, implementation | [424](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L424) | [`TBOS_Intersection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1023) | 🟢 ported |  |
+| `TBOS_difference` | class, implementation | [431](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L431) | [`TBOS_difference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1063) | 🟢 ported |  |
+| `TBOS_Including` | class, implementation | [438](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L438) | [`TBOS_Including`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1096) | 🟢 ported |  |
+| `TBOS_excluding` | class, implementation | [445](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L445) | [`TBOS_excluding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1118) | 🟢 ported |  |
+| `TBOS_SymmetricDifference` | class, implementation | [452](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L452) | [`TBOS_SymmetricDifference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1135) | 🟢 ported |  |
+| `TBOS_Select` | class, implementation | [459](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L459) | [`TBOS_Select`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1178) | 🟢 ported |  |
+| `TBOS_reject` | class, implementation | [466](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L466) | [`TBOS_reject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1194) | 🟢 ported |  |
+| `TBOS_collect` | class, implementation | [473](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L473) | [`TBOS_collect`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1210) | 🟢 ported |  |
+| `TBOS__ListCopier` | class, implementation | [480](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L480) | [`TBOS__ListCopier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1238) | 🟢 ported |  |
+| `TBOS_AsSequence` | class, implementation | [485](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L485) | [`TBOS_AsSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1267) | 🟢 ported |  |
+| `TBOS_AsBag` | class, implementation | [492](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L492) | [`TBOS_AsBag`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1274) | 🟢 ported |  |
+| `TBOS_AsSet` | class, implementation | [499](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L499) | [`TBOS_AsSet`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1281) | 🟢 ported |  |
+| `TBOS_Append` | class, implementation | [506](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L506) | [`TBOS_Append`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1288) | 🟢 ported |  |
+| `TBOS_Prepend` | class, implementation | [512](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L512) | [`TBOS_Prepend`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1301) | 🟢 ported |  |
+| `TBOS_SubSequence` | class, implementation | [518](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L518) | [`TBOS_SubSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1315) | 🟢 ported |  |
+| `TBOS_at` | class, implementation | [525](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L525) | [`TBOS_at`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1338) | 🟢 ported |  |
+| `TBOS_first` | class, implementation | [532](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L532) | [`TBOS_first`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1363) | 🟢 ported |  |
+| `TBOS_last` | class, implementation | [539](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L539) | [`TBOS_last`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1384) | 🟢 ported |  |
+| `TBOS_GenericOrder` | class, implementation | [546](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L546) | [`TBOS_GenericOrder`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1406) | 🟢 ported |  |
+| `TBOS_orderby` | class, implementation | [551](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L551) | [`TBOS_orderby`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1430) | 🟢 ported |  |
+| `TBOS_orderDescending` | class, implementation | [556](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L556) | [`TBOS_orderDescending`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1436) | 🟢 ported |  |
+| `TBOS_asString` | class, implementation | [561](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L561) | [`TBOS_asString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1442) | 🟢 ported |  |
+| `TBOS_dateTimeAsFloat` | class, implementation | [568](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L568) | [`TBOS_dateTimeAsFloat`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1455) | 🟢 ported |  |
+| `TBOS_StringRepresentation` | class, implementation | [576](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L576) | [`TBOS_StringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1462) | 🟢 ported |  |
+| `TBOS_TaggedValue` | class, implementation | [583](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L583) | [`TBOS_TaggedValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1483) | 🟢 ported |  |
+| `TBOS_TypeName` | class, implementation | [591](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L591) | [`TBOS_TypeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1496) | 🟢 ported |  |
+| `TBOS_Attributes` | class, implementation | [598](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L598) | [`TBOS_Attributes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1527) | 🟢 ported |  |
+| `TBOS_AssociationEnds` | class, implementation | [605](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L605) | [`TBOS_AssociationEnds`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1534) | 🟢 ported |  |
+| `TBOS_SuperTypes` | class, implementation | [619](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L619) | [`TBOS_SuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1541) | 🟢 ported |  |
+| `TBOS_AllSuperTypes` | class, implementation | [626](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L626) | [`TBOS_AllSuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1563) | 🟢 ported |  |
+| `TBOS_AllSubClasses` | class, implementation | [633](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L633) | [`TBOS_AllSubClasses`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1590) | 🟢 ported |  |
+| `TBOS_AllInstances` | class, implementation | [641](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L641) | [`TBOS_AllInstances`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1615) | 🟢 ported |  |
+| `TBOS_AllLoadedObjects` | class, implementation | [648](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L648) | [`TBOS_AllLoadedObjects`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1650) | 🟢 ported |  |
+| `TBOS_EmptyLIst` | class, implementation | [655](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L655) | [`TBOS_EmptyLIst`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1694) | 🟢 ported |  |
+| `TBOS_oclType` | class, implementation | [663](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L663) | [`TBOS_oclType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1701) | 🟢 ported |  |
+| `TBOS_oclIsKindOf` | class, implementation | [670](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L670) | [`TBOS_oclIsKindOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1708) | 🟢 ported |  |
+| `TBOS_OclIsTypeOf` | class, implementation | [677](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L677) | [`TBOS_OclIsTypeOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1721) | 🟢 ported |  |
+| `TBOS_OclAsType` | class, implementation | [684](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L684) | [`TBOS_OclAsType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1734) | 🟢 ported |  |
+| `TBOS_safeCast` | class, implementation | [691](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L691) | [`TBOS_safeCast`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1754) | 🟢 ported |  |
+| `TBOS_SQLLike` | class, implementation | [699](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L699) | [`TBOS_SQLLike`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1767) | 🟢 ported |  |
+| `TBOS_SQLLikeCaseInsensitive` | class, implementation | [706](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L706) | [`TBOS_SQLLikeCaseInsensitive`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1777) | 🟢 ported |  |
+| `TBOS_RegExpMatch` | class, implementation | [713](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L713) | [`TBOS_RegExpMatch`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1789) | 🟢 ported |  |
+| `TBOS_InDateRange` | class, implementation | [720](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L720) | [`TBOS_InDateRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1800) | 🟢 ported |  |
+| `TBOS_InTimeRange` | class, implementation | [727](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L727) | [`TBOS_InTimeRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1824) | 🟢 ported |  |
+| `TBOS_Constraints` | class, implementation | [734](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L734) | [`TBOS_Constraints`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1843) | 🟢 ported |  |
+| `TBOS_AtTime` | class, implementation | [741](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L741) | [`TBOS_AtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1889) | 🟢 ported |  |
+| `TBOS_ObjectTimeStamp` | class, implementation | [748](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L748) | [`TBOS_ObjectTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1899) | 🟢 ported |  |
+| `TBOS_AllInstancesAtTime` | class, implementation | [757](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L757) | [`TBOS_AllInstancesAtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1909) | 🟢 ported |  |
+| `TBOS_Existing` | class, implementation | [764](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L764) | [`TBOS_Existing`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1933) | 🟢 ported |  |
+| `TBOS_FilterOnType` | class, implementation | [771](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L771) | [`TBOS_FilterOnType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1943) | 🟢 ported |  |
+| `TBOS_BoldTime` | class, implementation | [778](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L778) | [`TBOS_BoldTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1966) | 🟢 ported |  |
+| `TBOS_TimeStampToTime` | class, implementation | [785](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L785) | [`TBOS_TimeStampToTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1973) | 🟢 ported |  |
+| `TBOS_TimeToTimeStamp` | class, implementation | [792](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L792) | [`TBOS_TimeToTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1983) | 🟢 ported |  |
 | `FixSQLRegExp` | routine, implementation | [2542](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2542) | [`BoldOclSymbolImplementations.FixSQLRegExp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L46) | 🔵 replaced: Builds a .NET Regex pattern; Delphi builds one for TRegularExpression with control characters as metacharacters. |  |
 | `InitSQLRegExp` | routine, implementation | [2556](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2556) | [`[assembly: Delphi] in BoldOclSymbolImplementations.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L11) | 🔵 replaced: The BoldRegularExpression unit is not in the sources; FixSQLRegExp builds a .NET Regex instead. |  |
 | `InitRegExp` | routine, implementation | [2577](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2577) | [`[assembly: Delphi] in BoldOclSymbolImplementations.cs`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L12) | 🔵 replaced: The BoldRegularExpression unit is not in the sources; regExpMatch uses a .NET Regex. |  |
@@ -518,579 +518,579 @@ class at [line 340](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
 | `Init` | method, protected | [342](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L342) · [body 988](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L988) | [`TBOS_IncludesAll.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L767) | 🟢 ported |  |
-| `Evaluate` | method | [344](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L344) · [body 1691](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1691) | [`TBOS_IncludesAll.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L770) | 🟢 ported |  |
+| `Evaluate` | method | [344](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L344) · [body 1691](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1691) | [`TBOS_IncludesAll.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L770) | 🟢 ported: Compares the elements by value, as includes does; Delphi asked the list, which compares attribute values by identity, so a list of values never included another. |  |
 
 ## TBOS_isEmpty
 
-class at [line 347](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L347); 🟢 ported, C# [`TBOS_isEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L796).
+class at [line 347](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L347); 🟢 ported, C# [`TBOS_isEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L803).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [349](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L349) · [body 992](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L992) | [`TBOS_isEmpty.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L798) | 🟢 ported |  |
-| `Evaluate` | method | [351](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L351) · [body 1718](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1718) | [`TBOS_isEmpty.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L799) | 🟢 ported |  |
+| `Init` | method, protected | [349](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L349) · [body 992](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L992) | [`TBOS_isEmpty.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L805) | 🟢 ported |  |
+| `Evaluate` | method | [351](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L351) · [body 1718](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1718) | [`TBOS_isEmpty.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L806) | 🟢 ported |  |
 
 ## TBOS_NotEmpty
 
-class at [line 354](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L354); 🟢 ported, C# [`TBOS_NotEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L803).
+class at [line 354](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L354); 🟢 ported, C# [`TBOS_NotEmpty`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L810).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [356](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L356) · [body 997](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L997) | [`TBOS_NotEmpty.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L805) | 🟢 ported |  |
-| `Evaluate` | method | [358](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L358) · [body 1730](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1730) | [`TBOS_NotEmpty.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L809) | 🟢 ported: Keeps Delphi's result of true when there is no list. |  |
+| `Init` | method, protected | [356](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L356) · [body 997](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L997) | [`TBOS_NotEmpty.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L812) | 🟢 ported |  |
+| `Evaluate` | method | [358](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L358) · [body 1730](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1730) | [`TBOS_NotEmpty.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L816) | 🟢 ported: Keeps Delphi's result of true when there is no list. |  |
 
 ## TBOS_isNull
 
-class at [line 361](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L361); 🟢 ported, C# [`TBOS_isNull`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L817).
+class at [line 361](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L361); 🟢 ported, C# [`TBOS_isNull`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L824).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [363](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L363) · [body 1221](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1221) | [`TBOS_isNull.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L819) | 🟢 ported |  |
-| `Evaluate` | method | [365](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L365) · [body 1742](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1742) | [`TBOS_isNull.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L820) | 🟢 ported |  |
+| `Init` | method, protected | [363](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L363) · [body 1221](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1221) | [`TBOS_isNull.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L826) | 🟢 ported |  |
+| `Evaluate` | method | [365](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L365) · [body 1742](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1742) | [`TBOS_isNull.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L827) | 🟢 ported |  |
 
 ## TBOS_Sum
 
-class at [line 368](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L368); 🟢 ported, C# [`TBOS_Sum`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L825).
+class at [line 368](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L368); 🟢 ported, C# [`TBOS_Sum`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L832).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [370](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L370) · [body 1001](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1001) | [`TBOS_Sum.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L827) | 🟢 ported |  |
-| `Evaluate` | method | [372](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L372) · [body 1815](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1815) | [`TBOS_Sum.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L830) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
+| `Init` | method, protected | [370](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L370) · [body 1001](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1001) | [`TBOS_Sum.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L834) | 🟢 ported |  |
+| `Evaluate` | method | [372](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L372) · [body 1815](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1815) | [`TBOS_Sum.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L837) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
 
 ## TBOS_SumTime
 
-class at [line 375](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L375); 🟢 ported, C# [`TBOS_SumTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L868).
+class at [line 375](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L375); 🟢 ported, C# [`TBOS_SumTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L875).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [377](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L377) · [body 1275](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1275) | [`TBOS_SumTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L870) | 🟢 ported |  |
-| `Evaluate` | method | [379](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L379) · [body 1842](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1842) | [`TBOS_SumTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L873) | 🟢 ported |  |
+| `Init` | method, protected | [377](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L377) · [body 1275](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1275) | [`TBOS_SumTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L877) | 🟢 ported |  |
+| `Evaluate` | method | [379](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L379) · [body 1842](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1842) | [`TBOS_SumTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L880) | 🟢 ported |  |
 
 ## TBOS_Maxvalue
 
-class at [line 382](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L382); 🟢 ported, C# [`TBOS_Maxvalue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L890).
+class at [line 382](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L382); 🟢 ported, C# [`TBOS_Maxvalue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L897).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [384](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L384) · [body 1010](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1010) | [`TBOS_Maxvalue.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L892) | 🟢 ported |  |
-| `Evaluate` | method | [386](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L386) · [body 1859](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1859) | [`TBOS_Maxvalue.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L895) | 🟢 ported |  |
+| `Init` | method, protected | [384](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L384) · [body 1010](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1010) | [`TBOS_Maxvalue.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L899) | 🟢 ported |  |
+| `Evaluate` | method | [386](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L386) · [body 1859](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1859) | [`TBOS_Maxvalue.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L902) | 🟢 ported |  |
 
 ## TBOS_MinValue
 
-class at [line 389](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L389); 🟢 ported, C# [`TBOS_MinValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L913).
+class at [line 389](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L389); 🟢 ported, C# [`TBOS_MinValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L920).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [391](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L391) · [body 1006](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1006) | [`TBOS_MinValue.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L915) | 🟢 ported |  |
-| `Evaluate` | method | [393](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L393) · [body 1887](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1887) | [`TBOS_MinValue.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L918) | 🟢 ported |  |
+| `Init` | method, protected | [391](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L391) · [body 1006](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1006) | [`TBOS_MinValue.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L922) | 🟢 ported |  |
+| `Evaluate` | method | [393](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L393) · [body 1887](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1887) | [`TBOS_MinValue.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L925) | 🟢 ported |  |
 
 ## TBOS_Average
 
-class at [line 396](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L396); 🟢 ported, C# [`TBOS_Average`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L936).
+class at [line 396](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L396); 🟢 ported, C# [`TBOS_Average`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L943).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [398](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L398) · [body 1014](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1014) | [`TBOS_Average.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L938) | 🟢 ported |  |
-| `Evaluate` | method | [400](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L400) · [body 1913](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1913) | [`TBOS_Average.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L941) | 🟢 ported |  |
+| `Init` | method, protected | [398](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L398) · [body 1014](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1014) | [`TBOS_Average.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L945) | 🟢 ported |  |
+| `Evaluate` | method | [400](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L400) · [body 1913](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1913) | [`TBOS_Average.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L948) | 🟢 ported |  |
 
 ## TBOS_Exists
 
-class at [line 403](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L403); 🟢 ported, C# [`TBOS_Exists`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L973).
+class at [line 403](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L403); 🟢 ported, C# [`TBOS_Exists`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L980).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [405](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L405) · [body 1018](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1018) | [`TBOS_Exists.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L975) | 🟢 ported |  |
-| `Evaluate` | method | [407](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L407) · [body 1939](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1939) | [`TBOS_Exists.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L978) | 🟢 ported |  |
+| `Init` | method, protected | [405](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L405) · [body 1018](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1018) | [`TBOS_Exists.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L982) | 🟢 ported |  |
+| `Evaluate` | method | [407](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L407) · [body 1939](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1939) | [`TBOS_Exists.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L985) | 🟢 ported |  |
 
 ## TBOS_ForAll
 
-class at [line 410](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L410); 🟢 ported, C# [`TBOS_ForAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L962).
+class at [line 410](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L410); 🟢 ported, C# [`TBOS_ForAll`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L969).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [412](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L412) · [body 1022](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1022) | [`TBOS_ForAll.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L964) | 🟢 ported |  |
-| `Evaluate` | method | [414](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L414) · [body 1933](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1933) | [`TBOS_ForAll.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L967) | 🟢 ported |  |
+| `Init` | method, protected | [412](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L412) · [body 1022](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1022) | [`TBOS_ForAll.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L971) | 🟢 ported |  |
+| `Evaluate` | method | [414](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L414) · [body 1933](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1933) | [`TBOS_ForAll.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L974) | 🟢 ported |  |
 
 ## TBOS_union
 
-class at [line 417](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L417); 🟢 ported, C# [`TBOS_union`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L984).
+class at [line 417](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L417); 🟢 ported, C# [`TBOS_union`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L991).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [419](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L419) · [body 1026](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1026) | [`TBOS_union.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L986) | 🟢 ported |  |
-| `Evaluate` | method | [421](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L421) · [body 1959](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1959) | [`TBOS_union.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L989) | 🟢 ported |  |
+| `Init` | method, protected | [419](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L419) · [body 1026](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1026) | [`TBOS_union.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L993) | 🟢 ported |  |
+| `Evaluate` | method | [421](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L421) · [body 1959](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1959) | [`TBOS_union.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L996) | 🟢 ported |  |
 
 ## TBOS_Intersection
 
-class at [line 424](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L424); 🟢 ported, C# [`TBOS_Intersection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1016).
+class at [line 424](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L424); 🟢 ported, C# [`TBOS_Intersection`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1023).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [426](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L426) · [body 1030](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1030) | [`TBOS_Intersection.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1018) | 🟢 ported |  |
-| `Evaluate` | method | [428](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L428) · [body 1979](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1979) | [`TBOS_Intersection.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1021) | 🟢 ported |  |
+| `Init` | method, protected | [426](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L426) · [body 1030](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1030) | [`TBOS_Intersection.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1025) | 🟢 ported |  |
+| `Evaluate` | method | [428](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L428) · [body 1979](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1979) | [`TBOS_Intersection.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1028) | 🟢 ported |  |
 
 ## TBOS_difference
 
-class at [line 431](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L431); 🟢 ported, C# [`TBOS_difference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1056).
+class at [line 431](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L431); 🟢 ported, C# [`TBOS_difference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1063).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [433](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L433) · [body 1034](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1034) | [`TBOS_difference.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1058) | 🟢 ported |  |
-| `Evaluate` | method | [435](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L435) · [body 2008](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2008) | [`TBOS_difference.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1061) | 🟢 ported |  |
+| `Init` | method, protected | [433](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L433) · [body 1034](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1034) | [`TBOS_difference.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1065) | 🟢 ported |  |
+| `Evaluate` | method | [435](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L435) · [body 2008](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2008) | [`TBOS_difference.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1068) | 🟢 ported |  |
 
 ## TBOS_Including
 
-class at [line 438](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L438); 🟢 ported, C# [`TBOS_Including`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1089).
+class at [line 438](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L438); 🟢 ported, C# [`TBOS_Including`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1096).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [440](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L440) · [body 1038](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1038) | [`TBOS_Including.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1091) | 🟢 ported |  |
-| `Evaluate` | method | [442](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L442) · [body 2031](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2031) | [`TBOS_Including.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1094) | 🟢 ported |  |
+| `Init` | method, protected | [440](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L440) · [body 1038](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1038) | [`TBOS_Including.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1098) | 🟢 ported |  |
+| `Evaluate` | method | [442](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L442) · [body 2031](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2031) | [`TBOS_Including.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1101) | 🟢 ported |  |
 
 ## TBOS_excluding
 
-class at [line 445](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L445); 🟢 ported, C# [`TBOS_excluding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1111).
+class at [line 445](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L445); 🟢 ported, C# [`TBOS_excluding`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1118).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [447](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L447) · [body 1042](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1042) | [`TBOS_excluding.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1113) | 🟢 ported |  |
-| `Evaluate` | method | [449](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L449) · [body 2046](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2046) | [`TBOS_excluding.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1116) | 🟢 ported |  |
+| `Init` | method, protected | [447](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L447) · [body 1042](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1042) | [`TBOS_excluding.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1120) | 🟢 ported |  |
+| `Evaluate` | method | [449](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L449) · [body 2046](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2046) | [`TBOS_excluding.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1123) | 🟢 ported |  |
 
 ## TBOS_SymmetricDifference
 
-class at [line 452](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L452); 🟢 ported, C# [`TBOS_SymmetricDifference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1128).
+class at [line 452](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L452); 🟢 ported, C# [`TBOS_SymmetricDifference`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1135).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [454](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L454) · [body 1046](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1046) | [`TBOS_SymmetricDifference.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1130) | 🟢 ported |  |
-| `Evaluate` | method | [456](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L456) · [body 2056](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2056) | [`TBOS_SymmetricDifference.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1133) | 🟢 ported |  |
+| `Init` | method, protected | [454](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L454) · [body 1046](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1046) | [`TBOS_SymmetricDifference.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1137) | 🟢 ported |  |
+| `Evaluate` | method | [456](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L456) · [body 2056](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2056) | [`TBOS_SymmetricDifference.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1140) | 🟢 ported |  |
 
 ## TBOS_Select
 
-class at [line 459](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L459); 🟢 ported, C# [`TBOS_Select`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1171).
+class at [line 459](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L459); 🟢 ported, C# [`TBOS_Select`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1178).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [461](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L461) · [body 1050](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1050) | [`TBOS_Select.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1173) | 🟢 ported |  |
-| `Evaluate` | method | [463](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L463) · [body 1750](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1750) | [`TBOS_Select.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1176) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
+| `Init` | method, protected | [461](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L461) · [body 1050](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1050) | [`TBOS_Select.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1180) | 🟢 ported |  |
+| `Evaluate` | method | [463](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L463) · [body 1750](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1750) | [`TBOS_Select.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1183) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
 
 ## TBOS_reject
 
-class at [line 466](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L466); 🟢 ported, C# [`TBOS_reject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1187).
+class at [line 466](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L466); 🟢 ported, C# [`TBOS_reject`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1194).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [468](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L468) · [body 1054](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1054) | [`TBOS_reject.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1189) | 🟢 ported |  |
-| `Evaluate` | method | [470](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L470) · [body 1757](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1757) | [`TBOS_reject.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1192) | 🟢 ported |  |
+| `Init` | method, protected | [468](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L468) · [body 1054](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1054) | [`TBOS_reject.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1196) | 🟢 ported |  |
+| `Evaluate` | method | [470](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L470) · [body 1757](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1757) | [`TBOS_reject.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1199) | 🟢 ported |  |
 
 ## TBOS_collect
 
-class at [line 473](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L473); 🟢 ported, C# [`TBOS_collect`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1203).
+class at [line 473](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L473); 🟢 ported, C# [`TBOS_collect`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1210).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [475](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L475) · [body 1058](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1058) | [`TBOS_collect.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1205) | 🟢 ported |  |
-| `Evaluate` | method | [477](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L477) · [body 1764](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1764) | [`TBOS_collect.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1208) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
+| `Init` | method, protected | [475](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L475) · [body 1058](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1058) | [`TBOS_collect.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1212) | 🟢 ported |  |
+| `Evaluate` | method | [477](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L477) · [body 1764](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1764) | [`TBOS_collect.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1215) | ✅ verified | ✔ [`BoldOclTests.Collections_and_iterations_evaluate`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L63) |
 
 ## TBOS__ListCopier
 
-class at [line 480](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L480); 🟢 ported, C# [`TBOS__ListCopier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1231).
+class at [line 480](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L480); 🟢 ported, C# [`TBOS__ListCopier`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1238).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CopyListToResult` | method, protected | [482](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L482) · [body 2079](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2079) | [`TBOS__ListCopier.CopyListToResult`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1234) | 🟢 ported |  |
+| `CopyListToResult` | method, protected | [482](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L482) · [body 2079](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2079) | [`TBOS__ListCopier.CopyListToResult`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1241) | 🟢 ported |  |
 
 ## TBOS_AsSequence
 
-class at [line 485](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L485); 🟢 ported, C# [`TBOS_AsSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1260).
+class at [line 485](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L485); 🟢 ported, C# [`TBOS_AsSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1267).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [487](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L487) · [body 1062](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1062) | [`TBOS_AsSequence.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1262) | 🟢 ported |  |
-| `Evaluate` | method | [489](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L489) · [body 2094](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2094) | [`TBOS_AsSequence.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1263) | 🟢 ported |  |
+| `Init` | method, protected | [487](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L487) · [body 1062](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1062) | [`TBOS_AsSequence.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1269) | 🟢 ported |  |
+| `Evaluate` | method | [489](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L489) · [body 2094](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2094) | [`TBOS_AsSequence.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1270) | 🟢 ported |  |
 
 ## TBOS_AsBag
 
-class at [line 492](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L492); 🟢 ported, C# [`TBOS_AsBag`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1267).
+class at [line 492](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L492); 🟢 ported, C# [`TBOS_AsBag`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1274).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [494](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L494) · [body 1066](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1066) | [`TBOS_AsBag.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1269) | 🟢 ported |  |
-| `Evaluate` | method | [496](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L496) · [body 2102](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2102) | [`TBOS_AsBag.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1270) | 🟢 ported |  |
+| `Init` | method, protected | [494](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L494) · [body 1066](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1066) | [`TBOS_AsBag.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1276) | 🟢 ported |  |
+| `Evaluate` | method | [496](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L496) · [body 2102](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2102) | [`TBOS_AsBag.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1277) | 🟢 ported |  |
 
 ## TBOS_AsSet
 
-class at [line 499](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L499); 🟢 ported, C# [`TBOS_AsSet`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1274).
+class at [line 499](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L499); 🟢 ported, C# [`TBOS_AsSet`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1281).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [501](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L501) · [body 1070](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1070) | [`TBOS_AsSet.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1276) | 🟢 ported |  |
-| `Evaluate` | method | [503](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L503) · [body 2110](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2110) | [`TBOS_AsSet.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1277) | 🟢 ported |  |
+| `Init` | method, protected | [501](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L501) · [body 1070](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1070) | [`TBOS_AsSet.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1283) | 🟢 ported |  |
+| `Evaluate` | method | [503](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L503) · [body 2110](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2110) | [`TBOS_AsSet.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1284) | 🟢 ported |  |
 
 ## TBOS_Append
 
-class at [line 506](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L506); 🟢 ported, C# [`TBOS_Append`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1281).
+class at [line 506](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L506); 🟢 ported, C# [`TBOS_Append`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1288).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [508](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L508) · [body 1074](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1074) | [`TBOS_Append.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1283) | 🟢 ported |  |
-| `Evaluate` | method | [510](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L510) · [body 2118](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2118) | [`TBOS_Append.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1286) | 🟢 ported |  |
+| `Init` | method, protected | [508](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L508) · [body 1074](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1074) | [`TBOS_Append.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1290) | 🟢 ported |  |
+| `Evaluate` | method | [510](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L510) · [body 2118](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2118) | [`TBOS_Append.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1293) | 🟢 ported |  |
 
 ## TBOS_Prepend
 
-class at [line 512](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L512); 🟢 ported, C# [`TBOS_Prepend`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1294).
+class at [line 512](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L512); 🟢 ported, C# [`TBOS_Prepend`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1301).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [514](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L514) · [body 1078](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1078) | [`TBOS_Prepend.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1296) | 🟢 ported |  |
-| `Evaluate` | method | [516](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L516) · [body 2125](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2125) | [`TBOS_Prepend.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1299) | 🟢 ported: Inserts the second argument; Delphi inserts the first (the list itself), a bug. |  |
+| `Init` | method, protected | [514](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L514) · [body 1078](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1078) | [`TBOS_Prepend.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1303) | 🟢 ported |  |
+| `Evaluate` | method | [516](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L516) · [body 2125](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2125) | [`TBOS_Prepend.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1306) | 🟢 ported: Inserts the second argument; Delphi inserts the first (the list itself), a bug. |  |
 
 ## TBOS_SubSequence
 
-class at [line 518](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L518); 🟢 ported, C# [`TBOS_SubSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1308).
+class at [line 518](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L518); 🟢 ported, C# [`TBOS_SubSequence`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1315).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [520](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L520) · [body 1082](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1082) | [`TBOS_SubSequence.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1311) | 🟢 ported |  |
-| `Evaluate` | method | [522](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L522) · [body 2132](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2132) | [`TBOS_SubSequence.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1314) | 🟢 ported |  |
+| `Init` | method, protected | [520](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L520) · [body 1082](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1082) | [`TBOS_SubSequence.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1318) | 🟢 ported |  |
+| `Evaluate` | method | [522](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L522) · [body 2132](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2132) | [`TBOS_SubSequence.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1321) | 🟢 ported |  |
 
 ## TBOS_at
 
-class at [line 525](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L525); 🟢 ported, C# [`TBOS_at`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1331).
+class at [line 525](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L525); 🟢 ported, C# [`TBOS_at`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1338).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [527](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L527) · [body 1086](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1086) | [`TBOS_at.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1333) | 🟢 ported |  |
-| `Evaluate` | method | [529](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L529) · [body 2155](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2155) | [`TBOS_at.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1336) | 🟢 ported: Checks the bounds where Delphi catches the list's EListError. |  |
+| `Init` | method, protected | [527](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L527) · [body 1086](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1086) | [`TBOS_at.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1340) | 🟢 ported |  |
+| `Evaluate` | method | [529](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L529) · [body 2155](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2155) | [`TBOS_at.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1343) | 🟢 ported: Checks the bounds where Delphi catches the list's EListError. |  |
 
 ## TBOS_first
 
-class at [line 532](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L532); 🟢 ported, C# [`TBOS_first`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1356).
+class at [line 532](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L532); 🟢 ported, C# [`TBOS_first`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1363).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [534](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L534) · [body 1090](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1090) | [`TBOS_first.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1358) | 🟢 ported |  |
-| `Evaluate` | method | [536](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L536) · [body 2177](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2177) | [`TBOS_first.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1361) | 🟢 ported |  |
+| `Init` | method, protected | [534](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L534) · [body 1090](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1090) | [`TBOS_first.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1365) | 🟢 ported |  |
+| `Evaluate` | method | [536](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L536) · [body 2177](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2177) | [`TBOS_first.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1368) | 🟢 ported |  |
 
 ## TBOS_last
 
-class at [line 539](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L539); 🟢 ported, C# [`TBOS_last`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1377).
+class at [line 539](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L539); 🟢 ported, C# [`TBOS_last`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1384).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [541](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L541) · [body 1094](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1094) | [`TBOS_last.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1379) | 🟢 ported |  |
-| `Evaluate` | method | [543](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L543) · [body 2195](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2195) | [`TBOS_last.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1382) | 🟢 ported |  |
+| `Init` | method, protected | [541](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L541) · [body 1094](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1094) | [`TBOS_last.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1386) | 🟢 ported |  |
+| `Evaluate` | method | [543](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L543) · [body 2195](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2195) | [`TBOS_last.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1389) | 🟢 ported |  |
 
 ## TBOS_GenericOrder
 
-class at [line 546](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L546); 🟢 ported, C# [`TBOS_GenericOrder`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1399).
+class at [line 546](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L546); 🟢 ported, C# [`TBOS_GenericOrder`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1406).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Evaluate` | method | [548](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L548) · [body 1787](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1787) | [`TBOS_GenericOrder.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1402) | 🟢 ported |  |
+| `Evaluate` | method | [548](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L548) · [body 1787](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1787) | [`TBOS_GenericOrder.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1409) | 🟢 ported |  |
 
 ## TBOS_orderby
 
-class at [line 551](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L551); 🟢 ported, C# [`TBOS_orderby`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1423).
+class at [line 551](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L551); 🟢 ported, C# [`TBOS_orderby`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1430).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [553](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L553) · [body 1099](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1099) | [`TBOS_orderby.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1425) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
+| `Init` | method, protected | [553](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L553) · [body 1099](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1099) | [`TBOS_orderby.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1432) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
 
 ## TBOS_orderDescending
 
-class at [line 556](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L556); 🟢 ported, C# [`TBOS_orderDescending`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1429).
+class at [line 556](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L556); 🟢 ported, C# [`TBOS_orderDescending`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1436).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [558](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L558) · [body 1103](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1103) | [`TBOS_orderDescending.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1431) | 🟢 ported |  |
+| `Init` | method, protected | [558](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L558) · [body 1103](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1103) | [`TBOS_orderDescending.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1438) | 🟢 ported |  |
 
 ## TBOS_asString
 
-class at [line 561](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L561); 🟢 ported, C# [`TBOS_asString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1435).
+class at [line 561](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L561); 🟢 ported, C# [`TBOS_asString`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1442).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [563](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L563) · [body 1110](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1110) | [`TBOS_asString.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1437) | 🟢 ported |  |
-| `Evaluate` | method | [565](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L565) · [body 2213](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2213) | [`TBOS_asString.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1440) | 🟢 ported |  |
+| `Init` | method, protected | [563](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L563) · [body 1110](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1110) | [`TBOS_asString.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1444) | 🟢 ported |  |
+| `Evaluate` | method | [565](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L565) · [body 2213](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2213) | [`TBOS_asString.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1447) | 🟢 ported |  |
 
 ## TBOS_dateTimeAsFloat
 
-class at [line 568](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L568); 🟢 ported, C# [`TBOS_dateTimeAsFloat`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1448).
+class at [line 568](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L568); 🟢 ported, C# [`TBOS_dateTimeAsFloat`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1455).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [570](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L570) · [body 1115](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1115) | [`TBOS_dateTimeAsFloat.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1450) | 🟢 ported |  |
-| `Evaluate` | method | [572](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L572) · [body 2221](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2221) | [`TBOS_dateTimeAsFloat.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1451) | 🟢 ported |  |
+| `Init` | method, protected | [570](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L570) · [body 1115](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1115) | [`TBOS_dateTimeAsFloat.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1457) | 🟢 ported |  |
+| `Evaluate` | method | [572](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L572) · [body 2221](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2221) | [`TBOS_dateTimeAsFloat.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1458) | 🟢 ported |  |
 
 ## TBOS_StringRepresentation
 
-class at [line 576](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L576); 🟢 ported, C# [`TBOS_StringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1455).
+class at [line 576](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L576); 🟢 ported, C# [`TBOS_StringRepresentation`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1462).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [578](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L578) · [body 1280](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1280) | [`TBOS_StringRepresentation.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1457) | 🟢 ported |  |
-| `Evaluate` | method | [580](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L580) · [body 2228](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2228) | [`TBOS_StringRepresentation.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1460) | 🟢 ported |  |
+| `Init` | method, protected | [578](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L578) · [body 1280](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1280) | [`TBOS_StringRepresentation.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1464) | 🟢 ported |  |
+| `Evaluate` | method | [580](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L580) · [body 2228](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2228) | [`TBOS_StringRepresentation.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1467) | 🟢 ported |  |
 
 ## TBOS_TaggedValue
 
-class at [line 583](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L583); 🟢 ported, C# [`TBOS_TaggedValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1476).
+class at [line 583](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L583); 🟢 ported, C# [`TBOS_TaggedValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1483).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [585](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L585) · [body 1285](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1285) | [`TBOS_TaggedValue.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1478) | 🟢 ported |  |
-| `Evaluate` | method | [587](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L587) · [body 2246](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2246) | [`TBOS_TaggedValue.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1481) | 🟢 ported |  |
+| `Init` | method, protected | [585](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L585) · [body 1285](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1285) | [`TBOS_TaggedValue.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1485) | 🟢 ported |  |
+| `Evaluate` | method | [587](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L587) · [body 2246](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2246) | [`TBOS_TaggedValue.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1488) | 🟢 ported |  |
 
 ## TBOS_TypeName
 
-class at [line 591](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L591); 🟢 ported, C# [`TBOS_TypeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1489).
+class at [line 591](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L591); 🟢 ported, C# [`TBOS_TypeName`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1496).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [593](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L593) · [body 1120](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1120) | [`TBOS_TypeName.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1491) | 🟢 ported |  |
-| `Evaluate` | method | [595](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L595) · [body 2264](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2264) | [`TBOS_TypeName.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1492) | 🟢 ported |  |
+| `Init` | method, protected | [593](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L593) · [body 1120](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1120) | [`TBOS_TypeName.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1498) | 🟢 ported |  |
+| `Evaluate` | method | [595](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L595) · [body 2264](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2264) | [`TBOS_TypeName.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1499) | 🟢 ported |  |
 
 ## TBOS_Attributes
 
-class at [line 598](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L598); 🟢 ported, C# [`TBOS_Attributes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1520).
+class at [line 598](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L598); 🟢 ported, C# [`TBOS_Attributes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1527).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [600](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L600) · [body 1125](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1125) | [`TBOS_Attributes.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1522) | 🟢 ported |  |
-| `Evaluate` | method | [602](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L602) · [body 2406](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2406) | [`TBOS_Attributes.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1523) | 🟢 ported |  |
+| `Init` | method, protected | [600](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L600) · [body 1125](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1125) | [`TBOS_Attributes.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1529) | 🟢 ported |  |
+| `Evaluate` | method | [602](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L602) · [body 2406](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2406) | [`TBOS_Attributes.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1530) | 🟢 ported |  |
 
 ## TBOS_AssociationEnds
 
-class at [line 605](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L605); 🟢 ported, C# [`TBOS_AssociationEnds`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1527).
+class at [line 605](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L605); 🟢 ported, C# [`TBOS_AssociationEnds`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1534).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [607](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L607) · [body 1130](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1130) | [`TBOS_AssociationEnds.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1529) | 🟢 ported |  |
-| `Evaluate` | method | [609](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L609) · [body 2432](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2432) | [`TBOS_AssociationEnds.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1530) | 🟢 ported |  |
+| `Init` | method, protected | [607](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L607) · [body 1130](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1130) | [`TBOS_AssociationEnds.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1536) | 🟢 ported |  |
+| `Evaluate` | method | [609](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L609) · [body 2432](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2432) | [`TBOS_AssociationEnds.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1537) | 🟢 ported |  |
 
 ## TBOS_SuperTypes
 
-class at [line 619](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L619); 🟢 ported, C# [`TBOS_SuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1534).
+class at [line 619](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L619); 🟢 ported, C# [`TBOS_SuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1541).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [621](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L621) · [body 1141](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1141) | [`TBOS_SuperTypes.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1536) | 🟢 ported |  |
-| `Evaluate` | method | [623](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L623) · [body 2465](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2465) | [`TBOS_SuperTypes.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1539) | 🟢 ported |  |
+| `Init` | method, protected | [621](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L621) · [body 1141](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1141) | [`TBOS_SuperTypes.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1543) | 🟢 ported |  |
+| `Evaluate` | method | [623](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L623) · [body 2465](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2465) | [`TBOS_SuperTypes.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1546) | 🟢 ported |  |
 
 ## TBOS_AllSuperTypes
 
-class at [line 626](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L626); 🟢 ported, C# [`TBOS_AllSuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1556).
+class at [line 626](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L626); 🟢 ported, C# [`TBOS_AllSuperTypes`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1563).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [628](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L628) · [body 1146](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1146) | [`TBOS_AllSuperTypes.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1558) | 🟢 ported |  |
-| `Evaluate` | method | [630](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L630) · [body 2490](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2490) | [`TBOS_AllSuperTypes.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1561) | 🟢 ported |  |
+| `Init` | method, protected | [628](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L628) · [body 1146](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1146) | [`TBOS_AllSuperTypes.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1565) | 🟢 ported |  |
+| `Evaluate` | method | [630](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L630) · [body 2490](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2490) | [`TBOS_AllSuperTypes.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1568) | 🟢 ported |  |
 
 ## TBOS_AllSubClasses
 
-class at [line 633](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L633); 🟢 ported, C# [`TBOS_AllSubClasses`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1583).
+class at [line 633](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L633); 🟢 ported, C# [`TBOS_AllSubClasses`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1590).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [635](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L635) · [body 1151](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1151) | [`TBOS_AllSubClasses.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1585) | 🟢 ported |  |
-| `Evaluate` | method | [637](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L637) · [body 2521](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2521) | [`TBOS_AllSubClasses.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1588) | 🟢 ported |  |
+| `Init` | method, protected | [635](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L635) · [body 1151](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1151) | [`TBOS_AllSubClasses.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1592) | 🟢 ported |  |
+| `Evaluate` | method | [637](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L637) · [body 2521](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2521) | [`TBOS_AllSubClasses.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1595) | 🟢 ported |  |
 
 ## TBOS_AllInstances
 
-class at [line 641](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L641); 🟢 ported, C# [`TBOS_AllInstances`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1608).
+class at [line 641](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L641); 🟢 ported, C# [`TBOS_AllInstances`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1615).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [643](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L643) · [body 1156](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1156) | [`TBOS_AllInstances.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1610) | 🟢 ported |  |
-| `Evaluate` | method | [645](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L645) · [body 2316](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2316) | [`TBOS_AllInstances.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1613) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
+| `Init` | method, protected | [643](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L643) · [body 1156](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1156) | [`TBOS_AllInstances.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1617) | 🟢 ported |  |
+| `Evaluate` | method | [645](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L645) · [body 2316](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2316) | [`TBOS_AllInstances.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1620) | ✅ verified | ✔ [`BoldOclTests.Model_navigation_evaluates`](../../tests/Bold.ObjectSpace.Tests/ObjectSpace/Ocl/BoldOclTests.cs#L84) |
 
 ## TBOS_AllLoadedObjects
 
-class at [line 648](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L648); 🟢 ported, C# [`TBOS_AllLoadedObjects`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1643).
+class at [line 648](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L648); 🟢 ported, C# [`TBOS_AllLoadedObjects`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1650).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [650](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L650) · [body 1161](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1161) | [`TBOS_AllLoadedObjects.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1645) | 🟢 ported |  |
-| `Evaluate` | method | [652](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L652) · [body 2362](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2362) | [`TBOS_AllLoadedObjects.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1648) | 🟢 ported |  |
+| `Init` | method, protected | [650](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L650) · [body 1161](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1161) | [`TBOS_AllLoadedObjects.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1652) | 🟢 ported |  |
+| `Evaluate` | method | [652](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L652) · [body 2362](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2362) | [`TBOS_AllLoadedObjects.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1655) | 🟢 ported |  |
 
 ## TBOS_EmptyLIst
 
-class at [line 655](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L655); 🟢 ported, C# [`TBOS_EmptyLIst`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1687).
+class at [line 655](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L655); 🟢 ported, C# [`TBOS_EmptyLIst`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1694).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [657](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L657) · [body 1166](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1166) | [`TBOS_EmptyLIst.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1689) | 🟢 ported |  |
-| `Evaluate` | method | [659](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L659) · [body 2398](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2398) | [`TBOS_EmptyLIst.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1690) | 🟢 ported |  |
+| `Init` | method, protected | [657](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L657) · [body 1166](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1166) | [`TBOS_EmptyLIst.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1696) | 🟢 ported |  |
+| `Evaluate` | method | [659](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L659) · [body 2398](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2398) | [`TBOS_EmptyLIst.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1697) | 🟢 ported |  |
 
 ## TBOS_oclType
 
-class at [line 663](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L663); 🟢 ported, C# [`TBOS_oclType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1694).
+class at [line 663](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L663); 🟢 ported, C# [`TBOS_oclType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1701).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [665](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L665) · [body 1171](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1171) | [`TBOS_oclType.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1696) | 🟢 ported |  |
-| `Evaluate` | method | [667](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L667) · [body 2269](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2269) | [`TBOS_oclType.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1697) | 🟢 ported |  |
+| `Init` | method, protected | [665](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L665) · [body 1171](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1171) | [`TBOS_oclType.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1703) | 🟢 ported |  |
+| `Evaluate` | method | [667](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L667) · [body 2269](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2269) | [`TBOS_oclType.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1704) | 🟢 ported |  |
 
 ## TBOS_oclIsKindOf
 
-class at [line 670](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L670); 🟢 ported, C# [`TBOS_oclIsKindOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1701).
+class at [line 670](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L670); 🟢 ported, C# [`TBOS_oclIsKindOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1708).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [672](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L672) · [body 1176](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1176) | [`TBOS_oclIsKindOf.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1703) | 🟢 ported |  |
-| `Evaluate` | method | [674](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L674) · [body 2300](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2300) | [`TBOS_oclIsKindOf.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1706) | 🟢 ported |  |
+| `Init` | method, protected | [672](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L672) · [body 1176](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1176) | [`TBOS_oclIsKindOf.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1710) | 🟢 ported |  |
+| `Evaluate` | method | [674](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L674) · [body 2300](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2300) | [`TBOS_oclIsKindOf.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1713) | 🟢 ported |  |
 
 ## TBOS_OclIsTypeOf
 
-class at [line 677](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L677); 🟢 ported, C# [`TBOS_OclIsTypeOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1714).
+class at [line 677](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L677); 🟢 ported, C# [`TBOS_OclIsTypeOf`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1721).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [679](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L679) · [body 1181](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1181) | [`TBOS_OclIsTypeOf.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1716) | 🟢 ported |  |
-| `Evaluate` | method | [681](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L681) · [body 2308](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2308) | [`TBOS_OclIsTypeOf.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1719) | 🟢 ported |  |
+| `Init` | method, protected | [679](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L679) · [body 1181](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1181) | [`TBOS_OclIsTypeOf.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1723) | 🟢 ported |  |
+| `Evaluate` | method | [681](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L681) · [body 2308](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2308) | [`TBOS_OclIsTypeOf.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1726) | 🟢 ported |  |
 
 ## TBOS_OclAsType
 
-class at [line 684](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L684); 🟢 ported, C# [`TBOS_OclAsType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1727).
+class at [line 684](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L684); 🟢 ported, C# [`TBOS_OclAsType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1734).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [686](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L686) · [body 1186](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1186) | [`TBOS_OclAsType.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1729) | 🟢 ported |  |
-| `Evaluate` | method | [688](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L688) · [body 2277](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2277) | [`TBOS_OclAsType.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1732) | 🟢 ported |  |
+| `Init` | method, protected | [686](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L686) · [body 1186](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1186) | [`TBOS_OclAsType.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1736) | 🟢 ported |  |
+| `Evaluate` | method | [688](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L688) · [body 2277](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2277) | [`TBOS_OclAsType.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1739) | 🟢 ported |  |
 
 ## TBOS_safeCast
 
-class at [line 691](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L691); 🟢 ported, C# [`TBOS_safeCast`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1747).
+class at [line 691](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L691); 🟢 ported, C# [`TBOS_safeCast`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1754).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [693](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L693) · [body 1191](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1191) | [`TBOS_safeCast.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1749) | 🟢 ported |  |
-| `Evaluate` | method | [695](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L695) · [body 2288](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2288) | [`TBOS_safeCast.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1752) | 🟢 ported |  |
+| `Init` | method, protected | [693](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L693) · [body 1191](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1191) | [`TBOS_safeCast.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1756) | 🟢 ported |  |
+| `Evaluate` | method | [695](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L695) · [body 2288](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2288) | [`TBOS_safeCast.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1759) | 🟢 ported |  |
 
 ## TBOS_SQLLike
 
-class at [line 699](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L699); 🟢 ported, C# [`TBOS_SQLLike`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1760).
+class at [line 699](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L699); 🟢 ported, C# [`TBOS_SQLLike`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1767).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [701](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L701) · [body 1196](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1196) | [`TBOS_SQLLike.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1762) | 🟢 ported |  |
-| `Evaluate` | method | [703](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L703) · [body 2583](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2583) | [`TBOS_SQLLike.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1765) | 🟢 ported: Matches with a .NET Regex built by FixSQLRegExp. |  |
+| `Init` | method, protected | [701](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L701) · [body 1196](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1196) | [`TBOS_SQLLike.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1769) | 🟢 ported |  |
+| `Evaluate` | method | [703](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L703) · [body 2583](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2583) | [`TBOS_SQLLike.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1772) | 🟢 ported: Matches with a .NET Regex built by FixSQLRegExp. |  |
 
 ## TBOS_SQLLikeCaseInsensitive
 
-class at [line 706](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L706); 🟢 ported, C# [`TBOS_SQLLikeCaseInsensitive`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1770).
+class at [line 706](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L706); 🟢 ported, C# [`TBOS_SQLLikeCaseInsensitive`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1777).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [708](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L708) · [body 1201](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1201) | [`TBOS_SQLLikeCaseInsensitive.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1773) | 🟢 ported |  |
-| `Evaluate` | method | [710](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L710) · [body 2591](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2591) | [`TBOS_SQLLikeCaseInsensitive.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1776) | 🟢 ported: Matches with a .NET Regex built by FixSQLRegExp. |  |
+| `Init` | method, protected | [708](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L708) · [body 1201](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1201) | [`TBOS_SQLLikeCaseInsensitive.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1780) | 🟢 ported |  |
+| `Evaluate` | method | [710](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L710) · [body 2591](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2591) | [`TBOS_SQLLikeCaseInsensitive.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1783) | 🟢 ported: Matches with a .NET Regex built by FixSQLRegExp. |  |
 
 ## TBOS_RegExpMatch
 
-class at [line 713](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L713); 🟢 ported, C# [`TBOS_RegExpMatch`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1782).
+class at [line 713](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L713); 🟢 ported, C# [`TBOS_RegExpMatch`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1789).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [715](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L715) · [body 1206](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1206) | [`TBOS_RegExpMatch.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1784) | 🟢 ported |  |
-| `Evaluate` | method | [717](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L717) · [body 2599](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2599) | [`TBOS_RegExpMatch.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1788) | 🔵 replaced: Uses .NET regular expression syntax; BoldRegularExpression (not in the sources) had its own. |  |
+| `Init` | method, protected | [715](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L715) · [body 1206](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1206) | [`TBOS_RegExpMatch.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1791) | 🟢 ported |  |
+| `Evaluate` | method | [717](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L717) · [body 2599](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2599) | [`TBOS_RegExpMatch.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1795) | 🔵 replaced: Uses .NET regular expression syntax; BoldRegularExpression (not in the sources) had its own. |  |
 
 ## TBOS_InDateRange
 
-class at [line 720](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L720); 🟢 ported, C# [`TBOS_InDateRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1793).
+class at [line 720](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L720); 🟢 ported, C# [`TBOS_InDateRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1800).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [722](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L722) · [body 1211](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1211) | [`TBOS_InDateRange.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1796) | 🟢 ported |  |
-| `Evaluate` | method | [724](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L724) · [body 2606](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2606) | [`TBOS_InDateRange.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1799) | 🟢 ported |  |
+| `Init` | method, protected | [722](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L722) · [body 1211](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1211) | [`TBOS_InDateRange.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1803) | 🟢 ported |  |
+| `Evaluate` | method | [724](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L724) · [body 2606](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2606) | [`TBOS_InDateRange.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1806) | 🟢 ported |  |
 
 ## TBOS_InTimeRange
 
-class at [line 727](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L727); 🟢 ported, C# [`TBOS_InTimeRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1817).
+class at [line 727](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L727); 🟢 ported, C# [`TBOS_InTimeRange`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1824).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [729](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L729) · [body 1216](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1216) | [`TBOS_InTimeRange.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1820) | 🟢 ported |  |
-| `Evaluate` | method | [731](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L731) · [body 2635](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2635) | [`TBOS_InTimeRange.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1825) | 🟢 ported |  |
+| `Init` | method, protected | [729](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L729) · [body 1216](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1216) | [`TBOS_InTimeRange.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1827) | 🟢 ported |  |
+| `Evaluate` | method | [731](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L731) · [body 2635](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2635) | [`TBOS_InTimeRange.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1832) | 🟢 ported |  |
 
 ## TBOS_Constraints
 
-class at [line 734](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L734); 🟢 ported, C# [`TBOS_Constraints`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1836).
+class at [line 734](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L734); 🟢 ported, C# [`TBOS_Constraints`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1843).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [736](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L736) · [body 1226](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1226) | [`TBOS_Constraints.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1839) | 🟢 ported |  |
-| `Evaluate` | method | [738](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L738) · [body 2657](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2657) | [`TBOS_Constraints.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1843) | 🟢 ported |  |
+| `Init` | method, protected | [736](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L736) · [body 1226](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1226) | [`TBOS_Constraints.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1846) | 🟢 ported |  |
+| `Evaluate` | method | [738](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L738) · [body 2657](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2657) | [`TBOS_Constraints.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1850) | 🟢 ported |  |
 
 ## TBOS_AtTime
 
-class at [line 741](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L741); 🟢 ported, C# [`TBOS_AtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1882).
+class at [line 741](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L741); 🟢 ported, C# [`TBOS_AtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1889).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [743](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L743) · [body 1234](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1234) | [`TBOS_AtTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1884) | 🟢 ported |  |
-| `Evaluate` | method | [745](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L745) · [body 2701](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2701) | [`TBOS_AtTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1887) | 🟢 ported |  |
+| `Init` | method, protected | [743](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L743) · [body 1234](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1234) | [`TBOS_AtTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1891) | 🟢 ported |  |
+| `Evaluate` | method | [745](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L745) · [body 2701](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2701) | [`TBOS_AtTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1894) | 🟢 ported |  |
 
 ## TBOS_ObjectTimeStamp
 
-class at [line 748](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L748); 🟢 ported, C# [`TBOS_ObjectTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1892).
+class at [line 748](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L748); 🟢 ported, C# [`TBOS_ObjectTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1899).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [750](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L750) · [body 1239](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1239) | [`TBOS_ObjectTimeStamp.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1894) | 🟢 ported |  |
-| `Evaluate` | method | [752](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L752) · [body 2711](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2711) | [`TBOS_ObjectTimeStamp.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1897) | 🟢 ported |  |
+| `Init` | method, protected | [750](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L750) · [body 1239](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1239) | [`TBOS_ObjectTimeStamp.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1901) | 🟢 ported |  |
+| `Evaluate` | method | [752](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L752) · [body 2711](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2711) | [`TBOS_ObjectTimeStamp.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1904) | 🟢 ported |  |
 
 ## TBOS_AllInstancesAtTime
 
-class at [line 757](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L757); 🟢 ported, C# [`TBOS_AllInstancesAtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1902).
+class at [line 757](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L757); 🟢 ported, C# [`TBOS_AllInstancesAtTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1909).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [759](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L759) · [body 1245](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1245) | [`TBOS_AllInstancesAtTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1905) | 🟢 ported |  |
-| `Evaluate` | method | [761](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L761) · [body 2720](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2720) | [`TBOS_AllInstancesAtTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1908) | 🟢 ported |  |
+| `Init` | method, protected | [759](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L759) · [body 1245](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1245) | [`TBOS_AllInstancesAtTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1912) | 🟢 ported |  |
+| `Evaluate` | method | [761](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L761) · [body 2720](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2720) | [`TBOS_AllInstancesAtTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1915) | 🟢 ported |  |
 
 ## TBOS_Existing
 
-class at [line 764](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L764); 🟢 ported, C# [`TBOS_Existing`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1926).
+class at [line 764](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L764); 🟢 ported, C# [`TBOS_Existing`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1933).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [766](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L766) · [body 1250](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1250) | [`TBOS_Existing.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1928) | 🟢 ported |  |
-| `Evaluate` | method | [768](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L768) · [body 2739](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2739) | [`TBOS_Existing.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1931) | 🟢 ported |  |
+| `Init` | method, protected | [766](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L766) · [body 1250](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1250) | [`TBOS_Existing.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1935) | 🟢 ported |  |
+| `Evaluate` | method | [768](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L768) · [body 2739](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2739) | [`TBOS_Existing.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1938) | 🟢 ported |  |
 
 ## TBOS_FilterOnType
 
-class at [line 771](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L771); 🟢 ported, C# [`TBOS_FilterOnType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1936).
+class at [line 771](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L771); 🟢 ported, C# [`TBOS_FilterOnType`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1943).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [773](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L773) · [body 1255](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1255) | [`TBOS_FilterOnType.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1938) | 🟢 ported |  |
-| `Evaluate` | method | [775](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L775) · [body 2744](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2744) | [`TBOS_FilterOnType.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1941) | 🟢 ported |  |
+| `Init` | method, protected | [773](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L773) · [body 1255](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1255) | [`TBOS_FilterOnType.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1945) | 🟢 ported |  |
+| `Evaluate` | method | [775](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L775) · [body 2744](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2744) | [`TBOS_FilterOnType.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1948) | 🟢 ported |  |
 
 ## TBOS_BoldTime
 
-class at [line 778](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L778); 🟢 ported, C# [`TBOS_BoldTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1959).
+class at [line 778](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L778); 🟢 ported, C# [`TBOS_BoldTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1966).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [780](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L780) · [body 1260](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1260) | [`TBOS_BoldTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1961) | 🟢 ported |  |
-| `Evaluate` | method | [782](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L782) · [body 2758](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2758) | [`TBOS_BoldTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1962) | 🟢 ported |  |
+| `Init` | method, protected | [780](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L780) · [body 1260](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1260) | [`TBOS_BoldTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1968) | 🟢 ported |  |
+| `Evaluate` | method | [782](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L782) · [body 2758](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2758) | [`TBOS_BoldTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1969) | 🟢 ported |  |
 
 ## TBOS_TimeStampToTime
 
-class at [line 785](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L785); 🟢 ported, C# [`TBOS_TimeStampToTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1966).
+class at [line 785](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L785); 🟢 ported, C# [`TBOS_TimeStampToTime`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1973).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [787](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L787) · [body 1265](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1265) | [`TBOS_TimeStampToTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1968) | 🟢 ported |  |
-| `Evaluate` | method | [789](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L789) · [body 2763](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2763) | [`TBOS_TimeStampToTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1971) | 🟢 ported |  |
+| `Init` | method, protected | [787](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L787) · [body 1265](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1265) | [`TBOS_TimeStampToTime.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1975) | 🟢 ported |  |
+| `Evaluate` | method | [789](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L789) · [body 2763](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2763) | [`TBOS_TimeStampToTime.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1978) | 🟢 ported |  |
 
 ## TBOS_TimeToTimeStamp
 
-class at [line 792](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L792); 🟢 ported, C# [`TBOS_TimeToTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1976).
+class at [line 792](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L792); 🟢 ported, C# [`TBOS_TimeToTimeStamp`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1983).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Init` | method, protected | [794](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L794) · [body 1270](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1270) | [`TBOS_TimeToTimeStamp.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1978) | 🟢 ported |  |
-| `Evaluate` | method | [796](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L796) · [body 2768](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2768) | [`TBOS_TimeToTimeStamp.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1981) | 🟢 ported |  |
+| `Init` | method, protected | [794](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L794) · [body 1270](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L1270) | [`TBOS_TimeToTimeStamp.Init`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1985) | 🟢 ported |  |
+| `Evaluate` | method | [796](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L796) · [body 2768](../../../Source/ObjectSpace/Ocl/BoldOclSymbolImplementations.pas#L2768) | [`TBOS_TimeToTimeStamp.Evaluate`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1988) | 🟢 ported |  |
 
 ## C# additions
 
@@ -1101,11 +1101,11 @@ Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumb
 - [`TBOS_MomentHelper.MomentValue`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L104) (method)
 - [`TBOS_OrderCompare`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L423) (class)
 - [`TBOS_OrderCompare.Compare`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L425) (method)
-- [`TBoldSymbolResult`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L847) (class)
-- [`TBoldSymbolResult.MakeNumber`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L849) (method)
-- [`TBOS__ListCopier.CopyWithMode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1249) (method)
-- [`TBOS_MemberNames`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1496) (class)
-- [`TBOS_MemberNames.AddNames`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1498) (method)
+- [`TBoldSymbolResult`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L854) (class)
+- [`TBoldSymbolResult.MakeNumber`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L856) (method)
+- [`TBOS__ListCopier.CopyWithMode`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1256) (method)
+- [`TBOS_MemberNames`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1503) (class)
+- [`TBOS_MemberNames.AddNames`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldOclSymbolImplementations.cs#L1505) (method)
 
 ## Dependencies
 

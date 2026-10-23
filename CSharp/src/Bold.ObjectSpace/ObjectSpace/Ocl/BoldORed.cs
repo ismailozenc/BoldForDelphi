@@ -393,19 +393,19 @@ public static partial class BoldORed
         return result;
     }
 
-    /// <summary>A time literal #hh:mm[:ss]; kept as a date literal node, as in Delphi.</summary>
-    [Delphi(PortStatus.Ported)]
+    /// <summary>A time literal #hh:mm[:ss].</summary>
+    [Delphi(PortStatus.Ported, Note = "Makes a time literal; Delphi made a date literal, whose value (the date part) was always 0, so a time literal never held its time.")]
     internal static AYaccStackElement MakeLiteralTime(AYaccStackElement Time, int Offs)
     {
         var result = AYaccStackElement.CreateOffs(Offs);
-        var node = new TBoldOclDateLiteral();
+        var node = new TBoldOclTimeLiteral();
         string buffer = Time.Lexeme!.Buffer;
         int h = SysUtils.StrToInt(SysUtils.Copy(buffer, 2, 2));
         int m = SysUtils.StrToInt(SysUtils.Copy(buffer, 5, 2));
         int s = SysUtils.StrToIntDef(SysUtils.Copy(buffer, 8, 2), 0);
         try
         {
-            node.DateValue = SysUtils.EncodeTime(h, m, s, 0);
+            node.TimeValue = SysUtils.EncodeTime(h, m, s, 0);
         }
         catch (EConvertError)
         {

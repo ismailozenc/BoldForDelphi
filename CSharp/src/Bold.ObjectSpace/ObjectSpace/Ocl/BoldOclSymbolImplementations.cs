@@ -766,7 +766,7 @@ internal sealed class TBOS_IncludesAll(TBoldOclSymbolHelp Help) : TBoldOclSymbol
 {
     [Delphi(PortStatus.Ported)] protected override void Init() => InternalInit("includesAll", [Help.ListType, Help.ListType], TBoldOclDeduceMethod.tbodNo, Help.BooleanType, true, 134, true);
 
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "Compares the elements by value, as includes does; Delphi asked the list, which compares attribute values by identity, so a list of values never included another.")]
     public override void Evaluate(TBoldOclSymbolParameters Params)
     {
         TBoldList? list1 = XList(Params.Values[0]);
@@ -784,7 +784,14 @@ internal sealed class TBOS_IncludesAll(TBoldOclSymbolHelp Help) : TBoldOclSymbol
             bool IncludesAll = true;
             for (int i = 0; i < list2.Count && IncludesAll; i++)
             {
-                IncludesAll = list1.Includes(list2[i]);
+                TBoldElement? element = list2[i];
+                bool found = false;
+                for (int j = 0; j < list1.Count && !found; j++)
+                {
+                    found = list1[j]!.IsEqual(element);
+                }
+
+                IncludesAll = found;
             }
 
             Help.MakeNewBoolean(Params.Result!, IncludesAll);
