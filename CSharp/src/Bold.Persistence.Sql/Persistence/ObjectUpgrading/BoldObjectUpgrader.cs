@@ -3,6 +3,7 @@
 // The object upgrader of the default mapping: it loads an object stored by an older model version into a private
 // object space, lets an event upgrade it, and saves it back with the current version.
 
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldObjectUpgrader", Symbol = "TBoldExposedSystem", Note = "A cracker class for the system's persistence handler; Bold.ObjectSpace makes its internals visible to Bold.Persistence.Sql instead.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldObjectUpgrader", Symbol = "TBoldObjectUpgrader.Destroy", Note = "Released the object space; ReleaseBoldSystem does that when called.")]
 
 namespace Bold;

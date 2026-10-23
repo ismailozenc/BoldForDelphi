@@ -4,6 +4,7 @@
 // the database: new tables and columns, instances copied to new tables, data moved between columns, old instances,
 // columns and tables removed, and the class db types kept from the old mapping.
 
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldDbEvolutor", Symbol = "TExposedPMapper", Note = "A cracker class for the protected CreateMappingInfo, which is protected internal here.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldDbEvolutor", Symbol = "TBoldDataBaseEvolutor.Destroy", Note = "Freed the mappings, lists and scripts; the garbage collector does that in .NET.")]
 
 namespace Bold;
