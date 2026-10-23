@@ -109,5 +109,8 @@ jobs:
           done
           echo "::error::SQL Server did not start"; exit 1
 
+      # Failures are repeated as annotations, so they can be read from the run's summary.
       - name: Test on SQL Server
-        run: dotnet test CSharp/tests/Bold.Persistence.Sql.Tests --configuration Release --no-build --filter "TestCategory=SqlServer" --logger "console;verbosity=normal"
+        run: |
+          set -o pipefail
+          dotnet test CSharp/tests/Bold.Persistence.Sql.Tests --configuration Release --no-build --filter "TestCategory=SqlServer" --logger "console;verbosity=normal" 2>&1 | tee test.log || { grep -E -A6 "^\s*(Failed|Error Message:)" test.log | head -60 | tr -d '\r' | sed 's/^/::error::/'; exit 1; }
