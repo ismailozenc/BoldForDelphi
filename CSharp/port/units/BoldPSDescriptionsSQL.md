@@ -8,10 +8,10 @@
 | C# | [`CSharp/src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs) |
 | Project | Bold.Persistence.Sql |
 | Milestone | M5 SQL persistence |
-| Status | 🟢 ported: 93 of 93 symbols done, 2 verified |
+| Status | 🟢 ported: 93 of 93 symbols done, 3 verified |
 | Note | Asks the user through a callback interface in Bold.Core instead of BoldQueryUserDlg. |
 
-✅ 2 verified · 🟢 89 ported · 🔵 2 replaced
+✅ 3 verified · 🟢 88 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -85,7 +85,7 @@ class at [line 70](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L70); �
 | `DeleteTable` | method | [89](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L89) · [body 563](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L563) | [`TBoldSQLTableDescription.DeleteTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L471) | 🟢 ported |  |
 | `RetrieveSelectIdAndTypeStatement` | method | [90](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L90) · [body 615](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L615) | [`TBoldSQLTableDescription.RetrieveSelectIdAndTypeStatement`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L497) | 🟢 ported |  |
 | `GenerateDatabaseScript` | method | [91](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L91) · [body 834](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L834) | [`TBoldSQLTableDescription.GenerateDatabaseScript`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L504) | 🟢 ported |  |
-| `SQLForCreateTable` | method | [92](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L92) · [body 442](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L442) | [`TBoldSQLTableDescription.SQLForCreateTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L521) | 🟢 ported |  |
+| `SQLForCreateTable` | method | [92](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L92) · [body 442](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L442) | [`TBoldSQLTableDescription.SQLForCreateTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L521) | ✅ verified | ✔ [`SchemaSnapshotTests.The_schema_of_the_Building_model_matches_its_snapshot`](../../tests/Bold.Persistence.Sql.Tests/Fixtures/SchemaSnapshotTests.cs#L44) |
 | `SQLForDropTable` | method | [93](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L93) · [body 464](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L464) | [`TBoldSQLTableDescription.SQLForDropTable`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L546) | 🟢 ported |  |
 | `ColumnsList` | property | [94](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L94) | [`TBoldSQLTableDescription.ColumnsList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L548) | 🟢 ported |  |
 | `IndexList` | property | [95](../../../Source/PMapper/SQL/BoldPSDescriptionsSQL.pas#L95) | [`TBoldSQLTableDescription.IndexList`](../../src/Bold.Persistence.Sql/PMapper/SQL/BoldPSDescriptionsSQL.cs#L549) | 🟢 ported |  |

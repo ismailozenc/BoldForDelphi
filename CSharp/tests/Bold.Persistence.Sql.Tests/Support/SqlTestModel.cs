@@ -47,7 +47,7 @@ internal sealed class SqliteHandle : IDisposable
         File = file ?? Path.Combine(Path.GetTempPath(), $"bold-{Guid.NewGuid():N}.db");
         Connection = TestDatabase.NewADOConnection(File);
         Adapter.Connection = Connection;
-        Adapter.SQLDatabaseConfig.InitializeDbEngineSettings(TBoldDataBaseEngine.dbeGenericANSISQL92);
+        Adapter.SQLDatabaseConfig.InitializeDbEngineSettings(TBoldDataBaseEngine.dbeSQLite);
         fModel = new TBoldAbstractModelForSqlTests(model);
         Handle.DatabaseAdapter = Adapter;
         Handle.BoldModel = fModel;

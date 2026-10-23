@@ -177,7 +177,7 @@ public class BoldExternalPersistenceTests
             TestDatabase.Exec(connection, "INSERT INTO Customer VALUES (1, 'Acme')");
             TestDatabase.Exec(connection, "INSERT INTO Customer VALUES (2, 'Globex')");
             using var adapter = new TBoldDatabaseAdapterADO { Connection = connection };
-            adapter.SQLDatabaseConfig.InitializeDbEngineSettings(TBoldDataBaseEngine.dbeGenericANSISQL92);
+            adapter.SQLDatabaseConfig.InitializeDbEngineSettings(TBoldDataBaseEngine.dbeSQLite);
             var handle = new TBoldExternalPersistenceHandleSQL { DatabaseAdapter = adapter };
             handle.ClassesToHandle.Add("Customer");
             using (var c = new Chained<TBoldExternalPersistenceHandleSQL>(handle))

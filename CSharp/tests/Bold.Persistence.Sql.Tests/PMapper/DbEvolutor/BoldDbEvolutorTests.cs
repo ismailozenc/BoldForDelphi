@@ -119,4 +119,50 @@ public class BoldDbEvolutorTests
         Assert.That(text, Does.Contain(config.GetDropTableQuery("Old")));
         Assert.That(text.IndexOf(config.SqlScriptStartTransaction, StringComparison.Ordinal), Is.LessThan(text.IndexOf("INSERT INTO Gadget", StringComparison.Ordinal)));
     }
+
+    private static (TMoldModel Model, TBoldSystemTypeInfo TypeInfo) Fixture(string file)
+    {
+        TMoldModel model = TMoldBLDRW.ModelFromFile(FixturePaths.Model(file));
+        var types = new TBoldTypeNameDictionary(null);
+        types.AddDefaultMappings();
+        model.TypeNameDictionary = types;
+        return (model, new TBoldSystemTypeInfo(model, false, false, types));
+    }
+
+    /// <summary>The M5 closing test: the ModelEvolution example's database evolves from version 1 to version 2.</summary>
+    [Test]
+    public void The_ModelEvolution_example_evolves_from_version_1_to_version_2()
+    {
+        var (v1, v1Types) = Fixture("ModelEvDemo.Delphi-Compound-ModelEvolution-Version1.bld");
+        var (v2, v2Types) = Fixture("ModelEvDemo.Delphi-Compound-ModelEvolution-Version2.bld");
+        string file;
+        using (var db = new SqliteHandle(v1) { KeepFile = true })
+        {
+            file = db.File;
+            using var system = new TBoldSystem(null, v1Types, db.OpenController());
+            system.CreateNewObjectByExpressionName("Person").BoldMemberByExpressionName("fullName").AsString = "Ann Smith";
+            TBoldObject product = system.CreateNewObjectByExpressionName("Product");
+            product.BoldMemberByExpressionName("description").AsString = "Widget";
+            system.UpdateDatabase();
+        }
+
+        using var next = new SqliteHandle(v2, createSchema: false, file: file);
+        var evolutor = new TBoldDataBaseEvolutor(next.Handle);
+        evolutor.CalculateScript();
+        var script = new TStringList();
+        evolutor.GenerateScript(script, new TStringList());
+        Assert.That(script.Text, Does.Contain("CREATE TABLE Discount"));
+        evolutor.ExecuteScript();
+
+        using var evolved = new TBoldSystem(null, v2Types, next.OpenController());
+        TBoldObjectList people = evolved.Classes(v2Types.ClassTypeInfoByExpressionName("Person")!.TopSortedIndex)!;
+        Assert.That(people.Count, Is.EqualTo(1));
+        Assert.That(people[0]!.BoldMemberByExpressionName("fullName").AsString, Is.EqualTo("Ann Smith"));
+        people[0]!.BoldMemberByExpressionName("firstname").AsString = "Ann";
+        TBoldObjectList products = evolved.Classes(v2Types.ClassTypeInfoByExpressionName("Product")!.TopSortedIndex)!;
+        Assert.That(products[0]!.BoldMemberByExpressionName("description").AsString, Is.EqualTo("Widget"));
+        evolved.CreateNewObjectByExpressionName("Discount");
+        evolved.UpdateDatabase();
+        Assert.That(TestDatabase.Scalar(next.Connection, "SELECT COUNT(*) FROM Discount"), Is.EqualTo(1));
+    }
 }

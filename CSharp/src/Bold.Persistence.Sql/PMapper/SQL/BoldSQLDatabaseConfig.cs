@@ -23,6 +23,9 @@ public enum TBoldDataBaseEngine
     dbeAdvantage,
     dbeParadox,
     dbeInformix,
+
+    /// <summary>SQLite: a new dialect of the port (decision D4), for tests and small installations.</summary>
+    dbeSQLite,
 }
 
 /// <summary>How the schema is created: with SQL queries, or through table components (desktop databases).</summary>
@@ -648,6 +651,18 @@ public class TBoldSQLDataBaseConfig : TPersistent
                 break;
             case TBoldDataBaseEngine.dbeParadox:
                 fDBGenerationMode = TBoldDatabaseGenerationMode.dbgTable;
+                break;
+            case TBoldDataBaseEngine.dbeSQLite:
+                // Column types give SQLite's affinities: dates and times are stored as ISO text by the providers.
+                FColumnTypeForDate = "DATE";
+                FColumnTypeForTime = "TIME";
+                FColumnTypeForDateTime = "DATETIME";
+                FColumnTypeForFloat = "REAL";
+                FColumnTypeForCurrency = "NUMERIC";
+                fDropColumnTemplate = "ALTER TABLE <TableName> DROP COLUMN <ColumnName>";
+                fDropIndexTemplate = "DROP INDEX <IndexName>";
+                fMaxIndexNameLength = 64;
+                fAllowMetadataChangesInTransaction = true;
                 break;
             case TBoldDataBaseEngine.dbeInformix:
                 fMaxIndexNameLength = 18;

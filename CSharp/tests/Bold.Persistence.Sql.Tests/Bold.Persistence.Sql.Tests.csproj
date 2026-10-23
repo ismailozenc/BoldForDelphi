@@ -13,6 +13,8 @@
   </PropertyGroup>
   <ItemGroup Condition="'$(BoldOffline)' != 'true'">
     <PackageReference Include="Microsoft.Data.Sqlite" />
+    <!-- SQL Server, for the tests the SQL Server CI job runs (decision D4). -->
+    <PackageReference Include="Microsoft.Data.SqlClient" />
     <Compile Remove="Support/NativeSqlite.cs" />
   </ItemGroup>
   <ItemGroup>
