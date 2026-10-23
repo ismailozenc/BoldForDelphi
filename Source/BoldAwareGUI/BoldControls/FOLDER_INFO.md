@@ -65,9 +65,9 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldNavigator](../../../CSharp/port/units/BoldNavigator.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldNavigator.cs (not started) | M8 WinForms |
 | [BoldPageControl](../../../CSharp/port/units/BoldPageControl.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldPageControl.cs (not started) | M8 WinForms |
 | [BoldProgressBar](../../../CSharp/port/units/BoldProgressBar.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldProgressBar.cs (not started) | M8 WinForms |
-| [BoldPropertiesController](../../../CSharp/port/units/BoldPropertiesController.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldPropertiesController.cs (not started) | M8 WinForms |
+| [BoldPropertiesController](../../../CSharp/port/units/BoldPropertiesController.md) | [Bold.AwareGui: BoldAwareGUI/BoldControls/BoldPropertiesController.cs](../../../CSharp/src/Bold.AwareGui/BoldAwareGUI/BoldControls/BoldPropertiesController.cs) | M8 WinForms |
 | [BoldRichEdit](../../../CSharp/port/units/BoldRichEdit.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldRichEdit.cs (not started) | M8 WinForms |
-| [BoldStringsPropertyController](../../../CSharp/port/units/BoldStringsPropertyController.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldStringsPropertyController.cs (not started) | M8 WinForms |
+| [BoldStringsPropertyController](../../../CSharp/port/units/BoldStringsPropertyController.md) | [Bold.AwareGui: BoldAwareGUI/BoldControls/BoldStringsPropertyController.cs](../../../CSharp/src/Bold.AwareGui/BoldAwareGUI/BoldControls/BoldStringsPropertyController.cs) | M8 WinForms |
 | [BoldTrackBar](../../../CSharp/port/units/BoldTrackBar.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldTrackBar.cs (not started) | M8 WinForms |
 | [BoldTreeView](../../../CSharp/port/units/BoldTreeView.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldTreeView.cs (not started) | M8 WinForms |
 | [BoldTreeViewConfig](../../../CSharp/port/units/BoldTreeViewConfig.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs (not started) | M8 WinForms |

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas`](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas) (148 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 13 symbols done, 0 verified |
+| Status | ✅ verified: 13 of 13 symbols done, 13 verified |
 
-⚪ 13 not started
+✅ 13 verified
 
 ## Unit level
 
@@ -18,26 +18,26 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldElementHandleFollower` | class | [21](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L21) |  | ⚪ not started |  |
+| `TBoldElementHandleFollower` | class | [21](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L21) | [`TBoldElementHandleFollower`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L14) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
 
 ## TBoldElementHandleFollower
 
-class at [line 21](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L21); ✅ verified, C# [`TBoldElementHandleFollower`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetFollowerValueCurrent` | method, private | [27](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L27) · [body 105](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L105) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [28](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L28) · [body 80](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L80) |  | ⚪ not started |  |
-| `FollowerValueCurrent` | property, private | [29](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L29) |  | ⚪ not started |  |
-| `Receive` | method, protected | [31](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L31) · [body 54](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L54) |  | ⚪ not started |  |
-| `Display` | method, protected | [32](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L32) · [body 100](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L100) |  | ⚪ not started |  |
-| `Subscriber` | property, protected | [33](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L33) |  | ⚪ not started |  |
-| `Create` | constructor | [35](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L35) · [body 63](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L63) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L36) · [body 73](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L73) |  | ⚪ not started |  |
-| `Apply` | method | [37](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L37) · [body 90](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L90) |  | ⚪ not started |  |
-| `DiscardChange` | method | [38](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L38) · [body 95](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L95) |  | ⚪ not started |  |
-| `BoldHandle` | property, published | [40](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L40) |  | ⚪ not started |  |
-| `Follower` | property, published | [41](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L41) |  | ⚪ not started |  |
+| `SetFollowerValueCurrent` | method, private | [27](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L27) · [body 105](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L105) | [`TBoldElementHandleFollower.SetFollowerValueCurrent`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L45) | ✅ verified: The nested PropagateValue, Subscribe and SubscribeToHandleReference are private helpers. | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `SetBoldHandle` | method, private | [28](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L28) · [body 80](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L80) | [`TBoldElementHandleFollower.SetBoldHandle`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L81) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `FollowerValueCurrent` | property, private | [29](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L29) | [`TBoldElementHandleFollower.FollowerValueCurrent`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L92) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `Receive` | method, protected | [31](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L31) · [body 54](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L54) | [`TBoldElementHandleFollower.Receive`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L100) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `Display` | method, protected | [32](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L32) · [body 100](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L100) | [`TBoldElementHandleFollower.Display`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L113) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `Subscriber` | property, protected | [33](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L33) | [`TBoldElementHandleFollower.Subscriber`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L115) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `Create` | constructor | [35](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L35) · [body 63](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L63) | [`TBoldElementHandleFollower.TBoldElementHandleFollower`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L23) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `Destroy` | destructor | [36](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L36) · [body 73](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L73) | [`TBoldElementHandleFollower.Dispose`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L33) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `Apply` | method | [37](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L37) · [body 90](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L90) | [`TBoldElementHandleFollower.Apply`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L118) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `DiscardChange` | method | [38](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L38) · [body 95](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L95) | [`TBoldElementHandleFollower.DiscardChange`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L121) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `BoldHandle` | property, published | [40](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L40) | [`TBoldElementHandleFollower.BoldHandle`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L124) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
+| `Follower` | property, published | [41](../../../Source/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.pas#L41) | [`TBoldElementHandleFollower.Follower`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs#L130) | ✅ verified | ✔ [`BoldStringControlPackTests.A_handle_follower_shows_the_expression_and_follows_changes`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L18) |
 
 ## Dependencies
 

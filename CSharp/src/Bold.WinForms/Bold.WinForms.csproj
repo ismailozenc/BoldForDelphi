@@ -16,5 +16,6 @@
     <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
     <ProjectReference Include="../Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
     <ProjectReference Include="../Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../Bold.AwareGui/Bold.AwareGui.csproj" />
   </ItemGroup>
 </Project>

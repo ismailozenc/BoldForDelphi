@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Actions/BoldListActions.pas`](../../../Source/Handles/Actions/BoldListActions.pas) (349 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Handles/Actions/BoldListActions.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/Handles/Actions/BoldListActions.cs`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 39 symbols done, 0 verified |
+| Status | ✅ verified: 39 of 39 symbols done, 39 verified |
 
-⚪ 39 not started
+✅ 39 verified
 
 ## Unit level
 
@@ -18,108 +18,114 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldListHandleAction` | class | [27](../../../Source/Handles/Actions/BoldListActions.pas#L27) |  | ⚪ not started |  |
-| `TBoldListHandleNextAction` | class | [38](../../../Source/Handles/Actions/BoldListActions.pas#L38) |  | ⚪ not started |  |
-| `TBoldListHandlePrevAction` | class | [47](../../../Source/Handles/Actions/BoldListActions.pas#L47) |  | ⚪ not started |  |
-| `TBoldListHandleFirstAction` | class | [56](../../../Source/Handles/Actions/BoldListActions.pas#L56) |  | ⚪ not started |  |
-| `TBoldListHandleLastAction` | class | [64](../../../Source/Handles/Actions/BoldListActions.pas#L64) |  | ⚪ not started |  |
-| `TBoldListHandleDeleteAction` | class | [72](../../../Source/Handles/Actions/BoldListActions.pas#L72) |  | ⚪ not started |  |
-| `TBoldListHandleAddNewAction` | class | [85](../../../Source/Handles/Actions/BoldListActions.pas#L85) |  | ⚪ not started |  |
-| `TBoldListHandleMoveUpAction` | class | [93](../../../Source/Handles/Actions/BoldListActions.pas#L93) |  | ⚪ not started |  |
-| `TBoldListHandleMoveDownAction` | class | [101](../../../Source/Handles/Actions/BoldListActions.pas#L101) |  | ⚪ not started |  |
+| `TBoldListHandleAction` | class | [27](../../../Source/Handles/Actions/BoldListActions.pas#L27) | [`TBoldListHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L11) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `TBoldListHandleNextAction` | class | [38](../../../Source/Handles/Actions/BoldListActions.pas#L38) | [`TBoldListHandleNextAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L49) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `TBoldListHandlePrevAction` | class | [47](../../../Source/Handles/Actions/BoldListActions.pas#L47) | [`TBoldListHandlePrevAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L78) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `TBoldListHandleFirstAction` | class | [56](../../../Source/Handles/Actions/BoldListActions.pas#L56) | [`TBoldListHandleFirstAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L107) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `TBoldListHandleLastAction` | class | [64](../../../Source/Handles/Actions/BoldListActions.pas#L64) | [`TBoldListHandleLastAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L136) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `TBoldListHandleDeleteAction` | class | [72](../../../Source/Handles/Actions/BoldListActions.pas#L72) | [`TBoldListHandleDeleteAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L165) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `TBoldListHandleAddNewAction` | class | [85](../../../Source/Handles/Actions/BoldListActions.pas#L85) | [`TBoldListHandleAddNewAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L229) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `TBoldListHandleMoveUpAction` | class | [93](../../../Source/Handles/Actions/BoldListActions.pas#L93) | [`TBoldListHandleMoveUpAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L266) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `TBoldListHandleMoveDownAction` | class | [101](../../../Source/Handles/Actions/BoldListActions.pas#L101) | [`TBoldListHandleMoveDownAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L295) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
 
 ## TBoldListHandleAction
 
-class at [line 27](../../../Source/Handles/Actions/BoldListActions.pas#L27); ⚪ not started.
+class at [line 27](../../../Source/Handles/Actions/BoldListActions.pas#L27); ✅ verified, C# [`TBoldListHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldHandle` | method, private | [29](../../../Source/Handles/Actions/BoldListActions.pas#L29) · [body 126](../../../Source/Handles/Actions/BoldListActions.pas#L126) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [30](../../../Source/Handles/Actions/BoldListActions.pas#L30) · [body 132](../../../Source/Handles/Actions/BoldListActions.pas#L132) |  | ⚪ not started |  |
-| `CheckAllowEnable` | method, protected | [32](../../../Source/Handles/Actions/BoldListActions.pas#L32) · [body 118](../../../Source/Handles/Actions/BoldListActions.pas#L118) |  | ⚪ not started |  |
-| `BoldHandle` | property, published | [34](../../../Source/Handles/Actions/BoldListActions.pas#L34) |  | ⚪ not started |  |
+| `GetBoldHandle` | method, private | [29](../../../Source/Handles/Actions/BoldListActions.pas#L29) · [body 126](../../../Source/Handles/Actions/BoldListActions.pas#L126) | [`TBoldListHandleAction.GetBoldHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L30) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `SetBoldHandle` | method, private | [30](../../../Source/Handles/Actions/BoldListActions.pas#L30) · [body 132](../../../Source/Handles/Actions/BoldListActions.pas#L132) | [`TBoldListHandleAction.SetBoldHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L37) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `CheckAllowEnable` | method, protected | [32](../../../Source/Handles/Actions/BoldListActions.pas#L32) · [body 118](../../../Source/Handles/Actions/BoldListActions.pas#L118) | [`TBoldListHandleAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L20) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `BoldHandle` | property, published | [34](../../../Source/Handles/Actions/BoldListActions.pas#L34) | [`TBoldListHandleAction.BoldHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L40) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
 
 ## TBoldListHandleNextAction
 
-class at [line 38](../../../Source/Handles/Actions/BoldListActions.pas#L38); ⚪ not started.
+class at [line 38](../../../Source/Handles/Actions/BoldListActions.pas#L38); ✅ verified, C# [`TBoldListHandleNextAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L49).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [40](../../../Source/Handles/Actions/BoldListActions.pas#L40) · [body 140](../../../Source/Handles/Actions/BoldListActions.pas#L140) |  | ⚪ not started |  |
-| `Create` | constructor | [42](../../../Source/Handles/Actions/BoldListActions.pas#L42) · [body 148](../../../Source/Handles/Actions/BoldListActions.pas#L148) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [43](../../../Source/Handles/Actions/BoldListActions.pas#L43) · [body 154](../../../Source/Handles/Actions/BoldListActions.pas#L154) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [40](../../../Source/Handles/Actions/BoldListActions.pas#L40) · [body 140](../../../Source/Handles/Actions/BoldListActions.pas#L140) | [`TBoldListHandleNextAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L59) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `Create` | constructor | [42](../../../Source/Handles/Actions/BoldListActions.pas#L42) · [body 148](../../../Source/Handles/Actions/BoldListActions.pas#L148) | [`TBoldListHandleNextAction.TBoldListHandleNextAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L52) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `ExecuteTarget` | method | [43](../../../Source/Handles/Actions/BoldListActions.pas#L43) · [body 154](../../../Source/Handles/Actions/BoldListActions.pas#L154) | [`TBoldListHandleNextAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L69) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
 
 ## TBoldListHandlePrevAction
 
-class at [line 47](../../../Source/Handles/Actions/BoldListActions.pas#L47); ⚪ not started.
+class at [line 47](../../../Source/Handles/Actions/BoldListActions.pas#L47); ✅ verified, C# [`TBoldListHandlePrevAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L78).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [49](../../../Source/Handles/Actions/BoldListActions.pas#L49) · [body 162](../../../Source/Handles/Actions/BoldListActions.pas#L162) |  | ⚪ not started |  |
-| `Create` | constructor | [51](../../../Source/Handles/Actions/BoldListActions.pas#L51) · [body 170](../../../Source/Handles/Actions/BoldListActions.pas#L170) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [52](../../../Source/Handles/Actions/BoldListActions.pas#L52) · [body 176](../../../Source/Handles/Actions/BoldListActions.pas#L176) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [49](../../../Source/Handles/Actions/BoldListActions.pas#L49) · [body 162](../../../Source/Handles/Actions/BoldListActions.pas#L162) | [`TBoldListHandlePrevAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L88) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `Create` | constructor | [51](../../../Source/Handles/Actions/BoldListActions.pas#L51) · [body 170](../../../Source/Handles/Actions/BoldListActions.pas#L170) | [`TBoldListHandlePrevAction.TBoldListHandlePrevAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L81) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `ExecuteTarget` | method | [52](../../../Source/Handles/Actions/BoldListActions.pas#L52) · [body 176](../../../Source/Handles/Actions/BoldListActions.pas#L176) | [`TBoldListHandlePrevAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L98) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
 
 ## TBoldListHandleFirstAction
 
-class at [line 56](../../../Source/Handles/Actions/BoldListActions.pas#L56); ⚪ not started.
+class at [line 56](../../../Source/Handles/Actions/BoldListActions.pas#L56); ✅ verified, C# [`TBoldListHandleFirstAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L107).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [58](../../../Source/Handles/Actions/BoldListActions.pas#L58) · [body 184](../../../Source/Handles/Actions/BoldListActions.pas#L184) |  | ⚪ not started |  |
-| `Create` | constructor | [60](../../../Source/Handles/Actions/BoldListActions.pas#L60) · [body 192](../../../Source/Handles/Actions/BoldListActions.pas#L192) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [61](../../../Source/Handles/Actions/BoldListActions.pas#L61) · [body 198](../../../Source/Handles/Actions/BoldListActions.pas#L198) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [58](../../../Source/Handles/Actions/BoldListActions.pas#L58) · [body 184](../../../Source/Handles/Actions/BoldListActions.pas#L184) | [`TBoldListHandleFirstAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L117) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `Create` | constructor | [60](../../../Source/Handles/Actions/BoldListActions.pas#L60) · [body 192](../../../Source/Handles/Actions/BoldListActions.pas#L192) | [`TBoldListHandleFirstAction.TBoldListHandleFirstAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L110) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `ExecuteTarget` | method | [61](../../../Source/Handles/Actions/BoldListActions.pas#L61) · [body 198](../../../Source/Handles/Actions/BoldListActions.pas#L198) | [`TBoldListHandleFirstAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L127) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
 
 ## TBoldListHandleLastAction
 
-class at [line 64](../../../Source/Handles/Actions/BoldListActions.pas#L64); ⚪ not started.
+class at [line 64](../../../Source/Handles/Actions/BoldListActions.pas#L64); ✅ verified, C# [`TBoldListHandleLastAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L136).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [66](../../../Source/Handles/Actions/BoldListActions.pas#L66) · [body 206](../../../Source/Handles/Actions/BoldListActions.pas#L206) |  | ⚪ not started |  |
-| `Create` | constructor | [68](../../../Source/Handles/Actions/BoldListActions.pas#L68) · [body 214](../../../Source/Handles/Actions/BoldListActions.pas#L214) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [69](../../../Source/Handles/Actions/BoldListActions.pas#L69) · [body 220](../../../Source/Handles/Actions/BoldListActions.pas#L220) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [66](../../../Source/Handles/Actions/BoldListActions.pas#L66) · [body 206](../../../Source/Handles/Actions/BoldListActions.pas#L206) | [`TBoldListHandleLastAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L146) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `Create` | constructor | [68](../../../Source/Handles/Actions/BoldListActions.pas#L68) · [body 214](../../../Source/Handles/Actions/BoldListActions.pas#L214) | [`TBoldListHandleLastAction.TBoldListHandleLastAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L139) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
+| `ExecuteTarget` | method | [69](../../../Source/Handles/Actions/BoldListActions.pas#L69) · [body 220](../../../Source/Handles/Actions/BoldListActions.pas#L220) | [`TBoldListHandleLastAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L156) | ✅ verified | ✔ [`BoldActionsTests.Navigation_actions_move_the_current_element`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L172) |
 
 ## TBoldListHandleDeleteAction
 
-class at [line 72](../../../Source/Handles/Actions/BoldListActions.pas#L72); ⚪ not started.
+class at [line 72](../../../Source/Handles/Actions/BoldListActions.pas#L72); ✅ verified, C# [`TBoldListHandleDeleteAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L165).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AllowDelete` | method, protected | [76](../../../Source/Handles/Actions/BoldListActions.pas#L76) · [body 228](../../../Source/Handles/Actions/BoldListActions.pas#L228) |  | ⚪ not started |  |
-| `CheckAllowEnable` | method, protected | [77](../../../Source/Handles/Actions/BoldListActions.pas#L77) · [body 243](../../../Source/Handles/Actions/BoldListActions.pas#L243) |  | ⚪ not started |  |
-| `Create` | constructor | [79](../../../Source/Handles/Actions/BoldListActions.pas#L79) · [body 257](../../../Source/Handles/Actions/BoldListActions.pas#L257) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [80](../../../Source/Handles/Actions/BoldListActions.pas#L80) · [body 263](../../../Source/Handles/Actions/BoldListActions.pas#L263) |  | ⚪ not started |  |
-| `BoldDeleteMode` | property, published | [82](../../../Source/Handles/Actions/BoldListActions.pas#L82) |  | ⚪ not started |  |
+| `AllowDelete` | method, protected | [76](../../../Source/Handles/Actions/BoldListActions.pas#L76) · [body 228](../../../Source/Handles/Actions/BoldListActions.pas#L228) | [`TBoldListHandleDeleteAction.AllowDelete`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L178) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `CheckAllowEnable` | method, protected | [77](../../../Source/Handles/Actions/BoldListActions.pas#L77) · [body 243](../../../Source/Handles/Actions/BoldListActions.pas#L243) | [`TBoldListHandleDeleteAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L188) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `Create` | constructor | [79](../../../Source/Handles/Actions/BoldListActions.pas#L79) · [body 257](../../../Source/Handles/Actions/BoldListActions.pas#L257) | [`TBoldListHandleDeleteAction.TBoldListHandleDeleteAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L170) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `ExecuteTarget` | method | [80](../../../Source/Handles/Actions/BoldListActions.pas#L80) · [body 263](../../../Source/Handles/Actions/BoldListActions.pas#L263) | [`TBoldListHandleDeleteAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L199) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `BoldDeleteMode` | property, published | [82](../../../Source/Handles/Actions/BoldListActions.pas#L82) | [`TBoldListHandleDeleteAction.BoldDeleteMode`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L220) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
 
 ## TBoldListHandleAddNewAction
 
-class at [line 85](../../../Source/Handles/Actions/BoldListActions.pas#L85); ⚪ not started.
+class at [line 85](../../../Source/Handles/Actions/BoldListActions.pas#L85); ✅ verified, C# [`TBoldListHandleAddNewAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L229).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [87](../../../Source/Handles/Actions/BoldListActions.pas#L87) · [body 282](../../../Source/Handles/Actions/BoldListActions.pas#L282) |  | ⚪ not started |  |
-| `Create` | constructor | [89](../../../Source/Handles/Actions/BoldListActions.pas#L89) · [body 290](../../../Source/Handles/Actions/BoldListActions.pas#L290) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [90](../../../Source/Handles/Actions/BoldListActions.pas#L90) · [body 296](../../../Source/Handles/Actions/BoldListActions.pas#L296) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [87](../../../Source/Handles/Actions/BoldListActions.pas#L87) · [body 282](../../../Source/Handles/Actions/BoldListActions.pas#L282) | [`TBoldListHandleAddNewAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L239) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `Create` | constructor | [89](../../../Source/Handles/Actions/BoldListActions.pas#L89) · [body 290](../../../Source/Handles/Actions/BoldListActions.pas#L290) | [`TBoldListHandleAddNewAction.TBoldListHandleAddNewAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L232) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `ExecuteTarget` | method | [90](../../../Source/Handles/Actions/BoldListActions.pas#L90) · [body 296](../../../Source/Handles/Actions/BoldListActions.pas#L296) | [`TBoldListHandleAddNewAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L250) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
 
 ## TBoldListHandleMoveUpAction
 
-class at [line 93](../../../Source/Handles/Actions/BoldListActions.pas#L93); ⚪ not started.
+class at [line 93](../../../Source/Handles/Actions/BoldListActions.pas#L93); ✅ verified, C# [`TBoldListHandleMoveUpAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L266).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [95](../../../Source/Handles/Actions/BoldListActions.pas#L95) · [body 307](../../../Source/Handles/Actions/BoldListActions.pas#L307) |  | ⚪ not started |  |
-| `Create` | constructor | [97](../../../Source/Handles/Actions/BoldListActions.pas#L97) · [body 315](../../../Source/Handles/Actions/BoldListActions.pas#L315) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [98](../../../Source/Handles/Actions/BoldListActions.pas#L98) · [body 321](../../../Source/Handles/Actions/BoldListActions.pas#L321) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [95](../../../Source/Handles/Actions/BoldListActions.pas#L95) · [body 307](../../../Source/Handles/Actions/BoldListActions.pas#L307) | [`TBoldListHandleMoveUpAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L276) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `Create` | constructor | [97](../../../Source/Handles/Actions/BoldListActions.pas#L97) · [body 315](../../../Source/Handles/Actions/BoldListActions.pas#L315) | [`TBoldListHandleMoveUpAction.TBoldListHandleMoveUpAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L269) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `ExecuteTarget` | method | [98](../../../Source/Handles/Actions/BoldListActions.pas#L98) · [body 321](../../../Source/Handles/Actions/BoldListActions.pas#L321) | [`TBoldListHandleMoveUpAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L286) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
 
 ## TBoldListHandleMoveDownAction
 
-class at [line 101](../../../Source/Handles/Actions/BoldListActions.pas#L101); ⚪ not started.
+class at [line 101](../../../Source/Handles/Actions/BoldListActions.pas#L101); ✅ verified, C# [`TBoldListHandleMoveDownAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L295).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [103](../../../Source/Handles/Actions/BoldListActions.pas#L103) · [body 329](../../../Source/Handles/Actions/BoldListActions.pas#L329) |  | ⚪ not started |  |
-| `Create` | constructor | [105](../../../Source/Handles/Actions/BoldListActions.pas#L105) · [body 337](../../../Source/Handles/Actions/BoldListActions.pas#L337) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [106](../../../Source/Handles/Actions/BoldListActions.pas#L106) · [body 343](../../../Source/Handles/Actions/BoldListActions.pas#L343) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [103](../../../Source/Handles/Actions/BoldListActions.pas#L103) · [body 329](../../../Source/Handles/Actions/BoldListActions.pas#L329) | [`TBoldListHandleMoveDownAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L305) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `Create` | constructor | [105](../../../Source/Handles/Actions/BoldListActions.pas#L105) · [body 337](../../../Source/Handles/Actions/BoldListActions.pas#L337) | [`TBoldListHandleMoveDownAction.TBoldListHandleMoveDownAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L298) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `ExecuteTarget` | method | [106](../../../Source/Handles/Actions/BoldListActions.pas#L106) · [body 343](../../../Source/Handles/Actions/BoldListActions.pas#L343) | [`TBoldListHandleMoveDownAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L315) | ✅ verified | ✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldListHandleAction.TBoldListHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs#L14) (constructor)
 
 ## Dependencies
 

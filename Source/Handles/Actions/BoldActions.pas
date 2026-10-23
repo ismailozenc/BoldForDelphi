@@ -1,4 +1,4 @@
-unit BoldActions; { C# port: CSharp/src/Bold.WinForms/Handles/Actions/BoldActions.cs; symbols and status: CSharp/port/units/BoldActions.md }
+unit BoldActions; { C# port: CSharp/src/Bold.AwareGui/Handles/Actions/BoldActions.cs; symbols and status: CSharp/port/units/BoldActions.md }
 
 interface
 

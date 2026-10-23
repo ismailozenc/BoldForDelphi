@@ -123,6 +123,9 @@ public sealed class PortMapUnit
     /// <summary>The C# file, relative to CSharp/, when it is not the default (the Delphi path under src/Project).</summary>
     public string? CSharp { get; set; }
 
+    /// <summary>A second project that ports part of the unit (such as the non-visual types of a GUI unit), in a file of the same name.</summary>
+    public string? AlsoIn { get; set; }
+
     [JsonIgnore]
     public bool IsDropped => Drop is not null;
 
@@ -174,6 +177,11 @@ public sealed class PortMapUnit
         if (CSharp is not null)
         {
             parts.Add($"\"csharp\": {PortMap.Json(CSharp)}");
+        }
+
+        if (AlsoIn is not null)
+        {
+            parts.Add($"\"alsoIn\": {PortMap.Json(AlsoIn)}");
         }
 
         return "{ " + string.Join(", ", parts) + " }";

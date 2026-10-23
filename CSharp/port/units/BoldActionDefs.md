@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Actions/BoldActionDefs.pas`](../../../Source/Handles/Actions/BoldActionDefs.pas) (15 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Handles/Actions/BoldActionDefs.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/Handles/Actions/BoldActionDefs.cs`](../../src/Bold.AwareGui/Handles/Actions/BoldActionDefs.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-⚪ 3 not started
+✅ 3 verified
 
 ## Unit level
 
@@ -18,9 +18,9 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DEFAULTUSERNAME` | const | [6](../../../Source/Handles/Actions/BoldActionDefs.pas#L6) |  | ⚪ not started |  |
-| `DEFAULTPASSWORD` | const | [7](../../../Source/Handles/Actions/BoldActionDefs.pas#L7) |  | ⚪ not started |  |
-| `BoldPreferedDbPath` | var | [10](../../../Source/Handles/Actions/BoldActionDefs.pas#L10) |  | ⚪ not started |  |
+| `DEFAULTUSERNAME` | const | [6](../../../Source/Handles/Actions/BoldActionDefs.pas#L6) | [`BoldActionDefs.DEFAULTUSERNAME`](../../src/Bold.AwareGui/Handles/Actions/BoldActionDefs.cs#L9) | ✅ verified | ✔ [`BoldActionsTests.Database_action_defaults`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L21) |
+| `DEFAULTPASSWORD` | const | [7](../../../Source/Handles/Actions/BoldActionDefs.pas#L7) | [`BoldActionDefs.DEFAULTPASSWORD`](../../src/Bold.AwareGui/Handles/Actions/BoldActionDefs.cs#L10) | ✅ verified | ✔ [`BoldActionsTests.Database_action_defaults`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L21) |
+| `BoldPreferedDbPath` | var | [10](../../../Source/Handles/Actions/BoldActionDefs.pas#L10) | [`BoldActionDefs.BoldPreferedDbPath`](../../src/Bold.AwareGui/Handles/Actions/BoldActionDefs.cs#L13) | ✅ verified | ✔ [`BoldActionsTests.Database_action_defaults`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L21) |
 
 ## Dependencies
 

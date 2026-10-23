@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas`](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas) (129 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/Core/BoldExceptionHandlers.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 13 symbols done, 0 verified |
+| Status | 🟢 ported: 13 of 13 symbols done, 10 verified |
 
-⚪ 13 not started
+✅ 10 verified · 🟢 1 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,26 +18,32 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldApplyExceptionEvent` | event type | [15](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L15) |  | ⚪ not started |  |
-| `TBoldDisplayExceptionEvent` | event type | [16](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L16) |  | ⚪ not started |  |
-| `TBoldExceptionHandler` | class | [19](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L19) |  | ⚪ not started |  |
-| `GetBoldExceptionHandlers` | routine, implementation | [44](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L44) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [124](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L124) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [126](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L126) |  | ⚪ not started |  |
+| `TBoldApplyExceptionEvent` | event type | [15](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L15) | [`TBoldApplyExceptionEvent`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L14) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `TBoldDisplayExceptionEvent` | event type | [16](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L16) | [`TBoldDisplayExceptionEvent`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L18) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `TBoldExceptionHandler` | class | [19](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L19) | [`TBoldExceptionHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L25) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `GetBoldExceptionHandlers` | routine, implementation | [44](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L44) | [`[assembly: Delphi] in BoldExceptionHandlers.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L8) | 🔵 replaced: Made the list of handlers on first use; here a static list field of TBoldExceptionHandler, made with the class. |  |
+| `initialization` | initialization, implementation | [124](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L124) | [`[assembly: Delphi] in BoldExceptionHandlers.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L7) | 🟢 ported: Empty in Delphi. |  |
+| `finalization` | finalization, implementation | [126](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L126) | [`[assembly: Delphi] in BoldExceptionHandlers.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L6) | 🔵 replaced: Freed the list of exception handlers; the garbage collector does that in .NET. |  |
 
 ## TBoldExceptionHandler
 
-class at [line 19](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L19); ✅ verified, C# [`TBoldExceptionHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L25).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [24](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L24) · [body 53](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L53) |  | ⚪ not started |  |
-| `Destroy` | destructor | [25](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L25) · [body 59](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L59) |  | ⚪ not started |  |
-| `FindExceptionHandler` | class method | [26](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L26) · [body 66](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L66) |  | ⚪ not started |  |
-| `HandleApplyException` | method | [27](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L27) · [body 106](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L106) |  | ⚪ not started |  |
-| `HandleDisplayException` | method | [28](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L28) · [body 116](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L116) |  | ⚪ not started |  |
-| `OnApplyException` | property, published | [30](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L30) |  | ⚪ not started |  |
-| `OnDisplayException` | property, published | [31](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L31) |  | ⚪ not started |  |
+| `Create` | constructor | [24](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L24) · [body 53](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L53) | [`TBoldExceptionHandler.TBoldExceptionHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L35) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner; Owner can also be set to a form. | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `Destroy` | destructor | [25](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L25) · [body 59](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L59) | [`TBoldExceptionHandler.Dispose`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L46) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `FindExceptionHandler` | class method | [26](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L26) · [body 66](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L66) | [`TBoldExceptionHandler.FindExceptionHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L61) | ✅ verified: The nested OwningComponent and ParentControl are private helpers; owners and parent controls come from the GUI handler. | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `HandleApplyException` | method | [27](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L27) · [body 106](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L106) | [`TBoldExceptionHandler.HandleApplyException`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L96) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `HandleDisplayException` | method | [28](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L28) · [body 116](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L116) | [`TBoldExceptionHandler.HandleDisplayException`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L108) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `OnApplyException` | property, published | [30](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L30) | [`TBoldExceptionHandler.OnApplyException`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L125) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+| `OnDisplayException` | property, published | [31](../../../Source/BoldAwareGUI/Core/BoldExceptionHandlers.pas#L31) | [`TBoldExceptionHandler.OnDisplayException`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L132) | ✅ verified | ✔ [`BoldGUITests.Exception_handlers_catch_the_errors_of_the_controls_of_their_form`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L82) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldExceptionHandler.Owner`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs#L118) (property)
 
 ## Dependencies
 

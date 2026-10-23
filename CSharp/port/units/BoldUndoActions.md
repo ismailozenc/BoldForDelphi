@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Actions/BoldUndoActions.pas`](../../../Source/Handles/Actions/BoldUndoActions.pas) (114 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Handles/Actions/BoldUndoActions.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | ✅ verified: 12 of 12 symbols done, 12 verified |
 
-⚪ 12 not started
+✅ 12 verified
 
 ## Unit level
 
@@ -18,39 +18,39 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSetCheckPointAction` | class | [14](../../../Source/Handles/Actions/BoldUndoActions.pas#L14) |  | ⚪ not started |  |
-| `TBoldUndoAction` | class | [22](../../../Source/Handles/Actions/BoldUndoActions.pas#L22) |  | ⚪ not started |  |
-| `TBoldRedoAction` | class | [30](../../../Source/Handles/Actions/BoldUndoActions.pas#L30) |  | ⚪ not started |  |
+| `TBoldSetCheckPointAction` | class | [14](../../../Source/Handles/Actions/BoldUndoActions.pas#L14) | [`TBoldSetCheckPointAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L11) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `TBoldUndoAction` | class | [22](../../../Source/Handles/Actions/BoldUndoActions.pas#L22) | [`TBoldUndoAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L40) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `TBoldRedoAction` | class | [30](../../../Source/Handles/Actions/BoldUndoActions.pas#L30) | [`TBoldRedoAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L72) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
 
 ## TBoldSetCheckPointAction
 
-class at [line 14](../../../Source/Handles/Actions/BoldUndoActions.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Handles/Actions/BoldUndoActions.pas#L14); ✅ verified, C# [`TBoldSetCheckPointAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [16](../../../Source/Handles/Actions/BoldUndoActions.pas#L16) · [body 48](../../../Source/Handles/Actions/BoldUndoActions.pas#L48) |  | ⚪ not started |  |
-| `Create` | constructor | [18](../../../Source/Handles/Actions/BoldUndoActions.pas#L18) · [body 56](../../../Source/Handles/Actions/BoldUndoActions.pas#L56) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [19](../../../Source/Handles/Actions/BoldUndoActions.pas#L19) · [body 62](../../../Source/Handles/Actions/BoldUndoActions.pas#L62) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [16](../../../Source/Handles/Actions/BoldUndoActions.pas#L16) · [body 48](../../../Source/Handles/Actions/BoldUndoActions.pas#L48) | [`TBoldSetCheckPointAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L21) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `Create` | constructor | [18](../../../Source/Handles/Actions/BoldUndoActions.pas#L18) · [body 56](../../../Source/Handles/Actions/BoldUndoActions.pas#L56) | [`TBoldSetCheckPointAction.TBoldSetCheckPointAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L14) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `ExecuteTarget` | method | [19](../../../Source/Handles/Actions/BoldUndoActions.pas#L19) · [body 62](../../../Source/Handles/Actions/BoldUndoActions.pas#L62) | [`TBoldSetCheckPointAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L31) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
 
 ## TBoldUndoAction
 
-class at [line 22](../../../Source/Handles/Actions/BoldUndoActions.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/Handles/Actions/BoldUndoActions.pas#L22); ✅ verified, C# [`TBoldUndoAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L40).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [24](../../../Source/Handles/Actions/BoldUndoActions.pas#L24) · [body 70](../../../Source/Handles/Actions/BoldUndoActions.pas#L70) |  | ⚪ not started |  |
-| `Create` | constructor | [26](../../../Source/Handles/Actions/BoldUndoActions.pas#L26) · [body 80](../../../Source/Handles/Actions/BoldUndoActions.pas#L80) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [27](../../../Source/Handles/Actions/BoldUndoActions.pas#L27) · [body 86](../../../Source/Handles/Actions/BoldUndoActions.pas#L86) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [24](../../../Source/Handles/Actions/BoldUndoActions.pas#L24) · [body 70](../../../Source/Handles/Actions/BoldUndoActions.pas#L70) | [`TBoldUndoAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L50) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `Create` | constructor | [26](../../../Source/Handles/Actions/BoldUndoActions.pas#L26) · [body 80](../../../Source/Handles/Actions/BoldUndoActions.pas#L80) | [`TBoldUndoAction.TBoldUndoAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L43) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `ExecuteTarget` | method | [27](../../../Source/Handles/Actions/BoldUndoActions.pas#L27) · [body 86](../../../Source/Handles/Actions/BoldUndoActions.pas#L86) | [`TBoldUndoAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L63) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
 
 ## TBoldRedoAction
 
-class at [line 30](../../../Source/Handles/Actions/BoldUndoActions.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/Handles/Actions/BoldUndoActions.pas#L30); ✅ verified, C# [`TBoldRedoAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L72).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [32](../../../Source/Handles/Actions/BoldUndoActions.pas#L32) · [body 94](../../../Source/Handles/Actions/BoldUndoActions.pas#L94) |  | ⚪ not started |  |
-| `Create` | constructor | [34](../../../Source/Handles/Actions/BoldUndoActions.pas#L34) · [body 102](../../../Source/Handles/Actions/BoldUndoActions.pas#L102) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [35](../../../Source/Handles/Actions/BoldUndoActions.pas#L35) · [body 108](../../../Source/Handles/Actions/BoldUndoActions.pas#L108) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [32](../../../Source/Handles/Actions/BoldUndoActions.pas#L32) · [body 94](../../../Source/Handles/Actions/BoldUndoActions.pas#L94) | [`TBoldRedoAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L82) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `Create` | constructor | [34](../../../Source/Handles/Actions/BoldUndoActions.pas#L34) · [body 102](../../../Source/Handles/Actions/BoldUndoActions.pas#L102) | [`TBoldRedoAction.TBoldRedoAction`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L75) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
+| `ExecuteTarget` | method | [35](../../../Source/Handles/Actions/BoldUndoActions.pas#L35) · [body 108](../../../Source/Handles/Actions/BoldUndoActions.pas#L108) | [`TBoldRedoAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs#L92) | ✅ verified | ✔ [`BoldActionsTests.Undo_actions_set_check_points_undo_and_redo`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L256) |
 
 ## Dependencies
 

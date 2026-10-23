@@ -190,7 +190,7 @@ public class BoldSubscriptionTests
         }
 
         protected override void Notification(System.ComponentModel.IComponent AComponent, TOperation Operation) =>
-            log.Add($"{name} told {((TBoldSubscribableComponent)AComponent).Name} {Operation}");
+            log.Add($"{name} told {(AComponent as TBoldSubscribableComponent)?.Name ?? AComponent.GetType().Name} {Operation}");
     }
 
     private sealed class Listener(List<string> log) : System.ComponentModel.Component, IBoldNotifiable
@@ -232,5 +232,24 @@ public class BoldSubscriptionTests
         Assert.That(log, Is.EqualTo(new[] { "listener opRemove" }), "b went and c was removed; any IBoldNotifiable is told");
         c.Dispose();
         Assert.That(log, Has.Count.EqualTo(1));
+    }
+
+    [Test]
+    public void A_component_is_told_when_a_plain_component_it_is_linked_to_is_disposed()
+    {
+        var log = new List<string>();
+        var a = new Linked(log, "a") { Name = "A" };
+        var control = new System.ComponentModel.Component();
+        var other = new System.ComponentModel.Component();
+        a.FreeNotification(control);
+        a.FreeNotification(other);
+        a.RemoveFreeNotification(other);
+        other.Dispose();
+        Assert.That(log, Is.Empty, "a removed link is not told");
+        control.Dispose();
+        Assert.That(log, Is.EqualTo(new[] { "a told Component opRemove" }), "the plain component's Disposed event tells");
+        log.Clear();
+        a.Dispose();
+        Assert.That(log, Is.Empty, "a gone link is not told again");
     }
 }

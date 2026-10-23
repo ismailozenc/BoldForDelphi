@@ -260,8 +260,8 @@ public abstract class TBAMLValueSet : TBAValueSet
         IsNull ? "" : GetStringBylanguage(Representation, Languagename)!.AsString;
 
     /// <summary>Sets the value whose representation in the language is the string; raises when there is none.</summary>
-    [Delphi(PortStatus.Ported)]
-    protected void SetStringRepresentationByLanguage(int Representation, string Languagename, string NewValue)
+    [Delphi(PortStatus.Ported, Note = "Public: the setter of the indexed property StringRepresentationByLanguage.")]
+    public void SetStringRepresentationByLanguage(int Representation, string Languagename, string NewValue)
     {
         var MLValueSetValueList = (TBAMLValueSetValueList)Values;
         TBAValueSetValue MLValue = MLValueSetValueList.FindByStringAndLanguage(Representation, NewValue, Languagename)

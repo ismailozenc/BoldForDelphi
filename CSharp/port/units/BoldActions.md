@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Actions/BoldActions.pas`](../../../Source/Handles/Actions/BoldActions.pas) (279 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Handles/Actions/BoldActions.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/Handles/Actions/BoldActions.cs`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 31 symbols done, 0 verified |
+| Status | ✅ verified: 31 of 31 symbols done, 31 verified |
 
-⚪ 31 not started
+✅ 31 verified
 
 ## Unit level
 
@@ -18,65 +18,72 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSaveAction` | enum | [19](../../../Source/Handles/Actions/BoldActions.pas#L19) |  | ⚪ not started |  |
-| `TBoldSystemHandleAction` | class | [22](../../../Source/Handles/Actions/BoldActions.pas#L22) |  | ⚪ not started |  |
-| `TBoldFailureDetectionAction` | class | [32](../../../Source/Handles/Actions/BoldActions.pas#L32) |  | ⚪ not started |  |
-| `TBoldUpdateDBAction` | class | [39](../../../Source/Handles/Actions/BoldActions.pas#L39) |  | ⚪ not started |  |
-| `TBoldActivateSystemAction` | class | [48](../../../Source/Handles/Actions/BoldActions.pas#L48) |  | ⚪ not started |  |
+| `TBoldSaveAction` | enum | [19](../../../Source/Handles/Actions/BoldActions.pas#L19) | [`TBoldSaveAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L12) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `TBoldSystemHandleAction` | class | [22](../../../Source/Handles/Actions/BoldActions.pas#L22) | [`TBoldSystemHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L16) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `TBoldFailureDetectionAction` | class | [32](../../../Source/Handles/Actions/BoldActions.pas#L32) | [`TBoldFailureDetectionAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L40) | ✅ verified | ✔ [`BoldActionsTests.Failure_detection_shows_the_last_failure_on_its_status_bar`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L124) |
+| `TBoldUpdateDBAction` | class | [39](../../../Source/Handles/Actions/BoldActions.pas#L39) | [`TBoldUpdateDBAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L71) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `TBoldActivateSystemAction` | class | [48](../../../Source/Handles/Actions/BoldActions.pas#L48) | [`TBoldActivateSystemAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L104) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
 
 ## TBoldSystemHandleAction
 
-class at [line 22](../../../Source/Handles/Actions/BoldActions.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/Handles/Actions/BoldActions.pas#L22); ✅ verified, C# [`TBoldSystemHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L16).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldSystemHandle` | method, private | [24](../../../Source/Handles/Actions/BoldActions.pas#L24) · [body 268](../../../Source/Handles/Actions/BoldActions.pas#L268) |  | ⚪ not started |  |
-| `SetBoldSystemHandle` | method, protected | [26](../../../Source/Handles/Actions/BoldActions.pas#L26) · [body 273](../../../Source/Handles/Actions/BoldActions.pas#L273) |  | ⚪ not started |  |
-| `BoldSystemHandle` | property, published | [28](../../../Source/Handles/Actions/BoldActions.pas#L28) |  | ⚪ not started |  |
+| `GetBoldSystemHandle` | method, private | [24](../../../Source/Handles/Actions/BoldActions.pas#L24) · [body 268](../../../Source/Handles/Actions/BoldActions.pas#L268) | [`TBoldSystemHandleAction.GetBoldSystemHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L25) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `SetBoldSystemHandle` | method, protected | [26](../../../Source/Handles/Actions/BoldActions.pas#L26) · [body 273](../../../Source/Handles/Actions/BoldActions.pas#L273) | [`TBoldSystemHandleAction.SetBoldSystemHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L28) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `BoldSystemHandle` | property, published | [28](../../../Source/Handles/Actions/BoldActions.pas#L28) | [`TBoldSystemHandleAction.BoldSystemHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L31) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
 
 ## TBoldFailureDetectionAction
 
-class at [line 32](../../../Source/Handles/Actions/BoldActions.pas#L32); ⚪ not started.
+class at [line 32](../../../Source/Handles/Actions/BoldActions.pas#L32); ✅ verified, C# [`TBoldFailureDetectionAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L40).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `UpdateTarget` | method | [34](../../../Source/Handles/Actions/BoldActions.pas#L34) · [body 248](../../../Source/Handles/Actions/BoldActions.pas#L248) |  | ⚪ not started |  |
-| `HandlesTarget` | method | [35](../../../Source/Handles/Actions/BoldActions.pas#L35) · [body 241](../../../Source/Handles/Actions/BoldActions.pas#L241) |  | ⚪ not started |  |
+| `UpdateTarget` | method | [34](../../../Source/Handles/Actions/BoldActions.pas#L34) · [body 248](../../../Source/Handles/Actions/BoldActions.pas#L248) | [`TBoldFailureDetectionAction.UpdateTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L50) | ✅ verified: A target that shows one line of text (ISimpleTextTarget) stands in for Delphi's TStatusBar. | ✔ [`BoldActionsTests.Failure_detection_shows_the_last_failure_on_its_status_bar`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L124) |
+| `HandlesTarget` | method | [35](../../../Source/Handles/Actions/BoldActions.pas#L35) · [body 241](../../../Source/Handles/Actions/BoldActions.pas#L241) | [`TBoldFailureDetectionAction.HandlesTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L66) | ✅ verified: A target linked to an action (IActionClient) stands in for Delphi's TControl. | ✔ [`BoldActionsTests.Failure_detection_shows_the_last_failure_on_its_status_bar`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L124) |
 
 ## TBoldUpdateDBAction
 
-class at [line 39](../../../Source/Handles/Actions/BoldActions.pas#L39); ⚪ not started.
+class at [line 39](../../../Source/Handles/Actions/BoldActions.pas#L39); ✅ verified, C# [`TBoldUpdateDBAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L71).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CheckAllowEnable` | method, protected | [41](../../../Source/Handles/Actions/BoldActions.pas#L41) · [body 96](../../../Source/Handles/Actions/BoldActions.pas#L96) |  | ⚪ not started |  |
-| `Create` | constructor | [43](../../../Source/Handles/Actions/BoldActions.pas#L43) · [body 104](../../../Source/Handles/Actions/BoldActions.pas#L104) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [44](../../../Source/Handles/Actions/BoldActions.pas#L44) · [body 110](../../../Source/Handles/Actions/BoldActions.pas#L110) |  | ⚪ not started |  |
+| `CheckAllowEnable` | method, protected | [41](../../../Source/Handles/Actions/BoldActions.pas#L41) · [body 96](../../../Source/Handles/Actions/BoldActions.pas#L96) | [`TBoldUpdateDBAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L82) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `Create` | constructor | [43](../../../Source/Handles/Actions/BoldActions.pas#L43) · [body 104](../../../Source/Handles/Actions/BoldActions.pas#L104) | [`TBoldUpdateDBAction.TBoldUpdateDBAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L75) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `ExecuteTarget` | method | [44](../../../Source/Handles/Actions/BoldActions.pas#L44) · [body 110](../../../Source/Handles/Actions/BoldActions.pas#L110) | [`TBoldUpdateDBAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L92) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
 
 ## TBoldActivateSystemAction
 
-class at [line 48](../../../Source/Handles/Actions/BoldActions.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/Handles/Actions/BoldActions.pas#L48); ✅ verified, C# [`TBoldActivateSystemAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L104).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Receive` | method, private | [57](../../../Source/Handles/Actions/BoldActions.pas#L57) · [body 227](../../../Source/Handles/Actions/BoldActions.pas#L227) |  | ⚪ not started |  |
-| `SetOpenCaption` | method, private | [58](../../../Source/Handles/Actions/BoldActions.pas#L58) · [body 179](../../../Source/Handles/Actions/BoldActions.pas#L179) |  | ⚪ not started |  |
-| `SetCloseCaption` | method, private | [59](../../../Source/Handles/Actions/BoldActions.pas#L59) · [body 173](../../../Source/Handles/Actions/BoldActions.pas#L173) |  | ⚪ not started |  |
-| `TriggerSwitchEvent` | method, private | [60](../../../Source/Handles/Actions/BoldActions.pas#L60) · [body 197](../../../Source/Handles/Actions/BoldActions.pas#L197) |  | ⚪ not started |  |
-| `_HandleSubscriberReceive` | method, protected | [62](../../../Source/Handles/Actions/BoldActions.pas#L62) · [body 218](../../../Source/Handles/Actions/BoldActions.pas#L218) |  | ⚪ not started |  |
-| `SetBoldSystemHandle` | method, protected | [63](../../../Source/Handles/Actions/BoldActions.pas#L63) · [body 161](../../../Source/Handles/Actions/BoldActions.pas#L161) |  | ⚪ not started |  |
-| `UpdateCaption` | method, protected | [64](../../../Source/Handles/Actions/BoldActions.pas#L64) · [body 205](../../../Source/Handles/Actions/BoldActions.pas#L205) |  | ⚪ not started |  |
-| `SystemActivated` | method, protected | [65](../../../Source/Handles/Actions/BoldActions.pas#L65) · [body 185](../../../Source/Handles/Actions/BoldActions.pas#L185) |  | ⚪ not started |  |
-| `SystemClosed` | method, protected | [66](../../../Source/Handles/Actions/BoldActions.pas#L66) · [body 191](../../../Source/Handles/Actions/BoldActions.pas#L191) |  | ⚪ not started |  |
-| `Create` | constructor | [68](../../../Source/Handles/Actions/BoldActions.pas#L68) · [body 119](../../../Source/Handles/Actions/BoldActions.pas#L119) |  | ⚪ not started |  |
-| `Destroy` | destructor | [69](../../../Source/Handles/Actions/BoldActions.pas#L69) · [body 129](../../../Source/Handles/Actions/BoldActions.pas#L129) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [70](../../../Source/Handles/Actions/BoldActions.pas#L70) · [body 135](../../../Source/Handles/Actions/BoldActions.pas#L135) |  | ⚪ not started |  |
-| `OnSystemOpened` | property, published | [72](../../../Source/Handles/Actions/BoldActions.pas#L72) |  | ⚪ not started |  |
-| `OnSystemClosed` | property, published | [73](../../../Source/Handles/Actions/BoldActions.pas#L73) |  | ⚪ not started |  |
-| `OpenCaption` | property, published | [74](../../../Source/Handles/Actions/BoldActions.pas#L74) |  | ⚪ not started |  |
-| `CloseCaption` | property, published | [75](../../../Source/Handles/Actions/BoldActions.pas#L75) |  | ⚪ not started |  |
-| `SaveQuestion` | property, published | [76](../../../Source/Handles/Actions/BoldActions.pas#L76) |  | ⚪ not started |  |
-| `SaveOnClose` | property, published | [77](../../../Source/Handles/Actions/BoldActions.pas#L77) |  | ⚪ not started |  |
+| `_Receive` | method, private | [57](../../../Source/Handles/Actions/BoldActions.pas#L57) · [body 227](../../../Source/Handles/Actions/BoldActions.pas#L227) | [`TBoldActivateSystemAction._Receive`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L261) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `SetOpenCaption` | method, private | [58](../../../Source/Handles/Actions/BoldActions.pas#L58) · [body 179](../../../Source/Handles/Actions/BoldActions.pas#L179) | [`TBoldActivateSystemAction.SetOpenCaption`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L210) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `SetCloseCaption` | method, private | [59](../../../Source/Handles/Actions/BoldActions.pas#L59) · [body 173](../../../Source/Handles/Actions/BoldActions.pas#L173) | [`TBoldActivateSystemAction.SetCloseCaption`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L203) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `TriggerSwitchEvent` | method, private | [60](../../../Source/Handles/Actions/BoldActions.pas#L60) · [body 197](../../../Source/Handles/Actions/BoldActions.pas#L197) | [`TBoldActivateSystemAction.TriggerSwitchEvent`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L223) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `_HandleSubscriberReceive` | method, protected | [62](../../../Source/Handles/Actions/BoldActions.pas#L62) · [body 218](../../../Source/Handles/Actions/BoldActions.pas#L218) | [`TBoldActivateSystemAction._HandleSubscriberReceive`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L250) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `SetBoldSystemHandle` | method, protected | [63](../../../Source/Handles/Actions/BoldActions.pas#L63) · [body 161](../../../Source/Handles/Actions/BoldActions.pas#L161) | [`TBoldActivateSystemAction.SetBoldSystemHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L194) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `UpdateCaption` | method, protected | [64](../../../Source/Handles/Actions/BoldActions.pas#L64) · [body 205](../../../Source/Handles/Actions/BoldActions.pas#L205) | [`TBoldActivateSystemAction.UpdateCaption`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L237) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `SystemActivated` | method, protected | [65](../../../Source/Handles/Actions/BoldActions.pas#L65) · [body 185](../../../Source/Handles/Actions/BoldActions.pas#L185) | [`TBoldActivateSystemAction.SystemActivated`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L217) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `SystemClosed` | method, protected | [66](../../../Source/Handles/Actions/BoldActions.pas#L66) · [body 191](../../../Source/Handles/Actions/BoldActions.pas#L191) | [`TBoldActivateSystemAction.SystemClosed`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L220) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `Create` | constructor | [68](../../../Source/Handles/Actions/BoldActions.pas#L68) · [body 119](../../../Source/Handles/Actions/BoldActions.pas#L119) | [`TBoldActivateSystemAction.TBoldActivateSystemAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L118) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `Destroy` | destructor | [69](../../../Source/Handles/Actions/BoldActions.pas#L69) · [body 129](../../../Source/Handles/Actions/BoldActions.pas#L129) | [`TBoldActivateSystemAction.Dispose`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L129) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `ExecuteTarget` | method | [70](../../../Source/Handles/Actions/BoldActions.pas#L70) · [body 135](../../../Source/Handles/Actions/BoldActions.pas#L135) | [`TBoldActivateSystemAction.ExecuteTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L141) | ✅ verified: Asks through Dialogs.MessageDlg, which the GUI toolkit supplies. | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `OnSystemOpened` | property, published | [72](../../../Source/Handles/Actions/BoldActions.pas#L72) | [`TBoldActivateSystemAction.OnSystemOpened`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L271) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `OnSystemClosed` | property, published | [73](../../../Source/Handles/Actions/BoldActions.pas#L73) | [`TBoldActivateSystemAction.OnSystemClosed`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L278) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `OpenCaption` | property, published | [74](../../../Source/Handles/Actions/BoldActions.pas#L74) | [`TBoldActivateSystemAction.OpenCaption`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L285) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `CloseCaption` | property, published | [75](../../../Source/Handles/Actions/BoldActions.pas#L75) | [`TBoldActivateSystemAction.CloseCaption`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L292) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `SaveQuestion` | property, published | [76](../../../Source/Handles/Actions/BoldActions.pas#L76) | [`TBoldActivateSystemAction.SaveQuestion`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L299) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+| `SaveOnClose` | property, published | [77](../../../Source/Handles/Actions/BoldActions.pas#L77) | [`TBoldActivateSystemAction.SaveOnClose`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L306) | ✅ verified | ✔ [`BoldActionsTests.Activate_system_opens_and_closes_and_deals_with_dirty_objects`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L59) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldSystemHandleAction.TBoldSystemHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L19) (constructor)
+- [`TBoldFailureDetectionAction.TBoldFailureDetectionAction`](../../src/Bold.AwareGui/Handles/Actions/BoldActions.cs#L43) (constructor)
 
 ## Dependencies
 

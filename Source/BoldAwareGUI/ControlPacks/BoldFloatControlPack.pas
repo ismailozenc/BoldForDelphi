@@ -1,4 +1,4 @@
-unit BoldFloatControlPack; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs; symbols and status: CSharp/port/units/BoldFloatControlPack.md }
+unit BoldFloatControlPack; { C# port: CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs; symbols and status: CSharp/port/units/BoldFloatControlPack.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

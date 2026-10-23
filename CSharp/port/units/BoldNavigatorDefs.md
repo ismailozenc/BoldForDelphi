@@ -5,12 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldNavigatorDefs.pas`](../../../Source/Common/Support/BoldNavigatorDefs.pas) (229 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs` |
+| C# | [`CSharp/src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs)<br>[`CSharp/src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 35 symbols done, 0 verified |
+| Status | 🟡 partial: 5 of 35 symbols done, 5 verified |
+| Note | The navigator's enums are in Bold.AwareGui, where the list actions use TBoldDeleteMode; the buttons are in Bold.WinForms. |
 
-⚪ 35 not started
+✅ 5 verified · ⚪ 30 not started
 
 ## Unit level
 
@@ -18,11 +19,11 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldNavigateBtn` | enum | [17](../../../Source/Common/Support/BoldNavigatorDefs.pas#L17) |  | ⚪ not started |  |
-| `TBoldButtonSet` | set | [18](../../../Source/Common/Support/BoldNavigatorDefs.pas#L18) |  | ⚪ not started |  |
-| `TBoldDeleteMode` | enum | [19](../../../Source/Common/Support/BoldNavigatorDefs.pas#L19) |  | ⚪ not started |  |
-| `TBoldNavButtonStyle` | set | [20](../../../Source/Common/Support/BoldNavigatorDefs.pas#L20) |  | ⚪ not started |  |
-| `TBoldNavClick` | event type | [21](../../../Source/Common/Support/BoldNavigatorDefs.pas#L21) |  | ⚪ not started |  |
+| `TBoldNavigateBtn` | enum | [17](../../../Source/Common/Support/BoldNavigatorDefs.pas#L17) | [`TBoldNavigateBtn`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs#L11) | ✅ verified | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37) |
+| `TBoldButtonSet` | set | [18](../../../Source/Common/Support/BoldNavigatorDefs.pas#L18) | [`global using TBoldButtonSet`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs#L5) | ✅ verified: Global using alias of DelphiSet&lt;TBoldNavigateBtn&gt;, in BoldNavigatorDefs.Aliases.cs. | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37) |
+| `TBoldDeleteMode` | enum | [19](../../../Source/Common/Support/BoldNavigatorDefs.pas#L19) | [`TBoldDeleteMode`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs#L15) | ✅ verified | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37)<br>✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
+| `TBoldNavButtonStyle` | set | [20](../../../Source/Common/Support/BoldNavigatorDefs.pas#L20) | [`global using TBoldNavButtonStyle`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs#L6) | ✅ verified: Global using alias of DelphiSet&lt;TBoldNavButtonStyleElement&gt;, in BoldNavigatorDefs.Aliases.cs; the set's anonymous enumeration is TBoldNavButtonStyleElement. | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37) |
+| `TBoldNavClick` | event type | [21](../../../Source/Common/Support/BoldNavigatorDefs.pas#L21) | [`TBoldNavClick`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs#L22) | ✅ verified | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37) |
 | `TBoldNavigateBtnImageIndexOwner` | class | [23](../../../Source/Common/Support/BoldNavigatorDefs.pas#L23) |  | ⚪ not started |  |
 | `TBoldNavigateBtnImageIndex` | class | [32](../../../Source/Common/Support/BoldNavigatorDefs.pas#L32) |  | ⚪ not started |  |
 | `TBoldNavButton` | class | [66](../../../Source/Common/Support/BoldNavigatorDefs.pas#L66) |  | ⚪ not started |  |
@@ -74,6 +75,12 @@ class at [line 66](../../../Source/Common/Support/BoldNavigatorDefs.pas#L66); �
 | `Destroy` | destructor | [77](../../../Source/Common/Support/BoldNavigatorDefs.pas#L77) · [body 170](../../../Source/Common/Support/BoldNavigatorDefs.pas#L170) |  | ⚪ not started |  |
 | `Index` | property | [78](../../../Source/Common/Support/BoldNavigatorDefs.pas#L78) |  | ⚪ not started |  |
 | `NavStyle` | property | [79](../../../Source/Common/Support/BoldNavigatorDefs.pas#L79) |  | ⚪ not started |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldNavButtonStyleElement`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs#L18) (enum)
 
 ## Dependencies
 

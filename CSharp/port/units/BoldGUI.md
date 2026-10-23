@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/Core/BoldGUI.pas`](../../../Source/BoldAwareGUI/Core/BoldGUI.pas) (170 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/Core/BoldGUI.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | 🟢 ported: 15 of 15 symbols done, 13 verified |
 
-⚪ 15 not started
+✅ 13 verified · 🟢 1 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,28 +18,36 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldGUIHandler` | class | [21](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L21) |  | ⚪ not started |  |
-| `BoldGUIHandler` | routine | [40](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L40) · [body 55](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L55) |  | ⚪ not started |  |
-| `BoldPopupMenu` | var | [43](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L43) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [162](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L162) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [166](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L166) |  | ⚪ not started |  |
+| `TBoldGUIHandler` | class | [21](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L21) | [`TBoldGUIHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L17) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `BoldGUIHandler` | routine | [40](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L40) · [body 55](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L55) | [`BoldGUI.BoldGUIHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L143) | ✅ verified | ✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `BoldPopupMenu` | var | [43](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L43) | [`BoldGUI.BoldPopupMenu`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L163) | ✅ verified: Any object; Delphi's is a TPopupMenu made in the initialization section. | ✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `initialization` | initialization, implementation | [162](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L162) | [`[assembly: Delphi] in BoldGUI.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L6) | 🟢 ported: The GUI toolkit creates the popup menu (Bold.WinForms sets BoldPopupMenu); the handler is created on first use. |  |
+| `finalization` | finalization, implementation | [166](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L166) | [`[assembly: Delphi] in BoldGUI.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L7) | 🔵 replaced: Freed the handler and the popup menu; the garbage collector does that in .NET. |  |
 
 ## TBoldGUIHandler
 
-class at [line 21](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L21); ✅ verified, C# [`TBoldGUIHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L17).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [28](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L28) · [body 63](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L63) |  | ⚪ not started |  |
-| `Destroy` | destructor | [29](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L29) · [body 69](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L69) |  | ⚪ not started |  |
-| `DoPopUp` | method | [30](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L30) · [body 119](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L119) |  | ⚪ not started |  |
-| `FindHostingForm` | method | [31](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L31) · [body 124](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L124) |  | ⚪ not started |  |
-| `TryToFocusHostingForm` | method | [32](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L32) · [body 149](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L149) |  | ⚪ not started |  |
-| `DraggedObjectsAssignable` | method | [33](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L33) · [body 75](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L75) |  | ⚪ not started |  |
-| `DraggedObjects` | property | [34](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L34) |  | ⚪ not started |  |
-| `PopupElement` | property | [35](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L35) |  | ⚪ not started |  |
-| `PopupControl` | property | [36](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L36) |  | ⚪ not started |  |
-| `ActivateTargetFormOnDrop` | property | [37](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L37) |  | ⚪ not started |  |
+| `Create` | constructor | [28](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L28) · [body 63](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L63) | [`TBoldGUIHandler.TBoldGUIHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L25) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `Destroy` | destructor | [29](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L29) · [body 69](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L69) | [`TBoldGUIHandler.Dispose`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L31) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `DoPopUp` | method | [30](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L30) · [body 119](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L119) | [`TBoldGUIHandler.DoPopUp`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L39) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `FindHostingForm` | method | [31](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L31) · [body 124](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L124) | [`TBoldGUIHandler.FindHostingForm`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L46) | ✅ verified: Gives null here; the handler of a GUI toolkit (Bold.WinForms) overrides it to find the form. | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `TryToFocusHostingForm` | method | [32](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L32) · [body 149](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L149) | [`TBoldGUIHandler.TryToFocusHostingForm`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L50) | ✅ verified: Always false here; the handler of a GUI toolkit (Bold.WinForms) overrides it. | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `DraggedObjectsAssignable` | method | [33](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L33) · [body 75](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L75) | [`TBoldGUIHandler.DraggedObjectsAssignable`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L57) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `DraggedObjects` | property | [34](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L34) | [`TBoldGUIHandler.DraggedObjects`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L111) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `PopupElement` | property | [35](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L35) | [`TBoldGUIHandler.PopupElement`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L114) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `PopupControl` | property | [36](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L36) | [`TBoldGUIHandler.PopupControl`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L121) | ✅ verified: Any object; Delphi's is a TControl. | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `ActivateTargetFormOnDrop` | property | [37](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L37) | [`TBoldGUIHandler.ActivateTargetFormOnDrop`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L128) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldGUIHandler.ComponentOwner`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L106) (method)
+- [`TBoldGUIHandler.TopmostParentControl`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L109) (method)
+- [`BoldGUI.BoldGUIHandlerClass`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L147) (property)
 
 ## Dependencies
 

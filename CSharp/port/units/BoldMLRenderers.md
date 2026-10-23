@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas`](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas) (201 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 14 symbols done, 0 verified |
+| Status | 🟢 ported: 14 of 14 symbols done, 11 verified |
 
-⚪ 14 not started
+✅ 11 verified · 🟢 3 ported
 
 ## Unit level
 
@@ -18,27 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLanguageGetAsString` | event type | [16](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L16) |  | ⚪ not started |  |
-| `TBoldLanguageSetAsString` | event type | [17](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L17) |  | ⚪ not started |  |
-| `TBoldLanguageSubscribe` | event type | [18](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L18) |  | ⚪ not started |  |
-| `TBoldAsMLStringRenderer` | class | [21](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L21) |  | ⚪ not started |  |
+| `TBoldLanguageGetAsString` | event type | [16](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L16) | [`TBoldLanguageGetAsString`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L12) | 🟢 ported |  |
+| `TBoldLanguageSetAsString` | event type | [17](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L17) | [`TBoldLanguageSetAsString`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L16) | 🟢 ported |  |
+| `TBoldLanguageSubscribe` | event type | [18](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L18) | [`TBoldLanguageSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L20) | 🟢 ported |  |
+| `TBoldAsMLStringRenderer` | class | [21](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L21) | [`TBoldAsMLStringRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L24) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
 
 ## TBoldAsMLStringRenderer
 
-class at [line 21](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L21); ✅ verified, C# [`TBoldAsMLStringRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L24).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetLanguage` | method, private | [27](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L27) · [body 192](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L192) |  | ⚪ not started |  |
-| `SetAsString` | method, protected | [29](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L29) · [body 113](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L113) |  | ⚪ not started |  |
-| `GetAsStringAndSubscribe` | method, protected | [30](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L30) · [body 50](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L50) |  | ⚪ not started |  |
-| `DefaultGetAsStringAndSubscribe` | method | [32](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L32) · [body 68](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L68) |  | ⚪ not started |  |
-| `DefaultSetAsString` | method | [33](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L33) · [body 121](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L121) |  | ⚪ not started |  |
-| `DefaultMakeUptodateAndSetMayModifyAndSubscribe` | method | [34](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L34) · [body 142](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L142) |  | ⚪ not started |  |
-| `Language` | property, published | [36](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L36) |  | ⚪ not started |  |
-| `OnLanguageGetAsString` | property, published | [37](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L37) |  | ⚪ not started |  |
-| `OnLanguageSetAsString` | property, published | [38](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L38) |  | ⚪ not started |  |
-| `OnLanguageSubscribe` | property, published | [39](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L39) |  | ⚪ not started |  |
+| `SetLanguage` | method, private | [27](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L27) · [body 192](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L192) | [`TBoldAsMLStringRenderer.SetLanguage`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L39) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `SetAsString` | method, protected | [29](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L29) · [body 113](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L113) | [`TBoldAsMLStringRenderer.SetAsString`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L49) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `GetAsStringAndSubscribe` | method, protected | [30](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L30) · [body 50](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L50) | [`TBoldAsMLStringRenderer.GetAsStringAndSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L63) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `DefaultGetAsStringAndSubscribe` | method | [32](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L32) · [body 68](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L68) | [`TBoldAsMLStringRenderer.DefaultGetAsStringAndSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L91) | ✅ verified: The nested language branches are the private helper StringInLanguage. | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `DefaultSetAsString` | method | [33](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L33) · [body 121](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L121) | [`TBoldAsMLStringRenderer.DefaultSetAsString`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L138) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `DefaultMakeUptodateAndSetMayModifyAndSubscribe` | method | [34](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L34) · [body 142](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L142) | [`TBoldAsMLStringRenderer.DefaultMakeUptodateAndSetMayModifyAndSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L158) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `Language` | property, published | [36](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L36) | [`TBoldAsMLStringRenderer.Language`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L178) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `OnLanguageGetAsString` | property, published | [37](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L37) | [`TBoldAsMLStringRenderer.OnLanguageGetAsString`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L185) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `OnLanguageSetAsString` | property, published | [38](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L38) | [`TBoldAsMLStringRenderer.OnLanguageSetAsString`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L192) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+| `OnLanguageSubscribe` | property, published | [39](../../../Source/BoldAwareGUI/ControlPacks/BoldMLRenderers.pas#L39) | [`TBoldAsMLStringRenderer.OnLanguageSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L199) | ✅ verified | ✔ [`BoldValueControlPacksTests.Multi_language_renderers_pass_their_language_to_the_events`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L270) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldAsMLStringRenderer.TBoldAsMLStringRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs#L32) (constructor)
 
 ## Dependencies
 

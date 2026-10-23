@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas`](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas) (300 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 33 symbols done, 0 verified |
+| Status | 🟢 ported: 33 of 33 symbols done, 28 verified |
 
-⚪ 33 not started
+✅ 28 verified · 🟢 4 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,60 +18,68 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldGetAsFloatEvent` | event type | [20](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L20) |  | ⚪ not started |  |
-| `TBoldSetAsFloatEvent` | event type | [21](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L21) |  | ⚪ not started |  |
-| `TBoldFloatIsChangedEvent` | event type | [22](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L22) |  | ⚪ not started |  |
-| `TBoldFloatRendererData` | class | [25](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L25) |  | ⚪ not started |  |
-| `TBoldAsFloatRenderer` | class | [35](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L35) |  | ⚪ not started |  |
-| `TBoldFloatFollowerController` | class | [59](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L59) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [294](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L294) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [297](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L297) |  | ⚪ not started |  |
+| `TBoldGetAsFloatEvent` | event type | [20](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L20) | [`TBoldGetAsFloatEvent`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L15) | 🟢 ported |  |
+| `TBoldSetAsFloatEvent` | event type | [21](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L21) | [`TBoldSetAsFloatEvent`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L19) | 🟢 ported |  |
+| `TBoldFloatIsChangedEvent` | event type | [22](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L22) | [`TBoldFloatIsChangedEvent`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L23) | 🟢 ported |  |
+| `TBoldFloatRendererData` | class | [25](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L25) | [`TBoldFloatRendererData`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L27) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `TBoldAsFloatRenderer` | class | [35](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L35) | [`TBoldAsFloatRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L55) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `TBoldFloatFollowerController` | class | [59](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L59) | [`TBoldFloatFollowerController`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L206) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `initialization` | initialization, implementation | [294](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L294) | [`[assembly: Delphi] in BoldFloatControlPack.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L8) | 🟢 ported: The default renderer is created on first use. |  |
+| `finalization` | finalization, implementation | [297](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L297) | [`[assembly: Delphi] in BoldFloatControlPack.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L9) | 🔵 replaced: Freed the default renderer; the garbage collector does that in .NET. |  |
 
 ## TBoldFloatRendererData
 
-class at [line 25](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L25); ✅ verified, C# [`TBoldFloatRendererData`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L27).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CurrentFloatValue` | property | [30](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L30) |  | ⚪ not started |  |
-| `OldFloatValue` | property | [31](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L31) |  | ⚪ not started |  |
+| `CurrentFloatValue` | property | [30](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L30) | [`TBoldFloatRendererData.CurrentFloatValue`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L39) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `OldFloatValue` | property | [31](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L31) | [`TBoldFloatRendererData.OldFloatValue`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L46) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
 
 ## TBoldAsFloatRenderer
 
-class at [line 35](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L35); ⚪ not started.
+class at [line 35](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L35); ✅ verified, C# [`TBoldAsFloatRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L55).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DefaultRenderer` | class method, protected | [41](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L41) · [body 91](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L91) |  | ⚪ not started |  |
-| `GetRendererDataClass` | method, protected | [42](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L42) · [body 96](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L96) |  | ⚪ not started |  |
-| `DefaultGetAsFloatAndSubscribe` | method, protected | [43](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L43) · [body 116](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L116) |  | ⚪ not started |  |
-| `DefaultSetAsFloat` | method, protected | [44](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L44) · [body 159](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L159) |  | ⚪ not started |  |
-| `GetAsFloatAndSubscribe` | method, protected | [45](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L45) · [body 182](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L182) |  | ⚪ not started |  |
-| `SetAsFloat` | method, protected | [46](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L46) · [body 196](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L196) |  | ⚪ not started |  |
-| `MakeUptodateAndSubscribe` | method | [48](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L48) · [body 204](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L204) |  | ⚪ not started |  |
-| `DefaultMayModify` | method | [49](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L49) · [body 101](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L101) |  | ⚪ not started |  |
-| `DefaultIsChanged` | method | [50](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L50) · [body 220](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L220) |  | ⚪ not started |  |
-| `IsChanged` | method | [51](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L51) · [body 225](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L225) |  | ⚪ not started |  |
-| `OnGetAsFloat` | property, published | [53](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L53) |  | ⚪ not started |  |
-| `OnSetAsFloat` | property, published | [54](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L54) |  | ⚪ not started |  |
-| `OnIsChanged` | property, published | [55](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L55) |  | ⚪ not started |  |
+| `DefaultRenderer` | class method, protected | [41](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L41) · [body 91](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L91) | [`TBoldAsFloatRenderer.DefaultRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L150) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `GetRendererDataClass` | method, protected | [42](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L42) · [body 96](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L96) | [`TBoldAsFloatRenderer.GetRendererDataClass`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L70) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `DefaultGetAsFloatAndSubscribe` | method, protected | [43](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L43) · [body 116](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L116) | [`TBoldAsFloatRenderer.DefaultGetAsFloatAndSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L74) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `DefaultSetAsFloat` | method, protected | [44](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L44) · [body 159](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L159) | [`TBoldAsFloatRenderer.DefaultSetAsFloat`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L99) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `GetAsFloatAndSubscribe` | method, protected | [45](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L45) · [body 182](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L182) | [`TBoldAsFloatRenderer.GetAsFloatAndSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L118) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `SetAsFloat` | method, protected | [46](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L46) · [body 196](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L196) | [`TBoldAsFloatRenderer.SetAsFloat`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L136) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `MakeUptodateAndSubscribe` | method | [48](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L48) · [body 204](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L204) | [`TBoldAsFloatRenderer.MakeUptodateAndSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L167) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `DefaultMayModify` | method | [49](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L49) · [body 101](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L101) | [`TBoldAsFloatRenderer.DefaultMayModify`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L158) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `DefaultIsChanged` | method | [50](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L50) · [body 220](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L220) | [`TBoldAsFloatRenderer.DefaultIsChanged`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L153) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `IsChanged` | method | [51](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L51) · [body 225](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L225) | [`TBoldAsFloatRenderer.IsChanged`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L177) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `OnGetAsFloat` | property, published | [53](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L53) | [`TBoldAsFloatRenderer.OnGetAsFloat`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L183) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `OnSetAsFloat` | property, published | [54](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L54) | [`TBoldAsFloatRenderer.OnSetAsFloat`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L190) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `OnIsChanged` | property, published | [55](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L55) | [`TBoldAsFloatRenderer.OnIsChanged`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L197) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
 
 ## TBoldFloatFollowerController
 
-class at [line 59](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L59); ✅ verified, C# [`TBoldFloatFollowerController`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L206).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetRenderer` | method, private | [61](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L61) · [body 234](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L234) |  | ⚪ not started |  |
-| `SetRenderer` | method, private | [62](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L62) · [body 240](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L240) |  | ⚪ not started |  |
-| `GetEffectiveAsFloatRenderer` | method, private | [63](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L63) · [body 260](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L260) |  | ⚪ not started |  |
-| `EffectiveAsFloatRenderer` | property, protected | [65](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L65) |  | ⚪ not started |  |
-| `GetEffectiveRenderer` | method, protected | [66](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L66) · [body 251](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L251) |  | ⚪ not started |  |
-| `GetCurrentAsFloat` | method | [69](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L69) · [body 275](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L275) |  | ⚪ not started |  |
-| `MakeClean` | method | [70](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L70) · [body 269](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L269) |  | ⚪ not started |  |
-| `MayHaveChanged` | method | [71](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L71) · [body 285](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L285) |  | ⚪ not started |  |
-| `SetAsFloat` | method | [72](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L72) · [body 280](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L280) |  | ⚪ not started |  |
-| `Renderer` | property, published | [74](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L74) |  | ⚪ not started |  |
+| `GetRenderer` | method, private | [61](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L61) · [body 234](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L234) | [`TBoldFloatFollowerController.GetRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L214) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `SetRenderer` | method, private | [62](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L62) · [body 240](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L240) | [`TBoldFloatFollowerController.SetRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L218) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `GetEffectiveAsFloatRenderer` | method, private | [63](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L63) · [body 260](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L260) | [`TBoldFloatFollowerController.GetEffectiveAsFloatRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L233) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `EffectiveAsFloatRenderer` | property, protected | [65](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L65) | [`TBoldFloatFollowerController.EffectiveAsFloatRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L238) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `GetEffectiveRenderer` | method, protected | [66](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L66) · [body 251](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L251) | [`TBoldFloatFollowerController.GetEffectiveRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L236) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `GetCurrentAsFloat` | method | [69](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L69) · [body 275](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L275) | [`TBoldFloatFollowerController.GetCurrentAsFloat`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L241) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `MakeClean` | method | [70](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L70) · [body 269](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L269) | [`TBoldFloatFollowerController.MakeClean`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L245) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `MayHaveChanged` | method | [71](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L71) · [body 285](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L285) | [`TBoldFloatFollowerController.MayHaveChanged`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L253) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `SetAsFloat` | method | [72](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L72) · [body 280](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L280) | [`TBoldFloatFollowerController.SetAsFloat`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L264) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+| `Renderer` | property, published | [74](../../../Source/BoldAwareGUI/ControlPacks/BoldFloatControlPack.pas#L74) | [`TBoldFloatFollowerController.Renderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L268) | ✅ verified | ✔ [`BoldValueControlPacksTests.Float_controllers_show_and_set_numbers`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldValueControlPacksTests.cs#L68) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldFloatRendererData.TBoldFloatRendererData`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L33) (constructor)
+- [`TBoldAsFloatRenderer.TBoldAsFloatRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L64) (constructor)
+- [`TBoldFloatFollowerController.TBoldFloatFollowerController`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldFloatControlPack.cs#L209) (constructor)
 
 ## Dependencies
 

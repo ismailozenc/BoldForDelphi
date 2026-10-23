@@ -99,7 +99,7 @@ public class TCollectionItem : TPersistent
 public class TCollection : TPersistent
 {
     private readonly List<TCollectionItem> fItems = [];
-    private readonly Type fItemClass;
+    private Type fItemClass;
     private int fNextID;
     private int fUpdateCount;
 
@@ -108,7 +108,12 @@ public class TCollection : TPersistent
         fItemClass = ItemClass;
     }
 
-    public Type ItemClass => fItemClass;
+    /// <summary>The class of the items; a descendant whose item class comes from a virtual method sets it in its constructor.</summary>
+    public Type ItemClass
+    {
+        get => fItemClass;
+        protected set => fItemClass = value;
+    }
     public int Count => fItems.Count;
     public int UpdateCount => fUpdateCount;
 

@@ -1,4 +1,4 @@
-unit BoldStringControlPack; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldStringControlPack.cs; symbols and status: CSharp/port/units/BoldStringControlPack.md }
+unit BoldStringControlPack; { C# port: CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldStringControlPack.cs; symbols and status: CSharp/port/units/BoldStringControlPack.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

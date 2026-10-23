@@ -1,4 +1,4 @@
-unit BoldDateTimeControlPack; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldDateTimeControlPack.cs; symbols and status: CSharp/port/units/BoldDateTimeControlPack.md }
+unit BoldDateTimeControlPack; { C# port: CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldDateTimeControlPack.cs; symbols and status: CSharp/port/units/BoldDateTimeControlPack.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

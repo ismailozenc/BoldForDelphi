@@ -1,4 +1,4 @@
-unit BoldExceptionHandlers; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/Core/BoldExceptionHandlers.cs; symbols and status: CSharp/port/units/BoldExceptionHandlers.md }
+unit BoldExceptionHandlers; { C# port: CSharp/src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs; symbols and status: CSharp/port/units/BoldExceptionHandlers.md }
 
 interface
 

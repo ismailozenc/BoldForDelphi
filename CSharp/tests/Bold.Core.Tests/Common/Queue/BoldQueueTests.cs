@@ -24,7 +24,7 @@ public class BoldQueueTests
         public bool FailApply;
         public void QueueDisplay() => AddToDisplayList();
         public void QueueApply() => AddToApplyList();
-        protected override void Display()
+        public override void Display()
         {
             log.Add("display " + name);
             RemoveFromDisplayList();

@@ -122,8 +122,8 @@ public abstract class TBoldQueueable : TBoldFlaggedObject, IDisposable
         return PrioritizedQueuable == Queueable || PrioritizedQueuable.AfterInPriority(Queueable);
     }
 
-    [Delphi(PortStatus.Ported)]
-    protected internal abstract void Display();
+    [Delphi(PortStatus.Ported, Note = "Public, as followers are displayed by the controls that own them; Delphi makes it public in TBoldFollower.")]
+    public abstract void Display();
 
     [Delphi(PortStatus.Ported)]
     protected bool StronglyPrioritizedSibbling(TBoldQueueable Queueable) =>

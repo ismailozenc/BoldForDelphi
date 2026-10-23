@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas`](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas) (160 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 19 symbols done, 0 verified |
+| Status | 🟢 ported: 19 of 19 symbols done, 17 verified |
 
-⚪ 19 not started
+✅ 17 verified · 🟢 1 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,39 +18,45 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldControllerList` | class | [19](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L19) |  | ⚪ not started |  |
-| `TBoldControllerListAsFollowerListRenderer` | class | [43](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L43) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [153](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L153) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [156](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L156) |  | ⚪ not started |  |
+| `TBoldControllerList` | class | [19](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L19) | [`TBoldControllerList`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L16) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `TBoldControllerListAsFollowerListRenderer` | class | [43](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L43) | [`TBoldControllerListAsFollowerListRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L111) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `initialization` | initialization, implementation | [153](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L153) | [`[assembly: Delphi] in BoldControllerListControlPack.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L6) | 🟢 ported: Made the default renderer; it is made on first use. |  |
+| `finalization` | finalization, implementation | [156](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L156) | [`[assembly: Delphi] in BoldControllerListControlPack.cs`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L7) | 🔵 replaced: Freed the default renderer; the garbage collector does that in .NET. |  |
 
 ## TBoldControllerList
 
-class at [line 19](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L19); ✅ verified, C# [`TBoldControllerList`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L16).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCount` | method, private | [22](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L22) · [body 118](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L118) |  | ⚪ not started |  |
-| `GetSubController` | method, private | [23](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L23) · [body 88](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L88) |  | ⚪ not started |  |
-| `DoMakeUptodateAndSubscribe` | method, protected | [25](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L25) · [body 76](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L76) |  | ⚪ not started |  |
-| `GetEffectiveRenderer` | method, protected | [26](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L26) · [body 123](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L123) |  | ⚪ not started |  |
-| `GetEffectiveDisplayPropertyListRenderer` | method, protected | [27](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L27) · [body 128](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L128) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L29) · [body 58](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L58) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L30) · [body 66](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L66) |  | ⚪ not started |  |
-| `Add` | method | [31](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L31) · [body 93](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L93) |  | ⚪ not started |  |
-| `Delete` | method | [32](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L32) · [body 105](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L105) |  | ⚪ not started |  |
-| `Remove` | method | [33](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L33) · [body 99](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L99) |  | ⚪ not started |  |
-| `Move` | method | [34](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L34) · [body 112](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L112) |  | ⚪ not started |  |
-| `Count` | property | [35](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L35) |  | ⚪ not started |  |
-| `Items` | property | [36](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L36) |  | ⚪ not started |  |
+| `GetCount` | method, private | [22](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L22) · [body 118](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L118) | [`TBoldControllerList.GetCount`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L94) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `GetSubController` | method, private | [23](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L23) · [body 88](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L88) | [`TBoldControllerList.GetSubController`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L58) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `DoMakeUptodateAndSubscribe` | method, protected | [25](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L25) · [body 76](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L76) | [`TBoldControllerList.DoMakeUptodateAndSubscribe`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L47) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `GetEffectiveRenderer` | method, protected | [26](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L26) · [body 123](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L123) | [`TBoldControllerList.GetEffectiveRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L97) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `GetEffectiveDisplayPropertyListRenderer` | method, protected | [27](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L27) · [body 128](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L128) | [`TBoldControllerList.GetEffectiveDisplayPropertyListRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L100) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Create` | constructor | [29](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L29) · [body 58](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L58) | [`TBoldControllerList.TBoldControllerList`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L21) | ✅ verified: The owning component is any object (a control); Delphi's is a TComponent. | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Destroy` | destructor | [30](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L30) · [body 66](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L66) | [`TBoldControllerList.Dispose`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L30) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Add` | method | [31](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L31) · [body 93](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L93) | [`TBoldControllerList.Add`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L61) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Delete` | method | [32](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L32) · [body 105](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L105) | [`TBoldControllerList.Delete`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L77) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Remove` | method | [33](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L33) · [body 99](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L99) | [`TBoldControllerList.Remove`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L69) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Move` | method | [34](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L34) · [body 112](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L112) | [`TBoldControllerList.Move`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L85) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Count` | property | [35](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L35) | [`TBoldControllerList.Count`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L103) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `Items` | property | [36](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L36) | [`TBoldControllerList.this`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L106) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
 
 ## TBoldControllerListAsFollowerListRenderer
 
-class at [line 43](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L43); ⚪ not started.
+class at [line 43](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L43); ✅ verified, C# [`TBoldControllerListAsFollowerListRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L111).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DefaultRenderer` | class method | [45](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L45) · [body 135](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L135) |  | ⚪ not started |  |
-| `MakeUptodate` | method | [46](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L46) · [body 140](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L140) |  | ⚪ not started |  |
+| `DefaultRenderer` | class method | [45](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L45) · [body 135](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L135) | [`TBoldControllerListAsFollowerListRenderer.DefaultRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L122) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+| `MakeUptodate` | method | [46](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L46) · [body 140](../../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas#L140) | [`TBoldControllerListAsFollowerListRenderer.MakeUptodate`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L126) | ✅ verified | ✔ [`BoldGenericListControlPackTests.A_controller_list_shows_the_element_through_each_controller`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldGenericListControlPackTests.cs#L26) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldControllerListAsFollowerListRenderer.TBoldControllerListAsFollowerListRenderer`](../../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs#L116) (constructor)
 
 ## Dependencies
 

@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/DB/BoldDBActions.pas`](../../../Source/Persistence/DB/BoldDBActions.pas) (77 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Persistence/DB/BoldDBActions.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 8 symbols done, 0 verified |
+| Status | ✅ verified: 8 of 8 symbols done, 8 verified |
 | Note | Moved to Bold.WinForms: it is a GUI action. |
 
-⚪ 8 not started
+✅ 8 verified
 
 ## Unit level
 
@@ -19,21 +19,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldGenerateSchemaAction` | class | [14](../../../Source/Persistence/DB/BoldDBActions.pas#L14) |  | ⚪ not started |  |
+| `TBoldGenerateSchemaAction` | class | [14](../../../Source/Persistence/DB/BoldDBActions.pas#L14) | [`TBoldGenerateSchemaAction`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L11) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
 
 ## TBoldGenerateSchemaAction
 
-class at [line 14](../../../Source/Persistence/DB/BoldDBActions.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Persistence/DB/BoldDBActions.pas#L14); ✅ verified, C# [`TBoldGenerateSchemaAction`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldPersistenceHandleDB` | method, private | [18](../../../Source/Persistence/DB/BoldDBActions.pas#L18) · [body 70](../../../Source/Persistence/DB/BoldDBActions.pas#L70) |  | ⚪ not started |  |
-| `Notification` | method, protected | [20](../../../Source/Persistence/DB/BoldDBActions.pas#L20) · [body 62](../../../Source/Persistence/DB/BoldDBActions.pas#L62) |  | ⚪ not started |  |
-| `Create` | constructor | [22](../../../Source/Persistence/DB/BoldDBActions.pas#L22) · [body 42](../../../Source/Persistence/DB/BoldDBActions.pas#L42) |  | ⚪ not started |  |
-| `ExecuteTarget` | method | [23](../../../Source/Persistence/DB/BoldDBActions.pas#L23) · [body 48](../../../Source/Persistence/DB/BoldDBActions.pas#L48) |  | ⚪ not started |  |
-| `HandlesTarget` | method | [24](../../../Source/Persistence/DB/BoldDBActions.pas#L24) · [body 55](../../../Source/Persistence/DB/BoldDBActions.pas#L55) |  | ⚪ not started |  |
-| `BoldPersistenceHandleDB` | property, published | [26](../../../Source/Persistence/DB/BoldDBActions.pas#L26) |  | ⚪ not started |  |
-| `IgnoreUnknownTables` | property, published | [27](../../../Source/Persistence/DB/BoldDBActions.pas#L27) |  | ⚪ not started |  |
+| `SetBoldPersistenceHandleDB` | method, private | [18](../../../Source/Persistence/DB/BoldDBActions.pas#L18) · [body 70](../../../Source/Persistence/DB/BoldDBActions.pas#L70) | [`TBoldGenerateSchemaAction.SetBoldPersistenceHandleDB`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L50) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
+| `Notification` | method, protected | [20](../../../Source/Persistence/DB/BoldDBActions.pas#L20) · [body 62](../../../Source/Persistence/DB/BoldDBActions.pas#L62) | [`TBoldGenerateSchemaAction.Notification`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L39) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
+| `Create` | constructor | [22](../../../Source/Persistence/DB/BoldDBActions.pas#L22) · [body 42](../../../Source/Persistence/DB/BoldDBActions.pas#L42) | [`TBoldGenerateSchemaAction.TBoldGenerateSchemaAction`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L17) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
+| `ExecuteTarget` | method | [23](../../../Source/Persistence/DB/BoldDBActions.pas#L23) · [body 48](../../../Source/Persistence/DB/BoldDBActions.pas#L48) | [`TBoldGenerateSchemaAction.ExecuteTarget`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L24) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
+| `HandlesTarget` | method | [24](../../../Source/Persistence/DB/BoldDBActions.pas#L24) · [body 55](../../../Source/Persistence/DB/BoldDBActions.pas#L55) | [`TBoldGenerateSchemaAction.HandlesTarget`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L34) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
+| `BoldPersistenceHandleDB` | property, published | [26](../../../Source/Persistence/DB/BoldDBActions.pas#L26) | [`TBoldGenerateSchemaAction.BoldPersistenceHandleDB`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L57) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
+| `IgnoreUnknownTables` | property, published | [27](../../../Source/Persistence/DB/BoldDBActions.pas#L27) | [`TBoldGenerateSchemaAction.IgnoreUnknownTables`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L64) | ✅ verified | ✔ [`BoldDBActionsTests.Generate_schema_creates_the_tables_of_an_inactive_handle`](../../tests/Bold.AwareGui.Tests/Persistence/DB/BoldDBActionsTests.cs#L12) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldGenerateSchemaAction.Notification`](../../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs#L47) (method)
 
 ## Dependencies
 

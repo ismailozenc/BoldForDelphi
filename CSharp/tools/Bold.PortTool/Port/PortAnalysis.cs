@@ -402,7 +402,7 @@ public sealed class PortAnalysis
 
             string? project = RepoLayout.ProjectOf(marker.File);
             if (map?.Project is not null && project is not null && marker.File.StartsWith("CSharp/src/", StringComparison.Ordinal) &&
-                !string.Equals(project, map.Project, StringComparison.Ordinal))
+                !string.Equals(project, map.Project, StringComparison.Ordinal) && !string.Equals(project, map.AlsoIn, StringComparison.Ordinal))
             {
                 Warning(marker.Location, $"{unit.Name} goes to {map.Project} in the port map, but this marker is in {project}");
             }

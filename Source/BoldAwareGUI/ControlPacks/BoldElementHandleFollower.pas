@@ -1,4 +1,4 @@
-unit BoldElementHandleFollower; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs; symbols and status: CSharp/port/units/BoldElementHandleFollower.md }
+unit BoldElementHandleFollower; { C# port: CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldElementHandleFollower.cs; symbols and status: CSharp/port/units/BoldElementHandleFollower.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

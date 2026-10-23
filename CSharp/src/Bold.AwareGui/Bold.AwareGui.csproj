@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Bold-aware GUI logic without a GUI toolkit: the control packs (followers, controllers and renderers), the GUI handler, the actions and the property controllers. Bold.WinForms builds its controls on it; being plain .NET, it is tested on every platform.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../Bold.Handles/Bold.Handles.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,4 +1,4 @@
-unit BoldMLRenderers; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs; symbols and status: CSharp/port/units/BoldMLRenderers.md }
+unit BoldMLRenderers; { C# port: CSharp/src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldMLRenderers.cs; symbols and status: CSharp/port/units/BoldMLRenderers.md }
 
 interface
 

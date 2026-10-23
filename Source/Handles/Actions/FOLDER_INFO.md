@@ -27,9 +27,9 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldActionDefs](../../../CSharp/port/units/BoldActionDefs.md) | Bold.WinForms: Handles/Actions/BoldActionDefs.cs (not started) | M8 WinForms |
-| [BoldActions](../../../CSharp/port/units/BoldActions.md) | Bold.WinForms: Handles/Actions/BoldActions.cs (not started) | M8 WinForms |
-| [BoldHandleAction](../../../CSharp/port/units/BoldHandleAction.md) | Bold.WinForms: Handles/Actions/BoldHandleAction.cs (not started) | M8 WinForms |
-| [BoldListActions](../../../CSharp/port/units/BoldListActions.md) | Bold.WinForms: Handles/Actions/BoldListActions.cs (not started) | M8 WinForms |
-| [BoldUndoActions](../../../CSharp/port/units/BoldUndoActions.md) | Bold.WinForms: Handles/Actions/BoldUndoActions.cs (not started) | M8 WinForms |
+| [BoldActionDefs](../../../CSharp/port/units/BoldActionDefs.md) | [Bold.AwareGui: Handles/Actions/BoldActionDefs.cs](../../../CSharp/src/Bold.AwareGui/Handles/Actions/BoldActionDefs.cs) | M8 WinForms |
+| [BoldActions](../../../CSharp/port/units/BoldActions.md) | [Bold.AwareGui: Handles/Actions/BoldActions.cs](../../../CSharp/src/Bold.AwareGui/Handles/Actions/BoldActions.cs) | M8 WinForms |
+| [BoldHandleAction](../../../CSharp/port/units/BoldHandleAction.md) | [Bold.AwareGui: Handles/Actions/BoldHandleAction.cs](../../../CSharp/src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs) | M8 WinForms |
+| [BoldListActions](../../../CSharp/port/units/BoldListActions.md) | [Bold.AwareGui: Handles/Actions/BoldListActions.cs](../../../CSharp/src/Bold.AwareGui/Handles/Actions/BoldListActions.cs) | M8 WinForms |
+| [BoldUndoActions](../../../CSharp/port/units/BoldUndoActions.md) | [Bold.AwareGui: Handles/Actions/BoldUndoActions.cs](../../../CSharp/src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs) | M8 WinForms |
 <!-- END C# PORT -->

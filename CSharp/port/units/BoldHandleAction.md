@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Actions/BoldHandleAction.pas`](../../../Source/Handles/Actions/BoldHandleAction.pas) (102 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Handles/Actions/BoldHandleAction.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | ✅ verified: 9 of 9 symbols done, 9 verified |
 
-⚪ 9 not started
+✅ 9 verified
 
 ## Unit level
 
@@ -18,22 +18,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldHandleAction` | class | [18](../../../Source/Handles/Actions/BoldHandleAction.pas#L18) |  | ⚪ not started |  |
+| `TBoldHandleAction` | class | [18](../../../Source/Handles/Actions/BoldHandleAction.pas#L18) | [`TBoldHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L14) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
 
 ## TBoldHandleAction
 
-class at [line 18](../../../Source/Handles/Actions/BoldHandleAction.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/Handles/Actions/BoldHandleAction.pas#L18); ✅ verified, C# [`TBoldHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldElementHandle` | method, private | [22](../../../Source/Handles/Actions/BoldHandleAction.pas#L22) · [body 74](../../../Source/Handles/Actions/BoldHandleAction.pas#L74) |  | ⚪ not started |  |
-| `_HandleSubscriberReceive` | method, protected | [24](../../../Source/Handles/Actions/BoldHandleAction.pas#L24) · [body 46](../../../Source/Handles/Actions/BoldHandleAction.pas#L46) |  | ⚪ not started |  |
-| `BoldElementHandle` | property, protected | [25](../../../Source/Handles/Actions/BoldHandleAction.pas#L25) |  | ⚪ not started |  |
-| `CheckAllowEnable` | method, protected | [26](../../../Source/Handles/Actions/BoldHandleAction.pas#L26) · [body 96](../../../Source/Handles/Actions/BoldHandleAction.pas#L96) |  | ⚪ not started |  |
-| `Create` | constructor | [28](../../../Source/Handles/Actions/BoldHandleAction.pas#L28) · [body 57](../../../Source/Handles/Actions/BoldHandleAction.pas#L57) |  | ⚪ not started |  |
-| `Destroy` | destructor | [29](../../../Source/Handles/Actions/BoldHandleAction.pas#L29) · [body 63](../../../Source/Handles/Actions/BoldHandleAction.pas#L63) |  | ⚪ not started |  |
-| `UpdateTarget` | method | [30](../../../Source/Handles/Actions/BoldHandleAction.pas#L30) · [body 86](../../../Source/Handles/Actions/BoldHandleAction.pas#L86) |  | ⚪ not started |  |
-| `HandlesTarget` | method | [31](../../../Source/Handles/Actions/BoldHandleAction.pas#L31) · [body 69](../../../Source/Handles/Actions/BoldHandleAction.pas#L69) |  | ⚪ not started |  |
+| `SetBoldElementHandle` | method, private | [22](../../../Source/Handles/Actions/BoldHandleAction.pas#L22) · [body 74](../../../Source/Handles/Actions/BoldHandleAction.pas#L74) | [`TBoldHandleAction.SetBoldElementHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L54) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `_HandleSubscriberReceive` | method, protected | [24](../../../Source/Handles/Actions/BoldHandleAction.pas#L24) · [body 46](../../../Source/Handles/Actions/BoldHandleAction.pas#L46) | [`TBoldHandleAction._HandleSubscriberReceive`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L41) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `BoldElementHandle` | property, protected | [25](../../../Source/Handles/Actions/BoldHandleAction.pas#L25) | [`TBoldHandleAction.BoldElementHandle`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L79) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `CheckAllowEnable` | method, protected | [26](../../../Source/Handles/Actions/BoldHandleAction.pas#L26) · [body 96](../../../Source/Handles/Actions/BoldHandleAction.pas#L96) | [`TBoldHandleAction.CheckAllowEnable`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L76) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `Create` | constructor | [28](../../../Source/Handles/Actions/BoldHandleAction.pas#L28) · [body 57](../../../Source/Handles/Actions/BoldHandleAction.pas#L57) | [`TBoldHandleAction.TBoldHandleAction`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L23) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `Destroy` | destructor | [29](../../../Source/Handles/Actions/BoldHandleAction.pas#L29) · [body 63](../../../Source/Handles/Actions/BoldHandleAction.pas#L63) | [`TBoldHandleAction.Dispose`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L30) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `UpdateTarget` | method | [30](../../../Source/Handles/Actions/BoldHandleAction.pas#L30) · [body 86](../../../Source/Handles/Actions/BoldHandleAction.pas#L86) | [`TBoldHandleAction.UpdateTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L66) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
+| `HandlesTarget` | method | [31](../../../Source/Handles/Actions/BoldHandleAction.pas#L31) · [body 69](../../../Source/Handles/Actions/BoldHandleAction.pas#L69) | [`TBoldHandleAction.HandlesTarget`](../../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs#L51) | ✅ verified | ✔ [`BoldActionsTests.Update_db_saves_dirty_objects_and_forgets_a_disposed_handle`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L31) |
 
 ## Dependencies
 

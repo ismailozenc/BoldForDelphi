@@ -25,7 +25,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldExceptionHandlers](../../../CSharp/port/units/BoldExceptionHandlers.md) | Bold.WinForms: BoldAwareGUI/Core/BoldExceptionHandlers.cs (not started) | M8 WinForms |
-| [BoldGUI](../../../CSharp/port/units/BoldGUI.md) | Bold.WinForms: BoldAwareGUI/Core/BoldGUI.cs (not started) | M8 WinForms |
-| [BoldGuiResourceStrings](../../../CSharp/port/units/BoldGuiResourceStrings.md) | Bold.WinForms: BoldAwareGUI/Core/BoldGuiResourceStrings.cs (not started) | M8 WinForms |
+| [BoldExceptionHandlers](../../../CSharp/port/units/BoldExceptionHandlers.md) | [Bold.AwareGui: BoldAwareGUI/Core/BoldExceptionHandlers.cs](../../../CSharp/src/Bold.AwareGui/BoldAwareGUI/Core/BoldExceptionHandlers.cs) | M8 WinForms |
+| [BoldGUI](../../../CSharp/port/units/BoldGUI.md) | [Bold.AwareGui: BoldAwareGUI/Core/BoldGUI.cs](../../../CSharp/src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs) | M8 WinForms |
+| [BoldGuiResourceStrings](../../../CSharp/port/units/BoldGuiResourceStrings.md) | [Bold.AwareGui: BoldAwareGUI/Core/BoldGuiResourceStrings.cs](../../../CSharp/src/Bold.AwareGui/BoldAwareGUI/Core/BoldGuiResourceStrings.cs) | M8 WinForms |
 <!-- END C# PORT -->

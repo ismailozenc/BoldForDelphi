@@ -5,7 +5,7 @@ The C# port of Bold for Delphi, on .NET 10. The Delphi source in [`../Source`](.
 | Where | What |
 |---|---|
 | [`Bold.slnx`](Bold.slnx) | The solution: every project below. |
-| [`src/`](src) | One project per layer, from `Bold.Core` up to `Bold.ModelEditor`. A Delphi unit `Source/Common/Core/BoldDefs.pas` becomes `src/Bold.Core/Common/Core/BoldDefs.cs`. |
+| [`src/`](src) | One project per layer, from `Bold.Core` up to `Bold.ModelEditor` (`Bold.AwareGui` holds the GUI logic that does not need WinForms). A Delphi unit `Source/Common/Core/BoldDefs.pas` becomes `src/Bold.Core/Common/Core/BoldDefs.cs`. |
 | [`tests/`](tests) | NUnit test projects, one per source project, with the same folder layout, and the test models in [`tests/Fixtures/Models`](tests/Fixtures/Models). |
 | [`port/PORT_STATUS.md`](port/PORT_STATUS.md) | Port status of every Delphi unit, by milestone and project. |
 | [`port/units/`](port/units) | One page per Delphi unit: every type, method, property and constant, linked to its Delphi line, its C# code and its tests, with a status. |
@@ -54,6 +54,23 @@ model.ReadModel(bldLines);
 var typeInfo = new TBoldSystemTypeInfoHandle(components) { BoldModel = model };
 var system = new TBoldSystemHandle(components) { SystemTypeInfoHandle = typeInfo, Active = true };
 var people = new TBoldListHandle(components) { RootHandle = system, Expression = "Person.allInstances" };
+```
+
+## Bold-aware GUI
+
+`Bold.AwareGui` has what Bold's controls are made of, without the controls: followers that keep a value of an
+element on show and write edits back, the controllers and renderers of strings, numbers, dates, check boxes, viewers,
+lists, trees and grids, the handle followers that connect them to handles, the actions (system, list and undo actions)
+and the properties controllers that drive properties of any component. It does not depend on WinForms, so its logic is
+tested on every platform; `Bold.WinForms` builds the controls on it. Followers display through the environment's
+queue, which the GUI runs when idle (a test can call `TBoldQueueable.DisplayAll()`).
+
+```csharp
+var rows = new TBoldStringFollowerController(null) { Expression = "firstName" };
+var list = new TBoldListAsFollowerListController(null, rows);
+var follower = new TBoldListHandleFollower(listBox, list) { BoldHandle = people };
+// after display: follower.Follower.SubFollowers(i) is the row of the i-th person,
+// rows.GetCurrentAsString(row) its first name
 ```
 
 ## Where things came from

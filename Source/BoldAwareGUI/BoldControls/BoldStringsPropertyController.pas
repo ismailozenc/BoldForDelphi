@@ -1,4 +1,4 @@
-unit BoldStringsPropertyController; { C# port: CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldStringsPropertyController.cs; symbols and status: CSharp/port/units/BoldStringsPropertyController.md }
+unit BoldStringsPropertyController; { C# port: CSharp/src/Bold.AwareGui/BoldAwareGUI/BoldControls/BoldStringsPropertyController.cs; symbols and status: CSharp/port/units/BoldStringsPropertyController.md }
 
 {$UNDEF BOLDCOMCLIENT}
 

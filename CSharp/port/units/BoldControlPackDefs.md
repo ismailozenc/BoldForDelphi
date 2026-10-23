@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldControlPackDefs.pas`](../../../Source/Common/Support/BoldControlPackDefs.pas) (38 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/Support/BoldControlPackDefs.cs` |
-| Project | Bold.WinForms |
+| C# | [`CSharp/src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs) |
+| Project | Bold.AwareGui |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 19 symbols done, 0 verified |
+| Status | ✅ verified: 19 of 19 symbols done, 19 verified |
 
-⚪ 19 not started
+✅ 19 verified
 
 ## Unit level
 
@@ -18,25 +18,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldApplyPolicy` | enum | [6](../../../Source/Common/Support/BoldControlPackDefs.pas#L6) |  | ⚪ not started |  |
-| `TBoldDragMode` | enum | [7](../../../Source/Common/Support/BoldControlPackDefs.pas#L7) |  | ⚪ not started |  |
-| `TBoldDropMode` | enum | [8](../../../Source/Common/Support/BoldControlPackDefs.pas#L8) |  | ⚪ not started |  |
-| `TBoldPopupDeleteType` | enum | [9](../../../Source/Common/Support/BoldControlPackDefs.pas#L9) |  | ⚪ not started |  |
-| `TBoldFollowerState` | enum | [11](../../../Source/Common/Support/BoldControlPackDefs.pas#L11) |  | ⚪ not started |  |
-| `TBoldNilElementMode` | enum | [15](../../../Source/Common/Support/BoldControlPackDefs.pas#L15) |  | ⚪ not started |  |
-| `bfsDisplayable` | const | [18](../../../Source/Common/Support/BoldControlPackDefs.pas#L18) |  | ⚪ not started |  |
-| `bfsOutOfDate` | const | [19](../../../Source/Common/Support/BoldControlPackDefs.pas#L19) |  | ⚪ not started |  |
-| `bfsActive` | const | [20](../../../Source/Common/Support/BoldControlPackDefs.pas#L20) |  | ⚪ not started |  |
-| `bfdNeedResubscribe` | const | [22](../../../Source/Common/Support/BoldControlPackDefs.pas#L22) |  | ⚪ not started |  |
-| `BoldNodeListIndex` | const | [24](../../../Source/Common/Support/BoldControlPackDefs.pas#L24) |  | ⚪ not started |  |
-| `BoldNodeIconIndex` | const | [25](../../../Source/Common/Support/BoldControlPackDefs.pas#L25) |  | ⚪ not started |  |
-| `BoldNodeTextIndex` | const | [26](../../../Source/Common/Support/BoldControlPackDefs.pas#L26) |  | ⚪ not started |  |
-| `BoldNodeFirstColumnIndex` | const | [27](../../../Source/Common/Support/BoldControlPackDefs.pas#L27) |  | ⚪ not started |  |
-| `breHandleNil` | const | [29](../../../Source/Common/Support/BoldControlPackDefs.pas#L29) |  | ⚪ not started |  |
-| `breValueIdentityChanged` | const | [30](../../../Source/Common/Support/BoldControlPackDefs.pas#L30) |  | ⚪ not started |  |
-| `breListIdentityChanged` | const | [31](../../../Source/Common/Support/BoldControlPackDefs.pas#L31) |  | ⚪ not started |  |
-| `breHandleIndexChanged` | const | [32](../../../Source/Common/Support/BoldControlPackDefs.pas#L32) |  | ⚪ not started |  |
-| `beListPartEnabledChanged` | const | [34](../../../Source/Common/Support/BoldControlPackDefs.pas#L34) |  | ⚪ not started |  |
+| `TBoldApplyPolicy` | enum | [6](../../../Source/Common/Support/BoldControlPackDefs.pas#L6) | [`TBoldApplyPolicy`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L8) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `TBoldDragMode` | enum | [7](../../../Source/Common/Support/BoldControlPackDefs.pas#L7) | [`TBoldDragMode`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L12) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `TBoldDropMode` | enum | [8](../../../Source/Common/Support/BoldControlPackDefs.pas#L8) | [`TBoldDropMode`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L16) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `TBoldPopupDeleteType` | enum | [9](../../../Source/Common/Support/BoldControlPackDefs.pas#L9) | [`TBoldPopupDeleteType`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L20) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `TBoldFollowerState` | enum | [11](../../../Source/Common/Support/BoldControlPackDefs.pas#L11) | [`TBoldFollowerState`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L24) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `TBoldNilElementMode` | enum | [15](../../../Source/Common/Support/BoldControlPackDefs.pas#L15) | [`TBoldNilElementMode`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L33) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `bfsDisplayable` | const | [18](../../../Source/Common/Support/BoldControlPackDefs.pas#L18) | [`BoldControlPackDefs.bfsDisplayable`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L39) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `bfsOutOfDate` | const | [19](../../../Source/Common/Support/BoldControlPackDefs.pas#L19) | [`BoldControlPackDefs.bfsOutOfDate`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L43) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `bfsActive` | const | [20](../../../Source/Common/Support/BoldControlPackDefs.pas#L20) | [`BoldControlPackDefs.bfsActive`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L47) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `bfdNeedResubscribe` | const | [22](../../../Source/Common/Support/BoldControlPackDefs.pas#L22) | [`BoldControlPackDefs.bfdNeedResubscribe`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L52) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `BoldNodeListIndex` | const | [24](../../../Source/Common/Support/BoldControlPackDefs.pas#L24) | [`BoldControlPackDefs.BoldNodeListIndex`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L55) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `BoldNodeIconIndex` | const | [25](../../../Source/Common/Support/BoldControlPackDefs.pas#L25) | [`BoldControlPackDefs.BoldNodeIconIndex`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L56) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `BoldNodeTextIndex` | const | [26](../../../Source/Common/Support/BoldControlPackDefs.pas#L26) | [`BoldControlPackDefs.BoldNodeTextIndex`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L57) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `BoldNodeFirstColumnIndex` | const | [27](../../../Source/Common/Support/BoldControlPackDefs.pas#L27) | [`BoldControlPackDefs.BoldNodeFirstColumnIndex`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L58) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `breHandleNil` | const | [29](../../../Source/Common/Support/BoldControlPackDefs.pas#L29) | [`BoldControlPackDefs.breHandleNil`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L60) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `breValueIdentityChanged` | const | [30](../../../Source/Common/Support/BoldControlPackDefs.pas#L30) | [`BoldControlPackDefs.breValueIdentityChanged`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L61) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `breListIdentityChanged` | const | [31](../../../Source/Common/Support/BoldControlPackDefs.pas#L31) | [`BoldControlPackDefs.breListIdentityChanged`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L62) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `breHandleIndexChanged` | const | [32](../../../Source/Common/Support/BoldControlPackDefs.pas#L32) | [`BoldControlPackDefs.breHandleIndexChanged`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L63) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
+| `beListPartEnabledChanged` | const | [34](../../../Source/Common/Support/BoldControlPackDefs.pas#L34) | [`BoldControlPackDefs.beListPartEnabledChanged`](../../src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs#L65) | ✅ verified | ✔ [`BoldControlPackDefsTests.Constants_states_and_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L17) |
 
 ## Dependencies
 

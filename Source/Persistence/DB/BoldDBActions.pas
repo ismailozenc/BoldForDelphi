@@ -1,4 +1,4 @@
-unit BoldDBActions; { C# port: CSharp/src/Bold.WinForms/Persistence/DB/BoldDBActions.cs; symbols and status: CSharp/port/units/BoldDBActions.md }
+unit BoldDBActions; { C# port: CSharp/src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs; symbols and status: CSharp/port/units/BoldDBActions.md }
 
 interface
 

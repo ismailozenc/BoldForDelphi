@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of Bold.AwareGui: followers, controllers and renderers of the control packs, handle followers, actions and the properties controllers, without a user interface (a test queue displays on demand). They run on the Building example's model and classes. Test files mirror the Delphi paths.</Description>
+  </PropertyGroup>
+  <!-- The schema action runs on SQLite: offline builds use the small native provider of the SQL tests; normal builds Microsoft.Data.Sqlite. -->
+  <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
+    <DefineConstants>$(DefineConstants);BOLD_OFFLINE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/TestDatabase.cs" Link="Support/TestDatabase.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/SqlTestModel.cs" Link="Support/SqlTestModel.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/NativeSqlite.cs" Link="Support/NativeSqlite.cs" Condition="'$(BoldOffline)' == 'true'" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../../src/Bold.AwareGui/Bold.AwareGui.csproj" />
+    <ProjectReference Include="../../examples/Building/BuildingClasses/BuildingClasses.csproj" />
+  </ItemGroup>
+</Project>

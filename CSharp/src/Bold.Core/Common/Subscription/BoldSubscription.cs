@@ -644,6 +644,11 @@ public class TBoldSubscribableComponent : System.ComponentModel.Component, Syste
                 fFreeNotifies = null;
                 foreach (System.ComponentModel.IComponent component in notifies)
                 {
+                    if (component is not TBoldSubscribableComponent)
+                    {
+                        component.Disposed -= FreeNotifyComponentDisposed;
+                    }
+
                     (component as TBoldSubscribableComponent)?.fFreeNotifies?.Remove(this);
                     (component as IBoldNotifiable)?.Notification(this, TOperation.opRemove);
                 }
@@ -696,7 +701,8 @@ public class TBoldSubscribableComponent : System.ComponentModel.Component, Syste
     /// <summary>
     /// Makes <paramref name="AComponent"/> be told (through its Notification, with opRemove) when this component is
     /// disposed, and this component when it is, as Delphi's FreeNotification. A component other than a Bold component
-    /// is told when it implements <see cref="IBoldNotifiable"/>.
+    /// is told when it implements <see cref="IBoldNotifiable"/>, and this component is told when it is disposed (through
+    /// its Disposed event).
     /// </summary>
     public void FreeNotification(System.ComponentModel.IComponent? AComponent)
     {
@@ -709,7 +715,14 @@ public class TBoldSubscribableComponent : System.ComponentModel.Component, Syste
         if (!fFreeNotifies.Contains(AComponent))
         {
             fFreeNotifies.Add(AComponent);
-            (AComponent as TBoldSubscribableComponent)?.FreeNotification(this);
+            if (AComponent is TBoldSubscribableComponent boldComponent)
+            {
+                boldComponent.FreeNotification(this);
+            }
+            else
+            {
+                AComponent.Disposed += FreeNotifyComponentDisposed;
+            }
         }
     }
 
@@ -718,7 +731,24 @@ public class TBoldSubscribableComponent : System.ComponentModel.Component, Syste
     {
         if (AComponent is not null && fFreeNotifies is not null && fFreeNotifies.Remove(AComponent))
         {
-            (AComponent as TBoldSubscribableComponent)?.RemoveFreeNotification(this);
+            if (AComponent is TBoldSubscribableComponent boldComponent)
+            {
+                boldComponent.RemoveFreeNotification(this);
+            }
+            else
+            {
+                AComponent.Disposed -= FreeNotifyComponentDisposed;
+            }
+        }
+    }
+
+    /// <summary>A component other than a Bold component (a control, say) that this one is linked to was disposed.</summary>
+    private void FreeNotifyComponentDisposed(object? sender, EventArgs e)
+    {
+        if (sender is System.ComponentModel.IComponent component && fFreeNotifies is not null && fFreeNotifies.Remove(component))
+        {
+            component.Disposed -= FreeNotifyComponentDisposed;
+            Notification(component, TOperation.opRemove);
         }
     }
 
@@ -770,8 +800,8 @@ public class TBoldSubscribableComponent : System.ComponentModel.Component, Syste
 }
 
 /// <summary>A persistent (assignable) object others can subscribe to; it has a publisher from the start.</summary>
-[Delphi(PortStatus.Ported, Note = "A plain class where Delphi derives from TPersistent.")]
-public class TBoldSubscribablePersistent : IDisposable
+[Delphi(PortStatus.Ported)]
+public class TBoldSubscribablePersistent : TPersistent, IDisposable
 {
     private TBoldPublisher? fPublisher;
 

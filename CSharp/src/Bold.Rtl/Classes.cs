@@ -101,6 +101,13 @@ public abstract class TStrings : IEnumerable<string>
         return index;
     }
 
+    /// <summary>Inserts the string with its object at the index.</summary>
+    public void InsertObject(int index, string s, object? obj)
+    {
+        Insert(index, s);
+        PutObject(index, obj);
+    }
+
     public int AddObject(string s, object? obj)
     {
         int index = Add(s);
@@ -909,4 +916,32 @@ public class TList : IEnumerable<object?>
     public IEnumerator<object?> GetEnumerator() => FList.GetEnumerator();
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+}
+
+/// <summary>
+/// A TStrings over a .NET list (the Items of a WinForms list box or combo box, say): the strings are the list's items
+/// (as text); objects are not kept, so GetObject gives null.
+/// </summary>
+public sealed class TListStrings(System.Collections.IList List) : TStrings
+{
+    /// <summary>The list the strings are kept in.</summary>
+    public System.Collections.IList List { get; } = List;
+
+    public override int Count => List.Count;
+
+    public override string Get(int index) => Convert.ToString(List[index], System.Globalization.CultureInfo.CurrentCulture) ?? "";
+
+    public override void Put(int index, string value) => List[index] = value;
+
+    public override object? GetObject(int index) => null;
+
+    public override void PutObject(int index, object? value)
+    {
+    }
+
+    public override void Insert(int index, string s) => List.Insert(index, s);
+
+    public override void Delete(int index) => List.RemoveAt(index);
+
+    public override void Clear() => List.Clear();
 }
