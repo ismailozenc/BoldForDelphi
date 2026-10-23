@@ -64,6 +64,7 @@ public void Add_increases_the_count() { ... }
 
 [Covers(typeof(BoldDefs), "*")]            // every marked member of the type
 [Covers("BoldDefs", "TBoldTimeStampType")] // Delphi symbols with assembly-level markers
+[Covers("BoldOclSymbolImplementations", "TBOS_*")] // every symbol whose name starts with TBOS_, for internal classes
 ```
 
 `[Covers]` on a test class covers the symbols for every test in the class. Take expected values from the Delphi source where you can, so a wrong value cannot be typed into both the code and the test: `PortAssert.ConstantsMatchDelphi`, `EnumsMatchDelphi`, `ClassParentsMatchDelphi` and `DelegatesMatchDelphi` in Bold.TestSupport compare C# declarations with the Delphi unit, and `DelphiSource.Constants` gives the value of any Delphi constant. Model tests use the files in [`tests/Fixtures/Models`](tests/Fixtures/Models), copied from master by the `fixtures` command.

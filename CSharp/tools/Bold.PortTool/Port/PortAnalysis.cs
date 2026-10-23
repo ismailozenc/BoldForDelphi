@@ -637,6 +637,20 @@ public sealed class PortAnalysis
 
             foreach (string name in names)
             {
+                // "Prefix*" covers every symbol of the unit whose name starts with the prefix (a class and its members).
+                if (name.EndsWith('*'))
+                {
+                    string prefix = name[..^1];
+                    var matching = unit.Symbols.Where(s => s.Key.StartsWith(prefix, StringComparison.OrdinalIgnoreCase)).ToList();
+                    if (matching.Count == 0)
+                    {
+                        Error(location, $"{unit.Name} has no symbol starting with {prefix}");
+                    }
+
+                    targets.AddRange(matching);
+                    continue;
+                }
+
                 var symbol = ResolveExplicit(name, unit, location);
                 if (symbol is not null)
                 {

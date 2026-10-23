@@ -68,6 +68,51 @@ public class BoldPersistenceHandleFileXMLTests
         Assert.That(Member<TBAInteger>(ann3, "age").AsInteger, Is.EqualTo(43));
     }
 
+    public static IEnumerable<FixtureModelInfo> Fixtures => FixturePaths.Manifest;
+
+    /// <summary>
+    /// The M3 closing test, on every fixture model: objects of every class, with every stored attribute set and every
+    /// role linked, save to an XML file, reload into a new system and compare equal.
+    /// </summary>
+    [TestCaseSource(nameof(Fixtures))]
+    public void Fixture_models_save_reload_and_compare_equal(FixtureModelInfo info)
+    {
+        using TMoldModel model = TMoldBLDRW.ModelFromFile(FixturePaths.Model(info.File));
+        var types = new TBoldTypeNameDictionary(null);
+        types.AddDefaultMappings();
+        model.TypeNameDictionary = types;
+        if (model.TVByName(BoldDefaultTaggedValues.BOLDINTERALTVPREFIX + BoldDefaultTaggedValues.TV_MODELERRORS) != "")
+        {
+            Assert.Ignore("The model has errors, so it has no runtime model (see the runtime model fixture test).");
+        }
+
+        using var systemTypeInfo = new TBoldSystemTypeInfo(model, false, false, types);
+        var first = new TBoldSystem(null, systemTypeInfo, new TBoldPersistenceControllerFileXML(fFile, true, model));
+        TBoldSystem? second = null;
+        try
+        {
+            // Multi-language attributes read their languages from the default system, which a system handle would set.
+            first.MakeDefault();
+            SystemFiller.Fill(first);
+            first.UpdateDatabase();
+            Assert.That(first.BoldDirty, Is.False);
+
+            second = new TBoldSystem(null, systemTypeInfo, new TBoldPersistenceControllerFileXML(fFile, true, model));
+            second.MakeDefault();
+            int compared = SystemFiller.AssertSame(first, second);
+            TestContext.Out.WriteLine($"{compared} members compared");
+        }
+        finally
+        {
+            // A failure leaves a system dirty; discard it so disposing does not hide the failure.
+            foreach (TBoldSystem? s in new[] { first, second })
+            {
+                s?.Discard();
+                s?.Dispose();
+            }
+        }
+    }
+
     [Test]
     [Covers(typeof(TBoldPersistenceHandleFileXML), "*")]
     [Covers(typeof(TBoldAbstractPersistenceHandleFile), "*")]

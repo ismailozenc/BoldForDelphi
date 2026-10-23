@@ -18,8 +18,9 @@
     <Compile Remove="Support/NativeSqlite.cs" />
   </ItemGroup>
   <ItemGroup>
-    <!-- The object space tests' sample model. -->
+    <!-- The object space tests' sample model, and the filler and comparer of round trip tests. -->
     <Compile Include="../Bold.ObjectSpace.Tests/ObjectSpace/BORepresentation/ObjectSpaceSample.cs" Link="Support/ObjectSpaceSample.cs" />
+    <Compile Include="../Bold.ObjectSpace.Tests/Support/SystemFiller.cs" Link="Support/SystemFiller.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />

@@ -191,6 +191,7 @@ public class BoldOclCatalogueTests
     private static TestCaseData A(string ocl, string expected) => new TestCaseData(ocl, true, expected).SetName("Ann: " + ocl);
 
     [TestCaseSource(nameof(Cases))]
+    [Covers("BoldOclSymbolImplementations", "TBOS_*", "InitializeSymbolTable", "RegisterOCLOperation", "OCLOperations")]
     public void Operations_give_the_Delphi_values(string ocl, bool onAnn, string expected)
     {
         using var town = new Town();

@@ -71,6 +71,93 @@ public class BoldSystemTests
         Assert.That(s.System.AssertLinkIntegrity(), Is.True);
     }
 
+    /// <summary>A sample whose Building.residents role has the delete action <paramref name="action"/> (or the aggregation's default).</summary>
+    private static ObjectSpaceSample WithResidents(string? action, TAggregationKind aggregation = TAggregationKind.akNone) =>
+        new(m =>
+        {
+            var residents = (TMoldRole)m.Classes.ItemsByName("Building")!.AllBoldMembers.ItemsByName("residents")!;
+            residents.Aggregation = aggregation;
+            if (action is not null)
+            {
+                residents.SetBoldTV(BoldDefaultTaggedValues.TAG_DELETEACTION, action);
+            }
+        });
+
+    private static int Count(ObjectSpaceSample s, string className) =>
+        s.System.Classes(s.SystemTypeInfo.ClassTypeInfoByExpressionName(className)!.TopSortedIndex)!.Count;
+
+    /// <summary>The M3 delete rules: allow unlinks, prohibit refuses while linked, cascade deletes the linked objects; link objects go with either end.</summary>
+    [Test]
+    [Covers(typeof(TBoldObject), "CanDelete", "Delete", "InternalCanDelete")]
+    public void Delete_rules_allow_prohibit_and_cascade()
+    {
+        using (ObjectSpaceSample s = WithResidents(null))
+        {
+            TBoldObject ann = s.NewPerson(), house = s.NewBuilding();
+            Home(ann).BoldObject = house;
+            Assert.That(house.CanDelete(), Is.True, "allow is the default without aggregation");
+            house.Delete();
+            Assert.That(Home(ann).BoldObject, Is.Null, "allow unlinks");
+            Assert.That(Count(s, "Person"), Is.EqualTo(1));
+        }
+
+        using (ObjectSpaceSample s = WithResidents(BoldDefaultTaggedValues.TV_DELETEACTION_PROHIBIT))
+        {
+            TBoldObject ann = s.NewPerson(), house = s.NewBuilding(), shed = s.NewBuilding();
+            Home(ann).BoldObject = house;
+            Assert.That(house.CanDelete(), Is.False, "prohibit refuses while the role has objects");
+            Assert.That(BoldSystem.GetBoldLastFailureReason()?.Reason, Is.EqualTo(BoldCoreConsts.sObjectHasRelations));
+            Assert.Throws<EBoldFailure>(() => house.Delete());
+            Assert.That(Count(s, "Building"), Is.EqualTo(2), "the refused delete changed nothing");
+            Assert.That(Home(ann).BoldObject, Is.SameAs(house));
+            shed.Delete();
+            Assert.That(Count(s, "Building"), Is.EqualTo(1), "an empty role allows the delete");
+            Home(ann).BoldObject = null;
+            house.Delete();
+            Assert.That(Count(s, "Building"), Is.EqualTo(0));
+        }
+
+        using (ObjectSpaceSample s = WithResidents(BoldDefaultTaggedValues.TV_DELETEACTION_CASCADE))
+        {
+            TBoldObject ann = s.NewPerson(), bob = s.NewPerson(), cy = s.NewPerson(), house = s.NewBuilding();
+            Home(ann).BoldObject = house;
+            Home(bob).BoldObject = house;
+            Friends(cy).Add(ann);
+            house.Delete();
+            Assert.That(Count(s, "Person"), Is.EqualTo(1), "cascade deletes the residents");
+            Assert.That(Friends(cy).Count, Is.EqualTo(0), "and the residents' links");
+            Assert.That(s.System.AssertLinkIntegrity(), Is.True);
+        }
+
+        using (ObjectSpaceSample s = WithResidents(null, TAggregationKind.akComposite))
+        {
+            TBoldObject ann = s.NewPerson(), house = s.NewBuilding();
+            Home(ann).BoldObject = house;
+            house.Delete();
+            Assert.That(Count(s, "Person"), Is.EqualTo(0), "a composite cascades by default");
+        }
+
+        using (ObjectSpaceSample s = WithResidents(null, TAggregationKind.akAggregate))
+        {
+            TBoldObject ann = s.NewPerson(), house = s.NewBuilding();
+            Home(ann).BoldObject = house;
+            Assert.That(house.CanDelete(), Is.False, "an aggregate prohibits by default");
+        }
+
+        using (var s = new ObjectSpaceSample())
+        {
+            TBoldObject ann = s.NewPerson(), bob = s.NewPerson(), cy = s.NewPerson();
+            Friends(ann).Add(bob);
+            Friends(ann).Add(cy);
+            Assert.That(Count(s, "Friendship"), Is.EqualTo(2), "each link has a link object");
+            bob.Delete();
+            Assert.That(Count(s, "Friendship"), Is.EqualTo(1), "deleting an end deletes its link objects");
+            ann.Delete();
+            Assert.That(Count(s, "Friendship"), Is.EqualTo(0));
+            Assert.That(FriendOf(cy).Count, Is.EqualTo(0));
+        }
+    }
+
     [Test]
     [Covers(typeof(TBoldSystem), "StartTransaction", "CommitTransaction", "RollbackTransaction", "TryCommitTransaction")]
     public void Rollback_restores_values_links_and_objects()

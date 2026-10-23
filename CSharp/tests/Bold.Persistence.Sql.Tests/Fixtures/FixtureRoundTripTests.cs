@@ -1,7 +1,7 @@
 // Delphi: Source/PMapper/Default/BoldPMappersDefault.pas, Source/Persistence/DB/BoldPersistenceHandleDB.pas
 // Port map: CSharp/port/units/BoldPersistenceHandleDB.md
-// The M5 closing test: every fixture model gets a SQLite schema, and an object of each concrete persistent class
-// saves and loads into a new system.
+// The M5 closing test: every fixture model gets a SQLite schema, and objects of each concrete persistent class, with
+// every stored attribute set and every role linked, save, load into a new system and compare equal.
 namespace Bold.Tests;
 
 public class FixtureRoundTripTests
@@ -30,42 +30,30 @@ public class FixtureRoundTripTests
         using var systemTypeInfo = new TBoldSystemTypeInfo(model, false, false, types);
         using var db = new SqliteHandle(model);
         TBoldPersistenceController controller = db.OpenController();
-        var created = new Dictionary<string, int>();
         var system = new TBoldSystem(null, systemTypeInfo, controller);
-        // Multi-language attributes read their languages from the default system, which a system handle would set.
-        system.MakeDefault();
+        TBoldSystem? second = null;
         try
         {
-            for (int i = 0; i < systemTypeInfo.TopSortedClasses.Count; i++)
-            {
-                TBoldClassTypeInfo c = systemTypeInfo.TopSortedClasses[i];
-                if (!c.IsAbstract && c.Persistent && !c.IsLinkClass)
-                {
-                    system.CreateNewObjectByExpressionName(c.ExpressionName);
-                    created[c.ExpressionName] = 1;
-                }
-            }
-
+            // Multi-language attributes read their languages from the default system, which a system handle would set.
+            system.MakeDefault();
+            SystemFiller.Fill(system);
             system.UpdateDatabase();
             Assert.That(system.BoldDirty, Is.False);
+
+            second = new TBoldSystem(null, systemTypeInfo, controller);
+            second.MakeDefault();
+            // Members stored externally are left to an external persistence controller; the database does not keep them.
+            SystemFiller.AssertSame(system, second, m =>
+                model.Classes.ItemsByName(m.ClassTypeInfo.ModelName)!.AllBoldMembers.ItemsByName(m.ModelName)?.Storage == TBoldStorage.bsExternal);
         }
         finally
         {
-            // A failure leaves the system dirty; discard it so disposing does not hide the failure.
-            system.Discard();
-            system.Dispose();
+            // A failure leaves a system dirty; discard it so disposing does not hide the failure.
+            foreach (TBoldSystem? s in new[] { system, second })
+            {
+                s?.Discard();
+                s?.Dispose();
+            }
         }
-
-        using var second = new TBoldSystem(null, systemTypeInfo, controller);
-        second.MakeDefault();
-        foreach ((string className, _) in created)
-        {
-            TBoldClassTypeInfo c = systemTypeInfo.ClassTypeInfoByExpressionName(className)!;
-            TBoldObjectList list = second.Classes(c.TopSortedIndex)!;
-            int expected = created.Keys.Count(k => systemTypeInfo.ClassTypeInfoByExpressionName(k)!.BoldIsA(c));
-            Assert.That(list.Count, Is.EqualTo(expected), className);
-        }
-
-        second.Discard();
     }
 }
