@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldNavigator.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas) (758 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 43 symbols done, 0 verified |
+| Status | 🟢 ported: 43 of 43 symbols done, 0 verified |
 
-⚪ 43 not started
+🟢 41 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,56 +18,65 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCustomNavigator` | class | [35](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L35) |  | ⚪ not started |  |
-| `TBoldNavigator` | class | [106](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L106) |  | ⚪ not started |  |
+| `TBoldCustomNavigator` | class | [35](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L35) | [`TBoldCustomNavigator`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L19) | 🟢 ported: A WinForms Panel of buttons. |  |
+| `TBoldNavigator` | class | [106](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L106) | [`TBoldNavigator`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L748) | 🟢 ported |  |
 
 ## TBoldCustomNavigator
 
-class at [line 35](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L35); ⚪ not started.
+class at [line 35](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L35); 🟢 ported, C# [`TBoldCustomNavigator`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AdjustSizeXY` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L55) · [body 225](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L225) |  | ⚪ not started |  |
-| `_BeforeMakeUptoDate` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L56) · [body 751](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L751) |  | ⚪ not started |  |
-| `_AfterMakeUptoDate` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L57) · [body 673](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L673) |  | ⚪ not started |  |
-| `BtnMouseDown` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L58) · [body 313](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L313) |  | ⚪ not started |  |
-| `ClickHandler` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L60) · [body 308](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L308) |  | ⚪ not started |  |
-| `CMEnabledChanged` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L61) · [body 392](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L392) |  | ⚪ not started |  |
-| `InitButtons` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L62) · [body 606](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L606) |  | ⚪ not started |  |
-| `InitHints` | method, private | [63](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L63) · [body 167](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L167) |  | ⚪ not started |  |
-| `MapMinus` | method, private | [64](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L64) · [body 678](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L678) |  | ⚪ not started |  |
-| `SetBoldListHandle` | method, private | [65](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L65) · [body 662](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L662) |  | ⚪ not started |  |
-| `GetBoldListHandle` | method, private | [66](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L66) · [body 667](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L667) |  | ⚪ not started |  |
-| `SetFlat` | method, private | [67](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L67) · [body 185](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L185) |  | ⚪ not started |  |
-| `SetHints` | method, private | [68](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L68) · [body 197](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L197) |  | ⚪ not started |  |
-| `SetVisible` | method, private | [69](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L69) · [body 209](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L209) |  | ⚪ not started |  |
-| `WMGetDlgCode` | method, private | [70](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L70) · [body 387](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L387) |  | ⚪ not started |  |
-| `WMKillFocus` | method, private | [71](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L71) · [body 338](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L338) |  | ⚪ not started |  |
-| `WMSetFocus` | method, private | [72](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L72) · [body 333](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L333) |  | ⚪ not started |  |
-| `WMSize` | method, private | [73](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L73) · [body 294](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L294) |  | ⚪ not started |  |
-| `SetImages` | method, private | [74](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L74) · [body 745](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L745) |  | ⚪ not started |  |
-| `GetChildren` | method, protected | [77](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L77) · [body 203](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L203) |  | ⚪ not started |  |
-| `KeyDown` | method, protected | [78](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L78) · [body 343](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L343) |  | ⚪ not started |  |
-| `Loaded` | method, protected | [79](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L79) · [body 399](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L399) |  | ⚪ not started |  |
-| `SetActiveButtons` | method, protected | [80](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L80) · [body 636](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L636) |  | ⚪ not started |  |
-| `FixButtonGlyphs` | method, protected | [81](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L81) · [body 699](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L699) |  | ⚪ not started |  |
-| `BoldDeleteMode` | property, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L82) |  | ⚪ not started |  |
-| `BoldHandle` | property, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L83) |  | ⚪ not started |  |
-| `ConfirmDelete` | property, protected | [84](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L84) |  | ⚪ not started |  |
-| `Flat` | property, protected | [85](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L85) |  | ⚪ not started |  |
-| `Hints` | property, protected | [86](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L86) |  | ⚪ not started |  |
-| `VisibleButtons` | property, protected | [87](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L87) |  | ⚪ not started |  |
-| `OnClick` | property, protected | [89](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L89) |  | ⚪ not started |  |
-| `ImageIndices` | property, protected | [90](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L90) |  | ⚪ not started |  |
-| `Images` | property, protected | [91](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L91) |  | ⚪ not started |  |
-| `DeleteQuestion` | property, protected | [92](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L92) |  | ⚪ not started |  |
-| `UnlinkQuestion` | property, protected | [94](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L94) |  | ⚪ not started |  |
-| `RemoveQuestion` | property, protected | [95](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L95) |  | ⚪ not started |  |
-| `Create` | constructor | [98](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L98) · [body 414](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L414) |  | ⚪ not started |  |
-| `Destroy` | destructor | [99](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L99) · [body 454](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L454) |  | ⚪ not started |  |
-| `Assign` | method | [100](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L100) · [body 692](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L692) |  | ⚪ not started |  |
-| `BtnClick` | method | [101](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L101) · [body 464](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L464) |  | ⚪ not started |  |
-| `SetBounds` | method | [102](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L102) · [body 283](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L283) |  | ⚪ not started |  |
+| `AdjustSizeXY` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L55) · [body 225](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L225) | [`TBoldCustomNavigator.AdjustSizeXY`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L165) | 🟢 ported |  |
+| `_BeforeMakeUptoDate` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L56) · [body 751](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L751) | [`TBoldCustomNavigator._BeforeMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L643) | 🟢 ported |  |
+| `_AfterMakeUptoDate` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L57) · [body 673](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L673) | [`TBoldCustomNavigator._AfterMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L564) | 🟢 ported |  |
+| `BtnMouseDown` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L58) · [body 313](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L313) | [`TBoldCustomNavigator.BtnMouseDown`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L259) | 🟢 ported |  |
+| `ClickHandler` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L60) · [body 308](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L308) | [`TBoldCustomNavigator.ClickHandler`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L255) | 🟢 ported |  |
+| `CMEnabledChanged` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L61) · [body 392](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L392) | [`TBoldCustomNavigator.OnEnabledChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L354) | 🟢 ported |  |
+| `InitButtons` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L62) · [body 606](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L606) | [`TBoldCustomNavigator.InitButtons`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L507) | 🟢 ported |  |
+| `InitHints` | method, private | [63](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L63) · [body 167](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L167) | [`TBoldCustomNavigator.InitHints`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L108) | 🟢 ported: The hints show in a ToolTip. |  |
+| `MapMinus` | method, private | [64](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L64) · [body 678](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L678) | [`TBoldCustomNavigator.MapMinus`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L568) | 🟢 ported |  |
+| `SetBoldListHandle` | method, private | [65](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L65) · [body 662](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L662) | [`TBoldCustomNavigator.SetBoldListHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L558) | 🟢 ported |  |
+| `GetBoldListHandle` | method, private | [66](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L66) · [body 667](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L667) | [`TBoldCustomNavigator.GetBoldListHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L561) | 🟢 ported |  |
+| `SetFlat` | method, private | [67](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L67) · [body 185](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L185) | [`TBoldCustomNavigator.SetFlat`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L125) | 🟢 ported |  |
+| `SetHints` | method, private | [68](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L68) · [body 197](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L197) | [`TBoldCustomNavigator.SetHints`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L138) | 🟢 ported |  |
+| `SetVisible` | method, private | [69](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L69) · [body 209](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L209) | [`TBoldCustomNavigator.SetVisible`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L145) | 🟢 ported |  |
+| `WMGetDlgCode` | method, private | [70](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L70) · [body 387](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L387) | [`[assembly: Delphi] in BoldNavigator.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L10) | 🔵 replaced: IsInputKey takes the arrow keys. |  |
+| `WMKillFocus` | method, private | [71](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L71) · [body 338](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L338) | [`TBoldCustomNavigator.OnLostFocus`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L282) | 🟢 ported |  |
+| `WMSetFocus` | method, private | [72](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L72) · [body 333](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L333) | [`TBoldCustomNavigator.OnGotFocus`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L275) | 🟢 ported |  |
+| `WMSize` | method, private | [73](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L73) · [body 294](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L294) | [`TBoldCustomNavigator.OnResize`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L242) | 🟢 ported |  |
+| `SetImages` | method, private | [74](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L74) · [body 745](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L745) | [`TBoldCustomNavigator.SetImages`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L635) | 🟢 ported |  |
+| `GetChildren` | method, protected | [77](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L77) · [body 203](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L203) | [`[assembly: Delphi] in BoldNavigator.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L9) | 🔵 replaced: Kept the buttons out of the form file; the WinForms designer does not serialize controls a control makes itself. |  |
+| `KeyDown` | method, protected | [78](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L78) · [body 343](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L343) | [`TBoldCustomNavigator.OnKeyDown`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L292) | 🟢 ported |  |
+| `Loaded` | method, protected | [79](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L79) · [body 399](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L399) | [`TBoldCustomNavigator.Loaded`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L362) | 🟢 ported: Runs when the navigator's handle is made, after the designer set its properties. |  |
+| `SetActiveButtons` | method, protected | [80](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L80) · [body 636](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L636) | [`TBoldCustomNavigator.SetActiveButtons`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L537) | 🟢 ported |  |
+| `FixButtonGlyphs` | method, protected | [81](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L81) · [body 699](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L699) | [`TBoldCustomNavigator.FixButtonGlyphs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L588) | 🟢 ported |  |
+| `BoldDeleteMode` | property, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L82) | [`TBoldCustomNavigator.BoldDeleteMode`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L653) | 🟢 ported |  |
+| `BoldHandle` | property, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L83) | [`TBoldCustomNavigator.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L661) | 🟢 ported |  |
+| `ConfirmDelete` | property, protected | [84](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L84) | [`TBoldCustomNavigator.ConfirmDelete`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L669) | 🟢 ported |  |
+| `Flat` | property, protected | [85](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L85) | [`TBoldCustomNavigator.Flat`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L677) | 🟢 ported |  |
+| `Hints` | property, protected | [86](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L86) | [`TBoldCustomNavigator.Hints`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L685) | 🟢 ported |  |
+| `VisibleButtons` | property, protected | [87](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L87) | [`TBoldCustomNavigator.VisibleButtons`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L693) | 🟢 ported |  |
+| `OnClick` | property, protected | [89](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L89) | [`TBoldCustomNavigator.OnNavClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L702) | 🟢 ported |  |
+| `ImageIndices` | property, protected | [90](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L90) | [`TBoldCustomNavigator.ImageIndices`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L710) | 🟢 ported |  |
+| `Images` | property, protected | [91](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L91) | [`TBoldCustomNavigator.Images`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L718) | 🟢 ported |  |
+| `DeleteQuestion` | property, protected | [92](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L92) | [`TBoldCustomNavigator.DeleteQuestion`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L725) | 🟢 ported |  |
+| `UnlinkQuestion` | property, protected | [94](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L94) | [`TBoldCustomNavigator.UnlinkQuestion`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L732) | 🟢 ported |  |
+| `RemoveQuestion` | property, protected | [95](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L95) | [`TBoldCustomNavigator.RemoveQuestion`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L739) | 🟢 ported |  |
+| `Create` | constructor | [98](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L98) · [body 414](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L414) | [`TBoldCustomNavigator.TBoldCustomNavigator`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L42) | 🟢 ported |  |
+| `Destroy` | destructor | [99](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L99) · [body 454](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L454) | [`TBoldCustomNavigator.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L68) | 🟢 ported |  |
+| `Assign` | method | [100](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L100) · [body 692](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L692) | [`TBoldCustomNavigator.Assign`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L578) | 🟢 ported |  |
+| `BtnClick` | method | [101](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L101) · [body 464](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L464) | [`TBoldCustomNavigator.BtnClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L387) | 🟢 ported: The nested Delete is a local function. |  |
+| `SetBounds` | method | [102](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L102) · [body 283](../../../Source/BoldAwareGUI/BoldControls/BoldNavigator.pas#L283) | [`TBoldCustomNavigator.SetBoundsCore`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L234) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldCustomNavigator.Buttons`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L39) (field)
+- [`TBoldCustomNavigator.OnParentChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L81) (method)
+- [`TBoldCustomNavigator.IsInputKey`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L288) (method)
+- [`TBoldCustomNavigator.OnHandleCreated`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldNavigator.cs#L376) (method)
 
 ## Dependencies
 
