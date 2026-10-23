@@ -3,6 +3,8 @@ using System.Drawing;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
+[assembly: InternalsVisibleTo("Bold.WinForms.Tests")]
+
 namespace Bold;
 
 /// <summary>

@@ -187,9 +187,12 @@ public class TBoldCustomComboBox : ComboBox, IBoldValidateableComponent
         }
     }
 
-    /// <summary>Typed text may change the value (when the combo box sets text); OnSelectChanged.</summary>
-    [Delphi(PortStatus.Ported, Symbol = "TBoldCustomComboBox.Change")]
-    protected override void OnTextChanged(EventArgs e)
+    /// <summary>
+    /// The text was typed or a row was chosen: the text may change the value (when the combo box sets text), and
+    /// OnSelectChanged is raised unless the choice already raised it.
+    /// </summary>
+    [Delphi(PortStatus.Ported, Note = "Called from OnTextUpdate (typing) and after a choice from the list.")]
+    protected virtual void Change()
     {
         if (!DesignMode && !fRestoring && fHandleFollower is not null && !EffectiveReadOnly &&
             BoldSelectChangeAction == TBoldComboSelectChangeAction.bdscSetText && ComboAllowsTextEditing(BoldProperties, Follower))
@@ -201,8 +204,13 @@ public class TBoldCustomComboBox : ComboBox, IBoldValidateableComponent
         {
             fOnSelectChanged?.Invoke(this);
         }
+    }
 
-        base.OnTextChanged(e);
+    /// <summary>Typing in the edit part calls Change.</summary>
+    protected override void OnTextUpdate(EventArgs e)
+    {
+        Change();
+        base.OnTextUpdate(e);
     }
 
     [Delphi(PortStatus.Ported, Symbol = "TBoldCustomComboBox.CMEnter")]
@@ -587,6 +595,16 @@ public class TBoldCustomComboBox : ComboBox, IBoldValidateableComponent
 
         fOnSelectChanged?.Invoke(this);
         base.OnSelectionChangeCommitted(e);
+        fOnSelectChangedIsCalled = true;
+        try
+        {
+            Change();
+        }
+        finally
+        {
+            fOnSelectChangedIsCalled = false;
+        }
+
         if (!keepChoice && fHandleFollower is not null)
         {
             // Show the value again: the choice itself is not the value.

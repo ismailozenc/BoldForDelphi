@@ -19,17 +19,17 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 12460 `[Delphi]` markers in the C# code; 407 test methods.
+481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 12714 `[Delphi]` markers in the C# code; 425 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
 | ✅ verified | 7711 | ▰▰▰▰▰▱▱▱▱▱ 46% |
-| 🟢 ported | 4462 | ▰▰▰▱▱▱▱▱▱▱ 27% |
-| 🔵 replaced | 302 | ▱▱▱▱▱▱▱▱▱▱ 2% |
+| 🟢 ported | 4707 | ▰▰▰▱▱▱▱▱▱▱ 28% |
+| 🔵 replaced | 311 | ▱▱▱▱▱▱▱▱▱▱ 2% |
 | 🟡 partial | 9 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 1 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 4208 | ▰▰▰▱▱▱▱▱▱▱ 25% |
+| ⚪ not started | 3954 | ▰▰▱▱▱▱▱▱▱▱ 24% |
 | ⚫ dropped | 30 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
@@ -43,7 +43,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M5 SQL persistence | 61 | 2652 | 2652 | 979 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M6 Typed classes | 7 | 258 | 258 | 230 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M7 Handles | 24 | 582 | 582 | 568 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| M8 WinForms | 69 | 2668 | 1532 | 955 | ▰▰▰▰▰▰▱▱▱▱ 57% |
+| M8 WinForms | 69 | 2668 | 1786 | 955 | ▰▰▰▰▰▰▰▱▱▱ 67% |
 | M9 Multi-user | 50 | 1164 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M11 XMI | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M12 Model editor | 22 | 584 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -67,7 +67,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.Propagator.Server | 22 | 531 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.SourceGenerators | 19 | 412 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.ValueSpace | 13 | 705 | 703 | 663 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| Bold.WinForms | 41 | 1615 | 499 | 5 | ▰▰▰▱▱▱▱▱▱▱ 31% |
+| Bold.WinForms | 41 | 1615 | 753 | 5 | ▰▰▰▰▰▱▱▱▱▱ 47% |
 | Bold.Xmi | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | not decided yet | 3 | 74 | 55 | 0 | ▰▰▰▰▰▰▰▱▱▱ 74% |
 
@@ -275,7 +275,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldDataSet](units/BoldDataSet.md) | ⚪ not started | 0/128 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldDataSet.pas](../../Source/BoldAwareGUI/BoldControls/BoldDataSet.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDataSet.cs |
 | [BoldDragDropTarget](units/BoldDragDropTarget.md) | ⚪ not started | 0/36 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas](../../Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDragDropTarget.cs |
 | [BoldEdit](units/BoldEdit.md) | 🟢 ported | 71/71 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldEdit.pas](../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs) |
-| [BoldGrid](units/BoldGrid.md) | ⚪ not started | 0/254 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGrid.pas](../../Source/BoldAwareGUI/BoldControls/BoldGrid.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs |
+| [BoldGrid](units/BoldGrid.md) | 🟢 ported | 254/254 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGrid.pas](../../Source/BoldAwareGUI/BoldControls/BoldGrid.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs) |
 | [BoldGridRTColEditor](units/BoldGridRTColEditor.md) | ⚪ not started | 0/18 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas](../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs |
 | [BoldImage](units/BoldImage.md) | ⚪ not started | 0/54 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldImage.pas](../../Source/BoldAwareGUI/BoldControls/BoldImage.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImage.cs |
 | [BoldImageBitmap](units/BoldImageBitmap.md) | ⚪ not started | 0/25 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldImageBitmap.pas](../../Source/BoldAwareGUI/BoldControls/BoldImageBitmap.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImageBitmap.cs |

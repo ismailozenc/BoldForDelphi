@@ -42,14 +42,28 @@ jobs:
       - name: Build
         run: |
           set -o pipefail
-          dotnet build CSharp/Bold.slnx --configuration Release --no-restore 2>&1 | tee build.log || { grep -E ": error " build.log | sort -u | head -50 | sed 's/^/::error::/'; exit 1; }
+          dotnet build CSharp/Bold.slnx --configuration Release --no-restore 2>&1 | tee build.log
 
+      # A step shows at most ten annotations, so all build errors go in one, in a step of its own.
+      - name: Build errors
+        if: failure()
+        run: |
+          tr -d '\r' < build.log | grep -E ": error " | sed -E 's#^.*[\\/]CSharp[\\/]#CSharp/#; s# \[[^]]*\]$##' | sort -u > errors.txt
+          echo "::error::$(wc -l < errors.txt) build errors:%0A$(head -300 errors.txt | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
+
+      # Failed tests are repeated as one annotation per test project, so they can be read from the run's summary.
       - name: Test
         run: |
           failed=0
           for project in CSharp/tests/*.Tests/*.Tests.csproj; do
             name=$(basename "$project" .csproj)
-            dotnet test "$project" --configuration Release --no-build --logger trx --results-directory "CSharp/TestResults/$name" || failed=1
+            if dotnet test "$project" --configuration Release --no-build --logger trx --logger "console;verbosity=normal" --results-directory "CSharp/TestResults/$name" > "test-$name.log" 2>&1; then
+              grep -E "^\s*(Passed|Failed|Skipped|Total)( tests)?[:!]|^Test Run" "test-$name.log" | tail -3
+            else
+              failed=1
+              tail -30 "test-$name.log"
+              echo "::error::$name failed:%0A$(grep -E -A14 '^\s*Failed |^\s*Error Message:' "test-$name.log" | head -250 | tr -d '\r' | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
+            fi
           done
           exit $failed
 
