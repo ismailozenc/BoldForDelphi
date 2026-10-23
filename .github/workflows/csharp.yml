@@ -114,3 +114,5 @@ jobs:
         run: |
           set -o pipefail
           dotnet test CSharp/tests/Bold.Persistence.Sql.Tests --configuration Release --no-build --filter "TestCategory=SqlServer" --logger "console;verbosity=normal" 2>&1 | tee test.log || { grep -E -A6 "^\s*(Failed|Error Message:)" test.log | head -60 | tr -d '\r' | sed 's/^/::error::/'; exit 1; }
+          # Ignored tests would also pass: make sure the SQL Server tests ran.
+          grep -qE "Skipped: +0," test.log && grep -qE "Passed: +[1-9]" test.log || { echo "::error::The SQL Server tests did not run (ignored or none found)"; exit 1; }
