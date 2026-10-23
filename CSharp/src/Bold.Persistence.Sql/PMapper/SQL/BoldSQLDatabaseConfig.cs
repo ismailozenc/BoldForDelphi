@@ -571,7 +571,7 @@ public class TBoldSQLDataBaseConfig : TPersistent
         SysUtils.StringReplace(DropTableTemplate, TableNameMarker, TableName, DelphiSet<TReplaceFlag>.Of(TReplaceFlag.rfIgnoreCase, TReplaceFlag.rfReplaceAll));
 
     /// <summary>Resets to the generic settings and applies the engine's preset (an unknown engine changes nothing).</summary>
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "SQL Server blobs are VARBINARY(MAX) (Delphi kept BLOB, which SQL Server does not have); dbeSQLite is new.")]
     public void InitializeDbEngineSettings(TBoldDataBaseEngine Engine)
     {
         void AddReservedWord(string name)
@@ -595,6 +595,8 @@ public class TBoldSQLDataBaseConfig : TPersistent
                 FColumnTypeForDateTime = "DATETIME";
                 FColumnTypeForFloat = "DECIMAL (28,10)";
                 FColumnTypeForCurrency = "DECIMAL (28,10)";
+                // SQL Server has no BLOB type; Delphi left the generic one, so its users set IMAGE by hand.
+                FColumnTypeForBlob = "VARBINARY(MAX)";
                 fDropColumnTemplate = "ALTER TABLE <TableName> DROP COLUMN <ColumnName>";
                 fDropIndexTemplate = "DROP INDEX <TableName>.<IndexName>";
                 break;
