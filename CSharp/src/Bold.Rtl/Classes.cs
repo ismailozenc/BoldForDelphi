@@ -62,9 +62,34 @@ public abstract class TStrings : IEnumerable<string>
 
     public bool IsUpdating => _updateCount > 0;
 
-    public void BeginUpdate() => _updateCount++;
+    /// <summary>Called when the first BeginUpdate starts (true) and the last EndUpdate ends (false) an update.</summary>
+    protected virtual void SetUpdateState(bool updating)
+    {
+    }
 
-    public void EndUpdate() => _updateCount = Math.Max(0, _updateCount - 1);
+    public void BeginUpdate()
+    {
+        if (_updateCount == 0)
+        {
+            SetUpdateState(true);
+        }
+
+        _updateCount++;
+    }
+
+    public void EndUpdate()
+    {
+        if (_updateCount == 0)
+        {
+            return;
+        }
+
+        _updateCount--;
+        if (_updateCount == 0)
+        {
+            SetUpdateState(false);
+        }
+    }
 
     public virtual int Add(string s)
     {
@@ -98,9 +123,17 @@ public abstract class TStrings : IEnumerable<string>
 
     public void AddStrings(IEnumerable<string> strings)
     {
-        foreach (string s in strings)
+        BeginUpdate();
+        try
         {
-            Add(s);
+            foreach (string s in strings)
+            {
+                Add(s);
+            }
+        }
+        finally
+        {
+            EndUpdate();
         }
     }
 
@@ -482,6 +515,26 @@ public class TStringList : TStrings
 
     public TStringList(IEnumerable<string> strings) => AddStrings(strings);
 
+    /// <summary>Called after the list changes, or once at the end of an update (BeginUpdate ... EndUpdate).</summary>
+    public Action<object?>? OnChange { get; set; }
+
+    /// <summary>Tells OnChange, unless an update is in progress.</summary>
+    protected virtual void Changed()
+    {
+        if (!IsUpdating)
+        {
+            OnChange?.Invoke(this);
+        }
+    }
+
+    protected override void SetUpdateState(bool updating)
+    {
+        if (!updating)
+        {
+            Changed();
+        }
+    }
+
     public bool CaseSensitive { get; set; }
 
     public TDuplicates Duplicates { get; set; } = TDuplicates.dupIgnore;
@@ -537,6 +590,7 @@ public class TStringList : TStrings
 
         Check(index);
         _items[index] = (value, _items[index].Object);
+        Changed();
     }
 
     public override object? GetObject(int index)
@@ -549,6 +603,7 @@ public class TStringList : TStrings
     {
         Check(index);
         _items[index] = (_items[index].Text, value);
+        Changed();
     }
 
     public override int Add(string s)
@@ -556,6 +611,7 @@ public class TStringList : TStrings
         if (!_sorted)
         {
             _items.Add((s, null));
+            Changed();
             return _items.Count - 1;
         }
 
@@ -571,6 +627,7 @@ public class TStringList : TStrings
         }
 
         _items.Insert(index, (s, null));
+        Changed();
         return index;
     }
 
@@ -587,6 +644,7 @@ public class TStringList : TStrings
         }
 
         _items.Insert(index, (s, null));
+        Changed();
     }
 
     public override void Delete(int index)
@@ -598,6 +656,8 @@ public class TStringList : TStrings
         {
             disposable.Dispose();
         }
+
+        Changed();
     }
 
     public override void Clear()
@@ -610,7 +670,11 @@ public class TStringList : TStrings
             }
         }
 
-        _items.Clear();
+        if (_items.Count > 0)
+        {
+            _items.Clear();
+            Changed();
+        }
     }
 
     /// <summary>Binary search in a sorted list; returns true when found, and the index where it is or would go.</summary>
@@ -673,6 +737,7 @@ public class TStringList : TStrings
         var snapshot = _items.ToList();
         _items.Clear();
         _items.AddRange(order.Select(i => snapshot[i]));
+        Changed();
     }
 }
 

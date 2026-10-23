@@ -7,5 +7,9 @@
     <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
     <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
     <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
+    <!-- The C# templates read the signatures of the TBoldObject methods a model's methods override. -->
+    <ProjectReference Include="../Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
   </ItemGroup>
 </Project>

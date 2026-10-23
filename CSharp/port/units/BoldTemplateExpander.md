@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldTemplateExpander.pas`](../../../Source/Common/Support/BoldTemplateExpander.pas) (522 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldTemplateExpander.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldTemplateExpander.cs`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs) |
 | Project | Bold.Core |
 | Milestone | M6 Typed classes |
-| Status | ⚪ not started: 0 of 46 symbols done, 0 verified |
+| Status | 🟢 ported: 46 of 46 symbols done, 43 verified |
 
-⚪ 46 not started
+✅ 43 verified · 🟢 3 ported
 
 ## Unit level
 
@@ -18,87 +18,87 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `bvfReadOnly` | const | [14](../../../Source/Common/Support/BoldTemplateExpander.pas#L14) |  | ⚪ not started |  |
-| `bvfPersistent` | const | [15](../../../Source/Common/Support/BoldTemplateExpander.pas#L15) |  | ⚪ not started |  |
-| `BoldBooleanToTemplateVar` | const | [16](../../../Source/Common/Support/BoldTemplateExpander.pas#L16) |  | ⚪ not started |  |
-| `TBoldVariableFlags` | set | [24](../../../Source/Common/Support/BoldTemplateExpander.pas#L24) |  | ⚪ not started |  |
-| `TBoldTemplatevariable` | class | [27](../../../Source/Common/Support/BoldTemplateExpander.pas#L27) |  | ⚪ not started |  |
-| `TBoldTemplateVariables` | class | [40](../../../Source/Common/Support/BoldTemplateExpander.pas#L40) |  | ⚪ not started |  |
-| `TBoldTemplateHolder` | class | [60](../../../Source/Common/Support/BoldTemplateExpander.pas#L60) |  | ⚪ not started |  |
-| `TBoldTemplateList` | class | [87](../../../Source/Common/Support/BoldTemplateExpander.pas#L87) |  | ⚪ not started |  |
-| `BoldExpandTemplate` | routine | [94](../../../Source/Common/Support/BoldTemplateExpander.pas#L94) · [body 195](../../../Source/Common/Support/BoldTemplateExpander.pas#L195) |  | ⚪ not started |  |
-| `TBoldTemplatevariableIndex` | class, implementation | [107](../../../Source/Common/Support/BoldTemplateExpander.pas#L107) |  | ⚪ not started |  |
+| `bvfReadOnly` | const | [14](../../../Source/Common/Support/BoldTemplateExpander.pas#L14) | [`BoldTemplateExpander.bvfReadOnly`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L238) | 🟢 ported |  |
+| `bvfPersistent` | const | [15](../../../Source/Common/Support/BoldTemplateExpander.pas#L15) | [`BoldTemplateExpander.bvfPersistent`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L239) | 🟢 ported |  |
+| `BoldBooleanToTemplateVar` | const | [16](../../../Source/Common/Support/BoldTemplateExpander.pas#L16) | [`BoldTemplateExpander.BoldBooleanToTemplateVar`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L243) | 🟢 ported: An array indexed by Boolean in Delphi. |  |
+| `TBoldVariableFlags` | set | [24](../../../Source/Common/Support/BoldTemplateExpander.pas#L24) | [`[assembly: Delphi] in BoldTemplateExpander.cs`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L4) | ✅ verified: A DelphiSet&lt;int&gt; of the bits 0 to 31. | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `TBoldTemplatevariable` | class | [27](../../../Source/Common/Support/BoldTemplateExpander.pas#L27) | [`TBoldTemplateVariable`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L10) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `TBoldTemplateVariables` | class | [40](../../../Source/Common/Support/BoldTemplateExpander.pas#L40) | [`TBoldTemplateVariables`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L38) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `TBoldTemplateHolder` | class | [60](../../../Source/Common/Support/BoldTemplateExpander.pas#L60) | [`TBoldTemplateHolder`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L143) | ✅ verified: A System.ComponentModel.Component. | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `TBoldTemplateList` | class | [87](../../../Source/Common/Support/BoldTemplateExpander.pas#L87) | [`TBoldTemplateList`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L226) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `BoldExpandTemplate` | routine | [94](../../../Source/Common/Support/BoldTemplateExpander.pas#L94) · [body 195](../../../Source/Common/Support/BoldTemplateExpander.pas#L195) | [`BoldTemplateExpander.BoldExpandTemplate`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L267) | ✅ verified: A justification macro with no name ($(&lt;20)) gives an empty value; Delphi read past the end of the name. | ✔ [`BoldTemplateExpanderTests.Macros_expand`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L58)<br>✔ [`BoldTemplateExpanderTests.Loops_repeat_with_the_index_and_find_outer_variables`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L66)<br>✔ [`BoldTemplateExpanderTests.Cases_keep_the_lines_of_the_value_or_else`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L78)<br>✔ [`BoldTemplateExpanderTests.Macros_define_variables`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L89) |
+| `TBoldTemplatevariableIndex` | class, implementation | [107](../../../Source/Common/Support/BoldTemplateExpander.pas#L107) | [`TBoldTemplateVariables.TBoldTemplatevariableIndex`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L134) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
 
 ## TBoldTemplatevariable
 
-class at [line 27](../../../Source/Common/Support/BoldTemplateExpander.pas#L27); ⚪ not started.
+class at [line 27](../../../Source/Common/Support/BoldTemplateExpander.pas#L27); ✅ verified, C# [`TBoldTemplateVariable`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [33](../../../Source/Common/Support/BoldTemplateExpander.pas#L33) · [body 501](../../../Source/Common/Support/BoldTemplateExpander.pas#L501) |  | ⚪ not started |  |
-| `Name` | property | [34](../../../Source/Common/Support/BoldTemplateExpander.pas#L34) |  | ⚪ not started |  |
-| `Value` | property | [35](../../../Source/Common/Support/BoldTemplateExpander.pas#L35) |  | ⚪ not started |  |
-| `Flags` | property | [36](../../../Source/Common/Support/BoldTemplateExpander.pas#L36) |  | ⚪ not started |  |
+| `Create` | constructor | [33](../../../Source/Common/Support/BoldTemplateExpander.pas#L33) · [body 501](../../../Source/Common/Support/BoldTemplateExpander.pas#L501) | [`TBoldTemplateVariable.TBoldTemplateVariable`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L17) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Name` | property | [34](../../../Source/Common/Support/BoldTemplateExpander.pas#L34) | [`TBoldTemplateVariable.Name`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L24) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Value` | property | [35](../../../Source/Common/Support/BoldTemplateExpander.pas#L35) | [`TBoldTemplateVariable.Value`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L27) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Flags` | property | [36](../../../Source/Common/Support/BoldTemplateExpander.pas#L36) | [`TBoldTemplateVariable.Flags`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L33) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
 
 ## TBoldTemplateVariables
 
-class at [line 40](../../../Source/Common/Support/BoldTemplateExpander.pas#L40); ⚪ not started.
+class at [line 40](../../../Source/Common/Support/BoldTemplateExpander.pas#L40); ✅ verified, C# [`TBoldTemplateVariables`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L38).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValue` | method, private | [42](../../../Source/Common/Support/BoldTemplateExpander.pas#L42) · [body 169](../../../Source/Common/Support/BoldTemplateExpander.pas#L169) |  | ⚪ not started |  |
-| `InitializeDateTimeMacros` | method, private | [43](../../../Source/Common/Support/BoldTemplateExpander.pas#L43) · [body 486](../../../Source/Common/Support/BoldTemplateExpander.pas#L486) |  | ⚪ not started |  |
-| `GetVariableByName` | method, private | [44](../../../Source/Common/Support/BoldTemplateExpander.pas#L44) · [body 120](../../../Source/Common/Support/BoldTemplateExpander.pas#L120) |  | ⚪ not started |  |
-| `VariableByName` | property, protected | [46](../../../Source/Common/Support/BoldTemplateExpander.pas#L46) |  | ⚪ not started |  |
-| `Create` | constructor | [48](../../../Source/Common/Support/BoldTemplateExpander.pas#L48) · [body 114](../../../Source/Common/Support/BoldTemplateExpander.pas#L114) |  | ⚪ not started |  |
-| `Add` | method | [49](../../../Source/Common/Support/BoldTemplateExpander.pas#L49) · [body 125](../../../Source/Common/Support/BoldTemplateExpander.pas#L125) |  | ⚪ not started |  |
-| `ForceAdd` | method | [50](../../../Source/Common/Support/BoldTemplateExpander.pas#L50) · [body 463](../../../Source/Common/Support/BoldTemplateExpander.pas#L463) |  | ⚪ not started |  |
-| `Change` | method | [51](../../../Source/Common/Support/BoldTemplateExpander.pas#L51) · [body 134](../../../Source/Common/Support/BoldTemplateExpander.pas#L134) |  | ⚪ not started |  |
-| `SetVariable` | method | [52](../../../Source/Common/Support/BoldTemplateExpander.pas#L52) · [body 452](../../../Source/Common/Support/BoldTemplateExpander.pas#L452) |  | ⚪ not started |  |
-| `Exists` | method | [53](../../../Source/Common/Support/BoldTemplateExpander.pas#L53) · [body 143](../../../Source/Common/Support/BoldTemplateExpander.pas#L143) |  | ⚪ not started |  |
-| `ExpandString` | method | [54](../../../Source/Common/Support/BoldTemplateExpander.pas#L54) · [body 151](../../../Source/Common/Support/BoldTemplateExpander.pas#L151) |  | ⚪ not started |  |
-| `Remove` | method | [55](../../../Source/Common/Support/BoldTemplateExpander.pas#L55) · [body 180](../../../Source/Common/Support/BoldTemplateExpander.pas#L180) |  | ⚪ not started |  |
-| `Values` | property | [56](../../../Source/Common/Support/BoldTemplateExpander.pas#L56) |  | ⚪ not started |  |
+| `GetValue` | method, private | [42](../../../Source/Common/Support/BoldTemplateExpander.pas#L42) · [body 169](../../../Source/Common/Support/BoldTemplateExpander.pas#L169) | [`TBoldTemplateVariables.GetValue`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L119) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `InitializeDateTimeMacros` | method, private | [43](../../../Source/Common/Support/BoldTemplateExpander.pas#L43) · [body 486](../../../Source/Common/Support/BoldTemplateExpander.pas#L486) | [`TBoldTemplateVariables.InitializeDateTimeMacros`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L126) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `GetVariableByName` | method, private | [44](../../../Source/Common/Support/BoldTemplateExpander.pas#L44) · [body 120](../../../Source/Common/Support/BoldTemplateExpander.pas#L120) | [`TBoldTemplateVariables.GetVariableByName`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L49) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `VariableByName` | property, protected | [46](../../../Source/Common/Support/BoldTemplateExpander.pas#L46) | [`TBoldTemplateVariables.VariableByName`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L53) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Create` | constructor | [48](../../../Source/Common/Support/BoldTemplateExpander.pas#L48) · [body 114](../../../Source/Common/Support/BoldTemplateExpander.pas#L114) | [`TBoldTemplateVariables.TBoldTemplateVariables`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L43) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Add` | method | [49](../../../Source/Common/Support/BoldTemplateExpander.pas#L49) · [body 125](../../../Source/Common/Support/BoldTemplateExpander.pas#L125) | [`TBoldTemplateVariables.Add`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L57) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `ForceAdd` | method | [50](../../../Source/Common/Support/BoldTemplateExpander.pas#L50) · [body 463](../../../Source/Common/Support/BoldTemplateExpander.pas#L463) | [`TBoldTemplateVariables.ForceAdd`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L67) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Change` | method | [51](../../../Source/Common/Support/BoldTemplateExpander.pas#L51) · [body 134](../../../Source/Common/Support/BoldTemplateExpander.pas#L134) | [`TBoldTemplateVariables.Change`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L71) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `SetVariable` | method | [52](../../../Source/Common/Support/BoldTemplateExpander.pas#L52) · [body 452](../../../Source/Common/Support/BoldTemplateExpander.pas#L452) | [`TBoldTemplateVariables.SetVariable`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L82) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Exists` | method | [53](../../../Source/Common/Support/BoldTemplateExpander.pas#L53) · [body 143](../../../Source/Common/Support/BoldTemplateExpander.pas#L143) | [`TBoldTemplateVariables.Exists`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L96) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `ExpandString` | method | [54](../../../Source/Common/Support/BoldTemplateExpander.pas#L54) · [body 151](../../../Source/Common/Support/BoldTemplateExpander.pas#L151) | [`TBoldTemplateVariables.ExpandString`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L100) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Remove` | method | [55](../../../Source/Common/Support/BoldTemplateExpander.pas#L55) · [body 180](../../../Source/Common/Support/BoldTemplateExpander.pas#L180) | [`TBoldTemplateVariables.Remove`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L109) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
+| `Values` | property | [56](../../../Source/Common/Support/BoldTemplateExpander.pas#L56) | [`TBoldTemplateVariables.Values`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L122) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
 
 ## TBoldTemplateHolder
 
-class at [line 60](../../../Source/Common/Support/BoldTemplateExpander.pas#L60); ⚪ not started.
+class at [line 60](../../../Source/Common/Support/BoldTemplateExpander.pas#L60); ✅ verified, C# [`TBoldTemplateHolder`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L143).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetTemplate` | method, private | [67](../../../Source/Common/Support/BoldTemplateExpander.pas#L67) · [body 447](../../../Source/Common/Support/BoldTemplateExpander.pas#L447) |  | ⚪ not started |  |
-| `GetExpandedTemplate` | method, private | [68](../../../Source/Common/Support/BoldTemplateExpander.pas#L68) · [body 441](../../../Source/Common/Support/BoldTemplateExpander.pas#L441) |  | ⚪ not started |  |
-| `GetExpandedFileName` | method, private | [69](../../../Source/Common/Support/BoldTemplateExpander.pas#L69) · [body 471](../../../Source/Common/Support/BoldTemplateExpander.pas#L471) |  | ⚪ not started |  |
-| `SetDescription` | method, private | [70](../../../Source/Common/Support/BoldTemplateExpander.pas#L70) · [body 476](../../../Source/Common/Support/BoldTemplateExpander.pas#L476) |  | ⚪ not started |  |
-| `SetFileName` | method, private | [71](../../../Source/Common/Support/BoldTemplateExpander.pas#L71) · [body 481](../../../Source/Common/Support/BoldTemplateExpander.pas#L481) |  | ⚪ not started |  |
-| `TemplateChanged` | method, private | [72](../../../Source/Common/Support/BoldTemplateExpander.pas#L72) · [body 493](../../../Source/Common/Support/BoldTemplateExpander.pas#L493) |  | ⚪ not started |  |
-| `Create` | constructor | [74](../../../Source/Common/Support/BoldTemplateExpander.pas#L74) · [body 419](../../../Source/Common/Support/BoldTemplateExpander.pas#L419) |  | ⚪ not started |  |
-| `ExpandTemplate` | method | [75](../../../Source/Common/Support/BoldTemplateExpander.pas#L75) · [body 436](../../../Source/Common/Support/BoldTemplateExpander.pas#L436) |  | ⚪ not started |  |
-| `Destroy` | destructor | [76](../../../Source/Common/Support/BoldTemplateExpander.pas#L76) · [body 428](../../../Source/Common/Support/BoldTemplateExpander.pas#L428) |  | ⚪ not started |  |
-| `Variables` | property | [77](../../../Source/Common/Support/BoldTemplateExpander.pas#L77) |  | ⚪ not started |  |
-| `ExpandedTemplate` | property | [78](../../../Source/Common/Support/BoldTemplateExpander.pas#L78) |  | ⚪ not started |  |
-| `LastExpansion` | property | [79](../../../Source/Common/Support/BoldTemplateExpander.pas#L79) |  | ⚪ not started |  |
-| `ExpandedFileName` | property | [80](../../../Source/Common/Support/BoldTemplateExpander.pas#L80) |  | ⚪ not started |  |
-| `Template` | property, published | [82](../../../Source/Common/Support/BoldTemplateExpander.pas#L82) |  | ⚪ not started |  |
-| `FileName` | property, published | [83](../../../Source/Common/Support/BoldTemplateExpander.pas#L83) |  | ⚪ not started |  |
-| `Description` | property, published | [84](../../../Source/Common/Support/BoldTemplateExpander.pas#L84) |  | ⚪ not started |  |
+| `SetTemplate` | method, private | [67](../../../Source/Common/Support/BoldTemplateExpander.pas#L67) · [body 447](../../../Source/Common/Support/BoldTemplateExpander.pas#L447) | [`TBoldTemplateHolder.SetTemplate`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L169) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `GetExpandedTemplate` | method, private | [68](../../../Source/Common/Support/BoldTemplateExpander.pas#L68) · [body 441](../../../Source/Common/Support/BoldTemplateExpander.pas#L441) | [`TBoldTemplateHolder.GetExpandedTemplate`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L172) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `GetExpandedFileName` | method, private | [69](../../../Source/Common/Support/BoldTemplateExpander.pas#L69) · [body 471](../../../Source/Common/Support/BoldTemplateExpander.pas#L471) | [`TBoldTemplateHolder.GetExpandedFileName`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L179) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `SetDescription` | method, private | [70](../../../Source/Common/Support/BoldTemplateExpander.pas#L70) · [body 476](../../../Source/Common/Support/BoldTemplateExpander.pas#L476) | [`TBoldTemplateHolder.SetDescription`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L182) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `SetFileName` | method, private | [71](../../../Source/Common/Support/BoldTemplateExpander.pas#L71) · [body 481](../../../Source/Common/Support/BoldTemplateExpander.pas#L481) | [`TBoldTemplateHolder.SetFileName`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L185) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `TemplateChanged` | method, private | [72](../../../Source/Common/Support/BoldTemplateExpander.pas#L72) · [body 493](../../../Source/Common/Support/BoldTemplateExpander.pas#L493) | [`TBoldTemplateHolder.TemplateChanged`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L189) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `Create` | constructor | [74](../../../Source/Common/Support/BoldTemplateExpander.pas#L74) · [body 419](../../../Source/Common/Support/BoldTemplateExpander.pas#L419) | [`TBoldTemplateHolder.TBoldTemplateHolder`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L152) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `ExpandTemplate` | method | [75](../../../Source/Common/Support/BoldTemplateExpander.pas#L75) · [body 436](../../../Source/Common/Support/BoldTemplateExpander.pas#L436) | [`TBoldTemplateHolder.ExpandTemplate`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L166) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `Destroy` | destructor | [76](../../../Source/Common/Support/BoldTemplateExpander.pas#L76) · [body 428](../../../Source/Common/Support/BoldTemplateExpander.pas#L428) | [`TBoldTemplateHolder.Dispose`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L162) | ✅ verified: Freed the lists; the garbage collector does that in .NET. | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `Variables` | property | [77](../../../Source/Common/Support/BoldTemplateExpander.pas#L77) | [`TBoldTemplateHolder.Variables`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L197) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `ExpandedTemplate` | property | [78](../../../Source/Common/Support/BoldTemplateExpander.pas#L78) | [`TBoldTemplateHolder.ExpandedTemplate`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L198) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `LastExpansion` | property | [79](../../../Source/Common/Support/BoldTemplateExpander.pas#L79) | [`TBoldTemplateHolder.LastExpansion`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L199) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `ExpandedFileName` | property | [80](../../../Source/Common/Support/BoldTemplateExpander.pas#L80) | [`TBoldTemplateHolder.ExpandedFileName`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L200) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `Template` | property, published | [82](../../../Source/Common/Support/BoldTemplateExpander.pas#L82) | [`TBoldTemplateHolder.Template`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L203) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `FileName` | property, published | [83](../../../Source/Common/Support/BoldTemplateExpander.pas#L83) | [`TBoldTemplateHolder.FileName`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L210) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `Description` | property, published | [84](../../../Source/Common/Support/BoldTemplateExpander.pas#L84) | [`TBoldTemplateHolder.Description`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L217) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
 
 ## TBoldTemplateList
 
-class at [line 87](../../../Source/Common/Support/BoldTemplateExpander.pas#L87); ⚪ not started.
+class at [line 87](../../../Source/Common/Support/BoldTemplateExpander.pas#L87); ✅ verified, C# [`TBoldTemplateList`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L226).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [89](../../../Source/Common/Support/BoldTemplateExpander.pas#L89) · [body 517](../../../Source/Common/Support/BoldTemplateExpander.pas#L517) |  | ⚪ not started |  |
-| `items` | property | [91](../../../Source/Common/Support/BoldTemplateExpander.pas#L91) |  | ⚪ not started |  |
+| `GetItems` | method, private | [89](../../../Source/Common/Support/BoldTemplateExpander.pas#L89) · [body 517](../../../Source/Common/Support/BoldTemplateExpander.pas#L517) | [`TBoldTemplateList.GetItems`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L229) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
+| `items` | property | [91](../../../Source/Common/Support/BoldTemplateExpander.pas#L91) | [`TBoldTemplateList.this`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L232) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Holders_expand_their_template_and_file_name`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L99) |
 
 ## TBoldTemplatevariableIndex
 
-class at [line 107](../../../Source/Common/Support/BoldTemplateExpander.pas#L107); ⚪ not started.
+class at [line 107](../../../Source/Common/Support/BoldTemplateExpander.pas#L107); ✅ verified, C# [`TBoldTemplateVariables.TBoldTemplatevariableIndex`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L134).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [109](../../../Source/Common/Support/BoldTemplateExpander.pas#L109) · [body 510](../../../Source/Common/Support/BoldTemplateExpander.pas#L510) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [109](../../../Source/Common/Support/BoldTemplateExpander.pas#L109) · [body 510](../../../Source/Common/Support/BoldTemplateExpander.pas#L510) | [`TBoldTemplateVariables.TBoldTemplatevariableIndex.ItemAsKeyString`](../../src/Bold.Core/Common/Support/BoldTemplateExpander.cs#L137) | ✅ verified | ✔ [`BoldTemplateExpanderTests.Variables_are_found_by_name_ignoring_case`](../../tests/Bold.CodeGen.Tests/Common/Support/BoldTemplateExpanderTests.cs#L26) |
 
 ## Dependencies
 

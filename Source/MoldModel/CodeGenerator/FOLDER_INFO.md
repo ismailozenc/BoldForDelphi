@@ -28,8 +28,8 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldGen](../../../CSharp/port/units/BoldGen.md) | Bold.CodeGen: MoldModel/CodeGenerator/BoldGen.cs (not started) | M6 Typed classes |
-| [BoldGeneratorTemplates](../../../CSharp/port/units/BoldGeneratorTemplates.md) | Bold.CodeGen: MoldModel/CodeGenerator/BoldGeneratorTemplates.cs (not started) | M6 Typed classes |
-| [BoldGeneratorTemplatesCPP](../../../CSharp/port/units/BoldGeneratorTemplatesCPP.md) | Bold.CodeGen: MoldModel/CodeGenerator/BoldGeneratorTemplatesCPP.cs (not started) | M6 Typed classes |
-| [BoldGeneratorTemplatesDelphi](../../../CSharp/port/units/BoldGeneratorTemplatesDelphi.md) | Bold.CodeGen: MoldModel/CodeGenerator/BoldGeneratorTemplatesDelphi.cs (not started) | M6 Typed classes |
+| [BoldGen](../../../CSharp/port/units/BoldGen.md) | [Bold.CodeGen: MoldModel/CodeGenerator/BoldGen.cs](../../../CSharp/src/Bold.CodeGen/MoldModel/CodeGenerator/BoldGen.cs) | M6 Typed classes |
+| [BoldGeneratorTemplates](../../../CSharp/port/units/BoldGeneratorTemplates.md) | [Bold.CodeGen: MoldModel/CodeGenerator/BoldGeneratorTemplates.cs](../../../CSharp/src/Bold.CodeGen/MoldModel/CodeGenerator/BoldGeneratorTemplates.cs) | M6 Typed classes |
+| [BoldGeneratorTemplatesCPP](../../../CSharp/port/units/BoldGeneratorTemplatesCPP.md) | [Bold.CodeGen: MoldModel/CodeGenerator/BoldGeneratorTemplatesCPP.cs](../../../CSharp/src/Bold.CodeGen/MoldModel/CodeGenerator/BoldGeneratorTemplatesCPP.cs) | M6 Typed classes |
+| [BoldGeneratorTemplatesDelphi](../../../CSharp/port/units/BoldGeneratorTemplatesDelphi.md) | [Bold.CodeGen: MoldModel/CodeGenerator/BoldGeneratorTemplatesDelphi.cs](../../../CSharp/src/Bold.CodeGen/MoldModel/CodeGenerator/BoldGeneratorTemplatesDelphi.cs) | M6 Typed classes |
 <!-- END C# PORT -->

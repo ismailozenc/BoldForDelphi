@@ -119,11 +119,23 @@ public static partial class SysUtils
     /// <summary>Case-insensitive comparison (ASCII letters), &lt;0, 0 or &gt;0.</summary>
     public static int CompareText(string? s1, string? s2) => string.CompareOrdinal(UpperAscii(s1 ?? ""), UpperAscii(s2 ?? ""));
 
-    public static int AnsiCompareText(string? s1, string? s2) => string.Compare(s1 ?? "", s2 ?? "", StringComparison.OrdinalIgnoreCase);
+    /// <summary>
+    /// Compares by the locale's rules, ignoring case, as Delphi's AnsiCompareText (Windows CompareString with
+    /// NORM_IGNORECASE); the invariant culture stands for the user's locale.
+    /// </summary>
+    public static int AnsiCompareText(string? s1, string? s2) =>
+        string.Compare(s1 ?? "", s2 ?? "", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.CompareOptions.IgnoreCase);
 
     public static int CompareStr(string? s1, string? s2) => string.CompareOrdinal(s1 ?? "", s2 ?? "");
 
-    public static int AnsiCompareStr(string? s1, string? s2) => string.CompareOrdinal(s1 ?? "", s2 ?? "");
+    /// <summary>
+    /// Compares by the locale's rules, as Delphi's AnsiCompareStr (Windows CompareString): letters in alphabetical order
+    /// whatever their case, lower case before upper case when that is the only difference, and punctuation such as
+    /// underscore before digits and letters. The invariant culture stands for the user's locale. CompareStr compares
+    /// character codes.
+    /// </summary>
+    public static int AnsiCompareStr(string? s1, string? s2) =>
+        string.Compare(s1 ?? "", s2 ?? "", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.CompareOptions.None);
 
     public static bool SameText(string? s1, string? s2) => CompareText(s1, s2) == 0;
 

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>bold-codegen: generates typed classes from a Bold model (.bld), in C# (or Delphi or C++).</Description>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>bold-codegen</AssemblyName>
+    <RootNamespace>Bold.CodeGen.Tool</RootNamespace>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>bold-codegen</ToolCommandName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.CodeGen/Bold.CodeGen.csproj" />
+  </ItemGroup>
+</Project>

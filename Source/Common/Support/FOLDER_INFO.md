@@ -57,7 +57,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldControlPackDefs](../../../CSharp/port/units/BoldControlPackDefs.md) | Bold.WinForms: Common/Support/BoldControlPackDefs.cs (not started) | M8 WinForms |
 | [BoldControlsDefs](../../../CSharp/port/units/BoldControlsDefs.md) | Bold.WinForms: Common/Support/BoldControlsDefs.cs (not started) | M8 WinForms |
 | [BoldExternalizedReferences](../../../CSharp/port/units/BoldExternalizedReferences.md) | [Bold.Core: Common/Support/BoldExternalizedReferences.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldExternalizedReferences.cs) | M2 Runtime model and subscriptions |
-| [BoldFileHandler](../../../CSharp/port/units/BoldFileHandler.md) | Bold.Core: Common/Support/BoldFileHandler.cs (not started) | M6 Typed classes |
+| [BoldFileHandler](../../../CSharp/port/units/BoldFileHandler.md) | [Bold.Core: Common/Support/BoldFileHandler.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldFileHandler.cs) | M6 Typed classes |
 | [BoldGUIDUtils](../../../CSharp/port/units/BoldGUIDUtils.md) | [Bold.Core: Common/Support/BoldGUIDUtils.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldGUIDUtils.cs) | M5 SQL persistence |
 | [BoldGuard](../../../CSharp/port/units/BoldGuard.md) | replaced by .NET: C# using statements and the garbage collector free objects | M1 Load models |
 | [BoldHashIndexes](../../../CSharp/port/units/BoldHashIndexes.md) | [Bold.Core: Common/Support/BoldHashIndexes.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldHashIndexes.cs) | M1 Load models |
@@ -72,12 +72,12 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldPerformanceCounter](../../../CSharp/port/units/BoldPerformanceCounter.md) | Bold.Core: Common/Support/BoldPerformanceCounter.cs (not started) | Later (after M12, or when needed) |
 | [BoldPriorityQueue](../../../CSharp/port/units/BoldPriorityQueue.md) | Bold.Core: Common/Support/BoldPriorityQueue.cs (not started) | M9 Multi-user |
 | [BoldRegistry](../../../CSharp/port/units/BoldRegistry.md) | Bold.Core: Common/Support/BoldRegistry.cs (not started) | M8 WinForms |
-| [BoldRev](../../../CSharp/port/units/BoldRev.md) | Bold.Core: Common/Support/BoldRev.cs (not started) | M6 Typed classes |
+| [BoldRev](../../../CSharp/port/units/BoldRev.md) | [Bold.Core: Common/Support/BoldRev.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldRev.cs) | M6 Typed classes |
 | [BoldSharedStrings](../../../CSharp/port/units/BoldSharedStrings.md) | [Bold.Core: Common/Support/BoldSharedStrings.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldSharedStrings.cs) | M1 Load models |
 | [BoldSorter](../../../CSharp/port/units/BoldSorter.md) | [Bold.Core: Common/Support/BoldSorter.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldSorter.cs) | M3 Object space in memory |
 | [BoldStringList](../../../CSharp/port/units/BoldStringList.md) | Bold.Core: Common/Support/BoldStringList.cs (not started) | M7 Handles |
 | [BoldSupportConst](../../../CSharp/port/units/BoldSupportConst.md) | Bold.Core: Common/Support/BoldSupportConst.cs (not started) | Later (after M12, or when needed) |
-| [BoldTemplateExpander](../../../CSharp/port/units/BoldTemplateExpander.md) | Bold.Core: Common/Support/BoldTemplateExpander.cs (not started) | M6 Typed classes |
+| [BoldTemplateExpander](../../../CSharp/port/units/BoldTemplateExpander.md) | [Bold.Core: Common/Support/BoldTemplateExpander.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldTemplateExpander.cs) | M6 Typed classes |
 | [BoldUtils](../../../CSharp/port/units/BoldUtils.md) | [Bold.Core: Common/Support/BoldUtils.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldUtils.cs) | M1 Load models |
 | [BoldXMLStreaming](../../../CSharp/port/units/BoldXMLStreaming.md) | [Bold.Core: Common/Support/BoldXMLStreaming.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldXMLStreaming.cs) | M2 Runtime model and subscriptions |
 <!-- END C# PORT -->

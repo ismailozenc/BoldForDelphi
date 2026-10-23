@@ -30,7 +30,11 @@
     <Project Path="src/Bold.WinForms/Bold.WinForms.csproj" />
     <Project Path="src/Bold.Xmi/Bold.Xmi.csproj" />
   </Folder>
+  <Folder Name="/examples/">
+    <Project Path="examples/Building/BuildingClasses/BuildingClasses.csproj" />
+  </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/Bold.CodeGen.Tests/Bold.CodeGen.Tests.csproj" />
     <Project Path="tests/Bold.Core.Tests/Bold.Core.Tests.csproj" />
     <Project Path="tests/Bold.Model.Tests/Bold.Model.Tests.csproj" />
     <Project Path="tests/Bold.ObjectSpace.Tests/Bold.ObjectSpace.Tests.csproj" />
@@ -41,6 +45,7 @@
     <Project Path="tests/Bold.ValueSpace.Tests/Bold.ValueSpace.Tests.csproj" />
   </Folder>
   <Folder Name="/tools/">
+    <Project Path="tools/Bold.CodeGen.Tool/Bold.CodeGen.Tool.csproj" />
     <Project Path="tools/Bold.PortTool/Bold.PortTool.csproj" />
   </Folder>
 </Solution>

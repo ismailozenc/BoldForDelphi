@@ -329,7 +329,7 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
     /// Builds the runtime model. With <paramref name="UseGeneratedCode"/> the classes registered for the model in the
     /// generated code dictionary are installed (and their CRC checked with <paramref name="CheckCodeCheckSum"/>).
     /// </summary>
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "With generated code, runs BoldGeneratedCodeRegistry.EnsureRegistered first: Delphi's generated units registered themselves at program start.")]
     public TBoldSystemTypeInfo(TMoldModel moldModel, bool UseGeneratedCode, bool CheckCodeCheckSum, TBoldTypeNameDictionary TypeNameDictionary)
         : base(moldModel, null)
     {
@@ -355,6 +355,8 @@ public class TBoldSystemTypeInfo : TBoldElementTypeInfoWithConstraint
         fUseGeneratedCode = UseGeneratedCode;
         if (UseGeneratedCode)
         {
+            // Delphi's generated units registered themselves when the program started.
+            BoldGeneratedCodeRegistry.EnsureRegistered();
             TBoldGeneratedCodeList codes = BoldGeneratedCodeDictionary.GeneratedCodes();
             for (int i = 0; i < codes.Count; i++)
             {
