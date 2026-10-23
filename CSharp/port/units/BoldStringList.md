@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldStringList.pas`](../../../Source/Common/Support/BoldStringList.pas) (181 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldStringList.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldStringList.cs`](../../src/Bold.Core/Common/Support/BoldStringList.cs) |
 | Project | Bold.Core |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | ✅ verified: 15 of 15 symbols done, 15 verified |
 
-⚪ 15 not started
+✅ 15 verified
 
 ## Unit level
 
@@ -18,28 +18,34 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldStringList` | class | [13](../../../Source/Common/Support/BoldStringList.pas#L13) |  | ⚪ not started |  |
-| `BoldAnsiLCompareShortest` | routine, implementation | [90](../../../Source/Common/Support/BoldStringList.pas#L90) |  | ⚪ not started |  |
+| `TBoldStringList` | class | [13](../../../Source/Common/Support/BoldStringList.pas#L13) | [`TBoldStringList`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L11) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `BoldAnsiLCompareShortest` | routine, implementation | [90](../../../Source/Common/Support/BoldStringList.pas#L90) | [`TBoldStringList.BoldAnsiLCompareShortest`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L60) | ✅ verified: A unit-level routine in Delphi. | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
 
 ## TBoldStringList
 
-class at [line 13](../../../Source/Common/Support/BoldStringList.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Common/Support/BoldStringList.pas#L13); ✅ verified, C# [`TBoldStringList`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetFastValue` | method, private | [16](../../../Source/Common/Support/BoldStringList.pas#L16) · [body 70](../../../Source/Common/Support/BoldStringList.pas#L70) |  | ⚪ not started |  |
-| `SetFastValue` | method, private | [17](../../../Source/Common/Support/BoldStringList.pas#L17) · [body 155](../../../Source/Common/Support/BoldStringList.pas#L155) |  | ⚪ not started |  |
-| `GetValueByIndex` | method, private | [18](../../../Source/Common/Support/BoldStringList.pas#L18) · [body 129](../../../Source/Common/Support/BoldStringList.pas#L129) |  | ⚪ not started |  |
-| `Put` | method, protected | [20](../../../Source/Common/Support/BoldStringList.pas#L20) · [body 142](../../../Source/Common/Support/BoldStringList.pas#L142) |  | ⚪ not started |  |
-| `Sort` | method | [22](../../../Source/Common/Support/BoldStringList.pas#L22) · [body 175](../../../Source/Common/Support/BoldStringList.pas#L175) |  | ⚪ not started |  |
-| `AddMultipleStrings` | method | [23](../../../Source/Common/Support/BoldStringList.pas#L23) · [body 46](../../../Source/Common/Support/BoldStringList.pas#L46) |  | ⚪ not started |  |
-| `AssignMultipleStrings` | method | [24](../../../Source/Common/Support/BoldStringList.pas#L24) · [body 59](../../../Source/Common/Support/BoldStringList.pas#L59) |  | ⚪ not started |  |
-| `Add` | method | [25](../../../Source/Common/Support/BoldStringList.pas#L25) · [body 41](../../../Source/Common/Support/BoldStringList.pas#L41) |  | ⚪ not started |  |
-| `GetIndexOfName` | method | [26](../../../Source/Common/Support/BoldStringList.pas#L26) · [body 85](../../../Source/Common/Support/BoldStringList.pas#L85) |  | ⚪ not started |  |
-| `GetIndexOfprefix` | method | [27](../../../Source/Common/Support/BoldStringList.pas#L27) · [body 102](../../../Source/Common/Support/BoldStringList.pas#L102) |  | ⚪ not started |  |
-| `RemoveValue` | method | [28](../../../Source/Common/Support/BoldStringList.pas#L28) · [body 147](../../../Source/Common/Support/BoldStringList.pas#L147) |  | ⚪ not started |  |
-| `FastValues` | property | [29](../../../Source/Common/Support/BoldStringList.pas#L29) |  | ⚪ not started |  |
-| `ValueByIndex` | property | [30](../../../Source/Common/Support/BoldStringList.pas#L30) |  | ⚪ not started |  |
+| `GetFastValue` | method, private | [16](../../../Source/Common/Support/BoldStringList.pas#L16) · [body 70](../../../Source/Common/Support/BoldStringList.pas#L70) | [`TBoldStringList.GetFastValue`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L17) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `SetFastValue` | method, private | [17](../../../Source/Common/Support/BoldStringList.pas#L17) · [body 155](../../../Source/Common/Support/BoldStringList.pas#L155) | [`TBoldStringList.SetFastValue`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L29) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `GetValueByIndex` | method, private | [18](../../../Source/Common/Support/BoldStringList.pas#L18) · [body 129](../../../Source/Common/Support/BoldStringList.pas#L129) | [`TBoldStringList.GetValueByIndex`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L51) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `Put` | method, protected | [20](../../../Source/Common/Support/BoldStringList.pas#L20) · [body 142](../../../Source/Common/Support/BoldStringList.pas#L142) | [`TBoldStringList.Put`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L67) | ✅ verified: Public, as the RTL emulation's Put is. | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `Sort` | method | [22](../../../Source/Common/Support/BoldStringList.pas#L22) · [body 175](../../../Source/Common/Support/BoldStringList.pas#L175) | [`TBoldStringList.Sort`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L71) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `AddMultipleStrings` | method | [23](../../../Source/Common/Support/BoldStringList.pas#L23) · [body 46](../../../Source/Common/Support/BoldStringList.pas#L46) | [`TBoldStringList.AddMultipleStrings`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L80) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `AssignMultipleStrings` | method | [24](../../../Source/Common/Support/BoldStringList.pas#L24) · [body 59](../../../Source/Common/Support/BoldStringList.pas#L59) | [`TBoldStringList.AssignMultipleStrings`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L97) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `Add` | method | [25](../../../Source/Common/Support/BoldStringList.pas#L25) · [body 41](../../../Source/Common/Support/BoldStringList.pas#L41) | [`TBoldStringList.Add`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L112) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `GetIndexOfName` | method | [26](../../../Source/Common/Support/BoldStringList.pas#L26) · [body 85](../../../Source/Common/Support/BoldStringList.pas#L85) | [`TBoldStringList.GetIndexOfName`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L116) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `GetIndexOfprefix` | method | [27](../../../Source/Common/Support/BoldStringList.pas#L27) · [body 102](../../../Source/Common/Support/BoldStringList.pas#L102) | [`TBoldStringList.GetIndexOfprefix`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L120) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `RemoveValue` | method | [28](../../../Source/Common/Support/BoldStringList.pas#L28) · [body 147](../../../Source/Common/Support/BoldStringList.pas#L147) | [`TBoldStringList.RemoveValue`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L152) | ✅ verified | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `FastValues` | property | [29](../../../Source/Common/Support/BoldStringList.pas#L29) | [`TBoldStringList.FastValues`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L161) | ✅ verified: An indexed property in Delphi; here a getter method, with SetFastValues to set. | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+| `ValueByIndex` | property | [30](../../../Source/Common/Support/BoldStringList.pas#L30) | [`TBoldStringList.ValueByIndex`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L167) | ✅ verified: An indexed property in Delphi. | ✔ [`BoldStringListTests.A_sorted_string_list_finds_name_value_pairs_by_binary_search`](../../tests/Bold.Core.Tests/Common/Support/BoldStringListTests.cs#L10) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldStringList.SetFastValues`](../../src/Bold.Core/Common/Support/BoldStringList.cs#L164) (method)
 
 ## Dependencies
 

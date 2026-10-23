@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldFilteredHandle.pas`](../../../Source/Handles/Core/BoldFilteredHandle.pas) (189 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | ✅ verified: 18 of 18 symbols done, 18 verified |
 
-⚪ 18 not started
+✅ 18 verified
 
 ## Unit level
 
@@ -18,38 +18,44 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldElementFilter` | event type | [18](../../../Source/Handles/Core/BoldFilteredHandle.pas#L18) |  | ⚪ not started |  |
-| `TBoldFilter` | class | [21](../../../Source/Handles/Core/BoldFilteredHandle.pas#L21) |  | ⚪ not started |  |
-| `TBoldFilteredHandle` | class | [42](../../../Source/Handles/Core/BoldFilteredHandle.pas#L42) |  | ⚪ not started |  |
+| `TBoldElementFilter` | event type | [18](../../../Source/Handles/Core/BoldFilteredHandle.pas#L18) | [`TBoldElementFilter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L11) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `TBoldFilter` | class | [21](../../../Source/Handles/Core/BoldFilteredHandle.pas#L21) | [`TBoldFilter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L15) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `TBoldFilteredHandle` | class | [42](../../../Source/Handles/Core/BoldFilteredHandle.pas#L42) | [`TBoldFilteredHandle`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L92) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
 
 ## TBoldFilter
 
-class at [line 21](../../../Source/Handles/Core/BoldFilteredHandle.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/Handles/Core/BoldFilteredHandle.pas#L21); ✅ verified, C# [`TBoldFilter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPreFetchRoles` | method, private | [26](../../../Source/Handles/Core/BoldFilteredHandle.pas#L26) · [body 91](../../../Source/Handles/Core/BoldFilteredHandle.pas#L91) |  | ⚪ not started |  |
-| `SetPreFetchRoles` | method, private | [27](../../../Source/Handles/Core/BoldFilteredHandle.pas#L27) · [body 96](../../../Source/Handles/Core/BoldFilteredHandle.pas#L96) |  | ⚪ not started |  |
-| `StorePreFetchRoles` | method, private | [28](../../../Source/Handles/Core/BoldFilteredHandle.pas#L28) · [body 101](../../../Source/Handles/Core/BoldFilteredHandle.pas#L101) |  | ⚪ not started |  |
-| `Create` | constructor | [30](../../../Source/Handles/Core/BoldFilteredHandle.pas#L30) · [body 61](../../../Source/Handles/Core/BoldFilteredHandle.pas#L61) |  | ⚪ not started |  |
-| `Destroy` | destructor | [31](../../../Source/Handles/Core/BoldFilteredHandle.pas#L31) · [body 67](../../../Source/Handles/Core/BoldFilteredHandle.pas#L67) |  | ⚪ not started |  |
-| `Subscribe` | method | [32](../../../Source/Handles/Core/BoldFilteredHandle.pas#L32) · [body 106](../../../Source/Handles/Core/BoldFilteredHandle.pas#L106) |  | ⚪ not started |  |
-| `Filter` | method | [33](../../../Source/Handles/Core/BoldFilteredHandle.pas#L33) · [body 73](../../../Source/Handles/Core/BoldFilteredHandle.pas#L73) |  | ⚪ not started |  |
-| `FilterList` | method | [34](../../../Source/Handles/Core/BoldFilteredHandle.pas#L34) · [body 82](../../../Source/Handles/Core/BoldFilteredHandle.pas#L82) |  | ⚪ not started |  |
-| `PreFetchRoles` | property, published | [36](../../../Source/Handles/Core/BoldFilteredHandle.pas#L36) |  | ⚪ not started |  |
-| `OnSubscribe` | property, published | [37](../../../Source/Handles/Core/BoldFilteredHandle.pas#L37) |  | ⚪ not started |  |
-| `OnFilter` | property, published | [38](../../../Source/Handles/Core/BoldFilteredHandle.pas#L38) |  | ⚪ not started |  |
+| `GetPreFetchRoles` | method, private | [26](../../../Source/Handles/Core/BoldFilteredHandle.pas#L26) · [body 91](../../../Source/Handles/Core/BoldFilteredHandle.pas#L91) | [`TBoldFilter.GetPreFetchRoles`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L39) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `SetPreFetchRoles` | method, private | [27](../../../Source/Handles/Core/BoldFilteredHandle.pas#L27) · [body 96](../../../Source/Handles/Core/BoldFilteredHandle.pas#L96) | [`TBoldFilter.SetPreFetchRoles`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L40) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `StorePreFetchRoles` | method, private | [28](../../../Source/Handles/Core/BoldFilteredHandle.pas#L28) · [body 101](../../../Source/Handles/Core/BoldFilteredHandle.pas#L101) | [`TBoldFilter.StorePreFetchRoles`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L44) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `Create` | constructor | [30](../../../Source/Handles/Core/BoldFilteredHandle.pas#L30) · [body 61](../../../Source/Handles/Core/BoldFilteredHandle.pas#L61) | [`TBoldFilter.TBoldFilter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L22) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `Destroy` | destructor | [31](../../../Source/Handles/Core/BoldFilteredHandle.pas#L31) · [body 67](../../../Source/Handles/Core/BoldFilteredHandle.pas#L67) | [`TBoldFilter.Dispose`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L29) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `Subscribe` | method | [32](../../../Source/Handles/Core/BoldFilteredHandle.pas#L32) · [body 106](../../../Source/Handles/Core/BoldFilteredHandle.pas#L106) | [`TBoldFilter.Subscribe`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L49) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `Filter` | method | [33](../../../Source/Handles/Core/BoldFilteredHandle.pas#L33) · [body 73](../../../Source/Handles/Core/BoldFilteredHandle.pas#L73) | [`TBoldFilter.Filter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L53) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `FilterList` | method | [34](../../../Source/Handles/Core/BoldFilteredHandle.pas#L34) · [body 82](../../../Source/Handles/Core/BoldFilteredHandle.pas#L82) | [`TBoldFilter.FilterList`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L57) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `PreFetchRoles` | property, published | [36](../../../Source/Handles/Core/BoldFilteredHandle.pas#L36) | [`TBoldFilter.PreFetchRoles`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L69) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `OnSubscribe` | property, published | [37](../../../Source/Handles/Core/BoldFilteredHandle.pas#L37) | [`TBoldFilter.OnSubscribe`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L76) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `OnFilter` | property, published | [38](../../../Source/Handles/Core/BoldFilteredHandle.pas#L38) | [`TBoldFilter.OnFilter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L83) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
 
 ## TBoldFilteredHandle
 
-class at [line 42](../../../Source/Handles/Core/BoldFilteredHandle.pas#L42); ⚪ not started.
+class at [line 42](../../../Source/Handles/Core/BoldFilteredHandle.pas#L42); ✅ verified, C# [`TBoldFilteredHandle`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L92).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldFilter` | method, private | [45](../../../Source/Handles/Core/BoldFilteredHandle.pas#L45) · [body 180](../../../Source/Handles/Core/BoldFilteredHandle.pas#L180) |  | ⚪ not started |  |
-| `DeriveAndSubscribe` | method, protected | [47](../../../Source/Handles/Core/BoldFilteredHandle.pas#L47) · [body 114](../../../Source/Handles/Core/BoldFilteredHandle.pas#L114) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [48](../../../Source/Handles/Core/BoldFilteredHandle.pas#L48) · [body 167](../../../Source/Handles/Core/BoldFilteredHandle.pas#L167) |  | ⚪ not started |  |
-| `BoldFilter` | property | [50](../../../Source/Handles/Core/BoldFilteredHandle.pas#L50) |  | ⚪ not started |  |
+| `SetBoldFilter` | method, private | [45](../../../Source/Handles/Core/BoldFilteredHandle.pas#L45) · [body 180](../../../Source/Handles/Core/BoldFilteredHandle.pas#L180) | [`TBoldFilteredHandle.SetBoldFilter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L103) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `DeriveAndSubscribe` | method, protected | [47](../../../Source/Handles/Core/BoldFilteredHandle.pas#L47) · [body 114](../../../Source/Handles/Core/BoldFilteredHandle.pas#L114) | [`TBoldFilteredHandle.DeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L117) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `GetStaticBoldType` | method, protected | [48](../../../Source/Handles/Core/BoldFilteredHandle.pas#L48) · [body 167](../../../Source/Handles/Core/BoldFilteredHandle.pas#L167) | [`TBoldFilteredHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L177) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+| `BoldFilter` | property | [50](../../../Source/Handles/Core/BoldFilteredHandle.pas#L50) | [`TBoldFilteredHandle.BoldFilter`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L189) | ✅ verified | ✔ [`BoldFilteredHandleTests.A_filtered_handle_keeps_the_elements_that_pass`](../../tests/Bold.Handles.Tests/Handles/Core/BoldFilteredHandleTests.cs#L13) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldFilteredHandle.TBoldFilteredHandle`](../../src/Bold.Handles/Handles/Core/BoldFilteredHandle.cs#L97) (constructor)
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldVariableHandle.pas`](../../../Source/Handles/Core/BoldVariableHandle.pas) (151 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldVariableHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldVariableHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 14 symbols done, 0 verified |
+| Status | ✅ verified: 14 of 14 symbols done, 14 verified |
 
-⚪ 14 not started
+✅ 14 verified
 
 ## Unit level
 
@@ -18,27 +18,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldVariableHandle` | class | [12](../../../Source/Handles/Core/BoldVariableHandle.pas#L12) |  | ⚪ not started |  |
+| `TBoldVariableHandle` | class | [12](../../../Source/Handles/Core/BoldVariableHandle.pas#L12) | [`TBoldVariableHandle`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L15) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
 
 ## TBoldVariableHandle
 
-class at [line 12](../../../Source/Handles/Core/BoldVariableHandle.pas#L12); ⚪ not started.
+class at [line 12](../../../Source/Handles/Core/BoldVariableHandle.pas#L12); ✅ verified, C# [`TBoldVariableHandle`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `InitialvaluesChanged` | method, private | [17](../../../Source/Handles/Core/BoldVariableHandle.pas#L17) · [body 113](../../../Source/Handles/Core/BoldVariableHandle.pas#L113) |  | ⚪ not started |  |
-| `SetValueTypeName` | method, private | [18](../../../Source/Handles/Core/BoldVariableHandle.pas#L18) · [body 122](../../../Source/Handles/Core/BoldVariableHandle.pas#L122) |  | ⚪ not started |  |
-| `SetInitialValues` | method, private | [19](../../../Source/Handles/Core/BoldVariableHandle.pas#L19) · [body 131](../../../Source/Handles/Core/BoldVariableHandle.pas#L131) |  | ⚪ not started |  |
-| `CreateVariableElement` | method, private | [20](../../../Source/Handles/Core/BoldVariableHandle.pas#L20) · [body 56](../../../Source/Handles/Core/BoldVariableHandle.pas#L56) |  | ⚪ not started |  |
-| `GetObjectList` | method, private | [21](../../../Source/Handles/Core/BoldVariableHandle.pas#L21) · [body 143](../../../Source/Handles/Core/BoldVariableHandle.pas#L143) |  | ⚪ not started |  |
-| `GetValue` | method, protected | [23](../../../Source/Handles/Core/BoldVariableHandle.pas#L23) · [body 96](../../../Source/Handles/Core/BoldVariableHandle.pas#L96) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [24](../../../Source/Handles/Core/BoldVariableHandle.pas#L24) · [body 84](../../../Source/Handles/Core/BoldVariableHandle.pas#L84) |  | ⚪ not started |  |
-| `StaticBoldTypeChanged` | method, protected | [25](../../../Source/Handles/Core/BoldVariableHandle.pas#L25) · [body 137](../../../Source/Handles/Core/BoldVariableHandle.pas#L137) |  | ⚪ not started |  |
-| `Create` | constructor | [27](../../../Source/Handles/Core/BoldVariableHandle.pas#L27) · [body 46](../../../Source/Handles/Core/BoldVariableHandle.pas#L46) |  | ⚪ not started |  |
-| `Destroy` | destructor | [28](../../../Source/Handles/Core/BoldVariableHandle.pas#L28) · [body 76](../../../Source/Handles/Core/BoldVariableHandle.pas#L76) |  | ⚪ not started |  |
-| `ObjectList` | property | [29](../../../Source/Handles/Core/BoldVariableHandle.pas#L29) |  | ⚪ not started |  |
-| `ValueTypeName` | property, published | [31](../../../Source/Handles/Core/BoldVariableHandle.pas#L31) |  | ⚪ not started |  |
-| `InitialValues` | property, published | [32](../../../Source/Handles/Core/BoldVariableHandle.pas#L32) |  | ⚪ not started |  |
+| `InitialvaluesChanged` | method, private | [17](../../../Source/Handles/Core/BoldVariableHandle.pas#L17) · [body 113](../../../Source/Handles/Core/BoldVariableHandle.pas#L113) | [`TBoldVariableHandle.InitialvaluesChanged`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L45) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `SetValueTypeName` | method, private | [18](../../../Source/Handles/Core/BoldVariableHandle.pas#L18) · [body 122](../../../Source/Handles/Core/BoldVariableHandle.pas#L122) | [`TBoldVariableHandle.SetValueTypeName`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L55) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `SetInitialValues` | method, private | [19](../../../Source/Handles/Core/BoldVariableHandle.pas#L19) · [body 131](../../../Source/Handles/Core/BoldVariableHandle.pas#L131) | [`TBoldVariableHandle.SetInitialValues`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L65) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `CreateVariableElement` | method, private | [20](../../../Source/Handles/Core/BoldVariableHandle.pas#L20) · [body 56](../../../Source/Handles/Core/BoldVariableHandle.pas#L56) | [`TBoldVariableHandle.CreateVariableElement`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L75) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `GetObjectList` | method, private | [21](../../../Source/Handles/Core/BoldVariableHandle.pas#L21) · [body 143](../../../Source/Handles/Core/BoldVariableHandle.pas#L143) | [`TBoldVariableHandle.GetObjectList`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L100) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `GetValue` | method, protected | [23](../../../Source/Handles/Core/BoldVariableHandle.pas#L23) · [body 96](../../../Source/Handles/Core/BoldVariableHandle.pas#L96) | [`TBoldVariableHandle.GetValue`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L104) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `GetStaticBoldType` | method, protected | [24](../../../Source/Handles/Core/BoldVariableHandle.pas#L24) · [body 84](../../../Source/Handles/Core/BoldVariableHandle.pas#L84) | [`TBoldVariableHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L129) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `StaticBoldTypeChanged` | method, protected | [25](../../../Source/Handles/Core/BoldVariableHandle.pas#L25) · [body 137](../../../Source/Handles/Core/BoldVariableHandle.pas#L137) | [`TBoldVariableHandle.StaticBoldTypeChanged`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L147) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `Create` | constructor | [27](../../../Source/Handles/Core/BoldVariableHandle.pas#L27) · [body 46](../../../Source/Handles/Core/BoldVariableHandle.pas#L46) | [`TBoldVariableHandle.TBoldVariableHandle`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L22) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `Destroy` | destructor | [28](../../../Source/Handles/Core/BoldVariableHandle.pas#L28) · [body 76](../../../Source/Handles/Core/BoldVariableHandle.pas#L76) | [`TBoldVariableHandle.Dispose`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L31) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `ObjectList` | property | [29](../../../Source/Handles/Core/BoldVariableHandle.pas#L29) | [`TBoldVariableHandle.ObjectList`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L153) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `ValueTypeName` | property, published | [31](../../../Source/Handles/Core/BoldVariableHandle.pas#L31) | [`TBoldVariableHandle.ValueTypeName`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L156) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
+| `InitialValues` | property, published | [32](../../../Source/Handles/Core/BoldVariableHandle.pas#L32) | [`TBoldVariableHandle.InitialValues`](../../src/Bold.Handles/Handles/Core/BoldVariableHandle.cs#L163) | ✅ verified | ✔ [`BoldVariableHandleTests.A_variable_handle_owns_an_attribute_or_list_with_initial_values`](../../tests/Bold.Handles.Tests/Handles/Core/BoldVariableHandleTests.cs#L9) |
 
 ## Dependencies
 

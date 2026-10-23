@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/HandlesConst.pas`](../../../Source/Handles/Core/HandlesConst.pas) (96 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/HandlesConst.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/HandlesConst.cs`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 53 symbols done, 0 verified |
+| Status | ✅ verified: 53 of 53 symbols done, 53 verified |
 
-⚪ 53 not started
+✅ 53 verified
 
 ## Unit level
 
@@ -18,59 +18,59 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sIllegalTypeSelected` | resourcestring | [6](../../../Source/Handles/Core/HandlesConst.pas#L6) |  | ⚪ not started |  |
-| `sNoSystemHandle` | resourcestring | [7](../../../Source/Handles/Core/HandlesConst.pas#L7) |  | ⚪ not started |  |
-| `sCircularReference` | resourcestring | [8](../../../Source/Handles/Core/HandlesConst.pas#L8) |  | ⚪ not started |  |
-| `sNameNotUnique` | resourcestring | [9](../../../Source/Handles/Core/HandlesConst.pas#L9) |  | ⚪ not started |  |
-| `sNoPreviousElement` | resourcestring | [12](../../../Source/Handles/Core/HandlesConst.pas#L12) |  | ⚪ not started |  |
-| `sNoNextElement` | resourcestring | [13](../../../Source/Handles/Core/HandlesConst.pas#L13) |  | ⚪ not started |  |
-| `sNoCurrentElement` | resourcestring | [14](../../../Source/Handles/Core/HandlesConst.pas#L14) |  | ⚪ not started |  |
-| `sCannotRemoveCurrentFromImmutable` | resourcestring | [15](../../../Source/Handles/Core/HandlesConst.pas#L15) |  | ⚪ not started |  |
-| `sCurrentElementNotBoldObject` | resourcestring | [16](../../../Source/Handles/Core/HandlesConst.pas#L16) |  | ⚪ not started |  |
-| `sSystemHandleNotActive` | resourcestring | [18](../../../Source/Handles/Core/HandlesConst.pas#L18) |  | ⚪ not started |  |
-| `sCannotCreateListDueToInvalidType` | resourcestring | [19](../../../Source/Handles/Core/HandlesConst.pas#L19) |  | ⚪ not started |  |
-| `sComnponentNotOCLDefinition` | resourcestring | [22](../../../Source/Handles/Core/HandlesConst.pas#L22) |  | ⚪ not started |  |
-| `sCannotSetMultiLinkFromValue` | resourcestring | [25](../../../Source/Handles/Core/HandlesConst.pas#L25) |  | ⚪ not started |  |
-| `sCannotSetObjectFromValue` | resourcestring | [26](../../../Source/Handles/Core/HandlesConst.pas#L26) |  | ⚪ not started |  |
-| `sElementLacksTypeInfo` | resourcestring | [27](../../../Source/Handles/Core/HandlesConst.pas#L27) |  | ⚪ not started |  |
-| `sUnknownMapping` | resourcestring | [28](../../../Source/Handles/Core/HandlesConst.pas#L28) |  | ⚪ not started |  |
-| `sCannotUpdateDatebaseWithoutSystem` | resourcestring | [31](../../../Source/Handles/Core/HandlesConst.pas#L31) |  | ⚪ not started |  |
-| `sUnableToActivateSystemWithoutTypeInfoHandle` | resourcestring | [32](../../../Source/Handles/Core/HandlesConst.pas#L32) |  | ⚪ not started |  |
-| `sUnableToFindTypeInfoHandle` | resourcestring | [33](../../../Source/Handles/Core/HandlesConst.pas#L33) |  | ⚪ not started |  |
-| `sUnableToActivateSystem` | resourcestring | [34](../../../Source/Handles/Core/HandlesConst.pas#L34) |  | ⚪ not started |  |
-| `sPersistenceHandleChangedOnRunningSystem` | resourcestring | [35](../../../Source/Handles/Core/HandlesConst.pas#L35) |  | ⚪ not started |  |
-| `sModelChangedOnRunningSystem` | resourcestring | [36](../../../Source/Handles/Core/HandlesConst.pas#L36) |  | ⚪ not started |  |
-| `sRegionDefinitionsRemovedFromRunningSystem` | resourcestring | [37](../../../Source/Handles/Core/HandlesConst.pas#L37) |  | ⚪ not started |  |
-| `sPanicShutDown` | resourcestring | [38](../../../Source/Handles/Core/HandlesConst.pas#L38) |  | ⚪ not started |  |
-| `sOnlyListsAndAttributeTypesAllowed` | resourcestring | [41](../../../Source/Handles/Core/HandlesConst.pas#L41) |  | ⚪ not started |  |
-| `sValueTypeNameInvalid` | resourcestring | [42](../../../Source/Handles/Core/HandlesConst.pas#L42) |  | ⚪ not started |  |
-| `sManipulatorNotAssigned` | resourcestring | [45](../../../Source/Handles/Core/HandlesConst.pas#L45) |  | ⚪ not started |  |
-| `sCannotActivateWithoutListener` | resourcestring | [48](../../../Source/Handles/Core/HandlesConst.pas#L48) |  | ⚪ not started |  |
-| `sCannotActivateWithoutLockManager` | resourcestring | [49](../../../Source/Handles/Core/HandlesConst.pas#L49) |  | ⚪ not started |  |
-| `sNotAllowedOnActiveHandle` | resourcestring | [52](../../../Source/Handles/Core/HandlesConst.pas#L52) |  | ⚪ not started |  |
-| `sUpdateDB` | resourcestring | [55](../../../Source/Handles/Core/HandlesConst.pas#L55) |  | ⚪ not started |  |
-| `sOpenSystem` | resourcestring | [56](../../../Source/Handles/Core/HandlesConst.pas#L56) |  | ⚪ not started |  |
-| `sCloseSystem` | resourcestring | [57](../../../Source/Handles/Core/HandlesConst.pas#L57) |  | ⚪ not started |  |
-| `sThereAreDirtyObjects` | resourcestring | [58](../../../Source/Handles/Core/HandlesConst.pas#L58) |  | ⚪ not started |  |
-| `sClosingWithDirtyObjects` | resourcestring | [59](../../../Source/Handles/Core/HandlesConst.pas#L59) |  | ⚪ not started |  |
-| `sInternalRootHandle_CircRef` | resourcestring | [62](../../../Source/Handles/Core/HandlesConst.pas#L62) |  | ⚪ not started |  |
-| `sNext` | resourcestring | [65](../../../Source/Handles/Core/HandlesConst.pas#L65) |  | ⚪ not started |  |
-| `sPrev` | resourcestring | [66](../../../Source/Handles/Core/HandlesConst.pas#L66) |  | ⚪ not started |  |
-| `sFirst` | resourcestring | [67](../../../Source/Handles/Core/HandlesConst.pas#L67) |  | ⚪ not started |  |
-| `sLast` | resourcestring | [68](../../../Source/Handles/Core/HandlesConst.pas#L68) |  | ⚪ not started |  |
-| `sUnknownDeleteMode` | resourcestring | [69](../../../Source/Handles/Core/HandlesConst.pas#L69) |  | ⚪ not started |  |
-| `sDelete` | resourcestring | [70](../../../Source/Handles/Core/HandlesConst.pas#L70) |  | ⚪ not started |  |
-| `sAddNew` | resourcestring | [71](../../../Source/Handles/Core/HandlesConst.pas#L71) |  | ⚪ not started |  |
-| `sMoveUp` | resourcestring | [72](../../../Source/Handles/Core/HandlesConst.pas#L72) |  | ⚪ not started |  |
-| `sMoveDown` | resourcestring | [73](../../../Source/Handles/Core/HandlesConst.pas#L73) |  | ⚪ not started |  |
-| `sSetCheckPoint` | resourcestring | [76](../../../Source/Handles/Core/HandlesConst.pas#L76) |  | ⚪ not started |  |
-| `sUndo` | resourcestring | [77](../../../Source/Handles/Core/HandlesConst.pas#L77) |  | ⚪ not started |  |
-| `sRedo` | resourcestring | [78](../../../Source/Handles/Core/HandlesConst.pas#L78) |  | ⚪ not started |  |
-| `sIndexOutOfBounds` | resourcestring | [81](../../../Source/Handles/Core/HandlesConst.pas#L81) |  | ⚪ not started |  |
-| `sIllegalCharsInName` | resourcestring | [84](../../../Source/Handles/Core/HandlesConst.pas#L84) |  | ⚪ not started |  |
-| `sDeriveAndSubscribeFailed` | resourcestring | [87](../../../Source/Handles/Core/HandlesConst.pas#L87) |  | ⚪ not started |  |
-| `sRepositoryHasNoSystemHandle` | resourcestring | [90](../../../Source/Handles/Core/HandlesConst.pas#L90) |  | ⚪ not started |  |
-| `sSystemHandleHasNoTypeInfo` | resourcestring | [91](../../../Source/Handles/Core/HandlesConst.pas#L91) |  | ⚪ not started |  |
+| `sIllegalTypeSelected` | resourcestring | [6](../../../Source/Handles/Core/HandlesConst.pas#L6) | [`HandlesConst.sIllegalTypeSelected`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L9) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sNoSystemHandle` | resourcestring | [7](../../../Source/Handles/Core/HandlesConst.pas#L7) | [`HandlesConst.sNoSystemHandle`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L10) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCircularReference` | resourcestring | [8](../../../Source/Handles/Core/HandlesConst.pas#L8) | [`HandlesConst.sCircularReference`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L11) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sNameNotUnique` | resourcestring | [9](../../../Source/Handles/Core/HandlesConst.pas#L9) | [`HandlesConst.sNameNotUnique`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L12) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sNoPreviousElement` | resourcestring | [12](../../../Source/Handles/Core/HandlesConst.pas#L12) | [`HandlesConst.sNoPreviousElement`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L14) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sNoNextElement` | resourcestring | [13](../../../Source/Handles/Core/HandlesConst.pas#L13) | [`HandlesConst.sNoNextElement`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L15) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sNoCurrentElement` | resourcestring | [14](../../../Source/Handles/Core/HandlesConst.pas#L14) | [`HandlesConst.sNoCurrentElement`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L16) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCannotRemoveCurrentFromImmutable` | resourcestring | [15](../../../Source/Handles/Core/HandlesConst.pas#L15) | [`HandlesConst.sCannotRemoveCurrentFromImmutable`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L17) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCurrentElementNotBoldObject` | resourcestring | [16](../../../Source/Handles/Core/HandlesConst.pas#L16) | [`HandlesConst.sCurrentElementNotBoldObject`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L18) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sSystemHandleNotActive` | resourcestring | [18](../../../Source/Handles/Core/HandlesConst.pas#L18) | [`HandlesConst.sSystemHandleNotActive`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L20) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCannotCreateListDueToInvalidType` | resourcestring | [19](../../../Source/Handles/Core/HandlesConst.pas#L19) | [`HandlesConst.sCannotCreateListDueToInvalidType`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L21) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sComnponentNotOCLDefinition` | resourcestring | [22](../../../Source/Handles/Core/HandlesConst.pas#L22) | [`HandlesConst.sComnponentNotOCLDefinition`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L23) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCannotSetMultiLinkFromValue` | resourcestring | [25](../../../Source/Handles/Core/HandlesConst.pas#L25) | [`HandlesConst.sCannotSetMultiLinkFromValue`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L25) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCannotSetObjectFromValue` | resourcestring | [26](../../../Source/Handles/Core/HandlesConst.pas#L26) | [`HandlesConst.sCannotSetObjectFromValue`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L26) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sElementLacksTypeInfo` | resourcestring | [27](../../../Source/Handles/Core/HandlesConst.pas#L27) | [`HandlesConst.sElementLacksTypeInfo`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L27) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sUnknownMapping` | resourcestring | [28](../../../Source/Handles/Core/HandlesConst.pas#L28) | [`HandlesConst.sUnknownMapping`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L28) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCannotUpdateDatebaseWithoutSystem` | resourcestring | [31](../../../Source/Handles/Core/HandlesConst.pas#L31) | [`HandlesConst.sCannotUpdateDatebaseWithoutSystem`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L30) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sUnableToActivateSystemWithoutTypeInfoHandle` | resourcestring | [32](../../../Source/Handles/Core/HandlesConst.pas#L32) | [`HandlesConst.sUnableToActivateSystemWithoutTypeInfoHandle`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L31) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sUnableToFindTypeInfoHandle` | resourcestring | [33](../../../Source/Handles/Core/HandlesConst.pas#L33) | [`HandlesConst.sUnableToFindTypeInfoHandle`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L32) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sUnableToActivateSystem` | resourcestring | [34](../../../Source/Handles/Core/HandlesConst.pas#L34) | [`HandlesConst.sUnableToActivateSystem`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L33) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sPersistenceHandleChangedOnRunningSystem` | resourcestring | [35](../../../Source/Handles/Core/HandlesConst.pas#L35) | [`HandlesConst.sPersistenceHandleChangedOnRunningSystem`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L34) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sModelChangedOnRunningSystem` | resourcestring | [36](../../../Source/Handles/Core/HandlesConst.pas#L36) | [`HandlesConst.sModelChangedOnRunningSystem`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L35) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sRegionDefinitionsRemovedFromRunningSystem` | resourcestring | [37](../../../Source/Handles/Core/HandlesConst.pas#L37) | [`HandlesConst.sRegionDefinitionsRemovedFromRunningSystem`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L36) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sPanicShutDown` | resourcestring | [38](../../../Source/Handles/Core/HandlesConst.pas#L38) | [`HandlesConst.sPanicShutDown`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L37) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sOnlyListsAndAttributeTypesAllowed` | resourcestring | [41](../../../Source/Handles/Core/HandlesConst.pas#L41) | [`HandlesConst.sOnlyListsAndAttributeTypesAllowed`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L39) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sValueTypeNameInvalid` | resourcestring | [42](../../../Source/Handles/Core/HandlesConst.pas#L42) | [`HandlesConst.sValueTypeNameInvalid`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L40) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sManipulatorNotAssigned` | resourcestring | [45](../../../Source/Handles/Core/HandlesConst.pas#L45) | [`HandlesConst.sManipulatorNotAssigned`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L42) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCannotActivateWithoutListener` | resourcestring | [48](../../../Source/Handles/Core/HandlesConst.pas#L48) | [`HandlesConst.sCannotActivateWithoutListener`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L44) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCannotActivateWithoutLockManager` | resourcestring | [49](../../../Source/Handles/Core/HandlesConst.pas#L49) | [`HandlesConst.sCannotActivateWithoutLockManager`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L45) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sNotAllowedOnActiveHandle` | resourcestring | [52](../../../Source/Handles/Core/HandlesConst.pas#L52) | [`HandlesConst.sNotAllowedOnActiveHandle`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L47) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sUpdateDB` | resourcestring | [55](../../../Source/Handles/Core/HandlesConst.pas#L55) | [`HandlesConst.sUpdateDB`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L49) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sOpenSystem` | resourcestring | [56](../../../Source/Handles/Core/HandlesConst.pas#L56) | [`HandlesConst.sOpenSystem`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L50) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sCloseSystem` | resourcestring | [57](../../../Source/Handles/Core/HandlesConst.pas#L57) | [`HandlesConst.sCloseSystem`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L51) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sThereAreDirtyObjects` | resourcestring | [58](../../../Source/Handles/Core/HandlesConst.pas#L58) | [`HandlesConst.sThereAreDirtyObjects`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L52) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sClosingWithDirtyObjects` | resourcestring | [59](../../../Source/Handles/Core/HandlesConst.pas#L59) | [`HandlesConst.sClosingWithDirtyObjects`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L53) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sInternalRootHandle_CircRef` | resourcestring | [62](../../../Source/Handles/Core/HandlesConst.pas#L62) | [`HandlesConst.sInternalRootHandle_CircRef`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L55) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sNext` | resourcestring | [65](../../../Source/Handles/Core/HandlesConst.pas#L65) | [`HandlesConst.sNext`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L57) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sPrev` | resourcestring | [66](../../../Source/Handles/Core/HandlesConst.pas#L66) | [`HandlesConst.sPrev`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L58) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sFirst` | resourcestring | [67](../../../Source/Handles/Core/HandlesConst.pas#L67) | [`HandlesConst.sFirst`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L59) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sLast` | resourcestring | [68](../../../Source/Handles/Core/HandlesConst.pas#L68) | [`HandlesConst.sLast`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L60) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sUnknownDeleteMode` | resourcestring | [69](../../../Source/Handles/Core/HandlesConst.pas#L69) | [`HandlesConst.sUnknownDeleteMode`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L61) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sDelete` | resourcestring | [70](../../../Source/Handles/Core/HandlesConst.pas#L70) | [`HandlesConst.sDelete`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L62) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sAddNew` | resourcestring | [71](../../../Source/Handles/Core/HandlesConst.pas#L71) | [`HandlesConst.sAddNew`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L63) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sMoveUp` | resourcestring | [72](../../../Source/Handles/Core/HandlesConst.pas#L72) | [`HandlesConst.sMoveUp`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L64) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sMoveDown` | resourcestring | [73](../../../Source/Handles/Core/HandlesConst.pas#L73) | [`HandlesConst.sMoveDown`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L65) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sSetCheckPoint` | resourcestring | [76](../../../Source/Handles/Core/HandlesConst.pas#L76) | [`HandlesConst.sSetCheckPoint`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L67) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sUndo` | resourcestring | [77](../../../Source/Handles/Core/HandlesConst.pas#L77) | [`HandlesConst.sUndo`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L68) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sRedo` | resourcestring | [78](../../../Source/Handles/Core/HandlesConst.pas#L78) | [`HandlesConst.sRedo`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L69) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sIndexOutOfBounds` | resourcestring | [81](../../../Source/Handles/Core/HandlesConst.pas#L81) | [`HandlesConst.sIndexOutOfBounds`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L71) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sIllegalCharsInName` | resourcestring | [84](../../../Source/Handles/Core/HandlesConst.pas#L84) | [`HandlesConst.sIllegalCharsInName`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L73) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sDeriveAndSubscribeFailed` | resourcestring | [87](../../../Source/Handles/Core/HandlesConst.pas#L87) | [`HandlesConst.sDeriveAndSubscribeFailed`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L75) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sRepositoryHasNoSystemHandle` | resourcestring | [90](../../../Source/Handles/Core/HandlesConst.pas#L90) | [`HandlesConst.sRepositoryHasNoSystemHandle`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L77) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
+| `sSystemHandleHasNoTypeInfo` | resourcestring | [91](../../../Source/Handles/Core/HandlesConst.pas#L91) | [`HandlesConst.sSystemHandleHasNoTypeInfo`](../../src/Bold.Handles/Handles/Core/HandlesConst.cs#L78) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10) |
 
 ## Dependencies
 

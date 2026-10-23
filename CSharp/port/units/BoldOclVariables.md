@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldOclVariables.pas`](../../../Source/Handles/Core/BoldOclVariables.pas) (396 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldOclVariables.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldOclVariables.cs`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 43 symbols done, 0 verified |
+| Status | 🟢 ported: 43 of 43 symbols done, 42 verified |
 
-⚪ 43 not started
+✅ 42 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,77 +18,84 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldHandleBasedExternalVariable` | class | [19](../../../Source/Handles/Core/BoldOclVariables.pas#L19) |  | ⚪ not started |  |
-| `TBoldOclVariables` | class | [34](../../../Source/Handles/Core/BoldOclVariables.pas#L34) |  | ⚪ not started |  |
-| `TBoldVariableTupleList` | class | [52](../../../Source/Handles/Core/BoldOclVariables.pas#L52) |  | ⚪ not started |  |
-| `TBoldVariableTuple` | class | [68](../../../Source/Handles/Core/BoldOclVariables.pas#L68) |  | ⚪ not started |  |
+| `TBoldHandleBasedExternalVariable` | class | [19](../../../Source/Handles/Core/BoldOclVariables.pas#L19) | [`TBoldHandleBasedExternalVariable`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L14) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `TBoldOclVariables` | class | [34](../../../Source/Handles/Core/BoldOclVariables.pas#L34) | [`TBoldOclVariables`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L74) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `TBoldVariableTupleList` | class | [52](../../../Source/Handles/Core/BoldOclVariables.pas#L52) | [`TBoldVariableTupleList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L173) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `TBoldVariableTuple` | class | [68](../../../Source/Handles/Core/BoldOclVariables.pas#L68) | [`TBoldVariableTuple`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L249) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
 
 ## TBoldHandleBasedExternalVariable
 
-class at [line 19](../../../Source/Handles/Core/BoldOclVariables.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Handles/Core/BoldOclVariables.pas#L19); ✅ verified, C# [`TBoldHandleBasedExternalVariable`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_ReceiveHandleEvent` | method, private | [24](../../../Source/Handles/Core/BoldOclVariables.pas#L24) · [body 345](../../../Source/Handles/Core/BoldOclVariables.pas#L345) |  | ⚪ not started |  |
-| `GetValue` | method, protected | [26](../../../Source/Handles/Core/BoldOclVariables.pas#L26) · [body 370](../../../Source/Handles/Core/BoldOclVariables.pas#L370) |  | ⚪ not started |  |
-| `GetValueType` | method, protected | [27](../../../Source/Handles/Core/BoldOclVariables.pas#L27) · [body 383](../../../Source/Handles/Core/BoldOclVariables.pas#L383) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/Handles/Core/BoldOclVariables.pas#L29) · [body 353](../../../Source/Handles/Core/BoldOclVariables.pas#L353) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/Handles/Core/BoldOclVariables.pas#L30) · [body 364](../../../Source/Handles/Core/BoldOclVariables.pas#L364) |  | ⚪ not started |  |
+| `_ReceiveHandleEvent` | method, private | [24](../../../Source/Handles/Core/BoldOclVariables.pas#L24) · [body 345](../../../Source/Handles/Core/BoldOclVariables.pas#L345) | [`TBoldHandleBasedExternalVariable._ReceiveHandleEvent`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L38) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetValue` | method, protected | [26](../../../Source/Handles/Core/BoldOclVariables.pas#L26) · [body 370](../../../Source/Handles/Core/BoldOclVariables.pas#L370) | [`TBoldHandleBasedExternalVariable.GetValue`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L47) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetValueType` | method, protected | [27](../../../Source/Handles/Core/BoldOclVariables.pas#L27) · [body 383](../../../Source/Handles/Core/BoldOclVariables.pas#L383) | [`TBoldHandleBasedExternalVariable.GetValueType`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L58) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Create` | constructor | [29](../../../Source/Handles/Core/BoldOclVariables.pas#L29) · [body 353](../../../Source/Handles/Core/BoldOclVariables.pas#L353) | [`TBoldHandleBasedExternalVariable.TBoldHandleBasedExternalVariable`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L21) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Destroy` | destructor | [30](../../../Source/Handles/Core/BoldOclVariables.pas#L30) · [body 364](../../../Source/Handles/Core/BoldOclVariables.pas#L364) | [`TBoldHandleBasedExternalVariable.Dispose`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L31) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
 
 ## TBoldOclVariables
 
-class at [line 34](../../../Source/Handles/Core/BoldOclVariables.pas#L34); ⚪ not started.
+class at [line 34](../../../Source/Handles/Core/BoldOclVariables.pas#L34); ✅ verified, C# [`TBoldOclVariables`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L74).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetVariableTupleList` | method, private | [38](../../../Source/Handles/Core/BoldOclVariables.pas#L38) · [body 157](../../../Source/Handles/Core/BoldOclVariables.pas#L157) |  | ⚪ not started |  |
-| `VariablesChanged` | method, private | [39](../../../Source/Handles/Core/BoldOclVariables.pas#L39) · [body 174](../../../Source/Handles/Core/BoldOclVariables.pas#L174) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [40](../../../Source/Handles/Core/BoldOclVariables.pas#L40) · [body 122](../../../Source/Handles/Core/BoldOclVariables.pas#L122) |  | ⚪ not started |  |
-| `Create` | constructor | [42](../../../Source/Handles/Core/BoldOclVariables.pas#L42) · [body 107](../../../Source/Handles/Core/BoldOclVariables.pas#L107) |  | ⚪ not started |  |
-| `Destroy` | destructor | [43](../../../Source/Handles/Core/BoldOclVariables.pas#L43) · [body 114](../../../Source/Handles/Core/BoldOclVariables.pas#L114) |  | ⚪ not started |  |
-| `SubscribeToHandles` | method | [44](../../../Source/Handles/Core/BoldOclVariables.pas#L44) · [body 163](../../../Source/Handles/Core/BoldOclVariables.pas#L163) |  | ⚪ not started |  |
-| `LinksToHandle` | method | [45](../../../Source/Handles/Core/BoldOclVariables.pas#L45) · [body 148](../../../Source/Handles/Core/BoldOclVariables.pas#L148) |  | ⚪ not started |  |
-| `VariableList` | property | [46](../../../Source/Handles/Core/BoldOclVariables.pas#L46) |  | ⚪ not started |  |
-| `Variables` | property, published | [48](../../../Source/Handles/Core/BoldOclVariables.pas#L48) |  | ⚪ not started |  |
+| `SetVariableTupleList` | method, private | [38](../../../Source/Handles/Core/BoldOclVariables.pas#L38) · [body 157](../../../Source/Handles/Core/BoldOclVariables.pas#L157) | [`TBoldOclVariables.SetVariableTupleList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L102) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `VariablesChanged` | method, private | [39](../../../Source/Handles/Core/BoldOclVariables.pas#L39) · [body 174](../../../Source/Handles/Core/BoldOclVariables.pas#L174) | [`TBoldOclVariables.VariablesChanged`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L106) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetVariableList` | method, private | [40](../../../Source/Handles/Core/BoldOclVariables.pas#L40) · [body 122](../../../Source/Handles/Core/BoldOclVariables.pas#L122) | [`TBoldOclVariables.GetVariableList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L114) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Create` | constructor | [42](../../../Source/Handles/Core/BoldOclVariables.pas#L42) · [body 107](../../../Source/Handles/Core/BoldOclVariables.pas#L107) | [`TBoldOclVariables.TBoldOclVariables`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L80) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Destroy` | destructor | [43](../../../Source/Handles/Core/BoldOclVariables.pas#L43) · [body 114](../../../Source/Handles/Core/BoldOclVariables.pas#L114) | [`TBoldOclVariables.Dispose`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L88) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `SubscribeToHandles` | method | [44](../../../Source/Handles/Core/BoldOclVariables.pas#L44) · [body 163](../../../Source/Handles/Core/BoldOclVariables.pas#L163) | [`TBoldOclVariables.SubscribeToHandles`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L135) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `LinksToHandle` | method | [45](../../../Source/Handles/Core/BoldOclVariables.pas#L45) · [body 148](../../../Source/Handles/Core/BoldOclVariables.pas#L148) | [`TBoldOclVariables.LinksToHandle`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L150) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `VariableList` | property | [46](../../../Source/Handles/Core/BoldOclVariables.pas#L46) | [`TBoldOclVariables.VariableList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L161) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Variables` | property, published | [48](../../../Source/Handles/Core/BoldOclVariables.pas#L48) | [`TBoldOclVariables.Variables`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L164) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
 
 ## TBoldVariableTupleList
 
-class at [line 52](../../../Source/Handles/Core/BoldOclVariables.pas#L52); ⚪ not started.
+class at [line 52](../../../Source/Handles/Core/BoldOclVariables.pas#L52); ✅ verified, C# [`TBoldVariableTupleList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L173).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [55](../../../Source/Handles/Core/BoldOclVariables.pas#L55) · [body 188](../../../Source/Handles/Core/BoldOclVariables.pas#L188) |  | ⚪ not started |  |
-| `GetOwner` | method, protected | [57](../../../Source/Handles/Core/BoldOclVariables.pas#L57) · [body 194](../../../Source/Handles/Core/BoldOclVariables.pas#L194) |  | ⚪ not started |  |
-| `OwningDefinition` | property, protected | [58](../../../Source/Handles/Core/BoldOclVariables.pas#L58) |  | ⚪ not started |  |
-| `Create` | constructor | [60](../../../Source/Handles/Core/BoldOclVariables.pas#L60) · [body 182](../../../Source/Handles/Core/BoldOclVariables.pas#L182) |  | ⚪ not started |  |
-| `NameIsUnique` | method | [61](../../../Source/Handles/Core/BoldOclVariables.pas#L61) · [body 210](../../../Source/Handles/Core/BoldOclVariables.pas#L210) |  | ⚪ not started |  |
-| `NameIsValid` | method | [62](../../../Source/Handles/Core/BoldOclVariables.pas#L62) · [body 223](../../../Source/Handles/Core/BoldOclVariables.pas#L223) |  | ⚪ not started |  |
-| `GetUniqueName` | method | [63](../../../Source/Handles/Core/BoldOclVariables.pas#L63) · [body 199](../../../Source/Handles/Core/BoldOclVariables.pas#L199) |  | ⚪ not started |  |
-| `Items` | property | [64](../../../Source/Handles/Core/BoldOclVariables.pas#L64) |  | ⚪ not started |  |
+| `GetItems` | method, private | [55](../../../Source/Handles/Core/BoldOclVariables.pas#L55) · [body 188](../../../Source/Handles/Core/BoldOclVariables.pas#L188) | [`TBoldVariableTupleList.GetItems`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L185) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetOwner` | method, protected | [57](../../../Source/Handles/Core/BoldOclVariables.pas#L57) · [body 194](../../../Source/Handles/Core/BoldOclVariables.pas#L194) | [`[assembly: Delphi] in BoldOclVariables.cs`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L8) | 🔵 replaced: Gave the owning component for the object inspector's name path; OwningDefinition gives it. |  |
+| `OwningDefinition` | property, protected | [58](../../../Source/Handles/Core/BoldOclVariables.pas#L58) | [`TBoldVariableTupleList.OwningDefinition`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L197) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Create` | constructor | [60](../../../Source/Handles/Core/BoldOclVariables.pas#L60) · [body 182](../../../Source/Handles/Core/BoldOclVariables.pas#L182) | [`TBoldVariableTupleList.TBoldVariableTupleList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L178) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `NameIsUnique` | method | [61](../../../Source/Handles/Core/BoldOclVariables.pas#L61) · [body 210](../../../Source/Handles/Core/BoldOclVariables.pas#L210) | [`TBoldVariableTupleList.NameIsUnique`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L200) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `NameIsValid` | method | [62](../../../Source/Handles/Core/BoldOclVariables.pas#L62) · [body 223](../../../Source/Handles/Core/BoldOclVariables.pas#L223) | [`TBoldVariableTupleList.NameIsValid`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L215) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetUniqueName` | method | [63](../../../Source/Handles/Core/BoldOclVariables.pas#L63) · [body 199](../../../Source/Handles/Core/BoldOclVariables.pas#L199) | [`TBoldVariableTupleList.GetUniqueName`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L230) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Items` | property | [64](../../../Source/Handles/Core/BoldOclVariables.pas#L64) | [`TBoldVariableTupleList.this`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L244) | ✅ verified: The default indexed property in Delphi. | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
 
 ## TBoldVariableTuple
 
-class at [line 68](../../../Source/Handles/Core/BoldOclVariables.pas#L68); ⚪ not started.
+class at [line 68](../../../Source/Handles/Core/BoldOclVariables.pas#L68); ✅ verified, C# [`TBoldVariableTuple`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L249).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_ReceiveHandleEvent` | method, private | [74](../../../Source/Handles/Core/BoldOclVariables.pas#L74) · [body 336](../../../Source/Handles/Core/BoldOclVariables.pas#L336) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [75](../../../Source/Handles/Core/BoldOclVariables.pas#L75) · [body 300](../../../Source/Handles/Core/BoldOclVariables.pas#L300) |  | ⚪ not started |  |
-| `SetVariableName` | method, private | [76](../../../Source/Handles/Core/BoldOclVariables.pas#L76) · [body 323](../../../Source/Handles/Core/BoldOclVariables.pas#L323) |  | ⚪ not started |  |
-| `SetUseListElement` | method, private | [77](../../../Source/Handles/Core/BoldOclVariables.pas#L77) · [body 314](../../../Source/Handles/Core/BoldOclVariables.pas#L314) |  | ⚪ not started |  |
-| `Changed` | method, private | [78](../../../Source/Handles/Core/BoldOclVariables.pas#L78) · [body 253](../../../Source/Handles/Core/BoldOclVariables.pas#L253) |  | ⚪ not started |  |
-| `GetTupleList` | method, private | [79](../../../Source/Handles/Core/BoldOclVariables.pas#L79) · [body 288](../../../Source/Handles/Core/BoldOclVariables.pas#L288) |  | ⚪ not started |  |
-| `GetEffectiveUseListElement` | method, private | [80](../../../Source/Handles/Core/BoldOclVariables.pas#L80) · [body 283](../../../Source/Handles/Core/BoldOclVariables.pas#L283) |  | ⚪ not started |  |
-| `GetDisplayName` | method, protected | [82](../../../Source/Handles/Core/BoldOclVariables.pas#L82) · [body 272](../../../Source/Handles/Core/BoldOclVariables.pas#L272) |  | ⚪ not started |  |
-| `Create` | constructor | [84](../../../Source/Handles/Core/BoldOclVariables.pas#L84) · [body 258](../../../Source/Handles/Core/BoldOclVariables.pas#L258) |  | ⚪ not started |  |
-| `Destroy` | destructor | [85](../../../Source/Handles/Core/BoldOclVariables.pas#L85) · [body 266](../../../Source/Handles/Core/BoldOclVariables.pas#L266) |  | ⚪ not started |  |
-| `Assign` | method | [86](../../../Source/Handles/Core/BoldOclVariables.pas#L86) · [body 238](../../../Source/Handles/Core/BoldOclVariables.pas#L238) |  | ⚪ not started |  |
-| `LinksToHandle` | method | [87](../../../Source/Handles/Core/BoldOclVariables.pas#L87) · [body 293](../../../Source/Handles/Core/BoldOclVariables.pas#L293) |  | ⚪ not started |  |
-| `TupleList` | property | [88](../../../Source/Handles/Core/BoldOclVariables.pas#L88) |  | ⚪ not started |  |
-| `EffectiveUseListElement` | property | [89](../../../Source/Handles/Core/BoldOclVariables.pas#L89) |  | ⚪ not started |  |
-| `BoldHandle` | property, published | [91](../../../Source/Handles/Core/BoldOclVariables.pas#L91) |  | ⚪ not started |  |
-| `VariableName` | property, published | [92](../../../Source/Handles/Core/BoldOclVariables.pas#L92) |  | ⚪ not started |  |
-| `UseListElement` | property, published | [93](../../../Source/Handles/Core/BoldOclVariables.pas#L93) |  | ⚪ not started |  |
+| `_ReceiveHandleEvent` | method, private | [74](../../../Source/Handles/Core/BoldOclVariables.pas#L74) · [body 336](../../../Source/Handles/Core/BoldOclVariables.pas#L336) | [`TBoldVariableTuple._ReceiveHandleEvent`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L280) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `SetBoldHandle` | method, private | [75](../../../Source/Handles/Core/BoldOclVariables.pas#L75) · [body 300](../../../Source/Handles/Core/BoldOclVariables.pas#L300) | [`TBoldVariableTuple.SetBoldHandle`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L290) | ✅ verified: Delphi passed three arguments for the four of its circular reference message, so the message itself failed; this passes four. | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `SetVariableName` | method, private | [76](../../../Source/Handles/Core/BoldOclVariables.pas#L76) · [body 323](../../../Source/Handles/Core/BoldOclVariables.pas#L323) | [`TBoldVariableTuple.SetVariableName`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L307) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `SetUseListElement` | method, private | [77](../../../Source/Handles/Core/BoldOclVariables.pas#L77) · [body 314](../../../Source/Handles/Core/BoldOclVariables.pas#L314) | [`TBoldVariableTuple.SetUseListElement`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L327) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Changed` | method, private | [78](../../../Source/Handles/Core/BoldOclVariables.pas#L78) · [body 253](../../../Source/Handles/Core/BoldOclVariables.pas#L253) | [`TBoldVariableTuple.Changed`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L337) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetTupleList` | method, private | [79](../../../Source/Handles/Core/BoldOclVariables.pas#L79) · [body 288](../../../Source/Handles/Core/BoldOclVariables.pas#L288) | [`TBoldVariableTuple.GetTupleList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L339) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetEffectiveUseListElement` | method, private | [80](../../../Source/Handles/Core/BoldOclVariables.pas#L80) · [body 283](../../../Source/Handles/Core/BoldOclVariables.pas#L283) | [`TBoldVariableTuple.GetEffectiveUseListElement`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L342) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `GetDisplayName` | method, protected | [82](../../../Source/Handles/Core/BoldOclVariables.pas#L82) · [body 272](../../../Source/Handles/Core/BoldOclVariables.pas#L272) | [`TBoldVariableTuple.GetDisplayName`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L346) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Create` | constructor | [84](../../../Source/Handles/Core/BoldOclVariables.pas#L84) · [body 258](../../../Source/Handles/Core/BoldOclVariables.pas#L258) | [`TBoldVariableTuple.TBoldVariableTuple`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L258) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Destroy` | destructor | [85](../../../Source/Handles/Core/BoldOclVariables.pas#L85) · [body 266](../../../Source/Handles/Core/BoldOclVariables.pas#L266) | [`TBoldVariableTuple.Dispose`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L268) | ✅ verified: Also tells the variables they changed, so a deleted variable leaves the variable list; Delphi kept it until the next change. | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `Assign` | method | [86](../../../Source/Handles/Core/BoldOclVariables.pas#L86) · [body 238](../../../Source/Handles/Core/BoldOclVariables.pas#L238) | [`TBoldVariableTuple.Assign`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L359) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `LinksToHandle` | method | [87](../../../Source/Handles/Core/BoldOclVariables.pas#L87) · [body 293](../../../Source/Handles/Core/BoldOclVariables.pas#L293) | [`TBoldVariableTuple.LinksToHandle`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L375) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `TupleList` | property | [88](../../../Source/Handles/Core/BoldOclVariables.pas#L88) | [`TBoldVariableTuple.TupleList`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L386) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `EffectiveUseListElement` | property | [89](../../../Source/Handles/Core/BoldOclVariables.pas#L89) | [`TBoldVariableTuple.EffectiveUseListElement`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L387) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `BoldHandle` | property, published | [91](../../../Source/Handles/Core/BoldOclVariables.pas#L91) | [`TBoldVariableTuple.BoldHandle`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L390) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `VariableName` | property, published | [92](../../../Source/Handles/Core/BoldOclVariables.pas#L92) | [`TBoldVariableTuple.VariableName`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L397) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+| `UseListElement` | property, published | [93](../../../Source/Handles/Core/BoldOclVariables.pas#L93) | [`TBoldVariableTuple.UseListElement`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L404) | ✅ verified | ✔ [`BoldOclVariablesTests.Variables_resolve_to_handle_values_and_a_new_value_reevaluates_the_expression`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L14) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldHandleBasedExternalVariable.fHandle`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L16) (field)
+- [`TBoldVariableTupleList.Notify`](../../src/Bold.Handles/Handles/Core/BoldOclVariables.cs#L188) (method)
 
 ## Dependencies
 

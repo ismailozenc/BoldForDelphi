@@ -39,6 +39,23 @@ model's methods as partial methods), for each component `<Component>.g.cs` (whic
 namespace. A system uses the classes when its type info is built with generated code (`TBoldSystemTypeInfo(model, true, ...)`);
 see [`examples/Building/BuildingClasses`](examples/Building/BuildingClasses).
 
+## Handles
+
+`Bold.Handles` has Bold's non-visual components: a model component feeds a `TBoldSystemTypeInfoHandle`, a
+`TBoldSystemHandle` runs a system on it, and expression, list, cursor, reference, variable, derived, filtered, sorted
+and SQL handles hand out elements that stay current as objects change. They are `System.ComponentModel` components:
+pass a container to the constructor, and the WinForms designer's `BeginInit`/`EndInit` stand in for Delphi's loading
+from a form (a system handle set `Active` while loading starts at `EndInit`).
+
+```csharp
+var components = new Container();
+var model = new TBoldAbstractModel(components);
+model.ReadModel(bldLines);
+var typeInfo = new TBoldSystemTypeInfoHandle(components) { BoldModel = model };
+var system = new TBoldSystemHandle(components) { SystemTypeInfoHandle = typeInfo, Active = true };
+var people = new TBoldListHandle(components) { RootHandle = system, Expression = "Person.allInstances" };
+```
+
 ## Where things came from
 
 Every ported element carries a `[Delphi(PortStatus.…)]` attribute, and every C# file starts with the Delphi file it ports. In the other direction, every Delphi unit has a comment on its `unit` line naming its C# file, and every `FOLDER_INFO.md` in `Source` lists where its units went. [PORTING.md](PORTING.md) explains the details.

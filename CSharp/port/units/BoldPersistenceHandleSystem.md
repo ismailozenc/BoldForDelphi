@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/System/BoldPersistenceHandleSystem.pas`](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas) (48 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs` |
+| C# | [`CSharp/src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 6 symbols done, 0 verified |
+| Status | ✅ verified: 6 of 6 symbols done, 6 verified |
 | Note | Moved to Bold.Handles. |
 
-⚪ 6 not started
+✅ 6 verified
 
 ## Unit level
 
@@ -19,19 +19,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPersistenceHandleSystem` | class | [12](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L12) |  | ⚪ not started |  |
+| `TBoldPersistenceHandleSystem` | class | [12](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L12) | [`TBoldPersistenceHandleSystem`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L10) | ✅ verified | ✔ [`BoldPersistenceHandleSystemTests.A_system_handle_stores_its_objects_in_another_system_handles_system`](../../tests/Bold.Handles.Tests/Persistence/System/BoldPersistenceHandleSystemTests.cs#L11) |
 
 ## TBoldPersistenceHandleSystem
 
-class at [line 12](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L12); ⚪ not started.
+class at [line 12](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L12); ✅ verified, C# [`TBoldPersistenceHandleSystem`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPersistenceControllerSystem` | method, private | [15](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L15) · [body 34](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L34) |  | ⚪ not started |  |
-| `CreatePersistenceController` | method, protected | [17](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L17) · [body 29](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L29) |  | ⚪ not started |  |
-| `SetActive` | method, protected | [18](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L18) · [body 39](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L39) |  | ⚪ not started |  |
-| `PersistenceControllerSystem` | property | [20](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L20) |  | ⚪ not started |  |
-| `SystemHandle` | property, published | [22](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L22) |  | ⚪ not started |  |
+| `GetPersistenceControllerSystem` | method, private | [15](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L15) · [body 34](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L34) | [`TBoldPersistenceHandleSystem.GetPersistenceControllerSystem`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L21) | ✅ verified | ✔ [`BoldPersistenceHandleSystemTests.A_system_handle_stores_its_objects_in_another_system_handles_system`](../../tests/Bold.Handles.Tests/Persistence/System/BoldPersistenceHandleSystemTests.cs#L11) |
+| `CreatePersistenceController` | method, protected | [17](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L17) · [body 29](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L29) | [`TBoldPersistenceHandleSystem.CreatePersistenceController`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L24) | ✅ verified | ✔ [`BoldPersistenceHandleSystemTests.A_system_handle_stores_its_objects_in_another_system_handles_system`](../../tests/Bold.Handles.Tests/Persistence/System/BoldPersistenceHandleSystemTests.cs#L11) |
+| `SetActive` | method, protected | [18](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L18) · [body 39](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L39) | [`TBoldPersistenceHandleSystem.SetActive`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L28) | ✅ verified | ✔ [`BoldPersistenceHandleSystemTests.A_system_handle_stores_its_objects_in_another_system_handles_system`](../../tests/Bold.Handles.Tests/Persistence/System/BoldPersistenceHandleSystemTests.cs#L11) |
+| `PersistenceControllerSystem` | property | [20](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L20) | [`TBoldPersistenceHandleSystem.PersistenceControllerSystem`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L38) | ✅ verified | ✔ [`BoldPersistenceHandleSystemTests.A_system_handle_stores_its_objects_in_another_system_handles_system`](../../tests/Bold.Handles.Tests/Persistence/System/BoldPersistenceHandleSystemTests.cs#L11) |
+| `SystemHandle` | property, published | [22](../../../Source/Persistence/System/BoldPersistenceHandleSystem.pas#L22) | [`TBoldPersistenceHandleSystem.SystemHandle`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L41) | ✅ verified | ✔ [`BoldPersistenceHandleSystemTests.A_system_handle_stores_its_objects_in_another_system_handles_system`](../../tests/Bold.Handles.Tests/Persistence/System/BoldPersistenceHandleSystemTests.cs#L11) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldPersistenceHandleSystem.TBoldPersistenceHandleSystem`](../../src/Bold.Handles/Persistence/System/BoldPersistenceHandleSystem.cs#L15) (constructor)
 
 ## Dependencies
 

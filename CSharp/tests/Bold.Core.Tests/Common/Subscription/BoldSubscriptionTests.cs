@@ -178,4 +178,59 @@ public class BoldSubscriptionTests
         IBoldStreamable s = new Streamable();
         Assert.That(s.StreamName, Is.EqualTo("Name"));
     }
+
+    private sealed class Linked(List<string> log, string name) : TBoldSubscribableComponent
+    {
+        public int Loads;
+
+        protected override void Loaded()
+        {
+            base.Loaded();
+            Loads++;
+        }
+
+        protected override void Notification(System.ComponentModel.IComponent AComponent, TOperation Operation) =>
+            log.Add($"{name} told {((TBoldSubscribableComponent)AComponent).Name} {Operation}");
+    }
+
+    private sealed class Listener(List<string> log) : System.ComponentModel.Component, IBoldNotifiable
+    {
+        public void Notification(System.ComponentModel.IComponent AComponent, TOperation Operation) => log.Add("listener " + Operation);
+    }
+
+    [Test]
+    public void Components_have_a_name_a_loading_state_and_free_notification()
+    {
+        var log = new List<string>();
+        var a = new Linked(log, "a") { Name = "A" };
+        var b = new Linked(log, "b") { Name = "B" };
+        var c = new Linked(log, "c") { Name = "C" };
+        Assert.That(a.Name, Is.EqualTo("A"));
+        Assert.That(new TBoldSubscribableComponent().Name, Is.EqualTo(""), "no name and no site");
+        Assert.That(a.IsDesigning, Is.False);
+
+        a.BeginInit();
+        Assert.That(a.IsLoading, Is.True);
+        a.EndInit();
+        a.EndInit();
+        Assert.That(a.IsLoading, Is.False);
+        Assert.That(a.Loads, Is.EqualTo(1), "Loaded once, at the end of loading");
+
+        a.FreeNotification(b);
+        a.FreeNotification(b);
+        a.FreeNotification(a);
+        a.FreeNotification(null);
+        a.FreeNotification(c);
+        a.RemoveFreeNotification(c);
+        var listener = new Listener(log);
+        a.FreeNotification(listener);
+        b.Dispose();
+        Assert.That(log, Is.EqualTo(new[] { "a told B opRemove" }), "free notification works both ways");
+        log.Clear();
+        a.Dispose();
+        Assert.That(a.IsDestroying, Is.True);
+        Assert.That(log, Is.EqualTo(new[] { "listener opRemove" }), "b went and c was removed; any IBoldNotifiable is told");
+        c.Dispose();
+        Assert.That(log, Has.Count.EqualTo(1));
+    }
 }

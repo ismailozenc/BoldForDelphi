@@ -608,22 +608,126 @@ public class TBoldSubscribableObject : TBoldFlaggedObject, IDisposable
         fPublisher is null || fPublisher.SendQuery(this, OriginalEvent, Args, Subscriber);
 }
 
-/// <summary>A component others can subscribe to.</summary>
-[Delphi(PortStatus.Ported, Note = "Derives from System.ComponentModel.Component where Delphi derives from TComponent.")]
-public class TBoldSubscribableComponent : System.ComponentModel.Component
+/// <summary>
+/// A component that is told when components it is linked to by free notification go (Delphi's TComponent.Notification);
+/// see <see cref="TBoldSubscribableComponent.FreeNotification"/>.
+/// </summary>
+public interface IBoldNotifiable
+{
+    void Notification(System.ComponentModel.IComponent AComponent, TOperation Operation);
+}
+
+/// <summary>
+/// A component others can subscribe to. It also gives Bold's components what Delphi's TComponent gave them: a name,
+/// the loading state (between <see cref="BeginInit"/> and <see cref="EndInit"/>, which the WinForms designer calls,
+/// ending in <see cref="Loaded"/>), the destroying state, and free notification.
+/// </summary>
+[Delphi(PortStatus.Ported, Note = "Derives from System.ComponentModel.Component where Delphi derives from TComponent; ISupportInitialize stands in for loading from a form file.")]
+public class TBoldSubscribableComponent : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize, IBoldNotifiable
 {
     private TBoldPublisher? fPublisher;
+    private string? fName;
+    private bool fLoading;
+    private bool fDestroying;
+    private List<System.ComponentModel.IComponent>? fFreeNotifies;
 
     [Delphi(PortStatus.Ported, Symbol = "TBoldSubscribableComponent.Destroy")]
     protected override void Dispose(bool disposing)
     {
         if (disposing)
         {
+            Destroying();
             FreePublisher();
+            if (fFreeNotifies is not null)
+            {
+                System.ComponentModel.IComponent[] notifies = [.. fFreeNotifies];
+                fFreeNotifies = null;
+                foreach (System.ComponentModel.IComponent component in notifies)
+                {
+                    (component as TBoldSubscribableComponent)?.fFreeNotifies?.Remove(this);
+                    (component as IBoldNotifiable)?.Notification(this, TOperation.opRemove);
+                }
+            }
         }
 
         base.Dispose(disposing);
     }
+
+    /// <summary>The component's name: the name given, else the designer's name for it (its site's), else empty.</summary>
+    public string Name
+    {
+        get => fName ?? Site?.Name ?? "";
+        set => fName = value;
+    }
+
+    /// <summary>
+    /// True between <see cref="BeginInit"/> and <see cref="EndInit"/>, while the designer's code sets the properties
+    /// (Delphi's csLoading and csReading).
+    /// </summary>
+    public bool IsLoading => fLoading;
+
+    /// <summary>True once the component is being disposed (Delphi's csDestroying).</summary>
+    public bool IsDestroying => fDestroying;
+
+    /// <summary>True in a designer (Delphi's csDesigning).</summary>
+    public bool IsDesigning => DesignMode;
+
+    /// <summary>Starts loading: property setters defer what they would do until <see cref="Loaded"/>.</summary>
+    public virtual void BeginInit() => fLoading = true;
+
+    /// <summary>Ends loading and calls <see cref="Loaded"/>.</summary>
+    public virtual void EndInit()
+    {
+        if (fLoading)
+        {
+            fLoading = false;
+            Loaded();
+        }
+    }
+
+    /// <summary>Called when loading ends, as Delphi calls Loaded after reading a component from its form.</summary>
+    protected virtual void Loaded()
+    {
+    }
+
+    /// <summary>Marks the component as being destroyed (Delphi's TComponent.Destroying); disposing does this first.</summary>
+    public void Destroying() => fDestroying = true;
+
+    /// <summary>
+    /// Makes <paramref name="AComponent"/> be told (through its Notification, with opRemove) when this component is
+    /// disposed, and this component when it is, as Delphi's FreeNotification. A component other than a Bold component
+    /// is told when it implements <see cref="IBoldNotifiable"/>.
+    /// </summary>
+    public void FreeNotification(System.ComponentModel.IComponent? AComponent)
+    {
+        if (AComponent is null || AComponent == this)
+        {
+            return;
+        }
+
+        fFreeNotifies ??= [];
+        if (!fFreeNotifies.Contains(AComponent))
+        {
+            fFreeNotifies.Add(AComponent);
+            (AComponent as TBoldSubscribableComponent)?.FreeNotification(this);
+        }
+    }
+
+    /// <summary>Stops the free notification between this component and <paramref name="AComponent"/>.</summary>
+    public void RemoveFreeNotification(System.ComponentModel.IComponent? AComponent)
+    {
+        if (AComponent is not null && fFreeNotifies is not null && fFreeNotifies.Remove(AComponent))
+        {
+            (AComponent as TBoldSubscribableComponent)?.RemoveFreeNotification(this);
+        }
+    }
+
+    /// <summary>Told when a component this one is linked to by free notification is removed (disposed).</summary>
+    protected virtual void Notification(System.ComponentModel.IComponent AComponent, TOperation Operation)
+    {
+    }
+
+    void IBoldNotifiable.Notification(System.ComponentModel.IComponent AComponent, TOperation Operation) => Notification(AComponent, Operation);
 
     [Delphi(PortStatus.Ported)]
     private TBoldPublisher GetPublisher() => fPublisher ??= new TBoldPublisher();

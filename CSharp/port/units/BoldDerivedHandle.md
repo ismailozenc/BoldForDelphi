@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldDerivedHandle.pas`](../../../Source/Handles/Core/BoldDerivedHandle.pas) (91 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | ✅ verified: 9 of 9 symbols done, 9 verified |
 
-⚪ 9 not started
+✅ 9 verified
 
 ## Unit level
 
@@ -18,22 +18,28 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldHandleDeriveAndSubscribe` | event type | [12](../../../Source/Handles/Core/BoldDerivedHandle.pas#L12) |  | ⚪ not started |  |
-| `TBoldGetStaticBoldType` | event type | [13](../../../Source/Handles/Core/BoldDerivedHandle.pas#L13) |  | ⚪ not started |  |
-| `TBoldDerivedHandle` | class | [19](../../../Source/Handles/Core/BoldDerivedHandle.pas#L19) |  | ⚪ not started |  |
+| `TBoldHandleDeriveAndSubscribe` | event type | [12](../../../Source/Handles/Core/BoldDerivedHandle.pas#L12) | [`TBoldHandleDeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L11) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+| `TBoldGetStaticBoldType` | event type | [13](../../../Source/Handles/Core/BoldDerivedHandle.pas#L13) | [`TBoldGetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L15) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+| `TBoldDerivedHandle` | class | [19](../../../Source/Handles/Core/BoldDerivedHandle.pas#L19) | [`TBoldDerivedHandle`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L19) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
 
 ## TBoldDerivedHandle
 
-class at [line 19](../../../Source/Handles/Core/BoldDerivedHandle.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Handles/Core/BoldDerivedHandle.pas#L19); ✅ verified, C# [`TBoldDerivedHandle`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetOnDeriveAndSubscribe` | method, private | [23](../../../Source/Handles/Core/BoldDerivedHandle.pas#L23) · [body 72](../../../Source/Handles/Core/BoldDerivedHandle.pas#L72) |  | ⚪ not started |  |
-| `SetValueTypeName` | method, private | [24](../../../Source/Handles/Core/BoldDerivedHandle.pas#L24) · [body 82](../../../Source/Handles/Core/BoldDerivedHandle.pas#L82) |  | ⚪ not started |  |
-| `DeriveAndSubscribe` | method, protected | [26](../../../Source/Handles/Core/BoldDerivedHandle.pas#L26) · [body 43](../../../Source/Handles/Core/BoldDerivedHandle.pas#L43) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [27](../../../Source/Handles/Core/BoldDerivedHandle.pas#L27) · [body 51](../../../Source/Handles/Core/BoldDerivedHandle.pas#L51) |  | ⚪ not started |  |
-| `OnDeriveAndSubscribe` | property, published | [29](../../../Source/Handles/Core/BoldDerivedHandle.pas#L29) |  | ⚪ not started |  |
-| `ValueTypeName` | property, published | [30](../../../Source/Handles/Core/BoldDerivedHandle.pas#L30) |  | ⚪ not started |  |
+| `SetOnDeriveAndSubscribe` | method, private | [23](../../../Source/Handles/Core/BoldDerivedHandle.pas#L23) · [body 72](../../../Source/Handles/Core/BoldDerivedHandle.pas#L72) | [`TBoldDerivedHandle.SetOnDeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L31) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+| `SetValueTypeName` | method, private | [24](../../../Source/Handles/Core/BoldDerivedHandle.pas#L24) · [body 82](../../../Source/Handles/Core/BoldDerivedHandle.pas#L82) | [`TBoldDerivedHandle.SetValueTypeName`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L41) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+| `DeriveAndSubscribe` | method, protected | [26](../../../Source/Handles/Core/BoldDerivedHandle.pas#L26) · [body 43](../../../Source/Handles/Core/BoldDerivedHandle.pas#L43) | [`TBoldDerivedHandle.DeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L51) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+| `GetStaticBoldType` | method, protected | [27](../../../Source/Handles/Core/BoldDerivedHandle.pas#L27) · [body 51](../../../Source/Handles/Core/BoldDerivedHandle.pas#L51) | [`TBoldDerivedHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L59) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+| `OnDeriveAndSubscribe` | property, published | [29](../../../Source/Handles/Core/BoldDerivedHandle.pas#L29) | [`TBoldDerivedHandle.OnDeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L86) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+| `ValueTypeName` | property, published | [30](../../../Source/Handles/Core/BoldDerivedHandle.pas#L30) | [`TBoldDerivedHandle.ValueTypeName`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L93) | ✅ verified | ✔ [`BoldDerivedHandleTests.An_event_derives_the_value_and_its_subscriptions_keep_it_current`](../../tests/Bold.Handles.Tests/Handles/Core/BoldDerivedHandleTests.cs#L12) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldDerivedHandle.TBoldDerivedHandle`](../../src/Bold.Handles/Handles/Core/BoldDerivedHandle.cs#L25) (constructor)
 
 ## Dependencies
 

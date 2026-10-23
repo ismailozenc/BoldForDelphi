@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldSortedHandle.pas`](../../../Source/Handles/Core/BoldSortedHandle.pas) (142 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldSortedHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldSortedHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 13 symbols done, 0 verified |
+| Status | ✅ verified: 13 of 13 symbols done, 13 verified |
 
-⚪ 13 not started
+✅ 13 verified
 
 ## Unit level
 
@@ -18,33 +18,40 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldComparer` | class | [17](../../../Source/Handles/Core/BoldSortedHandle.pas#L17) |  | ⚪ not started |  |
-| `TBoldSortedHandle` | class | [34](../../../Source/Handles/Core/BoldSortedHandle.pas#L34) |  | ⚪ not started |  |
+| `TBoldComparer` | class | [17](../../../Source/Handles/Core/BoldSortedHandle.pas#L17) | [`TBoldComparer`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L11) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `TBoldSortedHandle` | class | [34](../../../Source/Handles/Core/BoldSortedHandle.pas#L34) | [`TBoldSortedHandle`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L67) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
 
 ## TBoldComparer
 
-class at [line 17](../../../Source/Handles/Core/BoldSortedHandle.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Handles/Core/BoldSortedHandle.pas#L17); ✅ verified, C# [`TBoldComparer`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Subscribe` | method | [23](../../../Source/Handles/Core/BoldSortedHandle.pas#L23) · [body 51](../../../Source/Handles/Core/BoldSortedHandle.pas#L51) |  | ⚪ not started |  |
-| `Compare` | method | [24](../../../Source/Handles/Core/BoldSortedHandle.pas#L24) · [body 57](../../../Source/Handles/Core/BoldSortedHandle.pas#L57) |  | ⚪ not started |  |
-| `SortList` | method | [25](../../../Source/Handles/Core/BoldSortedHandle.pas#L25) · [body 130](../../../Source/Handles/Core/BoldSortedHandle.pas#L130) |  | ⚪ not started |  |
-| `PrepareSort` | method | [26](../../../Source/Handles/Core/BoldSortedHandle.pas#L26) · [body 136](../../../Source/Handles/Core/BoldSortedHandle.pas#L136) |  | ⚪ not started |  |
-| `OnSubscribe` | property, published | [28](../../../Source/Handles/Core/BoldSortedHandle.pas#L28) |  | ⚪ not started |  |
-| `OnCompare` | property, published | [29](../../../Source/Handles/Core/BoldSortedHandle.pas#L29) |  | ⚪ not started |  |
-| `OnPrepareSort` | property, published | [30](../../../Source/Handles/Core/BoldSortedHandle.pas#L30) |  | ⚪ not started |  |
+| `Subscribe` | method | [23](../../../Source/Handles/Core/BoldSortedHandle.pas#L23) · [body 51](../../../Source/Handles/Core/BoldSortedHandle.pas#L51) | [`TBoldComparer.Subscribe`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L24) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `Compare` | method | [24](../../../Source/Handles/Core/BoldSortedHandle.pas#L24) · [body 57](../../../Source/Handles/Core/BoldSortedHandle.pas#L57) | [`TBoldComparer.Compare`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L28) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `SortList` | method | [25](../../../Source/Handles/Core/BoldSortedHandle.pas#L25) · [body 130](../../../Source/Handles/Core/BoldSortedHandle.pas#L130) | [`TBoldComparer.SortList`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L32) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `PrepareSort` | method | [26](../../../Source/Handles/Core/BoldSortedHandle.pas#L26) · [body 136](../../../Source/Handles/Core/BoldSortedHandle.pas#L136) | [`TBoldComparer.PrepareSort`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L41) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `OnSubscribe` | property, published | [28](../../../Source/Handles/Core/BoldSortedHandle.pas#L28) | [`TBoldComparer.OnSubscribe`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L44) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `OnCompare` | property, published | [29](../../../Source/Handles/Core/BoldSortedHandle.pas#L29) | [`TBoldComparer.OnCompare`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L51) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `OnPrepareSort` | property, published | [30](../../../Source/Handles/Core/BoldSortedHandle.pas#L30) | [`TBoldComparer.OnPrepareSort`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L58) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
 
 ## TBoldSortedHandle
 
-class at [line 34](../../../Source/Handles/Core/BoldSortedHandle.pas#L34); ⚪ not started.
+class at [line 34](../../../Source/Handles/Core/BoldSortedHandle.pas#L34); ✅ verified, C# [`TBoldSortedHandle`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L67).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldComparer` | method, private | [37](../../../Source/Handles/Core/BoldSortedHandle.pas#L37) · [body 121](../../../Source/Handles/Core/BoldSortedHandle.pas#L121) |  | ⚪ not started |  |
-| `DeriveAndSubscribe` | method, protected | [39](../../../Source/Handles/Core/BoldSortedHandle.pas#L39) · [body 67](../../../Source/Handles/Core/BoldSortedHandle.pas#L67) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [40](../../../Source/Handles/Core/BoldSortedHandle.pas#L40) · [body 108](../../../Source/Handles/Core/BoldSortedHandle.pas#L108) |  | ⚪ not started |  |
-| `BoldComparer` | property | [42](../../../Source/Handles/Core/BoldSortedHandle.pas#L42) |  | ⚪ not started |  |
+| `SetBoldComparer` | method, private | [37](../../../Source/Handles/Core/BoldSortedHandle.pas#L37) · [body 121](../../../Source/Handles/Core/BoldSortedHandle.pas#L121) | [`TBoldSortedHandle.SetBoldComparer`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L78) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `DeriveAndSubscribe` | method, protected | [39](../../../Source/Handles/Core/BoldSortedHandle.pas#L39) · [body 67](../../../Source/Handles/Core/BoldSortedHandle.pas#L67) | [`TBoldSortedHandle.DeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L89) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `GetStaticBoldType` | method, protected | [40](../../../Source/Handles/Core/BoldSortedHandle.pas#L40) · [body 108](../../../Source/Handles/Core/BoldSortedHandle.pas#L108) | [`TBoldSortedHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L133) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+| `BoldComparer` | property | [42](../../../Source/Handles/Core/BoldSortedHandle.pas#L42) | [`TBoldSortedHandle.BoldComparer`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L145) | ✅ verified | ✔ [`BoldSortedHandleTests.A_sorted_handle_orders_the_list_and_follows_what_the_comparer_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSortedHandleTests.cs#L12) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldComparer.TBoldComparer`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L18) (constructor)
+- [`TBoldSortedHandle.TBoldSortedHandle`](../../src/Bold.Handles/Handles/Core/BoldSortedHandle.cs#L72) (constructor)
 
 ## Dependencies
 

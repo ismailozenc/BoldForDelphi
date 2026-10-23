@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldCursorHandle.pas`](../../../Source/Handles/Core/BoldCursorHandle.pas) (209 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldCursorHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldCursorHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | ✅ verified: 12 of 12 symbols done, 12 verified |
 
-⚪ 12 not started
+✅ 12 verified
 
 ## Unit level
 
@@ -18,25 +18,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCursorHandle` | class | [17](../../../Source/Handles/Core/BoldCursorHandle.pas#L17) |  | ⚪ not started |  |
+| `TBoldCursorHandle` | class | [17](../../../Source/Handles/Core/BoldCursorHandle.pas#L17) | [`TBoldCursorHandle`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L15) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
 
 ## TBoldCursorHandle
 
-class at [line 17](../../../Source/Handles/Core/BoldCursorHandle.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Handles/Core/BoldCursorHandle.pas#L17); ✅ verified, C# [`TBoldCursorHandle`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetAutoFirst` | method, private | [23](../../../Source/Handles/Core/BoldCursorHandle.pas#L23) · [body 182](../../../Source/Handles/Core/BoldCursorHandle.pas#L182) |  | ⚪ not started |  |
-| `_ReceiveFromList` | method, private | [25](../../../Source/Handles/Core/BoldCursorHandle.pas#L25) · [body 169](../../../Source/Handles/Core/BoldCursorHandle.pas#L169) |  | ⚪ not started |  |
-| `DeriveAndSubscribe` | method, protected | [27](../../../Source/Handles/Core/BoldCursorHandle.pas#L27) · [body 60](../../../Source/Handles/Core/BoldCursorHandle.pas#L60) |  | ⚪ not started |  |
-| `GetCurrentElement` | method, protected | [28](../../../Source/Handles/Core/BoldCursorHandle.pas#L28) · [body 124](../../../Source/Handles/Core/BoldCursorHandle.pas#L124) |  | ⚪ not started |  |
-| `GetCurrentIndex` | method, protected | [29](../../../Source/Handles/Core/BoldCursorHandle.pas#L29) · [body 135](../../../Source/Handles/Core/BoldCursorHandle.pas#L135) |  | ⚪ not started |  |
-| `GetList` | method, protected | [30](../../../Source/Handles/Core/BoldCursorHandle.pas#L30) · [body 146](../../../Source/Handles/Core/BoldCursorHandle.pas#L146) |  | ⚪ not started |  |
-| `SetCurrentIndex` | method, protected | [31](../../../Source/Handles/Core/BoldCursorHandle.pas#L31) · [body 189](../../../Source/Handles/Core/BoldCursorHandle.pas#L189) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [32](../../../Source/Handles/Core/BoldCursorHandle.pas#L32) · [body 158](../../../Source/Handles/Core/BoldCursorHandle.pas#L158) |  | ⚪ not started |  |
-| `Create` | constructor | [35](../../../Source/Handles/Core/BoldCursorHandle.pas#L35) · [body 51](../../../Source/Handles/Core/BoldCursorHandle.pas#L51) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/Handles/Core/BoldCursorHandle.pas#L36) · [body 116](../../../Source/Handles/Core/BoldCursorHandle.pas#L116) |  | ⚪ not started |  |
-| `AutoFirst` | property, published | [38](../../../Source/Handles/Core/BoldCursorHandle.pas#L38) |  | ⚪ not started |  |
+| `SetAutoFirst` | method, private | [23](../../../Source/Handles/Core/BoldCursorHandle.pas#L23) · [body 182](../../../Source/Handles/Core/BoldCursorHandle.pas#L182) | [`TBoldCursorHandle.SetAutoFirst`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L46) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `_ReceiveFromList` | method, private | [25](../../../Source/Handles/Core/BoldCursorHandle.pas#L25) · [body 169](../../../Source/Handles/Core/BoldCursorHandle.pas#L169) | [`TBoldCursorHandle._ReceiveFromList`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L57) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `DeriveAndSubscribe` | method, protected | [27](../../../Source/Handles/Core/BoldCursorHandle.pas#L27) · [body 60](../../../Source/Handles/Core/BoldCursorHandle.pas#L60) | [`TBoldCursorHandle.DeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L73) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `GetCurrentElement` | method, protected | [28](../../../Source/Handles/Core/BoldCursorHandle.pas#L28) · [body 124](../../../Source/Handles/Core/BoldCursorHandle.pas#L124) | [`TBoldCursorHandle.GetCurrentElement`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L140) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `GetCurrentIndex` | method, protected | [29](../../../Source/Handles/Core/BoldCursorHandle.pas#L29) · [body 135](../../../Source/Handles/Core/BoldCursorHandle.pas#L135) | [`TBoldCursorHandle.GetCurrentIndex`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L152) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `GetList` | method, protected | [30](../../../Source/Handles/Core/BoldCursorHandle.pas#L30) · [body 146](../../../Source/Handles/Core/BoldCursorHandle.pas#L146) | [`TBoldCursorHandle.GetList`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L164) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `SetCurrentIndex` | method, protected | [31](../../../Source/Handles/Core/BoldCursorHandle.pas#L31) · [body 189](../../../Source/Handles/Core/BoldCursorHandle.pas#L189) | [`TBoldCursorHandle.SetCurrentIndex`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L178) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `GetStaticBoldType` | method, protected | [32](../../../Source/Handles/Core/BoldCursorHandle.pas#L32) · [body 158](../../../Source/Handles/Core/BoldCursorHandle.pas#L158) | [`TBoldCursorHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L197) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `Create` | constructor | [35](../../../Source/Handles/Core/BoldCursorHandle.pas#L35) · [body 51](../../../Source/Handles/Core/BoldCursorHandle.pas#L51) | [`TBoldCursorHandle.TBoldCursorHandle`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L23) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `Destroy` | destructor | [36](../../../Source/Handles/Core/BoldCursorHandle.pas#L36) · [body 116](../../../Source/Handles/Core/BoldCursorHandle.pas#L116) | [`TBoldCursorHandle.Dispose`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L33) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
+| `AutoFirst` | property, published | [38](../../../Source/Handles/Core/BoldCursorHandle.pas#L38) | [`TBoldCursorHandle.AutoFirst`](../../src/Bold.Handles/Handles/Core/BoldCursorHandle.cs#L204) | ✅ verified | ✔ [`BoldCursorHandleTests.A_cursor_walks_its_roots_list_and_keeps_its_element_when_the_list_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldCursorHandleTests.cs#L11) |
 
 ## Dependencies
 

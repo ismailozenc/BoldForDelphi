@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldPlaceableSubscriber.pas`](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas) (138 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | ✅ verified: 18 of 18 symbols done, 18 verified |
 
-⚪ 18 not started
+✅ 18 verified
 
 ## Unit level
 
@@ -18,31 +18,31 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSubscribeToElementEvent` | event type | [16](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L16) |  | ⚪ not started |  |
-| `TBoldPlaceableSubcriberReceive` | event type | [17](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L17) |  | ⚪ not started |  |
-| `TBoldPlaceableSubscriber` | class | [21](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L21) |  | ⚪ not started |  |
+| `TBoldSubscribeToElementEvent` | event type | [16](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L16) | [`TBoldSubscribeToElementEvent`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L11) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `TBoldPlaceableSubcriberReceive` | event type | [17](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L17) | [`TBoldPlaceableSubcriberReceive`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L15) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `TBoldPlaceableSubscriber` | class | [21](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L21) | [`TBoldPlaceableSubscriber`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L22) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
 
 ## TBoldPlaceableSubscriber
 
-class at [line 21](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L21); ✅ verified, C# [`TBoldPlaceableSubscriber`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldHandle` | method, private | [29](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L29) · [body 74](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L74) |  | ⚪ not started |  |
-| `HandleSubscriberReceive` | method, private | [30](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L30) · [body 89](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L89) |  | ⚪ not started |  |
-| `HandleValueChanged` | method, private | [31](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L31) · [body 106](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L106) |  | ⚪ not started |  |
-| `ActOnHandleValueChanged` | method, private | [32](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L32) · [body 126](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L126) |  | ⚪ not started |  |
-| `ValueSubscriberReceive` | method, private | [33](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L33) · [body 95](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L95) |  | ⚪ not started |  |
-| `SetDelayEventsUntilPostNotify` | method, private | [34](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L34) · [body 133](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L133) |  | ⚪ not started |  |
-| `Notification` | method, protected | [36](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L36) · [body 67](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L67) |  | ⚪ not started |  |
-| `SubscribeToElement` | method, protected | [37](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L37) · [body 114](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L114) |  | ⚪ not started |  |
-| `Receive` | method, protected | [38](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L38) · [body 120](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L120) |  | ⚪ not started |  |
-| `Create` | constructor | [40](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L40) · [body 53](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L53) |  | ⚪ not started |  |
-| `Destroy` | destructor | [41](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L41) · [body 60](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L60) |  | ⚪ not started |  |
-| `BoldHandle` | property, published | [43](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L43) |  | ⚪ not started |  |
-| `OnReceive` | property, published | [44](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L44) |  | ⚪ not started |  |
-| `OnSubscribeToElement` | property, published | [45](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L45) |  | ⚪ not started |  |
-| `DelayEventsUntilPostNotify` | property, published | [46](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L46) |  | ⚪ not started |  |
+| `SetBoldHandle` | method, private | [29](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L29) · [body 74](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L74) | [`TBoldPlaceableSubscriber.SetBoldHandle`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L52) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `HandleSubscriberReceive` | method, private | [30](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L30) · [body 89](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L89) | [`TBoldPlaceableSubscriber.HandleSubscriberReceive`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L69) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `HandleValueChanged` | method, private | [31](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L31) · [body 106](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L106) | [`TBoldPlaceableSubscriber.HandleValueChanged`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L77) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `ActOnHandleValueChanged` | method, private | [32](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L32) · [body 126](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L126) | [`TBoldPlaceableSubscriber.ActOnHandleValueChanged`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L90) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `ValueSubscriberReceive` | method, private | [33](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L33) · [body 95](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L95) | [`TBoldPlaceableSubscriber.ValueSubscriberReceive`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L100) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `SetDelayEventsUntilPostNotify` | method, private | [34](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L34) · [body 133](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L133) | [`TBoldPlaceableSubscriber.SetDelayEventsUntilPostNotify`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L114) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `Notification` | method, protected | [36](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L36) · [body 67](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L67) | [`TBoldPlaceableSubscriber.Notification`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L118) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `SubscribeToElement` | method, protected | [37](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L37) · [body 114](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L114) | [`TBoldPlaceableSubscriber.SubscribeToElement`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L128) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `Receive` | method, protected | [38](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L38) · [body 120](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L120) | [`TBoldPlaceableSubscriber.Receive`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L131) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `Create` | constructor | [40](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L40) · [body 53](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L53) | [`TBoldPlaceableSubscriber.TBoldPlaceableSubscriber`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L32) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `Destroy` | destructor | [41](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L41) · [body 60](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L60) | [`TBoldPlaceableSubscriber.Dispose`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L40) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `BoldHandle` | property, published | [43](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L43) | [`TBoldPlaceableSubscriber.BoldHandle`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L135) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `OnReceive` | property, published | [44](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L44) | [`TBoldPlaceableSubscriber.OnReceive`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L142) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `OnSubscribeToElement` | property, published | [45](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L45) | [`TBoldPlaceableSubscriber.OnSubscribeToElement`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L149) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
+| `DelayEventsUntilPostNotify` | property, published | [46](../../../Source/Handles/Core/BoldPlaceableSubscriber.pas#L46) | [`TBoldPlaceableSubscriber.DelayEventsUntilPostNotify`](../../src/Bold.Handles/Handles/Core/BoldPlaceableSubscriber.cs#L156) | ✅ verified | ✔ [`BoldPlaceableSubscriberTests.The_subscriber_subscribes_to_the_handles_value_again_whenever_it_changes`](../../tests/Bold.Handles.Tests/Handles/Core/BoldPlaceableSubscriberTests.cs#L12) |
 
 ## Dependencies
 

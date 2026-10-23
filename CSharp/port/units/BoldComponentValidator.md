@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas`](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas) (122 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs` |
+| C# | [`CSharp/src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 10 symbols done, 0 verified |
+| Status | ✅ verified: 10 of 10 symbols done, 10 verified |
 | Note | Moved to Bold.Handles: it validates handles. |
 
-⚪ 10 not started
+✅ 10 verified
 
 ## Unit level
 
@@ -19,30 +19,30 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IBoldValidateableComponent` | interface | [15](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L15) |  | ⚪ not started |  |
-| `TBoldComponentValidator` | class | [21](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L21) |  | ⚪ not started |  |
+| `IBoldValidateableComponent` | interface | [15](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L15) | [`IBoldValidateableComponent`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L11) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
+| `TBoldComponentValidator` | class | [21](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L21) | [`TBoldComponentValidator`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L22) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
 
 ## IBoldValidateableComponent
 
-interface at [line 15](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L15); ⚪ not started.
+interface at [line 15](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L15); ✅ verified, C# [`IBoldValidateableComponent`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ValidateComponent` | method | [17](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L17) |  | ⚪ not started |  |
+| `ValidateComponent` | method | [17](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L17) | [`IBoldValidateableComponent.ValidateComponent`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L14) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
 
 ## TBoldComponentValidator
 
-class at [line 21](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L21); ✅ verified, C# [`TBoldComponentValidator`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ValidateOCLComponent` | method, protected | [23](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L23) · [body 99](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L99) |  | ⚪ not started |  |
-| `ValidateValidateableComponent` | method, protected | [24](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L24) · [body 104](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L104) |  | ⚪ not started |  |
-| `InitializeLog` | method, protected | [25](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L25) · [body 109](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L109) |  | ⚪ not started |  |
-| `CompleteLog` | method, protected | [26](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L26) · [body 115](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L115) |  | ⚪ not started |  |
-| `ValidateComponent` | method | [28](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L28) · [body 43](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L43) |  | ⚪ not started |  |
-| `ValidateExpressionInContext` | method | [29](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L29) · [body 64](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L64) |  | ⚪ not started |  |
-| `ValidateApplication` | method | [30](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L30) · [body 88](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L88) |  | ⚪ not started |  |
+| `ValidateOCLComponent` | method, protected | [23](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L23) · [body 99](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L99) | [`TBoldComponentValidator.ValidateOCLComponent`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L102) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
+| `ValidateValidateableComponent` | method, protected | [24](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L24) · [body 104](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L104) | [`TBoldComponentValidator.ValidateValidateableComponent`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L106) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
+| `InitializeLog` | method, protected | [25](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L25) · [body 109](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L109) | [`TBoldComponentValidator.InitializeLog`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L110) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
+| `CompleteLog` | method, protected | [26](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L26) · [body 115](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L115) | [`TBoldComponentValidator.CompleteLog`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L117) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
+| `ValidateComponent` | method | [28](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L28) · [body 43](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L43) | [`TBoldComponentValidator.ValidateComponent`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L26) | ✅ verified: Takes any object where Delphi takes a TPersistent; the components a component holds are those of an IContainer. | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
+| `ValidateExpressionInContext` | method | [29](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L29) · [body 64](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L64) | [`TBoldComponentValidator.ValidateExpressionInContext`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L57) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
+| `ValidateApplication` | method | [30](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L30) · [body 88](../../../Source/ObjectSpace/UtilsGUI/BoldComponentValidator.pas#L88) | [`TBoldComponentValidator.ValidateApplication`](../../src/Bold.Handles/ObjectSpace/UtilsGUI/BoldComponentValidator.cs#L88) | ✅ verified | ✔ [`BoldComponentValidatorTests.The_validator_checks_the_OCL_of_components_and_logs_the_errors`](../../tests/Bold.Handles.Tests/ObjectSpace/UtilsGUI/BoldComponentValidatorTests.cs#L13) |
 
 ## Dependencies
 

@@ -75,7 +75,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldRev](../../../CSharp/port/units/BoldRev.md) | [Bold.Core: Common/Support/BoldRev.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldRev.cs) | M6 Typed classes |
 | [BoldSharedStrings](../../../CSharp/port/units/BoldSharedStrings.md) | [Bold.Core: Common/Support/BoldSharedStrings.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldSharedStrings.cs) | M1 Load models |
 | [BoldSorter](../../../CSharp/port/units/BoldSorter.md) | [Bold.Core: Common/Support/BoldSorter.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldSorter.cs) | M3 Object space in memory |
-| [BoldStringList](../../../CSharp/port/units/BoldStringList.md) | Bold.Core: Common/Support/BoldStringList.cs (not started) | M7 Handles |
+| [BoldStringList](../../../CSharp/port/units/BoldStringList.md) | [Bold.Core: Common/Support/BoldStringList.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldStringList.cs) | M7 Handles |
 | [BoldSupportConst](../../../CSharp/port/units/BoldSupportConst.md) | Bold.Core: Common/Support/BoldSupportConst.cs (not started) | Later (after M12, or when needed) |
 | [BoldTemplateExpander](../../../CSharp/port/units/BoldTemplateExpander.md) | [Bold.Core: Common/Support/BoldTemplateExpander.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldTemplateExpander.cs) | M6 Typed classes |
 | [BoldUtils](../../../CSharp/port/units/BoldUtils.md) | [Bold.Core: Common/Support/BoldUtils.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldUtils.cs) | M1 Load models |

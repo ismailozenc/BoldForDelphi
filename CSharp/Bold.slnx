@@ -36,6 +36,7 @@
   <Folder Name="/tests/">
     <Project Path="tests/Bold.CodeGen.Tests/Bold.CodeGen.Tests.csproj" />
     <Project Path="tests/Bold.Core.Tests/Bold.Core.Tests.csproj" />
+    <Project Path="tests/Bold.Handles.Tests/Bold.Handles.Tests.csproj" />
     <Project Path="tests/Bold.Model.Tests/Bold.Model.Tests.csproj" />
     <Project Path="tests/Bold.ObjectSpace.Tests/Bold.ObjectSpace.Tests.csproj" />
     <Project Path="tests/Bold.Persistence.Sql.Tests/Bold.Persistence.Sql.Tests.csproj" />

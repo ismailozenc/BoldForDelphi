@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/XML/BoldXMLProducers.pas`](../../../Source/Handles/XML/BoldXMLProducers.pas) (205 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/XML/BoldXMLProducers.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/XML/BoldXMLProducers.cs`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 20 symbols done, 0 verified |
+| Status | ✅ verified: 20 of 20 symbols done, 20 verified |
 
-⚪ 20 not started
+✅ 20 verified
 
 ## Unit level
 
@@ -18,40 +18,47 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldXMLProducerOption` | enum | [16](../../../Source/Handles/XML/BoldXMLProducers.pas#L16) |  | ⚪ not started |  |
-| `TBoldXMLProducerOptions` | set | [17](../../../Source/Handles/XML/BoldXMLProducers.pas#L17) |  | ⚪ not started |  |
-| `xpoDefault` | const | [20](../../../Source/Handles/XML/BoldXMLProducers.pas#L20) |  | ⚪ not started |  |
-| `DEFAULT_XMLELEMENT_BOLDIDNAME` | const | [21](../../../Source/Handles/XML/BoldXMLProducers.pas#L21) |  | ⚪ not started |  |
-| `TBoldProduceEvent` | event type | [27](../../../Source/Handles/XML/BoldXMLProducers.pas#L27) |  | ⚪ not started |  |
-| `TBoldAbstractXMLProducer` | class | [29](../../../Source/Handles/XML/BoldXMLProducers.pas#L29) |  | ⚪ not started |  |
-| `TBoldXMLProducer` | class | [53](../../../Source/Handles/XML/BoldXMLProducers.pas#L53) |  | ⚪ not started |  |
+| `TBoldXMLProducerOption` | enum | [16](../../../Source/Handles/XML/BoldXMLProducers.pas#L16) | [`TBoldXMLProducerOption`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L14) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `TBoldXMLProducerOptions` | set | [17](../../../Source/Handles/XML/BoldXMLProducers.pas#L17) | [`[assembly: Delphi] in BoldXMLProducers.cs`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L8) | ✅ verified: DelphiSet&lt;TBoldXMLProducerOption&gt;. | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `xpoDefault` | const | [20](../../../Source/Handles/XML/BoldXMLProducers.pas#L20) | [`BoldXMLProducers.xpoDefault`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L218) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `DEFAULT_XMLELEMENT_BOLDIDNAME` | const | [21](../../../Source/Handles/XML/BoldXMLProducers.pas#L21) | [`BoldXMLProducers.DEFAULT_XMLELEMENT_BOLDIDNAME`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L219) | ✅ verified | ✔ [`HandlesConstTests.The_messages_are_the_Delphi_messages`](../../tests/Bold.Handles.Tests/Handles/Core/HandlesConstTests.cs#L10)<br>✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `TBoldProduceEvent` | event type | [27](../../../Source/Handles/XML/BoldXMLProducers.pas#L27) | [`TBoldProduceEvent`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L18) | ✅ verified: Takes a System.Xml document where Delphi takes an MSXML IXMLDomDocument. | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `TBoldAbstractXMLProducer` | class | [29](../../../Source/Handles/XML/BoldXMLProducers.pas#L29) | [`TBoldAbstractXMLProducer`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L25) | ✅ verified: Builds System.Xml documents where Delphi builds MSXML documents. | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `TBoldXMLProducer` | class | [53](../../../Source/Handles/XML/BoldXMLProducers.pas#L53) | [`TBoldXMLProducer`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L187) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
 
 ## TBoldAbstractXMLProducer
 
-class at [line 29](../../../Source/Handles/XML/BoldXMLProducers.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/Handles/XML/BoldXMLProducers.pas#L29); ✅ verified, C# [`TBoldAbstractXMLProducer`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L25).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldManipulator` | method, private | [33](../../../Source/Handles/XML/BoldXMLProducers.pas#L33) · [body 177](../../../Source/Handles/XML/BoldXMLProducers.pas#L177) |  | ⚪ not started |  |
-| `Produce` | method, protected | [35](../../../Source/Handles/XML/BoldXMLProducers.pas#L35) |  | ⚪ not started |  |
-| `Notification` | method, protected | [36](../../../Source/Handles/XML/BoldXMLProducers.pas#L36) · [body 169](../../../Source/Handles/XML/BoldXMLProducers.pas#L169) |  | ⚪ not started |  |
-| `getDocument` | method, protected | [37](../../../Source/Handles/XML/BoldXMLProducers.pas#L37) · [body 146](../../../Source/Handles/XML/BoldXMLProducers.pas#L146) |  | ⚪ not started |  |
-| `BoldManipulator` | property, protected | [38](../../../Source/Handles/XML/BoldXMLProducers.pas#L38) |  | ⚪ not started |  |
-| `XMLElementBoldIDName` | property, protected | [39](../../../Source/Handles/XML/BoldXMLProducers.pas#L39) |  | ⚪ not started |  |
-| `Create` | constructor | [41](../../../Source/Handles/XML/BoldXMLProducers.pas#L41) · [body 107](../../../Source/Handles/XML/BoldXMLProducers.pas#L107) |  | ⚪ not started |  |
-| `getDocumentAsString` | method | [42](../../../Source/Handles/XML/BoldXMLProducers.pas#L42) · [body 163](../../../Source/Handles/XML/BoldXMLProducers.pas#L163) |  | ⚪ not started |  |
-| `AddDomElementForBoldElement` | method | [43](../../../Source/Handles/XML/BoldXMLProducers.pas#L43) · [body 83](../../../Source/Handles/XML/BoldXMLProducers.pas#L83) |  | ⚪ not started |  |
-| `AddDomElementsForBoldObjectAttributes` | method | [46](../../../Source/Handles/XML/BoldXMLProducers.pas#L46) · [body 113](../../../Source/Handles/XML/BoldXMLProducers.pas#L113) |  | ⚪ not started |  |
-| `AddDomElement` | method | [49](../../../Source/Handles/XML/BoldXMLProducers.pas#L49) · [body 188](../../../Source/Handles/XML/BoldXMLProducers.pas#L188) |  | ⚪ not started |  |
+| `SetBoldManipulator` | method, private | [33](../../../Source/Handles/XML/BoldXMLProducers.pas#L33) · [body 177](../../../Source/Handles/XML/BoldXMLProducers.pas#L177) | [`TBoldAbstractXMLProducer.SetBoldManipulator`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L38) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `Produce` | method, protected | [35](../../../Source/Handles/XML/BoldXMLProducers.pas#L35) | [`TBoldAbstractXMLProducer.Produce`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L48) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `Notification` | method, protected | [36](../../../Source/Handles/XML/BoldXMLProducers.pas#L36) · [body 169](../../../Source/Handles/XML/BoldXMLProducers.pas#L169) | [`TBoldAbstractXMLProducer.Notification`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L52) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `getDocument` | method, protected | [37](../../../Source/Handles/XML/BoldXMLProducers.pas#L37) · [body 146](../../../Source/Handles/XML/BoldXMLProducers.pas#L146) | [`TBoldAbstractXMLProducer.getDocument`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L63) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `BoldManipulator` | property, protected | [38](../../../Source/Handles/XML/BoldXMLProducers.pas#L38) | [`TBoldAbstractXMLProducer.BoldManipulator`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L73) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `XMLElementBoldIDName` | property, protected | [39](../../../Source/Handles/XML/BoldXMLProducers.pas#L39) | [`TBoldAbstractXMLProducer.XMLElementBoldIDName`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L80) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `Create` | constructor | [41](../../../Source/Handles/XML/BoldXMLProducers.pas#L41) · [body 107](../../../Source/Handles/XML/BoldXMLProducers.pas#L107) | [`TBoldAbstractXMLProducer.TBoldAbstractXMLProducer`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L31) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `getDocumentAsString` | method | [42](../../../Source/Handles/XML/BoldXMLProducers.pas#L42) · [body 163](../../../Source/Handles/XML/BoldXMLProducers.pas#L163) | [`TBoldAbstractXMLProducer.getDocumentAsString`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L87) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `AddDomElementForBoldElement` | method | [43](../../../Source/Handles/XML/BoldXMLProducers.pas#L43) · [body 83](../../../Source/Handles/XML/BoldXMLProducers.pas#L83) | [`TBoldAbstractXMLProducer.AddDomElementForBoldElement`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L94) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `AddDomElementsForBoldObjectAttributes` | method | [46](../../../Source/Handles/XML/BoldXMLProducers.pas#L46) · [body 113](../../../Source/Handles/XML/BoldXMLProducers.pas#L113) | [`TBoldAbstractXMLProducer.AddDomElementsForBoldObjectAttributes`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L127) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `AddDomElement` | method | [49](../../../Source/Handles/XML/BoldXMLProducers.pas#L49) · [body 188](../../../Source/Handles/XML/BoldXMLProducers.pas#L188) | [`TBoldAbstractXMLProducer.AddDomElement`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L166) | ✅ verified: An attribute's value is the value of its name=value line; Delphi set the whole line. | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
 
 ## TBoldXMLProducer
 
-class at [line 53](../../../Source/Handles/XML/BoldXMLProducers.pas#L53); ⚪ not started.
+class at [line 53](../../../Source/Handles/XML/BoldXMLProducers.pas#L53); ✅ verified, C# [`TBoldXMLProducer`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L187).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Produce` | method | [57](../../../Source/Handles/XML/BoldXMLProducers.pas#L57) · [body 74](../../../Source/Handles/XML/BoldXMLProducers.pas#L74) |  | ⚪ not started |  |
-| `OnProduce` | property, published | [60](../../../Source/Handles/XML/BoldXMLProducers.pas#L60) |  | ⚪ not started |  |
+| `Produce` | method | [57](../../../Source/Handles/XML/BoldXMLProducers.pas#L57) · [body 74](../../../Source/Handles/XML/BoldXMLProducers.pas#L74) | [`TBoldXMLProducer.Produce`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L198) | ✅ verified: Protected, as the abstract method it overrides; Delphi made the override public. | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+| `OnProduce` | property, published | [60](../../../Source/Handles/XML/BoldXMLProducers.pas#L60) | [`TBoldXMLProducer.OnProduce`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L208) | ✅ verified | ✔ [`BoldXMLProducersTests.A_producer_writes_objects_as_XML_with_their_id_strings`](../../tests/Bold.Handles.Tests/Handles/XML/BoldXMLProducersTests.cs#L15) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldXMLProducer.TBoldXMLProducer`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L192) (constructor)
+- [`TBoldXMLProducer.BoldManipulator`](../../src/Bold.Handles/Handles/XML/BoldXMLProducers.cs#L201) (property)
 
 ## Dependencies
 

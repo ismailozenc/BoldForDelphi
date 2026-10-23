@@ -11,6 +11,9 @@ public delegate int TListSortCompare(object? Item1, object? Item2);
 /// <summary>Delphi's TNotifyEvent: a method taking the sender.</summary>
 public delegate void TNotifyEvent(object? Sender);
 
+/// <summary>Delphi's TOperation: what a component notification is about (a component inserted or removed).</summary>
+public enum TOperation { opInsert, opRemove }
+
 /// <summary>Compares two entries of a string list by index, as Delphi's TStringListSortCompare.</summary>
 public delegate int TStringListSortCompare(TStringList List, int Index1, int Index2);
 

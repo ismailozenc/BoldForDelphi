@@ -24,5 +24,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldManipulators](../../../CSharp/port/units/BoldManipulators.md) | Bold.Handles: Handles/Manipulators/BoldManipulators.cs (not started) | M7 Handles |
+| [BoldManipulators](../../../CSharp/port/units/BoldManipulators.md) | [Bold.Handles: Handles/Manipulators/BoldManipulators.cs](../../../CSharp/src/Bold.Handles/Handles/Manipulators/BoldManipulators.cs) | M7 Handles |
 <!-- END C# PORT -->

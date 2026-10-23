@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldExpressionHandle.pas`](../../../Source/Handles/Core/BoldExpressionHandle.pas) (173 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | ✅ verified: 15 of 15 symbols done, 15 verified |
 
-⚪ 15 not started
+✅ 15 verified
 
 ## Unit level
 
@@ -18,28 +18,37 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldExpressionHandle` | class | [18](../../../Source/Handles/Core/BoldExpressionHandle.pas#L18) |  | ⚪ not started |  |
+| `TBoldExpressionHandle` | class | [18](../../../Source/Handles/Core/BoldExpressionHandle.pas#L18) | [`TBoldExpressionHandle`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L12) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
 
 ## TBoldExpressionHandle
 
-class at [line 18](../../../Source/Handles/Core/BoldExpressionHandle.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/Handles/Core/BoldExpressionHandle.pas#L18); ✅ verified, C# [`TBoldExpressionHandle`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_VariablesReceive` | method, private | [25](../../../Source/Handles/Core/BoldExpressionHandle.pas#L25) · [body 139](../../../Source/Handles/Core/BoldExpressionHandle.pas#L139) |  | ⚪ not started |  |
-| `SetExpression` | method, private | [26](../../../Source/Handles/Core/BoldExpressionHandle.pas#L26) · [body 71](../../../Source/Handles/Core/BoldExpressionHandle.pas#L71) |  | ⚪ not started |  |
-| `GetExpression` | method, private | [27](../../../Source/Handles/Core/BoldExpressionHandle.pas#L27) · [body 111](../../../Source/Handles/Core/BoldExpressionHandle.pas#L111) |  | ⚪ not started |  |
-| `SetVariables` | method, private | [28](../../../Source/Handles/Core/BoldExpressionHandle.pas#L28) · [body 116](../../../Source/Handles/Core/BoldExpressionHandle.pas#L116) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [29](../../../Source/Handles/Core/BoldExpressionHandle.pas#L29) · [body 158](../../../Source/Handles/Core/BoldExpressionHandle.pas#L158) |  | ⚪ not started |  |
-| `SetEvaluateInPS` | method, private | [30](../../../Source/Handles/Core/BoldExpressionHandle.pas#L30) · [body 130](../../../Source/Handles/Core/BoldExpressionHandle.pas#L130) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [32](../../../Source/Handles/Core/BoldExpressionHandle.pas#L32) · [body 58](../../../Source/Handles/Core/BoldExpressionHandle.pas#L58) |  | ⚪ not started |  |
-| `DeriveAndSubscribe` | method, protected | [33](../../../Source/Handles/Core/BoldExpressionHandle.pas#L33) · [body 80](../../../Source/Handles/Core/BoldExpressionHandle.pas#L80) |  | ⚪ not started |  |
-| `Create` | constructor | [35](../../../Source/Handles/Core/BoldExpressionHandle.pas#L35) · [body 146](../../../Source/Handles/Core/BoldExpressionHandle.pas#L146) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/Handles/Core/BoldExpressionHandle.pas#L36) · [body 152](../../../Source/Handles/Core/BoldExpressionHandle.pas#L152) |  | ⚪ not started |  |
-| `RefersToComponent` | method | [37](../../../Source/Handles/Core/BoldExpressionHandle.pas#L37) · [body 166](../../../Source/Handles/Core/BoldExpressionHandle.pas#L166) |  | ⚪ not started |  |
-| `Expression` | property, published | [39](../../../Source/Handles/Core/BoldExpressionHandle.pas#L39) |  | ⚪ not started |  |
-| `Variables` | property, published | [40](../../../Source/Handles/Core/BoldExpressionHandle.pas#L40) |  | ⚪ not started |  |
-| `EvaluateInPS` | property, published | [41](../../../Source/Handles/Core/BoldExpressionHandle.pas#L41) |  | ⚪ not started |  |
+| `_VariablesReceive` | method, private | [25](../../../Source/Handles/Core/BoldExpressionHandle.pas#L25) · [body 139](../../../Source/Handles/Core/BoldExpressionHandle.pas#L139) | [`TBoldExpressionHandle._VariablesReceive`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L40) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `SetExpression` | method, private | [26](../../../Source/Handles/Core/BoldExpressionHandle.pas#L26) · [body 71](../../../Source/Handles/Core/BoldExpressionHandle.pas#L71) | [`TBoldExpressionHandle.SetExpression`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L49) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `GetExpression` | method, private | [27](../../../Source/Handles/Core/BoldExpressionHandle.pas#L27) · [body 111](../../../Source/Handles/Core/BoldExpressionHandle.pas#L111) | [`TBoldExpressionHandle.GetExpression`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L58) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `SetVariables` | method, private | [28](../../../Source/Handles/Core/BoldExpressionHandle.pas#L28) · [body 116](../../../Source/Handles/Core/BoldExpressionHandle.pas#L116) | [`TBoldExpressionHandle.SetVariables`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L62) | ✅ verified: Delphi passed three arguments for the four of its circular reference message, so the message itself failed; this passes four. | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `GetVariableList` | method, private | [29](../../../Source/Handles/Core/BoldExpressionHandle.pas#L29) · [body 158](../../../Source/Handles/Core/BoldExpressionHandle.pas#L158) | [`TBoldExpressionHandle.GetVariableList`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L78) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `SetEvaluateInPS` | method, private | [30](../../../Source/Handles/Core/BoldExpressionHandle.pas#L30) · [body 130](../../../Source/Handles/Core/BoldExpressionHandle.pas#L130) | [`TBoldExpressionHandle.SetEvaluateInPS`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L81) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `GetStaticBoldType` | method, protected | [32](../../../Source/Handles/Core/BoldExpressionHandle.pas#L32) · [body 58](../../../Source/Handles/Core/BoldExpressionHandle.pas#L58) | [`TBoldExpressionHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L97) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `DeriveAndSubscribe` | method, protected | [33](../../../Source/Handles/Core/BoldExpressionHandle.pas#L33) · [body 80](../../../Source/Handles/Core/BoldExpressionHandle.pas#L80) | [`TBoldExpressionHandle.DeriveAndSubscribe`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L112) | ✅ verified: Raises EBold with the handle in the message and the evaluation error inside, where Delphi changed the message of the error. | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `Create` | constructor | [35](../../../Source/Handles/Core/BoldExpressionHandle.pas#L35) · [body 146](../../../Source/Handles/Core/BoldExpressionHandle.pas#L146) | [`TBoldExpressionHandle.TBoldExpressionHandle`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L22) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `Destroy` | destructor | [36](../../../Source/Handles/Core/BoldExpressionHandle.pas#L36) · [body 152](../../../Source/Handles/Core/BoldExpressionHandle.pas#L152) | [`TBoldExpressionHandle.Dispose`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L29) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `RefersToComponent` | method | [37](../../../Source/Handles/Core/BoldExpressionHandle.pas#L37) · [body 166](../../../Source/Handles/Core/BoldExpressionHandle.pas#L166) | [`TBoldExpressionHandle.RefersToComponent`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L142) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `Expression` | property, published | [39](../../../Source/Handles/Core/BoldExpressionHandle.pas#L39) | [`TBoldExpressionHandle.Expression`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L146) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `Variables` | property, published | [40](../../../Source/Handles/Core/BoldExpressionHandle.pas#L40) | [`TBoldExpressionHandle.Variables`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L153) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+| `EvaluateInPS` | property, published | [41](../../../Source/Handles/Core/BoldExpressionHandle.pas#L41) | [`TBoldExpressionHandle.EvaluateInPS`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L160) | ✅ verified | ✔ [`BoldExpressionHandleTests.The_value_follows_the_root_and_the_objects_it_reads`](../../tests/Bold.Handles.Tests/Handles/Core/BoldExpressionHandleTests.cs#L11) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldExpressionHandle.GetContextType`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L90) (method)
+- [`TBoldExpressionHandle.SetExpression`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L91) (method)
+- [`TBoldExpressionHandle.GetVariableList`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L92) (method)
+- [`TBoldExpressionHandle.GetExpression`](../../src/Bold.Handles/Handles/Core/BoldExpressionHandle.cs#L93) (method)
 
 ## Dependencies
 

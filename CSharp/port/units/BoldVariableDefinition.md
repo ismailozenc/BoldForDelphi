@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldVariableDefinition.pas`](../../../Source/Handles/Core/BoldVariableDefinition.pas) (20 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldVariableDefinition.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldVariableDefinition.cs`](../../src/Bold.Handles/Handles/Core/BoldVariableDefinition.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 1 symbols done, 0 verified |
+| Status | ✅ verified: 1 of 1 symbols done, 1 verified |
 
-⚪ 1 not started
+✅ 1 verified
 
 ## Unit level
 
@@ -18,7 +18,13 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldVariableDefinition` | class | [14](../../../Source/Handles/Core/BoldVariableDefinition.pas#L14) |  | ⚪ not started |  |
+| `TBoldVariableDefinition` | class | [14](../../../Source/Handles/Core/BoldVariableDefinition.pas#L14) | [`TBoldVariableDefinition`](../../src/Bold.Handles/Handles/Core/BoldVariableDefinition.cs#L10) | ✅ verified | ✔ [`BoldOclVariablesTests.Variable_names_are_unique_and_valid_and_a_deleted_variable_leaves_the_list`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclVariablesTests.cs#L95) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldVariableDefinition.TBoldVariableDefinition`](../../src/Bold.Handles/Handles/Core/BoldVariableDefinition.cs#L13) (constructor)
 
 ## Dependencies
 

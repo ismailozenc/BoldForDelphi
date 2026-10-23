@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldSQLHandle.pas`](../../../Source/Handles/Core/BoldSQLHandle.pas) (171 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldSQLHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldSQLHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 20 symbols done, 0 verified |
+| Status | ✅ verified: 20 of 20 symbols done, 20 verified |
 
-⚪ 20 not started
+✅ 20 verified
 
 ## Unit level
 
@@ -18,33 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSQLHandle` | class | [17](../../../Source/Handles/Core/BoldSQLHandle.pas#L17) |  | ⚪ not started |  |
+| `TBoldSQLHandle` | class | [17](../../../Source/Handles/Core/BoldSQLHandle.pas#L17) | [`TBoldSQLHandle`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L12) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
 
 ## TBoldSQLHandle
 
-class at [line 17](../../../Source/Handles/Core/BoldSQLHandle.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Handles/Core/BoldSQLHandle.pas#L17); ✅ verified, C# [`TBoldSQLHandle`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetClassExpressionName` | method, private | [30](../../../Source/Handles/Core/BoldSQLHandle.pas#L30) · [body 118](../../../Source/Handles/Core/BoldSQLHandle.pas#L118) |  | ⚪ not started |  |
-| `SetListMode` | method, private | [31](../../../Source/Handles/Core/BoldSQLHandle.pas#L31) · [body 156](../../../Source/Handles/Core/BoldSQLHandle.pas#L156) |  | ⚪ not started |  |
-| `SetParams` | method, private | [32](../../../Source/Handles/Core/BoldSQLHandle.pas#L32) · [body 166](../../../Source/Handles/Core/BoldSQLHandle.pas#L166) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [35](../../../Source/Handles/Core/BoldSQLHandle.pas#L35) · [body 85](../../../Source/Handles/Core/BoldSQLHandle.pas#L85) |  | ⚪ not started |  |
-| `GetValue` | method, protected | [36](../../../Source/Handles/Core/BoldSQLHandle.pas#L36) · [body 112](../../../Source/Handles/Core/BoldSQLHandle.pas#L112) |  | ⚪ not started |  |
-| `EnsureList` | method, protected | [37](../../../Source/Handles/Core/BoldSQLHandle.pas#L37) · [body 128](../../../Source/Handles/Core/BoldSQLHandle.pas#L128) |  | ⚪ not started |  |
-| `Create` | constructor | [40](../../../Source/Handles/Core/BoldSQLHandle.pas#L40) · [body 66](../../../Source/Handles/Core/BoldSQLHandle.pas#L66) |  | ⚪ not started |  |
-| `Destroy` | destructor | [41](../../../Source/Handles/Core/BoldSQLHandle.pas#L41) · [body 77](../../../Source/Handles/Core/BoldSQLHandle.pas#L77) |  | ⚪ not started |  |
-| `ExecuteSQL` | method | [42](../../../Source/Handles/Core/BoldSQLHandle.pas#L42) · [body 93](../../../Source/Handles/Core/BoldSQLHandle.pas#L93) |  | ⚪ not started |  |
-| `ClearList` | method | [43](../../../Source/Handles/Core/BoldSQLHandle.pas#L43) · [body 106](../../../Source/Handles/Core/BoldSQLHandle.pas#L106) |  | ⚪ not started |  |
-| `SQLWhereClause` | property, published | [46](../../../Source/Handles/Core/BoldSQLHandle.pas#L46) |  | ⚪ not started |  |
-| `SQLOrderByClause` | property, published | [47](../../../Source/Handles/Core/BoldSQLHandle.pas#L47) |  | ⚪ not started |  |
-| `ListMode` | property, published | [48](../../../Source/Handles/Core/BoldSQLHandle.pas#L48) |  | ⚪ not started |  |
-| `ClassExpressionName` | property, published | [49](../../../Source/Handles/Core/BoldSQLHandle.pas#L49) |  | ⚪ not started |  |
-| `ClearBeforeExecute` | property, published | [50](../../../Source/Handles/Core/BoldSQLHandle.pas#L50) |  | ⚪ not started |  |
-| `MaxAnswers` | property, published | [51](../../../Source/Handles/Core/BoldSQLHandle.pas#L51) |  | ⚪ not started |  |
-| `Offset` | property, published | [52](../../../Source/Handles/Core/BoldSQLHandle.pas#L52) |  | ⚪ not started |  |
-| `Params` | property, published | [53](../../../Source/Handles/Core/BoldSQLHandle.pas#L53) |  | ⚪ not started |  |
-| `JoinInheritedTables` | property, published | [54](../../../Source/Handles/Core/BoldSQLHandle.pas#L54) |  | ⚪ not started |  |
+| `SetClassExpressionName` | method, private | [30](../../../Source/Handles/Core/BoldSQLHandle.pas#L30) · [body 118](../../../Source/Handles/Core/BoldSQLHandle.pas#L118) | [`TBoldSQLHandle.SetClassExpressionName`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L52) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `SetListMode` | method, private | [31](../../../Source/Handles/Core/BoldSQLHandle.pas#L31) · [body 156](../../../Source/Handles/Core/BoldSQLHandle.pas#L156) | [`TBoldSQLHandle.SetListMode`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L63) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `SetParams` | method, private | [32](../../../Source/Handles/Core/BoldSQLHandle.pas#L32) · [body 166](../../../Source/Handles/Core/BoldSQLHandle.pas#L166) | [`TBoldSQLHandle.SetParams`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L76) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `GetStaticBoldType` | method, protected | [35](../../../Source/Handles/Core/BoldSQLHandle.pas#L35) · [body 85](../../../Source/Handles/Core/BoldSQLHandle.pas#L85) | [`TBoldSQLHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L79) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `GetValue` | method, protected | [36](../../../Source/Handles/Core/BoldSQLHandle.pas#L36) · [body 112](../../../Source/Handles/Core/BoldSQLHandle.pas#L112) | [`TBoldSQLHandle.GetValue`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L82) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `EnsureList` | method, protected | [37](../../../Source/Handles/Core/BoldSQLHandle.pas#L37) · [body 128](../../../Source/Handles/Core/BoldSQLHandle.pas#L128) | [`TBoldSQLHandle.EnsureList`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L90) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `Create` | constructor | [40](../../../Source/Handles/Core/BoldSQLHandle.pas#L40) · [body 66](../../../Source/Handles/Core/BoldSQLHandle.pas#L66) | [`TBoldSQLHandle.TBoldSQLHandle`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L27) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `Destroy` | destructor | [41](../../../Source/Handles/Core/BoldSQLHandle.pas#L41) · [body 77](../../../Source/Handles/Core/BoldSQLHandle.pas#L77) | [`TBoldSQLHandle.Dispose`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L39) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `ExecuteSQL` | method | [42](../../../Source/Handles/Core/BoldSQLHandle.pas#L42) · [body 93](../../../Source/Handles/Core/BoldSQLHandle.pas#L93) | [`TBoldSQLHandle.ExecuteSQL`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L117) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `ClearList` | method | [43](../../../Source/Handles/Core/BoldSQLHandle.pas#L43) · [body 106](../../../Source/Handles/Core/BoldSQLHandle.pas#L106) | [`TBoldSQLHandle.ClearList`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L139) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `SQLWhereClause` | property, published | [46](../../../Source/Handles/Core/BoldSQLHandle.pas#L46) | [`TBoldSQLHandle.SQLWhereClause`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L142) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `SQLOrderByClause` | property, published | [47](../../../Source/Handles/Core/BoldSQLHandle.pas#L47) | [`TBoldSQLHandle.SQLOrderByClause`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L149) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `ListMode` | property, published | [48](../../../Source/Handles/Core/BoldSQLHandle.pas#L48) | [`TBoldSQLHandle.ListMode`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L156) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `ClassExpressionName` | property, published | [49](../../../Source/Handles/Core/BoldSQLHandle.pas#L49) | [`TBoldSQLHandle.ClassExpressionName`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L163) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `ClearBeforeExecute` | property, published | [50](../../../Source/Handles/Core/BoldSQLHandle.pas#L50) | [`TBoldSQLHandle.ClearBeforeExecute`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L170) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `MaxAnswers` | property, published | [51](../../../Source/Handles/Core/BoldSQLHandle.pas#L51) | [`TBoldSQLHandle.MaxAnswers`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L177) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `Offset` | property, published | [52](../../../Source/Handles/Core/BoldSQLHandle.pas#L52) | [`TBoldSQLHandle.Offset`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L184) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `Params` | property, published | [53](../../../Source/Handles/Core/BoldSQLHandle.pas#L53) | [`TBoldSQLHandle.Params`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L191) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
+| `JoinInheritedTables` | property, published | [54](../../../Source/Handles/Core/BoldSQLHandle.pas#L54) | [`TBoldSQLHandle.JoinInheritedTables`](../../src/Bold.Handles/Handles/Core/BoldSQLHandle.cs#L198) | ✅ verified | ✔ [`BoldSQLHandleTests.The_SQL_handle_has_a_typed_list_and_needs_an_active_system_to_run`](../../tests/Bold.Handles.Tests/Handles/Core/BoldSQLHandleTests.cs#L9) |
 
 ## Dependencies
 

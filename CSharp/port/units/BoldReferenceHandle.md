@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldReferenceHandle.pas`](../../../Source/Handles/Core/BoldReferenceHandle.pas) (120 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | ✅ verified: 12 of 12 symbols done, 12 verified |
 
-⚪ 12 not started
+✅ 12 verified
 
 ## Unit level
 
@@ -18,25 +18,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldReferenceHandle` | class | [16](../../../Source/Handles/Core/BoldReferenceHandle.pas#L16) |  | ⚪ not started |  |
+| `TBoldReferenceHandle` | class | [16](../../../Source/Handles/Core/BoldReferenceHandle.pas#L16) | [`TBoldReferenceHandle`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L11) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
 
 ## TBoldReferenceHandle
 
-class at [line 16](../../../Source/Handles/Core/BoldReferenceHandle.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/Handles/Core/BoldReferenceHandle.pas#L16); ✅ verified, C# [`TBoldReferenceHandle`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetValue` | method, private | [23](../../../Source/Handles/Core/BoldReferenceHandle.pas#L23) · [body 86](../../../Source/Handles/Core/BoldReferenceHandle.pas#L86) |  | ⚪ not started |  |
-| `SetStaticValueTypeName` | method, private | [24](../../../Source/Handles/Core/BoldReferenceHandle.pas#L24) · [body 77](../../../Source/Handles/Core/BoldReferenceHandle.pas#L77) |  | ⚪ not started |  |
-| `_Receive` | method, private | [25](../../../Source/Handles/Core/BoldReferenceHandle.pas#L25) · [body 101](../../../Source/Handles/Core/BoldReferenceHandle.pas#L101) |  | ⚪ not started |  |
-| `GetValue` | method, protected | [27](../../../Source/Handles/Core/BoldReferenceHandle.pas#L27) · [body 72](../../../Source/Handles/Core/BoldReferenceHandle.pas#L72) |  | ⚪ not started |  |
-| `GetStaticBoldType` | method, protected | [28](../../../Source/Handles/Core/BoldReferenceHandle.pas#L28) · [body 64](../../../Source/Handles/Core/BoldReferenceHandle.pas#L64) |  | ⚪ not started |  |
-| `Create` | constructor | [30](../../../Source/Handles/Core/BoldReferenceHandle.pas#L30) · [body 51](../../../Source/Handles/Core/BoldReferenceHandle.pas#L51) |  | ⚪ not started |  |
-| `Destroy` | destructor | [31](../../../Source/Handles/Core/BoldReferenceHandle.pas#L31) · [body 57](../../../Source/Handles/Core/BoldReferenceHandle.pas#L57) |  | ⚪ not started |  |
-| `Value` | property | [32](../../../Source/Handles/Core/BoldReferenceHandle.pas#L32) |  | ⚪ not started |  |
-| `StaticValueTypeName` | property, published | [34](../../../Source/Handles/Core/BoldReferenceHandle.pas#L34) |  | ⚪ not started |  |
-| `OnObjectDeleted` | property, published | [35](../../../Source/Handles/Core/BoldReferenceHandle.pas#L35) |  | ⚪ not started |  |
-| `OnValueDestroyed` | property, published | [36](../../../Source/Handles/Core/BoldReferenceHandle.pas#L36) |  | ⚪ not started |  |
+| `SetValue` | method, private | [23](../../../Source/Handles/Core/BoldReferenceHandle.pas#L23) · [body 86](../../../Source/Handles/Core/BoldReferenceHandle.pas#L86) | [`TBoldReferenceHandle.SetValue`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L42) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `SetStaticValueTypeName` | method, private | [24](../../../Source/Handles/Core/BoldReferenceHandle.pas#L24) · [body 77](../../../Source/Handles/Core/BoldReferenceHandle.pas#L77) | [`TBoldReferenceHandle.SetStaticValueTypeName`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L59) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `_Receive` | method, private | [25](../../../Source/Handles/Core/BoldReferenceHandle.pas#L25) · [body 101](../../../Source/Handles/Core/BoldReferenceHandle.pas#L101) | [`TBoldReferenceHandle._Receive`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L70) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `GetValue` | method, protected | [27](../../../Source/Handles/Core/BoldReferenceHandle.pas#L27) · [body 72](../../../Source/Handles/Core/BoldReferenceHandle.pas#L72) | [`TBoldReferenceHandle.GetValue`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L92) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `GetStaticBoldType` | method, protected | [28](../../../Source/Handles/Core/BoldReferenceHandle.pas#L28) · [body 64](../../../Source/Handles/Core/BoldReferenceHandle.pas#L64) | [`TBoldReferenceHandle.GetStaticBoldType`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L95) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `Create` | constructor | [30](../../../Source/Handles/Core/BoldReferenceHandle.pas#L30) · [body 51](../../../Source/Handles/Core/BoldReferenceHandle.pas#L51) | [`TBoldReferenceHandle.TBoldReferenceHandle`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L23) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `Destroy` | destructor | [31](../../../Source/Handles/Core/BoldReferenceHandle.pas#L31) · [body 57](../../../Source/Handles/Core/BoldReferenceHandle.pas#L57) | [`TBoldReferenceHandle.Dispose`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L30) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `Value` | property | [32](../../../Source/Handles/Core/BoldReferenceHandle.pas#L32) | [`TBoldReferenceHandle.Value`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L98) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `StaticValueTypeName` | property, published | [34](../../../Source/Handles/Core/BoldReferenceHandle.pas#L34) | [`TBoldReferenceHandle.StaticValueTypeName`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L105) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `OnObjectDeleted` | property, published | [35](../../../Source/Handles/Core/BoldReferenceHandle.pas#L35) | [`TBoldReferenceHandle.OnObjectDeleted`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L112) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
+| `OnValueDestroyed` | property, published | [36](../../../Source/Handles/Core/BoldReferenceHandle.pas#L36) | [`TBoldReferenceHandle.OnValueDestroyed`](../../src/Bold.Handles/Handles/Core/BoldReferenceHandle.cs#L119) | ✅ verified | ✔ [`BoldReferenceHandleTests.A_reference_handle_holds_a_value_and_lets_go_when_the_object_is_deleted`](../../tests/Bold.Handles.Tests/Handles/Core/BoldReferenceHandleTests.cs#L11) |
 
 ## Dependencies
 

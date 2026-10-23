@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/Core/BoldOclRepository.pas`](../../../Source/Handles/Core/BoldOclRepository.pas) (280 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Handles/Handles/Core/BoldOclRepository.cs` |
+| C# | [`CSharp/src/Bold.Handles/Handles/Core/BoldOclRepository.cs`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs) |
 | Project | Bold.Handles |
 | Milestone | M7 Handles |
-| Status | ⚪ not started: 0 of 36 symbols done, 0 verified |
+| Status | 🟢 ported: 36 of 36 symbols done, 31 verified |
 
-⚪ 36 not started
+✅ 31 verified · 🔵 5 replaced
 
 ## Unit level
 
@@ -18,63 +18,72 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOclRepository` | class | [18](../../../Source/Handles/Core/BoldOclRepository.pas#L18) |  | ⚪ not started |  |
-| `TBoldOclDefinitions` | class | [33](../../../Source/Handles/Core/BoldOclRepository.pas#L33) |  | ⚪ not started |  |
-| `TBoldOclDefinition` | class | [48](../../../Source/Handles/Core/BoldOclRepository.pas#L48) |  | ⚪ not started |  |
+| `TBoldOclRepository` | class | [18](../../../Source/Handles/Core/BoldOclRepository.pas#L18) | [`TBoldOclRepository`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L20) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `TBoldOclDefinitions` | class | [33](../../../Source/Handles/Core/BoldOclRepository.pas#L33) | [`TBoldOclDefinitions`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L96) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `TBoldOclDefinition` | class | [48](../../../Source/Handles/Core/BoldOclRepository.pas#L48) | [`TBoldOclDefinition`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L162) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
 
 ## TBoldOclRepository
 
-class at [line 18](../../../Source/Handles/Core/BoldOclRepository.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/Handles/Core/BoldOclRepository.pas#L18); ✅ verified, C# [`TBoldOclRepository`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L20).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetOclDefinitions` | method, private | [22](../../../Source/Handles/Core/BoldOclRepository.pas#L22) · [body 98](../../../Source/Handles/Core/BoldOclRepository.pas#L98) |  | ⚪ not started |  |
-| `SetSystemHandle` | method, private | [23](../../../Source/Handles/Core/BoldOclRepository.pas#L23) · [body 104](../../../Source/Handles/Core/BoldOclRepository.pas#L104) |  | ⚪ not started |  |
-| `ValidateComponent` | method, private | [24](../../../Source/Handles/Core/BoldOclRepository.pas#L24) · [body 114](../../../Source/Handles/Core/BoldOclRepository.pas#L114) |  | ⚪ not started |  |
-| `Create` | constructor | [26](../../../Source/Handles/Core/BoldOclRepository.pas#L26) · [body 87](../../../Source/Handles/Core/BoldOclRepository.pas#L87) |  | ⚪ not started |  |
-| `LookUpOclDefinition` | method | [27](../../../Source/Handles/Core/BoldOclRepository.pas#L27) · [body 93](../../../Source/Handles/Core/BoldOclRepository.pas#L93) |  | ⚪ not started |  |
-| `OclDefinitions` | property, published | [29](../../../Source/Handles/Core/BoldOclRepository.pas#L29) |  | ⚪ not started |  |
-| `SystemHandle` | property, published | [30](../../../Source/Handles/Core/BoldOclRepository.pas#L30) |  | ⚪ not started |  |
+| `SetOclDefinitions` | method, private | [22](../../../Source/Handles/Core/BoldOclRepository.pas#L22) · [body 98](../../../Source/Handles/Core/BoldOclRepository.pas#L98) | [`TBoldOclRepository.SetOclDefinitions`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L33) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `SetSystemHandle` | method, private | [23](../../../Source/Handles/Core/BoldOclRepository.pas#L23) · [body 104](../../../Source/Handles/Core/BoldOclRepository.pas#L104) | [`TBoldOclRepository.SetSystemHandle`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L37) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `ValidateComponent` | method, private | [24](../../../Source/Handles/Core/BoldOclRepository.pas#L24) · [body 114](../../../Source/Handles/Core/BoldOclRepository.pas#L114) | [`TBoldOclRepository.ValidateComponent`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L46) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Create` | constructor | [26](../../../Source/Handles/Core/BoldOclRepository.pas#L26) · [body 87](../../../Source/Handles/Core/BoldOclRepository.pas#L87) | [`TBoldOclRepository.TBoldOclRepository`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L26) | ✅ verified: The owner is an IContainer where Delphi takes a TComponent owner. | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `LookUpOclDefinition` | method | [27](../../../Source/Handles/Core/BoldOclRepository.pas#L27) · [body 93](../../../Source/Handles/Core/BoldOclRepository.pas#L93) | [`TBoldOclRepository.LookUpOclDefinition`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L77) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `OclDefinitions` | property, published | [29](../../../Source/Handles/Core/BoldOclRepository.pas#L29) | [`TBoldOclRepository.OclDefinitions`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L80) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `SystemHandle` | property, published | [30](../../../Source/Handles/Core/BoldOclRepository.pas#L30) | [`TBoldOclRepository.SystemHandle`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L87) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
 
 ## TBoldOclDefinitions
 
-class at [line 33](../../../Source/Handles/Core/BoldOclRepository.pas#L33); ⚪ not started.
+class at [line 33](../../../Source/Handles/Core/BoldOclRepository.pas#L33); ✅ verified, C# [`TBoldOclDefinitions`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L96).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItems` | method, private | [36](../../../Source/Handles/Core/BoldOclRepository.pas#L36) · [body 232](../../../Source/Handles/Core/BoldOclRepository.pas#L232) |  | ⚪ not started |  |
-| `GetOwner` | method, protected | [38](../../../Source/Handles/Core/BoldOclRepository.pas#L38) · [body 237](../../../Source/Handles/Core/BoldOclRepository.pas#L237) |  | ⚪ not started |  |
-| `OwningRepository` | property, protected | [39](../../../Source/Handles/Core/BoldOclRepository.pas#L39) |  | ⚪ not started |  |
-| `NameIsUnique` | method, protected | [40](../../../Source/Handles/Core/BoldOclRepository.pas#L40) · [body 266](../../../Source/Handles/Core/BoldOclRepository.pas#L266) |  | ⚪ not started |  |
-| `Create` | constructor | [42](../../../Source/Handles/Core/BoldOclRepository.pas#L42) · [body 226](../../../Source/Handles/Core/BoldOclRepository.pas#L226) |  | ⚪ not started |  |
-| `GetUniqueName` | method | [43](../../../Source/Handles/Core/BoldOclRepository.pas#L43) · [body 242](../../../Source/Handles/Core/BoldOclRepository.pas#L242) |  | ⚪ not started |  |
-| `LookUpOclDefinition` | method | [44](../../../Source/Handles/Core/BoldOclRepository.pas#L44) · [body 253](../../../Source/Handles/Core/BoldOclRepository.pas#L253) |  | ⚪ not started |  |
-| `Items` | property | [45](../../../Source/Handles/Core/BoldOclRepository.pas#L45) |  | ⚪ not started |  |
+| `GetItems` | method, private | [36](../../../Source/Handles/Core/BoldOclRepository.pas#L36) · [body 232](../../../Source/Handles/Core/BoldOclRepository.pas#L232) | [`TBoldOclDefinitions.GetItems`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L108) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `GetOwner` | method, protected | [38](../../../Source/Handles/Core/BoldOclRepository.pas#L38) · [body 237](../../../Source/Handles/Core/BoldOclRepository.pas#L237) | [`[assembly: Delphi] in BoldOclRepository.cs`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L7) | 🔵 replaced: Gave the owning component for the object inspector's name path; OwningRepository gives it. |  |
+| `OwningRepository` | property, protected | [39](../../../Source/Handles/Core/BoldOclRepository.pas#L39) | [`TBoldOclDefinitions.OwningRepository`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L110) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `NameIsUnique` | method, protected | [40](../../../Source/Handles/Core/BoldOclRepository.pas#L40) · [body 266](../../../Source/Handles/Core/BoldOclRepository.pas#L266) | [`TBoldOclDefinitions.NameIsUnique`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L113) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Create` | constructor | [42](../../../Source/Handles/Core/BoldOclRepository.pas#L42) · [body 226](../../../Source/Handles/Core/BoldOclRepository.pas#L226) | [`TBoldOclDefinitions.TBoldOclDefinitions`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L101) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `GetUniqueName` | method | [43](../../../Source/Handles/Core/BoldOclRepository.pas#L43) · [body 242](../../../Source/Handles/Core/BoldOclRepository.pas#L242) | [`TBoldOclDefinitions.GetUniqueName`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L128) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `LookUpOclDefinition` | method | [44](../../../Source/Handles/Core/BoldOclRepository.pas#L44) · [body 253](../../../Source/Handles/Core/BoldOclRepository.pas#L253) | [`TBoldOclDefinitions.LookUpOclDefinition`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L143) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Items` | property | [45](../../../Source/Handles/Core/BoldOclRepository.pas#L45) | [`TBoldOclDefinitions.this`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L157) | ✅ verified: The default indexed property in Delphi. | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
 
 ## TBoldOclDefinition
 
-class at [line 48](../../../Source/Handles/Core/BoldOclRepository.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/Handles/Core/BoldOclRepository.pas#L48); ✅ verified, C# [`TBoldOclDefinition`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L162).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetExpression` | method, private | [53](../../../Source/Handles/Core/BoldOclRepository.pas#L53) · [body 198](../../../Source/Handles/Core/BoldOclRepository.pas#L198) |  | ⚪ not started |  |
-| `GetExpression` | method, private | [54](../../../Source/Handles/Core/BoldOclRepository.pas#L54) · [body 171](../../../Source/Handles/Core/BoldOclRepository.pas#L171) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [55](../../../Source/Handles/Core/BoldOclRepository.pas#L55) · [body 184](../../../Source/Handles/Core/BoldOclRepository.pas#L184) |  | ⚪ not started |  |
-| `GetDefinitions` | method, private | [56](../../../Source/Handles/Core/BoldOclRepository.pas#L56) · [body 160](../../../Source/Handles/Core/BoldOclRepository.pas#L160) |  | ⚪ not started |  |
-| `QueryInterface` | method, private | [57](../../../Source/Handles/Core/BoldOclRepository.pas#L57) · [body 189](../../../Source/Handles/Core/BoldOclRepository.pas#L189) |  | ⚪ not started |  |
-| `_AddRef` | method, private | [58](../../../Source/Handles/Core/BoldOclRepository.pas#L58) · [body 214](../../../Source/Handles/Core/BoldOclRepository.pas#L214) |  | ⚪ not started |  |
-| `_Release` | method, private | [59](../../../Source/Handles/Core/BoldOclRepository.pas#L59) · [body 219](../../../Source/Handles/Core/BoldOclRepository.pas#L219) |  | ⚪ not started |  |
-| `GetSystemTypeInfo` | method, private | [60](../../../Source/Handles/Core/BoldOclRepository.pas#L60) · [body 176](../../../Source/Handles/Core/BoldOclRepository.pas#L176) |  | ⚪ not started |  |
-| `SetName` | method, private | [61](../../../Source/Handles/Core/BoldOclRepository.pas#L61) · [body 203](../../../Source/Handles/Core/BoldOclRepository.pas#L203) |  | ⚪ not started |  |
-| `GetDisplayName` | method, protected | [63](../../../Source/Handles/Core/BoldOclRepository.pas#L63) · [body 165](../../../Source/Handles/Core/BoldOclRepository.pas#L165) |  | ⚪ not started |  |
-| `Create` | constructor | [65](../../../Source/Handles/Core/BoldOclRepository.pas#L65) · [body 141](../../../Source/Handles/Core/BoldOclRepository.pas#L141) |  | ⚪ not started |  |
-| `Destroy` | destructor | [66](../../../Source/Handles/Core/BoldOclRepository.pas#L66) · [body 147](../../../Source/Handles/Core/BoldOclRepository.pas#L147) |  | ⚪ not started |  |
-| `GetContextType` | method | [67](../../../Source/Handles/Core/BoldOclRepository.pas#L67) · [body 152](../../../Source/Handles/Core/BoldOclRepository.pas#L152) |  | ⚪ not started |  |
-| `Definitions` | property | [68](../../../Source/Handles/Core/BoldOclRepository.pas#L68) |  | ⚪ not started |  |
-| `SystemTypeInfo` | property | [69](../../../Source/Handles/Core/BoldOclRepository.pas#L69) |  | ⚪ not started |  |
-| `Name` | property, published | [71](../../../Source/Handles/Core/BoldOclRepository.pas#L71) |  | ⚪ not started |  |
-| `Expression` | property, published | [72](../../../Source/Handles/Core/BoldOclRepository.pas#L72) |  | ⚪ not started |  |
-| `Context` | property, published | [73](../../../Source/Handles/Core/BoldOclRepository.pas#L73) |  | ⚪ not started |  |
+| `SetExpression` | method, private | [53](../../../Source/Handles/Core/BoldOclRepository.pas#L53) · [body 198](../../../Source/Handles/Core/BoldOclRepository.pas#L198) | [`TBoldOclDefinition.SetExpression`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L177) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `GetExpression` | method, private | [54](../../../Source/Handles/Core/BoldOclRepository.pas#L54) · [body 171](../../../Source/Handles/Core/BoldOclRepository.pas#L171) | [`TBoldOclDefinition.GetExpression`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L179) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `GetVariableList` | method, private | [55](../../../Source/Handles/Core/BoldOclRepository.pas#L55) · [body 184](../../../Source/Handles/Core/BoldOclRepository.pas#L184) | [`TBoldOclDefinition.GetVariableList`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L180) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `GetDefinitions` | method, private | [56](../../../Source/Handles/Core/BoldOclRepository.pas#L56) · [body 160](../../../Source/Handles/Core/BoldOclRepository.pas#L160) | [`TBoldOclDefinition.GetDefinitions`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L181) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `QueryInterface` | method, private | [57](../../../Source/Handles/Core/BoldOclRepository.pas#L57) · [body 189](../../../Source/Handles/Core/BoldOclRepository.pas#L189) | [`[assembly: Delphi] in BoldOclRepository.cs`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L8) | 🔵 replaced: Use a C# type test (obj is IBoldOCLComponent). |  |
+| `_AddRef` | method, private | [58](../../../Source/Handles/Core/BoldOclRepository.pas#L58) · [body 214](../../../Source/Handles/Core/BoldOclRepository.pas#L214) | [`[assembly: Delphi] in BoldOclRepository.cs`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L9) | 🔵 replaced: No reference counting in .NET. |  |
+| `_Release` | method, private | [59](../../../Source/Handles/Core/BoldOclRepository.pas#L59) · [body 219](../../../Source/Handles/Core/BoldOclRepository.pas#L219) | [`[assembly: Delphi] in BoldOclRepository.cs`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L11) | 🔵 replaced: No reference counting in .NET. |  |
+| `GetSystemTypeInfo` | method, private | [60](../../../Source/Handles/Core/BoldOclRepository.pas#L60) · [body 176](../../../Source/Handles/Core/BoldOclRepository.pas#L176) | [`TBoldOclDefinition.GetSystemTypeInfo`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L184) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `SetName` | method, private | [61](../../../Source/Handles/Core/BoldOclRepository.pas#L61) · [body 203](../../../Source/Handles/Core/BoldOclRepository.pas#L203) | [`TBoldOclDefinition.SetName`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L187) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `GetDisplayName` | method, protected | [63](../../../Source/Handles/Core/BoldOclRepository.pas#L63) · [body 165](../../../Source/Handles/Core/BoldOclRepository.pas#L165) | [`TBoldOclDefinition.GetDisplayName`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L205) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Create` | constructor | [65](../../../Source/Handles/Core/BoldOclRepository.pas#L65) · [body 141](../../../Source/Handles/Core/BoldOclRepository.pas#L141) | [`TBoldOclDefinition.TBoldOclDefinition`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L170) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Destroy` | destructor | [66](../../../Source/Handles/Core/BoldOclRepository.pas#L66) · [body 147](../../../Source/Handles/Core/BoldOclRepository.pas#L147) | [`[assembly: Delphi] in BoldOclRepository.cs`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L10) | 🔵 replaced: Did nothing but call the inherited destructor. |  |
+| `GetContextType` | method | [67](../../../Source/Handles/Core/BoldOclRepository.pas#L67) · [body 152](../../../Source/Handles/Core/BoldOclRepository.pas#L152) | [`TBoldOclDefinition.GetContextType`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L209) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Definitions` | property | [68](../../../Source/Handles/Core/BoldOclRepository.pas#L68) | [`TBoldOclDefinition.Definitions`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L211) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `SystemTypeInfo` | property | [69](../../../Source/Handles/Core/BoldOclRepository.pas#L69) | [`TBoldOclDefinition.SystemTypeInfo`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L212) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Name` | property, published | [71](../../../Source/Handles/Core/BoldOclRepository.pas#L71) | [`TBoldOclDefinition.Name`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L215) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Expression` | property, published | [72](../../../Source/Handles/Core/BoldOclRepository.pas#L72) | [`TBoldOclDefinition.Expression`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L222) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+| `Context` | property, published | [73](../../../Source/Handles/Core/BoldOclRepository.pas#L73) | [`TBoldOclDefinition.Context`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L229) | ✅ verified | ✔ [`BoldOclRepositoryTests.Expressions_use_the_repositorys_definitions_by_name`](../../tests/Bold.Handles.Tests/Handles/Core/BoldOclRepositoryTests.cs#L12) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldOclRepository.ValidateComponent`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L72) (method)
+- [`TBoldOclDefinition.SetExpression`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L200) (method)
+- [`TBoldOclDefinition.GetVariableList`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L201) (method)
+- [`TBoldOclDefinition.GetExpression`](../../src/Bold.Handles/Handles/Core/BoldOclRepository.cs#L202) (method)
 
 ## Dependencies
 
