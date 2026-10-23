@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldListBox.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas) (596 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 60 symbols done, 0 verified |
+| Status | 🟢 ported: 60 of 60 symbols done, 0 verified |
 
-⚪ 60 not started
+🟢 59 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,73 +18,83 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCustomListBox` | class | [36](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L36) |  | ⚪ not started |  |
-| `TBoldListBox` | class | [108](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L108) |  | ⚪ not started |  |
+| `TBoldCustomListBox` | class | [36](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L36) | [`TBoldCustomListBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L18) | 🟢 ported: A WinForms ListBox, drawn by the rows' renderer. |  |
+| `TBoldListBox` | class | [108](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L108) | [`TBoldListBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L501) | 🟢 ported |  |
 
 ## TBoldCustomListBox
 
-class at [line 36](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L36); ⚪ not started.
+class at [line 36](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L36); 🟢 ported, C# [`TBoldCustomListBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContextType` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L44) · [body 543](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L543) |  | ⚪ not started |  |
-| `SetExpression` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L45) · [body 556](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L556) |  | ⚪ not started |  |
-| `GetExpression` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L46) · [body 551](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L551) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L47) · [body 580](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L580) |  | ⚪ not started |  |
-| `GetBoldHandle` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L49) · [body 533](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L533) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L50) · [body 238](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L238) |  | ⚪ not started |  |
-| `GetFollower` | method, private | [51](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L51) · [body 538](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L538) |  | ⚪ not started |  |
-| `SetBoldProperties` | method, private | [52](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L52) · [body 254](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L254) |  | ⚪ not started |  |
-| `SetRowProperties` | method, private | [53](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L53) · [body 259](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L259) |  | ⚪ not started |  |
-| `GetCurrentBoldElement` | method, private | [54](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L54) · [body 360](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L360) |  | ⚪ not started |  |
-| `GetCurrentBoldObject` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L55) · [body 380](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L380) |  | ⚪ not started |  |
-| `GetBoldList` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L56) · [body 371](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L371) |  | ⚪ not started |  |
-| `GetItemIndex` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L57) · [body 243](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L243) |  | ⚪ not started |  |
-| `GetBoldHandleIndexLock` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L58) · [body 561](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L561) |  | ⚪ not started |  |
-| `SetBoldHandleIndexLock` | method, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L59) · [body 566](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L566) |  | ⚪ not started |  |
-| `SetItemIndex` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L60) · [body 248](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L248) |  | ⚪ not started |  |
-| `SetSelected` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L61) · [body 414](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L414) |  | ⚪ not started |  |
-| `InternalSetSelected` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L62) · [body 585](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L585) |  | ⚪ not started |  |
-| `SetSelection` | method, private | [63](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L63) · [body 272](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L272) |  | ⚪ not started |  |
-| `GetSelectedCount` | method, private | [64](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L64) · [body 425](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L425) |  | ⚪ not started |  |
-| `SetAlignment` | method, private | [65](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L65) · [body 228](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L228) |  | ⚪ not started |  |
-| `_BeforeMakeUptoDate` | method, private | [66](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L66) · [body 210](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L210) |  | ⚪ not started |  |
-| `_AfterMakeUptoDate` | method, private | [67](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L67) · [body 218](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L218) |  | ⚪ not started |  |
-| `_InsertItem` | method, private | [68](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L68) · [body 404](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L404) |  | ⚪ not started |  |
-| `_DeleteItem` | method, private | [69](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L69) · [body 409](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L409) |  | ⚪ not started |  |
-| `_RowAfterMakeUptoDate` | method, private | [70](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L70) · [body 392](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L392) |  | ⚪ not started |  |
-| `CNDrawItem` | method, private | [71](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L71) · [body 451](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L451) |  | ⚪ not started |  |
-| `WMSize` | method, private | [72](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L72) · [body 516](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L516) |  | ⚪ not started |  |
-| `GetMutableList` | method, private | [73](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L73) · [body 572](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L572) |  | ⚪ not started |  |
-| `DefaultSetFontAndColor` | method, protected | [75](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L75) · [body 472](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L472) |  | ⚪ not started |  |
-| `Click` | method, protected | [76](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L76) · [body 299](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L299) |  | ⚪ not started |  |
-| `DblClick` | method, protected | [77](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L77) · [body 305](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L305) |  | ⚪ not started |  |
-| `GetSelected` | method, protected | [78](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L78) · [body 420](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L420) |  | ⚪ not started |  |
-| `DoEndDrag` | method, protected | [79](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L79) · [body 329](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L329) |  | ⚪ not started |  |
-| `DoStartDrag` | method, protected | [80](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L80) · [body 323](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L323) |  | ⚪ not started |  |
-| `DragOver` | method, protected | [81](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L81) · [body 335](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L335) |  | ⚪ not started |  |
-| `DrawItem` | method, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L82) · [body 524](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L524) |  | ⚪ not started |  |
-| `GetPopupMenu` | method, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L83) · [body 265](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L265) |  | ⚪ not started |  |
-| `KeyUp` | method, protected | [84](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L84) · [body 441](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L441) |  | ⚪ not started |  |
-| `MeasureItem` | method, protected | [85](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L85) · [body 496](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L496) |  | ⚪ not started |  |
-| `MouseDown` | method, protected | [86](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L86) · [body 293](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L293) |  | ⚪ not started |  |
-| `Follower` | property, protected | [87](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L87) |  | ⚪ not started |  |
-| `Alignment` | property, protected | [88](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L88) |  | ⚪ not started |  |
-| `BoldHandle` | property, protected | [89](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L89) |  | ⚪ not started |  |
-| `BoldHandleIndexLock` | property, protected | [90](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L90) |  | ⚪ not started |  |
-| `BoldList` | property, protected | [91](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L91) |  | ⚪ not started |  |
-| `BoldProperties` | property, protected | [92](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L92) |  | ⚪ not started |  |
-| `BoldRowProperties` | property, protected | [93](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L93) |  | ⚪ not started |  |
-| `CurrentBoldObject` | property, protected | [94](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L94) |  | ⚪ not started |  |
-| `CurrentBoldElement` | property, protected | [95](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L95) |  | ⚪ not started |  |
-| `ItemIndex` | property, protected | [96](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L96) |  | ⚪ not started |  |
-| `SelectedCount` | property, protected | [97](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L97) |  | ⚪ not started |  |
-| `Selected` | property, protected | [98](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L98) |  | ⚪ not started |  |
-| `Create` | constructor | [100](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L100) · [body 183](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L183) |  | ⚪ not started |  |
-| `Destroy` | destructor | [101](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L101) · [body 202](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L202) |  | ⚪ not started |  |
-| `DefaultDrawItem` | method | [102](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L102) · [body 490](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L490) |  | ⚪ not started |  |
-| `DragDrop` | method | [103](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L103) · [body 346](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L346) |  | ⚪ not started |  |
-| `MutableList` | property | [104](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L104) |  | ⚪ not started |  |
+| `GetContextType` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L44) · [body 543](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L543) | [`TBoldCustomListBox.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L383) | 🟢 ported |  |
+| `SetExpression` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L45) · [body 556](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L556) | [`TBoldCustomListBox.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L393) | 🟢 ported |  |
+| `GetExpression` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L46) · [body 551](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L551) | [`TBoldCustomListBox.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L388) | 🟢 ported |  |
+| `GetVariableList` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L47) · [body 580](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L580) | [`TBoldCustomListBox.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L407) | 🟢 ported |  |
+| `GetBoldHandle` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L49) · [body 533](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L533) | [`TBoldCustomListBox.GetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L377) | 🟢 ported |  |
+| `SetBoldHandle` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L50) · [body 238](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L238) | [`TBoldCustomListBox.SetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L115) | 🟢 ported |  |
+| `GetFollower` | method, private | [51](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L51) · [body 538](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L538) | [`TBoldCustomListBox.GetFollower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L380) | 🟢 ported |  |
+| `SetBoldProperties` | method, private | [52](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L52) · [body 254](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L254) | [`TBoldCustomListBox.SetBoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L129) | 🟢 ported |  |
+| `SetRowProperties` | method, private | [53](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L53) · [body 259](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L259) | [`TBoldCustomListBox.SetRowProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L132) | 🟢 ported |  |
+| `GetCurrentBoldElement` | method, private | [54](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L54) · [body 360](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L360) | [`TBoldCustomListBox.GetCurrentBoldElement`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L230) | 🟢 ported |  |
+| `GetCurrentBoldObject` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L55) · [body 380](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L380) | [`TBoldCustomListBox.GetCurrentBoldObject`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L236) | 🟢 ported |  |
+| `GetBoldList` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L56) · [body 371](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L371) | [`TBoldCustomListBox.GetBoldList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L233) | 🟢 ported |  |
+| `GetItemIndex` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L57) · [body 243](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L243) | [`TBoldCustomListBox.GetItemIndex`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L118) | 🟢 ported |  |
+| `GetBoldHandleIndexLock` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L58) · [body 561](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L561) | [`TBoldCustomListBox.GetBoldHandleIndexLock`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L398) | 🟢 ported |  |
+| `SetBoldHandleIndexLock` | method, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L59) · [body 566](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L566) | [`TBoldCustomListBox.SetBoldHandleIndexLock`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L401) | 🟢 ported |  |
+| `SetItemIndex` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L60) · [body 248](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L248) | [`TBoldCustomListBox.SetItemIndex`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L122) | 🟢 ported |  |
+| `SetSelected` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L61) · [body 414](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L414) | [`TBoldCustomListBox.SetSelected`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L256) | 🟢 ported |  |
+| `InternalSetSelected` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L62) · [body 585](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L585) | [`TBoldCustomListBox.InternalSetSelected`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L413) | 🟢 ported |  |
+| `SetSelection` | method, private | [63](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L63) · [body 272](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L272) | [`TBoldCustomListBox.SetSelection`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L140) | 🟢 ported |  |
+| `GetSelectedCount` | method, private | [64](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L64) · [body 425](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L425) | [`TBoldCustomListBox.GetSelectedCount`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L266) | 🟢 ported |  |
+| `SetAlignment` | method, private | [65](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L65) · [body 228](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L228) | [`TBoldCustomListBox.SetAlignment`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L104) | 🟢 ported |  |
+| `_BeforeMakeUptoDate` | method, private | [66](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L66) · [body 210](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L210) | [`TBoldCustomListBox._BeforeMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L70) | 🟢 ported |  |
+| `_AfterMakeUptoDate` | method, private | [67](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L67) · [body 218](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L218) | [`TBoldCustomListBox._AfterMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L83) | 🟢 ported |  |
+| `_InsertItem` | method, private | [68](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L68) · [body 404](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L404) | [`TBoldCustomListBox._InsertItem`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L250) | 🟢 ported |  |
+| `_DeleteItem` | method, private | [69](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L69) · [body 409](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L409) | [`TBoldCustomListBox._DeleteItem`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L253) | 🟢 ported |  |
+| `_RowAfterMakeUptoDate` | method, private | [70](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L70) · [body 392](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L392) | [`TBoldCustomListBox._RowAfterMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L240) | 🟢 ported |  |
+| `CNDrawItem` | method, private | [71](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L71) · [body 451](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L451) | [`[assembly: Delphi] in BoldListBox.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L8) | 🔵 replaced: Drew the background of no row and the focus of the current row; OnDrawItem does that. |  |
+| `WMSize` | method, private | [72](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L72) · [body 516](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L516) | [`TBoldCustomListBox.OnResize`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L334) | 🟢 ported |  |
+| `GetMutableList` | method, private | [73](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L73) · [body 572](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L572) | [`TBoldCustomListBox.GetMutableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L404) | 🟢 ported |  |
+| `DefaultSetFontAndColor` | method, protected | [75](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L75) · [body 472](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L472) | [`TBoldCustomListBox.DefaultSetFontAndColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L282) | 🟢 ported |  |
+| `Click` | method, protected | [76](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L76) · [body 299](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L299) | [`TBoldCustomListBox.OnClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L181) | 🟢 ported |  |
+| `DblClick` | method, protected | [77](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L77) · [body 305](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L305) | [`TBoldCustomListBox.OnDoubleClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L189) | 🟢 ported: The DoubleClick event is raised first. |  |
+| `GetSelected` | method, protected | [78](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L78) · [body 420](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L420) | [`TBoldCustomListBox.GetSelected`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L263) | 🟢 ported |  |
+| `DoEndDrag` | method, protected | [79](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L79) · [body 329](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L329) | [`TBoldCustomListBox.DoEndDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L202) | 🟢 ported |  |
+| `DoStartDrag` | method, protected | [80](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L80) · [body 323](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L323) | [`TBoldCustomListBox.DoStartDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L199) | 🟢 ported |  |
+| `DragOver` | method, protected | [81](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L81) · [body 335](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L335) | [`TBoldCustomListBox.OnDragOver`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L206) | 🟢 ported: OnDragOver; the DragOver event is raised first. |  |
+| `DrawItem` | method, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L82) · [body 524](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L524) | [`TBoldCustomListBox.OnDrawItem`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L346) | 🟢 ported: Also does what Delphi's CNDrawItem did: the background of no row and the focus of the current one. The DrawItem event is raised after the default drawing. |  |
+| `GetPopupMenu` | method, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L83) · [body 265](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L265) | [`TBoldCustomListBox.GetPopupMenu`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L136) | 🟢 ported |  |
+| `KeyUp` | method, protected | [84](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L84) · [body 441](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L441) | [`TBoldCustomListBox.OnKeyUp`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L270) | 🟢 ported |  |
+| `MeasureItem` | method, protected | [85](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L85) · [body 496](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L496) | [`TBoldCustomListBox.OnMeasureItem`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L314) | 🟢 ported |  |
+| `MouseDown` | method, protected | [86](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L86) · [body 293](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L293) | [`TBoldCustomListBox.OnMouseDown`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L173) | 🟢 ported |  |
+| `Follower` | property, protected | [87](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L87) | [`TBoldCustomListBox.Follower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L428) | 🟢 ported |  |
+| `Alignment` | property, protected | [88](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L88) | [`TBoldCustomListBox.Alignment`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L432) | 🟢 ported |  |
+| `BoldHandle` | property, protected | [89](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L89) | [`TBoldCustomListBox.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L440) | 🟢 ported |  |
+| `BoldHandleIndexLock` | property, protected | [90](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L90) | [`TBoldCustomListBox.BoldHandleIndexLock`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L448) | 🟢 ported |  |
+| `BoldList` | property, protected | [91](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L91) | [`TBoldCustomListBox.BoldList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L456) | 🟢 ported |  |
+| `BoldProperties` | property, protected | [92](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L92) | [`TBoldCustomListBox.BoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L460) | 🟢 ported |  |
+| `BoldRowProperties` | property, protected | [93](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L93) | [`TBoldCustomListBox.BoldRowProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L468) | 🟢 ported |  |
+| `CurrentBoldObject` | property, protected | [94](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L94) | [`TBoldCustomListBox.CurrentBoldObject`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L476) | 🟢 ported |  |
+| `CurrentBoldElement` | property, protected | [95](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L95) | [`TBoldCustomListBox.CurrentBoldElement`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L480) | 🟢 ported |  |
+| `ItemIndex` | property, protected | [96](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L96) | [`TBoldCustomListBox.ItemIndex`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L484) | 🟢 ported |  |
+| `SelectedCount` | property, protected | [97](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L97) | [`TBoldCustomListBox.SelectedCount`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L492) | 🟢 ported |  |
+| `Selected` | property, protected | [98](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L98) | [`[assembly: Delphi] in BoldListBox.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L9) | 🟢 ported: An indexed property in Delphi; GetSelected and SetSelected. |  |
+| `Create` | constructor | [100](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L100) · [body 183](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L183) | [`TBoldCustomListBox.TBoldCustomListBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L27) | 🟢 ported |  |
+| `Destroy` | destructor | [101](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L101) · [body 202](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L202) | [`TBoldCustomListBox.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L45) | 🟢 ported |  |
+| `DefaultDrawItem` | method | [102](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L102) · [body 490](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L490) | [`TBoldCustomListBox.DefaultDrawItem`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L304) | 🟢 ported |  |
+| `DragDrop` | method | [103](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L103) · [body 346](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L346) | [`TBoldCustomListBox.OnDragDrop`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L220) | 🟢 ported: OnDragDrop; the DragDrop event is raised first. |  |
+| `MutableList` | property | [104](../../../Source/BoldAwareGUI/BoldControls/BoldListBox.pas#L104) | [`TBoldCustomListBox.MutableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L496) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldCustomListBox.OnParentChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L57) (method)
+- [`TBoldCustomListBox.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L385) (method)
+- [`TBoldCustomListBox.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L390) (method)
+- [`TBoldCustomListBox.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L395) (method)
+- [`TBoldCustomListBox.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldListBox.cs#L409) (method)
 
 ## Dependencies
 

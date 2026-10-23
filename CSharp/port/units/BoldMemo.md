@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldMemo.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas) (432 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 48 symbols done, 0 verified |
+| Status | 🟢 ported: 48 of 48 symbols done, 0 verified |
 
-⚪ 48 not started
+🟢 41 ported · 🔵 7 replaced
 
 ## Unit level
 
@@ -18,61 +18,73 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCustomMemo` | class | [26](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L26) |  | ⚪ not started |  |
-| `TBoldMemo` | class | [92](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L92) |  | ⚪ not started |  |
+| `TBoldCustomMemo` | class | [26](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L26) | [`TBoldCustomMemo`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L22) | 🟢 ported: A multi-line WinForms TextBox. |  |
+| `TBoldMemo` | class | [92](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L92) | [`TBoldMemo`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L412) | 🟢 ported |  |
 
 ## TBoldCustomMemo
 
-class at [line 26](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L26); 🟢 ported, C# [`TBoldCustomMemo`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContextType` | method, private | [38](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L38) · [body 408](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L408) |  | ⚪ not started |  |
-| `SetExpression` | method, private | [39](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L39) · [body 421](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L421) |  | ⚪ not started |  |
-| `GetExpression` | method, private | [40](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L40) · [body 416](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L416) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [41](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L41) · [body 426](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L426) |  | ⚪ not started |  |
-| `_FontChanged` | method, private | [43](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L43) · [body 258](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L258) |  | ⚪ not started |  |
-| `AfterMakeUptoDate` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L44) · [body 353](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L353) |  | ⚪ not started |  |
-| `CMEnter` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L45) · [body 384](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L384) |  | ⚪ not started |  |
-| `CMExit` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L46) · [body 390](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L390) |  | ⚪ not started |  |
-| `GetBoldHandle` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L47) · [body 398](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L398) |  | ⚪ not started |  |
-| `GetColor` | method, private | [48](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L48) · [body 281](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L281) |  | ⚪ not started |  |
-| `GetEffectiveColor` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L49) · [body 286](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L286) |  | ⚪ not started |  |
-| `GetEffectiveFont` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L50) · [body 268](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L268) |  | ⚪ not started |  |
-| `GetEffectiveReadOnly` | method, private | [51](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L51) · [body 246](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L246) |  | ⚪ not started |  |
-| `GetFollower` | method, private | [52](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L52) · [body 403](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L403) |  | ⚪ not started |  |
-| `GetFont` | method, private | [53](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L53) · [body 263](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L263) |  | ⚪ not started |  |
-| `GetText` | method, private | [54](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L54) · [body 306](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L306) |  | ⚪ not started |  |
-| `SetBoldDisplay` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L55) · [body 232](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L232) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L56) · [body 227](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L227) |  | ⚪ not started |  |
-| `SetColor` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L57) · [body 273](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L273) |  | ⚪ not started |  |
-| `SetEffectiveColor` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L58) · [body 291](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L291) |  | ⚪ not started |  |
-| `SetFocused` | method, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L59) · [body 336](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L336) |  | ⚪ not started |  |
-| `SetFont` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L60) · [body 251](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L251) |  | ⚪ not started |  |
-| `SetReadOnly` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L61) · [body 237](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L237) |  | ⚪ not started |  |
-| `SetText` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L62) · [body 297](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L297) |  | ⚪ not started |  |
-| `Change` | method, protected | [65](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L65) · [body 346](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L346) |  | ⚪ not started |  |
-| `DoEndDrag` | method, protected | [66](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L66) · [body 204](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L204) |  | ⚪ not started |  |
-| `DoStartDrag` | method, protected | [67](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L67) · [body 198](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L198) |  | ⚪ not started |  |
-| `DragOver` | method, protected | [68](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L68) · [body 210](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L210) |  | ⚪ not started |  |
-| `GetPopupMenu` | method, protected | [69](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L69) · [body 311](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L311) |  | ⚪ not started |  |
-| `KeyPress` | method, protected | [70](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L70) · [body 318](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L318) |  | ⚪ not started |  |
-| `Loaded` | method, protected | [71](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L71) · [body 192](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L192) |  | ⚪ not started |  |
-| `Alignment` | property, protected | [72](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L72) |  | ⚪ not started |  |
-| `BoldHandle` | property, protected | [73](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L73) |  | ⚪ not started |  |
-| `BoldProperties` | property, protected | [74](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L74) |  | ⚪ not started |  |
-| `Color` | property, protected | [75](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L75) |  | ⚪ not started |  |
-| `EffectiveColor` | property, protected | [76](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L76) |  | ⚪ not started |  |
-| `EffectiveFont` | property, protected | [77](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L77) |  | ⚪ not started |  |
-| `EffectiveReadOnly` | property, protected | [78](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L78) |  | ⚪ not started |  |
-| `Follower` | property, protected | [79](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L79) |  | ⚪ not started |  |
-| `Font` | property, protected | [80](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L80) |  | ⚪ not started |  |
-| `ReadOnly` | property, protected | [81](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L81) |  | ⚪ not started |  |
-| `Text` | property, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L82) |  | ⚪ not started |  |
-| `MaxLength` | property, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L83) |  | ⚪ not started |  |
-| `Create` | constructor | [86](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L86) · [body 159](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L159) |  | ⚪ not started |  |
-| `Destroy` | destructor | [87](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L87) · [body 173](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L173) |  | ⚪ not started |  |
-| `DragDrop` | method | [88](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L88) · [body 219](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L219) |  | ⚪ not started |  |
+| `GetContextType` | method, private | [38](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L38) · [body 408](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L408) | [`TBoldCustomMemo.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L300) | 🟢 ported |  |
+| `SetExpression` | method, private | [39](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L39) · [body 421](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L421) | [`TBoldCustomMemo.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L310) | 🟢 ported |  |
+| `GetExpression` | method, private | [40](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L40) · [body 416](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L416) | [`TBoldCustomMemo.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L305) | 🟢 ported |  |
+| `GetVariableList` | method, private | [41](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L41) · [body 426](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L426) | [`TBoldCustomMemo.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L315) | 🟢 ported |  |
+| `_FontChanged` | method, private | [43](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L43) · [body 258](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L258) | [`[assembly: Delphi] in BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L15) | 🔵 replaced: OnFontChanged. |  |
+| `AfterMakeUptoDate` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L44) · [body 353](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L353) | [`TBoldCustomMemo.AfterMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L242) | 🟢 ported |  |
+| `CMEnter` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L45) · [body 384](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L384) | [`TBoldCustomMemo.OnEnter`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L275) | 🟢 ported |  |
+| `CMExit` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L46) · [body 390](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L390) | [`TBoldCustomMemo.OnLeave`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L282) | 🟢 ported |  |
+| `GetBoldHandle` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L47) · [body 398](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L398) | [`TBoldCustomMemo.GetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L294) | 🟢 ported |  |
+| `GetColor` | method, private | [48](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L48) · [body 281](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L281) | [`[assembly: Delphi] in BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L13) | 🔵 replaced: The WinForms BackColor property. |  |
+| `GetEffectiveColor` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L49) · [body 286](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L286) | [`TBoldCustomMemo.GetEffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L157) | 🟢 ported |  |
+| `GetEffectiveFont` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L50) · [body 268](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L268) | [`[assembly: Delphi] in BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L16) | 🔵 replaced: EffectiveFont is the font the memo shows. |  |
+| `GetEffectiveReadOnly` | method, private | [51](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L51) · [body 246](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L246) | [`TBoldCustomMemo.GetEffectiveReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L136) | 🟢 ported |  |
+| `GetFollower` | method, private | [52](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L52) · [body 403](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L403) | [`TBoldCustomMemo.GetFollower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L297) | 🟢 ported |  |
+| `GetFont` | method, private | [53](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L53) · [body 263](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L263) | [`[assembly: Delphi] in BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L11) | 🔵 replaced: The WinForms Font property. |  |
+| `GetText` | method, private | [54](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L54) · [body 306](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L306) | [`TBoldCustomMemo.GetText`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L182) | 🟢 ported |  |
+| `SetBoldDisplay` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L55) · [body 232](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L232) | [`TBoldCustomMemo.SetBoldDisplay`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L123) | 🟢 ported |  |
+| `SetBoldHandle` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L56) · [body 227](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L227) | [`TBoldCustomMemo.SetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L120) | 🟢 ported |  |
+| `SetColor` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L57) · [body 273](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L273) | [`[assembly: Delphi] in BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L14) | 🔵 replaced: The WinForms BackColor property. |  |
+| `SetEffectiveColor` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L58) · [body 291](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L291) | [`TBoldCustomMemo.SetEffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L160) | 🟢 ported |  |
+| `SetFocused` | method, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L59) · [body 336](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L336) | [`TBoldCustomMemo.SetFocused`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L218) | 🟢 ported |  |
+| `SetFont` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L60) · [body 251](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L251) | [`[assembly: Delphi] in BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L12) | 🔵 replaced: The WinForms Font property. |  |
+| `SetReadOnly` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L61) · [body 237](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L237) | [`TBoldCustomMemo.SetReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L126) | 🟢 ported |  |
+| `SetText` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L62) · [body 297](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L297) | [`TBoldCustomMemo.SetText`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L169) | 🟢 ported |  |
+| `Change` | method, protected | [65](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L65) · [body 346](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L346) | [`TBoldCustomMemo.OnTextChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L231) | 🟢 ported |  |
+| `DoEndDrag` | method, protected | [66](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L66) · [body 204](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L204) | [`TBoldCustomMemo.DoEndDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L97) | 🟢 ported |  |
+| `DoStartDrag` | method, protected | [67](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L67) · [body 198](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L198) | [`TBoldCustomMemo.DoStartDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L94) | 🟢 ported |  |
+| `DragOver` | method, protected | [68](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L68) · [body 210](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L210) | [`TBoldCustomMemo.OnDragOver`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L100) | 🟢 ported: OnDragOver; the DragOver event is raised first. |  |
+| `GetPopupMenu` | method, protected | [69](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L69) · [body 311](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L311) | [`TBoldCustomMemo.GetPopupMenu`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L186) | 🟢 ported: Gives the menu for a right click; a TextBox shows its own menu when it has none. |  |
+| `KeyPress` | method, protected | [70](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L70) · [body 318](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L318) | [`TBoldCustomMemo.OnKeyPress`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L199) | 🟢 ported |  |
+| `Loaded` | method, protected | [71](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L71) · [body 192](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L192) | [`[assembly: Delphi] in BoldMemo.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L10) | 🔵 replaced: Took the color read from the form as the shown color; TBoldControlLook keeps the given and the shown colors apart. |  |
+| `Alignment` | property, protected | [72](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L72) | [`TBoldCustomMemo.Alignment`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L321) | 🟢 ported |  |
+| `BoldHandle` | property, protected | [73](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L73) | [`TBoldCustomMemo.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L333) | 🟢 ported |  |
+| `BoldProperties` | property, protected | [74](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L74) | [`TBoldCustomMemo.BoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L341) | 🟢 ported |  |
+| `Color` | property, protected | [75](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L75) | [`TBoldCustomMemo.BackColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L349) | 🟢 ported |  |
+| `EffectiveColor` | property, protected | [76](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L76) | [`TBoldCustomMemo.EffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L357) | 🟢 ported |  |
+| `EffectiveFont` | property, protected | [77](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L77) | [`TBoldCustomMemo.EffectiveFont`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L365) | 🟢 ported: The WinForms font shown, which the renderer may have changed from Font. |  |
+| `EffectiveReadOnly` | property, protected | [78](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L78) | [`TBoldCustomMemo.EffectiveReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L369) | 🟢 ported |  |
+| `Follower` | property, protected | [79](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L79) | [`TBoldCustomMemo.Follower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L373) | 🟢 ported |  |
+| `Font` | property, protected | [80](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L80) | [`TBoldCustomMemo.Font`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L378) | 🟢 ported |  |
+| `ReadOnly` | property, protected | [81](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L81) | [`TBoldCustomMemo.ReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L386) | 🟢 ported |  |
+| `Text` | property, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L82) | [`TBoldCustomMemo.Text`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L395) | 🟢 ported |  |
+| `MaxLength` | property, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L83) | [`TBoldCustomMemo.MaxLength`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L403) | 🟢 ported |  |
+| `Create` | constructor | [86](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L86) · [body 159](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L159) | [`TBoldCustomMemo.TBoldCustomMemo`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L33) | 🟢 ported |  |
+| `Destroy` | destructor | [87](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L87) · [body 173](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L173) | [`TBoldCustomMemo.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L52) | 🟢 ported |  |
+| `DragDrop` | method | [88](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L88) · [body 219](../../../Source/BoldAwareGUI/BoldControls/BoldMemo.pas#L219) | [`TBoldCustomMemo.OnDragDrop`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L110) | 🟢 ported: OnDragDrop; the DragDrop event is raised first. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldCustomMemo.OnParentChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L82) (method)
+- [`TBoldCustomMemo.OnFontChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L138) (method)
+- [`TBoldCustomMemo.OnBackColorChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L147) (method)
+- [`TBoldCustomMemo.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L302) (method)
+- [`TBoldCustomMemo.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L307) (method)
+- [`TBoldCustomMemo.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L312) (method)
+- [`TBoldCustomMemo.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldMemo.cs#L317) (method)
 
 ## Dependencies
 

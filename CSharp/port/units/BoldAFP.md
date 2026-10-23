@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/FormGen/BoldAFP.pas`](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas) (340 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 49 symbols done, 0 verified |
+| Status | 🟢 ported: 49 of 49 symbols done, 0 verified |
 
-⚪ 49 not started
+🟢 48 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,83 +18,89 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAutoFormProviderClass` | class reference | [18](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L18) |  | ⚪ not started |  |
-| `TBoldAutoFormProvider` | class | [22](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L22) |  | ⚪ not started |  |
-| `TBoldAutoFormProviderHolder` | class | [58](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L58) |  | ⚪ not started |  |
-| `TBoldAutoFormProviderRegistry` | class | [73](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L73) |  | ⚪ not started |  |
-| `AutoFormProviderRegistry` | routine | [88](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L88) · [body 114](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L114) |  | ⚪ not started |  |
-| `TProviderClassIndex` | class, implementation | [105](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L105) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [333](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L333) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [335](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L335) |  | ⚪ not started |  |
+| `TBoldAutoFormProviderClass` | class reference | [18](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L18) | [`[assembly: Delphi] in BoldAFP.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L6) | 🟢 ported: A System.Type of a TBoldAutoFormProvider class. |  |
+| `TBoldAutoFormProvider` | class | [22](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L22) | [`TBoldAutoFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L17) | 🟢 ported |  |
+| `TBoldAutoFormProviderHolder` | class | [58](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L58) | [`TBoldAutoFormProviderHolder`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L160) | 🟢 ported |  |
+| `TBoldAutoFormProviderRegistry` | class | [73](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L73) | [`TBoldAutoFormProviderRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L184) | 🟢 ported |  |
+| `AutoFormProviderRegistry` | routine | [88](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L88) · [body 114](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L114) | [`BoldAFP.AutoFormProviderRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L286) | 🟢 ported |  |
+| `TProviderClassIndex` | class, implementation | [105](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L105) | [`TBoldAutoFormProviderRegistry.TProviderClassIndex`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L269) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [333](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L333) | [`[assembly: Delphi] in BoldAFP.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L7) | 🟢 ported: Empty in Delphi; the registry is made on first use. |  |
+| `finalization` | finalization, implementation | [335](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L335) | [`[assembly: Delphi] in BoldAFP.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L8) | 🔵 replaced: Freed the registry; the garbage collector does that in .NET. |  |
 
 ## TBoldAutoFormProvider
 
-class at [line 22](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L22); 🟢 ported, C# [`TBoldAutoFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L17).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetElementIsList` | method, private | [26](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L26) · [body 256](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L256) |  | ⚪ not started |  |
-| `GetHandleIsList` | method, private | [27](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L27) · [body 266](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L266) |  | ⚪ not started |  |
-| `GetElementTypeInfo` | method, private | [28](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L28) · [body 261](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L261) |  | ⚪ not started |  |
-| `DoEnsureComponents` | method, protected | [30](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L30) · [body 272](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L272) |  | ⚪ not started |  |
-| `DoGenerateForm` | method, protected | [31](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L31) · [body 304](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L304) |  | ⚪ not started |  |
-| `EnsureComponents` | method, protected | [32](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L32) |  | ⚪ not started |  |
-| `EnsureForm` | method, protected | [33](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L33) · [body 296](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L296) |  | ⚪ not started |  |
-| `EnsureHandle` | method, protected | [34](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L34) |  | ⚪ not started |  |
-| `GetForm` | method, protected | [35](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L35) |  | ⚪ not started |  |
-| `GetFormClass` | method, protected | [36](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L36) |  | ⚪ not started |  |
-| `GetTarget` | method, protected | [37](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L37) |  | ⚪ not started |  |
-| `ModelNameOrDefault` | method, protected | [38](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L38) · [body 243](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L243) |  | ⚪ not started |  |
-| `PostEnsureComponents` | method, protected | [39](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L39) · [body 283](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L283) |  | ⚪ not started |  |
-| `PostGenerateAutoForm` | method, protected | [40](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L40) · [body 328](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L328) |  | ⚪ not started |  |
-| `PreEnsureComponents` | method, protected | [41](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L41) · [body 279](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L279) |  | ⚪ not started |  |
-| `PreGenerateAutoForm` | method, protected | [42](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L42) · [body 323](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L323) |  | ⚪ not started |  |
-| `SetForm` | method, protected | [43](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L43) |  | ⚪ not started |  |
-| `Element` | property, protected | [44](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L44) |  | ⚪ not started |  |
-| `ElementIsList` | property, protected | [45](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L45) |  | ⚪ not started |  |
-| `Form` | property, protected | [46](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L46) |  | ⚪ not started |  |
-| `HandleIsList` | property, protected | [47](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L47) |  | ⚪ not started |  |
-| `Target` | property, protected | [48](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L48) |  | ⚪ not started |  |
-| `ElementTypeInfo` | property, protected | [49](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L49) |  | ⚪ not started |  |
-| `Create` | constructor | [51](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L51) · [body 237](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L237) |  | ⚪ not started |  |
-| `GenerateAutoForm` | method | [52](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L52) · [body 314](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L314) |  | ⚪ not started |  |
-| `BoldHandle` | property | [53](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L53) |  | ⚪ not started |  |
-| `FormClass` | property | [54](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L54) |  | ⚪ not started |  |
+| `GetElementIsList` | method, private | [26](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L26) · [body 256](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L256) | [`TBoldAutoFormProvider.GetElementIsList`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L30) | 🟢 ported |  |
+| `GetHandleIsList` | method, private | [27](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L27) · [body 266](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L266) | [`TBoldAutoFormProvider.GetHandleIsList`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L33) | 🟢 ported |  |
+| `GetElementTypeInfo` | method, private | [28](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L28) · [body 261](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L261) | [`TBoldAutoFormProvider.GetElementTypeInfo`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L36) | 🟢 ported |  |
+| `DoEnsureComponents` | method, protected | [30](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L30) · [body 272](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L272) | [`TBoldAutoFormProvider.DoEnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L40) | 🟢 ported |  |
+| `DoGenerateForm` | method, protected | [31](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L31) · [body 304](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L304) | [`TBoldAutoFormProvider.DoGenerateForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L49) | 🟢 ported |  |
+| `EnsureComponents` | method, protected | [32](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L32) | [`TBoldAutoFormProvider.EnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L59) | 🟢 ported |  |
+| `EnsureForm` | method, protected | [33](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L33) · [body 296](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L296) | [`TBoldAutoFormProvider.EnsureForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L63) | 🟢 ported: Makes the form with Activator; Delphi made it owned by the application. |  |
+| `EnsureHandle` | method, protected | [34](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L34) | [`TBoldAutoFormProvider.EnsureHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L66) | 🟢 ported |  |
+| `GetForm` | method, protected | [35](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L35) | [`TBoldAutoFormProvider.GetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L67) | 🟢 ported |  |
+| `GetFormClass` | method, protected | [36](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L36) | [`TBoldAutoFormProvider.GetFormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L70) | 🟢 ported: Gives a Type (a Form class) where Delphi gives a class reference. |  |
+| `GetTarget` | method, protected | [37](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L37) | [`TBoldAutoFormProvider.GetTarget`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L73) | 🟢 ported: The control the controls go on; Delphi's is a TWinControl. |  |
+| `ModelNameOrDefault` | method, protected | [38](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L38) · [body 243](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L243) | [`TBoldAutoFormProvider.ModelNameOrDefault`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L77) | 🟢 ported |  |
+| `PostEnsureComponents` | method, protected | [39](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L39) · [body 283](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L283) | [`TBoldAutoFormProvider.PostEnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L87) | 🟢 ported |  |
+| `PostGenerateAutoForm` | method, protected | [40](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L40) · [body 328](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L328) | [`TBoldAutoFormProvider.PostGenerateAutoForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L102) | 🟢 ported |  |
+| `PreEnsureComponents` | method, protected | [41](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L41) · [body 279](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L279) | [`TBoldAutoFormProvider.PreEnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L108) | 🟢 ported |  |
+| `PreGenerateAutoForm` | method, protected | [42](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L42) · [body 323](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L323) | [`TBoldAutoFormProvider.PreGenerateAutoForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L113) | 🟢 ported |  |
+| `SetForm` | method, protected | [43](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L43) | [`TBoldAutoFormProvider.SetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L118) | 🟢 ported |  |
+| `Element` | property, protected | [44](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L44) | [`TBoldAutoFormProvider.Element`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L134) | 🟢 ported |  |
+| `ElementIsList` | property, protected | [45](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L45) | [`TBoldAutoFormProvider.ElementIsList`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L135) | 🟢 ported |  |
+| `Form` | property, protected | [46](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L46) | [`TBoldAutoFormProvider.Form`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L138) | 🟢 ported |  |
+| `HandleIsList` | property, protected | [47](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L47) | [`TBoldAutoFormProvider.HandleIsList`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L144) | 🟢 ported |  |
+| `Target` | property, protected | [48](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L48) | [`TBoldAutoFormProvider.Target`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L145) | 🟢 ported |  |
+| `ElementTypeInfo` | property, protected | [49](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L49) | [`TBoldAutoFormProvider.ElementTypeInfo`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L146) | 🟢 ported |  |
+| `Create` | constructor | [51](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L51) · [body 237](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L237) | [`TBoldAutoFormProvider.TBoldAutoFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L24) | 🟢 ported |  |
+| `GenerateAutoForm` | method | [52](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L52) · [body 314](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L314) | [`TBoldAutoFormProvider.GenerateAutoForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L122) | 🟢 ported |  |
+| `BoldHandle` | property | [53](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L53) | [`TBoldAutoFormProvider.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L149) | 🟢 ported |  |
+| `FormClass` | property | [54](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L54) | [`TBoldAutoFormProvider.FormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L155) | 🟢 ported |  |
 
 ## TBoldAutoFormProviderHolder
 
-class at [line 58](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L58); ⚪ not started.
+class at [line 58](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L58); 🟢 ported, C# [`TBoldAutoFormProviderHolder`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L160).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [65](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L65) · [body 227](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L227) |  | ⚪ not started |  |
-| `ProviderClass` | property | [66](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L66) |  | ⚪ not started |  |
-| `ElementClass` | property | [67](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L67) |  | ⚪ not started |  |
-| `ValueType` | property | [68](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L68) |  | ⚪ not started |  |
-| `IsListProvider` | property | [69](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L69) |  | ⚪ not started |  |
+| `Create` | constructor | [65](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L65) · [body 227](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L227) | [`TBoldAutoFormProviderHolder.TBoldAutoFormProviderHolder`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L168) | 🟢 ported: The classes are Types. |  |
+| `ProviderClass` | property | [66](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L66) | [`TBoldAutoFormProviderHolder.ProviderClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L176) | 🟢 ported |  |
+| `ElementClass` | property | [67](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L67) | [`TBoldAutoFormProviderHolder.ElementClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L177) | 🟢 ported |  |
+| `ValueType` | property | [68](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L68) | [`TBoldAutoFormProviderHolder.ValueType`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L178) | 🟢 ported |  |
+| `IsListProvider` | property | [69](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L69) | [`TBoldAutoFormProviderHolder.IsListProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L179) | 🟢 ported |  |
 
 ## TBoldAutoFormProviderRegistry
 
-class at [line 73](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L73); ⚪ not started.
+class at [line 73](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L73); 🟢 ported, C# [`TBoldAutoFormProviderRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L184).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetHolders` | method, private | [75](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L75) · [body 135](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L135) |  | ⚪ not started |  |
-| `GetMatchingProvider` | method, protected | [77](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L77) · [body 140](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L140) |  | ⚪ not started |  |
-| `Create` | constructor | [79](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L79) · [body 128](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L128) |  | ⚪ not started |  |
-| `FormForElement` | method | [80](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L80) · [body 196](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L196) |  | ⚪ not started |  |
-| `RegisterListProvider` | method | [81](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L81) · [body 216](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L216) |  | ⚪ not started |  |
-| `RegisterProvider` | method | [82](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L82) · [body 211](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L211) |  | ⚪ not started |  |
-| `UnregisterProvider` | method | [83](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L83) · [body 221](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L221) |  | ⚪ not started |  |
-| `Holders` | property | [85](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L85) |  | ⚪ not started |  |
+| `GetHolders` | method, private | [75](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L75) · [body 135](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L135) | [`TBoldAutoFormProviderRegistry.GetHolders`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L196) | 🟢 ported |  |
+| `GetMatchingProvider` | method, protected | [77](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L77) · [body 140](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L140) | [`TBoldAutoFormProviderRegistry.GetMatchingProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L203) | 🟢 ported: Delphi's closest-class search came after a break and never ran; it is not ported. |  |
+| `Create` | constructor | [79](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L79) · [body 128](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L128) | [`TBoldAutoFormProviderRegistry.TBoldAutoFormProviderRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L189) | 🟢 ported |  |
+| `FormForElement` | method | [80](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L80) · [body 196](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L196) | [`TBoldAutoFormProviderRegistry.FormForElement`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L241) | 🟢 ported |  |
+| `RegisterListProvider` | method | [81](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L81) · [body 216](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L216) | [`TBoldAutoFormProviderRegistry.RegisterListProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L254) | 🟢 ported |  |
+| `RegisterProvider` | method | [82](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L82) · [body 211](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L211) | [`TBoldAutoFormProviderRegistry.RegisterProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L258) | 🟢 ported |  |
+| `UnregisterProvider` | method | [83](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L83) · [body 221](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L221) | [`TBoldAutoFormProviderRegistry.UnregisterProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L262) | 🟢 ported |  |
+| `Holders` | property | [85](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L85) | [`TBoldAutoFormProviderRegistry.Holders`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L266) | 🟢 ported: An indexed property in Delphi. |  |
 
 ## TProviderClassIndex
 
-class at [line 105](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L105); ⚪ not started.
+class at [line 105](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L105); 🟢 ported, C# [`TBoldAutoFormProviderRegistry.TProviderClassIndex`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L269).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyClass` | method, protected | [107](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L107) · [body 122](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L122) |  | ⚪ not started |  |
+| `ItemAsKeyClass` | method, protected | [107](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L107) · [body 122](../../../Source/BoldAwareGUI/FormGen/BoldAFP.pas#L122) | [`TBoldAutoFormProviderRegistry.TProviderClassIndex.ItemAsKeyClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L272) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldAutoFormProviderRegistry.TProviderClassIndex.FindByProviderClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs#L275) (method)
 
 ## Dependencies
 

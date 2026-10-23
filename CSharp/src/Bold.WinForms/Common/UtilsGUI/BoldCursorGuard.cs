@@ -15,7 +15,7 @@ public interface IBoldCursorGuard : IDisposable
 [Delphi(PortStatus.Ported, Note = "Cursor.Current stands in for Screen.Cursor.")]
 public sealed class TBoldCursorGuard : IBoldCursorGuard
 {
-    private readonly Cursor fOldCursor;
+    private readonly Cursor? fOldCursor;
 
     [Delphi(PortStatus.Ported)]
     public TBoldCursorGuard(Cursor? NewCursor = null)

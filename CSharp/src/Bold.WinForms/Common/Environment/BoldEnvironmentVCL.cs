@@ -2,6 +2,7 @@
 // Port map: CSharp/port/units/BoldEnvironmentVCL.md
 
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Windows.Forms;
 
