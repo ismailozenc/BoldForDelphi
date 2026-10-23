@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldNavigatorDefs.pas`](../../../Source/Common/Support/BoldNavigatorDefs.pas) (229 lines) |
-| C# | [`CSharp/src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs)<br>[`CSharp/src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs) |
+| C# | [`CSharp/src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs)<br>[`CSharp/src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs)<br>[`CSharp/src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | 🟡 partial: 5 of 35 symbols done, 5 verified |
+| Status | 🟢 ported: 35 of 35 symbols done, 5 verified |
 | Note | The navigator's enums are in Bold.AwareGui, where the list actions use TBoldDeleteMode; the buttons are in Bold.WinForms. |
 
-✅ 5 verified · ⚪ 30 not started
+✅ 5 verified · 🟢 30 ported
 
 ## Unit level
 
@@ -24,63 +24,64 @@ Types, routines, constants, variables and the initialization and finalization se
 | `TBoldDeleteMode` | enum | [19](../../../Source/Common/Support/BoldNavigatorDefs.pas#L19) | [`TBoldDeleteMode`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs#L15) | ✅ verified | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37)<br>✔ [`BoldActionsTests.Editing_actions_add_delete_and_move_elements`](../../tests/Bold.AwareGui.Tests/Handles/Actions/BoldActionsTests.cs#L210) |
 | `TBoldNavButtonStyle` | set | [20](../../../Source/Common/Support/BoldNavigatorDefs.pas#L20) | [`global using TBoldNavButtonStyle`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.Aliases.cs#L6) | ✅ verified: Global using alias of DelphiSet&lt;TBoldNavButtonStyleElement&gt;, in BoldNavigatorDefs.Aliases.cs; the set's anonymous enumeration is TBoldNavButtonStyleElement. | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37) |
 | `TBoldNavClick` | event type | [21](../../../Source/Common/Support/BoldNavigatorDefs.pas#L21) | [`TBoldNavClick`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs#L22) | ✅ verified | ✔ [`BoldControlPackDefsTests.Navigator_buttons_and_delete_modes_have_the_Delphi_values`](../../tests/Bold.AwareGui.Tests/Common/Support/BoldControlPackDefsTests.cs#L37) |
-| `TBoldNavigateBtnImageIndexOwner` | class | [23](../../../Source/Common/Support/BoldNavigatorDefs.pas#L23) |  | ⚪ not started |  |
-| `TBoldNavigateBtnImageIndex` | class | [32](../../../Source/Common/Support/BoldNavigatorDefs.pas#L32) |  | ⚪ not started |  |
-| `TBoldNavButton` | class | [66](../../../Source/Common/Support/BoldNavigatorDefs.pas#L66) |  | ⚪ not started |  |
+| `TBoldNavigateBtnImageIndexOwner` | class | [23](../../../Source/Common/Support/BoldNavigatorDefs.pas#L23) | [`TBoldNavigateBtnImageIndexOwner`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L12) | 🟢 ported: A WinForms Panel; Delphi's is a TCustomPanel. |  |
+| `TBoldNavigateBtnImageIndex` | class | [32](../../../Source/Common/Support/BoldNavigatorDefs.pas#L32) | [`TBoldNavigateBtnImageIndex`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L31) | 🟢 ported |  |
+| `TBoldNavButton` | class | [66](../../../Source/Common/Support/BoldNavigatorDefs.pas#L66) | [`TBoldNavButton`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L96) | 🟢 ported: A WinForms Button; Delphi's is a TSpeedButton. |  |
 
 ## TBoldNavigateBtnImageIndexOwner
 
-class at [line 23](../../../Source/Common/Support/BoldNavigatorDefs.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/Common/Support/BoldNavigatorDefs.pas#L23); 🟢 ported, C# [`TBoldNavigateBtnImageIndexOwner`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FixButtonGlyphs` | method, protected | [27](../../../Source/Common/Support/BoldNavigatorDefs.pas#L27) |  | ⚪ not started |  |
-| `FocusedButton` | property, protected | [28](../../../Source/Common/Support/BoldNavigatorDefs.pas#L28) |  | ⚪ not started |  |
+| `FixButtonGlyphs` | method, protected | [27](../../../Source/Common/Support/BoldNavigatorDefs.pas#L27) | [`TBoldNavigateBtnImageIndexOwner.FixButtonGlyphs`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L18) | 🟢 ported |  |
+| `FocusedButton` | property, protected | [28](../../../Source/Common/Support/BoldNavigatorDefs.pas#L28) | [`TBoldNavigateBtnImageIndexOwner.FocusedButton`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L22) | 🟢 ported |  |
 
 ## TBoldNavigateBtnImageIndex
 
-class at [line 32](../../../Source/Common/Support/BoldNavigatorDefs.pas#L32); ⚪ not started.
+class at [line 32](../../../Source/Common/Support/BoldNavigatorDefs.pas#L32); 🟢 ported, C# [`TBoldNavigateBtnImageIndex`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L31).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetnbDelete` | method, private | [43](../../../Source/Common/Support/BoldNavigatorDefs.pas#L43) · [body 119](../../../Source/Common/Support/BoldNavigatorDefs.pas#L119) |  | ⚪ not started |  |
-| `SetnbFirst` | method, private | [44](../../../Source/Common/Support/BoldNavigatorDefs.pas#L44) · [body 125](../../../Source/Common/Support/BoldNavigatorDefs.pas#L125) |  | ⚪ not started |  |
-| `SetnbInsert` | method, private | [45](../../../Source/Common/Support/BoldNavigatorDefs.pas#L45) · [body 131](../../../Source/Common/Support/BoldNavigatorDefs.pas#L131) |  | ⚪ not started |  |
-| `SetnbLast` | method, private | [46](../../../Source/Common/Support/BoldNavigatorDefs.pas#L46) · [body 137](../../../Source/Common/Support/BoldNavigatorDefs.pas#L137) |  | ⚪ not started |  |
-| `SetnbNext` | method, private | [47](../../../Source/Common/Support/BoldNavigatorDefs.pas#L47) · [body 149](../../../Source/Common/Support/BoldNavigatorDefs.pas#L149) |  | ⚪ not started |  |
-| `SetnbPrior` | method, private | [48](../../../Source/Common/Support/BoldNavigatorDefs.pas#L48) · [body 155](../../../Source/Common/Support/BoldNavigatorDefs.pas#L155) |  | ⚪ not started |  |
-| `SetnbMoveUp` | method, private | [49](../../../Source/Common/Support/BoldNavigatorDefs.pas#L49) · [body 143](../../../Source/Common/Support/BoldNavigatorDefs.pas#L143) |  | ⚪ not started |  |
-| `SetnbMoveDown` | method, private | [50](../../../Source/Common/Support/BoldNavigatorDefs.pas#L50) · [body 161](../../../Source/Common/Support/BoldNavigatorDefs.pas#L161) |  | ⚪ not started |  |
-| `Create` | constructor | [52](../../../Source/Common/Support/BoldNavigatorDefs.pas#L52) · [body 113](../../../Source/Common/Support/BoldNavigatorDefs.pas#L113) |  | ⚪ not started |  |
-| `Assign` | method | [53](../../../Source/Common/Support/BoldNavigatorDefs.pas#L53) · [body 96](../../../Source/Common/Support/BoldNavigatorDefs.pas#L96) |  | ⚪ not started |  |
-| `nbFirst` | property, published | [55](../../../Source/Common/Support/BoldNavigatorDefs.pas#L55) |  | ⚪ not started |  |
-| `nbPrior` | property, published | [56](../../../Source/Common/Support/BoldNavigatorDefs.pas#L56) |  | ⚪ not started |  |
-| `nbNext` | property, published | [57](../../../Source/Common/Support/BoldNavigatorDefs.pas#L57) |  | ⚪ not started |  |
-| `nbLast` | property, published | [58](../../../Source/Common/Support/BoldNavigatorDefs.pas#L58) |  | ⚪ not started |  |
-| `nbInsert` | property, published | [59](../../../Source/Common/Support/BoldNavigatorDefs.pas#L59) |  | ⚪ not started |  |
-| `nbDelete` | property, published | [60](../../../Source/Common/Support/BoldNavigatorDefs.pas#L60) |  | ⚪ not started |  |
-| `nbMoveUp` | property, published | [61](../../../Source/Common/Support/BoldNavigatorDefs.pas#L61) |  | ⚪ not started |  |
-| `nbMoveDown` | property, published | [62](../../../Source/Common/Support/BoldNavigatorDefs.pas#L62) |  | ⚪ not started |  |
+| `SetnbDelete` | method, private | [43](../../../Source/Common/Support/BoldNavigatorDefs.pas#L43) · [body 119](../../../Source/Common/Support/BoldNavigatorDefs.pas#L119) | [`TBoldNavigateBtnImageIndex.SetnbDelete`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L75) | 🟢 ported |  |
+| `SetnbFirst` | method, private | [44](../../../Source/Common/Support/BoldNavigatorDefs.pas#L44) · [body 125](../../../Source/Common/Support/BoldNavigatorDefs.pas#L125) | [`TBoldNavigateBtnImageIndex.SetnbFirst`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L76) | 🟢 ported |  |
+| `SetnbInsert` | method, private | [45](../../../Source/Common/Support/BoldNavigatorDefs.pas#L45) · [body 131](../../../Source/Common/Support/BoldNavigatorDefs.pas#L131) | [`TBoldNavigateBtnImageIndex.SetnbInsert`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L77) | 🟢 ported |  |
+| `SetnbLast` | method, private | [46](../../../Source/Common/Support/BoldNavigatorDefs.pas#L46) · [body 137](../../../Source/Common/Support/BoldNavigatorDefs.pas#L137) | [`TBoldNavigateBtnImageIndex.SetnbLast`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L78) | 🟢 ported |  |
+| `SetnbNext` | method, private | [47](../../../Source/Common/Support/BoldNavigatorDefs.pas#L47) · [body 149](../../../Source/Common/Support/BoldNavigatorDefs.pas#L149) | [`TBoldNavigateBtnImageIndex.SetnbNext`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L79) | 🟢 ported |  |
+| `SetnbPrior` | method, private | [48](../../../Source/Common/Support/BoldNavigatorDefs.pas#L48) · [body 155](../../../Source/Common/Support/BoldNavigatorDefs.pas#L155) | [`TBoldNavigateBtnImageIndex.SetnbPrior`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L80) | 🟢 ported |  |
+| `SetnbMoveUp` | method, private | [49](../../../Source/Common/Support/BoldNavigatorDefs.pas#L49) · [body 143](../../../Source/Common/Support/BoldNavigatorDefs.pas#L143) | [`TBoldNavigateBtnImageIndex.SetnbMoveUp`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L81) | 🟢 ported |  |
+| `SetnbMoveDown` | method, private | [50](../../../Source/Common/Support/BoldNavigatorDefs.pas#L50) · [body 161](../../../Source/Common/Support/BoldNavigatorDefs.pas#L161) | [`TBoldNavigateBtnImageIndex.SetnbMoveDown`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L82) | 🟢 ported |  |
+| `Create` | constructor | [52](../../../Source/Common/Support/BoldNavigatorDefs.pas#L52) · [body 113](../../../Source/Common/Support/BoldNavigatorDefs.pas#L113) | [`TBoldNavigateBtnImageIndex.TBoldNavigateBtnImageIndex`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L44) | 🟢 ported |  |
+| `Assign` | method | [53](../../../Source/Common/Support/BoldNavigatorDefs.pas#L53) · [body 96](../../../Source/Common/Support/BoldNavigatorDefs.pas#L96) | [`TBoldNavigateBtnImageIndex.Assign`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L50) | 🟢 ported |  |
+| `nbFirst` | property, published | [55](../../../Source/Common/Support/BoldNavigatorDefs.pas#L55) | [`TBoldNavigateBtnImageIndex.nbFirst`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L84) | 🟢 ported |  |
+| `nbPrior` | property, published | [56](../../../Source/Common/Support/BoldNavigatorDefs.pas#L56) | [`TBoldNavigateBtnImageIndex.nbPrior`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L85) | 🟢 ported |  |
+| `nbNext` | property, published | [57](../../../Source/Common/Support/BoldNavigatorDefs.pas#L57) | [`TBoldNavigateBtnImageIndex.nbNext`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L86) | 🟢 ported |  |
+| `nbLast` | property, published | [58](../../../Source/Common/Support/BoldNavigatorDefs.pas#L58) | [`TBoldNavigateBtnImageIndex.nbLast`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L87) | 🟢 ported |  |
+| `nbInsert` | property, published | [59](../../../Source/Common/Support/BoldNavigatorDefs.pas#L59) | [`TBoldNavigateBtnImageIndex.nbInsert`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L88) | 🟢 ported |  |
+| `nbDelete` | property, published | [60](../../../Source/Common/Support/BoldNavigatorDefs.pas#L60) | [`TBoldNavigateBtnImageIndex.nbDelete`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L89) | 🟢 ported |  |
+| `nbMoveUp` | property, published | [61](../../../Source/Common/Support/BoldNavigatorDefs.pas#L61) | [`TBoldNavigateBtnImageIndex.nbMoveUp`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L90) | 🟢 ported |  |
+| `nbMoveDown` | property, published | [62](../../../Source/Common/Support/BoldNavigatorDefs.pas#L62) | [`TBoldNavigateBtnImageIndex.nbMoveDown`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L91) | 🟢 ported |  |
 
 ## TBoldNavButton
 
-class at [line 66](../../../Source/Common/Support/BoldNavigatorDefs.pas#L66); ⚪ not started.
+class at [line 66](../../../Source/Common/Support/BoldNavigatorDefs.pas#L66); 🟢 ported, C# [`TBoldNavButton`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L96).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TimerExpired` | method, private | [71](../../../Source/Common/Support/BoldNavigatorDefs.pas#L71) · [body 199](../../../Source/Common/Support/BoldNavigatorDefs.pas#L199) |  | ⚪ not started |  |
-| `MouseDown` | method, protected | [73](../../../Source/Common/Support/BoldNavigatorDefs.pas#L73) · [body 176](../../../Source/Common/Support/BoldNavigatorDefs.pas#L176) |  | ⚪ not started |  |
-| `MouseUp` | method, protected | [74](../../../Source/Common/Support/BoldNavigatorDefs.pas#L74) · [body 191](../../../Source/Common/Support/BoldNavigatorDefs.pas#L191) |  | ⚪ not started |  |
-| `Paint` | method, protected | [75](../../../Source/Common/Support/BoldNavigatorDefs.pas#L75) · [body 213](../../../Source/Common/Support/BoldNavigatorDefs.pas#L213) |  | ⚪ not started |  |
-| `Destroy` | destructor | [77](../../../Source/Common/Support/BoldNavigatorDefs.pas#L77) · [body 170](../../../Source/Common/Support/BoldNavigatorDefs.pas#L170) |  | ⚪ not started |  |
-| `Index` | property | [78](../../../Source/Common/Support/BoldNavigatorDefs.pas#L78) |  | ⚪ not started |  |
-| `NavStyle` | property | [79](../../../Source/Common/Support/BoldNavigatorDefs.pas#L79) |  | ⚪ not started |  |
+| `TimerExpired` | method, private | [71](../../../Source/Common/Support/BoldNavigatorDefs.pas#L71) · [body 199](../../../Source/Common/Support/BoldNavigatorDefs.pas#L199) | [`TBoldNavButton.TimerExpired`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L156) | 🟢 ported |  |
+| `MouseDown` | method, protected | [73](../../../Source/Common/Support/BoldNavigatorDefs.pas#L73) · [body 176](../../../Source/Common/Support/BoldNavigatorDefs.pas#L176) | [`TBoldNavButton.OnMouseDown`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L126) | 🟢 ported |  |
+| `MouseUp` | method, protected | [74](../../../Source/Common/Support/BoldNavigatorDefs.pas#L74) · [body 191](../../../Source/Common/Support/BoldNavigatorDefs.pas#L191) | [`TBoldNavButton.OnMouseUp`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L144) | 🟢 ported |  |
+| `Paint` | method, protected | [75](../../../Source/Common/Support/BoldNavigatorDefs.pas#L75) · [body 213](../../../Source/Common/Support/BoldNavigatorDefs.pas#L213) | [`TBoldNavButton.OnPaint`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L175) | 🟢 ported |  |
+| `Destroy` | destructor | [77](../../../Source/Common/Support/BoldNavigatorDefs.pas#L77) · [body 170](../../../Source/Common/Support/BoldNavigatorDefs.pas#L170) | [`TBoldNavButton.Dispose`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L113) | 🟢 ported |  |
+| `Index` | property | [78](../../../Source/Common/Support/BoldNavigatorDefs.pas#L78) | [`TBoldNavButton.Index`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L194) | 🟢 ported |  |
+| `NavStyle` | property | [79](../../../Source/Common/Support/BoldNavigatorDefs.pas#L79) | [`TBoldNavButton.NavStyle`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L202) | 🟢 ported |  |
 
 ## C# additions
 
 Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
 
 - [`TBoldNavButtonStyleElement`](../../src/Bold.AwareGui/Common/Support/BoldNavigatorDefs.cs#L18) (enum)
+- [`TBoldNavButton.TBoldNavButton`](../../src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs#L106) (constructor)
 
 ## Dependencies
 

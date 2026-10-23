@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldControlsDefs.pas`](../../../Source/Common/Support/BoldControlsDefs.pas) (38 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/Support/BoldControlsDefs.cs` |
+| C# | [`CSharp/src/Bold.WinForms/Common/Support/BoldControlsDefs.Aliases.cs`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.Aliases.cs)<br>[`CSharp/src/Bold.WinForms/Common/Support/BoldControlsDefs.cs`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🟢 ported: 11 of 11 symbols done, 0 verified |
 
-⚪ 11 not started
+🟢 10 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,17 +18,17 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldColumnValue` | enum | [12](../../../Source/Common/Support/BoldControlsDefs.pas#L12) |  | ⚪ not started |  |
-| `TBoldColumnValues` | set | [15](../../../Source/Common/Support/BoldControlsDefs.pas#L15) |  | ⚪ not started |  |
-| `TBoldCWAdjust` | enum | [16](../../../Source/Common/Support/BoldControlsDefs.pas#L16) |  | ⚪ not started |  |
-| `TBoldCWAdjustSet` | set | [17](../../../Source/Common/Support/BoldControlsDefs.pas#L17) |  | ⚪ not started |  |
-| `TBoldDrawCellEvent` | event type | [19](../../../Source/Common/Support/BoldControlsDefs.pas#L19) |  | ⚪ not started |  |
-| `TBoldStretchMode` | enum | [21](../../../Source/Common/Support/BoldControlsDefs.pas#L21) |  | ⚪ not started |  |
-| `TBoldNodeExpansionMethod` | enum | [23](../../../Source/Common/Support/BoldControlsDefs.pas#L23) |  | ⚪ not started |  |
-| `TBoldMouseDirection` | enum | [24](../../../Source/Common/Support/BoldControlsDefs.pas#L24) |  | ⚪ not started |  |
-| `TBoldComboSelectChangeAction` | enum | [26](../../../Source/Common/Support/BoldControlsDefs.pas#L26) |  | ⚪ not started |  |
-| `TBoldEditButtonStyle` | enum | [28](../../../Source/Common/Support/BoldControlsDefs.pas#L28) |  | ⚪ not started |  |
-| `BoldPropertiesController_SupportedPropertyTypes` | const | [31](../../../Source/Common/Support/BoldControlsDefs.pas#L31) |  | ⚪ not started |  |
+| `TBoldColumnValue` | enum | [12](../../../Source/Common/Support/BoldControlsDefs.pas#L12) | [`TBoldColumnValue`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L15) | 🟢 ported |  |
+| `TBoldColumnValues` | set | [15](../../../Source/Common/Support/BoldControlsDefs.pas#L15) | [`global using TBoldColumnValues`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.Aliases.cs#L5) | 🟢 ported: Global using alias of DelphiSet&lt;TBoldColumnValue&gt;, in BoldControlsDefs.Aliases.cs. |  |
+| `TBoldCWAdjust` | enum | [16](../../../Source/Common/Support/BoldControlsDefs.pas#L16) | [`TBoldCWAdjust`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L19) | 🟢 ported |  |
+| `TBoldCWAdjustSet` | set | [17](../../../Source/Common/Support/BoldControlsDefs.pas#L17) | [`global using TBoldCWAdjustSet`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.Aliases.cs#L6) | 🟢 ported: Global using alias of DelphiSet&lt;TBoldCWAdjust&gt;, in BoldControlsDefs.Aliases.cs. |  |
+| `TBoldDrawCellEvent` | event type | [19](../../../Source/Common/Support/BoldControlsDefs.pas#L19) | [`TBoldDrawCellEvent`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L23) | 🟢 ported: The state is a DataGridView cell's state, where Delphi's is a TGridDrawState. |  |
+| `TBoldStretchMode` | enum | [21](../../../Source/Common/Support/BoldControlsDefs.pas#L21) | [`TBoldStretchMode`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L27) | 🟢 ported |  |
+| `TBoldNodeExpansionMethod` | enum | [23](../../../Source/Common/Support/BoldControlsDefs.pas#L23) | [`TBoldNodeExpansionMethod`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L31) | 🟢 ported |  |
+| `TBoldMouseDirection` | enum | [24](../../../Source/Common/Support/BoldControlsDefs.pas#L24) | [`TBoldMouseDirection`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L35) | 🟢 ported |  |
+| `TBoldComboSelectChangeAction` | enum | [26](../../../Source/Common/Support/BoldControlsDefs.pas#L26) | [`TBoldComboSelectChangeAction`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L39) | 🟢 ported |  |
+| `TBoldEditButtonStyle` | enum | [28](../../../Source/Common/Support/BoldControlsDefs.pas#L28) | [`TBoldEditButtonStyle`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L43) | 🟢 ported |  |
+| `BoldPropertiesController_SupportedPropertyTypes` | const | [31](../../../Source/Common/Support/BoldControlsDefs.pas#L31) | [`[assembly: Delphi] in BoldControlsDefs.cs`](../../src/Bold.WinForms/Common/Support/BoldControlsDefs.cs#L9) | 🔵 replaced: The Delphi type kinds a properties controller sets; the port's controller sets properties of any type through reflection. |  |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldLabel.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas) (331 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 36 symbols done, 0 verified |
+| Status | 🟡 partial: 35 of 36 symbols done, 0 verified |
 
-⚪ 36 not started
+🟢 27 ported · 🔵 8 replaced · ⚪ 1 not started
 
 ## Unit level
 
@@ -18,49 +18,62 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCustomLabel` | class | [26](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L26) |  | ⚪ not started |  |
-| `TBoldLabel` | class | [75](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L75) |  | ⚪ not started |  |
+| `TBoldCustomLabel` | class | [26](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L26) | [`TBoldCustomLabel`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L22) | 🟢 ported: A WinForms Label. |  |
+| `TBoldLabel` | class | [75](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L75) | [`TBoldLabel`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L251) | 🟢 ported |  |
 | `TExposedControl` | class, implementation | [127](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L127) |  | ⚪ not started |  |
 
 ## TBoldCustomLabel
 
-class at [line 26](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L26); 🟢 ported, C# [`TBoldCustomLabel`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContextType` | method, private | [33](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L33) · [body 279](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L279) |  | ⚪ not started |  |
-| `SetExpression` | method, private | [34](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L34) · [body 292](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L292) |  | ⚪ not started |  |
-| `GetExpression` | method, private | [35](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L35) · [body 287](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L287) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [36](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L36) · [body 297](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L297) |  | ⚪ not started |  |
-| `_FontChanged` | method, private | [37](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L37) · [body 165](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L165) |  | ⚪ not started |  |
-| `AfterMakeUptoDate` | method, private | [38](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L38) · [body 232](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L232) |  | ⚪ not started |  |
-| `CMParentColorChanged` | method, private | [39](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L39) · [body 175](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L175) |  | ⚪ not started |  |
-| `GetBoldHandle` | method, private | [40](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L40) · [body 269](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L269) |  | ⚪ not started |  |
-| `GetColor` | method, private | [41](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L41) · [body 202](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L202) |  | ⚪ not started |  |
-| `GetEffectiveColor` | method, private | [42](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L42) · [body 207](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L207) |  | ⚪ not started |  |
-| `GetEffectiveFont` | method, private | [43](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L43) · [body 189](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L189) |  | ⚪ not started |  |
-| `GetFollower` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L44) · [body 274](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L274) |  | ⚪ not started |  |
-| `GetFont` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L45) · [body 170](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L170) |  | ⚪ not started |  |
-| `GetText` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L46) · [body 264](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L264) |  | ⚪ not started |  |
-| `SetBoldDisplay` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L47) · [body 227](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L227) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [48](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L48) · [body 222](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L222) |  | ⚪ not started |  |
-| `SetColor` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L49) · [body 194](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L194) |  | ⚪ not started |  |
-| `SetEffectiveColor` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L50) · [body 212](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L212) |  | ⚪ not started |  |
-| `SetFont` | method, private | [51](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L51) · [body 158](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L158) |  | ⚪ not started |  |
-| `Loaded` | method, protected | [54](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L54) · [body 152](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L152) |  | ⚪ not started |  |
-| `DoEndDrag` | method, protected | [55](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L55) · [body 302](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L302) |  | ⚪ not started |  |
-| `DragOver` | method, protected | [56](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L56) · [body 314](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L314) |  | ⚪ not started |  |
-| `DoStartDrag` | method, protected | [57](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L57) · [body 308](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L308) |  | ⚪ not started |  |
-| `BoldHandle` | property, protected | [59](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L59) |  | ⚪ not started |  |
-| `BoldProperties` | property, protected | [60](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L60) |  | ⚪ not started |  |
-| `Color` | property, protected | [62](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L62) |  | ⚪ not started |  |
-| `EffectiveColor` | property, protected | [63](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L63) |  | ⚪ not started |  |
-| `EffectiveFont` | property, protected | [64](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L64) |  | ⚪ not started |  |
-| `Font` | property, protected | [65](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L65) |  | ⚪ not started |  |
-| `Follower` | property, protected | [66](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L66) |  | ⚪ not started |  |
-| `Create` | constructor | [69](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L69) · [body 130](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L130) |  | ⚪ not started |  |
-| `Destroy` | destructor | [70](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L70) · [body 144](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L144) |  | ⚪ not started |  |
-| `DragDrop` | method | [71](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L71) · [body 322](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L322) |  | ⚪ not started |  |
+| `GetContextType` | method, private | [33](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L33) · [body 279](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L279) | [`TBoldCustomLabel.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L150) | 🟢 ported |  |
+| `SetExpression` | method, private | [34](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L34) · [body 292](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L292) | [`TBoldCustomLabel.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L160) | 🟢 ported |  |
+| `GetExpression` | method, private | [35](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L35) · [body 287](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L287) | [`TBoldCustomLabel.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L155) | 🟢 ported |  |
+| `GetVariableList` | method, private | [36](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L36) · [body 297](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L297) | [`TBoldCustomLabel.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L165) | 🟢 ported |  |
+| `_FontChanged` | method, private | [37](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L37) · [body 165](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L165) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L15) | 🔵 replaced: OnFontChanged. |  |
+| `AfterMakeUptoDate` | method, private | [38](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L38) · [body 232](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L232) | [`TBoldCustomLabel.AfterMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L101) | 🟢 ported |  |
+| `CMParentColorChanged` | method, private | [39](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L39) · [body 175](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L175) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L10) | 🔵 replaced: Followed the parent's color; a WinForms label's BackColor is ambient (its parent's) until it is set. |  |
+| `GetBoldHandle` | method, private | [40](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L40) · [body 269](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L269) | [`TBoldCustomLabel.GetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L144) | 🟢 ported |  |
+| `GetColor` | method, private | [41](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L41) · [body 202](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L202) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L13) | 🔵 replaced: The WinForms BackColor property. |  |
+| `GetEffectiveColor` | method, private | [42](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L42) · [body 207](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L207) | [`TBoldCustomLabel.GetEffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L82) | 🟢 ported |  |
+| `GetEffectiveFont` | method, private | [43](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L43) · [body 189](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L189) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L16) | 🔵 replaced: EffectiveFont is the font the label shows. |  |
+| `GetFollower` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L44) · [body 274](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L274) | [`TBoldCustomLabel.GetFollower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L147) | 🟢 ported |  |
+| `GetFont` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L45) · [body 170](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L170) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L11) | 🔵 replaced: The WinForms Font property. |  |
+| `GetText` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L46) · [body 264](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L264) | [`TBoldCustomLabel.GetText`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L141) | 🟢 ported |  |
+| `SetBoldDisplay` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L47) · [body 227](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L227) | [`TBoldCustomLabel.SetBoldDisplay`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L97) | 🟢 ported |  |
+| `SetBoldHandle` | method, private | [48](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L48) · [body 222](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L222) | [`TBoldCustomLabel.SetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L94) | 🟢 ported |  |
+| `SetColor` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L49) · [body 194](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L194) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L14) | 🔵 replaced: The WinForms BackColor property. |  |
+| `SetEffectiveColor` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L50) · [body 212](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L212) | [`TBoldCustomLabel.SetEffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L85) | 🟢 ported |  |
+| `SetFont` | method, private | [51](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L51) · [body 158](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L158) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L12) | 🔵 replaced: The WinForms Font property. |  |
+| `Loaded` | method, protected | [54](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L54) · [body 152](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L152) | [`[assembly: Delphi] in BoldLabel.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L9) | 🔵 replaced: Took the color read from the form as the shown color; TBoldControlLook keeps the given and the shown colors apart. |  |
+| `DoEndDrag` | method, protected | [55](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L55) · [body 302](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L302) | [`TBoldCustomLabel.DoEndDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L170) | 🟢 ported |  |
+| `DragOver` | method, protected | [56](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L56) · [body 314](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L314) | [`TBoldCustomLabel.OnDragOver`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L176) | 🟢 ported: OnDragOver; the DragOver event is raised first. |  |
+| `DoStartDrag` | method, protected | [57](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L57) · [body 308](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L308) | [`TBoldCustomLabel.DoStartDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L173) | 🟢 ported |  |
+| `BoldHandle` | property, protected | [59](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L59) | [`TBoldCustomLabel.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L197) | 🟢 ported |  |
+| `BoldProperties` | property, protected | [60](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L60) | [`TBoldCustomLabel.BoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L205) | 🟢 ported |  |
+| `Color` | property, protected | [62](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L62) | [`TBoldCustomLabel.BackColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L217) | 🟢 ported |  |
+| `EffectiveColor` | property, protected | [63](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L63) | [`TBoldCustomLabel.EffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L225) | 🟢 ported |  |
+| `EffectiveFont` | property, protected | [64](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L64) | [`TBoldCustomLabel.EffectiveFont`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L233) | 🟢 ported: The WinForms font shown, which the renderer may have changed from Font. |  |
+| `Font` | property, protected | [65](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L65) | [`TBoldCustomLabel.Font`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L238) | 🟢 ported |  |
+| `Follower` | property, protected | [66](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L66) | [`TBoldCustomLabel.Follower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L246) | 🟢 ported |  |
+| `Create` | constructor | [69](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L69) · [body 130](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L130) | [`TBoldCustomLabel.TBoldCustomLabel`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L29) | 🟢 ported |  |
+| `Destroy` | destructor | [70](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L70) · [body 144](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L144) | [`TBoldCustomLabel.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L41) | 🟢 ported |  |
+| `DragDrop` | method | [71](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L71) · [body 322](../../../Source/BoldAwareGUI/BoldControls/BoldLabel.pas#L322) | [`TBoldCustomLabel.OnDragDrop`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L186) | 🟢 ported: OnDragDrop; the DragDrop event is raised first. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldCustomLabel.OnParentChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L52) (method)
+- [`TBoldCustomLabel.OnFontChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L63) (method)
+- [`TBoldCustomLabel.OnBackColorChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L72) (method)
+- [`TBoldCustomLabel.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L152) (method)
+- [`TBoldCustomLabel.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L157) (method)
+- [`TBoldCustomLabel.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L162) (method)
+- [`TBoldCustomLabel.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L167) (method)
+- [`TBoldCustomLabel.Caption`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs#L213) (property)
 
 ## Dependencies
 

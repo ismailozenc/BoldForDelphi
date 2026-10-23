@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Environment/BoldEnvironmentVCL.pas`](../../../Source/Common/Environment/BoldEnvironmentVCL.pas) (202 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs` |
+| C# | [`CSharp/src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 20 symbols done, 0 verified |
+| Status | 🟢 ported: 20 of 20 symbols done, 0 verified |
 | Note | Bold.Core gets a callback interface; Bold.WinForms supplies the VCL-free implementation. |
 
-⚪ 20 not started
+🟢 18 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -19,40 +19,48 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAppEventQueue` | class, implementation | [27](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L27) |  | ⚪ not started |  |
-| `TBoldVCLEnvironmentConfiguration` | class, implementation | [42](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L42) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [199](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L199) |  | ⚪ not started |  |
+| `TBoldAppEventQueue` | class, implementation | [27](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L27) | [`TBoldAppEventQueue`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L19) | 🟢 ported: Application.Idle stands in for TApplicationEvents.OnIdle. |  |
+| `TBoldVCLEnvironmentConfiguration` | class, implementation | [42](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L42) | [`TBoldVCLEnvironmentConfiguration`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L151) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [199](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L199) | [`[assembly: Delphi] in BoldEnvironmentVCL.cs`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L8) | 🟢 ported: BoldWinForms.Initialize, which runs when Bold.WinForms is first used, installs the configuration. |  |
 
 ## TBoldAppEventQueue
 
-class at [line 27](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L27); ⚪ not started.
+class at [line 27](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L27); 🟢 ported, C# [`TBoldAppEventQueue`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ApplicationEventsOnIdle` | method, private | [31](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L31) · [body 161](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L161) |  | ⚪ not started |  |
-| `GetAppEvents` | method, private | [32](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L32) · [body 192](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L192) |  | ⚪ not started |  |
-| `AppEvents` | property, protected | [34](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L34) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L36) · [body 186](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L186) |  | ⚪ not started |  |
-| `DeActivateDisplayQueue` | method | [37](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L37) · [body 179](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L179) |  | ⚪ not started |  |
-| `ActivateDisplayQueue` | method | [38](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L38) · [body 154](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L154) |  | ⚪ not started |  |
+| `ApplicationEventsOnIdle` | method, private | [31](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L31) · [body 161](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L161) | [`TBoldAppEventQueue.ApplicationEventsOnIdle`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L84) | 🟢 ported: Delphi's OnIdle had a Done parameter that kept the idle events coming; here the queue posts a message to get another one. |  |
+| `GetAppEvents` | method, private | [32](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L32) · [body 192](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L192) | [`[assembly: Delphi] in BoldEnvironmentVCL.cs`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L10) | 🔵 replaced: See AppEvents. |  |
+| `AppEvents` | property, protected | [34](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L34) | [`[assembly: Delphi] in BoldEnvironmentVCL.cs`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L9) | 🔵 replaced: Delphi made a TApplicationEvents component for OnIdle; the queue handles the static Application.Idle event. |  |
+| `Destroy` | destructor | [36](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L36) · [body 186](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L186) | [`TBoldAppEventQueue.Dispose`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L35) | 🟢 ported |  |
+| `DeActivateDisplayQueue` | method | [37](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L37) · [body 179](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L179) | [`TBoldAppEventQueue.DeActivateDisplayQueue`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L132) | 🟢 ported |  |
+| `ActivateDisplayQueue` | method | [38](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L38) · [body 154](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L154) | [`TBoldAppEventQueue.ActivateDisplayQueue`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L124) | 🟢 ported |  |
 
 ## TBoldVCLEnvironmentConfiguration
 
-class at [line 42](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L42); ⚪ not started.
+class at [line 42](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L42); 🟢 ported, C# [`TBoldVCLEnvironmentConfiguration`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L151).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetName` | method, protected | [44](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L44) · [body 77](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L77) |  | ⚪ not started |  |
-| `GetRootComponent` | method, protected | [45](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L45) · [body 87](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L87) |  | ⚪ not started |  |
-| `GetQueueClass` | method, protected | [46](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L46) · [body 82](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L82) |  | ⚪ not started |  |
-| `HandleDesigntimeException` | method | [48](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L48) · [body 93](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L93) |  | ⚪ not started |  |
-| `UpdateDesigner` | method | [49](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L49) · [body 119](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L119) |  | ⚪ not started |  |
-| `IsFormOrDataModule` | method | [50](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L50) · [body 99](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L99) |  | ⚪ not started |  |
-| `AskUser` | method | [51](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L51) · [body 58](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L58) |  | ⚪ not started |  |
-| `ProcessMessages` | method | [52](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L52) · [body 105](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L105) |  | ⚪ not started |  |
-| `BringToFront` | method | [53](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L53) · [body 64](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L64) |  | ⚪ not started |  |
-| `TriggerQueueMechanism` | method | [54](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L54) · [body 111](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L111) |  | ⚪ not started |  |
-| `FocusMainForm` | method | [55](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L55) · [body 70](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L70) |  | ⚪ not started |  |
+| `GetName` | method, protected | [44](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L44) · [body 77](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L77) | [`TBoldVCLEnvironmentConfiguration.GetName`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L177) | 🟢 ported: WinForms where Delphi says VCL. |  |
+| `GetRootComponent` | method, protected | [45](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L45) · [body 87](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L87) | [`TBoldVCLEnvironmentConfiguration.GetRootComponent`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L184) | 🟢 ported: A container disposed on Application.ApplicationExit stands in for the Application component. |  |
+| `GetQueueClass` | method, protected | [46](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L46) · [body 82](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L82) | [`TBoldVCLEnvironmentConfiguration.GetQueueClass`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L180) | 🟢 ported |  |
+| `HandleDesigntimeException` | method | [48](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L48) · [body 93](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L93) | [`TBoldVCLEnvironmentConfiguration.HandleDesigntimeException`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L197) | 🟢 ported: Delphi showed the exception being handled; .NET has no current exception, so this shows which component failed. |  |
+| `UpdateDesigner` | method | [49](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L49) · [body 119](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L119) | [`TBoldVCLEnvironmentConfiguration.UpdateDesigner`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L214) | 🟢 ported: Through the designer's IComponentChangeService, where Delphi told the form's designer. |  |
+| `IsFormOrDataModule` | method | [50](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L50) · [body 99](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L99) | [`TBoldVCLEnvironmentConfiguration.IsFormOrDataModule`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L203) | 🟢 ported: A Form, a UserControl or a component container, for Delphi's forms and data modules. |  |
+| `AskUser` | method | [51](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L51) · [body 58](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L58) | [`TBoldVCLEnvironmentConfiguration.AskUser`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L157) | 🟢 ported |  |
+| `ProcessMessages` | method | [52](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L52) · [body 105](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L105) | [`TBoldVCLEnvironmentConfiguration.ProcessMessages`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L206) | 🟢 ported |  |
+| `BringToFront` | method | [53](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L53) · [body 64](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L64) | [`TBoldVCLEnvironmentConfiguration.BringToFront`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L161) | 🟢 ported |  |
+| `TriggerQueueMechanism` | method | [54](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L54) · [body 111](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L111) | [`TBoldVCLEnvironmentConfiguration.TriggerQueueMechanism`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L210) | 🟢 ported: Posts an empty message to the UI thread where Delphi posted WM\_PAINT. |  |
+| `FocusMainForm` | method | [55](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L55) · [body 70](../../../Source/Common/Environment/BoldEnvironmentVCL.pas#L70) | [`TBoldVCLEnvironmentConfiguration.FocusMainForm`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L171) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldAppEventQueue.TBoldAppEventQueue`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L30) (constructor)
+- [`TBoldAppEventQueue.Wake`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L71) (method)
+- [`TBoldAppEventQueue.EnsureDequeing`](../../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs#L139) (method)
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas) (259 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 27 symbols done, 0 verified |
+| Status | 🟢 ported: 27 of 27 symbols done, 0 verified |
 
-⚪ 27 not started
+🟢 27 ported
 
 ## Unit level
 
@@ -18,40 +18,50 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCustomCheckBox` | class | [24](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L24) |  | ⚪ not started |  |
-| `TBoldCheckBox` | class | [64](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L64) |  | ⚪ not started |  |
+| `TBoldCustomCheckBox` | class | [24](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L24) | [`TBoldCustomCheckBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L15) | 🟢 ported: A WinForms CheckBox; it toggles itself (AutoCheck is off) only when it may change the element. |  |
+| `TBoldCheckBox` | class | [64](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L64) | [`TBoldCheckBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L269) | 🟢 ported |  |
 
 ## TBoldCustomCheckBox
 
-class at [line 24](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L24); ⚪ not started.
+class at [line 24](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L24); 🟢 ported, C# [`TBoldCustomCheckBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContextType` | method, private | [31](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L31) · [body 236](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L236) |  | ⚪ not started |  |
-| `SetExpression` | method, private | [32](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L32) · [body 249](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L249) |  | ⚪ not started |  |
-| `GetExpression` | method, private | [33](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L33) · [body 244](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L244) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [34](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L34) · [body 254](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L254) |  | ⚪ not started |  |
-| `GetBoldHandle` | method, private | [36](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L36) · [body 226](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L226) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [37](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L37) · [body 184](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L184) |  | ⚪ not started |  |
-| `GetFollower` | method, private | [38](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L38) · [body 231](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L231) |  | ⚪ not started |  |
-| `AfterMakeUptoDate` | method, private | [39](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L39) · [body 194](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L194) |  | ⚪ not started |  |
-| `CNCommand` | method, private | [40](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L40) · [body 220](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L220) |  | ⚪ not started |  |
-| `CMChanged` | method, private | [41](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L41) · [body 201](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L201) |  | ⚪ not started |  |
-| `CMExit` | method, private | [42](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L42) · [body 213](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L213) |  | ⚪ not started |  |
-| `GetState` | method, private | [43](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L43) · [body 164](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L164) |  | ⚪ not started |  |
-| `SetBoldDisplay` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L44) · [body 189](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L189) |  | ⚪ not started |  |
-| `SetReadOnly` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L45) · [body 155](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L155) |  | ⚪ not started |  |
-| `SetState` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L46) · [body 169](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L169) |  | ⚪ not started |  |
-| `Follower` | property, protected | [48](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L48) |  | ⚪ not started |  |
-| `GetChecked` | method, protected | [50](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L50) · [body 150](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L150) |  | ⚪ not started |  |
-| `BoldHandle` | property, protected | [51](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L51) |  | ⚪ not started |  |
-| `BoldProperties` | property, protected | [52](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L52) |  | ⚪ not started |  |
-| `Checked` | property, protected | [53](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L53) |  | ⚪ not started |  |
-| `EffectiveReadOnly` | property, protected | [54](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L54) |  | ⚪ not started |  |
-| `ReadOnly` | property, protected | [55](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L55) |  | ⚪ not started |  |
-| `State` | property, protected | [56](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L56) |  | ⚪ not started |  |
-| `Create` | constructor | [59](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L59) · [body 124](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L124) |  | ⚪ not started |  |
-| `Destroy` | destructor | [60](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L60) · [body 133](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L133) |  | ⚪ not started |  |
+| `GetContextType` | method, private | [31](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L31) · [body 236](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L236) | [`TBoldCustomCheckBox.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L202) | 🟢 ported |  |
+| `SetExpression` | method, private | [32](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L32) · [body 249](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L249) | [`TBoldCustomCheckBox.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L212) | 🟢 ported |  |
+| `GetExpression` | method, private | [33](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L33) · [body 244](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L244) | [`TBoldCustomCheckBox.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L207) | 🟢 ported |  |
+| `GetVariableList` | method, private | [34](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L34) · [body 254](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L254) | [`TBoldCustomCheckBox.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L217) | 🟢 ported |  |
+| `GetBoldHandle` | method, private | [36](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L36) · [body 226](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L226) | [`TBoldCustomCheckBox.GetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L196) | 🟢 ported |  |
+| `SetBoldHandle` | method, private | [37](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L37) · [body 184](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L184) | [`TBoldCustomCheckBox.SetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L124) | 🟢 ported |  |
+| `GetFollower` | method, private | [38](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L38) · [body 231](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L231) | [`TBoldCustomCheckBox.GetFollower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L199) | 🟢 ported |  |
+| `AfterMakeUptoDate` | method, private | [39](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L39) · [body 194](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L194) | [`TBoldCustomCheckBox.AfterMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L131) | 🟢 ported |  |
+| `CNCommand` | method, private | [40](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L40) · [body 220](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L220) | [`TBoldCustomCheckBox.OnClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L180) | 🟢 ported: OnClick with AutoCheck off, where Delphi took the button's click notification. |  |
+| `CMChanged` | method, private | [41](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L41) · [body 201](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L201) | [`TBoldCustomCheckBox.OnCheckStateChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L148) | 🟢 ported |  |
+| `CMExit` | method, private | [42](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L42) · [body 213](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L213) | [`TBoldCustomCheckBox.OnLeave`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L168) | 🟢 ported |  |
+| `GetState` | method, private | [43](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L43) · [body 164](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L164) | [`TBoldCustomCheckBox.GetState`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L104) | 🟢 ported |  |
+| `SetBoldDisplay` | method, private | [44](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L44) · [body 189](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L189) | [`TBoldCustomCheckBox.SetBoldDisplay`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L127) | 🟢 ported |  |
+| `SetReadOnly` | method, private | [45](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L45) · [body 155](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L155) | [`TBoldCustomCheckBox.SetReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L80) | 🟢 ported |  |
+| `SetState` | method, private | [46](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L46) · [body 169](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L169) | [`TBoldCustomCheckBox.SetState`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L108) | 🟢 ported |  |
+| `Follower` | property, protected | [48](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L48) | [`TBoldCustomCheckBox.Follower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L223) | 🟢 ported |  |
+| `GetChecked` | method, protected | [50](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L50) · [body 150](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L150) | [`TBoldCustomCheckBox.GetChecked`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L77) | 🟢 ported |  |
+| `BoldHandle` | property, protected | [51](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L51) | [`TBoldCustomCheckBox.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L227) | 🟢 ported |  |
+| `BoldProperties` | property, protected | [52](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L52) | [`TBoldCustomCheckBox.BoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L235) | 🟢 ported |  |
+| `Checked` | property, protected | [53](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L53) | [`TBoldCustomCheckBox.Checked`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L244) | 🟢 ported |  |
+| `EffectiveReadOnly` | property, protected | [54](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L54) | [`TBoldCustomCheckBox.EffectiveReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L248) | 🟢 ported |  |
+| `ReadOnly` | property, protected | [55](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L55) | [`TBoldCustomCheckBox.ReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L252) | 🟢 ported |  |
+| `State` | property, protected | [56](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L56) | [`TBoldCustomCheckBox.State`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L260) | 🟢 ported |  |
+| `Create` | constructor | [59](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L59) · [body 124](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L124) | [`TBoldCustomCheckBox.TBoldCustomCheckBox`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L24) | 🟢 ported |  |
+| `Destroy` | destructor | [60](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L60) · [body 133](../../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas#L133) | [`TBoldCustomCheckBox.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L35) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldCustomCheckBox.OnParentChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L65) (method)
+- [`TBoldCustomCheckBox.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L204) (method)
+- [`TBoldCustomCheckBox.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L209) (method)
+- [`TBoldCustomCheckBox.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L214) (method)
+- [`TBoldCustomCheckBox.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs#L219) (method)
 
 ## Dependencies
 

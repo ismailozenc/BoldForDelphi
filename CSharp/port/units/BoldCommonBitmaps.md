@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldCommonBitmaps.pas`](../../../Source/Common/Support/BoldCommonBitmaps.pas) (84 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs` |
+| C# | [`CSharp/src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | 🟢 ported: 18 of 18 symbols done, 0 verified |
 
-⚪ 18 not started
+🟢 17 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,24 +18,30 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `bmpBoldGridSelected` | var | [9](../../../Source/Common/Support/BoldCommonBitmaps.pas#L9) |  | ⚪ not started |  |
-| `bmpBoldGridCurrent` | var | [10](../../../Source/Common/Support/BoldCommonBitmaps.pas#L10) |  | ⚪ not started |  |
-| `bmpBoldGridConstraint_true` | var | [11](../../../Source/Common/Support/BoldCommonBitmaps.pas#L11) |  | ⚪ not started |  |
-| `bmpBoldGridConstraint_false` | var | [12](../../../Source/Common/Support/BoldCommonBitmaps.pas#L12) |  | ⚪ not started |  |
-| `bmpBoldNavigatorDelete` | var | [14](../../../Source/Common/Support/BoldCommonBitmaps.pas#L14) |  | ⚪ not started |  |
-| `bmpBoldNavigatorFirst` | var | [15](../../../Source/Common/Support/BoldCommonBitmaps.pas#L15) |  | ⚪ not started |  |
-| `bmpBoldNavigatorLast` | var | [16](../../../Source/Common/Support/BoldCommonBitmaps.pas#L16) |  | ⚪ not started |  |
-| `bmpBoldNavigatorInsert` | var | [17](../../../Source/Common/Support/BoldCommonBitmaps.pas#L17) |  | ⚪ not started |  |
-| `bmpBoldNavigatorNext` | var | [18](../../../Source/Common/Support/BoldCommonBitmaps.pas#L18) |  | ⚪ not started |  |
-| `bmpBoldNavigatorPrior` | var | [19](../../../Source/Common/Support/BoldCommonBitmaps.pas#L19) |  | ⚪ not started |  |
-| `bmpBoldNavigatorMoveUp` | var | [20](../../../Source/Common/Support/BoldCommonBitmaps.pas#L20) |  | ⚪ not started |  |
-| `bmpBoldNavigatorMoveDown` | var | [21](../../../Source/Common/Support/BoldCommonBitmaps.pas#L21) |  | ⚪ not started |  |
-| `bmpBOLDEDIT_ELLIPSIS` | var | [23](../../../Source/Common/Support/BoldCommonBitmaps.pas#L23) |  | ⚪ not started |  |
-| `NewBitMap` | routine, implementation | [32](../../../Source/Common/Support/BoldCommonBitmaps.pas#L32) |  | ⚪ not started |  |
-| `LoadBitmapsFromResources` | routine, implementation | [39](../../../Source/Common/Support/BoldCommonBitmaps.pas#L39) |  | ⚪ not started |  |
-| `FreeAllBitMaps` | routine, implementation | [58](../../../Source/Common/Support/BoldCommonBitmaps.pas#L58) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [77](../../../Source/Common/Support/BoldCommonBitmaps.pas#L77) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [80](../../../Source/Common/Support/BoldCommonBitmaps.pas#L80) |  | ⚪ not started |  |
+| `bmpBoldGridSelected` | var | [9](../../../Source/Common/Support/BoldCommonBitmaps.pas#L9) | [`BoldCommonBitmaps.bmpBoldGridSelected`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L78) | 🟢 ported |  |
+| `bmpBoldGridCurrent` | var | [10](../../../Source/Common/Support/BoldCommonBitmaps.pas#L10) | [`BoldCommonBitmaps.bmpBoldGridCurrent`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L79) | 🟢 ported |  |
+| `bmpBoldGridConstraint_true` | var | [11](../../../Source/Common/Support/BoldCommonBitmaps.pas#L11) | [`BoldCommonBitmaps.bmpBoldGridConstraint_true`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L80) | 🟢 ported |  |
+| `bmpBoldGridConstraint_false` | var | [12](../../../Source/Common/Support/BoldCommonBitmaps.pas#L12) | [`BoldCommonBitmaps.bmpBoldGridConstraint_false`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L81) | 🟢 ported |  |
+| `bmpBoldNavigatorDelete` | var | [14](../../../Source/Common/Support/BoldCommonBitmaps.pas#L14) | [`BoldCommonBitmaps.bmpBoldNavigatorDelete`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L82) | 🟢 ported |  |
+| `bmpBoldNavigatorFirst` | var | [15](../../../Source/Common/Support/BoldCommonBitmaps.pas#L15) | [`BoldCommonBitmaps.bmpBoldNavigatorFirst`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L83) | 🟢 ported |  |
+| `bmpBoldNavigatorLast` | var | [16](../../../Source/Common/Support/BoldCommonBitmaps.pas#L16) | [`BoldCommonBitmaps.bmpBoldNavigatorLast`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L84) | 🟢 ported |  |
+| `bmpBoldNavigatorInsert` | var | [17](../../../Source/Common/Support/BoldCommonBitmaps.pas#L17) | [`BoldCommonBitmaps.bmpBoldNavigatorInsert`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L85) | 🟢 ported |  |
+| `bmpBoldNavigatorNext` | var | [18](../../../Source/Common/Support/BoldCommonBitmaps.pas#L18) | [`BoldCommonBitmaps.bmpBoldNavigatorNext`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L86) | 🟢 ported |  |
+| `bmpBoldNavigatorPrior` | var | [19](../../../Source/Common/Support/BoldCommonBitmaps.pas#L19) | [`BoldCommonBitmaps.bmpBoldNavigatorPrior`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L87) | 🟢 ported |  |
+| `bmpBoldNavigatorMoveUp` | var | [20](../../../Source/Common/Support/BoldCommonBitmaps.pas#L20) | [`BoldCommonBitmaps.bmpBoldNavigatorMoveUp`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L88) | 🟢 ported |  |
+| `bmpBoldNavigatorMoveDown` | var | [21](../../../Source/Common/Support/BoldCommonBitmaps.pas#L21) | [`BoldCommonBitmaps.bmpBoldNavigatorMoveDown`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L89) | 🟢 ported |  |
+| `bmpBOLDEDIT_ELLIPSIS` | var | [23](../../../Source/Common/Support/BoldCommonBitmaps.pas#L23) | [`BoldCommonBitmaps.bmpBOLDEDIT_ELLIPSIS`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L90) | 🟢 ported |  |
+| `NewBitMap` | routine, implementation | [32](../../../Source/Common/Support/BoldCommonBitmaps.pas#L32) | [`BoldCommonBitmaps.NewBitMap`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L18) | 🟢 ported: Reads the bitmap embedded in Bold.WinForms (from Images in the repository). |  |
+| `LoadBitmapsFromResources` | routine, implementation | [39](../../../Source/Common/Support/BoldCommonBitmaps.pas#L39) | [`BoldCommonBitmaps.LoadBitmapsFromResources`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L43) | 🟢 ported |  |
+| `FreeAllBitMaps` | routine, implementation | [58](../../../Source/Common/Support/BoldCommonBitmaps.pas#L58) | [`BoldCommonBitmaps.FreeAllBitMaps`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L62) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [77](../../../Source/Common/Support/BoldCommonBitmaps.pas#L77) | [`[assembly: Delphi] in BoldCommonBitmaps.cs`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L6) | 🟢 ported: The bitmaps are loaded on first use. |  |
+| `finalization` | finalization, implementation | [80](../../../Source/Common/Support/BoldCommonBitmaps.pas#L80) | [`[assembly: Delphi] in BoldCommonBitmaps.cs`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L7) | 🔵 replaced: Freed the bitmaps; the garbage collector does that in .NET. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`BoldCommonBitmaps.Load`](../../src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs#L76) (method)
 
 ## Dependencies
 

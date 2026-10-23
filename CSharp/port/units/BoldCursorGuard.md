@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/UtilsGUI/BoldCursorGuard.pas`](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas) (40 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs` |
+| C# | [`CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs`](../../src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
 
-⚪ 4 not started
+🟢 4 ported
 
 ## Unit level
 
@@ -18,17 +18,17 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IBoldCursorGuard` | interface | [10](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L10) |  | ⚪ not started |  |
-| `TBoldCursorGuard` | class | [13](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L13) |  | ⚪ not started |  |
+| `IBoldCursorGuard` | interface | [10](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L10) | [`IBoldCursorGuard`](../../src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs#L10) | 🟢 ported: An IDisposable for a using block; Delphi's was reference counted. |  |
+| `TBoldCursorGuard` | class | [13](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L13) | [`TBoldCursorGuard`](../../src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs#L16) | 🟢 ported: Cursor.Current stands in for Screen.Cursor. |  |
 
 ## TBoldCursorGuard
 
-class at [line 13](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L13); 🟢 ported, C# [`TBoldCursorGuard`](../../src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs#L16).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [17](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L17) · [body 28](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L28) |  | ⚪ not started |  |
-| `Destroy` | destructor | [18](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L18) · [body 34](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L34) |  | ⚪ not started |  |
+| `Create` | constructor | [17](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L17) · [body 28](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L28) | [`TBoldCursorGuard.TBoldCursorGuard`](../../src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs#L21) | 🟢 ported |  |
+| `Destroy` | destructor | [18](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L18) · [body 34](../../../Source/Common/UtilsGUI/BoldCursorGuard.pas#L34) | [`TBoldCursorGuard.Dispose`](../../src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs#L28) | 🟢 ported |  |
 
 ## Dependencies
 

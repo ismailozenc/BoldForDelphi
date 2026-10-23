@@ -13,7 +13,7 @@ public enum TBoldQueueDisplayMode { dmDisplayOne, dmDisplayAll }
 [Delphi(PortStatus.Ported)]
 public abstract class TBoldQueueable : TBoldFlaggedObject, IDisposable
 {
-    private readonly object? fMatchObject;
+    private object? fMatchObject;
     private TBoldQueueable? fPrioritizedQueuable;
 
     [Delphi(PortStatus.Ported)]
@@ -258,7 +258,16 @@ public abstract class TBoldQueueable : TBoldFlaggedObject, IDisposable
 
     [Delphi(PortStatus.Ported)] public abstract void Apply();
     [Delphi(PortStatus.Ported)] public abstract void DiscardChange();
-    [Delphi(PortStatus.Ported)] public object? MatchObject => fMatchObject;
+    /// <summary>
+    /// The object the queueable belongs to (a form), for applying or discarding a form's edits. A WinForms control
+    /// knows its form only once it is placed on it, so the match object can be set later.
+    /// </summary>
+    [Delphi(PortStatus.Ported, Note = "Settable: Delphi set it once, from the control's owner at construction.")]
+    public object? MatchObject
+    {
+        get => fMatchObject;
+        set => fMatchObject = value;
+    }
     [Delphi(PortStatus.Ported)] public bool IsInDisplayList => GetElementFlag(BoldQueue.befIsInDisplayList);
 
     [Delphi(PortStatus.Ported)]

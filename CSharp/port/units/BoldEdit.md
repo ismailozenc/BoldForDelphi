@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldEdit.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas) (804 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 71 symbols done, 0 verified |
+| Status | 🟢 ported: 71 of 71 symbols done, 0 verified |
 
-⚪ 71 not started
+🟢 61 ported · 🔵 10 replaced
 
 ## Unit level
 
@@ -18,91 +18,103 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCustomEdit` | class | [30](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L30) |  | ⚪ not started |  |
-| `TBoldEdit` | class | [125](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L125) |  | ⚪ not started |  |
-| `TBoldComboButton` | class, implementation | [213](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L213) |  | ⚪ not started |  |
+| `TBoldCustomEdit` | class | [30](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L30) | [`TBoldCustomEdit`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L29) | 🟢 ported: A WinForms TextBox. |  |
+| `TBoldEdit` | class | [125](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L125) | [`TBoldEdit`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L672) | 🟢 ported |  |
+| `TBoldComboButton` | class, implementation | [213](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L213) | [`TBoldComboButton`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L678) | 🟢 ported: A Button; Delphi's was a speed button. |  |
 
 ## TBoldCustomEdit
 
-class at [line 30](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L30); 🟢 ported, C# [`TBoldCustomEdit`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetContextType` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L47) · [body 780](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L780) |  | ⚪ not started |  |
-| `SetExpression` | method, private | [48](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L48) · [body 793](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L793) |  | ⚪ not started |  |
-| `GetExpression` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L49) · [body 788](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L788) |  | ⚪ not started |  |
-| `GetVariableList` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L50) · [body 799](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L799) |  | ⚪ not started |  |
-| `GetBoldHandle` | method, private | [52](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L52) · [body 770](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L770) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [53](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L53) · [body 310](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L310) |  | ⚪ not started |  |
-| `GetFollower` | method, private | [54](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L54) · [body 775](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L775) |  | ⚪ not started |  |
-| `SetBoldDisplay` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L55) · [body 315](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L315) |  | ⚪ not started |  |
-| `SetReadOnly` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L56) · [body 320](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L320) |  | ⚪ not started |  |
-| `GetEffectiveReadOnly` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L57) · [body 329](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L329) |  | ⚪ not started |  |
-| `GetEffectiveFont` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L58) · [body 351](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L351) |  | ⚪ not started |  |
-| `GetFont` | method, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L59) · [body 346](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L346) |  | ⚪ not started |  |
-| `SetFont` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L60) · [body 334](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L334) |  | ⚪ not started |  |
-| `GetEffectiveColor` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L61) · [body 369](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L369) |  | ⚪ not started |  |
-| `SetEffectiveColor` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L62) · [body 374](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L374) |  | ⚪ not started |  |
-| `GetColor` | method, private | [63](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L63) · [body 364](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L364) |  | ⚪ not started |  |
-| `SetColor` | method, private | [64](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L64) · [body 356](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L356) |  | ⚪ not started |  |
-| `SetText` | method, private | [65](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L65) · [body 380](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L380) |  | ⚪ not started |  |
-| `GetText` | method, private | [66](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L66) · [body 389](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L389) |  | ⚪ not started |  |
-| `GetTextMargins` | method, private | [67](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L67) · [body 566](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L566) |  | ⚪ not started |  |
-| `GetButton` | method, private | [68](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L68) · [body 730](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L730) |  | ⚪ not started |  |
-| `SetFocused` | method, private | [69](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L69) · [body 432](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L432) |  | ⚪ not started |  |
-| `SetButtonStyle` | method, private | [70](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L70) · [body 702](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L702) |  | ⚪ not started |  |
-| `CMEnter` | method, private | [72](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L72) · [body 483](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L483) |  | ⚪ not started |  |
-| `CMExit` | method, private | [73](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L73) · [body 489](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L489) |  | ⚪ not started |  |
-| `WMPaint` | method, private | [74](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L74) · [body 503](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L503) |  | ⚪ not started |  |
-| `WMSize` | method, private | [75](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L75) · [body 688](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L688) |  | ⚪ not started |  |
-| `CMEnabledChanged` | method, private | [76](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L76) · [body 635](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L635) |  | ⚪ not started |  |
-| `AfterMakeUptoDate` | method, private | [78](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L78) · [body 449](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L449) |  | ⚪ not started |  |
-| `_FontChanged` | method, private | [79](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L79) · [body 341](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L341) |  | ⚪ not started |  |
-| `InvalidKey` | method, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L82) · [body 405](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L405) |  | ⚪ not started |  |
-| `Change` | method, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L83) · [body 441](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L441) |  | ⚪ not started |  |
-| `GetPopupMenu` | method, protected | [84](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L84) · [body 394](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L394) |  | ⚪ not started |  |
-| `Loaded` | method, protected | [85](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L85) · [body 253](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L253) |  | ⚪ not started |  |
-| `KeyPress` | method, protected | [86](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L86) · [body 411](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L411) |  | ⚪ not started |  |
-| `DoEndDrag` | method, protected | [87](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L87) · [body 265](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L265) |  | ⚪ not started |  |
-| `DragOver` | method, protected | [88](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L88) · [body 271](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L271) |  | ⚪ not started |  |
-| `DoStartDrag` | method, protected | [90](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L90) · [body 259](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L259) |  | ⚪ not started |  |
-| `ButtonCreate` | method, protected | [91](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L91) · [body 606](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L606) |  | ⚪ not started |  |
-| `ButtonDestroy` | method, protected | [92](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L92) · [body 620](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L620) |  | ⚪ not started |  |
-| `ButtonSetGlyph` | method, protected | [93](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L93) · [body 626](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L626) |  | ⚪ not started |  |
-| `CreateParams` | method, protected | [94](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L94) · [body 642](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L642) |  | ⚪ not started |  |
-| `CreateWnd` | method, protected | [95](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L95) · [body 649](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L649) |  | ⚪ not started |  |
-| `DestroyWnd` | method, protected | [96](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L96) · [body 660](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L660) |  | ⚪ not started |  |
-| `SetEditRect` | method, protected | [97](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L97) · [body 666](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L666) |  | ⚪ not started |  |
-| `ButtonClick` | method, protected | [98](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L98) · [body 740](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L740) |  | ⚪ not started |  |
-| `BeepOnInvalidKey` | property, protected | [100](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L100) |  | ⚪ not started |  |
-| `Button` | property, protected | [101](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L101) |  | ⚪ not started |  |
-| `ButtonControl` | property, protected | [102](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L102) |  | ⚪ not started |  |
-| `EffectiveReadOnly` | property, protected | [103](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L103) |  | ⚪ not started |  |
-| `EffectiveFont` | property, protected | [104](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L104) |  | ⚪ not started |  |
-| `EffectiveColor` | property, protected | [105](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L105) |  | ⚪ not started |  |
-| `BoldHandle` | property, protected | [107](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L107) |  | ⚪ not started |  |
-| `Follower` | property, protected | [108](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L108) |  | ⚪ not started |  |
-| `BoldProperties` | property, protected | [109](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L109) |  | ⚪ not started |  |
-| `ReadOnly` | property, protected | [110](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L110) |  | ⚪ not started |  |
-| `Text` | property, protected | [111](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L111) |  | ⚪ not started |  |
-| `Font` | property, protected | [112](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L112) |  | ⚪ not started |  |
-| `Color` | property, protected | [113](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L113) |  | ⚪ not started |  |
-| `MaxLength` | property, protected | [114](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L114) |  | ⚪ not started |  |
-| `Alignment` | property, protected | [115](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L115) |  | ⚪ not started |  |
-| `ButtonStyle` | property, protected | [116](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L116) |  | ⚪ not started |  |
-| `OnButtonClick` | property, protected | [117](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L117) |  | ⚪ not started |  |
-| `Create` | constructor | [119](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L119) · [body 221](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L221) |  | ⚪ not started |  |
-| `Destroy` | destructor | [120](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L120) · [body 236](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L236) |  | ⚪ not started |  |
-| `DragDrop` | method | [121](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L121) · [body 291](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L291) |  | ⚪ not started |  |
+| `GetContextType` | method, private | [47](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L47) · [body 780](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L780) | [`TBoldCustomEdit.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L525) | 🟢 ported |  |
+| `SetExpression` | method, private | [48](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L48) · [body 793](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L793) | [`TBoldCustomEdit.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L535) | 🟢 ported |  |
+| `GetExpression` | method, private | [49](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L49) · [body 788](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L788) | [`TBoldCustomEdit.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L530) | 🟢 ported |  |
+| `GetVariableList` | method, private | [50](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L50) · [body 799](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L799) | [`TBoldCustomEdit.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L540) | 🟢 ported |  |
+| `GetBoldHandle` | method, private | [52](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L52) · [body 770](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L770) | [`TBoldCustomEdit.GetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L519) | 🟢 ported |  |
+| `SetBoldHandle` | method, private | [53](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L53) · [body 310](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L310) | [`TBoldCustomEdit.SetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L177) | 🟢 ported |  |
+| `GetFollower` | method, private | [54](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L54) · [body 775](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L775) | [`TBoldCustomEdit.GetFollower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L522) | 🟢 ported |  |
+| `SetBoldDisplay` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L55) · [body 315](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L315) | [`TBoldCustomEdit.SetBoldDisplay`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L180) | 🟢 ported |  |
+| `SetReadOnly` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L56) · [body 320](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L320) | [`TBoldCustomEdit.SetReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L183) | 🟢 ported |  |
+| `GetEffectiveReadOnly` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L57) · [body 329](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L329) | [`TBoldCustomEdit.GetEffectiveReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L193) | 🟢 ported |  |
+| `GetEffectiveFont` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L58) · [body 351](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L351) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L20) | 🔵 replaced: EffectiveFont is the font the TextBox shows. |  |
+| `GetFont` | method, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L59) · [body 346](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L346) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L15) | 🔵 replaced: The WinForms Font property. |  |
+| `SetFont` | method, private | [60](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L60) · [body 334](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L334) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L16) | 🔵 replaced: The WinForms Font property. |  |
+| `GetEffectiveColor` | method, private | [61](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L61) · [body 369](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L369) | [`TBoldCustomEdit.GetEffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L216) | 🟢 ported |  |
+| `SetEffectiveColor` | method, private | [62](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L62) · [body 374](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L374) | [`TBoldCustomEdit.SetEffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L219) | 🟢 ported |  |
+| `GetColor` | method, private | [63](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L63) · [body 364](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L364) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L17) | 🔵 replaced: The WinForms BackColor property. |  |
+| `SetColor` | method, private | [64](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L64) · [body 356](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L356) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L18) | 🔵 replaced: The WinForms BackColor property. |  |
+| `SetText` | method, private | [65](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L65) · [body 380](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L380) | [`TBoldCustomEdit.SetText`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L228) | 🟢 ported |  |
+| `GetText` | method, private | [66](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L66) · [body 389](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L389) | [`TBoldCustomEdit.GetText`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L241) | 🟢 ported |  |
+| `GetTextMargins` | method, private | [67](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L67) · [body 566](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L566) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L12) | 🔵 replaced: The text margins for WMPaint, which the TextBox does not need. |  |
+| `GetButton` | method, private | [68](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L68) · [body 730](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L730) | [`TBoldCustomEdit.GetButton`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L503) | 🟢 ported |  |
+| `SetFocused` | method, private | [69](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L69) · [body 432](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L432) | [`TBoldCustomEdit.SetFocused`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L295) | 🟢 ported |  |
+| `SetButtonStyle` | method, private | [70](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L70) · [body 702](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L702) | [`TBoldCustomEdit.SetButtonStyle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L470) | 🟢 ported |  |
+| `CMEnter` | method, private | [72](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L72) · [body 483](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L483) | [`TBoldCustomEdit.OnEnter`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L349) | 🟢 ported |  |
+| `CMExit` | method, private | [73](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L73) · [body 489](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L489) | [`TBoldCustomEdit.OnLeave`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L357) | 🟢 ported |  |
+| `WMPaint` | method, private | [74](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L74) · [body 503](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L503) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L11) | 🔵 replaced: Drew right and centered text when not focused; a WinForms TextBox aligns its text itself (TextAlign). |  |
+| `WMSize` | method, private | [75](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L75) · [body 688](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L688) | [`TBoldCustomEdit.OnResize`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L369) | 🟢 ported |  |
+| `CMEnabledChanged` | method, private | [76](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L76) · [body 635](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L635) | [`TBoldCustomEdit.OnEnabledChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L379) | 🟢 ported |  |
+| `AfterMakeUptoDate` | method, private | [78](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L78) · [body 449](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L449) | [`TBoldCustomEdit.AfterMakeUptoDate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L320) | 🟢 ported |  |
+| `_FontChanged` | method, private | [79](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L79) · [body 341](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L341) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L19) | 🔵 replaced: OnFontChanged. |  |
+| `InvalidKey` | method, protected | [82](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L82) · [body 405](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L405) | [`TBoldCustomEdit.InvalidKey`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L262) | 🟢 ported |  |
+| `Change` | method, protected | [83](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L83) · [body 441](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L441) | [`TBoldCustomEdit.OnTextChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L309) | 🟢 ported |  |
+| `GetPopupMenu` | method, protected | [84](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L84) · [body 394](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L394) | [`TBoldCustomEdit.GetPopupMenu`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L245) | 🟢 ported: Gives the menu for a right click; a TextBox shows its own menu when it has none. |  |
+| `Loaded` | method, protected | [85](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L85) · [body 253](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L253) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L14) | 🔵 replaced: Took the color read from the form as the shown color; TBoldControlLook keeps the given and the shown colors apart. |  |
+| `KeyPress` | method, protected | [86](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L86) · [body 411](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L411) | [`TBoldCustomEdit.OnKeyPress`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L272) | 🟢 ported |  |
+| `DoEndDrag` | method, protected | [87](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L87) · [body 265](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L265) | [`TBoldCustomEdit.DoEndDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L118) | 🟢 ported |  |
+| `DragOver` | method, protected | [88](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L88) · [body 271](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L271) | [`TBoldCustomEdit.OnDragOver`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L125) | 🟢 ported: OnDragOver; the DragOver event is raised first. |  |
+| `DoStartDrag` | method, protected | [90](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L90) · [body 259](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L259) | [`TBoldCustomEdit.DoStartDrag`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L115) | 🟢 ported |  |
+| `ButtonCreate` | method, protected | [91](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L91) · [body 606](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L606) | [`TBoldCustomEdit.ButtonCreate`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L390) | 🟢 ported: One button; Delphi put a speed button in a control of its own. |  |
+| `ButtonDestroy` | method, protected | [92](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L92) · [body 620](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L620) | [`TBoldCustomEdit.ButtonDestroy`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L398) | 🟢 ported |  |
+| `ButtonSetGlyph` | method, protected | [93](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L93) · [body 626](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L626) | [`TBoldCustomEdit.ButtonSetGlyph`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L410) | 🟢 ported |  |
+| `CreateParams` | method, protected | [94](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L94) · [body 642](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L642) | [`[assembly: Delphi] in BoldEdit.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L13) | 🔵 replaced: Made the edit multi-line so its text rectangle could leave room for the button; the TextBox's right margin does that (SetEditRect). |  |
+| `CreateWnd` | method, protected | [95](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L95) · [body 649](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L649) | [`TBoldCustomEdit.OnHandleCreated`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L431) | 🟢 ported |  |
+| `DestroyWnd` | method, protected | [96](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L96) · [body 660](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L660) | [`TBoldCustomEdit.OnHandleDestroyed`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L448) | 🟢 ported |  |
+| `SetEditRect` | method, protected | [97](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L97) · [body 666](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L666) | [`TBoldCustomEdit.SetEditRect`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L460) | 🟢 ported: Sets the TextBox's right margin, where Delphi set the edit's text rectangle. |  |
+| `ButtonClick` | method, protected | [98](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L98) · [body 740](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L740) | [`TBoldCustomEdit.ButtonClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L516) | 🟢 ported |  |
+| `BeepOnInvalidKey` | property, protected | [100](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L100) | [`TBoldCustomEdit.BeepOnInvalidKey`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L546) | 🟢 ported |  |
+| `Button` | property, protected | [101](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L101) | [`TBoldCustomEdit.Button`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L554) | 🟢 ported |  |
+| `ButtonControl` | property, protected | [102](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L102) | [`TBoldCustomEdit.ButtonControl`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L558) | 🟢 ported: The button itself; Delphi's was a control holding the speed button. |  |
+| `EffectiveReadOnly` | property, protected | [103](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L103) | [`TBoldCustomEdit.EffectiveReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L562) | 🟢 ported |  |
+| `EffectiveFont` | property, protected | [104](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L104) | [`TBoldCustomEdit.EffectiveFont`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L566) | 🟢 ported: The WinForms font shown, which the renderer may have changed from Font. |  |
+| `EffectiveColor` | property, protected | [105](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L105) | [`TBoldCustomEdit.EffectiveColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L570) | 🟢 ported |  |
+| `BoldHandle` | property, protected | [107](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L107) | [`TBoldCustomEdit.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L578) | 🟢 ported |  |
+| `Follower` | property, protected | [108](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L108) | [`TBoldCustomEdit.Follower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L586) | 🟢 ported |  |
+| `BoldProperties` | property, protected | [109](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L109) | [`TBoldCustomEdit.BoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L590) | 🟢 ported |  |
+| `ReadOnly` | property, protected | [110](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L110) | [`TBoldCustomEdit.ReadOnly`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L599) | 🟢 ported |  |
+| `Text` | property, protected | [111](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L111) | [`TBoldCustomEdit.Text`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L609) | 🟢 ported |  |
+| `Font` | property, protected | [112](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L112) | [`TBoldCustomEdit.Font`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L618) | 🟢 ported |  |
+| `Color` | property, protected | [113](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L113) | [`TBoldCustomEdit.BackColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L626) | 🟢 ported |  |
+| `MaxLength` | property, protected | [114](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L114) | [`TBoldCustomEdit.MaxLength`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L635) | 🟢 ported |  |
+| `Alignment` | property, protected | [115](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L115) | [`TBoldCustomEdit.Alignment`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L643) | 🟢 ported |  |
+| `ButtonStyle` | property, protected | [116](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L116) | [`TBoldCustomEdit.ButtonStyle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L655) | 🟢 ported |  |
+| `OnButtonClick` | property, protected | [117](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L117) | [`TBoldCustomEdit.OnButtonClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L663) | 🟢 ported |  |
+| `Create` | constructor | [119](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L119) · [body 221](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L221) | [`TBoldCustomEdit.TBoldCustomEdit`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L50) | 🟢 ported |  |
+| `Destroy` | destructor | [120](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L120) · [body 236](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L236) | [`TBoldCustomEdit.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L67) | 🟢 ported |  |
+| `DragDrop` | method | [121](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L121) · [body 291](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L291) | [`TBoldCustomEdit.OnDragDrop`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L155) | 🟢 ported: OnDragDrop; the DragDrop event is raised first. |  |
 
 ## TBoldComboButton
 
-class at [line 213](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L213); ⚪ not started.
+class at [line 213](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L213); 🟢 ported, C# [`TBoldComboButton`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L678).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `MouseMove` | method, protected | [215](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L215) · [body 763](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L763) |  | ⚪ not started |  |
-| `MouseDown` | method, protected | [216](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L216) · [body 748](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L748) |  | ⚪ not started |  |
+| `MouseMove` | method, protected | [215](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L215) · [body 763](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L763) | [`TBoldComboButton.OnMouseMove`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L698) | 🟢 ported |  |
+| `MouseDown` | method, protected | [216](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L216) · [body 748](../../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas#L748) | [`TBoldComboButton.OnMouseDown`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L682) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldCustomEdit.OnParentChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L98) (method)
+- [`TBoldCustomEdit.OnFontChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L196) (method)
+- [`TBoldCustomEdit.OnBackColorChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L206) (method)
+- [`TBoldCustomEdit.GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L527) (method)
+- [`TBoldCustomEdit.GetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L532) (method)
+- [`TBoldCustomEdit.SetExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L537) (method)
+- [`TBoldCustomEdit.GetVariableList`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs#L542) (method)
 
 ## Dependencies
 

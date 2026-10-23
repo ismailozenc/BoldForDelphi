@@ -6,6 +6,26 @@
     <!-- Lets this project compile on Linux and macOS as well. -->
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- WFO1000 asks every public control property to say how the designer serializes it; the Bold controls say it where it matters. -->
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The bitmaps of the grid, the navigator and the edit button (BoldCommonBitmaps), from the repository's Images. -->
+    <EmbeddedResource Include="../../../Images/BoldGrid Selected.bmp" LogicalName="Bold.Images.BoldGrid Selected.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldGrid Current.bmp" LogicalName="Bold.Images.BoldGrid Current.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldGrid Constraint True.bmp" LogicalName="Bold.Images.BoldGrid Constraint True.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldGrid Constraint False.bmp" LogicalName="Bold.Images.BoldGrid Constraint False.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator Delete.bmp" LogicalName="Bold.Images.BoldNavigator Delete.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator First.bmp" LogicalName="Bold.Images.BoldNavigator First.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator Last.bmp" LogicalName="Bold.Images.BoldNavigator Last.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator Insert.bmp" LogicalName="Bold.Images.BoldNavigator Insert.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator Next.bmp" LogicalName="Bold.Images.BoldNavigator Next.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator Prior.bmp" LogicalName="Bold.Images.BoldNavigator Prior.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator MoveUp.bmp" LogicalName="Bold.Images.BoldNavigator MoveUp.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldNavigator MoveDown.bmp" LogicalName="Bold.Images.BoldNavigator MoveDown.bmp" />
+    <EmbeddedResource Include="../../../Images/BoldEdit Ellipsis.bmp" LogicalName="Bold.Images.BoldEdit Ellipsis.bmp" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
     <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />

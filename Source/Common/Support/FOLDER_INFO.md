@@ -53,9 +53,9 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 |---|---|---|
 | [BoldBase64](../../../CSharp/port/units/BoldBase64.md) | [Bold.Core: Common/Support/BoldBase64.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldBase64.cs) | M2 Runtime model and subscriptions |
 | [BoldCollections](../../../CSharp/port/units/BoldCollections.md) | [Bold.Core: Common/Support/BoldCollections.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldCollections.cs) | M5 SQL persistence |
-| [BoldCommonBitmaps](../../../CSharp/port/units/BoldCommonBitmaps.md) | Bold.WinForms: Common/Support/BoldCommonBitmaps.cs (not started) | M8 WinForms |
+| [BoldCommonBitmaps](../../../CSharp/port/units/BoldCommonBitmaps.md) | [Bold.WinForms: Common/Support/BoldCommonBitmaps.cs](../../../CSharp/src/Bold.WinForms/Common/Support/BoldCommonBitmaps.cs) | M8 WinForms |
 | [BoldControlPackDefs](../../../CSharp/port/units/BoldControlPackDefs.md) | [Bold.AwareGui: Common/Support/BoldControlPackDefs.cs](../../../CSharp/src/Bold.AwareGui/Common/Support/BoldControlPackDefs.cs) | M8 WinForms |
-| [BoldControlsDefs](../../../CSharp/port/units/BoldControlsDefs.md) | Bold.WinForms: Common/Support/BoldControlsDefs.cs (not started) | M8 WinForms |
+| [BoldControlsDefs](../../../CSharp/port/units/BoldControlsDefs.md) | [Bold.WinForms: Common/Support/BoldControlsDefs.cs](../../../CSharp/src/Bold.WinForms/Common/Support/BoldControlsDefs.cs) | M8 WinForms |
 | [BoldExternalizedReferences](../../../CSharp/port/units/BoldExternalizedReferences.md) | [Bold.Core: Common/Support/BoldExternalizedReferences.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldExternalizedReferences.cs) | M2 Runtime model and subscriptions |
 | [BoldFileHandler](../../../CSharp/port/units/BoldFileHandler.md) | [Bold.Core: Common/Support/BoldFileHandler.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldFileHandler.cs) | M6 Typed classes |
 | [BoldGUIDUtils](../../../CSharp/port/units/BoldGUIDUtils.md) | [Bold.Core: Common/Support/BoldGUIDUtils.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldGUIDUtils.cs) | M5 SQL persistence |
@@ -68,7 +68,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldMath](../../../CSharp/port/units/BoldMath.md) | [Bold.Core: Common/Support/BoldMath.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldMath.cs) | M3 Object space in memory |
 | [BoldMemoryManager](../../../CSharp/port/units/BoldMemoryManager.md) | replaced by .NET: the .NET runtime allocates and the garbage collector frees memory | M1 Load models |
 | [BoldNamedValueList](../../../CSharp/port/units/BoldNamedValueList.md) | [Bold.Core: Common/Support/BoldNamedValueList.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldNamedValueList.cs) | M1 Load models |
-| [BoldNavigatorDefs](../../../CSharp/port/units/BoldNavigatorDefs.md) | Bold.WinForms: Common/Support/BoldNavigatorDefs.cs (not started) | M8 WinForms |
+| [BoldNavigatorDefs](../../../CSharp/port/units/BoldNavigatorDefs.md) | [Bold.WinForms: Common/Support/BoldNavigatorDefs.cs](../../../CSharp/src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs) | M8 WinForms |
 | [BoldPerformanceCounter](../../../CSharp/port/units/BoldPerformanceCounter.md) | Bold.Core: Common/Support/BoldPerformanceCounter.cs (not started) | Later (after M12, or when needed) |
 | [BoldPriorityQueue](../../../CSharp/port/units/BoldPriorityQueue.md) | Bold.Core: Common/Support/BoldPriorityQueue.cs (not started) | M9 Multi-user |
 | [BoldRegistry](../../../CSharp/port/units/BoldRegistry.md) | Bold.Core: Common/Support/BoldRegistry.cs (not started) | M8 WinForms |

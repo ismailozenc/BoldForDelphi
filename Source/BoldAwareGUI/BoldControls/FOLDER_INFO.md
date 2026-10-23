@@ -49,17 +49,17 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldCaptionController](../../../CSharp/port/units/BoldCaptionController.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldCaptionController.cs (not started) | M8 WinForms |
-| [BoldCheckBox](../../../CSharp/port/units/BoldCheckBox.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldCheckBox.cs (not started) | M8 WinForms |
+| [BoldCheckBox](../../../CSharp/port/units/BoldCheckBox.md) | [Bold.WinForms: BoldAwareGUI/BoldControls/BoldCheckBox.cs](../../../CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs) | M8 WinForms |
 | [BoldComboBox](../../../CSharp/port/units/BoldComboBox.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldComboBox.cs (not started) | M8 WinForms |
 | [BoldDataSet](../../../CSharp/port/units/BoldDataSet.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldDataSet.cs (not started) | M8 WinForms |
 | [BoldDragDropTarget](../../../CSharp/port/units/BoldDragDropTarget.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldDragDropTarget.cs (not started) | M8 WinForms |
-| [BoldEdit](../../../CSharp/port/units/BoldEdit.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldEdit.cs (not started) | M8 WinForms |
+| [BoldEdit](../../../CSharp/port/units/BoldEdit.md) | [Bold.WinForms: BoldAwareGUI/BoldControls/BoldEdit.cs](../../../CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs) | M8 WinForms |
 | [BoldGrid](../../../CSharp/port/units/BoldGrid.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldGrid.cs (not started) | M8 WinForms |
 | [BoldGridRTColEditor](../../../CSharp/port/units/BoldGridRTColEditor.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs (not started) | M8 WinForms |
 | [BoldImage](../../../CSharp/port/units/BoldImage.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldImage.cs (not started) | M8 WinForms |
 | [BoldImageBitmap](../../../CSharp/port/units/BoldImageBitmap.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldImageBitmap.cs (not started) | M8 WinForms |
 | [BoldImageJPEG](../../../CSharp/port/units/BoldImageJPEG.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldImageJPEG.cs (not started) | M8 WinForms |
-| [BoldLabel](../../../CSharp/port/units/BoldLabel.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldLabel.cs (not started) | M8 WinForms |
+| [BoldLabel](../../../CSharp/port/units/BoldLabel.md) | [Bold.WinForms: BoldAwareGUI/BoldControls/BoldLabel.cs](../../../CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldLabel.cs) | M8 WinForms |
 | [BoldListBox](../../../CSharp/port/units/BoldListBox.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldListBox.cs (not started) | M8 WinForms |
 | [BoldMemo](../../../CSharp/port/units/BoldMemo.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldMemo.cs (not started) | M8 WinForms |
 | [BoldNavigator](../../../CSharp/port/units/BoldNavigator.md) | Bold.WinForms: BoldAwareGUI/BoldControls/BoldNavigator.cs (not started) | M8 WinForms |
