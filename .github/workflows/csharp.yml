@@ -60,7 +60,7 @@ jobs:
             name=$(basename "$project" .csproj)
             if dotnet test "$project" --configuration Release --no-build --logger trx --logger "console;verbosity=normal" --results-directory "CSharp/TestResults/$name" > "test-$name.log" 2>&1; then
               grep -E "^\s*(Passed|Failed|Skipped|Total)( tests)?[:!]|^Test Run" "test-$name.log" | tail -3
-              counts="$counts$name: $(tr -d '\r' < "test-$name.log" | grep -E '(Passed|Failed)! +-' | tail -1 | sed -E 's/^.*(Passed|Failed)! +- +//; s/ +- +[^ ]+\.dll.*$//')%0A"
+              counts="$counts$name: $( (tr -d '\r' < "test-$name.log" | grep -E '^ *(Total tests|Passed|Failed|Skipped): ' | sed -E 's/^ +//' | paste -sd ',' -) || true)%0A"
             else
               failed=1
               tail -30 "test-$name.log"
