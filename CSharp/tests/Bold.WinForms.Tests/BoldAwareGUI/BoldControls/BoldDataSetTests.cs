@@ -100,7 +100,8 @@ public class BoldDataSetTests
         Assert.That(ds.Active, Is.True);
         Assert.That(ds.CanModify, Is.True);
         Assert.That(ds.RecordCount, Is.EqualTo(2));
-        Assert.That(ds.FieldByName("firstName").AsString, Is.EqualTo("Ann"));
+        Assert.That(ds.FieldByName("firstName").AsString, Is.EqualTo("Ann"),
+            $"record {ds.RecNo} of {ds.RecordCount}; the list: {string.Join(", ", Enumerable.Range(0, handle.Count).Select(i => ((TPerson)handle.List![i]!).FirstName))}; current {handle.CurrentIndex}");
         Assert.That(ds.FieldByName("assets").AsCurrency, Is.EqualTo(10.5m));
         Assert.That(ds.FieldByName("isMarried").AsBoolean, Is.True);
         Assert.That(ds.ActiveBoldElement, Is.SameAs(ann));

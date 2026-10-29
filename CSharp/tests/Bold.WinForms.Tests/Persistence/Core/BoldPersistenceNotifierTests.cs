@@ -73,20 +73,21 @@ public class BoldPersistenceProgressNotifierTests
         Assert.That(notifier.MsgRetrieveIds, Is.EqualTo(PersistenceConsts.sRetrievingIDs));
         Assert.That((notifier.ProgressBar, notifier.MsgLabel, notifier.WinControl, notifier.Animation), Is.EqualTo((bar, label, (Control)status, animation)));
         Assert.That(bar.Step, Is.EqualTo(1));
-        TBoldPersistenceController controller = handle.PersistenceController;
+        // The handle passes on the events of its controller and of the persistence mapper; here it sends them itself.
+        void Send(int bpe, params object?[] args) => handle.SendExtendedEvent(handle, bpe, args);
 
         // An update of three objects: the bar shows and steps per object, the message says so, the animation plays.
-        controller.SendExtendedEvent(BoldSubscription.bpeStartUpdate, [Ids(3)]);
+        Send(BoldSubscription.bpeStartUpdate, Ids(3));
         Assert.That(bar.Visible, Is.True);
         Assert.That((bar.Value, bar.Maximum), Is.EqualTo((0, 3)));
         Assert.That(label.Text, Is.EqualTo(PersistenceConsts.sUpdatingDB));
         Assert.That(status.Text, Is.EqualTo(PersistenceConsts.sUpdatingDB));
         Assert.That(animation.Enabled, Is.True, "the animation plays");
-        controller.SendExtendedEvent(BoldSubscription.bpeUpdateObject, []);
-        controller.SendExtendedEvent(BoldSubscription.bpeCreateObject, []);
-        controller.SendExtendedEvent(BoldSubscription.bpeDeleteObject, []);
+        Send(BoldSubscription.bpeUpdateObject);
+        Send(BoldSubscription.bpeCreateObject);
+        Send(BoldSubscription.bpeDeleteObject);
         Assert.That(bar.Value, Is.EqualTo(3));
-        controller.SendExtendedEvent(BoldSubscription.bpeEndUpdate, []);
+        Send(BoldSubscription.bpeEndUpdate);
         Assert.That(bar.Visible, Is.False);
         Assert.That(bar.Maximum, Is.EqualTo(0));
         Assert.That(label.Text, Is.Empty);
@@ -95,31 +96,31 @@ public class BoldPersistenceProgressNotifierTests
 
         // A fetch of two objects.
         notifier.MsgFetchObjects = "Fetching";
-        controller.SendExtendedEvent(BoldSubscription.bpeStartFetch, [Ids(2)]);
+        Send(BoldSubscription.bpeStartFetch, Ids(2));
         Assert.That(label.Text, Is.EqualTo("Fetching"));
         Assert.That(bar.Maximum, Is.EqualTo(2));
-        controller.SendExtendedEvent(BoldSubscription.bpeFetchObject, []);
+        Send(BoldSubscription.bpeFetchObject);
         Assert.That(bar.Value, Is.EqualTo(1));
-        controller.SendExtendedEvent(BoldSubscription.bpeEndFetch, []);
+        Send(BoldSubscription.bpeEndFetch);
         Assert.That(bar.Visible, Is.False);
         Assert.That(PumpUntil(() => !animation.Enabled), Is.True);
 
         // Retrieving ids and fetching members play the animation.
         notifier.MsgRetrieveIds = "Ids";
-        controller.SendExtendedEvent(BoldSubscription.bpeStartFetchID, []);
+        Send(BoldSubscription.bpeStartFetchID);
         Assert.That(label.Text, Is.EqualTo("Ids"));
         Assert.That(animation.Enabled, Is.True);
-        controller.SendExtendedEvent(BoldSubscription.bpeFetchId, []);
-        controller.SendExtendedEvent(BoldSubscription.bpeEndFetchID, []);
+        Send(BoldSubscription.bpeFetchId);
+        Send(BoldSubscription.bpeEndFetchID);
         Assert.That(label.Text, Is.Empty);
         Assert.That(PumpUntil(() => !animation.Enabled), Is.True);
-        controller.SendExtendedEvent(BoldSubscription.bpeFetchMember, []);
+        Send(BoldSubscription.bpeFetchMember);
         Assert.That(animation.Enabled, Is.True);
 
         // A still image does not play.
         animation.Enabled = false;
         animation.Image = new Bitmap(1, 1);
-        controller.SendExtendedEvent(BoldSubscription.bpeFetchMember, []);
+        Send(BoldSubscription.bpeFetchMember);
         Assert.That(animation.Enabled, Is.False, "nothing to play");
 
         // Controls that go are forgotten.
@@ -131,8 +132,8 @@ public class BoldPersistenceProgressNotifierTests
         Assert.That(notifier.MsgLabel, Is.Null);
         Assert.That(notifier.WinControl, Is.Null);
         Assert.That(notifier.Animation, Is.Null);
-        Assert.DoesNotThrow(() => controller.SendExtendedEvent(BoldSubscription.bpeStartUpdate, [Ids(1)]));
-        Assert.DoesNotThrow(() => controller.SendExtendedEvent(BoldSubscription.bpeEndUpdate, []));
+        Assert.DoesNotThrow(() => Send(BoldSubscription.bpeStartUpdate, Ids(1)));
+        Assert.DoesNotThrow(() => Send(BoldSubscription.bpeEndUpdate));
         File.Delete(file);
     }
 }

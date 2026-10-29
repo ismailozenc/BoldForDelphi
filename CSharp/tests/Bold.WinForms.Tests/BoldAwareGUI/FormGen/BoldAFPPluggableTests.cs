@@ -62,7 +62,7 @@ internal sealed class TwoHandlesForm : Form
 public class BoldAFPPluggableTests
 {
     /// <summary>Removes every registration of the provider class.</summary>
-    private static void RemoveProviders(Type providerClass)
+    internal static void RemoveProviders(Type providerClass)
     {
         TBoldAutoFormProviderRegistry registry = BoldAFP.AutoFormProviderRegistry();
         for (int i = registry.Count - 1; i >= 0; i--)

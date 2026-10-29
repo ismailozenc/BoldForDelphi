@@ -140,6 +140,10 @@ public class BldOwnTests
             Mainform.allform = null!;
             Datamod.DataModule1 = null!;
             File.Delete(file);
+
+            // The pluggable forms unit stays initialized, as in an application; other tests start without its provider.
+            BoldAFPPluggableTests.RemoveProviders(typeof(TBoldInstallableAFP));
+            BoldAFPPluggableTests.RemoveProviders(typeof(TBoldRegisterAFP));
         }
     }
 }
