@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldLoggableCriticalSection.pas`](../../../Source/Common/Support/BoldLoggableCriticalSection.pas) (48 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs`](../../src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs) |
 | Project | Bold.Core |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | ✅ verified: 4 of 4 symbols done, 4 verified |
 
-⚪ 4 not started
+✅ 4 verified
 
 ## Unit level
 
@@ -18,17 +18,23 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLoggableCriticalSection` | class | [14](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L14) |  | ⚪ not started |  |
+| `TBoldLoggableCriticalSection` | class | [14](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L14) | [`TBoldLoggableCriticalSection`](../../src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs#L8) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
 
 ## TBoldLoggableCriticalSection
 
-class at [line 14](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L14); ✅ verified, C# [`TBoldLoggableCriticalSection`](../../src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [18](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L18) · [body 36](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L36) |  | ⚪ not started |  |
-| `Acquire` | method | [19](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L19) · [body 30](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L30) |  | ⚪ not started |  |
-| `Release` | method | [20](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L20) · [body 42](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L42) |  | ⚪ not started |  |
+| `Create` | constructor | [18](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L18) · [body 36](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L36) | [`TBoldLoggableCriticalSection.TBoldLoggableCriticalSection`](../../src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs#L13) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `Acquire` | method | [19](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L19) · [body 30](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L30) | [`TBoldLoggableCriticalSection.Acquire`](../../src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs#L22) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `Release` | method | [20](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L20) · [body 42](../../../Source/Common/Support/BoldLoggableCriticalSection.pas#L42) | [`TBoldLoggableCriticalSection.Release`](../../src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs#L29) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldLoggableCriticalSection.Name`](../../src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs#L19) (property)
 
 ## Dependencies
 

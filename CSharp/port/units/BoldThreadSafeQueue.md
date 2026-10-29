@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Core/BoldThreadSafeQueue.pas`](../../../Source/Common/Core/BoldThreadSafeQueue.pas) (457 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs) |
 | Project | Bold.Core |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 49 symbols done, 0 verified |
+| Status | ✅ verified: 49 of 49 symbols done, 49 verified |
 
-⚪ 49 not started
+✅ 49 verified
 
 ## Unit level
 
@@ -18,111 +18,118 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldQueueEvent` | event type | [18](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L18) |  | ⚪ not started |  |
-| `TBoldThreadSafeQueueEntry` | class | [23](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L23) |  | ⚪ not started |  |
-| `TBoldThreadSafeQueue` | class | [37](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L37) |  | ⚪ not started |  |
-| `TBoldThreadSafeObjectQueue` | class | [59](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L59) |  | ⚪ not started |  |
-| `TBoldThreadSafeInterfaceQueue` | class | [79](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L79) |  | ⚪ not started |  |
-| `TBoldThreadSafeStringQueue` | class | [86](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L86) |  | ⚪ not started |  |
-| `TBoldThreadSafeQueueObjectEntry` | class, implementation | [100](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L100) |  | ⚪ not started |  |
-| `TBoldThreadSafeQueueStringEntry` | class, implementation | [112](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L112) |  | ⚪ not started |  |
-| `TBoldThreadSafeQueueInterfaceEntry` | class, implementation | [121](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L121) |  | ⚪ not started |  |
+| `TBoldQueueEvent` | event type | [18](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L18) | [`TBoldQueueEvent`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L8) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `TBoldThreadSafeQueueEntry` | class | [23](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L23) | [`TBoldThreadSafeQueueEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L15) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `TBoldThreadSafeQueue` | class | [37](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L37) | [`TBoldThreadSafeQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L61) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `TBoldThreadSafeObjectQueue` | class | [59](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L59) | [`TBoldThreadSafeObjectQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L170) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `TBoldThreadSafeInterfaceQueue` | class | [79](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L79) | [`TBoldThreadSafeInterfaceQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L317) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_interface_queue_hands_back_the_references_in_order`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L99) |
+| `TBoldThreadSafeStringQueue` | class | [86](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L86) | [`TBoldThreadSafeStringQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L365) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `TBoldThreadSafeQueueObjectEntry` | class, implementation | [100](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L100) | [`TBoldThreadSafeQueueObjectEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L436) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `TBoldThreadSafeQueueStringEntry` | class, implementation | [112](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L112) | [`TBoldThreadSafeQueueStringEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L475) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `TBoldThreadSafeQueueInterfaceEntry` | class, implementation | [121](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L121) | [`TBoldThreadSafeQueueInterfaceEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L489) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_interface_queue_hands_back_the_references_in_order`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L99) |
 
 ## TBoldThreadSafeQueueEntry
 
-class at [line 23](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L23); ✅ verified, C# [`TBoldThreadSafeQueueEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateAsMarker` | constructor, protected | [28](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L28) · [body 208](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L208) |  | ⚪ not started |  |
-| `CreateAfter` | constructor, protected | [29](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L29) · [body 215](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L215) |  | ⚪ not started |  |
-| `Destroy` | destructor | [31](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L31) · [body 224](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L224) |  | ⚪ not started |  |
-| `Prev` | property | [32](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L32) |  | ⚪ not started |  |
-| `Next` | property | [33](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L33) |  | ⚪ not started |  |
+| `CreateAsMarker` | constructor, protected | [28](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L28) · [body 208](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L208) | [`TBoldThreadSafeQueueEntry.TBoldThreadSafeQueueEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L22) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `CreateAfter` | constructor, protected | [29](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L29) · [body 215](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L215) | [`TBoldThreadSafeQueueEntry.TBoldThreadSafeQueueEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L30) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Destroy` | destructor | [31](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L31) · [body 224](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L224) | [`TBoldThreadSafeQueueEntry.Dispose`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L40) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Prev` | property | [32](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L32) | [`TBoldThreadSafeQueueEntry.Prev`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L50) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Next` | property | [33](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L33) | [`TBoldThreadSafeQueueEntry.Next`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L53) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
 
 ## TBoldThreadSafeQueue
 
-class at [line 37](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L37); ⚪ not started.
+class at [line 37](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L37); ✅ verified, C# [`TBoldThreadSafeQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L61).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetEmpty` | method, private | [42](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L42) · [body 164](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L164) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [44](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L44) · [body 146](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L146) |  | ⚪ not started |  |
-| `Lock` | method, protected | [45](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L45) · [body 179](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L179) |  | ⚪ not started |  |
-| `Unlock` | method, protected | [46](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L46) · [body 190](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L190) |  | ⚪ not started |  |
-| `NotifyQueueNotEmpty` | method, protected | [47](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L47) · [body 184](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L184) |  | ⚪ not started |  |
-| `UnsafeIsEmpty` | method, protected | [48](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L48) · [body 174](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L174) |  | ⚪ not started |  |
-| `Create` | constructor | [50](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L50) · [body 131](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L131) |  | ⚪ not started |  |
-| `Destroy` | destructor | [51](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L51) · [body 138](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L138) |  | ⚪ not started |  |
-| `Clear` | method | [52](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L52) · [body 195](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L195) |  | ⚪ not started |  |
-| `Count` | property | [53](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L53) |  | ⚪ not started |  |
-| `Empty` | property | [54](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L54) |  | ⚪ not started |  |
-| `OnQueueNotEmpty` | property | [55](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L55) |  | ⚪ not started |  |
+| `GetEmpty` | method, private | [42](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L42) · [body 164](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L164) | [`TBoldThreadSafeQueue.GetEmpty`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L88) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `GetCount` | method, protected | [44](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L44) · [body 146](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L146) | [`TBoldThreadSafeQueue.GetCount`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L102) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Lock` | method, protected | [45](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L45) · [body 179](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L179) | [`TBoldThreadSafeQueue.Lock`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L124) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Unlock` | method, protected | [46](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L46) · [body 190](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L190) | [`TBoldThreadSafeQueue.Unlock`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L127) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `NotifyQueueNotEmpty` | method, protected | [47](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L47) · [body 184](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L184) | [`TBoldThreadSafeQueue.NotifyQueueNotEmpty`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L130) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `UnsafeIsEmpty` | method, protected | [48](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L48) · [body 174](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L174) | [`TBoldThreadSafeQueue.UnsafeIsEmpty`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L134) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Create` | constructor | [50](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L50) · [body 131](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L131) | [`TBoldThreadSafeQueue.TBoldThreadSafeQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L68) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Destroy` | destructor | [51](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L51) · [body 138](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L138) | [`TBoldThreadSafeQueue.Dispose`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L75) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Clear` | method | [52](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L52) · [body 195](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L195) | [`TBoldThreadSafeQueue.Clear`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L138) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Count` | property | [53](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L53) | [`TBoldThreadSafeQueue.Count`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L155) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Empty` | property | [54](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L54) | [`TBoldThreadSafeQueue.Empty`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L158) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `OnQueueNotEmpty` | property | [55](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L55) | [`TBoldThreadSafeQueue.OnQueueNotEmpty`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L161) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
 
 ## TBoldThreadSafeObjectQueue
 
-class at [line 59](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L59); ✅ verified, C# [`TBoldThreadSafeObjectQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L170).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMaxCount` | method, private | [64](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L64) · [body 304](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L304) |  | ⚪ not started |  |
-| `GetCount` | method, protected | [66](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L66) · [body 294](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L294) |  | ⚪ not started |  |
-| `UnsafeEnqueue` | method, protected | [67](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L67) · [body 330](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L330) |  | ⚪ not started |  |
-| `UnsafeDequeue` | method, protected | [68](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L68) · [body 314](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L314) |  | ⚪ not started |  |
-| `Create` | constructor | [70](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L70) · [body 256](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L256) |  | ⚪ not started |  |
-| `Enqueue` | method | [71](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L71) · [body 283](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L283) |  | ⚪ not started |  |
-| `DequeueList` | method | [72](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L72) · [body 272](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L272) |  | ⚪ not started |  |
-| `Dequeue` | method | [73](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L73) · [body 262](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L262) |  | ⚪ not started |  |
-| `OwnsObjects` | property | [74](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L74) |  | ⚪ not started |  |
-| `MaxCount` | property | [75](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L75) |  | ⚪ not started |  |
+| `GetMaxCount` | method, private | [64](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L64) · [body 304](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L304) | [`TBoldThreadSafeObjectQueue.GetMaxCount`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L184) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `GetCount` | method, protected | [66](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L66) · [body 294](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L294) | [`TBoldThreadSafeObjectQueue.GetCount`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L198) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `UnsafeEnqueue` | method, protected | [67](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L67) · [body 330](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L330) | [`TBoldThreadSafeObjectQueue.UnsafeEnqueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L227) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `UnsafeDequeue` | method, protected | [68](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L68) · [body 314](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L314) | [`TBoldThreadSafeObjectQueue.UnsafeDequeue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L244) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `Create` | constructor | [70](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L70) · [body 256](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L256) | [`TBoldThreadSafeObjectQueue.TBoldThreadSafeObjectQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L177) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `Enqueue` | method | [71](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L71) · [body 283](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L283) | [`TBoldThreadSafeObjectQueue.Enqueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L260) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `DequeueList` | method | [72](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L72) · [body 272](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L272) | [`TBoldThreadSafeObjectQueue.DequeueList`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L276) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `Dequeue` | method | [73](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L73) · [body 262](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L262) | [`TBoldThreadSafeObjectQueue.Dequeue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L294) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `OwnsObjects` | property | [74](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L74) | [`TBoldThreadSafeObjectQueue.OwnsObjects`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L308) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `MaxCount` | property | [75](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L75) | [`TBoldThreadSafeObjectQueue.MaxCount`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L312) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
 
 ## TBoldThreadSafeInterfaceQueue
 
-class at [line 79](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L79); ⚪ not started.
+class at [line 79](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L79); ✅ verified, C# [`TBoldThreadSafeInterfaceQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L317).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Enqueue` | method | [81](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L81) · [body 432](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L432) |  | ⚪ not started |  |
-| `Dequeue` | method | [82](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L82) · [body 412](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L412) |  | ⚪ not started |  |
+| `Enqueue` | method | [81](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L81) · [body 432](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L432) | [`TBoldThreadSafeInterfaceQueue.Enqueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L320) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_interface_queue_hands_back_the_references_in_order`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L99) |
+| `Dequeue` | method | [82](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L82) · [body 412](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L412) | [`TBoldThreadSafeInterfaceQueue.Dequeue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L341) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_interface_queue_hands_back_the_references_in_order`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L99) |
 
 ## TBoldThreadSafeStringQueue
 
-class at [line 86](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L86); ⚪ not started.
+class at [line 86](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L86); ✅ verified, C# [`TBoldThreadSafeStringQueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L365).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Enqueue` | method | [88](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L88) · [body 394](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L394) |  | ⚪ not started |  |
-| `Dequeue` | method | [89](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L89) · [body 374](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L374) |  | ⚪ not started |  |
-| `AppendToStringList` | method | [90](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L90) · [body 355](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L355) |  | ⚪ not started |  |
+| `Enqueue` | method | [88](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L88) · [body 394](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L394) | [`TBoldThreadSafeStringQueue.Enqueue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L368) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `Dequeue` | method | [89](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L89) · [body 374](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L374) | [`TBoldThreadSafeStringQueue.Dequeue`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L393) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `AppendToStringList` | method | [90](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L90) · [body 355](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L355) | [`TBoldThreadSafeStringQueue.AppendToStringList`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L416) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
 
 ## TBoldThreadSafeQueueObjectEntry
 
-class at [line 100](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L100); ⚪ not started.
+class at [line 100](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L100); ✅ verified, C# [`TBoldThreadSafeQueueObjectEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L436).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateAfter` | constructor | [105](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L105) · [body 233](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L233) |  | ⚪ not started |  |
-| `Destroy` | destructor | [106](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L106) · [body 241](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L241) |  | ⚪ not started |  |
-| `GetObject` | method | [107](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L107) · [body 248](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L248) |  | ⚪ not started |  |
-| `AnObject` | property | [108](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L108) |  | ⚪ not started |  |
+| `CreateAfter` | constructor | [105](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L105) · [body 233](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L233) | [`TBoldThreadSafeQueueObjectEntry.TBoldThreadSafeQueueObjectEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L442) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `Destroy` | destructor | [106](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L106) · [body 241](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L241) | [`TBoldThreadSafeQueueObjectEntry.Dispose`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L450) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `GetObject` | method | [107](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L107) · [body 248](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L248) | [`TBoldThreadSafeQueueObjectEntry.GetObject`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L463) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
+| `AnObject` | property | [108](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L108) | [`TBoldThreadSafeQueueObjectEntry.AnObject`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L471) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_object_queue_counts_its_objects_and_frees_those_it_owns`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L54) |
 
 ## TBoldThreadSafeQueueStringEntry
 
-class at [line 112](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L112); ⚪ not started.
+class at [line 112](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L112); ✅ verified, C# [`TBoldThreadSafeQueueStringEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L475).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateAfter` | constructor | [116](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L116) · [body 346](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L346) |  | ⚪ not started |  |
-| `aString` | property | [117](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L117) |  | ⚪ not started |  |
+| `CreateAfter` | constructor | [116](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L116) · [body 346](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L346) | [`TBoldThreadSafeQueueStringEntry.TBoldThreadSafeQueueStringEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L478) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
+| `aString` | property | [117](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L117) | [`TBoldThreadSafeQueueStringEntry.aString`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L485) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.A_string_queue_is_first_in_first_out_and_says_when_it_stops_being_empty`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L19) |
 
 ## TBoldThreadSafeQueueInterfaceEntry
 
-class at [line 121](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L121); ⚪ not started.
+class at [line 121](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L121); ✅ verified, C# [`TBoldThreadSafeQueueInterfaceEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L489).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateAfter` | constructor | [125](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L125) · [body 450](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L450) |  | ⚪ not started |  |
-| `anInterface` | property | [126](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L126) |  | ⚪ not started |  |
+| `CreateAfter` | constructor | [125](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L125) · [body 450](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L450) | [`TBoldThreadSafeQueueInterfaceEntry.TBoldThreadSafeQueueInterfaceEntry`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L492) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_interface_queue_hands_back_the_references_in_order`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L99) |
+| `anInterface` | property | [126](../../../Source/Common/Core/BoldThreadSafeQueue.pas#L126) | [`TBoldThreadSafeQueueInterfaceEntry.anInterface`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L499) | ✅ verified | ✔ [`BoldThreadSafeQueueTests.An_interface_queue_hands_back_the_references_in_order`](../../tests/Bold.Core.Tests/Common/Core/BoldThreadSafeQueueTests.cs#L99) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldThreadSafeQueue.fMarker`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L64) (field)
+- [`TBoldThreadSafeObjectQueue.Clear`](../../src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs#L212) (method)
 
 ## Dependencies
 

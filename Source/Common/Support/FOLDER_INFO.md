@@ -64,13 +64,13 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldIndex](../../../CSharp/port/units/BoldIndex.md) | [Bold.Core: Common/Support/BoldIndex.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldIndex.cs) | M1 Load models |
 | [BoldIndexableList](../../../CSharp/port/units/BoldIndexableList.md) | [Bold.Core: Common/Support/BoldIndexableList.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldIndexableList.cs) | M1 Load models |
 | [BoldIsoDateTime](../../../CSharp/port/units/BoldIsoDateTime.md) | Bold.Core: Common/Support/BoldIsoDateTime.cs (not started) | Later (after M12, or when needed) |
-| [BoldLoggableCriticalSection](../../../CSharp/port/units/BoldLoggableCriticalSection.md) | Bold.Core: Common/Support/BoldLoggableCriticalSection.cs (not started) | M9 Multi-user |
+| [BoldLoggableCriticalSection](../../../CSharp/port/units/BoldLoggableCriticalSection.md) | [Bold.Core: Common/Support/BoldLoggableCriticalSection.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldLoggableCriticalSection.cs) | M9 Multi-user |
 | [BoldMath](../../../CSharp/port/units/BoldMath.md) | [Bold.Core: Common/Support/BoldMath.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldMath.cs) | M3 Object space in memory |
 | [BoldMemoryManager](../../../CSharp/port/units/BoldMemoryManager.md) | replaced by .NET: the .NET runtime allocates and the garbage collector frees memory | M1 Load models |
 | [BoldNamedValueList](../../../CSharp/port/units/BoldNamedValueList.md) | [Bold.Core: Common/Support/BoldNamedValueList.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldNamedValueList.cs) | M1 Load models |
 | [BoldNavigatorDefs](../../../CSharp/port/units/BoldNavigatorDefs.md) | [Bold.WinForms: Common/Support/BoldNavigatorDefs.cs](../../../CSharp/src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs) | M8 WinForms |
 | [BoldPerformanceCounter](../../../CSharp/port/units/BoldPerformanceCounter.md) | Bold.Core: Common/Support/BoldPerformanceCounter.cs (not started) | Later (after M12, or when needed) |
-| [BoldPriorityQueue](../../../CSharp/port/units/BoldPriorityQueue.md) | Bold.Core: Common/Support/BoldPriorityQueue.cs (not started) | M9 Multi-user |
+| [BoldPriorityQueue](../../../CSharp/port/units/BoldPriorityQueue.md) | [Bold.Core: Common/Support/BoldPriorityQueue.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldPriorityQueue.cs) | M9 Multi-user |
 | [BoldRegistry](../../../CSharp/port/units/BoldRegistry.md) | [Bold.Core: Common/Support/BoldRegistry.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldRegistry.cs) | M8 WinForms |
 | [BoldRev](../../../CSharp/port/units/BoldRev.md) | [Bold.Core: Common/Support/BoldRev.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldRev.cs) | M6 Typed classes |
 | [BoldSharedStrings](../../../CSharp/port/units/BoldSharedStrings.md) | [Bold.Core: Common/Support/BoldSharedStrings.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldSharedStrings.cs) | M1 Load models |

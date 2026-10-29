@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Queue/BoldAbstractDequeuer.pas`](../../../Source/Common/Queue/BoldAbstractDequeuer.pas) (65 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs) |
 | Project | Bold.Core |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 7 symbols done, 0 verified |
+| Status | ✅ verified: 7 of 7 symbols done, 7 verified |
 
-⚪ 7 not started
+✅ 7 verified
 
 ## Unit level
 
@@ -18,20 +18,20 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractDequeuer` | class | [14](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L14) |  | ⚪ not started |  |
+| `TBoldAbstractDequeuer` | class | [14](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L14) | [`TBoldAbstractDequeuer`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L12) | ✅ verified | ✔ [`BoldAbstractDequeuerTests.Queued_messages_are_handled_in_order_before_the_next_display`](../../tests/Bold.Core.Tests/Common/Queue/BoldAbstractDequeuerTests.cs#L50) |
 
 ## TBoldAbstractDequeuer
 
-class at [line 14](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L14); ✅ verified, C# [`TBoldAbstractDequeuer`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `HandleMessage` | method, protected | [18](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L18) |  | ⚪ not started |  |
-| `DequeueMessages` | method, protected | [19](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L19) · [body 40](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L40) |  | ⚪ not started |  |
-| `Destroy` | destructor | [21](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L21) · [body 34](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L34) |  | ⚪ not started |  |
-| `QueueNotEmpty` | method | [22](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L22) · [body 45](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L45) |  | ⚪ not started |  |
-| `DequeueAll` | method | [23](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L23) · [body 50](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L50) |  | ⚪ not started |  |
-| `Queue` | property | [24](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L24) |  | ⚪ not started |  |
+| `HandleMessage` | method, protected | [18](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L18) | [`TBoldAbstractDequeuer.HandleMessage`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L28) | ✅ verified | ✔ [`BoldAbstractDequeuerTests.Queued_messages_are_handled_in_order_before_the_next_display`](../../tests/Bold.Core.Tests/Common/Queue/BoldAbstractDequeuerTests.cs#L50) |
+| `DequeueMessages` | method, protected | [19](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L19) · [body 40](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L40) | [`TBoldAbstractDequeuer.DequeueMessages`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L31) | ✅ verified | ✔ [`BoldAbstractDequeuerTests.Queued_messages_are_handled_in_order_before_the_next_display`](../../tests/Bold.Core.Tests/Common/Queue/BoldAbstractDequeuerTests.cs#L50) |
+| `Destroy` | destructor | [21](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L21) · [body 34](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L34) | [`TBoldAbstractDequeuer.Dispose`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L17) | ✅ verified | ✔ [`BoldAbstractDequeuerTests.Queued_messages_are_handled_in_order_before_the_next_display`](../../tests/Bold.Core.Tests/Common/Queue/BoldAbstractDequeuerTests.cs#L50) |
+| `QueueNotEmpty` | method | [22](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L22) · [body 45](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L45) | [`TBoldAbstractDequeuer.QueueNotEmpty`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L38) | ✅ verified | ✔ [`BoldAbstractDequeuerTests.Queued_messages_are_handled_in_order_before_the_next_display`](../../tests/Bold.Core.Tests/Common/Queue/BoldAbstractDequeuerTests.cs#L50) |
+| `DequeueAll` | method | [23](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L23) · [body 50](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L50) | [`TBoldAbstractDequeuer.DequeueAll`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L42) | ✅ verified | ✔ [`BoldAbstractDequeuerTests.Queued_messages_are_handled_in_order_before_the_next_display`](../../tests/Bold.Core.Tests/Common/Queue/BoldAbstractDequeuerTests.cs#L50) |
+| `Queue` | property | [24](../../../Source/Common/Queue/BoldAbstractDequeuer.pas#L24) | [`TBoldAbstractDequeuer.Queue`](../../src/Bold.Core/Common/Queue/BoldAbstractDequeuer.cs#L56) | ✅ verified | ✔ [`BoldAbstractDequeuerTests.Queued_messages_are_handled_in_order_before_the_next_display`](../../tests/Bold.Core.Tests/Common/Queue/BoldAbstractDequeuerTests.cs#L50) |
 
 ## Dependencies
 

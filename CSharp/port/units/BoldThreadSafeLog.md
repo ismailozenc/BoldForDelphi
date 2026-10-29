@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Logging/BoldThreadSafeLog.pas`](../../../Source/Common/Logging/BoldThreadSafeLog.pas) (291 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs) |
 | Project | Bold.Core |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 29 symbols done, 0 verified |
+| Status | ✅ verified: 29 of 29 symbols done, 29 verified |
 
-⚪ 29 not started
+✅ 29 verified
 
 ## Unit level
 
@@ -18,49 +18,49 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLogger` | class | [15](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L15) |  | ⚪ not started |  |
-| `TFileLogging` | class | [31](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L31) |  | ⚪ not started |  |
-| `BoldInitLog` | routine | [58](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L58) · [body 78](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L78) |  | ⚪ not started |  |
-| `BoldDoneLog` | routine | [59](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L59) · [body 84](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L84) |  | ⚪ not started |  |
-| `BoldLog(string)` | routine | [60](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L60) · [body 89](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L89) |  | ⚪ not started |  |
-| `BoldLog(string,array of const)` | routine | [61](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L61) · [body 95](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L95) |  | ⚪ not started |  |
-| `BoldLogError(string)` | routine | [62](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L62) · [body 101](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L101) |  | ⚪ not started |  |
-| `BoldLogError(string,array of const)` | routine | [63](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L63) · [body 107](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L107) |  | ⚪ not started |  |
-| `BoldLogThread` | routine | [64](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L64) · [body 113](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L113) |  | ⚪ not started |  |
+| `TBoldLogger` | class | [15](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L15) | [`TBoldLogger`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L12) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `TFileLogging` | class | [31](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L31) | [`TFileLogging`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L68) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `BoldInitLog` | routine | [58](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L58) · [body 78](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L78) | [`BoldThreadSafeLog.BoldInitLog`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L243) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `BoldDoneLog` | routine | [59](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L59) · [body 84](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L84) | [`BoldThreadSafeLog.BoldDoneLog`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L250) | ✅ verified: Stops thread logging too. | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `BoldLog(string)` | routine | [60](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L60) · [body 89](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L89) | [`BoldThreadSafeLog.BoldLog`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L257) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `BoldLog(string,array of const)` | routine | [61](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L61) · [body 95](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L95) | [`BoldThreadSafeLog.BoldLog`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L260) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `BoldLogError(string)` | routine | [62](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L62) · [body 101](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L101) | [`BoldThreadSafeLog.BoldLogError`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L263) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `BoldLogError(string,array of const)` | routine | [63](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L63) · [body 107](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L107) | [`BoldThreadSafeLog.BoldLogError`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L266) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `BoldLogThread` | routine | [64](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L64) · [body 113](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L113) | [`BoldThreadSafeLog.BoldLogThread`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L269) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
 
 ## TBoldLogger
 
-class at [line 15](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L15); ✅ verified, C# [`TBoldLogger`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [21](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L21) · [body 121](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L121) |  | ⚪ not started |  |
-| `Destroy` | destructor | [22](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L22) · [body 137](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L137) |  | ⚪ not started |  |
-| `Log` | method | [23](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L23) · [body 145](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L145) |  | ⚪ not started |  |
-| `LogError` | method | [24](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L24) · [body 151](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L151) |  | ⚪ not started |  |
-| `LogFmt` | method | [25](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L25) · [body 163](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L163) |  | ⚪ not started |  |
-| `LogErrorFmt` | method | [26](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L26) · [body 157](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L157) |  | ⚪ not started |  |
-| `LogThread` | method | [27](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L27) · [body 169](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L169) |  | ⚪ not started |  |
+| `Create` | constructor | [21](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L21) · [body 121](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L121) | [`TBoldLogger.TBoldLogger`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L19) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `Destroy` | destructor | [22](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L22) · [body 137](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L137) | [`TBoldLogger.Dispose`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L39) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `Log` | method | [23](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L23) · [body 145](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L145) | [`TBoldLogger.Log`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L48) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `LogError` | method | [24](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L24) · [body 151](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L151) | [`TBoldLogger.LogError`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L51) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `LogFmt` | method | [25](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L25) · [body 163](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L163) | [`TBoldLogger.LogFmt`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L54) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `LogErrorFmt` | method | [26](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L26) · [body 157](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L157) | [`TBoldLogger.LogErrorFmt`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L57) | ✅ verified | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
+| `LogThread` | method | [27](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L27) · [body 169](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L169) | [`TBoldLogger.LogThread`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L60) | ✅ verified: Does nothing without a thread log, where Delphi failed on the missing log. | ✔ [`BoldThreadSafeLogTests.The_log_writes_messages_errors_and_lock_activity_to_their_files`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L32) |
 
 ## TFileLogging
 
-class at [line 31](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L31); ⚪ not started.
+class at [line 31](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L31); ✅ verified, C# [`TFileLogging`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L68).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `OpenStream` | method, private | [41](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L41) · [body 204](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L204) |  | ⚪ not started |  |
-| `CloseStream` | method, private | [42](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L42) · [body 258](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L258) |  | ⚪ not started |  |
-| `FlushStream` | method, private | [43](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L43) · [body 263](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L263) |  | ⚪ not started |  |
-| `SetOpen` | method, private | [44](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L44) · [body 268](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L268) |  | ⚪ not started |  |
-| `create` | constructor | [46](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L46) · [body 176](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L176) |  | ⚪ not started |  |
-| `Destroy` | destructor | [47](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L47) · [body 192](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L192) |  | ⚪ not started |  |
-| `Trace(string)` | method | [48](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L48) · [body 225](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L225) |  | ⚪ not started |  |
-| `Trace(string,array of const)` | method | [49](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L49) · [body 285](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L285) |  | ⚪ not started |  |
-| `FileName` | property | [50](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L50) |  | ⚪ not started |  |
-| `Open` | property | [51](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L51) |  | ⚪ not started |  |
-| `IncludeThreadId` | property | [52](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L52) |  | ⚪ not started |  |
-| `IncludeDate` | property | [53](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L53) |  | ⚪ not started |  |
-| `ShortThreadId` | property | [54](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L54) |  | ⚪ not started |  |
+| `OpenStream` | method, private | [41](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L41) · [body 204](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L204) | [`TFileLogging.OpenStream`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L138) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `CloseStream` | method, private | [42](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L42) · [body 258](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L258) | [`TFileLogging.CloseStream`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L196) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `FlushStream` | method, private | [43](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L43) · [body 263](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L263) | [`TFileLogging.FlushStream`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L204) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `SetOpen` | method, private | [44](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L44) · [body 268](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L268) | [`TFileLogging.SetOpen`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L211) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `create` | constructor | [46](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L46) · [body 176](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L176) | [`TFileLogging.TFileLogging`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L77) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `Destroy` | destructor | [47](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L47) · [body 192](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L192) | [`TFileLogging.Dispose`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L96) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `Trace(string)` | method | [48](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L48) · [body 225](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L225) | [`TFileLogging.Trace`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L153) | ✅ verified: Writes the line as UTF-8; Unicode Delphi wrote only the first half of its bytes. | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `Trace(string,array of const)` | method | [49](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L49) · [body 285](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L285) | [`TFileLogging.Trace`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L193) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `FileName` | property | [50](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L50) | [`TFileLogging.FileName`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L118) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `Open` | property | [51](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L51) | [`TFileLogging.Open`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L121) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `IncludeThreadId` | property | [52](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L52) | [`TFileLogging.IncludeThreadId`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L128) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `IncludeDate` | property | [53](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L53) | [`TFileLogging.IncludeDate`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L131) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
+| `ShortThreadId` | property | [54](../../../Source/Common/Logging/BoldThreadSafeLog.pas#L54) | [`TFileLogging.ShortThreadId`](../../src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs#L134) | ✅ verified | ✔ [`BoldThreadSafeLogTests.A_file_log_appends_lines_closes_and_starts_again_past_its_size`](../../tests/Bold.Core.Tests/Common/Logging/BoldThreadSafeLogTests.cs#L79) |
 
 ## Dependencies
 
