@@ -19,18 +19,18 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 13350 `[Delphi]` markers in the C# code; 458 test methods.
+481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 13468 `[Delphi]` markers in the C# code; 465 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
 | ✅ verified | 7711 | ▰▰▰▰▰▱▱▱▱▱ 46% |
-| 🟢 ported | 5313 | ▰▰▰▱▱▱▱▱▱▱ 32% |
-| 🔵 replaced | 337 | ▱▱▱▱▱▱▱▱▱▱ 2% |
+| 🟢 ported | 5428 | ▰▰▰▱▱▱▱▱▱▱ 32% |
+| 🔵 replaced | 339 | ▱▱▱▱▱▱▱▱▱▱ 2% |
 | 🟡 partial | 9 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 1 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 3318 | ▰▰▱▱▱▱▱▱▱▱ 20% |
-| ⚫ dropped | 34 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| ⚪ not started | 3200 | ▰▰▱▱▱▱▱▱▱▱ 19% |
+| ⚫ dropped | 35 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
 
@@ -43,7 +43,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M5 SQL persistence | 61 | 2652 | 2652 | 979 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M6 Typed classes | 7 | 258 | 258 | 230 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M7 Handles | 24 | 582 | 582 | 568 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| M8 WinForms | 69 | 2668 | 2422 | 955 | ▰▰▰▰▰▰▰▰▰▱ 91% |
+| M8 WinForms | 69 | 2668 | 2540 | 955 | ▰▰▰▰▰▰▰▰▰▰ 95% |
 | M9 Multi-user | 50 | 1164 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M11 XMI | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M12 Model editor | 22 | 584 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -67,7 +67,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.Propagator.Server | 22 | 531 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.SourceGenerators | 19 | 412 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.ValueSpace | 13 | 705 | 703 | 663 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| Bold.WinForms | 41 | 1615 | 1369 | 5 | ▰▰▰▰▰▰▰▰▱▱ 85% |
+| Bold.WinForms | 41 | 1615 | 1487 | 5 | ▰▰▰▰▰▰▰▰▰▱ 92% |
 | Bold.Xmi | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | not decided yet | 3 | 74 | 55 | 0 | ▰▰▰▰▰▰▰▱▱▱ 74% |
 
@@ -276,7 +276,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldDragDropTarget](units/BoldDragDropTarget.md) | 🟢 ported | 36/36 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas](../../Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDragDropTarget.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDragDropTarget.cs) |
 | [BoldEdit](units/BoldEdit.md) | 🟢 ported | 71/71 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldEdit.pas](../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs) |
 | [BoldGrid](units/BoldGrid.md) | 🟢 ported | 254/254 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGrid.pas](../../Source/BoldAwareGUI/BoldControls/BoldGrid.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs) |
-| [BoldGridRTColEditor](units/BoldGridRTColEditor.md) | ⚪ not started | 0/18 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas](../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs |
+| [BoldGridRTColEditor](units/BoldGridRTColEditor.md) | 🟢 ported | 18/18 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas](../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs) |
 | [BoldImage](units/BoldImage.md) | 🟢 ported | 54/54 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldImage.pas](../../Source/BoldAwareGUI/BoldControls/BoldImage.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImage.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImage.cs) |
 | [BoldImageBitmap](units/BoldImageBitmap.md) | 🟢 ported | 25/25 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldImageBitmap.pas](../../Source/BoldAwareGUI/BoldControls/BoldImageBitmap.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImageBitmap.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImageBitmap.cs) |
 | [BoldImageJPEG](units/BoldImageJPEG.md) | 🟢 ported | 26/26 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldImageJPEG.pas](../../Source/BoldAwareGUI/BoldControls/BoldImageJPEG.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImageJPEG.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldImageJPEG.cs) |
@@ -332,11 +332,11 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldHandleAction](units/BoldHandleAction.md) | ✅ verified | 9/9 | 9 | Bold.AwareGui | M8 | [Source/Handles/Actions/BoldHandleAction.pas](../../Source/Handles/Actions/BoldHandleAction.pas) | [src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs](../src/Bold.AwareGui/Handles/Actions/BoldHandleAction.cs) |
 | [BoldListActions](units/BoldListActions.md) | ✅ verified | 39/39 | 39 | Bold.AwareGui | M8 | [Source/Handles/Actions/BoldListActions.pas](../../Source/Handles/Actions/BoldListActions.pas) | [src/Bold.AwareGui/Handles/Actions/BoldListActions.cs](../src/Bold.AwareGui/Handles/Actions/BoldListActions.cs) |
 | [BoldUndoActions](units/BoldUndoActions.md) | ✅ verified | 12/12 | 12 | Bold.AwareGui | M8 | [Source/Handles/Actions/BoldUndoActions.pas](../../Source/Handles/Actions/BoldUndoActions.pas) | [src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs](../src/Bold.AwareGui/Handles/Actions/BoldUndoActions.cs) |
-| [BoldTypeNameEditor](units/BoldTypeNameEditor.md) | ⚪ not started | 0/13 | 0 | Bold.WinForms | M8 | [Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas](../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas) | planned: src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs |
-| [BoldOCLGraphicRTDebug](units/BoldOCLGraphicRTDebug.md) | ⚪ not started | 0/10 | 0 | Bold.WinForms | M8 | [Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas](../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas) | planned: src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs |
-| [BoldOclPropEditor](units/BoldOclPropEditor.md) | ⚪ not started | 0/38 | 0 | Bold.WinForms | M8 | [Source/ObjectSpace/UtilsGUI/BoldOclPropEditor.pas](../../Source/ObjectSpace/UtilsGUI/BoldOclPropEditor.pas) | planned: src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOclPropEditor.cs |
-| [BoldTypeNameSelector](units/BoldTypeNameSelector.md) | ⚪ not started | 0/12 | 0 | Bold.WinForms | M8 | [Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas](../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas) | planned: src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs |
-| [BoldDbEvolutorForm](units/BoldDbEvolutorForm.md) | ⚪ not started | 0/27 | 0 | Bold.WinForms | M8 | [Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas](../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas) | planned: src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs |
+| [BoldTypeNameEditor](units/BoldTypeNameEditor.md) | 🟢 ported | 13/13 | 0 | Bold.WinForms | M8 | [Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas](../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas) | [src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs](../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs) |
+| [BoldOCLGraphicRTDebug](units/BoldOCLGraphicRTDebug.md) | 🟢 ported | 10/10 | 0 | Bold.WinForms | M8 | [Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas](../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas) | [src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs](../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs) |
+| [BoldOclPropEditor](units/BoldOclPropEditor.md) | 🟢 ported | 38/38 | 0 | Bold.WinForms | M8 | [Source/ObjectSpace/UtilsGUI/BoldOclPropEditor.pas](../../Source/ObjectSpace/UtilsGUI/BoldOclPropEditor.pas) | [src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOclPropEditor.cs](../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOclPropEditor.cs) |
+| [BoldTypeNameSelector](units/BoldTypeNameSelector.md) | 🟢 ported | 12/12 | 0 | Bold.WinForms | M8 | [Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas](../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas) | [src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs](../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs) |
+| [BoldDbEvolutorForm](units/BoldDbEvolutorForm.md) | 🟢 ported | 27/27 | 0 | Bold.WinForms | M8 | [Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas](../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas) | [src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs](../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs) |
 | [BoldDBActions](units/BoldDBActions.md) | ✅ verified | 8/8 | 8 | Bold.AwareGui | M8 | [Source/Persistence/DB/BoldDBActions.pas](../../Source/Persistence/DB/BoldDBActions.pas) | [src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs](../src/Bold.AwareGui/Persistence/DB/BoldDBActions.cs) |
 | [BoldThreadSafeQueue](units/BoldThreadSafeQueue.md) | ⚪ not started | 0/49 | 0 | Bold.Core | M9 | [Source/Common/Core/BoldThreadSafeQueue.pas](../../Source/Common/Core/BoldThreadSafeQueue.pas) | planned: src/Bold.Core/Common/Core/BoldThreadSafeQueue.cs |
 | [BoldThreadSafeLog](units/BoldThreadSafeLog.md) | ⚪ not started | 0/29 | 0 | Bold.Core | M9 | [Source/Common/Logging/BoldThreadSafeLog.pas](../../Source/Common/Logging/BoldThreadSafeLog.pas) | planned: src/Bold.Core/Common/Logging/BoldThreadSafeLog.cs |
@@ -559,9 +559,4 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Problems
 
-0 errors, 4 warnings.
-
-- **warning** [CSharp/tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs:68](../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L68): [Covers] names TBoldLogHandlerReceiver.SetProgress, which has no [Delphi] marker, so it covers nothing
-- **warning** [CSharp/tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs:68](../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L68): [Covers] names TBoldLogHandlerReceiver.SetLogHeader, which has no [Delphi] marker, so it covers nothing
-- **warning** [CSharp/tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs:68](../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L68): [Covers] names TBoldLogHandlerReceiver.SetProgressMax, which has no [Delphi] marker, so it covers nothing
-- **warning** [CSharp/tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs:68](../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L68): [Covers] names TBoldLogHandlerReceiver.ProcessInterruption, which has no [Delphi] marker, so it covers nothing
+None: every marker and test link resolves.

@@ -1846,7 +1846,7 @@ internal sealed class TBOS_Constraints(TBoldOclSymbolHelp Help) : TBoldOclSymbol
     protected override void Init() =>
         InternalInit("constraints", [null], TBoldOclDeduceMethod.tbodNo, Help.SystemTypeInfo.ListTypeInfoByElement(Help.ConstraintType), true, 181);
 
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "A member without run-time info (one not in an object) has no constraints; Delphi dereferenced nil.")]
     public override void Evaluate(TBoldOclSymbolParameters Params)
     {
         var ResList = (TBoldMemberList)Help.CreateNewMember(Params.Result!.BoldType);
@@ -1858,9 +1858,10 @@ internal sealed class TBOS_Constraints(TBoldOclSymbolHelp Help) : TBoldOclSymbol
         switch (Params.Values[0])
         {
             case TBoldMember Member:
-                for (int i = 0; i < Member.BoldMemberRTInfo!.ConstraintCount; i++)
+                // A member that is not in an object (no run-time info) has no constraints; Delphi dereferenced nil.
+                for (int i = 0; i < (Member.BoldMemberRTInfo?.ConstraintCount ?? 0); i++)
                 {
-                    AddConstraint(Member.BoldMemberRTInfo.ConstraintByIndex(i), Member);
+                    AddConstraint(Member.BoldMemberRTInfo!.ConstraintByIndex(i), Member);
                 }
 
                 break;

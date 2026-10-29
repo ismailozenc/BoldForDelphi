@@ -1391,7 +1391,15 @@ internal class TAFPPageControl : TabControl
         if (BoldGUI.BoldGUIHandler().DraggedObjects.Count > 0)
         {
             Point p = PointToClient(new Point(drgevent.X, drgevent.Y));
-            if (!DisplayRectangle.Contains(p))
+            Rectangle pages = DisplayRectangle;
+            bool overTabs = Alignment switch
+            {
+                TabAlignment.Bottom => p.Y >= pages.Bottom,
+                TabAlignment.Left => p.X < pages.Left,
+                TabAlignment.Right => p.X >= pages.Right,
+                _ => p.Y < pages.Top,
+            };
+            if (overTabs)
             {
                 ActivatePage(p.X, p.Y);
             }

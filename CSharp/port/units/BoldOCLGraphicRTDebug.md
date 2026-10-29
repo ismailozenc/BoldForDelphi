@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas`](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas) (131 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs` |
+| C# | [`CSharp/src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 10 symbols done, 0 verified |
+| Status | 🟢 ported: 10 of 10 symbols done, 0 verified |
 
-⚪ 10 not started
+🟢 10 ported
 
 ## Unit level
 
@@ -18,23 +18,29 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOclGraphicRTDebugger` | class | [16](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L16) |  | ⚪ not started |  |
-| `CaseSensitiveIndexOf` | routine, implementation | [44](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L44) |  | ⚪ not started |  |
+| `TBoldOclGraphicRTDebugger` | class | [16](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L16) | [`TBoldOclGraphicRTDebugger`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L14) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `CaseSensitiveIndexOf` | routine, implementation | [44](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L44) | [`TBoldOclGraphicRTDebugger.CaseSensitiveIndexOf`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L36) | 🟢 ported: A routine of the unit, here a static method of the debugger. | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
 
 ## TBoldOclGraphicRTDebugger
 
-class at [line 16](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L16); 🟢 ported, C# [`TBoldOclGraphicRTDebugger`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `MatchString` | method, private | [20](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L20) · [body 121](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L121) |  | ⚪ not started |  |
-| `OrgExprs` | property, protected | [22](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L22) |  | ⚪ not started |  |
-| `FixedExprs` | property, protected | [23](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L23) |  | ⚪ not started |  |
-| `Create` | constructor | [25](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L25) · [body 107](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L107) |  | ⚪ not started |  |
-| `Destroy` | destructor | [26](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L26) · [body 114](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L114) |  | ⚪ not started |  |
-| `HasFixFor` | method | [27](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L27) · [body 101](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L101) |  | ⚪ not started |  |
-| `GetFixFor` | method | [28](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L28) · [body 87](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L87) |  | ⚪ not started |  |
-| `AddFixFor` | method | [29](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L29) · [body 54](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L54) |  | ⚪ not started |  |
+| `MatchString` | method, private | [20](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L20) · [body 121](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L121) | [`TBoldOclGraphicRTDebugger.MatchString`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L115) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `OrgExprs` | property, protected | [22](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L22) | [`TBoldOclGraphicRTDebugger.OrgExprs`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L119) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `FixedExprs` | property, protected | [23](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L23) | [`TBoldOclGraphicRTDebugger.FixedExprs`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L122) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `Create` | constructor | [25](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L25) · [body 107](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L107) | [`TBoldOclGraphicRTDebugger.TBoldOclGraphicRTDebugger`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L20) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `Destroy` | destructor | [26](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L26) · [body 114](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L114) | [`TBoldOclGraphicRTDebugger.Dispose`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L27) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `HasFixFor` | method | [27](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L27) · [body 101](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L101) | [`TBoldOclGraphicRTDebugger.HasFixFor`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L111) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `GetFixFor` | method | [28](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L28) · [body 87](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L87) | [`TBoldOclGraphicRTDebugger.GetFixFor`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L96) | 🟢 ported: Delphi looked up the original expression again on each step, so a fixed expression looped forever; this follows the fix, and stops at a cycle. | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+| `AddFixFor` | method | [29](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L29) · [body 54](../../../Source/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.pas#L54) | [`TBoldOclGraphicRTDebugger.AddFixFor`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L51) | 🟢 ported | [`BoldOclPropEditorTests.The_debugger_keeps_the_user_s_fix_of_an_expression`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldOclPropEditorTests.cs#L95) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldOclGraphicRTDebugger.ShowFixForm`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldOCLGraphicRTDebug.cs#L92) (property)
 
 ## Dependencies
 

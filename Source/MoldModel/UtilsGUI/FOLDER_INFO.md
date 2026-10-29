@@ -25,5 +25,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldTypeNameEditor](../../../CSharp/port/units/BoldTypeNameEditor.md) | Bold.WinForms: MoldModel/UtilsGUI/BoldTypeNameEditor.cs (not started) | M8 WinForms |
+| [BoldTypeNameEditor](../../../CSharp/port/units/BoldTypeNameEditor.md) | [Bold.WinForms: MoldModel/UtilsGUI/BoldTypeNameEditor.cs](../../../CSharp/src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs) | M8 WinForms |
 <!-- END C# PORT -->

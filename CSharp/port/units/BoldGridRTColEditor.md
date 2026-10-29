@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas) (213 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | 🟢 ported: 18 of 18 symbols done, 0 verified |
 
-⚪ 18 not started
+🟢 17 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,31 +18,58 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldExposedGrid` | class | [22](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L22) |  | ⚪ not started |  |
-| `TfrmRTColEditor` | class | [23](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L23) |  | ⚪ not started |  |
+| `TBoldExposedGrid` | class | [22](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L22) | [`[assembly: Delphi] in BoldGridRTColEditor.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L8) | 🔵 replaced: Opened the grid's protected members; the grid's columns and list element type are public. |  |
+| `TfrmRTColEditor` | class | [23](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L23) | [`TfrmRTColEditor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L17) | 🟢 ported: The form's layout is that of the Delphi form file. | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
 
 ## TfrmRTColEditor
 
-class at [line 23](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L23); 🟢 ported, C# [`TfrmRTColEditor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L17).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `lbxColumnsClick` | method | [43](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L43) · [body 153](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L153) |  | ⚪ not started |  |
-| `PropertyChanged` | method | [44](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L44) · [body 159](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L159) |  | ⚪ not started |  |
-| `cmdApplyClick` | method | [45](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L45) · [body 164](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L164) |  | ⚪ not started |  |
-| `cmdAddColumnClick` | method | [46](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L46) · [body 175](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L175) |  | ⚪ not started |  |
-| `cmdDeleteColumnClick` | method | [47](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L47) · [body 185](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L185) |  | ⚪ not started |  |
-| `PropertyKeyPress` | method | [48](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L48) · [body 192](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L192) |  | ⚪ not started |  |
-| `cmdOCLEditorClick` | method | [49](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L49) · [body 198](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L198) |  | ⚪ not started |  |
-| `GetColumns` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L55) · [body 134](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L134) |  | ⚪ not started |  |
-| `GetEGrid` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L56) · [body 129](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L129) |  | ⚪ not started |  |
-| `GetGridColumn` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L57) · [body 77](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L77) |  | ⚪ not started |  |
-| `SetGridColumn` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L58) · [body 82](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L82) |  | ⚪ not started |  |
-| `CurrentIndex` | property, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L59) |  | ⚪ not started |  |
-| `Execute` | method | [62](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L62) · [body 142](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L142) |  | ⚪ not started |  |
-| `Grid` | property | [63](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L63) |  | ⚪ not started |  |
-| `EGrid` | property | [64](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L64) |  | ⚪ not started |  |
-| `CurrentGridColumn` | property | [65](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L65) |  | ⚪ not started |  |
+| `lbxColumnsClick` | method | [43](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L43) · [body 153](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L153) | [`TfrmRTColEditor.lbxColumnsClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L169) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `PropertyChanged` | method | [44](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L44) · [body 159](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L159) | [`TfrmRTColEditor.PropertyChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L179) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `cmdApplyClick` | method | [45](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L45) · [body 164](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L164) | [`TfrmRTColEditor.cmdApplyClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L183) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `cmdAddColumnClick` | method | [46](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L46) · [body 175](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L175) | [`TfrmRTColEditor.cmdAddColumnClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L194) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `cmdDeleteColumnClick` | method | [47](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L47) · [body 185](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L185) | [`TfrmRTColEditor.cmdDeleteColumnClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L203) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `PropertyKeyPress` | method | [48](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L48) · [body 192](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L192) | [`TfrmRTColEditor.PropertyKeyPress`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L215) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `cmdOCLEditorClick` | method | [49](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L49) · [body 198](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L198) | [`TfrmRTColEditor.cmdOCLEditorClick`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L225) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `GetColumns` | method, private | [55](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L55) · [body 134](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L134) | [`TfrmRTColEditor.GetColumns`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L142) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `GetEGrid` | method, private | [56](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L56) · [body 129](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L129) | [`TfrmRTColEditor.GetEGrid`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L138) | 🟢 ported: The grid itself: its columns are public. | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `GetGridColumn` | method, private | [57](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L57) · [body 77](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L77) | [`TfrmRTColEditor.GetGridColumn`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L98) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `SetGridColumn` | method, private | [58](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L58) · [body 82](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L82) | [`TfrmRTColEditor.SetGridColumn`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L102) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `CurrentIndex` | property, private | [59](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L59) | [`TfrmRTColEditor.CurrentIndex`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L237) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `Execute` | method | [62](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L62) · [body 142](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L142) | [`TfrmRTColEditor.Execute`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L152) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `Grid` | property | [63](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L63) | [`TfrmRTColEditor.Grid`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L244) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `EGrid` | property | [64](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L64) | [`TfrmRTColEditor.EGrid`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L251) | 🟢 ported: The grid itself (Delphi's typecast to TBoldExposedGrid). | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+| `CurrentGridColumn` | property | [65](../../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas#L65) | [`TfrmRTColEditor.CurrentGridColumn`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L254) | 🟢 ported | [`BoldGridRTColEditorTests.The_column_editor_changes_adds_and_deletes_columns`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldGridRTColEditorTests.cs#L14) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmRTColEditor.lbxColumns`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L22) (field)
+- [`TfrmRTColEditor.Panel1`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L23) (field)
+- [`TfrmRTColEditor.Panel2`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L24) (field)
+- [`TfrmRTColEditor.cmdOK`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L25) (field)
+- [`TfrmRTColEditor.Panel3`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L26) (field)
+- [`TfrmRTColEditor.tbxCaption`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L27) (field)
+- [`TfrmRTColEditor.tbxExpression`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L28) (field)
+- [`TfrmRTColEditor.cmdApply`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L29) (field)
+- [`TfrmRTColEditor.Label1`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L30) (field)
+- [`TfrmRTColEditor.Label2`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L31) (field)
+- [`TfrmRTColEditor.cmdAddColumn`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L32) (field)
+- [`TfrmRTColEditor.cmdDeleteColumn`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L33) (field)
+- [`TfrmRTColEditor.cmdOCLEditor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L34) (field)
+- [`TfrmRTColEditor.GroupBox1`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L35) (field)
+- [`TfrmRTColEditor.cbxRenderer`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L36) (field)
+- [`TfrmRTColEditor.cbxSetText`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L37) (field)
+- [`TfrmRTColEditor.cbxSetFont`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L38) (field)
+- [`TfrmRTColEditor.cbxSetColor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L39) (field)
+- [`TfrmRTColEditor.Label3`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L40) (field)
+- [`TfrmRTColEditor.TColumnItem.ToString`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L45) (method)
+- [`TfrmRTColEditor.TfrmRTColEditor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L48) (constructor)
+- [`TfrmRTColEditor.ShowModalForm`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs#L166) (property)
 
 ## Dependencies
 

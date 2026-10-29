@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas`](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas) (265 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs` |
+| C# | [`CSharp/src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 13 symbols done, 0 verified |
+| Status | 🟢 ported: 13 of 13 symbols done, 0 verified |
 
-⚪ 13 not started
+🟢 13 ported
 
 ## Unit level
 
@@ -18,26 +18,52 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldTypeNameEditorForm` | class | [19](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L19) |  | ⚪ not started |  |
+| `TBoldTypeNameEditorForm` | class | [19](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L19) | [`TBoldTypeNameEditorForm`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L14) | 🟢 ported: The grid is a DataGridView; its column headers are Delphi's fixed row 0, so Delphi's row r is grid row r - 1. |  |
 
 ## TBoldTypeNameEditorForm
 
-class at [line 19](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L19); 🟢 ported, C# [`TBoldTypeNameEditorForm`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FormCreate` | method | [38](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L38) · [body 64](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L64) |  | ⚪ not started |  |
-| `btnAddClick` | method | [39](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L39) · [body 81](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L81) |  | ⚪ not started |  |
-| `btnDeleteClick` | method | [40](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L40) · [body 95](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L95) |  | ⚪ not started |  |
-| `btnDownClick` | method | [41](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L41) · [body 108](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L108) |  | ⚪ not started |  |
-| `btnUpClick` | method | [42](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L42) · [body 134](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L134) |  | ⚪ not started |  |
-| `Copyrow1Click` | method | [43](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L43) · [body 139](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L139) |  | ⚪ not started |  |
-| `SaveToFile1Click` | method | [44](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L44) · [body 150](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L150) |  | ⚪ not started |  |
-| `LoadFromFile1Click` | method | [45](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L45) · [body 212](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L212) |  | ⚪ not started |  |
-| `MergeDefaultsmappings1Click` | method | [46](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L46) · [body 226](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L226) |  | ⚪ not started |  |
-| `MoveRow` | method, private | [49](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L49) · [body 113](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L113) |  | ⚪ not started |  |
-| `SaveToDictionary` | method | [51](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L51) · [body 186](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L186) |  | ⚪ not started |  |
-| `LoadFromDictionary` | method | [52](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L52) · [body 163](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L163) |  | ⚪ not started |  |
+| `FormCreate` | method | [38](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L38) · [body 64](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L64) | [`TBoldTypeNameEditorForm.FormCreate`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L145) | 🟢 ported: Called by the constructor (Delphi's OnCreate). | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `btnAddClick` | method | [39](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L39) · [body 81](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L81) | [`TBoldTypeNameEditorForm.btnAddClick`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L160) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `btnDeleteClick` | method | [40](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L40) · [body 95](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L95) | [`TBoldTypeNameEditorForm.btnDeleteClick`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L175) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `btnDownClick` | method | [41](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L41) · [body 108](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L108) | [`TBoldTypeNameEditorForm.btnDownClick`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L184) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `btnUpClick` | method | [42](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L42) · [body 134](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L134) | [`TBoldTypeNameEditorForm.btnUpClick`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L209) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `Copyrow1Click` | method | [43](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L43) · [body 139](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L139) | [`TBoldTypeNameEditorForm.Copyrow1Click`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L213) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `SaveToFile1Click` | method | [44](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L44) · [body 150](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L150) | [`TBoldTypeNameEditorForm.SaveToFile1Click`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L224) | 🟢 ported |  |
+| `LoadFromFile1Click` | method | [45](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L45) · [body 212](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L212) | [`TBoldTypeNameEditorForm.LoadFromFile1Click`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L282) | 🟢 ported |  |
+| `MergeDefaultsmappings1Click` | method | [46](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L46) · [body 226](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L226) | [`TBoldTypeNameEditorForm.MergeDefaultsmappings1Click`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L297) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `MoveRow` | method, private | [49](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L49) · [body 113](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L113) | [`TBoldTypeNameEditorForm.MoveRow`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L188) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `SaveToDictionary` | method | [51](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L51) · [body 186](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L186) | [`TBoldTypeNameEditorForm.SaveToDictionary`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L258) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+| `LoadFromDictionary` | method | [52](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L52) · [body 163](../../../Source/MoldModel/UtilsGUI/BoldTypeNameEditor.pas#L163) | [`TBoldTypeNameEditorForm.LoadFromDictionary`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L236) | 🟢 ported | [`BoldTypeNameEditorTests.The_editor_loads_edits_and_saves_the_mappings`](../../tests/Bold.WinForms.Tests/MoldModel/UtilsGUI/BoldTypeNameEditorTests.cs#L13) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldTypeNameEditorForm.StringGrid1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L17) (field)
+- [`TBoldTypeNameEditorForm.btnAdd`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L18) (field)
+- [`TBoldTypeNameEditorForm.btnDelete`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L19) (field)
+- [`TBoldTypeNameEditorForm.btnOK`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L20) (field)
+- [`TBoldTypeNameEditorForm.btnCancel`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L21) (field)
+- [`TBoldTypeNameEditorForm.btnDown`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L22) (field)
+- [`TBoldTypeNameEditorForm.btnUp`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L23) (field)
+- [`TBoldTypeNameEditorForm.MainMenu1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L24) (field)
+- [`TBoldTypeNameEditorForm.File1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L25) (field)
+- [`TBoldTypeNameEditorForm.SaveToFile1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L26) (field)
+- [`TBoldTypeNameEditorForm.SaveDialog1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L27) (field)
+- [`TBoldTypeNameEditorForm.OpenDialog1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L28) (field)
+- [`TBoldTypeNameEditorForm.LoadFromFile1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L29) (field)
+- [`TBoldTypeNameEditorForm.PopupMenu1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L30) (field)
+- [`TBoldTypeNameEditorForm.Copyrow1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L31) (field)
+- [`TBoldTypeNameEditorForm.Edit1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L32) (field)
+- [`TBoldTypeNameEditorForm.MergeDefaultsmappings1`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L33) (field)
+- [`TBoldTypeNameEditorForm.TBoldTypeNameEditorForm`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L35) (constructor)
+- [`TBoldTypeNameEditorForm.Dispose`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L100) (method)
+- [`TBoldTypeNameEditorForm.Cells`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L127) (method)
+- [`TBoldTypeNameEditorForm.SetCells`](../../src/Bold.WinForms/MoldModel/UtilsGUI/BoldTypeNameEditor.cs#L131) (method)
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas`](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas) (280 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs` |
+| C# | [`CSharp/src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🟢 ported: 12 of 12 symbols done, 0 verified |
 
-⚪ 12 not started
+🟢 12 ported
 
 ## Unit level
 
@@ -18,25 +18,40 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TNodeType` | enum | [18](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L18) |  | ⚪ not started |  |
-| `TfrmBoldTypeNameSelector` | class | [21](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L21) |  | ⚪ not started |  |
+| `TNodeType` | enum | [18](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L18) | [`TNodeType`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L11) | 🟢 ported | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `TfrmBoldTypeNameSelector` | class | [21](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L21) | [`TfrmBoldTypeNameSelector`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L18) | 🟢 ported: The form's layout is that of the Delphi form file. | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
 
 ## TfrmBoldTypeNameSelector
 
-class at [line 21](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L21); 🟢 ported, C# [`TfrmBoldTypeNameSelector`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FormCreate` | method | [29](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L29) · [body 67](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L67) |  | ⚪ not started |  |
-| `btOKClick` | method | [30](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L30) · [body 247](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L247) |  | ⚪ not started |  |
-| `btCancelClick` | method | [31](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L31) · [body 253](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L253) |  | ⚪ not started |  |
-| `tvMetaTypesChange` | method | [32](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L32) · [body 258](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L258) |  | ⚪ not started |  |
-| `tvMetaTypesDblClick` | method | [33](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L33) · [body 263](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L263) |  | ⚪ not started |  |
-| `mnSortClick` | method | [34](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L34) · [body 274](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L274) |  | ⚪ not started |  |
-| `GenerateNodes` | method, private | [37](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L37) · [body 81](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L81) |  | ⚪ not started |  |
-| `SetImageIndex` | method, private | [38](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L38) · [body 181](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L181) |  | ⚪ not started |  |
-| `SelectCurrentNode` | method, private | [39](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L39) · [body 268](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L268) |  | ⚪ not started |  |
-| `Select` | method | [41](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L41) · [body 55](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L55) |  | ⚪ not started |  |
+| `FormCreate` | method | [29](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L29) · [body 67](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L67) | [`TfrmBoldTypeNameSelector.FormCreate`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L97) | 🟢 ported: Called by the constructor (Delphi's OnCreate); the bitmaps are embedded in Bold.WinForms from the repository's Images. | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `btOKClick` | method | [30](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L30) · [body 247](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L247) | [`TfrmBoldTypeNameSelector.btOKClick`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L231) | 🟢 ported | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `btCancelClick` | method | [31](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L31) · [body 253](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L253) | [`TfrmBoldTypeNameSelector.btCancelClick`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L240) | 🟢 ported | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `tvMetaTypesChange` | method | [32](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L32) · [body 258](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L258) | [`TfrmBoldTypeNameSelector.tvMetaTypesChange`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L244) | 🟢 ported: The tree's AfterSelect event (Delphi's OnChange). | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `tvMetaTypesDblClick` | method | [33](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L33) · [body 263](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L263) | [`TfrmBoldTypeNameSelector.tvMetaTypesDblClick`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L247) | 🟢 ported | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `mnSortClick` | method | [34](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L34) · [body 274](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L274) | [`TfrmBoldTypeNameSelector.mnSortClick`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L259) | 🟢 ported | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `GenerateNodes` | method, private | [37](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L37) · [body 81](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L81) | [`TfrmBoldTypeNameSelector.GenerateNodes`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L111) | 🟢 ported | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `SetImageIndex` | method, private | [38](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L38) · [body 181](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L181) | [`TfrmBoldTypeNameSelector.SetImageIndex`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L208) | 🟢 ported: The node is passed by value: setting its images needs no var. | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `SelectCurrentNode` | method, private | [39](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L39) · [body 268](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L268) | [`TfrmBoldTypeNameSelector.SelectCurrentNode`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L250) | 🟢 ported | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+| `Select` | method | [41](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L41) · [body 55](../../../Source/ObjectSpace/UtilsGUI/BoldTypeNameSelector.pas#L55) | [`TfrmBoldTypeNameSelector.Select`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L81) | 🟢 ported: Gives a modal result (an integer, Delphi's TModalResult). | [`BoldTypeNameSelectorTests.The_selector_shows_the_approved_types_and_gives_the_one_picked`](../../tests/Bold.WinForms.Tests/ObjectSpace/UtilsGUI/BoldTypeNameSelectorTests.cs#L16) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmBoldTypeNameSelector.tvMetaTypes`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L21) (field)
+- [`TfrmBoldTypeNameSelector.pnButtons`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L22) (field)
+- [`TfrmBoldTypeNameSelector.btCancel`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L23) (field)
+- [`TfrmBoldTypeNameSelector.btOK`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L24) (field)
+- [`TfrmBoldTypeNameSelector.ilImages`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L25) (field)
+- [`TfrmBoldTypeNameSelector.PopupMenu1`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L26) (field)
+- [`TfrmBoldTypeNameSelector.mnSort`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L27) (field)
+- [`TfrmBoldTypeNameSelector.TfrmBoldTypeNameSelector`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L29) (constructor)
+- [`TfrmBoldTypeNameSelector.Dispose`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L68) (method)
+- [`TfrmBoldTypeNameSelector.SystemTypeInfo`](../../src/Bold.WinForms/ObjectSpace/UtilsGUI/BoldTypeNameSelector.cs#L268) (property)
 
 ## Dependencies
 

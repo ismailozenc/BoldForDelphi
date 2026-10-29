@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas`](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas) (292 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs` |
+| C# | [`CSharp/src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 27 symbols done, 0 verified |
+| Status | 🟢 ported: 27 of 27 symbols done, 0 verified |
 
-⚪ 27 not started
+🟢 27 ported
 
 ## Unit level
 
@@ -18,40 +18,72 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TfrmBoldDbEvolutor` | class | [20](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L20) |  | ⚪ not started |  |
+| `TfrmBoldDbEvolutor` | class | [20](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L20) | [`TfrmBoldDbEvolutor`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L15) | 🟢 ported: The form's layout is that of the Delphi form file. The scripts are string lists that the memos show. |  |
 
 ## TfrmBoldDbEvolutor
 
-class at [line 20](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L20); 🟢 ported, C# [`TfrmBoldDbEvolutor`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FormCreate` | method | [36](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L36) · [body 139](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L139) |  | ⚪ not started |  |
-| `FormDestroy` | method | [37](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L37) · [body 148](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L148) |  | ⚪ not started |  |
-| `FormClose` | method | [38](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L38) · [body 156](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L156) |  | ⚪ not started |  |
-| `Button1Click` | method | [39](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L39) · [body 282](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L282) |  | ⚪ not started |  |
-| `SetProgress` | method, private | [44](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L44) · [body 110](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L110) |  | ⚪ not started |  |
-| `SetLogHeader` | method, private | [45](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L45) · [body 116](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L116) |  | ⚪ not started |  |
-| `SetProgressMax` | method, private | [46](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L46) · [body 121](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L121) |  | ⚪ not started |  |
-| `Clear` | method, private | [47](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L47) · [body 83](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L83) |  | ⚪ not started |  |
-| `Hide` | method, private | [48](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L48) · [body 93](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L93) |  | ⚪ not started |  |
-| `Log` | method, private | [49](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L49) · [body 98](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L98) |  | ⚪ not started |  |
-| `ProgressStep` | method, private | [50](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L50) · [body 105](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L105) |  | ⚪ not started |  |
-| `Show` | method, private | [51](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L51) · [body 127](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L127) |  | ⚪ not started |  |
-| `Sync` | method, private | [52](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L52) · [body 203](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L203) |  | ⚪ not started |  |
-| `StartLog` | method, private | [53](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L53) · [body 132](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L132) |  | ⚪ not started |  |
-| `EndLog` | method, private | [54](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L54) · [body 88](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L88) |  | ⚪ not started |  |
-| `ProcessInterruption` | method, private | [55](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L55) · [body 198](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L198) |  | ⚪ not started |  |
-| `GetMappingInfoScript` | method, private | [56](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L56) · [body 161](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L161) |  | ⚪ not started |  |
-| `GetSQLScript` | method, private | [57](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L57) · [body 166](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L166) |  | ⚪ not started |  |
-| `GetWarnings` | method, private | [58](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L58) · [body 171](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L171) |  | ⚪ not started |  |
-| `UpdateWarningCount` | method, private | [59](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L59) · [body 189](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L189) |  | ⚪ not started |  |
-| `Create` | constructor | [61](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L61) · [body 176](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L176) |  | ⚪ not started |  |
-| `Destroy` | destructor | [62](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L62) · [body 183](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L183) |  | ⚪ not started |  |
-| `EvolveDB` | class method | [63](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L63) · [body 208](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L208) |  | ⚪ not started |  |
-| `SQLScript` | property | [64](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L64) |  | ⚪ not started |  |
-| `MappingInfoScript` | property | [65](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L65) |  | ⚪ not started |  |
-| `Warnings` | property | [66](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L66) |  | ⚪ not started |  |
+| `FormCreate` | method | [36](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L36) · [body 139](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L139) | [`TfrmBoldDbEvolutor.FormCreate`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L155) | 🟢 ported: Called by the constructor (Delphi's OnCreate). | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `FormDestroy` | method | [37](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L37) · [body 148](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L148) | [`TfrmBoldDbEvolutor.FormDestroy`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L162) | 🟢 ported: Called by Dispose (Delphi's OnDestroy). | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `FormClose` | method | [38](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L38) · [body 156](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L156) | [`TfrmBoldDbEvolutor.FormClose`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L166) | 🟢 ported: The FormClosed event. WinForms disposes a closed modeless form itself; EvolveDB disposes the modal one. | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+| `Button1Click` | method | [39](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L39) · [body 282](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L282) | [`TfrmBoldDbEvolutor.Button1Click`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L281) | 🟢 ported |  |
+| `SetProgress` | method, private | [44](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L44) · [body 110](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L110) | [`TfrmBoldDbEvolutor.SetProgress`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L120) | 🟢 ported: Kept within the bar's range, as Delphi's progress bar does. | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `SetLogHeader` | method, private | [45](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L45) · [body 116](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L116) | [`TfrmBoldDbEvolutor.SetLogHeader`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L127) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `SetProgressMax` | method, private | [46](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L46) · [body 121](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L121) | [`TfrmBoldDbEvolutor.SetProgressMax`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L133) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `Clear` | method, private | [47](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L47) · [body 83](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L83) | [`TfrmBoldDbEvolutor.Clear`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L96) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `Hide` | method, private | [48](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L48) · [body 93](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L93) | [`TfrmBoldDbEvolutor.Hide`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L105) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `Log` | method, private | [49](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L49) · [body 98](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L98) | [`TfrmBoldDbEvolutor.Log`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L109) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `ProgressStep` | method, private | [50](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L50) · [body 105](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L105) | [`TfrmBoldDbEvolutor.ProgressStep`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L117) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `Show` | method, private | [51](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L51) · [body 127](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L127) | [`TfrmBoldDbEvolutor.Show`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L140) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `Sync` | method, private | [52](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L52) · [body 203](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L203) | [`TfrmBoldDbEvolutor.Sync`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L194) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `StartLog` | method, private | [53](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L53) · [body 132](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L132) | [`TfrmBoldDbEvolutor.StartLog`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L144) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `EndLog` | method, private | [54](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L54) · [body 88](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L88) | [`TfrmBoldDbEvolutor.EndLog`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L102) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `ProcessInterruption` | method, private | [55](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L55) · [body 198](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L198) | [`TfrmBoldDbEvolutor.ProcessInterruption`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L188) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `GetMappingInfoScript` | method, private | [56](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L56) · [body 161](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L161) | [`TfrmBoldDbEvolutor.GetMappingInfoScript`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L171) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+| `GetSQLScript` | method, private | [57](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L57) · [body 166](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L166) | [`TfrmBoldDbEvolutor.GetSQLScript`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L174) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+| `GetWarnings` | method, private | [58](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L58) · [body 171](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L171) | [`TfrmBoldDbEvolutor.GetWarnings`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L177) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+| `UpdateWarningCount` | method, private | [59](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L59) · [body 189](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L189) | [`TfrmBoldDbEvolutor.UpdateWarningCount`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L181) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `Create` | constructor | [61](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L61) · [body 176](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L176) | [`TfrmBoldDbEvolutor.TfrmBoldDbEvolutor`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L38) | 🟢 ported: No owner. | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `Destroy` | destructor | [62](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L62) · [body 183](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L183) | [`TfrmBoldDbEvolutor.Dispose`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L83) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_log_and_the_warnings`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L69) |
+| `EvolveDB` | class method | [63](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L63) · [body 208](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L208) | [`TfrmBoldDbEvolutor.EvolveDB`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L204) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+| `SQLScript` | property | [64](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L64) | [`TfrmBoldDbEvolutor.SQLScript`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L297) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+| `MappingInfoScript` | property | [65](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L65) | [`TfrmBoldDbEvolutor.MappingInfoScript`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L300) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+| `Warnings` | property | [66](../../../Source/PMapper/DbEvolutor/BoldDbEvolutorForm.pas#L66) | [`TfrmBoldDbEvolutor.Warnings`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L303) | 🟢 ported | [`BoldDbEvolutorFormTests.The_form_shows_the_changes_and_executes_them_when_told`](../../tests/Bold.WinForms.Tests/PMapper/DbEvolutor/BoldDbEvolutorFormTests.cs#L17) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmBoldDbEvolutor.PageControl1`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L21) (field)
+- [`TfrmBoldDbEvolutor.tsActions`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L22) (field)
+- [`TfrmBoldDbEvolutor.tsSQLScript`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L23) (field)
+- [`TfrmBoldDbEvolutor.mmoActions`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L24) (field)
+- [`TfrmBoldDbEvolutor.mmoSQLScript`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L25) (field)
+- [`TfrmBoldDbEvolutor.btnCancel`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L26) (field)
+- [`TfrmBoldDbEvolutor.btnExecute`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L27) (field)
+- [`TfrmBoldDbEvolutor.ProgressBar1`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L28) (field)
+- [`TfrmBoldDbEvolutor.tsMappingInfo`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L29) (field)
+- [`TfrmBoldDbEvolutor.mmoMappingInfoScript`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L30) (field)
+- [`TfrmBoldDbEvolutor.tsWarnings`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L31) (field)
+- [`TfrmBoldDbEvolutor.mmoWarnings`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L32) (field)
+- [`TfrmBoldDbEvolutor.Button1`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L33) (field)
+- [`TfrmBoldDbEvolutor.SaveDialog1`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L34) (field)
+- [`TfrmBoldDbEvolutor.ShowModalForm`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L197) (property)
+- [`TfrmBoldDbEvolutor.SetProgress`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L305) (method)
+- [`TfrmBoldDbEvolutor.SetLogHeader`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L307) (method)
+- [`TfrmBoldDbEvolutor.SetProgressMax`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L309) (method)
+- [`TfrmBoldDbEvolutor.Clear`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L311) (method)
+- [`TfrmBoldDbEvolutor.Hide`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L313) (method)
+- [`TfrmBoldDbEvolutor.Log`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L315) (method)
+- [`TfrmBoldDbEvolutor.ProgressStep`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L317) (method)
+- [`TfrmBoldDbEvolutor.Show`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L319) (method)
+- [`TfrmBoldDbEvolutor.Sync`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L327) (method)
+- [`TfrmBoldDbEvolutor.StartLog`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L329) (method)
+- [`TfrmBoldDbEvolutor.EndLog`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L331) (method)
+- [`TfrmBoldDbEvolutor.ProcessInterruption`](../../src/Bold.WinForms/PMapper/DbEvolutor/BoldDbEvolutorForm.cs#L333) (method)
 
 ## Dependencies
 

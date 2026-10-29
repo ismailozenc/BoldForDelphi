@@ -285,6 +285,7 @@ public class BoldAFPDefaultTests
         BoldAFPDefault.G_BoldActiveAutoForms.Forms(oakForm).Dispose();
 
         OnDoubleClickMethod.Invoke(home, [EventArgs.Empty]);
+        GuiSample.Display();
         oakForm = BoldAFPDefault.G_BoldActiveAutoForms.IndexOfElement(oak);
         Assert.That(oakForm, Is.Not.EqualTo(-1), "a double click on the edit opens the related object's form");
         Assert.That(BoldAFPDefault.G_BoldActiveAutoForms.Forms(oakForm).Text, Does.StartWith("Residential Building: "));
@@ -422,7 +423,7 @@ public class BoldAFPDefaultTests
             Assert.That(pages.SelectedIndex, Is.EqualTo(0));
 
             pages.SelectedIndex = 2;
-            Point inside = pages.PointToScreen(new Point(2, pages.DisplayRectangle.Top + 10));
+            Point inside = pages.PointToScreen(new Point(pages.DisplayRectangle.Left + 10, pages.DisplayRectangle.Top + 10));
             OnDragOverMethod.Invoke(pages, [new DragEventArgs(null, 0, inside.X, inside.Y, DragDropEffects.Copy, DragDropEffects.Copy)]);
             Assert.That(pages.SelectedIndex, Is.EqualTo(2), "over a page, not a tab");
         }

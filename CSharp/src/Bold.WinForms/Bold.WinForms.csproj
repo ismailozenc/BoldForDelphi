@@ -27,6 +27,17 @@
     <EmbeddedResource Include="../../../Images/BoldEdit Ellipsis.bmp" LogicalName="Bold.Images.BoldEdit Ellipsis.bmp" />
     <!-- The drag source of the default object form (BoldAFPDefault's DROPTARGETSOURCE). -->
     <EmbeddedResource Include="../../../Images/DropTargetSource.bmp" LogicalName="Bold.Images.DropTargetSource.bmp" />
+    <!-- The images of the type name selector (BoldTypeNameSelector.rc). -->
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLModelRoot.bmp" LogicalName="Bold.Images.SmallUMLModelRoot.bmp" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLClass.bmp" LogicalName="Bold.Images.SmallUMLClass.bmp" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLClasses.bmp" LogicalName="Bold.Images.SmallUMLClasses.bmp" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLAttribute2.bmp" LogicalName="Bold.Images.SmallUMLAttribute2.bmp" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLAttributes2.bmp" LogicalName="Bold.Images.SmallUMLAttributes2.bmp" />
+    <EmbeddedResource Include="../../../Images/SmallList.bmp" LogicalName="Bold.Images.SmallList.bmp" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLClassList.bmp" LogicalName="Bold.Images.SmallUMLClassList.bmp" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLAttributeList.bmp" LogicalName="Bold.Images.SmallUMLAttributeList.bmp" />
+    <EmbeddedResource Include="../../../Images/SmallSystem.bmp" LogicalName="Bold.Images.SmallSystem.bmp" />
+    <EmbeddedResource Include="../../../Images/SmallType.bmp" LogicalName="Bold.Images.SmallType.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />

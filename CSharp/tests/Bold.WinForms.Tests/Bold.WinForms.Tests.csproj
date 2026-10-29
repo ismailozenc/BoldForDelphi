@@ -10,6 +10,20 @@
   <ItemGroup>
     <Compile Include="../Bold.AwareGui.Tests/Support/GuiSample.cs" Link="Support/GuiSample.cs" />
     <Compile Include="../Bold.AwareGui.Tests/Support/ValuesSample.cs" Link="Support/ValuesSample.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/TestDatabase.cs" Link="Support/TestDatabase.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/SqlTestModel.cs" Link="Support/SqlTestModel.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/NativeSqlite.cs" Link="Support/NativeSqlite.cs" Condition="'$(BoldOffline)' == 'true'" />
+  </ItemGroup>
+  <!-- The evolution form runs on SQLite: offline builds use the small native provider of the SQL tests; normal builds Microsoft.Data.Sqlite. -->
+  <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
+    <DefineConstants>$(DefineConstants);BOLD_OFFLINE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Data.Sqlite" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />
@@ -18,6 +32,7 @@
     <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
     <ProjectReference Include="../../src/Bold.Persistence/Bold.Persistence.csproj" />
     <ProjectReference Include="../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
     <ProjectReference Include="../../src/Bold.Handles/Bold.Handles.csproj" />
     <ProjectReference Include="../../src/Bold.AwareGui/Bold.AwareGui.csproj" />
     <ProjectReference Include="../../src/Bold.WinForms/Bold.WinForms.csproj" />

@@ -46,6 +46,27 @@ public static class BoldWinForms
         BoldDbValidator.ConfirmHandler ??= question => AskYesNo(question, TMsgDlgType.mtConfirmation);
     }
 
+    /// <summary>
+    /// A bitmap embedded in Bold.WinForms from the repository's Images (by file name), transparent where it has the
+    /// given color; null when there is none of the name.
+    /// </summary>
+    public static Bitmap? ImageResource(string fileName, Color? transparent = null)
+    {
+        using Stream? stream = typeof(BoldWinForms).Assembly.GetManifestResourceStream("Bold.Images." + fileName);
+        if (stream is null)
+        {
+            return null;
+        }
+
+        var bitmap = new Bitmap(stream);
+        if (transparent is { } color)
+        {
+            bitmap.MakeTransparent(color);
+        }
+
+        return bitmap;
+    }
+
     /// <summary>A yes or no question in a message dialog: true for yes.</summary>
     private static bool AskYesNo(string question, TMsgDlgType dlgType) =>
         Dialogs.MessageDlg(question, dlgType, DelphiSet<TMsgDlgBtn>.Of(TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo), 0) == Controls.mrYes;
