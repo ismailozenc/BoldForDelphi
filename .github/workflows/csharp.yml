@@ -55,16 +55,20 @@ jobs:
       - name: Test
         run: |
           failed=0
+          counts=""
           for project in CSharp/tests/*.Tests/*.Tests.csproj; do
             name=$(basename "$project" .csproj)
             if dotnet test "$project" --configuration Release --no-build --logger trx --logger "console;verbosity=normal" --results-directory "CSharp/TestResults/$name" > "test-$name.log" 2>&1; then
               grep -E "^\s*(Passed|Failed|Skipped|Total)( tests)?[:!]|^Test Run" "test-$name.log" | tail -3
+              counts="$counts$name: $(tr -d '\r' < "test-$name.log" | grep -E '(Passed|Failed)! +-' | tail -1 | sed -E 's/^.*(Passed|Failed)! +- +//; s/ +- +[^ ]+\.dll.*$//')%0A"
             else
               failed=1
               tail -30 "test-$name.log"
               echo "::error::$name failed:%0A$( (grep -E '(Failed|Passed)! +-|^Total tests|^ +(Passed|Failed|Skipped): +[0-9]' "test-$name.log"; tr -d '\r' < "test-$name.log" | awk '/^ *Failed /{p=1} /^ *(Passed|Skipped) /{p=0} p') | head -300 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
             fi
           done
+          # The counts in one annotation, which the GitHub API gives to tools that cannot read the job log.
+          echo "::notice title=Tests::$counts"
           exit $failed
 
       - name: Check port links
@@ -73,7 +77,10 @@ jobs:
 
       - name: Port status on the job page
         if: ${{ !cancelled() }}
-        run: dotnet run --project CSharp/tools/Bold.PortTool --configuration Release --no-build -- summary --results CSharp/TestResults --out "$GITHUB_STEP_SUMMARY"
+        run: |
+          dotnet run --project CSharp/tools/Bold.PortTool --configuration Release --no-build -- summary --results CSharp/TestResults --out "$GITHUB_STEP_SUMMARY"
+          # The milestone rows in one annotation as well, for tools that cannot read the job page.
+          echo "::notice title=Port status::$(grep -E '^\| (M[0-9]+|Later|✅)' "$GITHUB_STEP_SUMMARY" | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
 
       - name: Port status pages
         if: ${{ !cancelled() }}
