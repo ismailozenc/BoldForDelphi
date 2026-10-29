@@ -25,7 +25,7 @@ public class BoldDbEvolutorFormTests
 
         try
         {
-            using (var same = new SqliteHandle(values.Model, createSchema: false, file: file))
+            using (var same = new SqliteHandle(values.Model, createSchema: false, file: file) { KeepFile = true })
             {
                 TfrmBoldDbEvolutor.EvolveDB(same.Handle, false);
                 Assert.That(values.Environment.Dialogs, Has.Member(BoldPMConsts.sNoUpdateNeeded));
@@ -45,7 +45,7 @@ public class BoldDbEvolutorFormTests
                 return DialogResult.Cancel;
             };
             TfrmBoldDbEvolutor.EvolveDB(next.Handle, false);
-            Assert.That(script, Does.Contain("extra"));
+            Assert.That(script, Does.Contain("extra"), string.Join(" | ", values.Environment.Dialogs));
             Assert.That(memo.Trim(), Is.EqualTo(script.Trim()), "the memo shows the script");
             Assert.That(actions, Does.Contain(BoldPMConsts.sDetectingChanges));
             Assert.That(TestDatabase.Scalar(next.Connection, "SELECT COUNT(*) FROM pragma_table_info('Thing') WHERE name = 'extra'"), Is.EqualTo(0), "cancelled");

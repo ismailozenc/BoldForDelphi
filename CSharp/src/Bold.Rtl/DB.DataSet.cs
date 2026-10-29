@@ -203,9 +203,14 @@ public class TField
     }
 }
 
+/// <summary>Delphi's TDataSetNotifyEvent: an event of a data set (before or after opening, posting, scrolling...).</summary>
+public delegate void TDataSetNotifyEvent(TDataSet DataSet);
+
 /// <summary>
 /// Delphi's TDataSet, emulated over an in-memory record buffer: a subclass loads the records in InternalOpen and may
-/// write changes back in InternalPost and InternalDelete. Navigation, field access, editing and Locate follow Delphi.
+/// write changes back in InternalPost and InternalDelete. Navigation, field access, editing and Locate follow Delphi,
+/// with Delphi's events (BeforePost, AfterScroll and the like) and the hooks a subclass that follows live data needs
+/// (DoOnNewRecord, FieldChanged, InternalCancel, Resync).
 /// </summary>
 public abstract class TDataSet
 {
@@ -238,8 +243,96 @@ public abstract class TDataSet
     /// <summary>The 1-based current record number, 0 when there is none.</summary>
     public int RecNo => fRecNo + 1;
 
+    public TDataSetNotifyEvent? BeforeOpen { get; set; }
+    public TDataSetNotifyEvent? AfterOpen { get; set; }
+    public TDataSetNotifyEvent? BeforeClose { get; set; }
+    public TDataSetNotifyEvent? AfterClose { get; set; }
+    public TDataSetNotifyEvent? BeforeInsert { get; set; }
+    public TDataSetNotifyEvent? AfterInsert { get; set; }
+    public TDataSetNotifyEvent? BeforeEdit { get; set; }
+    public TDataSetNotifyEvent? AfterEdit { get; set; }
+    public TDataSetNotifyEvent? BeforePost { get; set; }
+    public TDataSetNotifyEvent? AfterPost { get; set; }
+    public TDataSetNotifyEvent? BeforeCancel { get; set; }
+    public TDataSetNotifyEvent? AfterCancel { get; set; }
+    public TDataSetNotifyEvent? BeforeDelete { get; set; }
+    public TDataSetNotifyEvent? AfterDelete { get; set; }
+    public TDataSetNotifyEvent? BeforeScroll { get; set; }
+    public TDataSetNotifyEvent? AfterScroll { get; set; }
+
     /// <summary>Loads the field definitions (when empty) and the records.</summary>
     protected abstract void InternalOpen(TFieldDefs FieldDefs, List<object?[]> Records);
+
+    /// <summary>Loads the records again (Resync), the field definitions staying; by default InternalOpen.</summary>
+    protected virtual void InternalLoadRecords(List<object?[]> Records) => InternalOpen(FieldDefs, Records);
+
+    /// <summary>A new record is being inserted (its values may be set, without FieldChanged); nothing here.</summary>
+    protected virtual void DoOnNewRecord()
+    {
+    }
+
+    /// <summary>A field of the record being edited or inserted was set; nothing here.</summary>
+    protected virtual void FieldChanged(int Index)
+    {
+    }
+
+    /// <summary>Editing of the current record starts; nothing here.</summary>
+    protected virtual void InternalEdit()
+    {
+    }
+
+    /// <summary>An edit or insert is cancelled; nothing here.</summary>
+    protected virtual void InternalCancel()
+    {
+    }
+
+    /// <summary>A record was posted: raises AfterPost.</summary>
+    protected virtual void DoAfterPost() => AfterPost?.Invoke(this);
+
+    protected virtual void DoBeforeScroll() => BeforeScroll?.Invoke(this);
+
+    protected virtual void DoAfterScroll() => AfterScroll?.Invoke(this);
+
+    /// <summary>The values of the record being edited or inserted, else of the current record (null when none).</summary>
+    protected object?[]? ActiveRecord => fEditBuffer ?? (fRecNo >= 0 && fRecNo < fRecords.Count ? fRecords[fRecNo] : null);
+
+    /// <summary>Sets a value of the active record without FieldChanged (for a subclass that reads its data).</summary>
+    protected void SetBufferValue(int Index, object? Value)
+    {
+        if (ActiveRecord is { } record)
+        {
+            record[Index] = Value;
+        }
+    }
+
+    /// <summary>Makes the record at the 0-based index current (no scroll events).</summary>
+    protected void GotoRecord(int Index)
+    {
+        if (Index >= 0 && Index < fRecords.Count)
+        {
+            fRecNo = Index;
+            fEof = fBof = false;
+        }
+    }
+
+    /// <summary>
+    /// Loads the records again, keeping the position (within the records); does nothing while a record is edited or
+    /// inserted (Delphi's Resync).
+    /// </summary>
+    protected void Resync()
+    {
+        if (!Active || fState is TDataSetState.dsEdit or TDataSetState.dsInsert)
+        {
+            return;
+        }
+
+        int recNo = fRecNo;
+        fRecords.Clear();
+        InternalLoadRecords(fRecords);
+        fRecNo = fRecords.Count == 0 ? -1 : Math.Clamp(recNo, 0, fRecords.Count - 1);
+        fEof = fRecords.Count == 0;
+        fBof = fRecords.Count == 0;
+    }
 
     /// <summary>Writes a posted record; Inserted tells a new record from an edit. Nothing here (an in-memory data set).</summary>
     protected virtual void InternalPost(object?[] Record, object?[]? OldRecord, bool Inserted)
@@ -262,6 +355,7 @@ public abstract class TDataSet
             return;
         }
 
+        BeforeOpen?.Invoke(this);
         fRecords.Clear();
         InternalOpen(FieldDefs, fRecords);
         fFields.Clear();
@@ -271,7 +365,11 @@ public abstract class TDataSet
         }
 
         fState = TDataSetState.dsBrowse;
-        First();
+        fRecNo = fRecords.Count > 0 ? 0 : -1;
+        fBof = true;
+        fEof = fRecords.Count == 0;
+        AfterOpen?.Invoke(this);
+        DoAfterScroll();
     }
 
     public void Close()
@@ -281,6 +379,7 @@ public abstract class TDataSet
             return;
         }
 
+        BeforeClose?.Invoke(this);
         InternalClose();
         fRecords.Clear();
         fFields.Clear();
@@ -288,6 +387,7 @@ public abstract class TDataSet
         fRecNo = -1;
         fState = TDataSetState.dsInactive;
         fEof = fBof = true;
+        AfterClose?.Invoke(this);
     }
 
     private void CheckActive()
@@ -310,22 +410,27 @@ public abstract class TDataSet
     public void First()
     {
         CheckBrowse();
+        DoBeforeScroll();
         fRecNo = fRecords.Count > 0 ? 0 : -1;
         fBof = true;
         fEof = fRecords.Count == 0;
+        DoAfterScroll();
     }
 
     public void Last()
     {
         CheckBrowse();
+        DoBeforeScroll();
         fRecNo = fRecords.Count - 1;
         fEof = true;
         fBof = fRecords.Count == 0;
+        DoAfterScroll();
     }
 
     public void Next()
     {
         CheckBrowse();
+        DoBeforeScroll();
         if (fRecNo < fRecords.Count - 1)
         {
             fRecNo++;
@@ -335,11 +440,14 @@ public abstract class TDataSet
         {
             fEof = true;
         }
+
+        DoAfterScroll();
     }
 
     public void Prior()
     {
         CheckBrowse();
+        DoBeforeScroll();
         if (fRecNo > 0)
         {
             fRecNo--;
@@ -349,6 +457,8 @@ public abstract class TDataSet
         {
             fBof = true;
         }
+
+        DoAfterScroll();
     }
 
     /// <summary>Moves by Distance records; returns how far it moved.</summary>
@@ -418,6 +528,7 @@ public abstract class TDataSet
         }
 
         fEditBuffer![Index] = Value;
+        FieldChanged(Index);
     }
 
     public void Edit()
@@ -434,15 +545,31 @@ public abstract class TDataSet
             return;
         }
 
+        BeforeEdit?.Invoke(this);
+        InternalEdit();
         fEditBuffer = (object?[])fRecords[fRecNo].Clone();
         fState = TDataSetState.dsEdit;
+        AfterEdit?.Invoke(this);
     }
 
     public void Append()
     {
         CheckBrowse();
+        BeforeInsert?.Invoke(this);
         fEditBuffer = new object?[fFields.Count];
         fState = TDataSetState.dsInsert;
+        try
+        {
+            DoOnNewRecord();
+        }
+        catch
+        {
+            fEditBuffer = null;
+            fState = TDataSetState.dsBrowse;
+            throw;
+        }
+
+        AfterInsert?.Invoke(this);
     }
 
     public void Insert() => Append();
@@ -450,6 +577,12 @@ public abstract class TDataSet
     public void Post()
     {
         CheckActive();
+        if (fState is TDataSetState.dsInsert or TDataSetState.dsEdit)
+        {
+            BeforePost?.Invoke(this);
+        }
+
+        bool posted = fState is TDataSetState.dsInsert or TDataSetState.dsEdit;
         if (fState == TDataSetState.dsInsert)
         {
             object?[] record = fEditBuffer!;
@@ -468,14 +601,30 @@ public abstract class TDataSet
         fState = TDataSetState.dsBrowse;
         fEof = false;
         fBof = false;
+        if (posted)
+        {
+            DoAfterPost();
+        }
     }
 
     public void Cancel()
     {
+        bool editing = fState is TDataSetState.dsEdit or TDataSetState.dsInsert;
+        if (editing)
+        {
+            BeforeCancel?.Invoke(this);
+            InternalCancel();
+        }
+
         fEditBuffer = null;
         if (Active)
         {
             fState = TDataSetState.dsBrowse;
+        }
+
+        if (editing)
+        {
+            AfterCancel?.Invoke(this);
         }
     }
 
@@ -494,6 +643,7 @@ public abstract class TDataSet
             throw new EDatabaseError("Cannot perform this operation on an empty dataset");
         }
 
+        BeforeDelete?.Invoke(this);
         InternalDelete(fRecords[fRecNo]);
         fRecords.RemoveAt(fRecNo);
         if (fRecNo >= fRecords.Count)
@@ -502,12 +652,44 @@ public abstract class TDataSet
         }
 
         fEof = fRecords.Count == 0;
+        AfterDelete?.Invoke(this);
     }
 
     /// <summary>Moves to the first record whose key fields (separated by ;) match KeyValues (one value or an array).</summary>
-    public bool Locate(string KeyFields, object? KeyValues, DelphiSet<TLocateOption> Options)
+    public virtual bool Locate(string KeyFields, object? KeyValues, DelphiSet<TLocateOption> Options)
     {
         CheckBrowse();
+        int found = FindRecord(KeyFields, KeyValues, Options);
+        if (found != -1)
+        {
+            DoBeforeScroll();
+            fRecNo = found;
+            fEof = fBof = false;
+            DoAfterScroll();
+            return true;
+        }
+
+        return false;
+    }
+
+    /// <summary>The values of the result fields (one value, or an array for several) of the first record that matches; null when none.</summary>
+    public virtual object? Lookup(string KeyFields, object? KeyValues, string ResultFields)
+    {
+        CheckBrowse();
+        int found = FindRecord(KeyFields, KeyValues, DelphiSet<TLocateOption>.Of(TLocateOption.loCaseInsensitive));
+        if (found == -1)
+        {
+            return null;
+        }
+
+        string[] names = ResultFields.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        object?[] values = Array.ConvertAll(names, n => fRecords[found][FieldByName(n).FieldNo - 1]);
+        return values.Length == 1 ? values[0] : values;
+    }
+
+    /// <summary>The index of the first record whose key fields match, or -1.</summary>
+    protected int FindRecord(string KeyFields, object? KeyValues, DelphiSet<TLocateOption> Options)
+    {
         string[] names = KeyFields.Split(';', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
         object?[] values = names.Length == 1 ? [KeyValues] : (object?[])KeyValues!;
         int[] indexes = Array.ConvertAll(names, n => FieldByName(n).FieldNo - 1);
@@ -521,13 +703,11 @@ public abstract class TDataSet
 
             if (match)
             {
-                fRecNo = r;
-                fEof = fBof = false;
-                return true;
+                return r;
             }
         }
 
-        return false;
+        return -1;
     }
 
     private static bool Matches(object? value, object? key, DelphiSet<TLocateOption> Options)
