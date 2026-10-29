@@ -35,6 +35,9 @@ public static class BoldWinForms
         BoldGUI.BoldPopupMenu ??= new ContextMenuStrip();
         BoldQueue.HandleException = (e, _) => Application.OnThreadException(e);
         Dialogs.MessageDlgHandler ??= ShowMessageDlg;
+        // The image units' initialization: their view adapters.
+        TBoldAbstractViewAdapter.RegisterViewAdapter(typeof(TBoldViewBitmapAdapter));
+        TBoldAbstractViewAdapter.RegisterViewAdapter(typeof(TBoldViewJPEGAdapter));
     }
 
     /// <summary>A message box for Delphi's MessageDlg.</summary>

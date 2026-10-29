@@ -155,7 +155,7 @@ public class BoldGridTests
         Assert.That(Grid.BeginEdit(true), Is.True);
         var editor = (TBoldInplaceEdit)Grid.EditingControl!;
         Assert.That(editor.Text, Is.EqualTo("Bob"));
-        Assert.That(editor.MaxLength, Is.EqualTo(0).Or.GreaterThan(1000), "a first name has no length");
+        Assert.That(editor.MaxLength, Is.EqualTo(255), "a string without a length has the default one");
         editor.Text = "Bud";
         Assert.That(Grid.EndEdit(), Is.True);
         Assert.That(Person(1).FirstName, Is.EqualTo("Bud"));

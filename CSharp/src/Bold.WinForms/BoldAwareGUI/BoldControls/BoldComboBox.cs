@@ -12,6 +12,7 @@ using static Bold.BoldGuiResourceStrings;
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldComboBox", Symbol = "TBoldCustomComboBox.CMParentColorChanged", Note = "Followed the parent's color; a WinForms control's BackColor is ambient until it is set.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldComboBox", Symbol = "TBoldCustomComboBox.CMParentFontChanged", Note = "Followed the parent's font; a WinForms control's Font is ambient until it is set.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldComboBox", Symbol = "TBoldCustomComboBox.ComboWndProc", Note = "Ignored clicks on the list of a read-only simple combo box; OnSelectionChangeCommitted puts a read-only combo box's text back.")]
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldComboBox", Symbol = "TWinControlHack", Note = "Reached the parent's protected font and color; a WinForms control's font and back color are public and ambient.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldComboBox", Symbol = "TBoldCustomComboBox.WMPaint", Note = "Only called inherited painting (own painting was never done).")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldComboBox", Symbol = "TBoldCustomComboBox.IsColorStored", Note = "The WinForms designer stores BackColor when it is not ambient.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldComboBox", Symbol = "TBoldCustomComboBox.IsFontStored", Note = "The WinForms designer stores Font when it is not ambient.")]

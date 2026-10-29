@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldPageControl.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas) (110 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🟢 ported: 12 of 12 symbols done, 0 verified |
 
-⚪ 12 not started
+🟢 12 ported
 
 ## Unit level
 
@@ -18,25 +18,31 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPageControl` | class | [19](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L19) |  | ⚪ not started |  |
+| `TBoldPageControl` | class | [19](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L19) | [`TBoldPageControl`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L11) | 🟢 ported: A WinForms TabControl; a page's name is its TabPage's Name. | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
 
 ## TBoldPageControl
 
-class at [line 19](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L19); 🟢 ported, C# [`TBoldPageControl`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Display` | method, private | [24](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L24) · [body 88](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L88) |  | ⚪ not started |  |
-| `_GetContextType` | method, private | [25](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L25) · [body 102](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L102) |  | ⚪ not started |  |
-| `GetBoldHandle` | method, private | [26](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L26) · [body 67](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L67) |  | ⚪ not started |  |
-| `SetBoldHandle` | method, private | [27](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L27) · [body 77](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L77) |  | ⚪ not started |  |
-| `SetBoldProperties` | method, private | [28](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L28) · [body 82](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L82) |  | ⚪ not started |  |
-| `GetFollower` | method, private | [29](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L29) · [body 72](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L72) |  | ⚪ not started |  |
-| `Follower` | property, protected | [32](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L32) |  | ⚪ not started |  |
-| `Create` | constructor | [35](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L35) · [body 51](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L51) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L36) · [body 60](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L60) |  | ⚪ not started |  |
-| `BoldHandle` | property, published | [39](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L39) |  | ⚪ not started |  |
-| `BoldProperties` | property, published | [40](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L40) |  | ⚪ not started |  |
+| `_Display` | method, private | [24](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L24) · [body 88](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L88) | [`TBoldPageControl._Display`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L62) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `_GetContextType` | method, private | [25](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L25) · [body 102](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L102) | [`TBoldPageControl._GetContextType`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L76) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `GetBoldHandle` | method, private | [26](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L26) · [body 67](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L67) | [`TBoldPageControl.GetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L49) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `SetBoldHandle` | method, private | [27](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L27) · [body 77](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L77) | [`TBoldPageControl.SetBoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L55) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `SetBoldProperties` | method, private | [28](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L28) · [body 82](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L82) | [`TBoldPageControl.SetBoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L58) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `GetFollower` | method, private | [29](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L29) · [body 72](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L72) | [`TBoldPageControl.GetFollower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L52) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `Follower` | property, protected | [32](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L32) | [`TBoldPageControl.Follower`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L80) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `Create` | constructor | [35](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L35) · [body 51](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L51) | [`TBoldPageControl.TBoldPageControl`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L17) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `Destroy` | destructor | [36](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L36) · [body 60](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L60) | [`TBoldPageControl.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L26) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `BoldHandle` | property, published | [39](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L39) | [`TBoldPageControl.BoldHandle`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L84) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+| `BoldProperties` | property, published | [40](../../../Source/BoldAwareGUI/BoldControls/BoldPageControl.pas#L40) | [`TBoldPageControl.BoldProperties`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L92) | 🟢 ported | [`BoldValueControlsTests.A_page_control_shows_the_page_named_as_the_element_s_string`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldValueControlsTests.cs#L49) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldPageControl.OnParentChanged`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldPageControl.cs#L37) (method)
 
 ## Dependencies
 

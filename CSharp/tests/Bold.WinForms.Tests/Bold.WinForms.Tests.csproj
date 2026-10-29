@@ -9,6 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="../Bold.AwareGui.Tests/Support/GuiSample.cs" Link="Support/GuiSample.cs" />
+    <Compile Include="../Bold.AwareGui.Tests/Support/ValuesSample.cs" Link="Support/ValuesSample.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />

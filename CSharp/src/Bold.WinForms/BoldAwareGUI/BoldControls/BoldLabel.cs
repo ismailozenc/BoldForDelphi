@@ -6,6 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Windows.Forms;
 
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldLabel", Symbol = "TExposedControl", Note = "Reached the parent's protected color; a WinForms control's back color is public and ambient.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldLabel", Symbol = "TBoldCustomLabel.Loaded", Note = "Took the color read from the form as the shown color; TBoldControlLook keeps the given and the shown colors apart.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldLabel", Symbol = "TBoldCustomLabel.CMParentColorChanged", Note = "Followed the parent's color; a WinForms label's BackColor is ambient (its parent's) until it is set.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldLabel", Symbol = "TBoldCustomLabel.GetFont", Note = "The WinForms Font property.")]
