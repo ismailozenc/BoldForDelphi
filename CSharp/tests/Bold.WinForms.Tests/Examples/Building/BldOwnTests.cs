@@ -94,13 +94,13 @@ public class BldOwnTests
             Assert.That(house.Owners[0]!.FirstName, Is.EqualTo("Changed"));
 
             // Persons only: rich ones, alphabetically.
-            form.CheckBox2.PerformClick();
+            Modal.Raise(form.CheckBox2, "OnClick", EventArgs.Empty);
             Assert.That(form.blhAllPerson.BoldComparer, Is.SameAs(Datamod.DataModule1.NameComparer));
-            form.CheckBox1.PerformClick();
+            Modal.Raise(form.CheckBox1, "OnClick", EventArgs.Empty);
             GuiSample.Display();
             Assert.That(form.blhAllPerson.Count, Is.EqualTo(0), "nobody has more than 10,000");
-            form.CheckBox1.PerformClick();
-            form.CheckBox2.PerformClick();
+            Modal.Raise(form.CheckBox1, "OnClick", EventArgs.Empty);
+            Modal.Raise(form.CheckBox2, "OnClick", EventArgs.Empty);
             GuiSample.Display();
             Assert.That(form.blhAllPerson.Count, Is.EqualTo(2));
 
