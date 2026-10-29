@@ -51,11 +51,11 @@ public class BoldOptimisticLockingTests
         return (refused, check.BoldMemberByExpressionName("firstName").AsString, check.BoldMemberByExpressionName("age").AsString);
     }
 
-    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_OFF, "firstName", false, "Annie", "30", TestName = "Off: the last save wins")]
-    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_MODIFIEDMEMBERS, "firstName", true, "Anna", "30", TestName = "ModifiedMembers: the same member changed is refused")]
-    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_MODIFIEDMEMBERS, "age", false, "Anna", "31", TestName = "ModifiedMembers: another member changed is saved")]
-    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_ALLMEMBERS, "age", true, "Anna", "30", TestName = "AllMembers: any changed member of the object is refused")]
-    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_TIMESTAMP, "age", true, "Anna", "30", TestName = "TimeStamp: any later save of the object is refused")]
+    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_OFF, "firstName", false, "Annie", "30", TestName = "{m}(Off: the last save wins)")]
+    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_MODIFIEDMEMBERS, "firstName", true, "Anna", "30", TestName = "{m}(ModifiedMembers: the same member changed is refused)")]
+    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_MODIFIEDMEMBERS, "age", false, "Anna", "31", TestName = "{m}(ModifiedMembers: another member changed is saved)")]
+    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_ALLMEMBERS, "age", true, "Anna", "30", TestName = "{m}(AllMembers: any changed member of the object is refused)")]
+    [TestCase(BoldDefaultTaggedValues.TV_OPTIMISTICLOCKING_TIMESTAMP, "age", true, "Anna", "30", TestName = "{m}(TimeStamp: any later save of the object is refused)")]
     [Covers(typeof(TBoldOptimisticLockHandler), "*")]
     [Covers(typeof(TBoldUpdatePrecondition), "*")]
     [Covers(typeof(TBoldOptimisticLockingPrecondition), "*")]

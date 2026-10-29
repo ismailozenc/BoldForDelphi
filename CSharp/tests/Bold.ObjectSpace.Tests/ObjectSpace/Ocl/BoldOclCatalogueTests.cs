@@ -186,9 +186,9 @@ public class BoldOclCatalogueTests
         yield return A("(1 + 1).except(5)", "2");
     }
 
-    private static TestCaseData C(string ocl, string expected) => new TestCaseData(ocl, false, expected).SetName("System: " + ocl);
+    private static TestCaseData C(string ocl, string expected) => new TestCaseData(ocl, false, expected).SetArgDisplayNames("System: " + ocl);
 
-    private static TestCaseData A(string ocl, string expected) => new TestCaseData(ocl, true, expected).SetName("Ann: " + ocl);
+    private static TestCaseData A(string ocl, string expected) => new TestCaseData(ocl, true, expected).SetArgDisplayNames("Ann: " + ocl);
 
     [TestCaseSource(nameof(Cases))]
     [Covers("BoldOclSymbolImplementations", "TBOS_*", "InitializeSymbolTable", "RegisterOCLOperation", "OCLOperations")]

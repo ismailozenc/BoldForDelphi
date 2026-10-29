@@ -67,7 +67,7 @@ public void Add_increases_the_count() { ... }
 [Covers("BoldOclSymbolImplementations", "TBOS_*")] // every symbol whose name starts with TBOS_, for internal classes
 ```
 
-`[Covers]` on a test class covers the symbols for every test in the class. Take expected values from the Delphi source where you can, so a wrong value cannot be typed into both the code and the test: `PortAssert.ConstantsMatchDelphi`, `EnumsMatchDelphi`, `ClassParentsMatchDelphi` and `DelegatesMatchDelphi` in Bold.TestSupport compare C# declarations with the Delphi unit, and `DelphiSource.Constants` gives the value of any Delphi constant. Model tests use the files in [`tests/Fixtures/Models`](tests/Fixtures/Models), copied from master by the `fixtures` command.
+`[Covers]` on a test class covers the symbols for every test in the class. A test case's name must keep its method name, or the results of `dotnet test --logger trx` cannot be matched to the method: name cases with `TestName = "{m}(…)"` or `SetArgDisplayNames`, never a bare `TestName` or `SetName`. Take expected values from the Delphi source where you can, so a wrong value cannot be typed into both the code and the test: `PortAssert.ConstantsMatchDelphi`, `EnumsMatchDelphi`, `ClassParentsMatchDelphi` and `DelegatesMatchDelphi` in Bold.TestSupport compare C# declarations with the Delphi unit, and `DelphiSource.Constants` gives the value of any Delphi constant. Model tests use the files in [`tests/Fixtures/Models`](tests/Fixtures/Models), copied from master by the `fixtures` command.
 
 ## Porting a unit
 
