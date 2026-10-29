@@ -86,11 +86,16 @@ public class BoldDataSetTests
     public void The_data_set_has_a_record_per_element_and_writes_fields_to_the_elements()
     {
         using var s = new GuiSample();
-        TPerson ann = s.NewPerson("Ann", "Smith");
-        TPerson bob = s.NewPerson("Bob", "Jones");
+        s.NewPerson("");
+        s.NewPerson("");
+        TBoldListHandle handle = s.List("Person.allInstances");
+
+        // The records follow the list, whose order allInstances does not promise: the first is Ann.
+        var ann = (TPerson)handle.List![0]!;
+        var bob = (TPerson)handle.List[1]!;
+        (ann.FirstName, ann.LastName, bob.FirstName, bob.LastName) = ("Ann", "Smith", "Bob", "Jones");
         ann.Assets = 10.5m;
         ann.IsMarried = true;
-        TBoldListHandle handle = s.List("Person.allInstances");
         using var ds = People(handle);
         int scrolls = 0, posts = 0;
         ds.AfterScroll = _ => scrolls++;
@@ -100,8 +105,7 @@ public class BoldDataSetTests
         Assert.That(ds.Active, Is.True);
         Assert.That(ds.CanModify, Is.True);
         Assert.That(ds.RecordCount, Is.EqualTo(2));
-        Assert.That(ds.FieldByName("firstName").AsString, Is.EqualTo("Ann"),
-            $"record {ds.RecNo} of {ds.RecordCount}; the list: {string.Join(", ", Enumerable.Range(0, handle.Count).Select(i => ((TPerson)handle.List![i]!).FirstName))}; current {handle.CurrentIndex}");
+        Assert.That(ds.FieldByName("firstName").AsString, Is.EqualTo("Ann"));
         Assert.That(ds.FieldByName("assets").AsCurrency, Is.EqualTo(10.5m));
         Assert.That(ds.FieldByName("isMarried").AsBoolean, Is.True);
         Assert.That(ds.ActiveBoldElement, Is.SameAs(ann));
