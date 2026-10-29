@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas`](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas) (351 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 48 symbols done, 0 verified |
+| Status | 🟢 ported: 48 of 48 symbols done, 0 verified |
 
-⚪ 48 not started
+🟢 47 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,103 +18,113 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldGetFormClassEvent` | event type | [23](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L23) |  | ⚪ not started |  |
-| `TBoldRetrieveHandleEvent` | event type | [24](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L24) |  | ⚪ not started |  |
-| `TBoldMemberShouldBeDisplayedEvent` | event type | [25](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L25) |  | ⚪ not started |  |
-| `TBoldHandleLocatorStyle` | enum | [26](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L26) |  | ⚪ not started |  |
-| `TBoldPlaceableAFP` | class | [29](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L29) |  | ⚪ not started |  |
-| `TBoldPluggableAFP` | class | [48](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L48) |  | ⚪ not started |  |
-| `TBoldRegisterAFP` | class | [62](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L62) |  | ⚪ not started |  |
-| `TBoldInstallableAFP` | class | [70](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L70) |  | ⚪ not started |  |
-| `TBoldInstallableFormsDescriptor` | class | [79](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L79) |  | ⚪ not started |  |
-| `TBoldInstallableFormsRegistry` | class | [94](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L94) |  | ⚪ not started |  |
-| `AllowDefaultForm` | var | [105](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L105) |  | ⚪ not started |  |
-| `InstallableFormsRegistry` | routine | [107](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L107) · [body 132](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L132) |  | ⚪ not started |  |
-| `TBOClassNameIndex` | class, implementation | [122](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L122) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [342](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L342) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [346](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L346) |  | ⚪ not started |  |
+| `TBoldGetFormClassEvent` | event type | [23](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L23) | [`TBoldGetFormClassEvent`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L14) | 🟢 ported: The form class is a Type. | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `TBoldRetrieveHandleEvent` | event type | [24](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L24) | [`TBoldRetrieveHandleEvent`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L18) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `TBoldMemberShouldBeDisplayedEvent` | event type | [25](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L25) | [`TBoldMemberShouldBeDisplayedEvent`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L22) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `TBoldHandleLocatorStyle` | enum | [26](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L26) | [`TBoldHandleLocatorStyle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L26) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `TBoldPlaceableAFP` | class | [29](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L29) | [`TBoldPlaceableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L34) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `TBoldPluggableAFP` | class | [48](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L48) | [`TBoldPluggableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L121) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `TBoldRegisterAFP` | class | [62](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L62) | [`TBoldRegisterAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L190) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `TBoldInstallableAFP` | class | [70](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L70) | [`TBoldInstallableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L254) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `TBoldInstallableFormsDescriptor` | class | [79](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L79) | [`TBoldInstallableFormsDescriptor`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L304) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `TBoldInstallableFormsRegistry` | class | [94](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L94) | [`TBoldInstallableFormsRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L328) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `AllowDefaultForm` | var | [105](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L105) | [`BoldAFPPluggable.AllowDefaultForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L371) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `InstallableFormsRegistry` | routine | [107](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L107) · [body 132](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L132) | [`BoldAFPPluggable.InstallableFormsRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L377) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `TBOClassNameIndex` | class, implementation | [122](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L122) | [`TBoldInstallableFormsRegistry.TBOClassNameIndex`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L354) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `initialization` | initialization, implementation | [342](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L342) | [`BoldAFPPluggable.Initialization`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L385) | 🟢 ported: Runs when the unit is first used (its registry or a placeable provider), as a Delphi unit's initialization runs when the unit is linked into the application. The list is made with the class. | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `finalization` | finalization, implementation | [346](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L346) | [`[assembly: Delphi] in BoldAFPPluggable.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L7) | 🔵 replaced: Freed the list of placeable providers and the registry at exit; they end with the process. |  |
 
 ## TBoldPlaceableAFP
 
-class at [line 29](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L29); 🟢 ported, C# [`TBoldPlaceableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L34).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetFormClass` | method, protected | [35](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L35) · [body 202](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L202) |  | ⚪ not started |  |
-| `RetrieveHandle` | method, protected | [36](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L36) · [body 217](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L217) |  | ⚪ not started |  |
-| `MemberShouldBeDisplayed` | method, protected | [37](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L37) · [body 209](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L209) |  | ⚪ not started |  |
-| `Create` | constructor | [39](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L39) · [body 186](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L186) |  | ⚪ not started |  |
-| `Destroy` | destructor | [40](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L40) · [body 194](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L194) |  | ⚪ not started |  |
-| `OnGetFormClass` | property, published | [42](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L42) |  | ⚪ not started |  |
-| `OnRetrieveHandle` | property, published | [43](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L43) |  | ⚪ not started |  |
-| `OnMemberShouldBeDisplayed` | property, published | [44](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L44) |  | ⚪ not started |  |
+| `GetFormClass` | method, protected | [35](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L35) · [body 202](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L202) | [`TBoldPlaceableAFP.GetFormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L64) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `RetrieveHandle` | method, protected | [36](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L36) · [body 217](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L217) | [`TBoldPlaceableAFP.RetrieveHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L72) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `MemberShouldBeDisplayed` | method, protected | [37](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L37) · [body 209](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L209) | [`TBoldPlaceableAFP.MemberShouldBeDisplayed`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L84) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `Create` | constructor | [39](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L39) · [body 186](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L186) | [`TBoldPlaceableAFP.TBoldPlaceableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L42) | 🟢 ported: The owner is an IContainer. | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `Destroy` | destructor | [40](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L40) · [body 194](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L194) | [`TBoldPlaceableAFP.Dispose`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L52) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `OnGetFormClass` | property, published | [42](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L42) | [`TBoldPlaceableAFP.OnGetFormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L93) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `OnRetrieveHandle` | property, published | [43](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L43) | [`TBoldPlaceableAFP.OnRetrieveHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L101) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `OnMemberShouldBeDisplayed` | property, published | [44](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L44) | [`TBoldPlaceableAFP.OnMemberShouldBeDisplayed`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L109) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
 
 ## TBoldPluggableAFP
 
-class at [line 48](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L48); 🟢 ported, C# [`TBoldPluggableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L121).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `RetrieveHandle` | method, protected | [52](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L52) |  | ⚪ not started |  |
-| `RetrieveFormClass` | method, protected | [53](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L53) |  | ⚪ not started |  |
-| `EnsureHandle` | method, protected | [54](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L54) · [body 238](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L238) |  | ⚪ not started |  |
-| `EnsureComponents` | method, protected | [55](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L55) · [body 246](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L246) |  | ⚪ not started |  |
-| `GetFormClass` | method, protected | [56](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L56) · [body 225](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L225) |  | ⚪ not started |  |
-| `PostEnsureForm` | method, protected | [57](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L57) · [body 234](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L234) |  | ⚪ not started |  |
-| `DefaultBehaviour` | property, protected | [58](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L58) |  | ⚪ not started |  |
+| `RetrieveHandle` | method, protected | [52](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L52) | [`TBoldPluggableAFP.RetrieveHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L130) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `RetrieveFormClass` | method, protected | [53](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L53) | [`TBoldPluggableAFP.RetrieveFormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L133) | 🟢 ported: Gives a Type (a Form class). | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `EnsureHandle` | method, protected | [54](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L54) · [body 238](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L238) | [`TBoldPluggableAFP.EnsureHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L137) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `EnsureComponents` | method, protected | [55](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L55) · [body 246](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L246) | [`TBoldPluggableAFP.EnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L151) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `GetFormClass` | method, protected | [56](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L56) · [body 225](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L225) | [`TBoldPluggableAFP.GetFormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L161) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `PostEnsureForm` | method, protected | [57](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L57) · [body 234](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L234) | [`TBoldPluggableAFP.PostEnsureForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L175) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `DefaultBehaviour` | property, protected | [58](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L58) | [`TBoldPluggableAFP.DefaultBehaviour`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L181) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
 
 ## TBoldRegisterAFP
 
-class at [line 62](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L62); ⚪ not started.
+class at [line 62](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L62); 🟢 ported, C# [`TBoldRegisterAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L190).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `RetrieveHandle` | method, protected | [64](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L64) · [body 279](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L279) |  | ⚪ not started |  |
-| `RetrieveFormClass` | method, protected | [65](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L65) · [body 267](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L267) |  | ⚪ not started |  |
-| `MemberShouldBeDisplayed` | method, protected | [66](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L66) · [body 253](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L253) |  | ⚪ not started |  |
+| `RetrieveHandle` | method, protected | [64](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L64) · [body 279](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L279) | [`TBoldRegisterAFP.RetrieveHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L199) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `RetrieveFormClass` | method, protected | [65](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L65) · [body 267](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L267) | [`TBoldRegisterAFP.RetrieveFormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L216) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
+| `MemberShouldBeDisplayed` | method, protected | [66](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L66) · [body 253](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L253) | [`TBoldRegisterAFP.MemberShouldBeDisplayed`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L233) | 🟢 ported | [`BoldAFPPluggableTests.A_placeable_provider_gives_the_form_class_the_handle_and_the_members_shown`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L152) |
 
 ## TBoldInstallableAFP
 
-class at [line 70](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L70); ⚪ not started.
+class at [line 70](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L70); 🟢 ported, C# [`TBoldInstallableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L254).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FindHandleByName` | method, protected | [72](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L72) · [body 312](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L312) |  | ⚪ not started |  |
-| `FindHandleByType` | method, protected | [73](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L73) · [body 323](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L323) |  | ⚪ not started |  |
-| `RetrieveFormClass` | method, protected | [74](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L74) · [body 292](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L292) |  | ⚪ not started |  |
-| `RetrieveHandle` | method, protected | [75](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L75) · [body 303](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L303) |  | ⚪ not started |  |
+| `FindHandleByName` | method, protected | [72](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L72) · [body 312](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L312) | [`TBoldInstallableAFP.FindHandleByName`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L263) | 🟢 ported: Looks among the components the form owns (BoldOwnedComponents), Delphi's FindComponent. | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `FindHandleByType` | method, protected | [73](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L73) · [body 323](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L323) | [`TBoldInstallableAFP.FindHandleByType`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L268) | 🟢 ported: Looks among the components the form owns (BoldOwnedComponents). | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `RetrieveFormClass` | method, protected | [74](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L74) · [body 292](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L292) | [`TBoldInstallableAFP.RetrieveFormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L289) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `RetrieveHandle` | method, protected | [75](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L75) · [body 303](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L303) | [`TBoldInstallableAFP.RetrieveHandle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L293) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
 
 ## TBoldInstallableFormsDescriptor
 
-class at [line 79](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L79); ⚪ not started.
+class at [line 79](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L79); 🟢 ported, C# [`TBoldInstallableFormsDescriptor`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L304).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [86](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L86) · [body 146](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L146) |  | ⚪ not started |  |
-| `FormClass` | property | [87](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L87) |  | ⚪ not started |  |
-| `BOClassName` | property | [88](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L88) |  | ⚪ not started |  |
-| `HandleName` | property | [89](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L89) |  | ⚪ not started |  |
-| `HandleLocatorStyle` | property | [90](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L90) |  | ⚪ not started |  |
+| `Create` | constructor | [86](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L86) · [body 146](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L146) | [`TBoldInstallableFormsDescriptor.TBoldInstallableFormsDescriptor`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L312) | 🟢 ported: The form class is a Type. | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `FormClass` | property | [87](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L87) | [`TBoldInstallableFormsDescriptor.FormClass`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L320) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `BOClassName` | property | [88](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L88) | [`TBoldInstallableFormsDescriptor.BOClassName`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L321) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `HandleName` | property | [89](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L89) | [`TBoldInstallableFormsDescriptor.HandleName`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L322) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `HandleLocatorStyle` | property | [90](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L90) | [`TBoldInstallableFormsDescriptor.HandleLocatorStyle`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L323) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
 
 ## TBoldInstallableFormsRegistry
 
-class at [line 94](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L94); ⚪ not started.
+class at [line 94](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L94); 🟢 ported, C# [`TBoldInstallableFormsRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L328).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorsByBOClassName` | method, protected | [96](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L96) · [body 179](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L179) |  | ⚪ not started |  |
-| `Create` | constructor | [98](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L98) · [body 159](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L159) |  | ⚪ not started |  |
-| `RegisterInstallableFormsDescriptor` | method | [99](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L99) · [body 166](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L166) |  | ⚪ not started |  |
-| `UnRegisterInstallableFormsDescriptor` | method | [100](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L100) · [body 174](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L174) |  | ⚪ not started |  |
-| `DescriptorsByBOClassName` | property | [101](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L101) |  | ⚪ not started |  |
+| `GetDescriptorsByBOClassName` | method, protected | [96](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L96) · [body 179](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L179) | [`TBoldInstallableFormsRegistry.GetDescriptorsByBOClassName`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L340) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `Create` | constructor | [98](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L98) · [body 159](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L159) | [`TBoldInstallableFormsRegistry.TBoldInstallableFormsRegistry`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L333) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `RegisterInstallableFormsDescriptor` | method | [99](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L99) · [body 166](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L166) | [`TBoldInstallableFormsRegistry.RegisterInstallableFormsDescriptor`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L344) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `UnRegisterInstallableFormsDescriptor` | method | [100](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L100) · [body 174](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L174) | [`TBoldInstallableFormsRegistry.UnRegisterInstallableFormsDescriptor`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L348) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+| `DescriptorsByBOClassName` | property | [101](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L101) | [`TBoldInstallableFormsRegistry.DescriptorsByBOClassName`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L351) | 🟢 ported: An indexed property in Delphi. | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
 
 ## TBOClassNameIndex
 
-class at [line 122](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L122); ⚪ not started.
+class at [line 122](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L122); 🟢 ported, C# [`TBoldInstallableFormsRegistry.TBOClassNameIndex`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L354).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [124](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L124) · [body 140](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L140) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [124](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L124) · [body 140](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas#L140) | [`TBoldInstallableFormsRegistry.TBOClassNameIndex.ItemAsKeyString`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L357) | 🟢 ported | [`BoldAFPPluggableTests.An_installable_form_of_the_class_shows_the_object_in_its_handle`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPPluggableTests.cs#L106) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldPluggableAFP.TBoldPluggableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L125) (constructor)
+- [`TBoldRegisterAFP.TBoldRegisterAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L192) (constructor)
+- [`TBoldInstallableAFP.TBoldInstallableAFP`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L256) (constructor)
+- [`BoldAFPPluggable.G_AFPList`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L367) (field)
+- [`BoldAFPPluggable.EnsureInitialized`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L389) (method)
 
 ## Dependencies
 

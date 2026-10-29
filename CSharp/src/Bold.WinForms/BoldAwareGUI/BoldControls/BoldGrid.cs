@@ -2139,7 +2139,7 @@ public class TBoldCustomGrid : DataGridView, IBoldValidateableComponent
     /// list type, one column; otherwise the type and the string of each element.
     /// </summary>
     [Delphi(PortStatus.Ported)]
-    protected virtual void CreateDefaultColumns()
+    protected internal virtual void CreateDefaultColumns()
     {
         TBoldElementTypeInfo? ListElementType = GetHandleListElementType();
         DeleteAllColumns();

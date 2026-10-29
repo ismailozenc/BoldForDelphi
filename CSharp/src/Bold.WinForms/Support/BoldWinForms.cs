@@ -38,6 +38,8 @@ public static class BoldWinForms
         // The image units' initialization: their view adapters.
         TBoldAbstractViewAdapter.RegisterViewAdapter(typeof(TBoldViewBitmapAdapter));
         TBoldAbstractViewAdapter.RegisterViewAdapter(typeof(TBoldViewJPEGAdapter));
+        // BoldAFPDefault's initialization: the default auto form providers.
+        BoldAFPDefault.Initialization();
     }
 
     /// <summary>A message box for Delphi's MessageDlg.</summary>
@@ -407,6 +409,101 @@ public sealed class TBoldDragSupport
     /// <summary>Sets the drag's effect: a copy when accepted, none otherwise.</summary>
     public static void Accept(DragEventArgs e, bool accept) =>
         e.Effect = accept ? (e.AllowedEffect & DragDropEffects.Copy) != 0 ? DragDropEffects.Copy : e.AllowedEffect & (DragDropEffects.Move | DragDropEffects.Link) : DragDropEffects.None;
+}
+
+/// <summary>
+/// The components a control owns, as a Delphi form owns the components made with it as their owner: a container
+/// that goes with the control (disposed with it), and the components the WinForms designer keeps in the control's
+/// fields (its "components" container and the component fields).
+/// </summary>
+public static class BoldOwnedComponents
+{
+    private static readonly ConditionalWeakTable<Control, TOwnedContainer> fContainers = new();
+
+    /// <summary>The container for components the control owns; they are disposed with the control.</summary>
+    public static IContainer Of(Control owner) => fContainers.GetValue(owner, c => new TOwnedContainer(c));
+
+    /// <summary>The control whose container holds the component, else null (Delphi's Owner).</summary>
+    public static Control? OwnerOf(IComponent? component) => component?.Site?.Container is TOwnedContainer container ? container.Owner : null;
+
+    /// <summary>The components the control owns: those in its container, then those in its fields.</summary>
+    public static IEnumerable<IComponent> All(Control owner) => Named(owner).Select(pair => pair.Component).Distinct();
+
+    /// <summary>The component of the name (in any case) that the control owns, else null (Delphi's FindComponent).</summary>
+    public static IComponent? Find(Control owner, string name) =>
+        name == "" ? null : Named(owner).FirstOrDefault(pair => string.Equals(pair.Name, name, StringComparison.OrdinalIgnoreCase)).Component;
+
+    /// <summary>The name of a component: its own, else its site's.</summary>
+    private static string NameOf(IComponent component) => component switch
+    {
+        TBoldSubscribableComponent bold => bold.Name,
+        Control control => control.Name,
+        _ => component.Site?.Name ?? "",
+    };
+
+    /// <summary>The owned components with their names (a component in a field also goes by the field's name).</summary>
+    private static IEnumerable<(IComponent Component, string Name)> Named(Control owner)
+    {
+        if (fContainers.TryGetValue(owner, out TOwnedContainer? container))
+        {
+            foreach (IComponent component in container.Components)
+            {
+                yield return (component, NameOf(component));
+            }
+        }
+
+        const System.Reflection.BindingFlags Flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public |
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.DeclaredOnly;
+        for (Type? type = owner.GetType(); type is not null && type.Assembly != typeof(Control).Assembly; type = type.BaseType)
+        {
+            foreach (System.Reflection.FieldInfo field in type.GetFields(Flags))
+            {
+                switch (field.GetValue(owner))
+                {
+                    case IContainer designerContainer when designerContainer is not TOwnedContainer:
+                        foreach (IComponent component in designerContainer.Components)
+                        {
+                            yield return (component, NameOf(component));
+                        }
+
+                        break;
+                    case IComponent component and not Control:
+                        yield return (component, NameOf(component));
+                        yield return (component, field.Name);
+                        break;
+                }
+            }
+        }
+    }
+
+    /// <summary>Disposes the form unless it is disposed: later, from the message queue, when it has a window (Delphi's Release).</summary>
+    public static void Release(Form form)
+    {
+        if (form.IsDisposed || form.Disposing)
+        {
+            return;
+        }
+
+        _ = form.Handle;
+        form.BeginInvoke(() =>
+        {
+            if (!form.IsDisposed)
+            {
+                form.Dispose();
+            }
+        });
+    }
+
+    private sealed class TOwnedContainer : Container
+    {
+        public TOwnedContainer(Control owner)
+        {
+            Owner = owner;
+            owner.Disposed += (_, _) => Dispose();
+        }
+
+        public Control Owner { get; }
+    }
 }
 
 /// <summary>Shows a Bold popup menu on a right click when the control has no menu of its own.</summary>

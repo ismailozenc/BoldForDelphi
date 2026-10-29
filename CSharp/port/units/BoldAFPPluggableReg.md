@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas`](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas) (21 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggableReg.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 1 symbols done, 0 verified |
+| Status | 🟢 ported: 1 of 1 symbols done, 0 verified |
 
-⚪ 1 not started
+🔵 1 replaced
 
 ## Unit level
 
@@ -18,7 +18,7 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Register` | routine | [5](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas#L5) · [body 16](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas#L16) |  | ⚪ not started |  |
+| `Register` | routine | [5](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas#L5) · [body 16](../../../Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas#L16) | [`[assembly: Delphi] in BoldAFPPluggable.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs#L8) | 🔵 replaced: Put TBoldPlaceableAFP on the Delphi component palette; a WinForms component shows in the Toolbox by itself. |  |
 
 ## Dependencies
 

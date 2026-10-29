@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/FormGen/BoldAFPUser.pas`](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas) (40 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
 
-⚪ 4 not started
+🟢 4 ported
 
 ## Unit level
 
@@ -18,17 +18,23 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUserFormProvider` | class | [14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14) |  | ⚪ not started |  |
+| `TBoldUserFormProvider` | class | [14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14) | [`TBoldUserFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L10) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
 
 ## TBoldUserFormProvider
 
-class at [line 14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14); 🟢 ported, C# [`TBoldUserFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetForm` | method, protected | [18](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L18) · [body 26](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L26) |  | ⚪ not started |  |
-| `SetForm` | method, protected | [19](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L19) · [body 31](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L31) |  | ⚪ not started |  |
-| `EnsureComponents` | method, protected | [20](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L20) · [body 36](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L36) |  | ⚪ not started |  |
+| `GetForm` | method, protected | [18](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L18) · [body 26](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L26) | [`TBoldUserFormProvider.GetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L20) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
+| `SetForm` | method, protected | [19](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L19) · [body 31](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L31) | [`TBoldUserFormProvider.SetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L23) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
+| `EnsureComponents` | method, protected | [20](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L20) · [body 36](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L36) | [`TBoldUserFormProvider.EnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L26) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUserFormProvider.TBoldUserFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L14) (constructor)
 
 ## Dependencies
 

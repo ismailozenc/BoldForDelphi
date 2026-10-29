@@ -19,18 +19,18 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 13095 `[Delphi]` markers in the C# code; 436 test methods.
+481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 13263 `[Delphi]` markers in the C# code; 452 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
 | ✅ verified | 7711 | ▰▰▰▰▰▱▱▱▱▱ 46% |
-| 🟢 ported | 5066 | ▰▰▰▱▱▱▱▱▱▱ 30% |
-| 🔵 replaced | 330 | ▱▱▱▱▱▱▱▱▱▱ 2% |
+| 🟢 ported | 5229 | ▰▰▰▱▱▱▱▱▱▱ 31% |
+| 🔵 replaced | 334 | ▱▱▱▱▱▱▱▱▱▱ 2% |
 | 🟡 partial | 9 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 1 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 3573 | ▰▰▱▱▱▱▱▱▱▱ 21% |
-| ⚫ dropped | 33 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| ⚪ not started | 3405 | ▰▰▱▱▱▱▱▱▱▱ 20% |
+| ⚫ dropped | 34 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
 
@@ -43,7 +43,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M5 SQL persistence | 61 | 2652 | 2652 | 979 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M6 Typed classes | 7 | 258 | 258 | 230 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M7 Handles | 24 | 582 | 582 | 568 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| M8 WinForms | 69 | 2668 | 2167 | 955 | ▰▰▰▰▰▰▰▰▱▱ 81% |
+| M8 WinForms | 69 | 2668 | 2335 | 955 | ▰▰▰▰▰▰▰▰▰▱ 88% |
 | M9 Multi-user | 50 | 1164 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M11 XMI | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M12 Model editor | 22 | 584 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -67,7 +67,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.Propagator.Server | 22 | 531 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.SourceGenerators | 19 | 412 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.ValueSpace | 13 | 705 | 703 | 663 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| Bold.WinForms | 41 | 1615 | 1134 | 5 | ▰▰▰▰▰▰▰▱▱▱ 70% |
+| Bold.WinForms | 41 | 1615 | 1302 | 5 | ▰▰▰▰▰▰▰▰▱▱ 81% |
 | Bold.Xmi | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | not decided yet | 3 | 74 | 55 | 0 | ▰▰▰▰▰▰▰▱▱▱ 74% |
 
@@ -312,10 +312,10 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldGUI](units/BoldGUI.md) | 🟢 ported | 15/15 | 13 | Bold.AwareGui | M8 | [Source/BoldAwareGUI/Core/BoldGUI.pas](../../Source/BoldAwareGUI/Core/BoldGUI.pas) | [src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs](../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs) |
 | [BoldGuiResourceStrings](units/BoldGuiResourceStrings.md) | ✅ verified | 95/95 | 95 | Bold.AwareGui | M8 | [Source/BoldAwareGUI/Core/BoldGuiResourceStrings.pas](../../Source/BoldAwareGUI/Core/BoldGuiResourceStrings.pas) | [src/Bold.AwareGui/BoldAwareGUI/Core/BoldGuiResourceStrings.cs](../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGuiResourceStrings.cs) |
 | [BoldAFP](units/BoldAFP.md) | 🟢 ported | 49/49 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFP.pas](../../Source/BoldAwareGUI/FormGen/BoldAFP.pas) | [src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs](../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs) |
-| [BoldAFPDefault](units/BoldAFPDefault.md) | ⚪ not started | 0/115 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPDefault.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPDefault.pas) | planned: src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPDefault.cs |
-| [BoldAFPPluggable](units/BoldAFPPluggable.md) | ⚪ not started | 0/48 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas) | planned: src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs |
-| [BoldAFPPluggableReg](units/BoldAFPPluggableReg.md) | ⚪ not started | 0/1 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas) | planned: src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggableReg.cs |
-| [BoldAFPUser](units/BoldAFPUser.md) | ⚪ not started | 0/4 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPUser.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas) | planned: src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs |
+| [BoldAFPDefault](units/BoldAFPDefault.md) | 🟢 ported | 115/115 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPDefault.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPDefault.pas) | [src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPDefault.cs](../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPDefault.cs) |
+| [BoldAFPPluggable](units/BoldAFPPluggable.md) | 🟢 ported | 48/48 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPPluggable.pas) | [src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs](../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs) |
+| [BoldAFPPluggableReg](units/BoldAFPPluggableReg.md) | 🟢 ported | 1/1 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPPluggableReg.pas) | [src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs](../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs) |
+| [BoldAFPUser](units/BoldAFPUser.md) | 🟢 ported | 4/4 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/FormGen/BoldAFPUser.pas](../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas) | [src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs](../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs) |
 | [BoldEnvironmentVCL](units/BoldEnvironmentVCL.md) | 🟢 ported | 20/20 | 0 | Bold.WinForms | M8 | [Source/Common/Environment/BoldEnvironmentVCL.pas](../../Source/Common/Environment/BoldEnvironmentVCL.pas) | [src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs](../src/Bold.WinForms/Common/Environment/BoldEnvironmentVCL.cs) |
 | [BoldLogForm](units/BoldLogForm.md) | ⚪ not started | 0/15 | 0 | Bold.WinForms | M8 | [Source/Common/Logging/BoldLogForm.pas](../../Source/Common/Logging/BoldLogForm.pas) | planned: src/Bold.WinForms/Common/Logging/BoldLogForm.cs |
 | [BoldLogHandlerForm](units/BoldLogHandlerForm.md) | ⚪ not started | 0/23 | 0 | Bold.WinForms | M8 | [Source/Common/Logging/BoldLogHandlerForm.pas](../../Source/Common/Logging/BoldLogHandlerForm.pas) | planned: src/Bold.WinForms/Common/Logging/BoldLogHandlerForm.cs |
@@ -559,4 +559,6 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Problems
 
-None: every marker and test link resolves.
+0 errors, 1 warnings.
+
+- **warning** [CSharp/tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs:291](../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L291): [Covers] names TBoldDefaultObjectAutoFormProvider.ApplyPolicy, which has no [Delphi] marker, so it covers nothing
