@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The Buildings and Owners example of Delphi Bold (examples/Delphi/Compound/Building, BldOwn.dpr) on WinForms: persons, buildings and residential buildings in grids, list boxes and edits, renderers, a filter and a comparer, a pluggable auto form, undo and redo, on a SQLite database.</Description>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- Lets this project compile on Linux and macOS as well (it runs on Windows). -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <RootNamespace>BldOwn</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The database (Delphi's example used InterBase). -->
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../../../src/Bold.AwareGui/Bold.AwareGui.csproj" />
+    <ProjectReference Include="../../../src/Bold.WinForms/Bold.WinForms.csproj" />
+    <ProjectReference Include="../BuildingClasses/BuildingClasses.csproj" />
+  </ItemGroup>
+</Project>

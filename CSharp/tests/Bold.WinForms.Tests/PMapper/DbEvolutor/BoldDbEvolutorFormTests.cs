@@ -41,7 +41,8 @@ public class BoldDbEvolutorFormTests
                 memo = form.mmoSQLScript.Text;
                 actions = form.mmoActions.Text;
                 Assert.That(form.MappingInfoScript.Count, Is.GreaterThan(0));
-                Assert.That(form.tsWarnings.Text, Is.EqualTo(SysUtils.Format(BoldPMConsts.sWarnings, form.Warnings.Count)));
+                Assert.That(form.Warnings.Count, Is.EqualTo(0), "adding a column warns of nothing");
+                Assert.That(form.tsWarnings.Text, Is.EqualTo("Warnings"), "the tab counts the warnings only when there are some");
                 return DialogResult.Cancel;
             };
             TfrmBoldDbEvolutor.EvolveDB(next.Handle, false);

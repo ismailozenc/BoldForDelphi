@@ -196,8 +196,8 @@ public class BoldDataSetTests
 
         persons.Expression = "Residential_Building.allInstances";
         s.NewHouse("Elm Street");
-        GuiSample.Display();
         ds.CreateDefaultFields();
+        GuiSample.Display();
         Assert.That(ds.FieldDescriptions[0].Expression, Is.EqualTo("zipCode"), "the fields of the new type");
         Assert.That(ds.Active, Is.True, "it opened again");
         Assert.That(ds.FieldByName("address").AsString, Is.EqualTo("Elm Street"));

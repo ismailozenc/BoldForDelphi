@@ -1,5 +1,5 @@
 <Project>
-  <!-- Central package versions. Ported code itself uses no packages; only tests do (SQLite is the test database, D4; Roslyn compiles generated code). -->
+  <!-- Central package versions. Ported code itself uses no packages; only tests and the example application do (SQLite is the test and example database, D4; Roslyn compiles generated code). -->
   <ItemGroup>
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
     <PackageVersion Include="Microsoft.Data.Sqlite" Version="9.0.0" />

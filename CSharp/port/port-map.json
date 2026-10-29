@@ -337,7 +337,7 @@
     { "unit": "BoldPersistenceHandle", "file": "Source/Persistence/Core/BoldPersistenceHandle.pas", "project": "Bold.Persistence", "milestone": "M3" },
     { "unit": "BoldPersistenceHandlePTWithModel", "file": "Source/Persistence/Core/BoldPersistenceHandlePTWithModel.pas", "project": "Bold.Persistence", "milestone": "M3" },
     { "unit": "BoldPersistenceHandlePassthrough", "file": "Source/Persistence/Core/BoldPersistenceHandlePassthrough.pas", "project": "Bold.Persistence", "milestone": "M3" },
-    { "unit": "BoldPersistenceNotifier", "file": "Source/Persistence/Core/BoldPersistenceNotifier.pas", "project": "Bold.Persistence", "milestone": "M3" },
+    { "unit": "BoldPersistenceNotifier", "file": "Source/Persistence/Core/BoldPersistenceNotifier.pas", "project": "Bold.Persistence", "milestone": "M3", "note": "The progress notifier drives WinForms controls, so it is in Bold.WinForms.", "alsoIn": "Bold.WinForms" },
     { "unit": "BoldUpdatePrecondition", "file": "Source/Persistence/Core/BoldUpdatePrecondition.pas", "project": "Bold.Persistence", "milestone": "M3" },
     { "unit": "PersistenceConsts", "file": "Source/Persistence/Core/PersistenceConsts.pas", "project": "Bold.Persistence", "milestone": "M3" },
     { "unit": "BoldAbstractDatabaseAdapter", "file": "Source/Persistence/DB/BoldAbstractDatabaseAdapter.pas", "project": "Bold.Persistence.Sql", "milestone": "M5" },

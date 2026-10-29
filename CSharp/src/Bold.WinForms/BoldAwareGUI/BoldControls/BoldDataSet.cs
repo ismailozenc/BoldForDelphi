@@ -992,8 +992,11 @@ public abstract class TBoldAbstractDataSet : TDataSet, IDisposable, ISupportInit
         }
     }
 
-    /// <summary>The field definitions (when the handle has an element type) and a record per element, with an enabled handle.</summary>
-    [Delphi(PortStatus.Ported)]
+    /// <summary>
+    /// The field definitions (when the handle has an element type) and a record per element, with an enabled handle. The
+    /// element type it opens on is the one a later type change is measured against.
+    /// </summary>
+    [Delphi(PortStatus.Ported, Note = "Remembers the element type it opens on. Delphi set it only when the handle's value changed, so on a handle evaluated before the data set subscribed, the first scroll (a new current element) looked like a new type and closed and opened the data set at the first record again.")]
     protected override void InternalOpen(TFieldDefs FieldDefs, List<object?[]> Records)
     {
         fInternalCursorReady = BoldHandle is { Enabled: true };
@@ -1002,6 +1005,8 @@ public abstract class TBoldAbstractDataSet : TDataSet, IDisposable, ISupportInit
             FieldDefs.Clear();
             return;
         }
+
+        fLastKnownType = ListElementType;
 
         if (BoldHandle!.ListElementType is not null)
         {

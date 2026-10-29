@@ -32,6 +32,7 @@
     <Project Path="src/Bold.Xmi/Bold.Xmi.csproj" />
   </Folder>
   <Folder Name="/examples/">
+    <Project Path="examples/Building/BldOwn/BldOwn.csproj" />
     <Project Path="examples/Building/BuildingClasses/BuildingClasses.csproj" />
   </Folder>
   <Folder Name="/tests/">

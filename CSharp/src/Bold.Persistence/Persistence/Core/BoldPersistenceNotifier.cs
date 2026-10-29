@@ -3,9 +3,6 @@
 
 using static Bold.BoldSubscription;
 
-[assembly: Delphi(PortStatus.Stub, Unit = "BoldPersistenceNotifier", Symbol = "TBoldPersistenceProgressNotifier",
-    Note = "A VCL progress bar, label and animation driver; it belongs with the WinForms controls (M8).")]
-
 namespace Bold;
 
 /// <summary>Called when one object is fetched more than ten times in ten seconds.</summary>

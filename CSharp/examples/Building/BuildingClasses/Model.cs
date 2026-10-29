@@ -6,11 +6,13 @@ namespace BuildingClasses;
 public static class BuildingModel
 {
     /// <summary>A new copy of the model, read from the embedded Building.bld.</summary>
-    public static TMoldModel Load()
+    public static TMoldModel Load() => TMoldBLDRW.StringsToModel(Lines());
+
+    /// <summary>The lines of the embedded Building.bld, as a model component reads them (TBoldAbstractModel.ReadModel).</summary>
+    public static TStringList Lines()
     {
         using Stream stream = typeof(BuildingModel).Assembly.GetManifestResourceStream("BuildingClasses.Building.bld")!;
         using var reader = new StreamReader(stream);
-        var lines = new TStringList { Text = reader.ReadToEnd() };
-        return TMoldBLDRW.StringsToModel(lines);
+        return new TStringList { Text = reader.ReadToEnd() };
     }
 }

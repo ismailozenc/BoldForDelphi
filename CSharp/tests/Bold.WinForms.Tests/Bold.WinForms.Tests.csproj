@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>Tests of Bold.WinForms: the WinForms controls on the Building example's model, on a form that shows during the test (Windows only; the CI runs them). Test files mirror the Delphi paths.</Description>
+    <Description>Tests of Bold.WinForms: the WinForms controls on the Building example's model, on a form that shows during the test (Windows only; the CI runs them), and a run of the Buildings and Owners example application. Test files mirror the Delphi paths.</Description>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <!-- Lets this project compile on Linux and macOS as well (its tests run on Windows). -->
@@ -37,5 +37,7 @@
     <ProjectReference Include="../../src/Bold.AwareGui/Bold.AwareGui.csproj" />
     <ProjectReference Include="../../src/Bold.WinForms/Bold.WinForms.csproj" />
     <ProjectReference Include="../../examples/Building/BuildingClasses/BuildingClasses.csproj" />
+    <!-- The example application, which a test runs. -->
+    <ProjectReference Include="../../examples/Building/BldOwn/BldOwn.csproj" />
   </ItemGroup>
 </Project>
