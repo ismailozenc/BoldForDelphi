@@ -62,7 +62,7 @@ jobs:
             else
               failed=1
               tail -30 "test-$name.log"
-              echo "::error::$name failed:%0A$( (grep -E '(Failed|Passed)! +-' "test-$name.log"; tr -d '\r' < "test-$name.log" | awk '/^ *Failed /{p=1} /^ *(Passed|Skipped) /{p=0} p') | head -300 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
+              echo "::error::$name failed:%0A$( (grep -E '(Failed|Passed)! +-|^Total tests|^ +(Passed|Failed|Skipped): +[0-9]' "test-$name.log"; tr -d '\r' < "test-$name.log" | awk '/^ *Failed /{p=1} /^ *(Passed|Skipped) /{p=0} p') | head -300 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
             fi
           done
           exit $failed

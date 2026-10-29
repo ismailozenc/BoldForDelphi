@@ -113,6 +113,7 @@ public class BoldValueControlsTests
         bar.ScrollTo(7);
         GuiSample.ApplyAll();
         Assert.That(house.ZipCode, Is.EqualTo(7));
+        GuiSample.Display(); // the applied value comes back before the next change
 
         bar.Position = 2;
         GuiSample.ApplyAll();

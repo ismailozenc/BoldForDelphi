@@ -19,17 +19,17 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 12956 `[Delphi]` markers in the C# code; 431 test methods.
+481 Delphi units: 380 to port, 101 not ported. The units to port declare 16723 symbols. 13095 `[Delphi]` markers in the C# code; 436 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
 | ✅ verified | 7711 | ▰▰▰▰▰▱▱▱▱▱ 46% |
-| 🟢 ported | 4930 | ▰▰▰▱▱▱▱▱▱▱ 29% |
-| 🔵 replaced | 327 | ▱▱▱▱▱▱▱▱▱▱ 2% |
+| 🟢 ported | 5066 | ▰▰▰▱▱▱▱▱▱▱ 30% |
+| 🔵 replaced | 330 | ▱▱▱▱▱▱▱▱▱▱ 2% |
 | 🟡 partial | 9 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 1 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 3712 | ▰▰▱▱▱▱▱▱▱▱ 22% |
+| ⚪ not started | 3573 | ▰▰▱▱▱▱▱▱▱▱ 21% |
 | ⚫ dropped | 33 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 
 ## Milestones
@@ -43,7 +43,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M5 SQL persistence | 61 | 2652 | 2652 | 979 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M6 Typed classes | 7 | 258 | 258 | 230 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M7 Handles | 24 | 582 | 582 | 568 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| M8 WinForms | 69 | 2668 | 2028 | 955 | ▰▰▰▰▰▰▰▰▱▱ 76% |
+| M8 WinForms | 69 | 2668 | 2167 | 955 | ▰▰▰▰▰▰▰▰▱▱ 81% |
 | M9 Multi-user | 50 | 1164 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M11 XMI | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | M12 Model editor | 22 | 584 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
@@ -67,7 +67,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.Propagator.Server | 22 | 531 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.SourceGenerators | 19 | 412 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.ValueSpace | 13 | 705 | 703 | 663 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| Bold.WinForms | 41 | 1615 | 995 | 5 | ▰▰▰▰▰▰▱▱▱▱ 62% |
+| Bold.WinForms | 41 | 1615 | 1134 | 5 | ▰▰▰▰▰▰▰▱▱▱ 70% |
 | Bold.Xmi | 13 | 442 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | not decided yet | 3 | 74 | 55 | 0 | ▰▰▰▰▰▰▰▱▱▱ 74% |
 
@@ -273,7 +273,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldCheckBox](units/BoldCheckBox.md) | 🟢 ported | 27/27 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas](../../Source/BoldAwareGUI/BoldControls/BoldCheckBox.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldCheckBox.cs) |
 | [BoldComboBox](units/BoldComboBox.md) | 🟢 ported | 79/79 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldComboBox.pas](../../Source/BoldAwareGUI/BoldControls/BoldComboBox.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldComboBox.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldComboBox.cs) |
 | [BoldDataSet](units/BoldDataSet.md) | ⚪ not started | 0/128 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldDataSet.pas](../../Source/BoldAwareGUI/BoldControls/BoldDataSet.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDataSet.cs |
-| [BoldDragDropTarget](units/BoldDragDropTarget.md) | ⚪ not started | 0/36 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas](../../Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDragDropTarget.cs |
+| [BoldDragDropTarget](units/BoldDragDropTarget.md) | 🟢 ported | 36/36 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas](../../Source/BoldAwareGUI/BoldControls/BoldDragDropTarget.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDragDropTarget.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldDragDropTarget.cs) |
 | [BoldEdit](units/BoldEdit.md) | 🟢 ported | 71/71 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldEdit.pas](../../Source/BoldAwareGUI/BoldControls/BoldEdit.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldEdit.cs) |
 | [BoldGrid](units/BoldGrid.md) | 🟢 ported | 254/254 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGrid.pas](../../Source/BoldAwareGUI/BoldControls/BoldGrid.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGrid.cs) |
 | [BoldGridRTColEditor](units/BoldGridRTColEditor.md) | ⚪ not started | 0/18 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas](../../Source/BoldAwareGUI/BoldControls/BoldGridRTColEditor.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldGridRTColEditor.cs |
@@ -290,9 +290,9 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldRichEdit](units/BoldRichEdit.md) | 🟢 ported | 44/44 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldRichEdit.pas](../../Source/BoldAwareGUI/BoldControls/BoldRichEdit.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldRichEdit.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldRichEdit.cs) |
 | [BoldStringsPropertyController](units/BoldStringsPropertyController.md) | ✅ verified | 36/36 | 36 | Bold.AwareGui | M8 | [Source/BoldAwareGUI/BoldControls/BoldStringsPropertyController.pas](../../Source/BoldAwareGUI/BoldControls/BoldStringsPropertyController.pas) | [src/Bold.AwareGui/BoldAwareGUI/BoldControls/BoldStringsPropertyController.cs](../src/Bold.AwareGui/BoldAwareGUI/BoldControls/BoldStringsPropertyController.cs) |
 | [BoldTrackBar](units/BoldTrackBar.md) | 🟢 ported | 31/31 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldTrackBar.pas](../../Source/BoldAwareGUI/BoldControls/BoldTrackBar.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTrackBar.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTrackBar.cs) |
-| [BoldTreeView](units/BoldTreeView.md) | ⚪ not started | 0/88 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldTreeView.pas](../../Source/BoldAwareGUI/BoldControls/BoldTreeView.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeView.cs |
-| [BoldTreeViewConfig](units/BoldTreeViewConfig.md) | ⚪ not started | 0/4 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas](../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs |
-| [BoldXCVTreeView](units/BoldXCVTreeView.md) | ⚪ not started | 0/11 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas](../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas) | planned: src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs |
+| [BoldTreeView](units/BoldTreeView.md) | 🟢 ported | 88/88 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldTreeView.pas](../../Source/BoldAwareGUI/BoldControls/BoldTreeView.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeView.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeView.cs) |
+| [BoldTreeViewConfig](units/BoldTreeViewConfig.md) | 🟢 ported | 4/4 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas](../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs) |
+| [BoldXCVTreeView](units/BoldXCVTreeView.md) | 🟢 ported | 11/11 | 0 | Bold.WinForms | M8 | [Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas](../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas) | [src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs](../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs) |
 | [BoldCheckboxStateControlPack](units/BoldCheckboxStateControlPack.md) | 🟢 ported | 37/37 | 31 | Bold.AwareGui | M8 | [Source/BoldAwareGUI/ControlPacks/BoldCheckboxStateControlPack.pas](../../Source/BoldAwareGUI/ControlPacks/BoldCheckboxStateControlPack.pas) | [src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldCheckboxStateControlPack.cs](../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldCheckboxStateControlPack.cs) |
 | [BoldControlPack](units/BoldControlPack.md) | 🟢 ported | 190/190 | 165 | Bold.AwareGui | M8 | [Source/BoldAwareGUI/ControlPacks/BoldControlPack.pas](../../Source/BoldAwareGUI/ControlPacks/BoldControlPack.pas) | [src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControlPack.cs](../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControlPack.cs) |
 | [BoldControllerListControlPack](units/BoldControllerListControlPack.md) | 🟢 ported | 19/19 | 17 | Bold.AwareGui | M8 | [Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas](../../Source/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.pas) | [src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs](../src/Bold.AwareGui/BoldAwareGUI/ControlPacks/BoldControllerListControlPack.cs) |

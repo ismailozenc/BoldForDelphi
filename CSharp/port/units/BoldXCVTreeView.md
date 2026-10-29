@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas) (93 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🟢 ported: 11 of 11 symbols done, 0 verified |
 
-⚪ 11 not started
+🟢 11 ported
 
 ## Unit level
 
@@ -18,24 +18,24 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldXCVTreeView` | class | [12](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L12) |  | ⚪ not started |  |
+| `TBoldXCVTreeView` | class | [12](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L12) | [`TBoldXCVTreeView`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L15) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
 
 ## TBoldXCVTreeView
 
-class at [line 12](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L12); ⚪ not started.
+class at [line 12](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L12); 🟢 ported, C# [`TBoldXCVTreeView`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `PassToEditor` | method, private | [17](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L17) · [body 52](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L52) |  | ⚪ not started |  |
-| `Cut` | method, protected | [19](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L19) · [body 46](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L46) |  | ⚪ not started |  |
-| `Copy` | method, protected | [20](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L20) · [body 40](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L40) |  | ⚪ not started |  |
-| `Paste` | method, protected | [21](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L21) · [body 60](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L60) |  | ⚪ not started |  |
-| `WMCut` | method, protected | [22](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L22) · [body 75](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L75) |  | ⚪ not started |  |
-| `WMCopy` | method, protected | [23](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L23) · [body 66](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L66) |  | ⚪ not started |  |
-| `WMPaste` | method, protected | [24](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L24) · [body 84](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L84) |  | ⚪ not started |  |
-| `OnCut` | property, published | [27](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L27) |  | ⚪ not started |  |
-| `OnCopy` | property, published | [28](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L28) |  | ⚪ not started |  |
-| `OnPaste` | property, published | [29](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L29) |  | ⚪ not started |  |
+| `PassToEditor` | method, private | [17](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L17) · [body 52](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L52) | [`TBoldXCVTreeView.PassToEditor`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L42) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
+| `Cut` | method, protected | [19](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L19) · [body 46](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L46) | [`TBoldXCVTreeView.Cut`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L38) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
+| `Copy` | method, protected | [20](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L20) · [body 40](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L40) | [`TBoldXCVTreeView.Copy`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L35) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
+| `Paste` | method, protected | [21](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L21) · [body 60](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L60) | [`TBoldXCVTreeView.Paste`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L45) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
+| `WMCut` | method, protected | [22](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L22) · [body 75](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L75) | [`TBoldXCVTreeView.WndProc`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L49) | 🟢 ported: Also WMCopy and WMPaste. | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
+| `WMCopy` | method, protected | [23](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L23) · [body 66](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L66) | [`[assembly: Delphi] in BoldXCVTreeView.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L8) | 🟢 ported: WndProc (see WMCut). |  |
+| `WMPaste` | method, protected | [24](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L24) · [body 84](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L84) | [`[assembly: Delphi] in BoldXCVTreeView.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L9) | 🟢 ported: WndProc (see WMCut). |  |
+| `OnCut` | property, published | [27](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L27) | [`TBoldXCVTreeView.OnCut`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L76) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
+| `OnCopy` | property, published | [28](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L28) | [`TBoldXCVTreeView.OnCopy`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L84) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
+| `OnPaste` | property, published | [29](../../../Source/BoldAwareGUI/BoldControls/BoldXCVTreeView.pas#L29) | [`TBoldXCVTreeView.OnPaste`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldXCVTreeView.cs#L92) | 🟢 ported | [`BoldTreeViewTests.Cut_copy_and_paste_raise_their_events`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L144) |
 
 ## Dependencies
 

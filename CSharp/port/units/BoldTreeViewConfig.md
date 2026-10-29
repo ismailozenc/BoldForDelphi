@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas`](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas) (128 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs` |
+| C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
 
-⚪ 4 not started
+🟢 4 ported
 
 ## Unit level
 
@@ -18,10 +18,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BoldGenericTreeView` | routine | [17](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L17) · [body 103](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L103) |  | ⚪ not started |  |
-| `FillListpartForAttr` | routine, implementation | [31](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L31) |  | ⚪ not started |  |
-| `FillListpartForRole` | routine, implementation | [44](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L44) |  | ⚪ not started |  |
-| `FillNodeDescriptorForClass` | routine, implementation | [71](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L71) |  | ⚪ not started |  |
+| `BoldGenericTreeView` | routine | [17](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L17) · [body 103](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L103) | [`BoldTreeViewConfig.BoldGenericTreeView`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs#L72) | 🟢 ported | [`BoldTreeViewTests.The_generic_configuration_has_a_node_per_class_and_per_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L126) |
+| `FillListpartForAttr` | routine, implementation | [31](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L31) | [`BoldTreeViewConfig.FillListpartForAttr`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs#L14) | 🟢 ported | [`BoldTreeViewTests.The_generic_configuration_has_a_node_per_class_and_per_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L126) |
+| `FillListpartForRole` | routine, implementation | [44](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L44) | [`BoldTreeViewConfig.FillListpartForRole`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs#L24) | 🟢 ported | [`BoldTreeViewTests.The_generic_configuration_has_a_node_per_class_and_per_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L126) |
+| `FillNodeDescriptorForClass` | routine, implementation | [71](../../../Source/BoldAwareGUI/BoldControls/BoldTreeViewConfig.pas#L71) | [`BoldTreeViewConfig.FillNodeDescriptorForClass`](../../src/Bold.WinForms/BoldAwareGUI/BoldControls/BoldTreeViewConfig.cs#L43) | 🟢 ported | [`BoldTreeViewTests.The_generic_configuration_has_a_node_per_class_and_per_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/BoldControls/BoldTreeViewTests.cs#L126) |
 
 ## Dependencies
 
