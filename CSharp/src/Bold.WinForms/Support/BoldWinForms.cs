@@ -40,7 +40,15 @@ public static class BoldWinForms
         TBoldAbstractViewAdapter.RegisterViewAdapter(typeof(TBoldViewJPEGAdapter));
         // BoldAFPDefault's initialization: the default auto form providers.
         BoldAFPDefault.Initialization();
+        // The persistence layer's questions to the user, which Delphi asked with dialogs.
+        BoldPSDescriptionsSQL.QueryUserHandler ??= BoldQueryUserDlg.QueryUser;
+        BoldPSDescriptionsSQL.ConfirmCleanHandler ??= question => AskYesNo(question, TMsgDlgType.mtWarning);
+        BoldDbValidator.ConfirmHandler ??= question => AskYesNo(question, TMsgDlgType.mtConfirmation);
     }
+
+    /// <summary>A yes or no question in a message dialog: true for yes.</summary>
+    private static bool AskYesNo(string question, TMsgDlgType dlgType) =>
+        Dialogs.MessageDlg(question, dlgType, DelphiSet<TMsgDlgBtn>.Of(TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo), 0) == Controls.mrYes;
 
     /// <summary>A message box for Delphi's MessageDlg.</summary>
     private static int ShowMessageDlg(string Msg, TMsgDlgType DlgType, DelphiSet<TMsgDlgBtn> Buttons, int HelpCtx)

@@ -71,7 +71,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | [BoldNavigatorDefs](../../../CSharp/port/units/BoldNavigatorDefs.md) | [Bold.WinForms: Common/Support/BoldNavigatorDefs.cs](../../../CSharp/src/Bold.WinForms/Common/Support/BoldNavigatorDefs.cs) | M8 WinForms |
 | [BoldPerformanceCounter](../../../CSharp/port/units/BoldPerformanceCounter.md) | Bold.Core: Common/Support/BoldPerformanceCounter.cs (not started) | Later (after M12, or when needed) |
 | [BoldPriorityQueue](../../../CSharp/port/units/BoldPriorityQueue.md) | Bold.Core: Common/Support/BoldPriorityQueue.cs (not started) | M9 Multi-user |
-| [BoldRegistry](../../../CSharp/port/units/BoldRegistry.md) | Bold.Core: Common/Support/BoldRegistry.cs (not started) | M8 WinForms |
+| [BoldRegistry](../../../CSharp/port/units/BoldRegistry.md) | [Bold.Core: Common/Support/BoldRegistry.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldRegistry.cs) | M8 WinForms |
 | [BoldRev](../../../CSharp/port/units/BoldRev.md) | [Bold.Core: Common/Support/BoldRev.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldRev.cs) | M6 Typed classes |
 | [BoldSharedStrings](../../../CSharp/port/units/BoldSharedStrings.md) | [Bold.Core: Common/Support/BoldSharedStrings.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldSharedStrings.cs) | M1 Load models |
 | [BoldSorter](../../../CSharp/port/units/BoldSorter.md) | [Bold.Core: Common/Support/BoldSorter.cs](../../../CSharp/src/Bold.Core/Common/Support/BoldSorter.cs) | M3 Object space in memory |

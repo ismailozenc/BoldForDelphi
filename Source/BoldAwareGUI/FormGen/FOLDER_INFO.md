@@ -30,8 +30,8 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldAFP](../../../CSharp/port/units/BoldAFP.md) | [Bold.WinForms: BoldAwareGUI/FormGen/BoldAFP.cs](../../../CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFP.cs) | M8 WinForms |
-| [BoldAFPDefault](../../../CSharp/port/units/BoldAFPDefault.md) | Bold.WinForms: BoldAwareGUI/FormGen/BoldAFPDefault.cs (not started) | M8 WinForms |
-| [BoldAFPPluggable](../../../CSharp/port/units/BoldAFPPluggable.md) | Bold.WinForms: BoldAwareGUI/FormGen/BoldAFPPluggable.cs (not started) | M8 WinForms |
+| [BoldAFPDefault](../../../CSharp/port/units/BoldAFPDefault.md) | [Bold.WinForms: BoldAwareGUI/FormGen/BoldAFPDefault.cs](../../../CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPDefault.cs) | M8 WinForms |
+| [BoldAFPPluggable](../../../CSharp/port/units/BoldAFPPluggable.md) | [Bold.WinForms: BoldAwareGUI/FormGen/BoldAFPPluggable.cs](../../../CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPPluggable.cs) | M8 WinForms |
 | [BoldAFPPluggableReg](../../../CSharp/port/units/BoldAFPPluggableReg.md) | Bold.WinForms: BoldAwareGUI/FormGen/BoldAFPPluggableReg.cs (not started) | M8 WinForms |
-| [BoldAFPUser](../../../CSharp/port/units/BoldAFPUser.md) | Bold.WinForms: BoldAwareGUI/FormGen/BoldAFPUser.cs (not started) | M8 WinForms |
+| [BoldAFPUser](../../../CSharp/port/units/BoldAFPUser.md) | [Bold.WinForms: BoldAwareGUI/FormGen/BoldAFPUser.cs](../../../CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs) | M8 WinForms |
 <!-- END C# PORT -->

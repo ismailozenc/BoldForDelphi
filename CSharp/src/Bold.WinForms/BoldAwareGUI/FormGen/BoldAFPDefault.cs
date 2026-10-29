@@ -689,7 +689,7 @@ public class TBoldDefaultObjectAutoFormProvider : TBoldFormProviderForSingle
     }
 
     /// <summary>A drop target on the reference handle that drags the object (it takes no drops).</summary>
-    [Delphi(PortStatus.Ported, Note = "Delphi loaded the DROPTARGETSOURCE bitmap of the unit's resources; the picture is drawn.")]
+    [Delphi(PortStatus.Ported, Note = "The DROPTARGETSOURCE bitmap is embedded in Bold.WinForms (Images/DropTargetSource.bmp in the repository).")]
     private TBoldDropTarget CreateDragSource(Control aParent)
     {
         var result = new TBoldDropTarget
@@ -700,7 +700,7 @@ public class TBoldDefaultObjectAutoFormProvider : TBoldFormProviderForSingle
             IsDragSource = true,
             IsDropTarget = false,
             Width = 20,
-            Height = 20,
+            Height = 25,
             Top = 5,
             Left = 5,
             BoldHandle = BoldHandle,
@@ -708,19 +708,17 @@ public class TBoldDefaultObjectAutoFormProvider : TBoldFormProviderForSingle
         return result;
     }
 
-    /// <summary>The drag source's picture: a sheet with a grip.</summary>
-    private static Bitmap DragSourcePicture()
+    /// <summary>The drag source's picture, transparent where its lower left pixel's color is (as Delphi's transparent image).</summary>
+    private static Bitmap? DragSourcePicture()
     {
-        var bitmap = new Bitmap(16, 16);
-        using Graphics g = Graphics.FromImage(bitmap);
-        g.Clear(Color.Transparent);
-        g.FillRectangle(SystemBrushes.Window, 2, 1, 11, 14);
-        g.DrawRectangle(SystemPens.ControlDarkDark, 2, 1, 11, 14);
-        for (int y = 4; y <= 12; y += 3)
+        using Stream? stream = typeof(TBoldDefaultObjectAutoFormProvider).Assembly.GetManifestResourceStream("Bold.Images.DropTargetSource.bmp"); // do not localize
+        if (stream is null)
         {
-            g.DrawLine(SystemPens.Highlight, 5, y, 10, y);
+            return null;
         }
 
+        var bitmap = new Bitmap(stream);
+        bitmap.MakeTransparent(bitmap.GetPixel(0, bitmap.Height - 1));
         return bitmap;
     }
 

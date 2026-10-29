@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Logging/BoldLogForm.pas`](../../../Source/Common/Logging/BoldLogForm.pas) (167 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/Logging/BoldLogForm.cs` |
+| C# | [`CSharp/src/Bold.WinForms/Common/Logging/BoldLogForm.cs`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | 🟢 ported: 15 of 15 symbols done, 0 verified |
 | Note | Bold.Core gets a callback interface; Bold.WinForms supplies the window. |
 
-⚪ 15 not started
+🟢 15 ported
 
 ## Unit level
 
@@ -19,28 +19,48 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLogForm` | class | [22](../../../Source/Common/Logging/BoldLogForm.pas#L22) |  | ⚪ not started |  |
+| `TBoldLogForm` | class | [22](../../../Source/Common/Logging/BoldLogForm.pas#L22) | [`TBoldLogForm`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L15) | 🟢 ported: The form's layout is that of the Delphi form file; the menu has no images. |  |
 
 ## TBoldLogForm
 
-class at [line 22](../../../Source/Common/Logging/BoldLogForm.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/Common/Logging/BoldLogForm.pas#L22); 🟢 ported, C# [`TBoldLogForm`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `cmdSaveClick` | method | [37](../../../Source/Common/Logging/BoldLogForm.pas#L37) · [body 86](../../../Source/Common/Logging/BoldLogForm.pas#L86) |  | ⚪ not started |  |
-| `cmdCloseClick` | method | [38](../../../Source/Common/Logging/BoldLogForm.pas#L38) · [body 91](../../../Source/Common/Logging/BoldLogForm.pas#L91) |  | ⚪ not started |  |
-| `mnuCopyClick` | method | [39](../../../Source/Common/Logging/BoldLogForm.pas#L39) · [body 96](../../../Source/Common/Logging/BoldLogForm.pas#L96) |  | ⚪ not started |  |
-| `mnuShowAllClick` | method | [40](../../../Source/Common/Logging/BoldLogForm.pas#L40) · [body 121](../../../Source/Common/Logging/BoldLogForm.pas#L121) |  | ⚪ not started |  |
-| `FormCreate` | method | [41](../../../Source/Common/Logging/BoldLogForm.pas#L41) · [body 132](../../../Source/Common/Logging/BoldLogForm.pas#L132) |  | ⚪ not started |  |
-| `FormDestroy` | method | [42](../../../Source/Common/Logging/BoldLogForm.pas#L42) · [body 137](../../../Source/Common/Logging/BoldLogForm.pas#L137) |  | ⚪ not started |  |
-| `mnuAddSeparatorClick` | method | [43](../../../Source/Common/Logging/BoldLogForm.pas#L43) · [body 157](../../../Source/Common/Logging/BoldLogForm.pas#L157) |  | ⚪ not started |  |
-| `mnuClearLogClick` | method | [44](../../../Source/Common/Logging/BoldLogForm.pas#L44) · [body 162](../../../Source/Common/Logging/BoldLogForm.pas#L162) |  | ⚪ not started |  |
-| `ShowAllLines` | method, private | [48](../../../Source/Common/Logging/BoldLogForm.pas#L48) · [body 127](../../../Source/Common/Logging/BoldLogForm.pas#L127) |  | ⚪ not started |  |
-| `AddLog` | method | [51](../../../Source/Common/Logging/BoldLogForm.pas#L51) · [body 67](../../../Source/Common/Logging/BoldLogForm.pas#L67) |  | ⚪ not started |  |
-| `Clear` | method | [52](../../../Source/Common/Logging/BoldLogForm.pas#L52) · [body 81](../../../Source/Common/Logging/BoldLogForm.pas#L81) |  | ⚪ not started |  |
-| `UpdateView` | method | [53](../../../Source/Common/Logging/BoldLogForm.pas#L53) · [body 101](../../../Source/Common/Logging/BoldLogForm.pas#L101) |  | ⚪ not started |  |
-| `SaveLog` | method | [54](../../../Source/Common/Logging/BoldLogForm.pas#L54) · [body 142](../../../Source/Common/Logging/BoldLogForm.pas#L142) |  | ⚪ not started |  |
-| `LogLines` | property | [55](../../../Source/Common/Logging/BoldLogForm.pas#L55) |  | ⚪ not started |  |
+| `cmdSaveClick` | method | [37](../../../Source/Common/Logging/BoldLogForm.pas#L37) · [body 86](../../../Source/Common/Logging/BoldLogForm.pas#L86) | [`TBoldLogForm.cmdSaveClick`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L101) | 🟢 ported |  |
+| `cmdCloseClick` | method | [38](../../../Source/Common/Logging/BoldLogForm.pas#L38) · [body 91](../../../Source/Common/Logging/BoldLogForm.pas#L91) | [`TBoldLogForm.cmdCloseClick`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L104) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `mnuCopyClick` | method | [39](../../../Source/Common/Logging/BoldLogForm.pas#L39) · [body 96](../../../Source/Common/Logging/BoldLogForm.pas#L96) | [`TBoldLogForm.mnuCopyClick`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L108) | 🟢 ported: Copies from the active text control, where Delphi sent it WM\_COPY. | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `mnuShowAllClick` | method | [40](../../../Source/Common/Logging/BoldLogForm.pas#L40) · [body 121](../../../Source/Common/Logging/BoldLogForm.pas#L121) | [`TBoldLogForm.mnuShowAllClick`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L137) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `FormCreate` | method | [41](../../../Source/Common/Logging/BoldLogForm.pas#L41) · [body 132](../../../Source/Common/Logging/BoldLogForm.pas#L132) | [`TBoldLogForm.FormCreate`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L147) | 🟢 ported: Called by the constructor (Delphi's OnCreate). | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `FormDestroy` | method | [42](../../../Source/Common/Logging/BoldLogForm.pas#L42) · [body 137](../../../Source/Common/Logging/BoldLogForm.pas#L137) | [`TBoldLogForm.FormDestroy`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L150) | 🟢 ported: Called by Dispose (Delphi's OnDestroy). | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `mnuAddSeparatorClick` | method | [43](../../../Source/Common/Logging/BoldLogForm.pas#L43) · [body 157](../../../Source/Common/Logging/BoldLogForm.pas#L157) | [`TBoldLogForm.mnuAddSeparatorClick`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L171) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `mnuClearLogClick` | method | [44](../../../Source/Common/Logging/BoldLogForm.pas#L44) · [body 162](../../../Source/Common/Logging/BoldLogForm.pas#L162) | [`TBoldLogForm.mnuClearLogClick`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L174) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `ShowAllLines` | method, private | [48](../../../Source/Common/Logging/BoldLogForm.pas#L48) · [body 127](../../../Source/Common/Logging/BoldLogForm.pas#L127) | [`TBoldLogForm.ShowAllLines`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L144) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `AddLog` | method | [51](../../../Source/Common/Logging/BoldLogForm.pas#L51) · [body 67](../../../Source/Common/Logging/BoldLogForm.pas#L67) | [`TBoldLogForm.AddLog`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L77) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `Clear` | method | [52](../../../Source/Common/Logging/BoldLogForm.pas#L52) · [body 81](../../../Source/Common/Logging/BoldLogForm.pas#L81) | [`TBoldLogForm.Clear`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L98) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `UpdateView` | method | [53](../../../Source/Common/Logging/BoldLogForm.pas#L53) · [body 101](../../../Source/Common/Logging/BoldLogForm.pas#L101) | [`TBoldLogForm.UpdateView`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L112) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+| `SaveLog` | method | [54](../../../Source/Common/Logging/BoldLogForm.pas#L54) · [body 142](../../../Source/Common/Logging/BoldLogForm.pas#L142) | [`TBoldLogForm.SaveLog`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L154) | 🟢 ported |  |
+| `LogLines` | property | [55](../../../Source/Common/Logging/BoldLogForm.pas#L55) | [`TBoldLogForm.LogLines`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L178) | 🟢 ported | [`BoldLogFormsTests.The_log_form_shows_the_last_lines_or_all_and_its_menu_clears_and_copies`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L32) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldLogForm.Log`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L18) (field)
+- [`TBoldLogForm.MainMenu1`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L19) (field)
+- [`TBoldLogForm.File1`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L20) (field)
+- [`TBoldLogForm.SaveLog1`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L21) (field)
+- [`TBoldLogForm.N1`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L22) (field)
+- [`TBoldLogForm.Edit1`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L23) (field)
+- [`TBoldLogForm.mnuCopy`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L24) (field)
+- [`TBoldLogForm.mnuCloseLogForm`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L25) (field)
+- [`TBoldLogForm.Panel1`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L26) (field)
+- [`TBoldLogForm.ProgressBar1`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L27) (field)
+- [`TBoldLogForm.mnuShowAll`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L28) (field)
+- [`TBoldLogForm.mnuClearLog`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L29) (field)
+- [`TBoldLogForm.mnuAddSeparator`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L30) (field)
+- [`TBoldLogForm.TBoldLogForm`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L32) (constructor)
+- [`TBoldLogForm.Dispose`](../../src/Bold.WinForms/Common/Logging/BoldLogForm.cs#L65) (method)
 
 ## Dependencies
 

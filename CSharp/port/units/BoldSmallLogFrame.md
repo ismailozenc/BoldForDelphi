@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Logging/BoldSmallLogFrame.pas`](../../../Source/Common/Logging/BoldSmallLogFrame.pas) (242 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs` |
+| C# | [`CSharp/src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 21 symbols done, 0 verified |
+| Status | 🟢 ported: 21 of 21 symbols done, 0 verified |
 
-⚪ 21 not started
+🟢 20 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,34 +18,68 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLogFrame` | class | [18](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L18) |  | ⚪ not started |  |
-| `TExposedShape` | class, implementation | [67](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L67) |  | ⚪ not started |  |
+| `TBoldLogFrame` | class | [18](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L18) | [`TBoldLogFrame`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L19) | 🟢 ported: A UserControl (Delphi's frame); the layout is that of the Delphi frame file. | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `TExposedShape` | class, implementation | [67](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L67) | [`[assembly: Delphi] in BoldSmallLogFrame.cs`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L9) | 🔵 replaced: Opened the shape's OnClick; a WinForms control's Click event is public. |  |
 
 ## TBoldLogFrame
 
-class at [line 18](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L18); 🟢 ported, C# [`TBoldLogFrame`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Timer1Timer` | method | [31](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L31) · [body 205](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L205) |  | ⚪ not started |  |
-| `btnStopClick` | method | [32](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L32) · [body 211](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L211) |  | ⚪ not started |  |
-| `SetProgress` | method, private | [38](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L38) · [body 165](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L165) |  | ⚪ not started |  |
-| `SetLogHeader` | method, private | [39](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L39) · [body 171](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L171) |  | ⚪ not started |  |
-| `SetProgressMax` | method, private | [40](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L40) · [body 177](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L177) |  | ⚪ not started |  |
-| `Clear` | method, private | [41](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L41) · [body 90](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L90) |  | ⚪ not started |  |
-| `Hide` | method, private | [42](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L42) · [body 133](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L133) |  | ⚪ not started |  |
-| `Log` | method, private | [43](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L43) · [body 138](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L138) |  | ⚪ not started |  |
-| `ProgressStep` | method, private | [44](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L44) · [body 159](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L159) |  | ⚪ not started |  |
-| `Show` | method, private | [45](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L45) · [body 182](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L182) |  | ⚪ not started |  |
-| `Sync` | method, private | [46](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L46) · [body 222](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L222) |  | ⚪ not started |  |
-| `StartLog` | method, private | [47](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L47) · [body 187](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L187) |  | ⚪ not started |  |
-| `EndLog` | method, private | [48](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L48) · [body 117](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L117) |  | ⚪ not started |  |
-| `WarningIndicatorClick` | method, private | [49](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L49) · [body 200](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L200) |  | ⚪ not started |  |
-| `CalculateTimeLeft` | method, private | [50](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L50) · [body 72](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L72) |  | ⚪ not started |  |
-| `ProcessInterruption` | method, private | [51](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L51) · [body 217](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L217) |  | ⚪ not started |  |
-| `Create` | constructor | [53](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L53) · [body 100](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L100) |  | ⚪ not started |  |
-| `Destroy` | destructor | [54](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L54) · [body 111](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L111) |  | ⚪ not started |  |
-| `CreateSmallLogForm` | class method | [55](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L55) · [body 227](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L227) |  | ⚪ not started |  |
+| `Timer1Timer` | method | [31](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L31) · [body 205](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L205) | [`TBoldLogFrame.Timer1Timer`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L221) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `btnStopClick` | method | [32](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L32) · [body 211](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L211) | [`TBoldLogFrame.btnStopClick`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L229) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `SetProgress` | method, private | [38](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L38) · [body 165](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L165) | [`TBoldLogFrame.SetProgress`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L183) | 🟢 ported: Kept within the bar's range, as Delphi's progress bar does. | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `SetLogHeader` | method, private | [39](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L39) · [body 171](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L171) | [`TBoldLogFrame.SetLogHeader`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L190) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `SetProgressMax` | method, private | [40](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L40) · [body 177](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L177) | [`TBoldLogFrame.SetProgressMax`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L197) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `Clear` | method, private | [41](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L41) · [body 90](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L90) | [`TBoldLogFrame.Clear`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L111) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `Hide` | method, private | [42](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L42) · [body 133](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L133) | [`TBoldLogFrame.Hide`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L145) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `Log` | method, private | [43](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L43) · [body 138](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L138) | [`TBoldLogFrame.Log`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L149) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `ProgressStep` | method, private | [44](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L44) · [body 159](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L159) | [`TBoldLogFrame.ProgressStep`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L176) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `Show` | method, private | [45](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L45) · [body 182](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L182) | [`TBoldLogFrame.Show`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L200) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `Sync` | method, private | [46](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L46) · [body 222](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L222) | [`TBoldLogFrame.Sync`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L239) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `StartLog` | method, private | [47](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L47) · [body 187](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L187) | [`TBoldLogFrame.StartLog`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L204) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `EndLog` | method, private | [48](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L48) · [body 117](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L117) | [`TBoldLogFrame.EndLog`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L123) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `WarningIndicatorClick` | method, private | [49](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L49) · [body 200](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L200) | [`TBoldLogFrame.WarningIndicatorClick`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L218) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `CalculateTimeLeft` | method, private | [50](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L50) · [body 72](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L72) | [`TBoldLogFrame.CalculateTimeLeft`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L93) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `ProcessInterruption` | method, private | [51](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L51) · [body 217](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L217) | [`TBoldLogFrame.ProcessInterruption`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L236) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `Create` | constructor | [53](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L53) · [body 100](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L100) | [`TBoldLogFrame.TBoldLogFrame`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L40) | 🟢 ported: No owner. | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `Destroy` | destructor | [54](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L54) · [body 111](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L111) | [`TBoldLogFrame.Dispose`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L79) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+| `CreateSmallLogForm` | class method | [55](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L55) · [body 227](../../../Source/Common/Logging/BoldSmallLogFrame.pas#L227) | [`TBoldLogFrame.CreateSmallLogForm`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L243) | 🟢 ported | [`BoldLogFormsTests.The_small_log_frame_shows_the_session_its_progress_and_a_light_for_warnings`](../../tests/Bold.WinForms.Tests/Common/Logging/BoldLogFormsTests.cs#L129) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldLogFrame.pgLog`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L25) (field)
+- [`TBoldLogFrame.WarningPanel`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L26) (field)
+- [`TBoldLogFrame.WarningIndicator`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L27) (field)
+- [`TBoldLogFrame.InfoPanel`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L28) (field)
+- [`TBoldLogFrame.lblLogText`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L29) (field)
+- [`TBoldLogFrame.lblLogMainHeader`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L30) (field)
+- [`TBoldLogFrame.Timer1`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L31) (field)
+- [`TBoldLogFrame.Panel1`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L32) (field)
+- [`TBoldLogFrame.btnStop`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L33) (field)
+- [`TBoldLogFrame.lblTimeLeft`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L34) (field)
+- [`TBoldLogFrame.lblTotTime`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L35) (field)
+- [`TBoldLogFrame.lblLogHeader`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L36) (field)
+- [`TBoldLogFrame.SessionName`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L255) (property)
+- [`TBoldLogFrame.SetProgress`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L257) (method)
+- [`TBoldLogFrame.SetLogHeader`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L259) (method)
+- [`TBoldLogFrame.SetProgressMax`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L261) (method)
+- [`TBoldLogFrame.Clear`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L263) (method)
+- [`TBoldLogFrame.Hide`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L265) (method)
+- [`TBoldLogFrame.Log`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L267) (method)
+- [`TBoldLogFrame.ProgressStep`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L269) (method)
+- [`TBoldLogFrame.Show`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L271) (method)
+- [`TBoldLogFrame.Sync`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L273) (method)
+- [`TBoldLogFrame.StartLog`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L275) (method)
+- [`TBoldLogFrame.EndLog`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L277) (method)
+- [`TBoldLogFrame.ProcessInterruption`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L279) (method)
+- [`TBoldShape`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L283) (class)
+- [`TBoldShape.TBoldShape`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L287) (constructor)
+- [`TBoldShape.BrushColor`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L295) (property)
+- [`TBoldShape.OnPaint`](../../src/Bold.WinForms/Common/Logging/BoldSmallLogFrame.cs#L305) (method)
 
 ## Dependencies
 

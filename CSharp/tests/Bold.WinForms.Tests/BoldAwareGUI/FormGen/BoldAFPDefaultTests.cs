@@ -83,7 +83,10 @@ public class BoldAFPDefaultTests
 
         Assert.That(form.Text, Does.StartWith("Person: "));
         Assert.That(Find<Button>(form, "CloseButton").Text, Is.EqualTo(BoldGuiResourceStrings.sClose));
-        Assert.That(Find<Panel>(form, "ButtonPanel").Controls.OfType<TBoldDropTarget>().Single().IsDragSource, Is.True);
+        TBoldDropTarget dragSource = Find<Panel>(form, "ButtonPanel").Controls.OfType<TBoldDropTarget>().Single();
+        Assert.That(dragSource.IsDragSource, Is.True);
+        Assert.That(dragSource.Image, Is.Not.Null, "the embedded picture");
+        Assert.That(dragSource.BoldHandle!.Value, Is.SameAs(ann));
 
         ann.FirstName = "Anna";
         GuiSample.Display();
@@ -434,7 +437,7 @@ public class BoldAFPDefaultTests
     public void A_method_button_keeps_its_method_and_does_nothing_when_clicked()
     {
         using var s = new GuiSample();
-        TBoldReferenceHandle handle = s.Reference(s.NewPerson("Ann"));
+        TBoldRootedHandle handle = s.List("Person.allInstances");
         using var result = new TextBox();
         var button = new TMethodButton(handle, 3, result);
         using var form = new TestForm(button);

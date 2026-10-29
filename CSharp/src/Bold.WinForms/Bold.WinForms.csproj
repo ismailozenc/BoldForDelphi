@@ -25,6 +25,8 @@
     <EmbeddedResource Include="../../../Images/BoldNavigator MoveUp.bmp" LogicalName="Bold.Images.BoldNavigator MoveUp.bmp" />
     <EmbeddedResource Include="../../../Images/BoldNavigator MoveDown.bmp" LogicalName="Bold.Images.BoldNavigator MoveDown.bmp" />
     <EmbeddedResource Include="../../../Images/BoldEdit Ellipsis.bmp" LogicalName="Bold.Images.BoldEdit Ellipsis.bmp" />
+    <!-- The drag source of the default object form (BoldAFPDefault's DROPTARGETSOURCE). -->
+    <EmbeddedResource Include="../../../Images/DropTargetSource.bmp" LogicalName="Bold.Images.DropTargetSource.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />

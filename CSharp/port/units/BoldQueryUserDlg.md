@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/UtilsGUI/BoldQueryUserDlg.pas`](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas) (83 lines) |
-| C# | not started; planned as `CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs` |
+| C# | [`CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 8 symbols done, 0 verified |
+| Status | 🟢 ported: 8 of 8 symbols done, 0 verified |
 | Note | Bold.Core gets a callback interface; Bold.WinForms supplies the dialog. |
 
-⚪ 8 not started
+🟢 8 ported
 
 ## Unit level
 
@@ -19,21 +19,32 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldQueryResult` | enum | [16](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L16) |  | ⚪ not started |  |
-| `TfrmBoldQueryUser` | class | [17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17) |  | ⚪ not started |  |
-| `QueryUser` | routine | [35](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L35) · [body 46](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L46) |  | ⚪ not started |  |
+| `TBoldQueryResult` | enum | [16](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L16) | [`[assembly: Delphi] in BoldQueryUserDlg.cs`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L7) | 🟢 ported: Declared in Bold.Persistence.Sql (BoldPSDescriptionsSQL.cs), so that the persistence layer can ask without WinForms. | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `TfrmBoldQueryUser` | class | [17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17) | [`TfrmBoldQueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L13) | 🟢 ported: The form's layout is that of the Delphi form file. | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `QueryUser` | routine | [35](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L35) · [body 46](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L46) | [`BoldQueryUserDlg.QueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L67) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
 
 ## TfrmBoldQueryUser
 
-class at [line 17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17); 🟢 ported, C# [`TfrmBoldQueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `cmdYesAllClick` | method | [23](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L23) · [body 63](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L63) |  | ⚪ not started |  |
-| `cmdYesClick` | method | [24](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L24) · [body 68](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L68) |  | ⚪ not started |  |
-| `cmdNoClick` | method | [25](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L25) · [body 73](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L73) |  | ⚪ not started |  |
-| `cmdNoAllClick` | method | [26](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L26) · [body 78](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L78) |  | ⚪ not started |  |
-| `QueryResult` | property | [32](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L32) |  | ⚪ not started |  |
+| `cmdYesAllClick` | method | [23](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L23) · [body 63](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L63) | [`TfrmBoldQueryUser.cmdYesAllClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L46) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `cmdYesClick` | method | [24](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L24) · [body 68](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L68) | [`TfrmBoldQueryUser.cmdYesClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L49) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `cmdNoClick` | method | [25](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L25) · [body 73](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L73) | [`TfrmBoldQueryUser.cmdNoClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L52) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `cmdNoAllClick` | method | [26](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L26) · [body 78](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L78) | [`TfrmBoldQueryUser.cmdNoAllClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L55) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `QueryResult` | property | [32](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L32) | [`TfrmBoldQueryUser.QueryResult`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L59) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmBoldQueryUser.cmdYesAll`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L16) (field)
+- [`TfrmBoldQueryUser.cmdYes`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L17) (field)
+- [`TfrmBoldQueryUser.cmdNo`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L18) (field)
+- [`TfrmBoldQueryUser.cmdNoAll`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L19) (field)
+- [`TfrmBoldQueryUser.lblQuestion`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L20) (field)
+- [`TfrmBoldQueryUser.TfrmBoldQueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L22) (constructor)
 
 ## Dependencies
 

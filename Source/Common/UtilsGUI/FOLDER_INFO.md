@@ -29,5 +29,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldCursorGuard](../../../CSharp/port/units/BoldCursorGuard.md) | [Bold.WinForms: Common/UtilsGUI/BoldCursorGuard.cs](../../../CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldCursorGuard.cs) | M8 WinForms |
-| [BoldQueryUserDlg](../../../CSharp/port/units/BoldQueryUserDlg.md) | Bold.WinForms: Common/UtilsGUI/BoldQueryUserDlg.cs (not started) | M8 WinForms |
+| [BoldQueryUserDlg](../../../CSharp/port/units/BoldQueryUserDlg.md) | [Bold.WinForms: Common/UtilsGUI/BoldQueryUserDlg.cs](../../../CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs) | M8 WinForms |
 <!-- END C# PORT -->

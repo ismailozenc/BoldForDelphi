@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldRegistry.pas`](../../../Source/Common/Support/BoldRegistry.pas) (173 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldRegistry.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldRegistry.cs`](../../src/Bold.Core/Common/Support/BoldRegistry.cs) |
 | Project | Bold.Core |
 | Milestone | M8 WinForms |
-| Status | ⚪ not started: 0 of 20 symbols done, 0 verified |
+| Status | 🟢 ported: 20 of 20 symbols done, 0 verified |
 
-⚪ 20 not started
+🟢 20 ported
 
 ## Unit level
 
@@ -18,33 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TRegistryMode` | enum | [26](../../../Source/Common/Support/BoldRegistry.pas#L26) |  | ⚪ not started |  |
-| `TBoldRegistry` | class | [29](../../../Source/Common/Support/BoldRegistry.pas#L29) |  | ⚪ not started |  |
-| `GetBoldLibPath` | routine | [50](../../../Source/Common/Support/BoldRegistry.pas#L50) · [body 80](../../../Source/Common/Support/BoldRegistry.pas#L80) |  | ⚪ not started |  |
-| `GetBoldResPath` | routine | [51](../../../Source/Common/Support/BoldRegistry.pas#L51) · [body 87](../../../Source/Common/Support/BoldRegistry.pas#L87) |  | ⚪ not started |  |
-| `GetBoldBasePath` | routine | [52](../../../Source/Common/Support/BoldRegistry.pas#L52) · [body 67](../../../Source/Common/Support/BoldRegistry.pas#L67) |  | ⚪ not started |  |
-| `RegPathExtention` | const | [56](../../../Source/Common/Support/BoldRegistry.pas#L56) |  | ⚪ not started |  |
+| `TRegistryMode` | enum | [26](../../../Source/Common/Support/BoldRegistry.pas#L26) | [`TRegistryMode`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L11) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `TBoldRegistry` | class | [29](../../../Source/Common/Support/BoldRegistry.pas#L29) | [`TBoldRegistry`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L19) | 🟢 ported: On Microsoft.Win32.Registry (Windows only); Delphi's TRegistry semantics: a key path is relative to the open key, or to the root with a leading backslash. | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `GetBoldLibPath` | routine | [50](../../../Source/Common/Support/BoldRegistry.pas#L50) · [body 80](../../../Source/Common/Support/BoldRegistry.pas#L80) | [`BoldRegistry.GetBoldLibPath`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L146) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `GetBoldResPath` | routine | [51](../../../Source/Common/Support/BoldRegistry.pas#L51) · [body 87](../../../Source/Common/Support/BoldRegistry.pas#L87) | [`BoldRegistry.GetBoldResPath`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L153) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `GetBoldBasePath` | routine | [52](../../../Source/Common/Support/BoldRegistry.pas#L52) · [body 67](../../../Source/Common/Support/BoldRegistry.pas#L67) | [`BoldRegistry.GetBoldBasePath`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L139) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `RegPathExtention` | const | [56](../../../Source/Common/Support/BoldRegistry.pas#L56) | [`BoldRegistry.RegPathExtention`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L135) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
 
 ## TBoldRegistry
 
-class at [line 29](../../../Source/Common/Support/BoldRegistry.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/Common/Support/BoldRegistry.pas#L29); 🟢 ported, C# [`TBoldRegistry`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [34](../../../Source/Common/Support/BoldRegistry.pas#L34) · [body 100](../../../Source/Common/Support/BoldRegistry.pas#L100) |  | ⚪ not started |  |
-| `Destroy` | destructor | [35](../../../Source/Common/Support/BoldRegistry.pas#L35) · [body 112](../../../Source/Common/Support/BoldRegistry.pas#L112) |  | ⚪ not started |  |
-| `OpenKey` | method | [36](../../../Source/Common/Support/BoldRegistry.pas#L36) · [body 118](../../../Source/Common/Support/BoldRegistry.pas#L118) |  | ⚪ not started |  |
-| `OpenNotDefaultKey` | method | [37](../../../Source/Common/Support/BoldRegistry.pas#L37) · [body 123](../../../Source/Common/Support/BoldRegistry.pas#L123) |  | ⚪ not started |  |
-| `CloseKey` | method | [38](../../../Source/Common/Support/BoldRegistry.pas#L38) · [body 95](../../../Source/Common/Support/BoldRegistry.pas#L95) |  | ⚪ not started |  |
-| `ReadString` | method | [39](../../../Source/Common/Support/BoldRegistry.pas#L39) · [body 144](../../../Source/Common/Support/BoldRegistry.pas#L144) |  | ⚪ not started |  |
-| `ReadBool` | method | [40](../../../Source/Common/Support/BoldRegistry.pas#L40) · [body 128](../../../Source/Common/Support/BoldRegistry.pas#L128) |  | ⚪ not started |  |
-| `ReadInteger` | method | [41](../../../Source/Common/Support/BoldRegistry.pas#L41) · [body 136](../../../Source/Common/Support/BoldRegistry.pas#L136) |  | ⚪ not started |  |
-| `WriteString` | method | [42](../../../Source/Common/Support/BoldRegistry.pas#L42) · [body 167](../../../Source/Common/Support/BoldRegistry.pas#L167) |  | ⚪ not started |  |
-| `WriteBool` | method | [43](../../../Source/Common/Support/BoldRegistry.pas#L43) · [body 157](../../../Source/Common/Support/BoldRegistry.pas#L157) |  | ⚪ not started |  |
-| `WriteInteger` | method | [44](../../../Source/Common/Support/BoldRegistry.pas#L44) · [body 162](../../../Source/Common/Support/BoldRegistry.pas#L162) |  | ⚪ not started |  |
-| `ValueExists` | method | [45](../../../Source/Common/Support/BoldRegistry.pas#L45) · [body 152](../../../Source/Common/Support/BoldRegistry.pas#L152) |  | ⚪ not started |  |
-| `DeleteKey` | method | [46](../../../Source/Common/Support/BoldRegistry.pas#L46) · [body 107](../../../Source/Common/Support/BoldRegistry.pas#L107) |  | ⚪ not started |  |
-| `RegistryMode` | property | [47](../../../Source/Common/Support/BoldRegistry.pas#L47) |  | ⚪ not started |  |
+| `Create` | constructor | [34](../../../Source/Common/Support/BoldRegistry.pas#L34) · [body 100](../../../Source/Common/Support/BoldRegistry.pas#L100) | [`TBoldRegistry.TBoldRegistry`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L26) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `Destroy` | destructor | [35](../../../Source/Common/Support/BoldRegistry.pas#L35) · [body 112](../../../Source/Common/Support/BoldRegistry.pas#L112) | [`TBoldRegistry.Dispose`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L32) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `OpenKey` | method | [36](../../../Source/Common/Support/BoldRegistry.pas#L36) · [body 118](../../../Source/Common/Support/BoldRegistry.pas#L118) | [`TBoldRegistry.OpenKey`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L40) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `OpenNotDefaultKey` | method | [37](../../../Source/Common/Support/BoldRegistry.pas#L37) · [body 123](../../../Source/Common/Support/BoldRegistry.pas#L123) | [`TBoldRegistry.OpenNotDefaultKey`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L44) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `CloseKey` | method | [38](../../../Source/Common/Support/BoldRegistry.pas#L38) · [body 95](../../../Source/Common/Support/BoldRegistry.pas#L95) | [`TBoldRegistry.CloseKey`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L47) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `ReadString` | method | [39](../../../Source/Common/Support/BoldRegistry.pas#L39) · [body 144](../../../Source/Common/Support/BoldRegistry.pas#L144) | [`TBoldRegistry.ReadString`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L54) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `ReadBool` | method | [40](../../../Source/Common/Support/BoldRegistry.pas#L40) · [body 128](../../../Source/Common/Support/BoldRegistry.pas#L128) | [`TBoldRegistry.ReadBool`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L59) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `ReadInteger` | method | [41](../../../Source/Common/Support/BoldRegistry.pas#L41) · [body 136](../../../Source/Common/Support/BoldRegistry.pas#L136) | [`TBoldRegistry.ReadInteger`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L62) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `WriteString` | method | [42](../../../Source/Common/Support/BoldRegistry.pas#L42) · [body 167](../../../Source/Common/Support/BoldRegistry.pas#L167) | [`TBoldRegistry.WriteString`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L66) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `WriteBool` | method | [43](../../../Source/Common/Support/BoldRegistry.pas#L43) · [body 157](../../../Source/Common/Support/BoldRegistry.pas#L157) | [`TBoldRegistry.WriteBool`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L70) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `WriteInteger` | method | [44](../../../Source/Common/Support/BoldRegistry.pas#L44) · [body 162](../../../Source/Common/Support/BoldRegistry.pas#L162) | [`TBoldRegistry.WriteInteger`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L73) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `ValueExists` | method | [45](../../../Source/Common/Support/BoldRegistry.pas#L45) · [body 152](../../../Source/Common/Support/BoldRegistry.pas#L152) | [`TBoldRegistry.ValueExists`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L76) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `DeleteKey` | method | [46](../../../Source/Common/Support/BoldRegistry.pas#L46) · [body 107](../../../Source/Common/Support/BoldRegistry.pas#L107) | [`TBoldRegistry.DeleteKey`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L80) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
+| `RegistryMode` | property | [47](../../../Source/Common/Support/BoldRegistry.pas#L47) | [`TBoldRegistry.RegistryMode`](../../src/Bold.Core/Common/Support/BoldRegistry.cs#L95) | 🟢 ported | [`BoldRegistryTests.Values_are_written_and_read_under_the_mode_s_part_of_Bold_s_key`](../../tests/Bold.Core.Tests/Common/Support/BoldRegistryTests.cs#L16) |
 
 ## Dependencies
 
