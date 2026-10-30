@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 20 of 20 symbols done, 0 verified |
+| Status | ✅ verified: 20 of 20 symbols done, 20 verified |
 
-🟢 20 ported
+✅ 20 verified
 
 ## Unit level
 
@@ -18,47 +18,47 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldMultiIndexedListNode` | class | [10](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L10) | [`TBoldMultiIndexedListNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L8) | 🟢 ported |  |
-| `TBoldIndexNode` | class | [13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13) | [`TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L14) | 🟢 ported |  |
-| `TBoldEventNameIndexNode` | class | [21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21) | [`TBoldEventNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L29) | 🟢 ported |  |
-| `TBoldAbstractLinkNode` | class | [28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28) | [`TBoldAbstractLinkNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L40) | 🟢 ported |  |
+| `TBoldMultiIndexedListNode` | class | [10](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L10) | [`TBoldMultiIndexedListNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L8) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `TBoldIndexNode` | class | [13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13) | [`TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L14) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `TBoldEventNameIndexNode` | class | [21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21) | [`TBoldEventNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L29) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `TBoldAbstractLinkNode` | class | [28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28) | [`TBoldAbstractLinkNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L40) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
 
 ## TBoldIndexNode
 
-class at [line 13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13); 🟢 ported, C# [`TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L14).
+class at [line 13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13); ✅ verified, C# [`TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [17](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L17) · [body 55](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L55) | [`TBoldIndexNode.TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L17) | 🟢 ported |  |
-| `Next` | property | [18](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L18) | [`TBoldIndexNode.Next`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L24) | 🟢 ported |  |
+| `Create` | constructor | [17](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L17) · [body 55](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L55) | [`TBoldIndexNode.TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L17) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `Next` | property | [18](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L18) | [`TBoldIndexNode.Next`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L24) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
 
 ## TBoldEventNameIndexNode
 
-class at [line 21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21); 🟢 ported, C# [`TBoldEventNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L29).
+class at [line 21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21); ✅ verified, C# [`TBoldEventNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EventName` | property | [25](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L25) | [`TBoldEventNameIndexNode.EventName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L32) | 🟢 ported |  |
+| `EventName` | property | [25](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L25) | [`TBoldEventNameIndexNode.EventName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L32) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
 
 ## TBoldAbstractLinkNode
 
-class at [line 28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28); 🟢 ported, C# [`TBoldAbstractLinkNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L40).
+class at [line 28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28); ✅ verified, C# [`TBoldAbstractLinkNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L40).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getNext` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L30) | [`TBoldAbstractLinkNode.getNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L43) | 🟢 ported |  |
-| `setNext` | method, protected | [31](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L31) | [`TBoldAbstractLinkNode.setNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L46) | 🟢 ported |  |
-| `getPrevious` | method, protected | [32](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L32) | [`TBoldAbstractLinkNode.getPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L49) | 🟢 ported |  |
-| `setPrevious` | method, protected | [33](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L33) | [`TBoldAbstractLinkNode.setPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L52) | 🟢 ported |  |
-| `getIndexNode` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L34) · [body 62](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L62) | [`TBoldAbstractLinkNode.getIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L56) | 🟢 ported |  |
-| `getNumberOfIndices` | method, protected | [35](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L35) | [`TBoldAbstractLinkNode.getNumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L68) | 🟢 ported |  |
-| `InsertAfter` | method | [37](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L37) · [body 76](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L76) | [`TBoldAbstractLinkNode.InsertAfter`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L72) | 🟢 ported |  |
-| `InsertBefore` | method | [38](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L38) · [body 84](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L84) | [`TBoldAbstractLinkNode.InsertBefore`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L82) | 🟢 ported |  |
-| `Remove` | method | [39](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L39) · [body 95](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L95) | [`TBoldAbstractLinkNode.Remove`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L100) | 🟢 ported |  |
-| `Next` | property | [40](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L40) | [`TBoldAbstractLinkNode.Next`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L122) | 🟢 ported: A method: C# has no indexed properties with a name; setNext writes it. |  |
-| `Previous` | property | [41](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L41) | [`TBoldAbstractLinkNode.Previous`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L126) | 🟢 ported: A method: C# has no indexed properties with a name; setPrevious writes it. |  |
-| `IndexNode` | property | [42](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L42) | [`TBoldAbstractLinkNode.IndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L129) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
-| `NumberOfIndices` | property | [43](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L43) | [`TBoldAbstractLinkNode.NumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L132) | 🟢 ported |  |
+| `getNext` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L30) | [`TBoldAbstractLinkNode.getNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L43) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `setNext` | method, protected | [31](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L31) | [`TBoldAbstractLinkNode.setNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L46) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `getPrevious` | method, protected | [32](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L32) | [`TBoldAbstractLinkNode.getPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L49) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `setPrevious` | method, protected | [33](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L33) | [`TBoldAbstractLinkNode.setPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L52) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `getIndexNode` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L34) · [body 62](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L62) | [`TBoldAbstractLinkNode.getIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L56) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `getNumberOfIndices` | method, protected | [35](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L35) | [`TBoldAbstractLinkNode.getNumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L68) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `InsertAfter` | method | [37](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L37) · [body 76](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L76) | [`TBoldAbstractLinkNode.InsertAfter`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L72) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `InsertBefore` | method | [38](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L38) · [body 84](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L84) | [`TBoldAbstractLinkNode.InsertBefore`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L82) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `Remove` | method | [39](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L39) · [body 95](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L95) | [`TBoldAbstractLinkNode.Remove`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L100) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `Next` | property | [40](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L40) | [`TBoldAbstractLinkNode.Next`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L122) | ✅ verified: A method: C# has no indexed properties with a name; setNext writes it. | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `Previous` | property | [41](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L41) | [`TBoldAbstractLinkNode.Previous`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L126) | ✅ verified: A method: C# has no indexed properties with a name; setPrevious writes it. | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `IndexNode` | property | [42](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L42) | [`TBoldAbstractLinkNode.IndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L129) | ✅ verified: A method: C# has no indexed properties with a name. | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
+| `NumberOfIndices` | property | [43](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L43) | [`TBoldAbstractLinkNode.NumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L132) | ✅ verified | ✔ [`BoldPropagatorSubscriptionsTests.Subscriptions_are_found_by_client_and_by_event_and_removed_either_way`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorSubscriptionsTests.cs#L38) |
 
 ## Dependencies
 

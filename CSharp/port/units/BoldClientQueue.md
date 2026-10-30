@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-🟢 3 ported
+✅ 3 verified
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldClientQueue` | class | [15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15) | [`TBoldClientQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L8) | 🟢 ported |  |
+| `TBoldClientQueue` | class | [15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15) | [`TBoldClientQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L8) | ✅ verified | ✔ [`BoldPropagatorServerTests.Events_go_to_the_other_subscribed_clients_whose_subscriptions_then_end`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L38)<br>✔ [`BoldPropagatorServerTests.Unregistered_clients_are_refused_and_leases_run_out`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L77)<br>✔ [`BoldPropagatorServerTests.Locks_go_to_one_client_at_a_time_and_a_conflict_says_who_holds_them`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L100)<br>✔ [`BoldPropagatorServerTests.A_client_that_cannot_take_its_events_is_disconnected`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L124)<br>✔ [`BoldPropagatorServerTests.Cancelled_subscriptions_end_and_the_dequeuer_reports_its_counts`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L140)<br>… 4 more |
 
 ## TBoldClientQueue
 
-class at [line 15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15); 🟢 ported, C# [`TBoldClientQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L8).
+class at [line 15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15); ✅ verified, C# [`TBoldClientQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AsVarArray` | method | [19](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L19) · [body 31](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L31) | [`TBoldClientQueue.AsVarArray`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L12) | 🟢 ported: A string array where Delphi made a variant array. |  |
-| `BoldClientID` | property | [20](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L20) | [`TBoldClientQueue.BoldClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L37) | 🟢 ported |  |
+| `AsVarArray` | method | [19](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L19) · [body 31](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L31) | [`TBoldClientQueue.AsVarArray`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L12) | ✅ verified: A string array where Delphi made a variant array. | ✔ [`BoldPropagatorServerTests.Events_go_to_the_other_subscribed_clients_whose_subscriptions_then_end`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L38)<br>✔ [`BoldPropagatorServerTests.Unregistered_clients_are_refused_and_leases_run_out`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L77)<br>✔ [`BoldPropagatorServerTests.Locks_go_to_one_client_at_a_time_and_a_conflict_says_who_holds_them`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L100)<br>✔ [`BoldPropagatorServerTests.A_client_that_cannot_take_its_events_is_disconnected`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L124)<br>✔ [`BoldPropagatorServerTests.Cancelled_subscriptions_end_and_the_dequeuer_reports_its_counts`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L140)<br>… 4 more |
+| `BoldClientID` | property | [20](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L20) | [`TBoldClientQueue.BoldClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L37) | ✅ verified | ✔ [`BoldPropagatorServerTests.Events_go_to_the_other_subscribed_clients_whose_subscriptions_then_end`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L38)<br>✔ [`BoldPropagatorServerTests.Unregistered_clients_are_refused_and_leases_run_out`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L77)<br>✔ [`BoldPropagatorServerTests.Locks_go_to_one_client_at_a_time_and_a_conflict_says_who_holds_them`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L100)<br>✔ [`BoldPropagatorServerTests.A_client_that_cannot_take_its_events_is_disconnected`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L124)<br>✔ [`BoldPropagatorServerTests.Cancelled_subscriptions_end_and_the_dequeuer_reports_its_counts`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L140)<br>… 4 more |
 
 ## Dependencies
 

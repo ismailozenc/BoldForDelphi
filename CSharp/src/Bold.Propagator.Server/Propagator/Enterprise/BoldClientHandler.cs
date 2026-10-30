@@ -456,7 +456,7 @@ public class TBoldClientHandler : TBoldPublisher, IDisposable
                     temp.Add("Packages=" + SysUtils.IntToStr(ClientInfoItem.fSuccessfullyReceivedCount));
                     temp.Add("Events=" + SysUtils.IntToStr(ClientInfoItem.fSuccessfullyReceivedEventsCount));
                     temp.Add("LastSend=" + SysUtils.FormatDateTime("yyyy-mm-dd hh:nn:ss", ClientInfoItem.fLastSuccessfullReceive));
-                    temp.Add("LongestInterval=" + SysUtils.FormatDateTime("yyyy-mm-dd hh:nn:ss", DateTime.MinValue + ClientInfoItem.fLongestIntervalBetweenEvents));
+                    temp.Add("LongestInterval=" + SysUtils.FormatDateTime("yyyy-mm-dd hh:nn:ss", DelphiDateTimeZero + ClientInfoItem.fLongestIntervalBetweenEvents));
                     temp.Add("LostEvents=" + SysUtils.IntToStr(ClientInfoItem.fLostEvents));
                     temp.Add("Status=" + ClientInfoItem.ClientStatusString);
                     ClientInfo.Add(temp.CommaText);
@@ -897,6 +897,9 @@ public class TBoldClientHandler : TBoldPublisher, IDisposable
         get => GetEnabled();
         set => SetEnabled(value);
     }
+
+    /// <summary>Delphi's TDateTime 0, from which a TDateTime difference counts.</summary>
+    private static readonly DateTime DelphiDateTimeZero = new(1899, 12, 30);
 
     /// <summary>A time interval in Delphi's TimeToStr form, as Delphi formatted TDateTime differences.</summary>
     internal static string IntervalToStr(TimeSpan Interval) =>

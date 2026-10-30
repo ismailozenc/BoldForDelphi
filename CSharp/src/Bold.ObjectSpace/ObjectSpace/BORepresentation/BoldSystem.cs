@@ -1086,10 +1086,10 @@ public class TBoldSystem : TBoldDomainElement
         }
     }
 
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "Can be cleared, by a lock handler that goes before the system; Delphi raised on any change.")]
     private void SetPessimisticLockHandler(TBoldAbstractPessimisticLockHandler? Value)
     {
-        if (fPessimisticLockHandler is not null)
+        if (fPessimisticLockHandler is not null && Value is not null)
         {
             throw new EBold(SysUtils.Format(sCannotChangeLockHandler, GetType().Name));
         }

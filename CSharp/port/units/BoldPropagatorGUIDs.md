@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-🟢 3 ported
+✅ 3 verified
 
 ## Unit level
 
@@ -18,9 +18,9 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CLSID_BOLDENQUEUER` | const | [6](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L6) | [`BoldPropagatorGUIDs.CLSID_BOLDENQUEUER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L9) | 🟢 ported |  |
-| `CLSID_BOLDCLIENTHANDLER` | const | [7](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L7) | [`BoldPropagatorGUIDs.CLSID_BOLDCLIENTHANDLER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L10) | 🟢 ported |  |
-| `BoldPropagatorConnection_CLSID` | const | [8](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L8) | [`BoldPropagatorGUIDs.BoldPropagatorConnection_CLSID`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L11) | 🟢 ported |  |
+| `CLSID_BOLDENQUEUER` | const | [6](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L6) | [`BoldPropagatorGUIDs.CLSID_BOLDENQUEUER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L9) | ✅ verified | ✔ [`BoldPropagatorCommonTests.The_type_library_ids_and_versions_are_kept`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L45) |
+| `CLSID_BOLDCLIENTHANDLER` | const | [7](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L7) | [`BoldPropagatorGUIDs.CLSID_BOLDCLIENTHANDLER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L10) | ✅ verified | ✔ [`BoldPropagatorCommonTests.The_type_library_ids_and_versions_are_kept`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L45) |
+| `BoldPropagatorConnection_CLSID` | const | [8](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L8) | [`BoldPropagatorGUIDs.BoldPropagatorConnection_CLSID`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L11) | ✅ verified | ✔ [`BoldPropagatorCommonTests.The_type_library_ids_and_versions_are_kept`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L45) |
 
 ## Dependencies
 

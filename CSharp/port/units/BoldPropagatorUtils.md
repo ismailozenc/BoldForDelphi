@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
+| Status | ✅ verified: 4 of 4 symbols done, 4 verified |
 
-🟢 4 ported
+✅ 4 verified
 
 ## Unit level
 
@@ -18,10 +18,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ReConnectToPropagator` | routine | [11](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L11) · [body 92](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L92) | [`BoldPropagatorUtils.ReConnectToPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L73) | 🟢 ported: Takes the propagator handle where Delphi took its COM connection handle. |  |
-| `GetActiveObjectSubscriptions` | routine, implementation | [29](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L29) | [`BoldPropagatorUtils.GetActiveObjectSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L11) | 🟢 ported |  |
-| `GetActiveSubscriptions` | routine, implementation | [59](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L59) | [`BoldPropagatorUtils.GetActiveSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L34) | 🟢 ported |  |
-| `SendSubscriptions` | routine, implementation | [86](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L86) | [`BoldPropagatorUtils.SendSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L62) | 🟢 ported |  |
+| `ReConnectToPropagator` | routine | [11](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L11) · [body 92](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L92) | [`BoldPropagatorUtils.ReConnectToPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L73) | ✅ verified: Takes the propagator handle where Delphi took its COM connection handle. | ✔ [`BoldExternalEventsTests.A_reconnected_client_subscribes_again_to_what_it_has_in_memory`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldExternalEventsTests.cs#L168) |
+| `GetActiveObjectSubscriptions` | routine, implementation | [29](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L29) | [`BoldPropagatorUtils.GetActiveObjectSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L11) | ✅ verified | ✔ [`BoldExternalEventsTests.A_reconnected_client_subscribes_again_to_what_it_has_in_memory`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldExternalEventsTests.cs#L168) |
+| `GetActiveSubscriptions` | routine, implementation | [59](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L59) | [`BoldPropagatorUtils.GetActiveSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L34) | ✅ verified | ✔ [`BoldExternalEventsTests.A_reconnected_client_subscribes_again_to_what_it_has_in_memory`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldExternalEventsTests.cs#L168) |
+| `SendSubscriptions` | routine, implementation | [86](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L86) | [`BoldPropagatorUtils.SendSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L62) | ✅ verified | ✔ [`BoldExternalEventsTests.A_reconnected_client_subscribes_again_to_what_it_has_in_memory`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldExternalEventsTests.cs#L168) |
 
 ## Dependencies
 

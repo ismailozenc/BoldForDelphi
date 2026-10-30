@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 2 of 2 symbols done, 0 verified |
+| Status | ✅ verified: 2 of 2 symbols done, 2 verified |
 
-🟢 2 ported
+✅ 2 verified
 
 ## Unit level
 
@@ -18,8 +18,8 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `initialization` | initialization, implementation | [14](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L14) | [`BoldPropagatorApplication.Initialization`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs#L11) | 🟢 ported: Called by the program; Delphi showed the error and terminated the application. |  |
-| `finalization` | finalization, implementation | [23](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L23) | [`BoldPropagatorApplication.Finalization`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs#L25) | 🟢 ported: Called by the program. |  |
+| `initialization` | initialization, implementation | [14](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L14) | [`BoldPropagatorApplication.Initialization`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs#L11) | ✅ verified: Called by the program; Delphi showed the error and terminated the application. | ✔ [`BoldPropagatorServerTests.The_server_reads_its_configuration_and_starts_as_an_application_or_a_hosted_service`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L231) |
+| `finalization` | finalization, implementation | [23](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L23) | [`BoldPropagatorApplication.Finalization`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs#L25) | ✅ verified: Called by the program. | ✔ [`BoldPropagatorServerTests.The_server_reads_its_configuration_and_starts_as_an_application_or_a_hosted_service`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L231) |
 
 ## Dependencies
 

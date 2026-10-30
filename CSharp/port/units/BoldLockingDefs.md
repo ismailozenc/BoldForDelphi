@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
+| Status | ✅ verified: 4 of 4 symbols done, 4 verified |
 
-🟢 4 ported
+✅ 4 verified
 
 ## Unit level
 
@@ -18,10 +18,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `LOCK_MANAGER_OBJECT_NAME` | const | [6](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L6) | [`BoldLockingDefs.LOCK_MANAGER_OBJECT_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L9) | 🟢 ported |  |
-| `LOCK_MANAGER_ADMIN_OBJECT_NAME` | const | [7](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L7) | [`BoldLockingDefs.LOCK_MANAGER_ADMIN_OBJECT_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L10) | 🟢 ported |  |
-| `LOCKS_CAN_TIMEOUT` | const | [8](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L8) | [`BoldLockingDefs.LOCKS_CAN_TIMEOUT`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L11) | 🟢 ported |  |
-| `BOLD_DBLOCK_NAME` | const | [9](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L9) | [`BoldLockingDefs.BOLD_DBLOCK_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L14) | 🟢 ported |  |
+| `LOCK_MANAGER_OBJECT_NAME` | const | [6](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L6) | [`BoldLockingDefs.LOCK_MANAGER_OBJECT_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L9) | ✅ verified | ✔ [`BoldPropagatorCommonTests.The_messages_and_locking_names_have_the_Delphi_values`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L35) |
+| `LOCK_MANAGER_ADMIN_OBJECT_NAME` | const | [7](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L7) | [`BoldLockingDefs.LOCK_MANAGER_ADMIN_OBJECT_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L10) | ✅ verified | ✔ [`BoldPropagatorCommonTests.The_messages_and_locking_names_have_the_Delphi_values`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L35) |
+| `LOCKS_CAN_TIMEOUT` | const | [8](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L8) | [`BoldLockingDefs.LOCKS_CAN_TIMEOUT`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L11) | ✅ verified | ✔ [`BoldPropagatorCommonTests.The_messages_and_locking_names_have_the_Delphi_values`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L35) |
+| `BOLD_DBLOCK_NAME` | const | [9](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L9) | [`BoldLockingDefs.BOLD_DBLOCK_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L14) | ✅ verified | ✔ [`BoldPropagatorCommonTests.The_messages_and_locking_names_have_the_Delphi_values`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L35) |
 
 ## Dependencies
 

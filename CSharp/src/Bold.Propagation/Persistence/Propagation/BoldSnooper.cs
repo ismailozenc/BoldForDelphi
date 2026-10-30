@@ -23,6 +23,7 @@ public class TBoldSnooper : TBoldAbstractSnooper
         fOwner = aOwner ?? throw new ArgumentNullException(nameof(aOwner));
     }
 
+    [Delphi(PortStatus.Ported, Symbol = "DatabaseLock_AsOLEVariant", Note = "A string array where Delphi made a variant array.")]
     private static string[] DatabaseLock_AsOLEVariant() => [BoldLockingDefs.BOLD_DBLOCK_NAME];
 
     /// <summary>Raises when the database lock is checked and the client does not hold it.</summary>

@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-🟢 3 ported
+✅ 3 verified
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractLockManagerHandle` | class | [13](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L13) | [`TBoldAbstractLockManagerHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L8) | 🟢 ported |  |
+| `TBoldAbstractLockManagerHandle` | class | [13](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L13) | [`TBoldAbstractLockManagerHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L8) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L121) |
 
 ## TBoldAbstractLockManagerHandle
 
-class at [line 13](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L13); 🟢 ported, C# [`TBoldAbstractLockManagerHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L8).
+class at [line 13](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L13); ✅ verified, C# [`TBoldAbstractLockManagerHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLockManager` | method, protected | [15](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L15) | [`TBoldAbstractLockManagerHandle.GetLockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L11) | 🟢 ported |  |
-| `LockManager` | property | [17](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L17) | [`TBoldAbstractLockManagerHandle.LockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L14) | 🟢 ported |  |
+| `GetLockManager` | method, protected | [15](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L15) | [`TBoldAbstractLockManagerHandle.GetLockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L11) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L121) |
+| `LockManager` | property | [17](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L17) | [`TBoldAbstractLockManagerHandle.LockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L14) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L121) |
 
 ## Dependencies
 

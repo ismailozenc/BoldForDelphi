@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 9 of 9 symbols done, 0 verified |
+| Status | ✅ verified: 9 of 9 symbols done, 9 verified |
 
-🟢 9 ported
+✅ 9 verified
 
 ## Unit level
 
@@ -18,22 +18,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractPropagatorHandle` | class | [13](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L13) | [`TBoldAbstractPropagatorHandle`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L11) | 🟢 ported |  |
+| `TBoldAbstractPropagatorHandle` | class | [13](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L13) | [`TBoldAbstractPropagatorHandle`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L11) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
 
 ## TBoldAbstractPropagatorHandle
 
-class at [line 13](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L13); 🟢 ported, C# [`TBoldAbstractPropagatorHandle`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L11).
+class at [line 13](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L13); ✅ verified, C# [`TBoldAbstractPropagatorHandle`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetClientHandler` | method, protected | [15](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L15) | [`TBoldAbstractPropagatorHandle.GetClientHandler`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L14) | 🟢 ported |  |
-| `GetEventPropagator` | method, protected | [16](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L16) | [`TBoldAbstractPropagatorHandle.GetEventPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L17) | 🟢 ported |  |
-| `GetConnected` | method, protected | [17](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L17) | [`TBoldAbstractPropagatorHandle.GetConnected`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L20) | 🟢 ported |  |
-| `SetConnected` | method, protected | [18](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L18) | [`TBoldAbstractPropagatorHandle.SetConnected`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L23) | 🟢 ported |  |
-| `DoPropagatorCallFailed` | method | [20](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L20) | [`TBoldAbstractPropagatorHandle.DoPropagatorCallFailed`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L27) | 🟢 ported |  |
-| `ClientHandler` | property | [21](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L21) | [`TBoldAbstractPropagatorHandle.ClientHandler`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L30) | 🟢 ported |  |
-| `EventPropagator` | property | [22](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L22) | [`TBoldAbstractPropagatorHandle.EventPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L33) | 🟢 ported |  |
-| `Connected` | property | [23](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L23) | [`TBoldAbstractPropagatorHandle.Connected`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L36) | 🟢 ported |  |
+| `GetClientHandler` | method, protected | [15](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L15) | [`TBoldAbstractPropagatorHandle.GetClientHandler`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L14) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
+| `GetEventPropagator` | method, protected | [16](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L16) | [`TBoldAbstractPropagatorHandle.GetEventPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L17) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
+| `GetConnected` | method, protected | [17](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L17) | [`TBoldAbstractPropagatorHandle.GetConnected`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L20) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
+| `SetConnected` | method, protected | [18](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L18) | [`TBoldAbstractPropagatorHandle.SetConnected`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L23) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
+| `DoPropagatorCallFailed` | method | [20](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L20) | [`TBoldAbstractPropagatorHandle.DoPropagatorCallFailed`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L27) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
+| `ClientHandler` | property | [21](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L21) | [`TBoldAbstractPropagatorHandle.ClientHandler`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L30) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
+| `EventPropagator` | property | [22](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L22) | [`TBoldAbstractPropagatorHandle.EventPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L33) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
+| `Connected` | property | [23](../../../Source/Propagator/Common/BoldAbstractPropagatorHandle.pas#L23) | [`TBoldAbstractPropagatorHandle.Connected`](../../src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs#L36) | ✅ verified | ✔ [`BoldListenerTests.A_listener_registers_receives_events_for_its_dequeuer_and_unregisters`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldListenerTests.cs#L38) |
 
 ## Dependencies
 

@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 5 of 5 symbols done, 0 verified |
+| Status | ✅ verified: 5 of 5 symbols done, 5 verified |
 
-🔵 5 replaced
+✅ 5 verified
 
 ## Unit level
 
@@ -18,18 +18,18 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldObjectMarshaler` | class | [13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13) | [`TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L11) | 🔵 replaced: Keeps the reference: .NET objects need no marshaling between threads. |  |
+| `TBoldObjectMarshaler` | class | [13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13) | [`TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L11) | ✅ verified: Keeps the reference: .NET objects need no marshaling between threads. | ✔ [`BoldPropagatorCommonTests.The_object_marshaler_hands_over_the_reference`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L67) |
 
 ## TBoldObjectMarshaler
 
-class at [line 13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13); 🔵 replaced, C# [`TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L11).
+class at [line 13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13); ✅ verified, C# [`TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `MarshalObject` | method, protected | [17](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L17) · [body 56](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L56) | [`TBoldObjectMarshaler.MarshalObject`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L32) | 🔵 replaced: Keeps the reference. |  |
-| `Create` | constructor | [19](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L19) · [body 34](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L34) | [`TBoldObjectMarshaler.TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L17) | 🔵 replaced: Takes the interface type where Delphi took its GUID. |  |
-| `Destroy` | destructor | [20](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L20) · [body 42](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L42) | [`TBoldObjectMarshaler.Dispose`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L24) | 🔵 replaced: Lets go of the reference. |  |
-| `UnMarshalObject` | method | [21](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L21) · [body 70](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L70) | [`TBoldObjectMarshaler.UnMarshalObject`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L46) | 🔵 replaced: Gives the kept reference. |  |
+| `MarshalObject` | method, protected | [17](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L17) · [body 56](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L56) | [`TBoldObjectMarshaler.MarshalObject`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L32) | ✅ verified: Keeps the reference. | ✔ [`BoldPropagatorCommonTests.The_object_marshaler_hands_over_the_reference`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L67) |
+| `Create` | constructor | [19](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L19) · [body 34](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L34) | [`TBoldObjectMarshaler.TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L17) | ✅ verified: Takes the interface type where Delphi took its GUID. | ✔ [`BoldPropagatorCommonTests.The_object_marshaler_hands_over_the_reference`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L67) |
+| `Destroy` | destructor | [20](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L20) · [body 42](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L42) | [`TBoldObjectMarshaler.Dispose`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L24) | ✅ verified: Lets go of the reference. | ✔ [`BoldPropagatorCommonTests.The_object_marshaler_hands_over_the_reference`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L67) |
+| `UnMarshalObject` | method | [21](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L21) · [body 70](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L70) | [`TBoldObjectMarshaler.UnMarshalObject`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L46) | ✅ verified: Gives the kept reference. | ✔ [`BoldPropagatorCommonTests.The_object_marshaler_hands_over_the_reference`](../../tests/Bold.Propagation.Tests/Propagator/Common/BoldPropagatorCommonTests.cs#L67) |
 
 ## C# additions
 

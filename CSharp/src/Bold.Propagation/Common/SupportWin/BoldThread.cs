@@ -53,7 +53,7 @@ public class TBoldNotifiableThread : TThread
     }
 
     /// <summary>Creates the queue window, or drops it.</summary>
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "Drops the window; Delphi sent it WM_QUIT, which a window procedure leaves to DefWindowProc.")]
     protected void InitServerWindow(bool bInit)
     {
         if (bInit)
@@ -63,9 +63,8 @@ public class TBoldNotifiableThread : TThread
                 CreateQueueWindow(ref FQueueWindow);
             }
         }
-        else if (FQueueWindow is not null)
+        else
         {
-            Windows.PostMessage(FQueueWindow, Windows.WM_QUIT, 0, 0);
             FQueueWindow = null;
         }
     }

@@ -87,7 +87,7 @@ public abstract class TThread : IDisposable
         }
     }
 
-    /// <summary>Stops the thread before it takes its next message.</summary>
+    /// <summary>Stops the thread before it takes its next message (also when it is waiting for one).</summary>
     public void Suspend()
     {
         fSuspended = true;
@@ -177,18 +177,27 @@ public abstract class TThread : IDisposable
     /// </summary>
     protected int GetMessage(out TMsg Msg)
     {
-        fNotSuspended.Wait();
-        lock (fMessages)
+        while (true)
         {
-            while (fMessages.Count == 0)
+            fNotSuspended.Wait();
+            lock (fMessages)
             {
-                Monitor.Wait(fMessages);
+                while (fMessages.Count == 0)
+                {
+                    Monitor.Wait(fMessages);
+                }
+
+                // Suspended while it waited: the message waits for the resume.
+                if (fSuspended)
+                {
+                    continue;
+                }
+
+                Msg = fMessages.Dequeue();
             }
 
-            Msg = fMessages.Dequeue();
+            return Msg.message == Windows.WM_QUIT ? 0 : 1;
         }
-
-        return Msg.message == Windows.WM_QUIT ? 0 : 1;
     }
 
     /// <summary>Looks at the next message without waiting; takes it when <paramref name="Remove"/> is true. False when there is none.</summary>

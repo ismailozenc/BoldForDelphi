@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
 
-🟢 3 ported
+✅ 3 verified
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractLockManagerAdminHandle` | class | [14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14) | [`TBoldAbstractLockManagerAdminHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L8) | 🟢 ported |  |
+| `TBoldAbstractLockManagerAdminHandle` | class | [14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14) | [`TBoldAbstractLockManagerAdminHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L8) | ✅ verified | ✔ [`BoldPropagatorServerTests.The_lock_manager_administration_lists_clients_and_locks_and_can_suspend_and_kill`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L195) |
 
 ## TBoldAbstractLockManagerAdminHandle
 
-class at [line 14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14); 🟢 ported, C# [`TBoldAbstractLockManagerAdminHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L8).
+class at [line 14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14); ✅ verified, C# [`TBoldAbstractLockManagerAdminHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLockManagerAdmin` | method, protected | [16](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L16) | [`TBoldAbstractLockManagerAdminHandle.GetLockManagerAdmin`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L11) | 🟢 ported |  |
-| `LockManagerAdmin` | property | [18](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L18) | [`TBoldAbstractLockManagerAdminHandle.LockManagerAdmin`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L14) | 🟢 ported |  |
+| `GetLockManagerAdmin` | method, protected | [16](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L16) | [`TBoldAbstractLockManagerAdminHandle.GetLockManagerAdmin`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L11) | ✅ verified | ✔ [`BoldPropagatorServerTests.The_lock_manager_administration_lists_clients_and_locks_and_can_suspend_and_kill`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L195) |
+| `LockManagerAdmin` | property | [18](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L18) | [`TBoldAbstractLockManagerAdminHandle.LockManagerAdmin`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L14) | ✅ verified | ✔ [`BoldPropagatorServerTests.The_lock_manager_administration_lists_clients_and_locks_and_can_suspend_and_kill`](../../tests/Bold.Propagation.Tests/Propagator/Enterprise/BoldPropagatorServerTests.cs#L195) |
 
 ## Dependencies
 
