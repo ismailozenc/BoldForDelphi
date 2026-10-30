@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldIndexedList.pas`](../../../Source/Propagator/Enterprise/BoldIndexedList.pas) (267 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 29 symbols done, 0 verified |
+| Status | 🟢 ported: 29 of 29 symbols done, 0 verified |
 
-⚪ 29 not started
+🟢 29 ported
 
 ## Unit level
 
@@ -18,63 +18,63 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Initial_Client_Count` | const | [15](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L15) |  | ⚪ not started |  |
-| `ClientIdArrayInc` | const | [16](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L16) |  | ⚪ not started |  |
-| `TBoldClientIDList` | class | [26](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L26) |  | ⚪ not started |  |
-| `TBoldExternalEventIndex` | class | [43](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L43) |  | ⚪ not started |  |
-| `TBoldExternalEventHashTable` | class | [48](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L48) |  | ⚪ not started |  |
-| `TBoldEventNameList` | class | [57](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L57) |  | ⚪ not started |  |
+| `Initial_Client_Count` | const | [15](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L15) | [`BoldIndexedList.Initial_Client_Count`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L9) | 🟢 ported |  |
+| `ClientIdArrayInc` | const | [16](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L16) | [`BoldIndexedList.ClientIdArrayInc`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L10) | 🟢 ported |  |
+| `TBoldClientIDList` | class | [26](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L26) | [`TBoldClientIDList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L15) | 🟢 ported |  |
+| `TBoldExternalEventIndex` | class | [43](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L43) | [`TBoldExternalEventIndex`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L129) | 🟢 ported |  |
+| `TBoldExternalEventHashTable` | class | [48](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L48) | [`TBoldExternalEventHashTable`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L137) | 🟢 ported |  |
+| `TBoldEventNameList` | class | [57](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L57) | [`TBoldEventNameList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L161) | 🟢 ported |  |
 
 ## TBoldClientIDList
 
-class at [line 26](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L26); 🟢 ported, C# [`TBoldClientIDList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getItem` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L30) · [body 130](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L130) |  | ⚪ not started |  |
-| `setItem` | method, protected | [31](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L31) · [body 157](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L157) |  | ⚪ not started |  |
-| `getCount` | method, protected | [32](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L32) · [body 125](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L125) |  | ⚪ not started |  |
-| `InsertINode` | method, protected | [33](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L33) · [body 141](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L141) |  | ⚪ not started |  |
-| `getClient` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L34) · [body 107](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L107) |  | ⚪ not started |  |
-| `setClient` | method, protected | [35](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L35) · [body 151](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L151) |  | ⚪ not started |  |
-| `Clients` | property, protected | [36](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L36) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L38) · [body 85](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L85) |  | ⚪ not started |  |
-| `Destroy` | destructor | [39](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L39) · [body 100](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L100) |  | ⚪ not started |  |
-| `DeleteNodes` | method | [40](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L40) · [body 91](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L91) |  | ⚪ not started |  |
+| `getItem` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L30) · [body 130](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L130) | [`TBoldClientIDList.getItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L42) | 🟢 ported |  |
+| `setItem` | method, protected | [31](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L31) · [body 157](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L157) | [`TBoldClientIDList.setItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L54) | 🟢 ported |  |
+| `getCount` | method, protected | [32](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L32) · [body 125](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L125) | [`TBoldClientIDList.getCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L68) | 🟢 ported |  |
+| `InsertINode` | method, protected | [33](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L33) · [body 141](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L141) | [`TBoldClientIDList.InsertINode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L71) | 🟢 ported |  |
+| `getClient` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L34) · [body 107](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L107) | [`TBoldClientIDList.getClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L84) | 🟢 ported |  |
+| `setClient` | method, protected | [35](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L35) · [body 151](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L151) | [`TBoldClientIDList.setClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L105) | 🟢 ported: Writes the slot; Delphi's setter called itself through the property (it was never reached). |  |
+| `Clients` | property, protected | [36](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L36) | [`TBoldClientIDList.Clients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L112) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
+| `Create` | constructor | [38](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L38) · [body 85](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L85) | [`TBoldClientIDList.TBoldClientIDList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L20) | 🟢 ported |  |
+| `Destroy` | destructor | [39](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L39) · [body 100](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L100) | [`TBoldClientIDList.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L28) | 🟢 ported |  |
+| `DeleteNodes` | method | [40](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L40) · [body 91](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L91) | [`TBoldClientIDList.DeleteNodes`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L115) | 🟢 ported |  |
 
 ## TBoldExternalEventIndex
 
-class at [line 43](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L43); ⚪ not started.
+class at [line 43](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L43); 🟢 ported, C# [`TBoldExternalEventIndex`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L129).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [45](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L45) · [body 170](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L170) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [45](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L45) · [body 170](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L170) | [`TBoldExternalEventIndex.ItemAsKeyString`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L132) | 🟢 ported |  |
 
 ## TBoldExternalEventHashTable
 
-class at [line 48](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L48); 🟢 ported, C# [`TBoldExternalEventHashTable`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L137).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItemByEventName` | method, private | [50](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L50) · [body 184](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L184) |  | ⚪ not started |  |
-| `Create` | constructor | [52](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L52) · [body 177](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L177) |  | ⚪ not started |  |
-| `Add` | method | [53](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L53) · [body 189](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L189) |  | ⚪ not started |  |
-| `ItemsByEventName` | property | [54](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L54) |  | ⚪ not started |  |
+| `GetItemByEventName` | method, private | [50](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L50) · [body 184](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L184) | [`TBoldExternalEventHashTable.GetItemByEventName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L149) | 🟢 ported |  |
+| `Create` | constructor | [52](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L52) · [body 177](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L177) | [`TBoldExternalEventHashTable.TBoldExternalEventHashTable`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L142) | 🟢 ported |  |
+| `Add` | method | [53](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L53) · [body 189](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L189) | [`TBoldExternalEventHashTable.Add`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L153) | 🟢 ported |  |
+| `ItemsByEventName` | property | [54](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L54) | [`TBoldExternalEventHashTable.ItemsByEventName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L156) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
 
 ## TBoldEventNameList
 
-class at [line 57](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L57); ⚪ not started.
+class at [line 57](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L57); 🟢 ported, C# [`TBoldEventNameList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L161).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getItem` | method, protected | [61](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L61) · [body 213](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L213) |  | ⚪ not started |  |
-| `setItem` | method, protected | [62](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L62) · [body 245](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L245) |  | ⚪ not started |  |
-| `getCount` | method, protected | [63](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L63) · [body 208](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L208) |  | ⚪ not started |  |
-| `InsertINode` | method, protected | [64](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L64) · [body 219](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L219) |  | ⚪ not started |  |
-| `Create` | constructor | [66](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L66) · [body 195](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L195) |  | ⚪ not started |  |
-| `Destroy` | destructor | [67](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L67) · [body 201](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L201) |  | ⚪ not started |  |
-| `DeleteNodes` | method | [68](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L68) · [body 252](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L252) |  | ⚪ not started |  |
-| `DeleteINodeByKey` | method | [69](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L69) · [body 235](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L235) |  | ⚪ not started |  |
+| `getItem` | method, protected | [61](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L61) · [body 213](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L213) | [`TBoldEventNameList.getItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L186) | 🟢 ported |  |
+| `setItem` | method, protected | [62](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L62) · [body 245](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L245) | [`TBoldEventNameList.setItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L189) | 🟢 ported |  |
+| `getCount` | method, protected | [63](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L63) · [body 208](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L208) | [`TBoldEventNameList.getCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L192) | 🟢 ported |  |
+| `InsertINode` | method, protected | [64](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L64) · [body 219](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L219) | [`TBoldEventNameList.InsertINode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L195) | 🟢 ported |  |
+| `Create` | constructor | [66](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L66) · [body 195](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L195) | [`TBoldEventNameList.TBoldEventNameList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L166) | 🟢 ported |  |
+| `Destroy` | destructor | [67](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L67) · [body 201](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L201) | [`TBoldEventNameList.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L173) | 🟢 ported |  |
+| `DeleteNodes` | method | [68](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L68) · [body 252](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L252) | [`TBoldEventNameList.DeleteNodes`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L217) | 🟢 ported |  |
+| `DeleteINodeByKey` | method | [69](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L69) · [body 235](../../../Source/Propagator/Enterprise/BoldIndexedList.pas#L235) | [`TBoldEventNameList.DeleteINodeByKey`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexedList.cs#L207) | 🟢 ported |  |
 
 ## Dependencies
 

@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldAbstractModificationPropagator](../../../CSharp/port/units/BoldAbstractModificationPropagator.md) | Bold.Propagation: Persistence/UDPPropagator/BoldAbstractModificationPropagator.cs (not started) | M9 Multi-user |
-| [BoldUDPModificationBroadcaster](../../../CSharp/port/units/BoldUDPModificationBroadcaster.md) | Bold.Propagation: Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs (not started) | M9 Multi-user |
+| [BoldAbstractModificationPropagator](../../../CSharp/port/units/BoldAbstractModificationPropagator.md) | [Bold.Propagation: Persistence/UDPPropagator/BoldAbstractModificationPropagator.cs](../../../CSharp/src/Bold.Propagation/Persistence/UDPPropagator/BoldAbstractModificationPropagator.cs) | M9 Multi-user |
+| [BoldUDPModificationBroadcaster](../../../CSharp/port/units/BoldUDPModificationBroadcaster.md) | [Bold.Propagation: Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs](../../../CSharp/src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs) | M9 Multi-user |
 <!-- END C# PORT -->

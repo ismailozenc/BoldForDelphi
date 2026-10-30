@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldSnooperHandle.pas`](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas) (181 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 20 symbols done, 0 verified |
+| Status | 🟢 ported: 20 of 20 symbols done, 0 verified |
 
-⚪ 20 not started
+🟢 17 ported · ⚫ 3 dropped
 
 ## Unit level
 
@@ -18,33 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSnooperHandle` | class | [17](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L17) |  | ⚪ not started |  |
+| `TBoldSnooperHandle` | class | [17](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L17) | [`TBoldSnooperHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L15) | 🟢 ported |  |
 
 ## TBoldSnooperHandle
 
-class at [line 17](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L17); 🟢 ported, C# [`TBoldSnooperHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetLockManagerHandle` | method, private | [23](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L23) · [body 95](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L95) |  | ⚪ not started |  |
-| `_Receive` | method, private | [24](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L24) · [body 86](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L86) |  | ⚪ not started |  |
-| `SetPropagatorHandle` | method, private | [25](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L25) · [body 106](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L106) |  | ⚪ not started |  |
-| `GetConnected` | method, private | [26](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L26) · [body 124](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L124) |  | ⚪ not started |  |
-| `ReadObsoleteMachineNameProperty` | method, private | [27](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L27) · [body 138](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L138) |  | ⚪ not started |  |
-| `ReadObsoleteProperty` | method, private | [28](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L28) · [body 147](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L147) |  | ⚪ not started |  |
-| `GetIsLoaded` | method, private | [29](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L29) · [body 155](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L155) |  | ⚪ not started |  |
-| `GetSnooper` | method, private | [30](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L30) · [body 160](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L160) |  | ⚪ not started |  |
-| `Subscribe` | method, private | [31](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L31) · [body 165](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L165) |  | ⚪ not started |  |
-| `CreatePersistenceController` | method, protected | [33](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L33) · [body 58](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L58) |  | ⚪ not started |  |
-| `DefineProperties` | method, protected | [34](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L34) · [body 131](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L131) |  | ⚪ not started |  |
-| `IsLoaded` | property, protected | [35](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L35) |  | ⚪ not started |  |
-| `Snooper` | property, protected | [36](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L36) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L38) · [body 73](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L73) |  | ⚪ not started |  |
-| `Destroy` | destructor | [39](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L39) · [body 80](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L80) |  | ⚪ not started |  |
-| `Connected` | property | [40](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L40) |  | ⚪ not started |  |
-| `LockManagerHandle` | property, published | [44](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L44) |  | ⚪ not started |  |
-| `CheckDatabaseLock` | property, published | [45](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L45) |  | ⚪ not started |  |
-| `PropagatorHandle` | property, published | [46](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L46) |  | ⚪ not started |  |
+| `SetLockManagerHandle` | method, private | [23](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L23) · [body 95](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L95) | [`TBoldSnooperHandle.SetLockManagerHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L78) | 🟢 ported |  |
+| `_Receive` | method, private | [24](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L24) · [body 86](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L86) | [`TBoldSnooperHandle._Receive`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L64) | 🟢 ported |  |
+| `SetPropagatorHandle` | method, private | [25](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L25) · [body 106](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L106) | [`TBoldSnooperHandle.SetPropagatorHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L89) | 🟢 ported |  |
+| `GetConnected` | method, private | [26](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L26) · [body 124](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L124) | [`TBoldSnooperHandle.GetConnected`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L113) | 🟢 ported |  |
+| `ReadObsoleteMachineNameProperty` | method, private | [27](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L27) · [body 138](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L138) | [`[assembly: Delphi] in BoldSnooperHandle.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L5) | ⚫ dropped: Read an obsolete property from Delphi form files. |  |
+| `ReadObsoleteProperty` | method, private | [28](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L28) · [body 147](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L147) | [`[assembly: Delphi] in BoldSnooperHandle.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L6) | ⚫ dropped: Warned in the designer about an obsolete property. |  |
+| `GetIsLoaded` | method, private | [29](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L29) · [body 155](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L155) | [`TBoldSnooperHandle.GetIsLoaded`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L125) | 🟢 ported |  |
+| `GetSnooper` | method, private | [30](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L30) · [body 160](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L160) | [`TBoldSnooperHandle.GetSnooper`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L128) | 🟢 ported |  |
+| `Subscribe` | method, private | [31](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L31) · [body 165](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L165) | [`TBoldSnooperHandle.Subscribe`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L131) | 🟢 ported |  |
+| `CreatePersistenceController` | method, protected | [33](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L33) · [body 58](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L58) | [`TBoldSnooperHandle.CreatePersistenceController`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L42) | 🟢 ported |  |
+| `DefineProperties` | method, protected | [34](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L34) · [body 131](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L131) | [`[assembly: Delphi] in BoldSnooperHandle.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L4) | ⚫ dropped: Read an obsolete property from Delphi form files. |  |
+| `IsLoaded` | property, protected | [35](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L35) | [`TBoldSnooperHandle.IsLoaded`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L147) | 🟢 ported |  |
+| `Snooper` | property, protected | [36](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L36) | [`TBoldSnooperHandle.Snooper`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L148) | 🟢 ported |  |
+| `Create` | constructor | [38](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L38) · [body 73](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L73) | [`TBoldSnooperHandle.TBoldSnooperHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L23) | 🟢 ported |  |
+| `Destroy` | destructor | [39](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L39) · [body 80](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L80) | [`TBoldSnooperHandle.Dispose`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L31) | 🟢 ported |  |
+| `Connected` | property | [40](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L40) | [`TBoldSnooperHandle.Connected`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L149) | 🟢 ported |  |
+| `LockManagerHandle` | property, published | [44](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L44) | [`TBoldSnooperHandle.LockManagerHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L152) | 🟢 ported |  |
+| `CheckDatabaseLock` | property, published | [45](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L45) | [`TBoldSnooperHandle.CheckDatabaseLock`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L159) | 🟢 ported |  |
+| `PropagatorHandle` | property, published | [46](../../../Source/Persistence/Propagation/BoldSnooperHandle.pas#L46) | [`TBoldSnooperHandle.PropagatorHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooperHandle.cs#L166) | 🟢 ported |  |
 
 ## Dependencies
 

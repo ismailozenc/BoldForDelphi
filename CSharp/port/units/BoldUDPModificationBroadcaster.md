@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas`](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas) (150 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🟢 ported: 11 of 11 symbols done, 0 verified |
 
-⚪ 11 not started
+🟢 11 ported
 
 ## Unit level
 
@@ -18,24 +18,34 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TActivationErrorEvent` | event type | [24](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L24) |  | ⚪ not started |  |
-| `TBoldUDPModificationBroadcaster` | class | [27](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L27) |  | ⚪ not started |  |
+| `TActivationErrorEvent` | event type | [24](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L24) | [`TActivationErrorEvent`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L12) | 🟢 ported |  |
+| `TBoldUDPModificationBroadcaster` | class | [27](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L27) | [`TBoldUDPModificationBroadcaster`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L20) | 🟢 ported: System.Net.Sockets where Delphi used Indy. |  |
 
 ## TBoldUDPModificationBroadcaster
 
-class at [line 27](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L27); ⚪ not started.
+class at [line 27](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L27); 🟢 ported, C# [`TBoldUDPModificationBroadcaster`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L20).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPort` | method, private | [32](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L32) · [body 87](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L87) |  | ⚪ not started |  |
-| `SetPort` | method, private | [33](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L33) · [body 110](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L110) |  | ⚪ not started |  |
-| `OnSendQueueNotEmpty` | method, protected | [35](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L35) · [body 139](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L139) |  | ⚪ not started |  |
-| `SetActive` | method, protected | [36](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L36) · [body 95](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L95) |  | ⚪ not started |  |
-| `InternalUDPRead` | method, protected | [37](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L37) · [body 124](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L124) |  | ⚪ not started |  |
-| `Create` | constructor | [39](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L39) · [body 65](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L65) |  | ⚪ not started |  |
-| `Destroy` | destructor | [40](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L40) · [body 80](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L80) |  | ⚪ not started |  |
-| `Port` | property, published | [42](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L42) |  | ⚪ not started |  |
-| `OnActivationError` | property, published | [43](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L43) |  | ⚪ not started |  |
+| `GetPort` | method, private | [32](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L32) · [body 87](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L87) | [`TBoldUDPModificationBroadcaster.GetPort`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L48) | 🟢 ported |  |
+| `SetPort` | method, private | [33](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L33) · [body 110](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L110) | [`TBoldUDPModificationBroadcaster.SetPort`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L52) | 🟢 ported |  |
+| `OnSendQueueNotEmpty` | method, protected | [35](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L35) · [body 139](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L139) | [`TBoldUDPModificationBroadcaster.OnSendQueueNotEmpty`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L64) | 🟢 ported: Does not let the application idle first, as Delphi did. |  |
+| `SetActive` | method, protected | [36](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L36) · [body 95](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L95) | [`TBoldUDPModificationBroadcaster.SetActive`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L76) | 🟢 ported |  |
+| `InternalUDPRead` | method, protected | [37](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L37) · [body 124](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L124) | [`TBoldUDPModificationBroadcaster.InternalUDPRead`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L105) | 🟢 ported: Takes the datagram's bytes where Indy gave a stream and the socket. |  |
+| `Create` | constructor | [39](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L39) · [body 65](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L65) | [`TBoldUDPModificationBroadcaster.TBoldUDPModificationBroadcaster`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L30) | 🟢 ported |  |
+| `Destroy` | destructor | [40](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L40) · [body 80](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L80) | [`TBoldUDPModificationBroadcaster.Dispose`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L37) | 🟢 ported |  |
+| `Port` | property, published | [42](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L42) | [`TBoldUDPModificationBroadcaster.Port`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L163) | 🟢 ported |  |
+| `OnActivationError` | property, published | [43](../../../Source/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.pas#L43) | [`TBoldUDPModificationBroadcaster.OnActivationError`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L169) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUDPModificationBroadcaster.BroadcastAddress`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L172) (property)
+- [`TBoldUDPModificationBroadcaster.Dequeuer`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L175) (property)
+- [`TBoldUDPModificationBroadcaster.OnReceiveEvent`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L182) (property)
+- [`TBoldUDPModificationBroadcaster.SystemHandle`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L189) (property)
+- [`TBoldUDPModificationBroadcaster.Active`](../../src/Bold.Propagation/Persistence/UDPPropagator/BoldUDPModificationBroadcaster.cs#L196) (property)
 
 ## Dependencies
 

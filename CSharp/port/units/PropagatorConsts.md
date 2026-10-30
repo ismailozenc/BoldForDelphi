@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Common/PropagatorConsts.pas`](../../../Source/Propagator/Common/PropagatorConsts.pas) (89 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 60 symbols done, 0 verified |
+| Status | 🟢 ported: 60 of 60 symbols done, 0 verified |
 
-⚪ 60 not started
+🟢 60 ported
 
 ## Unit level
 
@@ -18,66 +18,66 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sLogError` | resourcestring | [6](../../../Source/Propagator/Common/PropagatorConsts.pas#L6) |  | ⚪ not started |  |
-| `sClientIDsNotAssigned` | resourcestring | [7](../../../Source/Propagator/Common/PropagatorConsts.pas#L7) |  | ⚪ not started |  |
-| `sInitializing` | resourcestring | [10](../../../Source/Propagator/Common/PropagatorConsts.pas#L10) |  | ⚪ not started |  |
-| `sDestroying` | resourcestring | [11](../../../Source/Propagator/Common/PropagatorConsts.pas#L11) |  | ⚪ not started |  |
-| `sLogErrorAndID` | resourcestring | [14](../../../Source/Propagator/Common/PropagatorConsts.pas#L14) |  | ⚪ not started |  |
-| `sLoggingID` | resourcestring | [15](../../../Source/Propagator/Common/PropagatorConsts.pas#L15) |  | ⚪ not started |  |
-| `sExtendLeaseFailed` | resourcestring | [16](../../../Source/Propagator/Common/PropagatorConsts.pas#L16) |  | ⚪ not started |  |
-| `sLogOff` | resourcestring | [17](../../../Source/Propagator/Common/PropagatorConsts.pas#L17) |  | ⚪ not started |  |
-| `sLeaseExpired` | resourcestring | [18](../../../Source/Propagator/Common/PropagatorConsts.pas#L18) |  | ⚪ not started |  |
-| `sClientDisconnected` | resourcestring | [19](../../../Source/Propagator/Common/PropagatorConsts.pas#L19) |  | ⚪ not started |  |
-| `sClientDisconnected_Long` | resourcestring | [20](../../../Source/Propagator/Common/PropagatorConsts.pas#L20) |  | ⚪ not started |  |
-| `sErrorCode` | resourcestring | [21](../../../Source/Propagator/Common/PropagatorConsts.pas#L21) |  | ⚪ not started |  |
-| `sInvalidListener` | resourcestring | [22](../../../Source/Propagator/Common/PropagatorConsts.pas#L22) |  | ⚪ not started |  |
-| `sListenerInterfaceMissing` | resourcestring | [23](../../../Source/Propagator/Common/PropagatorConsts.pas#L23) |  | ⚪ not started |  |
-| `sClientHasRecovered` | resourcestring | [24](../../../Source/Propagator/Common/PropagatorConsts.pas#L24) |  | ⚪ not started |  |
-| `sOK` | resourcestring | [25](../../../Source/Propagator/Common/PropagatorConsts.pas#L25) |  | ⚪ not started |  |
-| `sNotReceiving` | resourcestring | [26](../../../Source/Propagator/Common/PropagatorConsts.pas#L26) |  | ⚪ not started |  |
-| `sRecovered` | resourcestring | [27](../../../Source/Propagator/Common/PropagatorConsts.pas#L27) |  | ⚪ not started |  |
-| `sUnknown` | resourcestring | [28](../../../Source/Propagator/Common/PropagatorConsts.pas#L28) |  | ⚪ not started |  |
-| `sFailedToSendToClient` | resourcestring | [31](../../../Source/Propagator/Common/PropagatorConsts.pas#L31) |  | ⚪ not started |  |
-| `sDisconnectMsg` | resourcestring | [32](../../../Source/Propagator/Common/PropagatorConsts.pas#L32) |  | ⚪ not started |  |
-| `sClientFailure` | resourcestring | [33](../../../Source/Propagator/Common/PropagatorConsts.pas#L33) |  | ⚪ not started |  |
-| `sLocksNotAssigned` | resourcestring | [36](../../../Source/Propagator/Common/PropagatorConsts.pas#L36) |  | ⚪ not started |  |
-| `sLockDurationNotAssigned` | resourcestring | [37](../../../Source/Propagator/Common/PropagatorConsts.pas#L37) |  | ⚪ not started |  |
-| `sWindowProcError` | resourcestring | [40](../../../Source/Propagator/Common/PropagatorConsts.pas#L40) |  | ⚪ not started |  |
-| `sFormCaption` | resourcestring | [43](../../../Source/Propagator/Common/PropagatorConsts.pas#L43) |  | ⚪ not started |  |
-| `sClientID` | resourcestring | [44](../../../Source/Propagator/Common/PropagatorConsts.pas#L44) |  | ⚪ not started |  |
-| `sName` | resourcestring | [45](../../../Source/Propagator/Common/PropagatorConsts.pas#L45) |  | ⚪ not started |  |
-| `sRegTime` | resourcestring | [46](../../../Source/Propagator/Common/PropagatorConsts.pas#L46) |  | ⚪ not started |  |
-| `sTimeOut` | resourcestring | [47](../../../Source/Propagator/Common/PropagatorConsts.pas#L47) |  | ⚪ not started |  |
-| `sSubscriptions` | resourcestring | [48](../../../Source/Propagator/Common/PropagatorConsts.pas#L48) |  | ⚪ not started |  |
-| `sQueue` | resourcestring | [49](../../../Source/Propagator/Common/PropagatorConsts.pas#L49) |  | ⚪ not started |  |
-| `sLongestInt` | resourcestring | [50](../../../Source/Propagator/Common/PropagatorConsts.pas#L50) |  | ⚪ not started |  |
-| `sLast` | resourcestring | [51](../../../Source/Propagator/Common/PropagatorConsts.pas#L51) |  | ⚪ not started |  |
-| `sPkg` | resourcestring | [52](../../../Source/Propagator/Common/PropagatorConsts.pas#L52) |  | ⚪ not started |  |
-| `sEv` | resourcestring | [53](../../../Source/Propagator/Common/PropagatorConsts.pas#L53) |  | ⚪ not started |  |
-| `sStatus` | resourcestring | [54](../../../Source/Propagator/Common/PropagatorConsts.pas#L54) |  | ⚪ not started |  |
-| `sLost` | resourcestring | [55](../../../Source/Propagator/Common/PropagatorConsts.pas#L55) |  | ⚪ not started |  |
-| `sFile` | resourcestring | [56](../../../Source/Propagator/Common/PropagatorConsts.pas#L56) |  | ⚪ not started |  |
-| `sNoINIFile` | resourcestring | [57](../../../Source/Propagator/Common/PropagatorConsts.pas#L57) |  | ⚪ not started |  |
-| `sINIFile` | resourcestring | [58](../../../Source/Propagator/Common/PropagatorConsts.pas#L58) |  | ⚪ not started |  |
-| `sStarted` | resourcestring | [59](../../../Source/Propagator/Common/PropagatorConsts.pas#L59) |  | ⚪ not started |  |
-| `sUptime` | resourcestring | [60](../../../Source/Propagator/Common/PropagatorConsts.pas#L60) |  | ⚪ not started |  |
-| `sHangon` | resourcestring | [61](../../../Source/Propagator/Common/PropagatorConsts.pas#L61) |  | ⚪ not started |  |
-| `sCli` | resourcestring | [62](../../../Source/Propagator/Common/PropagatorConsts.pas#L62) |  | ⚪ not started |  |
-| `sTot` | resourcestring | [63](../../../Source/Propagator/Common/PropagatorConsts.pas#L63) |  | ⚪ not started |  |
-| `sSubs` | resourcestring | [64](../../../Source/Propagator/Common/PropagatorConsts.pas#L64) |  | ⚪ not started |  |
-| `sInQ` | resourcestring | [65](../../../Source/Propagator/Common/PropagatorConsts.pas#L65) |  | ⚪ not started |  |
-| `sInQPeak` | resourcestring | [66](../../../Source/Propagator/Common/PropagatorConsts.pas#L66) |  | ⚪ not started |  |
-| `sOutQ` | resourcestring | [67](../../../Source/Propagator/Common/PropagatorConsts.pas#L67) |  | ⚪ not started |  |
-| `sAdded` | resourcestring | [68](../../../Source/Propagator/Common/PropagatorConsts.pas#L68) |  | ⚪ not started |  |
-| `sSent` | resourcestring | [69](../../../Source/Propagator/Common/PropagatorConsts.pas#L69) |  | ⚪ not started |  |
-| `sBytesPerSubscription` | resourcestring | [70](../../../Source/Propagator/Common/PropagatorConsts.pas#L70) |  | ⚪ not started |  |
-| `sMemAllocated` | resourcestring | [71](../../../Source/Propagator/Common/PropagatorConsts.pas#L71) |  | ⚪ not started |  |
-| `sRefresh` | resourcestring | [72](../../../Source/Propagator/Common/PropagatorConsts.pas#L72) |  | ⚪ not started |  |
-| `sDL` | resourcestring | [73](../../../Source/Propagator/Common/PropagatorConsts.pas#L73) |  | ⚪ not started |  |
-| `sInvalidCommandLineArgs` | resourcestring | [77](../../../Source/Propagator/Common/PropagatorConsts.pas#L77) |  | ⚪ not started |  |
-| `sAppIDNotFound` | resourcestring | [78](../../../Source/Propagator/Common/PropagatorConsts.pas#L78) |  | ⚪ not started |  |
-| `sPropagatorMustBeShutDown` | resourcestring | [81](../../../Source/Propagator/Common/PropagatorConsts.pas#L81) |  | ⚪ not started |  |
-| `sOutputQueueHandlerNotAssigned` | resourcestring | [84](../../../Source/Propagator/Common/PropagatorConsts.pas#L84) |  | ⚪ not started |  |
+| `sLogError` | resourcestring | [6](../../../Source/Propagator/Common/PropagatorConsts.pas#L6) | [`PropagatorConsts.sLogError`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L9) | 🟢 ported |  |
+| `sClientIDsNotAssigned` | resourcestring | [7](../../../Source/Propagator/Common/PropagatorConsts.pas#L7) | [`PropagatorConsts.sClientIDsNotAssigned`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L10) | 🟢 ported |  |
+| `sInitializing` | resourcestring | [10](../../../Source/Propagator/Common/PropagatorConsts.pas#L10) | [`PropagatorConsts.sInitializing`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L13) | 🟢 ported |  |
+| `sDestroying` | resourcestring | [11](../../../Source/Propagator/Common/PropagatorConsts.pas#L11) | [`PropagatorConsts.sDestroying`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L14) | 🟢 ported |  |
+| `sLogErrorAndID` | resourcestring | [14](../../../Source/Propagator/Common/PropagatorConsts.pas#L14) | [`PropagatorConsts.sLogErrorAndID`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L17) | 🟢 ported |  |
+| `sLoggingID` | resourcestring | [15](../../../Source/Propagator/Common/PropagatorConsts.pas#L15) | [`PropagatorConsts.sLoggingID`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L18) | 🟢 ported |  |
+| `sExtendLeaseFailed` | resourcestring | [16](../../../Source/Propagator/Common/PropagatorConsts.pas#L16) | [`PropagatorConsts.sExtendLeaseFailed`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L19) | 🟢 ported |  |
+| `sLogOff` | resourcestring | [17](../../../Source/Propagator/Common/PropagatorConsts.pas#L17) | [`PropagatorConsts.sLogOff`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L20) | 🟢 ported |  |
+| `sLeaseExpired` | resourcestring | [18](../../../Source/Propagator/Common/PropagatorConsts.pas#L18) | [`PropagatorConsts.sLeaseExpired`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L21) | 🟢 ported |  |
+| `sClientDisconnected` | resourcestring | [19](../../../Source/Propagator/Common/PropagatorConsts.pas#L19) | [`PropagatorConsts.sClientDisconnected`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L22) | 🟢 ported |  |
+| `sClientDisconnected_Long` | resourcestring | [20](../../../Source/Propagator/Common/PropagatorConsts.pas#L20) | [`PropagatorConsts.sClientDisconnected_Long`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L23) | 🟢 ported |  |
+| `sErrorCode` | resourcestring | [21](../../../Source/Propagator/Common/PropagatorConsts.pas#L21) | [`PropagatorConsts.sErrorCode`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L24) | 🟢 ported |  |
+| `sInvalidListener` | resourcestring | [22](../../../Source/Propagator/Common/PropagatorConsts.pas#L22) | [`PropagatorConsts.sInvalidListener`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L25) | 🟢 ported |  |
+| `sListenerInterfaceMissing` | resourcestring | [23](../../../Source/Propagator/Common/PropagatorConsts.pas#L23) | [`PropagatorConsts.sListenerInterfaceMissing`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L26) | 🟢 ported |  |
+| `sClientHasRecovered` | resourcestring | [24](../../../Source/Propagator/Common/PropagatorConsts.pas#L24) | [`PropagatorConsts.sClientHasRecovered`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L27) | 🟢 ported |  |
+| `sOK` | resourcestring | [25](../../../Source/Propagator/Common/PropagatorConsts.pas#L25) | [`PropagatorConsts.sOK`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L28) | 🟢 ported |  |
+| `sNotReceiving` | resourcestring | [26](../../../Source/Propagator/Common/PropagatorConsts.pas#L26) | [`PropagatorConsts.sNotReceiving`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L29) | 🟢 ported |  |
+| `sRecovered` | resourcestring | [27](../../../Source/Propagator/Common/PropagatorConsts.pas#L27) | [`PropagatorConsts.sRecovered`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L30) | 🟢 ported |  |
+| `sUnknown` | resourcestring | [28](../../../Source/Propagator/Common/PropagatorConsts.pas#L28) | [`PropagatorConsts.sUnknown`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L31) | 🟢 ported |  |
+| `sFailedToSendToClient` | resourcestring | [31](../../../Source/Propagator/Common/PropagatorConsts.pas#L31) | [`PropagatorConsts.sFailedToSendToClient`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L34) | 🟢 ported |  |
+| `sDisconnectMsg` | resourcestring | [32](../../../Source/Propagator/Common/PropagatorConsts.pas#L32) | [`PropagatorConsts.sDisconnectMsg`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L35) | 🟢 ported |  |
+| `sClientFailure` | resourcestring | [33](../../../Source/Propagator/Common/PropagatorConsts.pas#L33) | [`PropagatorConsts.sClientFailure`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L36) | 🟢 ported |  |
+| `sLocksNotAssigned` | resourcestring | [36](../../../Source/Propagator/Common/PropagatorConsts.pas#L36) | [`PropagatorConsts.sLocksNotAssigned`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L39) | 🟢 ported |  |
+| `sLockDurationNotAssigned` | resourcestring | [37](../../../Source/Propagator/Common/PropagatorConsts.pas#L37) | [`PropagatorConsts.sLockDurationNotAssigned`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L40) | 🟢 ported |  |
+| `sWindowProcError` | resourcestring | [40](../../../Source/Propagator/Common/PropagatorConsts.pas#L40) | [`PropagatorConsts.sWindowProcError`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L43) | 🟢 ported |  |
+| `sFormCaption` | resourcestring | [43](../../../Source/Propagator/Common/PropagatorConsts.pas#L43) | [`PropagatorConsts.sFormCaption`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L46) | 🟢 ported |  |
+| `sClientID` | resourcestring | [44](../../../Source/Propagator/Common/PropagatorConsts.pas#L44) | [`PropagatorConsts.sClientID`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L47) | 🟢 ported |  |
+| `sName` | resourcestring | [45](../../../Source/Propagator/Common/PropagatorConsts.pas#L45) | [`PropagatorConsts.sName`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L48) | 🟢 ported |  |
+| `sRegTime` | resourcestring | [46](../../../Source/Propagator/Common/PropagatorConsts.pas#L46) | [`PropagatorConsts.sRegTime`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L49) | 🟢 ported |  |
+| `sTimeOut` | resourcestring | [47](../../../Source/Propagator/Common/PropagatorConsts.pas#L47) | [`PropagatorConsts.sTimeOut`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L50) | 🟢 ported |  |
+| `sSubscriptions` | resourcestring | [48](../../../Source/Propagator/Common/PropagatorConsts.pas#L48) | [`PropagatorConsts.sSubscriptions`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L51) | 🟢 ported |  |
+| `sQueue` | resourcestring | [49](../../../Source/Propagator/Common/PropagatorConsts.pas#L49) | [`PropagatorConsts.sQueue`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L52) | 🟢 ported |  |
+| `sLongestInt` | resourcestring | [50](../../../Source/Propagator/Common/PropagatorConsts.pas#L50) | [`PropagatorConsts.sLongestInt`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L53) | 🟢 ported |  |
+| `sLast` | resourcestring | [51](../../../Source/Propagator/Common/PropagatorConsts.pas#L51) | [`PropagatorConsts.sLast`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L54) | 🟢 ported |  |
+| `sPkg` | resourcestring | [52](../../../Source/Propagator/Common/PropagatorConsts.pas#L52) | [`PropagatorConsts.sPkg`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L55) | 🟢 ported |  |
+| `sEv` | resourcestring | [53](../../../Source/Propagator/Common/PropagatorConsts.pas#L53) | [`PropagatorConsts.sEv`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L56) | 🟢 ported |  |
+| `sStatus` | resourcestring | [54](../../../Source/Propagator/Common/PropagatorConsts.pas#L54) | [`PropagatorConsts.sStatus`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L57) | 🟢 ported |  |
+| `sLost` | resourcestring | [55](../../../Source/Propagator/Common/PropagatorConsts.pas#L55) | [`PropagatorConsts.sLost`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L58) | 🟢 ported |  |
+| `sFile` | resourcestring | [56](../../../Source/Propagator/Common/PropagatorConsts.pas#L56) | [`PropagatorConsts.sFile`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L59) | 🟢 ported |  |
+| `sNoINIFile` | resourcestring | [57](../../../Source/Propagator/Common/PropagatorConsts.pas#L57) | [`PropagatorConsts.sNoINIFile`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L60) | 🟢 ported |  |
+| `sINIFile` | resourcestring | [58](../../../Source/Propagator/Common/PropagatorConsts.pas#L58) | [`PropagatorConsts.sINIFile`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L61) | 🟢 ported |  |
+| `sStarted` | resourcestring | [59](../../../Source/Propagator/Common/PropagatorConsts.pas#L59) | [`PropagatorConsts.sStarted`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L62) | 🟢 ported |  |
+| `sUptime` | resourcestring | [60](../../../Source/Propagator/Common/PropagatorConsts.pas#L60) | [`PropagatorConsts.sUptime`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L63) | 🟢 ported |  |
+| `sHangon` | resourcestring | [61](../../../Source/Propagator/Common/PropagatorConsts.pas#L61) | [`PropagatorConsts.sHangon`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L64) | 🟢 ported |  |
+| `sCli` | resourcestring | [62](../../../Source/Propagator/Common/PropagatorConsts.pas#L62) | [`PropagatorConsts.sCli`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L65) | 🟢 ported |  |
+| `sTot` | resourcestring | [63](../../../Source/Propagator/Common/PropagatorConsts.pas#L63) | [`PropagatorConsts.sTot`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L66) | 🟢 ported |  |
+| `sSubs` | resourcestring | [64](../../../Source/Propagator/Common/PropagatorConsts.pas#L64) | [`PropagatorConsts.sSubs`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L67) | 🟢 ported |  |
+| `sInQ` | resourcestring | [65](../../../Source/Propagator/Common/PropagatorConsts.pas#L65) | [`PropagatorConsts.sInQ`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L68) | 🟢 ported |  |
+| `sInQPeak` | resourcestring | [66](../../../Source/Propagator/Common/PropagatorConsts.pas#L66) | [`PropagatorConsts.sInQPeak`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L69) | 🟢 ported |  |
+| `sOutQ` | resourcestring | [67](../../../Source/Propagator/Common/PropagatorConsts.pas#L67) | [`PropagatorConsts.sOutQ`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L70) | 🟢 ported |  |
+| `sAdded` | resourcestring | [68](../../../Source/Propagator/Common/PropagatorConsts.pas#L68) | [`PropagatorConsts.sAdded`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L71) | 🟢 ported |  |
+| `sSent` | resourcestring | [69](../../../Source/Propagator/Common/PropagatorConsts.pas#L69) | [`PropagatorConsts.sSent`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L72) | 🟢 ported |  |
+| `sBytesPerSubscription` | resourcestring | [70](../../../Source/Propagator/Common/PropagatorConsts.pas#L70) | [`PropagatorConsts.sBytesPerSubscription`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L73) | 🟢 ported |  |
+| `sMemAllocated` | resourcestring | [71](../../../Source/Propagator/Common/PropagatorConsts.pas#L71) | [`PropagatorConsts.sMemAllocated`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L74) | 🟢 ported |  |
+| `sRefresh` | resourcestring | [72](../../../Source/Propagator/Common/PropagatorConsts.pas#L72) | [`PropagatorConsts.sRefresh`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L75) | 🟢 ported |  |
+| `sDL` | resourcestring | [73](../../../Source/Propagator/Common/PropagatorConsts.pas#L73) | [`PropagatorConsts.sDL`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L76) | 🟢 ported |  |
+| `sInvalidCommandLineArgs` | resourcestring | [77](../../../Source/Propagator/Common/PropagatorConsts.pas#L77) | [`PropagatorConsts.sInvalidCommandLineArgs`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L79) | 🟢 ported |  |
+| `sAppIDNotFound` | resourcestring | [78](../../../Source/Propagator/Common/PropagatorConsts.pas#L78) | [`PropagatorConsts.sAppIDNotFound`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L80) | 🟢 ported |  |
+| `sPropagatorMustBeShutDown` | resourcestring | [81](../../../Source/Propagator/Common/PropagatorConsts.pas#L81) | [`PropagatorConsts.sPropagatorMustBeShutDown`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L83) | 🟢 ported |  |
+| `sOutputQueueHandlerNotAssigned` | resourcestring | [84](../../../Source/Propagator/Common/PropagatorConsts.pas#L84) | [`PropagatorConsts.sOutputQueueHandlerNotAssigned`](../../src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs#L86) | 🟢 ported |  |
 
 ## Dependencies
 

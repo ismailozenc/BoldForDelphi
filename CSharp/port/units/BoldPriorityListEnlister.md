@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldPriorityListEnlister.pas`](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas) (183 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 22 symbols done, 0 verified |
+| Status | 🟢 ported: 22 of 22 symbols done, 0 verified |
 
-⚪ 22 not started
+🟢 22 ported
 
 ## Unit level
 
@@ -18,49 +18,49 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractPriorityListEnlister` | class | [20](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L20) |  | ⚪ not started |  |
-| `TBoldPriorityListEnlister` | class | [26](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L26) |  | ⚪ not started |  |
-| `TBoldClientQueueInfo` | class | [40](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L40) |  | ⚪ not started |  |
+| `TBoldAbstractPriorityListEnlister` | class | [20](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L20) | [`TBoldAbstractPriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L8) | 🟢 ported |  |
+| `TBoldPriorityListEnlister` | class | [26](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L26) | [`TBoldPriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L21) | 🟢 ported |  |
+| `TBoldClientQueueInfo` | class | [40](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L40) | [`TBoldClientQueueInfo`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L92) | 🟢 ported |  |
 
 ## TBoldAbstractPriorityListEnlister
 
-class at [line 20](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L20); 🟢 ported, C# [`TBoldAbstractPriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EnlistQueue` | method | [22](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L22) |  | ⚪ not started |  |
-| `FlushQueue` | method | [23](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L23) |  | ⚪ not started |  |
+| `EnlistQueue` | method | [22](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L22) | [`TBoldAbstractPriorityListEnlister.EnlistQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L12) | 🟢 ported |  |
+| `FlushQueue` | method | [23](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L23) | [`TBoldAbstractPriorityListEnlister.FlushQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L16) | 🟢 ported |  |
 
 ## TBoldPriorityListEnlister
 
-class at [line 26](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L26); 🟢 ported, C# [`TBoldPriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L21).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getClientHandler` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L30) · [body 178](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L178) |  | ⚪ not started |  |
-| `ClientHandler` | property, protected | [31](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L31) |  | ⚪ not started |  |
-| `Create` | constructor | [33](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L33) · [body 105](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L105) |  | ⚪ not started |  |
-| `Destroy` | destructor | [34](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L34) · [body 111](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L111) |  | ⚪ not started |  |
-| `EnlistQueue` | method | [35](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L35) · [body 126](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L126) |  | ⚪ not started |  |
-| `FlushQueue` | method | [36](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L36) · [body 152](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L152) |  | ⚪ not started |  |
-| `PriorityList` | property | [37](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L37) |  | ⚪ not started |  |
+| `getClientHandler` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L30) · [body 178](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L178) | [`TBoldPriorityListEnlister.getClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L51) | 🟢 ported |  |
+| `ClientHandler` | property, protected | [31](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L31) | [`TBoldPriorityListEnlister.ClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L54) | 🟢 ported |  |
+| `Create` | constructor | [33](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L33) · [body 105](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L105) | [`TBoldPriorityListEnlister.TBoldPriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L26) | 🟢 ported |  |
+| `Destroy` | destructor | [34](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L34) · [body 111](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L111) | [`TBoldPriorityListEnlister.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L32) | 🟢 ported |  |
+| `EnlistQueue` | method | [35](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L35) · [body 126](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L126) | [`TBoldPriorityListEnlister.EnlistQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L58) | 🟢 ported |  |
+| `FlushQueue` | method | [36](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L36) · [body 152](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L152) | [`TBoldPriorityListEnlister.FlushQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L71) | 🟢 ported |  |
+| `PriorityList` | property | [37](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L37) | [`TBoldPriorityListEnlister.PriorityList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L87) | 🟢 ported |  |
 
 ## TBoldClientQueueInfo
 
-class at [line 40](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L40); ⚪ not started.
+class at [line 40](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L40); 🟢 ported, C# [`TBoldClientQueueInfo`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L92).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getQueueAsVarArray` | method, private | [44](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L44) · [body 90](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L90) |  | ⚪ not started |  |
-| `getClientId` | method, private | [45](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L45) · [body 80](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L80) |  | ⚪ not started |  |
-| `getCount` | method, private | [46](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L46) · [body 85](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L85) |  | ⚪ not started |  |
-| `Create` | constructor | [48](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L48) · [body 65](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L65) |  | ⚪ not started |  |
-| `Destroy` | destructor | [49](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L49) · [body 74](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L74) |  | ⚪ not started |  |
-| `HasHigherPriorityThan` | method | [50](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L50) · [body 95](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L95) |  | ⚪ not started |  |
-| `TimeOut` | property | [51](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L51) |  | ⚪ not started |  |
-| `QueueAsVarArray` | property | [52](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L52) |  | ⚪ not started |  |
-| `ClientID` | property | [53](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L53) |  | ⚪ not started |  |
-| `Count` | property | [54](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L54) |  | ⚪ not started |  |
+| `getQueueAsVarArray` | method, private | [44](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L44) · [body 90](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L90) | [`TBoldClientQueueInfo.getQueueAsVarArray`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L111) | 🟢 ported |  |
+| `getClientId` | method, private | [45](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L45) · [body 80](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L80) | [`TBoldClientQueueInfo.getClientId`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L114) | 🟢 ported |  |
+| `getCount` | method, private | [46](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L46) · [body 85](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L85) | [`TBoldClientQueueInfo.getCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L117) | 🟢 ported |  |
+| `Create` | constructor | [48](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L48) · [body 65](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L65) | [`TBoldClientQueueInfo.TBoldClientQueueInfo`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L97) | 🟢 ported |  |
+| `Destroy` | destructor | [49](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L49) · [body 74](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L74) | [`TBoldClientQueueInfo.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L104) | 🟢 ported |  |
+| `HasHigherPriorityThan` | method | [50](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L50) · [body 95](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L95) | [`TBoldClientQueueInfo.HasHigherPriorityThan`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L121) | 🟢 ported: Compares the whole time stamps; Delphi compared dates and times apart, wrongly across midnight. |  |
+| `TimeOut` | property | [51](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L51) | [`TBoldClientQueueInfo.TimeOut`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L125) | 🟢 ported |  |
+| `QueueAsVarArray` | property | [52](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L52) | [`TBoldClientQueueInfo.QueueAsVarArray`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L128) | 🟢 ported: A string array where Delphi had a variant. |  |
+| `ClientID` | property | [53](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L53) | [`TBoldClientQueueInfo.ClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L131) | 🟢 ported |  |
+| `Count` | property | [54](../../../Source/Propagator/Enterprise/BoldPriorityListEnlister.pas#L54) | [`TBoldClientQueueInfo.Count`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPriorityListEnlister.cs#L134) | 🟢 ported |  |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas`](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas) (24 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs` |
+| C# | [`CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
 
-⚪ 3 not started
+🟢 3 ported
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractLockManagerAdminHandle` | class | [14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14) |  | ⚪ not started |  |
+| `TBoldAbstractLockManagerAdminHandle` | class | [14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14) | [`TBoldAbstractLockManagerAdminHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L8) | 🟢 ported |  |
 
 ## TBoldAbstractLockManagerAdminHandle
 
-class at [line 14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L14); 🟢 ported, C# [`TBoldAbstractLockManagerAdminHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLockManagerAdmin` | method, protected | [16](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L16) |  | ⚪ not started |  |
-| `LockManagerAdmin` | property | [18](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L18) |  | ⚪ not started |  |
+| `GetLockManagerAdmin` | method, protected | [16](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L16) | [`TBoldAbstractLockManagerAdminHandle.GetLockManagerAdmin`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L11) | 🟢 ported |  |
+| `LockManagerAdmin` | property | [18](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.pas#L18) | [`TBoldAbstractLockManagerAdminHandle.LockManagerAdmin`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs#L14) | 🟢 ported |  |
 
 ## Dependencies
 

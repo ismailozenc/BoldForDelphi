@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas`](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas) (186 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 35 symbols done, 0 verified |
+| Status | 🟢 ported: 35 of 35 symbols done, 0 verified |
 | Note | COM type library; ported as plain C# interfaces. |
 
-⚪ 35 not started
+🟢 22 ported · ⚫ 13 dropped
 
 ## Unit level
 
@@ -19,97 +19,97 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BoldPropagatorInterfacesMajorVersion` | const | [39](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L39) |  | ⚪ not started |  |
-| `BoldPropagatorInterfacesMinorVersion` | const | [40](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L40) |  | ⚪ not started |  |
-| `LIBID_BoldPropagatorInterfaces` | const | [42](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L42) |  | ⚪ not started |  |
-| `IID_IBoldEventPropagator` | const | [44](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L44) |  | ⚪ not started |  |
-| `IID_IBoldClientHandler` | const | [45](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L45) |  | ⚪ not started |  |
-| `IID_IBoldListener` | const | [46](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L46) |  | ⚪ not started |  |
-| `CLASS_BoldPropagator` | const | [47](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L47) |  | ⚪ not started |  |
-| `IID_IBoldListenerAdmin` | const | [48](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L48) |  | ⚪ not started |  |
-| `CLASS_BoldListener` | const | [49](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L49) |  | ⚪ not started |  |
-| `BoldPropagator` | alias | [66](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L66) |  | ⚪ not started |  |
-| `BoldListener` | alias | [67](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L67) |  | ⚪ not started |  |
-| `IBoldEventPropagator` | interface | [75](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L75) |  | ⚪ not started |  |
-| `IBoldClientHandler` | interface | [87](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L87) |  | ⚪ not started |  |
-| `IBoldListener` | interface | [101](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L101) |  | ⚪ not started |  |
-| `IBoldListenerDisp` | interface | [111](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L111) |  | ⚪ not started |  |
-| `IBoldListenerAdmin` | interface | [121](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L121) |  | ⚪ not started |  |
-| `IBoldListenerAdminDisp` | interface | [132](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L132) |  | ⚪ not started |  |
-| `CoBoldPropagator` | class | [145](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L145) |  | ⚪ not started |  |
-| `CoBoldListener` | class | [157](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L157) |  | ⚪ not started |  |
+| `BoldPropagatorInterfacesMajorVersion` | const | [39](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L39) | [`BoldPropagatorInterfaces_TLB.BoldPropagatorInterfacesMajorVersion`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L78) | 🟢 ported |  |
+| `BoldPropagatorInterfacesMinorVersion` | const | [40](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L40) | [`BoldPropagatorInterfaces_TLB.BoldPropagatorInterfacesMinorVersion`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L79) | 🟢 ported |  |
+| `LIBID_BoldPropagatorInterfaces` | const | [42](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L42) | [`BoldPropagatorInterfaces_TLB.LIBID_BoldPropagatorInterfaces`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L80) | 🟢 ported |  |
+| `IID_IBoldEventPropagator` | const | [44](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L44) | [`BoldPropagatorInterfaces_TLB.IID_IBoldEventPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L81) | 🟢 ported |  |
+| `IID_IBoldClientHandler` | const | [45](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L45) | [`BoldPropagatorInterfaces_TLB.IID_IBoldClientHandler`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L82) | 🟢 ported |  |
+| `IID_IBoldListener` | const | [46](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L46) | [`BoldPropagatorInterfaces_TLB.IID_IBoldListener`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L83) | 🟢 ported |  |
+| `CLASS_BoldPropagator` | const | [47](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L47) | [`BoldPropagatorInterfaces_TLB.CLASS_BoldPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L84) | 🟢 ported |  |
+| `IID_IBoldListenerAdmin` | const | [48](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L48) | [`BoldPropagatorInterfaces_TLB.IID_IBoldListenerAdmin`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L85) | 🟢 ported |  |
+| `CLASS_BoldListener` | const | [49](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L49) | [`BoldPropagatorInterfaces_TLB.CLASS_BoldListener`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L86) | 🟢 ported |  |
+| `BoldPropagator` | alias | [66](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L66) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L3) | ⚫ dropped: COM coclass alias of IBoldClientHandler. |  |
+| `BoldListener` | alias | [67](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L67) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L4) | ⚫ dropped: COM coclass alias of IBoldListener. |  |
+| `IBoldEventPropagator` | interface | [75](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L75) | [`IBoldEventPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L25) | 🟢 ported: A C# interface where Delphi has a COM interface. |  |
+| `IBoldClientHandler` | interface | [87](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L87) | [`IBoldClientHandler`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L42) | 🟢 ported: A C# interface where Delphi has a COM interface. |  |
+| `IBoldListener` | interface | [101](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L101) | [`IBoldListener`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L56) | 🟢 ported: A C# interface where Delphi has a COM interface. |  |
+| `IBoldListenerDisp` | interface | [111](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L111) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L5) | ⚫ dropped: COM automation dispinterface. |  |
+| `IBoldListenerAdmin` | interface | [121](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L121) | [`IBoldListenerAdmin`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L65) | 🟢 ported: A C# interface where Delphi has a COM interface. |  |
+| `IBoldListenerAdminDisp` | interface | [132](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L132) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L7) | ⚫ dropped: COM automation dispinterface. |  |
+| `CoBoldPropagator` | class | [145](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L145) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L10) | ⚫ dropped: COM object creation; a propagator handle connects to the propagator. |  |
+| `CoBoldListener` | class | [157](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L157) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L13) | ⚫ dropped: COM object creation; the listener thread creates its listener. |  |
 
 ## IBoldEventPropagator
 
-interface at [line 75](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L75); ⚪ not started.
+interface at [line 75](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L75); 🟢 ported, C# [`IBoldEventPropagator`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L25).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SendEvents` | method | [77](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L77) |  | ⚪ not started |  |
-| `AddSubscriptions` | method | [78](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L78) |  | ⚪ not started |  |
-| `CancelSubscriptions` | method | [79](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L79) |  | ⚪ not started |  |
+| `SendEvents` | method | [77](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L77) | [`IBoldEventPropagator.SendEvents`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L28) | 🟢 ported |  |
+| `AddSubscriptions` | method | [78](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L78) | [`IBoldEventPropagator.AddSubscriptions`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L31) | 🟢 ported |  |
+| `CancelSubscriptions` | method | [79](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L79) | [`IBoldEventPropagator.CancelSubscriptions`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L34) | 🟢 ported |  |
 
 ## IBoldClientHandler
 
-interface at [line 87](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L87); ⚪ not started.
+interface at [line 87](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L87); 🟢 ported, C# [`IBoldClientHandler`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L42).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `RegisterClient` | method | [89](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L89) |  | ⚪ not started |  |
-| `ExtendLease` | method | [92](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L92) |  | ⚪ not started |  |
-| `UnRegisterClient` | method | [93](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L93) |  | ⚪ not started |  |
+| `RegisterClient` | method | [89](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L89) | [`IBoldClientHandler.RegisterClient`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L45) | 🟢 ported |  |
+| `ExtendLease` | method | [92](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L92) | [`IBoldClientHandler.ExtendLease`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L48) | 🟢 ported |  |
+| `UnRegisterClient` | method | [93](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L93) | [`IBoldClientHandler.UnRegisterClient`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L51) | 🟢 ported |  |
 
 ## IBoldListener
 
-interface at [line 101](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L101); ⚪ not started.
+interface at [line 101](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L101); 🟢 ported, C# [`IBoldListener`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L56).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ReceiveEvents` | method | [103](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L103) |  | ⚪ not started |  |
+| `ReceiveEvents` | method | [103](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L103) | [`IBoldListener.ReceiveEvents`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L60) | 🟢 ported |  |
 
 ## IBoldListenerDisp
 
-interface at [line 111](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L111); ⚪ not started.
+interface at [line 111](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L111); ⚫ dropped, C# [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L5).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ReceiveEvents` | method | [113](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L113) |  | ⚪ not started |  |
+| `ReceiveEvents` | method | [113](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L113) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L6) | ⚫ dropped: COM automation dispinterface. |  |
 
 ## IBoldListenerAdmin
 
-interface at [line 121](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L121); ⚪ not started.
+interface at [line 121](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L121); 🟢 ported, C# [`IBoldListenerAdmin`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L65).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Ping` | method | [123](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L123) |  | ⚪ not started |  |
-| `DisconnectClient` | method | [124](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L124) |  | ⚪ not started |  |
+| `Ping` | method | [123](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L123) | [`IBoldListenerAdmin.Ping`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L68) | 🟢 ported |  |
+| `DisconnectClient` | method | [124](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L124) | [`IBoldListenerAdmin.DisconnectClient`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L72) | 🟢 ported |  |
 
 ## IBoldListenerAdminDisp
 
-interface at [line 132](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L132); ⚪ not started.
+interface at [line 132](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L132); ⚫ dropped, C# [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L7).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Ping` | method | [134](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L134) |  | ⚪ not started |  |
-| `DisconnectClient` | method | [135](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L135) |  | ⚪ not started |  |
+| `Ping` | method | [134](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L134) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L8) | ⚫ dropped: COM automation dispinterface. |  |
+| `DisconnectClient` | method | [135](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L135) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L9) | ⚫ dropped: COM automation dispinterface. |  |
 
 ## CoBoldPropagator
 
-class at [line 145](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L145); ⚪ not started.
+class at [line 145](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L145); ⚫ dropped, C# [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | class method | [146](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L146) · [body 166](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L166) |  | ⚪ not started |  |
-| `CreateRemote` | class method | [147](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L147) · [body 171](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L171) |  | ⚪ not started |  |
+| `Create` | class method | [146](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L146) · [body 166](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L166) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L11) | ⚫ dropped: COM object creation. |  |
+| `CreateRemote` | class method | [147](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L147) · [body 171](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L171) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L12) | ⚫ dropped: COM object creation. |  |
 
 ## CoBoldListener
 
-class at [line 157](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L157); ⚪ not started.
+class at [line 157](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L157); ⚫ dropped, C# [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | class method | [158](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L158) · [body 176](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L176) |  | ⚪ not started |  |
-| `CreateRemote` | class method | [159](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L159) · [body 181](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L181) |  | ⚪ not started |  |
+| `Create` | class method | [158](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L158) · [body 176](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L176) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L14) | ⚫ dropped: COM object creation. |  |
+| `CreateRemote` | class method | [159](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L159) · [body 181](../../../Source/Propagator/Common/BoldPropagatorInterfaces_TLB.pas#L181) | [`[assembly: Delphi] in BoldPropagatorInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs#L15) | ⚫ dropped: COM object creation. |  |
 
 ## Dependencies
 

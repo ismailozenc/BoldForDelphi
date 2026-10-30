@@ -44,6 +44,7 @@
     <Project Path="tests/Bold.ObjectSpace.Tests/Bold.ObjectSpace.Tests.csproj" />
     <Project Path="tests/Bold.Persistence.Sql.Tests/Bold.Persistence.Sql.Tests.csproj" />
     <Project Path="tests/Bold.PortTool.Tests/Bold.PortTool.Tests.csproj" />
+    <Project Path="tests/Bold.Propagation.Tests/Bold.Propagation.Tests.csproj" />
     <Project Path="tests/Bold.Rtl.Tests/Bold.Rtl.Tests.csproj" />
     <Project Path="tests/Bold.TestSupport/Bold.TestSupport.csproj" />
     <Project Path="tests/Bold.ValueSpace.Tests/Bold.ValueSpace.Tests.csproj" />

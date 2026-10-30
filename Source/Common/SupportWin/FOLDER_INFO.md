@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldThread](../../../CSharp/port/units/BoldThread.md) | Bold.Propagator.Server: Common/SupportWin/BoldThread.cs (not started) | M9 Multi-user |
+| [BoldThread](../../../CSharp/port/units/BoldThread.md) | [Bold.Propagation: Common/SupportWin/BoldThread.cs](../../../CSharp/src/Bold.Propagation/Common/SupportWin/BoldThread.cs) | M9 Multi-user |
 | [BoldWinINet](../../../CSharp/port/units/BoldWinINet.md) | not ported: WinInet; HttpClient replaces it |  |
 <!-- END C# PORT -->

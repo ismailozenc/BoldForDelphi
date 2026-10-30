@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldPropagatorServer.pas`](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas) (364 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 35 symbols done, 0 verified |
+| Status | 🟢 ported: 35 of 35 symbols done, 0 verified |
 
-⚪ 35 not started
+🟢 17 ported · ⚫ 18 dropped
 
 ## Unit level
 
@@ -18,48 +18,54 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPropagatorServerClass` | class reference | [19](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L19) |  | ⚪ not started |  |
-| `TBoldPropagatorServer` | class | [22](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L22) |  | ⚪ not started |  |
-| `_DllCanUnloadNow` | routine | [79](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L79) · [body 109](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L109) |  | ⚪ not started |  |
+| `TBoldPropagatorServerClass` | class reference | [19](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L19) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L4) | ⚫ dropped: The singleton is always a TBoldPropagatorServer. |  |
+| `TBoldPropagatorServer` | class | [22](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L22) | [`TBoldPropagatorServer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L32) | 🟢 ported |  |
+| `_DllCanUnloadNow` | routine | [79](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L79) · [body 109](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L109) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L5) | ⚫ dropped: COM in-process server. |  |
 
 ## TBoldPropagatorServer
 
-class at [line 22](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L22); 🟢 ported, C# [`TBoldPropagatorServer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L32).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getLockManager` | method, private | [43](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L43) · [body 244](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L244) |  | ⚪ not started |  |
-| `getModuleName` | method, private | [44](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L44) · [body 158](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L158) |  | ⚪ not started |  |
-| `getLockManagerAdmin` | method, private | [45](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L45) · [body 251](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L251) |  | ⚪ not started |  |
-| `CreateClassFactories` | method, private | [46](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L46) · [body 186](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L186) |  | ⚪ not started |  |
-| `GetAppID` | method, private | [47](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L47) · [body 297](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L297) |  | ⚪ not started |  |
-| `GetComObjectCount` | method, private | [48](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L48) · [body 343](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L343) |  | ⚪ not started |  |
-| `GetObjectByIndex` | method, private | [49](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L49) · [body 348](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L348) |  | ⚪ not started |  |
-| `RegServer` | method, protected | [51](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L51) · [body 320](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L320) |  | ⚪ not started |  |
-| `getAdvancedPropagator` | method, protected | [52](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L52) · [body 147](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L147) |  | ⚪ not started |  |
-| `Create` | constructor | [54](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L54) · [body 129](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L129) |  | ⚪ not started |  |
-| `Destroy` | destructor | [55](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L55) · [body 136](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L136) |  | ⚪ not started |  |
-| `LoadConfiguration` | method | [56](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L56) · [body 208](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L208) |  | ⚪ not started |  |
-| `SetConfiguration` | method | [57](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L57) · [body 258](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L258) |  | ⚪ not started |  |
-| `Initialize` | method | [58](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L58) · [body 165](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L165) |  | ⚪ not started |  |
-| `Instance` | class method | [59](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L59) · [body 116](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L116) |  | ⚪ not started |  |
-| `FreeSingleton` | class method | [60](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L60) · [body 123](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L123) |  | ⚪ not started |  |
-| `AddComObject` | method | [61](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L61) · [body 354](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L354) |  | ⚪ not started |  |
-| `RemoveComObject` | method | [62](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L62) · [body 359](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L359) |  | ⚪ not started |  |
-| `AdvancedPropagator` | property | [63](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L63) |  | ⚪ not started |  |
-| `LockManager` | property | [64](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L64) |  | ⚪ not started |  |
-| `LockManagerAdmin` | property | [65](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L65) |  | ⚪ not started |  |
-| `ModuleName` | property | [66](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L66) |  | ⚪ not started |  |
-| `Initialized` | property | [67](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L67) |  | ⚪ not started |  |
-| `ServerName` | property | [68](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L68) |  | ⚪ not started |  |
-| `ClientHandlerCLSID` | property | [69](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L69) |  | ⚪ not started |  |
-| `EnqueuerCLSID` | property | [70](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L70) |  | ⚪ not started |  |
-| `LockManagerCLSID` | property | [71](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L71) |  | ⚪ not started |  |
-| `LockManagerAdminCLSID` | property | [72](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L72) |  | ⚪ not started |  |
-| `PropagatorConnectionCLSID` | property | [73](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L73) |  | ⚪ not started |  |
-| `AppID` | property | [74](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L74) |  | ⚪ not started |  |
-| `ComObjects` | property | [75](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L75) |  | ⚪ not started |  |
-| `ComObjectCount` | property | [76](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L76) |  | ⚪ not started |  |
+| `getLockManager` | method, private | [43](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L43) · [body 244](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L244) | [`TBoldPropagatorServer.getLockManager`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L171) | 🟢 ported |  |
+| `getModuleName` | method, private | [44](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L44) · [body 158](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L158) | [`TBoldPropagatorServer.getModuleName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L127) | 🟢 ported |  |
+| `getLockManagerAdmin` | method, private | [45](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L45) · [body 251](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L251) | [`TBoldPropagatorServer.getLockManagerAdmin`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L181) | 🟢 ported |  |
+| `CreateClassFactories` | method, private | [46](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L46) · [body 186](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L186) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L6) | ⚫ dropped: COM class factories; the host maps the propagator hub instead. |  |
+| `GetAppID` | method, private | [47](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L47) · [body 297](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L297) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L7) | ⚫ dropped: COM registration. |  |
+| `GetComObjectCount` | method, private | [48](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L48) · [body 343](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L343) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L18) | ⚫ dropped: Kept the live COM objects. |  |
+| `GetObjectByIndex` | method, private | [49](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L49) · [body 348](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L348) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L20) | ⚫ dropped: Kept the live COM objects. |  |
+| `RegServer` | method, protected | [51](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L51) · [body 320](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L320) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L9) | ⚫ dropped: COM registration. |  |
+| `getAdvancedPropagator` | method, protected | [52](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L52) · [body 147](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L147) | [`TBoldPropagatorServer.getAdvancedPropagator`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L111) | 🟢 ported |  |
+| `Create` | constructor | [54](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L54) · [body 129](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L129) | [`TBoldPropagatorServer.TBoldPropagatorServer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L53) | 🟢 ported |  |
+| `Destroy` | destructor | [55](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L55) · [body 136](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L136) | [`TBoldPropagatorServer.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L90) | 🟢 ported |  |
+| `LoadConfiguration` | method | [56](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L56) · [body 208](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L208) | [`TBoldPropagatorServer.LoadConfiguration`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L153) | 🟢 ported: Reads the COM SERVER section's SERVERNAME only; the class ids were COM's. |  |
+| `SetConfiguration` | method | [57](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L57) · [body 258](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L258) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L10) | ⚫ dropped: Wrote new COM class ids for another propagator on the machine; a .NET propagator is given its own URL. |  |
+| `Initialize` | method | [58](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L58) · [body 165](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L165) | [`TBoldPropagatorServer.Initialize`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L139) | 🟢 ported: Without COM class factories and the server name switch; the host maps the propagator's hub. |  |
+| `Instance` | class method | [59](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L59) · [body 116](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L116) | [`TBoldPropagatorServer.Instance`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L60) | 🟢 ported |  |
+| `FreeSingleton` | class method | [60](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L60) · [body 123](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L123) | [`TBoldPropagatorServer.FreeSingleton`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L70) | 🟢 ported |  |
+| `AddComObject` | method | [61](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L61) · [body 354](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L354) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L16) | ⚫ dropped: Kept the live COM objects; the hub keeps its connections. |  |
+| `RemoveComObject` | method | [62](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L62) · [body 359](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L359) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L17) | ⚫ dropped: Kept the live COM objects; the hub keeps its connections. |  |
+| `AdvancedPropagator` | property | [63](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L63) | [`TBoldPropagatorServer.AdvancedPropagator`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L190) | 🟢 ported |  |
+| `LockManager` | property | [64](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L64) | [`TBoldPropagatorServer.LockManager`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L191) | 🟢 ported |  |
+| `LockManagerAdmin` | property | [65](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L65) | [`TBoldPropagatorServer.LockManagerAdmin`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L192) | 🟢 ported |  |
+| `ModuleName` | property | [66](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L66) | [`TBoldPropagatorServer.ModuleName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L193) | 🟢 ported |  |
+| `Initialized` | property | [67](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L67) | [`TBoldPropagatorServer.Initialized`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L196) | 🟢 ported |  |
+| `ServerName` | property | [68](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L68) | [`TBoldPropagatorServer.ServerName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L202) | 🟢 ported |  |
+| `ClientHandlerCLSID` | property | [69](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L69) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L11) | ⚫ dropped: COM class id. |  |
+| `EnqueuerCLSID` | property | [70](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L70) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L12) | ⚫ dropped: COM class id. |  |
+| `LockManagerCLSID` | property | [71](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L71) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L13) | ⚫ dropped: COM class id. |  |
+| `LockManagerAdminCLSID` | property | [72](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L72) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L14) | ⚫ dropped: COM class id. |  |
+| `PropagatorConnectionCLSID` | property | [73](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L73) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L15) | ⚫ dropped: COM class id. |  |
+| `AppID` | property | [74](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L74) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L8) | ⚫ dropped: COM registration. |  |
+| `ComObjects` | property | [75](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L75) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L21) | ⚫ dropped: Kept the live COM objects. |  |
+| `ComObjectCount` | property | [76](../../../Source/Propagator/Enterprise/BoldPropagatorServer.pas#L76) | [`[assembly: Delphi] in BoldPropagatorServer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L19) | ⚫ dropped: Kept the live COM objects. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldPropagatorServer.ConfigFileName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorServer.cs#L205) (property)
 
 ## Dependencies
 

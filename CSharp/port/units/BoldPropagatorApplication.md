@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldPropagatorApplication.pas`](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas) (26 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 2 symbols done, 0 verified |
+| Status | 🟢 ported: 2 of 2 symbols done, 0 verified |
 
-⚪ 2 not started
+🟢 2 ported
 
 ## Unit level
 
@@ -18,8 +18,8 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `initialization` | initialization, implementation | [14](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L14) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [23](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L23) |  | ⚪ not started |  |
+| `initialization` | initialization, implementation | [14](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L14) | [`BoldPropagatorApplication.Initialization`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs#L11) | 🟢 ported: Called by the program; Delphi showed the error and terminated the application. |  |
+| `finalization` | finalization, implementation | [23](../../../Source/Propagator/Enterprise/BoldPropagatorApplication.pas#L23) | [`BoldPropagatorApplication.Finalization`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorApplication.cs#L25) | 🟢 ported: Called by the program. |  |
 
 ## Dependencies
 

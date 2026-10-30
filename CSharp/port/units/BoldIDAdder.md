@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldIDAdder.pas`](../../../Source/Persistence/Propagation/BoldIDAdder.pas) (80 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 8 symbols done, 0 verified |
+| Status | 🟢 ported: 8 of 8 symbols done, 0 verified |
 
-⚪ 8 not started
+🟢 8 ported
 
 ## Unit level
 
@@ -18,21 +18,21 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldIDAdder` | class | [19](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L19) |  | ⚪ not started |  |
+| `TBoldIDAdder` | class | [19](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L19) | [`TBoldIDAdder`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L11) | 🟢 ported |  |
 
 ## TBoldIDAdder
 
-class at [line 19](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L19); 🟢 ported, C# [`TBoldIDAdder`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetClientID` | method, private | [22](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L22) · [body 41](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L41) |  | ⚪ not started |  |
-| `Create` | constructor | [24](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L24) · [body 36](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L36) |  | ⚪ not started |  |
-| `PMFetch` | method | [25](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L25) · [body 46](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L46) |  | ⚪ not started |  |
-| `PMFetchIDListWithCondition` | method | [26](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L26) · [body 57](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L57) |  | ⚪ not started |  |
-| `PMUpdate` | method | [27](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L27) · [body 68](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L68) |  | ⚪ not started |  |
-| `BoldClientID` | property | [28](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L28) |  | ⚪ not started |  |
-| `Listener` | property | [29](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L29) |  | ⚪ not started |  |
+| `GetClientID` | method, private | [22](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L22) · [body 41](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L41) | [`TBoldIDAdder.GetClientID`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L19) | 🟢 ported |  |
+| `Create` | constructor | [24](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L24) · [body 36](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L36) | [`TBoldIDAdder.TBoldIDAdder`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L14) | 🟢 ported |  |
+| `PMFetch` | method | [25](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L25) · [body 46](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L46) | [`TBoldIDAdder.PMFetch`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L30) | 🟢 ported |  |
+| `PMFetchIDListWithCondition` | method | [26](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L26) · [body 57](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L57) | [`TBoldIDAdder.PMFetchIDListWithCondition`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L38) | 🟢 ported |  |
+| `PMUpdate` | method | [27](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L27) · [body 68](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L68) | [`TBoldIDAdder.PMUpdate`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L46) | 🟢 ported |  |
+| `BoldClientID` | property | [28](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L28) | [`TBoldIDAdder.BoldClientID`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L53) | 🟢 ported |  |
+| `Listener` | property | [29](../../../Source/Persistence/Propagation/BoldIDAdder.pas#L29) | [`TBoldIDAdder.Listener`](../../src/Bold.Propagation/Persistence/Propagation/BoldIDAdder.cs#L54) | 🟢 ported |  |
 
 ## Dependencies
 

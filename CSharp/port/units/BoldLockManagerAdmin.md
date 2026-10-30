@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldLockManagerAdmin.pas`](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas) (167 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🟢 ported: 11 of 11 symbols done, 0 verified |
 
-⚪ 11 not started
+🟢 11 ported
 
 ## Unit level
 
@@ -18,24 +18,24 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLockManagerAdmin` | class | [12](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L12) |  | ⚪ not started |  |
+| `TBoldLockManagerAdmin` | class | [12](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L12) | [`TBoldLockManagerAdmin`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L8) | 🟢 ported |  |
 
 ## TBoldLockManagerAdmin
 
-class at [line 12](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L12); ⚪ not started.
+class at [line 12](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L12); 🟢 ported, C# [`TBoldLockManagerAdmin`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLockManagerSuspended` | method, private | [15](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L15) · [body 46](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L46) |  | ⚪ not started |  |
-| `SetLockManagerSuspended` | method, private | [16](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L16) · [body 162](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L162) |  | ⚪ not started |  |
-| `Create` | constructor | [18](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L18) · [body 39](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L39) |  | ⚪ not started |  |
-| `LocksForClients` | method | [19](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L19) · [body 96](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L96) |  | ⚪ not started |  |
-| `ListAllClients` | method | [20](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L20) · [body 62](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L62) |  | ⚪ not started |  |
-| `ListLockingClients` | method | [21](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L21) · [body 75](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L75) |  | ⚪ not started |  |
-| `RemoveLocksForClient` | method | [22](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L22) · [body 156](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L156) |  | ⚪ not started |  |
-| `KillClient` | method | [23](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L23) · [body 51](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L51) |  | ⚪ not started |  |
-| `LockManager` | property | [24](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L24) |  | ⚪ not started |  |
-| `LockManagerSuspended` | property | [25](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L25) |  | ⚪ not started |  |
+| `GetLockManagerSuspended` | method, private | [15](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L15) · [body 46](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L46) | [`TBoldLockManagerAdmin.GetLockManagerSuspended`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L19) | 🟢 ported |  |
+| `SetLockManagerSuspended` | method, private | [16](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L16) · [body 162](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L162) | [`TBoldLockManagerAdmin.SetLockManagerSuspended`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L22) | 🟢 ported |  |
+| `Create` | constructor | [18](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L18) · [body 39](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L39) | [`TBoldLockManagerAdmin.TBoldLockManagerAdmin`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L13) | 🟢 ported |  |
+| `LocksForClients` | method | [19](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L19) · [body 96](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L96) | [`TBoldLockManagerAdmin.LocksForClients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L60) | 🟢 ported |  |
+| `ListAllClients` | method | [20](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L20) · [body 62](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L62) | [`TBoldLockManagerAdmin.ListAllClients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L32) | 🟢 ported |  |
+| `ListLockingClients` | method | [21](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L21) · [body 75](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L75) | [`TBoldLockManagerAdmin.ListLockingClients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L41) | 🟢 ported |  |
+| `RemoveLocksForClient` | method | [22](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L22) · [body 156](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L156) | [`TBoldLockManagerAdmin.RemoveLocksForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L119) | 🟢 ported |  |
+| `KillClient` | method | [23](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L23) · [body 51](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L51) | [`TBoldLockManagerAdmin.KillClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L26) | 🟢 ported |  |
+| `LockManager` | property | [24](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L24) | [`TBoldLockManagerAdmin.LockManager`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L122) | 🟢 ported |  |
+| `LockManagerSuspended` | property | [25](../../../Source/Propagator/Enterprise/BoldLockManagerAdmin.pas#L25) | [`TBoldLockManagerAdmin.LockManagerSuspended`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManagerAdmin.cs#L125) | 🟢 ported |  |
 
 ## Dependencies
 

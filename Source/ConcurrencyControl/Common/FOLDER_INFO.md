@@ -25,7 +25,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldAbstractLockManagerAdminHandle](../../../CSharp/port/units/BoldAbstractLockManagerAdminHandle.md) | Bold.Propagation: ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs (not started) | M9 Multi-user |
-| [BoldAbstractLockManagerHandle](../../../CSharp/port/units/BoldAbstractLockManagerHandle.md) | Bold.Propagation: ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs (not started) | M9 Multi-user |
-| [BoldLockingDefs](../../../CSharp/port/units/BoldLockingDefs.md) | Bold.Propagation: ConcurrencyControl/Common/BoldLockingDefs.cs (not started) | M9 Multi-user |
+| [BoldAbstractLockManagerAdminHandle](../../../CSharp/port/units/BoldAbstractLockManagerAdminHandle.md) | [Bold.Propagation: ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs](../../../CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerAdminHandle.cs) | M9 Multi-user |
+| [BoldAbstractLockManagerHandle](../../../CSharp/port/units/BoldAbstractLockManagerHandle.md) | [Bold.Propagation: ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs](../../../CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs) | M9 Multi-user |
+| [BoldLockingDefs](../../../CSharp/port/units/BoldLockingDefs.md) | [Bold.Propagation: ConcurrencyControl/Common/BoldLockingDefs.cs](../../../CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs) | M9 Multi-user |
 <!-- END C# PORT -->

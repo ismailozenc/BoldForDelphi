@@ -27,6 +27,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldLowEndPropagatorClasses](../../../CSharp/port/units/BoldLowEndPropagatorClasses.md) | Bold.Propagator.Server: Propagator/LowEnd/BoldLowEndPropagatorClasses.cs (not started) | M9 Multi-user |
+| [BoldLowEndPropagatorClasses](../../../CSharp/port/units/BoldLowEndPropagatorClasses.md) | [Bold.Propagator.Server: Propagator/LowEnd/BoldLowEndPropagatorClasses.cs](../../../CSharp/src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs) | M9 Multi-user |
 | [BoldLowEndPropagatorMainForm](../../../CSharp/port/units/BoldLowEndPropagatorMainForm.md) | not ported: propagator user interface |  |
 <!-- END C# PORT -->

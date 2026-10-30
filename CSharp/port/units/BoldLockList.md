@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldLockList.pas`](../../../Source/Propagator/Enterprise/BoldLockList.pas) (610 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 69 symbols done, 0 verified |
+| Status | 🟢 ported: 69 of 69 symbols done, 0 verified |
 
-⚪ 69 not started
+🟢 69 ported
 
 ## Unit level
 
@@ -18,131 +18,138 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLockType` | enum | [26](../../../Source/Propagator/Enterprise/BoldLockList.pas#L26) |  | ⚪ not started |  |
-| `TBoldLockIndex` | class | [28](../../../Source/Propagator/Enterprise/BoldLockList.pas#L28) |  | ⚪ not started |  |
-| `TBoldLockNameHashList` | class | [33](../../../Source/Propagator/Enterprise/BoldLockList.pas#L33) |  | ⚪ not started |  |
-| `TBoldClientIdIndex` | class | [44](../../../Source/Propagator/Enterprise/BoldLockList.pas#L44) |  | ⚪ not started |  |
-| `TBoldClientIdHashList` | class | [49](../../../Source/Propagator/Enterprise/BoldLockList.pas#L49) |  | ⚪ not started |  |
-| `TBoldLockNameIndexNode` | class | [58](../../../Source/Propagator/Enterprise/BoldLockList.pas#L58) |  | ⚪ not started |  |
-| `TBoldLockNameList` | class | [73](../../../Source/Propagator/Enterprise/BoldLockList.pas#L73) |  | ⚪ not started |  |
-| `TBoldLockNode` | class | [90](../../../Source/Propagator/Enterprise/BoldLockList.pas#L90) |  | ⚪ not started |  |
-| `TBoldLockList` | class | [122](../../../Source/Propagator/Enterprise/BoldLockList.pas#L122) |  | ⚪ not started |  |
+| `TBoldLockType` | enum | [26](../../../Source/Propagator/Enterprise/BoldLockList.pas#L26) | [`TBoldLockType`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L7) | 🟢 ported |  |
+| `TBoldLockIndex` | class | [28](../../../Source/Propagator/Enterprise/BoldLockList.pas#L28) | [`TBoldLockIndex`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L11) | 🟢 ported |  |
+| `TBoldLockNameHashList` | class | [33](../../../Source/Propagator/Enterprise/BoldLockList.pas#L33) | [`TBoldLockNameHashList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L19) | 🟢 ported |  |
+| `TBoldClientIdIndex` | class | [44](../../../Source/Propagator/Enterprise/BoldLockList.pas#L44) | [`TBoldClientIdIndex`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L43) | 🟢 ported |  |
+| `TBoldClientIdHashList` | class | [49](../../../Source/Propagator/Enterprise/BoldLockList.pas#L49) | [`TBoldClientIdHashList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L51) | 🟢 ported |  |
+| `TBoldLockNameIndexNode` | class | [58](../../../Source/Propagator/Enterprise/BoldLockList.pas#L58) | [`TBoldLockNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L75) | 🟢 ported |  |
+| `TBoldLockNameList` | class | [73](../../../Source/Propagator/Enterprise/BoldLockList.pas#L73) | [`TBoldLockNameList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L109) | 🟢 ported |  |
+| `TBoldLockNode` | class | [90](../../../Source/Propagator/Enterprise/BoldLockList.pas#L90) | [`TBoldLockNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L206) | 🟢 ported |  |
+| `TBoldLockList` | class | [122](../../../Source/Propagator/Enterprise/BoldLockList.pas#L122) | [`TBoldServerLockList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L352) | 🟢 ported: Named TBoldServerLockList: BoldLockHolder's TBoldLockList, which client code uses, has the Delphi name. |  |
 
 ## TBoldLockIndex
 
-class at [line 28](../../../Source/Propagator/Enterprise/BoldLockList.pas#L28); ⚪ not started.
+class at [line 28](../../../Source/Propagator/Enterprise/BoldLockList.pas#L28); 🟢 ported, C# [`TBoldLockIndex`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldLockList.pas#L30) · [body 159](../../../Source/Propagator/Enterprise/BoldLockList.pas#L159) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldLockList.pas#L30) · [body 159](../../../Source/Propagator/Enterprise/BoldLockList.pas#L159) | [`TBoldLockIndex.ItemAsKeyString`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L14) | 🟢 ported |  |
 
 ## TBoldLockNameHashList
 
-class at [line 33](../../../Source/Propagator/Enterprise/BoldLockList.pas#L33); ⚪ not started.
+class at [line 33](../../../Source/Propagator/Enterprise/BoldLockList.pas#L33); 🟢 ported, C# [`TBoldLockNameHashList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItembyLockName` | method, private | [36](../../../Source/Propagator/Enterprise/BoldLockList.pas#L36) · [body 186](../../../Source/Propagator/Enterprise/BoldLockList.pas#L186) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/Propagator/Enterprise/BoldLockList.pas#L38) · [body 172](../../../Source/Propagator/Enterprise/BoldLockList.pas#L172) |  | ⚪ not started |  |
-| `Add` | method | [39](../../../Source/Propagator/Enterprise/BoldLockList.pas#L39) · [body 167](../../../Source/Propagator/Enterprise/BoldLockList.pas#L167) |  | ⚪ not started |  |
-| `ItemsByLockName` | property | [41](../../../Source/Propagator/Enterprise/BoldLockList.pas#L41) |  | ⚪ not started |  |
+| `GetItembyLockName` | method, private | [36](../../../Source/Propagator/Enterprise/BoldLockList.pas#L36) · [body 186](../../../Source/Propagator/Enterprise/BoldLockList.pas#L186) | [`TBoldLockNameHashList.GetItembyLockName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L31) | 🟢 ported |  |
+| `Create` | constructor | [38](../../../Source/Propagator/Enterprise/BoldLockList.pas#L38) · [body 172](../../../Source/Propagator/Enterprise/BoldLockList.pas#L172) | [`TBoldLockNameHashList.TBoldLockNameHashList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L24) | 🟢 ported |  |
+| `Add` | method | [39](../../../Source/Propagator/Enterprise/BoldLockList.pas#L39) · [body 167](../../../Source/Propagator/Enterprise/BoldLockList.pas#L167) | [`TBoldLockNameHashList.Add`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L35) | 🟢 ported |  |
+| `ItemsByLockName` | property | [41](../../../Source/Propagator/Enterprise/BoldLockList.pas#L41) | [`TBoldLockNameHashList.ItemsByLockName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L38) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
 
 ## TBoldClientIdIndex
 
-class at [line 44](../../../Source/Propagator/Enterprise/BoldLockList.pas#L44); ⚪ not started.
+class at [line 44](../../../Source/Propagator/Enterprise/BoldLockList.pas#L44); 🟢 ported, C# [`TBoldClientIdIndex`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L43).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [46](../../../Source/Propagator/Enterprise/BoldLockList.pas#L46) · [body 573](../../../Source/Propagator/Enterprise/BoldLockList.pas#L573) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [46](../../../Source/Propagator/Enterprise/BoldLockList.pas#L46) · [body 573](../../../Source/Propagator/Enterprise/BoldLockList.pas#L573) | [`TBoldClientIdIndex.ItemAsKeyString`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L46) | 🟢 ported |  |
 
 ## TBoldClientIdHashList
 
-class at [line 49](../../../Source/Propagator/Enterprise/BoldLockList.pas#L49); ⚪ not started.
+class at [line 49](../../../Source/Propagator/Enterprise/BoldLockList.pas#L49); 🟢 ported, C# [`TBoldClientIdHashList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L51).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItembyClientId` | method, private | [52](../../../Source/Propagator/Enterprise/BoldLockList.pas#L52) · [body 589](../../../Source/Propagator/Enterprise/BoldLockList.pas#L589) |  | ⚪ not started |  |
-| `Create` | constructor | [54](../../../Source/Propagator/Enterprise/BoldLockList.pas#L54) · [body 581](../../../Source/Propagator/Enterprise/BoldLockList.pas#L581) |  | ⚪ not started |  |
-| `ItemsbyClientID` | property | [55](../../../Source/Propagator/Enterprise/BoldLockList.pas#L55) |  | ⚪ not started |  |
+| `GetItembyClientId` | method, private | [52](../../../Source/Propagator/Enterprise/BoldLockList.pas#L52) · [body 589](../../../Source/Propagator/Enterprise/BoldLockList.pas#L589) | [`TBoldClientIdHashList.GetItembyClientId`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L66) | 🟢 ported |  |
+| `Create` | constructor | [54](../../../Source/Propagator/Enterprise/BoldLockList.pas#L54) · [body 581](../../../Source/Propagator/Enterprise/BoldLockList.pas#L581) | [`TBoldClientIdHashList.TBoldClientIdHashList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L57) | 🟢 ported |  |
+| `ItemsbyClientID` | property | [55](../../../Source/Propagator/Enterprise/BoldLockList.pas#L55) | [`TBoldClientIdHashList.ItemsbyClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L70) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
 
 ## TBoldLockNameIndexNode
 
-class at [line 58](../../../Source/Propagator/Enterprise/BoldLockList.pas#L58); ⚪ not started.
+class at [line 58](../../../Source/Propagator/Enterprise/BoldLockList.pas#L58); 🟢 ported, C# [`TBoldLockNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L75).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getClients` | method, private | [64](../../../Source/Propagator/Enterprise/BoldLockList.pas#L64) · [body 603](../../../Source/Propagator/Enterprise/BoldLockList.pas#L603) |  | ⚪ not started |  |
-| `Destroy` | destructor | [66](../../../Source/Propagator/Enterprise/BoldLockList.pas#L66) · [body 597](../../../Source/Propagator/Enterprise/BoldLockList.pas#L597) |  | ⚪ not started |  |
-| `LockName` | property | [67](../../../Source/Propagator/Enterprise/BoldLockList.pas#L67) |  | ⚪ not started |  |
-| `NoSharedLocks` | property | [68](../../../Source/Propagator/Enterprise/BoldLockList.pas#L68) |  | ⚪ not started |  |
-| `ExclusiveLock` | property | [69](../../../Source/Propagator/Enterprise/BoldLockList.pas#L69) |  | ⚪ not started |  |
-| `Clients` | property | [70](../../../Source/Propagator/Enterprise/BoldLockList.pas#L70) |  | ⚪ not started |  |
+| `getClients` | method, private | [64](../../../Source/Propagator/Enterprise/BoldLockList.pas#L64) · [body 603](../../../Source/Propagator/Enterprise/BoldLockList.pas#L603) | [`TBoldLockNameIndexNode.getClients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L88) | 🟢 ported |  |
+| `Destroy` | destructor | [66](../../../Source/Propagator/Enterprise/BoldLockList.pas#L66) · [body 597](../../../Source/Propagator/Enterprise/BoldLockList.pas#L597) | [`TBoldLockNameIndexNode.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L81) | 🟢 ported |  |
+| `LockName` | property | [67](../../../Source/Propagator/Enterprise/BoldLockList.pas#L67) | [`TBoldLockNameIndexNode.LockName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L91) | 🟢 ported |  |
+| `NoSharedLocks` | property | [68](../../../Source/Propagator/Enterprise/BoldLockList.pas#L68) | [`TBoldLockNameIndexNode.NoSharedLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L94) | 🟢 ported |  |
+| `ExclusiveLock` | property | [69](../../../Source/Propagator/Enterprise/BoldLockList.pas#L69) | [`TBoldLockNameIndexNode.ExclusiveLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L101) | 🟢 ported |  |
+| `Clients` | property | [70](../../../Source/Propagator/Enterprise/BoldLockList.pas#L70) | [`TBoldLockNameIndexNode.Clients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L104) | 🟢 ported |  |
 
 ## TBoldLockNameList
 
-class at [line 73](../../../Source/Propagator/Enterprise/BoldLockList.pas#L73); ⚪ not started.
+class at [line 73](../../../Source/Propagator/Enterprise/BoldLockList.pas#L73); 🟢 ported, C# [`TBoldLockNameList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L109).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getItem` | method, protected | [77](../../../Source/Propagator/Enterprise/BoldLockList.pas#L77) · [body 396](../../../Source/Propagator/Enterprise/BoldLockList.pas#L396) |  | ⚪ not started |  |
-| `setItem` | method, protected | [78](../../../Source/Propagator/Enterprise/BoldLockList.pas#L78) · [body 452](../../../Source/Propagator/Enterprise/BoldLockList.pas#L452) |  | ⚪ not started |  |
-| `getCount` | method, protected | [79](../../../Source/Propagator/Enterprise/BoldLockList.pas#L79) · [body 385](../../../Source/Propagator/Enterprise/BoldLockList.pas#L385) |  | ⚪ not started |  |
-| `InsertINode` | method, protected | [80](../../../Source/Propagator/Enterprise/BoldLockList.pas#L80) · [body 401](../../../Source/Propagator/Enterprise/BoldLockList.pas#L401) |  | ⚪ not started |  |
-| `Create` | constructor | [83](../../../Source/Propagator/Enterprise/BoldLockList.pas#L83) · [body 347](../../../Source/Propagator/Enterprise/BoldLockList.pas#L347) |  | ⚪ not started |  |
-| `Destroy` | destructor | [84](../../../Source/Propagator/Enterprise/BoldLockList.pas#L84) · [body 378](../../../Source/Propagator/Enterprise/BoldLockList.pas#L378) |  | ⚪ not started |  |
-| `DeleteNodes` | method | [85](../../../Source/Propagator/Enterprise/BoldLockList.pas#L85) · [body 363](../../../Source/Propagator/Enterprise/BoldLockList.pas#L363) |  | ⚪ not started |  |
-| `InsertNode` | method | [86](../../../Source/Propagator/Enterprise/BoldLockList.pas#L86) · [body 422](../../../Source/Propagator/Enterprise/BoldLockList.pas#L422) |  | ⚪ not started |  |
-| `DeleteINodeByKey` | method | [87](../../../Source/Propagator/Enterprise/BoldLockList.pas#L87) · [body 353](../../../Source/Propagator/Enterprise/BoldLockList.pas#L353) |  | ⚪ not started |  |
+| `getItem` | method, protected | [77](../../../Source/Propagator/Enterprise/BoldLockList.pas#L77) · [body 396](../../../Source/Propagator/Enterprise/BoldLockList.pas#L396) | [`TBoldLockNameList.getItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L134) | 🟢 ported |  |
+| `setItem` | method, protected | [78](../../../Source/Propagator/Enterprise/BoldLockList.pas#L78) · [body 452](../../../Source/Propagator/Enterprise/BoldLockList.pas#L452) | [`TBoldLockNameList.setItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L137) | 🟢 ported |  |
+| `getCount` | method, protected | [79](../../../Source/Propagator/Enterprise/BoldLockList.pas#L79) · [body 385](../../../Source/Propagator/Enterprise/BoldLockList.pas#L385) | [`TBoldLockNameList.getCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L140) | 🟢 ported |  |
+| `InsertINode` | method, protected | [80](../../../Source/Propagator/Enterprise/BoldLockList.pas#L80) · [body 401](../../../Source/Propagator/Enterprise/BoldLockList.pas#L401) | [`TBoldLockNameList.InsertINode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L143) | 🟢 ported |  |
+| `Create` | constructor | [83](../../../Source/Propagator/Enterprise/BoldLockList.pas#L83) · [body 347](../../../Source/Propagator/Enterprise/BoldLockList.pas#L347) | [`TBoldLockNameList.TBoldLockNameList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L114) | 🟢 ported |  |
+| `Destroy` | destructor | [84](../../../Source/Propagator/Enterprise/BoldLockList.pas#L84) · [body 378](../../../Source/Propagator/Enterprise/BoldLockList.pas#L378) | [`TBoldLockNameList.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L121) | 🟢 ported |  |
+| `DeleteNodes` | method | [85](../../../Source/Propagator/Enterprise/BoldLockList.pas#L85) · [body 363](../../../Source/Propagator/Enterprise/BoldLockList.pas#L363) | [`TBoldLockNameList.DeleteNodes`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L155) | 🟢 ported |  |
+| `InsertNode` | method | [86](../../../Source/Propagator/Enterprise/BoldLockList.pas#L86) · [body 422](../../../Source/Propagator/Enterprise/BoldLockList.pas#L422) | [`TBoldLockNameList.InsertNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L174) | 🟢 ported |  |
+| `DeleteINodeByKey` | method | [87](../../../Source/Propagator/Enterprise/BoldLockList.pas#L87) · [body 353](../../../Source/Propagator/Enterprise/BoldLockList.pas#L353) | [`TBoldLockNameList.DeleteINodeByKey`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L194) | 🟢 ported |  |
 
 ## TBoldLockNode
 
-class at [line 90](../../../Source/Propagator/Enterprise/BoldLockList.pas#L90); ⚪ not started.
+class at [line 90](../../../Source/Propagator/Enterprise/BoldLockList.pas#L90); 🟢 ported, C# [`TBoldLockNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L206).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `setLockType` | method, private | [100](../../../Source/Propagator/Enterprise/BoldLockList.pas#L100) · [body 533](../../../Source/Propagator/Enterprise/BoldLockList.pas#L533) |  | ⚪ not started |  |
-| `GetHasTimedOut` | method, private | [101](../../../Source/Propagator/Enterprise/BoldLockList.pas#L101) · [body 485](../../../Source/Propagator/Enterprise/BoldLockList.pas#L485) |  | ⚪ not started |  |
-| `getNext` | method, protected | [103](../../../Source/Propagator/Enterprise/BoldLockList.pas#L103) · [body 504](../../../Source/Propagator/Enterprise/BoldLockList.pas#L504) |  | ⚪ not started |  |
-| `setNext` | method, protected | [104](../../../Source/Propagator/Enterprise/BoldLockList.pas#L104) · [body 559](../../../Source/Propagator/Enterprise/BoldLockList.pas#L559) |  | ⚪ not started |  |
-| `getPrevious` | method, protected | [105](../../../Source/Propagator/Enterprise/BoldLockList.pas#L105) · [body 515](../../../Source/Propagator/Enterprise/BoldLockList.pas#L515) |  | ⚪ not started |  |
-| `setPrevious` | method, protected | [106](../../../Source/Propagator/Enterprise/BoldLockList.pas#L106) · [body 565](../../../Source/Propagator/Enterprise/BoldLockList.pas#L565) |  | ⚪ not started |  |
-| `getNumberOfIndices` | method, protected | [107](../../../Source/Propagator/Enterprise/BoldLockList.pas#L107) · [body 510](../../../Source/Propagator/Enterprise/BoldLockList.pas#L510) |  | ⚪ not started |  |
-| `Create` | constructor | [109](../../../Source/Propagator/Enterprise/BoldLockList.pas#L109) · [body 474](../../../Source/Propagator/Enterprise/BoldLockList.pas#L474) |  | ⚪ not started |  |
-| `Remove` | method | [110](../../../Source/Propagator/Enterprise/BoldLockList.pas#L110) · [body 522](../../../Source/Propagator/Enterprise/BoldLockList.pas#L522) |  | ⚪ not started |  |
-| `AddToList` | method | [111](../../../Source/Propagator/Enterprise/BoldLockList.pas#L111) · [body 461](../../../Source/Propagator/Enterprise/BoldLockList.pas#L461) |  | ⚪ not started |  |
-| `EnsureLock` | method | [112](../../../Source/Propagator/Enterprise/BoldLockList.pas#L112) · [body 480](../../../Source/Propagator/Enterprise/BoldLockList.pas#L480) |  | ⚪ not started |  |
-| `GetLockDuration` | method | [113](../../../Source/Propagator/Enterprise/BoldLockList.pas#L113) · [body 499](../../../Source/Propagator/Enterprise/BoldLockList.pas#L499) |  | ⚪ not started |  |
-| `ClientId` | property | [114](../../../Source/Propagator/Enterprise/BoldLockList.pas#L114) |  | ⚪ not started |  |
-| `TimeOut` | property | [115](../../../Source/Propagator/Enterprise/BoldLockList.pas#L115) |  | ⚪ not started |  |
-| `LockAcquisitionTime` | property | [116](../../../Source/Propagator/Enterprise/BoldLockList.pas#L116) |  | ⚪ not started |  |
-| `LockType` | property | [117](../../../Source/Propagator/Enterprise/BoldLockList.pas#L117) |  | ⚪ not started |  |
-| `CanTimeOut` | property | [118](../../../Source/Propagator/Enterprise/BoldLockList.pas#L118) |  | ⚪ not started |  |
-| `HasTimedOut` | property | [119](../../../Source/Propagator/Enterprise/BoldLockList.pas#L119) |  | ⚪ not started |  |
+| `setLockType` | method, private | [100](../../../Source/Propagator/Enterprise/BoldLockList.pas#L100) · [body 533](../../../Source/Propagator/Enterprise/BoldLockList.pas#L533) | [`TBoldLockNode.setLockType`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L222) | 🟢 ported |  |
+| `GetHasTimedOut` | method, private | [101](../../../Source/Propagator/Enterprise/BoldLockList.pas#L101) · [body 485](../../../Source/Propagator/Enterprise/BoldLockList.pas#L485) | [`TBoldLockNode.GetHasTimedOut`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L246) | 🟢 ported |  |
+| `getNext` | method, protected | [103](../../../Source/Propagator/Enterprise/BoldLockList.pas#L103) · [body 504](../../../Source/Propagator/Enterprise/BoldLockList.pas#L504) | [`TBoldLockNode.getNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L260) | 🟢 ported |  |
+| `setNext` | method, protected | [104](../../../Source/Propagator/Enterprise/BoldLockList.pas#L104) · [body 559](../../../Source/Propagator/Enterprise/BoldLockList.pas#L559) | [`TBoldLockNode.setNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L263) | 🟢 ported |  |
+| `getPrevious` | method, protected | [105](../../../Source/Propagator/Enterprise/BoldLockList.pas#L105) · [body 515](../../../Source/Propagator/Enterprise/BoldLockList.pas#L515) | [`TBoldLockNode.getPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L266) | 🟢 ported |  |
+| `setPrevious` | method, protected | [106](../../../Source/Propagator/Enterprise/BoldLockList.pas#L106) · [body 565](../../../Source/Propagator/Enterprise/BoldLockList.pas#L565) | [`TBoldLockNode.setPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L269) | 🟢 ported |  |
+| `getNumberOfIndices` | method, protected | [107](../../../Source/Propagator/Enterprise/BoldLockList.pas#L107) · [body 510](../../../Source/Propagator/Enterprise/BoldLockList.pas#L510) | [`TBoldLockNode.getNumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L272) | 🟢 ported |  |
+| `Create` | constructor | [109](../../../Source/Propagator/Enterprise/BoldLockList.pas#L109) · [body 474](../../../Source/Propagator/Enterprise/BoldLockList.pas#L474) | [`TBoldLockNode.TBoldLockNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L215) | 🟢 ported |  |
+| `Remove` | method | [110](../../../Source/Propagator/Enterprise/BoldLockList.pas#L110) · [body 522](../../../Source/Propagator/Enterprise/BoldLockList.pas#L522) | [`TBoldLockNode.Remove`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L276) | 🟢 ported: Does nothing to the counts of a lock in no client list; Delphi failed on it. |  |
+| `AddToList` | method | [111](../../../Source/Propagator/Enterprise/BoldLockList.pas#L111) · [body 461](../../../Source/Propagator/Enterprise/BoldLockList.pas#L461) | [`TBoldLockNode.AddToList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L299) | 🟢 ported |  |
+| `EnsureLock` | method | [112](../../../Source/Propagator/Enterprise/BoldLockList.pas#L112) · [body 480](../../../Source/Propagator/Enterprise/BoldLockList.pas#L480) | [`TBoldLockNode.EnsureLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L316) | 🟢 ported |  |
+| `GetLockDuration` | method | [113](../../../Source/Propagator/Enterprise/BoldLockList.pas#L113) · [body 499](../../../Source/Propagator/Enterprise/BoldLockList.pas#L499) | [`TBoldLockNode.GetLockDuration`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L320) | 🟢 ported |  |
+| `ClientId` | property | [114](../../../Source/Propagator/Enterprise/BoldLockList.pas#L114) | [`TBoldLockNode.ClientId`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L324) | 🟢 ported |  |
+| `TimeOut` | property | [115](../../../Source/Propagator/Enterprise/BoldLockList.pas#L115) | [`TBoldLockNode.TimeOut`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L328) | 🟢 ported |  |
+| `LockAcquisitionTime` | property | [116](../../../Source/Propagator/Enterprise/BoldLockList.pas#L116) | [`TBoldLockNode.LockAcquisitionTime`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L331) | 🟢 ported |  |
+| `LockType` | property | [117](../../../Source/Propagator/Enterprise/BoldLockList.pas#L117) | [`TBoldLockNode.LockType`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L334) | 🟢 ported |  |
+| `CanTimeOut` | property | [118](../../../Source/Propagator/Enterprise/BoldLockList.pas#L118) | [`TBoldLockNode.CanTimeOut`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L341) | 🟢 ported |  |
+| `HasTimedOut` | property | [119](../../../Source/Propagator/Enterprise/BoldLockList.pas#L119) | [`TBoldLockNode.HasTimedOut`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L344) | 🟢 ported |  |
 
 ## TBoldLockList
 
-class at [line 122](../../../Source/Propagator/Enterprise/BoldLockList.pas#L122); ⚪ not started.
+class at [line 122](../../../Source/Propagator/Enterprise/BoldLockList.pas#L122); 🟢 ported, C# [`TBoldServerLockList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L352).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getClient` | method, private | [128](../../../Source/Propagator/Enterprise/BoldLockList.pas#L128) · [body 235](../../../Source/Propagator/Enterprise/BoldLockList.pas#L235) |  | ⚪ not started |  |
-| `getLock` | method, private | [129](../../../Source/Propagator/Enterprise/BoldLockList.pas#L129) · [body 282](../../../Source/Propagator/Enterprise/BoldLockList.pas#L282) |  | ⚪ not started |  |
-| `getItem` | method, private | [130](../../../Source/Propagator/Enterprise/BoldLockList.pas#L130) · [body 272](../../../Source/Propagator/Enterprise/BoldLockList.pas#L272) |  | ⚪ not started |  |
-| `getIndexList` | method, protected | [132](../../../Source/Propagator/Enterprise/BoldLockList.pas#L132) · [body 262](../../../Source/Propagator/Enterprise/BoldLockList.pas#L262) |  | ⚪ not started |  |
-| `setIndexList` | method, protected | [133](../../../Source/Propagator/Enterprise/BoldLockList.pas#L133) · [body 336](../../../Source/Propagator/Enterprise/BoldLockList.pas#L336) |  | ⚪ not started |  |
-| `Create` | constructor | [135](../../../Source/Propagator/Enterprise/BoldLockList.pas#L135) · [body 221](../../../Source/Propagator/Enterprise/BoldLockList.pas#L221) |  | ⚪ not started |  |
-| `Destroy` | destructor | [136](../../../Source/Propagator/Enterprise/BoldLockList.pas#L136) · [body 228](../../../Source/Propagator/Enterprise/BoldLockList.pas#L228) |  | ⚪ not started |  |
-| `AddLock` | method | [137](../../../Source/Propagator/Enterprise/BoldLockList.pas#L137) · [body 194](../../../Source/Propagator/Enterprise/BoldLockList.pas#L194) |  | ⚪ not started |  |
-| `RemoveClient` | method | [139](../../../Source/Propagator/Enterprise/BoldLockList.pas#L139) · [body 313](../../../Source/Propagator/Enterprise/BoldLockList.pas#L313) |  | ⚪ not started |  |
-| `RemoveLock` | method | [140](../../../Source/Propagator/Enterprise/BoldLockList.pas#L140) · [body 318](../../../Source/Propagator/Enterprise/BoldLockList.pas#L318) |  | ⚪ not started |  |
-| `RemoveLockForClient` | method | [141](../../../Source/Propagator/Enterprise/BoldLockList.pas#L141) · [body 323](../../../Source/Propagator/Enterprise/BoldLockList.pas#L323) |  | ⚪ not started |  |
-| `GetLocksByClientId` | method | [142](../../../Source/Propagator/Enterprise/BoldLockList.pas#L142) · [body 293](../../../Source/Propagator/Enterprise/BoldLockList.pas#L293) |  | ⚪ not started |  |
-| `GetClientIDsbyLock` | method | [143](../../../Source/Propagator/Enterprise/BoldLockList.pas#L143) · [body 241](../../../Source/Propagator/Enterprise/BoldLockList.pas#L241) |  | ⚪ not started |  |
-| `Clients` | property | [144](../../../Source/Propagator/Enterprise/BoldLockList.pas#L144) |  | ⚪ not started |  |
-| `Locks` | property | [145](../../../Source/Propagator/Enterprise/BoldLockList.pas#L145) |  | ⚪ not started |  |
-| `Items` | property | [146](../../../Source/Propagator/Enterprise/BoldLockList.pas#L146) |  | ⚪ not started |  |
-| `ClientIdIndexOrder` | property | [147](../../../Source/Propagator/Enterprise/BoldLockList.pas#L147) |  | ⚪ not started |  |
-| `LockNameIndexOrder` | property | [148](../../../Source/Propagator/Enterprise/BoldLockList.pas#L148) |  | ⚪ not started |  |
+| `getClient` | method, private | [128](../../../Source/Propagator/Enterprise/BoldLockList.pas#L128) · [body 235](../../../Source/Propagator/Enterprise/BoldLockList.pas#L235) | [`TBoldServerLockList.getClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L375) | 🟢 ported |  |
+| `getLock` | method, private | [129](../../../Source/Propagator/Enterprise/BoldLockList.pas#L129) · [body 282](../../../Source/Propagator/Enterprise/BoldLockList.pas#L282) | [`TBoldServerLockList.getLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L378) | 🟢 ported |  |
+| `getItem` | method, private | [130](../../../Source/Propagator/Enterprise/BoldLockList.pas#L130) · [body 272](../../../Source/Propagator/Enterprise/BoldLockList.pas#L272) | [`TBoldServerLockList.getItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L381) | 🟢 ported |  |
+| `getIndexList` | method, protected | [132](../../../Source/Propagator/Enterprise/BoldLockList.pas#L132) · [body 262](../../../Source/Propagator/Enterprise/BoldLockList.pas#L262) | [`TBoldServerLockList.getIndexList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L384) | 🟢 ported |  |
+| `setIndexList` | method, protected | [133](../../../Source/Propagator/Enterprise/BoldLockList.pas#L133) · [body 336](../../../Source/Propagator/Enterprise/BoldLockList.pas#L336) | [`TBoldServerLockList.setIndexList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L392) | 🟢 ported |  |
+| `Create` | constructor | [135](../../../Source/Propagator/Enterprise/BoldLockList.pas#L135) · [body 221](../../../Source/Propagator/Enterprise/BoldLockList.pas#L221) | [`TBoldServerLockList.TBoldServerLockList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L360) | 🟢 ported |  |
+| `Destroy` | destructor | [136](../../../Source/Propagator/Enterprise/BoldLockList.pas#L136) · [body 228](../../../Source/Propagator/Enterprise/BoldLockList.pas#L228) | [`TBoldServerLockList.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L367) | 🟢 ported |  |
+| `AddLock` | method | [137](../../../Source/Propagator/Enterprise/BoldLockList.pas#L137) · [body 194](../../../Source/Propagator/Enterprise/BoldLockList.pas#L194) | [`TBoldServerLockList.AddLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L409) | 🟢 ported |  |
+| `RemoveClient` | method | [139](../../../Source/Propagator/Enterprise/BoldLockList.pas#L139) · [body 313](../../../Source/Propagator/Enterprise/BoldLockList.pas#L313) | [`TBoldServerLockList.RemoveClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L436) | 🟢 ported |  |
+| `RemoveLock` | method | [140](../../../Source/Propagator/Enterprise/BoldLockList.pas#L140) · [body 318](../../../Source/Propagator/Enterprise/BoldLockList.pas#L318) | [`TBoldServerLockList.RemoveLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L439) | 🟢 ported |  |
+| `RemoveLockForClient` | method | [141](../../../Source/Propagator/Enterprise/BoldLockList.pas#L141) · [body 323](../../../Source/Propagator/Enterprise/BoldLockList.pas#L323) | [`TBoldServerLockList.RemoveLockForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L442) | 🟢 ported |  |
+| `GetLocksByClientId` | method | [142](../../../Source/Propagator/Enterprise/BoldLockList.pas#L142) · [body 293](../../../Source/Propagator/Enterprise/BoldLockList.pas#L293) | [`TBoldServerLockList.GetLocksByClientId`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L446) | 🟢 ported |  |
+| `GetClientIDsbyLock` | method | [143](../../../Source/Propagator/Enterprise/BoldLockList.pas#L143) · [body 241](../../../Source/Propagator/Enterprise/BoldLockList.pas#L241) | [`TBoldServerLockList.GetClientIDsbyLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L469) | 🟢 ported |  |
+| `Clients` | property | [144](../../../Source/Propagator/Enterprise/BoldLockList.pas#L144) | [`TBoldServerLockList.Clients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L483) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
+| `Locks` | property | [145](../../../Source/Propagator/Enterprise/BoldLockList.pas#L145) | [`TBoldServerLockList.Locks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L486) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
+| `Items` | property | [146](../../../Source/Propagator/Enterprise/BoldLockList.pas#L146) | [`TBoldServerLockList.Items`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L489) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
+| `ClientIdIndexOrder` | property | [147](../../../Source/Propagator/Enterprise/BoldLockList.pas#L147) | [`TBoldServerLockList.ClientIdIndexOrder`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L492) | 🟢 ported |  |
+| `LockNameIndexOrder` | property | [148](../../../Source/Propagator/Enterprise/BoldLockList.pas#L148) | [`TBoldServerLockList.LockNameIndexOrder`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L495) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldClientIdHashList.fOwnerIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L54) (field)
+- [`TBoldLockNameIndexNode.fNoSharedLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockList.cs#L78) (field)
 
 ## Dependencies
 

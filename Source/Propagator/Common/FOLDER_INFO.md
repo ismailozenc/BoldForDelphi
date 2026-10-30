@@ -35,11 +35,11 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldAbstractPropagatorHandle](../../../CSharp/port/units/BoldAbstractPropagatorHandle.md) | Bold.Propagation: Propagator/Common/BoldAbstractPropagatorHandle.cs (not started) | M9 Multi-user |
-| [BoldLockingSupportInterfaces\_TLB](../../../CSharp/port/units/BoldLockingSupportInterfaces_TLB.md) | Bold.Propagation: Propagator/Common/BoldLockingSupportInterfaces\_TLB.cs (not started) | M9 Multi-user |
-| [BoldObjectMarshaler](../../../CSharp/port/units/BoldObjectMarshaler.md) | Bold.Propagation: Propagator/Common/BoldObjectMarshaler.cs (not started) | M9 Multi-user |
-| [BoldPropagatorConstants](../../../CSharp/port/units/BoldPropagatorConstants.md) | Bold.Propagation: Propagator/Common/BoldPropagatorConstants.cs (not started) | M9 Multi-user |
-| [BoldPropagatorGUIDs](../../../CSharp/port/units/BoldPropagatorGUIDs.md) | Bold.Propagation: Propagator/Common/BoldPropagatorGUIDs.cs (not started) | M9 Multi-user |
-| [BoldPropagatorInterfaces\_TLB](../../../CSharp/port/units/BoldPropagatorInterfaces_TLB.md) | Bold.Propagation: Propagator/Common/BoldPropagatorInterfaces\_TLB.cs (not started) | M9 Multi-user |
-| [PropagatorConsts](../../../CSharp/port/units/PropagatorConsts.md) | Bold.Propagation: Propagator/Common/PropagatorConsts.cs (not started) | M9 Multi-user |
+| [BoldAbstractPropagatorHandle](../../../CSharp/port/units/BoldAbstractPropagatorHandle.md) | [Bold.Propagation: Propagator/Common/BoldAbstractPropagatorHandle.cs](../../../CSharp/src/Bold.Propagation/Propagator/Common/BoldAbstractPropagatorHandle.cs) | M9 Multi-user |
+| [BoldLockingSupportInterfaces\_TLB](../../../CSharp/port/units/BoldLockingSupportInterfaces_TLB.md) | [Bold.Propagation: Propagator/Common/BoldLockingSupportInterfaces\_TLB.cs](../../../CSharp/src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs) | M9 Multi-user |
+| [BoldObjectMarshaler](../../../CSharp/port/units/BoldObjectMarshaler.md) | [Bold.Propagation: Propagator/Common/BoldObjectMarshaler.cs](../../../CSharp/src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs) | M9 Multi-user |
+| [BoldPropagatorConstants](../../../CSharp/port/units/BoldPropagatorConstants.md) | [Bold.Propagation: Propagator/Common/BoldPropagatorConstants.cs](../../../CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs) | M9 Multi-user |
+| [BoldPropagatorGUIDs](../../../CSharp/port/units/BoldPropagatorGUIDs.md) | [Bold.Propagation: Propagator/Common/BoldPropagatorGUIDs.cs](../../../CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs) | M9 Multi-user |
+| [BoldPropagatorInterfaces\_TLB](../../../CSharp/port/units/BoldPropagatorInterfaces_TLB.md) | [Bold.Propagation: Propagator/Common/BoldPropagatorInterfaces\_TLB.cs](../../../CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorInterfaces_TLB.cs) | M9 Multi-user |
+| [PropagatorConsts](../../../CSharp/port/units/PropagatorConsts.md) | [Bold.Propagation: Propagator/Common/PropagatorConsts.cs](../../../CSharp/src/Bold.Propagation/Propagator/Common/PropagatorConsts.cs) | M9 Multi-user |
 <!-- END C# PORT -->

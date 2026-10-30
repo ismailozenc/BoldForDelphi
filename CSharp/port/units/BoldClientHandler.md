@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldClientHandler.pas`](../../../Source/Propagator/Enterprise/BoldClientHandler.pas) (1162 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 76 symbols done, 0 verified |
+| Status | 🟢 ported: 76 of 76 symbols done, 0 verified |
 
-⚪ 76 not started
+🟢 70 ported · 🔵 1 replaced · ⚫ 5 dropped
 
 ## Unit level
 
@@ -18,110 +18,125 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldRemoveClientReasonType` | enum | [26](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L26) |  | ⚪ not started |  |
-| `TBoldClientReceiveStatus` | enum | [27](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L27) |  | ⚪ not started |  |
-| `TBoldClientHandler` | class | [29](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L29) |  | ⚪ not started |  |
-| `TBoldClientInfo` | class | [96](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L96) |  | ⚪ not started |  |
-| `TBoldClientInfoList` | class | [136](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L136) |  | ⚪ not started |  |
-| `IGlobalInterfaceTable` | interface, implementation | [173](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L173) |  | ⚪ not started |  |
-| `GlobalInterfaceTable` | routine, implementation | [186](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L186) |  | ⚪ not started |  |
+| `TBoldRemoveClientReasonType` | enum | [26](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L26) | [`TBoldRemoveClientReasonType`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L14) | 🟢 ported |  |
+| `TBoldClientReceiveStatus` | enum | [27](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L27) | [`TBoldClientReceiveStatus`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L17) | 🟢 ported |  |
+| `TBoldClientHandler` | class | [29](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L29) | [`TBoldClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L25) | 🟢 ported |  |
+| `TBoldClientInfo` | class | [96](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L96) | [`TBoldClientInfo`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L908) | 🟢 ported |  |
+| `TBoldClientInfoList` | class | [136](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L136) | [`TBoldClientInfoList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1017) | 🟢 ported |  |
+| `IGlobalInterfaceTable` | interface, implementation | [173](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L173) | [`[assembly: Delphi] in BoldClientHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L5) | ⚫ dropped: COM's global interface table; the client info keeps the listener reference. |  |
+| `GlobalInterfaceTable` | routine, implementation | [186](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L186) | [`[assembly: Delphi] in BoldClientHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L9) | ⚫ dropped: COM's global interface table. |  |
 
 ## TBoldClientHandler
 
-class at [line 29](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L29); 🟢 ported, C# [`TBoldClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L25).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `InternalRemoveClient` | method, private | [40](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L40) · [body 341](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L341) |  | ⚪ not started |  |
-| `AddClient` | method, private | [41](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L41) · [body 358](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L358) |  | ⚪ not started |  |
-| `SetEnabled` | method, private | [44](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L44) · [body 553](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L553) |  | ⚪ not started |  |
-| `SetNOConnectedClients` | method, private | [45](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L45) · [body 608](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L608) |  | ⚪ not started |  |
-| `InfoForClient` | method, private | [46](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L46) · [body 233](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L233) |  | ⚪ not started |  |
-| `NotifyLeaseChanged` | method, private | [47](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L47) · [body 725](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L725) |  | ⚪ not started |  |
-| `GetFirstLeaseTimeOutClient` | method, private | [48](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L48) · [body 740](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L740) |  | ⚪ not started |  |
-| `GetEnabled` | method, private | [49](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L49) · [body 813](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L813) |  | ⚪ not started |  |
-| `AcquireLock` | method, private | [50](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L50) · [body 902](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L902) |  | ⚪ not started |  |
-| `ReleaseLock` | method, private | [51](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L51) · [body 913](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L913) |  | ⚪ not started |  |
-| `EnqueueRemoveClientQueueEvent` | method, protected | [53](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L53) · [body 784](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L784) |  | ⚪ not started |  |
-| `Create` | constructor | [55](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L55) · [body 198](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L198) |  | ⚪ not started |  |
-| `Destroy` | destructor | [56](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L56) · [body 214](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L214) |  | ⚪ not started |  |
-| `RegisterClient` | method | [57](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L57) · [body 247](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L247) |  | ⚪ not started |  |
-| `ExtendLease` | method | [60](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L60) · [body 275](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L275) |  | ⚪ not started |  |
-| `UnRegisterClient` | method | [61](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L61) · [body 303](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L303) |  | ⚪ not started |  |
-| `HasInfoForClient(TBoldClientId,string,TTimeStamp,Boolean,TBoldClientReceiveStatus)` | method | [64](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L64) · [body 644](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L644) |  | ⚪ not started |  |
-| `HasInfoForClient(TBoldClientId,string,integer,integer,TTimeStamp,Boolean)` | method | [67](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L67) · [body 619](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L619) |  | ⚪ not started |  |
-| `GetRegistrationTime` | method | [70](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L70) · [body 480](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L480) |  | ⚪ not started |  |
-| `IsRegistered` | method | [71](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L71) · [body 765](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L765) |  | ⚪ not started |  |
-| `DisconnectClient` | method | [72](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L72) · [body 430](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L430) |  | ⚪ not started |  |
-| `SendDisconnectRequest` | method | [73](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L73) · [body 937](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L937) |  | ⚪ not started |  |
-| `IsThereAClientTimingOutSoon` | method | [76](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L76) · [body 570](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L570) |  | ⚪ not started |  |
-| `RemoveExpiredLease` | method | [78](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L78) · [body 381](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L381) |  | ⚪ not started |  |
-| `MarkHasReceivedEvents` | method | [79](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L79) · [body 855](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L855) |  | ⚪ not started |  |
-| `MarkFailedToReceiveEvents` | method | [80](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L80) · [body 883](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L883) |  | ⚪ not started |  |
-| `GetRegisteredClientIDs` | method | [81](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L81) · [body 415](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L415) |  | ⚪ not started |  |
-| `GetRegisteredClientInfos` | method | [82](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L82) · [body 513](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L513) |  | ⚪ not started |  |
-| `GetListener` | method | [89](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L89) · [body 795](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L795) |  | ⚪ not started |  |
-| `LockTime` | method | [90](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L90) · [body 924](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L924) |  | ⚪ not started |  |
-| `NOConnectedClients` | property | [91](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L91) |  | ⚪ not started |  |
-| `Enabled` | property | [92](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L92) |  | ⚪ not started |  |
+| `InternalRemoveClient` | method, private | [40](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L40) · [body 341](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L341) | [`TBoldClientHandler.InternalRemoveClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L244) | 🟢 ported |  |
+| `AddClient` | method, private | [41](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L41) · [body 358](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L358) | [`TBoldClientHandler.AddClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L261) | 🟢 ported |  |
+| `SetEnabled` | method, private | [44](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L44) · [body 553](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L553) | [`TBoldClientHandler.SetEnabled`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L474) | 🟢 ported |  |
+| `SetNOConnectedClients` | method, private | [45](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L45) · [body 608](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L608) | [`TBoldClientHandler.SetNOConnectedClients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L535) | 🟢 ported |  |
+| `InfoForClient` | method, private | [46](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L46) · [body 233](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L233) | [`TBoldClientHandler.InfoForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L91) | 🟢 ported |  |
+| `NotifyLeaseChanged` | method, private | [47](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L47) · [body 725](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L725) | [`TBoldClientHandler.NotifyLeaseChanged`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L618) | 🟢 ported |  |
+| `GetFirstLeaseTimeOutClient` | method, private | [48](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L48) · [body 740](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L740) | [`TBoldClientHandler.GetFirstLeaseTimeOutClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L630) | 🟢 ported |  |
+| `GetEnabled` | method, private | [49](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L49) · [body 813](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L813) | [`TBoldClientHandler.GetEnabled`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L730) | 🟢 ported |  |
+| `AcquireLock` | method, private | [50](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L50) · [body 902](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L902) | [`TBoldClientHandler.AcquireLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L805) | 🟢 ported |  |
+| `ReleaseLock` | method, private | [51](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L51) · [body 913](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L913) | [`TBoldClientHandler.ReleaseLock`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L820) | 🟢 ported |  |
+| `EnqueueRemoveClientQueueEvent` | method, protected | [53](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L53) · [body 784](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L784) | [`TBoldClientHandler.EnqueueRemoveClientQueueEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L685) | 🟢 ported |  |
+| `Create` | constructor | [55](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L55) · [body 198](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L198) | [`TBoldClientHandler.TBoldClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L38) | 🟢 ported |  |
+| `Destroy` | destructor | [56](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L56) · [body 214](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L214) | [`TBoldClientHandler.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L57) | 🟢 ported |  |
+| `RegisterClient` | method | [57](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L57) · [body 247](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L247) | [`TBoldClientHandler.RegisterClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L113) | 🟢 ported |  |
+| `ExtendLease` | method | [60](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L60) · [body 275](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L275) | [`TBoldClientHandler.ExtendLease`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L157) | 🟢 ported |  |
+| `UnRegisterClient` | method | [61](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L61) · [body 303](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L303) | [`TBoldClientHandler.UnRegisterClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L199) | 🟢 ported |  |
+| `HasInfoForClient(TBoldClientId,string,TTimeStamp,Boolean,TBoldClientReceiveStatus)` | method | [64](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L64) · [body 644](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L644) | [`TBoldClientHandler.HasInfoForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L584) | 🟢 ported |  |
+| `HasInfoForClient(TBoldClientId,string,integer,integer,TTimeStamp,Boolean)` | method | [67](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L67) · [body 619](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L619) | [`TBoldClientHandler.HasInfoForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L549) | 🟢 ported |  |
+| `GetRegistrationTime` | method | [70](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L70) · [body 480](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L480) | [`TBoldClientHandler.GetRegistrationTime`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L399) | 🟢 ported |  |
+| `IsRegistered` | method | [71](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L71) · [body 765](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L765) | [`TBoldClientHandler.IsRegistered`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L664) | 🟢 ported |  |
+| `DisconnectClient` | method | [72](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L72) · [body 430](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L430) | [`TBoldClientHandler.DisconnectClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L344) | 🟢 ported |  |
+| `SendDisconnectRequest` | method | [73](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L73) · [body 937](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L937) | [`TBoldClientHandler.SendDisconnectRequest`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L857) | 🟢 ported |  |
+| `IsThereAClientTimingOutSoon` | method | [76](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L76) · [body 570](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L570) | [`TBoldClientHandler.IsThereAClientTimingOutSoon`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L496) | 🟢 ported: Returns true when there is such a client; Delphi never set its result to true. |  |
+| `RemoveExpiredLease` | method | [78](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L78) · [body 381](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L381) | [`TBoldClientHandler.RemoveExpiredLease`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L286) | 🟢 ported |  |
+| `MarkHasReceivedEvents` | method | [79](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L79) · [body 855](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L855) | [`TBoldClientHandler.MarkHasReceivedEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L745) | 🟢 ported |  |
+| `MarkFailedToReceiveEvents` | method | [80](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L80) · [body 883](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L883) | [`TBoldClientHandler.MarkFailedToReceiveEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L781) | 🟢 ported |  |
+| `GetRegisteredClientIDs` | method | [81](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L81) · [body 415](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L415) | [`TBoldClientHandler.GetRegisteredClientIDs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L320) | 🟢 ported |  |
+| `GetRegisteredClientInfos` | method | [82](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L82) · [body 513](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L513) | [`TBoldClientHandler.GetRegisteredClientInfos`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L432) | 🟢 ported |  |
+| `GetListener` | method | [89](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L89) · [body 795](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L795) | [`TBoldClientHandler.GetListener`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L703) | 🟢 ported |  |
+| `LockTime` | method | [90](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L90) · [body 924](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L924) | [`TBoldClientHandler.LockTime`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L842) | 🟢 ported: A TimeSpan where Delphi gave a TDateTime difference. |  |
+| `NOConnectedClients` | property | [91](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L91) | [`TBoldClientHandler.NOConnectedClients`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L888) | 🟢 ported |  |
+| `Enabled` | property | [92](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L92) | [`TBoldClientHandler.Enabled`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L895) | 🟢 ported |  |
 
 ## TBoldClientInfo
 
-class at [line 96](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L96); ⚪ not started.
+class at [line 96](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L96); 🟢 ported, C# [`TBoldClientInfo`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L908).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `LeaseIsExpired` | method, private | [114](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L114) · [body 1012](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1012) |  | ⚪ not started |  |
-| `ReInitializeListenerInterface` | method, private | [115](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L115) · [body 1025](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1025) |  | ⚪ not started |  |
-| `GetClientStatusString` | method, private | [116](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L116) · [body 1031](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1031) |  | ⚪ not started |  |
-| `Create` | constructor | [119](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L119) · [body 960](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L960) |  | ⚪ not started |  |
-| `Destroy` | destructor | [120](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L120) · [body 967](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L967) |  | ⚪ not started |  |
-| `Initialize` | method | [121](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L121) · [body 973](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L973) |  | ⚪ not started |  |
-| `UnInitialize` | method | [123](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L123) · [body 995](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L995) |  | ⚪ not started |  |
-| `ExtendLease` | method | [124](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L124) · [body 1041](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1041) |  | ⚪ not started |  |
-| `ClientID` | property | [125](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L125) |  | ⚪ not started |  |
-| `LeaseDuration` | property | [126](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L126) |  | ⚪ not started |  |
-| `PollingInterval` | property | [127](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L127) |  | ⚪ not started |  |
-| `LeaseTimeOut` | property | [128](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L128) |  | ⚪ not started |  |
-| `ClientIdentifierString` | property | [129](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L129) |  | ⚪ not started |  |
-| `Initialized` | property | [130](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L130) |  | ⚪ not started |  |
-| `RegistrationTime` | property | [131](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L131) |  | ⚪ not started |  |
-| `ClientStatusString` | property | [132](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L132) |  | ⚪ not started |  |
+| `LeaseIsExpired` | method, private | [114](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L114) · [body 1012](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1012) | [`TBoldClientInfo.LeaseIsExpired`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L977) | 🟢 ported |  |
+| `ReInitializeListenerInterface` | method, private | [115](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L115) · [body 1025](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1025) | [`TBoldClientInfo.ReInitializeListenerInterface`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L984) | 🔵 replaced: Nothing to do: Delphi registered the listener in COM's global interface table again. |  |
+| `GetClientStatusString` | method, private | [116](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L116) · [body 1031](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1031) | [`TBoldClientInfo.GetClientStatusString`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L989) | 🟢 ported |  |
+| `Create` | constructor | [119](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L119) · [body 960](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L960) | [`TBoldClientInfo.TBoldClientInfo`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L926) | 🟢 ported |  |
+| `Destroy` | destructor | [120](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L120) · [body 967](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L967) | [`TBoldClientInfo.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L933) | 🟢 ported |  |
+| `Initialize` | method | [121](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L121) · [body 973](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L973) | [`TBoldClientInfo.Initialize`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L941) | 🟢 ported |  |
+| `UnInitialize` | method | [123](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L123) · [body 995](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L995) | [`TBoldClientInfo.UnInitialize`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L965) | 🟢 ported |  |
+| `ExtendLease` | method | [124](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L124) · [body 1041](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1041) | [`TBoldClientInfo.ExtendLease`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L999) | 🟢 ported: Leases of a day or more work; Delphi's TTimeStamp arithmetic took the duration as a time of day. |  |
+| `ClientID` | property | [125](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L125) | [`TBoldClientInfo.ClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1005) | 🟢 ported |  |
+| `LeaseDuration` | property | [126](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L126) | [`TBoldClientInfo.LeaseDuration`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1006) | 🟢 ported |  |
+| `PollingInterval` | property | [127](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L127) | [`TBoldClientInfo.PollingInterval`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1007) | 🟢 ported |  |
+| `LeaseTimeOut` | property | [128](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L128) | [`TBoldClientInfo.LeaseTimeOut`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1008) | 🟢 ported |  |
+| `ClientIdentifierString` | property | [129](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L129) | [`TBoldClientInfo.ClientIdentifierString`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1009) | 🟢 ported |  |
+| `Initialized` | property | [130](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L130) | [`TBoldClientInfo.Initialized`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1010) | 🟢 ported |  |
+| `RegistrationTime` | property | [131](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L131) | [`TBoldClientInfo.RegistrationTime`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1011) | 🟢 ported |  |
+| `ClientStatusString` | property | [132](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L132) | [`TBoldClientInfo.ClientStatusString`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1012) | 🟢 ported |  |
 
 ## TBoldClientInfoList
 
-class at [line 136](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L136); ⚪ not started.
+class at [line 136](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L136); 🟢 ported, C# [`TBoldClientInfoList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1017).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [140](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L140) · [body 1096](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1096) |  | ⚪ not started |  |
-| `SetItem` | method, private | [141](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L141) · [body 1106](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1106) |  | ⚪ not started |  |
-| `getCount` | method, private | [142](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L142) · [body 1117](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1117) |  | ⚪ not started |  |
-| `EnsureListCapacity` | method, private | [143](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L143) · [body 1082](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1082) |  | ⚪ not started |  |
-| `GetFreeClientID` | method, protected | [145](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L145) · [body 1149](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1149) |  | ⚪ not started |  |
-| `ReturnFreeClientID` | method, protected | [146](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L146) · [body 1156](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1156) |  | ⚪ not started |  |
-| `Create` | constructor | [148](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L148) · [body 1053](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1053) |  | ⚪ not started |  |
-| `Destroy` | destructor | [149](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L149) · [body 1060](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1060) |  | ⚪ not started |  |
-| `Add` | method | [150](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L150) · [body 1067](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1067) |  | ⚪ not started |  |
-| `Clear` | method | [151](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L151) · [body 1144](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1144) |  | ⚪ not started |  |
-| `Remove` | method | [152](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L152) · [body 1072](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1072) |  | ⚪ not started |  |
-| `IndexOf` | method | [153](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L153) · [body 1077](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1077) |  | ⚪ not started |  |
-| `Insert` | method | [154](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L154) · [body 1112](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1112) |  | ⚪ not started |  |
-| `Last` | method | [155](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L155) · [body 1122](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1122) |  | ⚪ not started |  |
-| `Delete` | method | [156](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L156) · [body 1127](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1127) |  | ⚪ not started |  |
-| `GetExistingClientInfo` | method | [157](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L157) · [body 1132](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1132) |  | ⚪ not started |  |
-| `Items` | property | [158](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L158) |  | ⚪ not started |  |
-| `Count` | property | [159](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L159) |  | ⚪ not started |  |
+| `GetItem` | method, private | [140](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L140) · [body 1096](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1096) | [`TBoldClientInfoList.GetItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1040) | 🟢 ported |  |
+| `SetItem` | method, private | [141](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L141) · [body 1106](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1106) | [`TBoldClientInfoList.SetItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1054) | 🟢 ported |  |
+| `getCount` | method, private | [142](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L142) · [body 1117](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1117) | [`TBoldClientInfoList.getCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1061) | 🟢 ported |  |
+| `EnsureListCapacity` | method, private | [143](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L143) · [body 1082](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1082) | [`TBoldClientInfoList.EnsureListCapacity`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1065) | 🟢 ported |  |
+| `GetFreeClientID` | method, protected | [145](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L145) · [body 1149](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1149) | [`TBoldClientInfoList.GetFreeClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1084) | 🟢 ported |  |
+| `ReturnFreeClientID` | method, protected | [146](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L146) · [body 1156](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1156) | [`TBoldClientInfoList.ReturnFreeClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1093) | 🟢 ported |  |
+| `Create` | constructor | [148](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L148) · [body 1053](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1053) | [`TBoldClientInfoList.TBoldClientInfoList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1023) | 🟢 ported |  |
+| `Destroy` | destructor | [149](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L149) · [body 1060](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1060) | [`TBoldClientInfoList.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1031) | 🟢 ported |  |
+| `Add` | method | [150](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L150) · [body 1067](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1067) | [`TBoldClientInfoList.Add`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1096) | 🟢 ported |  |
+| `Clear` | method | [151](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L151) · [body 1144](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1144) | [`TBoldClientInfoList.Clear`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1099) | 🟢 ported |  |
+| `Remove` | method | [152](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L152) · [body 1072](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1072) | [`TBoldClientInfoList.Remove`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1102) | 🟢 ported |  |
+| `IndexOf` | method | [153](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L153) · [body 1077](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1077) | [`TBoldClientInfoList.IndexOf`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1105) | 🟢 ported |  |
+| `Insert` | method | [154](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L154) · [body 1112](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1112) | [`TBoldClientInfoList.Insert`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1108) | 🟢 ported |  |
+| `Last` | method | [155](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L155) · [body 1122](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1122) | [`TBoldClientInfoList.Last`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1111) | 🟢 ported |  |
+| `Delete` | method | [156](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L156) · [body 1127](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1127) | [`TBoldClientInfoList.Delete`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1114) | 🟢 ported |  |
+| `GetExistingClientInfo` | method | [157](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L157) · [body 1132](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L1132) | [`TBoldClientInfoList.GetExistingClientInfo`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1118) | 🟢 ported |  |
+| `Items` | property | [158](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L158) | [`TBoldClientInfoList.this`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1122) | 🟢 ported |  |
+| `Count` | property | [159](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L159) | [`TBoldClientInfoList.Count`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1129) | 🟢 ported |  |
 
 ## IGlobalInterfaceTable
 
-interface at [line 173](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L173); ⚪ not started.
+interface at [line 173](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L173); ⚫ dropped, C# [`[assembly: Delphi] in BoldClientHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L5).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `RegisterInterfaceInGlobal` | method | [175](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L175) |  | ⚪ not started |  |
-| `RevokeInterfaceFromGlobal` | method | [177](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L177) |  | ⚪ not started |  |
-| `GetInterfaceFromGlobal` | method | [178](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L178) |  | ⚪ not started |  |
+| `RegisterInterfaceInGlobal` | method | [175](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L175) | [`[assembly: Delphi] in BoldClientHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L6) | ⚫ dropped: COM's global interface table. |  |
+| `RevokeInterfaceFromGlobal` | method | [177](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L177) | [`[assembly: Delphi] in BoldClientHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L7) | ⚫ dropped: COM's global interface table. |  |
+| `GetInterfaceFromGlobal` | method | [178](../../../Source/Propagator/Enterprise/BoldClientHandler.pas#L178) | [`[assembly: Delphi] in BoldClientHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L8) | ⚫ dropped: COM's global interface table. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldClientHandler.IntervalToStr`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L902) (method)
+- [`TBoldClientInfo.fBoldListener`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L916) (field)
+- [`TBoldClientInfo.fSuccessfullyReceivedEventsCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L917) (field)
+- [`TBoldClientInfo.fSuccessfullyReceivedCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L918) (field)
+- [`TBoldClientInfo.fLastSuccessfullReceive`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L919) (field)
+- [`TBoldClientInfo.fLongestIntervalBetweenEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L920) (field)
+- [`TBoldClientInfo.fLostEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L921) (field)
+- [`TBoldClientInfo.fClientStatus`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L922) (field)
+- [`TBoldClientInfo.fInitialized`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L923) (field)
+- [`TBoldClientInfoList.fList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientHandler.cs#L1019) (field)
 
 ## Dependencies
 

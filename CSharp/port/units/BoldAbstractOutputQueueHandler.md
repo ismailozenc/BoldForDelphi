@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas`](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas) (22 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 5 symbols done, 0 verified |
+| Status | 🟢 ported: 5 of 5 symbols done, 0 verified |
 
-⚪ 5 not started
+🟢 5 ported
 
 ## Unit level
 
@@ -18,18 +18,18 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractOutputQueueHandler` | class | [12](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L12) |  | ⚪ not started |  |
+| `TBoldAbstractOutputQueueHandler` | class | [12](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L12) | [`TBoldAbstractOutputQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs#L8) | 🟢 ported |  |
 
 ## TBoldAbstractOutputQueueHandler
 
-class at [line 12](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L12); ⚪ not started.
+class at [line 12](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L12); 🟢 ported, C# [`TBoldAbstractOutputQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SendEvent` | method | [14](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L14) |  | ⚪ not started |  |
-| `ClearQueueForClient` | method | [15](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L15) |  | ⚪ not started |  |
-| `QueueCountForClient` | method | [16](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L16) |  | ⚪ not started |  |
-| `SendEventAndFlushQueue` | method | [17](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L17) |  | ⚪ not started |  |
+| `SendEvent` | method | [14](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L14) | [`TBoldAbstractOutputQueueHandler.SendEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs#L11) | 🟢 ported |  |
+| `ClearQueueForClient` | method | [15](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L15) | [`TBoldAbstractOutputQueueHandler.ClearQueueForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs#L14) | 🟢 ported |  |
+| `QueueCountForClient` | method | [16](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L16) | [`TBoldAbstractOutputQueueHandler.QueueCountForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs#L17) | 🟢 ported |  |
+| `SendEventAndFlushQueue` | method | [17](../../../Source/Propagator/Enterprise/BoldAbstractOutputQueueHandler.pas#L17) | [`TBoldAbstractOutputQueueHandler.SendEventAndFlushQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAbstractOutputQueueHandler.cs#L21) | 🟢 ported |  |
 
 ## Dependencies
 

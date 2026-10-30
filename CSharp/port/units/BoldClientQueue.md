@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldClientQueue.pas`](../../../Source/Propagator/Enterprise/BoldClientQueue.pas) (50 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
 
-⚪ 3 not started
+🟢 3 ported
 
 ## Unit level
 
@@ -18,16 +18,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldClientQueue` | class | [15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15) |  | ⚪ not started |  |
+| `TBoldClientQueue` | class | [15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15) | [`TBoldClientQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L8) | 🟢 ported |  |
 
 ## TBoldClientQueue
 
-class at [line 15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L15); 🟢 ported, C# [`TBoldClientQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `AsVarArray` | method | [19](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L19) · [body 31](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L31) |  | ⚪ not started |  |
-| `BoldClientID` | property | [20](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L20) |  | ⚪ not started |  |
+| `AsVarArray` | method | [19](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L19) · [body 31](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L31) | [`TBoldClientQueue.AsVarArray`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L12) | 🟢 ported: A string array where Delphi made a variant array. |  |
+| `BoldClientID` | property | [20](../../../Source/Propagator/Enterprise/BoldClientQueue.pas#L20) | [`TBoldClientQueue.BoldClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientQueue.cs#L37) | 🟢 ported |  |
 
 ## Dependencies
 

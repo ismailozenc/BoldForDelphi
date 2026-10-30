@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldLockManager.pas`](../../../Source/Propagator/Enterprise/BoldLockManager.pas) (241 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 14 symbols done, 0 verified |
+| Status | 🟢 ported: 14 of 14 symbols done, 0 verified |
 
-⚪ 14 not started
+🟢 14 ported
 
 ## Unit level
 
@@ -18,27 +18,35 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLockManager` | class | [19](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L19) |  | ⚪ not started |  |
+| `TBoldLockManager` | class | [19](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L19) | [`TBoldLockManager`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L18) | 🟢 ported |  |
 
 ## TBoldLockManager
 
-class at [line 19](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L19); 🟢 ported, C# [`TBoldLockManager`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CanAcquireLocks` | method, protected | [25](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L25) · [body 67](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L67) |  | ⚪ not started |  |
-| `AcquireLocks` | method, protected | [27](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L27) · [body 55](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L55) |  | ⚪ not started |  |
-| `Create` | constructor | [30](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L30) · [body 112](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L112) |  | ⚪ not started |  |
-| `Destroy` | destructor | [31](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L31) · [body 120](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L120) |  | ⚪ not started |  |
-| `GetLocks` | method | [32](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L32) · [body 126](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L126) |  | ⚪ not started |  |
-| `ReleaseLocks` | method | [35](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L35) · [body 188](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L188) |  | ⚪ not started |  |
-| `EnsureLocks` | method | [36](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L36) · [body 216](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L216) |  | ⚪ not started |  |
-| `ReleaseAllLocksForClient` | method | [37](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L37) · [body 181](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L181) |  | ⚪ not started |  |
-| `_Receive` | method | [38](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L38) · [body 197](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L197) |  | ⚪ not started |  |
-| `HasLocks` | method | [40](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L40) · [body 210](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L210) |  | ⚪ not started |  |
-| `HandedLocks` | property | [41](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L41) |  | ⚪ not started |  |
-| `Propagator` | property | [42](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L42) |  | ⚪ not started |  |
-| `Suspended` | property | [43](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L43) |  | ⚪ not started |  |
+| `CanAcquireLocks` | method, protected | [25](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L25) · [body 67](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L67) | [`TBoldLockManager.CanAcquireLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L53) | 🟢 ported: Collects the lock-lost events for the caller to send outside the lock. |  |
+| `AcquireLocks` | method, protected | [27](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L27) · [body 55](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L55) | [`TBoldLockManager.AcquireLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L101) | 🟢 ported |  |
+| `Create` | constructor | [30](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L30) · [body 112](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L112) | [`TBoldLockManager.TBoldLockManager`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L28) | 🟢 ported |  |
+| `Destroy` | destructor | [31](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L31) · [body 120](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L120) | [`TBoldLockManager.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L37) | 🟢 ported |  |
+| `GetLocks` | method | [32](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L32) · [body 126](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L126) | [`TBoldLockManager.GetLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L119) | 🟢 ported: String arrays (null when empty) where Delphi gave variant arrays (Null when empty). |  |
+| `ReleaseLocks` | method | [35](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L35) · [body 188](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L188) | [`TBoldLockManager.ReleaseLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L176) | 🟢 ported |  |
+| `EnsureLocks` | method | [36](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L36) · [body 216](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L216) | [`TBoldLockManager.EnsureLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L192) | 🟢 ported |  |
+| `ReleaseAllLocksForClient` | method | [37](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L37) · [body 181](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L181) | [`TBoldLockManager.ReleaseAllLocksForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L224) | 🟢 ported |  |
+| `_Receive` | method | [38](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L38) · [body 197](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L197) | [`TBoldLockManager._Receive`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L237) | 🟢 ported |  |
+| `HasLocks` | method | [40](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L40) · [body 210](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L210) | [`TBoldLockManager.HasLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L251) | 🟢 ported |  |
+| `HandedLocks` | property | [41](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L41) | [`TBoldLockManager.HandedLocks`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L260) | 🟢 ported |  |
+| `Propagator` | property | [42](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L42) | [`TBoldLockManager.Propagator`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L267) | 🟢 ported |  |
+| `Suspended` | property | [43](../../../Source/Propagator/Enterprise/BoldLockManager.pas#L43) | [`TBoldLockManager.Suspended`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L274) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldLockManager.Locker`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L25) (field)
+- [`TBoldLockManager.GetHandlesExtendedEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L245) (method)
+- [`TBoldLockManager.ReceiveExtended`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldLockManager.cs#L247) (method)
 
 ## Dependencies
 

@@ -153,6 +153,7 @@ public sealed class PortAnalysis
 {
     private readonly Dictionary<CsDeclaration, List<Marker>> _markersByDeclaration = [];
     private readonly Dictionary<DelphiSymbol, SymbolStatus> _status = [];
+    private readonly Dictionary<(string File, string Type), string> _renamedTypes = [];
 
     private PortAnalysis(RepoLayout layout, DelphiInventory delphi, CSharpInventory csharp, PortMap map, TestResults results)
     {
@@ -375,6 +376,14 @@ public sealed class PortAnalysis
 
     private void ResolveMarkers()
     {
+        // A C# type that cannot have its Delphi name (two units declare the name) names it with Symbol; its members
+        // are then inferred under the Delphi name.
+        _renamedTypes.Clear();
+        foreach (var marker in Markers.Where(m => m.Declaration is { IsType: true } && m.Symbol is not null && !m.Symbol.Contains('.')))
+        {
+            _renamedTypes.TryAdd((marker.File, marker.Declaration!.FullName), marker.Symbol!);
+        }
+
         foreach (var marker in Markers)
         {
             var unit = Delphi.Find(marker.Unit);
@@ -468,7 +477,9 @@ public sealed class PortAnalysis
             return Pick(types, declaration, unit, declaration.Name, location);
         }
 
-        string? owner = declaration.OwnerName;
+        string? owner = declaration.Owner is not null && _renamedTypes.TryGetValue((marker.File, declaration.Owner), out string? delphiName)
+            ? delphiName
+            : declaration.OwnerName;
         bool unitLevel = owner is not null && string.Equals(owner, unit.Name, StringComparison.OrdinalIgnoreCase);
         string? delphiOwner = unitLevel ? null : owner;
         List<DelphiSymbol> candidates;

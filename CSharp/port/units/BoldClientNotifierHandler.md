@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldClientNotifierHandler.pas`](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas) (496 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 35 symbols done, 0 verified |
+| Status | 🟢 ported: 35 of 35 symbols done, 0 verified |
 
-⚪ 35 not started
+🟢 35 ported
 
 ## Unit level
 
@@ -18,69 +18,78 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldClientNotifierHandler` | class | [31](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L31) |  | ⚪ not started |  |
-| `TBoldClientNotifierData` | class | [63](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L63) |  | ⚪ not started |  |
-| `TBoldClientNotifier` | class | [73](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L73) |  | ⚪ not started |  |
-| `TBoldClientNotifierPool` | class | [90](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L90) |  | ⚪ not started |  |
+| `TBoldClientNotifierHandler` | class | [31](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L31) | [`TBoldClientNotifierHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L14) | 🟢 ported |  |
+| `TBoldClientNotifierData` | class | [63](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L63) | [`TBoldClientNotifierData`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L275) | 🟢 ported |  |
+| `TBoldClientNotifier` | class | [73](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L73) | [`TBoldClientNotifier`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L295) | 🟢 ported |  |
+| `TBoldClientNotifierPool` | class | [90](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L90) | [`TBoldClientNotifierPool`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L401) | 🟢 ported |  |
 
 ## TBoldClientNotifierHandler
 
-class at [line 31](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L31); ⚪ not started.
+class at [line 31](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L31); 🟢 ported, C# [`TBoldClientNotifierHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetTimer` | method, private | [40](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L40) · [body 234](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L234) |  | ⚪ not started |  |
-| `getTimer` | method, private | [41](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L41) · [body 153](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L153) |  | ⚪ not started |  |
-| `getClientNotifierPool` | method, private | [42](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L42) · [body 148](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L148) |  | ⚪ not started |  |
-| `OnTimer` | method, private | [43](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L43) · [body 177](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L177) |  | ⚪ not started |  |
-| `SendToClient` | method, private | [44](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L44) · [body 183](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L183) |  | ⚪ not started |  |
-| `SetPriorityList` | method, private | [45](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L45) · [body 283](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L283) |  | ⚪ not started |  |
-| `getPriorityList` | method, private | [46](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L46) · [body 278](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L278) |  | ⚪ not started |  |
-| `getClientHandler` | method, protected | [48](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L48) · [body 143](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L143) |  | ⚪ not started |  |
-| `ProcessPriorityListHead` | method, protected | [49](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L49) · [body 212](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L212) |  | ⚪ not started |  |
-| `ProcessScheduledClientsHead` | method, protected | [50](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L50) · [body 265](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L265) |  | ⚪ not started |  |
-| `DisconnectClient` | method, protected | [51](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L51) · [body 252](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L252) |  | ⚪ not started |  |
-| `ClientNotifierPool` | property, protected | [52](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L52) |  | ⚪ not started |  |
-| `Timer` | property, protected | [53](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L53) |  | ⚪ not started |  |
-| `ClientHandler` | property, protected | [54](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L54) |  | ⚪ not started |  |
-| `Create` | constructor | [56](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L56) · [body 241](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L241) |  | ⚪ not started |  |
-| `Destroy` | destructor | [57](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L57) · [body 258](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L258) |  | ⚪ not started |  |
-| `Execute` | method | [58](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L58) · [body 113](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L113) |  | ⚪ not started |  |
-| `OnPriorityChanged` | method | [59](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L59) · [body 166](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L166) |  | ⚪ not started |  |
-| `PriorityList` | property | [60](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L60) |  | ⚪ not started |  |
+| `SetTimer` | method, private | [40](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L40) · [body 234](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L234) | [`TBoldClientNotifierHandler.SetTimer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L224) | 🟢 ported: Waits the whole time to the time stamp; Delphi took the times of day only. |  |
+| `getTimer` | method, private | [41](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L41) · [body 153](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L153) | [`TBoldClientNotifierHandler.getTimer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L105) | 🟢 ported |  |
+| `getClientNotifierPool` | method, private | [42](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L42) · [body 148](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L148) | [`TBoldClientNotifierHandler.getClientNotifierPool`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L101) | 🟢 ported |  |
+| `OnTimer` | method, private | [43](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L43) · [body 177](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L177) | [`TBoldClientNotifierHandler.OnTimer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L133) | 🟢 ported |  |
+| `SendToClient` | method, private | [44](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L44) · [body 183](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L183) | [`TBoldClientNotifierHandler.SendToClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L141) | 🟢 ported: Yields while every notifier is busy; Delphi spun. |  |
+| `SetPriorityList` | method, private | [45](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L45) · [body 283](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L283) | [`TBoldClientNotifierHandler.SetPriorityList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L239) | 🟢 ported: Unhooks the old list; Delphi hooked it again. |  |
+| `getPriorityList` | method, private | [46](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L46) · [body 278](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L278) | [`TBoldClientNotifierHandler.getPriorityList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L236) | 🟢 ported |  |
+| `getClientHandler` | method, protected | [48](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L48) · [body 143](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L143) | [`TBoldClientNotifierHandler.getClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L98) | 🟢 ported |  |
+| `ProcessPriorityListHead` | method, protected | [49](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L49) · [body 212](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L212) | [`TBoldClientNotifierHandler.ProcessPriorityListHead`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L183) | 🟢 ported: Compares whole time stamps; Delphi compared dates and times apart (its FIXME). |  |
+| `ProcessScheduledClientsHead` | method, protected | [50](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L50) · [body 265](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L265) | [`TBoldClientNotifierHandler.ProcessScheduledClientsHead`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L208) | 🟢 ported |  |
+| `DisconnectClient` | method, protected | [51](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L51) · [body 252](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L252) | [`TBoldClientNotifierHandler.DisconnectClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L233) | 🟢 ported |  |
+| `ClientNotifierPool` | property, protected | [52](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L52) | [`TBoldClientNotifierHandler.ClientNotifierPool`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L257) | 🟢 ported |  |
+| `Timer` | property, protected | [53](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L53) | [`TBoldClientNotifierHandler.Timer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L260) | 🟢 ported |  |
+| `ClientHandler` | property, protected | [54](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L54) | [`TBoldClientNotifierHandler.ClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L263) | 🟢 ported |  |
+| `Create` | constructor | [56](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L56) · [body 241](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L241) | [`TBoldClientNotifierHandler.TBoldClientNotifierHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L25) | 🟢 ported |  |
+| `Destroy` | destructor | [57](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L57) · [body 258](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L258) | [`TBoldClientNotifierHandler.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L37) | 🟢 ported |  |
+| `Execute` | method | [58](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L58) · [body 113](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L113) | [`TBoldClientNotifierHandler.Execute`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L50) | 🟢 ported: Yields while every notifier is busy; Delphi spun. |  |
+| `OnPriorityChanged` | method | [59](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L59) · [body 166](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L166) | [`TBoldClientNotifierHandler.OnPriorityChanged`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L123) | 🟢 ported |  |
+| `PriorityList` | property | [60](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L60) | [`TBoldClientNotifierHandler.PriorityList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L266) | 🟢 ported |  |
 
 ## TBoldClientNotifierData
 
-class at [line 63](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L63); ⚪ not started.
+class at [line 63](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L63); 🟢 ported, C# [`TBoldClientNotifierData`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L275).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CreateInitialized` | constructor | [70](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L70) · [body 485](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L485) |  | ⚪ not started |  |
+| `CreateInitialized` | constructor | [70](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L70) · [body 485](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L485) | [`TBoldClientNotifierData.TBoldClientNotifierData`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L282) | 🟢 ported: Takes a string array where Delphi took a variant. |  |
 
 ## TBoldClientNotifier
 
-class at [line 73](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L73); ⚪ not started.
+class at [line 73](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L73); 🟢 ported, C# [`TBoldClientNotifier`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L295).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetAvailable` | method, private | [78](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L78) · [body 402](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L402) |  | ⚪ not started |  |
-| `IsAvailable` | property, protected | [80](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L80) |  | ⚪ not started |  |
-| `SetClientData` | method, protected | [81](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L81) · [body 407](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L407) |  | ⚪ not started |  |
-| `DoWork` | method, protected | [82](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L82) · [body 414](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L414) |  | ⚪ not started |  |
-| `Owner` | property, protected | [83](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L83) |  | ⚪ not started |  |
-| `Create` | constructor | [85](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L85) · [body 298](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L298) |  | ⚪ not started |  |
-| `Destroy` | destructor | [86](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L86) · [body 396](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L396) |  | ⚪ not started |  |
-| `Execute` | method | [87](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L87) · [body 305](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L305) |  | ⚪ not started |  |
+| `GetAvailable` | method, private | [78](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L78) · [body 402](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L402) | [`TBoldClientNotifier.GetAvailable`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L317) | 🟢 ported |  |
+| `IsAvailable` | property, protected | [80](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L80) | [`TBoldClientNotifier.IsAvailable`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L320) | 🟢 ported |  |
+| `SetClientData` | method, protected | [81](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L81) · [body 407](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L407) | [`TBoldClientNotifier.SetClientData`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L324) | 🟢 ported |  |
+| `DoWork` | method, protected | [82](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L82) · [body 414](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L414) | [`TBoldClientNotifier.DoWork`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L331) | 🟢 ported |  |
+| `Owner` | property, protected | [83](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L83) | [`TBoldClientNotifier.Owner`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L334) | 🟢 ported |  |
+| `Create` | constructor | [85](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L85) · [body 298](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L298) | [`TBoldClientNotifier.TBoldClientNotifier`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L302) | 🟢 ported |  |
+| `Destroy` | destructor | [86](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L86) · [body 396](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L396) | [`TBoldClientNotifier.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L310) | 🟢 ported |  |
+| `Execute` | method | [87](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L87) · [body 305](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L305) | [`TBoldClientNotifier.Execute`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L337) | 🟢 ported |  |
 
 ## TBoldClientNotifierPool
 
-class at [line 90](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L90); ⚪ not started.
+class at [line 90](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L90); 🟢 ported, C# [`TBoldClientNotifierPool`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L401).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ScheduleClientNotifier` | method, protected | [96](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L96) · [body 464](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L464) |  | ⚪ not started |  |
-| `Create` | constructor | [98](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L98) · [body 421](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L421) |  | ⚪ not started |  |
-| `Destroy` | destructor | [99](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L99) · [body 439](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L439) |  | ⚪ not started |  |
+| `ScheduleClientNotifier` | method, protected | [96](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L96) · [body 464](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L464) | [`TBoldClientNotifierPool.ScheduleClientNotifier`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L447) | 🟢 ported |  |
+| `Create` | constructor | [98](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L98) · [body 421](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L421) | [`TBoldClientNotifierPool.TBoldClientNotifierPool`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L408) | 🟢 ported |  |
+| `Destroy` | destructor | [99](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L99) · [body 439](../../../Source/Propagator/Enterprise/BoldClientNotifierHandler.pas#L439) | [`TBoldClientNotifierPool.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L424) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldClientNotifierHandler.fDisconnectClientsOnSendFailure`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L22) (field)
+- [`TBoldClientNotifierData.FClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L277) (field)
+- [`TBoldClientNotifierData.FRegistrationTime`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L278) (field)
+- [`TBoldClientNotifierData.FEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldClientNotifierHandler.cs#L279) (field)
 
 ## Dependencies
 

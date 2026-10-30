@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas`](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas) (101 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
+| Status | 🟢 ported: 18 of 18 symbols done, 0 verified |
 | Note | COM type library; ported as plain C# interfaces. |
 
-⚪ 18 not started
+🟢 16 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -19,38 +19,38 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BoldLockingSupportInterfacesMajorVersion` | const | [49](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L49) |  | ⚪ not started |  |
-| `BoldLockingSupportInterfacesMinorVersion` | const | [50](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L50) |  | ⚪ not started |  |
-| `LIBID_BoldLockingSupportInterfaces` | const | [52](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L52) |  | ⚪ not started |  |
-| `IID_IBoldLockManager` | const | [54](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L54) |  | ⚪ not started |  |
-| `IID_IBoldLockManagerAdmin` | const | [55](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L55) |  | ⚪ not started |  |
-| `IBoldLockManager` | interface | [69](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L69) |  | ⚪ not started |  |
-| `IBoldLockManagerAdmin` | interface | [84](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L84) |  | ⚪ not started |  |
+| `BoldLockingSupportInterfacesMajorVersion` | const | [49](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L49) | [`BoldLockingSupportInterfaces_TLB.BoldLockingSupportInterfacesMajorVersion`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L57) | 🟢 ported |  |
+| `BoldLockingSupportInterfacesMinorVersion` | const | [50](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L50) | [`BoldLockingSupportInterfaces_TLB.BoldLockingSupportInterfacesMinorVersion`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L58) | 🟢 ported |  |
+| `LIBID_BoldLockingSupportInterfaces` | const | [52](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L52) | [`BoldLockingSupportInterfaces_TLB.LIBID_BoldLockingSupportInterfaces`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L59) | 🟢 ported |  |
+| `IID_IBoldLockManager` | const | [54](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L54) | [`BoldLockingSupportInterfaces_TLB.IID_IBoldLockManager`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L60) | 🟢 ported |  |
+| `IID_IBoldLockManagerAdmin` | const | [55](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L55) | [`BoldLockingSupportInterfaces_TLB.IID_IBoldLockManagerAdmin`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L61) | 🟢 ported |  |
+| `IBoldLockManager` | interface | [69](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L69) | [`IBoldLockManager`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L11) | 🟢 ported: A C# interface where Delphi has a COM interface. |  |
+| `IBoldLockManagerAdmin` | interface | [84](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L84) | [`IBoldLockManagerAdmin`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L31) | 🟢 ported: A C# interface where Delphi has a COM interface. |  |
 
 ## IBoldLockManager
 
-interface at [line 69](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L69); ⚪ not started.
+interface at [line 69](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L69); 🟢 ported, C# [`IBoldLockManager`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLocks` | method | [71](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L71) |  | ⚪ not started |  |
-| `ReleaseLocks` | method | [74](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L74) |  | ⚪ not started |  |
-| `EnsureLocks` | method | [75](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L75) |  | ⚪ not started |  |
+| `GetLocks` | method | [71](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L71) | [`IBoldLockManager.GetLocks`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L18) | 🟢 ported |  |
+| `ReleaseLocks` | method | [74](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L74) | [`IBoldLockManager.ReleaseLocks`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L22) | 🟢 ported |  |
+| `EnsureLocks` | method | [75](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L75) | [`IBoldLockManager.EnsureLocks`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L26) | 🟢 ported |  |
 
 ## IBoldLockManagerAdmin
 
-interface at [line 84](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L84); ⚪ not started.
+interface at [line 84](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L84); 🟢 ported, C# [`IBoldLockManagerAdmin`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L31).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ListAllClients` | method | [86](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L86) |  | ⚪ not started |  |
-| `RemoveLocksForClient` | method | [87](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L87) |  | ⚪ not started |  |
-| `KillClient` | method | [88](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L88) |  | ⚪ not started |  |
-| `LocksForClients` | method | [89](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L89) |  | ⚪ not started |  |
-| `ListLockingClients` | method | [91](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L91) |  | ⚪ not started |  |
-| `Get_LockManagerSuspended` | method | [92](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L92) |  | ⚪ not started |  |
-| `Set_LockManagerSuspended` | method | [93](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L93) |  | ⚪ not started |  |
-| `LockManagerSuspended` | property | [94](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L94) |  | ⚪ not started |  |
+| `ListAllClients` | method | [86](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L86) | [`IBoldLockManagerAdmin.ListAllClients`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L34) | 🟢 ported |  |
+| `RemoveLocksForClient` | method | [87](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L87) | [`IBoldLockManagerAdmin.RemoveLocksForClient`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L37) | 🟢 ported |  |
+| `KillClient` | method | [88](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L88) | [`IBoldLockManagerAdmin.KillClient`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L40) | 🟢 ported |  |
+| `LocksForClients` | method | [89](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L89) | [`IBoldLockManagerAdmin.LocksForClients`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L43) | 🟢 ported |  |
+| `ListLockingClients` | method | [91](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L91) | [`IBoldLockManagerAdmin.ListLockingClients`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L46) | 🟢 ported |  |
+| `Get_LockManagerSuspended` | method | [92](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L92) | [`IBoldLockManagerAdmin.LockManagerSuspended`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L51) | 🔵 replaced: The property's getter. |  |
+| `Set_LockManagerSuspended` | method | [93](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L93) | [`IBoldLockManagerAdmin.LockManagerSuspended`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L51) | 🔵 replaced: The property's setter. |  |
+| `LockManagerSuspended` | property | [94](../../../Source/Propagator/Common/BoldLockingSupportInterfaces_TLB.pas#L94) | [`IBoldLockManagerAdmin.LockManagerSuspended`](../../src/Bold.Propagation/Propagator/Common/BoldLockingSupportInterfaces_TLB.cs#L51) | 🟢 ported |  |
 
 ## Dependencies
 

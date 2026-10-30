@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldAdvancedPropagator.pas`](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas) (170 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 16 symbols done, 0 verified |
+| Status | 🟢 ported: 16 of 16 symbols done, 0 verified |
 
-⚪ 16 not started
+🟢 14 ported · ⚫ 2 dropped
 
 ## Unit level
 
@@ -18,29 +18,29 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAdvancedPropagator` | class | [26](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L26) |  | ⚪ not started |  |
+| `TBoldAdvancedPropagator` | class | [26](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L26) | [`TBoldAdvancedPropagator`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L14) | 🟢 ported |  |
 
 ## TBoldAdvancedPropagator
 
-class at [line 26](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L26); 🟢 ported, C# [`TBoldAdvancedPropagator`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `StartDequeue` | method, private | [41](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L41) · [body 159](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L159) |  | ⚪ not started |  |
-| `DoneDequeue` | method, private | [42](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L42) · [body 149](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L149) |  | ⚪ not started |  |
-| `getClientHandler` | method, protected | [44](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L44) · [body 165](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L165) |  | ⚪ not started |  |
-| `Create` | constructor | [46](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L46) · [body 140](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L140) |  | ⚪ not started |  |
-| `Destroy` | destructor | [47](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L47) · [body 96](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L96) |  | ⚪ not started |  |
-| `SetConfigurationParams` | method | [48](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L48) · [body 126](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L126) |  | ⚪ not started |  |
-| `Initialize` | method | [50](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L50) · [body 72](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L72) |  | ⚪ not started |  |
-| `ClientHandler` | property | [51](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L51) |  | ⚪ not started |  |
-| `Enqueuer` | property | [52](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L52) |  | ⚪ not started |  |
-| `Dequeuer` | property | [53](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L53) |  | ⚪ not started |  |
-| `ClientNotifierHandler` | property | [54](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L54) |  | ⚪ not started |  |
-| `PriorityListEnlister` | property | [55](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L55) |  | ⚪ not started |  |
-| `CleanUpSubscriber` | property | [56](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L56) |  | ⚪ not started |  |
-| `Initialized` | property | [57](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L57) |  | ⚪ not started |  |
-| `DisconnectClientsOnSendFailure` | property | [58](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L58) |  | ⚪ not started |  |
+| `StartDequeue` | method, private | [41](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L41) · [body 159](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L159) | [`[assembly: Delphi] in BoldAdvancedPropagator.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L4) | ⚫ dropped: Showed dequeuing in the propagator's form, which is not ported; TBoldDequeuer.OnStartDequeue is there for a user interface. |  |
+| `DoneDequeue` | method, private | [42](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L42) · [body 149](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L149) | [`[assembly: Delphi] in BoldAdvancedPropagator.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L5) | ⚫ dropped: Showed dequeuing in the propagator's form, which is not ported; TBoldDequeuer.OnDoneDequeue is there for a user interface. |  |
+| `getClientHandler` | method, protected | [44](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L44) · [body 165](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L165) | [`TBoldAdvancedPropagator.getClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L107) | 🟢 ported |  |
+| `Create` | constructor | [46](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L46) · [body 140](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L140) | [`TBoldAdvancedPropagator.TBoldAdvancedPropagator`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L32) | 🟢 ported |  |
+| `Destroy` | destructor | [47](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L47) · [body 96](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L96) | [`TBoldAdvancedPropagator.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L42) | 🟢 ported |  |
+| `SetConfigurationParams` | method | [48](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L48) · [body 126](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L126) | [`TBoldAdvancedPropagator.SetConfigurationParams`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L69) | 🟢 ported |  |
+| `Initialize` | method | [50](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L50) · [body 72](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L72) | [`TBoldAdvancedPropagator.Initialize`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L83) | 🟢 ported: Without the propagator's user interface manager, which is not ported. |  |
+| `ClientHandler` | property | [51](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L51) | [`TBoldAdvancedPropagator.ClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L109) | 🟢 ported |  |
+| `Enqueuer` | property | [52](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L52) | [`TBoldAdvancedPropagator.Enqueuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L110) | 🟢 ported |  |
+| `Dequeuer` | property | [53](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L53) | [`TBoldAdvancedPropagator.Dequeuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L111) | 🟢 ported |  |
+| `ClientNotifierHandler` | property | [54](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L54) | [`TBoldAdvancedPropagator.ClientNotifierHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L112) | 🟢 ported |  |
+| `PriorityListEnlister` | property | [55](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L55) | [`TBoldAdvancedPropagator.PriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L113) | 🟢 ported |  |
+| `CleanUpSubscriber` | property | [56](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L56) | [`TBoldAdvancedPropagator.CleanUpSubscriber`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L114) | 🟢 ported |  |
+| `Initialized` | property | [57](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L57) | [`TBoldAdvancedPropagator.Initialized`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L115) | 🟢 ported |  |
+| `DisconnectClientsOnSendFailure` | property | [58](../../../Source/Propagator/Enterprise/BoldAdvancedPropagator.pas#L58) | [`TBoldAdvancedPropagator.DisconnectClientsOnSendFailure`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldAdvancedPropagator.cs#L116) | 🟢 ported |  |
 
 ## Dependencies
 

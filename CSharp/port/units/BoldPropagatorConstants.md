@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Common/BoldPropagatorConstants.pas`](../../../Source/Propagator/Common/BoldPropagatorConstants.pas) (86 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 53 symbols done, 0 verified |
+| Status | 🟢 ported: 53 of 53 symbols done, 0 verified |
 
-⚪ 53 not started
+🟢 52 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,59 +18,67 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BM_PRIORITY_CHANGED` | const | [11](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L11) |  | ⚪ not started |  |
-| `BM_THRD_DOWORK` | const | [12](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L12) |  | ⚪ not started |  |
-| `BM_THRD_UNREGISTER` | const | [13](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L13) |  | ⚪ not started |  |
-| `BM_THRD_REGISTER` | const | [14](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L14) |  | ⚪ not started |  |
-| `BM_UNREGISTER_CLIENT` | const | [15](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L15) |  | ⚪ not started |  |
-| `BM_QUEUE_NOT_EMPTY` | const | [16](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L16) |  | ⚪ not started |  |
-| `BM_UNMARSHAL_INTERFACE` | const | [17](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L17) |  | ⚪ not started |  |
-| `BM_EXTEND_LEASE` | const | [18](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L18) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_CLIENT_REGISTERED` | const | [20](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L20) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_CLIENT_UNREGISTERED` | const | [21](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L21) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_CLIENT_DISCONNECTED` | const | [22](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L22) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_CLIENT_LEASE_EXTENDED` | const | [23](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L23) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_CLIENT_LEASE_CHANGED` | const | [24](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L24) |  | ⚪ not started |  |
-| `BM_REMOVE_CLIENT_QUEUE` | const | [25](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L25) |  | ⚪ not started |  |
-| `BM_UPDATE_CLIENT_INFO` | const | [27](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L27) |  | ⚪ not started |  |
-| `BM_REQUEST_CLIENT_INFO` | const | [28](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L28) |  | ⚪ not started |  |
-| `BM_UPDATE_GLOBAL_INFO` | const | [29](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L29) |  | ⚪ not started |  |
-| `BM_REQUEST_GLOBAL_INFO` | const | [30](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L30) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_DISPLAY_UPDATE_REQUEST` | const | [32](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L32) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_DISPLAY_STARTDEQUEUE` | const | [33](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L33) |  | ⚪ not started |  |
-| `BM_PROPAGATOR_DISPLAY_DONEDEQUEUE` | const | [34](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L34) |  | ⚪ not started |  |
-| `E_ENQUEUER_NOT_ENABLED` | const | [36](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L36) |  | ⚪ not started |  |
-| `E_CLIENT_NOT_REGISTERED` | const | [37](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L37) |  | ⚪ not started |  |
-| `E_INVALID_PARAMETER` | const | [38](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L38) |  | ⚪ not started |  |
-| `W_CLIENT_NOT_RECEIVING` | const | [39](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L39) |  | ⚪ not started |  |
-| `BOLD_START_CLIENTID` | const | [42](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L42) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_UNREGISTERED` | const | [45](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L45) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_LIST_NOT_EMPTY` | const | [46](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L46) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_LIST_EMPTY` | const | [47](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L47) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_LEASE_CHANGED` | const | [48](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L48) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_REGISTERED` | const | [49](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L49) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_LEASE_EXPIRED` | const | [50](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L50) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_LEASE_EXTENDED` | const | [51](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L51) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_REMOVED` | const | [52](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L52) |  | ⚪ not started |  |
-| `BOLD_PROPAGATOR_CLIENT_CONNECTION_LOST` | const | [53](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L53) |  | ⚪ not started |  |
-| `breUpdateDisplay` | const | [55](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L55) |  | ⚪ not started |  |
-| `breClearClientQueue` | const | [56](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L56) |  | ⚪ not started |  |
-| `breReleaseClientLocks` | const | [57](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L57) |  | ⚪ not started |  |
-| `breClientRemoved` | const | [58](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L58) |  | ⚪ not started |  |
-| `MINIMAL_CLIENT_INFO_LIST_GROWTH` | const | [60](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L60) |  | ⚪ not started |  |
-| `MINIMAL_FREE_CLIENTID_COUNT` | const | [61](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L61) |  | ⚪ not started |  |
-| `DEFAULT_LEASE_DURATION` | const | [62](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L62) |  | ⚪ not started |  |
-| `DEFAULT_EXTEND_LEASE_AFTER` | const | [63](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L63) |  | ⚪ not started |  |
-| `DEFAULT_POLLING_INTERVAL` | const | [64](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L64) |  | ⚪ not started |  |
-| `TIMEOUT` | const | [65](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L65) |  | ⚪ not started |  |
-| `DEFAULT_THREADPOOLSIZE` | const | [66](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L66) |  | ⚪ not started |  |
-| `DEFAULT_LOGFILESIZE` | const | [67](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L67) |  | ⚪ not started |  |
-| `DEFAULT_ENABLELOGGING` | const | [68](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L68) |  | ⚪ not started |  |
-| `DEFAULT_DISCONNECT_CLIENTS_ON_SENDFAILURE` | const | [69](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L69) |  | ⚪ not started |  |
-| `CLIENT_HANDLER_OBJECT_NAME` | const | [72](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L72) |  | ⚪ not started |  |
-| `ENQUEUER_OBJECT_NAME` | const | [73](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L73) |  | ⚪ not started |  |
-| `PBoldClientInfoRecord` | pointer | [76](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L76) |  | ⚪ not started |  |
-| `TBoldClientInfoRecord` | record | [78](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L78) |  | ⚪ not started |  |
+| `BM_PRIORITY_CHANGED` | const | [11](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L11) | [`BoldPropagatorConstants.BM_PRIORITY_CHANGED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L19) | 🟢 ported |  |
+| `BM_THRD_DOWORK` | const | [12](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L12) | [`BoldPropagatorConstants.BM_THRD_DOWORK`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L20) | 🟢 ported |  |
+| `BM_THRD_UNREGISTER` | const | [13](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L13) | [`BoldPropagatorConstants.BM_THRD_UNREGISTER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L21) | 🟢 ported |  |
+| `BM_THRD_REGISTER` | const | [14](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L14) | [`BoldPropagatorConstants.BM_THRD_REGISTER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L22) | 🟢 ported |  |
+| `BM_UNREGISTER_CLIENT` | const | [15](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L15) | [`BoldPropagatorConstants.BM_UNREGISTER_CLIENT`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L23) | 🟢 ported |  |
+| `BM_QUEUE_NOT_EMPTY` | const | [16](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L16) | [`BoldPropagatorConstants.BM_QUEUE_NOT_EMPTY`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L24) | 🟢 ported |  |
+| `BM_UNMARSHAL_INTERFACE` | const | [17](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L17) | [`BoldPropagatorConstants.BM_UNMARSHAL_INTERFACE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L25) | 🟢 ported |  |
+| `BM_EXTEND_LEASE` | const | [18](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L18) | [`BoldPropagatorConstants.BM_EXTEND_LEASE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L26) | 🟢 ported |  |
+| `BM_PROPAGATOR_CLIENT_REGISTERED` | const | [20](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L20) | [`BoldPropagatorConstants.BM_PROPAGATOR_CLIENT_REGISTERED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L28) | 🟢 ported |  |
+| `BM_PROPAGATOR_CLIENT_UNREGISTERED` | const | [21](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L21) | [`BoldPropagatorConstants.BM_PROPAGATOR_CLIENT_UNREGISTERED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L29) | 🟢 ported |  |
+| `BM_PROPAGATOR_CLIENT_DISCONNECTED` | const | [22](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L22) | [`BoldPropagatorConstants.BM_PROPAGATOR_CLIENT_DISCONNECTED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L30) | 🟢 ported |  |
+| `BM_PROPAGATOR_CLIENT_LEASE_EXTENDED` | const | [23](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L23) | [`BoldPropagatorConstants.BM_PROPAGATOR_CLIENT_LEASE_EXTENDED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L31) | 🟢 ported |  |
+| `BM_PROPAGATOR_CLIENT_LEASE_CHANGED` | const | [24](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L24) | [`BoldPropagatorConstants.BM_PROPAGATOR_CLIENT_LEASE_CHANGED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L32) | 🟢 ported |  |
+| `BM_REMOVE_CLIENT_QUEUE` | const | [25](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L25) | [`BoldPropagatorConstants.BM_REMOVE_CLIENT_QUEUE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L33) | 🟢 ported |  |
+| `BM_UPDATE_CLIENT_INFO` | const | [27](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L27) | [`BoldPropagatorConstants.BM_UPDATE_CLIENT_INFO`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L35) | 🟢 ported |  |
+| `BM_REQUEST_CLIENT_INFO` | const | [28](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L28) | [`BoldPropagatorConstants.BM_REQUEST_CLIENT_INFO`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L36) | 🟢 ported |  |
+| `BM_UPDATE_GLOBAL_INFO` | const | [29](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L29) | [`BoldPropagatorConstants.BM_UPDATE_GLOBAL_INFO`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L37) | 🟢 ported |  |
+| `BM_REQUEST_GLOBAL_INFO` | const | [30](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L30) | [`BoldPropagatorConstants.BM_REQUEST_GLOBAL_INFO`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L38) | 🟢 ported |  |
+| `BM_PROPAGATOR_DISPLAY_UPDATE_REQUEST` | const | [32](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L32) | [`BoldPropagatorConstants.BM_PROPAGATOR_DISPLAY_UPDATE_REQUEST`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L40) | 🟢 ported |  |
+| `BM_PROPAGATOR_DISPLAY_STARTDEQUEUE` | const | [33](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L33) | [`BoldPropagatorConstants.BM_PROPAGATOR_DISPLAY_STARTDEQUEUE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L41) | 🟢 ported |  |
+| `BM_PROPAGATOR_DISPLAY_DONEDEQUEUE` | const | [34](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L34) | [`BoldPropagatorConstants.BM_PROPAGATOR_DISPLAY_DONEDEQUEUE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L42) | 🟢 ported |  |
+| `E_ENQUEUER_NOT_ENABLED` | const | [36](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L36) | [`BoldPropagatorConstants.E_ENQUEUER_NOT_ENABLED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L44) | 🟢 ported |  |
+| `E_CLIENT_NOT_REGISTERED` | const | [37](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L37) | [`BoldPropagatorConstants.E_CLIENT_NOT_REGISTERED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L45) | 🟢 ported |  |
+| `E_INVALID_PARAMETER` | const | [38](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L38) | [`BoldPropagatorConstants.E_INVALID_PARAMETER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L46) | 🟢 ported |  |
+| `W_CLIENT_NOT_RECEIVING` | const | [39](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L39) | [`BoldPropagatorConstants.W_CLIENT_NOT_RECEIVING`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L47) | 🟢 ported |  |
+| `BOLD_START_CLIENTID` | const | [42](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L42) | [`BoldPropagatorConstants.BOLD_START_CLIENTID`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L49) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_UNREGISTERED` | const | [45](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L45) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_UNREGISTERED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L52) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_LIST_NOT_EMPTY` | const | [46](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L46) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_LIST_NOT_EMPTY`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L53) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_LIST_EMPTY` | const | [47](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L47) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_LIST_EMPTY`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L54) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_LEASE_CHANGED` | const | [48](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L48) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_LEASE_CHANGED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L55) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_REGISTERED` | const | [49](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L49) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_REGISTERED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L56) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_LEASE_EXPIRED` | const | [50](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L50) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_LEASE_EXPIRED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L57) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_LEASE_EXTENDED` | const | [51](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L51) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_LEASE_EXTENDED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L58) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_REMOVED` | const | [52](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L52) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_REMOVED`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L59) | 🟢 ported |  |
+| `BOLD_PROPAGATOR_CLIENT_CONNECTION_LOST` | const | [53](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L53) | [`BoldPropagatorConstants.BOLD_PROPAGATOR_CLIENT_CONNECTION_LOST`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L60) | 🟢 ported |  |
+| `breUpdateDisplay` | const | [55](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L55) | [`BoldPropagatorConstants.breUpdateDisplay`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L63) | 🟢 ported |  |
+| `breClearClientQueue` | const | [56](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L56) | [`BoldPropagatorConstants.breClearClientQueue`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L64) | 🟢 ported |  |
+| `breReleaseClientLocks` | const | [57](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L57) | [`BoldPropagatorConstants.breReleaseClientLocks`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L65) | 🟢 ported |  |
+| `breClientRemoved` | const | [58](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L58) | [`BoldPropagatorConstants.breClientRemoved`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L66) | 🟢 ported |  |
+| `MINIMAL_CLIENT_INFO_LIST_GROWTH` | const | [60](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L60) | [`BoldPropagatorConstants.MINIMAL_CLIENT_INFO_LIST_GROWTH`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L68) | 🟢 ported |  |
+| `MINIMAL_FREE_CLIENTID_COUNT` | const | [61](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L61) | [`BoldPropagatorConstants.MINIMAL_FREE_CLIENTID_COUNT`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L69) | 🟢 ported |  |
+| `DEFAULT_LEASE_DURATION` | const | [62](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L62) | [`BoldPropagatorConstants.DEFAULT_LEASE_DURATION`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L70) | 🟢 ported |  |
+| `DEFAULT_EXTEND_LEASE_AFTER` | const | [63](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L63) | [`BoldPropagatorConstants.DEFAULT_EXTEND_LEASE_AFTER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L71) | 🟢 ported |  |
+| `DEFAULT_POLLING_INTERVAL` | const | [64](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L64) | [`BoldPropagatorConstants.DEFAULT_POLLING_INTERVAL`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L72) | 🟢 ported |  |
+| `TIMEOUT` | const | [65](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L65) | [`BoldPropagatorConstants.TIMEOUT`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L73) | 🟢 ported |  |
+| `DEFAULT_THREADPOOLSIZE` | const | [66](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L66) | [`BoldPropagatorConstants.DEFAULT_THREADPOOLSIZE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L74) | 🟢 ported |  |
+| `DEFAULT_LOGFILESIZE` | const | [67](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L67) | [`BoldPropagatorConstants.DEFAULT_LOGFILESIZE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L75) | 🟢 ported |  |
+| `DEFAULT_ENABLELOGGING` | const | [68](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L68) | [`BoldPropagatorConstants.DEFAULT_ENABLELOGGING`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L76) | 🟢 ported |  |
+| `DEFAULT_DISCONNECT_CLIENTS_ON_SENDFAILURE` | const | [69](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L69) | [`BoldPropagatorConstants.DEFAULT_DISCONNECT_CLIENTS_ON_SENDFAILURE`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L77) | 🟢 ported |  |
+| `CLIENT_HANDLER_OBJECT_NAME` | const | [72](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L72) | [`BoldPropagatorConstants.CLIENT_HANDLER_OBJECT_NAME`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L80) | 🟢 ported |  |
+| `ENQUEUER_OBJECT_NAME` | const | [73](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L73) | [`BoldPropagatorConstants.ENQUEUER_OBJECT_NAME`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L81) | 🟢 ported |  |
+| `PBoldClientInfoRecord` | pointer | [76](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L76) | [`[assembly: Delphi] in BoldPropagatorConstants.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L3) | 🔵 replaced: A pointer type; C# passes the struct. |  |
+| `TBoldClientInfoRecord` | record | [78](../../../Source/Propagator/Common/BoldPropagatorConstants.pas#L78) | [`TBoldClientInfoRecord`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L9) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldClientInfoRecord.ClientId`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L11) (field)
+- [`TBoldClientInfoRecord.RegistrationTime`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L12) (field)
+- [`TBoldClientInfoRecord.LeaseTimeOut`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorConstants.cs#L13) (field)
 
 ## Dependencies
 

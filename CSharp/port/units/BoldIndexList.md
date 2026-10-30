@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldIndexList.pas`](../../../Source/Propagator/Enterprise/BoldIndexList.pas) (158 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 24 symbols done, 0 verified |
+| Status | 🟢 ported: 24 of 24 symbols done, 0 verified |
 
-⚪ 24 not started
+🟢 23 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,44 +18,44 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldIndexListClass` | class reference | [15](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L15) |  | ⚪ not started |  |
-| `TBoldIndexList` | class | [17](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L17) |  | ⚪ not started |  |
-| `TBoldAbstractMultiIndexedList` | class | [37](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L37) |  | ⚪ not started |  |
+| `TBoldIndexListClass` | class reference | [15](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L15) | [`[assembly: Delphi] in BoldIndexList.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L3) | 🔵 replaced: A System.Type of a TBoldIndexList subclass, created with its (IndexOrder) constructor. |  |
+| `TBoldIndexList` | class | [17](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L17) | [`TBoldIndexList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L12) | 🟢 ported |  |
+| `TBoldAbstractMultiIndexedList` | class | [37](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L37) | [`TBoldAbstractMultiIndexedList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L108) | 🟢 ported |  |
 
 ## TBoldIndexList
 
-class at [line 17](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L17); 🟢 ported, C# [`TBoldIndexList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getItem` | method, protected | [21](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L21) |  | ⚪ not started |  |
-| `setItem` | method, protected | [22](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L22) |  | ⚪ not started |  |
-| `getCount` | method, protected | [23](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L23) |  | ⚪ not started |  |
-| `InsertINode` | method, protected | [24](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L24) |  | ⚪ not started |  |
-| `DeleteINode` | method, protected | [25](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L25) · [body 105](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L105) |  | ⚪ not started |  |
-| `Create` | constructor | [27](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L27) · [body 75](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L75) |  | ⚪ not started |  |
-| `InsertNode` | method | [28](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L28) · [body 60](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L60) |  | ⚪ not started |  |
-| `DeleteINodeByKey` | method | [29](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L29) · [body 81](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L81) |  | ⚪ not started |  |
-| `DeleteNodes` | method | [30](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L30) |  | ⚪ not started |  |
-| `RemoveKey` | method | [31](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L31) · [body 86](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L86) |  | ⚪ not started |  |
-| `Items` | property | [32](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L32) |  | ⚪ not started |  |
-| `Count` | property | [33](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L33) |  | ⚪ not started |  |
-| `IndexOrder` | property | [34](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L34) |  | ⚪ not started |  |
+| `getItem` | method, protected | [21](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L21) | [`TBoldIndexList.getItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L24) | 🟢 ported |  |
+| `setItem` | method, protected | [22](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L22) | [`TBoldIndexList.setItem`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L27) | 🟢 ported |  |
+| `getCount` | method, protected | [23](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L23) | [`TBoldIndexList.getCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L30) | 🟢 ported |  |
+| `InsertINode` | method, protected | [24](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L24) | [`TBoldIndexList.InsertINode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L34) | 🟢 ported |  |
+| `DeleteINode` | method, protected | [25](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L25) · [body 105](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L105) | [`TBoldIndexList.DeleteINode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L38) | 🟢 ported |  |
+| `Create` | constructor | [27](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L27) · [body 75](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L75) | [`TBoldIndexList.TBoldIndexList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L18) | 🟢 ported |  |
+| `InsertNode` | method | [28](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L28) · [body 60](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L60) | [`TBoldIndexList.InsertNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L56) | 🟢 ported |  |
+| `DeleteINodeByKey` | method | [29](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L29) · [body 81](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L81) | [`TBoldIndexList.DeleteINodeByKey`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L67) | 🟢 ported |  |
+| `DeleteNodes` | method | [30](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L30) | [`TBoldIndexList.DeleteNodes`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L73) | 🟢 ported |  |
+| `RemoveKey` | method | [31](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L31) · [body 86](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L86) | [`TBoldIndexList.RemoveKey`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L77) | 🟢 ported |  |
+| `Items` | property | [32](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L32) | [`TBoldIndexList.this`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L93) | 🟢 ported |  |
+| `Count` | property | [33](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L33) | [`TBoldIndexList.Count`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L100) | 🟢 ported |  |
+| `IndexOrder` | property | [34](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L34) | [`TBoldIndexList.IndexOrder`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L103) | 🟢 ported |  |
 
 ## TBoldAbstractMultiIndexedList
 
-class at [line 37](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L37); ⚪ not started.
+class at [line 37](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L37); 🟢 ported, C# [`TBoldAbstractMultiIndexedList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L108).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getIndexList` | method, protected | [41](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L41) |  | ⚪ not started |  |
-| `setIndexList` | method, protected | [42](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L42) |  | ⚪ not started |  |
-| `Indices` | property, protected | [43](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L43) |  | ⚪ not started |  |
-| `Create` | constructor | [45](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L45) · [body 146](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L146) |  | ⚪ not started |  |
-| `AddIndex` | method | [46](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L46) · [body 127](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L127) |  | ⚪ not started |  |
-| `AddNode` | method | [47](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L47) · [body 135](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L135) |  | ⚪ not started |  |
-| `RemoveKey` | method | [48](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L48) · [body 152](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L152) |  | ⚪ not started |  |
-| `NumberOfIndices` | property | [49](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L49) |  | ⚪ not started |  |
+| `getIndexList` | method, protected | [41](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L41) | [`TBoldAbstractMultiIndexedList.getIndexList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L119) | 🟢 ported |  |
+| `setIndexList` | method, protected | [42](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L42) | [`TBoldAbstractMultiIndexedList.setIndexList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L122) | 🟢 ported |  |
+| `Indices` | property, protected | [43](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L43) | [`TBoldAbstractMultiIndexedList.Indices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L125) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
+| `Create` | constructor | [45](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L45) · [body 146](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L146) | [`TBoldAbstractMultiIndexedList.TBoldAbstractMultiIndexedList`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L113) | 🟢 ported |  |
+| `AddIndex` | method | [46](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L46) · [body 127](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L127) | [`TBoldAbstractMultiIndexedList.AddIndex`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L129) | 🟢 ported: Takes the subclass's System.Type. |  |
+| `AddNode` | method | [47](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L47) · [body 135](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L135) | [`TBoldAbstractMultiIndexedList.AddNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L139) | 🟢 ported |  |
+| `RemoveKey` | method | [48](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L48) · [body 152](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L152) | [`TBoldAbstractMultiIndexedList.RemoveKey`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L148) | 🟢 ported |  |
+| `NumberOfIndices` | property | [49](../../../Source/Propagator/Enterprise/BoldIndexList.pas#L49) | [`TBoldAbstractMultiIndexedList.NumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldIndexList.cs#L151) | 🟢 ported |  |
 
 ## Dependencies
 

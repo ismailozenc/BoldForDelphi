@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas`](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas) (203 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 17 symbols done, 0 verified |
+| Status | 🟢 ported: 17 of 17 symbols done, 0 verified |
 
-⚪ 17 not started
+🟢 16 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,37 +18,43 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldInternalPropagator` | class | [14](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L14) |  | ⚪ not started |  |
-| `TBoldClientPropagator` | class | [27](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L27) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [196](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L196) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [201](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L201) |  | ⚪ not started |  |
+| `TBoldInternalPropagator` | class | [14](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L14) | [`TBoldInternalPropagator`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L11) | 🟢 ported |  |
+| `TBoldClientPropagator` | class | [27](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L27) | [`TBoldClientPropagator`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L130) | 🟢 ported: A plain C# object implementing the propagator interfaces, where Delphi had a COM object. |  |
+| `initialization` | initialization, implementation | [196](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L196) | [`TBoldInternalPropagator.InternalPropagator`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L120) | 🟢 ported: Created the first time; Delphi also registered the COM class. |  |
+| `finalization` | finalization, implementation | [201](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L201) | [`TBoldInternalPropagator.FreeInternalPropagator`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L123) | 🟢 ported |  |
 
 ## TBoldInternalPropagator
 
-class at [line 14](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L14); 🟢 ported, C# [`TBoldInternalPropagator`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `RegisterClient` | method, private | [17](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L17) · [body 66](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L66) |  | ⚪ not started |  |
-| `UnregisterClient` | method, private | [18](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L18) · [body 121](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L121) |  | ⚪ not started |  |
-| `Create` | constructor | [20](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L20) · [body 54](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L54) |  | ⚪ not started |  |
-| `Destroy` | destructor | [21](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L21) · [body 60](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L60) |  | ⚪ not started |  |
-| `SendEvents` | method | [22](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L22) · [body 86](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L86) |  | ⚪ not started |  |
-| `RefreshDisplay` | method | [23](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L23) · [body 97](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L97) |  | ⚪ not started |  |
-| `PublicClientList` | property | [24](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L24) |  | ⚪ not started |  |
+| `RegisterClient` | method, private | [17](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L17) · [body 66](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L66) | [`TBoldInternalPropagator.RegisterClient`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L29) | 🟢 ported |  |
+| `UnregisterClient` | method, private | [18](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L18) · [body 121](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L121) | [`TBoldInternalPropagator.UnregisterClient`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L51) | 🟢 ported |  |
+| `Create` | constructor | [20](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L20) · [body 54](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L54) | [`TBoldInternalPropagator.TBoldInternalPropagator`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L16) | 🟢 ported |  |
+| `Destroy` | destructor | [21](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L21) · [body 60](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L60) | [`TBoldInternalPropagator.Dispose`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L22) | 🟢 ported |  |
+| `SendEvents` | method | [22](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L22) · [body 86](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L86) | [`TBoldInternalPropagator.SendEvents`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L71) | 🟢 ported |  |
+| `RefreshDisplay` | method | [23](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L23) · [body 97](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L97) | [`TBoldInternalPropagator.RefreshDisplay`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L90) | 🔵 replaced: Raises OnRefreshDisplay; Delphi updated the low-end propagator's form. |  |
+| `PublicClientList` | property | [24](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L24) | [`TBoldInternalPropagator.PublicClientList`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L105) | 🟢 ported |  |
 
 ## TBoldClientPropagator
 
-class at [line 27](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L27); ⚪ not started.
+class at [line 27](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L27); 🟢 ported, C# [`TBoldClientPropagator`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L130).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `RegisterClient` | method, private | [30](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L30) · [body 134](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L134) |  | ⚪ not started |  |
-| `ExtendLease` | method, private | [33](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L33) · [body 141](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L141) |  | ⚪ not started |  |
-| `UnRegisterClient` | method, private | [34](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L34) · [body 147](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L147) |  | ⚪ not started |  |
-| `SendEvents` | method, private | [36](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L36) · [body 152](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L152) |  | ⚪ not started |  |
-| `CancelSubscriptions` | method, private | [37](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L37) · [body 175](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L175) |  | ⚪ not started |  |
-| `AddSubscriptions` | method, private | [38](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L38) · [body 181](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L181) |  | ⚪ not started |  |
+| `RegisterClient` | method, private | [30](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L30) · [body 134](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L134) | [`TBoldClientPropagator.RegisterClient`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L133) | 🟢 ported |  |
+| `ExtendLease` | method, private | [33](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L33) · [body 141](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L141) | [`TBoldClientPropagator.ExtendLease`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L137) | 🟢 ported |  |
+| `UnRegisterClient` | method, private | [34](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L34) · [body 147](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L147) | [`TBoldClientPropagator.UnRegisterClient`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L144) | 🟢 ported |  |
+| `SendEvents` | method, private | [36](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L36) · [body 152](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L152) | [`TBoldClientPropagator.SendEvents`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L147) | 🟢 ported: Without the form's event log. |  |
+| `CancelSubscriptions` | method, private | [37](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L37) · [body 175](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L175) | [`TBoldClientPropagator.CancelSubscriptions`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L165) | 🟢 ported |  |
+| `AddSubscriptions` | method, private | [38](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L38) · [body 181](../../../Source/Propagator/LowEnd/BoldLowEndPropagatorClasses.pas#L181) | [`TBoldClientPropagator.AddSubscriptions`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L168) | 🟢 ported: Without the form's event log. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldInternalPropagator.OnRefreshDisplay`](../../src/Bold.Propagator.Server/Propagator/LowEnd/BoldLowEndPropagatorClasses.cs#L102) (property)
 
 ## Dependencies
 

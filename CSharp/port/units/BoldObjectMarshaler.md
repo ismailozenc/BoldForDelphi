@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Common/BoldObjectMarshaler.pas`](../../../Source/Propagator/Common/BoldObjectMarshaler.pas) (84 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 5 symbols done, 0 verified |
+| Status | 🟢 ported: 5 of 5 symbols done, 0 verified |
 
-⚪ 5 not started
+🔵 5 replaced
 
 ## Unit level
 
@@ -18,18 +18,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldObjectMarshaler` | class | [13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13) |  | ⚪ not started |  |
+| `TBoldObjectMarshaler` | class | [13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13) | [`TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L11) | 🔵 replaced: Keeps the reference: .NET objects need no marshaling between threads. |  |
 
 ## TBoldObjectMarshaler
 
-class at [line 13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L13); 🔵 replaced, C# [`TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `MarshalObject` | method, protected | [17](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L17) · [body 56](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L56) |  | ⚪ not started |  |
-| `Create` | constructor | [19](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L19) · [body 34](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L34) |  | ⚪ not started |  |
-| `Destroy` | destructor | [20](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L20) · [body 42](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L42) |  | ⚪ not started |  |
-| `UnMarshalObject` | method | [21](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L21) · [body 70](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L70) |  | ⚪ not started |  |
+| `MarshalObject` | method, protected | [17](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L17) · [body 56](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L56) | [`TBoldObjectMarshaler.MarshalObject`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L32) | 🔵 replaced: Keeps the reference. |  |
+| `Create` | constructor | [19](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L19) · [body 34](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L34) | [`TBoldObjectMarshaler.TBoldObjectMarshaler`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L17) | 🔵 replaced: Takes the interface type where Delphi took its GUID. |  |
+| `Destroy` | destructor | [20](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L20) · [body 42](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L42) | [`TBoldObjectMarshaler.Dispose`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L24) | 🔵 replaced: Lets go of the reference. |  |
+| `UnMarshalObject` | method | [21](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L21) · [body 70](../../../Source/Propagator/Common/BoldObjectMarshaler.pas#L70) | [`TBoldObjectMarshaler.UnMarshalObject`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L46) | 🔵 replaced: Gives the kept reference. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldObjectMarshaler.FStream`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L13) (field)
+- [`TBoldObjectMarshaler.FMarshalIID`](../../src/Bold.Propagation/Propagator/Common/BoldObjectMarshaler.cs#L14) (field)
 
 ## Dependencies
 

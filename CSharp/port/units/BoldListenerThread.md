@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldListenerThread.pas`](../../../Source/Persistence/Propagation/BoldListenerThread.pas) (477 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 52 symbols done, 0 verified |
+| Status | 🟢 ported: 52 of 52 symbols done, 0 verified |
 
-⚪ 52 not started
+🟢 51 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,65 +18,71 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldListenerThread` | class | [19](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L19) |  | ⚪ not started |  |
+| `TBoldListenerThread` | class | [19](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L19) | [`TBoldListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L13) | 🟢 ported |  |
 
 ## TBoldListenerThread
 
-class at [line 19](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L19); 🟢 ported, C# [`TBoldListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetQueue` | method, private | [41](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L41) · [body 220](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L220) |  | ⚪ not started |  |
-| `setLeaseDuration` | method, private | [42](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L42) · [body 241](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L241) |  | ⚪ not started |  |
-| `setPollingInterval` | method, private | [43](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L43) · [body 248](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L248) |  | ⚪ not started |  |
-| `setAutoExtendLease` | method, private | [44](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L44) · [body 234](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L234) |  | ⚪ not started |  |
-| `RegisterWithPropagator` | method, private | [45](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L45) · [body 227](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L227) |  | ⚪ not started |  |
-| `UnRegisterWithPropagator` | method, private | [46](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L46) · [body 299](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L299) |  | ⚪ not started |  |
-| `SignalInitialized` | method, private | [47](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L47) · [body 261](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L261) |  | ⚪ not started |  |
-| `EnsureMessageQueue` | method, private | [48](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L48) · [body 323](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L323) |  | ⚪ not started |  |
-| `getBoldClientID` | method, private | [49](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L49) · [body 330](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L330) |  | ⚪ not started |  |
-| `setClientIdentifierString` | method, private | [50](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L50) · [body 338](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L338) |  | ⚪ not started |  |
-| `SetOnMessage` | method, private | [51](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L51) · [body 345](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L345) |  | ⚪ not started |  |
-| `GetPropagator` | method, private | [52](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L52) · [body 352](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L352) |  | ⚪ not started |  |
-| `SetPropagator` | method, private | [53](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L53) · [body 359](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L359) |  | ⚪ not started |  |
-| `InternalExtendLease` | method, private | [54](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L54) · [body 393](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L393) |  | ⚪ not started |  |
-| `DoPropagatorFailure` | method, private | [55](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L55) · [body 417](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L417) |  | ⚪ not started |  |
-| `DoExtendLeaseFailed` | method, private | [56](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L56) · [body 423](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L423) |  | ⚪ not started |  |
-| `GetRegistered` | method, private | [57](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L57) · [body 443](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L443) |  | ⚪ not started |  |
-| `GetInitialized` | method, private | [58](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L58) · [body 448](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L448) |  | ⚪ not started |  |
-| `DoThreadErrorSynchronized` | method, private | [59](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L59) · [body 453](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L453) |  | ⚪ not started |  |
-| `DoThreadError` | method, private | [60](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L60) · [body 459](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L459) |  | ⚪ not started |  |
-| `SetExtendLeaseAfter` | method, private | [61](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L61) · [body 465](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L465) |  | ⚪ not started |  |
-| `WaitUntilInterfaceUnmarshaled` | method, protected | [63](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L63) · [body 372](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L372) |  | ⚪ not started |  |
-| `UnMarshalInterface` | method, protected | [64](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L64) · [body 378](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L378) |  | ⚪ not started |  |
-| `RaiseSysErrorMessage` | method, protected | [65](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L65) · [body 472](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L472) |  | ⚪ not started |  |
-| `Create` | constructor | [67](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L67) · [body 107](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L107) |  | ⚪ not started |  |
-| `Destroy` | destructor | [68](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L68) · [body 129](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L129) |  | ⚪ not started |  |
-| `SetQueueNotEmptyNotifyEvent` | method | [69](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L69) · [body 255](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L255) |  | ⚪ not started |  |
-| `Execute` | method | [70](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L70) · [body 140](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L140) |  | ⚪ not started |  |
-| `DebugGetQueueContents` | method | [71](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L71) · [body 123](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L123) |  | ⚪ not started |  |
-| `Quit` | method | [72](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L72) · [body 266](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L266) |  | ⚪ not started |  |
-| `WaitUntilRegistered` | method | [73](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L73) · [body 311](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L311) |  | ⚪ not started |  |
-| `WaitUntilUnregistered` | method | [74](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L74) · [body 317](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L317) |  | ⚪ not started |  |
-| `WaitUntilInitialized` | method | [75](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L75) · [body 306](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L306) |  | ⚪ not started |  |
-| `ExtendLease` | method | [76](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L76) · [body 205](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L205) |  | ⚪ not started |  |
-| `UnRegister` | method | [77](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L77) · [body 288](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L288) |  | ⚪ not started |  |
-| `DoPropagatorFailureSynchronized` | method | [78](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L78) · [body 438](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L438) |  | ⚪ not started |  |
-| `DoExtendLeaseFailedSynchronized` | method | [79](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L79) · [body 431](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L431) |  | ⚪ not started |  |
-| `BoldClientID` | property | [80](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L80) |  | ⚪ not started |  |
-| `Registered` | property | [81](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L81) |  | ⚪ not started |  |
-| `Initialized` | property | [82](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L82) |  | ⚪ not started |  |
-| `Queue` | property | [83](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L83) |  | ⚪ not started |  |
-| `LeaseDuration` | property | [84](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L84) |  | ⚪ not started |  |
-| `ExtendLeaseAfter` | property | [85](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L85) |  | ⚪ not started |  |
-| `PollingInterval` | property | [86](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L86) |  | ⚪ not started |  |
-| `AutoExtendLease` | property | [87](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L87) |  | ⚪ not started |  |
-| `ClientIdentifierString` | property | [88](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L88) |  | ⚪ not started |  |
-| `OnMessage` | property | [89](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L89) |  | ⚪ not started |  |
-| `Propagator` | property | [90](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L90) |  | ⚪ not started |  |
-| `OnPropagatorFailure` | property | [91](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L91) |  | ⚪ not started |  |
-| `OnExtendLeaseFailed` | property | [92](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L92) |  | ⚪ not started |  |
-| `OnThreadError` | property | [93](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L93) |  | ⚪ not started |  |
+| `GetQueue` | method, private | [41](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L41) · [body 220](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L220) | [`TBoldListenerThread.GetQueue`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L53) | 🟢 ported |  |
+| `setLeaseDuration` | method, private | [42](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L42) · [body 241](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L241) | [`TBoldListenerThread.setLeaseDuration`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L56) | 🟢 ported |  |
+| `setPollingInterval` | method, private | [43](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L43) · [body 248](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L248) | [`TBoldListenerThread.setPollingInterval`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L66) | 🟢 ported |  |
+| `setAutoExtendLease` | method, private | [44](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L44) · [body 234](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L234) | [`TBoldListenerThread.setAutoExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L76) | 🟢 ported |  |
+| `RegisterWithPropagator` | method, private | [45](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L45) · [body 227](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L227) | [`TBoldListenerThread.RegisterWithPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L86) | 🟢 ported |  |
+| `UnRegisterWithPropagator` | method, private | [46](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L46) · [body 299](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L299) | [`TBoldListenerThread.UnRegisterWithPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L93) | 🟢 ported |  |
+| `SignalInitialized` | method, private | [47](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L47) · [body 261](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L261) | [`TBoldListenerThread.SignalInitialized`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L100) | 🟢 ported |  |
+| `EnsureMessageQueue` | method, private | [48](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L48) · [body 323](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L323) | [`TBoldListenerThread.EnsureMessageQueue`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L103) | 🔵 replaced: A TThread has its message queue from the start. |  |
+| `getBoldClientID` | method, private | [49](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L49) · [body 330](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L330) | [`TBoldListenerThread.getBoldClientID`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L108) | 🟢 ported |  |
+| `setClientIdentifierString` | method, private | [50](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L50) · [body 338](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L338) | [`TBoldListenerThread.setClientIdentifierString`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L111) | 🟢 ported |  |
+| `SetOnMessage` | method, private | [51](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L51) · [body 345](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L345) | [`TBoldListenerThread.SetOnMessage`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L121) | 🟢 ported |  |
+| `GetPropagator` | method, private | [52](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L52) · [body 352](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L352) | [`TBoldListenerThread.GetPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L131) | 🟢 ported |  |
+| `SetPropagator` | method, private | [53](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L53) · [body 359](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L359) | [`TBoldListenerThread.SetPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L135) | 🟢 ported |  |
+| `InternalExtendLease` | method, private | [54](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L54) · [body 393](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L393) | [`TBoldListenerThread.InternalExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L154) | 🟢 ported: Does not report twice: the listener reports a failed extension itself. |  |
+| `DoPropagatorFailure` | method, private | [55](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L55) · [body 417](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L417) | [`TBoldListenerThread.DoPropagatorFailure`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L184) | 🟢 ported |  |
+| `DoExtendLeaseFailed` | method, private | [56](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L56) · [body 423](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L423) | [`TBoldListenerThread.DoExtendLeaseFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L188) | 🟢 ported |  |
+| `GetRegistered` | method, private | [57](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L57) · [body 443](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L443) | [`TBoldListenerThread.GetRegistered`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L199) | 🟢 ported |  |
+| `GetInitialized` | method, private | [58](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L58) · [body 448](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L448) | [`TBoldListenerThread.GetInitialized`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L202) | 🟢 ported |  |
+| `DoThreadErrorSynchronized` | method, private | [59](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L59) · [body 453](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L453) | [`TBoldListenerThread.DoThreadErrorSynchronized`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L205) | 🟢 ported |  |
+| `DoThreadError` | method, private | [60](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L60) · [body 459](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L459) | [`TBoldListenerThread.DoThreadError`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L212) | 🟢 ported |  |
+| `SetExtendLeaseAfter` | method, private | [61](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L61) · [body 465](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L465) | [`TBoldListenerThread.SetExtendLeaseAfter`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L215) | 🟢 ported |  |
+| `WaitUntilInterfaceUnmarshaled` | method, protected | [63](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L63) · [body 372](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L372) | [`TBoldListenerThread.WaitUntilInterfaceUnmarshaled`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L225) | 🟢 ported |  |
+| `UnMarshalInterface` | method, protected | [64](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L64) · [body 378](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L378) | [`TBoldListenerThread.UnMarshalInterface`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L233) | 🟢 ported |  |
+| `RaiseSysErrorMessage` | method, protected | [65](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L65) · [body 472](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L472) | [`TBoldListenerThread.RaiseSysErrorMessage`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L250) | 🟢 ported: Without a system error: posting to a thread fails only when it has ended. |  |
+| `Create` | constructor | [67](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L67) · [body 107](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L107) | [`TBoldListenerThread.TBoldListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L36) | 🟢 ported |  |
+| `Destroy` | destructor | [68](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L68) · [body 129](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L129) | [`TBoldListenerThread.Dispose`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L47) | 🟢 ported |  |
+| `SetQueueNotEmptyNotifyEvent` | method | [69](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L69) · [body 255](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L255) | [`TBoldListenerThread.SetQueueNotEmptyNotifyEvent`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L254) | 🟢 ported |  |
+| `Execute` | method | [70](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L70) · [body 140](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L140) | [`TBoldListenerThread.Execute`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L264) | 🟢 ported: Leaves the queue to the dequeuer that still uses it; Delphi freed it. |  |
+| `DebugGetQueueContents` | method | [71](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L71) · [body 123](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L123) | [`TBoldListenerThread.DebugGetQueueContents`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L333) | 🟢 ported |  |
+| `Quit` | method | [72](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L72) · [body 266](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L266) | [`TBoldListenerThread.Quit`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L337) | 🟢 ported: Logs a thread that does not end; Delphi terminated it. |  |
+| `WaitUntilRegistered` | method | [73](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L73) · [body 311](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L311) | [`TBoldListenerThread.WaitUntilRegistered`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L367) | 🟢 ported |  |
+| `WaitUntilUnregistered` | method | [74](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L74) · [body 317](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L317) | [`TBoldListenerThread.WaitUntilUnregistered`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L375) | 🟢 ported |  |
+| `WaitUntilInitialized` | method | [75](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L75) · [body 306](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L306) | [`TBoldListenerThread.WaitUntilInitialized`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L382) | 🟢 ported |  |
+| `ExtendLease` | method | [76](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L76) · [body 205](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L205) | [`TBoldListenerThread.ExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L386) | 🟢 ported |  |
+| `UnRegister` | method | [77](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L77) · [body 288](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L288) | [`TBoldListenerThread.UnRegister`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L413) | 🟢 ported |  |
+| `DoPropagatorFailureSynchronized` | method | [78](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L78) · [body 438](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L438) | [`TBoldListenerThread.DoPropagatorFailureSynchronized`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L437) | 🟢 ported |  |
+| `DoExtendLeaseFailedSynchronized` | method | [79](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L79) · [body 431](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L431) | [`TBoldListenerThread.DoExtendLeaseFailedSynchronized`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L440) | 🟢 ported |  |
+| `BoldClientID` | property | [80](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L80) | [`TBoldListenerThread.BoldClientID`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L447) | 🟢 ported |  |
+| `Registered` | property | [81](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L81) | [`TBoldListenerThread.Registered`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L448) | 🟢 ported |  |
+| `Initialized` | property | [82](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L82) | [`TBoldListenerThread.Initialized`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L449) | 🟢 ported |  |
+| `Queue` | property | [83](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L83) | [`TBoldListenerThread.Queue`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L450) | 🟢 ported |  |
+| `LeaseDuration` | property | [84](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L84) | [`TBoldListenerThread.LeaseDuration`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L453) | 🟢 ported |  |
+| `ExtendLeaseAfter` | property | [85](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L85) | [`TBoldListenerThread.ExtendLeaseAfter`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L460) | 🟢 ported |  |
+| `PollingInterval` | property | [86](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L86) | [`TBoldListenerThread.PollingInterval`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L467) | 🟢 ported |  |
+| `AutoExtendLease` | property | [87](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L87) | [`TBoldListenerThread.AutoExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L474) | 🟢 ported |  |
+| `ClientIdentifierString` | property | [88](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L88) | [`TBoldListenerThread.ClientIdentifierString`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L481) | 🟢 ported |  |
+| `OnMessage` | property | [89](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L89) | [`TBoldListenerThread.OnMessage`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L488) | 🟢 ported |  |
+| `Propagator` | property | [90](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L90) | [`TBoldListenerThread.Propagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L495) | 🟢 ported |  |
+| `OnPropagatorFailure` | property | [91](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L91) | [`TBoldListenerThread.OnPropagatorFailure`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L501) | 🟢 ported |  |
+| `OnExtendLeaseFailed` | property | [92](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L92) | [`TBoldListenerThread.OnExtendLeaseFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L502) | 🟢 ported |  |
+| `OnThreadError` | property | [93](../../../Source/Persistence/Propagation/BoldListenerThread.pas#L93) | [`TBoldListenerThread.OnThreadError`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L503) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldListenerThread.Register`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerThread.cs#L434) (method)
 
 ## Dependencies
 

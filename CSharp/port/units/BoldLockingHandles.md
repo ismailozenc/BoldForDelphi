@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Handles/PessimisticLocking/BoldLockingHandles.pas`](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas) (194 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 20 symbols done, 0 verified |
+| Status | 🟢 ported: 20 of 20 symbols done, 0 verified |
 
-⚪ 20 not started
+🟢 20 ported
 
 ## Unit level
 
@@ -18,33 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldLockingHandle` | class | [17](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L17) |  | ⚪ not started |  |
+| `TBoldLockingHandle` | class | [17](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L17) | [`TBoldLockingHandle`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L15) | 🟢 ported |  |
 
 ## TBoldLockingHandle
 
-class at [line 17](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L17); 🟢 ported, C# [`TBoldLockingHandle`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetSystemHandle` | method, private | [29](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L29) · [body 143](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L143) |  | ⚪ not started |  |
-| `_Receive` | method, private | [30](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L30) · [body 155](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L155) |  | ⚪ not started |  |
-| `Activate` | method, private | [31](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L31) · [body 61](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L61) |  | ⚪ not started |  |
-| `Deactivate` | method, private | [32](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L32) · [body 100](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L100) |  | ⚪ not started |  |
-| `SetListener` | method, private | [33](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L33) · [body 124](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L124) |  | ⚪ not started |  |
-| `AdjustActive` | method, private | [34](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L34) · [body 82](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L82) |  | ⚪ not started |  |
-| `SetLockManager` | method, private | [35](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L35) · [body 131](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L131) |  | ⚪ not started |  |
-| `GetLockHolder` | method, private | [36](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L36) · [body 117](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L117) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L38) · [body 94](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L94) |  | ⚪ not started |  |
-| `Destroy` | destructor | [39](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L39) · [body 110](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L110) |  | ⚪ not started |  |
-| `LockHandler` | property | [40](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L40) |  | ⚪ not started |  |
-| `LockHolder` | property | [41](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L41) |  | ⚪ not started |  |
-| `Active` | property | [42](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L42) |  | ⚪ not started |  |
-| `SystemHandle` | property, published | [44](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L44) |  | ⚪ not started |  |
-| `Listener` | property, published | [45](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L45) |  | ⚪ not started |  |
-| `LockManager` | property, published | [46](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L46) |  | ⚪ not started |  |
-| `OnActivityStart` | property, published | [47](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L47) |  | ⚪ not started |  |
-| `OnActivityEnd` | property, published | [48](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L48) |  | ⚪ not started |  |
-| `OnProgress` | property, published | [49](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L49) |  | ⚪ not started |  |
+| `SetSystemHandle` | method, private | [29](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L29) · [body 143](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L143) | [`TBoldLockingHandle.SetSystemHandle`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L45) | 🟢 ported |  |
+| `_Receive` | method, private | [30](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L30) · [body 155](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L155) | [`TBoldLockingHandle._Receive`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L58) | 🟢 ported |  |
+| `Activate` | method, private | [31](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L31) · [body 61](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L61) | [`TBoldLockingHandle.Activate`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L109) | 🟢 ported |  |
+| `Deactivate` | method, private | [32](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L32) · [body 100](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L100) | [`TBoldLockingHandle.Deactivate`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L144) | 🟢 ported |  |
+| `SetListener` | method, private | [33](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L33) · [body 124](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L124) | [`TBoldLockingHandle.SetListener`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L155) | 🟢 ported |  |
+| `AdjustActive` | method, private | [34](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L34) · [body 82](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L82) | [`TBoldLockingHandle.AdjustActive`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L163) | 🟢 ported |  |
+| `SetLockManager` | method, private | [35](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L35) · [body 131](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L131) | [`TBoldLockingHandle.SetLockManager`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L181) | 🟢 ported |  |
+| `GetLockHolder` | method, private | [36](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L36) · [body 117](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L117) | [`TBoldLockingHandle.GetLockHolder`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L194) | 🟢 ported |  |
+| `Create` | constructor | [38](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L38) · [body 94](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L94) | [`TBoldLockingHandle.TBoldLockingHandle`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L26) | 🟢 ported |  |
+| `Destroy` | destructor | [39](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L39) · [body 110](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L110) | [`TBoldLockingHandle.Dispose`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L33) | 🟢 ported |  |
+| `LockHandler` | property | [40](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L40) | [`TBoldLockingHandle.LockHandler`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L197) | 🟢 ported |  |
+| `LockHolder` | property | [41](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L41) | [`TBoldLockingHandle.LockHolder`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L198) | 🟢 ported |  |
+| `Active` | property | [42](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L42) | [`TBoldLockingHandle.Active`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L199) | 🟢 ported |  |
+| `SystemHandle` | property, published | [44](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L44) | [`TBoldLockingHandle.SystemHandle`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L202) | 🟢 ported |  |
+| `Listener` | property, published | [45](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L45) | [`TBoldLockingHandle.Listener`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L209) | 🟢 ported |  |
+| `LockManager` | property, published | [46](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L46) | [`TBoldLockingHandle.LockManager`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L216) | 🟢 ported |  |
+| `OnActivityStart` | property, published | [47](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L47) | [`TBoldLockingHandle.OnActivityStart`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L222) | 🟢 ported |  |
+| `OnActivityEnd` | property, published | [48](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L48) | [`TBoldLockingHandle.OnActivityEnd`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L223) | 🟢 ported |  |
+| `OnProgress` | property, published | [49](../../../Source/Handles/PessimisticLocking/BoldLockingHandles.pas#L49) | [`TBoldLockingHandle.OnProgress`](../../src/Bold.Propagation/Handles/PessimisticLocking/BoldLockingHandles.cs#L224) | 🟢 ported |  |
 
 ## Dependencies
 

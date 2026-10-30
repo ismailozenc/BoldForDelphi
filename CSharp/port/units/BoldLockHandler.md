@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas`](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas) (704 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs` |
+| C# | [`CSharp/src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 50 symbols done, 0 verified |
+| Status | 🟢 ported: 50 of 50 symbols done, 0 verified |
 | Note | Moved to Bold.Propagation: it needs the listener thread. |
 
-⚪ 50 not started
+🟢 48 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -19,84 +19,84 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BOLD_GET_LOCKS_FAILED_ERROR` | resourcestring | [17](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L17) |  | ⚪ not started |  |
-| `TBoldFailureGetLocksFailed` | class | [25](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L25) |  | ⚪ not started |  |
-| `EBoldGetLocksFailed` | class | [37](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L37) |  | ⚪ not started |  |
-| `TBoldEmptyLockHolder` | class | [48](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L48) |  | ⚪ not started |  |
-| `TBoldPessimisticLockHandler` | class | [63](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L63) |  | ⚪ not started |  |
-| `NewRegionListFromStrings` | routine, implementation | [125](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L125) |  | ⚪ not started |  |
-| `RegionListToLockList` | routine, implementation | [134](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L134) |  | ⚪ not started |  |
+| `BOLD_GET_LOCKS_FAILED_ERROR` | resourcestring | [17](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L17) | [`BoldLockHandler.BOLD_GET_LOCKS_FAILED_ERROR`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L552) | 🟢 ported |  |
+| `TBoldFailureGetLocksFailed` | class | [25](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L25) | [`TBoldFailureGetLocksFailed`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L10) | 🟢 ported |  |
+| `EBoldGetLocksFailed` | class | [37](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L37) | [`EBoldGetLocksFailed`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L41) | 🟢 ported |  |
+| `TBoldEmptyLockHolder` | class | [48](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L48) | [`TBoldEmptyLockHolder`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L67) | 🟢 ported |  |
+| `TBoldPessimisticLockHandler` | class | [63](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L63) | [`TBoldPessimisticLockHandler`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L107) | 🟢 ported |  |
+| `NewRegionListFromStrings` | routine, implementation | [125](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L125) | [`BoldLockHandler.NewRegionListFromStrings`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L555) | 🟢 ported |  |
+| `RegionListToLockList` | routine, implementation | [134](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L134) | [`BoldLockHandler.RegionListToLockList`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L568) | 🟢 ported |  |
 
 ## TBoldFailureGetLocksFailed
 
-class at [line 25](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L25); 🟢 ported, C# [`TBoldFailureGetLocksFailed`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetException` | method, protected | [30](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L30) · [body 632](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L632) |  | ⚪ not started |  |
-| `Create` | constructor | [32](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L32) · [body 613](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L613) |  | ⚪ not started |  |
-| `Destroy` | destructor | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L33) · [body 625](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L625) |  | ⚪ not started |  |
+| `GetException` | method, protected | [30](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L30) · [body 632](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L632) | [`TBoldFailureGetLocksFailed.GetException`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L36) | 🟢 ported |  |
+| `Create` | constructor | [32](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L32) · [body 613](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L613) | [`TBoldFailureGetLocksFailed.TBoldFailureGetLocksFailed`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L16) | 🟢 ported |  |
+| `Destroy` | destructor | [33](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L33) · [body 625](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L625) | [`TBoldFailureGetLocksFailed.Dispose`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L33) | 🔵 replaced: Freed the lists; the garbage collector does that in .NET. |  |
 
 ## EBoldGetLocksFailed
 
-class at [line 37](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L37); ⚪ not started.
+class at [line 37](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L37); 🟢 ported, C# [`EBoldGetLocksFailed`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L41).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [42](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L42) · [body 640](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L640) |  | ⚪ not started |  |
-| `Destroy` | destructor | [43](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L43) · [body 651](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L651) |  | ⚪ not started |  |
-| `ClientIds` | property | [44](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L44) |  | ⚪ not started |  |
-| `ConflictingRegions` | property | [45](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L45) |  | ⚪ not started |  |
+| `Create` | constructor | [42](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L42) · [body 640](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L640) | [`EBoldGetLocksFailed.EBoldGetLocksFailed`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L45) | 🟢 ported |  |
+| `Destroy` | destructor | [43](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L43) · [body 651](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L651) | [`EBoldGetLocksFailed.EBoldGetLocksFailed`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L45) | 🔵 replaced: Freed the lists; the garbage collector does that in .NET. |  |
+| `ClientIds` | property | [44](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L44) | [`EBoldGetLocksFailed.ClientIds`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L61) | 🟢 ported |  |
+| `ConflictingRegions` | property | [45](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L45) | [`EBoldGetLocksFailed.ConflictingRegions`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L62) | 🟢 ported |  |
 
 ## TBoldEmptyLockHolder
 
-class at [line 48](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L48); 🟢 ported, C# [`TBoldEmptyLockHolder`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L67).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetHeldExclusive` | method, protected | [52](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L52) · [body 677](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L677) |  | ⚪ not started |  |
-| `GetHeldShared` | method, protected | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L53) · [body 682](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L682) |  | ⚪ not started |  |
-| `Create` | constructor | [55](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L55) · [body 661](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L661) |  | ⚪ not started |  |
-| `Destroy` | destructor | [56](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L56) · [body 666](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L666) |  | ⚪ not started |  |
-| `Lock` | method | [57](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L57) · [body 694](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L694) |  | ⚪ not started |  |
-| `Release` | method | [58](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L58) · [body 700](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L700) |  | ⚪ not started |  |
-| `EnsureLocks` | method | [59](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L59) · [body 672](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L672) |  | ⚪ not started |  |
-| `GetPropagationEvents` | method | [60](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L60) · [body 687](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L687) |  | ⚪ not started |  |
+| `GetHeldExclusive` | method, protected | [52](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L52) · [body 677](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L677) | [`TBoldEmptyLockHolder.GetHeldExclusive`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L84) | 🟢 ported |  |
+| `GetHeldShared` | method, protected | [53](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L53) · [body 682](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L682) | [`TBoldEmptyLockHolder.GetHeldShared`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L85) | 🟢 ported |  |
+| `Create` | constructor | [55](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L55) · [body 661](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L661) | [`TBoldEmptyLockHolder.TBoldEmptyLockHolder`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L72) | 🟢 ported |  |
+| `Destroy` | destructor | [56](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L56) · [body 666](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L666) | [`TBoldEmptyLockHolder.Dispose`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L78) | 🟢 ported |  |
+| `Lock` | method | [57](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L57) · [body 694](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L694) | [`TBoldEmptyLockHolder.Lock`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L86) | 🟢 ported |  |
+| `Release` | method | [58](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L58) · [body 700](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L700) | [`TBoldEmptyLockHolder.Release`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L89) | 🟢 ported |  |
+| `EnsureLocks` | method | [59](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L59) · [body 672](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L672) | [`TBoldEmptyLockHolder.EnsureLocks`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L93) | 🟢 ported |  |
+| `GetPropagationEvents` | method | [60](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L60) · [body 687](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L687) | [`TBoldEmptyLockHolder.GetPropagationEvents`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L96) | 🟢 ported |  |
 
 ## TBoldPessimisticLockHandler
 
-class at [line 63](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L63); ⚪ not started.
+class at [line 63](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L63); 🟢 ported, C# [`TBoldPessimisticLockHandler`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L107).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SignalActivityStart` | method, private | [77](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L77) · [body 572](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L572) |  | ⚪ not started |  |
-| `SignalActivityEnd` | method, private | [78](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L78) · [body 578](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L578) |  | ⚪ not started |  |
-| `GetFactory` | method, private | [79](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L79) · [body 546](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L546) |  | ⚪ not started |  |
-| `_RegionChanged` | method, private | [80](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L80) · [body 318](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L318) |  | ⚪ not started |  |
-| `AddHeldLocksToRegionLookup` | method, private | [81](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L81) · [body 584](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L584) |  | ⚪ not started |  |
-| `EnsureAllRequiredRegions` | method, private | [83](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L83) · [body 182](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L182) |  | ⚪ not started |  |
-| `GetRequiredLocks` | method, private | [84](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L84) · [body 250](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L250) |  | ⚪ not started |  |
-| `_AnswerMayCommit` | method, private | [85](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L85) · [body 336](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L336) |  | ⚪ not started |  |
-| `_ReceiveRolledBack` | method, private | [88](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L88) · [body 554](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L554) |  | ⚪ not started |  |
-| `RequireRegionExplicit` | method, private | [90](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L90) · [body 505](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L505) |  | ⚪ not started |  |
-| `IsHeldAsExplicitOrParent` | method, private | [91](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L91) · [body 512](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L512) |  | ⚪ not started |  |
-| `GetRequiredShared` | method, private | [93](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L93) · [body 352](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L352) |  | ⚪ not started |  |
-| `GetRequiredExclusive` | method, private | [94](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L94) · [body 346](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L346) |  | ⚪ not started |  |
-| `ArePropagationEventsInConflictWithRequiredRegions` | method, private | [95](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L95) · [body 358](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L358) |  | ⚪ not started |  |
-| `IsElementInAnyRequiredRegion` | method, private | [96](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L96) · [body 407](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L407) |  | ⚪ not started |  |
-| `ElementListContainsDirtyElements` | method, private | [97](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L97) · [body 486](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L486) |  | ⚪ not started |  |
-| `IsRequiredAsExplicitOrParent` | method, private | [98](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L98) · [body 243](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L243) |  | ⚪ not started |  |
-| `Factory` | property, private | [99](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L99) |  | ⚪ not started |  |
-| `CreateWithLockHolder` | constructor | [101](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L101) · [body 145](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L145) |  | ⚪ not started |  |
-| `Destroy` | destructor | [102](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L102) · [body 167](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L167) |  | ⚪ not started |  |
-| `LockElement` | method | [103](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L103) · [body 293](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L293) |  | ⚪ not started |  |
-| `EnsureLocks` | method | [104](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L104) · [body 567](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L567) |  | ⚪ not started |  |
-| `ReleaseUnneededRegions` | method | [105](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L105) · [body 427](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L427) |  | ⚪ not started |  |
-| `RequiredShared` | property | [106](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L106) |  | ⚪ not started |  |
-| `RequiredExclusive` | property | [107](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L107) |  | ⚪ not started |  |
-| `OnActivityStart` | property | [108](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L108) |  | ⚪ not started |  |
-| `OnActivityEnd` | property | [109](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L109) |  | ⚪ not started |  |
-| `OnProgress` | property | [110](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L110) |  | ⚪ not started |  |
+| `SignalActivityStart` | method, private | [77](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L77) · [body 572](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L572) | [`TBoldPessimisticLockHandler.SignalActivityStart`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L163) | 🟢 ported |  |
+| `SignalActivityEnd` | method, private | [78](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L78) · [body 578](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L578) | [`TBoldPessimisticLockHandler.SignalActivityEnd`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L166) | 🟢 ported |  |
+| `GetFactory` | method, private | [79](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L79) · [body 546](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L546) | [`TBoldPessimisticLockHandler.GetFactory`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L169) | 🟢 ported |  |
+| `_RegionChanged` | method, private | [80](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L80) · [body 318](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L318) | [`TBoldPessimisticLockHandler._RegionChanged`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L173) | 🟢 ported |  |
+| `AddHeldLocksToRegionLookup` | method, private | [81](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L81) · [body 584](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L584) | [`TBoldPessimisticLockHandler.AddHeldLocksToRegionLookup`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L196) | 🟢 ported: Region locks have a '.'; Delphi's check was the same. |  |
+| `EnsureAllRequiredRegions` | method, private | [83](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L83) · [body 182](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L182) | [`TBoldPessimisticLockHandler.EnsureAllRequiredRegions`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L222) | 🟢 ported |  |
+| `GetRequiredLocks` | method, private | [84](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L84) · [body 250](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L250) | [`TBoldPessimisticLockHandler.GetRequiredLocks`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L275) | 🟢 ported |  |
+| `_AnswerMayCommit` | method, private | [85](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L85) · [body 336](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L336) | [`TBoldPessimisticLockHandler._AnswerMayCommit`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L312) | 🟢 ported |  |
+| `_ReceiveRolledBack` | method, private | [88](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L88) · [body 554](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L554) | [`TBoldPessimisticLockHandler._ReceiveRolledBack`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L317) | 🟢 ported |  |
+| `RequireRegionExplicit` | method, private | [90](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L90) · [body 505](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L505) | [`TBoldPessimisticLockHandler.RequireRegionExplicit`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L330) | 🟢 ported |  |
+| `IsHeldAsExplicitOrParent` | method, private | [91](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L91) · [body 512](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L512) | [`TBoldPessimisticLockHandler.IsHeldAsExplicitOrParent`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L339) | 🟢 ported |  |
+| `GetRequiredShared` | method, private | [93](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L93) · [body 352](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L352) | [`TBoldPessimisticLockHandler.GetRequiredShared`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L369) | 🟢 ported |  |
+| `GetRequiredExclusive` | method, private | [94](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L94) · [body 346](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L346) | [`TBoldPessimisticLockHandler.GetRequiredExclusive`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L376) | 🟢 ported |  |
+| `ArePropagationEventsInConflictWithRequiredRegions` | method, private | [95](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L95) · [body 358](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L358) | [`TBoldPessimisticLockHandler.ArePropagationEventsInConflictWithRequiredRegions`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L384) | 🟢 ported |  |
+| `IsElementInAnyRequiredRegion` | method, private | [96](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L96) · [body 407](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L407) | [`TBoldPessimisticLockHandler.IsElementInAnyRequiredRegion`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L425) | 🟢 ported |  |
+| `ElementListContainsDirtyElements` | method, private | [97](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L97) · [body 486](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L486) | [`TBoldPessimisticLockHandler.ElementListContainsDirtyElements`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L441) | 🟢 ported |  |
+| `IsRequiredAsExplicitOrParent` | method, private | [98](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L98) · [body 243](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L243) | [`TBoldPessimisticLockHandler.IsRequiredAsExplicitOrParent`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L267) | 🟢 ported |  |
+| `Factory` | property, private | [99](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L99) | [`TBoldPessimisticLockHandler.Factory`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L461) | 🟢 ported |  |
+| `CreateWithLockHolder` | constructor | [101](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L101) · [body 145](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L145) | [`TBoldPessimisticLockHandler.TBoldPessimisticLockHandler`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L121) | 🟢 ported |  |
+| `Destroy` | destructor | [102](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L102) · [body 167](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L167) | [`TBoldPessimisticLockHandler.Dispose`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L141) | 🟢 ported: Also stops being the system's lock handler and the factory's listener. |  |
+| `LockElement` | method | [103](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L103) · [body 293](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L293) | [`TBoldPessimisticLockHandler.LockElement`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L468) | 🟢 ported |  |
+| `EnsureLocks` | method | [104](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L104) · [body 567](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L567) | [`TBoldPessimisticLockHandler.EnsureLocks`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L486) | 🟢 ported |  |
+| `ReleaseUnneededRegions` | method | [105](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L105) · [body 427](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L427) | [`TBoldPessimisticLockHandler.ReleaseUnneededRegions`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L493) | 🟢 ported |  |
+| `RequiredShared` | property | [106](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L106) | [`TBoldPessimisticLockHandler.RequiredShared`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L542) | 🟢 ported |  |
+| `RequiredExclusive` | property | [107](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L107) | [`TBoldPessimisticLockHandler.RequiredExclusive`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L543) | 🟢 ported |  |
+| `OnActivityStart` | property | [108](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L108) | [`TBoldPessimisticLockHandler.OnActivityStart`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L544) | 🟢 ported |  |
+| `OnActivityEnd` | property | [109](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L109) | [`TBoldPessimisticLockHandler.OnActivityEnd`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L545) | 🟢 ported |  |
+| `OnProgress` | property | [110](../../../Source/ObjectSpace/PessimisticLocking/BoldLockHandler.pas#L110) | [`TBoldPessimisticLockHandler.OnProgress`](../../src/Bold.Propagation/ObjectSpace/PessimisticLocking/BoldLockHandler.cs#L546) | 🟢 ported |  |
 
 ## Dependencies
 

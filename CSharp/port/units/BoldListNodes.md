@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldListNodes.pas`](../../../Source/Propagator/Enterprise/BoldListNodes.pas) (116 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 20 symbols done, 0 verified |
+| Status | 🟢 ported: 20 of 20 symbols done, 0 verified |
 
-⚪ 20 not started
+🟢 20 ported
 
 ## Unit level
 
@@ -18,47 +18,47 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldMultiIndexedListNode` | class | [10](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L10) |  | ⚪ not started |  |
-| `TBoldIndexNode` | class | [13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13) |  | ⚪ not started |  |
-| `TBoldEventNameIndexNode` | class | [21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21) |  | ⚪ not started |  |
-| `TBoldAbstractLinkNode` | class | [28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28) |  | ⚪ not started |  |
+| `TBoldMultiIndexedListNode` | class | [10](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L10) | [`TBoldMultiIndexedListNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L8) | 🟢 ported |  |
+| `TBoldIndexNode` | class | [13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13) | [`TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L14) | 🟢 ported |  |
+| `TBoldEventNameIndexNode` | class | [21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21) | [`TBoldEventNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L29) | 🟢 ported |  |
+| `TBoldAbstractLinkNode` | class | [28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28) | [`TBoldAbstractLinkNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L40) | 🟢 ported |  |
 
 ## TBoldIndexNode
 
-class at [line 13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L13); 🟢 ported, C# [`TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [17](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L17) · [body 55](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L55) |  | ⚪ not started |  |
-| `Next` | property | [18](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L18) |  | ⚪ not started |  |
+| `Create` | constructor | [17](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L17) · [body 55](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L55) | [`TBoldIndexNode.TBoldIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L17) | 🟢 ported |  |
+| `Next` | property | [18](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L18) | [`TBoldIndexNode.Next`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L24) | 🟢 ported |  |
 
 ## TBoldEventNameIndexNode
 
-class at [line 21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L21); 🟢 ported, C# [`TBoldEventNameIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L29).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EventName` | property | [25](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L25) |  | ⚪ not started |  |
+| `EventName` | property | [25](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L25) | [`TBoldEventNameIndexNode.EventName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L32) | 🟢 ported |  |
 
 ## TBoldAbstractLinkNode
 
-class at [line 28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28); ⚪ not started.
+class at [line 28](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L28); 🟢 ported, C# [`TBoldAbstractLinkNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L40).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getNext` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L30) |  | ⚪ not started |  |
-| `setNext` | method, protected | [31](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L31) |  | ⚪ not started |  |
-| `getPrevious` | method, protected | [32](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L32) |  | ⚪ not started |  |
-| `setPrevious` | method, protected | [33](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L33) |  | ⚪ not started |  |
-| `getIndexNode` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L34) · [body 62](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L62) |  | ⚪ not started |  |
-| `getNumberOfIndices` | method, protected | [35](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L35) |  | ⚪ not started |  |
-| `InsertAfter` | method | [37](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L37) · [body 76](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L76) |  | ⚪ not started |  |
-| `InsertBefore` | method | [38](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L38) · [body 84](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L84) |  | ⚪ not started |  |
-| `Remove` | method | [39](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L39) · [body 95](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L95) |  | ⚪ not started |  |
-| `Next` | property | [40](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L40) |  | ⚪ not started |  |
-| `Previous` | property | [41](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L41) |  | ⚪ not started |  |
-| `IndexNode` | property | [42](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L42) |  | ⚪ not started |  |
-| `NumberOfIndices` | property | [43](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L43) |  | ⚪ not started |  |
+| `getNext` | method, protected | [30](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L30) | [`TBoldAbstractLinkNode.getNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L43) | 🟢 ported |  |
+| `setNext` | method, protected | [31](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L31) | [`TBoldAbstractLinkNode.setNext`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L46) | 🟢 ported |  |
+| `getPrevious` | method, protected | [32](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L32) | [`TBoldAbstractLinkNode.getPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L49) | 🟢 ported |  |
+| `setPrevious` | method, protected | [33](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L33) | [`TBoldAbstractLinkNode.setPrevious`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L52) | 🟢 ported |  |
+| `getIndexNode` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L34) · [body 62](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L62) | [`TBoldAbstractLinkNode.getIndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L56) | 🟢 ported |  |
+| `getNumberOfIndices` | method, protected | [35](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L35) | [`TBoldAbstractLinkNode.getNumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L68) | 🟢 ported |  |
+| `InsertAfter` | method | [37](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L37) · [body 76](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L76) | [`TBoldAbstractLinkNode.InsertAfter`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L72) | 🟢 ported |  |
+| `InsertBefore` | method | [38](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L38) · [body 84](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L84) | [`TBoldAbstractLinkNode.InsertBefore`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L82) | 🟢 ported |  |
+| `Remove` | method | [39](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L39) · [body 95](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L95) | [`TBoldAbstractLinkNode.Remove`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L100) | 🟢 ported |  |
+| `Next` | property | [40](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L40) | [`TBoldAbstractLinkNode.Next`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L122) | 🟢 ported: A method: C# has no indexed properties with a name; setNext writes it. |  |
+| `Previous` | property | [41](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L41) | [`TBoldAbstractLinkNode.Previous`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L126) | 🟢 ported: A method: C# has no indexed properties with a name; setPrevious writes it. |  |
+| `IndexNode` | property | [42](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L42) | [`TBoldAbstractLinkNode.IndexNode`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L129) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
+| `NumberOfIndices` | property | [43](../../../Source/Propagator/Enterprise/BoldListNodes.pas#L43) | [`TBoldAbstractLinkNode.NumberOfIndices`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldListNodes.cs#L132) | 🟢 ported |  |
 
 ## Dependencies
 

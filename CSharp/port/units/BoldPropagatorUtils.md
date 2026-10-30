@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldPropagatorUtils.pas`](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas) (121 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
 
-⚪ 4 not started
+🟢 4 ported
 
 ## Unit level
 
@@ -18,10 +18,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ReConnectToPropagator` | routine | [11](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L11) · [body 92](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L92) |  | ⚪ not started |  |
-| `GetActiveObjectSubscriptions` | routine, implementation | [29](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L29) |  | ⚪ not started |  |
-| `GetActiveSubscriptions` | routine, implementation | [59](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L59) |  | ⚪ not started |  |
-| `SendSubscriptions` | routine, implementation | [86](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L86) |  | ⚪ not started |  |
+| `ReConnectToPropagator` | routine | [11](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L11) · [body 92](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L92) | [`BoldPropagatorUtils.ReConnectToPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L73) | 🟢 ported: Takes the propagator handle where Delphi took its COM connection handle. |  |
+| `GetActiveObjectSubscriptions` | routine, implementation | [29](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L29) | [`BoldPropagatorUtils.GetActiveObjectSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L11) | 🟢 ported |  |
+| `GetActiveSubscriptions` | routine, implementation | [59](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L59) | [`BoldPropagatorUtils.GetActiveSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L34) | 🟢 ported |  |
+| `SendSubscriptions` | routine, implementation | [86](../../../Source/Persistence/Propagation/BoldPropagatorUtils.pas#L86) | [`BoldPropagatorUtils.SendSubscriptions`](../../src/Bold.Propagation/Persistence/Propagation/BoldPropagatorUtils.cs#L62) | 🟢 ported |  |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldSnooper.pas`](../../../Source/Persistence/Propagation/BoldSnooper.pas) (151 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🟡 partial: 11 of 12 symbols done, 0 verified |
 
-⚪ 12 not started
+🟢 11 ported · ⚪ 1 not started
 
 ## Unit level
 
@@ -18,25 +18,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSnooper` | class | [20](../../../Source/Persistence/Propagation/BoldSnooper.pas#L20) |  | ⚪ not started |  |
+| `TBoldSnooper` | class | [20](../../../Source/Persistence/Propagation/BoldSnooper.pas#L20) | [`TBoldSnooper`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L15) | 🟢 ported |  |
 | `DatabaseLock_AsOLEVariant` | routine, implementation | [50](../../../Source/Persistence/Propagation/BoldSnooper.pas#L50) |  | ⚪ not started |  |
 
 ## TBoldSnooper
 
-class at [line 20](../../../Source/Persistence/Propagation/BoldSnooper.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/Persistence/Propagation/BoldSnooper.pas#L20); 🟢 ported, C# [`TBoldSnooper`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L15).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EnsureDataBaseLock` | method, protected | [24](../../../Source/Persistence/Propagation/BoldSnooper.pas#L24) · [body 96](../../../Source/Persistence/Propagation/BoldSnooper.pas#L96) |  | ⚪ not started |  |
-| `ReleaseDataBaseLock` | method, protected | [25](../../../Source/Persistence/Propagation/BoldSnooper.pas#L25) · [body 108](../../../Source/Persistence/Propagation/BoldSnooper.pas#L108) |  | ⚪ not started |  |
-| `GetLockManager` | method, protected | [26](../../../Source/Persistence/Propagation/BoldSnooper.pas#L26) · [body 129](../../../Source/Persistence/Propagation/BoldSnooper.pas#L129) |  | ⚪ not started |  |
-| `GetPropagator` | method, protected | [27](../../../Source/Persistence/Propagation/BoldSnooper.pas#L27) · [body 137](../../../Source/Persistence/Propagation/BoldSnooper.pas#L137) |  | ⚪ not started |  |
-| `GetCheckDatabaseLock` | method, protected | [28](../../../Source/Persistence/Propagation/BoldSnooper.pas#L28) · [body 144](../../../Source/Persistence/Propagation/BoldSnooper.pas#L144) |  | ⚪ not started |  |
-| `Create` | constructor | [30](../../../Source/Persistence/Propagation/BoldSnooper.pas#L30) · [body 122](../../../Source/Persistence/Propagation/BoldSnooper.pas#L122) |  | ⚪ not started |  |
-| `TransmitEvents` | method | [31](../../../Source/Persistence/Propagation/BoldSnooper.pas#L31) · [body 56](../../../Source/Persistence/Propagation/BoldSnooper.pas#L56) |  | ⚪ not started |  |
-| `Propagator` | property | [32](../../../Source/Persistence/Propagation/BoldSnooper.pas#L32) |  | ⚪ not started |  |
-| `LockManager` | property | [33](../../../Source/Persistence/Propagation/BoldSnooper.pas#L33) |  | ⚪ not started |  |
-| `CheckDatabaseLock` | property | [34](../../../Source/Persistence/Propagation/BoldSnooper.pas#L34) |  | ⚪ not started |  |
+| `EnsureDataBaseLock` | method, protected | [24](../../../Source/Persistence/Propagation/BoldSnooper.pas#L24) · [body 96](../../../Source/Persistence/Propagation/BoldSnooper.pas#L96) | [`TBoldSnooper.EnsureDataBaseLock`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L30) | 🟢 ported |  |
+| `ReleaseDataBaseLock` | method, protected | [25](../../../Source/Persistence/Propagation/BoldSnooper.pas#L25) · [body 108](../../../Source/Persistence/Propagation/BoldSnooper.pas#L108) | [`TBoldSnooper.ReleaseDataBaseLock`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L44) | 🟢 ported |  |
+| `GetLockManager` | method, protected | [26](../../../Source/Persistence/Propagation/BoldSnooper.pas#L26) · [body 129](../../../Source/Persistence/Propagation/BoldSnooper.pas#L129) | [`TBoldSnooper.GetLockManager`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L63) | 🟢 ported |  |
+| `GetPropagator` | method, protected | [27](../../../Source/Persistence/Propagation/BoldSnooper.pas#L27) · [body 137](../../../Source/Persistence/Propagation/BoldSnooper.pas#L137) | [`TBoldSnooper.GetPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L68) | 🟢 ported |  |
+| `GetCheckDatabaseLock` | method, protected | [28](../../../Source/Persistence/Propagation/BoldSnooper.pas#L28) · [body 144](../../../Source/Persistence/Propagation/BoldSnooper.pas#L144) | [`TBoldSnooper.GetCheckDatabaseLock`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L71) | 🟢 ported |  |
+| `Create` | constructor | [30](../../../Source/Persistence/Propagation/BoldSnooper.pas#L30) · [body 122](../../../Source/Persistence/Propagation/BoldSnooper.pas#L122) | [`TBoldSnooper.TBoldSnooper`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L20) | 🟢 ported |  |
+| `TransmitEvents` | method | [31](../../../Source/Persistence/Propagation/BoldSnooper.pas#L31) · [body 56](../../../Source/Persistence/Propagation/BoldSnooper.pas#L56) | [`TBoldSnooper.TransmitEvents`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L78) | 🟢 ported |  |
+| `Propagator` | property | [32](../../../Source/Persistence/Propagation/BoldSnooper.pas#L32) | [`TBoldSnooper.Propagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L129) | 🟢 ported |  |
+| `LockManager` | property | [33](../../../Source/Persistence/Propagation/BoldSnooper.pas#L33) | [`TBoldSnooper.LockManager`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L130) | 🟢 ported |  |
+| `CheckDatabaseLock` | property | [34](../../../Source/Persistence/Propagation/BoldSnooper.pas#L34) | [`TBoldSnooper.CheckDatabaseLock`](../../src/Bold.Propagation/Persistence/Propagation/BoldSnooper.cs#L131) | 🟢 ported |  |
 
 ## Dependencies
 

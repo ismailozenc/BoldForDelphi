@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldEnqueuer.pas`](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas) (266 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 22 symbols done, 0 verified |
+| Status | 🟢 ported: 22 of 22 symbols done, 0 verified |
 
-⚪ 22 not started
+🟢 22 ported
 
 ## Unit level
 
@@ -18,49 +18,49 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldExternalEventType` | enum | [18](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L18) |  | ⚪ not started |  |
-| `TBoldExternalEvent` | class | [26](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L26) |  | ⚪ not started |  |
-| `TBoldExternalEventThreadSafeObjectQueue` | class | [38](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L38) |  | ⚪ not started |  |
-| `TBoldEnqueuer` | class | [44](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L44) |  | ⚪ not started |  |
+| `TBoldExternalEventType` | enum | [18](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L18) | [`TBoldExternalEventType`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L9) | 🟢 ported |  |
+| `TBoldExternalEvent` | class | [26](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L26) | [`TBoldExternalEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L13) | 🟢 ported |  |
+| `TBoldExternalEventThreadSafeObjectQueue` | class | [38](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L38) | [`TBoldExternalEventThreadSafeObjectQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L30) | 🟢 ported |  |
+| `TBoldEnqueuer` | class | [44](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L44) | [`TBoldEnqueuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L56) | 🟢 ported |  |
 
 ## TBoldExternalEvent
 
-class at [line 26](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L26); 🟢 ported, C# [`TBoldExternalEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [32](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L32) · [body 76](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L76) |  | ⚪ not started |  |
-| `EventType` | property | [33](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L33) |  | ⚪ not started |  |
-| `EventName` | property | [34](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L34) |  | ⚪ not started |  |
-| `BoldClientID` | property | [35](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L35) |  | ⚪ not started |  |
+| `Create` | constructor | [32](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L32) · [body 76](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L76) | [`TBoldExternalEvent.TBoldExternalEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L16) | 🟢 ported |  |
+| `EventType` | property | [33](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L33) | [`TBoldExternalEvent.EventType`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L23) | 🟢 ported |  |
+| `EventName` | property | [34](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L34) | [`TBoldExternalEvent.EventName`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L24) | 🟢 ported |  |
+| `BoldClientID` | property | [35](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L35) | [`TBoldExternalEvent.BoldClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L25) | 🟢 ported |  |
 
 ## TBoldExternalEventThreadSafeObjectQueue
 
-class at [line 38](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L38); ⚪ not started.
+class at [line 38](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L38); 🟢 ported, C# [`TBoldExternalEventThreadSafeObjectQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L30).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `EnqueueVarArray` | method | [40](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L40) · [body 252](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L252) |  | ⚪ not started |  |
+| `EnqueueVarArray` | method | [40](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L40) · [body 252](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L252) | [`TBoldExternalEventThreadSafeObjectQueue.EnqueueVarArray`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L34) | 🟢 ported: Takes a string array where Delphi took a variant array. |  |
 
 ## TBoldEnqueuer
 
-class at [line 44](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L44); ⚪ not started.
+class at [line 44](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L44); 🟢 ported, C# [`TBoldEnqueuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L56).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getInQueue` | method, private | [50](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L50) · [body 161](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L161) |  | ⚪ not started |  |
-| `SetEnabled` | method, private | [51](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L51) · [body 199](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L199) |  | ⚪ not started |  |
-| `GetEnabled` | method, private | [52](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L52) · [body 214](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L214) |  | ⚪ not started |  |
-| `CheckStatus` | method, private | [53](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L53) · [body 224](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L224) |  | ⚪ not started |  |
-| `Create` | constructor | [55](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L55) · [body 87](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L87) |  | ⚪ not started |  |
-| `Destroy` | destructor | [56](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L56) · [body 166](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L166) |  | ⚪ not started |  |
-| `SendLockEvent` | method | [57](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L57) · [body 175](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L175) |  | ⚪ not started |  |
-| `SendEvents` | method | [59](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L59) · [body 102](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L102) |  | ⚪ not started |  |
-| `AddSubscriptions` | method | [60](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L60) · [body 122](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L122) |  | ⚪ not started |  |
-| `CancelSubscriptions` | method | [61](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L61) · [body 142](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L142) |  | ⚪ not started |  |
-| `InQueue` | property | [62](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L62) |  | ⚪ not started |  |
-| `ClientHandler` | property | [63](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L63) |  | ⚪ not started |  |
-| `Enabled` | property | [64](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L64) |  | ⚪ not started |  |
+| `getInQueue` | method, private | [50](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L50) · [body 161](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L161) | [`TBoldEnqueuer.getInQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L165) | 🟢 ported |  |
+| `SetEnabled` | method, private | [51](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L51) · [body 199](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L199) | [`TBoldEnqueuer.SetEnabled`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L169) | 🟢 ported |  |
+| `GetEnabled` | method, private | [52](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L52) · [body 214](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L214) | [`TBoldEnqueuer.GetEnabled`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L190) | 🟢 ported |  |
+| `CheckStatus` | method, private | [53](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L53) · [body 224](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L224) | [`TBoldEnqueuer.CheckStatus`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L208) | 🟢 ported |  |
+| `Create` | constructor | [55](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L55) · [body 87](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L87) | [`TBoldEnqueuer.TBoldEnqueuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L64) | 🟢 ported |  |
+| `Destroy` | destructor | [56](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L56) · [body 166](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L166) | [`TBoldEnqueuer.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L82) | 🟢 ported |  |
+| `SendLockEvent` | method | [57](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L57) · [body 175](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L175) | [`TBoldEnqueuer.SendLockEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L135) | 🟢 ported |  |
+| `SendEvents` | method | [59](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L59) · [body 102](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L102) | [`TBoldEnqueuer.SendEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L91) | 🟢 ported |  |
+| `AddSubscriptions` | method | [60](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L60) · [body 122](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L122) | [`TBoldEnqueuer.AddSubscriptions`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L94) | 🟢 ported |  |
+| `CancelSubscriptions` | method | [61](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L61) · [body 142](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L142) | [`TBoldEnqueuer.CancelSubscriptions`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L98) | 🟢 ported |  |
+| `InQueue` | property | [62](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L62) | [`TBoldEnqueuer.InQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L230) | 🟢 ported |  |
+| `ClientHandler` | property | [63](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L63) | [`TBoldEnqueuer.ClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L233) | 🟢 ported |  |
+| `Enabled` | property | [64](../../../Source/Propagator/Enterprise/BoldEnqueuer.pas#L64) | [`TBoldEnqueuer.Enabled`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldEnqueuer.cs#L240) | 🟢 ported |  |
 
 ## Dependencies
 

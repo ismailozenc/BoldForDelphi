@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldListenerHandle.pas`](../../../Source/Persistence/Propagation/BoldListenerHandle.pas) (361 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 42 symbols done, 0 verified |
+| Status | 🟢 ported: 42 of 42 symbols done, 0 verified |
 
-⚪ 42 not started
+🟢 42 ported
 
 ## Unit level
 
@@ -18,55 +18,55 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldListenerHandle` | class | [21](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L21) |  | ⚪ not started |  |
+| `TBoldListenerHandle` | class | [21](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L21) | [`TBoldListenerHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L19) | 🟢 ported |  |
 
 ## TBoldListenerHandle
 
-class at [line 21](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L21); 🟢 ported, C# [`TBoldListenerHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Receive` | method, private | [38](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L38) · [body 115](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L115) |  | ⚪ not started |  |
-| `GetListenerThread` | method, private | [39](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L39) · [body 161](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L161) |  | ⚪ not started |  |
-| `GetConnected` | method, private | [40](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L40) · [body 141](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L141) |  | ⚪ not started |  |
-| `SetDequeuer` | method, private | [41](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L41) · [body 146](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L146) |  | ⚪ not started |  |
-| `NotifyDequeuer` | method, private | [42](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L42) · [body 207](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L207) |  | ⚪ not started |  |
-| `setLeaseDuration` | method, private | [43](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L43) · [body 214](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L214) |  | ⚪ not started |  |
-| `setPollingInterval` | method, private | [44](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L44) · [body 220](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L220) |  | ⚪ not started |  |
-| `setAutoExtendLease` | method, private | [45](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L45) · [body 226](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L226) |  | ⚪ not started |  |
-| `setClientIdentifierString` | method, private | [46](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L46) · [body 262](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L262) |  | ⚪ not started |  |
-| `_ReceivePropagatorHandleEvents` | method, private | [47](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L47) · [body 270](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L270) |  | ⚪ not started |  |
-| `SetPropagatorHandle` | method, private | [48](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L48) · [body 289](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L289) |  | ⚪ not started |  |
-| `SetOnExtendLeaseFailed` | method, private | [49](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L49) · [body 311](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L311) |  | ⚪ not started |  |
-| `GetIsLoaded` | method, private | [50](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L50) · [body 318](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L318) |  | ⚪ not started |  |
-| `StopAndFreeListenerThread` | method, private | [51](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L51) · [body 175](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L175) |  | ⚪ not started |  |
-| `SetExtendLeaseAfter` | method, private | [52](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L52) · [body 323](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L323) |  | ⚪ not started |  |
-| `Subscribe` | method, private | [53](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L53) · [body 345](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L345) |  | ⚪ not started |  |
-| `GetHandledObject` | method, protected | [55](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L55) · [body 156](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L156) |  | ⚪ not started |  |
-| `GetBoldClientID` | method, protected | [56](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L56) · [body 136](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L136) |  | ⚪ not started |  |
-| `Notification` | method, protected | [57](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L57) · [body 331](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L331) |  | ⚪ not started |  |
-| `IsLoaded` | property, protected | [58](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L58) |  | ⚪ not started |  |
-| `Create` | constructor | [60](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L60) · [body 97](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L97) |  | ⚪ not started |  |
-| `Destroy` | destructor | [61](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L61) · [body 128](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L128) |  | ⚪ not started |  |
-| `StartListenerThread` | method | [62](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L62) · [body 182](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L182) |  | ⚪ not started |  |
-| `SuspendListenerThread` | method | [63](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L63) · [body 252](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L252) |  | ⚪ not started |  |
-| `DebugGetQueueContents` | method | [64](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L64) · [body 110](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L110) |  | ⚪ not started |  |
-| `ExtendLease` | method | [65](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L65) · [body 232](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L232) |  | ⚪ not started |  |
-| `SetActive` | method | [66](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L66) · [body 237](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L237) |  | ⚪ not started |  |
-| `BoldClientID` | property | [67](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L67) |  | ⚪ not started |  |
-| `Connected` | property | [68](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L68) |  | ⚪ not started |  |
-| `ListenerThread` | property | [69](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L69) |  | ⚪ not started |  |
-| `AutoStart` | property, published | [71](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L71) |  | ⚪ not started |  |
-| `LeaseDuration` | property, published | [72](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L72) |  | ⚪ not started |  |
-| `ExtendLeaseAfter` | property, published | [73](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L73) |  | ⚪ not started |  |
-| `PollingInterval` | property, published | [74](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L74) |  | ⚪ not started |  |
-| `AutoExtendLease` | property, published | [75](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L75) |  | ⚪ not started |  |
-| `Dequeuer` | property, published | [76](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L76) |  | ⚪ not started |  |
-| `ClientIdentifierString` | property, published | [77](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L77) |  | ⚪ not started |  |
-| `PropagatorHandle` | property, published | [78](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L78) |  | ⚪ not started |  |
-| `OnRegistrationFailed` | property, published | [79](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L79) |  | ⚪ not started |  |
-| `OnExtendLeaseFailed` | property, published | [80](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L80) |  | ⚪ not started |  |
-| `OnThreadError` | property, published | [81](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L81) |  | ⚪ not started |  |
+| `_Receive` | method, private | [38](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L38) · [body 115](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L115) | [`TBoldListenerHandle._Receive`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L65) | 🟢 ported |  |
+| `GetListenerThread` | method, private | [39](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L39) · [body 161](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L161) | [`TBoldListenerHandle.GetListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L83) | 🟢 ported |  |
+| `GetConnected` | method, private | [40](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L40) · [body 141](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L141) | [`TBoldListenerHandle.GetConnected`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L101) | 🟢 ported |  |
+| `SetDequeuer` | method, private | [41](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L41) · [body 146](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L146) | [`TBoldListenerHandle.SetDequeuer`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L104) | 🟢 ported |  |
+| `NotifyDequeuer` | method, private | [42](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L42) · [body 207](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L207) | [`TBoldListenerHandle.NotifyDequeuer`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L118) | 🟢 ported: Runs on the handle's synchronization context; Delphi ran it on the listener's thread. |  |
+| `setLeaseDuration` | method, private | [43](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L43) · [body 214](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L214) | [`TBoldListenerHandle.setLeaseDuration`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L142) | 🟢 ported |  |
+| `setPollingInterval` | method, private | [44](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L44) · [body 220](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L220) | [`TBoldListenerHandle.setPollingInterval`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L149) | 🟢 ported |  |
+| `setAutoExtendLease` | method, private | [45](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L45) · [body 226](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L226) | [`TBoldListenerHandle.setAutoExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L156) | 🟢 ported |  |
+| `setClientIdentifierString` | method, private | [46](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L46) · [body 262](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L262) | [`TBoldListenerHandle.setClientIdentifierString`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L163) | 🟢 ported |  |
+| `_ReceivePropagatorHandleEvents` | method, private | [47](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L47) · [body 270](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L270) | [`TBoldListenerHandle._ReceivePropagatorHandleEvents`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L174) | 🟢 ported |  |
+| `SetPropagatorHandle` | method, private | [48](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L48) · [body 289](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L289) | [`TBoldListenerHandle.SetPropagatorHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L208) | 🟢 ported |  |
+| `SetOnExtendLeaseFailed` | method, private | [49](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L49) · [body 311](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L311) | [`TBoldListenerHandle.SetOnExtendLeaseFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L237) | 🟢 ported |  |
+| `GetIsLoaded` | method, private | [50](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L50) · [body 318](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L318) | [`TBoldListenerHandle.GetIsLoaded`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L247) | 🟢 ported |  |
+| `StopAndFreeListenerThread` | method, private | [51](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L51) · [body 175](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L175) | [`TBoldListenerHandle.StopAndFreeListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L250) | 🟢 ported |  |
+| `SetExtendLeaseAfter` | method, private | [52](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L52) · [body 323](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L323) | [`TBoldListenerHandle.SetExtendLeaseAfter`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L261) | 🟢 ported |  |
+| `Subscribe` | method, private | [53](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L53) · [body 345](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L345) | [`TBoldListenerHandle.Subscribe`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L273) | 🟢 ported |  |
+| `GetHandledObject` | method, protected | [55](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L55) · [body 156](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L156) | [`TBoldListenerHandle.GetHandledObject`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L290) | 🟢 ported |  |
+| `GetBoldClientID` | method, protected | [56](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L56) · [body 136](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L136) | [`TBoldListenerHandle.GetBoldClientID`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L293) | 🟢 ported |  |
+| `Notification` | method, protected | [57](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L57) · [body 331](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L331) | [`TBoldListenerHandle.Notification`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L296) | 🟢 ported |  |
+| `IsLoaded` | property, protected | [58](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L58) | [`TBoldListenerHandle.IsLoaded`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L316) | 🟢 ported |  |
+| `Create` | constructor | [60](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L60) · [body 97](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L97) | [`TBoldListenerHandle.TBoldListenerHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L37) | 🟢 ported |  |
+| `Destroy` | destructor | [61](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L61) · [body 128](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L128) | [`TBoldListenerHandle.Dispose`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L52) | 🟢 ported |  |
+| `StartListenerThread` | method | [62](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L62) · [body 182](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L182) | [`TBoldListenerHandle.StartListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L323) | 🟢 ported |  |
+| `SuspendListenerThread` | method | [63](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L63) · [body 252](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L252) | [`TBoldListenerHandle.SuspendListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L357) | 🟢 ported |  |
+| `DebugGetQueueContents` | method | [64](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L64) · [body 110](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L110) | [`TBoldListenerHandle.DebugGetQueueContents`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L368) | 🟢 ported |  |
+| `ExtendLease` | method | [65](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L65) · [body 232](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L232) | [`TBoldListenerHandle.ExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L371) | 🟢 ported |  |
+| `SetActive` | method | [66](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L66) · [body 237](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L237) | [`TBoldListenerHandle.SetActive`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L375) | 🟢 ported |  |
+| `BoldClientID` | property | [67](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L67) | [`TBoldListenerHandle.BoldClientID`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L394) | 🟢 ported |  |
+| `Connected` | property | [68](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L68) | [`TBoldListenerHandle.Connected`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L395) | 🟢 ported |  |
+| `ListenerThread` | property | [69](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L69) | [`TBoldListenerHandle.ListenerThread`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L396) | 🟢 ported |  |
+| `AutoStart` | property, published | [71](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L71) | [`TBoldListenerHandle.AutoStart`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L399) | 🟢 ported |  |
+| `LeaseDuration` | property, published | [72](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L72) | [`TBoldListenerHandle.LeaseDuration`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L406) | 🟢 ported |  |
+| `ExtendLeaseAfter` | property, published | [73](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L73) | [`TBoldListenerHandle.ExtendLeaseAfter`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L413) | 🟢 ported |  |
+| `PollingInterval` | property, published | [74](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L74) | [`TBoldListenerHandle.PollingInterval`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L420) | 🟢 ported |  |
+| `AutoExtendLease` | property, published | [75](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L75) | [`TBoldListenerHandle.AutoExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L427) | 🟢 ported |  |
+| `Dequeuer` | property, published | [76](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L76) | [`TBoldListenerHandle.Dequeuer`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L434) | 🟢 ported |  |
+| `ClientIdentifierString` | property, published | [77](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L77) | [`TBoldListenerHandle.ClientIdentifierString`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L441) | 🟢 ported |  |
+| `PropagatorHandle` | property, published | [78](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L78) | [`TBoldListenerHandle.PropagatorHandle`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L448) | 🟢 ported |  |
+| `OnRegistrationFailed` | property, published | [79](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L79) | [`TBoldListenerHandle.OnRegistrationFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L454) | 🟢 ported |  |
+| `OnExtendLeaseFailed` | property, published | [80](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L80) | [`TBoldListenerHandle.OnExtendLeaseFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L457) | 🟢 ported |  |
+| `OnThreadError` | property, published | [81](../../../Source/Persistence/Propagation/BoldListenerHandle.pas#L81) | [`TBoldListenerHandle.OnThreadError`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerHandle.cs#L463) | 🟢 ported |  |
 
 ## Dependencies
 

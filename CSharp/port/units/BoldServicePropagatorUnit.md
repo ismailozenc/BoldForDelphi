@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas`](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas) (78 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🟢 ported: 11 of 11 symbols done, 0 verified |
 
-⚪ 11 not started
+🔵 4 replaced · ⚫ 7 dropped
 
 ## Unit level
 
@@ -18,24 +18,24 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPropagatorSvc` | class | [15](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L15) |  | ⚪ not started |  |
-| `BoldPropagatorSvc` | var | [28](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L28) |  | ⚪ not started |  |
-| `ServiceController` | routine, implementation | [41](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L41) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [73](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L73) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [76](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L76) |  | ⚪ not started |  |
+| `TBoldPropagatorSvc` | class | [15](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L15) | [`TBoldPropagatorSvc`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L19) | 🔵 replaced: An IHostedService where Delphi had a TService; run the host as a Windows service or a systemd unit to have a service. |  |
+| `BoldPropagatorSvc` | var | [28](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L28) | [`[assembly: Delphi] in BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L4) | ⚫ dropped: The host creates the service. |  |
+| `ServiceController` | routine, implementation | [41](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L41) | [`[assembly: Delphi] in BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L5) | ⚫ dropped: Windows service control; the host handles it. |  |
+| `initialization` | initialization, implementation | [73](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L73) | [`TBoldPropagatorSvc.StartAsync`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L23) | 🔵 replaced: The server starts with the hosted service. |  |
+| `finalization` | finalization, implementation | [76](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L76) | [`TBoldPropagatorSvc.StopAsync`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L30) | 🔵 replaced: The server is freed when the hosted service stops. |  |
 
 ## TBoldPropagatorSvc
 
-class at [line 15](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L15); 🔵 replaced, C# [`TBoldPropagatorSvc`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L19).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ServiceAfterInstall` | method | [16](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L16) · [body 51](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L51) |  | ⚪ not started |  |
-| `ServiceAfterUninstall` | method | [17](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L17) · [body 56](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L56) |  | ⚪ not started |  |
-| `ServiceStart` | method | [18](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L18) · [body 61](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L61) |  | ⚪ not started |  |
-| `getAppId` | method, private | [21](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L21) · [body 66](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L66) |  | ⚪ not started |  |
-| `GetServiceController` | method | [23](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L23) · [body 46](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L46) |  | ⚪ not started |  |
-| `AppID` | property | [24](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L24) |  | ⚪ not started |  |
+| `ServiceAfterInstall` | method | [16](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L16) · [body 51](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L51) | [`[assembly: Delphi] in BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L7) | ⚫ dropped: Registered the COM server as a service. |  |
+| `ServiceAfterUninstall` | method | [17](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L17) · [body 56](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L56) | [`[assembly: Delphi] in BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L8) | ⚫ dropped: Unregistered the COM server as a service. |  |
+| `ServiceStart` | method | [18](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L18) · [body 61](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L61) | [`TBoldPropagatorSvc.StartAsync`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L23) | 🔵 replaced: Starting the hosted service starts the propagator server. |  |
+| `getAppId` | method, private | [21](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L21) · [body 66](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L66) | [`[assembly: Delphi] in BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L9) | ⚫ dropped: COM application id. |  |
+| `GetServiceController` | method | [23](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L23) · [body 46](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L46) | [`[assembly: Delphi] in BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L6) | ⚫ dropped: Windows service control; the host handles it. |  |
+| `AppID` | property | [24](../../../Source/Propagator/Enterprise/BoldServicePropagatorUnit.pas#L24) | [`[assembly: Delphi] in BoldServicePropagatorUnit.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldServicePropagatorUnit.cs#L10) | ⚫ dropped: COM application id. |  |
 
 ## Dependencies
 

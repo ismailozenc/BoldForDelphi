@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldPropagatorCleanup.pas`](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas) (272 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 21 symbols done, 0 verified |
+| Status | 🟢 ported: 21 of 21 symbols done, 0 verified |
 
-⚪ 21 not started
+🟢 21 ported
 
 ## Unit level
 
@@ -18,41 +18,49 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldCleanUpThread` | class | [23](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L23) |  | ⚪ not started |  |
-| `TBoldCleanupSubscriber` | class | [44](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L44) |  | ⚪ not started |  |
-| `BoldPropagatorCleanupWndProc` | routine, implementation | [70](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L70) |  | ⚪ not started |  |
+| `TBoldCleanUpThread` | class | [23](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L23) | [`TBoldCleanUpThread`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L14) | 🟢 ported |  |
+| `TBoldCleanupSubscriber` | class | [44](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L44) | [`TBoldCleanupSubscriber`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L175) | 🟢 ported |  |
+| `BoldPropagatorCleanupWndProc` | routine, implementation | [70](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L70) | [`TBoldCleanUpThread.BoldPropagatorCleanupWndProc`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L116) | 🟢 ported: The window procedure of this thread's window, where Delphi passed the thread as lParam. |  |
 
 ## TBoldCleanUpThread
 
-class at [line 23](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L23); 🟢 ported, C# [`TBoldCleanUpThread`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getTimer` | method, private | [27](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L27) · [body 221](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L221) |  | ⚪ not started |  |
-| `OnTimer` | method, private | [28](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L28) · [body 232](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L232) |  | ⚪ not started |  |
-| `SetTimer` | method, private | [29](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L29) · [body 250](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L250) |  | ⚪ not started |  |
-| `DisableTimer` | method, private | [30](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L30) · [body 188](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L188) |  | ⚪ not started |  |
-| `GetOwner` | method, private | [31](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L31) · [body 216](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L216) |  | ⚪ not started |  |
-| `ProcessMessage` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L34) · [body 239](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L239) |  | ⚪ not started |  |
-| `CreateQueueWindow` | class method, protected | [35](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L35) · [body 170](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L170) |  | ⚪ not started |  |
-| `Owner` | property, protected | [36](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L36) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L38) · [body 164](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L164) |  | ⚪ not started |  |
-| `Execute` | method | [39](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L39) · [body 193](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L193) |  | ⚪ not started |  |
-| `RemoveTimedOutClient` | method | [40](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L40) · [body 245](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L245) |  | ⚪ not started |  |
-| `Timer` | property | [41](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L41) |  | ⚪ not started |  |
+| `getTimer` | method, private | [27](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L27) · [body 221](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L221) | [`TBoldCleanUpThread.getTimer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L49) | 🟢 ported |  |
+| `OnTimer` | method, private | [28](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L28) · [body 232](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L232) | [`TBoldCleanUpThread.OnTimer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L61) | 🟢 ported |  |
+| `SetTimer` | method, private | [29](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L29) · [body 250](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L250) | [`TBoldCleanUpThread.SetTimer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L69) | 🟢 ported |  |
+| `DisableTimer` | method, private | [30](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L30) · [body 188](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L188) | [`TBoldCleanUpThread.DisableTimer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L97) | 🟢 ported |  |
+| `GetOwner` | method, private | [31](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L31) · [body 216](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L216) | [`TBoldCleanUpThread.GetOwner`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L100) | 🟢 ported |  |
+| `ProcessMessage` | method, protected | [34](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L34) · [body 239](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L239) | [`TBoldCleanUpThread.ProcessMessage`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L103) | 🟢 ported |  |
+| `CreateQueueWindow` | class method, protected | [35](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L35) · [body 170](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L170) | [`TBoldCleanUpThread.CreateQueueWindow`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L111) | 🟢 ported: Gives a TThreadWindow whose window procedure is BoldPropagatorCleanupWndProc. |  |
+| `Owner` | property, protected | [36](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L36) | [`TBoldCleanUpThread.Owner`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L132) | 🟢 ported |  |
+| `Create` | constructor | [38](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L38) · [body 164](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L164) | [`TBoldCleanUpThread.TBoldCleanUpThread`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L22) | 🟢 ported |  |
+| `Execute` | method | [39](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L39) · [body 193](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L193) | [`TBoldCleanUpThread.Execute`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L135) | 🟢 ported |  |
+| `RemoveTimedOutClient` | method | [40](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L40) · [body 245](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L245) | [`TBoldCleanUpThread.RemoveTimedOutClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L159) | 🟢 ported |  |
+| `Timer` | property | [41](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L41) | [`TBoldCleanUpThread.Timer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L166) | 🟢 ported |  |
 
 ## TBoldCleanupSubscriber
 
-class at [line 44](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L44); ⚪ not started.
+class at [line 44](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L44); 🟢 ported, C# [`TBoldCleanupSubscriber`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L175).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DoLeaseChanged` | method, private | [48](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L48) · [body 123](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L123) |  | ⚪ not started |  |
-| `SetClientHandler` | method, private | [49](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L49) · [body 152](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L152) |  | ⚪ not started |  |
-| `ClientHandler` | property, protected | [51](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L51) |  | ⚪ not started |  |
-| `Create` | constructor | [53](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L53) · [body 106](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L106) |  | ⚪ not started |  |
-| `Destroy` | destructor | [54](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L54) · [body 115](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L115) |  | ⚪ not started |  |
-| `OnGetExtendedEvent` | method | [55](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L55) · [body 132](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L132) |  | ⚪ not started |  |
+| `DoLeaseChanged` | method, private | [48](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L48) · [body 123](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L123) | [`TBoldCleanupSubscriber.DoLeaseChanged`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L204) | 🟢 ported |  |
+| `SetClientHandler` | method, private | [49](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L49) · [body 152](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L152) | [`TBoldCleanupSubscriber.SetClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L217) | 🟢 ported |  |
+| `ClientHandler` | property, protected | [51](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L51) | [`TBoldCleanupSubscriber.ClientHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L227) | 🟢 ported |  |
+| `Create` | constructor | [53](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L53) · [body 106](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L106) | [`TBoldCleanupSubscriber.TBoldCleanupSubscriber`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L181) | 🟢 ported |  |
+| `Destroy` | destructor | [54](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L54) · [body 115](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L115) | [`TBoldCleanupSubscriber.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L191) | 🟢 ported |  |
+| `OnGetExtendedEvent` | method | [55](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L55) · [body 132](../../../Source/Propagator/Enterprise/BoldPropagatorCleanup.pas#L132) | [`TBoldCleanupSubscriber.OnGetExtendedEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L235) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldCleanUpThread.TimingOutClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L29) (property)
+- [`TBoldCleanupSubscriber.GetHandlesExtendedEvents`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L256) (method)
+- [`TBoldCleanupSubscriber.ReceiveExtended`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldPropagatorCleanup.cs#L258) (method)
 
 ## Dependencies
 

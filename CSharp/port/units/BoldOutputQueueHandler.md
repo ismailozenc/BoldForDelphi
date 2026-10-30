@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldOutputQueueHandler.pas`](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas) (133 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 14 symbols done, 0 verified |
+| Status | 🟢 ported: 14 of 14 symbols done, 0 verified |
 
-⚪ 14 not started
+🟢 14 ported
 
 ## Unit level
 
@@ -18,27 +18,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `INITIAL_ARRAY_SIZE` | const | [15](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L15) |  | ⚪ not started |  |
-| `ArrayIncrement` | const | [16](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L16) |  | ⚪ not started |  |
-| `TBoldOutputQueueHandler` | class | [21](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L21) |  | ⚪ not started |  |
+| `INITIAL_ARRAY_SIZE` | const | [15](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L15) | [`BoldOutputQueueHandler.INITIAL_ARRAY_SIZE`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L9) | 🟢 ported |  |
+| `ArrayIncrement` | const | [16](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L16) | [`BoldOutputQueueHandler.ArrayIncrement`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L10) | 🟢 ported |  |
+| `TBoldOutputQueueHandler` | class | [21](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L21) | [`TBoldOutputQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L18) | 🟢 ported |  |
 
 ## TBoldOutputQueueHandler
 
-class at [line 21](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L21); 🟢 ported, C# [`TBoldOutputQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getOutputQueue` | method, private | [24](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L24) · [body 69](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L69) |  | ⚪ not started |  |
-| `getPriorityListEnlister` | method, protected | [26](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L26) · [body 94](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L94) |  | ⚪ not started |  |
-| `PriorityListEnlister` | property, protected | [27](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L27) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L29) · [body 57](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L57) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L30) · [body 63](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L63) |  | ⚪ not started |  |
-| `SendEvent` | method | [31](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L31) · [body 117](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L117) |  | ⚪ not started |  |
-| `ClearQueueForClient` | method | [32](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L32) · [body 51](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L51) |  | ⚪ not started |  |
-| `QueueCountForClient` | method | [33](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L33) · [body 112](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L112) |  | ⚪ not started |  |
-| `SendEventAndFlushQueue` | method | [34](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L34) · [body 126](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L126) |  | ⚪ not started |  |
-| `OnQueueNotEmpty` | method | [35](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L35) · [body 102](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L102) |  | ⚪ not started |  |
-| `OutputQueues` | property | [36](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L36) |  | ⚪ not started |  |
+| `getOutputQueue` | method, private | [24](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L24) · [body 69](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L69) | [`TBoldOutputQueueHandler.getOutputQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L38) | 🟢 ported |  |
+| `getPriorityListEnlister` | method, protected | [26](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L26) · [body 94](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L94) | [`TBoldOutputQueueHandler.getPriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L72) | 🟢 ported |  |
+| `PriorityListEnlister` | property, protected | [27](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L27) | [`TBoldOutputQueueHandler.PriorityListEnlister`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L76) | 🟢 ported |  |
+| `Create` | constructor | [29](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L29) · [body 57](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L57) | [`TBoldOutputQueueHandler.TBoldOutputQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L23) | 🟢 ported |  |
+| `Destroy` | destructor | [30](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L30) · [body 63](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L63) | [`TBoldOutputQueueHandler.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L30) | 🟢 ported |  |
+| `SendEvent` | method | [31](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L31) · [body 117](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L117) | [`TBoldOutputQueueHandler.SendEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L85) | 🟢 ported |  |
+| `ClearQueueForClient` | method | [32](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L32) · [body 51](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L51) | [`TBoldOutputQueueHandler.ClearQueueForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L79) | 🟢 ported |  |
+| `QueueCountForClient` | method | [33](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L33) · [body 112](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L112) | [`TBoldOutputQueueHandler.QueueCountForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L82) | 🟢 ported |  |
+| `SendEventAndFlushQueue` | method | [34](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L34) · [body 126](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L126) | [`TBoldOutputQueueHandler.SendEventAndFlushQueue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L98) | 🟢 ported |  |
+| `OnQueueNotEmpty` | method | [35](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L35) · [body 102](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L102) | [`TBoldOutputQueueHandler.OnQueueNotEmpty`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L106) | 🟢 ported |  |
+| `OutputQueues` | property | [36](../../../Source/Propagator/Enterprise/BoldOutputQueueHandler.pas#L36) | [`TBoldOutputQueueHandler.OutputQueues`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldOutputQueueHandler.cs#L119) | 🟢 ported: A method: C# has no indexed properties with a name. |  |
 
 ## Dependencies
 

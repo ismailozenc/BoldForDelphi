@@ -124,6 +124,12 @@ public static partial class SysUtils
 
     public static double TimeStampToMSecs(TTimeStamp TimeStamp) => (double)TimeStamp.Date * MSecsPerDay + TimeStamp.Time;
 
+    public static TTimeStamp MSecsToTimeStamp(double MSecs) => new()
+    {
+        Date = (int)Math.Truncate(MSecs / MSecsPerDay),
+        Time = (int)(MSecs - Math.Truncate(MSecs / MSecsPerDay) * MSecsPerDay),
+    };
+
     public static string DateToStr(DateTime Date) => FormatDateTime("ddddd", Date);
 
     public static string TimeToStr(DateTime Time) => FormatDateTime("tt", Time);

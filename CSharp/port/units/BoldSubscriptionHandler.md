@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldSubscriptionHandler.pas`](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas) (404 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs` |
+| C# | [`CSharp/src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs) |
 | Project | Bold.Propagator.Server |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 41 symbols done, 0 verified |
+| Status | 🟢 ported: 41 of 41 symbols done, 0 verified |
 
-⚪ 41 not started
+🟢 41 ported
 
 ## Unit level
 
@@ -18,61 +18,61 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TClientInfoChangedEvent` | event type | [22](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L22) |  | ⚪ not started |  |
-| `TGlobalInfoChangedEvent` | event type | [23](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L23) |  | ⚪ not started |  |
-| `TBoldDequeuer` | class | [25](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L25) |  | ⚪ not started |  |
-| `TBoldSubscriptionHandler` | class | [58](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L58) |  | ⚪ not started |  |
+| `TClientInfoChangedEvent` | event type | [22](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L22) | [`TClientInfoChangedEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L10) | 🟢 ported |  |
+| `TGlobalInfoChangedEvent` | event type | [23](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L23) | [`TGlobalInfoChangedEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L13) | 🟢 ported |  |
+| `TBoldDequeuer` | class | [25](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L25) | [`TBoldDequeuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L20) | 🟢 ported |  |
+| `TBoldSubscriptionHandler` | class | [58](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L58) | [`TBoldSubscriptionHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L168) | 🟢 ported |  |
 
 ## TBoldDequeuer
 
-class at [line 25](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L25); 🟢 ported, C# [`TBoldDequeuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L20).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `NotifyQueueNotEmpty` | method, private | [35](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L35) · [body 235](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L235) |  | ⚪ not started |  |
-| `DoStartDequeue` | method, private | [36](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L36) · [body 149](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L149) |  | ⚪ not started |  |
-| `DoDoneDequeue` | method, private | [37](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L37) · [body 143](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L143) |  | ⚪ not started |  |
-| `Dequeue` | method, private | [38](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L38) · [body 106](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L106) |  | ⚪ not started |  |
-| `GetInQueueCount` | method, private | [39](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L39) · [body 223](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L223) |  | ⚪ not started |  |
-| `GetInQueueCountPeak` | method, private | [40](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L40) · [body 249](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L249) |  | ⚪ not started |  |
-| `GetOutQueueHandler` | method, protected | [42](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L42) · [body 228](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L228) |  | ⚪ not started |  |
-| `OutQueuehandler` | property, protected | [43](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L43) |  | ⚪ not started |  |
-| `Create` | constructor | [45](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L45) · [body 97](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L97) |  | ⚪ not started |  |
-| `Destroy` | destructor | [46](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L46) · [body 136](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L136) |  | ⚪ not started |  |
-| `Execute` | method | [47](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L47) · [body 155](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L155) |  | ⚪ not started |  |
-| `EnqueueRemoveClientQueueEvent` | method | [48](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L48) · [body 244](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L244) |  | ⚪ not started |  |
-| `OnStartDequeue` | property | [49](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L49) |  | ⚪ not started |  |
-| `OnDoneDequeue` | property | [50](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L50) |  | ⚪ not started |  |
-| `OnClientInfoChanged` | property | [51](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L51) |  | ⚪ not started |  |
-| `OnGlobalInfoChanged` | property | [52](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L52) |  | ⚪ not started |  |
-| `InQueueCount` | property | [53](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L53) |  | ⚪ not started |  |
-| `InQueueCountPeak` | property | [54](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L54) |  | ⚪ not started |  |
-| `InQueueCountLast` | property | [55](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L55) |  | ⚪ not started |  |
+| `NotifyQueueNotEmpty` | method, private | [35](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L35) · [body 235](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L235) | [`TBoldDequeuer.NotifyQueueNotEmpty`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L46) | 🟢 ported |  |
+| `DoStartDequeue` | method, private | [36](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L36) · [body 149](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L149) | [`TBoldDequeuer.DoStartDequeue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L59) | 🟢 ported |  |
+| `DoDoneDequeue` | method, private | [37](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L37) · [body 143](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L143) | [`TBoldDequeuer.DoDoneDequeue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L62) | 🟢 ported |  |
+| `Dequeue` | method, private | [38](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L38) · [body 106](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L106) | [`TBoldDequeuer.Dequeue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L66) | 🟢 ported |  |
+| `GetInQueueCount` | method, private | [39](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L39) · [body 223](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L223) | [`TBoldDequeuer.GetInQueueCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L90) | 🟢 ported |  |
+| `GetInQueueCountPeak` | method, private | [40](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L40) · [body 249](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L249) | [`TBoldDequeuer.GetInQueueCountPeak`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L93) | 🟢 ported |  |
+| `GetOutQueueHandler` | method, protected | [42](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L42) · [body 228](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L228) | [`TBoldDequeuer.GetOutQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L97) | 🟢 ported |  |
+| `OutQueuehandler` | property, protected | [43](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L43) | [`TBoldDequeuer.OutQueuehandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L100) | 🟢 ported |  |
+| `Create` | constructor | [45](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L45) · [body 97](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L97) | [`TBoldDequeuer.TBoldDequeuer`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L28) | 🟢 ported |  |
+| `Destroy` | destructor | [46](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L46) · [body 136](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L136) | [`TBoldDequeuer.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L37) | 🟢 ported |  |
+| `Execute` | method | [47](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L47) · [body 155](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L155) | [`TBoldDequeuer.Execute`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L104) | 🟢 ported: Logs a failure to handle a message; Delphi beeped. |  |
+| `EnqueueRemoveClientQueueEvent` | method | [48](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L48) · [body 244](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L244) | [`TBoldDequeuer.EnqueueRemoveClientQueueEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L151) | 🟢 ported |  |
+| `OnStartDequeue` | property | [49](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L49) | [`TBoldDequeuer.OnStartDequeue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L154) | 🟢 ported |  |
+| `OnDoneDequeue` | property | [50](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L50) | [`TBoldDequeuer.OnDoneDequeue`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L155) | 🟢 ported |  |
+| `OnClientInfoChanged` | property | [51](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L51) | [`TBoldDequeuer.OnClientInfoChanged`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L156) | 🟢 ported |  |
+| `OnGlobalInfoChanged` | property | [52](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L52) | [`TBoldDequeuer.OnGlobalInfoChanged`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L157) | 🟢 ported |  |
+| `InQueueCount` | property | [53](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L53) | [`TBoldDequeuer.InQueueCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L158) | 🟢 ported |  |
+| `InQueueCountPeak` | property | [54](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L54) | [`TBoldDequeuer.InQueueCountPeak`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L159) | 🟢 ported |  |
+| `InQueueCountLast` | property | [55](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L55) | [`TBoldDequeuer.InQueueCountLast`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L160) | 🟢 ported |  |
 
 ## TBoldSubscriptionHandler
 
-class at [line 58](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L58); ⚪ not started.
+class at [line 58](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L58); 🟢 ported, C# [`TBoldSubscriptionHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L168).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `getOutQueueHandler` | method, private | [64](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L64) · [body 298](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L298) |  | ⚪ not started |  |
-| `AddSubscription` | method, private | [65](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L65) · [body 256](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L256) |  | ⚪ not started |  |
-| `RemoveSubscription` | method, private | [66](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L66) · [body 386](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L386) |  | ⚪ not started |  |
-| `SendEvent` | method, private | [67](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L67) · [body 391](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L391) |  | ⚪ not started |  |
-| `GetAddedSubscriptionsCount` | method, private | [68](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L68) · [body 275](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L275) |  | ⚪ not started |  |
-| `GetSentEventsCount` | method, private | [69](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L69) · [body 306](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L306) |  | ⚪ not started |  |
-| `OutQueueHandler` | property, protected | [71](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L71) |  | ⚪ not started |  |
-| `GetClientsSubscribedToEvent` | method, protected | [72](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L72) · [body 280](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L280) |  | ⚪ not started |  |
-| `GetEventsByClientID` | method, protected | [73](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L73) · [body 292](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L292) |  | ⚪ not started |  |
-| `RemoveQueueForClient` | method, protected | [74](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L74) · [body 379](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L379) |  | ⚪ not started |  |
-| `Create` | constructor | [76](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L76) · [body 263](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L263) |  | ⚪ not started |  |
-| `Destroy` | destructor | [77](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L77) · [body 269](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L269) |  | ⚪ not started |  |
-| `ProcessExternalEvent` | method | [78](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L78) · [body 311](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L311) |  | ⚪ not started |  |
-| `RemoveClient` | method | [79](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L79) · [body 372](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L372) |  | ⚪ not started |  |
-| `GetEventCountByClientID` | method | [80](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L80) · [body 286](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L286) |  | ⚪ not started |  |
-| `QueueCountForClient` | method | [81](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L81) · [body 366](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L366) |  | ⚪ not started |  |
-| `AddedSubscriptionsCount` | property | [82](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L82) |  | ⚪ not started |  |
-| `SentEventsCount` | property | [83](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L83) |  | ⚪ not started |  |
+| `getOutQueueHandler` | method, private | [64](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L64) · [body 298](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L298) | [`TBoldSubscriptionHandler.getOutQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L189) | 🟢 ported |  |
+| `AddSubscription` | method, private | [65](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L65) · [body 256](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L256) | [`TBoldSubscriptionHandler.AddSubscription`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L193) | 🟢 ported |  |
+| `RemoveSubscription` | method, private | [66](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L66) · [body 386](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L386) | [`TBoldSubscriptionHandler.RemoveSubscription`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L200) | 🟢 ported |  |
+| `SendEvent` | method, private | [67](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L67) · [body 391](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L391) | [`TBoldSubscriptionHandler.SendEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L203) | 🟢 ported |  |
+| `GetAddedSubscriptionsCount` | method, private | [68](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L68) · [body 275](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L275) | [`TBoldSubscriptionHandler.GetAddedSubscriptionsCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L217) | 🟢 ported |  |
+| `GetSentEventsCount` | method, private | [69](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L69) · [body 306](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L306) | [`TBoldSubscriptionHandler.GetSentEventsCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L220) | 🟢 ported |  |
+| `OutQueueHandler` | property, protected | [71](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L71) | [`TBoldSubscriptionHandler.OutQueueHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L223) | 🟢 ported |  |
+| `GetClientsSubscribedToEvent` | method, protected | [72](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L72) · [body 280](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L280) | [`TBoldSubscriptionHandler.GetClientsSubscribedToEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L230) | 🟢 ported |  |
+| `GetEventsByClientID` | method, protected | [73](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L73) · [body 292](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L292) | [`TBoldSubscriptionHandler.GetEventsByClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L234) | 🟢 ported |  |
+| `RemoveQueueForClient` | method, protected | [74](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L74) · [body 379](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L379) | [`TBoldSubscriptionHandler.RemoveQueueForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L237) | 🟢 ported |  |
+| `Create` | constructor | [76](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L76) · [body 263](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L263) | [`TBoldSubscriptionHandler.TBoldSubscriptionHandler`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L176) | 🟢 ported |  |
+| `Destroy` | destructor | [77](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L77) · [body 269](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L269) | [`TBoldSubscriptionHandler.Dispose`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L182) | 🟢 ported |  |
+| `ProcessExternalEvent` | method | [78](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L78) · [body 311](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L311) | [`TBoldSubscriptionHandler.ProcessExternalEvent`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L245) | 🟢 ported: Cuts the parameters off only when the event has them; Delphi's check (pos &lt;&gt; -1) was always true, and harmless. |  |
+| `RemoveClient` | method | [79](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L79) · [body 372](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L372) | [`TBoldSubscriptionHandler.RemoveClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L294) | 🟢 ported |  |
+| `GetEventCountByClientID` | method | [80](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L80) · [body 286](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L286) | [`TBoldSubscriptionHandler.GetEventCountByClientID`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L301) | 🟢 ported |  |
+| `QueueCountForClient` | method | [81](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L81) · [body 366](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L366) | [`TBoldSubscriptionHandler.QueueCountForClient`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L304) | 🟢 ported |  |
+| `AddedSubscriptionsCount` | property | [82](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L82) | [`TBoldSubscriptionHandler.AddedSubscriptionsCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L306) | 🟢 ported |  |
+| `SentEventsCount` | property | [83](../../../Source/Propagator/Enterprise/BoldSubscriptionHandler.pas#L83) | [`TBoldSubscriptionHandler.SentEventsCount`](../../src/Bold.Propagator.Server/Propagator/Enterprise/BoldSubscriptionHandler.cs#L307) | 🟢 ported |  |
 
 ## Dependencies
 

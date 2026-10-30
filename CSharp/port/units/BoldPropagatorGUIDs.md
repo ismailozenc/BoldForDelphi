@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Common/BoldPropagatorGUIDs.pas`](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas) (12 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs` |
+| C# | [`CSharp/src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
 
-⚪ 3 not started
+🟢 3 ported
 
 ## Unit level
 
@@ -18,9 +18,9 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CLSID_BOLDENQUEUER` | const | [6](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L6) |  | ⚪ not started |  |
-| `CLSID_BOLDCLIENTHANDLER` | const | [7](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L7) |  | ⚪ not started |  |
-| `BoldPropagatorConnection_CLSID` | const | [8](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L8) |  | ⚪ not started |  |
+| `CLSID_BOLDENQUEUER` | const | [6](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L6) | [`BoldPropagatorGUIDs.CLSID_BOLDENQUEUER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L9) | 🟢 ported |  |
+| `CLSID_BOLDCLIENTHANDLER` | const | [7](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L7) | [`BoldPropagatorGUIDs.CLSID_BOLDCLIENTHANDLER`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L10) | 🟢 ported |  |
+| `BoldPropagatorConnection_CLSID` | const | [8](../../../Source/Propagator/Common/BoldPropagatorGUIDs.pas#L8) | [`BoldPropagatorGUIDs.BoldPropagatorConnection_CLSID`](../../src/Bold.Propagation/Propagator/Common/BoldPropagatorGUIDs.cs#L11) | 🟢 ported |  |
 
 ## Dependencies
 

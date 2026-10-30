@@ -21,6 +21,8 @@ The C# code keeps the Delphi names, so a search for a Delphi name finds the C# c
 | `property Name read GetName write SetName` | A C# property `Name`; `GetName` and `SetName` take the property's status |
 | Members, parameters, enum values | The same names and order |
 
+When two Delphi units declare the same type name and both are ported to projects that see each other, one C# type takes another name and gives its Delphi name with `Symbol`: `[Delphi(PortStatus.Ported, Symbol = "TBoldLockList", Note = "Named TBoldServerLockList: ...")]`. The tool then infers the type's members under the Delphi name, so they need no `Symbol` of their own.
+
 A large unit may be split into partial files named `<Unit>.<Part>.cs` (for example `BoldSystem.TBoldObject.cs`); the unit is the part of the file name before the first dot. Tests follow the same layout: `tests/Bold.Core.Tests/Common/Core/BoldDefsTests.cs`.
 
 ## Port status on every element

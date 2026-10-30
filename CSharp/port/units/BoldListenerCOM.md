@@ -5,19 +5,75 @@
 | | |
 |---|---|
 | Delphi | [`Source/Persistence/Propagation/BoldListenerCOM.pas`](../../../Source/Persistence/Propagation/BoldListenerCOM.pas) (375 lines) |
-| C# | not ported: COM; ASP.NET Core and C# interfaces replace it |
-| Status | ⚫ dropped: 41 symbols |
+| C# | [`CSharp/src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs) |
+| Project | Bold.Propagation |
+| Milestone | M9 Multi-user |
+| Status | 🟢 ported: 41 of 41 symbols done, 0 verified |
+| Note | The listener the propagator calls back: a plain C# object implementing IBoldListener, where Delphi had a COM object. |
 
-## Declared types
+🟢 39 ported · ⚫ 2 dropped
 
-The members of these types are not listed: nothing in this unit is ported.
+## Unit level
 
-- `EBoldPropagatorTypeLib` (class, [line 21](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L21))
-- `TBoldExtendLeaseResult` (enum, [line 24](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L24))
-- `TBoldExtendLeaseFailureEvent` (event type, [line 25](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L25))
-- `TBoldMessageEvent` (event type, [line 27](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L27))
-- `TBoldListenerCOM` (class, [line 30](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L30), 34 members)
-- `TBoldListenerCOMFactory` (class, [line 91](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L91), 1 members)
+Types, routines, constants, variables and the initialization and finalization sections.
+
+| Delphi | Kind | Lines | C# | Status | Tests |
+|---|---|---|---|---|---|
+| `EBoldPropagatorTypeLib` | class | [21](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L21) | [`EBoldPropagatorTypeLib`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L9) | 🟢 ported |  |
+| `TBoldExtendLeaseResult` | enum | [24](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L24) | [`TBoldExtendLeaseResult`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L13) | 🟢 ported |  |
+| `TBoldExtendLeaseFailureEvent` | event type | [25](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L25) | [`TBoldExtendLeaseFailureEvent`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L16) | 🟢 ported |  |
+| `TBoldMessageEvent` | event type | [27](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L27) | [`TBoldMessageEvent`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L20) | 🟢 ported |  |
+| `TBoldListenerCOM` | class | [30](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L30) | [`TBoldListenerCOM`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L31) | 🟢 ported: A plain C# object implementing IBoldListener and IBoldListenerAdmin, where Delphi had a COM object. |  |
+| `TBoldListenerCOMFactory` | class | [91](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L91) | [`[assembly: Delphi] in BoldListenerCOM.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L3) | ⚫ dropped: COM class factory; the listener thread creates its listener. |  |
+
+## TBoldListenerCOM
+
+class at [line 30](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L30); 🟢 ported, C# [`TBoldListenerCOM`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L31).
+
+| Delphi | Kind | Lines | C# | Status | Tests |
+|---|---|---|---|---|---|
+| `PushMessage` | method, private | [49](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L49) · [body 149](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L149) | [`TBoldListenerCOM.PushMessage`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L81) | 🟢 ported |  |
+| `DecodeAndPush` | method, private | [50](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L50) · [body 130](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L130) | [`TBoldListenerCOM.DecodeAndPush`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L91) | 🟢 ported |  |
+| `setAutoExtendLease` | method, private | [51](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L51) · [body 208](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L208) | [`TBoldListenerCOM.setAutoExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L105) | 🟢 ported |  |
+| `OnTimer` | method, private | [52](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L52) · [body 228](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L228) | [`TBoldListenerCOM.OnTimer`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L131) | 🟢 ported |  |
+| `ReceiveEvents` | method, private | [54](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L54) · [body 160](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L160) | [`TBoldListenerCOM.ReceiveEvents`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L158) | 🟢 ported |  |
+| `SetLeaseDuration` | method, private | [55](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L55) · [body 301](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L301) | [`TBoldListenerCOM.SetLeaseDuration`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L172) | 🟢 ported |  |
+| `SetExtendLeaseAfter` | method, private | [56](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L56) · [body 326](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L326) | [`TBoldListenerCOM.SetExtendLeaseAfter`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L183) | 🟢 ported |  |
+| `DefaultExtendLeaseInterval` | method, private | [57](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L57) · [body 336](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L336) | [`TBoldListenerCOM.DefaultExtendLeaseInterval`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L195) | 🟢 ported |  |
+| `LeaseTimeLeft` | method, private | [58](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L58) · [body 341](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L341) | [`TBoldListenerCOM.LeaseTimeLeft`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L199) | 🟢 ported: Counts from the registration until the first extension, and counts whole days; Delphi took the time of day of the difference. |  |
+| `Ping` | method, private | [59](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L59) · [body 363](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L363) | [`TBoldListenerCOM.Ping`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L202) | 🟢 ported |  |
+| `DisconnectClient` | method, private | [60](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L60) · [body 351](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L351) | [`TBoldListenerCOM.DisconnectClient`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L209) | 🟢 ported |  |
+| `Lock` | method, protected | [62](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L62) · [body 291](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L291) | [`TBoldListenerCOM.Lock`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L217) | 🟢 ported |  |
+| `UnLock` | method, protected | [63](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L63) · [body 296](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L296) | [`TBoldListenerCOM.UnLock`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L220) | 🟢 ported |  |
+| `DoExtendLeaseFailed` | method, protected | [64](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L64) · [body 311](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L311) | [`TBoldListenerCOM.DoExtendLeaseFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L223) | 🟢 ported |  |
+| `DoRegisterWithPropagatorFailed` | method, protected | [65](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L65) · [body 317](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L317) | [`TBoldListenerCOM.DoRegisterWithPropagatorFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L227) | 🟢 ported: Takes the exception; Delphi took the COM error. |  |
+| `Create` | constructor | [67](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L67) · [body 107](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L107) | [`TBoldListenerCOM.TBoldListenerCOM`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L54) | 🟢 ported: Also takes the thread whose message loop runs the lease timer. |  |
+| `Destroy` | destructor | [70](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L70) · [body 141](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L141) | [`TBoldListenerCOM.Dispose`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L71) | 🟢 ported |  |
+| `DebugGetQueueContents` | method | [71](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L71) · [body 125](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L125) | [`TBoldListenerCOM.DebugGetQueueContents`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L235) | 🟢 ported |  |
+| `ExtendLease` | method | [72](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L72) · [body 255](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L255) | [`TBoldListenerCOM.ExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L242) | 🟢 ported: Gives elrNotRegistered when not registered; Delphi read an unset result. |  |
+| `RegisterWithPropagator` | method | [73](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L73) · [body 170](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L170) | [`TBoldListenerCOM.RegisterWithPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L286) | 🟢 ported |  |
+| `UnregisterWithPropagator` | method | [74](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L74) · [body 192](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L192) | [`TBoldListenerCOM.UnregisterWithPropagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L320) | 🟢 ported |  |
+| `Queue` | property | [75](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L75) | [`TBoldListenerCOM.Queue`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L343) | 🟢 ported |  |
+| `QueueNotEmptyNotifyEvent` | property | [76](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L76) | [`TBoldListenerCOM.QueueNotEmptyNotifyEvent`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L346) | 🟢 ported |  |
+| `LeaseDuration` | property | [77](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L77) | [`TBoldListenerCOM.LeaseDuration`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L353) | 🟢 ported |  |
+| `ExtendLeaseAfter` | property | [78](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L78) | [`TBoldListenerCOM.ExtendLeaseAfter`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L360) | 🟢 ported |  |
+| `PollingInterval` | property | [79](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L79) | [`TBoldListenerCOM.PollingInterval`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L367) | 🟢 ported |  |
+| `AutoExtendLease` | property | [80](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L80) | [`TBoldListenerCOM.AutoExtendLease`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L374) | 🟢 ported |  |
+| `ClientIdentifierString` | property | [81](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L81) | [`TBoldListenerCOM.ClientIdentifierString`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L381) | 🟢 ported |  |
+| `Registered` | property | [82](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L82) | [`TBoldListenerCOM.Registered`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L388) | 🟢 ported |  |
+| `ClientID` | property | [83](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L83) | [`TBoldListenerCOM.ClientID`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L394) | 🟢 ported |  |
+| `ExtendErrorMessage` | property | [84](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L84) | [`TBoldListenerCOM.ExtendErrorMessage`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L395) | 🟢 ported |  |
+| `OnMessage` | property | [85](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L85) | [`TBoldListenerCOM.OnMessage`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L398) | 🟢 ported |  |
+| `Propagator` | property | [86](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L86) | [`TBoldListenerCOM.Propagator`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L405) | 🟢 ported |  |
+| `OnExtendLeaseFailed` | property | [87](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L87) | [`TBoldListenerCOM.OnExtendLeaseFailed`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L412) | 🟢 ported |  |
+
+## TBoldListenerCOMFactory
+
+class at [line 91](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L91); ⚫ dropped, C# [`[assembly: Delphi] in BoldListenerCOM.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L3).
+
+| Delphi | Kind | Lines | C# | Status | Tests |
+|---|---|---|---|---|---|
+| `Create` | constructor | [93](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L93) · [body 370](../../../Source/Persistence/Propagation/BoldListenerCOM.pas#L370) | [`[assembly: Delphi] in BoldListenerCOM.cs`](../../src/Bold.Propagation/Persistence/Propagation/BoldListenerCOM.cs#L4) | ⚫ dropped: COM class factory. |  |
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/ConcurrencyControl/Common/BoldLockingDefs.pas`](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas) (14 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs` |
+| C# | [`CSharp/src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs) |
 | Project | Bold.Propagation |
 | Milestone | M9 Multi-user |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
 
-⚪ 4 not started
+🟢 4 ported
 
 ## Unit level
 
@@ -18,10 +18,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `LOCK_MANAGER_OBJECT_NAME` | const | [6](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L6) |  | ⚪ not started |  |
-| `LOCK_MANAGER_ADMIN_OBJECT_NAME` | const | [7](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L7) |  | ⚪ not started |  |
-| `LOCKS_CAN_TIMEOUT` | const | [8](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L8) |  | ⚪ not started |  |
-| `BOLD_DBLOCK_NAME` | const | [9](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L9) |  | ⚪ not started |  |
+| `LOCK_MANAGER_OBJECT_NAME` | const | [6](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L6) | [`BoldLockingDefs.LOCK_MANAGER_OBJECT_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L9) | 🟢 ported |  |
+| `LOCK_MANAGER_ADMIN_OBJECT_NAME` | const | [7](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L7) | [`BoldLockingDefs.LOCK_MANAGER_ADMIN_OBJECT_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L10) | 🟢 ported |  |
+| `LOCKS_CAN_TIMEOUT` | const | [8](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L8) | [`BoldLockingDefs.LOCKS_CAN_TIMEOUT`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L11) | 🟢 ported |  |
+| `BOLD_DBLOCK_NAME` | const | [9](../../../Source/ConcurrencyControl/Common/BoldLockingDefs.pas#L9) | [`BoldLockingDefs.BOLD_DBLOCK_NAME`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldLockingDefs.cs#L14) | 🟢 ported |  |
 
 ## Dependencies
 
