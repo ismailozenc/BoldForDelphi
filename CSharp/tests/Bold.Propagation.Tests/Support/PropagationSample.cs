@@ -148,7 +148,7 @@ internal sealed class ClientEnvironment : TBoldEnvironmentConfiguration
 /// A client application on the Building model, as its data module would hold it: the system persists through an ID
 /// adder, a snooper and a database handle on a shared SQLite file; a listener and an event handler bring the other
 /// clients' changes in; a locking handle gets pessimistic locks. The propagator and the lock manager are the server of
-/// this process.
+/// this process, reached in the process or, with a hub address, through the propagator hub.
 /// </summary>
 internal sealed class PropagationClient : IDisposable
 {
@@ -161,8 +161,8 @@ internal sealed class PropagationClient : IDisposable
     public readonly TADOConnection Connection;
     public readonly TBoldDatabaseAdapterADO Adapter;
     public readonly TBoldPersistenceHandleDB DatabaseHandle;
-    public readonly TBoldInProcessPropagatorHandle PropagatorHandle;
-    public readonly TBoldInProcessLockManagerHandle LockManagerHandle;
+    public readonly TBoldAbstractPropagatorHandle PropagatorHandle;
+    public readonly TBoldAbstractLockManagerHandle LockManagerHandle;
     public readonly TBoldSnooperHandle SnooperHandle;
     public readonly TBoldExternalObjectSpaceEventHandler EventHandler;
     public readonly TBoldListenerHandle ListenerHandle;
@@ -172,7 +172,7 @@ internal sealed class PropagationClient : IDisposable
     public TBoldLockingHandle? LockingHandle;
     public readonly List<TBoldObject> Conflicts = [];
 
-    public PropagationClient(string name, string databaseFile, bool withRegions = false)
+    public PropagationClient(string name, string databaseFile, bool withRegions = false, string? hubUrl = null)
     {
         Name = name;
         Model = new TBoldAbstractModel(Components) { Name = name + ".Model" };
@@ -181,8 +181,17 @@ internal sealed class PropagationClient : IDisposable
         Adapter = new TBoldDatabaseAdapterADO(Components) { Connection = Connection };
         Adapter.SQLDatabaseConfig.InitializeDbEngineSettings(TBoldDataBaseEngine.dbeSQLite);
         DatabaseHandle = new TBoldPersistenceHandleDB(Components) { BoldModel = Model, DatabaseAdapter = Adapter };
-        PropagatorHandle = new TBoldInProcessPropagatorHandle(Components) { Name = name + ".Propagator" };
-        LockManagerHandle = new TBoldInProcessLockManagerHandle(Components);
+        if (hubUrl is null)
+        {
+            PropagatorHandle = new TBoldInProcessPropagatorHandle(Components) { Name = name + ".Propagator" };
+            LockManagerHandle = new TBoldInProcessLockManagerHandle(Components);
+        }
+        else
+        {
+            PropagatorHandle = new TBoldSignalRPropagatorHandle(Components) { Name = name + ".Propagator", Url = hubUrl, TimeOut = 10000 };
+            LockManagerHandle = new TBoldSignalRLockManagerHandle(Components) { Url = hubUrl, TimeOut = 10000 };
+        }
+
         SnooperHandle = new TBoldSnooperHandle(Components)
         {
             BoldModel = Model,
@@ -227,7 +236,16 @@ internal sealed class PropagationClient : IDisposable
     public void Open()
     {
         PropagatorHandle.Connected = true;
-        LockManagerHandle.Connected = true;
+        switch (LockManagerHandle)
+        {
+            case TBoldInProcessLockManagerHandle inProcess:
+                inProcess.Connected = true;
+                break;
+            case TBoldSignalRLockManagerHandle signalR:
+                signalR.Connected = true;
+                break;
+        }
+
         SystemHandle.Active = true;
     }
 

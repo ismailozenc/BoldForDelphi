@@ -23,5 +23,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldPropagatorHandleCOM](../../../CSharp/port/units/BoldPropagatorHandleCOM.md) | not ported: COM; ASP.NET Core and C# interfaces replace it |  |
+| [BoldPropagatorHandleCOM](../../../CSharp/port/units/BoldPropagatorHandleCOM.md) | not ported: COM; the client handles of the propagator hub (TBoldSignalRPropagatorHandle) replace it |  |
 <!-- END C# PORT -->

@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldEnqueuerCOM.pas`](../../../Source/Propagator/Enterprise/BoldEnqueuerCOM.pas) (107 lines) |
-| C# | not ported: COM; ASP.NET Core and C# interfaces replace it |
+| C# | not ported: COM; the propagator hub (TBoldPropagatorHub, SignalR) and TBoldPropagatorConnection replace it |
 | Status | ⚫ dropped: 14 symbols |
 
 ## Declared types

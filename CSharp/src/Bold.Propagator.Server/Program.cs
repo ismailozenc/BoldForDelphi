@@ -1,6 +1,12 @@
-// Placeholder until M9: the propagator and lock manager server will run here as a Worker Service.
-using Microsoft.Extensions.Hosting;
+// The propagator and lock manager server: the propagator server (configured by Bold.Propagator.Server.ini next to the
+// program, see TBoldPropagatorServer) with its SignalR hub at /propagator. The address comes from the usual ASP.NET
+// Core settings, for example --urls http://0.0.0.0:5050 or ASPNETCORE_URLS.
+using Bold;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
-var builder = Host.CreateApplicationBuilder(args);
-using var host = builder.Build();
-await host.RunAsync();
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+builder.Services.AddBoldPropagator();
+WebApplication app = builder.Build();
+app.MapBoldPropagator();
+await app.RunAsync();

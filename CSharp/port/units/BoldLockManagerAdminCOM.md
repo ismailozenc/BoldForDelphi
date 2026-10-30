@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldLockManagerAdminCOM.pas`](../../../Source/Propagator/Enterprise/BoldLockManagerAdminCOM.pas) (151 lines) |
-| C# | not ported: COM; ASP.NET Core and C# interfaces replace it |
+| C# | not ported: COM; the propagator hub (TBoldPropagatorHub, SignalR) and TBoldPropagatorConnection replace it |
 | Status | ⚫ dropped: 14 symbols |
 
 ## Declared types

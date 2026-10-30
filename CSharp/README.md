@@ -91,6 +91,39 @@ BoldAFP.AutoFormProviderRegistry().FormForElement(person)?.Show();
 [`examples/Building/BldOwn`](examples/Building/BldOwn) is Delphi Bold's Buildings and Owners example on WinForms and
 SQLite; a test runs it.
 
+## Multi-user
+
+Several applications on one database stay in step through Bold's propagator, and can take pessimistic locks through
+its lock manager. `Bold.Propagator.Server` is the server: the propagator and lock manager of Delphi's enterprise
+propagator, on ASP.NET Core, with a SignalR hub at `/propagator` where Delphi had DCOM. It reads
+`Bold.Propagator.Server.ini` next to the program, as Delphi's server read its own INI file:
+
+```
+dotnet CSharp/src/Bold.Propagator.Server/bin/Release/net10.0/Bold.Propagator.Server.dll --urls http://0.0.0.0:5050
+```
+
+Another ASP.NET Core application can host it too, the remote persistence server for one (`services.AddBoldPropagator()`
+and `app.MapBoldPropagator()`).
+
+A client application puts a snooper and an ID adder in its persistence chain, and a listener with an external object
+space event handler brings the other clients' changes in. `TBoldSignalRPropagatorHandle` reaches the server's hub; the
+client needs no package, it speaks SignalR's protocol over a WebSocket itself:
+
+```csharp
+var propagator = new TBoldSignalRPropagatorHandle(components) { Url = "http://server:5050/propagator" };
+var snooper = new TBoldSnooperHandle(components) { BoldModel = model, NextPersistenceHandle = database, PropagatorHandle = propagator };
+var events = new TBoldExternalObjectSpaceEventHandler(components) { BoldSystemHandle = system, PropagatorHandle = propagator };
+var listener = new TBoldListenerHandle(components) { PropagatorHandle = propagator, Dequeuer = events };
+system.PersistenceHandle = new TBoldIDAdderHandle(components) { NextPersistenceHandle = snooper, BoldListener = listener };
+propagator.Connected = true;
+system.Active = true;
+```
+
+For pessimistic locking, give the model region definitions and add a `TBoldLockingHandle` with a
+`TBoldSignalRLockManagerHandle` (and the same lock manager handle on the snooper). `TBoldInProcessPropagatorHandle`
+and `TBoldInProcessLockManagerHandle` reach a server in the same process, as the tests do. Without a server,
+`TBoldUDPModificationBroadcaster` tells the other clients of changes by UDP broadcasts on the local network.
+
 ## Where things came from
 
 Every ported element carries a `[Delphi(PortStatus.…)]` attribute, and every C# file starts with the Delphi file it ports. In the other direction, every Delphi unit has a comment on its `unit` line naming its C# file, and every `FOLDER_INFO.md` in `Source` lists where its units went. [PORTING.md](PORTING.md) explains the details.

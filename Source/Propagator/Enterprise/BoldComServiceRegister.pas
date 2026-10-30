@@ -1,4 +1,4 @@
-unit BoldComServiceRegister; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldComServiceRegister.md }
+unit BoldComServiceRegister; { C# port: not ported (COM server registration; ASP.NET Core hosts the propagator hub); see CSharp/port/units/BoldComServiceRegister.md }
 
 interface
 

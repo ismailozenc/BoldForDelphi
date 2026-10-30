@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldPropagatorMainForm.pas`](../../../Source/Propagator/Enterprise/BoldPropagatorMainForm.pas) (721 lines) |
-| C# | not ported: propagator user interface; the server is a Worker Service |
+| C# | not ported: propagator user interface; the server runs on ASP.NET Core without one |
 | Status | ⚫ dropped: 69 symbols |
 
 ## Declared types

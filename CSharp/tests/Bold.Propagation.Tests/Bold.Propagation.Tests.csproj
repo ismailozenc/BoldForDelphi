@@ -14,6 +14,10 @@
   <PropertyGroup>
     <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
   </PropertyGroup>
+  <!-- The SignalR tests host the propagator hub on ASP.NET Core in the test process. -->
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
   <ItemGroup Condition="'$(BoldOffline)' != 'true'">
     <PackageReference Include="Microsoft.Data.Sqlite" />
   </ItemGroup>

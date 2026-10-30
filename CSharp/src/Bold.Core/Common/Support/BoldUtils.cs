@@ -137,10 +137,16 @@ public static partial class BoldUtils
     public static string BoldRootRegistryKey() =>
         SysUtils.Format("Software\\BoldSoft\\%s\\%s", BoldProductNameShort, BoldProductVersion);
 
-    [Delphi(PortStatus.Ported, Note = "The path of the running process.")]
+    [Delphi(PortStatus.Ported, Note = "The path of the running program: the process, or the entry assembly when the dotnet host runs it (dotnet Program.dll).")]
     public static string GetModuleFileNameAsString(bool IncludePath)
     {
         string moduleName = Environment.ProcessPath ?? Process.GetCurrentProcess().MainModule?.FileName ?? "";
+        if (Path.GetFileNameWithoutExtension(moduleName).Equals("dotnet", StringComparison.OrdinalIgnoreCase) &&
+            System.Reflection.Assembly.GetEntryAssembly()?.Location is { Length: > 0 } entryAssembly)
+        {
+            moduleName = entryAssembly;
+        }
+
         return IncludePath ? moduleName : SysUtils.ExtractFileName(moduleName);
     }
 

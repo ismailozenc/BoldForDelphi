@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldServerHandlesDataMod.pas`](../../../Source/Propagator/Enterprise/BoldServerHandlesDataMod.pas) (94 lines) |
-| C# | not ported: COM; ASP.NET Core and C# interfaces replace it |
+| C# | not ported: VCL data module of the COM server objects; the propagator hub replaces them |
 | Status | ⚫ dropped: 6 symbols |
 
 ## Declared types

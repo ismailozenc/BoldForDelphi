@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldComServiceRegister.pas`](../../../Source/Propagator/Enterprise/BoldComServiceRegister.pas) (170 lines) |
-| C# | not ported: COM; ASP.NET Core and C# interfaces replace it |
+| C# | not ported: COM server registration; ASP.NET Core hosts the propagator hub |
 | Status | ⚫ dropped: 12 symbols |
 
 ## Declared types

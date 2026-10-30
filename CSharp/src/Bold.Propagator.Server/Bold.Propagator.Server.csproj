@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>The propagator and lock manager server, hosted as a Worker Service.</Description>
+    <Description>The propagator and lock manager server, on ASP.NET Core with a SignalR hub.</Description>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>

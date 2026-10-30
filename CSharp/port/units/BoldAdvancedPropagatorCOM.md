@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/Enterprise/BoldAdvancedPropagatorCOM.pas`](../../../Source/Propagator/Enterprise/BoldAdvancedPropagatorCOM.pas) (85 lines) |
-| C# | not ported: COM; ASP.NET Core and C# interfaces replace it |
+| C# | not ported: COM; the propagator hub (TBoldPropagatorHub, SignalR) replaces it |
 | Status | ⚫ dropped: 11 symbols |
 
 ## Declared types

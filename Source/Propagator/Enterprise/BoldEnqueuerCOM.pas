@@ -1,4 +1,4 @@
-unit BoldEnqueuerCOM; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldEnqueuerCOM.md }
+unit BoldEnqueuerCOM; { C# port: not ported (COM; the propagator hub (TBoldPropagatorHub, SignalR) and TBoldPropagatorConnection replace it); see CSharp/port/units/BoldEnqueuerCOM.md }
 
 interface
 

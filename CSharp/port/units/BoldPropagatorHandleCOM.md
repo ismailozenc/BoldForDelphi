@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Delphi | [`Source/Propagator/COM/BoldPropagatorHandleCOM.pas`](../../../Source/Propagator/COM/BoldPropagatorHandleCOM.pas) (254 lines) |
-| C# | not ported: COM; ASP.NET Core and C# interfaces replace it |
+| C# | not ported: COM; the client handles of the propagator hub (TBoldSignalRPropagatorHandle) replace it |
 | Status | ⚫ dropped: 23 symbols |
 
 ## Declared types

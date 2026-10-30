@@ -18,7 +18,7 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAbstractLockManagerHandle` | class | [13](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L13) | [`TBoldAbstractLockManagerHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L8) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L121) |
+| `TBoldAbstractLockManagerHandle` | class | [13](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L13) | [`TBoldAbstractLockManagerHandle`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L8) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L82) |
 
 ## TBoldAbstractLockManagerHandle
 
@@ -26,8 +26,8 @@ class at [line 13](../../../Source/ConcurrencyControl/Common/BoldAbstractLockMan
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLockManager` | method, protected | [15](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L15) | [`TBoldAbstractLockManagerHandle.GetLockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L11) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L121) |
-| `LockManager` | property | [17](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L17) | [`TBoldAbstractLockManagerHandle.LockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L14) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L121) |
+| `GetLockManager` | method, protected | [15](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L15) | [`TBoldAbstractLockManagerHandle.GetLockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L11) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L82) |
+| `LockManager` | property | [17](../../../Source/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.pas#L17) | [`TBoldAbstractLockManagerHandle.LockManager`](../../src/Bold.Propagation/ConcurrencyControl/Common/BoldAbstractLockManagerHandle.cs#L14) | ✅ verified | ✔ [`BoldPropagationTests.Lock_conflicts_are_reported`](../../tests/Bold.Propagation.Tests/Persistence/Propagation/BoldPropagationTests.cs#L82) |
 
 ## Dependencies
 

@@ -1,4 +1,4 @@
-unit BoldLockManagerExportHandle; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldLockManagerExportHandle.md }
+unit BoldLockManagerExportHandle; { C# port: not ported (COM export handle; the propagator hub (TBoldPropagatorHub, SignalR) replaces it); see CSharp/port/units/BoldLockManagerExportHandle.md }
 
 interface
 

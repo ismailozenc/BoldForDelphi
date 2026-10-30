@@ -1,4 +1,4 @@
-unit BoldPropagatorHandleCOM; { C# port: not ported (COM; ASP.NET Core and C# interfaces replace it); see CSharp/port/units/BoldPropagatorHandleCOM.md }
+unit BoldPropagatorHandleCOM; { C# port: not ported (COM; the client handles of the propagator hub (TBoldSignalRPropagatorHandle) replace it); see CSharp/port/units/BoldPropagatorHandleCOM.md }
 
 interface
 
