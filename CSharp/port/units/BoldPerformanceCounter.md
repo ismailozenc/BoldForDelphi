@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldPerformanceCounter.pas`](../../../Source/Common/Support/BoldPerformanceCounter.pas) (223 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldPerformanceCounter.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldPerformanceCounter.cs`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs) |
 | Project | Bold.Core |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 25 symbols done, 0 verified |
-| Note | Nothing in Bold uses it; port it when an application needs it. |
+| Status | 🟢 ported: 25 of 25 symbols done, 0 verified |
+| Note | Nothing in Bold uses it; ported for the applications that do. |
 
-⚪ 25 not started
+🟢 24 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -19,38 +19,38 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPerformanceCounterState` | enum | [17](../../../Source/Common/Support/BoldPerformanceCounter.pas#L17) |  | ⚪ not started |  |
-| `TBoldPerformanceCounter` | class | [20](../../../Source/Common/Support/BoldPerformanceCounter.pas#L20) |  | ⚪ not started |  |
-| `BoldMainPerformanceCounter` | routine | [52](../../../Source/Common/Support/BoldPerformanceCounter.pas#L52) · [body 64](../../../Source/Common/Support/BoldPerformanceCounter.pas#L64) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [219](../../../Source/Common/Support/BoldPerformanceCounter.pas#L219) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [221](../../../Source/Common/Support/BoldPerformanceCounter.pas#L221) |  | ⚪ not started |  |
+| `TBoldPerformanceCounterState` | enum | [17](../../../Source/Common/Support/BoldPerformanceCounter.pas#L17) | [`TBoldPerformanceCounterState`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L11) | 🟢 ported | [`BoldPerformanceCounterTests.The_state_enum_has_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L17) |
+| `TBoldPerformanceCounter` | class | [20](../../../Source/Common/Support/BoldPerformanceCounter.pas#L20) | [`TBoldPerformanceCounter`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L18) | 🟢 ported: Times with Stopwatch, where Delphi called QueryPerformanceCounter. |  |
+| `BoldMainPerformanceCounter` | routine | [52](../../../Source/Common/Support/BoldPerformanceCounter.pas#L52) · [body 64](../../../Source/Common/Support/BoldPerformanceCounter.pas#L64) | [`TBoldPerformanceCounter.BoldMainPerformanceCounter`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L41) | 🟢 ported | [`BoldPerformanceCounterTests.There_is_a_main_counter`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L81) |
+| `initialization` | initialization, implementation | [219](../../../Source/Common/Support/BoldPerformanceCounter.pas#L219) | [`[assembly: Delphi] in BoldPerformanceCounter.cs`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L6) | 🔵 replaced: The section is empty. |  |
+| `finalization` | finalization, implementation | [221](../../../Source/Common/Support/BoldPerformanceCounter.pas#L221) | [`TBoldPerformanceCounter.Finalize_`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L196) | 🟢 ported | [`BoldPerformanceCounterTests.There_is_a_main_counter`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L81) |
 
 ## TBoldPerformanceCounter
 
-class at [line 20](../../../Source/Common/Support/BoldPerformanceCounter.pas#L20); ⚪ not started.
+class at [line 20](../../../Source/Common/Support/BoldPerformanceCounter.pas#L20); 🟢 ported, C# [`TBoldPerformanceCounter`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L18).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetChildren` | method, private | [29](../../../Source/Common/Support/BoldPerformanceCounter.pas#L29) · [body 114](../../../Source/Common/Support/BoldPerformanceCounter.pas#L114) |  | ⚪ not started |  |
-| `GetChildByName` | method, private | [30](../../../Source/Common/Support/BoldPerformanceCounter.pas#L30) · [body 119](../../../Source/Common/Support/BoldPerformanceCounter.pas#L119) |  | ⚪ not started |  |
-| `GetAsString` | method, private | [31](../../../Source/Common/Support/BoldPerformanceCounter.pas#L31) · [body 177](../../../Source/Common/Support/BoldPerformanceCounter.pas#L177) |  | ⚪ not started |  |
-| `GetChildCount` | method, private | [32](../../../Source/Common/Support/BoldPerformanceCounter.pas#L32) · [body 109](../../../Source/Common/Support/BoldPerformanceCounter.pas#L109) |  | ⚪ not started |  |
-| `GetSeconds` | method, private | [33](../../../Source/Common/Support/BoldPerformanceCounter.pas#L33) · [body 161](../../../Source/Common/Support/BoldPerformanceCounter.pas#L161) |  | ⚪ not started |  |
-| `GetPercentOfOwner` | method, private | [34](../../../Source/Common/Support/BoldPerformanceCounter.pas#L34) · [body 169](../../../Source/Common/Support/BoldPerformanceCounter.pas#L169) |  | ⚪ not started |  |
-| `StartFromChild` | method, private | [35](../../../Source/Common/Support/BoldPerformanceCounter.pas#L35) · [body 191](../../../Source/Common/Support/BoldPerformanceCounter.pas#L191) |  | ⚪ not started |  |
-| `StopFromChild` | method, private | [36](../../../Source/Common/Support/BoldPerformanceCounter.pas#L36) · [body 198](../../../Source/Common/Support/BoldPerformanceCounter.pas#L198) |  | ⚪ not started |  |
-| `Create` | constructor | [38](../../../Source/Common/Support/BoldPerformanceCounter.pas#L38) · [body 71](../../../Source/Common/Support/BoldPerformanceCounter.pas#L71) |  | ⚪ not started |  |
-| `Destroy` | destructor | [39](../../../Source/Common/Support/BoldPerformanceCounter.pas#L39) · [body 82](../../../Source/Common/Support/BoldPerformanceCounter.pas#L82) |  | ⚪ not started |  |
-| `Reset` | method | [40](../../../Source/Common/Support/BoldPerformanceCounter.pas#L40) · [body 130](../../../Source/Common/Support/BoldPerformanceCounter.pas#L130) |  | ⚪ not started |  |
-| `Start` | method | [41](../../../Source/Common/Support/BoldPerformanceCounter.pas#L41) · [body 141](../../../Source/Common/Support/BoldPerformanceCounter.pas#L141) |  | ⚪ not started |  |
-| `Stop` | method | [42](../../../Source/Common/Support/BoldPerformanceCounter.pas#L42) · [body 150](../../../Source/Common/Support/BoldPerformanceCounter.pas#L150) |  | ⚪ not started |  |
-| `WriteToFile` | method | [43](../../../Source/Common/Support/BoldPerformanceCounter.pas#L43) · [body 205](../../../Source/Common/Support/BoldPerformanceCounter.pas#L205) |  | ⚪ not started |  |
-| `ChildCount` | property | [44](../../../Source/Common/Support/BoldPerformanceCounter.pas#L44) |  | ⚪ not started |  |
-| `Children` | property | [45](../../../Source/Common/Support/BoldPerformanceCounter.pas#L45) |  | ⚪ not started |  |
-| `ChildByName` | property | [46](../../../Source/Common/Support/BoldPerformanceCounter.pas#L46) |  | ⚪ not started |  |
-| `AsString` | property | [47](../../../Source/Common/Support/BoldPerformanceCounter.pas#L47) |  | ⚪ not started |  |
-| `Seconds` | property | [48](../../../Source/Common/Support/BoldPerformanceCounter.pas#L48) |  | ⚪ not started |  |
-| `PercentOfOwner` | property | [49](../../../Source/Common/Support/BoldPerformanceCounter.pas#L49) |  | ⚪ not started |  |
+| `GetChildren` | method, private | [29](../../../Source/Common/Support/BoldPerformanceCounter.pas#L29) · [body 114](../../../Source/Common/Support/BoldPerformanceCounter.pas#L114) | [`TBoldPerformanceCounter.GetChildren`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L78) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `GetChildByName` | method, private | [30](../../../Source/Common/Support/BoldPerformanceCounter.pas#L30) · [body 119](../../../Source/Common/Support/BoldPerformanceCounter.pas#L119) | [`TBoldPerformanceCounter.GetChildByName`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L86) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `GetAsString` | method, private | [31](../../../Source/Common/Support/BoldPerformanceCounter.pas#L31) · [body 177](../../../Source/Common/Support/BoldPerformanceCounter.pas#L177) | [`TBoldPerformanceCounter.GetAsString`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L145) | 🟢 ported | [`BoldPerformanceCounterTests.A_counter_reports_itself_and_its_children`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L53) |
+| `GetChildCount` | method, private | [32](../../../Source/Common/Support/BoldPerformanceCounter.pas#L32) · [body 109](../../../Source/Common/Support/BoldPerformanceCounter.pas#L109) | [`TBoldPerformanceCounter.GetChildCount`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L72) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `GetSeconds` | method, private | [33](../../../Source/Common/Support/BoldPerformanceCounter.pas#L33) · [body 161](../../../Source/Common/Support/BoldPerformanceCounter.pas#L161) | [`TBoldPerformanceCounter.GetSeconds`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L130) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `GetPercentOfOwner` | method, private | [34](../../../Source/Common/Support/BoldPerformanceCounter.pas#L34) · [body 169](../../../Source/Common/Support/BoldPerformanceCounter.pas#L169) | [`TBoldPerformanceCounter.GetPercentOfOwner`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L137) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `StartFromChild` | method, private | [35](../../../Source/Common/Support/BoldPerformanceCounter.pas#L35) · [body 191](../../../Source/Common/Support/BoldPerformanceCounter.pas#L191) | [`TBoldPerformanceCounter.StartFromChild`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L166) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `StopFromChild` | method, private | [36](../../../Source/Common/Support/BoldPerformanceCounter.pas#L36) · [body 198](../../../Source/Common/Support/BoldPerformanceCounter.pas#L198) | [`TBoldPerformanceCounter.StopFromChild`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L177) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `Create` | constructor | [38](../../../Source/Common/Support/BoldPerformanceCounter.pas#L38) · [body 71](../../../Source/Common/Support/BoldPerformanceCounter.pas#L71) | [`TBoldPerformanceCounter.TBoldPerformanceCounter`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L31) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `Destroy` | destructor | [39](../../../Source/Common/Support/BoldPerformanceCounter.pas#L39) · [body 82](../../../Source/Common/Support/BoldPerformanceCounter.pas#L82) | [`TBoldPerformanceCounter.Dispose`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L46) | 🟢 ported | [`BoldPerformanceCounterTests.A_counter_reports_itself_and_its_children`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L53) |
+| `Reset` | method | [40](../../../Source/Common/Support/BoldPerformanceCounter.pas#L40) · [body 130](../../../Source/Common/Support/BoldPerformanceCounter.pas#L130) | [`TBoldPerformanceCounter.Reset`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L97) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `Start` | method | [41](../../../Source/Common/Support/BoldPerformanceCounter.pas#L41) · [body 141](../../../Source/Common/Support/BoldPerformanceCounter.pas#L141) | [`TBoldPerformanceCounter.Start`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L111) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `Stop` | method | [42](../../../Source/Common/Support/BoldPerformanceCounter.pas#L42) · [body 150](../../../Source/Common/Support/BoldPerformanceCounter.pas#L150) | [`TBoldPerformanceCounter.Stop`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L121) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `WriteToFile` | method | [43](../../../Source/Common/Support/BoldPerformanceCounter.pas#L43) · [body 205](../../../Source/Common/Support/BoldPerformanceCounter.pas#L205) | [`TBoldPerformanceCounter.WriteToFile`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L188) | 🟢 ported | [`BoldPerformanceCounterTests.A_counter_reports_itself_and_its_children`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L53) |
+| `ChildCount` | property | [44](../../../Source/Common/Support/BoldPerformanceCounter.pas#L44) | [`TBoldPerformanceCounter.ChildCount`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L75) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `Children` | property | [45](../../../Source/Common/Support/BoldPerformanceCounter.pas#L45) | [`TBoldPerformanceCounter.Children`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L82) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `ChildByName` | property | [46](../../../Source/Common/Support/BoldPerformanceCounter.pas#L46) | [`TBoldPerformanceCounter.ChildByName`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L93) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `AsString` | property | [47](../../../Source/Common/Support/BoldPerformanceCounter.pas#L47) | [`TBoldPerformanceCounter.AsString`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L163) | 🟢 ported | [`BoldPerformanceCounterTests.A_counter_reports_itself_and_its_children`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L53) |
+| `Seconds` | property | [48](../../../Source/Common/Support/BoldPerformanceCounter.pas#L48) | [`TBoldPerformanceCounter.Seconds`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L134) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
+| `PercentOfOwner` | property | [49](../../../Source/Common/Support/BoldPerformanceCounter.pas#L49) | [`TBoldPerformanceCounter.PercentOfOwner`](../../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs#L141) | 🟢 ported | [`BoldPerformanceCounterTests.Counters_add_up_their_children_s_time`](../../tests/Bold.Core.Tests/Common/Support/BoldPerformanceCounterTests.cs#L27) |
 
 ## Dependencies
 

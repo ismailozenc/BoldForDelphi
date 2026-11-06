@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Tools/PropagatorAnalyzer/MainForm.pas`](../../../Tools/PropagatorAnalyzer/MainForm.pas) (265 lines) |
-| C# | not planned yet |
-| Project | not decided |
+| C# | [`CSharp/src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs) |
+| Project | Bold.PropagatorAnalyzer |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 19 symbols done, 0 verified |
-| Note | A tool that reads propagator logs; decide when the propagator is ported (M9). |
+| Status | 🟢 ported: 19 of 19 symbols done, 0 verified |
+| Note | The propagator analyzer, a WinForms tool that reads the propagator's thread log (the standing decision keeps it). |
 
-⚪ 19 not started
+🟢 18 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -19,39 +19,56 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TThreadAction` | enum | [10](../../../Tools/PropagatorAnalyzer/MainForm.pas#L10) |  | ⚪ not started |  |
-| `TThreadInfo` | class | [12](../../../Tools/PropagatorAnalyzer/MainForm.pas#L12) |  | ⚪ not started |  |
-| `TForm1` | class | [27](../../../Tools/PropagatorAnalyzer/MainForm.pas#L27) |  | ⚪ not started |  |
-| `Form1` | var | [52](../../../Tools/PropagatorAnalyzer/MainForm.pas#L52) |  | ⚪ not started |  |
+| `TThreadAction` | enum | [10](../../../Tools/PropagatorAnalyzer/MainForm.pas#L10) | [`TThreadAction`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L17) | 🟢 ported | [`MainFormTests.The_actions_have_the_Delphi_values`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L41) |
+| `TThreadInfo` | class | [12](../../../Tools/PropagatorAnalyzer/MainForm.pas#L12) | [`TThreadInfo`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L21) | 🟢 ported |  |
+| `TForm1` | class | [27](../../../Tools/PropagatorAnalyzer/MainForm.pas#L27) | [`TForm1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L103) | 🟢 ported: Built in code where Delphi's form came from its .dfm. |  |
+| `Form1` | var | [52](../../../Tools/PropagatorAnalyzer/MainForm.pas#L52) | [`[assembly: Delphi] in MainForm.cs`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L11) | 🔵 replaced: The program's form is made in Program.Main; each thread info reports to the form that made it. |  |
 
 ## TThreadInfo
 
-class at [line 12](../../../Tools/PropagatorAnalyzer/MainForm.pas#L12); ⚪ not started.
+class at [line 12](../../../Tools/PropagatorAnalyzer/MainForm.pas#L12); 🟢 ported, C# [`TThreadInfo`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L21).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [18](../../../Tools/PropagatorAnalyzer/MainForm.pas#L18) · [body 143](../../../Tools/PropagatorAnalyzer/MainForm.pas#L143) |  | ⚪ not started |  |
-| `destroy` | destructor | [19](../../../Tools/PropagatorAnalyzer/MainForm.pas#L19) · [body 150](../../../Tools/PropagatorAnalyzer/MainForm.pas#L150) |  | ⚪ not started |  |
-| `ProcessLock` | method | [20](../../../Tools/PropagatorAnalyzer/MainForm.pas#L20) · [body 156](../../../Tools/PropagatorAnalyzer/MainForm.pas#L156) |  | ⚪ not started |  |
-| `ProcessUnLock` | method | [21](../../../Tools/PropagatorAnalyzer/MainForm.pas#L21) · [body 185](../../../Tools/PropagatorAnalyzer/MainForm.pas#L185) |  | ⚪ not started |  |
-| `Resources` | property | [22](../../../Tools/PropagatorAnalyzer/MainForm.pas#L22) |  | ⚪ not started |  |
-| `ThreadName` | property | [23](../../../Tools/PropagatorAnalyzer/MainForm.pas#L23) |  | ⚪ not started |  |
-| `Thread` | property | [24](../../../Tools/PropagatorAnalyzer/MainForm.pas#L24) |  | ⚪ not started |  |
+| `Create` | constructor | [18](../../../Tools/PropagatorAnalyzer/MainForm.pas#L18) · [body 143](../../../Tools/PropagatorAnalyzer/MainForm.pas#L143) | [`TThreadInfo.TThreadInfo`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L28) | 🟢 ported: Takes the form to report to, where Delphi reported to the global Form1. | [`MainFormTests.A_thread_holds_its_locks_in_the_order_it_took_them`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L49) |
+| `destroy` | destructor | [19](../../../Tools/PropagatorAnalyzer/MainForm.pas#L19) · [body 150](../../../Tools/PropagatorAnalyzer/MainForm.pas#L150) | [`TThreadInfo.Dispose`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L35) | 🟢 ported | [`MainFormTests.A_thread_holds_its_locks_in_the_order_it_took_them`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L49) |
+| `ProcessLock` | method | [20](../../../Tools/PropagatorAnalyzer/MainForm.pas#L20) · [body 156](../../../Tools/PropagatorAnalyzer/MainForm.pas#L156) | [`TThreadInfo.ProcessLock`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L53) | 🟢 ported | [`MainFormTests.A_thread_holds_its_locks_in_the_order_it_took_them`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L49) |
+| `ProcessUnLock` | method | [21](../../../Tools/PropagatorAnalyzer/MainForm.pas#L21) · [body 185](../../../Tools/PropagatorAnalyzer/MainForm.pas#L185) | [`TThreadInfo.ProcessUnLock`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L92) | 🟢 ported | [`MainFormTests.A_thread_holds_its_locks_in_the_order_it_took_them`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L49) |
+| `Resources` | property | [22](../../../Tools/PropagatorAnalyzer/MainForm.pas#L22) | [`TThreadInfo.Resources`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L43) | 🟢 ported | [`MainFormTests.A_thread_holds_its_locks_in_the_order_it_took_them`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L49) |
+| `ThreadName` | property | [23](../../../Tools/PropagatorAnalyzer/MainForm.pas#L23) | [`TThreadInfo.ThreadName`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L46) | 🟢 ported | [`MainFormTests.A_thread_holds_its_locks_in_the_order_it_took_them`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L49) |
+| `Thread` | property | [24](../../../Tools/PropagatorAnalyzer/MainForm.pas#L24) | [`TThreadInfo.Thread`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L49) | 🟢 ported | [`MainFormTests.A_thread_holds_its_locks_in_the_order_it_took_them`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L49) |
 
 ## TForm1
 
-class at [line 27](../../../Tools/PropagatorAnalyzer/MainForm.pas#L27); ⚪ not started.
+class at [line 27](../../../Tools/PropagatorAnalyzer/MainForm.pas#L27); 🟢 ported, C# [`TForm1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L103).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Button1Click` | method | [34](../../../Tools/PropagatorAnalyzer/MainForm.pas#L34) · [body 59](../../../Tools/PropagatorAnalyzer/MainForm.pas#L59) |  | ⚪ not started |  |
-| `FormCreate` | method | [35](../../../Tools/PropagatorAnalyzer/MainForm.pas#L35) · [body 194](../../../Tools/PropagatorAnalyzer/MainForm.pas#L194) |  | ⚪ not started |  |
-| `FormDestroy` | method | [36](../../../Tools/PropagatorAnalyzer/MainForm.pas#L36) · [body 247](../../../Tools/PropagatorAnalyzer/MainForm.pas#L247) |  | ⚪ not started |  |
-| `Button2Click` | method | [37](../../../Tools/PropagatorAnalyzer/MainForm.pas#L37) · [body 257](../../../Tools/PropagatorAnalyzer/MainForm.pas#L257) |  | ⚪ not started |  |
-| `ClearData` | method, private | [43](../../../Tools/PropagatorAnalyzer/MainForm.pas#L43) · [body 237](../../../Tools/PropagatorAnalyzer/MainForm.pas#L237) |  | ⚪ not started |  |
-| `GetThreadInfo` | method, private | [44](../../../Tools/PropagatorAnalyzer/MainForm.pas#L44) · [body 125](../../../Tools/PropagatorAnalyzer/MainForm.pas#L125) |  | ⚪ not started |  |
-| `AddDependentLock` | method, private | [45](../../../Tools/PropagatorAnalyzer/MainForm.pas#L45) · [body 204](../../../Tools/PropagatorAnalyzer/MainForm.pas#L204) |  | ⚪ not started |  |
-| `CheckDependency` | method, private | [46](../../../Tools/PropagatorAnalyzer/MainForm.pas#L46) · [body 222](../../../Tools/PropagatorAnalyzer/MainForm.pas#L222) |  | ⚪ not started |  |
+| `Button1Click` | method | [34](../../../Tools/PropagatorAnalyzer/MainForm.pas#L34) · [body 59](../../../Tools/PropagatorAnalyzer/MainForm.pas#L59) | [`TForm1.Button1Click`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L141) | 🟢 ported: Finds the entry of a line after its time in any time format; Delphi took the text from the tenth character, which fits a time of eight. | [`MainFormTests.Analyze_reads_the_log_file_of_the_edit`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L87)<br>[`MainFormTests.The_thread_log_of_the_port_is_analyzed`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L107) |
+| `FormCreate` | method | [35](../../../Tools/PropagatorAnalyzer/MainForm.pas#L35) · [body 194](../../../Tools/PropagatorAnalyzer/MainForm.pas#L194) | [`TForm1.FormCreate`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L260) | 🟢 ported | [`MainFormTests.Opposite_lock_orders_are_marked`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L65) |
+| `FormDestroy` | method | [36](../../../Tools/PropagatorAnalyzer/MainForm.pas#L36) · [body 247](../../../Tools/PropagatorAnalyzer/MainForm.pas#L247) | [`TForm1.FormDestroy`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L310) | 🟢 ported: The form's Dispose. | [`MainFormTests.Opposite_lock_orders_are_marked`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L65) |
+| `Button2Click` | method | [37](../../../Tools/PropagatorAnalyzer/MainForm.pas#L37) · [body 257](../../../Tools/PropagatorAnalyzer/MainForm.pas#L257) | [`TForm1.Button2Click`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L330) | 🟢 ported |  |
+| `ClearData` | method, private | [43](../../../Tools/PropagatorAnalyzer/MainForm.pas#L43) · [body 237](../../../Tools/PropagatorAnalyzer/MainForm.pas#L237) | [`TForm1.ClearData`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L299) | 🟢 ported | [`MainFormTests.Opposite_lock_orders_are_marked`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L65) |
+| `GetThreadInfo` | method, private | [44](../../../Tools/PropagatorAnalyzer/MainForm.pas#L44) · [body 125](../../../Tools/PropagatorAnalyzer/MainForm.pas#L125) | [`TForm1.GetThreadInfo`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L245) | 🟢 ported | [`MainFormTests.Opposite_lock_orders_are_marked`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L65) |
+| `AddDependentLock` | method, private | [45](../../../Tools/PropagatorAnalyzer/MainForm.pas#L45) · [body 204](../../../Tools/PropagatorAnalyzer/MainForm.pas#L204) | [`TForm1.AddDependentLock`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L270) | 🟢 ported | [`MainFormTests.Opposite_lock_orders_are_marked`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L65) |
+| `CheckDependency` | method, private | [46](../../../Tools/PropagatorAnalyzer/MainForm.pas#L46) · [body 222](../../../Tools/PropagatorAnalyzer/MainForm.pas#L222) | [`TForm1.CheckDependency`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L292) | 🟢 ported | [`MainFormTests.Opposite_lock_orders_are_marked`](../../tests/Bold.PropagatorAnalyzer.Tests/Tools/PropagatorAnalyzer/MainFormTests.cs#L65) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TForm1.Edit1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L105) (field)
+- [`TForm1.Button1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L106) (field)
+- [`TForm1.ProgressBar1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L107) (field)
+- [`TForm1.Memo1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L108) (field)
+- [`TForm1.Button2`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L109) (field)
+- [`TForm1.OpenDialog1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L110) (field)
+- [`TForm1.fThreadInfos`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L111) (field)
+- [`TForm1.fLockInfo`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L112) (field)
+- [`TForm1.fDependentLocks`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L113) (field)
+- [`TForm1.TForm1`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L115) (constructor)
+- [`TForm1.Analyze`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L155) (method)
+- [`TForm1.Dispose`](../../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs#L317) (method)
 
 ## Dependencies
 

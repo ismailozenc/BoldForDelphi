@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Logging/BoldLogHandlerSimple.pas`](../../../Source/Common/Logging/BoldLogHandlerSimple.pas) (118 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs) |
 | Project | Bold.Core |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 16 symbols done, 0 verified |
-| Note | Nothing in Bold uses it; port it when an application needs it. |
+| Status | 🟢 ported: 16 of 16 symbols done, 0 verified |
+| Note | Nothing in Bold uses it; ported for the applications that do. |
 
-⚪ 16 not started
+🟢 16 ported
 
 ## Unit level
 
@@ -19,29 +19,29 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldSimpleLogReceiver` | class | [13](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L13) |  | ⚪ not started |  |
+| `TBoldSimpleLogReceiver` | class | [13](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L13) | [`TBoldSimpleLogReceiver`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L8) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
 
 ## TBoldSimpleLogReceiver
 
-class at [line 13](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L13); 🟢 ported, C# [`TBoldSimpleLogReceiver`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetLogLines` | method, private | [16](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L16) · [body 60](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L60) |  | ⚪ not started |  |
-| `SetProgress` | method, protected | [18](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L18) · [body 82](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L82) |  | ⚪ not started |  |
-| `SetLogHeader` | method, protected | [19](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L19) · [body 87](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L87) |  | ⚪ not started |  |
-| `SetProgressMax` | method, protected | [20](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L20) · [body 92](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L92) |  | ⚪ not started |  |
-| `ProcessInterruption` | method, protected | [21](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L21) · [body 107](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L107) |  | ⚪ not started |  |
-| `Destroy` | destructor | [23](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L23) · [body 49](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L49) |  | ⚪ not started |  |
-| `Clear` | method | [24](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L24) · [body 44](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L44) |  | ⚪ not started |  |
-| `Hide` | method | [25](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L25) · [body 67](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L67) |  | ⚪ not started |  |
-| `Log` | method | [26](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L26) · [body 72](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L72) |  | ⚪ not started |  |
-| `ProgressStep` | method | [27](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L27) · [body 77](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L77) |  | ⚪ not started |  |
-| `Show` | method | [28](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L28) · [body 97](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L97) |  | ⚪ not started |  |
-| `Sync` | method | [29](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L29) · [body 112](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L112) |  | ⚪ not started |  |
-| `StartLog` | method | [30](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L30) · [body 102](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L102) |  | ⚪ not started |  |
-| `EndLog` | method | [31](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L31) · [body 55](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L55) |  | ⚪ not started |  |
-| `LogLines` | property | [32](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L32) |  | ⚪ not started |  |
+| `GetLogLines` | method, private | [16](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L16) · [body 60](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L60) | [`TBoldSimpleLogReceiver.GetLogLines`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L13) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `SetProgress` | method, protected | [18](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L18) · [body 82](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L82) | [`TBoldSimpleLogReceiver.SetProgress`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L51) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `SetLogHeader` | method, protected | [19](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L19) · [body 87](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L87) | [`TBoldSimpleLogReceiver.SetLogHeader`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L58) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `SetProgressMax` | method, protected | [20](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L20) · [body 92](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L92) | [`TBoldSimpleLogReceiver.SetProgressMax`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L61) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `ProcessInterruption` | method, protected | [21](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L21) · [body 107](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L107) | [`TBoldSimpleLogReceiver.ProcessInterruption`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L76) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `Destroy` | destructor | [23](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L23) · [body 49](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L49) | [`TBoldSimpleLogReceiver.Dispose`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L20) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `Clear` | method | [24](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L24) · [body 44](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L44) | [`TBoldSimpleLogReceiver.Clear`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L27) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `Hide` | method | [25](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L25) · [body 67](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L67) | [`TBoldSimpleLogReceiver.Hide`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L36) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `Log` | method | [26](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L26) · [body 72](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L72) | [`TBoldSimpleLogReceiver.Log`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L42) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9)<br>[`BoldLogHandlerSimpleTests.The_log_writes_to_the_receiver`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L32) |
+| `ProgressStep` | method | [27](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L27) · [body 77](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L77) | [`TBoldSimpleLogReceiver.ProgressStep`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L45) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `Show` | method | [28](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L28) · [body 97](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L97) | [`TBoldSimpleLogReceiver.Show`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L67) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `Sync` | method | [29](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L29) · [body 112](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L112) | [`TBoldSimpleLogReceiver.Sync`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L82) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `StartLog` | method | [30](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L30) · [body 102](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L102) | [`TBoldSimpleLogReceiver.StartLog`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L73) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9)<br>[`BoldLogHandlerSimpleTests.The_log_writes_to_the_receiver`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L32) |
+| `EndLog` | method | [31](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L31) · [body 55](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L55) | [`TBoldSimpleLogReceiver.EndLog`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L30) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
+| `LogLines` | property | [32](../../../Source/Common/Logging/BoldLogHandlerSimple.pas#L32) | [`TBoldSimpleLogReceiver.LogLines`](../../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs#L17) | 🟢 ported | [`BoldLogHandlerSimpleTests.The_receiver_keeps_the_lines_of_a_session`](../../tests/Bold.Core.Tests/Common/Logging/BoldLogHandlerSimpleTests.cs#L9) |
 
 ## Dependencies
 

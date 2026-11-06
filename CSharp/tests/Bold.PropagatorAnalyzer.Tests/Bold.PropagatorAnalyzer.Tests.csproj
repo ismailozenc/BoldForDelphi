@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of the propagator analyzer: its analysis of thread logs, including one written by the port's own loggable critical sections, on a form shown during the test (Windows only; the CI runs them). Test files mirror the Delphi paths.</Description>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- Lets this project compile on Linux and macOS as well (its tests run on Windows). -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <!-- The analyzer program, whose form the tests show. -->
+    <ProjectReference Include="../../src/Bold.PropagatorAnalyzer/Bold.PropagatorAnalyzer.csproj" />
+  </ItemGroup>
+</Project>

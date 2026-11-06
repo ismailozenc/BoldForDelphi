@@ -1,4 +1,4 @@
-unit MainForm; { C# port: not planned yet; see CSharp/port/units/MainForm.md }
+unit MainForm; { C# port: CSharp/src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs; symbols and status: CSharp/port/units/MainForm.md }
 
 interface
 

@@ -19,24 +19,24 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 383 to port, 98 not ported. The units to port declare 16742 symbols. 15840 `[Delphi]` markers in the C# code; 644 test methods.
+481 Delphi units: 383 to port, 98 not ported. The units to port declare 16742 symbols. 15956 `[Delphi]` markers in the C# code; 666 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|
-| ✅ verified | 9651 | ▰▰▰▰▰▰▱▱▱▱ 58% |
-| 🟢 ported | 5733 | ▰▰▰▱▱▱▱▱▱▱ 34% |
-| 🔵 replaced | 398 | ▱▱▱▱▱▱▱▱▱▱ 2% |
-| 🟡 partial | 9 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| ✅ verified | 9653 | ▰▰▰▰▰▰▱▱▱▱ 58% |
+| 🟢 ported | 5847 | ▰▰▰▱▱▱▱▱▱▱ 35% |
+| 🔵 replaced | 400 | ▱▱▱▱▱▱▱▱▱▱ 2% |
+| 🟡 partial | 7 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | 🟠 stub | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | ❌ failing | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
-| ⚪ not started | 847 | ▰▱▱▱▱▱▱▱▱▱ 5% |
+| ⚪ not started | 731 | ▱▱▱▱▱▱▱▱▱▱ 4% |
 | ⚫ dropped | 104 | ▱▱▱▱▱▱▱▱▱▱ 1% |
 
 ## Milestones
 
 | Milestone | Units | Symbols | Done | Verified | Progress |
 |---|---:|---:|---:|---:|---|
-| M1 Load models | 24 | 1642 | 1635 | 1332 | ▰▰▰▰▰▰▰▰▰▰ 100% |
+| M1 Load models | 24 | 1642 | 1637 | 1334 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M2 Runtime model and subscriptions | 24 | 1965 | 1965 | 1901 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M3 Object space in memory | 41 | 2630 | 2628 | 1188 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M4 OCL | 13 | 1289 | 1289 | 558 | ▰▰▰▰▰▰▰▰▰▰ 100% |
@@ -47,7 +47,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | M9 Multi-user | 51 | 1205 | 1205 | 1145 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M11 XMI | 14 | 465 | 465 | 451 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | M12 Model editor | 23 | 539 | 539 | 344 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| Later (after M12, or when needed) | 32 | 847 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
+| Later (after M12, or when needed) | 32 | 847 | 116 | 0 | ▰▱▱▱▱▱▱▱▱▱ 14% |
 
 ## Projects
 
@@ -55,7 +55,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 |---|---:|---:|---:|---:|---|
 | Bold.AwareGui | 27 | 1033 | 1033 | 950 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.CodeGen | 4 | 158 | 158 | 133 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| Bold.Core | 47 | 1775 | 1671 | 1475 | ▰▰▰▰▰▰▰▰▰▱ 94% |
+| Bold.Core | 47 | 1775 | 1770 | 1477 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.Handles | 23 | 567 | 567 | 553 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.Model | 9 | 729 | 729 | 629 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.ModelEditor | 10 | 286 | 286 | 103 | ▰▰▰▰▰▰▰▰▰▰ 100% |
@@ -66,17 +66,18 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | Bold.Persistence.Sql | 57 | 2594 | 2594 | 923 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.Propagation | 25 | 580 | 580 | 553 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.Propagator.Server | 21 | 513 | 513 | 480 | ▰▰▰▰▰▰▰▰▰▰ 100% |
+| Bold.PropagatorAnalyzer | 1 | 19 | 19 | 0 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.SourceGenerators | 19 | 412 | 0 | 0 | ▱▱▱▱▱▱▱▱▱▱ 0% |
 | Bold.ValueSpace | 13 | 705 | 703 | 663 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.WinForms | 41 | 1615 | 1615 | 5 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 | Bold.Xmi | 14 | 465 | 465 | 451 | ▰▰▰▰▰▰▰▰▰▰ 100% |
-| not decided yet | 3 | 74 | 55 | 0 | ▰▰▰▰▰▰▰▱▱▱ 74% |
+| not decided yet | 2 | 55 | 55 | 0 | ▰▰▰▰▰▰▰▰▰▰ 100% |
 
 ## Units
 
 | Unit | Status | Done | Verified | Project | Milestone | Delphi | C# |
 |---|---|---:|---:|---|---|---|---|
-| [BoldBase](units/BoldBase.md) | 🟡 partial | 46/48 | 44 | Bold.Core | M1 | [Source/Common/Core/BoldBase.pas](../../Source/Common/Core/BoldBase.pas) | [src/Bold.Core/Common/Core/BoldBase.Aliases.cs](../src/Bold.Core/Common/Core/BoldBase.Aliases.cs)<br>[src/Bold.Core/Common/Core/BoldBase.cs](../src/Bold.Core/Common/Core/BoldBase.cs) |
+| [BoldBase](units/BoldBase.md) | 🟢 ported | 48/48 | 46 | Bold.Core | M1 | [Source/Common/Core/BoldBase.pas](../../Source/Common/Core/BoldBase.pas) | [src/Bold.Core/Common/Core/BoldBase.Aliases.cs](../src/Bold.Core/Common/Core/BoldBase.Aliases.cs)<br>[src/Bold.Core/Common/Core/BoldBase.cs](../src/Bold.Core/Common/Core/BoldBase.cs) |
 | [BoldCommonConst](units/BoldCommonConst.md) | ✅ verified | 109/109 | 109 | Bold.Core | M1 | [Source/Common/Core/BoldCommonConst.pas](../../Source/Common/Core/BoldCommonConst.pas) | [src/Bold.Core/Common/Core/BoldCommonConst.cs](../src/Bold.Core/Common/Core/BoldCommonConst.cs) |
 | [BoldContainers](units/BoldContainers.md) | 🟢 ported | 90/90 | 40 | Bold.Core | M1 | [Source/Common/Core/BoldContainers.pas](../../Source/Common/Core/BoldContainers.pas) | [src/Bold.Core/Common/Core/BoldContainers.Aliases.cs](../src/Bold.Core/Common/Core/BoldContainers.Aliases.cs)<br>[src/Bold.Core/Common/Core/BoldContainers.cs](../src/Bold.Core/Common/Core/BoldContainers.cs) |
 | [BoldDefs](units/BoldDefs.md) | ✅ verified | 105/105 | 105 | Bold.Core | M1 | [Source/Common/Core/BoldDefs.pas](../../Source/Common/Core/BoldDefs.pas) | [src/Bold.Core/Common/Core/BoldDefs.Aliases.cs](../src/Bold.Core/Common/Core/BoldDefs.Aliases.cs)<br>[src/Bold.Core/Common/Core/BoldDefs.cs](../src/Bold.Core/Common/Core/BoldDefs.cs) |
@@ -427,12 +428,12 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldUMLModelEditPlugIn](units/BoldUMLModelEditPlugIn.md) | 🟢 ported | 26/26 | 22 | Bold.ModelEditor.Core | M12 | [Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas](../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas) | [src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs](../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs)<br>[src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs](../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs)<br>[src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs](../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs) |
 | [BoldUMLPluginCallBacks](units/BoldUMLPluginCallBacks.md) | ✅ verified | 4/4 | 4 | Bold.ModelEditor.Core | M12 | [Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas](../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas) | [src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs](../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs) |
 | [BoldUMLPlugins](units/BoldUMLPlugins.md) | ✅ verified | 40/40 | 40 | Bold.ModelEditor.Core | M12 | [Source/UMLModel/Plugins/BoldUMLPlugins.pas](../../Source/UMLModel/Plugins/BoldUMLPlugins.pas) | [src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs](../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs) |
-| [BoldAggeregates](units/BoldAggeregates.md) | ⚪ not started | 0/18 | 0 | Bold.Core | Later | [Source/Common/Core/BoldAggeregates.pas](../../Source/Common/Core/BoldAggeregates.pas) | planned: src/Bold.Core/Common/Core/BoldAggeregates.cs |
-| [BoldLogHandlerSimple](units/BoldLogHandlerSimple.md) | ⚪ not started | 0/16 | 0 | Bold.Core | Later | [Source/Common/Logging/BoldLogHandlerSimple.pas](../../Source/Common/Logging/BoldLogHandlerSimple.pas) | planned: src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs |
-| [BoldSubscribableCollection](units/BoldSubscribableCollection.md) | ⚪ not started | 0/24 | 0 | Bold.Core | Later | [Source/Common/Subscription/BoldSubscribableCollection.pas](../../Source/Common/Subscription/BoldSubscribableCollection.pas) | planned: src/Bold.Core/Common/Subscription/BoldSubscribableCollection.cs |
-| [BoldIsoDateTime](units/BoldIsoDateTime.md) | ⚪ not started | 0/4 | 0 | Bold.Core | Later | [Source/Common/Support/BoldIsoDateTime.pas](../../Source/Common/Support/BoldIsoDateTime.pas) | planned: src/Bold.Core/Common/Support/BoldIsoDateTime.cs |
-| [BoldPerformanceCounter](units/BoldPerformanceCounter.md) | ⚪ not started | 0/25 | 0 | Bold.Core | Later | [Source/Common/Support/BoldPerformanceCounter.pas](../../Source/Common/Support/BoldPerformanceCounter.pas) | planned: src/Bold.Core/Common/Support/BoldPerformanceCounter.cs |
-| [BoldSupportConst](units/BoldSupportConst.md) | ⚪ not started | 0/10 | 0 | Bold.Core | Later | [Source/Common/Support/BoldSupportConst.pas](../../Source/Common/Support/BoldSupportConst.pas) | planned: src/Bold.Core/Common/Support/BoldSupportConst.cs |
+| [BoldAggeregates](units/BoldAggeregates.md) | 🟢 ported | 18/18 | 0 | Bold.Core | Later | [Source/Common/Core/BoldAggeregates.pas](../../Source/Common/Core/BoldAggeregates.pas) | [src/Bold.Core/Common/Core/BoldAggeregates.cs](../src/Bold.Core/Common/Core/BoldAggeregates.cs) |
+| [BoldLogHandlerSimple](units/BoldLogHandlerSimple.md) | 🟢 ported | 16/16 | 0 | Bold.Core | Later | [Source/Common/Logging/BoldLogHandlerSimple.pas](../../Source/Common/Logging/BoldLogHandlerSimple.pas) | [src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs](../src/Bold.Core/Common/Logging/BoldLogHandlerSimple.cs) |
+| [BoldSubscribableCollection](units/BoldSubscribableCollection.md) | 🟢 ported | 24/24 | 0 | Bold.Core | Later | [Source/Common/Subscription/BoldSubscribableCollection.pas](../../Source/Common/Subscription/BoldSubscribableCollection.pas) | [src/Bold.Core/Common/Subscription/BoldSubscribableCollection.cs](../src/Bold.Core/Common/Subscription/BoldSubscribableCollection.cs) |
+| [BoldIsoDateTime](units/BoldIsoDateTime.md) | 🟢 ported | 4/4 | 0 | Bold.Core | Later | [Source/Common/Support/BoldIsoDateTime.pas](../../Source/Common/Support/BoldIsoDateTime.pas) | [src/Bold.Core/Common/Support/BoldIsoDateTime.cs](../src/Bold.Core/Common/Support/BoldIsoDateTime.cs) |
+| [BoldPerformanceCounter](units/BoldPerformanceCounter.md) | 🟢 ported | 25/25 | 0 | Bold.Core | Later | [Source/Common/Support/BoldPerformanceCounter.pas](../../Source/Common/Support/BoldPerformanceCounter.pas) | [src/Bold.Core/Common/Support/BoldPerformanceCounter.cs](../src/Bold.Core/Common/Support/BoldPerformanceCounter.cs) |
+| [BoldSupportConst](units/BoldSupportConst.md) | 🟢 ported | 10/10 | 0 | Bold.Core | Later | [Source/Common/Support/BoldSupportConst.pas](../../Source/Common/Support/BoldSupportConst.pas) | [src/Bold.Core/Common/Support/BoldSupportConst.cs](../src/Bold.Core/Common/Support/BoldSupportConst.cs) |
 | [BoldOLLEController](units/BoldOLLEController.md) | ⚪ not started | 0/12 | 0 | Bold.Olle | Later | [Source/Extensions/OLLE/Core/BoldOLLEController.pas](../../Source/Extensions/OLLE/Core/BoldOLLEController.pas) | planned: src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs |
 | [BoldOLLEDistributableObjectHandlers](units/BoldOLLEDistributableObjectHandlers.md) | ⚪ not started | 0/57 | 0 | Bold.Olle | Later | [Source/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlers.pas](../../Source/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlers.pas) | planned: src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlers.cs |
 | [BoldOLLEHandles](units/BoldOLLEHandles.md) | ⚪ not started | 0/14 | 0 | Bold.Olle | Later | [Source/Extensions/OLLE/Core/BoldOLLEHandles.pas](../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas) | planned: src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs |
@@ -458,7 +459,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 | [BoldWCodeInformer](units/BoldWCodeInformer.md) | ⚪ not started | 0/11 | 0 | Bold.SourceGenerators | Later | [Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas](../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas) | planned: src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.cs |
 | [BoldWProjectWizard](units/BoldWProjectWizard.md) | ⚪ not started | 0/17 | 0 | Bold.SourceGenerators | Later | [Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas](../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas) | planned: src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.cs |
 | [BoldWScanner](units/BoldWScanner.md) | ⚪ not started | 0/38 | 0 | Bold.SourceGenerators | Later | [Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas](../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas) | planned: src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWScanner.cs |
-| [MainForm](units/MainForm.md) | ⚪ not started | 0/19 | 0 |  | Later | [Tools/PropagatorAnalyzer/MainForm.pas](../../Tools/PropagatorAnalyzer/MainForm.pas) |  |
+| [MainForm](units/MainForm.md) | 🟢 ported | 19/19 | 0 | Bold.PropagatorAnalyzer | Later | [Tools/PropagatorAnalyzer/MainForm.pas](../../Tools/PropagatorAnalyzer/MainForm.pas) | [src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs](../src/Bold.PropagatorAnalyzer/Tools/PropagatorAnalyzer/MainForm.cs) |
 | [BoldAwareGuiReg](units/BoldAwareGuiReg.md) | ⚫ dropped | 3/3 | 0 | not ported: IDE / design-time code |  | [Source/BoldAwareGUI/IDE/BoldAwareGuiReg.pas](../../Source/BoldAwareGUI/IDE/BoldAwareGuiReg.pas) |  |
 | [BoldComboBoxPropertyEditors](units/BoldComboBoxPropertyEditors.md) | ⚫ dropped | 2/2 | 0 | not ported: IDE / design-time code |  | [Source/BoldAwareGUI/IDE/BoldComboBoxPropertyEditors.pas](../../Source/BoldAwareGUI/IDE/BoldComboBoxPropertyEditors.pas) |  |
 | [BoldControlPackPropertyEditors](units/BoldControlPackPropertyEditors.md) | ⚫ dropped | 64/64 | 0 | not ported: IDE / design-time code |  | [Source/BoldAwareGUI/IDE/BoldControlPackPropertyEditors.pas](../../Source/BoldAwareGUI/IDE/BoldControlPackPropertyEditors.pas) |  |

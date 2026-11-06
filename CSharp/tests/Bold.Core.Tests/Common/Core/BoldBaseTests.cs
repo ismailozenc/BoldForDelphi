@@ -18,8 +18,12 @@ public class BoldBaseTests
 
     private sealed class Probe : TBoldRefCountedObject, IProbe
     {
+        public int Destroyed;
+
         public int AddRef() => _AddRef();
         public int Release() => _Release();
+
+        protected override void Destroy() => Destroyed++;
     }
 
     [Test]
@@ -82,6 +86,19 @@ public class BoldBaseTests
         Assert.Throws<EBold>(() => p.BeforeDestruction());
         Assert.That(p.Release(), Is.EqualTo(0));
         Assert.DoesNotThrow(() => p.BeforeDestruction());
+    }
+
+    [Test]
+    [Covers(typeof(TBoldRefCountedObject), "_AddRef", "_Release")]
+    public void The_last_release_destroys_the_object()
+    {
+        var p = new Probe();
+        p.AddRef();
+        p.AddRef();
+        Assert.That(p.Release(), Is.EqualTo(1));
+        Assert.That(p.Destroyed, Is.Zero, "a reference is left");
+        Assert.That(p.Release(), Is.Zero);
+        Assert.That(p.Destroyed, Is.EqualTo(1));
     }
 
     [Test]

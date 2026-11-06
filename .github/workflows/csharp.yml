@@ -23,6 +23,8 @@ jobs:
   build-test-check:
     name: Build, test and check the port links
     runs-on: windows-latest
+    # The GUI tests show forms; one that waits for a dialog nobody answers must not hold the runner for hours.
+    timeout-minutes: 90
     defaults:
       run:
         shell: bash
@@ -58,7 +60,7 @@ jobs:
           counts=""
           for project in CSharp/tests/*.Tests/*.Tests.csproj; do
             name=$(basename "$project" .csproj)
-            if dotnet test "$project" --configuration Release --no-build --logger trx --logger "console;verbosity=normal" --results-directory "CSharp/TestResults/$name" > "test-$name.log" 2>&1; then
+            if dotnet test "$project" --configuration Release --no-build --blame-hang-timeout 10m --blame-hang-dump-type none --logger trx --logger "console;verbosity=normal" --results-directory "CSharp/TestResults/$name" > "test-$name.log" 2>&1; then
               grep -E "^\s*(Passed|Failed|Skipped|Total)( tests)?[:!]|^Test Run" "test-$name.log" | tail -3
               counts="$counts$name: $( (tr -d '\r' < "test-$name.log" | grep -E '^ *(Total tests|Passed|Failed|Skipped): ' | sed -E 's/^ +//' | paste -sd ',' -) || true)%0A"
             else

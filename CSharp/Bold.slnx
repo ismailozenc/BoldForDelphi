@@ -25,6 +25,7 @@
     <Project Path="src/Bold.Porting/Bold.Porting.csproj" />
     <Project Path="src/Bold.Propagation/Bold.Propagation.csproj" />
     <Project Path="src/Bold.Propagator.Server/Bold.Propagator.Server.csproj" />
+    <Project Path="src/Bold.PropagatorAnalyzer/Bold.PropagatorAnalyzer.csproj" />
     <Project Path="src/Bold.Remote.Client/Bold.Remote.Client.csproj" />
     <Project Path="src/Bold.Remote.Server/Bold.Remote.Server.csproj" />
     <Project Path="src/Bold.Rtl/Bold.Rtl.csproj" />
@@ -48,6 +49,7 @@
     <Project Path="tests/Bold.Persistence.Sql.Tests/Bold.Persistence.Sql.Tests.csproj" />
     <Project Path="tests/Bold.PortTool.Tests/Bold.PortTool.Tests.csproj" />
     <Project Path="tests/Bold.Propagation.Tests/Bold.Propagation.Tests.csproj" />
+    <Project Path="tests/Bold.PropagatorAnalyzer.Tests/Bold.PropagatorAnalyzer.Tests.csproj" />
     <Project Path="tests/Bold.Remote.Tests/Bold.Remote.Tests.csproj" />
     <Project Path="tests/Bold.Xmi.Tests/Bold.Xmi.Tests.csproj" />
     <Project Path="tests/Bold.Rtl.Tests/Bold.Rtl.Tests.csproj" />

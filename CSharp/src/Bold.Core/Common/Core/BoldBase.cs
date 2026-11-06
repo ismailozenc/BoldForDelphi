@@ -41,12 +41,28 @@ public class TBoldRefCountedObject : TBoldInterfacedObject
     [Delphi(PortStatus.Ported)]
     public int RefCount => FRefCount;
 
-    /// <summary>Increments the reference count, as Delphi's _AddRef; the object is not freed at zero, the GC frees it.</summary>
-    [Delphi(PortStatus.Partial, Note = "Counts only; reaching zero does not destroy the object, the garbage collector does.")]
+    /// <summary>Increments the reference count, as Delphi's _AddRef.</summary>
+    [Delphi(PortStatus.Ported)]
     protected internal virtual int _AddRef() => Interlocked.Increment(ref FRefCount);
 
-    [Delphi(PortStatus.Partial, Note = "Counts only; reaching zero does not destroy the object, the garbage collector does.")]
-    protected internal virtual int _Release() => Interlocked.Decrement(ref FRefCount);
+    /// <summary>Decrements the reference count; at zero the object is destroyed, as Delphi freed it.</summary>
+    [Delphi(PortStatus.Ported, Note = "At zero BeforeDestruction and Destroy run, as when Delphi freed the object; the garbage collector frees the memory.")]
+    protected internal virtual int _Release()
+    {
+        int result = Interlocked.Decrement(ref FRefCount);
+        if (result == 0)
+        {
+            BeforeDestruction();
+            Destroy();
+        }
+
+        return result;
+    }
+
+    /// <summary>What the object does when its last counted reference goes (Delphi's destructor): nothing here.</summary>
+    protected virtual void Destroy()
+    {
+    }
 
     /// <summary>Raises EBold when the object is destroyed while references are counted, as Delphi does.</summary>
     [Delphi(PortStatus.Ported)]

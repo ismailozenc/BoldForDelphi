@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldIsoDateTime.pas`](../../../Source/Common/Support/BoldIsoDateTime.pas) (80 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldIsoDateTime.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldIsoDateTime.cs`](../../src/Bold.Core/Common/Support/BoldIsoDateTime.cs) |
 | Project | Bold.Core |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
-| Note | Nothing in Bold uses it; port it when an application needs it. |
+| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
+| Note | Nothing in Bold uses it; ported for the applications that do. |
 
-⚪ 4 not started
+🟢 4 ported
 
 ## Unit level
 
@@ -19,10 +19,10 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ParseISODate` | routine | [8](../../../Source/Common/Support/BoldIsoDateTime.pas#L8) · [body 32](../../../Source/Common/Support/BoldIsoDateTime.pas#L32) |  | ⚪ not started |  |
-| `ParseISODateTime` | routine | [9](../../../Source/Common/Support/BoldIsoDateTime.pas#L9) · [body 55](../../../Source/Common/Support/BoldIsoDateTime.pas#L55) |  | ⚪ not started |  |
-| `ParseISOTime` | routine | [10](../../../Source/Common/Support/BoldIsoDateTime.pas#L10) · [body 62](../../../Source/Common/Support/BoldIsoDateTime.pas#L62) |  | ⚪ not started |  |
-| `MatchPattern` | routine, implementation | [19](../../../Source/Common/Support/BoldIsoDateTime.pas#L19) |  | ⚪ not started |  |
+| `ParseISODate` | routine | [8](../../../Source/Common/Support/BoldIsoDateTime.pas#L8) · [body 32](../../../Source/Common/Support/BoldIsoDateTime.pas#L32) | [`BoldIsoDateTime.ParseISODate`](../../src/Bold.Core/Common/Support/BoldIsoDateTime.cs#L28) | 🟢 ported | [`BoldIsoDateTimeTests.Dates_are_read_and_checked`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L16) |
+| `ParseISODateTime` | routine | [9](../../../Source/Common/Support/BoldIsoDateTime.pas#L9) · [body 55](../../../Source/Common/Support/BoldIsoDateTime.pas#L55) | [`BoldIsoDateTime.ParseISODateTime`](../../src/Bold.Core/Common/Support/BoldIsoDateTime.cs#L63) | 🟢 ported | [`BoldIsoDateTimeTests.Dates_with_times_are_read`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L43) |
+| `ParseISOTime` | routine | [10](../../../Source/Common/Support/BoldIsoDateTime.pas#L10) · [body 62](../../../Source/Common/Support/BoldIsoDateTime.pas#L62) | [`BoldIsoDateTime.ParseISOTime`](../../src/Bold.Core/Common/Support/BoldIsoDateTime.cs#L75) | 🟢 ported: The seconds may be left out, as the pattern allows; Delphi read them anyway and raised EConvertError. | [`BoldIsoDateTimeTests.Times_are_read_and_checked`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L30) |
+| `MatchPattern` | routine, implementation | [19](../../../Source/Common/Support/BoldIsoDateTime.pas#L19) | [`BoldIsoDateTime.MatchPattern`](../../src/Bold.Core/Common/Support/BoldIsoDateTime.cs#L15) | 🟢 ported | [`BoldIsoDateTimeTests.Dates_are_read_and_checked`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L16) |
 
 ## Dependencies
 

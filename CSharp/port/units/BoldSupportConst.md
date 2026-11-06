@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Support/BoldSupportConst.pas`](../../../Source/Common/Support/BoldSupportConst.pas) (20 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Support/BoldSupportConst.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Support/BoldSupportConst.cs`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs) |
 | Project | Bold.Core |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 10 symbols done, 0 verified |
-| Note | Nothing in Bold uses it; port it when an application needs it. |
+| Status | 🟢 ported: 10 of 10 symbols done, 0 verified |
+| Note | Nothing in Bold uses it; ported for the applications that do. |
 
-⚪ 10 not started
+🟢 10 ported
 
 ## Unit level
 
@@ -19,16 +19,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sInvalidDateFormatFormat` | resourcestring | [7](../../../Source/Common/Support/BoldSupportConst.pas#L7) |  | ⚪ not started |  |
-| `sInnvalidDateFormatLargeMonth` | resourcestring | [8](../../../Source/Common/Support/BoldSupportConst.pas#L8) |  | ⚪ not started |  |
-| `sInvalidDateFormatSmallMonth` | resourcestring | [9](../../../Source/Common/Support/BoldSupportConst.pas#L9) |  | ⚪ not started |  |
-| `sInvalidDateFormatSmallDay` | resourcestring | [10](../../../Source/Common/Support/BoldSupportConst.pas#L10) |  | ⚪ not started |  |
-| `sInvalidDateFormatBadDay` | resourcestring | [11](../../../Source/Common/Support/BoldSupportConst.pas#L11) |  | ⚪ not started |  |
-| `sInvalidDateTimeFormat` | resourcestring | [12](../../../Source/Common/Support/BoldSupportConst.pas#L12) |  | ⚪ not started |  |
-| `sInvalidTimeFormat` | resourcestring | [13](../../../Source/Common/Support/BoldSupportConst.pas#L13) |  | ⚪ not started |  |
-| `sInvalidTimeFormatLargeHour` | resourcestring | [14](../../../Source/Common/Support/BoldSupportConst.pas#L14) |  | ⚪ not started |  |
-| `sInvalidTimeFormatLargeMinute` | resourcestring | [15](../../../Source/Common/Support/BoldSupportConst.pas#L15) |  | ⚪ not started |  |
-| `sInvalidTimeFormatLargeSecond` | resourcestring | [16](../../../Source/Common/Support/BoldSupportConst.pas#L16) |  | ⚪ not started |  |
+| `sInvalidDateFormatFormat` | resourcestring | [7](../../../Source/Common/Support/BoldSupportConst.pas#L7) | [`BoldSupportConst.sInvalidDateFormatFormat`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L9) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInnvalidDateFormatLargeMonth` | resourcestring | [8](../../../Source/Common/Support/BoldSupportConst.pas#L8) | [`BoldSupportConst.sInnvalidDateFormatLargeMonth`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L10) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidDateFormatSmallMonth` | resourcestring | [9](../../../Source/Common/Support/BoldSupportConst.pas#L9) | [`BoldSupportConst.sInvalidDateFormatSmallMonth`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L11) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidDateFormatSmallDay` | resourcestring | [10](../../../Source/Common/Support/BoldSupportConst.pas#L10) | [`BoldSupportConst.sInvalidDateFormatSmallDay`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L12) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidDateFormatBadDay` | resourcestring | [11](../../../Source/Common/Support/BoldSupportConst.pas#L11) | [`BoldSupportConst.sInvalidDateFormatBadDay`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L13) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidDateTimeFormat` | resourcestring | [12](../../../Source/Common/Support/BoldSupportConst.pas#L12) | [`BoldSupportConst.sInvalidDateTimeFormat`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L14) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidTimeFormat` | resourcestring | [13](../../../Source/Common/Support/BoldSupportConst.pas#L13) | [`BoldSupportConst.sInvalidTimeFormat`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L15) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidTimeFormatLargeHour` | resourcestring | [14](../../../Source/Common/Support/BoldSupportConst.pas#L14) | [`BoldSupportConst.sInvalidTimeFormatLargeHour`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L16) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidTimeFormatLargeMinute` | resourcestring | [15](../../../Source/Common/Support/BoldSupportConst.pas#L15) | [`BoldSupportConst.sInvalidTimeFormatLargeMinute`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L17) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
+| `sInvalidTimeFormatLargeSecond` | resourcestring | [16](../../../Source/Common/Support/BoldSupportConst.pas#L16) | [`BoldSupportConst.sInvalidTimeFormatLargeSecond`](../../src/Bold.Core/Common/Support/BoldSupportConst.cs#L18) | 🟢 ported | [`BoldIsoDateTimeTests.Messages_have_the_Delphi_values`](../../tests/Bold.Core.Tests/Common/Support/BoldIsoDateTimeTests.cs#L9) |
 
 ## Dependencies
 

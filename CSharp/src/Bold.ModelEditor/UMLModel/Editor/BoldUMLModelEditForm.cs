@@ -769,7 +769,7 @@ public class TBoldModelEditFrm : Form
 
         RefreshPage();
         UpdateMenus();
-        if (!fSelecting && Controller.CurrentElement is { } element && BoldTreeView1.SelectedNode?.Tag != element)
+        if (!fSelecting && Controller.CurrentElement is { } element && ElementOf(BoldTreeView1.SelectedNode) != element)
         {
             JumpToElement(this, element);
         }
@@ -1152,9 +1152,9 @@ public class TBoldModelEditFrm : Form
             BoldTreeView1.SelectedNode = node;
             node.EnsureVisible();
         }
-        else
+        else if (Controller.CurrentElement != element)
         {
-            Controller.CurrentElement = element;
+            Controller.CurrentElement = element; // not in the tree (filtered out, or not shown yet): its page shows
         }
     }
 

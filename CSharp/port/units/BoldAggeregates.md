@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Common/Core/BoldAggeregates.pas`](../../../Source/Common/Core/BoldAggeregates.pas) (141 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Core/Common/Core/BoldAggeregates.cs` |
+| C# | [`CSharp/src/Bold.Core/Common/Core/BoldAggeregates.cs`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs) |
 | Project | Bold.Core |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 18 symbols done, 0 verified |
-| Note | Nothing in Bold uses it; port it when an application needs it. |
+| Status | 🟢 ported: 18 of 18 symbols done, 0 verified |
+| Note | Nothing in Bold uses it; ported for the applications that do. |
 
-⚪ 18 not started
+🟢 18 ported
 
 ## Unit level
 
@@ -19,45 +19,54 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldAggregateableObject` | class | [14](../../../Source/Common/Core/BoldAggeregates.pas#L14) |  | ⚪ not started |  |
-| `TBoldContainedObject` | class | [33](../../../Source/Common/Core/BoldAggeregates.pas#L33) |  | ⚪ not started |  |
-| `TBoldAggregatedObject` | class | [45](../../../Source/Common/Core/BoldAggeregates.pas#L45) |  | ⚪ not started |  |
+| `TBoldAggregateableObject` | class | [14](../../../Source/Common/Core/BoldAggeregates.pas#L14) | [`TBoldAggregateableObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L14) | 🟢 ported | [`BoldAggeregatesTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L40) |
+| `TBoldContainedObject` | class | [33](../../../Source/Common/Core/BoldAggeregates.pas#L33) | [`TBoldContainedObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L58) | 🟢 ported | [`BoldAggeregatesTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L40) |
+| `TBoldAggregatedObject` | class | [45](../../../Source/Common/Core/BoldAggeregates.pas#L45) | [`TBoldAggregatedObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L84) | 🟢 ported | [`BoldAggeregatesTests.Classes_have_the_Delphi_parents`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L40) |
 
 ## TBoldAggregateableObject
 
-class at [line 14](../../../Source/Common/Core/BoldAggeregates.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/Common/Core/BoldAggeregates.pas#L14); 🟢 ported, C# [`TBoldAggregateableObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetController` | method, protected | [20](../../../Source/Common/Core/BoldAggeregates.pas#L20) · [body 62](../../../Source/Common/Core/BoldAggeregates.pas#L62) |  | ⚪ not started |  |
-| `QueryInterface` | method, protected | [21](../../../Source/Common/Core/BoldAggeregates.pas#L21) · [body 67](../../../Source/Common/Core/BoldAggeregates.pas#L67) |  | ⚪ not started |  |
-| `_AddRef` | method, protected | [22](../../../Source/Common/Core/BoldAggeregates.pas#L22) · [body 75](../../../Source/Common/Core/BoldAggeregates.pas#L75) |  | ⚪ not started |  |
-| `_Release` | method, protected | [23](../../../Source/Common/Core/BoldAggeregates.pas#L23) · [body 83](../../../Source/Common/Core/BoldAggeregates.pas#L83) |  | ⚪ not started |  |
-| `NonDelegatingQueryInterface` | method, protected | [24](../../../Source/Common/Core/BoldAggeregates.pas#L24) · [body 91](../../../Source/Common/Core/BoldAggeregates.pas#L91) |  | ⚪ not started |  |
-| `NonDelegatingAddRef` | method, protected | [25](../../../Source/Common/Core/BoldAggeregates.pas#L25) · [body 99](../../../Source/Common/Core/BoldAggeregates.pas#L99) |  | ⚪ not started |  |
-| `NonDelegatingRelease` | method, protected | [26](../../../Source/Common/Core/BoldAggeregates.pas#L26) · [body 104](../../../Source/Common/Core/BoldAggeregates.pas#L104) |  | ⚪ not started |  |
-| `Create` | constructor | [28](../../../Source/Common/Core/BoldAggeregates.pas#L28) · [body 57](../../../Source/Common/Core/BoldAggeregates.pas#L57) |  | ⚪ not started |  |
-| `Controller` | property | [29](../../../Source/Common/Core/BoldAggeregates.pas#L29) |  | ⚪ not started |  |
+| `GetController` | method, protected | [20](../../../Source/Common/Core/BoldAggeregates.pas#L20) · [body 62](../../../Source/Common/Core/BoldAggeregates.pas#L62) | [`TBoldAggregateableObject.GetController`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L26) | 🟢 ported | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `QueryInterface` | method, protected | [21](../../../Source/Common/Core/BoldAggeregates.pas#L21) · [body 67](../../../Source/Common/Core/BoldAggeregates.pas#L67) | [`TBoldAggregateableObject.QueryInterface`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L33) | 🟢 ported: Takes the interface type and gives the implementing object, or null, where Delphi took a GUID and returned an HResult. | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `_AddRef` | method, protected | [22](../../../Source/Common/Core/BoldAggeregates.pas#L22) · [body 75](../../../Source/Common/Core/BoldAggeregates.pas#L75) | [`TBoldAggregateableObject._AddRef`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L37) | 🟢 ported: Counts on the controller when it is counted; a controller that is not counted gives -1. | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `_Release` | method, protected | [23](../../../Source/Common/Core/BoldAggeregates.pas#L23) · [body 83](../../../Source/Common/Core/BoldAggeregates.pas#L83) | [`TBoldAggregateableObject._Release`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L41) | 🟢 ported: Counts on the controller when it is counted; a controller that is not counted gives -1. | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `NonDelegatingQueryInterface` | method, protected | [24](../../../Source/Common/Core/BoldAggeregates.pas#L24) · [body 91](../../../Source/Common/Core/BoldAggeregates.pas#L91) | [`TBoldAggregateableObject.NonDelegatingQueryInterface`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L46) | 🟢 ported: Gives the object or null, where Delphi returned S\_OK or E\_NOINTERFACE. | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `NonDelegatingAddRef` | method, protected | [25](../../../Source/Common/Core/BoldAggeregates.pas#L25) · [body 99](../../../Source/Common/Core/BoldAggeregates.pas#L99) | [`TBoldAggregateableObject.NonDelegatingAddRef`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L49) | 🟢 ported | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `NonDelegatingRelease` | method, protected | [26](../../../Source/Common/Core/BoldAggeregates.pas#L26) · [body 104](../../../Source/Common/Core/BoldAggeregates.pas#L104) | [`TBoldAggregateableObject.NonDelegatingRelease`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L53) | 🟢 ported | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `Create` | constructor | [28](../../../Source/Common/Core/BoldAggeregates.pas#L28) · [body 57](../../../Source/Common/Core/BoldAggeregates.pas#L57) | [`TBoldAggregateableObject.TBoldAggregateableObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L20) | 🟢 ported | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
+| `Controller` | property | [29](../../../Source/Common/Core/BoldAggeregates.pas#L29) | [`TBoldAggregateableObject.Controller`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L29) | 🟢 ported | [`BoldAggeregatesTests.An_aggregated_object_counts_and_answers_through_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L49) |
 
 ## TBoldContainedObject
 
-class at [line 33](../../../Source/Common/Core/BoldAggeregates.pas#L33); ⚪ not started.
+class at [line 33](../../../Source/Common/Core/BoldAggeregates.pas#L33); 🟢 ported, C# [`TBoldContainedObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L58).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetController` | method, protected | [36](../../../Source/Common/Core/BoldAggeregates.pas#L36) · [body 118](../../../Source/Common/Core/BoldAggeregates.pas#L118) |  | ⚪ not started |  |
-| `_AddRef` | method, protected | [37](../../../Source/Common/Core/BoldAggeregates.pas#L37) · [body 123](../../../Source/Common/Core/BoldAggeregates.pas#L123) |  | ⚪ not started |  |
-| `_Release` | method, protected | [38](../../../Source/Common/Core/BoldAggeregates.pas#L38) · [body 128](../../../Source/Common/Core/BoldAggeregates.pas#L128) |  | ⚪ not started |  |
-| `Create` | constructor | [40](../../../Source/Common/Core/BoldAggeregates.pas#L40) · [body 113](../../../Source/Common/Core/BoldAggeregates.pas#L113) |  | ⚪ not started |  |
-| `Controller` | property | [41](../../../Source/Common/Core/BoldAggeregates.pas#L41) |  | ⚪ not started |  |
+| `GetController` | method, protected | [36](../../../Source/Common/Core/BoldAggeregates.pas#L36) · [body 118](../../../Source/Common/Core/BoldAggeregates.pas#L118) | [`TBoldContainedObject.GetController`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L70) | 🟢 ported | [`BoldAggeregatesTests.A_contained_object_is_counted_and_queried_on_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L72) |
+| `_AddRef` | method, protected | [37](../../../Source/Common/Core/BoldAggeregates.pas#L37) · [body 123](../../../Source/Common/Core/BoldAggeregates.pas#L123) | [`TBoldContainedObject._AddRef`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L76) | 🟢 ported: Counts on the controller when it is counted; otherwise gives -1. | [`BoldAggeregatesTests.A_contained_object_is_counted_and_queried_on_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L72) |
+| `_Release` | method, protected | [38](../../../Source/Common/Core/BoldAggeregates.pas#L38) · [body 128](../../../Source/Common/Core/BoldAggeregates.pas#L128) | [`TBoldContainedObject._Release`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L79) | 🟢 ported: Counts on the controller when it is counted; otherwise gives -1. | [`BoldAggeregatesTests.A_contained_object_is_counted_and_queried_on_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L72) |
+| `Create` | constructor | [40](../../../Source/Common/Core/BoldAggeregates.pas#L40) · [body 113](../../../Source/Common/Core/BoldAggeregates.pas#L113) | [`TBoldContainedObject.TBoldContainedObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L64) | 🟢 ported | [`BoldAggeregatesTests.A_contained_object_is_counted_and_queried_on_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L72) |
+| `Controller` | property | [41](../../../Source/Common/Core/BoldAggeregates.pas#L41) | [`TBoldContainedObject.Controller`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L73) | 🟢 ported | [`BoldAggeregatesTests.A_contained_object_is_counted_and_queried_on_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L72) |
 
 ## TBoldAggregatedObject
 
-class at [line 45](../../../Source/Common/Core/BoldAggeregates.pas#L45); ⚪ not started.
+class at [line 45](../../../Source/Common/Core/BoldAggeregates.pas#L45); 🟢 ported, C# [`TBoldAggregatedObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L84).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `QueryInterface` | method, protected | [47](../../../Source/Common/Core/BoldAggeregates.pas#L47) · [body 135](../../../Source/Common/Core/BoldAggeregates.pas#L135) |  | ⚪ not started |  |
+| `QueryInterface` | method, protected | [47](../../../Source/Common/Core/BoldAggeregates.pas#L47) · [body 135](../../../Source/Common/Core/BoldAggeregates.pas#L135) | [`TBoldAggregatedObject.QueryInterface`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L93) | 🟢 ported: Takes the interface type and gives the implementing object, or null, where Delphi took a GUID and returned an HResult. | [`BoldAggeregatesTests.A_contained_object_is_counted_and_queried_on_its_controller`](../../tests/Bold.Core.Tests/Common/Core/BoldAggeregatesTests.cs#L72) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldAggregateableObject.FController`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L17) (field)
+- [`TBoldContainedObject.FController`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L61) (field)
+- [`TBoldAggregatedObject.TBoldAggregatedObject`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L86) (constructor)
+- [`BoldAggeregates.QueryInterface`](../../src/Bold.Core/Common/Core/BoldAggeregates.cs#L103) (method)
 
 ## Dependencies
 
