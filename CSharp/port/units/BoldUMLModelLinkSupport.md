@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas`](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas) (103 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 5 symbols done, 0 verified |
+| Status | ✅ verified: 5 of 5 symbols done, 5 verified |
 | Note | Rewritten against the Mold model (D6). |
 
-⚪ 5 not started
+✅ 5 verified
 
 ## Unit level
 
@@ -19,18 +19,18 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUMLModelLinkSupport` | class | [16](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L16) |  | ⚪ not started |  |
+| `TBoldUMLModelLinkSupport` | class | [16](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L16) | [`TBoldUMLModelLinkSupport`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs#L8) | ✅ verified | ✔ [`BoldUMLModelLinkTests.Constraints_are_written_as_lines_and_read_from_them`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L54) |
 
 ## TBoldUMLModelLinkSupport
 
-class at [line 16](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L16); ✅ verified, C# [`TBoldUMLModelLinkSupport`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `StringToConstraints` | class method | [18](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L18) · [body 74](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L74) |  | ⚪ not started |  |
-| `ConstraintsToString` | class method | [19](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L19) · [body 51](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L51) |  | ⚪ not started |  |
-| `ConstraintsAsString` | class method | [20](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L20) · [body 36](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L36) |  | ⚪ not started |  |
-| `LeadingSlashToDerived` | class method | [21](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L21) · [body 59](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L59) |  | ⚪ not started |  |
+| `StringToConstraints` | class method | [18](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L18) · [body 74](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L74) | [`TBoldUMLModelLinkSupport.StringToConstraints`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs#L15) | ✅ verified | ✔ [`BoldUMLModelLinkTests.Constraints_are_written_as_lines_and_read_from_them`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L54) |
+| `ConstraintsToString` | class method | [19](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L19) · [body 51](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L51) | [`TBoldUMLModelLinkSupport.ConstraintsToString`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs#L32) | ✅ verified | ✔ [`BoldUMLModelLinkTests.Constraints_are_written_as_lines_and_read_from_them`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L54) |
+| `ConstraintsAsString` | class method | [20](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L20) · [body 36](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L36) | [`TBoldUMLModelLinkSupport.ConstraintsAsString`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs#L44) | ✅ verified | ✔ [`BoldUMLModelLinkTests.Constraints_are_written_as_lines_and_read_from_them`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L54) |
+| `LeadingSlashToDerived` | class method | [21](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L21) · [body 59](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.pas#L59) | [`TBoldUMLModelLinkSupport.LeadingSlashToDerived`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs#L50) | ✅ verified | ✔ [`BoldUMLModelLinkTests.Constraints_are_written_as_lines_and_read_from_them`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L54) |
 
 ## Dependencies
 

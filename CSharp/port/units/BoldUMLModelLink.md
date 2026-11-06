@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas`](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas) (325 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 51 symbols done, 0 verified |
+| Status | 🟢 ported: 51 of 51 symbols done, 45 verified |
 | Note | Base class of the model links; in Bold.Xmi so the XMI link can derive from it. Rewritten against the Mold model (D6). |
 
-⚪ 51 not started
+✅ 45 verified · 🔵 6 replaced
 
 ## Unit level
 
@@ -19,92 +19,106 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUMLModelLinkClass` | class reference | [20](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L20) |  | ⚪ not started |  |
-| `TBoldUMLModelLink` | class | [23](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L23) |  | ⚪ not started |  |
-| `TBoldUMLModelLinkDescriptor` | class | [47](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L47) |  | ⚪ not started |  |
-| `TBoldUMLModelLinkList` | class | [63](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L63) |  | ⚪ not started |  |
-| `BoldUMLModelLinkList` | routine | [84](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L84) · [body 135](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L135) |  | ⚪ not started |  |
-| `BoldUMLModelLinkListAssigned` | routine | [85](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L85) · [body 141](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L141) |  | ⚪ not started |  |
-| `BoldGetUMLModelLinkForComponent` | routine | [86](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L86) · [body 146](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L146) |  | ⚪ not started |  |
-| `TSuffixIndex` | class, implementation | [105](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L105) |  | ⚪ not started |  |
-| `TLinkClassIndex` | class, implementation | [111](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L111) |  | ⚪ not started |  |
-| `EnsureList` | routine, implementation | [129](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L129) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [320](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L320) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [322](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L322) |  | ⚪ not started |  |
+| `TBoldUMLModelLinkClass` | class reference | [20](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L20) | [`TBoldUMLModelLinkClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L20) | ✅ verified: A Type deriving from TBoldUMLModelLink. | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `TBoldUMLModelLink` | class | [23](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L23) | [`TBoldUMLModelLink`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L27) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `TBoldUMLModelLinkDescriptor` | class | [47](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L47) | [`TBoldUMLModelLinkDescriptor`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L178) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `TBoldUMLModelLinkList` | class | [63](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L63) | [`TBoldUMLModelLinkList`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L206) | ✅ verified: A list searched by suffix and by class, where Delphi used an indexable list with two hash indexes. | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `BoldUMLModelLinkList` | routine | [84](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L84) · [body 135](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L135) | [`BoldUMLModelLinkUnit.BoldUMLModelLinkList`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L276) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `BoldUMLModelLinkListAssigned` | routine | [85](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L85) · [body 141](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L141) | [`BoldUMLModelLinkUnit.BoldUMLModelLinkListAssigned`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L283) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `BoldGetUMLModelLinkForComponent` | routine | [86](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L86) · [body 146](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L146) | [`BoldUMLModelLinkUnit.BoldGetUMLModelLinkForComponent`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L287) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `TSuffixIndex` | class, implementation | [105](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L105) | [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L9) | 🔵 replaced: TBoldUMLModelLinkList searches its descriptors by suffix. |  |
+| `TLinkClassIndex` | class, implementation | [111](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L111) | [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L11) | 🔵 replaced: TBoldUMLModelLinkList searches its descriptors by link class. |  |
+| `EnsureList` | routine, implementation | [129](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L129) | [`BoldUMLModelLinkUnit.EnsureList`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L265) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `initialization` | initialization, implementation | [320](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L320) | [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L13) | 🔵 replaced: The section is empty. |  |
+| `finalization` | finalization, implementation | [322](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L322) | [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L14) | 🔵 replaced: The list of links goes with the process. |  |
 
 ## TBoldUMLModelLink
 
-class at [line 23](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L23); ✅ verified, C# [`TBoldUMLModelLink`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L27).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBoldModel` | method, private | [27](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L27) · [body 272](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L272) |  | ⚪ not started |  |
-| `_Receive` | method, private | [28](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L28) · [body 293](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L293) |  | ⚪ not started |  |
-| `GetCanExport` | method, protected | [30](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L30) · [body 262](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L262) |  | ⚪ not started |  |
-| `GetDisplayName` | method, protected | [31](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L31) |  | ⚪ not started |  |
-| `GetFileName` | method, protected | [32](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L32) · [body 256](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L256) |  | ⚪ not started |  |
-| `SetFileName` | method, protected | [33](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L33) · [body 251](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L251) |  | ⚪ not started |  |
-| `GetHandledObject` | method, protected | [34](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L34) · [body 267](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L267) |  | ⚪ not started |  |
-| `Create` | constructor | [36](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L36) · [body 287](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L287) |  | ⚪ not started |  |
-| `Destroy` | destructor | [37](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L37) · [body 300](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L300) |  | ⚪ not started |  |
-| `ExportModel` | method | [38](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L38) |  | ⚪ not started |  |
-| `ImportModel` | method | [39](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L39) |  | ⚪ not started |  |
-| `CanExport` | property | [40](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L40) |  | ⚪ not started |  |
-| `DisplayName` | property | [41](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L41) |  | ⚪ not started |  |
-| `FileName` | property | [42](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L42) |  | ⚪ not started |  |
-| `BoldModel` | property | [43](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L43) |  | ⚪ not started |  |
+| `SetBoldModel` | method, private | [27](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L27) · [body 272](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L272) | [`TBoldUMLModelLink.SetBoldModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L51) | ✅ verified: Logs the warning where Delphi showed a message box. | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `_Receive` | method, private | [28](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L28) · [body 293](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L293) | [`TBoldUMLModelLink._Receive`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L69) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `GetCanExport` | method, protected | [30](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L30) · [body 262](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L262) | [`TBoldUMLModelLink.GetCanExport`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L78) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `GetDisplayName` | method, protected | [31](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L31) | [`TBoldUMLModelLink.GetDisplayName`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L81) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `GetFileName` | method, protected | [32](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L32) · [body 256](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L256) | [`TBoldUMLModelLink.GetFileName`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L84) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `SetFileName` | method, protected | [33](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L33) · [body 251](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L251) | [`TBoldUMLModelLink.SetFileName`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L87) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `GetHandledObject` | method, protected | [34](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L34) · [body 267](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L267) | [`TBoldUMLModelLink.GetHandledObject`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L90) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `Create` | constructor | [36](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L36) · [body 287](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L287) | [`TBoldUMLModelLink.TBoldUMLModelLink`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L33) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `Destroy` | destructor | [37](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L37) · [body 300](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L300) | [`TBoldUMLModelLink.Dispose`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L40) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `ExportModel` | method | [38](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L38) | [`TBoldUMLModelLink.ExportModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L94) | ✅ verified: Takes the UML graph where Delphi took its UML object space's model (D6). | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `ImportModel` | method | [39](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L39) | [`TBoldUMLModelLink.ImportModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L98) | ✅ verified: Fills the UML graph where Delphi filled its UML object space's model (D6). | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `CanExport` | property | [40](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L40) | [`TBoldUMLModelLink.CanExport`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L100) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `DisplayName` | property | [41](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L41) | [`TBoldUMLModelLink.DisplayName`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L101) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `FileName` | property | [42](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L42) | [`TBoldUMLModelLink.FileName`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L104) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
+| `BoldModel` | property | [43](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L43) | [`TBoldUMLModelLink.BoldModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L111) | ✅ verified | ✔ [`BoldUMLModelLinkTests.A_link_reads_a_model_into_its_model_component`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L37) |
 
 ## TBoldUMLModelLinkDescriptor
 
-class at [line 47](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L47); ⚪ not started.
+class at [line 47](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L47); ✅ verified, C# [`TBoldUMLModelLinkDescriptor`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L178).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetFilterString` | method, private | [52](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L52) · [body 245](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L245) |  | ⚪ not started |  |
-| `Create` | constructor | [54](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L54) · [body 237](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L237) |  | ⚪ not started |  |
-| `Description` | property | [55](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L55) |  | ⚪ not started |  |
-| `FilterString` | property | [56](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L56) |  | ⚪ not started |  |
-| `ModelLinkClass` | property | [57](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L57) |  | ⚪ not started |  |
-| `Suffix` | property | [58](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L58) |  | ⚪ not started |  |
-| `CanExport` | method | [59](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L59) · [body 227](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L227) |  | ⚪ not started |  |
+| `GetFilterString` | method, private | [52](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L52) · [body 245](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L245) | [`TBoldUMLModelLinkDescriptor.GetFilterString`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L189) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `Create` | constructor | [54](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L54) · [body 237](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L237) | [`TBoldUMLModelLinkDescriptor.TBoldUMLModelLinkDescriptor`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L181) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `Description` | property | [55](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L55) | [`TBoldUMLModelLinkDescriptor.Description`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L191) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `FilterString` | property | [56](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L56) | [`TBoldUMLModelLinkDescriptor.FilterString`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L192) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `ModelLinkClass` | property | [57](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L57) | [`TBoldUMLModelLinkDescriptor.ModelLinkClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L193) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `Suffix` | property | [58](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L58) | [`TBoldUMLModelLinkDescriptor.Suffix`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L194) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `CanExport` | method | [59](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L59) · [body 227](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L227) | [`TBoldUMLModelLinkDescriptor.CanExport`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L197) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
 
 ## TBoldUMLModelLinkList
 
-class at [line 63](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L63); ⚪ not started.
+class at [line 63](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L63); ✅ verified, C# [`TBoldUMLModelLinkList`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L206).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDescriptorByIndex` | method, private | [65](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L65) · [body 169](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L169) |  | ⚪ not started |  |
-| `GetDescriptorByLinkClass` | method, private | [66](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L66) · [body 179](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L179) |  | ⚪ not started |  |
-| `GetDescriptorBySuffix` | method, private | [67](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L67) · [body 174](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L174) |  | ⚪ not started |  |
-| `GetFileFilter` | method, private | [68](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L68) · [body 184](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L184) |  | ⚪ not started |  |
-| `GetLinkClasses` | method, private | [69](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L69) · [body 196](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L196) |  | ⚪ not started |  |
-| `GetExportableFileFilter` | method, private | [70](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L70) · [body 306](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L306) |  | ⚪ not started |  |
-| `Descriptors` | property, protected | [72](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L72) |  | ⚪ not started |  |
-| `LinkDescriptorBySuffix` | property, protected | [73](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L73) |  | ⚪ not started |  |
-| `Create` | constructor | [75](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L75) · [body 161](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L161) |  | ⚪ not started |  |
-| `AddLink` | method | [76](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L76) · [body 212](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L212) |  | ⚪ not started |  |
-| `RemoveLink` | method | [77](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L77) · [body 217](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L217) |  | ⚪ not started |  |
-| `FileFilter` | property | [78](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L78) |  | ⚪ not started |  |
-| `ExportableFileFilter` | property | [79](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L79) |  | ⚪ not started |  |
-| `LinkClasses` | property | [80](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L80) |  | ⚪ not started |  |
-| `LinkDescriptorByLinkClass` | property | [81](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L81) |  | ⚪ not started |  |
+| `GetDescriptorByIndex` | method, private | [65](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L65) · [body 169](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L169) | [`TBoldUMLModelLinkList.GetDescriptorByIndex`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L218) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `GetDescriptorByLinkClass` | method, private | [66](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L66) · [body 179](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L179) | [`TBoldUMLModelLinkList.GetDescriptorByLinkClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L221) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `GetDescriptorBySuffix` | method, private | [67](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L67) · [body 174](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L174) | [`TBoldUMLModelLinkList.GetDescriptorBySuffix`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L225) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `GetFileFilter` | method, private | [68](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L68) · [body 184](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L184) | [`TBoldUMLModelLinkList.GetFileFilter`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L228) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `GetLinkClasses` | method, private | [69](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L69) · [body 196](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L196) | [`TBoldUMLModelLinkList.GetLinkClasses`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L231) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `GetExportableFileFilter` | method, private | [70](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L70) · [body 306](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L306) | [`TBoldUMLModelLinkList.GetExportableFileFilter`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L235) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `Descriptors` | property, protected | [72](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L72) | [`TBoldUMLModelLinkList.Descriptors`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L237) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `LinkDescriptorBySuffix` | property, protected | [73](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L73) | [`TBoldUMLModelLinkList.LinkDescriptorBySuffix`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L238) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `Create` | constructor | [75](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L75) · [body 161](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L161) | [`TBoldUMLModelLinkList.TBoldUMLModelLinkList`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L211) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `AddLink` | method | [76](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L76) · [body 212](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L212) | [`TBoldUMLModelLinkList.AddLink`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L241) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `RemoveLink` | method | [77](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L77) · [body 217](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L217) | [`TBoldUMLModelLinkList.RemoveLink`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L245) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `FileFilter` | property | [78](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L78) | [`TBoldUMLModelLinkList.FileFilter`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L253) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `ExportableFileFilter` | property | [79](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L79) | [`TBoldUMLModelLinkList.ExportableFileFilter`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L254) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `LinkClasses` | property | [80](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L80) | [`TBoldUMLModelLinkList.LinkClasses`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L255) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
+| `LinkDescriptorByLinkClass` | property | [81](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L81) | [`TBoldUMLModelLinkList.LinkDescriptorByLinkClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L256) | ✅ verified | ✔ [`BoldUMLModelLinkTests.The_XMI_link_is_in_the_list_of_links`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/Core/BoldUMLModelLinkTests.cs#L14) |
 
 ## TSuffixIndex
 
-class at [line 105](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L105); ⚪ not started.
+class at [line 105](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L105); 🔵 replaced, C# [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L9).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [107](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L107) · [body 117](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L117) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [107](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L107) · [body 117](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L117) | [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L10) | 🔵 replaced: The descriptor's suffix is compared. |  |
 
 ## TLinkClassIndex
 
-class at [line 111](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L111); ⚪ not started.
+class at [line 111](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L111); 🔵 replaced, C# [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyClass` | method, protected | [113](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L113) · [body 123](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L123) |  | ⚪ not started |  |
+| `ItemAsKeyClass` | method, protected | [113](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L113) · [body 123](../../../Source/UMLModel/ModelLinks/Core/BoldUMLModelLink.pas#L123) | [`[assembly: Delphi] in BoldUMLModelLink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L12) | 🔵 replaced: The descriptor's link class is compared. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUMLModelLinkClass.Create`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L22) (method)
+- [`TBoldUMLModelLink.Boldify`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L118) (property)
+- [`TBoldUMLModelLink.ImportMoldModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L121) (method)
+- [`TBoldUMLModelLink.ImportModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L133) (method)
+- [`TBoldUMLModelLink.ExportModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L140) (method)
+- [`TBoldUMLModelLink.UMLModelToMoldModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L143) (method)
+- [`TBoldUMLModelLink.MoldModelToUMLModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L159) (method)
+- [`TBoldUMLModelLinkList.Count`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L215) (property)
+- [`BoldUMLModelLinkUnit`](../../src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs#L260) (class)
 
 ## Dependencies
 

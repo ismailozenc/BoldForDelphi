@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas`](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas) (70 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 6 symbols done, 0 verified |
+| Status | ✅ verified: 6 of 6 symbols done, 6 verified |
 
-⚪ 6 not started
+✅ 6 verified
 
 ## Unit level
 
@@ -18,12 +18,12 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `UnqualifiedName` | routine | [8](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L8) · [body 19](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L19) |  | ⚪ not started |  |
-| `RemoveBoldPackageNames` | routine | [9](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L9) · [body 24](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L24) |  | ⚪ not started |  |
-| `QualifiedMemberName` | routine | [10](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L10) · [body 50](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L50) |  | ⚪ not started |  |
-| `IsNameOfExpressionClass` | routine | [11](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L11) · [body 56](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L56) |  | ⚪ not started |  |
-| `FindDefiningClass` | routine | [12](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L12) · [body 40](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L40) |  | ⚪ not started |  |
-| `RemoveTrailingUnderscore` | routine, implementation | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L32) |  | ⚪ not started |  |
+| `UnqualifiedName` | routine | [8](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L8) · [body 19](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L19) | [`BoldUMLXMICommon.UnqualifiedName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs#L11) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `RemoveBoldPackageNames` | routine | [9](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L9) · [body 24](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L24) | [`BoldUMLXMICommon.RemoveBoldPackageNames`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs#L15) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `QualifiedMemberName` | routine | [10](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L10) · [body 50](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L50) | [`BoldUMLXMICommon.QualifiedMemberName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs#L46) | ✅ verified: Takes the class's qualified name and the member's name; Delphi took the member's runtime type info (D6). | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IsNameOfExpressionClass` | routine | [11](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L11) · [body 56](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L56) | [`BoldUMLXMICommon.IsNameOfExpressionClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs#L50) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `FindDefiningClass` | routine | [12](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L12) · [body 40](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L40) | [`BoldUMLXMICommon.FindDefiningClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs#L30) | ✅ verified: Finds the defining class in the UML DTD by the member's name; Delphi walked the runtime type info of its UML model, which is not ported (D6). | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `RemoveTrailingUnderscore` | routine, implementation | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.pas#L32) | [`BoldUMLXMICommon.RemoveTrailingUnderscore`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs#L23) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## Dependencies
 

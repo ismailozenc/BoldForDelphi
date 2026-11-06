@@ -1,4 +1,4 @@
-unit BoldUMLModelConverter; { C# port: not ported (converts between the UML and Mold models; with one model in memory there is nothing to convert (D6)); see CSharp/port/units/BoldUMLModelConverter.md }
+unit BoldUMLModelConverter; { C# port: CSharp/src/Bold.Xmi/UMLModel/Core/BoldUMLModelConverter.cs; symbols and status: CSharp/port/units/BoldUMLModelConverter.md }
 
 interface
 

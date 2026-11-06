@@ -34,14 +34,14 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldDTDParser](../../../../CSharp/port/units/BoldDTDParser.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldDTDParser.cs (not started) | M11 XMI |
-| [BoldMOFInterfaces](../../../../CSharp/port/units/BoldMOFInterfaces.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs (not started) | M11 XMI |
-| [BoldUMLDTDData](../../../../CSharp/port/units/BoldUMLDTDData.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs (not started) | M11 XMI |
-| [BoldUMLModelMOFAdapters](../../../../CSharp/port/units/BoldUMLModelMOFAdapters.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLModelMOFAdapters.cs (not started) | M11 XMI |
-| [BoldUMLXMICommon](../../../../CSharp/port/units/BoldUMLXMICommon.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs (not started) | M11 XMI |
-| [BoldUMLXMIImporter](../../../../CSharp/port/units/BoldUMLXMIImporter.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMIImporter.cs (not started) | M11 XMI |
-| [BoldUMLXMILink](../../../../CSharp/port/units/BoldUMLXMILink.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs (not started) | M11 XMI |
-| [BoldUMLXMILinkSupport](../../../../CSharp/port/units/BoldUMLXMILinkSupport.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs (not started) | M11 XMI |
+| [BoldDTDParser](../../../../CSharp/port/units/BoldDTDParser.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldDTDParser.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldDTDParser.cs) | M11 XMI |
+| [BoldMOFInterfaces](../../../../CSharp/port/units/BoldMOFInterfaces.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs) | M11 XMI |
+| [BoldUMLDTDData](../../../../CSharp/port/units/BoldUMLDTDData.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs) | M11 XMI |
+| [BoldUMLModelMOFAdapters](../../../../CSharp/port/units/BoldUMLModelMOFAdapters.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLModelMOFAdapters.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLModelMOFAdapters.cs) | M11 XMI |
+| [BoldUMLXMICommon](../../../../CSharp/port/units/BoldUMLXMICommon.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMICommon.cs) | M11 XMI |
+| [BoldUMLXMIImporter](../../../../CSharp/port/units/BoldUMLXMIImporter.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMIImporter.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMIImporter.cs) | M11 XMI |
+| [BoldUMLXMILink](../../../../CSharp/port/units/BoldUMLXMILink.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs) | M11 XMI |
+| [BoldUMLXMILinkSupport](../../../../CSharp/port/units/BoldUMLXMILinkSupport.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs) | M11 XMI |
 | [BoldUMXMILinkreg](../../../../CSharp/port/units/BoldUMXMILinkreg.md) | not ported: IDE registration |  |
-| [BoldXMI10Exporter](../../../../CSharp/port/units/BoldXMI10Exporter.md) | Bold.Xmi: UMLModel/ModelLinks/XMI/BoldXMI10Exporter.cs (not started) | M11 XMI |
+| [BoldXMI10Exporter](../../../../CSharp/port/units/BoldXMI10Exporter.md) | [Bold.Xmi: UMLModel/ModelLinks/XMI/BoldXMI10Exporter.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldXMI10Exporter.cs) | M11 XMI |
 <!-- END C# PORT -->

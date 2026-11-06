@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas`](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas) (133 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 13 symbols done, 0 verified |
+| Status | ✅ verified: 13 of 13 symbols done, 13 verified |
 
-⚪ 13 not started
+✅ 13 verified
 
 ## Unit level
 
@@ -18,26 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUMLXMILink` | class | [15](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L15) |  | ⚪ not started |  |
-| `XMI_LINKEXTENSION` | const | [36](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L36) |  | ⚪ not started |  |
-| `XMI_LINKDESC` | const | [37](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L37) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [126](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L126) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [129](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L129) |  | ⚪ not started |  |
+| `TBoldUMLXMILink` | class | [15](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L15) | [`TBoldUMLXMILink`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L8) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `XMI_LINKEXTENSION` | const | [36](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L36) | [`TBoldUMLXMILink.XMI_LINKEXTENSION`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L10) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `XMI_LINKDESC` | const | [37](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L37) | [`TBoldUMLXMILink.XMI_LINKDESC`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L11) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `initialization` | initialization, implementation | [126](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L126) | [`TBoldUMLXMILink.Register`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L22) | ✅ verified: Called when the list of links is first made. | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `finalization` | finalization, implementation | [129](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L129) | [`TBoldUMLXMILink.Unregister`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L26) | ✅ verified: The list goes with the process. | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## TBoldUMLXMILink
 
-class at [line 15](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L15); ✅ verified, C# [`TBoldUMLXMILink`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCanExport` | method, protected | [21](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L21) · [body 68](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L68) |  | ⚪ not started |  |
-| `GetDisplayName` | method, protected | [22](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L22) · [body 73](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L73) |  | ⚪ not started |  |
-| `GetFileName` | method, protected | [23](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L23) · [body 78](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L78) |  | ⚪ not started |  |
-| `SetFileName` | method, protected | [24](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L24) · [body 121](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L121) |  | ⚪ not started |  |
-| `ExportModel` | method | [26](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L26) · [body 53](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L53) |  | ⚪ not started |  |
-| `ImportModel` | method | [27](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L27) · [body 83](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L83) |  | ⚪ not started |  |
-| `ValidateInput` | property, published | [31](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L31) |  | ⚪ not started |  |
-| `TranslateRoseTaggedValues` | property, published | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L32) |  | ⚪ not started |  |
+| `GetCanExport` | method, protected | [21](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L21) · [body 68](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L68) | [`TBoldUMLXMILink.GetCanExport`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L40) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `GetDisplayName` | method, protected | [22](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L22) · [body 73](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L73) | [`TBoldUMLXMILink.GetDisplayName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L43) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `GetFileName` | method, protected | [23](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L23) · [body 78](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L78) | [`TBoldUMLXMILink.GetFileName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L46) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `SetFileName` | method, protected | [24](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L24) · [body 121](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L121) | [`TBoldUMLXMILink.SetFileName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L49) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `ExportModel` | method | [26](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L26) · [body 53](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L53) | [`TBoldUMLXMILink.ExportModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L29) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `ImportModel` | method | [27](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L27) · [body 83](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L83) | [`TBoldUMLXMILink.ImportModel`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L53) | ✅ verified: Delphi returned true after logging an error and rolling back; this returns false, and the graph may be partly filled. | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `ValidateInput` | property, published | [31](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L31) | [`TBoldUMLXMILink.ValidateInput`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L85) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `TranslateRoseTaggedValues` | property, published | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILink.pas#L32) | [`TBoldUMLXMILink.TranslateRoseTaggedValues`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L86) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUMLXMILink.TBoldUMLXMILink`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L15) (constructor)
+- [`TBoldUMLXMILink.LastError`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILink.cs#L83) (property)
 
 ## Dependencies
 

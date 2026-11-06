@@ -156,6 +156,25 @@ system.PersistenceHandle = new TBoldIDAdderHandle(components) { NextPersistenceH
 
 Another ASP.NET Core application can offer persistence too, with `app.MapBoldPersistence(handle, model)`.
 
+## XMI
+
+`Bold.Xmi` reads models from XMI files of UML 1.3 and 1.4 (Rose, and the tools that write UML 1.4 with XMI 1.1 or 1.2)
+and writes them as XMI 1.0 of UML 1.3, as Delphi Bold's XMI link did. The model is read into a graph of its UML
+elements, flattened and boldified as Delphi's model component did it (a root class, names for unnamed ends and
+associations, link classes for many-to-many associations), and converted to a Mold model; writing takes the other way,
+unboldified and in its packages again:
+
+```csharp
+var link = new TBoldUMLXMILink { FileName = "Model.xmi", TranslateRoseTaggedValues = true };
+TMoldModel model = link.ImportMoldModel();       // or link.ImportModel(modelComponent)
+link.FileName = "Out.xmi";
+link.ExportModel(model);
+```
+
+`TranslateRoseTaggedValues` reads Rose's `RationalRose$Bold:TableName` as `Bold.TableName`, and writes it back so.
+Elements the graph does not keep (state machines, use cases, diagrams) are skipped. An association class is one
+element in XMI, so its association takes the class's name.
+
 ## Where things came from
 
 Every ported element carries a `[Delphi(PortStatus.…)]` attribute, and every C# file starts with the Delphi file it ports. In the other direction, every Delphi unit has a comment on its `unit` line naming its C# file, and every `FOLDER_INFO.md` in `Source` lists where its units went. [PORTING.md](PORTING.md) explains the details.

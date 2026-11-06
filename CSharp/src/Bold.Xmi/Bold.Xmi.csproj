@@ -8,4 +8,8 @@
     <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />
     <ProjectReference Include="../Bold.Model/Bold.Model.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <!-- The members of each class of the UML 1.3 metamodel, in the order of its XMI DTD (Delphi's BoldUMLDTDData). -->
+    <EmbeddedResource Include="UMLModel/ModelLinks/XMI/BoldUMLDTDData.uml13.txt" LogicalName="BoldUMLDTDData.uml13.txt" />
+  </ItemGroup>
 </Project>

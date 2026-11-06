@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas`](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas) (225 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 29 symbols done, 0 verified |
+| Status | 🟢 ported: 29 of 29 symbols done, 24 verified |
 
-⚪ 29 not started
+✅ 24 verified · 🔵 5 replaced
 
 ## Unit level
 
@@ -18,70 +18,78 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TXMIId` | record | [20](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L20) |  | ⚪ not started |  |
-| `TBoldUMLElementArray` | class | [25](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L25) |  | ⚪ not started |  |
-| `TBoldXMIObjectItem` | class | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L32) |  | ⚪ not started |  |
-| `TBoldXMIIObjectList` | class | [43](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L43) |  | ⚪ not started |  |
-| `FormatId` | routine | [56](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L56) · [body 89](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L89) |  | ⚪ not started |  |
-| `FirstElementFromNodeList` | routine | [57](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L57) · [body 137](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L137) |  | ⚪ not started |  |
-| `NextElementFromNodeList` | routine | [58](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L58) · [body 124](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L124) |  | ⚪ not started |  |
-| `GetXMIId` | routine | [59](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L59) · [body 97](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L97) |  | ⚪ not started |  |
-| `IsNonBlank` | routine | [60](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L60) · [body 105](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L105) |  | ⚪ not started |  |
-| `GetXMIIdRef` | routine | [61](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L61) · [body 110](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L110) |  | ⚪ not started |  |
-| `XMIIdforId` | routine | [62](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L62) · [body 118](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L118) |  | ⚪ not started |  |
-| `TIdIndex` | class, implementation | [79](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L79) |  | ⚪ not started |  |
-| `TUUIdIndex` | class, implementation | [84](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L84) |  | ⚪ not started |  |
+| `TXMIId` | record | [20](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L20) | [`TXMIId`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L17) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `TBoldUMLElementArray` | class | [25](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L25) | [`TBoldUMLElementArray`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L25) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `TBoldXMIObjectItem` | class | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L32) | [`TBoldXMIObjectItem`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L33) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `TBoldXMIIObjectList` | class | [43](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L43) | [`TBoldXMIIObjectList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L52) | ✅ verified: Holds the items in a list with two dictionaries, where Delphi used an indexable list with two hash indexes. | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `FormatId` | routine | [56](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L56) · [body 89](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L89) | [`BoldUMLXMILinkSupport.FormatId`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L121) | ✅ verified: Delphi wrote the id for a uuid too; this writes the uuid. | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `FirstElementFromNodeList` | routine | [57](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L57) · [body 137](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L137) | [`BoldUMLXMILinkSupport.FirstElementFromNodeList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L139) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `NextElementFromNodeList` | routine | [58](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L58) · [body 124](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L124) | [`BoldUMLXMILinkSupport.NextElementFromNodeList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L142) | ✅ verified: Node lists are enumerated; FirstElementFromNodeList and foreach over OfType&lt;XmlElement&gt;() take its place. | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `GetXMIId` | routine | [59](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L59) · [body 97](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L97) | [`BoldUMLXMILinkSupport.GetXMIId`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L156) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IsNonBlank` | routine | [60](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L60) · [body 105](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L105) | [`BoldUMLXMILinkSupport.IsNonBlank`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L160) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `GetXMIIdRef` | routine | [61](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L61) · [body 110](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L110) | [`BoldUMLXMILinkSupport.GetXMIIdRef`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L163) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `XMIIdforId` | routine | [62](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L62) · [body 118](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L118) | [`BoldUMLXMILinkSupport.XMIIdforId`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L167) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `TIdIndex` | class, implementation | [79](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L79) | [`[assembly: Delphi] in BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L7) | 🔵 replaced: TBoldXMIIObjectList finds items by id in a dictionary. |  |
+| `TUUIdIndex` | class, implementation | [84](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L84) | [`[assembly: Delphi] in BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L9) | 🔵 replaced: TBoldXMIIObjectList finds items by uuid in a dictionary. |  |
 
 ## TBoldUMLElementArray
 
-class at [line 25](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L25); ✅ verified, C# [`TBoldUMLElementArray`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L25).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Get` | method, private | [27](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L27) · [body 206](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L206) |  | ⚪ not started |  |
-| `Items` | property | [29](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L29) |  | ⚪ not started |  |
+| `Get` | method, private | [27](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L27) · [body 206](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L206) | [`TBoldUMLElementArray.Get`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L28) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Items` | property | [29](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L29) | [`[assembly: Delphi] in BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L11) | 🔵 replaced: The list's indexer. |  |
 
 ## TBoldXMIObjectItem
 
-class at [line 32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L32); ⚪ not started.
+class at [line 32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L32); ✅ verified, C# [`TBoldXMIObjectItem`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L33).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [37](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L37) · [body 145](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L145) |  | ⚪ not started |  |
-| `Destroy` | destructor | [38](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L38) · [body 152](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L152) |  | ⚪ not started |  |
-| `XMIId` | property | [39](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L39) |  | ⚪ not started |  |
-| `UMLobjects` | property | [40](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L40) |  | ⚪ not started |  |
+| `Create` | constructor | [37](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L37) · [body 145](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L145) | [`TBoldXMIObjectItem.TBoldXMIObjectItem`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L36) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Destroy` | destructor | [38](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L38) · [body 152](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L152) | [`TBoldXMIObjectItem.Dispose`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L42) | ✅ verified: Nothing to free. | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `XMIId` | property | [39](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L39) | [`TBoldXMIObjectItem.XMIId`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L46) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `UMLobjects` | property | [40](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L40) | [`TBoldXMIObjectItem.UMLobjects`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L47) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## TBoldXMIIObjectList
 
-class at [line 43](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L43); ⚪ not started.
+class at [line 43](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L43); ✅ verified, C# [`TBoldXMIIObjectList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L52).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetItem` | method, private | [45](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L45) · [body 190](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L190) |  | ⚪ not started |  |
-| `GetItemById` | method, private | [46](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L46) · [body 195](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L195) |  | ⚪ not started |  |
-| `GetElementsById` | method, private | [47](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L47) · [body 181](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L181) |  | ⚪ not started |  |
-| `Create` | constructor | [49](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L49) · [body 172](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L172) |  | ⚪ not started |  |
-| `Add` | method | [50](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L50) · [body 160](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L160) |  | ⚪ not started |  |
-| `Items` | property | [51](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L51) |  | ⚪ not started |  |
-| `ItemsById` | property | [52](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L52) |  | ⚪ not started |  |
-| `UMLElementsById` | property | [53](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L53) |  | ⚪ not started |  |
+| `GetItem` | method, private | [45](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L45) · [body 190](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L190) | [`TBoldXMIIObjectList.GetItem`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L90) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `GetItemById` | method, private | [46](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L46) · [body 195](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L195) | [`TBoldXMIIObjectList.GetItemById`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L93) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `GetElementsById` | method, private | [47](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L47) · [body 181](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L181) | [`TBoldXMIIObjectList.GetElementsById`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L110) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Create` | constructor | [49](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L49) · [body 172](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L172) | [`TBoldXMIIObjectList.TBoldXMIIObjectList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L59) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Add` | method | [50](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L50) · [body 160](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L160) | [`TBoldXMIIObjectList.Add`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L64) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Items` | property | [51](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L51) | [`TBoldXMIIObjectList.this`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L112) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `ItemsById` | property | [52](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L52) | [`TBoldXMIIObjectList.ItemsById`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L113) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `UMLElementsById` | property | [53](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L53) | [`TBoldXMIIObjectList.UMLElementsById`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L114) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## TIdIndex
 
-class at [line 79](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L79); ⚪ not started.
+class at [line 79](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L79); 🔵 replaced, C# [`[assembly: Delphi] in BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L7).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [81](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L81) · [body 213](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L213) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [81](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L81) · [body 213](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L213) | [`[assembly: Delphi] in BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L8) | 🔵 replaced: The dictionary is keyed by the id. |  |
 
 ## TUUIdIndex
 
-class at [line 84](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L84); ⚪ not started.
+class at [line 84](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L84); 🔵 replaced, C# [`[assembly: Delphi] in BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L9).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `ItemAsKeyString` | method, protected | [86](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L86) · [body 220](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L220) |  | ⚪ not started |  |
+| `ItemAsKeyString` | method, protected | [86](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L86) · [body 220](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.pas#L220) | [`[assembly: Delphi] in BoldUMLXMILinkSupport.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L10) | 🔵 replaced: The dictionary is keyed by the uuid. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TXMIId.Id`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L19) (property)
+- [`TXMIId.UUId`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L20) (property)
+- [`TBoldXMIIObjectList.Count`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLXMILinkSupport.cs#L87) (property)
 
 ## Dependencies
 

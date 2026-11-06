@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Core/UMLConsts.pas`](../../../Source/UMLModel/Core/UMLConsts.pas) (22 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/Core/UMLConsts.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/Core/UMLConsts.cs`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 8 symbols done, 0 verified |
+| Status | ✅ verified: 8 of 8 symbols done, 8 verified |
 
-⚪ 8 not started
+✅ 8 verified
 
 ## Unit level
 
@@ -18,14 +18,14 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sWrongValue` | resourcestring | [7](../../../Source/UMLModel/Core/UMLConsts.pas#L7) |  | ⚪ not started |  |
-| `sConvertingModelToMold` | resourcestring | [10](../../../Source/UMLModel/Core/UMLConsts.pas#L10) |  | ⚪ not started |  |
-| `sConvertingModelToUML` | resourcestring | [11](../../../Source/UMLModel/Core/UMLConsts.pas#L11) |  | ⚪ not started |  |
-| `sFlatteningModel` | resourcestring | [14](../../../Source/UMLModel/Core/UMLConsts.pas#L14) |  | ⚪ not started |  |
-| `sBoldifyingModel` | resourcestring | [15](../../../Source/UMLModel/Core/UMLConsts.pas#L15) |  | ⚪ not started |  |
-| `sCannotBoldifyIfRootClassHasSuperClass` | resourcestring | [16](../../../Source/UMLModel/Core/UMLConsts.pas#L16) |  | ⚪ not started |  |
-| `sCanOnlyBeCalledIfBoldified` | resourcestring | [17](../../../Source/UMLModel/Core/UMLConsts.pas#L17) |  | ⚪ not started |  |
-| `sUnknownTypeOfMember` | resourcestring | [18](../../../Source/UMLModel/Core/UMLConsts.pas#L18) |  | ⚪ not started |  |
+| `sWrongValue` | resourcestring | [7](../../../Source/UMLModel/Core/UMLConsts.pas#L7) | [`UMLConsts.sWrongValue`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L9) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
+| `sConvertingModelToMold` | resourcestring | [10](../../../Source/UMLModel/Core/UMLConsts.pas#L10) | [`UMLConsts.sConvertingModelToMold`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L10) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
+| `sConvertingModelToUML` | resourcestring | [11](../../../Source/UMLModel/Core/UMLConsts.pas#L11) | [`UMLConsts.sConvertingModelToUML`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L11) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
+| `sFlatteningModel` | resourcestring | [14](../../../Source/UMLModel/Core/UMLConsts.pas#L14) | [`UMLConsts.sFlatteningModel`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L12) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
+| `sBoldifyingModel` | resourcestring | [15](../../../Source/UMLModel/Core/UMLConsts.pas#L15) | [`UMLConsts.sBoldifyingModel`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L13) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
+| `sCannotBoldifyIfRootClassHasSuperClass` | resourcestring | [16](../../../Source/UMLModel/Core/UMLConsts.pas#L16) | [`UMLConsts.sCannotBoldifyIfRootClassHasSuperClass`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L14) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
+| `sCanOnlyBeCalledIfBoldified` | resourcestring | [17](../../../Source/UMLModel/Core/UMLConsts.pas#L17) | [`UMLConsts.sCanOnlyBeCalledIfBoldified`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L15) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
+| `sUnknownTypeOfMember` | resourcestring | [18](../../../Source/UMLModel/Core/UMLConsts.pas#L18) | [`UMLConsts.sUnknownTypeOfMember`](../../src/Bold.Xmi/UMLModel/Core/UMLConsts.cs#L16) | ✅ verified | ✔ [`BoldUMLModelConverterTests.A_Mold_model_converted_to_UML_and_back_is_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/Core/BoldUMLModelConverterTests.cs#L10) |
 
 ## Dependencies
 

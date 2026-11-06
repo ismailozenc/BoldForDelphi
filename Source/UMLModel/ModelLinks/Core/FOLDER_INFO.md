@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldUMLModelLink](../../../../CSharp/port/units/BoldUMLModelLink.md) | Bold.Xmi: UMLModel/ModelLinks/Core/BoldUMLModelLink.cs (not started) | M11 XMI |
-| [BoldUMLModelLinkSupport](../../../../CSharp/port/units/BoldUMLModelLinkSupport.md) | Bold.Xmi: UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs (not started) | M11 XMI |
+| [BoldUMLModelLink](../../../../CSharp/port/units/BoldUMLModelLink.md) | [Bold.Xmi: UMLModel/ModelLinks/Core/BoldUMLModelLink.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLink.cs) | M11 XMI |
+| [BoldUMLModelLinkSupport](../../../../CSharp/port/units/BoldUMLModelLinkSupport.md) | [Bold.Xmi: UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs](../../../../CSharp/src/Bold.Xmi/UMLModel/ModelLinks/Core/BoldUMLModelLinkSupport.cs) | M11 XMI |
 <!-- END C# PORT -->

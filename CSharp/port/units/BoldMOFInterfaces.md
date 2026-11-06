@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas`](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas) (66 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 30 symbols done, 0 verified |
+| Status | ✅ verified: 30 of 30 symbols done, 30 verified |
 
-⚪ 30 not started
+✅ 30 verified
 
 ## Unit level
 
@@ -18,78 +18,78 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IBoldMOFObject` | interface | [16](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L16) |  | ⚪ not started |  |
-| `IBoldMOFAttribute` | interface | [24](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L24) |  | ⚪ not started |  |
-| `IBoldMOFReference` | interface | [36](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L36) |  | ⚪ not started |  |
-| `IBoldMOFObjectList` | interface | [46](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L46) |  | ⚪ not started |  |
-| `IBoldMOFAttributeList` | interface | [52](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L52) |  | ⚪ not started |  |
-| `IBoldMOFReferenceList` | interface | [58](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L58) |  | ⚪ not started |  |
+| `IBoldMOFObject` | interface | [16](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L16) | [`IBoldMOFObject`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L8) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IBoldMOFAttribute` | interface | [24](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L24) | [`IBoldMOFAttribute`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L17) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IBoldMOFReference` | interface | [36](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L36) | [`IBoldMOFReference`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L30) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IBoldMOFObjectList` | interface | [46](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L46) | [`IBoldMOFObjectList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L41) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IBoldMOFAttributeList` | interface | [52](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L52) | [`IBoldMOFAttributeList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L48) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IBoldMOFReferenceList` | interface | [58](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L58) | [`IBoldMOFReferenceList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L55) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## IBoldMOFObject
 
-interface at [line 16](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L16); ⚪ not started.
+interface at [line 16](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L16); ✅ verified, C# [`IBoldMOFObject`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Attributes` | method | [18](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L18) |  | ⚪ not started |  |
-| `References` | method | [19](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L19) |  | ⚪ not started |  |
-| `QualifiedClassName` | method | [20](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L20) |  | ⚪ not started |  |
-| `LocalId` | method | [21](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L21) |  | ⚪ not started |  |
+| `Attributes` | method | [18](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L18) | [`IBoldMOFObject.Attributes`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L10) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `References` | method | [19](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L19) | [`IBoldMOFObject.References`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L11) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `QualifiedClassName` | method | [20](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L20) | [`IBoldMOFObject.QualifiedClassName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L12) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `LocalId` | method | [21](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L21) | [`IBoldMOFObject.LocalId`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L13) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## IBoldMOFAttribute
 
-interface at [line 24](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L24); ⚪ not started.
+interface at [line 24](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L24); ✅ verified, C# [`IBoldMOFAttribute`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L17).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IsBoolean` | method | [26](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L26) |  | ⚪ not started |  |
-| `IsEnum` | method | [27](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L27) |  | ⚪ not started |  |
-| `IsDerived` | method | [28](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L28) |  | ⚪ not started |  |
-| `IsObject` | method | [29](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L29) |  | ⚪ not started |  |
-| `AsObject` | method | [30](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L30) |  | ⚪ not started |  |
-| `AsString` | method | [31](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L31) |  | ⚪ not started |  |
-| `AsBoolean` | method | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L32) |  | ⚪ not started |  |
-| `QualifiedName` | method | [33](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L33) |  | ⚪ not started |  |
+| `IsBoolean` | method | [26](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L26) | [`IBoldMOFAttribute.IsBoolean`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L19) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IsEnum` | method | [27](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L27) | [`IBoldMOFAttribute.IsEnum`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L20) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IsDerived` | method | [28](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L28) | [`IBoldMOFAttribute.IsDerived`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L21) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IsObject` | method | [29](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L29) | [`IBoldMOFAttribute.IsObject`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L22) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `AsObject` | method | [30](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L30) | [`IBoldMOFAttribute.AsObject`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L23) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `AsString` | method | [31](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L31) | [`IBoldMOFAttribute.AsString`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L24) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `AsBoolean` | method | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L32) | [`IBoldMOFAttribute.AsBoolean`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L25) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `QualifiedName` | method | [33](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L33) | [`IBoldMOFAttribute.QualifiedName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L26) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## IBoldMOFReference
 
-interface at [line 36](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L36); ⚪ not started.
+interface at [line 36](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L36); ✅ verified, C# [`IBoldMOFReference`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L30).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IsMulti` | method | [38](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L38) |  | ⚪ not started |  |
-| `IsComposite` | method | [39](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L39) |  | ⚪ not started |  |
-| `IsDerived` | method | [40](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L40) |  | ⚪ not started |  |
-| `SingleObject` | method | [41](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L41) |  | ⚪ not started |  |
-| `Objects` | method | [42](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L42) |  | ⚪ not started |  |
-| `QualifiedName` | method | [43](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L43) |  | ⚪ not started |  |
+| `IsMulti` | method | [38](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L38) | [`IBoldMOFReference.IsMulti`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L32) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IsComposite` | method | [39](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L39) | [`IBoldMOFReference.IsComposite`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L33) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `IsDerived` | method | [40](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L40) | [`IBoldMOFReference.IsDerived`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L34) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `SingleObject` | method | [41](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L41) | [`IBoldMOFReference.SingleObject`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L35) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Objects` | method | [42](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L42) | [`IBoldMOFReference.Objects`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L36) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `QualifiedName` | method | [43](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L43) | [`IBoldMOFReference.QualifiedName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L37) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## IBoldMOFObjectList
 
-interface at [line 46](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L46); ⚪ not started.
+interface at [line 46](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L46); ✅ verified, C# [`IBoldMOFObjectList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L41).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Count` | method | [48](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L48) |  | ⚪ not started |  |
-| `GetObject` | method | [49](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L49) |  | ⚪ not started |  |
+| `Count` | method | [48](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L48) | [`IBoldMOFObjectList.Count`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L43) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `GetObject` | method | [49](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L49) | [`IBoldMOFObjectList.GetObject`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L44) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## IBoldMOFAttributeList
 
-interface at [line 52](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L52); ⚪ not started.
+interface at [line 52](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L52); ✅ verified, C# [`IBoldMOFAttributeList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L48).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Count` | method | [54](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L54) |  | ⚪ not started |  |
-| `Attribute` | method | [55](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L55) |  | ⚪ not started |  |
+| `Count` | method | [54](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L54) | [`IBoldMOFAttributeList.Count`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L50) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Attribute` | method | [55](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L55) | [`IBoldMOFAttributeList.Attribute`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L51) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## IBoldMOFReferenceList
 
-interface at [line 58](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L58); ⚪ not started.
+interface at [line 58](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L58); ✅ verified, C# [`IBoldMOFReferenceList`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L55).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Count` | method | [60](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L60) |  | ⚪ not started |  |
-| `Reference` | method | [61](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L61) |  | ⚪ not started |  |
+| `Count` | method | [60](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L60) | [`IBoldMOFReferenceList.Count`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L57) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
+| `Reference` | method | [61](../../../Source/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.pas#L61) | [`IBoldMOFReferenceList.Reference`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldMOFInterfaces.cs#L58) | ✅ verified | ✔ [`BoldUMLXMILinkTests.A_model_written_as_XMI_reads_back_as_the_same_model`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldUMLXMILinkTests.cs#L70) |
 
 ## Dependencies
 

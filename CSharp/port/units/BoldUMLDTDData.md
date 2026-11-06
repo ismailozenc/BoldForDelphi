@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas`](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas) (123 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs` |
+| C# | [`CSharp/src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs) |
 | Project | Bold.Xmi |
 | Milestone | M11 XMI |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | ✅ verified: 12 of 12 symbols done, 11 verified |
 
-⚪ 12 not started
+✅ 11 verified · ⚫ 1 dropped
 
 ## Unit level
 
@@ -18,25 +18,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TdmUML13DTD` | class | [10](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L10) |  | ⚪ not started |  |
-| `TBoldUMLDTDReader` | class | [18](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L18) |  | ⚪ not started |  |
-| `dmUML13DTD` | var | [37](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L37) |  | ⚪ not started |  |
+| `TdmUML13DTD` | class | [10](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L10) | [`TdmUML13DTD`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L105) | ✅ verified: The table is a resource of the assembly (BoldUMLDTDData.uml13.txt), read by TBoldUMLDTDReader. | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `TBoldUMLDTDReader` | class | [18](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L18) | [`TBoldUMLDTDReader`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L12) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `dmUML13DTD` | var | [37](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L37) | [`BoldUMLDTDData.dmUML13DTD`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L123) | ⚫ dropped: The data module's global instance; the table is read from the resource when wanted. | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
 
 ## TBoldUMLDTDReader
 
-class at [line 18](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L18); ✅ verified, C# [`TBoldUMLDTDReader`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `StartElement` | method, private | [23](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L23) · [body 117](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L117) |  | ⚪ not started |  |
-| `EndElement` | method, private | [24](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L24) · [body 85](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L85) |  | ⚪ not started |  |
-| `FoundCpName` | method, private | [25](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L25) · [body 94](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L94) |  | ⚪ not started |  |
-| `IsClass` | method, private | [26](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L26) · [body 102](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L102) |  | ⚪ not started |  |
-| `CreateFromFile` | constructor | [28](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L28) · [body 62](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L62) |  | ⚪ not started |  |
-| `Create` | constructor | [29](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L29) · [body 48](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L48) |  | ⚪ not started |  |
-| `Destroy` | destructor | [30](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L30) · [body 79](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L79) |  | ⚪ not started |  |
-| `SaveToFile` | method | [31](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L31) · [body 112](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L112) |  | ⚪ not started |  |
-| `MembersOfClass` | method | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L32) · [body 107](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L107) |  | ⚪ not started |  |
+| `StartElement` | method, private | [23](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L23) · [body 117](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L117) | [`TBoldUMLDTDReader.StartElement`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L65) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `EndElement` | method, private | [24](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L24) · [body 85](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L85) | [`TBoldUMLDTDReader.EndElement`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L68) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `FoundCpName` | method, private | [25](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L25) · [body 94](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L94) | [`TBoldUMLDTDReader.FoundCpName`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L80) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `IsClass` | method, private | [26](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L26) · [body 102](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L102) | [`TBoldUMLDTDReader.IsClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L84) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `CreateFromFile` | constructor | [28](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L28) · [body 62](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L62) | [`TBoldUMLDTDReader.CreateFromFile`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L42) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `Create` | constructor | [29](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L29) · [body 48](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L48) | [`TBoldUMLDTDReader.TBoldUMLDTDReader`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L24) | ✅ verified: Reads the table from the assembly's resource BoldUMLDTDData.uml13.txt, where Delphi read the data module's template. | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `Destroy` | destructor | [30](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L30) · [body 79](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L79) | [`TBoldUMLDTDReader.Dispose`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L60) | ✅ verified: Nothing to free. | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `SaveToFile` | method | [31](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L31) · [body 112](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L112) | [`TBoldUMLDTDReader.SaveToFile`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L92) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+| `MembersOfClass` | method | [32](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L32) · [body 107](../../../Source/UMLModel/ModelLinks/XMI/BoldUMLDTDData.pas#L107) | [`TBoldUMLDTDReader.MembersOfClass`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L97) | ✅ verified | ✔ [`BoldDTDParserTests.The_reader_gives_the_members_of_each_class`](../../tests/Bold.Xmi.Tests/UMLModel/ModelLinks/XMI/BoldDTDParserTests.cs#L74) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUMLDTDReader.Shared`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L20) (property)
+- [`TBoldUMLDTDReader.ClassNames`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L100) (property)
+- [`TdmUML13DTD.UML13DTD`](../../src/Bold.Xmi/UMLModel/ModelLinks/XMI/BoldUMLDTDData.cs#L108) (property)
 
 ## Dependencies
 
