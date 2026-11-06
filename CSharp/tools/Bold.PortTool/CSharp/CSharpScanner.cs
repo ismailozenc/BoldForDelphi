@@ -13,6 +13,9 @@ public sealed class CSharpScanner
         "abstract", "sealed", "new", "partial", "extern", "unsafe", "async", "required", "file", "fixed",
     ];
 
+    /// <summary>Modifiers that are not reserved words, so that they can also be names ("int file = 1;").</summary>
+    private static readonly HashSet<string> ContextualModifierWords = ["partial", "async", "required", "file"];
+
     private readonly List<CsToken> _tokens;
     private readonly CsFile _file;
     private readonly List<string> _types = [];
@@ -168,7 +171,9 @@ public sealed class CSharpScanner
         while (true)
         {
             var token = Peek();
-            if (token.IsIdentifier && ModifierWords.Contains(token.Text) && !Peek(1).Is("(") && !Peek(1).Is("=") && !Peek(1).Is(";"))
+            // a reserved modifier is one before anything, a tuple type too ("public (int A, int B) Pair()")
+            if (token.IsIdentifier && ModifierWords.Contains(token.Text) &&
+                (!ContextualModifierWords.Contains(token.Text) || (!Peek(1).Is("(") && !Peek(1).Is("=") && !Peek(1).Is(";"))))
             {
                 modifiers.Add(Next().Text);
             }

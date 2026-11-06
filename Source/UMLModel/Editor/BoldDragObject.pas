@@ -1,4 +1,4 @@
-unit BoldDragObject; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldDragObject.cs; symbols and status: CSharp/port/units/BoldDragObject.md }
+unit BoldDragObject; { C# port: not ported (IDE: dropping model elements on a form being designed in Delphi's IDE made Bold-aware controls; the editor's tree drags with WinForms' drag and drop); see CSharp/port/units/BoldDragObject.md }
 
 interface
 

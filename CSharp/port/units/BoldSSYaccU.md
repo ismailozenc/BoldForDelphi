@@ -187,6 +187,7 @@ Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumb
 - [`SSYaccTable.RowFlags`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L289) (method)
 - [`SSYaccTable.RowGotos`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L290) (method)
 - [`SSYaccTable.RowActions`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L291) (method)
+- [`SSYaccTable.EntryAt`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L294) (method)
 - [`SSYaccTable.ProdSize`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L300) (method)
 - [`SSYaccTable.ProdLeftside`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L301) (method)
 - [`SSYacc.Lex`](../../src/Bold.ObjectSpace/ObjectSpace/Ocl/BoldSSYaccU.cs#L346) (field)

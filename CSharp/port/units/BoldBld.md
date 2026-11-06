@@ -181,6 +181,7 @@ class at [line 179](../../../Source/MoldModel/Bld/BoldBld.pas#L179); ✅ verifie
 Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
 
 - [`TMoldBLDRW.CURRENTVERSION`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L25) (const)
+- [`TMoldBLDRW.FileFormat`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L30) (property)
 - [`TMoldBLDRW.TToken.Kind`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L187) (field)
 - [`TMoldBLDRW.TToken.StringValue`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L188) (field)
 - [`TMoldBLDRW.TToken.IntegerValue`](../../src/Bold.Model/MoldModel/Bld/BoldBld.cs#L189) (field)

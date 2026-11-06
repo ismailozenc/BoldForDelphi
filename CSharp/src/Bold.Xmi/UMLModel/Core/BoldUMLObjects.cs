@@ -140,6 +140,9 @@ public sealed class TBoldUMLModelGraph
     public event Action? ModelValidated;
 
     public void SendModelValidated() => ModelValidated?.Invoke();
+
+    /// <summary>The worst of the violations, sNone when there are none (Delphi's validator's HighestSeverity).</summary>
+    public TSeverity HighestSeverity() => Violations.Count == 0 ? TSeverity.sNone : Violations.Max(v => v.Severity);
 }
 
 /// <summary>How bad a violation is (Delphi's TSeverity of the UML model).</summary>

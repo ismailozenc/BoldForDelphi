@@ -41,7 +41,7 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 | Unit | C# | Milestone |
 |---|---|---|
 | [BoldDerivationExpressionsEditor](../../../CSharp/port/units/BoldDerivationExpressionsEditor.md) | Bold.ModelEditor: UMLModel/Editor/BoldDerivationExpressionsEditor.cs (not started) | M12 Model editor |
-| [BoldDragObject](../../../CSharp/port/units/BoldDragObject.md) | Bold.ModelEditor: UMLModel/Editor/BoldDragObject.cs (not started) | M12 Model editor |
+| [BoldDragObject](../../../CSharp/port/units/BoldDragObject.md) | not ported: IDE: dropping model elements on a form being designed in Delphi's IDE made Bold-aware controls; the editor's tree drags with WinForms' drag and drop |  |
 | [BoldUMLAddTV](../../../CSharp/port/units/BoldUMLAddTV.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLAddTV.cs (not started) | M12 Model editor |
 | [BoldUMLConstraintEditor](../../../CSharp/port/units/BoldUMLConstraintEditor.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLConstraintEditor.cs (not started) | M12 Model editor |
 | [BoldUMLModelEdit](../../../CSharp/port/units/BoldUMLModelEdit.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLModelEdit.cs (not started) | M12 Model editor |

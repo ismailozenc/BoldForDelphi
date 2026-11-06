@@ -112,6 +112,26 @@ public class CSharpScannerTests
     }
 
     [Test]
+    public void Members_may_return_tuples_and_modifiers_may_be_names()
+    {
+        var file = CSharpScanner.Scan("""
+            namespace Bold;
+            public class T
+            {
+                public (string Text, int Severity) Status() => ("", 0);
+                public static (int A, int B)? Pair => null;
+                private int file = 1;
+                public void async() { }
+            }
+            """, "x.cs");
+        Assert.That(file.Declarations.Select(d => $"{d.FullName} {d.KindText}"), Is.EqualTo(new[]
+        {
+            "T class", "T.Status method", "T.Pair property", "T.file field", "T.async method",
+        }));
+        Assert.That(file.Warnings, Is.Empty);
+    }
+
+    [Test]
     public void Using_aliases_are_declarations()
     {
         var file = CSharpScanner.Scan("""

@@ -221,8 +221,10 @@ public class TBoldUMLModelLinkList
     private TBoldUMLModelLinkDescriptor? GetDescriptorByLinkClass(TBoldUMLModelLinkClass ModelLinkClass) =>
         fItems.FirstOrDefault(d => d.ModelLinkClass == ModelLinkClass);
 
+    /// <summary>The link of a suffix, whatever its case (Delphi's index of suffixes ignored case).</summary>
     [Delphi(PortStatus.Ported)]
-    private TBoldUMLModelLinkDescriptor? GetDescriptorBySuffix(string Suffix) => fItems.FirstOrDefault(d => d.Suffix == Suffix);
+    private TBoldUMLModelLinkDescriptor? GetDescriptorBySuffix(string Suffix) =>
+        fItems.FirstOrDefault(d => string.Equals(d.Suffix, Suffix, StringComparison.OrdinalIgnoreCase));
 
     [Delphi(PortStatus.Ported)]
     private string GetFileFilter() => string.Concat(fItems.Select(d => d.FilterString + "|")) + BoldDefs.ALLFILESFILTER;
