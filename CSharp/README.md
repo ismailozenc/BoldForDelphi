@@ -175,6 +175,11 @@ link.ExportModel(model);
 Elements the graph does not keep (state machines, use cases, diagrams) are skipped. An association class is one
 element in XMI, so its association takes the class's name.
 
+The same link reads XMI 2 files of UML 2 (Enterprise Architect, MagicDraw, Papyrus and other UML 2 tools), which
+Delphi Bold could not, and writes XMI 2.1 with `XMIVersion = TBoldXMIVersion.xmi21`. Tagged values come from Bold's
+own extension of each element (`<xmi:Extension extender="Bold">`), from Enterprise Architect's tags, or from applied
+stereotypes, each of whose values is a tagged value; library types (`href="...#String"`) are data types of the model.
+
 ## Where things came from
 
 Every ported element carries a `[Delphi(PortStatus.…)]` attribute, and every C# file starts with the Delphi file it ports. In the other direction, every Delphi unit has a comment on its `unit` line naming its C# file, and every `FOLDER_INFO.md` in `Source` lists where its units went. [PORTING.md](PORTING.md) explains the details.

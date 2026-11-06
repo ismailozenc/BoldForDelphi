@@ -280,3 +280,109 @@ public static class XmiSamples
         return TMoldBLDRW.StringsToModel(lines);
     }
 }
+
+/// <summary>XMI 2 files in the forms of Enterprise Architect and of Eclipse's UML (Papyrus).</summary>
+public static class Xmi2Samples
+{
+    /// <summary>A hotel as Enterprise Architect writes it: member ends as elements, its types and tags in its extension.</summary>
+    public const string EnterpriseArchitect = """
+        <?xml version="1.0" encoding="windows-1252"?>
+        <xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+          <xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+          <uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+            <packagedElement xmi:type="uml:Package" xmi:id="EAPK_1" name="Hotel" visibility="public">
+              <packagedElement xmi:type="uml:Class" xmi:id="EAID_GUEST" name="Guest" visibility="public">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="EAID_A1" name="name" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true">
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI1" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI2" value="1"/>
+                  <type xmi:idref="EAJava_String"/>
+                </ownedAttribute>
+                <ownedOperation xmi:id="EAID_O1" name="Checkout" visibility="public" concurrency="sequential">
+                  <ownedParameter xmi:id="EAID_P1" name="early" direction="in" type="EAJava_boolean"/>
+                  <ownedParameter xmi:id="EAID_RT1" name="return" direction="return" type="EAJava_int"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="EAID_ROOM" name="Room" visibility="public"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="EAID_SUITE" name="Suite" visibility="public">
+                <generalization xmi:type="uml:Generalization" xmi:id="EAID_G1" general="EAID_ROOM"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="EAID_BED" name="Bed" visibility="public"/>
+              <packagedElement xmi:type="uml:Association" xmi:id="EAID_AS1" name="Stay" visibility="public">
+                <memberEnd xmi:idref="EAID_dst1"/>
+                <memberEnd xmi:idref="EAID_src1"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="EAID_src1" name="guests" association="EAID_AS1" aggregation="none">
+                  <type xmi:idref="EAID_GUEST"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" value="0"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="-1"/>
+                </ownedEnd>
+                <ownedEnd xmi:type="uml:Property" xmi:id="EAID_dst1" name="room" association="EAID_AS1" aggregation="none">
+                  <type xmi:idref="EAID_ROOM"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" value="0"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="1"/>
+                </ownedEnd>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="EAID_AS2" name="Furnishing" visibility="public">
+                <memberEnd xmi:idref="EAID_beds"/>
+                <memberEnd xmi:idref="EAID_room2"/>
+                <ownedEnd xmi:type="uml:Property" xmi:id="EAID_beds" name="beds" association="EAID_AS2" aggregation="composite" isOrdered="true">
+                  <type xmi:idref="EAID_BED"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" value="1"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+                </ownedEnd>
+                <ownedEnd xmi:type="uml:Property" xmi:id="EAID_room2" name="room" association="EAID_AS2" aggregation="none">
+                  <type xmi:idref="EAID_ROOM"/>
+                </ownedEnd>
+              </packagedElement>
+            </packagedElement>
+          </uml:Model>
+          <xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+            <elements>
+              <element xmi:idref="EAID_GUEST" xmi:type="uml:Class" name="Guest" scope="public">
+                <properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="person"/>
+                <tags><tag xmi:id="EAID_T1" name="Bold.TableName" value="GUESTS" modelElement="EAID_GUEST"/></tags>
+              </element>
+            </elements>
+            <primitivetypes>
+              <packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package">
+                <packagedElement xmi:type="uml:Package" xmi:id="EAJavaTypesPackage" name="EA_Java_Types_Package">
+                  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_String" name="String"/>
+                  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_boolean" name="Boolean"/>
+                  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_int" name="Integer"/>
+                </packagedElement>
+              </packagedElement>
+            </primitivetypes>
+          </xmi:Extension>
+        </xmi:XMI>
+        """;
+
+    /// <summary>A zoo as Eclipse's UML writes it: implicit member types, library types by href, a navigable end owned
+    /// by its class, and an applied stereotype with a value.</summary>
+    public const string Papyrus = """
+        <?xml version="1.0" encoding="UTF-8"?>
+        <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:BoldProfile="http:///schemas/BoldProfile/1">
+          <uml:Model xmi:id="_m" name="Zoo">
+            <packagedElement xmi:type="uml:Class" xmi:id="_animal" name="Animal" isAbstract="true">
+              <ownedRule xmi:id="_r1" name="hasLegs" constrainedElement="_animal">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_r1s"><language>OCL</language><body>legs &gt;= 0</body></specification>
+              </ownedRule>
+              <ownedAttribute xmi:id="_legs" name="legs">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_d" value="4"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_keeper" name="keeper" type="_keeperClass" association="_cares">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l1"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u1" value="1"/>
+              </ownedAttribute>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_keeperClass" name="Keeper"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_cares" name="Cares" memberEnd="_keeper _animals">
+              <ownedEnd xmi:id="_animals" name="animals" type="_animal" association="_cares">
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u2" value="*"/>
+              </ownedEnd>
+            </packagedElement>
+          </uml:Model>
+          <BoldProfile:Persistent xmi:id="_s1" base_Class="_animal" TableName="ANIMALS"/>
+        </xmi:XMI>
+        """;
+}

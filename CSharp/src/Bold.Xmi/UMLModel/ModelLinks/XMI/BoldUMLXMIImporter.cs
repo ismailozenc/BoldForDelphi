@@ -551,11 +551,18 @@ public class TBoldUMLXMIImporter : IDisposable
         _ => throw new EBoldInternal("Node problem"),
     };
 
-    /// <summary>Reads the link's file into the UML model, in two passes, and gives every element its Bold tagged values.</summary>
-    [Delphi(PortStatus.Ported)]
+    /// <summary>Reads the link's file into the UML model, in two passes, and gives every element its Bold tagged values.
+    /// An XMI 2 file is read by TBoldXMI2Importer.</summary>
+    [Delphi(PortStatus.Ported, Note = "Also reads XMI 2 files, which Delphi did not.")]
     public void RawImport()
     {
         LoadAndCheck(OwningLink.FileName);
+        if (TBoldXMI2Importer.IsXMI2(GetDOMDocument()))
+        {
+            new TBoldXMI2Importer(fTheUMLModel, OwningLink.TranslateRoseTaggedValues).Import(GetDOMDocument());
+            return;
+        }
+
         XmlElement rootElement = GetDOMDocument().DocumentElement ?? throw new EBold("RootElement missing");
         XmlElement contentElement = FindContent(rootElement) ?? throw new EBold("Content missing");
         fPass = TPass.PASS1;

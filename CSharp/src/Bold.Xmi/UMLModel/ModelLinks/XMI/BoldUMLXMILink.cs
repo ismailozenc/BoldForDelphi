@@ -3,8 +3,18 @@
 
 namespace Bold;
 
-/// <summary>Reads a model from an XMI 1.x file and writes one as XMI 1.0 (UML 1.3).</summary>
-[Delphi(PortStatus.Ported)]
+/// <summary>The XMI a link writes.</summary>
+public enum TBoldXMIVersion
+{
+    /// <summary>XMI 1.0 of UML 1.3, as Delphi Bold wrote it.</summary>
+    xmi10,
+
+    /// <summary>XMI 2.1 of UML 2.</summary>
+    xmi21,
+}
+
+/// <summary>Reads a model from an XMI 1.x or 2.x file and writes one as XMI 1.0 (UML 1.3) or XMI 2.1 (UML 2).</summary>
+[Delphi(PortStatus.Ported, Note = "Also reads and writes XMI 2 (XMIVersion), which Delphi did not.")]
 public class TBoldUMLXMILink : TBoldUMLModelLink
 {
     [Delphi(PortStatus.Ported, Symbol = "XMI_LINKEXTENSION")] public const string XMI_LINKEXTENSION = ".xmi";
@@ -25,16 +35,27 @@ public class TBoldUMLXMILink : TBoldUMLModelLink
     [Delphi(PortStatus.Ported, Symbol = "finalization", Note = "The list goes with the process.")]
     internal static void Unregister(TBoldUMLModelLinkList List) => List.RemoveLink(new TBoldUMLModelLinkClass(typeof(TBoldUMLXMILink)));
 
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "Writes XMI 2.1 when XMIVersion says so.")]
     public override bool ExportModel(TBoldUMLObject UMLModel)
     {
-        var exporter = new TBoldXMI10Exporter(this);
         TBoldLogHandler log = BoldLogHandler.BoldLog();
         log.StartLog("Model Export");
-        exporter.RawExport(new TBoldUMLMOFObjectAdapter(UMLModel, this));
+        if (XMIVersion == TBoldXMIVersion.xmi21)
+        {
+            new TBoldXMI2Exporter().Export(UMLModel, FileName);
+        }
+        else
+        {
+            using var exporter = new TBoldXMI10Exporter(this);
+            exporter.RawExport(new TBoldUMLMOFObjectAdapter(UMLModel, this));
+        }
+
         log.EndLog();
         return true;
     }
+
+    /// <summary>The XMI that ExportModel writes; reading takes any.</summary>
+    public TBoldXMIVersion XMIVersion { get; set; } = TBoldXMIVersion.xmi10;
 
     [Delphi(PortStatus.Ported)]
     protected override bool GetCanExport() => true;
