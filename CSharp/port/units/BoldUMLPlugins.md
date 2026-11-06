@@ -5,12 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Plugins/BoldUMLPlugins.pas`](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas) (305 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLPlugins.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 40 symbols done, 0 verified |
+| Status | ✅ verified: 40 of 40 symbols done, 40 verified |
+| Note | Works on the UML graph of Bold.Xmi (TBoldUMLModelGraph), as Delphi worked on its UML model (D6, amended for the editor). |
 
-⚪ 40 not started
+✅ 40 verified
 
 ## Unit level
 
@@ -18,81 +19,91 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TUMLPlugInFunction` | class | [24](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L24) |  | ⚪ not started |  |
-| `TUMLLinkImporterExporter` | class | [48](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L48) |  | ⚪ not started |  |
-| `TUMLLinkImporter` | class | [54](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L54) |  | ⚪ not started |  |
-| `TUMLLinkExporter` | class | [65](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L65) |  | ⚪ not started |  |
-| `TUMLModelUpdaterPlugIn` | class | [77](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L77) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [295](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L295) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [300](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L300) |  | ⚪ not started |  |
+| `TUMLPlugInFunction` | class | [24](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L24) | [`TUMLPlugInFunction`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L11) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `TUMLLinkImporterExporter` | class | [48](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L48) | [`TUMLLinkImporterExporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L70) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `TUMLLinkImporter` | class | [54](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L54) | [`TUMLLinkImporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L90) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `TUMLLinkExporter` | class | [65](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L65) | [`TUMLLinkExporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L128) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `TUMLModelUpdaterPlugIn` | class | [77](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L77) | [`TUMLModelUpdaterPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L166) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `initialization` | initialization, implementation | [295](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L295) | [`BoldUMLPlugins.Initialize`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L190) | ✅ verified: Called when the plug-in list is first asked for. | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `finalization` | finalization, implementation | [300](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L300) | [`BoldUMLPlugins.Finalize_`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L197) | ✅ verified: Removes the plug-ins; the process ending does it otherwise. | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
 
 ## TUMLPlugInFunction
 
-class at [line 24](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L24); ⚪ not started.
+class at [line 24](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L24); ✅ verified, C# [`TUMLPlugInFunction`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [28](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L28) · [body 141](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L141) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [29](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L29) |  | ⚪ not started |  |
-| `GetInstance` | method, protected | [30](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L30) · [body 136](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L136) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [31](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L31) · [body 131](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L131) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [32](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L32) |  | ⚪ not started |  |
-| `GetOptions` | method, protected | [33](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L33) · [body 146](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L146) |  | ⚪ not started |  |
-| `Create` | constructor | [35](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L35) · [body 113](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L113) |  | ⚪ not started |  |
-| `Destroy` | destructor | [36](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L36) · [body 120](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L120) |  | ⚪ not started |  |
-| `Install` | method | [37](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L37) · [body 151](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L151) |  | ⚪ not started |  |
-| `MenuItemName` | property | [38](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L38) |  | ⚪ not started |  |
-| `PlugInType` | property | [39](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L39) |  | ⚪ not started |  |
-| `Instance` | property | [40](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L40) |  | ⚪ not started |  |
-| `ImageResourceName` | property | [41](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L41) |  | ⚪ not started |  |
-| `ImageMaskColor` | property | [42](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L42) |  | ⚪ not started |  |
-| `Options` | property | [43](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L43) |  | ⚪ not started |  |
-| `Execute` | method | [44](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L44) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [28](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L28) · [body 141](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L141) | [`TUMLPlugInFunction.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L36) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetPlugInType` | method, protected | [29](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L29) | [`TUMLPlugInFunction.GetPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L37) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetInstance` | method, protected | [30](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L30) · [body 136](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L136) | [`TUMLPlugInFunction.GetInstance`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L40) | ✅ verified: The assembly of the plug-in's class, where Delphi gave the module handle. | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetImageResourceName` | method, protected | [31](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L31) · [body 131](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L131) | [`TUMLPlugInFunction.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L42) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetImageMaskColor` | method, protected | [32](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L32) | [`TUMLPlugInFunction.GetImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L43) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetOptions` | method, protected | [33](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L33) · [body 146](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L146) | [`TUMLPlugInFunction.GetOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L44) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `Create` | constructor | [35](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L35) · [body 113](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L113) | [`TUMLPlugInFunction.TUMLPlugInFunction`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L16) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `Destroy` | destructor | [36](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L36) · [body 120](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L120) | [`TUMLPlugInFunction.Dispose`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L25) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `Install` | method | [37](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L37) · [body 151](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L151) | [`TUMLPlugInFunction.Install`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L48) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `MenuItemName` | property | [38](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L38) | [`TUMLPlugInFunction.MenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L54) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `PlugInType` | property | [39](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L39) | [`TUMLPlugInFunction.PlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L55) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `Instance` | property | [40](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L40) | [`TUMLPlugInFunction.Instance`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L56) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `ImageResourceName` | property | [41](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L41) | [`TUMLPlugInFunction.ImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L57) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `ImageMaskColor` | property | [42](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L42) | [`TUMLPlugInFunction.ImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L58) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `Options` | property | [43](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L43) | [`TUMLPlugInFunction.Options`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L59) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `Execute` | method | [44](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L44) | [`TUMLPlugInFunction.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L65) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
 
 ## TUMLLinkImporterExporter
 
-class at [line 48](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L48); ⚪ not started.
+class at [line 48](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L48); ✅ verified, C# [`TUMLLinkImporterExporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L70).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Initialize` | method, protected | [50](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L50) · [body 253](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L253) |  | ⚪ not started |  |
+| `Initialize` | method, protected | [50](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L50) · [body 253](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L253) | [`TUMLLinkImporterExporter.Initialize`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L79) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
 
 ## TUMLLinkImporter
 
-class at [line 54](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L54); ⚪ not started.
+class at [line 54](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L54); ✅ verified, C# [`TUMLLinkImporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L90).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [56](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L56) · [body 160](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L160) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [57](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L57) · [body 165](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L165) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [58](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L58) · [body 170](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L170) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [59](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L59) · [body 175](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L175) |  | ⚪ not started |  |
-| `Execute` | method | [61](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L61) · [body 180](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L180) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [56](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L56) · [body 160](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L160) | [`TUMLLinkImporter.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L97) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `GetPlugInType` | method, protected | [57](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L57) · [body 165](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L165) | [`TUMLLinkImporter.GetPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L98) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `GetImageResourceName` | method, protected | [58](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L58) · [body 170](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L170) | [`TUMLLinkImporter.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L99) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `GetImageMaskColor` | method, protected | [59](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L59) · [body 175](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L175) | [`TUMLLinkImporter.GetImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L100) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `Execute` | method | [61](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L61) · [body 180](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L180) | [`TUMLLinkImporter.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L103) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
 
 ## TUMLLinkExporter
 
-class at [line 65](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L65); ⚪ not started.
+class at [line 65](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L65); ✅ verified, C# [`TUMLLinkExporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L128).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [67](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L67) · [body 205](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L205) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [68](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L68) · [body 210](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L210) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [69](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L69) · [body 215](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L215) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [70](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L70) · [body 220](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L220) |  | ⚪ not started |  |
-| `GetOptions` | method, protected | [71](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L71) · [body 246](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L246) |  | ⚪ not started |  |
-| `Execute` | method | [73](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L73) · [body 225](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L225) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [67](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L67) · [body 205](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L205) | [`TUMLLinkExporter.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L135) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `GetPlugInType` | method, protected | [68](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L68) · [body 210](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L210) | [`TUMLLinkExporter.GetPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L136) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `GetImageResourceName` | method, protected | [69](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L69) · [body 215](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L215) | [`TUMLLinkExporter.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L137) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `GetImageMaskColor` | method, protected | [70](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L70) · [body 220](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L220) | [`TUMLLinkExporter.GetImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L138) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `GetOptions` | method, protected | [71](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L71) · [body 246](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L246) | [`TUMLLinkExporter.GetOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L139) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25)<br>✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
+| `Execute` | method | [73](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L73) · [body 225](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L225) | [`TUMLLinkExporter.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L142) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_model_is_read_and_written_through_its_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L122) |
 
 ## TUMLModelUpdaterPlugIn
 
-class at [line 77](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L77); ⚪ not started.
+class at [line 77](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L77); ✅ verified, C# [`TUMLModelUpdaterPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L166).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [79](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L79) · [body 285](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L285) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [80](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L80) · [body 290](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L290) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [81](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L81) · [body 280](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L280) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [82](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L82) · [body 275](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L275) |  | ⚪ not started |  |
-| `Execute` | method | [84](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L84) · [body 270](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L270) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [79](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L79) · [body 285](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L285) | [`TUMLModelUpdaterPlugIn.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L178) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetPlugInType` | method, protected | [80](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L80) · [body 290](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L290) | [`TUMLModelUpdaterPlugIn.GetPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L179) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetImageResourceName` | method, protected | [81](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L81) · [body 280](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L280) | [`TUMLModelUpdaterPlugIn.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L177) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `GetImageMaskColor` | method, protected | [82](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L82) · [body 275](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L275) | [`TUMLModelUpdaterPlugIn.GetImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L176) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+| `Execute` | method | [84](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L84) · [body 270](../../../Source/UMLModel/Plugins/BoldUMLPlugins.pas#L270) | [`TUMLModelUpdaterPlugIn.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L174) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_function_puts_itself_in_the_list_and_takes_itself_out`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L51) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TUMLPlugInFunction.PlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L62) (property)
+- [`TUMLLinkImporterExporter.TUMLLinkImporterExporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L72) (constructor)
+- [`TUMLLinkImporter.TUMLLinkImporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L92) (constructor)
+- [`TUMLLinkExporter.TUMLLinkExporter`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L130) (constructor)
+- [`TUMLModelUpdaterPlugIn.TUMLModelUpdaterPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs#L168) (constructor)
 
 ## Dependencies
 

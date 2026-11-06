@@ -85,9 +85,10 @@ public static class TBoldUMLSupport
     private static bool NameInListExceptElement(string Name, IEnumerable<TBoldUMLObject> List, TBoldUMLObject UMLElement) =>
         List.Any(e => e.name == Name && e != UMLElement);
 
-    [Delphi(PortStatus.Dropped, Note = "The UML graph has no subscriptions; the model editor works on the Mold model (D6).")]
+    /// <summary>Subscribes to every change of the element.</summary>
+    [Delphi(PortStatus.Ported)]
     private static void SubscribeToAllMembers(TBoldUMLObject UMLElement, TBoldSubscriber Subscriber) =>
-        throw new NotSupportedException();
+        UMLElement.AddSmallSubscription(Subscriber, TBoldSmallEventSet.Of(BoldSubscription.beMemberChanged), BoldSubscription.breReEvaluate);
 
     /// <summary>The package of the dotted name below a package, made where missing.</summary>
     [Delphi(PortStatus.Ported)]
@@ -314,15 +315,23 @@ public static class TBoldUMLSupport
         RemoveTaggedValue(UMLModel, BOLDINTERALTVPREFIX + TAG_FLATTENED);
     }
 
-    [Delphi(PortStatus.Dropped, Note = "The UML graph has no subscriptions; the model editor works on the Mold model (D6).")]
-    public static void SubscribeToEntireModel(TBoldUMLObject UMLModel, TBoldSubscriber Subscriber) => throw new NotSupportedException();
+    /// <summary>Subscribes to every change of every element of the model.</summary>
+    [Delphi(PortStatus.Ported)]
+    public static void SubscribeToEntireModel(TBoldUMLObject UMLModel, TBoldSubscriber Subscriber)
+    {
+        SubscribeToAllMembers(UMLModel, Subscriber);
+        foreach (TBoldUMLObject part in AllModelParts(UMLModel))
+        {
+            SubscribeToAllMembers(part, Subscriber);
+        }
+    }
 
     /// <summary>Every element of the model.</summary>
     [Delphi(PortStatus.Ported)]
     public static List<TBoldUMLObject> AllModelParts(TBoldUMLObject UMLModel) => [.. UMLModel.AllOwnedElements];
 
     /// <summary>The namespace's owned elements, theirs, and so on.</summary>
-    internal static IEnumerable<TBoldUMLObject> AllNamespaceContents(TBoldUMLObject Namespace)
+    public static IEnumerable<TBoldUMLObject> AllNamespaceContents(TBoldUMLObject Namespace)
     {
         foreach (TBoldUMLObject element in Namespace.ownedElement)
         {

@@ -1,4 +1,4 @@
-unit BoldUMLModelUpdater; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Core/BoldUMLModelUpdater.cs; symbols and status: CSharp/port/units/BoldUMLModelUpdater.md }
+unit BoldUMLModelUpdater; { C# port: CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs; symbols and status: CSharp/port/units/BoldUMLModelUpdater.md }
 
 interface
 

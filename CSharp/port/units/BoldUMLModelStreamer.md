@@ -5,14 +5,30 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Handles/BoldUMLModelStreamer.pas`](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas) (76 lines) |
-| C# | not ported: the TBoldModel component; the Bold.Model loader replaces it |
-| Status | ⚫ dropped: 3 symbols |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs) |
+| Project | Bold.ModelEditor.Core |
+| Milestone | M12 Model editor |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
+| Note | Keeps the UML model as XMI 2.1, where Delphi streamed its UML object space. |
 
-## Declared types
+✅ 3 verified
 
-The members of these types are not listed: nothing in this unit is ported.
+## Unit level
 
-- `TUMLModelStreamer` (class, [line 10](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas#L10), 2 members)
+Types, routines, constants, variables and the initialization and finalization sections.
+
+| Delphi | Kind | Lines | C# | Status | Tests |
+|---|---|---|---|---|---|
+| `TUMLModelStreamer` | class | [10](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas#L10) | [`TUMLModelStreamer`](../../src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs#L10) | ✅ verified: Streams the UML graph as XMI 2.1, where Delphi streamed its UML object space as Bold's XML value space. | ✔ [`BoldModelTests.The_UML_model_is_kept_as_a_string`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Handles/BoldModelTests.cs#L105) |
+
+## TUMLModelStreamer
+
+class at [line 10](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas#L10); ✅ verified, C# [`TUMLModelStreamer`](../../src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs#L10).
+
+| Delphi | Kind | Lines | C# | Status | Tests |
+|---|---|---|---|---|---|
+| `FillSystemFromString` | class method | [12](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas#L12) · [body 30](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas#L30) | [`TUMLModelStreamer.FillSystemFromString`](../../src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs#L14) | ✅ verified: Takes the UML model to fill where Delphi took the object space and the UML metamodel's Mold model. | ✔ [`BoldModelTests.The_UML_model_is_kept_as_a_string`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Handles/BoldModelTests.cs#L105) |
+| `SystemAsString` | class method | [13](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas#L13) · [body 55](../../../Source/UMLModel/Handles/BoldUMLModelStreamer.pas#L55) | [`TUMLModelStreamer.SystemAsString`](../../src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs#L31) | ✅ verified: Takes the UML model where Delphi took the object space and the UML metamodel's Mold model. | ✔ [`BoldModelTests.The_UML_model_is_kept_as_a_string`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Handles/BoldModelTests.cs#L105) |
 
 ## Dependencies
 

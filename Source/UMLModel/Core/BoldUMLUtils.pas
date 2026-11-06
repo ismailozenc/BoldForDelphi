@@ -1,4 +1,4 @@
-unit BoldUMLUtils; { C# port: not ported (looks up a TBoldModel component through the handle list; the component is not ported); see CSharp/port/units/BoldUMLUtils.md }
+unit BoldUMLUtils; { C# port: CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLUtils.cs; symbols and status: CSharp/port/units/BoldUMLUtils.md }
 
 interface
 

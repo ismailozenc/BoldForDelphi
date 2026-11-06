@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas`](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas) (104 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Core/BoldUMLAbstractModelValidator.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
-| Note | Rewritten against the Mold model (D6). |
+| Status | ✅ verified: 15 of 15 symbols done, 15 verified |
+| Note | Works on the UML graph of Bold.Xmi (TBoldUMLModelGraph), as Delphi worked on its UML model (D6, amended for the editor). |
 
-⚪ 15 not started
+✅ 15 verified
 
 ## Unit level
 
@@ -19,28 +19,28 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldModelValidatorSourceLanguage` | enum | [11](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L11) |  | ⚪ not started |  |
-| `TBoldUMLAbstractModelValidator` | class | [13](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L13) |  | ⚪ not started |  |
-| `BoldDefaultValidatorSourceLanguage` | const | [36](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L36) |  | ⚪ not started |  |
+| `TBoldModelValidatorSourceLanguage` | enum | [11](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L11) | [`TBoldModelValidatorSourceLanguage`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L8) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `TBoldUMLAbstractModelValidator` | class | [13](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L13) | [`TBoldUMLAbstractModelValidator`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L12) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `BoldDefaultValidatorSourceLanguage` | const | [36](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L36) | [`TBoldUMLAbstractModelValidator.BoldDefaultValidatorSourceLanguage`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L16) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
 
 ## TBoldUMLAbstractModelValidator
 
-class at [line 13](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L13); ✅ verified, C# [`TBoldUMLAbstractModelValidator`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L12).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValidator` | method, private | [18](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L18) · [body 89](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L89) |  | ⚪ not started |  |
-| `AddViolation` | method, private | [19](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L19) · [body 63](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L63) |  | ⚪ not started |  |
-| `AddError` | method, protected | [21](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L21) · [body 48](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L48) |  | ⚪ not started |  |
-| `AddHint` | method, protected | [22](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L22) · [body 58](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L58) |  | ⚪ not started |  |
-| `AddWarning` | method, protected | [23](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L23) · [body 53](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L53) |  | ⚪ not started |  |
-| `ClearViolations` | method, protected | [24](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L24) · [body 73](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L73) |  | ⚪ not started |  |
-| `SQLDataBaseConfig` | property, protected | [25](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L25) |  | ⚪ not started |  |
-| `Language` | property, protected | [26](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L26) |  | ⚪ not started |  |
-| `Create` | constructor | [28](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L28) · [body 81](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L81) |  | ⚪ not started |  |
-| `UMLModel` | property | [29](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L29) |  | ⚪ not started |  |
-| `Validator` | property | [30](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L30) |  | ⚪ not started |  |
-| `HighestSeverity` | method | [31](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L31) · [body 94](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L94) |  | ⚪ not started |  |
+| `GetValidator` | method, private | [18](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L18) · [body 89](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L89) | [`TBoldUMLAbstractModelValidator.GetValidator`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L31) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `AddViolation` | method, private | [19](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L19) · [body 63](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L63) | [`TBoldUMLAbstractModelValidator.AddViolation`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L34) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `AddError` | method, protected | [21](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L21) · [body 48](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L48) | [`TBoldUMLAbstractModelValidator.AddError`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L38) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `AddHint` | method, protected | [22](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L22) · [body 58](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L58) | [`TBoldUMLAbstractModelValidator.AddHint`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L41) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `AddWarning` | method, protected | [23](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L23) · [body 53](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L53) | [`TBoldUMLAbstractModelValidator.AddWarning`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L44) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `ClearViolations` | method, protected | [24](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L24) · [body 73](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L73) | [`TBoldUMLAbstractModelValidator.ClearViolations`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L47) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `SQLDataBaseConfig` | property, protected | [25](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L25) | [`TBoldUMLAbstractModelValidator.SQLDataBaseConfig`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L49) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `Language` | property, protected | [26](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L26) | [`TBoldUMLAbstractModelValidator.Language`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L50) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `Create` | constructor | [28](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L28) · [body 81](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L81) | [`TBoldUMLAbstractModelValidator.TBoldUMLAbstractModelValidator`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L22) | ✅ verified: Takes the UML graph's model (D6, as amended for the editor). | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `UMLModel` | property | [29](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L29) | [`TBoldUMLAbstractModelValidator.UMLModel`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L51) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `Validator` | property | [30](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L30) | [`TBoldUMLAbstractModelValidator.Validator`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L52) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
+| `HighestSeverity` | method | [31](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L31) · [body 94](../../../Source/UMLModel/Core/BoldUMLAbstractModelValidator.pas#L94) | [`TBoldUMLAbstractModelValidator.HighestSeverity`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs#L56) | ✅ verified | ✔ [`BoldUMLModelValidatorTests.A_sound_model_has_no_errors_and_the_model_hears_it_was_validated`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelValidatorTests.cs#L41) |
 
 ## Dependencies
 

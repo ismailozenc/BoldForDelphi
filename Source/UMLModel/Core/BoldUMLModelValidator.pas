@@ -1,4 +1,4 @@
-unit BoldUMLModelValidator; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Core/BoldUMLModelValidator.cs; symbols and status: CSharp/port/units/BoldUMLModelValidator.md }
+unit BoldUMLModelValidator; { C# port: CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelValidator.cs; symbols and status: CSharp/port/units/BoldUMLModelValidator.md }
 
 interface
 

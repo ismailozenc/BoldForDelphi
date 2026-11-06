@@ -5,12 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Plugins/BoldCodePlugins.pas`](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas) (300 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldCodePlugins.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 32 symbols done, 0 verified |
+| Status | ✅ verified: 32 of 32 symbols done, 24 verified |
+| Note | Generates C#; the IDL generators go with COM (not ported). |
 
-⚪ 32 not started
+✅ 24 verified · ⚫ 8 dropped
 
 ## Unit level
 
@@ -18,80 +19,91 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TUMLGUIDGenerator` | class | [22](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L22) |  | ⚪ not started |  |
-| `TUMLAbstractCodeGenerator` | class | [34](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L34) |  | ⚪ not started |  |
-| `TUMLCodeGenerator` | class | [46](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L46) |  | ⚪ not started |  |
-| `TUMLPersistenceInterfaceGenerator` | class | [53](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L53) |  | ⚪ not started |  |
-| `TUMLIDLGenerator` | class | [61](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L61) |  | ⚪ not started |  |
-| `TUMLMIDLGenerator` | class | [69](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L69) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [285](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L285) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [292](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L292) |  | ⚪ not started |  |
+| `TUMLGUIDGenerator` | class | [22](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L22) | [`TUMLGUIDGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L20) | ✅ verified | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
+| `TUMLAbstractCodeGenerator` | class | [34](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L34) | [`TUMLAbstractCodeGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L57) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `TUMLCodeGenerator` | class | [46](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L46) | [`TUMLCodeGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L109) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `TUMLPersistenceInterfaceGenerator` | class | [53](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L53) | [`TUMLPersistenceInterfaceGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L136) | ✅ verified | ✔ [`BoldCodePluginsTests.The_persistence_interfaces_are_generated_with_Delphi_s_templates`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L51) |
+| `TUMLIDLGenerator` | class | [61](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L61) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L7) | ⚫ dropped: COM code generation goes with the COM object space, which is not ported (drop list). |  |
+| `TUMLMIDLGenerator` | class | [69](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L69) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L11) | ⚫ dropped: COM code generation goes with the COM object space, which is not ported (drop list). |  |
+| `initialization` | initialization, implementation | [285](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L285) | [`BoldCodePlugins.Initialize`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L163) | ✅ verified: Called when the plug-in list is first asked for; the IDL generators are not ported (COM). | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
+| `finalization` | finalization, implementation | [292](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L292) | [`BoldCodePlugins.Finalize_`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L171) | ✅ verified: Removes the plug-ins; the process ending does it otherwise. | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
 
 ## TUMLGUIDGenerator
 
-class at [line 22](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L22); ⚪ not started.
+class at [line 22](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L22); ✅ verified, C# [`TUMLGUIDGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L20).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [24](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L24) · [body 253](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L253) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [25](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L25) · [body 248](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L248) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [26](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L26) · [body 263](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L263) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [27](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L27) · [body 243](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L243) |  | ⚪ not started |  |
-| `GetOptions` | method, protected | [28](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L28) · [body 258](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L258) |  | ⚪ not started |  |
-| `Execute` | method | [30](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L30) · [body 218](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L218) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [24](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L24) · [body 253](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L253) | [`TUMLGUIDGenerator.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L50) | ✅ verified | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
+| `GetImageResourceName` | method, protected | [25](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L25) · [body 248](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L248) | [`TUMLGUIDGenerator.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L49) | ✅ verified | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
+| `GetPlugInType` | method, protected | [26](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L26) · [body 263](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L263) | [`TUMLGUIDGenerator.GetPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L52) | ✅ verified | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
+| `GetImageMaskColor` | method, protected | [27](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L27) · [body 243](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L243) | [`TUMLGUIDGenerator.GetImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L48) | ✅ verified | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
+| `GetOptions` | method, protected | [28](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L28) · [body 258](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L258) | [`TUMLGUIDGenerator.GetOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L51) | ✅ verified | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
+| `Execute` | method | [30](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L30) · [body 218](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L218) | [`TUMLGUIDGenerator.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L28) | ✅ verified | ✔ [`BoldCodePluginsTests.GUIDs_are_given_to_the_model_and_its_classes`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L77) |
 
 ## TUMLAbstractCodeGenerator
 
-class at [line 34](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L34); ⚪ not started.
+class at [line 34](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L34); ✅ verified, C# [`TUMLAbstractCodeGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L57).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPlugInType` | method, protected | [36](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L36) · [body 211](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L211) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [37](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L37) · [body 201](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L201) |  | ⚪ not started |  |
-| `GenerateCode` | method, protected | [38](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L38) |  | ⚪ not started |  |
-| `Generate` | method, protected | [39](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L39) · [body 187](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L187) |  | ⚪ not started |  |
-| `GetOptions` | method, protected | [40](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L40) · [body 206](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L206) |  | ⚪ not started |  |
-| `Execute` | method | [42](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L42) · [body 163](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L163) |  | ⚪ not started |  |
+| `GetPlugInType` | method, protected | [36](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L36) · [body 211](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L211) | [`TUMLAbstractCodeGenerator.GetPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L64) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `GetImageMaskColor` | method, protected | [37](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L37) · [body 201](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L201) | [`TUMLAbstractCodeGenerator.GetImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L65) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `GenerateCode` | method, protected | [38](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L38) | [`TUMLAbstractCodeGenerator.GenerateCode`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L69) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `Generate` | method, protected | [39](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L39) · [body 187](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L187) | [`TUMLAbstractCodeGenerator.Generate`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L76) | ✅ verified: Generates C# (TBoldCSharpGenerator), where Delphi's generator wrote Delphi. | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `GetOptions` | method, protected | [40](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L40) · [body 206](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L206) | [`TUMLAbstractCodeGenerator.GetOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L66) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `Execute` | method | [42](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L42) · [body 163](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L163) | [`TUMLAbstractCodeGenerator.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L87) | ✅ verified: Writes next to the model's file (TBoldModel.FileName), where Delphi wrote next to the unit the component was on. | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
 
 ## TUMLCodeGenerator
 
-class at [line 46](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L46); ⚪ not started.
+class at [line 46](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L46); ✅ verified, C# [`TUMLCodeGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L109).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [48](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L48) · [body 108](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L108) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [49](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L49) · [body 113](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L113) |  | ⚪ not started |  |
-| `GenerateCode` | method, protected | [50](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L50) · [body 118](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L118) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [48](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L48) · [body 108](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L108) | [`TUMLCodeGenerator.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L116) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `GetImageResourceName` | method, protected | [49](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L49) · [body 113](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L113) | [`TUMLCodeGenerator.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L117) | ✅ verified | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
+| `GenerateCode` | method, protected | [50](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L50) · [body 118](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L118) | [`TUMLCodeGenerator.GenerateCode`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L120) | ✅ verified: The C# generator writes the classes and the method stubs in one go. | ✔ [`BoldCodePluginsTests.Code_is_generated_next_to_the_model_s_file`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L21) |
 
 ## TUMLPersistenceInterfaceGenerator
 
-class at [line 53](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L53); ⚪ not started.
+class at [line 53](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L53); ✅ verified, C# [`TUMLPersistenceInterfaceGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L136).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [55](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L55) · [body 280](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L280) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [56](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L56) · [body 275](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L275) |  | ⚪ not started |  |
-| `GenerateCode` | method, protected | [57](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L57) · [body 270](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L270) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [55](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L55) · [body 280](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L280) | [`TUMLPersistenceInterfaceGenerator.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L152) | ✅ verified | ✔ [`BoldCodePluginsTests.The_persistence_interfaces_are_generated_with_Delphi_s_templates`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L51) |
+| `GetImageResourceName` | method, protected | [56](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L56) · [body 275](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L275) | [`TUMLPersistenceInterfaceGenerator.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L151) | ✅ verified | ✔ [`BoldCodePluginsTests.The_persistence_interfaces_are_generated_with_Delphi_s_templates`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L51) |
+| `GenerateCode` | method, protected | [57](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L57) · [body 270](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L270) | [`TUMLPersistenceInterfaceGenerator.GenerateCode`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L150) | ✅ verified | ✔ [`BoldCodePluginsTests.The_persistence_interfaces_are_generated_with_Delphi_s_templates`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldCodePluginsTests.cs#L51) |
 
 ## TUMLIDLGenerator
 
-class at [line 61](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L61); ⚪ not started.
+class at [line 61](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L61); ⚫ dropped, C# [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L7).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [63](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L63) · [body 137](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L137) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [64](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L64) · [body 132](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L132) |  | ⚪ not started |  |
-| `GenerateCode` | method, protected | [65](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L65) · [body 126](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L126) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [63](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L63) · [body 137](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L137) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L8) | ⚫ dropped: COM code generation is not ported (drop list). |  |
+| `GetImageResourceName` | method, protected | [64](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L64) · [body 132](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L132) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L9) | ⚫ dropped: COM code generation is not ported (drop list). |  |
+| `GenerateCode` | method, protected | [65](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L65) · [body 126](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L126) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L10) | ⚫ dropped: COM code generation is not ported (drop list). |  |
 
 ## TUMLMIDLGenerator
 
-class at [line 69](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L69); ⚪ not started.
+class at [line 69](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L69); ⚫ dropped, C# [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetImageResourceName` | method, protected | [71](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L71) · [body 151](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L151) |  | ⚪ not started |  |
-| `GetMenuItemName` | method, protected | [72](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L72) · [body 156](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L156) |  | ⚪ not started |  |
-| `GenerateCode` | method, protected | [73](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L73) · [body 144](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L144) |  | ⚪ not started |  |
+| `GetImageResourceName` | method, protected | [71](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L71) · [body 151](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L151) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L12) | ⚫ dropped: COM code generation is not ported (drop list). |  |
+| `GetMenuItemName` | method, protected | [72](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L72) · [body 156](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L156) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L13) | ⚫ dropped: COM code generation is not ported (drop list). |  |
+| `GenerateCode` | method, protected | [73](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L73) · [body 144](../../../Source/UMLModel/Plugins/BoldCodePlugins.pas#L144) | [`[assembly: Delphi] in BoldCodePlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L14) | ⚫ dropped: COM code generation is not ported (drop list). |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TUMLGUIDGenerator.TUMLGUIDGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L22) (constructor)
+- [`TUMLAbstractCodeGenerator.TUMLAbstractCodeGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L59) (constructor)
+- [`TUMLAbstractCodeGenerator.CreateGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L72) (method)
+- [`TUMLCodeGenerator.TUMLCodeGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L111) (constructor)
+- [`TUMLPersistenceInterfaceGenerator.TUMLPersistenceInterfaceGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L138) (constructor)
+- [`TUMLPersistenceInterfaceGenerator.CreateGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs#L144) (method)
 
 ## Dependencies
 

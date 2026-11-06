@@ -5,12 +5,20 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Core/BoldUMLUtils.pas`](../../../Source/UMLModel/Core/BoldUMLUtils.pas) (36 lines) |
-| C# | not ported: looks up a TBoldModel component through the handle list; the component is not ported |
-| Status | ⚫ dropped: 1 symbols |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLUtils.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLUtils.cs) |
+| Project | Bold.ModelEditor.Core |
+| Milestone | M12 Model editor |
+| Status | ✅ verified: 1 of 1 symbols done, 1 verified |
 
-## Declared types
+✅ 1 verified
 
-None; its 1 constants, routines and variables are not ported either.
+## Unit level
+
+Types, routines, constants, variables and the initialization and finalization sections.
+
+| Delphi | Kind | Lines | C# | Status | Tests |
+|---|---|---|---|---|---|
+| `SQLDataBaseConfigforModel` | routine | [9](../../../Source/UMLModel/Core/BoldUMLUtils.pas#L9) · [body 17](../../../Source/UMLModel/Core/BoldUMLUtils.pas#L17) | [`BoldUMLUtils.SQLDataBaseConfigforModel`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLUtils.cs#L11) | ✅ verified | ✔ [`BoldUMLUtilsTests.The_database_configuration_of_a_model_is_its_persistence_handle_s`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLUtilsTests.cs#L11) |
 
 ## Dependencies
 

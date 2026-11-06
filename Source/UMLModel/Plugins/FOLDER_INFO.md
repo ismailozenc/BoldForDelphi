@@ -29,10 +29,10 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldCodePlugins](../../../CSharp/port/units/BoldCodePlugins.md) | Bold.ModelEditor: UMLModel/Plugins/BoldCodePlugins.cs (not started) | M12 Model editor |
-| [BoldDbPlugins](../../../CSharp/port/units/BoldDbPlugins.md) | Bold.ModelEditor: UMLModel/Plugins/BoldDbPlugins.cs (not started) | M12 Model editor |
+| [BoldCodePlugins](../../../CSharp/port/units/BoldCodePlugins.md) | [Bold.ModelEditor.Core: UMLModel/Plugins/BoldCodePlugins.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldCodePlugins.cs) | M12 Model editor |
+| [BoldDbPlugins](../../../CSharp/port/units/BoldDbPlugins.md) | [Bold.ModelEditor.Core: UMLModel/Plugins/BoldDbPlugins.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs) | M12 Model editor |
 | [BoldModelOCLValidatorPlugIn](../../../CSharp/port/units/BoldModelOCLValidatorPlugIn.md) | Bold.ModelEditor: UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs (not started) | M12 Model editor |
-| [BoldUMLModelEditPlugIn](../../../CSharp/port/units/BoldUMLModelEditPlugIn.md) | Bold.ModelEditor: UMLModel/Plugins/BoldUMLModelEditPlugIn.cs (not started) | M12 Model editor |
-| [BoldUMLPluginCallBacks](../../../CSharp/port/units/BoldUMLPluginCallBacks.md) | Bold.ModelEditor: UMLModel/Plugins/BoldUMLPluginCallBacks.cs (not started) | M12 Model editor |
-| [BoldUMLPlugins](../../../CSharp/port/units/BoldUMLPlugins.md) | Bold.ModelEditor: UMLModel/Plugins/BoldUMLPlugins.cs (not started) | M12 Model editor |
+| [BoldUMLModelEditPlugIn](../../../CSharp/port/units/BoldUMLModelEditPlugIn.md) | [Bold.ModelEditor.Core: UMLModel/Plugins/BoldUMLModelEditPlugIn.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs) | M12 Model editor |
+| [BoldUMLPluginCallBacks](../../../CSharp/port/units/BoldUMLPluginCallBacks.md) | [Bold.ModelEditor.Core: UMLModel/Plugins/BoldUMLPluginCallBacks.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs) | M12 Model editor |
+| [BoldUMLPlugins](../../../CSharp/port/units/BoldUMLPlugins.md) | [Bold.ModelEditor.Core: UMLModel/Plugins/BoldUMLPlugins.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs) | M12 Model editor |
 <!-- END C# PORT -->

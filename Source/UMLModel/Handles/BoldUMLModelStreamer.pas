@@ -1,4 +1,4 @@
-unit BoldUMLModelStreamer; { C# port: not ported (the TBoldModel component; the Bold.Model loader replaces it); see CSharp/port/units/BoldUMLModelStreamer.md }
+unit BoldUMLModelStreamer; { C# port: CSharp/src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs; symbols and status: CSharp/port/units/BoldUMLModelStreamer.md }
 
 interface
 

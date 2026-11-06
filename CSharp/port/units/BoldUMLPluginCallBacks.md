@@ -5,12 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas`](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas) (63 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLPluginCallBacks.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 4 symbols done, 0 verified |
+| Status | ✅ verified: 4 of 4 symbols done, 4 verified |
+| Note | Works on the UML graph of Bold.Xmi (TBoldUMLModelGraph), as Delphi worked on its UML model (D6, amended for the editor). |
 
-⚪ 4 not started
+✅ 4 verified
 
 ## Unit level
 
@@ -18,24 +19,24 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TUMLOCLValidatorCallBack` | class | [15](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L15) |  | ⚪ not started |  |
-| `TBoldUMLModelValidatorCallBack` | class | [21](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L21) |  | ⚪ not started |  |
+| `TUMLOCLValidatorCallBack` | class | [15](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L15) | [`TUMLOCLValidatorCallBack`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs#L8) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_validation_form_validates_through_call_backs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L166) |
+| `TBoldUMLModelValidatorCallBack` | class | [21](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L21) | [`TBoldUMLModelValidatorCallBack`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs#L16) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_validation_form_validates_through_call_backs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L166) |
 
 ## TUMLOCLValidatorCallBack
 
-class at [line 15](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L15); ✅ verified, C# [`TUMLOCLValidatorCallBack`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Validate` | class method | [17](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L17) · [body 37](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L37) |  | ⚪ not started |  |
+| `Validate` | class method | [17](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L17) · [body 37](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L37) | [`TUMLOCLValidatorCallBack.Validate`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs#L11) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_validation_form_validates_through_call_backs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L166) |
 
 ## TBoldUMLModelValidatorCallBack
 
-class at [line 21](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L21); ✅ verified, C# [`TBoldUMLModelValidatorCallBack`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs#L16).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Validate` | class method | [23](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L23) · [body 51](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L51) |  | ⚪ not started |  |
+| `Validate` | class method | [23](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L23) · [body 51](../../../Source/UMLModel/Plugins/BoldUMLPluginCallBacks.pas#L51) | [`TBoldUMLModelValidatorCallBack.Validate`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPluginCallBacks.cs#L19) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_validation_form_validates_through_call_backs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L166) |
 
 ## Dependencies
 

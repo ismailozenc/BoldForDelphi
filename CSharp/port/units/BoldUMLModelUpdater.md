@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Core/BoldUMLModelUpdater.pas`](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas) (62 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Core/BoldUMLModelUpdater.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
-| Note | Rewritten against the Mold model (D6). |
+| Status | ✅ verified: 3 of 3 symbols done, 3 verified |
+| Note | Works on the UML graph of Bold.Xmi (TBoldUMLModelGraph), as Delphi worked on its UML model (D6, amended for the editor). |
 
-⚪ 3 not started
+✅ 3 verified
 
 ## Unit level
 
@@ -19,16 +19,16 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUMLModelUpdater` | class | [13](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L13) |  | ⚪ not started |  |
+| `TBoldUMLModelUpdater` | class | [13](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L13) | [`TBoldUMLModelUpdater`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs#L11) | ✅ verified | ✔ [`BoldUMLModelUpdaterTests.The_old_Persistent_tagged_value_becomes_persistence`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelUpdaterTests.cs#L12) |
 
 ## TBoldUMLModelUpdater
 
-class at [line 13](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L13); ✅ verified, C# [`TBoldUMLModelUpdater`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `UpdatePersistentTVs` | class method, private | [15](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L15) · [body 41](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L41) |  | ⚪ not started |  |
-| `UpdateModel` | class method | [17](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L17) · [body 31](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L31) |  | ⚪ not started |  |
+| `UpdatePersistentTVs` | class method, private | [15](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L15) · [body 41](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L41) | [`TBoldUMLModelUpdater.UpdatePersistentTVs`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs#L21) | ✅ verified | ✔ [`BoldUMLModelUpdaterTests.The_old_Persistent_tagged_value_becomes_persistence`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelUpdaterTests.cs#L12) |
+| `UpdateModel` | class method | [17](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L17) · [body 31](../../../Source/UMLModel/Core/BoldUMLModelUpdater.pas#L31) | [`TBoldUMLModelUpdater.UpdateModel`](../../src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs#L14) | ✅ verified | ✔ [`BoldUMLModelUpdaterTests.The_old_Persistent_tagged_value_becomes_persistence`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Core/BoldUMLModelUpdaterTests.cs#L12) |
 
 ## Dependencies
 

@@ -17,6 +17,7 @@
     <Project Path="src/Bold.Handles/Bold.Handles.csproj" />
     <Project Path="src/Bold.Model/Bold.Model.csproj" />
     <Project Path="src/Bold.ModelEditor/Bold.ModelEditor.csproj" />
+    <Project Path="src/Bold.ModelEditor.Core/Bold.ModelEditor.Core.csproj" />
     <Project Path="src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
     <Project Path="src/Bold.Olle/Bold.Olle.csproj" />
     <Project Path="src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
@@ -41,6 +42,7 @@
     <Project Path="tests/Bold.Core.Tests/Bold.Core.Tests.csproj" />
     <Project Path="tests/Bold.Handles.Tests/Bold.Handles.Tests.csproj" />
     <Project Path="tests/Bold.Model.Tests/Bold.Model.Tests.csproj" />
+    <Project Path="tests/Bold.ModelEditor.Core.Tests/Bold.ModelEditor.Core.Tests.csproj" />
     <Project Path="tests/Bold.ObjectSpace.Tests/Bold.ObjectSpace.Tests.csproj" />
     <Project Path="tests/Bold.Persistence.Sql.Tests/Bold.Persistence.Sql.Tests.csproj" />
     <Project Path="tests/Bold.PortTool.Tests/Bold.PortTool.Tests.csproj" />

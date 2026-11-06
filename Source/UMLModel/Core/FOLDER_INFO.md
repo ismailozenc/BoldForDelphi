@@ -40,15 +40,15 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldUMLAbstractModelValidator](../../../CSharp/port/units/BoldUMLAbstractModelValidator.md) | Bold.ModelEditor: UMLModel/Core/BoldUMLAbstractModelValidator.cs (not started) | M12 Model editor |
+| [BoldUMLAbstractModelValidator](../../../CSharp/port/units/BoldUMLAbstractModelValidator.md) | [Bold.ModelEditor.Core: UMLModel/Core/BoldUMLAbstractModelValidator.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLAbstractModelValidator.cs) | M12 Model editor |
 | [BoldUMLAttributes](../../../CSharp/port/units/BoldUMLAttributes.md) | not ported: attribute classes of the UML metamodel object space; the Mold model is the only model in memory (D6) |  |
 | [BoldUMLModel](../../../CSharp/port/units/BoldUMLModel.md) | not ported: generated code for the UML metamodel; the Mold model is the only model in memory (D6) |  |
 | [BoldUMLModelConverter](../../../CSharp/port/units/BoldUMLModelConverter.md) | [Bold.Xmi: UMLModel/Core/BoldUMLModelConverter.cs](../../../CSharp/src/Bold.Xmi/UMLModel/Core/BoldUMLModelConverter.cs) | M11 XMI |
 | [BoldUMLModelDataModule](../../../CSharp/port/units/BoldUMLModelDataModule.md) | not ported: data module of the Delphi model editor over the UML object space (D6) |  |
 | [BoldUMLModelSupport](../../../CSharp/port/units/BoldUMLModelSupport.md) | [Bold.Xmi: UMLModel/Core/BoldUMLModelSupport.cs](../../../CSharp/src/Bold.Xmi/UMLModel/Core/BoldUMLModelSupport.cs) | M11 XMI |
-| [BoldUMLModelUpdater](../../../CSharp/port/units/BoldUMLModelUpdater.md) | Bold.ModelEditor: UMLModel/Core/BoldUMLModelUpdater.cs (not started) | M12 Model editor |
-| [BoldUMLModelValidator](../../../CSharp/port/units/BoldUMLModelValidator.md) | Bold.ModelEditor: UMLModel/Core/BoldUMLModelValidator.cs (not started) | M12 Model editor |
-| [BoldUMLOCLValidator](../../../CSharp/port/units/BoldUMLOCLValidator.md) | Bold.ModelEditor: UMLModel/Core/BoldUMLOCLValidator.cs (not started) | M12 Model editor |
-| [BoldUMLUtils](../../../CSharp/port/units/BoldUMLUtils.md) | not ported: looks up a TBoldModel component through the handle list; the component is not ported |  |
+| [BoldUMLModelUpdater](../../../CSharp/port/units/BoldUMLModelUpdater.md) | [Bold.ModelEditor.Core: UMLModel/Core/BoldUMLModelUpdater.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelUpdater.cs) | M12 Model editor |
+| [BoldUMLModelValidator](../../../CSharp/port/units/BoldUMLModelValidator.md) | [Bold.ModelEditor.Core: UMLModel/Core/BoldUMLModelValidator.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLModelValidator.cs) | M12 Model editor |
+| [BoldUMLOCLValidator](../../../CSharp/port/units/BoldUMLOCLValidator.md) | [Bold.ModelEditor.Core: UMLModel/Core/BoldUMLOCLValidator.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLOCLValidator.cs) | M12 Model editor |
+| [BoldUMLUtils](../../../CSharp/port/units/BoldUMLUtils.md) | [Bold.ModelEditor.Core: UMLModel/Core/BoldUMLUtils.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Core/BoldUMLUtils.cs) | M12 Model editor |
 | [UMLConsts](../../../CSharp/port/units/UMLConsts.md) | [Bold.Xmi: UMLModel/Core/UMLConsts.cs](../../../CSharp/src/Bold.Xmi/UMLModel/Core/UMLConsts.cs) | M11 XMI |
 <!-- END C# PORT -->

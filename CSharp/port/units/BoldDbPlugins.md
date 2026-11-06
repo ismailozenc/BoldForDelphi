@@ -5,12 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Plugins/BoldDbPlugins.pas`](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas) (268 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldDbPlugins.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 27 symbols done, 0 verified |
+| Status | ✅ verified: 27 of 27 symbols done, 27 verified |
+| Note | Works on the UML graph of Bold.Xmi (TBoldUMLModelGraph), as Delphi worked on its UML model (D6, amended for the editor). |
 
-⚪ 27 not started
+✅ 27 verified
 
 ## Unit level
 
@@ -18,75 +19,87 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TUMLGenericDBPlugin` | class | [23](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L23) |  | ⚪ not started |  |
-| `TUMLDBGenerator` | class | [34](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L34) |  | ⚪ not started |  |
-| `TBoldUMLDBEvolutorPlugin` | class | [43](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L43) |  | ⚪ not started |  |
-| `TBoldDbValidatorPlugIn` | class | [52](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L52) |  | ⚪ not started |  |
-| `TBolddbStructureValidatorPlugin` | class | [59](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L59) |  | ⚪ not started |  |
-| `TBoldDbDataValidatorPlugin` | class | [68](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L68) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [256](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L256) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [262](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L262) |  | ⚪ not started |  |
+| `TUMLGenericDBPlugin` | class | [23](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L23) | [`TUMLGenericDBPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L10) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `TUMLDBGenerator` | class | [34](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L34) | [`TUMLDBGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L57) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `TBoldUMLDBEvolutorPlugin` | class | [43](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L43) | [`TBoldUMLDBEvolutorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L73) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_evolves_with_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L101) |
+| `TBoldDbValidatorPlugIn` | class | [52](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L52) | [`TBoldDbValidatorPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L110) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `TBolddbStructureValidatorPlugin` | class | [59](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L59) | [`TBolddbStructureValidatorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L132) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `TBoldDbDataValidatorPlugin` | class | [68](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L68) | [`TBoldDbDataValidatorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L152) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `initialization` | initialization, implementation | [256](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L256) | [`BoldDbPlugins.Initialize`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L179) | ✅ verified: Called when the plug-in list is first asked for. | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `finalization` | finalization, implementation | [262](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L262) | [`BoldDbPlugins.Finalize_`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L188) | ✅ verified: Removes the plug-ins; the process ending does it otherwise. | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
 
 ## TUMLGenericDBPlugin
 
-class at [line 23](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L23); ✅ verified, C# [`TUMLGenericDBPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPersistenceHandle` | method, private | [25](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L25) · [body 209](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L209) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [27](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L27) · [body 199](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L199) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [28](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L28) · [body 230](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L230) |  | ⚪ not started |  |
-| `GetOptions` | method, protected | [29](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L29) · [body 204](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L204) |  | ⚪ not started |  |
-| `GetValidPersistenceHandle` | method, protected | [30](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L30) · [body 235](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L235) |  | ⚪ not started |  |
+| `GetPersistenceHandle` | method, private | [25](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L25) · [body 209](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L209) | [`TUMLGenericDBPlugin.GetPersistenceHandle`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L19) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `GetImageMaskColor` | method, protected | [27](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L27) · [body 199](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L199) | [`TUMLGenericDBPlugin.GetImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L34) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `GetPlugInType` | method, protected | [28](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L28) · [body 230](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L230) | [`TUMLGenericDBPlugin.GetPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L35) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `GetOptions` | method, protected | [29](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L29) · [body 204](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L204) | [`TUMLGenericDBPlugin.GetOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L36) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `GetValidPersistenceHandle` | method, protected | [30](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L30) · [body 235](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L235) | [`TUMLGenericDBPlugin.GetValidPersistenceHandle`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L40) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
 
 ## TUMLDBGenerator
 
-class at [line 34](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L34); ⚪ not started.
+class at [line 34](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L34); ✅ verified, C# [`TUMLDBGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L57).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [36](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L36) · [body 100](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L100) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [37](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L37) · [body 105](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L105) |  | ⚪ not started |  |
-| `Execute` | method | [39](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L39) · [body 110](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L110) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [36](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L36) · [body 100](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L100) | [`TUMLDBGenerator.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L64) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `GetImageResourceName` | method, protected | [37](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L37) · [body 105](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L105) | [`TUMLDBGenerator.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L65) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
+| `Execute` | method | [39](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L39) · [body 110](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L110) | [`TUMLDBGenerator.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L68) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_generated_for_a_model_without_errors`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L51) |
 
 ## TBoldUMLDBEvolutorPlugin
 
-class at [line 43](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L43); ⚪ not started.
+class at [line 43](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L43); ✅ verified, C# [`TBoldUMLDBEvolutorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L73).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [45](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L45) · [body 191](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L191) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [46](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L46) · [body 186](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L186) |  | ⚪ not started |  |
-| `Execute` | method | [48](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L48) · [body 173](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L173) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [45](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L45) · [body 191](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L191) | [`TBoldUMLDBEvolutorPlugin.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L105) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_evolves_with_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L101) |
+| `GetImageResourceName` | method, protected | [46](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L46) · [body 186](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L186) | [`TBoldUMLDBEvolutorPlugin.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L104) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_evolves_with_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L101) |
+| `Execute` | method | [48](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L48) · [body 173](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L173) | [`TBoldUMLDBEvolutorPlugin.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L92) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_evolves_with_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L101) |
 
 ## TBoldDbValidatorPlugIn
 
-class at [line 52](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L52); ⚪ not started.
+class at [line 52](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L52); ✅ verified, C# [`TBoldDbValidatorPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L110).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetOptions` | method, protected | [54](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L54) · [body 166](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L166) |  | ⚪ not started |  |
-| `ExecuteValidator` | method, protected | [55](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L55) · [body 159](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L159) |  | ⚪ not started |  |
+| `GetOptions` | method, protected | [54](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L54) · [body 166](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L166) | [`TBoldDbValidatorPlugIn.GetOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L117) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `ExecuteValidator` | method, protected | [55](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L55) · [body 159](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L159) | [`TBoldDbValidatorPlugIn.ExecuteValidator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L120) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
 
 ## TBolddbStructureValidatorPlugin
 
-class at [line 59](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L59); ⚪ not started.
+class at [line 59](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L59); ✅ verified, C# [`TBolddbStructureValidatorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L132).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [61](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L61) · [body 130](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L130) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [62](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L62) · [body 125](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L125) |  | ⚪ not started |  |
-| `Execute` | method | [64](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L64) · [body 115](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L115) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [61](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L61) · [body 130](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L130) | [`TBolddbStructureValidatorPlugin.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L147) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `GetImageResourceName` | method, protected | [62](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L62) · [body 125](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L125) | [`TBolddbStructureValidatorPlugin.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L146) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `Execute` | method | [64](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L64) · [body 115](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L115) | [`TBolddbStructureValidatorPlugin.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L140) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
 
 ## TBoldDbDataValidatorPlugin
 
-class at [line 68](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L68); ⚪ not started.
+class at [line 68](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L68); ✅ verified, C# [`TBoldDbDataValidatorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L152).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [70](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L70) · [body 152](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L152) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [71](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L71) · [body 147](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L147) |  | ⚪ not started |  |
-| `Execute` | method | [73](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L73) · [body 137](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L137) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [70](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L70) · [body 152](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L152) | [`TBoldDbDataValidatorPlugin.GetMenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L167) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `GetImageResourceName` | method, protected | [71](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L71) · [body 147](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L147) | [`TBoldDbDataValidatorPlugin.GetImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L166) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+| `Execute` | method | [73](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L73) · [body 137](../../../Source/UMLModel/Plugins/BoldDbPlugins.pas#L137) | [`TBoldDbDataValidatorPlugin.Execute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L160) | ✅ verified | ✔ [`BoldDbPluginsTests.The_database_is_validated_against_the_model`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldDbPluginsTests.cs#L84) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TUMLGenericDBPlugin.TUMLGenericDBPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L12) (constructor)
+- [`TUMLDBGenerator.TUMLDBGenerator`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L59) (constructor)
+- [`TBoldUMLDBEvolutorPlugin.TBoldUMLDBEvolutorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L75) (constructor)
+- [`TBoldUMLDBEvolutorPlugin.EvolveDB`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L84) (property)
+- [`TBoldDbValidatorPlugIn.TBoldDbValidatorPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L112) (constructor)
+- [`TBolddbStructureValidatorPlugin.TBolddbStructureValidatorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L134) (constructor)
+- [`TBoldDbDataValidatorPlugin.TBoldDbDataValidatorPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldDbPlugins.cs#L154) (constructor)
 
 ## Dependencies
 

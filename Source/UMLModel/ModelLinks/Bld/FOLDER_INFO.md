@@ -23,5 +23,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldUMLBldLink](../../../../CSharp/port/units/BoldUMLBldLink.md) | Bold.ModelEditor: UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs (not started) | M12 Model editor |
+| [BoldUMLBldLink](../../../../CSharp/port/units/BoldUMLBldLink.md) | [Bold.ModelEditor.Core: UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs](../../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs) | M12 Model editor |
 <!-- END C# PORT -->

@@ -5,12 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas`](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas) (125 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs)<br>[`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 26 symbols done, 0 verified |
+| Status | 🟡 partial: 22 of 26 symbols done, 22 verified |
+| Note | The plug-in framework; its menu item and tool button are WinForms controls in Bold.ModelEditor. |
 
-⚪ 26 not started
+✅ 22 verified · ⚪ 4 not started
 
 ## Unit level
 
@@ -18,44 +19,44 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `IUMLModelPlugInContext` | interface | [16](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L16) |  | ⚪ not started |  |
-| `TUMLPluginExecuteEvent` | event type | [24](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L24) |  | ⚪ not started |  |
-| `TPlugInType` | enum | [26](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L26) |  | ⚪ not started |  |
-| `TBoldUMLPluginOption` | enum | [28](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L28) |  | ⚪ not started |  |
-| `TBoldUMLPluginOptions` | set | [29](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L29) |  | ⚪ not started |  |
-| `TUMLPlugIn` | class | [31](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L31) |  | ⚪ not started |  |
+| `IUMLModelPlugInContext` | interface | [16](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L16) | [`IUMLModelPlugInContext`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L14) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `TUMLPluginExecuteEvent` | event type | [24](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L24) | [`TUMLPluginExecuteEvent`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L30) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `TPlugInType` | enum | [26](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L26) | [`TPlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L34) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `TBoldUMLPluginOption` | enum | [28](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L28) | [`TBoldUMLPluginOption`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L38) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `TBoldUMLPluginOptions` | set | [29](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L29) | [`global using TBoldUMLPluginOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs#L5) | ✅ verified: Global using alias of DelphiSet&lt;TBoldUMLPluginOption&gt;, in BoldUMLModelEditPlugIn.Aliases.cs. | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `TUMLPlugIn` | class | [31](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L31) | [`TUMLPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L42) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
 | `TUMLPlugInMenuItem` | class | [65](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L65) |  | ⚪ not started |  |
 | `TUMLPlugInToolButton` | class | [72](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L72) |  | ⚪ not started |  |
 
 ## IUMLModelPlugInContext
 
-interface at [line 16](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L16); ⚪ not started.
+interface at [line 16](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L16); ✅ verified, C# [`IUMLModelPlugInContext`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L14).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetIsExecutingPlugin` | method | [17](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L17) |  | ⚪ not started |  |
-| `SetIsExecutingPlugin` | method | [18](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L18) |  | ⚪ not started |  |
-| `GetCurrentModelHandle` | method | [19](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L19) |  | ⚪ not started |  |
-| `GetCurrentElement` | method | [20](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L20) |  | ⚪ not started |  |
-| `IsExecutingPlugin` | property | [21](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L21) |  | ⚪ not started |  |
+| `GetIsExecutingPlugin` | method | [17](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L17) | [`IUMLModelPlugInContext.GetIsExecutingPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L16) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `SetIsExecutingPlugin` | method | [18](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L18) | [`IUMLModelPlugInContext.SetIsExecutingPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L17) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `GetCurrentModelHandle` | method | [19](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L19) | [`IUMLModelPlugInContext.GetCurrentModelHandle`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L18) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `GetCurrentElement` | method | [20](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L20) | [`IUMLModelPlugInContext.GetCurrentElement`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L19) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `IsExecutingPlugin` | property | [21](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L21) | [`IUMLModelPlugInContext.IsExecutingPlugin`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L22) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
 
 ## TUMLPlugIn
 
-class at [line 31](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L31); ⚪ not started.
+class at [line 31](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L31); ✅ verified, C# [`TUMLPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L42).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `OnExecute` | property, protected | [42](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L42) |  | ⚪ not started |  |
-| `Create` | constructor | [44](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L44) · [body 87](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L87) |  | ⚪ not started |  |
-| `MenuItemName` | property | [52](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L52) |  | ⚪ not started |  |
-| `PlugInType` | property | [53](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L53) |  | ⚪ not started |  |
-| `Options` | property | [54](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L54) |  | ⚪ not started |  |
-| `Instance` | property | [55](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L55) |  | ⚪ not started |  |
-| `ImageResourceName` | property | [56](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L56) |  | ⚪ not started |  |
-| `ImageMaskColor` | property | [57](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L57) |  | ⚪ not started |  |
-| `PluginClassName` | property | [58](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L58) |  | ⚪ not started |  |
-| `GuardedExecute` | method | [59](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L59) · [body 103](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L103) |  | ⚪ not started |  |
-| `UnGuardedExecute` | method | [60](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L60) · [body 119](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L119) |  | ⚪ not started |  |
+| `OnExecute` | property, protected | [42](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L42) | [`TUMLPlugIn.OnExecute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L58) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `Create` | constructor | [44](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L44) · [body 87](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L87) | [`TUMLPlugIn.TUMLPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L45) | ✅ verified: The image comes from an assembly's resources where Delphi took a module handle; the mask colour is a System.Drawing.Color. | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `MenuItemName` | property | [52](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L52) | [`TUMLPlugIn.MenuItemName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L59) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `PlugInType` | property | [53](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L53) | [`TUMLPlugIn.PlugInType`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L60) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `Options` | property | [54](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L54) | [`TUMLPlugIn.Options`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L61) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `Instance` | property | [55](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L55) | [`TUMLPlugIn.Instance`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L62) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `ImageResourceName` | property | [56](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L56) | [`TUMLPlugIn.ImageResourceName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L63) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `ImageMaskColor` | property | [57](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L57) | [`TUMLPlugIn.ImageMaskColor`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L64) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `PluginClassName` | property | [58](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L58) | [`TUMLPlugIn.PluginClassName`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L65) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
+| `GuardedExecute` | method | [59](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L59) · [body 103](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L103) | [`TUMLPlugIn.GuardedExecute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L69) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
+| `UnGuardedExecute` | method | [60](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L60) · [body 119](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L119) | [`TUMLPlugIn.UnGuardedExecute`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L89) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.A_plug_in_does_not_run_while_another_runs`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L82) |
 
 ## TUMLPlugInMenuItem
 
@@ -72,6 +73,17 @@ class at [line 72](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
 | `PlugIn` | property | [76](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L76) |  | ⚪ not started |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TUMLPlugIn.ToString`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L91) (method)
+- [`BoldUMLPlugInRegistry`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L98) (class)
+- [`BoldUMLPlugInRegistry.InstallingBuiltIns`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L104) (event)
+- [`BoldUMLPlugInRegistry.PlugIns`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L107) (property)
+- [`BoldUMLPlugInRegistry.RawList`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L117) (property)
+- [`BoldUMLPlugInRegistry.EnsureBuiltIns`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L119) (method)
 
 ## Dependencies
 

@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas`](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas) (131 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs` |
-| Project | Bold.ModelEditor |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs) |
+| Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | ✅ verified: 11 of 11 symbols done, 11 verified |
 | Note | The .bld model link of the editor; reading and writing .bld is BoldBld in Bold.Model. |
 
-⚪ 11 not started
+✅ 11 verified
 
 ## Unit level
 
@@ -19,24 +19,31 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUMLBldLink` | class | [14](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L14) |  | ⚪ not started |  |
-| `Bld_LINKEXTENSION` | const | [31](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L31) |  | ⚪ not started |  |
-| `Bld_LINKDESC` | const | [32](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L32) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [124](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L124) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [127](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L127) |  | ⚪ not started |  |
+| `TBoldUMLBldLink` | class | [14](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L14) | [`TBoldUMLBldLink`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L8) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `Bld_LINKEXTENSION` | const | [31](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L31) | [`TBoldUMLBldLink.Bld_LINKEXTENSION`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L10) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `Bld_LINKDESC` | const | [32](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L32) | [`TBoldUMLBldLink.Bld_LINKDESC`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L11) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `initialization` | initialization, implementation | [124](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L124) | [`TBoldUMLBldLink.Register`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L22) | ✅ verified: Called by EnsureRegistered, which the editor calls. | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `finalization` | finalization, implementation | [127](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L127) | [`TBoldUMLBldLink.Unregister`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L31) | ✅ verified: The list goes with the process. | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
 
 ## TBoldUMLBldLink
 
-class at [line 14](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L14); ✅ verified, C# [`TBoldUMLBldLink`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L8).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetCanExport` | method, protected | [18](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L18) · [body 63](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L63) |  | ⚪ not started |  |
-| `GetDisplayName` | method, protected | [19](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L19) · [body 68](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L68) |  | ⚪ not started |  |
-| `GetFileName` | method, protected | [20](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L20) · [body 73](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L73) |  | ⚪ not started |  |
-| `SetFileName` | method, protected | [21](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L21) · [body 119](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L119) |  | ⚪ not started |  |
-| `ExportModel` | method | [23](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L23) · [body 49](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L49) |  | ⚪ not started |  |
-| `ImportModel` | method | [24](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L24) · [body 78](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L78) |  | ⚪ not started |  |
+| `GetCanExport` | method, protected | [18](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L18) · [body 63](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L63) | [`TBoldUMLBldLink.GetCanExport`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L47) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `GetDisplayName` | method, protected | [19](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L19) · [body 68](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L68) | [`TBoldUMLBldLink.GetDisplayName`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L48) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `GetFileName` | method, protected | [20](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L20) · [body 73](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L73) | [`TBoldUMLBldLink.GetFileName`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L49) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `SetFileName` | method, protected | [21](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L21) · [body 119](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L119) | [`TBoldUMLBldLink.SetFileName`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L50) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `ExportModel` | method | [23](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L23) · [body 49](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L49) | [`TBoldUMLBldLink.ExportModel`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L38) | ✅ verified | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16) |
+| `ImportModel` | method | [24](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L24) · [body 78](../../../Source/UMLModel/ModelLinks/Bld/BoldUMLBldLink.pas#L78) | [`TBoldUMLBldLink.ImportModel`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L54) | ✅ verified: Delphi returned true after logging an error and rolling back; this returns false. | ✔ [`BoldUMLBldLinkTests.The_bld_link_writes_a_UML_model_and_reads_it_back`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L16)<br>✔ [`BoldUMLBldLinkTests.A_model_component_reads_its_model_through_the_link`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/ModelLinks/Bld/BoldUMLBldLinkTests.cs#L52) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUMLBldLink.TBoldUMLBldLink`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L15) (constructor)
+- [`TBoldUMLBldLink.EnsureRegistered`](../../src/Bold.ModelEditor.Core/UMLModel/ModelLinks/Bld/BoldUMLBldLink.cs#L34) (method)
 
 ## Dependencies
 

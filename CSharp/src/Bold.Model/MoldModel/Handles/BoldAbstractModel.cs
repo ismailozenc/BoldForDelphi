@@ -46,8 +46,12 @@ public class TBoldAbstractModel : TBoldSubscribableComponent
     [Delphi(PortStatus.Ported, Note = "Writes to a string list where Delphi writes to a form file writer.")]
     public void WriteModel(TStrings ModelAsStrings) => TMoldBLDRW.ModelToStrings(RawMoldModel, ModelAsStrings);
 
-    /// <summary>Takes a Mold model made elsewhere (by an XMI import, say) as the model.</summary>
-    public void LoadFromMoldModel(TMoldModel Model) => SetFromModel(Model);
+    /// <summary>Takes a Mold model made elsewhere (by an XMI import, say) as the model, and tells the handles it changed.</summary>
+    public virtual void LoadFromMoldModel(TMoldModel Model)
+    {
+        SetFromModel(Model);
+        SendEvent(this, BoldAbstractModel.beModelChanged);
+    }
 
     [Delphi(PortStatus.Replaced, Note = "Form file streaming; ReadModel and WriteModel take and give the model's lines.")]
     protected void DefineProperties() => throw new NotSupportedException("TBoldAbstractModel.DefineProperties: there are no form files in .NET; use ReadModel and WriteModel.");

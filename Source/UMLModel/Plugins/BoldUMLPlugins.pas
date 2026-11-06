@@ -1,4 +1,4 @@
-unit BoldUMLPlugins; { C# port: CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLPlugins.cs; symbols and status: CSharp/port/units/BoldUMLPlugins.md }
+unit BoldUMLPlugins; { C# port: CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLPlugins.cs; symbols and status: CSharp/port/units/BoldUMLPlugins.md }
 
 interface
 

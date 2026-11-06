@@ -115,17 +115,44 @@ public sealed class TBoldUMLModelGraph
     {
         var obj = new TBoldUMLObject(this, MetaClass) { LocalIndex = ++fLastIndex };
         fObjects.Add(obj);
+        NotifyChanged(obj);
         return obj;
     }
 
     /// <summary>The objects of a class and its subclasses.</summary>
     public IEnumerable<TBoldUMLObject> AllInstances(string MetaClass) => fObjects.Where(o => o.IsKindOf(MetaClass));
 
-    internal void Remove(TBoldUMLObject Obj) => fObjects.Remove(Obj);
+    internal void Remove(TBoldUMLObject Obj)
+    {
+        fObjects.Remove(Obj);
+        Violations.RemoveAll(v => v.ModelElement == Obj);
+    }
+
+    /// <summary>What the validators found, as Delphi's UML model kept it in its validator.</summary>
+    public List<TBoldUMLViolation> Violations { get; } = [];
+
+    /// <summary>Raised when an element changes, is made or is deleted.</summary>
+    public event Action<TBoldUMLObject>? Changed;
+
+    internal void NotifyChanged(TBoldUMLObject Obj) => Changed?.Invoke(Obj);
+
+    /// <summary>Raised when a validator has validated the model (Delphi's beModelValidated event).</summary>
+    public event Action? ModelValidated;
+
+    public void SendModelValidated() => ModelValidated?.Invoke();
 }
 
-/// <summary>An element of a UML model: its class, attributes and references, by the UML metamodel's names.</summary>
-public sealed class TBoldUMLObject
+/// <summary>How bad a violation is (Delphi's TSeverity of the UML model).</summary>
+public enum TSeverity { sNone, sHint, sWarning, sError }
+
+/// <summary>A violation a validator found in an element.</summary>
+public sealed record TBoldUMLViolation(TSeverity Severity, string Description, TBoldUMLObject? ModelElement);
+
+/// <summary>
+/// An element of a UML model: its class, attributes and references, by the UML metamodel's names. Others can subscribe
+/// to it, as to an object of Delphi's UML object space: a change sends beMemberChanged, a delete beObjectDeleted.
+/// </summary>
+public sealed class TBoldUMLObject : TBoldSubscribableObject
 {
     private readonly Dictionary<string, string> fAttributes = new(StringComparer.Ordinal);
     private readonly Dictionary<string, List<TBoldUMLObject>> fReferences = new(StringComparer.Ordinal);
@@ -163,11 +190,15 @@ public sealed class TBoldUMLObject
         {
             if (string.IsNullOrEmpty(value))
             {
-                fAttributes.Remove(Attribute);
+                if (fAttributes.Remove(Attribute))
+                {
+                    Changed();
+                }
             }
-            else
+            else if (!fAttributes.TryGetValue(Attribute, out string? old) || old != value)
             {
                 fAttributes[Attribute] = value;
+                Changed();
             }
         }
     }
@@ -213,6 +244,7 @@ public sealed class TBoldUMLObject
 
         string? inverse = TBoldUMLMetaModel.InverseOf(Reference);
         fReferences.Remove(Reference);
+        Changed();
         if (old is not null && inverse is not null)
         {
             old.RemoveOneSide(inverse, this);
@@ -257,18 +289,40 @@ public sealed class TBoldUMLObject
         if (!list.Contains(Obj))
         {
             list.Add(Obj);
+            Changed();
         }
     }
 
     private void RemoveOneSide(string Reference, TBoldUMLObject Obj)
     {
-        if (fReferences.TryGetValue(Reference, out List<TBoldUMLObject>? list))
+        if (fReferences.TryGetValue(Reference, out List<TBoldUMLObject>? list) && list.Remove(Obj))
         {
-            list.Remove(Obj);
             if (list.Count == 0)
             {
                 fReferences.Remove(Reference);
             }
+
+            Changed();
+        }
+    }
+
+    /// <summary>Tells the subscribers and the graph that the element changed.</summary>
+    private void Changed()
+    {
+        if (!Deleted)
+        {
+            SendEvent(BoldSubscription.beMemberChanged);
+            Graph.NotifyChanged(this);
+        }
+    }
+
+    /// <summary>Moves an object to another place in a reference's list (the order of features, ends and so on).</summary>
+    public void MoveRef(string Reference, TBoldUMLObject Obj, int NewIndex)
+    {
+        if (fReferences.TryGetValue(Reference, out List<TBoldUMLObject>? list) && list.Remove(Obj))
+        {
+            list.Insert(Math.Clamp(NewIndex, 0, list.Count), Obj);
+            Changed();
         }
     }
 
@@ -305,6 +359,9 @@ public sealed class TBoldUMLObject
         }
 
         Graph.Remove(this);
+        SendEvent(BoldSubscription.beObjectDeleted);
+        FreePublisher();
+        Graph.NotifyChanged(this);
     }
 
     // The UML model's members, by the names of Delphi's UML model.
@@ -575,6 +632,35 @@ public sealed class TBoldUMLObject
     public bool isRoot { get => GetBoolean("isRoot"); set => SetBoolean("isRoot", value); }
 
     public bool isLeaf { get => GetBoolean("isLeaf"); set => SetBoolean("isLeaf", value); }
+
+    /// <summary>The class's features and those of its superclasses.</summary>
+    public List<TBoldUMLObject> allFeature
+    {
+        get
+        {
+            var result = new List<TBoldUMLObject>();
+            for (TBoldUMLObject? c = this; c is not null; c = c.Superclass)
+            {
+                result.AddRange(c.feature);
+            }
+
+            return result;
+        }
+    }
+
+    /// <summary>The association ends whose type is this classifier.</summary>
+    public List<TBoldUMLObject> associationEnd => [.. Graph.AllInstances("AssociationEnd").Where(e => e.type_ == this)];
+
+    /// <summary>The children of the generalizations whose parent this is.</summary>
+    public List<TBoldUMLObject> SubClasses => [.. specialization.Select(g => g.Ref("child")).OfType<TBoldUMLObject>()];
+
+    /// <summary>An attribute's persistence with its owner's; an association's with both its ends' classes'.</summary>
+    public bool EffectivePersistent => MetaClass switch
+    {
+        "Attribute" => persistent && (owner?.persistent ?? false),
+        "Association" => persistent && connection.Count == 2 && connection.All(e => e.type_?.persistent ?? false),
+        _ => persistent,
+    };
 
     public override string ToString() => $"{MetaClass} {name}";
 }

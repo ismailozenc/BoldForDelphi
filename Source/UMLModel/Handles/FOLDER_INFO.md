@@ -24,6 +24,6 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldModel](../../../CSharp/port/units/BoldModel.md) | not ported: the TBoldModel component; the Bold.Model loader replaces it |  |
-| [BoldUMLModelStreamer](../../../CSharp/port/units/BoldUMLModelStreamer.md) | not ported: the TBoldModel component; the Bold.Model loader replaces it |  |
+| [BoldModel](../../../CSharp/port/units/BoldModel.md) | [Bold.ModelEditor.Core: UMLModel/Handles/BoldModel.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Handles/BoldModel.cs) | M12 Model editor |
+| [BoldUMLModelStreamer](../../../CSharp/port/units/BoldUMLModelStreamer.md) | [Bold.ModelEditor.Core: UMLModel/Handles/BoldUMLModelStreamer.cs](../../../CSharp/src/Bold.ModelEditor.Core/UMLModel/Handles/BoldUMLModelStreamer.cs) | M12 Model editor |
 <!-- END C# PORT -->
