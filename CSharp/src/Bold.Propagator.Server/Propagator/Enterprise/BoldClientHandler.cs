@@ -308,6 +308,12 @@ public class TBoldClientHandler : TBoldPublisher, IDisposable
                     ClientInfo.ClientStatusString);
                 NotifyLeaseChanged();
             }
+            else if (ClientInfo is not null && ClientInfo.Initialized &&
+                     BoldUtils.TimeStampComp(ClientInfo.RegistrationTime, RegistrationTime) == 0)
+            {
+                // The timer fired before the lease ran out by the clock (their resolutions differ): set it again.
+                NotifyLeaseChanged();
+            }
         }
         finally
         {
