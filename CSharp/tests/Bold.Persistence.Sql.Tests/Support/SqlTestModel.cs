@@ -33,7 +33,7 @@ internal sealed class SqliteHandle : IDisposable
     public readonly string File;
 
     /// <summary>Whether Dispose leaves the database file, for another handle to open.</summary>
-    public bool KeepFile;
+    public bool KeepFile = false;
     public readonly TADOConnection Connection;
     public readonly TBoldDatabaseAdapterADO Adapter = new();
     public readonly TBoldPersistenceHandleDB Handle = new();

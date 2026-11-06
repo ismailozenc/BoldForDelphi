@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <Description>Remote persistence server on ASP.NET Core.</Description>
+    <Description>Remote persistence server on ASP.NET Core, with the propagator on the same host when configured.</Description>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
   </PropertyGroup>
+  <!-- The database providers the server is published with; the code loads them by name only (TBoldRemotePersistenceSetup). -->
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+    <PackageReference Include="Microsoft.Data.SqlClient" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
     <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
@@ -11,5 +17,8 @@
     <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
     <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
     <ProjectReference Include="../Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../Bold.Remote.Client/Bold.Remote.Client.csproj" />
+    <ProjectReference Include="../Bold.Propagation/Bold.Propagation.csproj" />
+    <ProjectReference Include="../Bold.Propagator.Server/Bold.Propagator.Server.csproj" />
   </ItemGroup>
 </Project>

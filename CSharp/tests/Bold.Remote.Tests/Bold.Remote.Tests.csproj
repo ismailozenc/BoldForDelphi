@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of Bold.Remote.Client and Bold.Remote.Server: object spaces saved and loaded through a remote persistence server hosted in the test process, on SQLite, and kept in step through the propagator on the same host.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/TestDatabase.cs" Link="Support/TestDatabase.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/SqlTestModel.cs" Link="Support/SqlTestModel.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/NativeSqlite.cs" Link="Support/NativeSqlite.cs" Condition="'$(BoldOffline)' == 'true'" />
+    <Compile Include="../Bold.ObjectSpace.Tests/ObjectSpace/BORepresentation/ObjectSpaceSample.cs" Link="Support/ObjectSpaceSample.cs" />
+    <Compile Include="../Bold.ObjectSpace.Tests/Support/SystemFiller.cs" Link="Support/SystemFiller.cs" />
+    <Compile Include="../Bold.Propagation.Tests/Support/PropagatorSample.cs" Link="Support/PropagatorSample.cs" />
+    <Compile Include="../Bold.Propagation.Tests/Support/PropagationSample.cs" Link="Support/PropagationSample.cs" />
+  </ItemGroup>
+  <!-- Offline builds use the small native SQLite provider of the SQL tests; normal builds Microsoft.Data.Sqlite. -->
+  <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
+    <DefineConstants>$(DefineConstants);BOLD_OFFLINE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../../src/Bold.Propagation/Bold.Propagation.csproj" />
+    <ProjectReference Include="../../src/Bold.Propagator.Server/Bold.Propagator.Server.csproj" />
+    <ProjectReference Include="../../src/Bold.Remote.Client/Bold.Remote.Client.csproj" />
+    <ProjectReference Include="../../src/Bold.Remote.Server/Bold.Remote.Server.csproj" />
+    <ProjectReference Include="../../examples/Building/BuildingClasses/BuildingClasses.csproj" />
+  </ItemGroup>
+</Project>

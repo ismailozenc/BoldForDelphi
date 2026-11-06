@@ -125,6 +125,37 @@ For pessimistic locking, give the model region definitions and add a `TBoldLocki
 and `TBoldInProcessLockManagerHandle` reach a server in the same process, as the tests do. Without a server,
 `TBoldUDPModificationBroadcaster` tells the other clients of changes by UDP broadcasts on the local network.
 
+## Remote persistence
+
+A client application can reach its database through a server instead of opening it itself, as Delphi Bold's SOAP
+persistence did. `Bold.Remote.Server` runs the persistence on ASP.NET Core: requests are posted to `/persistence` and
+run on the server's persistence handle, one at a time. Its `appsettings.json` names the model, the database and the
+SQL dialect, and with `"Propagator": true` the same host runs the propagator too (its hub at `/propagator`), with a
+snooper in front of the database so that every client hears of the changes the others save:
+
+```json
+"Bold": {
+  "Model": "Model.bld",
+  "Provider": "Microsoft.Data.SqlClient",
+  "ConnectionString": "Server=.;Database=Bold;Trusted_Connection=True;TrustServerCertificate=True",
+  "Engine": "dbeSQLServer",
+  "Propagator": true
+}
+```
+
+On the client, `TBoldHttpClientPersistenceHandle` takes the place of the database handle (the model must be the
+server's); put it under an ID adder with a listener, as in the multi-user section, for the client to hear of changes:
+
+```csharp
+var server = new TBoldHttpClientPersistenceHandle(components) { BoldModel = model, Url = "http://server:5000/persistence" };
+var propagator = new TBoldSignalRPropagatorHandle(components) { Url = "http://server:5000/propagator" };
+var events = new TBoldExternalObjectSpaceEventHandler(components) { BoldSystemHandle = system, PropagatorHandle = propagator };
+var listener = new TBoldListenerHandle(components) { PropagatorHandle = propagator, Dequeuer = events };
+system.PersistenceHandle = new TBoldIDAdderHandle(components) { NextPersistenceHandle = server, BoldListener = listener };
+```
+
+Another ASP.NET Core application can offer persistence too, with `app.MapBoldPersistence(handle, model)`.
+
 ## Where things came from
 
 Every ported element carries a `[Delphi(PortStatus.…)]` attribute, and every C# file starts with the Delphi file it ports. In the other direction, every Delphi unit has a comment on its `unit` line naming its C# file, and every `FOLDER_INFO.md` in `Source` lists where its units went. [PORTING.md](PORTING.md) explains the details.
