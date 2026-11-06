@@ -1,8 +1,8 @@
-<!-- A copy of the drop list (v16, 2026-10-30), which is also published as a page. Keep the two, and the plan, in step. -->
+<!-- A copy of the drop list (v17, 2026-11-06), which is also published as a page. Keep the two, and the plan, in step. -->
 
 # Bold for Delphi → C# port: Drop List
 
-Status: v16, 2026-10-30
+Status: v17, 2026-11-06
 Source: `ismailozenc/BoldForDelphi`, branch `master`, shallow clone at `/home/claude/ismailozenc/boldfordelphi`
 Line counts are `.pas` lines only. Test every entry marked **verify** with a repo-wide grep before deleting it from the port.
 
@@ -233,7 +233,7 @@ These are **not** drops. The behaviour is needed and gets a C# equivalent.
 | `BoldAwareGUI/FormGen` (`BoldAFP*`) | 2,482 | Automatic form generation from the model. | Generated WinForms forms. **Ported in M8** as in Delphi: the auto forms are built at run time from the element's type, and a form of one's own can be plugged in (`TBoldPlaceableAFP`). |
 | `Persistence/DB` (8 files) | 2,173 | `TDataSet`-based persistence base layer. | ADO.NET `DbDataAdapter` and `DbCommand`. **Ported in M5.** |
 | `Persistence/ADO` (5 files) | 1,228 | ADO persistence. | ADO.NET (SQL Server and other providers). **Ported in M5**, except `BoldPersistenceHandleADO` (O-5). |
-| `Persistence/HTTP` and `Common/HTTP` | ~620 | Persistence over HTTP. **Removed on `remove-soap`**, because the transport was SOAP over HTTP. | **Required, not built:** ASP.NET Core server and `HttpClient` transport. See DECIDE-1. |
+| `Persistence/HTTP` and `Common/HTTP` | ~620 | Persistence over HTTP. **Removed on `remove-soap`**, because the transport was SOAP over HTTP. | **Built (M10):** `Bold.Remote.Server` on ASP.NET Core and `TBoldHttpClientPersistenceHandle` on `HttpClient`, with master's XML persistence streaming. See DECIDE-1. |
 | `Common/SupportWin/BoldWinINet.pas` | 195 | WinINet HTTP calls. | `HttpClient`. |
 | `Common/MsXml` (use, not the TLB) | — | XML parsing for XMI. | `System.Xml` and `System.Xml.Linq`. |
 | `Common/Support` collections: `BoldIndex`, `BoldHashIndexes`, `BoldIndexableList`, `BoldNamedValueList`, `BoldStringList`, `BoldCollections`, `BoldContainers` | ~2,900 | Delphi-style indexed collections. Used in 19+ files. **Behaviour must be kept, not just the names.** | `Dictionary<,>`, `SortedDictionary<,>`, `List<T>`, `HashSet<T>`. |
@@ -256,7 +256,7 @@ These are **not** drops. The behaviour is needed and gets a C# equivalent.
 | `UMLModel/Editor` (10 files) | 4,714 | Model editor forms. | WinForms, same logic. |
 | `ObjectSpace/UtilsGUI/BoldOclPropEditor.pas` | 765 | OCL editor. | WinForms form. **Ported in M8**, with the type name selector and the run-time OCL debugger. |
 | `Propagator/Common` constants and interfaces | ~180 | Propagator interfaces. | C# interfaces. **Ported in M9.** |
-| **UML model creation (replaces Rose)** | — | Rose was the only way to create UML models back then, and Bold imported them from Rose. The port must let users create UML models, and import them. **Not built yet.** | Model editor in the port (`UMLModel/Editor`, WinForms) that saves to `.bld` (kept in `UMLModel/ModelLinks/Bld`). Import and export through XMI (kept in `UMLModel/ModelLinks/XMI`). Support XMI 2.x, which current tools write; the kept link is written for XMI 1.0. Eclipse Papyrus can create test models. |
+| **UML model creation (replaces Rose)** | — | Rose was the only way to create UML models back then, and Bold imported them from Rose. The port must let users create UML models, and import them. **Import built (M11); the editor is M12.** | Model editor in the port (`UMLModel/Editor`, WinForms) that saves to `.bld` (kept in `UMLModel/ModelLinks/Bld`). Import and export through XMI (kept in `UMLModel/ModelLinks/XMI`). Support XMI 2.x, which current tools write; the kept link is written for XMI 1.0. Eclipse Papyrus can create test models. |
 
 ---
 
@@ -264,7 +264,7 @@ These are **not** drops. The behaviour is needed and gets a C# equivalent.
 
 | ID | Question | My recommendation |
 |---|---|---|
-| DECIDE-1 | Which remote persistence transport? | **Decided: build an ASP.NET Core transport.** SOAP is dropped. The old HTTP transport was SOAP over HTTP, so it was removed with SOAP (`remove-soap`). The new transport is a REPLACE item in section 11 and is not built yet. Choose XML or JSON when it is built. |
+| DECIDE-1 | Which remote persistence transport? | **Decided: build an ASP.NET Core transport.** SOAP is dropped. The old HTTP transport was SOAP over HTTP, so it was removed with SOAP (`remove-soap`). The new transport is a REPLACE item in section 11. **Built in M10**, speaking master's XML streaming of the persistence operations. |
 | DECIDE-2 | Do we need the abstract client and server base classes (`Common/Connection`, `Common/ConnectionHandles`)? | **Decided: dropped** (`CSharpPortSource`, commit `9a1c8b1`). Only the COM layer used them. If propagation later needs a client registry, design it then. The COM-blocked Enterprise propagator server still refers to them until it is replaced. |
 | DECIDE-3 | Keep `ObjectSpace/IDE/AttributeWizard` as a C# scanner and generator (REPLACE), or drop the wizard entirely and rely on the code generator? | **Decided: A, replace.** Rebuild the scanner as a Roslyn source generator that reads attributes straight from the C# classes at build time. It is scoped after the core port runs. The model-based generator stays as is. |
 | DECIDE-4 | Do the `Samples/` apps stay as a reference copy outside the port? | **Decided: removed from the port** (`CSharpPortSource`, commit `5f44b47`). The reference copy stays on `master`. |
@@ -294,7 +294,7 @@ Confirm these before deleting from the port:
 - **ModelMaker integration (planned, not started).** The ModelMaker link was removed. When it's needed, rebuild it as a separate plugin on top of the XMI link, rather than restoring the old COM link. The old code is in git history before branch `remove-modelmaker-ecoiii`.
 - **Replacements for the COM-kept units are required, not built.** See the table in section 5. The HTTP client, the XML parsing, and the propagator interfaces are used by kept features, so they can't be removed until their replacements exist.
 - **Code generator COM templates.** `MoldModel/CodeGenerator` still has `.dfm` templates that emit COM code. Remove them with the COM object space.
-- **Replacement for Rose is required, not built.** Create UML models in the port (model editor), and import/export XMI 2.x. Until this is built, the port cannot create or import UML models. The UML data module's model came from Rose's `uml.mdl` (the removed Rose link component), so the editor needs its UML metamodel from another source, such as `.bld` or XMI.
+- **Replacement for Rose: import built, editor not yet.** M11 reads XMI 1.x (Rose's included) and XMI 2.x (Enterprise Architect, Papyrus) and writes XMI 1.0 and 2.1; `BoldUMLModelConverter` is ported again, converting the UML graph the links use (D6). Creating models in the port waits for the model editor (M12). The UML data module's model came from Rose's `uml.mdl` (the removed Rose link component), so the editor needs its UML metamodel from another source, such as `.bld` or XMI.
 - **Rose-specific XMI handling is kept.** `UMLModel/ModelLinks/XMI/BoldUMLXMIImporter.pas` reads the `RationalRose$` prefix that Rose writes into XMI. It's a parsing detail, not a Rose dependency, so it stays.
 - **`Doc/Documents/GettingStarted`** (`MainForm.pas`, `DataMod.pas`) uses `BoldUMLRose98Link`. It's a historical sample, left as is.
 - **Examples (removed).** The whole `examples/` folder is gone (`remove-examples`, `d8054f2`). Write our own examples once the main functionality runs. The html docs and the IB/BDE examples went with it. The first one is written (M8): `CSharp/examples/Building/BldOwn`, the Buildings and Owners application on WinForms and SQLite, from the master copy of the Delphi example. Their models live on as test data: the port tool copied every model on master (76 distinct from 77 sources, 22 of them in binary forms) into `CSharp/tests/Fixtures/Models` on the `CSharp` branch.
