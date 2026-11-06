@@ -1,12 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>The WinForms model editor.</Description>
+    <Description>The WinForms model editor: its forms, on the editor of Bold.ModelEditor.Core.</Description>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <!-- Lets this project compile on Linux and macOS as well. -->
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <OutputType>WinExe</OutputType>
   </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Bold.ModelEditor.Tests" />
+  </ItemGroup>
+  <!-- The bitmaps of the tree, the menus and the OCL validator plug-in, from the repository's Images. -->
+  <ItemGroup>
+    <EmbeddedResource Include="../../../Images/TUMLOCLValidator.bmp" LogicalName="Bold.PlugInImages.TUMLOCLValidator" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLModelRoot.bmp" LogicalName="Bold.EditorImages.Model" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLClasses.bmp" LogicalName="Bold.EditorImages.Package" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLClass.bmp" LogicalName="Bold.EditorImages.Class" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLAttribute2.bmp" LogicalName="Bold.EditorImages.Attribute" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLOperation.bmp" LogicalName="Bold.EditorImages.Operation" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLParameter.bmp" LogicalName="Bold.EditorImages.Parameter" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLAssociation.bmp" LogicalName="Bold.EditorImages.Association" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLAssociations.bmp" LogicalName="Bold.EditorImages.Associations" />
+    <EmbeddedResource Include="../../../Images/UMLBitmaps/SmallUMLAssociationEnd.bmp" LogicalName="Bold.EditorImages.AssociationEnd" />
+    <EmbeddedResource Include="../../../Images/SmallType.bmp" LogicalName="Bold.EditorImages.DataType" />
+    <EmbeddedResource Include="../../../Images/FolderOpen.bmp" LogicalName="Bold.EditorImages.Open" />
+    <EmbeddedResource Include="../../../Images/FileSave.bmp" LogicalName="Bold.EditorImages.Save" />
+    <EmbeddedResource Include="../../../Images/DoorOpen.bmp" LogicalName="Bold.EditorImages.Exit" />
+    <EmbeddedResource Include="../../../Images/Cut.bmp" LogicalName="Bold.EditorImages.Cut" />
+    <EmbeddedResource Include="../../../Images/Copy.bmp" LogicalName="Bold.EditorImages.Copy" />
+    <EmbeddedResource Include="../../../Images/Paste.bmp" LogicalName="Bold.EditorImages.Paste" />
+    <EmbeddedResource Include="../../../Images/Delete.bmp" LogicalName="Bold.EditorImages.Delete" />
+    <EmbeddedResource Include="../../../Images/BookOpen.bmp" LogicalName="Bold.EditorImages.Help" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
     <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
@@ -20,5 +45,6 @@
     <ProjectReference Include="../Bold.WinForms/Bold.WinForms.csproj" />
     <ProjectReference Include="../Bold.CodeGen/Bold.CodeGen.csproj" />
     <ProjectReference Include="../Bold.Xmi/Bold.Xmi.csproj" />
+    <ProjectReference Include="../Bold.ModelEditor.Core/Bold.ModelEditor.Core.csproj" />
   </ItemGroup>
 </Project>

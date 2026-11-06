@@ -23,5 +23,5 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldAppEventsRestorer](../../../CSharp/port/units/BoldAppEventsRestorer.md) | Bold.ModelEditor: Unassigned/UMLPlugins/BoldAppEventsRestorer.cs (not started) | M12 Model editor |
+| [BoldAppEventsRestorer](../../../CSharp/port/units/BoldAppEventsRestorer.md) | not ported: a plug-in that repaired Delphi's application events after a plug-in broke their multicaster; WinForms' application events are .NET events, with nothing to repair |  |
 <!-- END C# PORT -->

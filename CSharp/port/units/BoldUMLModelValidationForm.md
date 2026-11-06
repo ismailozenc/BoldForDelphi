@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Editor/BoldUMLModelValidationForm.pas`](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas) (224 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 25 symbols done, 0 verified |
+| Status | 🟢 ported: 25 of 25 symbols done, 0 verified |
 
-⚪ 25 not started
+🟢 23 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,38 +18,54 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUMLElementClickedEvent` | event type | [37](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L37) |  | ⚪ not started |  |
-| `TBoldValidationCallBack` | event type | [38](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L38) |  | ⚪ not started |  |
-| `TfrmValidation` | class | [40](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L40) |  | ⚪ not started |  |
-| `EnsureValidationForm` | routine | [86](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L86) · [body 106](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L106) |  | ⚪ not started |  |
-| `G_ValidationFormDefaultOwner` | var | [89](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L89) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [223](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L223) |  | ⚪ not started |  |
+| `TBoldUMLElementClickedEvent` | event type | [37](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L37) | [`TBoldUMLElementClickedEvent`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L15) | 🟢 ported |  |
+| `TBoldValidationCallBack` | event type | [38](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L38) | [`TBoldValidationCallBack`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L19) | 🟢 ported |  |
+| `TfrmValidation` | class | [40](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L40) | [`TfrmValidation`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L23) | 🟢 ported: Built in code; a grid of the UML graph's violations, shown again when the model is validated. |  |
+| `EnsureValidationForm` | routine | [86](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L86) · [body 106](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L106) | [`TfrmValidation.EnsureValidationForm`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L115) | 🟢 ported | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+| `G_ValidationFormDefaultOwner` | var | [89](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L89) | [`TfrmValidation.G_ValidationFormDefaultOwner`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L30) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [223](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L223) | [`[assembly: Delphi] in BoldUMLModelValidationForm.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L9) | 🔵 replaced: The section is empty. |  |
 
 ## TfrmValidation
 
-class at [line 40](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L40); ⚪ not started.
+class at [line 40](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L40); 🟢 ported, C# [`TfrmValidation`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L23).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `BoldGrid1DblClick` | method | [56](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L56) · [body 120](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L120) |  | ⚪ not started |  |
-| `FormClose` | method | [57](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L57) · [body 126](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L126) |  | ⚪ not started |  |
-| `FormKeyDown` | method | [58](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L58) · [body 132](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L132) |  | ⚪ not started |  |
-| `btStayOnTopClick` | method | [60](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L60) · [body 138](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L138) |  | ⚪ not started |  |
-| `btReCheckClick` | method | [61](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L61) · [body 146](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L146) |  | ⚪ not started |  |
-| `mnuCopyLogtoClipBoardClick` | method | [62](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L62) · [body 173](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L173) |  | ⚪ not started |  |
-| `Cut1Click` | method | [63](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L63) · [body 183](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L183) |  | ⚪ not started |  |
-| `Copy1Click` | method | [64](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L64) · [body 189](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L189) |  | ⚪ not started |  |
-| `Paste1Click` | method | [65](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L65) · [body 195](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L195) |  | ⚪ not started |  |
-| `BoldPlaceableSubscriber1Receive` | method | [66](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L66) · [body 208](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L208) |  | ⚪ not started |  |
-| `GetUMLModel` | method, private | [73](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L73) · [body 178](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L178) |  | ⚪ not started |  |
-| `Notification` | method, protected | [75](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L75) · [body 216](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L216) |  | ⚪ not started |  |
-| `CreateWithModel` | constructor | [77](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L77) · [body 162](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L162) |  | ⚪ not started |  |
-| `Destroy` | destructor | [78](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L78) · [body 201](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L201) |  | ⚪ not started |  |
-| `Validate` | method | [79](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L79) · [body 151](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L151) |  | ⚪ not started |  |
-| `UMLModel` | property | [80](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L80) |  | ⚪ not started |  |
-| `ModelComponent` | property | [81](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L81) |  | ⚪ not started |  |
-| `OnElementClick` | property | [82](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L82) |  | ⚪ not started |  |
-| `ValidationProc` | property | [83](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L83) |  | ⚪ not started |  |
+| `BoldGrid1DblClick` | method | [56](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L56) · [body 120](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L120) | [`TfrmValidation.BoldGrid1DblClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L162) | 🟢 ported | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+| `FormClose` | method | [57](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L57) · [body 126](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L126) | [`TfrmValidation.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L172) | 🟢 ported | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+| `FormKeyDown` | method | [58](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L58) · [body 132](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L132) | [`TfrmValidation.FormKeyDown`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L182) | 🟢 ported |  |
+| `btStayOnTopClick` | method | [60](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L60) · [body 138](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L138) | [`TfrmValidation.btStayOnTopClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L191) | 🟢 ported |  |
+| `btReCheckClick` | method | [61](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L61) · [body 146](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L146) | [`TfrmValidation.btReCheckClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L194) | 🟢 ported |  |
+| `mnuCopyLogtoClipBoardClick` | method | [62](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L62) · [body 173](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L173) | [`TfrmValidation.mnuCopyLogtoClipBoardClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L214) | 🟢 ported |  |
+| `Cut1Click` | method | [63](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L63) · [body 183](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L183) | [`TfrmValidation.Cut1Click`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L218) | 🟢 ported |  |
+| `Copy1Click` | method | [64](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L64) · [body 189](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L189) | [`TfrmValidation.Copy1Click`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L221) | 🟢 ported |  |
+| `Paste1Click` | method | [65](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L65) · [body 195](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L195) | [`TfrmValidation.Paste1Click`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L234) | 🟢 ported |  |
+| `BoldPlaceableSubscriber1Receive` | method | [66](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L66) · [body 208](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L208) | [`TfrmValidation.BoldPlaceableSubscriber1Receive`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L238) | 🟢 ported: Hears the UML graph's ModelValidated event. | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+| `GetUMLModel` | method, private | [73](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L73) · [body 178](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L178) | [`TfrmValidation.GetUMLModel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L111) | 🟢 ported |  |
+| `Notification` | method, protected | [75](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L75) · [body 216](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L216) | [`[assembly: Delphi] in BoldUMLModelValidationForm.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L8) | 🔵 replaced: The form hears the model component's Disposed event. |  |
+| `CreateWithModel` | constructor | [77](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L77) · [body 162](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L162) | [`TfrmValidation.TfrmValidation`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L47) | 🟢 ported: WinForms forms have no owner component; Owner, if a form, owns this one. | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+| `Destroy` | destructor | [78](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L78) · [body 201](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L201) | [`TfrmValidation.Dispose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L255) | 🟢 ported |  |
+| `Validate` | method | [79](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L79) · [body 151](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L151) | [`TfrmValidation.Validate`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L198) | 🟢 ported | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+| `UMLModel` | property | [80](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L80) | [`TfrmValidation.UMLModel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L101) | 🟢 ported |  |
+| `ModelComponent` | property | [81](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L81) | [`TfrmValidation.ModelComponent`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L98) | 🟢 ported |  |
+| `OnElementClick` | property | [82](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L82) | [`TfrmValidation.OnElementClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L104) | 🟢 ported | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+| `ValidationProc` | property | [83](../../../Source/UMLModel/Editor/BoldUMLModelValidationForm.pas#L83) | [`TfrmValidation.ValidationProc`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L108) | 🟢 ported | [`BoldUMLModelValidationFormTests.The_validation_form_lists_the_violations_and_shows_their_elements`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelValidationFormTests.cs#L17) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmValidation.BoldGrid1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L32) (field)
+- [`TfrmValidation.StatusBar1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L33) (field)
+- [`TfrmValidation.ToolBar1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L34) (field)
+- [`TfrmValidation.btReCheck`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L35) (field)
+- [`TfrmValidation.btStayOnTop`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L36) (field)
+- [`TfrmValidation.PopupMenu1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L37) (field)
+- [`TfrmValidation.mnuCopyLogtoClipBoard`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L38) (field)
+- [`TfrmValidation.Copy1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L39) (field)
+- [`TfrmValidation.Cut1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L40) (field)
+- [`TfrmValidation.Paste1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L41) (field)
+- [`TfrmValidation.Violations`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs#L137) (property)
 
 ## Dependencies
 

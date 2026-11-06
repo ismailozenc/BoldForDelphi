@@ -1,4 +1,4 @@
-unit BoldAppEventsRestorer; { C# port: CSharp/src/Bold.ModelEditor/Unassigned/UMLPlugins/BoldAppEventsRestorer.cs; symbols and status: CSharp/port/units/BoldAppEventsRestorer.md }
+unit BoldAppEventsRestorer; { C# port: not ported (a plug-in that repaired Delphi's application events after a plug-in broke their multicaster; WinForms' application events are .NET events, with nothing to repair); see CSharp/port/units/BoldAppEventsRestorer.md }
 
 interface
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Editor/BoldUMLAddTV.pas`](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas) (69 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 5 symbols done, 0 verified |
+| Status | 🟢 ported: 5 of 5 symbols done, 0 verified |
 
-⚪ 5 not started
+🟢 4 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,18 +18,35 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TfrmBoldUMLAddTV` | class | [10](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L10) |  | ⚪ not started |  |
-| `ShowAddTVDialog` | routine | [26](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L26) · [body 36](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L36) |  | ⚪ not started |  |
-| `frmBoldUMLAddTV` | var | [29](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L29) |  | ⚪ not started |  |
+| `TfrmBoldUMLAddTV` | class | [10](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L10) | [`TfrmBoldUMLAddTV`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L13) | 🟢 ported: Built in code where Delphi's form came from its .dfm. |  |
+| `ShowAddTVDialog` | routine | [26](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L26) · [body 36](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L36) | [`TfrmBoldUMLAddTV.ShowAddTVDialog`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L73) | 🟢 ported | [`BoldUMLAddTVTests.The_add_dialog_gives_the_element_a_tagged_value`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLAddTVTests.cs#L14) |
+| `frmBoldUMLAddTV` | var | [29](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L29) | [`[assembly: Delphi] in BoldUMLAddTV.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L7) | 🔵 replaced: The form variable of Delphi's auto-created form; ShowAddTVDialog makes the form it shows. |  |
 
 ## TfrmBoldUMLAddTV
 
-class at [line 10](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L10); ⚪ not started.
+class at [line 10](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L10); 🟢 ported, C# [`TfrmBoldUMLAddTV`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FormClose` | method | [20](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L20) · [body 55](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L55) |  | ⚪ not started |  |
-| `FormShow` | method | [21](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L21) · [body 64](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L64) |  | ⚪ not started |  |
+| `FormClose` | method | [20](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L20) · [body 55](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L55) | [`TfrmBoldUMLAddTV.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L55) | 🟢 ported: Keeps what was typed in Result, where Delphi kept it in unit variables. | [`BoldUMLAddTVTests.The_add_dialog_gives_the_element_a_tagged_value`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLAddTVTests.cs#L14) |
+| `FormShow` | method | [21](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L21) · [body 64](../../../Source/UMLModel/Editor/BoldUMLAddTV.pas#L64) | [`TfrmBoldUMLAddTV.FormShow`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L58) | 🟢 ported | [`BoldUMLAddTVTests.The_add_dialog_gives_the_element_a_tagged_value`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLAddTVTests.cs#L14) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmBoldUMLAddTV.GroupBox1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L15) (field)
+- [`TfrmBoldUMLAddTV.Label1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L16) (field)
+- [`TfrmBoldUMLAddTV.Label2`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L17) (field)
+- [`TfrmBoldUMLAddTV.Label3`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L18) (field)
+- [`TfrmBoldUMLAddTV.edTool`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L19) (field)
+- [`TfrmBoldUMLAddTV.edValue`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L20) (field)
+- [`TfrmBoldUMLAddTV.edName`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L21) (field)
+- [`TfrmBoldUMLAddTV.btOK`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L22) (field)
+- [`TfrmBoldUMLAddTV.btCancel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L23) (field)
+- [`TfrmBoldUMLAddTV.TfrmBoldUMLAddTV`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L25) (constructor)
+- [`TfrmBoldUMLAddTV.Result`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L52) (property)
+- [`TfrmBoldUMLAddTV.TagOf`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs#L61) (method)
 
 ## Dependencies
 

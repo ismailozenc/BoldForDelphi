@@ -40,14 +40,14 @@ Where the units of this folder go in the C# port. Each unit page lists the unit'
 
 | Unit | C# | Milestone |
 |---|---|---|
-| [BoldDerivationExpressionsEditor](../../../CSharp/port/units/BoldDerivationExpressionsEditor.md) | Bold.ModelEditor: UMLModel/Editor/BoldDerivationExpressionsEditor.cs (not started) | M12 Model editor |
+| [BoldDerivationExpressionsEditor](../../../CSharp/port/units/BoldDerivationExpressionsEditor.md) | [Bold.ModelEditor: UMLModel/Editor/BoldDerivationExpressionsEditor.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs) | M12 Model editor |
 | [BoldDragObject](../../../CSharp/port/units/BoldDragObject.md) | not ported: IDE: dropping model elements on a form being designed in Delphi's IDE made Bold-aware controls; the editor's tree drags with WinForms' drag and drop |  |
-| [BoldUMLAddTV](../../../CSharp/port/units/BoldUMLAddTV.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLAddTV.cs (not started) | M12 Model editor |
-| [BoldUMLConstraintEditor](../../../CSharp/port/units/BoldUMLConstraintEditor.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLConstraintEditor.cs (not started) | M12 Model editor |
-| [BoldUMLModelEdit](../../../CSharp/port/units/BoldUMLModelEdit.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLModelEdit.cs (not started) | M12 Model editor |
-| [BoldUMLModelEditForm](../../../CSharp/port/units/BoldUMLModelEditForm.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLModelEditForm.cs (not started) | M12 Model editor |
-| [BoldUMLModelValidationForm](../../../CSharp/port/units/BoldUMLModelValidationForm.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLModelValidationForm.cs (not started) | M12 Model editor |
-| [BoldUMLOCLEditor](../../../CSharp/port/units/BoldUMLOCLEditor.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLOCLEditor.cs (not started) | M12 Model editor |
-| [BoldUMLTaggedValuesEditor](../../../CSharp/port/units/BoldUMLTaggedValuesEditor.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLTaggedValuesEditor.cs (not started) | M12 Model editor |
-| [BoldUMLUsesEditorForm](../../../CSharp/port/units/BoldUMLUsesEditorForm.md) | Bold.ModelEditor: UMLModel/Editor/BoldUMLUsesEditorForm.cs (not started) | M12 Model editor |
+| [BoldUMLAddTV](../../../CSharp/port/units/BoldUMLAddTV.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLAddTV.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLAddTV.cs) | M12 Model editor |
+| [BoldUMLConstraintEditor](../../../CSharp/port/units/BoldUMLConstraintEditor.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLConstraintEditor.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs) | M12 Model editor |
+| [BoldUMLModelEdit](../../../CSharp/port/units/BoldUMLModelEdit.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLModelEdit.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs) | M12 Model editor |
+| [BoldUMLModelEditForm](../../../CSharp/port/units/BoldUMLModelEditForm.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLModelEditForm.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEditForm.cs) | M12 Model editor |
+| [BoldUMLModelValidationForm](../../../CSharp/port/units/BoldUMLModelValidationForm.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLModelValidationForm.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelValidationForm.cs) | M12 Model editor |
+| [BoldUMLOCLEditor](../../../CSharp/port/units/BoldUMLOCLEditor.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLOCLEditor.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs) | M12 Model editor |
+| [BoldUMLTaggedValuesEditor](../../../CSharp/port/units/BoldUMLTaggedValuesEditor.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLTaggedValuesEditor.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs) | M12 Model editor |
+| [BoldUMLUsesEditorForm](../../../CSharp/port/units/BoldUMLUsesEditorForm.md) | [Bold.ModelEditor: UMLModel/Editor/BoldUMLUsesEditorForm.cs](../../../CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs) | M12 Model editor |
 <!-- END C# PORT -->

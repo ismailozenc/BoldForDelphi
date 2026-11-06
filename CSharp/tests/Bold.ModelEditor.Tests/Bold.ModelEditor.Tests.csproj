@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of Bold.ModelEditor: the WinForms model editor's forms on the Buildings and Owners model, shown off the screen during the test (Windows only; the CI runs them), and the editor program. Test files mirror the Delphi paths.</Description>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- Lets this project compile on Linux and macOS as well (its tests run on Windows). -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Bold.ModelEditor.Core.Tests/Support/EditorSamples.cs" Link="Support/EditorSamples.cs" />
+    <Compile Include="../Bold.WinForms.Tests/Support/WinFormsSetup.cs" Link="Support/WinFormsSetup.cs" />
+    <Compile Include="../Bold.WinForms.Tests/Support/Modal.cs" Link="Support/Modal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../../src/Bold.WinForms/Bold.WinForms.csproj" />
+    <ProjectReference Include="../../src/Bold.CodeGen/Bold.CodeGen.csproj" />
+    <ProjectReference Include="../../src/Bold.Xmi/Bold.Xmi.csproj" />
+    <ProjectReference Include="../../src/Bold.ModelEditor.Core/Bold.ModelEditor.Core.csproj" />
+    <!-- The editor program, whose forms the tests show. -->
+    <ProjectReference Include="../../src/Bold.ModelEditor/Bold.ModelEditor.csproj" />
+  </ItemGroup>
+</Project>

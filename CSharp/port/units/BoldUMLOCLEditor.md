@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Editor/BoldUMLOCLEditor.pas`](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas) (98 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 8 symbols done, 0 verified |
+| Status | 🟢 ported: 8 of 8 symbols done, 0 verified |
 
-⚪ 8 not started
+🟢 6 ported · 🔵 2 replaced
 
 ## Unit level
 
@@ -18,21 +18,27 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUMLOclEditor` | class | [15](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L15) |  | ⚪ not started |  |
-| `BoldUMLOclEditor_` | routine | [25](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L25) · [body 39](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L39) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [94](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L94) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [96](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L96) |  | ⚪ not started |  |
+| `TBoldUMLOclEditor` | class | [15](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L15) | [`TBoldUMLOclEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L13) | 🟢 ported |  |
+| `BoldUMLOclEditor_` | routine | [25](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L25) · [body 39](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L39) | [`TBoldUMLOclEditor.BoldUMLOclEditor_`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L67) | 🟢 ported | [`BoldUMLOCLEditorTests.An_expression_is_on_its_class_or_on_the_type_of_its_attribute`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLOCLEditorTests.cs#L15) |
+| `initialization` | initialization, implementation | [94](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L94) | [`[assembly: Delphi] in BoldUMLOCLEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L7) | 🔵 replaced: The section is empty. |  |
+| `finalization` | finalization, implementation | [96](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L96) | [`[assembly: Delphi] in BoldUMLOCLEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L6) | 🔵 replaced: The editor and its type info handle go with the process. |  |
 
 ## TBoldUMLOclEditor
 
-class at [line 15](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L15); 🟢 ported, C# [`TBoldUMLOclEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [19](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L19) · [body 48](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L48) |  | ⚪ not started |  |
-| `Destroy` | destructor | [20](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L20) · [body 55](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L55) |  | ⚪ not started |  |
-| `EditOcl` | method | [21](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L21) · [body 66](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L66) |  | ⚪ not started |  |
-| `DiscardRuntimeModel` | method | [22](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L22) · [body 61](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L61) |  | ⚪ not started |  |
+| `Create` | constructor | [19](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L19) · [body 48](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L48) | [`TBoldUMLOclEditor.TBoldUMLOclEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L19) | 🟢 ported | [`BoldUMLOCLEditorTests.An_expression_is_on_its_class_or_on_the_type_of_its_attribute`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLOCLEditorTests.cs#L15) |
+| `Destroy` | destructor | [20](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L20) · [body 55](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L55) | [`TBoldUMLOclEditor.Dispose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L25) | 🟢 ported |  |
+| `EditOcl` | method | [21](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L21) · [body 66](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L66) | [`TBoldUMLOclEditor.EditOcl`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L53) | 🟢 ported | [`BoldUMLModelEditFormTests.The_OCL_editor_edits_an_expression_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditFormTests.cs#L285) |
+| `DiscardRuntimeModel` | method | [22](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L22) · [body 61](../../../Source/UMLModel/Editor/BoldUMLOCLEditor.pas#L61) | [`TBoldUMLOclEditor.DiscardRuntimeModel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L62) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldUMLOclEditor.ContextType`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLOCLEditor.cs#L32) (method)
 
 ## Dependencies
 

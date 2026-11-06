@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas`](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas) (343 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 26 symbols done, 0 verified |
+| Status | 🟢 ported: 26 of 26 symbols done, 0 verified |
 
-⚪ 26 not started
+🟢 21 ported · 🔵 5 replaced
 
 ## Unit level
 
@@ -18,39 +18,61 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `WM_REFRESHGUI` | const | [37](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L37) |  | ⚪ not started |  |
-| `TfrmBoldUMLTaggedValuesEditor` | class | [41](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L41) |  | ⚪ not started |  |
-| `ShowTaggedValuesEditor` | routine | [98](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L98) · [body 111](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L111) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [341](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L341) |  | ⚪ not started |  |
+| `WM_REFRESHGUI` | const | [37](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L37) | [`[assembly: Delphi] in BoldUMLTaggedValuesEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L12) | 🔵 replaced: The message that showed the editor again after a change; the editor posts the refresh with BeginInvoke. |  |
+| `TfrmBoldUMLTaggedValuesEditor` | class | [41](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L41) | [`TfrmBoldUMLTaggedValuesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L21) | 🟢 ported: Built in code; follows the editor's element, as Delphi's followed its handle. |  |
+| `ShowTaggedValuesEditor` | routine | [98](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L98) · [body 111](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L111) | [`TfrmBoldUMLTaggedValuesEditor.ShowTaggedValuesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L321) | 🟢 ported: Shows the element's tagged values, which Delphi's did not set. | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `initialization` | initialization, implementation | [341](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L341) | [`[assembly: Delphi] in BoldUMLTaggedValuesEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L11) | 🔵 replaced: The section is empty. |  |
 
 ## TfrmBoldUMLTaggedValuesEditor
 
-class at [line 41](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L41); ⚪ not started.
+class at [line 41](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L41); 🟢 ported, C# [`TfrmBoldUMLTaggedValuesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L21).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FormClose` | method | [62](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L62) · [body 116](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L116) |  | ⚪ not started |  |
-| `bdhAllToolsDeriveAndSubscribe` | method | [63](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L63) · [body 144](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L144) |  | ⚪ not started |  |
-| `GetStringListType` | method | [66](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L66) · [body 174](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L174) |  | ⚪ not started |  |
-| `bdhSelectedTVsDeriveAndSubscribe` | method | [67](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L67) · [body 184](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L184) |  | ⚪ not started |  |
-| `tcToolsChange` | method | [70](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L70) · [body 228](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L228) |  | ⚪ not started |  |
-| `BoldAsStringRenderer1GetAsString` | method | [71](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L71) · [body 233](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L233) |  | ⚪ not started |  |
-| `BoldAsStringRenderer1Subscribe` | method | [73](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L73) · [body 244](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L244) |  | ⚪ not started |  |
-| `FormCreate` | method | [76](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L76) · [body 273](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L273) |  | ⚪ not started |  |
-| `btAddTVClick` | method | [77](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L77) · [body 279](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L279) |  | ⚪ not started |  |
-| `btDeleteTVClick` | method | [78](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L78) · [body 285](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L285) |  | ⚪ not started |  |
-| `Copy1Click` | method | [79](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L79) · [body 320](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L320) |  | ⚪ not started |  |
-| `Cut1Click` | method | [80](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L80) · [body 331](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L331) |  | ⚪ not started |  |
-| `Paste1Click` | method | [81](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L81) · [body 336](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L336) |  | ⚪ not started |  |
-| `RecieveRootChanged` | method, private | [85](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L85) · [body 262](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L262) |  | ⚪ not started |  |
-| `GetToolName` | method, private | [87](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L87) · [body 122](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L122) |  | ⚪ not started |  |
-| `CreateTabs` | method, private | [88](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L88) · [body 208](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L208) |  | ⚪ not started |  |
-| `GetTagName` | method, private | [89](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L89) · [body 133](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L133) |  | ⚪ not started |  |
-| `PlaceSubscriptions` | method, private | [90](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L90) · [body 251](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L251) |  | ⚪ not started |  |
-| `RefreshGUI` | method, private | [91](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L91) · [body 291](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L291) |  | ⚪ not started |  |
-| `DoMessage` | method, private | [92](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L92) · [body 325](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L325) |  | ⚪ not started |  |
-| `Destroy` | destructor | [94](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L94) · [body 314](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L314) |  | ⚪ not started |  |
-| `SwitchMode` | method | [95](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L95) · [body 298](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L298) |  | ⚪ not started |  |
+| `FormClose` | method | [62](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L62) · [body 116](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L116) | [`TfrmBoldUMLTaggedValuesEditor.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L138) | 🟢 ported |  |
+| `bdhAllToolsDeriveAndSubscribe` | method | [63](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L63) · [body 144](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L144) | [`TfrmBoldUMLTaggedValuesEditor.bdhAllToolsDeriveAndSubscribe`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L111) | 🟢 ported: Gives the tools; there is nothing to subscribe to. | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `GetStringListType` | method | [66](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L66) · [body 174](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L174) | [`[assembly: Delphi] in BoldUMLTaggedValuesEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L8) | 🔵 replaced: Typed the derived list of tools in Bold's object space; the tools are a list of strings. |  |
+| `bdhSelectedTVsDeriveAndSubscribe` | method | [67](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L67) · [body 184](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L184) | [`TfrmBoldUMLTaggedValuesEditor.bdhSelectedTVsDeriveAndSubscribe`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L128) | 🟢 ported: Gives the tagged values, ordered by tag as Delphi's list handle ordered them. | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `tcToolsChange` | method | [70](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L70) · [body 228](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L228) | [`TfrmBoldUMLTaggedValuesEditor.tcToolsChange`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L166) | 🟢 ported | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `BoldAsStringRenderer1GetAsString` | method | [71](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L71) · [body 233](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L233) | [`TfrmBoldUMLTaggedValuesEditor.BoldAsStringRenderer1GetAsString`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L189) | 🟢 ported | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `BoldAsStringRenderer1Subscribe` | method | [73](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L73) · [body 244](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L244) | [`[assembly: Delphi] in BoldUMLTaggedValuesEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L9) | 🔵 replaced: The UML graph tells the editor of every change. |  |
+| `FormCreate` | method | [76](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L76) · [body 273](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L273) | [`TfrmBoldUMLTaggedValuesEditor.FormCreate`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L269) | 🟢 ported |  |
+| `btAddTVClick` | method | [77](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L77) · [body 279](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L279) | [`TfrmBoldUMLTaggedValuesEditor.btAddTVClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L277) | 🟢 ported: Asks with the add dialog and shows the new value. | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `btDeleteTVClick` | method | [78](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L78) · [body 285](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L285) | [`TfrmBoldUMLTaggedValuesEditor.btDeleteTVClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L290) | 🟢 ported | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `Copy1Click` | method | [79](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L79) · [body 320](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L320) | [`TfrmBoldUMLTaggedValuesEditor.Copy1Click`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L311) | 🟢 ported |  |
+| `Cut1Click` | method | [80](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L80) · [body 331](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L331) | [`TfrmBoldUMLTaggedValuesEditor.Cut1Click`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L314) | 🟢 ported |  |
+| `Paste1Click` | method | [81](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L81) · [body 336](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L336) | [`TfrmBoldUMLTaggedValuesEditor.Paste1Click`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L317) | 🟢 ported |  |
+| `RecieveRootChanged` | method, private | [85](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L85) · [body 262](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L262) | [`TfrmBoldUMLTaggedValuesEditor.RecieveRootChanged`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L228) | 🟢 ported |  |
+| `GetToolName` | method, private | [87](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L87) · [body 122](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L122) | [`TfrmBoldUMLTaggedValuesEditor.GetToolName`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L95) | 🟢 ported | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `CreateTabs` | method, private | [88](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L88) · [body 208](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L208) | [`TfrmBoldUMLTaggedValuesEditor.CreateTabs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L141) | 🟢 ported | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `GetTagName` | method, private | [89](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L89) · [body 133](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L133) | [`TfrmBoldUMLTaggedValuesEditor.GetTagName`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L103) | 🟢 ported | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `PlaceSubscriptions` | method, private | [90](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L90) · [body 251](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L251) | [`TfrmBoldUMLTaggedValuesEditor.PlaceSubscriptions`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L207) | 🟢 ported: Follows the model editor's element and the model's changes. |  |
+| `RefreshGUI` | method, private | [91](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L91) · [body 291](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L291) | [`TfrmBoldUMLTaggedValuesEditor.RefreshGUI`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L257) | 🟢 ported: Runs from BeginInvoke where Delphi posted WM\_REFRESHGUI. | [`BoldUMLTaggedValuesEditorTests.The_tagged_values_editor_shows_a_tab_for_each_tool`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLTaggedValuesEditorTests.cs#L18) |
+| `DoMessage` | method, private | [92](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L92) · [body 325](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L325) | [`[assembly: Delphi] in BoldUMLTaggedValuesEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L10) | 🔵 replaced: Cut, copy and paste call the text box's methods, where Delphi sent Windows messages. |  |
+| `Destroy` | destructor | [94](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L94) · [body 314](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L314) | [`TfrmBoldUMLTaggedValuesEditor.Dispose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L330) | 🟢 ported |  |
+| `SwitchMode` | method | [95](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L95) · [body 298](../../../Source/UMLModel/Editor/BoldUMLTaggedValuesEditor.pas#L298) | [`TfrmBoldUMLTaggedValuesEditor.SwitchMode`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L302) | 🟢 ported |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmBoldUMLTaggedValuesEditor.Panel1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L23) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.tcTools`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L24) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.lbTagName`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L25) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.Splitter1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L26) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.bmValue`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L27) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.MainMenu1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L28) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.Edit1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L29) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.Copy1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L30) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.Cut1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L31) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.Paste1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L32) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.mnuTools`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L33) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.Addtaggedvalue1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L34) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.Deletetaggedvalue1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L35) (field)
+- [`TfrmBoldUMLTaggedValuesEditor.TfrmBoldUMLTaggedValuesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L42) (constructor)
+- [`TfrmBoldUMLTaggedValuesEditor.Root`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L80) (property)
+- [`TfrmBoldUMLTaggedValuesEditor.SelectedTVs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L132) (property)
+- [`TfrmBoldUMLTaggedValuesEditor.CurrentTV`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLTaggedValuesEditor.cs#L135) (property)
 
 ## Dependencies
 

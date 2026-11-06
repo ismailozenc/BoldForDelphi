@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Editor/BoldUMLConstraintEditor.pas`](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas) (151 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🟢 ported: 12 of 12 symbols done, 0 verified |
 
-⚪ 12 not started
+🟢 11 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,25 +18,41 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TfrmBoldUMLConstraintEditor` | class | [29](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L29) |  | ⚪ not started |  |
-| `ShowTheConstraintEditor` | routine | [53](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L53) · [body 70](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L70) |  | ⚪ not started |  |
-| `EnsureFreeConstraintEditor` | routine | [54](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L54) · [body 78](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L78) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [149](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L149) |  | ⚪ not started |  |
+| `TfrmBoldUMLConstraintEditor` | class | [29](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L29) | [`TfrmBoldUMLConstraintEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L13) | 🟢 ported: Built in code; a grid of the element's constraints in the UML graph. |  |
+| `ShowTheConstraintEditor` | routine | [53](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L53) · [body 70](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L70) | [`TfrmBoldUMLConstraintEditor.ShowTheConstraintEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L69) | 🟢 ported | [`BoldUMLConstraintEditorTests.The_constraint_editor_adds_and_removes_constraints`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLConstraintEditorTests.cs#L15) |
+| `EnsureFreeConstraintEditor` | routine | [54](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L54) · [body 78](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L78) | [`TfrmBoldUMLConstraintEditor.EnsureFreeConstraintEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L86) | 🟢 ported | [`BoldUMLConstraintEditorTests.The_constraint_editor_adds_and_removes_constraints`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLConstraintEditorTests.cs#L15) |
+| `initialization` | initialization, implementation | [149](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L149) | [`[assembly: Delphi] in BoldUMLConstraintEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L7) | 🔵 replaced: The section is empty. |  |
 
 ## TfrmBoldUMLConstraintEditor
 
-class at [line 29](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L29); ⚪ not started.
+class at [line 29](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L29); 🟢 ported, C# [`TfrmBoldUMLConstraintEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FormClose` | method | [42](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L42) · [body 83](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L83) |  | ⚪ not started |  |
-| `btAddClick` | method | [43](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L43) · [body 95](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L95) |  | ⚪ not started |  |
-| `btRemoveClick` | method | [44](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L44) · [body 111](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L111) |  | ⚪ not started |  |
-| `mnuCutClick` | method | [45](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L45) · [body 126](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L126) |  | ⚪ not started |  |
-| `mnuCopyClick` | method | [46](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L46) · [body 132](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L132) |  | ⚪ not started |  |
-| `mnuPasteClick` | method | [47](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L47) · [body 138](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L138) |  | ⚪ not started |  |
-| `FormDeactivate` | method | [48](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L48) · [body 144](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L144) |  | ⚪ not started |  |
-| `InitElements` | method, private | [50](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L50) · [body 89](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L89) |  | ⚪ not started |  |
+| `FormClose` | method | [42](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L42) · [body 83](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L83) | [`TfrmBoldUMLConstraintEditor.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L94) | 🟢 ported | [`BoldUMLConstraintEditorTests.The_constraint_editor_adds_and_removes_constraints`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLConstraintEditorTests.cs#L15) |
+| `btAddClick` | method | [43](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L43) · [body 95](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L95) | [`TfrmBoldUMLConstraintEditor.btAddClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L149) | 🟢 ported | [`BoldUMLConstraintEditorTests.The_constraint_editor_adds_and_removes_constraints`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLConstraintEditorTests.cs#L15) |
+| `btRemoveClick` | method | [44](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L44) · [body 111](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L111) | [`TfrmBoldUMLConstraintEditor.btRemoveClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L166) | 🟢 ported | [`BoldUMLConstraintEditorTests.The_constraint_editor_adds_and_removes_constraints`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLConstraintEditorTests.cs#L15) |
+| `mnuCutClick` | method | [45](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L45) · [body 126](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L126) | [`TfrmBoldUMLConstraintEditor.mnuCutClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L176) | 🟢 ported |  |
+| `mnuCopyClick` | method | [46](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L46) · [body 132](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L132) | [`TfrmBoldUMLConstraintEditor.mnuCopyClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L179) | 🟢 ported |  |
+| `mnuPasteClick` | method | [47](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L47) · [body 138](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L138) | [`TfrmBoldUMLConstraintEditor.mnuPasteClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L192) | 🟢 ported |  |
+| `FormDeactivate` | method | [48](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L48) · [body 144](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L144) | [`TfrmBoldUMLConstraintEditor.FormDeactivate`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L196) | 🟢 ported |  |
+| `InitElements` | method, private | [50](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L50) · [body 89](../../../Source/UMLModel/Editor/BoldUMLConstraintEditor.pas#L89) | [`TfrmBoldUMLConstraintEditor.InitElements`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L104) | 🟢 ported | [`BoldUMLConstraintEditorTests.The_constraint_editor_adds_and_removes_constraints`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLConstraintEditorTests.cs#L15) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmBoldUMLConstraintEditor.ToolBar1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L17) (field)
+- [`TfrmBoldUMLConstraintEditor.btAdd`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L18) (field)
+- [`TfrmBoldUMLConstraintEditor.btRemove`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L19) (field)
+- [`TfrmBoldUMLConstraintEditor.BoldGrid1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L20) (field)
+- [`TfrmBoldUMLConstraintEditor.PopupMenu2`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L21) (field)
+- [`TfrmBoldUMLConstraintEditor.mnuCut`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L22) (field)
+- [`TfrmBoldUMLConstraintEditor.mnuCopy`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L23) (field)
+- [`TfrmBoldUMLConstraintEditor.mnuPaste`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L24) (field)
+- [`TfrmBoldUMLConstraintEditor.TfrmBoldUMLConstraintEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L28) (constructor)
+- [`TfrmBoldUMLConstraintEditor.CurrentElement`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L62) (property)
+- [`TfrmBoldUMLConstraintEditor.Constraints`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLConstraintEditor.cs#L65) (property)
 
 ## Dependencies
 

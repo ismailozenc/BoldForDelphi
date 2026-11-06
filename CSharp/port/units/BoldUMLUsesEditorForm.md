@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas`](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas) (107 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | 🟢 ported: 9 of 9 symbols done, 0 verified |
 
-⚪ 9 not started
+🟢 8 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,22 +18,38 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TfrmUsesEditor` | class | [23](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L23) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [105](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L105) |  | ⚪ not started |  |
+| `TfrmUsesEditor` | class | [23](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L23) | [`TfrmUsesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L13) | 🟢 ported: Built in code; the memo edits a tagged value of the element, where Delphi's showed an expression of it. |  |
+| `initialization` | initialization, implementation | [105](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L105) | [`[assembly: Delphi] in BoldUMLUsesEditorForm.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L7) | 🔵 replaced: The section is empty. |  |
 
 ## TfrmUsesEditor
 
-class at [line 23](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L23); ⚪ not started.
+class at [line 23](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L23); 🟢 ported, C# [`TfrmUsesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `btnCancelClick` | method | [37](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L37) · [body 60](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L60) |  | ⚪ not started |  |
-| `FormClose` | method | [38](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L38) · [body 65](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L65) |  | ⚪ not started |  |
-| `btnOKClick` | method | [39](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L39) · [body 71](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L71) |  | ⚪ not started |  |
-| `mnuCutClick` | method | [40](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L40) · [body 87](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L87) |  | ⚪ not started |  |
-| `mnuCopyClick` | method | [41](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L41) · [body 93](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L93) |  | ⚪ not started |  |
-| `mnuPasteClick` | method | [42](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L42) · [body 99](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L99) |  | ⚪ not started |  |
-| `CreateEditorWithParams` | constructor | [47](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L47) · [body 77](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L77) |  | ⚪ not started |  |
+| `btnCancelClick` | method | [37](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L37) · [body 60](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L60) | [`TfrmUsesEditor.btnCancelClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L64) | 🟢 ported | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+| `FormClose` | method | [38](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L38) · [body 65](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L65) | [`TfrmUsesEditor.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L67) | 🟢 ported: WinForms frees a closed modeless form. | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+| `btnOKClick` | method | [39](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L39) · [body 71](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L71) | [`TfrmUsesEditor.btnOKClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L73) | 🟢 ported | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+| `mnuCutClick` | method | [40](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L40) · [body 87](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L87) | [`TfrmUsesEditor.mnuCutClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L80) | 🟢 ported |  |
+| `mnuCopyClick` | method | [41](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L41) · [body 93](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L93) | [`TfrmUsesEditor.mnuCopyClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L83) | 🟢 ported |  |
+| `mnuPasteClick` | method | [42](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L42) · [body 99](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L99) | [`TfrmUsesEditor.mnuPasteClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L86) | 🟢 ported |  |
+| `CreateEditorWithParams` | constructor | [47](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L47) · [body 77](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L77) | [`TfrmUsesEditor.TfrmUsesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L30) | 🟢 ported: Takes the element and the tag of the value to edit; Show it after. | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TfrmUsesEditor.pnButtons1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L15) (field)
+- [`TfrmUsesEditor.pnButtons2`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L16) (field)
+- [`TfrmUsesEditor.btnOK`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L17) (field)
+- [`TfrmUsesEditor.btnCancel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L18) (field)
+- [`TfrmUsesEditor.StatusBar1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L19) (field)
+- [`TfrmUsesEditor.pnText`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L20) (field)
+- [`TfrmUsesEditor.BoldMemo1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L21) (field)
+- [`TfrmUsesEditor.PopupMenu1`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L22) (field)
+- [`TfrmUsesEditor.mnuCut`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L23) (field)
+- [`TfrmUsesEditor.mnuCopy`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L24) (field)
+- [`TfrmUsesEditor.mnuPaste`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L25) (field)
 
 ## Dependencies
 

@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Editor/BoldUMLModelEdit.pas`](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas) (186 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 15 symbols done, 0 verified |
+| Status | 🟢 ported: 15 of 15 symbols done, 0 verified |
 
-⚪ 15 not started
+🟢 14 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -18,28 +18,28 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TModelEdit` | class | [17](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L17) |  | ⚪ not started |  |
-| `UMLModelEditor` | routine | [35](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L35) · [body 50](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L50) |  | ⚪ not started |  |
-| `UMLModelEditorAssigned` | routine | [36](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L36) · [body 57](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L57) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [182](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L182) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [184](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L184) |  | ⚪ not started |  |
+| `TModelEdit` | class | [17](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L17) | [`TModelEdit`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L13) | 🟢 ported: Not a component: it hears its forms' Disposed events, where Delphi had free notification. |  |
+| `UMLModelEditor` | routine | [35](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L35) · [body 50](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L50) | [`TModelEdit.UMLModelEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L25) | 🟢 ported | [`BoldUMLModelEditTests.There_is_one_model_editor`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L40) |
+| `UMLModelEditorAssigned` | routine | [36](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L36) · [body 57](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L57) | [`TModelEdit.UMLModelEditorAssigned`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L28) | 🟢 ported | [`BoldUMLModelEditTests.There_is_one_model_editor`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L40) |
+| `initialization` | initialization, implementation | [182](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L182) | [`[assembly: Delphi] in BoldUMLModelEdit.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L7) | 🔵 replaced: The section is empty. |  |
+| `finalization` | finalization, implementation | [184](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L184) | [`TModelEdit.Finalize_`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L169) | 🟢 ported |  |
 
 ## TModelEdit
 
-class at [line 17](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L17); 🟢 ported, C# [`TModelEdit`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `LoadFormsettingsFromRegistry` | class method, private | [21](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L21) · [body 137](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L137) |  | ⚪ not started |  |
-| `EditForms` | property, private | [22](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L22) |  | ⚪ not started |  |
-| `CreateFormForBoldModel` | method, private | [23](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L23) · [body 96](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L96) |  | ⚪ not started |  |
-| `Notification` | method, protected | [25](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L25) · [body 165](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L165) |  | ⚪ not started |  |
-| `Create` | constructor | [27](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L27) · [body 62](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L62) |  | ⚪ not started |  |
-| `Destroy` | destructor | [28](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L28) · [body 69](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L69) |  | ⚪ not started |  |
-| `SaveFormsettingsToRegistry` | class method | [29](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L29) · [body 110](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L110) |  | ⚪ not started |  |
-| `PlugInList` | property | [30](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L30) |  | ⚪ not started |  |
-| `ShowEditFormForBoldModel` | method | [31](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L31) · [body 172](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L172) |  | ⚪ not started |  |
-| `FindFormForBoldModel` | method | [32](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L32) · [body 79](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L79) |  | ⚪ not started |  |
+| `LoadFormsettingsFromRegistry` | class method, private | [21](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L21) · [body 137](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L137) | [`TModelEdit.LoadFormsettingsFromRegistry`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L133) | 🟢 ported: The form keeps its centered place when none was kept. | [`BoldUMLModelEditTests.The_form_comes_back_as_it_was_left`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L48) |
+| `EditForms` | property, private | [22](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L22) | [`TModelEdit.EditForms`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L32) | 🟢 ported | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
+| `CreateFormForBoldModel` | method, private | [23](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L23) · [body 96](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L96) | [`TModelEdit.CreateFormForBoldModel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L69) | 🟢 ported: The form edits the model component's UML graph; Delphi made the data module of its UML object space first. | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
+| `Notification` | method, protected | [25](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L25) · [body 165](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L165) | [`TModelEdit.Notification`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L82) | 🟢 ported: Hears the form's Disposed event. | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
+| `Create` | constructor | [27](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L27) · [body 62](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L62) | [`TModelEdit.TModelEdit`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L19) | 🟢 ported | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
+| `Destroy` | destructor | [28](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L28) · [body 69](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L69) | [`TModelEdit.Dispose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L48) | 🟢 ported: The plug-ins stay in the registry, as Delphi freed them in their own units. | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
+| `SaveFormsettingsToRegistry` | class method | [29](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L29) · [body 110](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L110) | [`TModelEdit.SaveFormsettingsToRegistry`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L108) | 🟢 ported: The heights of Delphi's scroll boxes are the split distances of the pages. | [`BoldUMLModelEditTests.The_form_comes_back_as_it_was_left`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L48) |
+| `PlugInList` | property | [30](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L30) | [`TModelEdit.PlugInList`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L36) | 🟢 ported: The plug-in registry of Bold.ModelEditor.Core, where Delphi's plug-in units added themselves to this list. | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
+| `ShowEditFormForBoldModel` | method | [31](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L31) · [body 172](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L172) | [`TModelEdit.ShowEditFormForBoldModel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L92) | 🟢 ported: Gives the form. | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
+| `FindFormForBoldModel` | method | [32](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L32) · [body 79](../../../Source/UMLModel/Editor/BoldUMLModelEdit.pas#L79) | [`TModelEdit.FindFormForBoldModel`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLModelEdit.cs#L65) | 🟢 ported | [`BoldUMLModelEditTests.The_editor_has_a_form_for_each_model_component`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLModelEditTests.cs#L15) |
 
 ## Dependencies
 

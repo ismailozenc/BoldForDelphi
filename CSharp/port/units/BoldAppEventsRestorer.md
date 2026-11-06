@@ -5,39 +5,16 @@
 | | |
 |---|---|
 | Delphi | [`Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas`](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas) (208 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/Unassigned/UMLPlugins/BoldAppEventsRestorer.cs` |
-| Project | Bold.ModelEditor |
-| Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 13 symbols done, 0 verified |
+| C# | not ported: a plug-in that repaired Delphi's application events after a plug-in broke their multicaster; WinForms' application events are .NET events, with nothing to repair |
+| Status | ⚫ dropped: 13 symbols |
 
-⚪ 13 not started
+## Declared types
 
-## Unit level
+The members of these types are not listed: nothing in this unit is ported.
 
-Types, routines, constants, variables and the initialization and finalization sections.
-
-| Delphi | Kind | Lines | C# | Status | Tests |
-|---|---|---|---|---|---|
-| `TUMLAppEventsRestorer` | class | [18](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L18) |  | ⚪ not started |  |
-| `TMultiCasterShadow` | class, implementation | [53](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L53) |  | ⚪ not started |  |
-| `TComponentShadow` | class, implementation | [58](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L58) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [202](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L202) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [205](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L205) |  | ⚪ not started |  |
-
-## TUMLAppEventsRestorer
-
-class at [line 18](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L18); ⚪ not started.
-
-| Delphi | Kind | Lines | C# | Status | Tests |
-|---|---|---|---|---|---|
-| `GetComponentByClassName` | method, private | [33](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L33) · [body 104](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L104) |  | ⚪ not started |  |
-| `SaveAppEvents` | method, private | [34](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L34) · [body 182](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L182) |  | ⚪ not started |  |
-| `RestoreAppEvents` | method, private | [35](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L35) · [body 140](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L140) |  | ⚪ not started |  |
-| `GetMenuItemName` | method, protected | [37](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L37) · [body 129](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L129) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [38](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L38) · [body 135](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L135) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [39](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L39) · [body 123](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L123) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [40](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L40) · [body 117](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L117) |  | ⚪ not started |  |
-| `Execute` | method | [42](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L42) · [body 73](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L73) |  | ⚪ not started |  |
+- `TUMLAppEventsRestorer` (class, [line 18](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L18), 8 members)
+- `TMultiCasterShadow` (class, [line 53](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L53))
+- `TComponentShadow` (class, [line 58](../../../Source/Unassigned/UMLPlugins/BoldAppEventsRestorer.pas#L58))
 
 ## Dependencies
 

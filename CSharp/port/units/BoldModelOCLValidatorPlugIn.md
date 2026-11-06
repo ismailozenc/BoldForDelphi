@@ -5,12 +5,12 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas`](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas) (84 lines) |
-| C# | not started; planned as `CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs` |
+| C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | 🟢 ported: 9 of 9 symbols done, 0 verified |
 
-⚪ 9 not started
+🟢 9 ported
 
 ## Unit level
 
@@ -18,22 +18,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TUMLOCLValidator` | class | [15](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L15) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [78](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L78) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [81](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L81) |  | ⚪ not started |  |
+| `TUMLOCLValidator` | class | [15](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L15) | [`TUMLOCLValidator`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L10) | 🟢 ported |  |
+| `initialization` | initialization, implementation | [78](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L78) | [`TUMLOCLValidator.Initialize`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L35) | 🟢 ported | [`BoldModelOCLValidatorPlugInTests.The_validator_shows_the_invalid_OCL_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Plugins/BoldModelOCLValidatorPlugInTests.cs#L19) |
+| `finalization` | finalization, implementation | [81](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L81) | [`TUMLOCLValidator.Finalize_`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L38) | 🟢 ported |  |
 
 ## TUMLOCLValidator
 
-class at [line 15](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L15); 🟢 ported, C# [`TUMLOCLValidator`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetMenuItemName` | method, protected | [17](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L17) · [body 63](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L63) |  | ⚪ not started |  |
-| `GetOptions` | method, protected | [18](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L18) · [body 68](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L68) |  | ⚪ not started |  |
-| `GetPlugInType` | method, protected | [19](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L19) · [body 73](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L73) |  | ⚪ not started |  |
-| `GetImageResourceName` | method, protected | [20](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L20) · [body 58](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L58) |  | ⚪ not started |  |
-| `GetImageMaskColor` | method, protected | [21](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L21) · [body 53](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L53) |  | ⚪ not started |  |
-| `Execute` | method | [23](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L23) · [body 42](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L42) |  | ⚪ not started |  |
+| `GetMenuItemName` | method, protected | [17](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L17) · [body 63](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L63) | [`TUMLOCLValidator.GetMenuItemName`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L27) | 🟢 ported | [`BoldModelOCLValidatorPlugInTests.The_validator_shows_the_invalid_OCL_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Plugins/BoldModelOCLValidatorPlugInTests.cs#L19) |
+| `GetOptions` | method, protected | [18](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L18) · [body 68](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L68) | [`TUMLOCLValidator.GetOptions`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L29) | 🟢 ported | [`BoldModelOCLValidatorPlugInTests.The_validator_shows_the_invalid_OCL_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Plugins/BoldModelOCLValidatorPlugInTests.cs#L19) |
+| `GetPlugInType` | method, protected | [19](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L19) · [body 73](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L73) | [`TUMLOCLValidator.GetPlugInType`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L31) | 🟢 ported | [`BoldModelOCLValidatorPlugInTests.The_validator_shows_the_invalid_OCL_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Plugins/BoldModelOCLValidatorPlugInTests.cs#L19) |
+| `GetImageResourceName` | method, protected | [20](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L20) · [body 58](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L58) | [`TUMLOCLValidator.GetImageResourceName`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L25) | 🟢 ported | [`BoldModelOCLValidatorPlugInTests.The_validator_shows_the_invalid_OCL_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Plugins/BoldModelOCLValidatorPlugInTests.cs#L19) |
+| `GetImageMaskColor` | method, protected | [21](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L21) · [body 53](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L53) | [`TUMLOCLValidator.GetImageMaskColor`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L23) | 🟢 ported | [`BoldModelOCLValidatorPlugInTests.The_validator_shows_the_invalid_OCL_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Plugins/BoldModelOCLValidatorPlugInTests.cs#L19) |
+| `Execute` | method | [23](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L23) · [body 42](../../../Source/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.pas#L42) | [`TUMLOCLValidator.Execute`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldModelOCLValidatorPlugIn.cs#L15) | 🟢 ported | [`BoldModelOCLValidatorPlugInTests.The_validator_shows_the_invalid_OCL_of_the_model`](../../tests/Bold.ModelEditor.Tests/UMLModel/Plugins/BoldModelOCLValidatorPlugInTests.cs#L19) |
 
 ## Dependencies
 

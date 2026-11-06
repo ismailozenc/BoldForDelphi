@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas`](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas) (125 lines) |
-| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs)<br>[`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs) |
+| C# | [`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs)<br>[`CSharp/src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs)<br>[`CSharp/src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs) |
 | Project | Bold.ModelEditor.Core |
 | Milestone | M12 Model editor |
-| Status | 🟡 partial: 22 of 26 symbols done, 22 verified |
+| Status | 🟢 ported: 26 of 26 symbols done, 22 verified |
 | Note | The plug-in framework; its menu item and tool button are WinForms controls in Bold.ModelEditor. |
 
-✅ 22 verified · ⚪ 4 not started
+✅ 22 verified · 🟢 4 ported
 
 ## Unit level
 
@@ -25,8 +25,8 @@ Types, routines, constants, variables and the initialization and finalization se
 | `TBoldUMLPluginOption` | enum | [28](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L28) | [`TBoldUMLPluginOption`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L38) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
 | `TBoldUMLPluginOptions` | set | [29](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L29) | [`global using TBoldUMLPluginOptions`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.Aliases.cs#L5) | ✅ verified: Global using alias of DelphiSet&lt;TBoldUMLPluginOption&gt;, in BoldUMLModelEditPlugIn.Aliases.cs. | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
 | `TUMLPlugIn` | class | [31](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L31) | [`TUMLPlugIn`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L42) | ✅ verified | ✔ [`BoldUMLModelEditPlugInTests.The_built_in_plug_ins_are_in_the_list`](../../tests/Bold.ModelEditor.Core.Tests/UMLModel/Plugins/BoldUMLModelEditPlugInTests.cs#L25) |
-| `TUMLPlugInMenuItem` | class | [65](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L65) |  | ⚪ not started |  |
-| `TUMLPlugInToolButton` | class | [72](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L72) |  | ⚪ not started |  |
+| `TUMLPlugInMenuItem` | class | [65](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L65) | [`TUMLPlugInMenuItem`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L13) | 🟢 ported |  |
+| `TUMLPlugInToolButton` | class | [72](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L72) | [`TUMLPlugInToolButton`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L22) | 🟢 ported |  |
 
 ## IUMLModelPlugInContext
 
@@ -60,19 +60,19 @@ class at [line 31](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L
 
 ## TUMLPlugInMenuItem
 
-class at [line 65](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L65); ⚪ not started.
+class at [line 65](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L65); 🟢 ported, C# [`TUMLPlugInMenuItem`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `PlugIn` | property | [69](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L69) |  | ⚪ not started |  |
+| `PlugIn` | property | [69](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L69) | [`TUMLPlugInMenuItem.PlugIn`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L17) | 🟢 ported |  |
 
 ## TUMLPlugInToolButton
 
-class at [line 72](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L72); ⚪ not started.
+class at [line 72](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L72); 🟢 ported, C# [`TUMLPlugInToolButton`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L22).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `PlugIn` | property | [76](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L76) |  | ⚪ not started |  |
+| `PlugIn` | property | [76](../../../Source/UMLModel/Plugins/BoldUMLModelEditPlugIn.pas#L76) | [`TUMLPlugInToolButton.PlugIn`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L26) | 🟢 ported |  |
 
 ## C# additions
 
@@ -84,6 +84,8 @@ Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumb
 - [`BoldUMLPlugInRegistry.PlugIns`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L107) (property)
 - [`BoldUMLPlugInRegistry.RawList`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L117) (property)
 - [`BoldUMLPlugInRegistry.EnsureBuiltIns`](../../src/Bold.ModelEditor.Core/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L119) (method)
+- [`TUMLPlugInImages`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L30) (class)
+- [`TUMLPlugInImages.ImageOf`](../../src/Bold.ModelEditor/UMLModel/Plugins/BoldUMLModelEditPlugIn.cs#L36) (method)
 
 ## Dependencies
 

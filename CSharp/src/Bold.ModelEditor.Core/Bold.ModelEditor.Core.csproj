@@ -2,6 +2,20 @@
   <PropertyGroup>
     <Description>The model editor's logic, without WinForms: the validators, the model updater, the plug-in framework and its code and database plug-ins, and the .bld link. Bold.ModelEditor builds its forms on it.</Description>
   </PropertyGroup>
+  <!-- The plug-ins' bitmaps, by the names of BoldUMLPlugins.rc, from the repository's Images; the editor shows them on its menus and tool bar. -->
+  <ItemGroup>
+    <EmbeddedResource Include="../../../Images/Import.bmp" LogicalName="Bold.PlugInImages.UMLPluginGenCodeImage" />
+    <EmbeddedResource Include="../../../Images/GenGUIDs.bmp" LogicalName="Bold.PlugInImages.UMLPluginGenGUIDs" />
+    <EmbeddedResource Include="../../../Images/FileSave.bmp" LogicalName="Bold.PlugInImages.UMLPluginSaveImage" />
+    <EmbeddedResource Include="../../../Images/Table.bmp" LogicalName="Bold.PlugInImages.UMLPluginGenDBImage" />
+    <EmbeddedResource Include="../../../Images/Import Model.bmp" LogicalName="Bold.PlugInImages.UMLPluginImportImage" />
+    <EmbeddedResource Include="../../../Images/export model.bmp" LogicalName="Bold.PlugInImages.UMLPluginExportImage" />
+    <EmbeddedResource Include="../../../Images/UMLPluginStructureValidator.bmp" LogicalName="Bold.PlugInImages.UMLPluginStructureValidator" />
+    <EmbeddedResource Include="../../../Images/UMLPluginDataValidator.bmp" LogicalName="Bold.PlugInImages.UMLPluginDataValidator" />
+    <EmbeddedResource Include="../../../Images/UMLPluginModelUpdater.bmp" LogicalName="Bold.PlugInImages.UMLPluginModelUpdater" />
+    <EmbeddedResource Include="../../../Images/UMLPluginDbEvolutor.bmp" LogicalName="Bold.PlugInImages.UMLPluginDbEvolutor" />
+    <EmbeddedResource Include="../../../Images/UMLPluginGeneratepersistenceInterfaces.bmp" LogicalName="Bold.PlugInImages.UMLPluginGenPersistenceInterfaceImage" />
+  </ItemGroup>
   <ItemGroup>
     <InternalsVisibleTo Include="Bold.ModelEditor" />
     <InternalsVisibleTo Include="Bold.ModelEditor.Core.Tests" />
