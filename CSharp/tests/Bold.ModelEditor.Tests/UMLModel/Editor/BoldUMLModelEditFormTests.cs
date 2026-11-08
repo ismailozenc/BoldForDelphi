@@ -111,7 +111,7 @@ public class BoldUMLModelEditFormTests
         Modal.Raise(persistent, "OnClick", EventArgs.Empty);
         Assert.That(person.persistent, Is.True);
 
-        TBoldUMLObject firstName = Feature("Person", "FirstName");
+        TBoldUMLObject firstName = person.feature.Single(f => f.name == "FirstName"); // the class is Human now
         EditorForms.Select(fForm, firstName);
         ComboBox type = EditorForms.Field<ComboBox>(fForm, "cmbAttributeBoldType");
         Assert.That(type.Items.Cast<object>().Select(i => i.ToString()), Does.Contain("Integer"));

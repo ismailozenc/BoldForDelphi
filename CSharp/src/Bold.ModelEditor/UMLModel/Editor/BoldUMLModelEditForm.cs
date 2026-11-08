@@ -591,10 +591,10 @@ public class TBoldModelEditFrm : Form
         fields.Controls.Add(table);
         if (Info.Grids.Count > 0)
         {
-            var tabs = new TabControl { Dock = DockStyle.Fill };
+            var tabs = new TabControl { Name = $"pc{Info.Page}Tabs", Dock = DockStyle.Fill };
             foreach (TBoldModelEditGrid grid in Info.Grids)
             {
-                var page = new TabPage(grid.Caption.Replace("&", "", StringComparison.Ordinal)) { Name = grid.Name };
+                var page = new TabPage(grid.Caption.Replace("&", "", StringComparison.Ordinal)) { Name = TabSheetName(grid.Name) };
                 DataGridView gridView = MakeGrid(grid);
                 page.Controls.Add(gridView);
                 tabs.TabPages.Add(page);
@@ -624,6 +624,22 @@ public class TBoldModelEditFrm : Form
         pcModelEdit.Controls.Add(panel);
         return view;
     }
+
+    /// <summary>The name of the tab sheet of a grid in Delphi's form (the grid has a name of its own).</summary>
+    private static string TabSheetName(string GridName) => GridName switch
+    {
+        "BoldGrid1" => "TabSheet1",
+        "BoldGrid2" => "TabSheet2",
+        "BoldGrid3" => "TabSheet3",
+        "BoldGrid4" => "TabSheet4",
+        "BoldGrid5" => "TabSheet5",
+        "BoldGrid6" => "TabSheet6",
+        "BoldGrid7" => "TabSheet7",
+        "BoldGrid9" => "TabSheet8",
+        "BoldGrid8" => "TabSheet11",
+        "BoldGrid10" => "TabSheet12",
+        _ => "ts" + GridName,
+    };
 
     private Control MakeFieldControl(TBoldModelEditField Field)
     {

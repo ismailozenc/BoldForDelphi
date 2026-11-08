@@ -158,7 +158,20 @@ public static partial class BoldGUI
         }
     }
 
-    /// <summary>The popup menu of Bold controls; the GUI toolkit sets it (Bold.WinForms to a ContextMenuStrip).</summary>
-    [Delphi(PortStatus.Ported, Note = "Any object; Delphi's is a TPopupMenu made in the initialization section.")]
-    public static object? BoldPopupMenu;
+    private static object? fBoldPopupMenu;
+
+    /// <summary>
+    /// Makes the popup menu of Bold controls when it is first wanted; the GUI toolkit sets it (Bold.WinForms to make a
+    /// ContextMenuStrip). A menu made when the toolkit starts would make the application's first window before the
+    /// application is configured.
+    /// </summary>
+    public static Func<object?>? BoldPopupMenuFactory;
+
+    /// <summary>The popup menu of Bold controls, made by the GUI toolkit's factory when it is first wanted.</summary>
+    [Delphi(PortStatus.Ported, Note = "Any object, made on first use; Delphi's is a TPopupMenu made in the initialization section.")]
+    public static object? BoldPopupMenu
+    {
+        get => fBoldPopupMenu ??= BoldPopupMenuFactory?.Invoke();
+        set => fBoldPopupMenu = value;
+    }
 }

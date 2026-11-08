@@ -1,6 +1,7 @@
 // The model editor as a program. Delphi's editor ran in the IDE on a model component of the form being designed; here
 // it edits a model component of its own, read from the file given on the command line (a .bld or an XMI file).
 
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace Bold;
@@ -10,7 +11,14 @@ internal static class Program
     [STAThread]
     private static int Main(string[] args)
     {
+        // Configured before any of Bold is touched: the configuration must come before the application's first window.
         ApplicationConfiguration.Initialize();
+        return Run(args);
+    }
+
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    private static int Run(string[] args)
+    {
         BoldWinForms.Initialize();
         TBoldUMLBldLink.EnsureRegistered();
         using var model = new TBoldModel();

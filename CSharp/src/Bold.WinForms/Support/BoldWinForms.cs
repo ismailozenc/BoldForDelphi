@@ -32,7 +32,7 @@ public static class BoldWinForms
         fInitialized = true;
         BoldEnvironment.BoldInternalVCLConfiguration ??= new TBoldVCLEnvironmentConfiguration();
         BoldGUI.BoldGUIHandlerClass = typeof(TBoldWinFormsGUIHandler);
-        BoldGUI.BoldPopupMenu ??= new ContextMenuStrip();
+        BoldGUI.BoldPopupMenuFactory ??= () => new ContextMenuStrip(); // made when wanted: no window before the application is configured
         BoldQueue.HandleException = (e, _) => Application.OnThreadException(e);
         Dialogs.MessageDlgHandler ??= ShowMessageDlg;
         // The image units' initialization: their view adapters.
