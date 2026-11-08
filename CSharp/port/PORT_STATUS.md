@@ -19,7 +19,7 @@ Each Delphi unit has a page that lists every type, method, property, routine and
 
 ## Totals
 
-481 Delphi units: 383 to port, 98 not ported. The units to port declare 16742 symbols. 16275 `[Delphi]` markers in the C# code; 701 test methods.
+481 Delphi units: 383 to port, 98 not ported. The units to port declare 16742 symbols. 16275 `[Delphi]` markers in the C# code; 707 test methods.
 
 | Indicator | Symbols | Share |
 |---|---:|---|

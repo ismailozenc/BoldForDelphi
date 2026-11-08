@@ -1,0 +1,3 @@
+ModelName=Color,ExpressionName=Color,DelphiName=TBAColor,ContentsName=Integer,MapperName=TBoldPMInteger,AccessorName=As<Name>,NativeType=T<Name>Enum,UnitName=CustomAttributes,ComType=,IDLType=,ValueInterface=,ValueInterfaceAccessor=,ValueInterfaceNativeType=
+ModelName=Point,ExpressionName=Point,DelphiName=TBAPoint,ContentsName=Point,MapperName=TBoldPMPoint,AccessorName=,NativeType=,UnitName=CustomAttributes,ComType=,IDLType=,ValueInterface=,ValueInterfaceAccessor=,ValueInterfaceNativeType=
+ModelName=ShortString,ExpressionName=ShortString,DelphiName=TBAShortString,ContentsName=String,MapperName=TBoldPMString,AccessorName=As<Name>,NativeType=String,UnitName=CustomAttributes,ComType=,IDLType=,ValueInterface=,ValueInterfaceAccessor=,ValueInterfaceNativeType=

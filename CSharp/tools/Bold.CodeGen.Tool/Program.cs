@@ -2,15 +2,18 @@
 using Bold;
 
 const string Usage = """
-    bold-codegen <model.bld> [--out <folder>] [--language csharp|delphi|cpp] [--untyped-lists] [--quiet]
+    bold-codegen <model.bld> [--out <folder>] [--language csharp|delphi|cpp] [--typenames <file>] [--untyped-lists] [--quiet]
 
     Generates the classes of the model into the folder (default: the model's folder). C#: <Class>.g.cs for each
     class and <Component>.g.cs for each component (always written again), and <Class>.cs with the stubs of the
     methods the model declares (only ever added to). Delphi and C++: the units and include files of Delphi Bold.
+    --typenames adds the type names of a file to Bold's (a line a mapping, as TBoldTypeNameDictionary.SaveToFile
+    writes them), for the model's custom attribute types; it can be given more than once.
     """;
 
 string? model = null, folder = null, language = "csharp";
 bool typedLists = true, quiet = false;
+var typeNameFiles = new List<string>();
 for (int i = 0; i < args.Length; i++)
 {
     switch (args[i])
@@ -20,6 +23,9 @@ for (int i = 0; i < args.Length; i++)
             break;
         case "--language" when i + 1 < args.Length:
             language = args[++i].ToLowerInvariant();
+            break;
+        case "--typenames" when i + 1 < args.Length:
+            typeNameFiles.Add(args[++i]);
             break;
         case "--untyped-lists":
             typedLists = false;
@@ -55,6 +61,17 @@ Directory.CreateDirectory(folder);
 TMoldModel moldModel = TMoldBLDRW.ModelFromFile(model);
 var types = new TBoldTypeNameDictionary(null);
 types.AddDefaultMappings();
+foreach (string file in typeNameFiles)
+{
+    if (!File.Exists(file))
+    {
+        Console.Error.WriteLine($"No such file: {file}");
+        return 2;
+    }
+
+    types.LoadFromFile(file);
+}
+
 moldModel.TypeNameDictionary = types;
 if (!quiet)
 {

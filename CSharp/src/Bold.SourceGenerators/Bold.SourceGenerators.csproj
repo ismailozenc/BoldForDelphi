@@ -4,12 +4,18 @@
     <!-- A Roslyn component: compilers load it on .NET Framework (Visual Studio) and .NET alike. -->
     <TargetFramework>netstandard2.0</TargetFramework>
     <IsRoslynComponent>true</IsRoslynComponent>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
     <RootNamespace>Bold.SourceGenerators</RootNamespace>
   </PropertyGroup>
   <!-- Offline builds have no NETStandard.Library package: the generator targets net10.0 there, which the SDK's compiler loads too. -->
   <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
     <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <!-- The diagnostics the generator reports, for the analyzers' release tracking. -->
+    <AdditionalFiles Include="AnalyzerReleases.Shipped.md" />
+    <AdditionalFiles Include="AnalyzerReleases.Unshipped.md" />
+  </ItemGroup>
   <ItemGroup>
     <!-- The generator is not ported code: no [Delphi] markers, and no Bold.Porting. -->
     <Using Remove="Bold.Porting" />
