@@ -1,0 +1,25 @@
+# The propagator server as a systemd service. Publish it and add a user for it:
+#
+#   dotnet publish CSharp/src/Bold.Propagator.Server -c Release -o /opt/bold/propagator
+#   sudo useradd --system --no-create-home bold
+#   sudo cp CSharp/deploy/systemd/bold-propagator.service /etc/systemd/system/
+#   sudo systemctl enable --now bold-propagator
+#
+# Its settings are /opt/bold/propagator/Bold.Propagator.Server.ini; journalctl -u bold-propagator shows its log.
+
+[Unit]
+Description=Bold propagator and lock manager
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# The server tells systemd when it is ready (BoldServiceHosting).
+Type=notify
+User=bold
+WorkingDirectory=/opt/bold/propagator
+ExecStart=/usr/bin/dotnet /opt/bold/propagator/Bold.Propagator.Server.dll --urls http://0.0.0.0:5050
+Restart=on-failure
+Environment=DOTNET_NOLOGO=1
+
+[Install]
+WantedBy=multi-user.target

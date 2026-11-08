@@ -16,4 +16,27 @@
     <!-- [Delphi(...)] and [Covers(...)] are used in every file of the port. -->
     <Using Include="Bold.Porting" />
   </ItemGroup>
+
+  <!--
+    Packages (dotnet pack): the libraries of src (src/Directory.Build.props makes them packable), the attribute generator
+    as an analyzer and bold-codegen as a .NET tool, into artifacts/packages. Set the version with -p:Version=1.2.3.
+  -->
+  <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <IsPackable>false</IsPackable>
+    <Authors>Bold for Delphi contributors</Authors>
+    <Copyright>Copyright (c) 2020 Embarcadero Technologies</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ismailozenc/boldfordelphi/tree/CSharp/CSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ismailozenc/boldfordelphi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>bold;delphi;model-driven;uml;ocl;orm;object-space</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)artifacts/packages/</PackageOutputPath>
+    <!-- The symbols travel in the packages, so that a debugger steps into Bold. -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
 </Project>

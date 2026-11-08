@@ -4,3 +4,5 @@ TestResults/
 .vs/
 *.user
 TestResult.xml
+# dotnet pack and the deployment checks (deploy/check.sh) write here.
+artifacts/

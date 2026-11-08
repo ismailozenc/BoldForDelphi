@@ -1,0 +1,11 @@
+<Project>
+  <!--
+    Packed into every Bold library package as buildTransitive/<PackageId>.targets. It compiles the package's Delphi type
+    aliases (global using directives such as TBoldRepresentation = int, from the package's aliases folder) into the
+    project using the package, as Delphi made a unit's type names visible to the units using it. Set BoldAliases to
+    false in a project to leave them out.
+  -->
+  <ItemGroup Condition="'$(BoldAliases)' != 'false' and '$(Language)' == 'C#'">
+    <Compile Include="$(MSBuildThisFileDirectory)../aliases/**/*.cs" Visible="false" />
+  </ItemGroup>
+</Project>

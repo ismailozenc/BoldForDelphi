@@ -1,0 +1,5 @@
+# What the propagator image is not built from (BuildKit reads this file for propagator.Dockerfile): local build output.
+**/bin/
+**/obj/
+CSharp/artifacts/
+CSharp/TestResults/

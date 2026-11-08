@@ -1,0 +1,6 @@
+<Project>
+  <!-- Package versions are given in the project file, as an application outside this repository would. -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+</Project>

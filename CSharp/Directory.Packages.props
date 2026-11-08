@@ -1,9 +1,11 @@
 <Project>
-  <!-- Central package versions. Ported code itself uses no packages; only tests and the example application do (SQLite is the test and example database, D4; Roslyn compiles generated code). -->
+  <!-- Central package versions. Ported code itself uses no packages; only tests, the example application and the servers do (SQLite is the test and example database, D4; Roslyn compiles generated code; the servers run as Windows or systemd services). -->
   <ItemGroup>
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
     <PackageVersion Include="Microsoft.Data.Sqlite" Version="9.0.0" />
     <PackageVersion Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Systemd" Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.WindowsServices" Version="10.0.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
     <PackageVersion Include="NUnit" Version="4.6.1" />
     <PackageVersion Include="NUnit3TestAdapter" Version="6.3.0" />

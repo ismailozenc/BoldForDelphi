@@ -1,0 +1,7 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+  <PropertyGroup>
+    <!-- The libraries are packed; the programs that are only programs say otherwise in their project files. -->
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+</Project>

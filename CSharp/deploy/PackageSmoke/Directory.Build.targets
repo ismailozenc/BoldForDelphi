@@ -1,0 +1,3 @@
+<Project>
+  <!-- Empty on purpose: no alias files from project references here; the packages bring their own (buildTransitive). -->
+</Project>

@@ -1,12 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <Description>Remote persistence server on ASP.NET Core, with the propagator on the same host when configured.</Description>
+    <Description>Remote persistence server on ASP.NET Core, with the propagator on the same host when configured. A program, and a library for offering persistence from another ASP.NET Core application (MapBoldPersistence).</Description>
     <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+    <!-- The web SDK packs nothing by default; this server is also a library. -->
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
-  <!-- The database providers the server is published with; the code loads them by name only (TBoldRemotePersistenceSetup). -->
+  <ItemGroup>
+    <!-- The program's settings stay out of the package: an application hosting the persistence has its own. -->
+    <Content Update="appsettings.json" Pack="false" />
+  </ItemGroup>
+  <!--
+    The database providers the server is published with. The code loads them by name only (TBoldRemotePersistenceSetup),
+    so the package does not bring them: an application hosting the persistence adds the provider it uses.
+  -->
   <ItemGroup Condition="'$(BoldOffline)' != 'true'">
-    <PackageReference Include="Microsoft.Data.Sqlite" />
-    <PackageReference Include="Microsoft.Data.SqlClient" />
+    <PackageReference Include="Microsoft.Data.Sqlite" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Data.SqlClient" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />

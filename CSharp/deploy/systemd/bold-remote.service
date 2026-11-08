@@ -1,0 +1,36 @@
+# The remote persistence server (with the propagator on the same host) as a systemd service. Publish it, put the model
+# next to it as Model.bld, and add a user for it:
+#
+#   dotnet publish CSharp/src/Bold.Remote.Server -c Release -o /opt/bold/remote
+#   sudo cp Model.bld /opt/bold/remote/
+#   sudo useradd --system --no-create-home bold
+#   sudo cp CSharp/deploy/systemd/bold-remote.service /etc/systemd/system/
+#   sudo systemctl enable --now bold-remote
+#
+# The settings are /opt/bold/remote/appsettings.json, and the environment variables below, which take precedence. The
+# SQLite database is kept in /var/lib/bold (systemd makes it, owned by the service's user); CreateSchema creates its
+# tables the first time and leaves them alone afterwards. journalctl -u bold-remote shows the log.
+
+[Unit]
+Description=Bold remote persistence server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# The server tells systemd when it is ready (BoldServiceHosting).
+Type=notify
+User=bold
+StateDirectory=bold
+WorkingDirectory=/opt/bold/remote
+ExecStart=/usr/bin/dotnet /opt/bold/remote/Bold.Remote.Server.dll --urls http://0.0.0.0:5000
+Restart=on-failure
+Environment=DOTNET_NOLOGO=1
+Environment=Bold__Model=Model.bld
+Environment=Bold__Provider=Microsoft.Data.Sqlite
+Environment="Bold__ConnectionString=Data Source=/var/lib/bold/Bold.db"
+Environment=Bold__Engine=dbeSQLite
+Environment=Bold__CreateSchema=true
+Environment=Bold__Propagator=true
+
+[Install]
+WantedBy=multi-user.target

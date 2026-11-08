@@ -38,6 +38,9 @@ public class PropagatorServerProgramTests
             lockManager.Connected = true;
             Assert.That(lockManager.LockManager!.EnsureLocks(1, null, null), Is.True, "the lock manager answers");
             Assert.That(admin!.LockManagerAdmin!.ListAllClients(out _), Is.EqualTo(Windows.S_OK), "the lock manager's administration answers");
+            using var http = new HttpClient();
+            Assert.That(http.GetStringAsync(url + "/health").GetAwaiter().GetResult(), Is.EqualTo("Healthy"), "load balancers can ask whether it runs");
+            Assert.That(File.Exists(Path.Combine(Path.GetDirectoryName(program)!, "Bold.Propagator.Server.ini")), Is.True, "its settings are next to it");
         }
         finally
         {

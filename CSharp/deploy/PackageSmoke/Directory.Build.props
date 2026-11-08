@@ -1,0 +1,3 @@
+<Project>
+  <!-- Empty on purpose: the package smoke test uses Bold as a project outside this repository does, without its settings. -->
+</Project>

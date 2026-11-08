@@ -14,4 +14,18 @@
       <Compile Include="@(_BoldReferencedAliasFile)" Exclude="@(Compile)" />
     </ItemGroup>
   </Target>
+
+  <!--
+    Packages. Each carries the package readme. A library's package also carries its alias files, and a buildTransitive
+    file (deploy/Bold.Package.targets) that compiles them into every project using the package, directly or through
+    another package: the projects using the packages see the Delphi type names as the projects here do.
+  -->
+  <ItemGroup Condition="'$(IsPackable)' == 'true'">
+    <None Include="$(BoldCSharpRoot)deploy/PACKAGE.md" Pack="true" PackagePath="README.md" Visible="false" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(IsPackable)' == 'true' and '$(PackAsTool)' != 'true' and '$(IsRoslynComponent)' != 'true'">
+    <None Include="$(MSBuildProjectDirectory)/**/*.Aliases.cs" Exclude="$(MSBuildProjectDirectory)/obj/**;$(MSBuildProjectDirectory)/bin/**"
+          Pack="true" PackagePath="aliases/" Visible="false" />
+    <None Include="$(BoldCSharpRoot)deploy/Bold.Package.targets" Pack="true" PackagePath="buildTransitive/$(PackageId).targets" Visible="false" />
+  </ItemGroup>
 </Project>

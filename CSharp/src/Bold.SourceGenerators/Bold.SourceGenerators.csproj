@@ -11,6 +11,18 @@
   <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
     <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
+  <!--
+    The package holds the generator in analyzers/dotnet/cs and nothing else: a project referencing it gets the generator
+    as an analyzer, and no library or dependency (the attributes it reads are in Bold.ObjectSpace).
+  -->
+  <PropertyGroup>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(OutputPath)$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+  </ItemGroup>
   <ItemGroup>
     <!-- The diagnostics the generator reports, for the analyzers' release tracking. -->
     <AdditionalFiles Include="AnalyzerReleases.Shipped.md" />

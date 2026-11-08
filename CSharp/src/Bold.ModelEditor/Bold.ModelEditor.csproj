@@ -6,6 +6,8 @@
     <!-- Lets this project compile on Linux and macOS as well. -->
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <OutputType>WinExe</OutputType>
+    <!-- A program, published rather than packed (dotnet publish). -->
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
     <InternalsVisibleTo Include="Bold.ModelEditor.Tests" />

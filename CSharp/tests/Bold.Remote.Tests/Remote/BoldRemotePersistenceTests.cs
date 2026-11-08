@@ -266,6 +266,51 @@ public class BoldRemotePersistenceTests
         }
     }
 
+    [Test]
+    public void A_relative_model_is_found_in_the_content_root_and_an_existing_schema_is_kept()
+    {
+        string folder = Path.Combine(Path.GetTempPath(), $"remote-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(folder);
+        try
+        {
+            BuildingModel.Lines().SaveToFile(Path.Combine(folder, "Building.bld"));
+            var settings = new Dictionary<string, string?>
+            {
+                ["Bold:Model"] = "Building.bld",
+                ["Bold:Provider"] = TestSqliteFactory.Name,
+                ["Bold:ConnectionString"] = TestSqliteFactory.ConnectionString(Path.Combine(folder, "Bold.db")),
+                ["Bold:Engine"] = "dbeSQLite",
+                ["Bold:CreateSchema"] = "true",
+            };
+            DbProviderFactories.RegisterFactory(TestSqliteFactory.Name, TestSqliteFactory.Instance);
+            IConfigurationSection section = new ConfigurationBuilder().AddInMemoryCollection(settings).Build().GetSection("Bold");
+            Assert.That(() => TBoldRemotePersistenceSetup.FromConfiguration(section, Path.Combine(folder, "elsewhere")),
+                Throws.TypeOf<EBold>().With.Message.Contains("does not exist"));
+            using (TBoldRemotePersistenceSetup setup = TBoldRemotePersistenceSetup.FromConfiguration(section, folder))
+            {
+                Assert.That(setup.HasSchema(), Is.True, "a new database gets its tables");
+                TestDatabase.Exec(setup.Connection, "UPDATE BOLD_ID SET BOLD_ID = 4711");
+            }
+
+            using (TBoldRemotePersistenceSetup setup = TBoldRemotePersistenceSetup.FromConfiguration(section, folder))
+            {
+                Assert.That(Convert.ToInt32(TestDatabase.Scalar(setup.Connection, "SELECT BOLD_ID FROM BOLD_ID")), Is.EqualTo(4711),
+                    "a server started again with CreateSchema keeps the database it has");
+            }
+        }
+        finally
+        {
+            try
+            {
+                Directory.Delete(folder, true);
+            }
+            catch (IOException)
+            {
+                // A file still held open is left in the temporary folder.
+            }
+        }
+    }
+
     /// <summary>The tests' SQLite provider, registered for the configuration test.</summary>
     private sealed class TestSqliteFactory : DbProviderFactory
     {

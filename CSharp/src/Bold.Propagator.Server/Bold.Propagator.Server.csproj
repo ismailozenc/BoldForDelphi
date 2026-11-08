@@ -1,11 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>The propagator and lock manager server, on ASP.NET Core with a SignalR hub.</Description>
+    <Description>The propagator and lock manager server, on ASP.NET Core with a SignalR hub. A program, and a library for hosting the propagator in another ASP.NET Core application (AddBoldPropagator, MapBoldPropagator).</Description>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
+  <!-- Running as a Windows service or a systemd service (BoldServiceHosting); offline builds run from a console only. -->
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(BoldOffline)' != 'true'">
+    <DefineConstants>$(DefineConstants);BOLD_SERVICE_HOSTING</DefineConstants>
+  </PropertyGroup>
+  <!--
+    The server's settings with their defaults, next to the program (TBoldPropagatorServer.LoadConfiguration). Copied by
+    targets rather than as an item, so that they stay out of the projects referencing this one: a program hosting the
+    propagator reads its own <program>.ini.
+  -->
+  <ItemGroup>
+    <None Update="Bold.Propagator.Server.ini" Pack="false" />
+  </ItemGroup>
+  <Target Name="BoldCopyServerSettings" AfterTargets="CopyFilesToOutputDirectory">
+    <Copy SourceFiles="Bold.Propagator.Server.ini" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="BoldPublishServerSettings" AfterTargets="Publish">
+    <Copy SourceFiles="Bold.Propagator.Server.ini" DestinationFolder="$(PublishDir)" SkipUnchangedFiles="true" />
+  </Target>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
     <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />

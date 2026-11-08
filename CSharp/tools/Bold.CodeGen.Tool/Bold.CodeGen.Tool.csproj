@@ -4,8 +4,12 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>bold-codegen</AssemblyName>
     <RootNamespace>Bold.CodeGen.Tool</RootNamespace>
+    <!-- A .NET tool: dotnet tool install bold-codegen, from the package dotnet pack writes. -->
+    <IsPackable>true</IsPackable>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>bold-codegen</ToolCommandName>
+    <!-- Runs on later .NET versions too, where .NET 10 is not installed. -->
+    <RollForward>Major</RollForward>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/Bold.CodeGen/Bold.CodeGen.csproj" />

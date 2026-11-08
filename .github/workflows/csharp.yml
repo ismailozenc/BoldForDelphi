@@ -42,6 +42,7 @@ jobs:
           dotnet restore CSharp/Bold.slnx 2>&1 | tee restore.log || { grep -E ": (error|warning) " restore.log | sort -u | head -50 | sed 's/^/::error::/'; exit 1; }
 
       - name: Build
+        id: build
         run: |
           set -o pipefail
           dotnet build CSharp/Bold.slnx --configuration Release --no-restore 2>&1 | tee build.log
@@ -72,6 +73,25 @@ jobs:
           # The counts in one annotation, which the GitHub API gives to tools that cannot read the job log.
           echo "::notice title=Tests::$counts"
           exit $failed
+
+      # The packages, the bold-codegen tool, an application built on the packages alone, and the published programs
+      # started from their folders (CSharp/deploy/check.sh). The failing step's log is repeated as an annotation.
+      - name: Deployment
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: |
+          bash CSharp/deploy/check.sh --no-build > deploy.log 2>&1 && { grep -E "^(==|ok|Deployable)|packages, version" deploy.log; exit 0; }
+          tail -60 deploy.log
+          echo "::error title=Deployment::$(tail -60 deploy.log | tr -d '\r' | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')"
+          exit 1
+
+      - name: Upload the packages
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: packages
+          path: CSharp/artifacts/packages/*.nupkg
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Check port links
         if: ${{ !cancelled() }}
@@ -139,3 +159,36 @@ jobs:
           dotnet test CSharp/tests/Bold.Persistence.Sql.Tests --configuration Release --no-build --filter "TestCategory=SqlServer" --logger "console;verbosity=normal" 2>&1 | tee test.log || { grep -E -A6 "^\s*(Failed|Error Message:)" test.log | head -60 | tr -d '\r' | sed 's/^/::error::/'; exit 1; }
           # Ignored tests would also pass: make sure the SQL Server tests ran.
           grep -qE "^ *Passed: +[1-9]" test.log && ! grep -qiE "skipped: +[1-9]|^ *Skipped " test.log || { echo "::error::The SQL Server tests did not run (ignored or none found)"; exit 1; }
+
+  containers:
+    name: Server containers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build the server images
+        run: |
+          docker build -f CSharp/deploy/docker/propagator.Dockerfile -t bold-propagator .
+          docker build -f CSharp/deploy/docker/remote.Dockerfile -t bold-remote .
+
+      # Each server answers /health and negotiates its propagator hub; the remote server starts again on the database
+      # it created the first time.
+      - name: Run the server images
+        run: |
+          probe() {
+            for i in $(seq 1 60); do
+              if curl -fsS "http://localhost:$2/health" > /dev/null 2>&1 &&
+                 curl -fsS -X POST "http://localhost:$2/propagator/negotiate?negotiateVersion=1" | grep -q connectionId; then
+                echo "ok   $1 answers on port $2"; return 0
+              fi
+              sleep 1
+            done
+            docker logs "$1"; echo "::error title=Server containers::$1 did not answer on port $2"; return 1
+          }
+          docker run -d -p 5050:8080 --name propagator bold-propagator
+          docker run -d -p 5000:8080 -v "$PWD/CSharp/deploy/PackageSmoke/Library.bld:/model/Model.bld:ro" -v bold-data:/data --name remote bold-remote
+          probe propagator 5050
+          probe remote 5000
+          docker restart remote
+          probe remote 5000
+          docker exec remote ls -l /data
