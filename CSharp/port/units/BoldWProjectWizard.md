@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas) (190 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.cs` |
+| C# | replaced by .NET: nothing creates projects: a project references the generator as an analyzer |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 17 symbols done, 0 verified |
+| Status | 🔵 replaced: 17 of 17 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 17 not started
+✅ 1 verified · 🔵 16 replaced
 
 ## Unit level
 
@@ -19,37 +19,37 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TProjectWizard` | class | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L11) |  | ⚪ not started |  |
-| `TOTAProject` | class | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L18) |  | ⚪ not started |  |
+| `TProjectWizard` | class | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L11) |  | ✅ verified (via unit replaced): nothing creates projects: a project references the generator as an analyzer | ✔ [`CustomAttributesTests.The_types_are_stored_and_read_back`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/CustomAttributesTests.cs#L180) |
+| `TOTAProject` | class | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L18) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
 
 ## TProjectWizard
 
-class at [line 11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L11); ⚪ not started.
+class at [line 11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L11); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Execute` | method | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L13) · [body 61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L61) |  | ⚪ not started |  |
-| `GetCurrentProject` | method | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L14) · [body 65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L65) |  | ⚪ not started |  |
-| `CreateModule` | method | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L15) · [body 106](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L106) |  | ⚪ not started |  |
+| `Execute` | method | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L13) · [body 61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L61) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `GetCurrentProject` | method | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L14) · [body 65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L65) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `CreateModule` | method | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L15) · [body 106](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L106) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
 
 ## TOTAProject
 
-class at [line 18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L18); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L22) · [body 120](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L120) |  | ⚪ not started |  |
-| `GetModuleCount` | method | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L23) · [body 125](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L125) |  | ⚪ not started |  |
-| `AddFile` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L32) · [body 131](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L131) |  | ⚪ not started |  |
-| `RemoveFile` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L36) · [body 137](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L137) |  | ⚪ not started |  |
-| `GetModule` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L38) · [body 143](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L143) |  | ⚪ not started |  |
-| `CloseModule` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L39) · [body 148](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L148) |  | ⚪ not started |  |
-| `AddNotifier` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L40) · [body 155](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L155) |  | ⚪ not started |  |
-| `Close` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L43) · [body 160](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L160) |  | ⚪ not started |  |
-| `GetFileName` | method | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L46) · [body 165](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L165) |  | ⚪ not started |  |
-| `RemoveNotifier` | method | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L48) · [body 170](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L170) |  | ⚪ not started |  |
-| `Save` | method | [52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L52) · [body 175](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L175) |  | ⚪ not started |  |
-| `IsForm` | method | [53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L53) · [body 180](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L180) |  | ⚪ not started |  |
+| `Create` | constructor | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L22) · [body 120](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L120) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `GetModuleCount` | method | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L23) · [body 125](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L125) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `AddFile` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L32) · [body 131](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L131) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `RemoveFile` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L36) · [body 137](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L137) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `GetModule` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L38) · [body 143](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L143) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `CloseModule` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L39) · [body 148](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L148) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `AddNotifier` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L40) · [body 155](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L155) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `Close` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L43) · [body 160](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L160) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `GetFileName` | method | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L46) · [body 165](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L165) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `RemoveNotifier` | method | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L48) · [body 170](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L170) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `Save` | method | [52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L52) · [body 175](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L175) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
+| `IsForm` | method | [53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L53) · [body 180](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWProjectWizard.pas#L180) |  | 🔵 replaced (via unit replaced): nothing creates projects: a project references the generator as an analyzer |  |
 
 ## Dependencies
 

@@ -140,6 +140,12 @@ public sealed class UnitStatus
                 return Indicator.Ported;
             }
 
+            // a unit with nothing to port (its code commented out, say) is ported once it has its C# file
+            if (Symbols.Count == 0 && CSharpFiles.Count > 0)
+            {
+                return Indicator.Ported;
+            }
+
             return Started > 0 || Done > 0 ? Indicator.Partial : Indicator.NotStarted;
         }
     }

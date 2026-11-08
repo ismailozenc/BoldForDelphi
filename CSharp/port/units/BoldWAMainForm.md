@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas) (203 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.cs` |
+| C# | replaced by .NET: the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🔵 replaced: 12 of 12 symbols done, 0 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 12 not started
+🔵 12 replaced
 
 ## Unit level
 
@@ -19,25 +19,25 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TUserSelection` | enum | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L23) |  | ⚪ not started |  |
-| `TMainForm` | class | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L25) |  | ⚪ not started |  |
-| `MainForm` | var | [63](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L63) |  | ⚪ not started |  |
+| `TUserSelection` | enum | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L23) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `TMainForm` | class | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L25) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `MainForm` | var | [63](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L63) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
 
 ## TMainForm
 
-class at [line 25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L25); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `btnCancelClick` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L43) · [body 89](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L89) |  | ⚪ not started |  |
-| `btnNextClick` | method | [44](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L44) · [body 97](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L97) |  | ⚪ not started |  |
-| `FormCreate` | method | [45](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L45) · [body 137](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L137) |  | ⚪ not started |  |
-| `FormDestroy` | method | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L46) · [body 191](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L191) |  | ⚪ not started |  |
-| `DisplayWizForm` | method | [55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L55) · [body 123](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L123) |  | ⚪ not started |  |
-| `Initialize` | method | [56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L56) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L83) |  | ⚪ not started |  |
-| `Next` | method | [57](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L57) · [body 146](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L146) |  | ⚪ not started |  |
-| `GetWizFormIntf` | method | [58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L58) · [body 159](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L159) |  | ⚪ not started |  |
-| `TUserSelectionToStr` | method | [59](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L59) · [body 112](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L112) |  | ⚪ not started |  |
+| `btnCancelClick` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L43) · [body 89](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L89) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `btnNextClick` | method | [44](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L44) · [body 97](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L97) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `FormCreate` | method | [45](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L45) · [body 137](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L137) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `FormDestroy` | method | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L46) · [body 191](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L191) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `DisplayWizForm` | method | [55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L55) · [body 123](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L123) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `Initialize` | method | [56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L56) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L83) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `Next` | method | [57](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L57) · [body 146](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L146) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `GetWizFormIntf` | method | [58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L58) · [body 159](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L159) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
+| `TUserSelectionToStr` | method | [59](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L59) · [body 112](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMainForm.pas#L112) |  | 🔵 replaced (via unit replaced): the wizard's first page asked which kind of attribute to make; the attribute on the class says it ([BoldValueSet] or [BoldAttributeType]) |  |
 
 ## Dependencies
 

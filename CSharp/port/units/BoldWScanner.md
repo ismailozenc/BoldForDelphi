@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas) (390 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWScanner.cs` |
+| C# | replaced by .NET: Roslyn's parser; the wizard tokenized Delphi source itself |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 38 symbols done, 0 verified |
+| Status | 🔵 replaced: 38 of 38 symbols done, 0 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 38 not started
+🔵 38 replaced
 
 ## Unit level
 
@@ -19,51 +19,51 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `DefaultBufferSize` | const | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L10) |  | ⚪ not started |  |
-| `ttNull` | const | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L12) |  | ⚪ not started |  |
-| `ttIdentifier` | const | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L13) |  | ⚪ not started |  |
-| `ttString` | const | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L14) |  | ⚪ not started |  |
-| `ttInteger` | const | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L15) |  | ⚪ not started |  |
-| `ttFloat` | const | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L16) |  | ⚪ not started |  |
-| `ttLE` | const | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L17) |  | ⚪ not started |  |
-| `ttGE` | const | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L18) |  | ⚪ not started |  |
-| `ttNE` | const | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L19) |  | ⚪ not started |  |
-| `ttDotDot` | const | [20](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L20) |  | ⚪ not started |  |
-| `ttAssign` | const | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L21) |  | ⚪ not started |  |
-| `TTokenType` | alias | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L27) |  | ⚪ not started |  |
-| `TScanner` | class | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L30) |  | ⚪ not started |  |
-| `TDoubleChar` | record, implementation | [251](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L251) |  | ⚪ not started |  |
+| `DefaultBufferSize` | const | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L10) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttNull` | const | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L12) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttIdentifier` | const | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L13) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttString` | const | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L14) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttInteger` | const | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L15) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttFloat` | const | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L16) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttLE` | const | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L17) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttGE` | const | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L18) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttNE` | const | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L19) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttDotDot` | const | [20](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L20) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `ttAssign` | const | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L21) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `TTokenType` | alias | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L27) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `TScanner` | class | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L30) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `TDoubleChar` | record, implementation | [251](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L251) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
 
 ## TScanner
 
-class at [line 30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L30); ⚪ not started.
+class at [line 30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L30); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `SetBufSize` | method, private | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L43) · [body 90](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L90) |  | ⚪ not started |  |
-| `FillBuffer` | method, protected | [45](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L45) · [body 97](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L97) |  | ⚪ not started |  |
-| `GetChar` | method, protected | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L46) · [body 104](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L104) |  | ⚪ not started |  |
-| `Stream` | property, protected | [47](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L47) |  | ⚪ not started |  |
-| `NextToken` | method, protected | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L48) · [body 320](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L320) |  | ⚪ not started |  |
-| `DoToken` | method, protected | [49](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L49) · [body 353](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L353) |  | ⚪ not started |  |
-| `DoEndOfStream` | method, protected | [50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L50) · [body 359](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L359) |  | ⚪ not started |  |
-| `GetNumber` | method, protected | [51](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L51) · [body 287](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L287) |  | ⚪ not started |  |
-| `CheckSymbol` | method, protected | [52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L52) · [body 267](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L267) |  | ⚪ not started |  |
-| `GetIdentifier` | method, protected | [53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L53) · [body 231](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L231) |  | ⚪ not started |  |
-| `GetString` | method, protected | [54](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L54) · [body 201](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L201) |  | ⚪ not started |  |
-| `SkipWhiteSpace` | method, protected | [55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L55) · [body 150](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L150) |  | ⚪ not started |  |
-| `SkipComment` | method, protected | [56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L56) · [body 118](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L118) |  | ⚪ not started |  |
-| `Create` | constructor | [58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L58) · [body 77](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L77) |  | ⚪ not started |  |
-| `Destroy` | destructor | [59](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L59) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L83) |  | ⚪ not started |  |
-| `Scan` | method | [60](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L60) · [body 365](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L365) |  | ⚪ not started |  |
-| `IsIdentifier` | method | [61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L61) · [body 348](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L348) |  | ⚪ not started |  |
-| `Position` | property | [62](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L62) |  | ⚪ not started |  |
-| `NewLine` | property | [63](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L63) |  | ⚪ not started |  |
-| `Token` | property | [64](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L64) |  | ⚪ not started |  |
-| `TokenType` | property | [65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L65) |  | ⚪ not started |  |
-| `BufferSize` | property | [66](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L66) |  | ⚪ not started |  |
-| `OnEndOfStream` | property | [67](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L67) |  | ⚪ not started |  |
-| `OnToken` | property | [68](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L68) |  | ⚪ not started |  |
+| `SetBufSize` | method, private | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L43) · [body 90](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L90) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `FillBuffer` | method, protected | [45](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L45) · [body 97](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L97) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `GetChar` | method, protected | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L46) · [body 104](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L104) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `Stream` | property, protected | [47](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L47) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `NextToken` | method, protected | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L48) · [body 320](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L320) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `DoToken` | method, protected | [49](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L49) · [body 353](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L353) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `DoEndOfStream` | method, protected | [50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L50) · [body 359](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L359) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `GetNumber` | method, protected | [51](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L51) · [body 287](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L287) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `CheckSymbol` | method, protected | [52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L52) · [body 267](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L267) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `GetIdentifier` | method, protected | [53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L53) · [body 231](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L231) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `GetString` | method, protected | [54](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L54) · [body 201](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L201) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `SkipWhiteSpace` | method, protected | [55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L55) · [body 150](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L150) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `SkipComment` | method, protected | [56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L56) · [body 118](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L118) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `Create` | constructor | [58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L58) · [body 77](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L77) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `Destroy` | destructor | [59](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L59) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L83) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `Scan` | method | [60](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L60) · [body 365](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L365) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `IsIdentifier` | method | [61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L61) · [body 348](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L348) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `Position` | property | [62](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L62) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `NewLine` | property | [63](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L63) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `Token` | property | [64](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L64) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `TokenType` | property | [65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L65) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `BufferSize` | property | [66](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L66) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `OnEndOfStream` | property | [67](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L67) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
+| `OnToken` | property | [68](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWScanner.pas#L68) |  | 🔵 replaced (via unit replaced): Roslyn's parser; the wizard tokenized Delphi source itself |  |
 
 ## Dependencies
 

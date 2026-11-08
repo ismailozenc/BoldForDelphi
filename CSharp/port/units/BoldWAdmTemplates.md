@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas) (35 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.cs` |
+| C# | replaced by .NET: BoldAttributeCode (Bold.SourceGenerators) writes the templates' code in C#: the value set, the attribute with its content interface, proxy and free-standing value, the persistence mapper, and the subclassed attribute |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | 🔵 replaced: 3 of 3 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 3 not started
+✅ 1 verified · 🔵 2 replaced
 
 ## Unit level
 
@@ -19,9 +19,9 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Tattrdatamodule` | class | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas#L11) |  | ⚪ not started |  |
-| `attrdatamodule` | var | [24](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas#L24) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas#L33) |  | ⚪ not started |  |
+| `Tattrdatamodule` | class | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas#L11) |  | ✅ verified (via unit replaced): BoldAttributeCode (Bold.SourceGenerators) writes the templates' code in C#: the value set, the attribute with its content interface, proxy and free-standing value, the persistence mapper, and the subclassed attribute | ✔ [`BoldAttributeGeneratorTests.A_value_set_gets_its_enumeration_values_and_registration`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/BoldAttributeGeneratorTests.cs#L36) |
+| `attrdatamodule` | var | [24](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas#L24) |  | 🔵 replaced (via unit replaced): BoldAttributeCode (Bold.SourceGenerators) writes the templates' code in C#: the value set, the attribute with its content interface, proxy and free-standing value, the persistence mapper, and the subclassed attribute |  |
+| `initialization` | initialization, implementation | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdmTemplates.pas#L33) |  | 🔵 replaced (via unit replaced): BoldAttributeCode (Bold.SourceGenerators) writes the templates' code in C#: the value set, the attribute with its content interface, proxy and free-standing value, the persistence mapper, and the subclassed attribute |  |
 
 ## Dependencies
 

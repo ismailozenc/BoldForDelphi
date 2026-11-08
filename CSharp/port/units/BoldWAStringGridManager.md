@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas) (288 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.cs` |
+| C# | replaced by .NET: a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 19 symbols done, 0 verified |
+| Status | 🔵 replaced: 19 of 19 symbols done, 0 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 19 not started
+🔵 19 replaced
 
 ## Unit level
 
@@ -19,39 +19,39 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TWinControlClass` | class reference | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L13) |  | ⚪ not started |  |
-| `TGridColumnControl` | class | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L14) |  | ⚪ not started |  |
-| `TStringGridManager` | class | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L21) |  | ⚪ not started |  |
+| `TWinControlClass` | class reference | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L13) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `TGridColumnControl` | class | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L14) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `TStringGridManager` | class | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L21) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
 
 ## TGridColumnControl
 
-class at [line 14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L14); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Destroy` | destructor | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L19) · [body 53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L53) |  | ⚪ not started |  |
+| `Destroy` | destructor | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L19) · [body 53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L53) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
 
 ## TStringGridManager
 
-class at [line 21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L21); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L29) · [body 61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L61) |  | ⚪ not started |  |
-| `AdjustGridCellHeight` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L30) · [body 181](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L181) |  | ⚪ not started |  |
-| `SetStringGrid` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L31) · [body 73](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L73) |  | ⚪ not started |  |
-| `addCtrlForColumn` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L32) · [body 81](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L81) |  | ⚪ not started |  |
-| `GetCtrlForColumn` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L33) · [body 121](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L121) |  | ⚪ not started |  |
-| `StringGridOnSelectCell` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L34) · [body 104](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L104) |  | ⚪ not started |  |
-| `EditCell` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L35) · [body 138](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L138) |  | ⚪ not started |  |
-| `ControlOnChange` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L36) · [body 190](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L190) |  | ⚪ not started |  |
-| `ControlOnExit` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L37) · [body 195](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L195) |  | ⚪ not started |  |
-| `GetCtrlSelection` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L38) · [body 202](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L202) |  | ⚪ not started |  |
-| `Add` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L39) · [body 218](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L218) |  | ⚪ not started |  |
-| `Delete` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L40) · [body 234](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L234) |  | ⚪ not started |  |
-| `MoveDown` | method | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L41) · [body 247](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L247) |  | ⚪ not started |  |
-| `MoveUp` | method | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L42) · [body 260](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L260) |  | ⚪ not started |  |
-| `Edit` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L43) · [body 273](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L273) |  | ⚪ not started |  |
+| `Create` | constructor | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L29) · [body 61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L61) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `AdjustGridCellHeight` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L30) · [body 181](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L181) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `SetStringGrid` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L31) · [body 73](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L73) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `addCtrlForColumn` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L32) · [body 81](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L81) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `GetCtrlForColumn` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L33) · [body 121](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L121) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `StringGridOnSelectCell` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L34) · [body 104](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L104) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `EditCell` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L35) · [body 138](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L138) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `ControlOnChange` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L36) · [body 190](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L190) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `ControlOnExit` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L37) · [body 195](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L195) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `GetCtrlSelection` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L38) · [body 202](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L202) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `Add` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L39) · [body 218](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L218) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `Delete` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L40) · [body 234](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L234) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `MoveDown` | method | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L41) · [body 247](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L247) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `MoveUp` | method | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L42) · [body 260](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L260) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
+| `Edit` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L43) · [body 273](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAStringGridManager.pas#L273) |  | 🔵 replaced (via unit replaced): a grid helper of the wizard's forms; [BoldValueSetValue] and [BoldAttributeField] list the values and fields |  |
 
 ## Dependencies
 

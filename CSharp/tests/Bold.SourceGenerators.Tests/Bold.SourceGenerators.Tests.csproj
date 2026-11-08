@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of Bold.SourceGenerators, the Bold attribute generator that takes the place of Delphi's attribute wizard: the generator run on sources (what it writes and what it reports), and the attribute types it wrote for the CustomAttributes example, used in a system and stored in SQLite. Test files mirror the Delphi paths.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/TestDatabase.cs" Link="Support/TestDatabase.cs" />
+    <Compile Include="../Bold.Persistence.Sql.Tests/Support/NativeSqlite.cs" Link="Support/NativeSqlite.cs" Condition="'$(BoldOffline)' == 'true'" />
+  </ItemGroup>
+  <!-- Offline builds use the small native SQLite provider of the SQL tests and the compiler of the SDK; normal builds Microsoft.Data.Sqlite and Roslyn's package. -->
+  <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
+    <DefineConstants>$(DefineConstants);BOLD_OFFLINE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(BoldOffline)' == 'true'">
+    <Reference Include="Microsoft.CodeAnalysis" HintPath="$(RoslynTargetsPath)/bincore/Microsoft.CodeAnalysis.dll" />
+    <Reference Include="Microsoft.CodeAnalysis.CSharp" HintPath="$(RoslynTargetsPath)/bincore/Microsoft.CodeAnalysis.CSharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../src/Bold.Handles/Bold.Handles.csproj" />
+    <!-- The generator, run on sources by the tests. -->
+    <ProjectReference Include="../../src/Bold.SourceGenerators/Bold.SourceGenerators.csproj" />
+    <!-- The attribute types the generator wrote when the example was built. -->
+    <ProjectReference Include="../../examples/CustomAttributes/CustomAttributes.csproj" />
+  </ItemGroup>
+</Project>

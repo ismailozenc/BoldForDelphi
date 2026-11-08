@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs) |
 | Project | Bold.ValueSpace |
 | Milestone | M3 Object space in memory |
-| Status | 🟡 partial: 49 of 51 symbols done, 49 verified |
+| Status | ✅ verified: 51 of 51 symbols done, 51 verified |
 
-✅ 49 verified · 🟡 2 partial
+✅ 51 verified
 
 ## Unit level
 
@@ -114,8 +114,8 @@ class at [line 134](../../../Source/ValueSpace/Condition/BoldCondition.pas#L134)
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
 | `GetStreamName` | method, protected | [136](../../../Source/ValueSpace/Condition/BoldCondition.pas#L136) · [body 273](../../../Source/ValueSpace/Condition/BoldCondition.pas#L273) | [`TBoldXMLSQLConditionStreamer.GetStreamName`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L166) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
-| `WriteObject` | method | [138](../../../Source/ValueSpace/Condition/BoldCondition.pas#L138) · [body 326](../../../Source/ValueSpace/Condition/BoldCondition.pas#L326) | [`TBoldXMLSQLConditionStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L170) | 🟡 partial: A parameter value is written as invariant text where Delphi writes TParam's binary buffer. | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
-| `ReadObject` | method | [139](../../../Source/ValueSpace/Condition/BoldCondition.pas#L139) · [body 278](../../../Source/ValueSpace/Condition/BoldCondition.pas#L278) | [`TBoldXMLSQLConditionStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L199) | 🟡 partial: Reads a parameter value written as invariant text, as WriteObject writes it. | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `WriteObject` | method | [138](../../../Source/ValueSpace/Condition/BoldCondition.pas#L138) · [body 326](../../../Source/ValueSpace/Condition/BoldCondition.pas#L326) | [`TBoldXMLSQLConditionStreamer.WriteObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L170) | ✅ verified: A parameter's value is written as invariant text, which ReadObject reads; Delphi wrote TParam's in-memory buffer, whose layout depended on the Delphi version and its string type. | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
+| `ReadObject` | method | [139](../../../Source/ValueSpace/Condition/BoldCondition.pas#L139) · [body 278](../../../Source/ValueSpace/Condition/BoldCondition.pas#L278) | [`TBoldXMLSQLConditionStreamer.ReadObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L199) | ✅ verified: Reads a parameter's value as the invariant text WriteObject writes; Delphi read TParam's in-memory buffer. | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
 | `CreateObject` | method | [140](../../../Source/ValueSpace/Condition/BoldCondition.pas#L140) · [body 268](../../../Source/ValueSpace/Condition/BoldCondition.pas#L268) | [`TBoldXMLSQLConditionStreamer.CreateObject`](../../src/Bold.ValueSpace/ValueSpace/Condition/BoldCondition.cs#L231) | ✅ verified | ✔ [`BoldConditionTests.SQL_condition_round_trips_with_parameters`](../../tests/Bold.ValueSpace.Tests/ValueSpace/Condition/BoldConditionTests.cs#L41) |
 
 ## TBoldXMLTimestampConditionStreamer

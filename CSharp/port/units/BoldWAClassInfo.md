@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas) (170 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.cs` |
+| C# | replaced by .NET: Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 23 symbols done, 0 verified |
+| Status | 🔵 replaced: 23 of 23 symbols done, 0 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 23 not started
+🔵 23 replaced
 
 ## Unit level
 
@@ -19,43 +19,43 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TClassInfo` | class | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L10) |  | ⚪ not started |  |
-| `TClassInfoList` | class | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L25) |  | ⚪ not started |  |
+| `TClassInfo` | class | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L10) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `TClassInfoList` | class | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L25) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
 
 ## TClassInfo
 
-class at [line 10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L10); ⚪ not started.
+class at [line 10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L10); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create()` | constructor | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L16) · [body 52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L52) |  | ⚪ not started |  |
-| `Create(string)` | constructor | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L17) · [body 58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L58) |  | ⚪ not started |  |
-| `Destroy` | destructor | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L18) · [body 66](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L66) |  | ⚪ not started |  |
-| `getMethods` | method | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L19) · [body 72](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L72) |  | ⚪ not started |  |
-| `addMethod` | method | [20](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L20) · [body 87](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L87) |  | ⚪ not started |  |
-| `DelphiName` | property | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L21) |  | ⚪ not started |  |
-| `methods` | property | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L22) |  | ⚪ not started |  |
+| `Create()` | constructor | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L16) · [body 52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L52) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Create(string)` | constructor | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L17) · [body 58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L58) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Destroy` | destructor | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L18) · [body 66](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L66) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `getMethods` | method | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L19) · [body 72](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L72) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `addMethod` | method | [20](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L20) · [body 87](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L87) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `DelphiName` | property | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L21) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `methods` | property | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L22) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
 
 ## TClassInfoList
 
-class at [line 25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L25); ⚪ not started.
+class at [line 25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L25); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValue` | method, private | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L28) · [body 113](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L113) |  | ⚪ not started |  |
-| `SetValue` | method, private | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L29) · [body 118](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L118) |  | ⚪ not started |  |
-| `GetCount` | method, private | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L30) · [body 157](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L157) |  | ⚪ not started |  |
-| `Create` | constructor | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L32) · [body 93](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L93) |  | ⚪ not started |  |
-| `Destroy` | destructor | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L33) · [body 99](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L99) |  | ⚪ not started |  |
-| `Add` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L34) · [body 123](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L123) |  | ⚪ not started |  |
-| `Delete` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L35) · [body 128](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L128) |  | ⚪ not started |  |
-| `First` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L36) · [body 137](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L137) |  | ⚪ not started |  |
-| `Insert` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L37) · [body 142](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L142) |  | ⚪ not started |  |
-| `Remove` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L38) · [body 147](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L147) |  | ⚪ not started |  |
-| `Last` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L39) · [body 152](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L152) |  | ⚪ not started |  |
-| `Clear` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L40) · [body 162](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L162) |  | ⚪ not started |  |
-| `Items` | property | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L41) |  | ⚪ not started |  |
-| `Count` | property | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L42) |  | ⚪ not started |  |
+| `GetValue` | method, private | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L28) · [body 113](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L113) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `SetValue` | method, private | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L29) · [body 118](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L118) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `GetCount` | method, private | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L30) · [body 157](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L157) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Create` | constructor | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L32) · [body 93](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L93) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Destroy` | destructor | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L33) · [body 99](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L99) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Add` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L34) · [body 123](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L123) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Delete` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L35) · [body 128](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L128) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `First` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L36) · [body 137](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L137) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Insert` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L37) · [body 142](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L142) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Remove` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L38) · [body 147](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L147) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Last` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L39) · [body 152](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L152) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Clear` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L40) · [body 162](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L162) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Items` | property | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L41) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
+| `Count` | property | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAClassInfo.pas#L42) |  | 🔵 replaced (via unit replaced): Roslyn's symbols of the class and its base class; the wizard gathered class information from Delphi source it parsed |  |
 
 ## Dependencies
 

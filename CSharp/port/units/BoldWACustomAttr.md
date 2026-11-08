@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas) (236 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.cs` |
+| C# | replaced by .NET: BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 23 symbols done, 0 verified |
+| Status | 🔵 replaced: 23 of 23 symbols done, 2 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 23 not started
+✅ 2 verified · 🔵 21 replaced
 
 ## Unit level
 
@@ -19,50 +19,50 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TAccessType` | enum | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L12) |  | ⚪ not started |  |
-| `TPropertyInfo` | class | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L13) |  | ⚪ not started |  |
-| `TPropertyInfoList` | class | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L21) |  | ⚪ not started |  |
-| `TCustomAttribute` | class | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L41) |  | ⚪ not started |  |
-| `StrToAccessType` | routine | [57](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L57) · [body 65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L65) |  | ⚪ not started |  |
+| `TAccessType` | enum | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L12) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `TPropertyInfo` | class | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L13) |  | ✅ verified (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class | ✔ [`BoldAttributeGeneratorTests.A_new_attribute_gets_its_fields_content_free_standing_value_and_mapper`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/BoldAttributeGeneratorTests.cs#L55) |
+| `TPropertyInfoList` | class | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L21) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `TCustomAttribute` | class | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L41) |  | ✅ verified (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class | ✔ [`BoldAttributeGeneratorTests.A_new_attribute_gets_its_fields_content_free_standing_value_and_mapper`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/BoldAttributeGeneratorTests.cs#L55) |
+| `StrToAccessType` | routine | [57](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L57) · [body 65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L65) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
 
 ## TPropertyInfo
 
-class at [line 13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L13); ⚪ not started.
+class at [line 13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L13); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L18) · [body 79](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L79) |  | ⚪ not started |  |
+| `Create` | constructor | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L18) · [body 79](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L79) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
 
 ## TPropertyInfoList
 
-class at [line 21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L21); ⚪ not started.
+class at [line 21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L21); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValue` | method, private | [24](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L24) · [body 179](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L179) |  | ⚪ not started |  |
-| `SetValue` | method, private | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L25) · [body 184](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L184) |  | ⚪ not started |  |
-| `GetCount` | method, private | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L26) · [body 223](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L223) |  | ⚪ not started |  |
-| `Create` | constructor | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L28) · [body 159](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L159) |  | ⚪ not started |  |
-| `Destroy` | destructor | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L29) · [body 165](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L165) |  | ⚪ not started |  |
-| `Add` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L30) · [body 189](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L189) |  | ⚪ not started |  |
-| `Delete` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L31) · [body 194](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L194) |  | ⚪ not started |  |
-| `First` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L32) · [body 203](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L203) |  | ⚪ not started |  |
-| `Insert` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L33) · [body 208](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L208) |  | ⚪ not started |  |
-| `Remove` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L34) · [body 213](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L213) |  | ⚪ not started |  |
-| `Last` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L35) · [body 218](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L218) |  | ⚪ not started |  |
-| `Clear` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L36) · [body 228](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L228) |  | ⚪ not started |  |
-| `Items` | property | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L37) |  | ⚪ not started |  |
-| `Count` | property | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L38) |  | ⚪ not started |  |
+| `GetValue` | method, private | [24](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L24) · [body 179](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L179) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `SetValue` | method, private | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L25) · [body 184](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L184) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `GetCount` | method, private | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L26) · [body 223](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L223) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Create` | constructor | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L28) · [body 159](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L159) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Destroy` | destructor | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L29) · [body 165](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L165) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Add` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L30) · [body 189](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L189) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Delete` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L31) · [body 194](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L194) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `First` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L32) · [body 203](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L203) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Insert` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L33) · [body 208](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L208) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Remove` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L34) · [body 213](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L213) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Last` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L35) · [body 218](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L218) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Clear` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L36) · [body 228](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L228) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Items` | property | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L37) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Count` | property | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L38) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
 
 ## TCustomAttribute
 
-class at [line 41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L41); ⚪ not started.
+class at [line 41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L41); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [49](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L49) · [body 88](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L88) |  | ⚪ not started |  |
-| `Destroy` | destructor | [50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L50) · [body 96](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L96) |  | ⚪ not started |  |
-| `AssignMethodsToTemplate` | method | [54](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L54) · [body 104](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L104) |  | ⚪ not started |  |
+| `Create` | constructor | [49](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L49) · [body 88](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L88) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `Destroy` | destructor | [50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L50) · [body 96](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L96) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
+| `AssignMethodsToTemplate` | method | [54](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L54) · [body 104](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWACustomAttr.pas#L104) |  | 🔵 replaced (via unit replaced): BoldAttributeSpec and BoldFieldSpec (Bold.SourceGenerators), read from [BoldAttributeType] and [BoldAttributeField] on the class |  |
 
 ## Dependencies
 

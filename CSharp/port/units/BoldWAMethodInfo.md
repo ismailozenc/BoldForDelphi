@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas) (291 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.cs` |
+| C# | replaced by .NET: the methods to override are written in the partial class; the generator writes what the templates wrote in full |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 36 symbols done, 0 verified |
+| Status | 🔵 replaced: 36 of 36 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 36 not started
+✅ 1 verified · 🔵 35 replaced
 
 ## Unit level
 
@@ -19,56 +19,56 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TVisibility` | enum | [9](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L9) |  | ⚪ not started |  |
-| `TListAction` | enum | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L10) |  | ⚪ not started |  |
-| `TMethodType` | enum | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L11) |  | ⚪ not started |  |
-| `TMethodDirective` | enum | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L12) |  | ⚪ not started |  |
-| `TMethodDirectiveSet` | set | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L13) |  | ⚪ not started |  |
-| `TListChangeEvent` | event type | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L14) |  | ⚪ not started |  |
-| `TMethodInfo` | class | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L16) |  | ⚪ not started |  |
-| `TMethodInfoList` | class | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L37) |  | ⚪ not started |  |
-| `VirtualMethods` | routine | [59](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L59) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L83) |  | ⚪ not started |  |
-| `MethodIsOverriden` | routine | [60](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L60) · [body 93](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L93) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [287](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L287) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [289](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L289) |  | ⚪ not started |  |
+| `TVisibility` | enum | [9](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L9) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `TListAction` | enum | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L10) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `TMethodType` | enum | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L11) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `TMethodDirective` | enum | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L12) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `TMethodDirectiveSet` | set | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L13) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `TListChangeEvent` | event type | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L14) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `TMethodInfo` | class | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L16) |  | ✅ verified (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full | ✔ [`CustomAttributesTests.A_point_has_two_coordinates_and_tells_when_they_change`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/CustomAttributesTests.cs#L116) |
+| `TMethodInfoList` | class | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L37) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `VirtualMethods` | routine | [59](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L59) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L83) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `MethodIsOverriden` | routine | [60](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L60) · [body 93](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L93) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `initialization` | initialization, implementation | [287](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L287) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `finalization` | finalization, implementation | [289](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L289) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
 
 ## TMethodInfo
 
-class at [line 16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L16); ⚪ not started.
+class at [line 16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L16); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L25) · [body 99](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L99) |  | ⚪ not started |  |
-| `IsFunction` | method | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L26) · [body 109](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L109) |  | ⚪ not started |  |
-| `IsOverriden` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L27) · [body 160](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L160) |  | ⚪ not started |  |
-| `Assign` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L28) · [body 114](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L114) |  | ⚪ not started |  |
-| `MethodTypeAsString` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L30) · [body 132](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L132) |  | ⚪ not started |  |
-| `mDirectivesAsString` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L31) · [body 143](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L143) |  | ⚪ not started |  |
-| `StrToMethodType` | class method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L32) · [body 165](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L165) |  | ⚪ not started |  |
-| `TVisibilityToStr` | class method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L33) · [body 179](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L179) |  | ⚪ not started |  |
-| `StrToVisibility` | class method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L34) · [body 190](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L190) |  | ⚪ not started |  |
+| `Create` | constructor | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L25) · [body 99](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L99) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `IsFunction` | method | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L26) · [body 109](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L109) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `IsOverriden` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L27) · [body 160](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L160) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Assign` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L28) · [body 114](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L114) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `MethodTypeAsString` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L30) · [body 132](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L132) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `mDirectivesAsString` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L31) · [body 143](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L143) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `StrToMethodType` | class method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L32) · [body 165](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L165) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `TVisibilityToStr` | class method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L33) · [body 179](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L179) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `StrToVisibility` | class method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L34) · [body 190](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L190) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
 
 ## TMethodInfoList
 
-class at [line 37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L37); ⚪ not started.
+class at [line 37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L37); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetValue` | method, private | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L41) · [body 222](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L222) |  | ⚪ not started |  |
-| `SetValue` | method, private | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L42) · [body 227](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L227) |  | ⚪ not started |  |
-| `GetCount` | method, private | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L43) · [body 274](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L274) |  | ⚪ not started |  |
-| `Create` | constructor | [45](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L45) · [body 204](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L204) |  | ⚪ not started |  |
-| `Destroy` | destructor | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L46) · [body 210](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L210) |  | ⚪ not started |  |
-| `Add` | method | [47](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L47) · [body 232](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L232) |  | ⚪ not started |  |
-| `Delete` | method | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L48) · [body 239](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L239) |  | ⚪ not started |  |
-| `First` | method | [49](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L49) · [body 250](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L250) |  | ⚪ not started |  |
-| `Insert` | method | [50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L50) · [body 255](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L255) |  | ⚪ not started |  |
-| `Remove` | method | [51](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L51) · [body 262](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L262) |  | ⚪ not started |  |
-| `Last` | method | [52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L52) · [body 269](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L269) |  | ⚪ not started |  |
-| `Clear` | method | [53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L53) · [body 279](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L279) |  | ⚪ not started |  |
-| `Items` | property | [54](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L54) |  | ⚪ not started |  |
-| `Count` | property | [55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L55) |  | ⚪ not started |  |
-| `OnChange` | property | [56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L56) |  | ⚪ not started |  |
+| `GetValue` | method, private | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L41) · [body 222](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L222) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `SetValue` | method, private | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L42) · [body 227](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L227) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `GetCount` | method, private | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L43) · [body 274](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L274) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Create` | constructor | [45](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L45) · [body 204](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L204) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Destroy` | destructor | [46](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L46) · [body 210](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L210) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Add` | method | [47](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L47) · [body 232](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L232) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Delete` | method | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L48) · [body 239](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L239) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `First` | method | [49](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L49) · [body 250](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L250) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Insert` | method | [50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L50) · [body 255](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L255) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Remove` | method | [51](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L51) · [body 262](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L262) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Last` | method | [52](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L52) · [body 269](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L269) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Clear` | method | [53](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L53) · [body 279](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L279) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Items` | property | [54](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L54) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `Count` | property | [55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L55) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
+| `OnChange` | property | [56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAMethodInfo.pas#L56) |  | 🔵 replaced (via unit replaced): the methods to override are written in the partial class; the generator writes what the templates wrote in full |  |
 
 ## Dependencies
 

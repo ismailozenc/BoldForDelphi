@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas) (45 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.cs` |
+| C# | replaced by .NET: the wizard's page and unit generator interfaces; the generator has one step, the build |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 26 symbols done, 0 verified |
+| Status | 🔵 replaced: 26 of 26 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 26 not started
+✅ 1 verified · 🔵 25 replaced
 
 ## Unit level
 
@@ -19,46 +19,46 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `wfaIgnore` | const | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L10) |  | ⚪ not started |  |
-| `wfaNext` | const | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L11) |  | ⚪ not started |  |
-| `wfaFinish` | const | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L12) |  | ⚪ not started |  |
-| `wfaCancel` | const | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L13) |  | ⚪ not started |  |
-| `wfaBack` | const | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L14) |  | ⚪ not started |  |
-| `wfaPrevious` | const | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L15) |  | ⚪ not started |  |
-| `wfaLast` | const | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L16) |  | ⚪ not started |  |
-| `wfaClose` | const | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L17) |  | ⚪ not started |  |
-| `TEnableNextEvent` | event type | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L21) |  | ⚪ not started |  |
-| `IWizardForm` | interface | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L22) |  | ⚪ not started |  |
-| `IUnitGenerator` | interface | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L39) |  | ⚪ not started |  |
+| `wfaIgnore` | const | [10](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L10) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `wfaNext` | const | [11](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L11) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `wfaFinish` | const | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L12) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `wfaCancel` | const | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L13) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `wfaBack` | const | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L14) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `wfaPrevious` | const | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L15) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `wfaLast` | const | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L16) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `wfaClose` | const | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L17) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `TEnableNextEvent` | event type | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L21) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `IWizardForm` | interface | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L22) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `IUnitGenerator` | interface | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L39) |  | ✅ verified (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build | ✔ [`CustomAttributesTests.A_point_is_given_as_its_content_and_copied_through_a_free_standing_value`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/CustomAttributesTests.cs#L143) |
 
 ## IWizardForm
 
-interface at [line 22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L22); ⚪ not started.
+interface at [line 22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L22); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetSteppedBack` | method | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L23) |  | ⚪ not started |  |
-| `AssignParent` | method | [24](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L24) |  | ⚪ not started |  |
-| `ClearParent` | method | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L25) |  | ⚪ not started |  |
-| `Initialize` | method | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L26) |  | ⚪ not started |  |
-| `Next` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L27) |  | ⚪ not started |  |
-| `Back` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L28) |  | ⚪ not started |  |
-| `Finish` | method | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L29) |  | ⚪ not started |  |
-| `Cancel` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L30) |  | ⚪ not started |  |
-| `getUnitGeneratorIntf` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L31) |  | ⚪ not started |  |
-| `setUnitGeneratorIntf` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L32) |  | ⚪ not started |  |
-| `setEnableNext` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L33) |  | ⚪ not started |  |
-| `SteppedBack` | property | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L34) |  | ⚪ not started |  |
-| `UnitGenerator` | property | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L35) |  | ⚪ not started |  |
-| `EnableNext` | property | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L36) |  | ⚪ not started |  |
+| `GetSteppedBack` | method | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L23) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `AssignParent` | method | [24](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L24) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `ClearParent` | method | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L25) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `Initialize` | method | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L26) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `Next` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L27) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `Back` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L28) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `Finish` | method | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L29) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `Cancel` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L30) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `getUnitGeneratorIntf` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L31) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `setUnitGeneratorIntf` | method | [32](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L32) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `setEnableNext` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L33) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `SteppedBack` | property | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L34) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `UnitGenerator` | property | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L35) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
+| `EnableNext` | property | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L36) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
 
 ## IUnitGenerator
 
-interface at [line 39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L39); ⚪ not started.
+interface at [line 39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L39); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GenerateUnit` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L40) |  | ⚪ not started |  |
+| `GenerateUnit` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAInterfaces.pas#L40) |  | 🔵 replaced (via unit replaced): the wizard's page and unit generator interfaces; the generator has one step, the build |  |
 
 ## Dependencies
 

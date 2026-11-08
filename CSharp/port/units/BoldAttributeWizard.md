@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas) (125 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.cs` |
+| C# | replaced by .NET: the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 9 symbols done, 0 verified |
+| Status | 🔵 replaced: 9 of 9 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 9 not started
+✅ 1 verified · 🔵 8 replaced
 
 ## Unit level
 
@@ -19,22 +19,22 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TAttributeWizard` | class | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L14) |  | ⚪ not started |  |
-| `Register` | routine | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L21) · [body 43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L43) |  | ⚪ not started |  |
-| `InitExpert` | routine | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L22) · [body 51](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L51) |  | ⚪ not started |  |
-| `DoneExpert` | routine | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L23) · [body 60](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L60) |  | ⚪ not started |  |
-| `AttributeWizard` | var | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L26) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [120](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L120) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [122](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L122) |  | ⚪ not started |  |
+| `TAttributeWizard` | class | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L14) |  | ✅ verified (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) | ✔ [`BoldAttributeGeneratorTests.A_value_set_gets_its_enumeration_values_and_registration`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/BoldAttributeGeneratorTests.cs#L36) |
+| `Register` | routine | [21](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L21) · [body 43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L43) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
+| `InitExpert` | routine | [22](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L22) · [body 51](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L51) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
+| `DoneExpert` | routine | [23](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L23) · [body 60](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L60) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
+| `AttributeWizard` | var | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L26) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
+| `initialization` | initialization, implementation | [120](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L120) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
+| `finalization` | finalization, implementation | [122](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L122) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
 
 ## TAttributeWizard
 
-class at [line 14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L14); ⚪ not started.
+class at [line 14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L14); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GenerateUnit` | method, private | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L16) · [body 76](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L76) |  | ⚪ not started |  |
-| `Execute` | method | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L18) · [body 68](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L68) |  | ⚪ not started |  |
+| `GenerateUnit` | method, private | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L16) · [body 76](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L76) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
+| `Execute` | method | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L18) · [body 68](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldAttributeWizard.pas#L68) |  | 🔵 replaced (via unit replaced): the Bold attribute generator (Bold.SourceGenerators: BoldAttributeGenerator), which the compiler runs when the project builds, does the wizard's work (DECIDE-3) |  |
 
 ## Dependencies
 

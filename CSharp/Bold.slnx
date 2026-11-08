@@ -29,6 +29,7 @@
     <Project Path="src/Bold.Remote.Client/Bold.Remote.Client.csproj" />
     <Project Path="src/Bold.Remote.Server/Bold.Remote.Server.csproj" />
     <Project Path="src/Bold.Rtl/Bold.Rtl.csproj" />
+    <Project Path="src/Bold.SourceGenerators/Bold.SourceGenerators.csproj" />
     <Project Path="src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
     <Project Path="src/Bold.WinForms/Bold.WinForms.csproj" />
     <Project Path="src/Bold.Xmi/Bold.Xmi.csproj" />
@@ -36,6 +37,7 @@
   <Folder Name="/examples/">
     <Project Path="examples/Building/BldOwn/BldOwn.csproj" />
     <Project Path="examples/Building/BuildingClasses/BuildingClasses.csproj" />
+    <Project Path="examples/CustomAttributes/CustomAttributes.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/Bold.AwareGui.Tests/Bold.AwareGui.Tests.csproj" />
@@ -54,6 +56,7 @@
     <Project Path="tests/Bold.Remote.Tests/Bold.Remote.Tests.csproj" />
     <Project Path="tests/Bold.Xmi.Tests/Bold.Xmi.Tests.csproj" />
     <Project Path="tests/Bold.Rtl.Tests/Bold.Rtl.Tests.csproj" />
+    <Project Path="tests/Bold.SourceGenerators.Tests/Bold.SourceGenerators.Tests.csproj" />
     <Project Path="tests/Bold.TestSupport/Bold.TestSupport.csproj" />
     <Project Path="tests/Bold.ValueSpace.Tests/Bold.ValueSpace.Tests.csproj" />
     <Project Path="tests/Bold.WinForms.Tests/Bold.WinForms.Tests.csproj" />

@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.pas) (33 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.cs` |
+| C# | replaced by .NET: the wizard's images; the generator has no user interface |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 2 symbols done, 0 verified |
+| Status | 🔵 replaced: 2 of 2 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 2 not started
+✅ 1 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -19,8 +19,8 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TdmAttributeWizard` | class | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.pas#L17) |  | ⚪ not started |  |
-| `dmAttributeWizard` | var | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.pas#L27) |  | ⚪ not started |  |
+| `TdmAttributeWizard` | class | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.pas#L17) |  | ✅ verified (via unit replaced): the wizard's images; the generator has no user interface | ✔ [`CustomAttributesTests.The_model_takes_the_types_through_its_type_name_handle`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/CustomAttributesTests.cs#L88) |
+| `dmAttributeWizard` | var | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAdatamodule.pas#L27) |  | 🔵 replaced (via unit replaced): the wizard's images; the generator has no user interface |  |
 
 ## Dependencies
 

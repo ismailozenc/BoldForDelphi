@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Custom attribute types written by the Bold attribute generator (Bold.SourceGenerators), as Delphi's attribute wizard wrote them: a value set (Color), a new attribute with two fields and its persistence mapper (Point), and a subclass of the string attribute (ShortString); with a small model (Shapes.bld) that uses them.</Description>
+    <RootNamespace>CustomAttributes</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <!-- The generated persistence mapper of Point. -->
+    <ProjectReference Include="../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <!-- The generator writes the rest of the attribute types when the project builds. -->
+    <ProjectReference Include="../../src/Bold.SourceGenerators/Bold.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Shapes.bld" LogicalName="CustomAttributes.Shapes.bld" />
+  </ItemGroup>
+</Project>

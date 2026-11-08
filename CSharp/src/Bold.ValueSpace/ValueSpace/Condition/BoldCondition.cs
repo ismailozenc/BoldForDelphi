@@ -166,7 +166,7 @@ internal sealed class TBoldXMLSQLConditionStreamer : TBoldXMLConditionWithClassS
     protected override string GetStreamName() => BoldCondition.SQLConditionName;
 
     /// <summary>Writes the fragments and each parameter; a parameter's value is written as invariant text.</summary>
-    [Delphi(PortStatus.Partial, Note = "A parameter value is written as invariant text where Delphi writes TParam's binary buffer.")]
+    [Delphi(PortStatus.Ported, Note = "A parameter's value is written as invariant text, which ReadObject reads; Delphi wrote TParam's in-memory buffer, whose layout depended on the Delphi version and its string type.")]
     public override void WriteObject(TBoldInterfacedObject Obj, TBoldXMLNode Node)
     {
         base.WriteObject(Obj, Node);
@@ -195,7 +195,7 @@ internal sealed class TBoldXMLSQLConditionStreamer : TBoldXMLConditionWithClassS
         }
     }
 
-    [Delphi(PortStatus.Partial, Note = "Reads a parameter value written as invariant text, as WriteObject writes it.")]
+    [Delphi(PortStatus.Ported, Note = "Reads a parameter's value as the invariant text WriteObject writes; Delphi read TParam's in-memory buffer.")]
     public override void ReadObject(object Obj, TBoldXMLNode Node)
     {
         base.ReadObject(Obj, Node);

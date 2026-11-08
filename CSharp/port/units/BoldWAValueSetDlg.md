@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas) (150 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.cs` |
+| C# | replaced by .NET: [BoldValueSetValue] gives a value and its representations |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🔵 replaced: 11 of 11 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 11 not started
+✅ 1 verified · 🔵 10 replaced
 
 ## Unit level
 
@@ -19,24 +19,24 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TValueSetDlg` | class | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L17) |  | ⚪ not started |  |
-| `ValueSetDlg` | var | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L43) |  | ⚪ not started |  |
+| `TValueSetDlg` | class | [17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L17) |  | ✅ verified (via unit replaced): [BoldValueSetValue] gives a value and its representations | ✔ [`CustomAttributesTests.A_color_is_one_of_its_values`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/CustomAttributesTests.cs#L100) |
+| `ValueSetDlg` | var | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L43) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
 
 ## TValueSetDlg
 
-class at [line 17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L17); ⚪ not started.
+class at [line 17](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L17); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `CancelBtnClick` | method | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L26) · [body 94](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L94) |  | ⚪ not started |  |
-| `OkBtnClick` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L27) · [body 100](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L100) |  | ⚪ not started |  |
-| `edValueNameChange` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L28) · [body 135](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L135) |  | ⚪ not started |  |
-| `FormShow` | method | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L29) · [body 140](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L140) |  | ⚪ not started |  |
-| `FormCreate` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L30) · [body 145](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L145) |  | ⚪ not started |  |
-| `IsValidInput` | method, private | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L34) · [body 55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L55) |  | ⚪ not started |  |
-| `EnableControls` | method, private | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L35) · [body 61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L61) |  | ⚪ not started |  |
-| `ClearEditFields` | method, private | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L36) · [body 80](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L80) |  | ⚪ not started |  |
-| `Edit` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L39) · [body 106](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L106) |  | ⚪ not started |  |
+| `CancelBtnClick` | method | [26](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L26) · [body 94](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L94) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `OkBtnClick` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L27) · [body 100](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L100) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `edValueNameChange` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L28) · [body 135](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L135) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `FormShow` | method | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L29) · [body 140](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L140) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `FormCreate` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L30) · [body 145](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L145) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `IsValidInput` | method, private | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L34) · [body 55](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L55) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `EnableControls` | method, private | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L35) · [body 61](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L61) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `ClearEditFields` | method, private | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L36) · [body 80](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L80) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
+| `Edit` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L39) · [body 106](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWAValueSetDlg.pas#L106) |  | 🔵 replaced (via unit replaced): [BoldValueSetValue] gives a value and its representations |  |
 
 ## Dependencies
 

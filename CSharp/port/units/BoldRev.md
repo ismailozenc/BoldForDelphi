@@ -8,7 +8,7 @@
 | C# | [`CSharp/src/Bold.Core/Common/Support/BoldRev.cs`](../../src/Bold.Core/Common/Support/BoldRev.cs) |
 | Project | Bold.Core |
 | Milestone | M6 Typed classes |
-| Status | ⚪ not started: 0 of 0 symbols done, 0 verified |
+| Status | 🟢 ported: 0 of 0 symbols done, 0 verified |
 
 
 

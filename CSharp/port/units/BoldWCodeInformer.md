@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas) (263 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.cs` |
+| C# | replaced by .NET: Roslyn reads the classes; the wizard parsed Delphi source to find them |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 11 symbols done, 0 verified |
+| Status | 🔵 replaced: 11 of 11 symbols done, 0 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 11 not started
+🔵 11 replaced
 
 ## Unit level
 
@@ -19,24 +19,24 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `COLUMN` | const | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L12) |  | ⚪ not started |  |
-| `TCodeType` | enum | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L16) |  | ⚪ not started |  |
-| `TClassParser` | class | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L18) |  | ⚪ not started |  |
+| `COLUMN` | const | [12](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L12) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `TCodeType` | enum | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L16) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `TClassParser` | class | [18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L18) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
 
 ## TClassParser
 
-class at [line 18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L18); ⚪ not started.
+class at [line 18](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L18); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L33) · [body 50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L50) |  | ⚪ not started |  |
-| `Destroy` | destructor | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L34) · [body 58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L58) |  | ⚪ not started |  |
-| `getClasses` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L35) · [body 65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L65) |  | ⚪ not started |  |
-| `getClassbyName` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L36) · [body 77](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L77) |  | ⚪ not started |  |
-| `getMethodbyTreeIndex` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L37) · [body 89](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L89) |  | ⚪ not started |  |
-| `IsProcedure` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L38) · [body 110](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L110) |  | ⚪ not started |  |
-| `ScannerToken` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L39) · [body 134](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L134) |  | ⚪ not started |  |
-| `Start` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L40) · [body 250](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L250) |  | ⚪ not started |  |
+| `Create` | constructor | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L33) · [body 50](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L50) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `Destroy` | destructor | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L34) · [body 58](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L58) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `getClasses` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L35) · [body 65](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L65) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `getClassbyName` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L36) · [body 77](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L77) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `getMethodbyTreeIndex` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L37) · [body 89](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L89) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `IsProcedure` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L38) · [body 110](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L110) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `ScannerToken` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L39) · [body 134](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L134) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
+| `Start` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L40) · [body 250](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldWCodeInformer.pas#L250) |  | 🔵 replaced (via unit replaced): Roslyn reads the classes; the wizard parsed Delphi source to find them |  |
 
 ## Dependencies
 

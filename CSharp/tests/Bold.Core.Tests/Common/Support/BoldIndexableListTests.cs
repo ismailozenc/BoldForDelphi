@@ -134,4 +134,45 @@ public class BoldIndexableListTests
         Assert.That(m.InfoString, Does.StartWith("Number of shared strings: 1"));
         Assert.That(BoldSharedStrings.BoldSharedStringManager(), Is.SameAs(BoldSharedStrings.BoldSharedStringManager()));
     }
+
+    /// <summary>Hands out a string made here and keeps nothing of it, so that only the cache knows it.</summary>
+    [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+    private static void HandOutAndForget(TBoldSharedStringManager m, string value) => m.GetSharedString(new string(value.ToCharArray()));
+
+    [Test]
+    [Covers(typeof(TBoldSharedStringManager), "GarbageCollect", "SavedMemory", "GetSavedMemory")]
+    [Covers(typeof(TBoldSharedStringHolder), ".ctor", "ExternalRefCount", "GetExternalRefCount", "Value")]
+    public void The_cache_lets_go_of_strings_no_one_uses()
+    {
+        var m = new TBoldSharedStringManager();
+        string kept = m.GetSharedString(new string("Kept".ToCharArray()));
+        string twice = m.GetSharedString(new string("Twice".ToCharArray()));
+        Assert.That(m.GetSharedString(new string("Twice".ToCharArray())), Is.SameAs(twice));
+        HandOutAndForget(m, "Forgotten");
+        Assert.That((HolderOf(m, "Kept")!.ExternalRefCount, HolderOf(m, "Twice")!.ExternalRefCount), Is.EqualTo((1, 2)));
+        Assert.That(HolderOf(m, "Twice")!.Value, Is.SameAs(twice));
+
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+        GC.Collect();
+        Assert.That(HolderOf(m, "Forgotten")!.ExternalRefCount, Is.Zero, "no one uses it");
+        Assert.That(m.SavedMemory, Is.EqualTo("Twice".Length - "Forgotten".Length), "Twice saves a copy; Forgotten costs its own");
+        m.GarbageCollect(true);
+        Assert.That(HolderOf(m, "Forgotten"), Is.Null, "dropped");
+        Assert.That(m.SavedMemory, Is.EqualTo("Twice".Length));
+        Assert.That(m.InfoString, Does.StartWith("Number of shared strings: 2"));
+        m.GarbageCollect(false);
+        Assert.That((HolderOf(m, "Kept"), HolderOf(m, "Twice")?.Value), Is.EqualTo(((TBoldSharedStringHolder?)null, twice)), "a string used in one place is not worth sharing");
+        Assert.That(m.GetSharedString(new string("Kept".ToCharArray())), Is.EqualTo(kept).And.Not.SameAs(kept), "shared anew");
+        GC.KeepAlive(kept);
+        GC.KeepAlive(twice);
+    }
+
+    /// <summary>The holder of the value in the manager's cache.</summary>
+    private static TBoldSharedStringHolder? HolderOf(TBoldSharedStringManager m, string value)
+    {
+        var cache = (TBoldSharedStringCache)typeof(TBoldSharedStringManager)
+            .GetField("fStringCache", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic)!.GetValue(m)!;
+        return cache.HolderByValue(value);
+    }
 }

@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas`](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas) (174 lines) |
-| C# | not started; planned as `CSharp/src/Bold.SourceGenerators/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.cs` |
+| C# | replaced by .NET: the generator adds its source to the compilation; no unit is created through an IDE's tools API |
 | Project | Bold.SourceGenerators |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 25 symbols done, 0 verified |
+| Status | 🔵 replaced: 25 of 25 symbols done, 1 verified |
 | Note | The attribute wizard becomes a Roslyn source generator (DECIDE-3). |
 
-⚪ 25 not started
+✅ 1 verified · 🔵 24 replaced
 
 ## Unit level
 
@@ -19,45 +19,45 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TUnitFile` | class | [9](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L9) |  | ⚪ not started |  |
-| `TUnitCreator` | class | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L19) |  | ⚪ not started |  |
-| `FILE_EXTENSION` | const | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L48) |  | ⚪ not started |  |
+| `TUnitFile` | class | [9](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L9) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `TUnitCreator` | class | [19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L19) |  | ✅ verified (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API | ✔ [`CustomAttributesTests.The_types_are_stored_and_read_back`](../../tests/Bold.SourceGenerators.Tests/ObjectSpace/IDE/AttributeWizard/CustomAttributesTests.cs#L180) |
+| `FILE_EXTENSION` | const | [48](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L48) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
 
 ## TUnitFile
 
-class at [line 9](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L9); ⚪ not started.
+class at [line 9](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L9); 🔵 replaced.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L13) · [body 159](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L159) |  | ⚪ not started |  |
-| `GetSource` | method | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L14) · [body 164](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L164) |  | ⚪ not started |  |
-| `GetAge` | method | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L15) · [body 169](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L169) |  | ⚪ not started |  |
-| `Source` | property | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L16) |  | ⚪ not started |  |
+| `Create` | constructor | [13](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L13) · [body 159](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L159) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetSource` | method | [14](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L14) · [body 164](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L164) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetAge` | method | [15](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L15) · [body 169](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L169) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `Source` | property | [16](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L16) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
 
 ## TUnitCreator
 
-class at [line 19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L19); ⚪ not started.
+class at [line 19](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L19); ✅ verified.
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `Create` | constructor | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L25) · [body 56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L56) |  | ⚪ not started |  |
-| `GetCreatorType` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L27) · [body 63](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L63) |  | ⚪ not started |  |
-| `GetExisting` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L28) · [body 68](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L68) |  | ⚪ not started |  |
-| `GetFileSystem` | method | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L29) · [body 73](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L73) |  | ⚪ not started |  |
-| `GetOwner` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L30) · [body 78](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L78) |  | ⚪ not started |  |
-| `GetUnnamed` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L31) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L83) |  | ⚪ not started |  |
-| `GetAncestorName` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L33) · [body 88](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L88) |  | ⚪ not started |  |
-| `GetImplFileName` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L34) · [body 93](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L93) |  | ⚪ not started |  |
-| `GetIntfFileName` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L35) · [body 98](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L98) |  | ⚪ not started |  |
-| `GetFormName` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L36) · [body 105](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L105) |  | ⚪ not started |  |
-| `GetMainForm` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L37) · [body 110](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L110) |  | ⚪ not started |  |
-| `GetShowForm` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L38) · [body 116](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L116) |  | ⚪ not started |  |
-| `GetShowSource` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L39) · [body 121](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L121) |  | ⚪ not started |  |
-| `NewFormFile` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L40) · [body 126](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L126) |  | ⚪ not started |  |
-| `NewImplSource` | method | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L41) · [body 132](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L132) |  | ⚪ not started |  |
-| `NewIntfSource` | method | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L42) · [body 139](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L139) |  | ⚪ not started |  |
-| `FormCreated` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L43) · [body 145](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L145) |  | ⚪ not started |  |
-| `CreateUnit` | method | [44](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L44) · [body 150](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L150) |  | ⚪ not started |  |
+| `Create` | constructor | [25](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L25) · [body 56](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L56) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetCreatorType` | method | [27](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L27) · [body 63](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L63) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetExisting` | method | [28](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L28) · [body 68](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L68) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetFileSystem` | method | [29](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L29) · [body 73](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L73) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetOwner` | method | [30](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L30) · [body 78](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L78) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetUnnamed` | method | [31](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L31) · [body 83](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L83) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetAncestorName` | method | [33](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L33) · [body 88](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L88) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetImplFileName` | method | [34](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L34) · [body 93](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L93) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetIntfFileName` | method | [35](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L35) · [body 98](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L98) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetFormName` | method | [36](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L36) · [body 105](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L105) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetMainForm` | method | [37](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L37) · [body 110](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L110) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetShowForm` | method | [38](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L38) · [body 116](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L116) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `GetShowSource` | method | [39](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L39) · [body 121](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L121) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `NewFormFile` | method | [40](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L40) · [body 126](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L126) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `NewImplSource` | method | [41](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L41) · [body 132](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L132) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `NewIntfSource` | method | [42](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L42) · [body 139](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L139) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `FormCreated` | method | [43](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L43) · [body 145](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L145) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
+| `CreateUnit` | method | [44](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L44) · [body 150](../../../Source/ObjectSpace/IDE/AttributeWizard/BoldOTACodeGen.pas#L150) |  | 🔵 replaced (via unit replaced): the generator adds its source to the compilation; no unit is created through an IDE's tools API |  |
 
 ## Dependencies
 

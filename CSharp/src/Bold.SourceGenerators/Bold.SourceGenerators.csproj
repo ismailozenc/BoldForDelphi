@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The Bold attribute generator: a Roslyn source generator that writes Bold attribute types (value sets, new attributes with their content, free-standing value and persistence mapper, and subclassed attributes) from the attributes on their partial classes, where Delphi had the attribute wizard (decision DECIDE-3). Reference it as an analyzer.</Description>
+    <!-- A Roslyn component: compilers load it on .NET Framework (Visual Studio) and .NET alike. -->
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsRoslynComponent>true</IsRoslynComponent>
+    <RootNamespace>Bold.SourceGenerators</RootNamespace>
+  </PropertyGroup>
+  <!-- Offline builds have no NETStandard.Library package: the generator targets net10.0 there, which the SDK's compiler loads too. -->
+  <PropertyGroup Condition="'$(BoldOffline)' == 'true'">
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The generator is not ported code: no [Delphi] markers, and no Bold.Porting. -->
+    <Using Remove="Bold.Porting" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(BoldOffline)' == 'true'">
+    <Reference Include="Microsoft.CodeAnalysis" HintPath="$(RoslynTargetsPath)/bincore/Microsoft.CodeAnalysis.dll" Private="false" />
+    <Reference Include="Microsoft.CodeAnalysis.CSharp" HintPath="$(RoslynTargetsPath)/bincore/Microsoft.CodeAnalysis.CSharp.dll" Private="false" />
+  </ItemGroup>
+</Project>

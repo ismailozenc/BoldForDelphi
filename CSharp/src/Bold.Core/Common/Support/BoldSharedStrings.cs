@@ -3,34 +3,58 @@
 
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldSharedStrings", Symbol = "initialization", Note = "The unit's initialization section is empty.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldSharedStrings", Symbol = "finalization", Note = "Frees the global manager; the garbage collector does that in .NET.")]
-[assembly: Delphi(PortStatus.Replaced, Unit = "BoldSharedStrings", Symbol = "StringRefCount", Note = ".NET strings have no reference count; holders count how often they were handed out instead.")]
+[assembly: Delphi(PortStatus.Replaced, Unit = "BoldSharedStrings", Symbol = "StringRefCount", Note = ".NET strings have no reference count; a holder keeps its string by a weak reference, which tells when no one uses it, and counts how often it was handed out.")]
 
 namespace Bold;
 
 /// <summary>
-/// One shared string. Delphi reads the string's reference count to see how many places still use it; .NET has no
-/// such count, so the holder counts how many times the manager handed the string out.
+/// One shared string. Delphi read the string's reference count to see how many places still used it. .NET strings have
+/// no reference count, so the holder keeps the instance it hands out by a weak reference, which tells when no one uses
+/// it any more, and counts how many times it was handed out since; it keeps a copy of its own as the cache's key.
 /// </summary>
 [Delphi(PortStatus.Ported)]
 public class TBoldSharedStringHolder : TBoldMemoryManagedObject
 {
-    private readonly string fValue;
-    internal int fHandedOut;
+    private readonly string fKey;
+    private readonly WeakReference<string> fShared;
+    private int fHandedOut;
 
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "Keeps the string by a weak reference and a copy of it as the key.")]
     public TBoldSharedStringHolder(string s)
     {
-        fValue = s;
+        fKey = new string(s.AsSpan()); // a copy: the instance handed out must be free to go when no one uses it
+        fShared = new WeakReference<string>(s);
     }
 
-    [Delphi(PortStatus.Partial, Note = "How many times the string was handed out, not how many references are alive.")]
-    private int GetExternalRefCount() => fHandedOut;
+    /// <summary>The value, which the cache's index is keyed by.</summary>
+    internal string Key => fKey;
 
-    [Delphi(PortStatus.Partial, Note = "How many times the string was handed out, not how many references are alive.")]
+    /// <summary>
+    /// The instance to use for the value: the one handed out before while someone still uses it, else the candidate,
+    /// which is shared from now on.
+    /// </summary>
+    internal string HandOut(string Candidate)
+    {
+        if (!fShared.TryGetTarget(out string? shared))
+        {
+            fShared.SetTarget(Candidate);
+            shared = Candidate;
+            fHandedOut = 0;
+        }
+
+        fHandedOut++;
+        return shared;
+    }
+
+    [Delphi(PortStatus.Ported, Note = "0 once no one uses the string (the weak reference tells); otherwise how many times it was handed out since it was last unused, as .NET strings have no reference count to read.")]
+    private int GetExternalRefCount() => fShared.TryGetTarget(out _) ? Math.Max(fHandedOut, 1) : 0;
+
+    [Delphi(PortStatus.Ported, Note = "0 once no one uses the string; otherwise how many times it was handed out since it was last unused.")]
     public int ExternalRefCount => GetExternalRefCount();
 
+    /// <summary>The shared instance while someone uses it, else the holder's copy.</summary>
     [Delphi(PortStatus.Ported)]
-    public string Value => fValue;
+    public string Value => fShared.TryGetTarget(out string? shared) ? shared : fKey;
 }
 
 /// <summary>The cache of shared strings, indexed by value.</summary>
@@ -43,7 +67,7 @@ public class TBoldSharedStringCache : TBoldUnOrderedIndexableList
     private sealed class TBoldStringHolderValueIndex : TBoldCaseSensitiveStringHashIndex
     {
         [Delphi(PortStatus.Ported, Symbol = "TBoldStringHolderValueIndex.ItemAsKeyString")]
-        protected override string ItemAsKeyString(object? Item) => ((TBoldSharedStringHolder)Item!).Value;
+        protected override string ItemAsKeyString(object? Item) => ((TBoldSharedStringHolder)Item!).Key;
     }
 
     [Delphi(PortStatus.Ported)]
@@ -97,17 +121,15 @@ public class TBoldSharedStringManager : IDisposable
             TBoldSharedStringHolder? holder = fStringCache!.HolderByValue(s);
             if (holder is not null)
             {
-                result = holder.Value;
+                result = holder.HandOut(s);
                 fCachedHits++;
             }
             else
             {
                 holder = new TBoldSharedStringHolder(s);
                 fStringCache.Add(holder);
-                result = s;
+                result = holder.HandOut(s);
             }
-
-            holder.fHandedOut++;
         }
 
         fAddsRemainingToGarbageCollect--;
@@ -119,8 +141,11 @@ public class TBoldSharedStringManager : IDisposable
         return result;
     }
 
-    /// <summary>Drops holders handed out fewer than one time (or two, when <paramref name="KeepStringsWithOneReference"/> is false).</summary>
-    [Delphi(PortStatus.Partial, Note = "Decides by hand-out count, as reference counts are not available in .NET.")]
+    /// <summary>
+    /// Drops the strings no one uses any more, and, unless <paramref name="KeepStringsWithOneReference"/>, those used
+    /// in one place only (sharing them saves nothing).
+    /// </summary>
+    [Delphi(PortStatus.Ported, Note = "Uses the holders' counts, which tell an unused string by a weak reference.")]
     public void GarbageCollect(bool KeepStringsWithOneReference)
     {
         int minimumReferencesToKeep = KeepStringsWithOneReference ? 1 : 2;
@@ -147,7 +172,8 @@ public class TBoldSharedStringManager : IDisposable
         fAddsRemainingToGarbageCollect = fStringCache.Count;
     }
 
-    [Delphi(PortStatus.Partial, Note = "Estimated from hand-out counts.")]
+    /// <summary>What sharing saves, in characters: each string once for every further use, less the strings no one uses.</summary>
+    [Delphi(PortStatus.Ported, Note = "In characters, from the holders' counts.")]
     private int GetSavedMemory()
     {
         int result = 0;
@@ -167,7 +193,7 @@ public class TBoldSharedStringManager : IDisposable
         SysUtils.Format("Number of shared strings: %d", fStringCache!.Count) + BoldDefs.BOLDCRLF +
         SysUtils.Format("Saved memory %d", SavedMemory);
 
-    [Delphi(PortStatus.Partial, Note = "Estimated from hand-out counts.")]
+    [Delphi(PortStatus.Ported, Note = "In characters, from the holders' counts.")]
     public int SavedMemory => GetSavedMemory();
 
     [Delphi(PortStatus.Ported)]
