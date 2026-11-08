@@ -358,10 +358,16 @@ public class Tallform : Form
         base.Dispose(disposing);
     }
 
-    /// <summary>A column of the grid on the expression, of the width, titled when a title is given.</summary>
+    /// <summary>
+    /// A column of the grid on the expression, of the width, titled when a title is given. A new grid has its fixed
+    /// column and one empty column, as a grid dropped on a Delphi form had: the first column takes that one, where the
+    /// Delphi form listed its columns in place of it.
+    /// </summary>
     private static TBoldGridColumn Column(TBoldGrid grid, string expression, int width, string title = "")
     {
-        TBoldGridColumn column = grid.AddColumn();
+        TBoldGridColumn column = grid.Columns.Count == 2 && grid.Columns[1].BoldProperties.Expression == "" && string.IsNullOrEmpty(grid.Columns[1].Title.Caption)
+            ? grid.Columns[1]
+            : grid.AddColumn();
         column.BoldProperties.Expression = expression;
         column.Width = width;
         if (title != "")

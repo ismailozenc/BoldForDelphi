@@ -1,4 +1,4 @@
-<!-- A copy of the Bold for C# User Guide doc (rev 22, 2026-11-09). The doc is the original: update this copy when the doc changes. -->
+<!-- A copy of the Bold for C# User Guide doc (rev 23, 2026-11-09). The doc is the original: update this copy when the doc changes. -->
 
 # Bold for C# User Guide
 
@@ -424,7 +424,7 @@ static void Main()
     var form = new Form { Text = "Library", Width = 640, Height = 480 };
     var bookGrid = new TBoldGrid { BoldHandle = books, BoldAutoColumns = true, Dock = DockStyle.Fill, Parent = form };
     var authorGrid = new TBoldGrid { BoldHandle = authors, Dock = DockStyle.Left, Width = 240, Parent = form };
-    TBoldGridColumn name = authorGrid.AddColumn();
+    TBoldGridColumn name = authorGrid.Columns[1];   // a new grid has its fixed column and one empty column
     name.BoldProperties.Expression = "name";
     name.Title.Caption = "Author";
     var navigator = new TBoldNavigator { BoldHandle = authors, Dock = DockStyle.Top, Parent = form };
@@ -440,6 +440,7 @@ In a new WinForms project, `Main` sits in the project's namespace, where WinForm
 
 - Every Bold control has `BoldHandle` and `BoldProperties`: `TBoldEdit`, `TBoldLabel`, `TBoldCheckBox`, `TBoldComboBox`, `TBoldListBox`, `TBoldGrid`, `TBoldTreeView`, `TBoldNavigator`, `TBoldMemo`, `TBoldRichEdit`, `TBoldImage`, `TBoldTrackBar`, `TBoldProgressBar` and `TBoldPageControl`.
 - `BoldProperties.Expression` is the OCL the control shows, relative to the handle's current element: a `TBoldEdit` on `authors` with `Expression = "name"` edits the current author's name. `ApplyPolicy` says when edits are written back, and `Renderer` takes a renderer component that formats, colors or computes what is shown.
+- A new grid has its fixed column and one empty column, which the first expression takes (`grid.Columns[1]`); `AddColumn()` adds the others, and `BoldAutoColumns = true` makes a column for each attribute of the list's class.
 - `TBoldActionLink.Link(control, action)` ties a button or menu item to an action, as Delphi's `Action` property did: `TBoldUpdateDBAction`, `TBoldActivateSystemAction`, `TBoldGenerateSchemaAction`, and the list and undo actions.
 - Auto forms show any object without designing a form: `BoldAFP.AutoFormProviderRegistry().FormForElement(obj)?.Show()`. A `TBoldPlaceableAFP` plugs in your own form for a class.
 - Controls refresh when the application is idle, through Bold's display queue; a test without a message loop calls `TBoldQueueable.DisplayAll()`.

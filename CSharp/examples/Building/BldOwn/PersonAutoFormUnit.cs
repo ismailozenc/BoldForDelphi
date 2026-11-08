@@ -64,9 +64,12 @@ public class TPersonAutoForm : Form
         };
         bgrOwnedBuildings.BoldHandle = blhOwnedBuildings;
         bgrOwnedBuildings.BoldProperties.NilElementMode = TBoldNilElementMode.neNone;
+        // A new grid has its fixed column and one empty column, which the first of these takes, as the Delphi form's did.
+        bool first = true;
         foreach ((string expression, string title) in new[] { ("zipCode", "ZipCode"), ("address", "Address"), ("owners->size", "# owners") })
         {
-            TBoldGridColumn column = bgrOwnedBuildings.AddColumn();
+            TBoldGridColumn column = first ? bgrOwnedBuildings.Columns[1] : bgrOwnedBuildings.AddColumn();
+            first = false;
             column.BoldProperties.Expression = expression;
             column.Title.Caption = title;
             column.Width = 64;

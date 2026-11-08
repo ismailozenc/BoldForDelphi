@@ -38,7 +38,7 @@ internal static class Program
         var form = new Form { Text = "Library", Width = 640, Height = 480 };
         var bookGrid = new TBoldGrid { BoldHandle = books, BoldAutoColumns = true, Dock = DockStyle.Fill, Parent = form };
         var authorGrid = new TBoldGrid { BoldHandle = authors, Dock = DockStyle.Left, Width = 240, Parent = form };
-        TBoldGridColumn name = authorGrid.AddColumn();
+        TBoldGridColumn name = authorGrid.Columns[1];   // a new grid has its fixed column and one empty column
         name.BoldProperties.Expression = "name";
         name.Title.Caption = "Author";
         var navigator = new TBoldNavigator { BoldHandle = authors, Dock = DockStyle.Top, Parent = form };
