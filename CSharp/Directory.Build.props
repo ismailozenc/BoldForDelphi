@@ -27,8 +27,8 @@
     <Authors>Bold for Delphi contributors</Authors>
     <Copyright>Copyright (c) 2020 Embarcadero Technologies</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/ismailozenc/boldfordelphi/tree/CSharp/CSharp</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/ismailozenc/boldfordelphi</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ismailozenc/BoldForDelphi/tree/CSharp/CSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ismailozenc/BoldForDelphi</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>bold;delphi;model-driven;uml;ocl;orm;object-space</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>

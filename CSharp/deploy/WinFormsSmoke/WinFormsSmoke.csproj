@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    The user guide's WinForms window, built on the packages alone (Bold.WinForms and what it brings): a grid of the
+    Library model's authors with their books, a navigator and a Save button, on SQLite. deploy/check.sh builds and
+    starts it on Windows (with --close, the window closes itself once shown); it is not part of Bold.slnx.
+  -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+    <BoldVersion Condition="'$(BoldVersion)' == ''">1.0.0</BoldVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Bold.WinForms" Version="$(BoldVersion)" />
+    <PackageReference Include="Bold.Persistence.Sql" Version="$(BoldVersion)" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../PackageSmoke/Library.bld" Link="Library.bld" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

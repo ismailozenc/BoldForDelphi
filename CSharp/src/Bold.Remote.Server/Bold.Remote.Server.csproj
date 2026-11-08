@@ -10,12 +10,12 @@
     <Content Update="appsettings.json" Pack="false" />
   </ItemGroup>
   <!--
-    The database providers the server is published with. The code loads them by name only (TBoldRemotePersistenceSetup),
-    so the package does not bring them: an application hosting the persistence adds the provider it uses.
+    The database providers the server is published with, which its package brings too; the code loads them by name only
+    (TBoldRemotePersistenceSetup). Not PrivateAssets: a private package is left out of the published program.
   -->
   <ItemGroup Condition="'$(BoldOffline)' != 'true'">
-    <PackageReference Include="Microsoft.Data.Sqlite" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Data.SqlClient" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+    <PackageReference Include="Microsoft.Data.SqlClient" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />

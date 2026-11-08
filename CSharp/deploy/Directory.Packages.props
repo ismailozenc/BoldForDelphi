@@ -1,5 +1,5 @@
 <Project>
-  <!-- Package versions are given in the project file, as an application outside this repository would. -->
+  <!-- Package versions are given in the smoke tests' project files, as applications outside this repository give them. -->
   <PropertyGroup>
     <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
   </PropertyGroup>

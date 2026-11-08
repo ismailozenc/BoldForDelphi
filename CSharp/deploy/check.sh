@@ -2,7 +2,8 @@
 # Checks that Bold for C# deploys: it packs the libraries, the attribute generator and the bold-codegen tool into
 # CSharp/artifacts/packages, installs the tool from there and generates the classes of the smoke test's model, builds
 # and runs the package smoke test (deploy/PackageSmoke) on those packages alone, and publishes the programs into
-# CSharp/artifacts/publish, starting each server from its published folder and asking it for /health.
+# CSharp/artifacts/publish, starting each server from its published folder and asking it for /health. On Windows it
+# also builds and starts the user guide's WinForms window (deploy/WinFormsSmoke) on the packages.
 #
 #   bash CSharp/deploy/check.sh [--no-build] [--offline] [--source <feed>] [-- <MSBuild arguments>]
 #
@@ -52,7 +53,7 @@ quiet() {
   if ! "$@" > "$log" 2>&1; then
     cat "$log"; echo "FAIL $name"; return 1
   fi
-  grep -E "$pattern" "$log" || true
+  grep -E -e "$pattern" "$log" || true
 }
 
 rm -rf "$artifacts/packages" "$artifacts/tools" "$artifacts/smoke" "$artifacts/publish" "$artifacts/check"
@@ -87,6 +88,16 @@ if [[ ${#sources[@]} -gt 0 ]]; then
 fi
 quiet smoke-restore "Restored" dotnet restore deploy/PackageSmoke "${restore[@]}" -p:BoldVersion="$version" ${msbuild[@]+"${msbuild[@]}"}
 dotnet run --project deploy/PackageSmoke -c Release --no-restore -p:BoldVersion="$version" ${msbuild[@]+"${msbuild[@]}"}
+if $windows; then
+  step "The user guide's WinForms window, on the packages alone"
+  quiet winforms-restore "Restored" dotnet restore deploy/WinFormsSmoke "${restore[@]}" -p:BoldVersion="$version" ${msbuild[@]+"${msbuild[@]}"}
+  quiet winforms-build "WinFormsSmoke ->" dotnet build deploy/WinFormsSmoke -c Release --no-restore -o "$artifacts/smoke/winforms" -p:BoldVersion="$version" ${msbuild[@]+"${msbuild[@]}"}
+  if timeout 120 "$artifacts/smoke/winforms/WinFormsSmoke.exe" --close; then
+    echo "ok   the window opens, shows the author in its grid, and closes"
+  else
+    echo "FAIL the WinForms window (exit code $?)"; exit 1
+  fi
+fi
 
 step "Programs, published"
 publish() {

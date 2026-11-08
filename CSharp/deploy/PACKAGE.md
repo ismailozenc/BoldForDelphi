@@ -48,4 +48,4 @@ Console.WriteLine(system.EvaluateExpressionAsString("Book.allInstances->size", B
 `bold-codegen Library.bld` writes typed classes (`TBook` with a `Title` property); with them, leave `UseGeneratedCode` at
 its default.
 
-The user guide, the examples and the sources are at https://github.com/ismailozenc/boldfordelphi/tree/CSharp/CSharp.
+The user guide, the examples and the sources are at https://github.com/ismailozenc/BoldForDelphi/tree/CSharp/CSharp.
