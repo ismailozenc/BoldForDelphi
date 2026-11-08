@@ -4,6 +4,9 @@ using System.ComponentModel;
 using Bold;
 using Microsoft.Data.Sqlite;
 
+// The project's root namespace, where WinForms generates ApplicationConfiguration, as in a new WinForms project.
+namespace WinFormsSmoke;
+
 internal static class Program
 {
     [STAThread]

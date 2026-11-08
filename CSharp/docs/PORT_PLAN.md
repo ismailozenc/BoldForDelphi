@@ -1,4 +1,4 @@
-<!-- A copy of the "Port plan" tab of the Bold C# Port Plan doc (rev 60, 2026-10-30). The doc is the original: update this copy when the doc changes. -->
+<!-- A copy of the "Port plan" tab of the Bold C# Port Plan doc (rev 68, 2026-11-09). The doc is the original: update this copy when the doc changes. -->
 
 # Bold C# Port Plan
 
@@ -9,7 +9,7 @@
 
 Oct 13, 2026 · @ismail özenç
 
-M0 is done: the `CSharp` branch builds and passes its tests in CI, `BoldDefs` is ported and verified against the Delphi source, and every Delphi unit and C# file point at each other. All eight decisions are made, and OLLE is back in the branch. Next is M1, the first testable point: loading and round-tripping all 76 test models, which needs 24 Delphi units.
+All milestones are done: the 383 units planned for the port are ported, and tests cover 66% of their symbols. The port is deployable as NuGet packages, the `bold-codegen` tool and two servers that run as services or in containers, all checked in CI on the packages alone; [Bold for C# User Guide](USER_GUIDE.md) explains how to use it.
 
 ## M0 result
 
@@ -86,9 +86,9 @@ The tests mirror these layers: one test project per project, plus `Bold.TestSupp
 | `Bold.Propagator.Server` | Worker Service | `Propagator/Enterprise` and `LowEnd`, logic only, and `BoldThread` | 22 units, 5,895 lines | M9 |
 | `Bold.Remote.Server`, `Bold.Remote.Client` | ASP.NET Core app, class library | New; master's SOAP units as reference | New code | M10 |
 | `Bold.Xmi` | Class library | `UMLModel/ModelLinks/XMI`, the model link base class, Boldify and flattening from `UMLModel/Core`, new XMI 2.x | 13 units, 4,938 lines | M11 |
-| `Bold.ModelEditor` | WinForms app | `UMLModel/Editor`, `Plugins`, the validators, the `.bld` model link | 22 units, 7,697 lines | M12 |
-| `Bold.Olle` | Class library | `Extensions/OLLE/Core` | 6 units, 2,259 lines | After M5 |
-| `Bold.SourceGenerators` | Roslyn generator (`netstandard2.0`) | Scanner from `ObjectSpace/IDE/AttributeWizard` (DECIDE-3) | 19 units, 4,478 lines | After M12 |
+| `Bold.ModelEditor` | WinForms app, its logic in Bold.ModelEditor.Core | `UMLModel/Editor`, `Plugins`, the validators, the `.bld` model link | 22 units, 7,697 lines | M12 |
+| `Bold.Olle` | Class library | `Extensions/OLLE/Core` | 6 units, 2,259 lines | After M5; done |
+| `Bold.SourceGenerators` | Roslyn generator (`netstandard2.0`) | Replaces `ObjectSpace/IDE/AttributeWizard` (DECIDE-3) | 19 units, 4,478 lines | After M12; done |
 | `Bold.Porting`, `Bold.Rtl` | Class libraries | New: the port status attributes, and Delphi semantics such as `DelphiSet<T>` | New code | M0 |
 | `Bold.TestSupport` and the test projects | NUnit 4 | Readers that take expected values from the Delphi source, the test models, later the SystemComparer port | New code | From M0 |
 | `Bold.PortTool` | Console tool | New: links both ways, status pages, link checks, test models | New code | M0 |
@@ -126,9 +126,9 @@ Each milestone ends when its tests pass in CI. M1 is the first testable point an
 | **M9 Multi-user** | Listener, snooper and ID adder; the propagator server as a Worker Service; the lock manager, lock handler and lock holder. | Done: all 1,205 symbols of the 51 units ported and 1,145 covered by tests. The propagator server (client handler, enqueuer, subscriptions, client notifier, cleanup, lock manager and its administration) runs on ASP.NET Core rather than a bare Worker Service, and a SignalR hub replaces DCOM (D8); the client handles speak SignalR's protocol over a WebSocket, so the client libraries need no package. Both closing scenarios run in the process and through the hub, and the UDP broadcaster keeps two object spaces in step by broadcasts. The listener's lease and disconnects, reconnecting, the external event handler and the RTL's threads have tests of their own. The propagator forms and the COM wrappers are not ported. Delphi bugs found on the way are fixed, each with a note on its marker. Two object spaces stay in step through the propagator; lock conflicts are reported. |
 | **M10 Remote persistence** | `Bold.Remote.Server` (ASP.NET Core) and `Bold.Remote.Client` (HttpClient), with the operations taken from master's SOAP streaming. | Done (new code, no Delphi symbols): Bold.Remote.Server runs a persistence handle on ASP.NET Core at /persistence (requests one at a time, configured from appsettings.json: model, ADO.NET provider, SQL dialect), with the propagator hub on the same host when asked (D8); TBoldHttpClientPersistenceHandle on the client needs no package. All 74 fixture models round-trip through the server; optimistic locking, conditions, id exactifying and timestamps go through it; two clients over HTTP and SignalR stay in step. |
 | **M11 XMI** | The XMI 1.x importer ported to the Mold model; new XMI 2.x import and export; Boldify (flatten packages, apply defaults). | Done: all 465 symbols of the 14 units ported and 449 covered by tests. With no UML object space (D6), a graph of the UML elements stands in for it while a model is read or written, and the Mold model stays the model; BoldUMLModelConverter is ported again to convert that graph. XMI 1.x of UML 1.3 (Rose) and 1.4 is read and XMI 1.0 written as in Delphi; XMI 2.x of UML 2 tools (Enterprise Architect, Papyrus) is read and XMI 2.1 written, which is new. Every fixture model written as XMI 1.0 and as XMI 2.1 reads back as the same model; hand-written Rose, UML 1.4, Enterprise Architect and Papyrus files are read. |
-| **M12 Model editor** | A WinForms editor over `Bold.Model` with undo, the validators, and the code and database plugins. This completes the Rose replacement. | Fixture models can be edited, validated and saved. |
+| **M12 Model editor** | A WinForms editor over `Bold.Model` with undo, the validators, and the code and database plugins. This completes the Rose replacement. | Done: all 539 symbols of the 23 units ported and 435 covered by tests. The editor works on a graph of the UML elements, as Delphi's worked on its UML model (D6 amended): the tree, a page for each kind of element, the commands, the editors of tagged values, constraints, OCL and uses, the validators, the model updater, and the plug-ins that read and write .bld and XMI, generate code, and generate, validate and evolve databases. Its logic (Bold.ModelEditor.Core) is tested on every platform and its forms on Windows; a test starts the program on a model file. |
 
-Later: OLLE (after M5; restored to the branch), the attribute source generator (DECIDE-3) and the ModelMaker link.
+Later, done too: OLLE (`Bold.Olle`: lending, check-in, giving back and synchronizing between two databases) and the attribute source generator (`Bold.SourceGenerators`, DECIDE-3), with an example. The ModelMaker link is not planned. After the milestones the port was made deployable: packages, the `bold-codegen` tool, the servers as services and containers, and a check in CI that runs an application on the packages alone.
 
 ## How we port
 
@@ -145,7 +145,7 @@ We rebuild behaviour in plain C#, test first, from reading the Delphi code; we d
 
 ## Decisions
 
-All eight are decided. D1, D2, D3 and D7 are carried out; the others apply from the milestone shown.
+All eight are decided. All are carried out, from the milestone shown.
 
 | ID | Question | Decision | Applies |
 | --- | --- | --- | --- |
@@ -154,8 +154,8 @@ All eight are decided. D1, D2, D3 and D7 are carried out; the others apply from 
 | D3 | Test framework | NUnit 4, the most feature-rich of the .NET test frameworks: parameterized tests, constraint asserts, setup at every level; one test project per project | Done in M0 |
 | D4 | Databases | SQL Server for production and SQLite for tests; Firebird, PostgreSQL or Oracle only if needed | M5 |
 | D5 | Database schema | The same tables and columns as Delphi Bold (the `BOLD_` system tables such as `BOLD_ID`, `BOLD_TYPE`, `BOLD_TABLES`, `BOLD_TIMESTAMP`, `BOLD_XFILES` and `BOLD_CLOCKLOG`), so existing Bold databases open | M5 |
-| D6 | Model in memory | The Mold model only, with no UML metamodel object space; the editor and XMI work on it too | M1 |
-| D7 | OLLE | Restored to `Source/Extensions/OLLE/Core`, with the "OLE" wording fixed; ported after M5 | Restored; port after M5 |
+| D6 | Model in memory | The Mold model only, with no UML metamodel object space; XMI and the model editor read and write it through a graph of the UML elements, as Delphi's worked on its UML model (amended in M11 and M12) | M1 |
+| D7 | OLLE | Restored to `Source/Extensions/OLLE/Core`, with the "OLE" wording fixed; ported after M5 | Done after M5: Bold.Olle |
 | D8 | Multi-user transport | SignalR on the same ASP.NET Core host as remote persistence | M9 |
 
 ## Sources

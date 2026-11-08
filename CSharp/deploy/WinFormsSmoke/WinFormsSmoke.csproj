@@ -2,7 +2,7 @@
   <!--
     The user guide's WinForms window, built on the packages alone (Bold.WinForms and what it brings): a grid of the
     Library model's authors with their books, a navigator and a Save button, on SQLite. deploy/check.sh builds and
-    starts it on Windows (with --close, the window closes itself once shown); it is not part of Bold.slnx.
+    starts it on Windows with its close switch, so that the window closes itself once shown; it is not part of Bold.slnx.
   -->
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
