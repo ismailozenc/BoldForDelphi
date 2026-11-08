@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Extensions/OLLE/Core/BoldOLLEHandles.pas`](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas) (102 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs` |
+| C# | [`CSharp/src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs) |
 | Project | Bold.Olle |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 14 symbols done, 0 verified |
+| Status | 🟢 ported: 14 of 14 symbols done, 13 verified |
 | Note | OLLE is ported after SQL persistence (M5), decision D7. |
 
-⚪ 14 not started
+✅ 13 verified · 🟢 1 ported
 
 ## Unit level
 
@@ -19,27 +19,33 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldOLLEHandle` | class | [15](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L15) |  | ⚪ not started |  |
+| `TBoldOLLEHandle` | class | [15](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L15) | [`TBoldOLLEHandle`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L11) | 🟢 ported |  |
 
 ## TBoldOLLEHandle
 
-class at [line 15](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L15); 🟢 ported, C# [`TBoldOLLEHandle`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetPersistent` | method, private | [21](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L21) · [body 88](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L88) |  | ⚪ not started |  |
-| `SetPersistent` | method, private | [22](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L22) · [body 97](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L97) |  | ⚪ not started |  |
-| `GetOLLEController` | method, private | [23](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L23) · [body 70](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L70) |  | ⚪ not started |  |
-| `GetOwnObjectHandler` | method, private | [24](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L24) · [body 77](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L77) |  | ⚪ not started |  |
-| `GetForeignObjectHandler` | method, private | [25](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L25) · [body 54](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L54) |  | ⚪ not started |  |
-| `GetHandledObject` | method, protected | [27](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L27) · [body 65](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L65) |  | ⚪ not started |  |
-| `Destroy` | destructor | [29](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L29) · [body 47](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L47) |  | ⚪ not started |  |
-| `Loaded` | method | [30](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L30) · [body 93](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L93) |  | ⚪ not started |  |
-| `Persistent` | property | [31](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L31) |  | ⚪ not started |  |
-| `OLLEController` | property | [32](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L32) |  | ⚪ not started |  |
-| `OwnObjectHandler` | property | [33](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L33) |  | ⚪ not started |  |
-| `ForeignObjectHandler` | property | [34](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L34) |  | ⚪ not started |  |
-| `ApplicationPersistenceHandle` | property, published | [36](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L36) |  | ⚪ not started |  |
+| `GetPersistent` | method, private | [21](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L21) · [body 88](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L88) | [`TBoldOLLEHandle.GetPersistent`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L67) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handle_sets_whether_the_OLLE_system_is_persistent`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L29) |
+| `SetPersistent` | method, private | [22](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L22) · [body 97](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L97) | [`TBoldOLLEHandle.SetPersistent`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L76) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handle_sets_whether_the_OLLE_system_is_persistent`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L29) |
+| `GetOLLEController` | method, private | [23](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L23) · [body 70](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L70) | [`TBoldOLLEHandle.GetOLLEController`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L51) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+| `GetOwnObjectHandler` | method, private | [24](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L24) · [body 77](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L77) | [`TBoldOLLEHandle.GetOwnObjectHandler`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L54) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+| `GetForeignObjectHandler` | method, private | [25](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L25) · [body 54](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L54) | [`TBoldOLLEHandle.GetForeignObjectHandler`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L34) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+| `GetHandledObject` | method, protected | [27](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L27) · [body 65](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L65) | [`TBoldOLLEHandle.GetHandledObject`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L48) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+| `Destroy` | destructor | [29](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L29) · [body 47](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L47) | [`TBoldOLLEHandle.Dispose`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L24) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handle_sets_whether_the_OLLE_system_is_persistent`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L29) |
+| `Loaded` | method | [30](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L30) · [body 93](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L93) | [`TBoldOLLEHandle.Loaded`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L71) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handle_sets_whether_the_OLLE_system_is_persistent`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L29) |
+| `Persistent` | property | [31](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L31) | [`TBoldOLLEHandle.Persistent`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L79) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handle_sets_whether_the_OLLE_system_is_persistent`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L29) |
+| `OLLEController` | property | [32](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L32) | [`TBoldOLLEHandle.OLLEController`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L85) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+| `OwnObjectHandler` | property | [33](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L33) | [`TBoldOLLEHandle.OwnObjectHandler`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L86) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+| `ForeignObjectHandler` | property | [34](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L34) | [`TBoldOLLEHandle.ForeignObjectHandler`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L87) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+| `ApplicationPersistenceHandle` | property, published | [36](../../../Source/Extensions/OLLE/Core/BoldOLLEHandles.pas#L36) | [`TBoldOLLEHandle.ApplicationPersistenceHandle`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L91) | ✅ verified | ✔ [`BoldOLLEHandlesTests.The_handlers_share_the_OLLE_system_and_the_application_persistence`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEHandlesTests.cs#L14) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldOLLEHandle.TBoldOLLEHandle`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEHandles.cs#L18) (constructor)
 
 ## Dependencies
 

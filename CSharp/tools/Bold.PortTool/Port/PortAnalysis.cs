@@ -709,7 +709,9 @@ public sealed class PortAnalysis
         foreach (var declaration in declarations.Distinct())
         {
             var markers = MarkersOn(declaration);
-            if (markers.Count == 0 && names.Count > 0 && !names.Contains("*"))
+            // the parts of a partial method, and overloads: one marked declaration of the name is enough
+            if (markers.Count == 0 && names.Count > 0 && !names.Contains("*") &&
+                !declarations.Any(other => other.FullName == declaration.FullName && MarkersOn(other).Count > 0))
             {
                 Warning(location, $"[Covers] names {declaration.FullName}, which has no [Delphi] marker, so it covers nothing");
             }

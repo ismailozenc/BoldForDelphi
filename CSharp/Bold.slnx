@@ -46,6 +46,7 @@
     <Project Path="tests/Bold.ModelEditor.Core.Tests/Bold.ModelEditor.Core.Tests.csproj" />
     <Project Path="tests/Bold.ModelEditor.Tests/Bold.ModelEditor.Tests.csproj" />
     <Project Path="tests/Bold.ObjectSpace.Tests/Bold.ObjectSpace.Tests.csproj" />
+    <Project Path="tests/Bold.Olle.Tests/Bold.Olle.Tests.csproj" />
     <Project Path="tests/Bold.Persistence.Sql.Tests/Bold.Persistence.Sql.Tests.csproj" />
     <Project Path="tests/Bold.PortTool.Tests/Bold.PortTool.Tests.csproj" />
     <Project Path="tests/Bold.Propagation.Tests/Bold.Propagation.Tests.csproj" />

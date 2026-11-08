@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Extensions/OLLE/Core/DistributableInfo.pas`](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas) (804 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs` |
+| C# | [`CSharp/src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs)<br>[`CSharp/src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs) |
 | Project | Bold.Olle |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 221 symbols done, 0 verified |
+| Status | 🟢 ported: 221 of 221 symbols done, 40 verified |
 | Note | OLLE is ported after SQL persistence (M5), decision D7. |
 
-⚪ 221 not started
+✅ 40 verified · 🟢 107 ported · 🔵 74 replaced
 
 ## Unit level
 
@@ -19,367 +19,407 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBusinessClassesRoot` | class | [69](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L69) |  | ⚪ not started |  |
-| `TCheckedOutObjectInfo` | class | [75](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L75) |  | ⚪ not started |  |
-| `TCheckingInObjectInfo` | class | [86](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L86) |  | ⚪ not started |  |
-| `TDistributableObjectInfo` | class | [109](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L109) |  | ⚪ not started |  |
-| `THeldObjectInfo` | class | [127](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L127) |  | ⚪ not started |  |
-| `TMapping` | class | [149](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L149) |  | ⚪ not started |  |
-| `TPSInfo` | class | [159](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L159) |  | ⚪ not started |  |
-| `TForeignObjectInfo` | class | [170](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L170) |  | ⚪ not started |  |
-| `TOwnObjectInfo` | class | [196](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L196) |  | ⚪ not started |  |
-| `TForeignPSInfo` | class | [212](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L212) |  | ⚪ not started |  |
-| `TOwnPSInfo` | class | [235](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L235) |  | ⚪ not started |  |
-| `TBusinessClassesRootList` | class | [241](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L241) |  | ⚪ not started |  |
-| `TCheckedOutObjectInfoList` | class | [254](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L254) |  | ⚪ not started |  |
-| `TCheckingInObjectInfoList` | class | [267](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L267) |  | ⚪ not started |  |
-| `TDistributableObjectInfoList` | class | [280](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L280) |  | ⚪ not started |  |
-| `THeldObjectInfoList` | class | [293](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L293) |  | ⚪ not started |  |
-| `TMappingList` | class | [306](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L306) |  | ⚪ not started |  |
-| `TPSInfoList` | class | [319](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L319) |  | ⚪ not started |  |
-| `TForeignObjectInfoList` | class | [332](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L332) |  | ⚪ not started |  |
-| `TOwnObjectInfoList` | class | [345](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L345) |  | ⚪ not started |  |
-| `TForeignPSInfoList` | class | [358](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L358) |  | ⚪ not started |  |
-| `TOwnPSInfoList` | class | [371](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L371) |  | ⚪ not started |  |
-| `GeneratedCodeCRC` | routine | [384](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L384) · [body 760](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L760) |  | ⚪ not started |  |
-| `InstallObjectListClasses` | routine, implementation | [765](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L765) |  | ⚪ not started |  |
-| `InstallBusinessClasses` | routine, implementation | [780](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L780) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [798](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L798) |  | ⚪ not started |  |
-| `finalization` | finalization, implementation | [800](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L800) |  | ⚪ not started |  |
+| `TBusinessClassesRoot` | class | [69](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L69) | [`TBusinessClassesRoot`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L19) | 🟢 ported |  |
+| `TCheckedOutObjectInfo` | class | [75](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L75) | [`TCheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L74) | 🟢 ported |  |
+| `TCheckingInObjectInfo` | class | [86](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L86) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🟢 ported |  |
+| `TDistributableObjectInfo` | class | [109](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L109) | [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239) | 🟢 ported |  |
+| `THeldObjectInfo` | class | [127](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L127) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🟢 ported |  |
+| `TMapping` | class | [149](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L149) | [`TMapping`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L413) | 🟢 ported |  |
+| `TPSInfo` | class | [159](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L159) | [`TPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L484) | 🟢 ported |  |
+| `TForeignObjectInfo` | class | [170](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L170) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🟢 ported |  |
+| `TOwnObjectInfo` | class | [196](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L196) | [`TOwnObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L655) | 🟢 ported |  |
+| `TForeignPSInfo` | class | [212](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L212) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🟢 ported |  |
+| `TOwnPSInfo` | class | [235](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L235) | [`TOwnPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L829) | 🟢 ported |  |
+| `TBusinessClassesRootList` | class | [241](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L241) | [`TBusinessClassesRootList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L32) | 🟢 ported |  |
+| `TCheckedOutObjectInfoList` | class | [254](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L254) | [`TCheckedOutObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L97) | 🟢 ported |  |
+| `TCheckingInObjectInfoList` | class | [267](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L267) | [`TCheckingInObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L194) | 🟢 ported |  |
+| `TDistributableObjectInfoList` | class | [280](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L280) | [`TDistributableObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L278) | 🟢 ported |  |
+| `THeldObjectInfoList` | class | [293](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L293) | [`THeldObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L372) | 🟢 ported |  |
+| `TMappingList` | class | [306](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L306) | [`TMappingList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L442) | 🟢 ported |  |
+| `TPSInfoList` | class | [319](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L319) | [`TPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L507) | 🟢 ported |  |
+| `TForeignObjectInfoList` | class | [332](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L332) | [`TForeignObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L613) | 🟢 ported |  |
+| `TOwnObjectInfoList` | class | [345](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L345) | [`TOwnObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L693) | 🟢 ported |  |
+| `TForeignPSInfoList` | class | [358](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L358) | [`TForeignPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L790) | 🟢 ported |  |
+| `TOwnPSInfoList` | class | [371](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L371) | [`TOwnPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L842) | 🟢 ported |  |
+| `GeneratedCodeCRC` | routine | [384](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L384) · [body 760](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L760) | [`DistributableInfoGeneratedCode.GeneratedCodeCRC`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L884) | ✅ verified: A constant, where Delphi had a function. | ✔ [`DistributableInfoTests.The_OLLE_system_has_the_generated_classes`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L32) |
+| `InstallObjectListClasses` | routine, implementation | [765](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L765) | [`DistributableInfoGeneratedCode.InstallObjectListClasses`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L889) | ✅ verified | ✔ [`DistributableInfoTests.The_OLLE_system_has_the_generated_classes`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L32) |
+| `InstallBusinessClasses` | routine, implementation | [780](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L780) | [`DistributableInfoGeneratedCode.InstallBusinessClasses`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L905) | ✅ verified | ✔ [`DistributableInfoTests.The_OLLE_system_has_the_generated_classes`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L32) |
+| `initialization` | initialization, implementation | [798](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L798) | [`DistributableInfoGeneratedCode.Register`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L923) | ✅ verified: A module initializer: the classes are registered when the assembly is loaded. | ✔ [`DistributableInfoTests.The_OLLE_system_has_the_generated_classes`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L32) |
+| `finalization` | finalization, implementation | [800](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L800) | [`[assembly: Delphi] in DistributableInfo.g.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L13) | 🔵 replaced: The generated classes stay registered while the process runs. |  |
 
 ## TCheckedOutObjectInfo
 
-class at [line 75](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L75); ⚪ not started.
+class at [line 75](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L75); 🟢 ported, C# [`TCheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L74).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_GetHolder` | method, private | [77](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L77) · [body 81](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L81) |  | ⚪ not started |  |
-| `_Get_M_Holder` | method, private | [78](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L78) · [body 75](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L75) |  | ⚪ not started |  |
-| `_SetHolder` | method, private | [79](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L79) · [body 87](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L87) |  | ⚪ not started |  |
-| `M_Holder` | property | [82](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L82) |  | ⚪ not started |  |
-| `Holder` | property | [83](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L83) |  | ⚪ not started |  |
+| `_GetHolder` | method, private | [77](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L77) · [body 81](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L81) | [`TCheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L74) | 🔵 replaced: The get accessor of Holder. |  |
+| `_Get_M_Holder` | method, private | [78](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L78) · [body 75](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L75) | [`TCheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L74) | 🔵 replaced: The get accessor of M\_Holder. |  |
+| `_SetHolder` | method, private | [79](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L79) · [body 87](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L87) | [`TCheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L74) | 🔵 replaced: The set accessor of Holder. |  |
+| `M_Holder` | property | [82](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L82) | [`TCheckedOutObjectInfo.M_Holder`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L83) | 🟢 ported |  |
+| `Holder` | property | [83](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L83) | [`TCheckedOutObjectInfo.Holder`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L86) | ✅ verified | ✔ [`DistributableInfoTests.An_own_object_is_checked_out_to_one_holder_at_a_time`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L58) |
 
 ## TCheckingInObjectInfo
 
-class at [line 86](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L86); ⚪ not started.
+class at [line 86](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L86); 🟢 ported, C# [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Get_M_KeepHold` | method, private | [88](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L88) · [body 131](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L131) |  | ⚪ not started |  |
-| `_GetKeepHold` | method, private | [89](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L89) · [body 137](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L137) |  | ⚪ not started |  |
-| `_SetKeepHold` | method, private | [90](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L90) · [body 142](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L142) |  | ⚪ not started |  |
-| `_Get_M_LocalTimeStampAtCheckIn` | method, private | [91](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L91) · [body 147](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L147) |  | ⚪ not started |  |
-| `_GetLocalTimeStampAtCheckIn` | method, private | [92](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L92) · [body 153](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L153) |  | ⚪ not started |  |
-| `_SetLocalTimeStampAtCheckIn` | method, private | [93](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L93) · [body 158](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L158) |  | ⚪ not started |  |
-| `_GetHeldObjectInfo` | method, private | [94](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L94) · [body 169](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L169) |  | ⚪ not started |  |
-| `_Get_M_HeldObjectInfo` | method, private | [95](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L95) · [body 163](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L163) |  | ⚪ not started |  |
-| `_SetHeldObjectInfo` | method, private | [96](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L96) · [body 175](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L175) |  | ⚪ not started |  |
-| `AcknowledgeCheckIn` | method | [99](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L99) · [body 11](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L11) |  | ⚪ not started |  |
-| `FailCheckIn` | method | [100](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L100) · [body 32](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L32) |  | ⚪ not started |  |
-| `M_KeepHold` | property | [101](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L101) |  | ⚪ not started |  |
-| `M_LocalTimeStampAtCheckIn` | property | [102](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L102) |  | ⚪ not started |  |
-| `M_HeldObjectInfo` | property | [103](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L103) |  | ⚪ not started |  |
-| `KeepHold` | property | [104](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L104) |  | ⚪ not started |  |
-| `LocalTimeStampAtCheckIn` | property | [105](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L105) |  | ⚪ not started |  |
-| `HeldObjectInfo` | property | [106](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L106) |  | ⚪ not started |  |
+| `_Get_M_KeepHold` | method, private | [88](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L88) · [body 131](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L131) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The get accessor of M\_KeepHold. |  |
+| `_GetKeepHold` | method, private | [89](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L89) · [body 137](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L137) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The get accessor of KeepHold. |  |
+| `_SetKeepHold` | method, private | [90](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L90) · [body 142](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L142) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The set accessor of KeepHold. |  |
+| `_Get_M_LocalTimeStampAtCheckIn` | method, private | [91](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L91) · [body 147](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L147) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The get accessor of M\_LocalTimeStampAtCheckIn. |  |
+| `_GetLocalTimeStampAtCheckIn` | method, private | [92](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L92) · [body 153](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L153) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The get accessor of LocalTimeStampAtCheckIn. |  |
+| `_SetLocalTimeStampAtCheckIn` | method, private | [93](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L93) · [body 158](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L158) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The set accessor of LocalTimeStampAtCheckIn. |  |
+| `_GetHeldObjectInfo` | method, private | [94](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L94) · [body 169](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L169) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The get accessor of HeldObjectInfo. |  |
+| `_Get_M_HeldObjectInfo` | method, private | [95](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L95) · [body 163](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L163) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The get accessor of M\_HeldObjectInfo. |  |
+| `_SetHeldObjectInfo` | method, private | [96](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L96) · [body 175](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L175) | [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L145) | 🔵 replaced: The set accessor of HeldObjectInfo. |  |
+| `AcknowledgeCheckIn` | method | [99](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L99) · [body 11](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L11) | [`TCheckingInObjectInfo.AcknowledgeCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L184) | ✅ verified | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `FailCheckIn` | method | [100](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L100) · [body 32](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L32) | [`TCheckingInObjectInfo.FailCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L187) | ✅ verified | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `M_KeepHold` | property | [101](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L101) | [`TCheckingInObjectInfo.M_KeepHold`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L154) | 🟢 ported |  |
+| `M_LocalTimeStampAtCheckIn` | property | [102](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L102) | [`TCheckingInObjectInfo.M_LocalTimeStampAtCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L164) | 🟢 ported |  |
+| `M_HeldObjectInfo` | property | [103](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L103) | [`TCheckingInObjectInfo.M_HeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L174) | 🟢 ported |  |
+| `KeepHold` | property | [104](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L104) | [`TCheckingInObjectInfo.KeepHold`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L157) | ✅ verified | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `LocalTimeStampAtCheckIn` | property | [105](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L105) | [`TCheckingInObjectInfo.LocalTimeStampAtCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L167) | ✅ verified | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `HeldObjectInfo` | property | [106](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L106) | [`TCheckingInObjectInfo.HeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L177) | ✅ verified | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
 
 ## TDistributableObjectInfo
 
-class at [line 109](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L109); ⚪ not started.
+class at [line 109](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L109); 🟢 ported, C# [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Get_M_LocalId` | method, private | [111](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L111) · [body 219](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L219) |  | ⚪ not started |  |
-| `_GetLocalId` | method, private | [112](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L112) · [body 225](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L225) |  | ⚪ not started |  |
-| `_SetLocalId` | method, private | [113](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L113) · [body 230](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L230) |  | ⚪ not started |  |
-| `_Getmapping` | method, private | [114](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L114) · [body 241](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L241) |  | ⚪ not started |  |
-| `_Get_M_mapping` | method, private | [115](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L115) · [body 235](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L235) |  | ⚪ not started |  |
-| `_Setmapping` | method, private | [116](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L116) · [body 247](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L247) |  | ⚪ not started |  |
-| `StartCheckIn` | method | [119](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L119) |  | ⚪ not started |  |
-| `Get` | method | [120](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L120) |  | ⚪ not started |  |
-| `M_LocalId` | property | [121](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L121) |  | ⚪ not started |  |
-| `M_mapping` | property | [122](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L122) |  | ⚪ not started |  |
-| `LocalId` | property | [123](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L123) |  | ⚪ not started |  |
-| `mapping` | property | [124](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L124) |  | ⚪ not started |  |
+| `_Get_M_LocalId` | method, private | [111](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L111) · [body 219](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L219) | [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239) | 🔵 replaced: The get accessor of M\_LocalId. |  |
+| `_GetLocalId` | method, private | [112](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L112) · [body 225](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L225) | [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239) | 🔵 replaced: The get accessor of LocalId. |  |
+| `_SetLocalId` | method, private | [113](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L113) · [body 230](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L230) | [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239) | 🔵 replaced: The set accessor of LocalId. |  |
+| `_Getmapping` | method, private | [114](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L114) · [body 241](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L241) | [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239) | 🔵 replaced: The get accessor of mapping. |  |
+| `_Get_M_mapping` | method, private | [115](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L115) · [body 235](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L235) | [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239) | 🔵 replaced: The get accessor of M\_mapping. |  |
+| `_Setmapping` | method, private | [116](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L116) · [body 247](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L247) | [`TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L239) | 🔵 replaced: The set accessor of mapping. |  |
+| `StartCheckIn` | method | [119](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L119) | [`TDistributableObjectInfo.StartCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L268) | 🟢 ported: Abstract in Delphi: raises NotSupportedException. |  |
+| `Get` | method | [120](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L120) | [`TDistributableObjectInfo.Get`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L271) | 🟢 ported: Abstract in Delphi: raises NotSupportedException. |  |
+| `M_LocalId` | property | [121](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L121) | [`TDistributableObjectInfo.M_LocalId`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L248) | 🟢 ported |  |
+| `M_mapping` | property | [122](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L122) | [`TDistributableObjectInfo.M_mapping`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L258) | 🟢 ported |  |
+| `LocalId` | property | [123](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L123) | [`TDistributableObjectInfo.LocalId`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L251) | ✅ verified | ✔ [`DistributableInfoTests.The_mapping_finds_an_information_object_by_its_local_id`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L44) |
+| `mapping` | property | [124](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L124) | [`TDistributableObjectInfo.mapping`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L261) | ✅ verified | ✔ [`DistributableInfoTests.The_mapping_finds_an_information_object_by_its_local_id`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L44) |
 
 ## THeldObjectInfo
 
-class at [line 127](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L127); ⚪ not started.
+class at [line 127](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L127); 🟢 ported, C# [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Get_M_OriginalLocalTimeStamp` | method, private | [129](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L129) · [body 291](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L291) |  | ⚪ not started |  |
-| `_GetOriginalLocalTimeStamp` | method, private | [130](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L130) · [body 297](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L297) |  | ⚪ not started |  |
-| `_SetOriginalLocalTimeStamp` | method, private | [131](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L131) · [body 302](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L302) |  | ⚪ not started |  |
-| `_GetForeignObjectInfo` | method, private | [132](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L132) · [body 313](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L313) |  | ⚪ not started |  |
-| `_Get_M_ForeignObjectInfo` | method, private | [133](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L133) · [body 307](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L307) |  | ⚪ not started |  |
-| `_SetForeignObjectInfo` | method, private | [134](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L134) · [body 319](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L319) |  | ⚪ not started |  |
-| `_GetCheckingInObjectInfo` | method, private | [135](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L135) · [body 330](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L330) |  | ⚪ not started |  |
-| `_Get_M_CheckingInObjectInfo` | method, private | [136](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L136) · [body 324](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L324) |  | ⚪ not started |  |
-| `_SetCheckingInObjectInfo` | method, private | [137](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L137) · [body 336](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L336) |  | ⚪ not started |  |
-| `StartCheckIn` | method | [140](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L140) · [body 48](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L48) |  | ⚪ not started |  |
-| `M_OriginalLocalTimeStamp` | property | [141](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L141) |  | ⚪ not started |  |
-| `M_ForeignObjectInfo` | property | [142](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L142) |  | ⚪ not started |  |
-| `M_CheckingInObjectInfo` | property | [143](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L143) |  | ⚪ not started |  |
-| `OriginalLocalTimeStamp` | property | [144](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L144) |  | ⚪ not started |  |
-| `ForeignObjectInfo` | property | [145](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L145) |  | ⚪ not started |  |
-| `CheckingInObjectInfo` | property | [146](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L146) |  | ⚪ not started |  |
+| `_Get_M_OriginalLocalTimeStamp` | method, private | [129](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L129) · [body 291](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L291) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The get accessor of M\_OriginalLocalTimeStamp. |  |
+| `_GetOriginalLocalTimeStamp` | method, private | [130](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L130) · [body 297](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L297) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The get accessor of OriginalLocalTimeStamp. |  |
+| `_SetOriginalLocalTimeStamp` | method, private | [131](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L131) · [body 302](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L302) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The set accessor of OriginalLocalTimeStamp. |  |
+| `_GetForeignObjectInfo` | method, private | [132](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L132) · [body 313](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L313) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The get accessor of ForeignObjectInfo. |  |
+| `_Get_M_ForeignObjectInfo` | method, private | [133](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L133) · [body 307](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L307) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The get accessor of M\_ForeignObjectInfo. |  |
+| `_SetForeignObjectInfo` | method, private | [134](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L134) · [body 319](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L319) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The set accessor of ForeignObjectInfo. |  |
+| `_GetCheckingInObjectInfo` | method, private | [135](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L135) · [body 330](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L330) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The get accessor of CheckingInObjectInfo. |  |
+| `_Get_M_CheckingInObjectInfo` | method, private | [136](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L136) · [body 324](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L324) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The get accessor of M\_CheckingInObjectInfo. |  |
+| `_SetCheckingInObjectInfo` | method, private | [137](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L137) · [body 336](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L336) | [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L326) | 🔵 replaced: The set accessor of CheckingInObjectInfo. |  |
+| `StartCheckIn` | method | [140](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L140) · [body 48](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L48) | [`THeldObjectInfo.StartCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L365) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `M_OriginalLocalTimeStamp` | property | [141](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L141) | [`THeldObjectInfo.M_OriginalLocalTimeStamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L335) | 🟢 ported |  |
+| `M_ForeignObjectInfo` | property | [142](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L142) | [`THeldObjectInfo.M_ForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L345) | 🟢 ported |  |
+| `M_CheckingInObjectInfo` | property | [143](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L143) | [`THeldObjectInfo.M_CheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L355) | 🟢 ported |  |
+| `OriginalLocalTimeStamp` | property | [144](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L144) | [`THeldObjectInfo.OriginalLocalTimeStamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L338) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `ForeignObjectInfo` | property | [145](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L145) | [`THeldObjectInfo.ForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L348) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `CheckingInObjectInfo` | property | [146](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L146) | [`THeldObjectInfo.CheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L358) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
 
 ## TMapping
 
-class at [line 149](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L149); ⚪ not started.
+class at [line 149](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L149); 🟢 ported, C# [`TMapping`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L413).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_GetObjectInfo` | method, private | [151](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L151) · [body 380](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L380) |  | ⚪ not started |  |
-| `_Get_Q_ObjectInfo` | method, private | [152](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L152) · [body 386](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L386) |  | ⚪ not started |  |
-| `M_ObjectInfo` | property | [155](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L155) |  | ⚪ not started |  |
-| `ObjectInfo` | property | [156](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L156) |  | ⚪ not started |  |
+| `_GetObjectInfo` | method, private | [151](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L151) · [body 380](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L380) | [`TMapping`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L413) | 🔵 replaced: The get accessor of M\_ObjectInfo. |  |
+| `_Get_Q_ObjectInfo` | method, private | [152](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L152) · [body 386](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L386) | [`TMapping`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L413) | 🔵 replaced: Q\_ObjectInfo gives the object of the qualifier, as the get accessor of ObjectInfo did. |  |
+| `M_ObjectInfo` | property | [155](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L155) | [`TMapping.M_ObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L422) | ✅ verified | ✔ [`DistributableInfoTests.The_mapping_finds_an_information_object_by_its_local_id`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L44) |
+| `ObjectInfo` | property | [156](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L156) | [`TMapping.Q_ObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L428) | ✅ verified: A method that takes the qualifier, where Delphi had an indexed property. | ✔ [`DistributableInfoTests.The_mapping_finds_an_information_object_by_its_local_id`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L44) |
 
 ## TPSInfo
 
-class at [line 159](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L159); ⚪ not started.
+class at [line 159](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L159); 🟢 ported, C# [`TPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L484).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Get_M_GlobalID` | method, private | [161](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L161) · [body 446](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L446) |  | ⚪ not started |  |
-| `_GetGlobalID` | method, private | [162](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L162) · [body 452](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L452) |  | ⚪ not started |  |
-| `_SetGlobalID` | method, private | [163](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L163) · [body 457](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L457) |  | ⚪ not started |  |
-| `M_GlobalID` | property | [166](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L166) |  | ⚪ not started |  |
-| `GlobalID` | property | [167](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L167) |  | ⚪ not started |  |
+| `_Get_M_GlobalID` | method, private | [161](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L161) · [body 446](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L446) | [`TPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L484) | 🔵 replaced: The get accessor of M\_GlobalID. |  |
+| `_GetGlobalID` | method, private | [162](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L162) · [body 452](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L452) | [`TPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L484) | 🔵 replaced: The get accessor of GlobalID. |  |
+| `_SetGlobalID` | method, private | [163](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L163) · [body 457](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L457) | [`TPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L484) | 🔵 replaced: The set accessor of GlobalID. |  |
+| `M_GlobalID` | property | [166](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L166) | [`TPSInfo.M_GlobalID`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L493) | 🟢 ported |  |
+| `GlobalID` | property | [167](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L167) | [`TPSInfo.GlobalID`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L496) | ✅ verified | ✔ [`DistributableInfoTests.The_OLLE_system_has_the_generated_classes`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L32) |
 
 ## TForeignObjectInfo
 
-class at [line 170](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L170); ⚪ not started.
+class at [line 170](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L170); 🟢 ported, C# [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Get_M_ForeignTimeStamp` | method, private | [172](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L172) · [body 501](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L501) |  | ⚪ not started |  |
-| `_GetForeignTimeStamp` | method, private | [173](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L173) · [body 507](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L507) |  | ⚪ not started |  |
-| `_SetForeignTimeStamp` | method, private | [174](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L174) · [body 512](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L512) |  | ⚪ not started |  |
-| `_GetHeldObjectInfo` | method, private | [175](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L175) · [body 523](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L523) |  | ⚪ not started |  |
-| `_Get_M_HeldObjectInfo` | method, private | [176](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L176) · [body 517](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L517) |  | ⚪ not started |  |
-| `_SetHeldObjectInfo` | method, private | [177](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L177) · [body 529](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L529) |  | ⚪ not started |  |
-| `_GetOwner` | method, private | [178](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L178) · [body 540](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L540) |  | ⚪ not started |  |
-| `_Get_M_Owner` | method, private | [179](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L179) · [body 534](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L534) |  | ⚪ not started |  |
-| `_SetOwner` | method, private | [180](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L180) · [body 546](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L546) |  | ⚪ not started |  |
-| `Hold` | method | [183](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L183) · [body 103](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L103) |  | ⚪ not started |  |
-| `StartCheckIn` | method | [184](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L184) · [body 39](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L39) |  | ⚪ not started |  |
-| `InitializeHolding` | method | [185](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L185) · [body 73](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L73) |  | ⚪ not started |  |
-| `Put` | method | [186](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L186) · [body 83](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L83) |  | ⚪ not started |  |
-| `Get` | method | [187](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L187) · [body 110](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L110) |  | ⚪ not started |  |
-| `M_ForeignTimeStamp` | property | [188](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L188) |  | ⚪ not started |  |
-| `M_HeldObjectInfo` | property | [189](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L189) |  | ⚪ not started |  |
-| `M_Owner` | property | [190](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L190) |  | ⚪ not started |  |
-| `ForeignTimeStamp` | property | [191](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L191) |  | ⚪ not started |  |
-| `HeldObjectInfo` | property | [192](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L192) |  | ⚪ not started |  |
-| `Owner` | property | [193](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L193) |  | ⚪ not started |  |
+| `_Get_M_ForeignTimeStamp` | method, private | [172](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L172) · [body 501](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L501) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The get accessor of M\_ForeignTimeStamp. |  |
+| `_GetForeignTimeStamp` | method, private | [173](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L173) · [body 507](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L507) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The get accessor of ForeignTimeStamp. |  |
+| `_SetForeignTimeStamp` | method, private | [174](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L174) · [body 512](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L512) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The set accessor of ForeignTimeStamp. |  |
+| `_GetHeldObjectInfo` | method, private | [175](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L175) · [body 523](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L523) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The get accessor of HeldObjectInfo. |  |
+| `_Get_M_HeldObjectInfo` | method, private | [176](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L176) · [body 517](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L517) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The get accessor of M\_HeldObjectInfo. |  |
+| `_SetHeldObjectInfo` | method, private | [177](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L177) · [body 529](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L529) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The set accessor of HeldObjectInfo. |  |
+| `_GetOwner` | method, private | [178](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L178) · [body 540](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L540) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The get accessor of Owner. |  |
+| `_Get_M_Owner` | method, private | [179](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L179) · [body 534](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L534) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The get accessor of M\_Owner. |  |
+| `_SetOwner` | method, private | [180](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L180) · [body 546](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L546) | [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L555) | 🔵 replaced: The set accessor of Owner. |  |
+| `Hold` | method | [183](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L183) · [body 103](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L103) | [`TForeignObjectInfo.Hold`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L594) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `StartCheckIn` | method | [184](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L184) · [body 39](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L39) | [`TForeignObjectInfo.StartCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L597) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `InitializeHolding` | method | [185](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L185) · [body 73](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L73) | [`TForeignObjectInfo.InitializeHolding`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L600) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.An_object_the_holder_made_is_checked_in_to_the_owner_as_its_own`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L165)<br>✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `Put` | method | [186](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L186) · [body 83](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L83) | [`TForeignObjectInfo.Put`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L603) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `Get` | method | [187](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L187) · [body 110](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L110) | [`TForeignObjectInfo.Get`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L606) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `M_ForeignTimeStamp` | property | [188](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L188) | [`TForeignObjectInfo.M_ForeignTimeStamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L564) | 🟢 ported |  |
+| `M_HeldObjectInfo` | property | [189](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L189) | [`TForeignObjectInfo.M_HeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L574) | 🟢 ported |  |
+| `M_Owner` | property | [190](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L190) | [`TForeignObjectInfo.M_Owner`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L584) | 🟢 ported |  |
+| `ForeignTimeStamp` | property | [191](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L191) | [`TForeignObjectInfo.ForeignTimeStamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L567) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `HeldObjectInfo` | property | [192](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L192) | [`TForeignObjectInfo.HeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L577) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
+| `Owner` | property | [193](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L193) | [`TForeignObjectInfo.Owner`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L587) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
 
 ## TOwnObjectInfo
 
-class at [line 196](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L196); ⚪ not started.
+class at [line 196](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L196); 🟢 ported, C# [`TOwnObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L655).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_GetCheckedOutObjectInfo` | method, private | [198](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L198) · [body 596](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L596) |  | ⚪ not started |  |
-| `_Get_M_CheckedOutObjectInfo` | method, private | [199](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L199) · [body 590](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L590) |  | ⚪ not started |  |
-| `_SetCheckedOutObjectInfo` | method, private | [200](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L200) · [body 602](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L602) |  | ⚪ not started |  |
-| `CheckOut` | method | [203](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L203) · [body 122](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L122) |  | ⚪ not started |  |
-| `StartCheckIn` | method | [204](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L204) · [body 68](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L68) |  | ⚪ not started |  |
-| `Get` | method | [205](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L205) · [body 116](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L116) |  | ⚪ not started |  |
-| `CheckIn` | method | [206](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L206) · [body 130](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L130) |  | ⚪ not started |  |
-| `UnCheckOut` | method | [207](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L207) · [body 201](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L201) |  | ⚪ not started |  |
-| `M_CheckedOutObjectInfo` | property | [208](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L208) |  | ⚪ not started |  |
-| `CheckedOutObjectInfo` | property | [209](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L209) |  | ⚪ not started |  |
+| `_GetCheckedOutObjectInfo` | method, private | [198](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L198) · [body 596](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L596) | [`TOwnObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L655) | 🔵 replaced: The get accessor of CheckedOutObjectInfo. |  |
+| `_Get_M_CheckedOutObjectInfo` | method, private | [199](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L199) · [body 590](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L590) | [`TOwnObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L655) | 🔵 replaced: The get accessor of M\_CheckedOutObjectInfo. |  |
+| `_SetCheckedOutObjectInfo` | method, private | [200](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L200) · [body 602](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L602) | [`TOwnObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L655) | 🔵 replaced: The set accessor of CheckedOutObjectInfo. |  |
+| `CheckOut` | method | [203](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L203) · [body 122](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L122) | [`TOwnObjectInfo.CheckOut`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L674) | ✅ verified | ✔ [`DistributableInfoTests.An_own_object_is_checked_out_to_one_holder_at_a_time`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L58) |
+| `StartCheckIn` | method | [204](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L204) · [body 68](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L68) | [`TOwnObjectInfo.StartCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L677) | ✅ verified | ✔ [`DistributableInfoTests.An_own_object_is_checked_out_to_one_holder_at_a_time`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L58) |
+| `Get` | method | [205](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L205) · [body 116](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L116) | [`TOwnObjectInfo.Get`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L680) | ✅ verified | ✔ [`DistributableInfoTests.An_own_object_is_checked_out_to_one_holder_at_a_time`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L58) |
+| `CheckIn` | method | [206](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L206) · [body 130](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L130) | [`TOwnObjectInfo.CheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L683) | ✅ verified | ✔ [`DistributableInfoTests.An_own_object_is_checked_out_to_one_holder_at_a_time`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L58) |
+| `UnCheckOut` | method | [207](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L207) · [body 201](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L201) | [`TOwnObjectInfo.UnCheckOut`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L686) | ✅ verified | ✔ [`DistributableInfoTests.An_own_object_is_checked_out_to_one_holder_at_a_time`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L58) |
+| `M_CheckedOutObjectInfo` | property | [208](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L208) | [`TOwnObjectInfo.M_CheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L664) | 🟢 ported |  |
+| `CheckedOutObjectInfo` | property | [209](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L209) | [`TOwnObjectInfo.CheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L667) | ✅ verified | ✔ [`DistributableInfoTests.An_own_object_is_checked_out_to_one_holder_at_a_time`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L58) |
 
 ## TForeignPSInfo
 
-class at [line 212](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L212); ⚪ not started.
+class at [line 212](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L212); 🟢 ported, C# [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `_Get_M_LastSynchTimestamp` | method, private | [214](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L214) · [body 646](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L646) |  | ⚪ not started |  |
-| `_GetLastSynchTimestamp` | method, private | [215](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L215) · [body 652](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L652) |  | ⚪ not started |  |
-| `_SetLastSynchTimestamp` | method, private | [216](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L216) · [body 657](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L657) |  | ⚪ not started |  |
-| `_Get_M_OngoingSynchTimestamp` | method, private | [217](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L217) · [body 662](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L662) |  | ⚪ not started |  |
-| `_GetOngoingSynchTimestamp` | method, private | [218](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L218) · [body 668](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L668) |  | ⚪ not started |  |
-| `_SetOngoingSynchTimestamp` | method, private | [219](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L219) · [body 673](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L673) |  | ⚪ not started |  |
-| `_GetOwnedObjectInfos` | method, private | [220](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L220) · [body 678](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L678) |  | ⚪ not started |  |
-| `AcknowledgeCheckIn` | method | [223](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L223) · [body 141](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L141) |  | ⚪ not started |  |
-| `FailCheckIn` | method | [224](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L224) · [body 159](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L159) |  | ⚪ not started |  |
-| `IsCheckingIn` | method | [225](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L225) · [body 188](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L188) |  | ⚪ not started |  |
-| `IsSynching` | method | [226](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L226) · [body 205](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L205) |  | ⚪ not started |  |
-| `M_LastSynchTimestamp` | property | [227](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L227) |  | ⚪ not started |  |
-| `M_OngoingSynchTimestamp` | property | [228](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L228) |  | ⚪ not started |  |
-| `M_OwnedObjectInfos` | property | [229](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L229) |  | ⚪ not started |  |
-| `LastSynchTimestamp` | property | [230](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L230) |  | ⚪ not started |  |
-| `OngoingSynchTimestamp` | property | [231](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L231) |  | ⚪ not started |  |
-| `OwnedObjectInfos` | property | [232](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L232) |  | ⚪ not started |  |
+| `_Get_M_LastSynchTimestamp` | method, private | [214](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L214) · [body 646](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L646) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🔵 replaced: The get accessor of M\_LastSynchTimestamp. |  |
+| `_GetLastSynchTimestamp` | method, private | [215](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L215) · [body 652](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L652) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🔵 replaced: The get accessor of LastSynchTimestamp. |  |
+| `_SetLastSynchTimestamp` | method, private | [216](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L216) · [body 657](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L657) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🔵 replaced: The set accessor of LastSynchTimestamp. |  |
+| `_Get_M_OngoingSynchTimestamp` | method, private | [217](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L217) · [body 662](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L662) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🔵 replaced: The get accessor of M\_OngoingSynchTimestamp. |  |
+| `_GetOngoingSynchTimestamp` | method, private | [218](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L218) · [body 668](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L668) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🔵 replaced: The get accessor of OngoingSynchTimestamp. |  |
+| `_SetOngoingSynchTimestamp` | method, private | [219](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L219) · [body 673](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L673) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🔵 replaced: The set accessor of OngoingSynchTimestamp. |  |
+| `_GetOwnedObjectInfos` | method, private | [220](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L220) · [body 678](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L678) | [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L739) | 🔵 replaced: The get accessor of OwnedObjectInfos. |  |
+| `AcknowledgeCheckIn` | method | [223](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L223) · [body 141](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L141) | [`TForeignPSInfo.AcknowledgeCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L774) | ✅ verified | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `FailCheckIn` | method | [224](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L224) · [body 159](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L159) | [`TForeignPSInfo.FailCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L777) | ✅ verified: Delphi went up the list of objects checking in while failing them, and the list loses each failed (deleted) object, so a second object raised an index error; this goes through a copy of the list. | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `IsCheckingIn` | method | [225](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L225) · [body 188](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L188) | [`TForeignPSInfo.IsCheckingIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L780) | ✅ verified | ✔ [`DistributableInfoTests.A_check_in_is_acknowledged_or_fails`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L121) |
+| `IsSynching` | method | [226](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L226) · [body 205](../../../Source/Extensions/OLLE/Core/DistributableInfo.inc#L205) | [`TForeignPSInfo.IsSynching`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L783) | ✅ verified | ✔ [`DistributableInfoTests.A_storage_is_synching_while_a_synch_timestamp_is_set`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L168) |
+| `M_LastSynchTimestamp` | property | [227](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L227) | [`TForeignPSInfo.M_LastSynchTimestamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L748) | 🟢 ported |  |
+| `M_OngoingSynchTimestamp` | property | [228](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L228) | [`TForeignPSInfo.M_OngoingSynchTimestamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L758) | 🟢 ported |  |
+| `M_OwnedObjectInfos` | property | [229](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L229) | [`TForeignPSInfo.M_OwnedObjectInfos`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L768) | 🟢 ported |  |
+| `LastSynchTimestamp` | property | [230](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L230) | [`TForeignPSInfo.LastSynchTimestamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L751) | ✅ verified | ✔ [`DistributableInfoTests.A_storage_is_synching_while_a_synch_timestamp_is_set`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L168) |
+| `OngoingSynchTimestamp` | property | [231](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L231) | [`TForeignPSInfo.OngoingSynchTimestamp`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L761) | ✅ verified | ✔ [`DistributableInfoTests.A_storage_is_synching_while_a_synch_timestamp_is_set`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L168) |
+| `OwnedObjectInfos` | property | [232](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L232) | [`TForeignPSInfo.OwnedObjectInfos`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L771) | ✅ verified | ✔ [`DistributableInfoTests.A_foreign_object_is_held_and_checked_in_as_its_owner_lent_it`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/DistributableInfoTests.cs#L87) |
 
 ## TBusinessClassesRootList
 
-class at [line 241](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L241); ⚪ not started.
+class at [line 241](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L241); 🟢 ported, C# [`TBusinessClassesRootList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L32).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [243](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L243) · [body 63](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L63) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [244](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L244) · [body 68](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L68) |  | ⚪ not started |  |
-| `Includes` | method | [246](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L246) · [body 47](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L47) |  | ⚪ not started |  |
-| `IndexOf` | method | [247](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L247) · [body 42](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L42) |  | ⚪ not started |  |
-| `Add` | method | [248](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L248) · [body 36](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L36) |  | ⚪ not started |  |
-| `AddNew` | method | [249](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L249) · [body 52](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L52) |  | ⚪ not started |  |
-| `Insert` | method | [250](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L250) · [body 57](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L57) |  | ⚪ not started |  |
-| `BoldObjects` | property | [251](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L251) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [243](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L243) · [body 63](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L63) | [`TBusinessClassesRootList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L32) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [244](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L244) · [body 68](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L68) | [`TBusinessClassesRootList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L32) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [246](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L246) · [body 47](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L47) | [`TBusinessClassesRootList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L54) | 🟢 ported |  |
+| `IndexOf` | method | [247](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L247) · [body 42](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L42) | [`TBusinessClassesRootList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L51) | 🟢 ported |  |
+| `Add` | method | [248](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L248) · [body 36](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L36) | [`TBusinessClassesRootList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L42) | 🟢 ported |  |
+| `AddNew` | method | [249](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L249) · [body 52](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L52) | [`TBusinessClassesRootList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L57) | 🟢 ported |  |
+| `Insert` | method | [250](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L250) · [body 57](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L57) | [`TBusinessClassesRootList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L60) | 🟢 ported |  |
+| `BoldObjects` | property | [251](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L251) | [`TBusinessClassesRootList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L35) | 🟢 ported: The indexer. |  |
 
 ## TCheckedOutObjectInfoList
 
-class at [line 254](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L254); ⚪ not started.
+class at [line 254](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L254); 🟢 ported, C# [`TCheckedOutObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L97).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [256](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L256) · [body 119](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L119) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [257](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L257) · [body 124](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L124) |  | ⚪ not started |  |
-| `Includes` | method | [259](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L259) · [body 103](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L103) |  | ⚪ not started |  |
-| `IndexOf` | method | [260](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L260) · [body 98](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L98) |  | ⚪ not started |  |
-| `Add` | method | [261](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L261) · [body 92](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L92) |  | ⚪ not started |  |
-| `AddNew` | method | [262](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L262) · [body 108](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L108) |  | ⚪ not started |  |
-| `Insert` | method | [263](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L263) · [body 113](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L113) |  | ⚪ not started |  |
-| `BoldObjects` | property | [264](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L264) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [256](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L256) · [body 119](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L119) | [`TCheckedOutObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L97) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [257](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L257) · [body 124](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L124) | [`TCheckedOutObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L97) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [259](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L259) · [body 103](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L103) | [`TCheckedOutObjectInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L119) | 🟢 ported |  |
+| `IndexOf` | method | [260](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L260) · [body 98](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L98) | [`TCheckedOutObjectInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L116) | 🟢 ported |  |
+| `Add` | method | [261](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L261) · [body 92](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L92) | [`TCheckedOutObjectInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L107) | 🟢 ported |  |
+| `AddNew` | method | [262](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L262) · [body 108](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L108) | [`TCheckedOutObjectInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L122) | 🟢 ported |  |
+| `Insert` | method | [263](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L263) · [body 113](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L113) | [`TCheckedOutObjectInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L125) | 🟢 ported |  |
+| `BoldObjects` | property | [264](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L264) | [`TCheckedOutObjectInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L100) | 🟢 ported: The indexer. |  |
 
 ## TCheckingInObjectInfoList
 
-class at [line 267](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L267); ⚪ not started.
+class at [line 267](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L267); 🟢 ported, C# [`TCheckingInObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L194).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [269](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L269) · [body 207](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L207) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [270](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L270) · [body 212](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L212) |  | ⚪ not started |  |
-| `Includes` | method | [272](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L272) · [body 191](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L191) |  | ⚪ not started |  |
-| `IndexOf` | method | [273](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L273) · [body 186](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L186) |  | ⚪ not started |  |
-| `Add` | method | [274](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L274) · [body 180](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L180) |  | ⚪ not started |  |
-| `AddNew` | method | [275](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L275) · [body 196](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L196) |  | ⚪ not started |  |
-| `Insert` | method | [276](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L276) · [body 201](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L201) |  | ⚪ not started |  |
-| `BoldObjects` | property | [277](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L277) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [269](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L269) · [body 207](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L207) | [`TCheckingInObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L194) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [270](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L270) · [body 212](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L212) | [`TCheckingInObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L194) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [272](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L272) · [body 191](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L191) | [`TCheckingInObjectInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L216) | 🟢 ported |  |
+| `IndexOf` | method | [273](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L273) · [body 186](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L186) | [`TCheckingInObjectInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L213) | 🟢 ported |  |
+| `Add` | method | [274](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L274) · [body 180](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L180) | [`TCheckingInObjectInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L204) | 🟢 ported |  |
+| `AddNew` | method | [275](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L275) · [body 196](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L196) | [`TCheckingInObjectInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L219) | 🟢 ported |  |
+| `Insert` | method | [276](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L276) · [body 201](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L201) | [`TCheckingInObjectInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L222) | 🟢 ported |  |
+| `BoldObjects` | property | [277](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L277) | [`TCheckingInObjectInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L197) | 🟢 ported: The indexer. |  |
 
 ## TDistributableObjectInfoList
 
-class at [line 280](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L280); ⚪ not started.
+class at [line 280](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L280); 🟢 ported, C# [`TDistributableObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L278).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [282](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L282) · [body 279](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L279) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [283](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L283) · [body 284](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L284) |  | ⚪ not started |  |
-| `Includes` | method | [285](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L285) · [body 263](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L263) |  | ⚪ not started |  |
-| `IndexOf` | method | [286](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L286) · [body 258](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L258) |  | ⚪ not started |  |
-| `Add` | method | [287](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L287) · [body 252](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L252) |  | ⚪ not started |  |
-| `AddNew` | method | [288](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L288) · [body 268](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L268) |  | ⚪ not started |  |
-| `Insert` | method | [289](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L289) · [body 273](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L273) |  | ⚪ not started |  |
-| `BoldObjects` | property | [290](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L290) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [282](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L282) · [body 279](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L279) | [`TDistributableObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L278) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [283](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L283) · [body 284](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L284) | [`TDistributableObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L278) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [285](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L285) · [body 263](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L263) | [`TDistributableObjectInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L300) | 🟢 ported |  |
+| `IndexOf` | method | [286](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L286) · [body 258](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L258) | [`TDistributableObjectInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L297) | 🟢 ported |  |
+| `Add` | method | [287](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L287) · [body 252](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L252) | [`TDistributableObjectInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L288) | 🟢 ported |  |
+| `AddNew` | method | [288](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L288) · [body 268](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L268) | [`TDistributableObjectInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L303) | 🟢 ported |  |
+| `Insert` | method | [289](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L289) · [body 273](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L273) | [`TDistributableObjectInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L306) | 🟢 ported |  |
+| `BoldObjects` | property | [290](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L290) | [`TDistributableObjectInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L281) | 🟢 ported: The indexer. |  |
 
 ## THeldObjectInfoList
 
-class at [line 293](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L293); ⚪ not started.
+class at [line 293](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L293); 🟢 ported, C# [`THeldObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L372).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [295](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L295) · [body 368](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L368) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [296](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L296) · [body 373](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L373) |  | ⚪ not started |  |
-| `Includes` | method | [298](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L298) · [body 352](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L352) |  | ⚪ not started |  |
-| `IndexOf` | method | [299](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L299) · [body 347](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L347) |  | ⚪ not started |  |
-| `Add` | method | [300](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L300) · [body 341](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L341) |  | ⚪ not started |  |
-| `AddNew` | method | [301](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L301) · [body 357](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L357) |  | ⚪ not started |  |
-| `Insert` | method | [302](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L302) · [body 362](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L362) |  | ⚪ not started |  |
-| `BoldObjects` | property | [303](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L303) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [295](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L295) · [body 368](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L368) | [`THeldObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L372) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [296](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L296) · [body 373](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L373) | [`THeldObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L372) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [298](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L298) · [body 352](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L352) | [`THeldObjectInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L394) | 🟢 ported |  |
+| `IndexOf` | method | [299](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L299) · [body 347](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L347) | [`THeldObjectInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L391) | 🟢 ported |  |
+| `Add` | method | [300](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L300) · [body 341](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L341) | [`THeldObjectInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L382) | 🟢 ported |  |
+| `AddNew` | method | [301](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L301) · [body 357](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L357) | [`THeldObjectInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L397) | 🟢 ported |  |
+| `Insert` | method | [302](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L302) · [body 362](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L362) | [`THeldObjectInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L400) | 🟢 ported |  |
+| `BoldObjects` | property | [303](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L303) | [`THeldObjectInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L375) | 🟢 ported: The indexer. |  |
 
 ## TMappingList
 
-class at [line 306](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L306); ⚪ not started.
+class at [line 306](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L306); 🟢 ported, C# [`TMappingList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L442).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [308](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L308) · [body 434](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L434) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [309](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L309) · [body 439](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L439) |  | ⚪ not started |  |
-| `Includes` | method | [311](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L311) · [body 418](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L418) |  | ⚪ not started |  |
-| `IndexOf` | method | [312](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L312) · [body 413](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L413) |  | ⚪ not started |  |
-| `Add` | method | [313](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L313) · [body 407](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L407) |  | ⚪ not started |  |
-| `AddNew` | method | [314](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L314) · [body 423](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L423) |  | ⚪ not started |  |
-| `Insert` | method | [315](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L315) · [body 428](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L428) |  | ⚪ not started |  |
-| `BoldObjects` | property | [316](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L316) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [308](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L308) · [body 434](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L434) | [`TMappingList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L442) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [309](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L309) · [body 439](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L439) | [`TMappingList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L442) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [311](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L311) · [body 418](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L418) | [`TMappingList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L464) | 🟢 ported |  |
+| `IndexOf` | method | [312](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L312) · [body 413](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L413) | [`TMappingList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L461) | 🟢 ported |  |
+| `Add` | method | [313](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L313) · [body 407](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L407) | [`TMappingList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L452) | 🟢 ported |  |
+| `AddNew` | method | [314](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L314) · [body 423](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L423) | [`TMappingList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L467) | 🟢 ported |  |
+| `Insert` | method | [315](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L315) · [body 428](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L428) | [`TMappingList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L470) | 🟢 ported |  |
+| `BoldObjects` | property | [316](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L316) | [`TMappingList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L445) | 🟢 ported: The indexer. |  |
 
 ## TPSInfoList
 
-class at [line 319](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L319); ⚪ not started.
+class at [line 319](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L319); 🟢 ported, C# [`TPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L507).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [321](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L321) · [body 489](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L489) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [322](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L322) · [body 494](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L494) |  | ⚪ not started |  |
-| `Includes` | method | [324](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L324) · [body 473](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L473) |  | ⚪ not started |  |
-| `IndexOf` | method | [325](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L325) · [body 468](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L468) |  | ⚪ not started |  |
-| `Add` | method | [326](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L326) · [body 462](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L462) |  | ⚪ not started |  |
-| `AddNew` | method | [327](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L327) · [body 478](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L478) |  | ⚪ not started |  |
-| `Insert` | method | [328](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L328) · [body 483](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L483) |  | ⚪ not started |  |
-| `BoldObjects` | property | [329](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L329) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [321](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L321) · [body 489](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L489) | [`TPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L507) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [322](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L322) · [body 494](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L494) | [`TPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L507) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [324](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L324) · [body 473](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L473) | [`TPSInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L529) | 🟢 ported |  |
+| `IndexOf` | method | [325](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L325) · [body 468](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L468) | [`TPSInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L526) | 🟢 ported |  |
+| `Add` | method | [326](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L326) · [body 462](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L462) | [`TPSInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L517) | 🟢 ported |  |
+| `AddNew` | method | [327](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L327) · [body 478](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L478) | [`TPSInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L532) | 🟢 ported |  |
+| `Insert` | method | [328](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L328) · [body 483](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L483) | [`TPSInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L535) | 🟢 ported |  |
+| `BoldObjects` | property | [329](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L329) | [`TPSInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L510) | 🟢 ported: The indexer. |  |
 
 ## TForeignObjectInfoList
 
-class at [line 332](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L332); ⚪ not started.
+class at [line 332](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L332); 🟢 ported, C# [`TForeignObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L613).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [334](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L334) · [body 578](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L578) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [335](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L335) · [body 583](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L583) |  | ⚪ not started |  |
-| `Includes` | method | [337](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L337) · [body 562](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L562) |  | ⚪ not started |  |
-| `IndexOf` | method | [338](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L338) · [body 557](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L557) |  | ⚪ not started |  |
-| `Add` | method | [339](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L339) · [body 551](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L551) |  | ⚪ not started |  |
-| `AddNew` | method | [340](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L340) · [body 567](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L567) |  | ⚪ not started |  |
-| `Insert` | method | [341](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L341) · [body 572](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L572) |  | ⚪ not started |  |
-| `BoldObjects` | property | [342](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L342) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [334](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L334) · [body 578](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L578) | [`TForeignObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L613) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [335](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L335) · [body 583](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L583) | [`TForeignObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L613) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [337](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L337) · [body 562](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L562) | [`TForeignObjectInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L635) | 🟢 ported |  |
+| `IndexOf` | method | [338](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L338) · [body 557](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L557) | [`TForeignObjectInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L632) | 🟢 ported |  |
+| `Add` | method | [339](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L339) · [body 551](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L551) | [`TForeignObjectInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L623) | 🟢 ported |  |
+| `AddNew` | method | [340](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L340) · [body 567](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L567) | [`TForeignObjectInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L638) | 🟢 ported |  |
+| `Insert` | method | [341](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L341) · [body 572](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L572) | [`TForeignObjectInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L641) | 🟢 ported |  |
+| `BoldObjects` | property | [342](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L342) | [`TForeignObjectInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L616) | 🟢 ported: The indexer. |  |
 
 ## TOwnObjectInfoList
 
-class at [line 345](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L345); ⚪ not started.
+class at [line 345](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L345); 🟢 ported, C# [`TOwnObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L693).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [347](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L347) · [body 634](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L634) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [348](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L348) · [body 639](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L639) |  | ⚪ not started |  |
-| `Includes` | method | [350](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L350) · [body 618](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L618) |  | ⚪ not started |  |
-| `IndexOf` | method | [351](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L351) · [body 613](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L613) |  | ⚪ not started |  |
-| `Add` | method | [352](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L352) · [body 607](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L607) |  | ⚪ not started |  |
-| `AddNew` | method | [353](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L353) · [body 623](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L623) |  | ⚪ not started |  |
-| `Insert` | method | [354](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L354) · [body 628](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L628) |  | ⚪ not started |  |
-| `BoldObjects` | property | [355](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L355) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [347](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L347) · [body 634](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L634) | [`TOwnObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L693) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [348](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L348) · [body 639](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L639) | [`TOwnObjectInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L693) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [350](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L350) · [body 618](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L618) | [`TOwnObjectInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L715) | 🟢 ported |  |
+| `IndexOf` | method | [351](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L351) · [body 613](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L613) | [`TOwnObjectInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L712) | 🟢 ported |  |
+| `Add` | method | [352](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L352) · [body 607](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L607) | [`TOwnObjectInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L703) | 🟢 ported |  |
+| `AddNew` | method | [353](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L353) · [body 623](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L623) | [`TOwnObjectInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L718) | 🟢 ported |  |
+| `Insert` | method | [354](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L354) · [body 628](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L628) | [`TOwnObjectInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L721) | 🟢 ported |  |
+| `BoldObjects` | property | [355](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L355) | [`TOwnObjectInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L696) | 🟢 ported: The indexer. |  |
 
 ## TForeignPSInfoList
 
-class at [line 358](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L358); ⚪ not started.
+class at [line 358](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L358); 🟢 ported, C# [`TForeignPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L790).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [360](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L360) · [body 711](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L711) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [361](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L361) · [body 716](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L716) |  | ⚪ not started |  |
-| `Includes` | method | [363](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L363) · [body 695](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L695) |  | ⚪ not started |  |
-| `IndexOf` | method | [364](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L364) · [body 690](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L690) |  | ⚪ not started |  |
-| `Add` | method | [365](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L365) · [body 684](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L684) |  | ⚪ not started |  |
-| `AddNew` | method | [366](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L366) · [body 700](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L700) |  | ⚪ not started |  |
-| `Insert` | method | [367](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L367) · [body 705](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L705) |  | ⚪ not started |  |
-| `BoldObjects` | property | [368](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L368) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [360](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L360) · [body 711](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L711) | [`TForeignPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L790) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [361](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L361) · [body 716](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L716) | [`TForeignPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L790) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [363](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L363) · [body 695](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L695) | [`TForeignPSInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L812) | 🟢 ported |  |
+| `IndexOf` | method | [364](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L364) · [body 690](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L690) | [`TForeignPSInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L809) | 🟢 ported |  |
+| `Add` | method | [365](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L365) · [body 684](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L684) | [`TForeignPSInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L800) | 🟢 ported |  |
+| `AddNew` | method | [366](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L366) · [body 700](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L700) | [`TForeignPSInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L815) | 🟢 ported |  |
+| `Insert` | method | [367](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L367) · [body 705](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L705) | [`TForeignPSInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L818) | 🟢 ported |  |
+| `BoldObjects` | property | [368](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L368) | [`TForeignPSInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L793) | 🟢 ported: The indexer. |  |
 
 ## TOwnPSInfoList
 
-class at [line 371](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L371); ⚪ not started.
+class at [line 371](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L371); 🟢 ported, C# [`TOwnPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L842).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetBoldObject` | method, protected | [373](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L373) · [body 750](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L750) |  | ⚪ not started |  |
-| `SetBoldObject` | method, protected | [374](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L374) · [body 755](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L755) |  | ⚪ not started |  |
-| `Includes` | method | [376](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L376) · [body 734](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L734) |  | ⚪ not started |  |
-| `IndexOf` | method | [377](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L377) · [body 729](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L729) |  | ⚪ not started |  |
-| `Add` | method | [378](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L378) · [body 723](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L723) |  | ⚪ not started |  |
-| `AddNew` | method | [379](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L379) · [body 739](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L739) |  | ⚪ not started |  |
-| `Insert` | method | [380](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L380) · [body 744](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L744) |  | ⚪ not started |  |
-| `BoldObjects` | property | [381](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L381) |  | ⚪ not started |  |
+| `GetBoldObject` | method, protected | [373](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L373) · [body 750](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L750) | [`TOwnPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L842) | 🔵 replaced: The get accessor of the indexer. |  |
+| `SetBoldObject` | method, protected | [374](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L374) · [body 755](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L755) | [`TOwnPSInfoList`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L842) | 🔵 replaced: The set accessor of the indexer. |  |
+| `Includes` | method | [376](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L376) · [body 734](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L734) | [`TOwnPSInfoList.Includes`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L864) | 🟢 ported |  |
+| `IndexOf` | method | [377](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L377) · [body 729](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L729) | [`TOwnPSInfoList.IndexOf`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L861) | 🟢 ported |  |
+| `Add` | method | [378](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L378) · [body 723](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L723) | [`TOwnPSInfoList.Add`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L852) | 🟢 ported |  |
+| `AddNew` | method | [379](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L379) · [body 739](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L739) | [`TOwnPSInfoList.AddNew`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L867) | 🟢 ported |  |
+| `Insert` | method | [380](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L380) · [body 744](../../../Source/Extensions/OLLE/Core/DistributableInfo.pas#L744) | [`TOwnPSInfoList.Insert`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L870) | 🟢 ported |  |
+| `BoldObjects` | property | [381](../../../Source/Extensions/OLLE/Core/DistributableInfo_Interface.inc#L381) | [`TOwnPSInfoList.this`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L845) | 🟢 ported: The indexer. |  |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L8) (class)
+- [`TCheckingInObjectInfo.AcknowledgeCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L11) (method)
+- [`TCheckingInObjectInfo.FailCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L39) (method)
+- [`TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L46) (class)
+- [`TForeignObjectInfo.StartCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L49) (method)
+- [`TForeignObjectInfo.InitializeHolding`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L60) (method)
+- [`TForeignObjectInfo.Put`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L70) (method)
+- [`TForeignObjectInfo.Hold`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L87) (method)
+- [`TForeignObjectInfo.Get`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L94) (method)
+- [`THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L98) (class)
+- [`THeldObjectInfo.StartCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L104) (method)
+- [`TOwnObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L121) (class)
+- [`TOwnObjectInfo.StartCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L124) (method)
+- [`TOwnObjectInfo.Get`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L128) (method)
+- [`TOwnObjectInfo.CheckOut`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L137) (method)
+- [`TOwnObjectInfo.CheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L149) (method)
+- [`TOwnObjectInfo.UnCheckOut`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L168) (method)
+- [`TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L173) (class)
+- [`TForeignPSInfo.AcknowledgeCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L178) (method)
+- [`TForeignPSInfo.FailCheckIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L190) (method)
+- [`TForeignPSInfo.IsCheckingIn`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L211) (method)
+- [`TForeignPSInfo.IsSynching`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.cs#L219) (method)
+- [`TBusinessClassesRoot.TBusinessClassesRoot`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L22) (constructor)
+- [`TCheckedOutObjectInfo.TCheckedOutObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L77) (constructor)
+- [`TCheckingInObjectInfo.TCheckingInObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L148) (constructor)
+- [`TDistributableObjectInfo.TDistributableObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L242) (constructor)
+- [`THeldObjectInfo.THeldObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L329) (constructor)
+- [`TMapping.TMapping`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L416) (constructor)
+- [`TMapping.ObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L424) (property)
+- [`TPSInfo.TPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L487) (constructor)
+- [`TForeignObjectInfo.TForeignObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L558) (constructor)
+- [`TOwnObjectInfo.TOwnObjectInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L658) (constructor)
+- [`TForeignPSInfo.TForeignPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L742) (constructor)
+- [`TOwnPSInfo.TOwnPSInfo`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L832) (constructor)
+- [`DistributableInfoGeneratedCode`](../../src/Bold.Olle/Extensions/OLLE/Core/DistributableInfo.g.cs#L880) (class)
 
 ## Dependencies
 

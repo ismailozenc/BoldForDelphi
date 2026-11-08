@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Extensions/OLLE/Core/BoldOLLEController.pas`](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas) (109 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs` |
+| C# | [`CSharp/src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs) |
 | Project | Bold.Olle |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🟢 ported: 12 of 12 symbols done, 10 verified |
 | Note | OLLE is ported after SQL persistence (M5), decision D7. |
 
-⚪ 12 not started
+✅ 10 verified · 🟢 2 ported
 
 ## Unit level
 
@@ -19,32 +19,40 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldPHandleMimic` | class | [15](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L15) |  | ⚪ not started |  |
-| `TBoldOLLEController` | class | [26](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L26) |  | ⚪ not started |  |
+| `TBoldPHandleMimic` | class | [15](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L15) | [`TBoldPHandleMimic`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L11) | 🟢 ported |  |
+| `TBoldOLLEController` | class | [26](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L26) | [`TBoldOLLEController`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L47) | 🟢 ported: Disposable: disposing closes the OLLE system and disposes the data module, which Delphi never freed. |  |
 
 ## TBoldPHandleMimic
 
-class at [line 15](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L15); ⚪ not started.
+class at [line 15](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L15); 🟢 ported, C# [`TBoldPHandleMimic`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L11).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetDataBaseInterface` | method, protected | [20](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L20) · [body 97](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L97) |  | ⚪ not started |  |
-| `GetSQLDatabaseConfig` | method, protected | [21](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L21) · [body 102](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L102) |  | ⚪ not started |  |
-| `Destroy` | destructor | [23](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L23) · [body 91](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L91) |  | ⚪ not started |  |
+| `GetDataBaseInterface` | method, protected | [20](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L20) · [body 97](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L97) | [`TBoldPHandleMimic.GetDataBaseInterface`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L35) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+| `GetSQLDatabaseConfig` | method, protected | [21](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L21) · [body 102](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L102) | [`TBoldPHandleMimic.GetSQLDatabaseConfig`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L39) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+| `Destroy` | destructor | [23](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L23) · [body 91](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L91) | [`TBoldPHandleMimic.Dispose`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L23) | ✅ verified | ✔ [`BoldOLLEControllerTests.Disposing_the_controller_closes_its_system`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L61) |
 
 ## TBoldOLLEController
 
-class at [line 26](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L26); ⚪ not started.
+class at [line 26](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L26); 🟢 ported, C# [`TBoldOLLEController`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L47).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetOLLESystem` | method, private | [30](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L30) · [body 65](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L65) |  | ⚪ not started |  |
-| `GetPersistent` | method, private | [31](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L31) · [body 71](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L71) |  | ⚪ not started |  |
-| `SetPersistent` | method, private | [32](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L32) · [body 76](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L76) |  | ⚪ not started |  |
-| `Create` | constructor | [34](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L34) · [body 49](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L49) |  | ⚪ not started |  |
-| `GenerateDatabase` | method | [35](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L35) · [body 60](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L60) |  | ⚪ not started |  |
-| `OLLESystem` | property | [36](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L36) |  | ⚪ not started |  |
-| `Persistent` | property | [37](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L37) |  | ⚪ not started |  |
+| `GetOLLESystem` | method, private | [30](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L30) · [body 65](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L65) | [`TBoldOLLEController.GetOLLESystem`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L71) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+| `GetPersistent` | method, private | [31](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L31) · [body 71](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L71) | [`TBoldOLLEController.GetPersistent`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L78) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+| `SetPersistent` | method, private | [32](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L32) · [body 76](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L76) | [`TBoldOLLEController.SetPersistent`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L82) | ✅ verified | ✔ [`BoldOLLEControllerTests.A_transient_OLLE_system_keeps_its_objects_in_memory`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L47) |
+| `Create` | constructor | [34](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L34) · [body 49](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L49) | [`TBoldOLLEController.TBoldOLLEController`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L54) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+| `GenerateDatabase` | method | [35](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L35) · [body 60](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L60) | [`TBoldOLLEController.GenerateDatabase`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L67) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+| `OLLESystem` | property | [36](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L36) | [`TBoldOLLEController.OLLESystem`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L109) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+| `Persistent` | property | [37](../../../Source/Extensions/OLLE/Core/BoldOLLEController.pas#L37) | [`TBoldOLLEController.Persistent`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L112) | ✅ verified | ✔ [`BoldOLLEControllerTests.The_OLLE_system_keeps_its_objects_in_the_application_database`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L26) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TBoldPHandleMimic.fPHandle`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L13) (field)
+- [`TBoldPHandleMimic.TBoldPHandleMimic`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L17) (constructor)
+- [`TBoldOLLEController.Dispose`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEController.cs#L96) (method)
 
 ## Dependencies
 

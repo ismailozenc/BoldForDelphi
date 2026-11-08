@@ -3,7 +3,7 @@
 
 using System.ComponentModel;
 
-[assembly: Delphi(PortStatus.Ported, Unit = "BoldGUI", Symbol = "initialization", Note = "The GUI toolkit creates the popup menu (Bold.WinForms sets BoldPopupMenu); the handler is created on first use.")]
+[assembly: Delphi(PortStatus.Ported, Unit = "BoldGUI", Symbol = "initialization", Note = "The GUI toolkit gives the maker of the popup menu (Bold.WinForms sets BoldPopupMenuFactory), and the menu and the handler are made on first use.")]
 [assembly: Delphi(PortStatus.Replaced, Unit = "BoldGUI", Symbol = "finalization", Note = "Freed the handler and the popup menu; the garbage collector does that in .NET.")]
 
 namespace Bold;

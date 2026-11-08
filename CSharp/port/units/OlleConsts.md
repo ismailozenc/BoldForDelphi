@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Extensions/OLLE/Core/OlleConsts.pas`](../../../Source/Extensions/OLLE/Core/OlleConsts.pas) (26 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs` |
+| C# | [`CSharp/src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs) |
 | Project | Bold.Olle |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 12 symbols done, 0 verified |
+| Status | 🟢 ported: 12 of 12 symbols done, 8 verified |
 | Note | OLLE is ported after SQL persistence (M5), decision D7. |
 
-⚪ 12 not started
+✅ 8 verified · 🟢 4 ported
 
 ## Unit level
 
@@ -19,18 +19,18 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `sCannotChangePersistenceWhenActive` | resourcestring | [7](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L7) |  | ⚪ not started |  |
-| `sObjectNotForeign` | resourcestring | [10](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L10) |  | ⚪ not started |  |
-| `sWrongOwner` | resourcestring | [11](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L11) |  | ⚪ not started |  |
-| `sObjectsAlreadyBeingCheckedIn` | resourcestring | [12](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L12) |  | ⚪ not started |  |
-| `sObjectNotOwned` | resourcestring | [13](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L13) |  | ⚪ not started |  |
-| `sCannotFailIndividualObjects` | resourcestring | [14](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L14) |  | ⚪ not started |  |
-| `sUnresolvedLink` | resourcestring | [15](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L15) |  | ⚪ not started |  |
-| `sMissingObjectsNotImplemented` | resourcestring | [16](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L16) |  | ⚪ not started |  |
-| `sMemberNotSingleLink` | resourcestring | [17](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L17) |  | ⚪ not started |  |
-| `sSynchInProgress` | resourcestring | [18](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L18) |  | ⚪ not started |  |
-| `sGenerateOLLEDB` | resourcestring | [21](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L21) |  | ⚪ not started |  |
-| `sNonexistingAction` | resourcestring | [22](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L22) |  | ⚪ not started |  |
+| `sCannotChangePersistenceWhenActive` | resourcestring | [7](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L7) | [`OlleConsts.sCannotChangePersistenceWhenActive`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L9) | ✅ verified | ✔ [`BoldOLLEControllerTests.A_transient_OLLE_system_keeps_its_objects_in_memory`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEControllerTests.cs#L47) |
+| `sObjectNotForeign` | resourcestring | [10](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L10) | [`OlleConsts.sObjectNotForeign`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L10) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.Objects_are_taken_in_from_their_owner_and_checked_in_by_their_holder_only`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L263) |
+| `sWrongOwner` | resourcestring | [11](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L11) | [`OlleConsts.sWrongOwner`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L11) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.Objects_are_taken_in_from_their_owner_and_checked_in_by_their_holder_only`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L263) |
+| `sObjectsAlreadyBeingCheckedIn` | resourcestring | [12](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L12) | [`OlleConsts.sObjectsAlreadyBeingCheckedIn`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L12) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.A_failed_check_in_gives_the_holder_its_objects_back`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L142) |
+| `sObjectNotOwned` | resourcestring | [13](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L13) | [`OlleConsts.sObjectNotOwned`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L13) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.Objects_are_taken_in_from_their_owner_and_checked_in_by_their_holder_only`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L263) |
+| `sCannotFailIndividualObjects` | resourcestring | [14](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L14) | [`OlleConsts.sCannotFailIndividualObjects`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L14) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.A_link_to_an_object_that_did_not_come_along_is_resolved_or_stops_the_lending`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L236) |
+| `sUnresolvedLink` | resourcestring | [15](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L15) | [`OlleConsts.sUnresolvedLink`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L15) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.A_link_to_an_object_that_did_not_come_along_is_resolved_or_stops_the_lending`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L236) |
+| `sMissingObjectsNotImplemented` | resourcestring | [16](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L16) | [`OlleConsts.sMissingObjectsNotImplemented`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L16) | 🟢 ported |  |
+| `sMemberNotSingleLink` | resourcestring | [17](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L17) | [`OlleConsts.sMemberNotSingleLink`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L17) | 🟢 ported: Delphi's message began with "%.", which made formatting it fail; it begins with "%s." here. |  |
+| `sSynchInProgress` | resourcestring | [18](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L18) | [`OlleConsts.sSynchInProgress`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L18) | ✅ verified | ✔ [`BoldOLLEDistributableObjectHandlersTests.A_synch_gives_the_own_objects_changed_since_the_last_one`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEDistributableObjectHandlersTests.cs#L192) |
+| `sGenerateOLLEDB` | resourcestring | [21](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L21) | [`OlleConsts.sGenerateOLLEDB`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L19) | 🟢 ported |  |
+| `sNonexistingAction` | resourcestring | [22](../../../Source/Extensions/OLLE/Core/OlleConsts.pas#L22) | [`OlleConsts.sNonexistingAction`](../../src/Bold.Olle/Extensions/OLLE/Core/OlleConsts.cs#L20) | 🟢 ported |  |
 
 ## Dependencies
 

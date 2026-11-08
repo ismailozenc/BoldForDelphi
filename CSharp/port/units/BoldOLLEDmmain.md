@@ -5,13 +5,13 @@
 | | |
 |---|---|
 | Delphi | [`Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas`](../../../Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas) (36 lines) |
-| C# | not started; planned as `CSharp/src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs` |
+| C# | [`CSharp/src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs) |
 | Project | Bold.Olle |
 | Milestone | Later (after M12, or when needed) |
-| Status | ⚪ not started: 0 of 3 symbols done, 0 verified |
+| Status | 🟢 ported: 3 of 3 symbols done, 2 verified |
 | Note | OLLE is ported after SQL persistence (M5), decision D7. |
 
-⚪ 3 not started
+✅ 2 verified · 🔵 1 replaced
 
 ## Unit level
 
@@ -19,9 +19,21 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TdmOLL` | class | [13](../../../Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas#L13) |  | ⚪ not started |  |
-| `dmOLL` | var | [24](../../../Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas#L24) |  | ⚪ not started |  |
-| `initialization` | initialization, implementation | [35](../../../Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas#L35) |  | ⚪ not started |  |
+| `TdmOLL` | class | [13](../../../Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas#L13) | [`TdmOLL`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L15) | ✅ verified: A component that makes its components in code, where Delphi's data module read them from its form file. The model is a TBoldAbstractModel that reads the OLLE model embedded in Bold.Olle, where Delphi's form held it in a TBoldModel. The system handle is not the default: Delphi's form file had IsDefault true (the designer makes the first system handle placed the default), which made the OLLE system the default system of the application. | ✔ [`BoldOLLEdmmainTests.The_data_module_runs_a_system_on_the_OLLE_model`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEdmmainTests.cs#L12) |
+| `dmOLL` | var | [24](../../../Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas#L24) | [`[assembly: Delphi] in BoldOLLEdmmain.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L5) | 🔵 replaced: Delphi's form variable, which nothing set or read: each OLLE controller makes a data module of its own. |  |
+| `initialization` | initialization, implementation | [35](../../../Source/Extensions/OLLE/Core/BoldOLLEdmmain.pas#L35) | [`[assembly: Delphi] in BoldOLLEdmmain.cs`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L6) | ✅ verified: Empty, as in Delphi. | ✔ [`BoldOLLEdmmainTests.The_data_module_runs_a_system_on_the_OLLE_model`](../../tests/Bold.Olle.Tests/Extensions/OLLE/Core/BoldOLLEdmmainTests.cs#L12) |
+
+## C# additions
+
+Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumbing).
+
+- [`TdmOLL.BoldModel1`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L20) (field)
+- [`TdmOLL.BoldObjectInfoSystem`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L23) (field)
+- [`TdmOLL.BoldSystemTypeInfoHandle1`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L26) (field)
+- [`TdmOLL.TdmOLL`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L29) (constructor)
+- [`TdmOLL.Components`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L39) (property)
+- [`TdmOLL.ModelLines`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L42) (method)
+- [`TdmOLL.Dispose`](../../src/Bold.Olle/Extensions/OLLE/Core/BoldOLLEdmmain.cs#L51) (method)
 
 ## Dependencies
 

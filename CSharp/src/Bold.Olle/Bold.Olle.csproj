@@ -3,6 +3,10 @@
     <Description>Object Lending Library Extension: lends objects between Bold databases.</Description>
   </PropertyGroup>
   <ItemGroup>
+    <!-- The OLLE model (Delphi kept it in BoldOLLEdmmain's form file); its classes are in DistributableInfo.g.cs. -->
+    <EmbeddedResource Include="Extensions/OLLE/Core/DistributableInfo.bld" LogicalName="Bold.Olle.DistributableInfo.bld" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="../Bold.Porting/Bold.Porting.csproj" />
     <ProjectReference Include="../Bold.Rtl/Bold.Rtl.csproj" />
     <ProjectReference Include="../Bold.Core/Bold.Core.csproj" />

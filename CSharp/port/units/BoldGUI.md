@@ -20,8 +20,8 @@ Types, routines, constants, variables and the initialization and finalization se
 |---|---|---|---|---|---|
 | `TBoldGUIHandler` | class | [21](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L21) | [`TBoldGUIHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L17) | ✅ verified | ✔ [`BoldStringControlPackTests.Dragging_a_followed_object_and_dropping_it_on_a_link`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/ControlPacks/BoldStringControlPackTests.cs#L188)<br>✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
 | `BoldGUIHandler` | routine | [40](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L40) · [body 55](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L55) | [`BoldGUI.BoldGUIHandler`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L143) | ✅ verified | ✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
-| `BoldPopupMenu` | var | [43](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L43) | [`BoldGUI.BoldPopupMenu`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L163) | ✅ verified: Any object; Delphi's is a TPopupMenu made in the initialization section. | ✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
-| `initialization` | initialization, implementation | [162](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L162) | [`[assembly: Delphi] in BoldGUI.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L6) | 🟢 ported: The GUI toolkit creates the popup menu (Bold.WinForms sets BoldPopupMenu); the handler is created on first use. |  |
+| `BoldPopupMenu` | var | [43](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L43) | [`BoldGUI.BoldPopupMenu`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L172) | ✅ verified: Any object, made on first use; Delphi's is a TPopupMenu made in the initialization section. | ✔ [`BoldGUITests.The_GUI_handler_is_made_from_its_class_on_first_use`](../../tests/Bold.AwareGui.Tests/BoldAwareGUI/Core/BoldGUITests.cs#L20) |
+| `initialization` | initialization, implementation | [162](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L162) | [`[assembly: Delphi] in BoldGUI.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L6) | 🟢 ported: The GUI toolkit gives the maker of the popup menu (Bold.WinForms sets BoldPopupMenuFactory), and the menu and the handler are made on first use. |  |
 | `finalization` | finalization, implementation | [166](../../../Source/BoldAwareGUI/Core/BoldGUI.pas#L166) | [`[assembly: Delphi] in BoldGUI.cs`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L7) | 🔵 replaced: Freed the handler and the popup menu; the garbage collector does that in .NET. |  |
 
 ## TBoldGUIHandler
@@ -48,6 +48,7 @@ Declared in this unit's C# files with no Delphi counterpart (helpers, .NET plumb
 - [`TBoldGUIHandler.ComponentOwner`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L106) (method)
 - [`TBoldGUIHandler.TopmostParentControl`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L109) (method)
 - [`BoldGUI.BoldGUIHandlerClass`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L147) (property)
+- [`BoldGUI.BoldPopupMenuFactory`](../../src/Bold.AwareGui/BoldAwareGUI/Core/BoldGUI.cs#L168) (field)
 
 ## Dependencies
 
