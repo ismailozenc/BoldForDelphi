@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Tutorial 5, several desks over the network. Outside this repository, reference the packages Bold.Remote.Server and
+    Bold.Propagator.Server for the server, and Bold.Remote.Client, Bold.Propagation and Bold.Handles for the desks.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Description>The Library examples, tutorial 5: one ASP.NET Core server with the library's database behind remote persistence and the propagator, and two desks without a database of their own that see each other's changes and meet a pessimistic lock.</Description>
+    <RootNamespace>Library.Network</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../../../src/Bold.Propagation/Bold.Propagation.csproj" />
+    <ProjectReference Include="../../../src/Bold.Propagator.Server/Bold.Propagator.Server.csproj" />
+    <ProjectReference Include="../../../src/Bold.Remote.Client/Bold.Remote.Client.csproj" />
+    <ProjectReference Include="../../../src/Bold.Remote.Server/Bold.Remote.Server.csproj" />
+    <ProjectReference Include="../LibraryClasses/LibraryClasses.csproj" />
+  </ItemGroup>
+</Project>

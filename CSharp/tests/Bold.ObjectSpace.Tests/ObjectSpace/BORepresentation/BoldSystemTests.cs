@@ -36,6 +36,34 @@ public class BoldSystemTests
         Assert.That(TBoldSystem.DefaultSystem(), Is.SameAs(s.System));
     }
 
+    /// <summary>New in the port: lists enumerate their elements, for foreach and LINQ.</summary>
+    [Test]
+    public void Lists_are_enumerated_by_foreach_and_LINQ()
+    {
+        using var s = new ObjectSpaceSample();
+        TBoldObject ann = s.NewPerson(), bob = s.NewPerson();
+        ann.BoldMemberByExpressionName("firstName").AsString = "Ann";
+        bob.BoldMemberByExpressionName("firstName").AsString = "Bob";
+        TBoldObject house = s.NewBuilding();
+        Residents(house).Add(ann);
+        Residents(house).Add(bob);
+
+        var seen = new List<TBoldObject>();
+        foreach (TBoldObject resident in Residents(house))
+        {
+            seen.Add(resident);
+        }
+
+        Assert.That(seen, Is.EqualTo(new[] { ann, bob }), "an object list, first to last");
+        Assert.That(s.System.ClassByExpressionName("Person").Select(person => person.BoldMemberByExpressionName("firstName").AsString),
+            Is.EqualTo(new[] { "Ann", "Bob" }), "a class list");
+        using var names = (TBoldMemberList)house.EvaluateExpressionAsNewElement("residents.firstName")!;
+        Assert.That(names.Select(name => name.AsString), Is.EqualTo(new[] { "Ann", "Bob" }), "a member list");
+        TBoldList list = names;
+        Assert.That(list.Cast<TBoldElement>().Count(), Is.EqualTo(2), "any list, as elements");
+        Assert.That(Residents(house).OfType<TBoldObject>().Count(), Is.EqualTo(2));
+    }
+
     [Test]
     [Covers(typeof(TBoldObjectReference), "BoldObject", "Locator")]
     [Covers("BoldLinks", "TBoldDirectSingleLinkController", "TBoldDirectMultiLinkController", "TBoldDirectMultiLinkController.AddLocator", "TBoldDirectSingleLinkController.SetLocator")]

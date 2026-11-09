@@ -1,0 +1,32 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))" />
+
+  <!--
+    The example programs keep their objects in SQLite databases, through Microsoft.Data.Sqlite. An advisory about a
+    package it brings is reported, and does not stop the build.
+  -->
+  <ItemGroup Condition="'$(OutputType)' != 'Library' and '$(BoldOffline)' != 'true'">
+    <PackageReference Include="Microsoft.Data.Sqlite" />
+  </ItemGroup>
+  <PropertyGroup>
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
+
+  <!-- Every example reads the model it shares with the others, Library.bld, from its own folder. -->
+  <ItemGroup Condition="'$(OutputType)' != 'Library'">
+    <None Include="$(MSBuildThisFileDirectory)Library.bld" Link="Library.bld" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <!--
+    Offline builds of this repository (BoldOffline=true, no NuGet feed) cannot restore Microsoft.Data.Sqlite: the small
+    native SQLite provider of the SQL tests stands in for its SqliteConnection.
+  -->
+  <PropertyGroup Condition="'$(OutputType)' != 'Library' and '$(BoldOffline)' == 'true'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(OutputType)' != 'Library' and '$(BoldOffline)' == 'true'">
+    <Compile Include="$(BoldCSharpRoot)tests/Bold.Persistence.Sql.Tests/Support/NativeSqlite.cs" Link="Offline/NativeSqlite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OfflineSqlite.cs" Link="Offline/OfflineSqlite.cs" />
+    <Using Include="Bold.Tests.Sqlite.SqliteConnection" Alias="SqliteConnection" />
+  </ItemGroup>
+</Project>

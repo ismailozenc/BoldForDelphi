@@ -39,10 +39,26 @@
     <Project Path="examples/Building/BuildingClasses/BuildingClasses.csproj" />
     <Project Path="examples/CustomAttributes/CustomAttributes.csproj" />
   </Folder>
+  <Folder Name="/examples/Library/">
+    <File Path="examples/Library/Directory.Build.targets" />
+    <File Path="examples/Library/Library.bld" />
+    <File Path="examples/Library/README.md" />
+    <Project Path="examples/Library/Attributes/Library.Attributes.csproj" />
+    <Project Path="examples/Library/Basics/Library.Basics.csproj" />
+    <Project Path="examples/Library/Branches/Library.Branches.csproj" />
+    <Project Path="examples/Library/Desk/Library.Desk.csproj" />
+    <Project Path="examples/Library/Evolution/Library.Evolution.csproj" />
+    <Project Path="examples/Library/LibraryClasses/LibraryClasses.csproj" />
+    <Project Path="examples/Library/Network/Library.Network.csproj" />
+    <Project Path="examples/Library/Rules/Library.Rules.csproj" />
+    <Project Path="examples/Library/Typed/Library.Typed.csproj" />
+    <Project Path="examples/Library/Xmi/Library.Xmi.csproj" />
+  </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/Bold.AwareGui.Tests/Bold.AwareGui.Tests.csproj" />
     <Project Path="tests/Bold.CodeGen.Tests/Bold.CodeGen.Tests.csproj" />
     <Project Path="tests/Bold.Core.Tests/Bold.Core.Tests.csproj" />
+    <Project Path="tests/Bold.Examples.Tests/Bold.Examples.Tests.csproj" />
     <Project Path="tests/Bold.Handles.Tests/Bold.Handles.Tests.csproj" />
     <Project Path="tests/Bold.Model.Tests/Bold.Model.Tests.csproj" />
     <Project Path="tests/Bold.ModelEditor.Core.Tests/Bold.ModelEditor.Core.Tests.csproj" />

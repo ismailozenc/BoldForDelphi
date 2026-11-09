@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- A small hotel model in the XMI 2.1 that Enterprise Architect writes: classes, a subclass, an operation, two
+     associations (one a composition), a stereotype and a Bold tagged value in EA's extension. -->
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+  <xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+  <uml:Model xmi:type="uml:Model" name="Hotel" visibility="public">
+    <packagedElement xmi:type="uml:Package" xmi:id="EAPK_HOTEL" name="Hotel" visibility="public">
+      <packagedElement xmi:type="uml:Class" xmi:id="EAID_GUEST" name="Guest" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="EAID_GUEST_NAME" name="name" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI1" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI2" value="1"/>
+          <type xmi:idref="EAJava_String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="EAID_CHECKOUT" name="Checkout" visibility="public" concurrency="sequential">
+          <ownedParameter xmi:id="EAID_CHECKOUT_EARLY" name="early" direction="in" type="EAJava_boolean"/>
+          <ownedParameter xmi:id="EAID_CHECKOUT_RETURN" name="return" direction="return" type="EAJava_int"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="EAID_ROOM" name="Room" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="EAID_ROOM_NUMBER" name="number" visibility="public">
+          <type xmi:idref="EAJava_int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="EAID_ROOM_RATE" name="rate" visibility="public">
+          <type xmi:idref="EAJava_int"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="EAID_SUITE" name="Suite" visibility="public">
+        <generalization xmi:type="uml:Generalization" xmi:id="EAID_G1" general="EAID_ROOM"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="EAID_SUITE_LOUNGE" name="lounge" visibility="public">
+          <type xmi:idref="EAJava_boolean"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="EAID_BED" name="Bed" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="EAID_BED_SIZE" name="size" visibility="public">
+          <type xmi:idref="EAJava_String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="EAID_STAY" name="Stay" visibility="public">
+        <memberEnd xmi:idref="EAID_STAY_ROOM"/>
+        <memberEnd xmi:idref="EAID_STAY_GUESTS"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="EAID_STAY_GUESTS" name="guests" association="EAID_STAY" aggregation="none">
+          <type xmi:idref="EAID_GUEST"/>
+          <lowerValue xmi:type="uml:LiteralInteger" value="0"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="-1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="EAID_STAY_ROOM" name="room" association="EAID_STAY" aggregation="none">
+          <type xmi:idref="EAID_ROOM"/>
+          <lowerValue xmi:type="uml:LiteralInteger" value="0"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="EAID_FURNISHING" name="Furnishing" visibility="public">
+        <memberEnd xmi:idref="EAID_FURNISHING_BEDS"/>
+        <memberEnd xmi:idref="EAID_FURNISHING_ROOM"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="EAID_FURNISHING_BEDS" name="beds" association="EAID_FURNISHING" aggregation="composite" isOrdered="true">
+          <type xmi:idref="EAID_BED"/>
+          <lowerValue xmi:type="uml:LiteralInteger" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="EAID_FURNISHING_ROOM" name="room" association="EAID_FURNISHING" aggregation="none">
+          <type xmi:idref="EAID_ROOM"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+  </uml:Model>
+  <xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+    <elements>
+      <element xmi:idref="EAID_GUEST" xmi:type="uml:Class" name="Guest" scope="public">
+        <properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="person"/>
+        <tags><tag xmi:id="EAID_T1" name="Bold.TableName" value="GUESTS" modelElement="EAID_GUEST"/></tags>
+      </element>
+    </elements>
+    <primitivetypes>
+      <packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package">
+        <packagedElement xmi:type="uml:Package" xmi:id="EAJavaTypesPackage" name="EA_Java_Types_Package">
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_String" name="String"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_boolean" name="Boolean"/>
+          <packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_int" name="Integer"/>
+        </packagedElement>
+      </packagedElement>
+    </primitivetypes>
+  </xmi:Extension>
+</xmi:XMI>

@@ -2,6 +2,7 @@
 // Port map: CSharp/port/units/BoldSystem.md
 // The lists: TBoldList, TBoldMemberList and TBoldObjectList.
 
+using System.Collections;
 using static Bold.BoldCoreConsts;
 using static Bold.BoldElements;
 using static Bold.BoldSubscription;
@@ -9,9 +10,13 @@ using static Bold.BoldSystem;
 
 namespace Bold;
 
-/// <summary>A list member: elements, duplicate handling, the May... queries for list changes; a controller holds the elements.</summary>
+/// <summary>
+/// A list member: elements, duplicate handling, the May... queries for list changes; a controller holds the elements.
+/// A list can be enumerated (foreach, and LINQ through Cast and OfType); object and member lists enumerate their objects
+/// and members.
+/// </summary>
 [Delphi(PortStatus.Ported)]
-public abstract class TBoldList : TBoldMember
+public abstract class TBoldList : TBoldMember, IEnumerable
 {
     private TBoldListController? fListController;
 
@@ -358,11 +363,22 @@ public abstract class TBoldList : TBoldMember
         get => GetElement(index);
         set => SetElement(index, value);
     }
+
+    /// <summary>The elements, first to last, as a Delphi loop over Count reads them (a list that changes meanwhile is read as it is then).</summary>
+    public IEnumerator<TBoldElement> GetEnumerator()
+    {
+        for (int i = 0; i < Count; i++)
+        {
+            yield return this[i]!;
+        }
+    }
+
+    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }
 
 /// <summary>A list of members; by default it holds clones of what is added.</summary>
 [Delphi(PortStatus.Ported)]
-public class TBoldMemberList : TBoldList
+public class TBoldMemberList : TBoldList, IEnumerable<TBoldMember>
 {
     private TList? faList;
     private bool FCloneMembers;
@@ -692,6 +708,15 @@ public class TBoldMemberList : TBoldList
         set => SetBoldMember(index, value);
     }
 
+    /// <summary>The members, first to last.</summary>
+    public new IEnumerator<TBoldMember> GetEnumerator()
+    {
+        for (int i = 0; i < Count; i++)
+        {
+            yield return this[i];
+        }
+    }
+
     [Delphi(PortStatus.Ported)]
     public bool CloneMembers
     {
@@ -705,7 +730,7 @@ public class TBoldMemberList : TBoldList
 /// controller that fits decides how elements are kept and linked.
 /// </summary>
 [Delphi(PortStatus.Ported)]
-public class TBoldObjectList : TBoldList
+public class TBoldObjectList : TBoldList, IEnumerable<TBoldObject>
 {
     public TBoldObjectList()
     {
@@ -1390,6 +1415,15 @@ public class TBoldObjectList : TBoldList
     {
         get => GetBoldObject(index);
         set => SetBoldObject(index, value);
+    }
+
+    /// <summary>The objects, first to last (fetched as they are reached); a typed list's loop names its class: foreach (TBook book in author.Books).</summary>
+    public new IEnumerator<TBoldObject> GetEnumerator()
+    {
+        for (int i = 0; i < Count; i++)
+        {
+            yield return this[i]!;
+        }
     }
 
     [Delphi(PortStatus.Ported)] public TBoldRoleRTInfo? BoldRoleRTInfo => GetBoldRoleRTInfo();

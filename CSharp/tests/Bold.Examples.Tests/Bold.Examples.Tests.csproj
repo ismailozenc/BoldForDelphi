@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Tests of the Library examples (CSharp/examples/Library): each example program runs as its tutorial runs it, and does what the tutorial says. The WinForms desk is tested with the WinForms tests.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The example programs the tests start: built before the tests, not referenced. -->
+    <ProjectReference Include="../../examples/Library/Basics/Library.Basics.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../examples/Library/Typed/Library.Typed.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../examples/Library/Rules/Library.Rules.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../examples/Library/Network/Library.Network.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../examples/Library/Evolution/Library.Evolution.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../examples/Library/Xmi/Library.Xmi.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../examples/Library/Attributes/Library.Attributes.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../examples/Library/Branches/Library.Branches.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>

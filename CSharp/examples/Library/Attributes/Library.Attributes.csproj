@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Tutorial 8, custom attribute types. Outside this repository, reference the packages Bold.SourceGenerators,
+    Bold.Persistence.Sql and Bold.Handles instead.
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Description>The Library examples, tutorial 8: attribute types of the library's own, written by the Bold attribute generator from attributes on partial classes (a value set Condition, a two-field ShelfMark stored in two columns, and an Isbn string that checks its check digit), in a catalogue model on a SQLite database.</Description>
+    <RootNamespace>Library.Attributes</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/SqliteSystem.cs" Link="SqliteSystem.cs" />
+    <None Update="Catalogue.bld" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../LibraryClasses/LibraryClasses.csproj" />
+    <!-- The attribute generator writes the attribute types of CatalogueTypes.cs when the project builds. -->
+    <ProjectReference Include="../../../src/Bold.SourceGenerators/Bold.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>

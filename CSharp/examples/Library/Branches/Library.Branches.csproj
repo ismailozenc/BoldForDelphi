@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Tutorial 9, lending objects between databases. Outside this repository, reference the packages Bold.Olle, Bold.Persistence.Sql and Bold.Handles instead. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Description>The Library examples, tutorial 9: two branch libraries with databases of their own; the central branch lends a book's record to the harbour branch with OLLE, which changes it and checks it back in.</Description>
+    <RootNamespace>Library.Branches</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/SqliteSystem.cs" Link="SqliteSystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../../../src/Bold.Olle/Bold.Olle.csproj" />
+    <ProjectReference Include="../LibraryClasses/LibraryClasses.csproj" />
+  </ItemGroup>
+</Project>

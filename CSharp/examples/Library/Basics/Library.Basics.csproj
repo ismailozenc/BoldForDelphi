@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Tutorial 1, a first system. Outside this repository, reference the packages Bold.Persistence.Sql and Bold.Handles instead. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Description>The Library examples, tutorial 1: the Library model read from Library.bld, a new SQLite database, authors, books and members created and linked by name, OCL queries and derived members, saving, and the objects read back in a new system.</Description>
+    <RootNamespace>Library.Basics</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../../src/Bold.Handles/Bold.Handles.csproj" />
+  </ItemGroup>
+</Project>

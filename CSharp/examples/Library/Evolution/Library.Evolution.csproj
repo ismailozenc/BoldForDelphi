@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Tutorial 6, evolving the model. Outside this repository, reference the packages Bold.Persistence.Sql and Bold.Handles instead. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Description>The Library examples, tutorial 6: a database made with the Library model evolved to version 2 of the model (LibraryV2.bld), which renames an attribute, adds another and adds a class with two associations, without losing its objects.</Description>
+    <RootNamespace>Library.Evolution</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/SqliteSystem.cs" Link="SqliteSystem.cs" />
+    <None Update="LibraryV2.bld" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../LibraryClasses/LibraryClasses.csproj" />
+  </ItemGroup>
+</Project>

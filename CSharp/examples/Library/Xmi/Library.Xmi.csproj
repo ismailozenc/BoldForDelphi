@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Tutorial 7, models from UML tools. Outside this repository, reference the packages Bold.Xmi, Bold.Persistence.Sql and Bold.Handles instead. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Description>The Library examples, tutorial 7: the Library model written as XMI 2.1 for UML tools, and a model in the XMI of Enterprise Architect (Hotel.xmi) read, written as .bld and run on a SQLite database.</Description>
+    <RootNamespace>Library.Xmi</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Shared/SqliteSystem.cs" Link="SqliteSystem.cs" />
+    <None Update="Hotel.xmi" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../src/Bold.Porting/Bold.Porting.csproj" />
+    <ProjectReference Include="../../../src/Bold.Rtl/Bold.Rtl.csproj" />
+    <ProjectReference Include="../../../src/Bold.Core/Bold.Core.csproj" />
+    <ProjectReference Include="../../../src/Bold.Model/Bold.Model.csproj" />
+    <ProjectReference Include="../../../src/Bold.ValueSpace/Bold.ValueSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence/Bold.Persistence.csproj" />
+    <ProjectReference Include="../../../src/Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
+    <ProjectReference Include="../../../src/Bold.Persistence.Sql/Bold.Persistence.Sql.csproj" />
+    <ProjectReference Include="../../../src/Bold.Handles/Bold.Handles.csproj" />
+    <ProjectReference Include="../../../src/Bold.Xmi/Bold.Xmi.csproj" />
+    <ProjectReference Include="../LibraryClasses/LibraryClasses.csproj" />
+  </ItemGroup>
+</Project>
