@@ -12,4 +12,11 @@
     <!-- The members of each class of the UML 1.3 metamodel, in the order of its XMI DTD (Delphi's BoldUMLDTDData). -->
     <EmbeddedResource Include="UMLModel/ModelLinks/XMI/BoldUMLDTDData.uml13.txt" LogicalName="BoldUMLDTDData.uml13.txt" />
   </ItemGroup>
+  <!--
+    The pictures of Delphi's component palette (Images/Components), embedded under the class's name: Visual Studio's
+    toolbox and the designer's component tray show the bitmap named as the component (Bold.TBoldGrid.bmp for TBoldGrid).
+  -->
+  <ItemGroup>
+    <BoldToolboxBitmap Include="TBoldUMLXMILink" />
+  </ItemGroup>
 </Project>

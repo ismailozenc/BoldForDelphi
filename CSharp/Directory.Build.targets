@@ -28,4 +28,14 @@
           Pack="true" PackagePath="aliases/" Visible="false" />
     <None Include="$(BoldCSharpRoot)deploy/Bold.Package.targets" Pack="true" PackagePath="buildTransitive/$(PackageId).targets" Visible="false" />
   </ItemGroup>
+
+  <!--
+    Toolbox bitmaps. A project names its components that have a picture in Images/Components (BoldToolboxBitmap); each
+    is embedded as Bold.<Class>.bmp, where the WinForms designer looks for the picture of the class Bold.<Class>.
+  -->
+  <ItemGroup>
+    <EmbeddedResource Include="@(BoldToolboxBitmap->'$(BoldCSharpRoot)../Images/Components/%(Identity).bmp')" Visible="false">
+      <LogicalName>Bold.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

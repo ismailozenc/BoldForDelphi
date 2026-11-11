@@ -51,4 +51,11 @@
     <ProjectReference Include="../Bold.Handles/Bold.Handles.csproj" />
     <ProjectReference Include="../Bold.AwareGui/Bold.AwareGui.csproj" />
   </ItemGroup>
+  <!--
+    The pictures of Delphi's component palette (Images/Components), embedded under the class's name: Visual Studio's
+    toolbox and the designer's component tray show the bitmap named as the component (Bold.TBoldGrid.bmp for TBoldGrid).
+  -->
+  <ItemGroup>
+    <BoldToolboxBitmap Include="TBoldCaptionController;TBoldComboBox;TBoldDataSet;TBoldDropTarget;TBoldEdit;TBoldGrid;TBoldImage;TBoldLabel;TBoldListBox;TBoldMemo;TBoldNavigator;TBoldPageControl;TBoldPersistenceProgressNotifier;TBoldPlaceableAFP;TBoldProgressBar;TBoldRichEdit;TBoldTrackBar;TBoldTreeView;TBoldXCVTreeView" />
+  </ItemGroup>
 </Project>

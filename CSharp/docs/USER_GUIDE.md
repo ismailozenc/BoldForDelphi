@@ -43,9 +43,21 @@ You need the .NET 10 SDK and the Bold packages, which you build from the reposit
 
 **Get the packages**
 
+[Compiling and installing, step by step](INSTALL.md) takes you through all of this with what to expect at each step; in short:
+
 1. Clone the repository and check out the `CSharp` branch.
 2. Run the installer. On Windows: `powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1`; with PowerShell 7, on Windows or Linux: `pwsh CSharp/deploy/install.ps1`. It packs every library, the attribute generator and the `bold-codegen` tool into `CSharp/artifacts/packages`, makes that folder the package source `bold`, installs `bold-codegen` as a global tool, and publishes the model editor and the servers into `CSharp/artifacts/publish`. On Linux it skips what needs Windows. Run it again after you pull a new revision; `-Uninstall` takes the source and the tool away again.
 3. That is all: `dotnet add package Bold.Persistence.Sql` now works in any project on the machine.
+
+**In Visual Studio**
+
+On Windows the installer also sets Bold up for Visual Studio 2022 and later, Community included (close Visual Studio first; `-NoVisualStudio` leaves it out):
+
+- **Tools > Bold** has the model editor, class generation from a model, the propagator analyzer, this guide and the tutorials.
+- A `.bld` file opens in the model editor on a double click, and its right-click menu in Solution Explorer has **Open in Bold Model Editor** and **Generate Bold Classes**.
+- The WinForms designer's toolbox shows Bold's controls and handles with the pictures of Delphi's component palette, in a project that references `Bold.WinForms`.
+
+The model editor opens as a window of its own. Everything the menus do, the command line does too: `bold-codegen`, and `Bold.ModelEditor.exe Model.bld`. `CSharp/vs/README.md` has the details, and `CSharp\vs\build.ps1 -Install` installs the extension alone.
 
 Other ways to the packages:
 

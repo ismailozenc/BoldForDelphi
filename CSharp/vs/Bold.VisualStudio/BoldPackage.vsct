@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Bold's menus in Visual Studio: a Bold submenu in the Tools menu, and two commands in Solution Explorer's menu of a
+  model file (.bld). The numbers here are the ones in PackageIds.cs.
+-->
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h" />
+  <Extern href="vsshlids.h" />
+
+  <Commands package="guidBoldPackage">
+    <Menus>
+      <Menu guid="guidBoldCmdSet" id="BoldMenu" priority="0x0100" type="Menu">
+        <Parent guid="guidBoldCmdSet" id="BoldMenuGroup" />
+        <Strings>
+          <ButtonText>&amp;Bold</ButtonText>
+          <CommandName>Bold</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+      <!-- Where the Bold submenu sits in the Tools menu. -->
+      <Group guid="guidBoldCmdSet" id="BoldMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+      <Group guid="guidBoldCmdSet" id="BoldToolsGroup" priority="0x0100">
+        <Parent guid="guidBoldCmdSet" id="BoldMenu" />
+      </Group>
+      <Group guid="guidBoldCmdSet" id="BoldHelpGroup" priority="0x0200">
+        <Parent guid="guidBoldCmdSet" id="BoldMenu" />
+      </Group>
+      <!-- In Solution Explorer's menu of a file. -->
+      <Group guid="guidBoldCmdSet" id="BoldItemGroup" priority="0x0080">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidBoldCmdSet" id="cmdModelEditor" priority="0x0100" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldToolsGroup" />
+        <Strings>
+          <ButtonText>&amp;Model Editor</ButtonText>
+          <CommandName>Bold Model Editor</CommandName>
+          <CanonicalName>.Bold.ModelEditor</CanonicalName>
+          <LocCanonicalName>.Bold.ModelEditor</LocCanonicalName>
+          <ToolTipText>Opens the Bold model editor, on the selected model (.bld) when one is selected</ToolTipText>
+        </Strings>
+      </Button>
+      <Button guid="guidBoldCmdSet" id="cmdGenerateClasses" priority="0x0110" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldToolsGroup" />
+        <Strings>
+          <ButtonText>&amp;Generate Classes from Model...</ButtonText>
+          <CommandName>Bold Generate Classes</CommandName>
+          <CanonicalName>.Bold.GenerateClasses</CanonicalName>
+          <LocCanonicalName>.Bold.GenerateClasses</LocCanonicalName>
+          <ToolTipText>Writes the typed C# classes of a model (bold-codegen) next to the model</ToolTipText>
+        </Strings>
+      </Button>
+      <Button guid="guidBoldCmdSet" id="cmdPropagatorAnalyzer" priority="0x0120" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldToolsGroup" />
+        <Strings>
+          <ButtonText>&amp;Propagator Analyzer</ButtonText>
+          <CommandName>Bold Propagator Analyzer</CommandName>
+          <CanonicalName>.Bold.PropagatorAnalyzer</CanonicalName>
+          <LocCanonicalName>.Bold.PropagatorAnalyzer</LocCanonicalName>
+        </Strings>
+      </Button>
+      <Button guid="guidBoldCmdSet" id="cmdUserGuide" priority="0x0100" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldHelpGroup" />
+        <Strings>
+          <ButtonText>&amp;User Guide</ButtonText>
+          <CommandName>Bold User Guide</CommandName>
+          <CanonicalName>.Bold.UserGuide</CanonicalName>
+          <LocCanonicalName>.Bold.UserGuide</LocCanonicalName>
+        </Strings>
+      </Button>
+      <Button guid="guidBoldCmdSet" id="cmdTutorials" priority="0x0110" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldHelpGroup" />
+        <Strings>
+          <ButtonText>&amp;Tutorials</ButtonText>
+          <CommandName>Bold Tutorials</CommandName>
+          <CanonicalName>.Bold.Tutorials</CanonicalName>
+          <LocCanonicalName>.Bold.Tutorials</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <!-- Solution Explorer, on a model file: shown only while a .bld file is selected (the UI context rule of the package). -->
+      <Button guid="guidBoldCmdSet" id="cmdOpenModel" priority="0x0100" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldItemGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Open in Bold &amp;Model Editor</ButtonText>
+          <CommandName>Bold Open Model</CommandName>
+          <CanonicalName>.Bold.OpenModel</CanonicalName>
+          <LocCanonicalName>.Bold.OpenModel</LocCanonicalName>
+        </Strings>
+      </Button>
+      <Button guid="guidBoldCmdSet" id="cmdGenerateClassesOfModel" priority="0x0110" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldItemGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>&amp;Generate Bold Classes</ButtonText>
+          <CommandName>Bold Generate Classes of Model</CommandName>
+          <CanonicalName>.Bold.GenerateClassesOfModel</CanonicalName>
+          <LocCanonicalName>.Bold.GenerateClassesOfModel</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <VisibilityConstraints>
+    <VisibilityItem guid="guidBoldCmdSet" id="cmdOpenModel" context="guidBldSelected" />
+    <VisibilityItem guid="guidBoldCmdSet" id="cmdGenerateClassesOfModel" context="guidBldSelected" />
+  </VisibilityConstraints>
+
+  <Symbols>
+    <GuidSymbol name="guidBoldPackage" value="{6b1e6f4c-2c7a-4c0b-9e8a-5b0c1d2e3f41}" />
+    <GuidSymbol name="guidBldSelected" value="{f1e2d3c4-b5a6-4978-8a9b-0c1d2e3f4a74}" />
+    <GuidSymbol name="guidBoldCmdSet" value="{a3d7b2e1-4f5c-4a6b-8c9d-0e1f2a3b4c52}">
+      <IDSymbol name="BoldMenu" value="0x1000" />
+      <IDSymbol name="BoldMenuGroup" value="0x1010" />
+      <IDSymbol name="BoldToolsGroup" value="0x1020" />
+      <IDSymbol name="BoldHelpGroup" value="0x1030" />
+      <IDSymbol name="BoldItemGroup" value="0x1040" />
+      <IDSymbol name="cmdModelEditor" value="0x0100" />
+      <IDSymbol name="cmdGenerateClasses" value="0x0101" />
+      <IDSymbol name="cmdPropagatorAnalyzer" value="0x0102" />
+      <IDSymbol name="cmdUserGuide" value="0x0110" />
+      <IDSymbol name="cmdTutorials" value="0x0111" />
+      <IDSymbol name="cmdOpenModel" value="0x0120" />
+      <IDSymbol name="cmdGenerateClassesOfModel" value="0x0121" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

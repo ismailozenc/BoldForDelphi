@@ -11,4 +11,11 @@
     <ProjectReference Include="../Bold.Persistence/Bold.Persistence.csproj" />
     <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
   </ItemGroup>
+  <!--
+    The pictures of Delphi's component palette (Images/Components), embedded under the class's name: Visual Studio's
+    toolbox and the designer's component tray show the bitmap named as the component (Bold.TBoldGrid.bmp for TBoldGrid).
+  -->
+  <ItemGroup>
+    <BoldToolboxBitmap Include="TBoldDatabaseAdapterADO;TBoldExternalPersistenceHandleEventDriven;TBoldExternalPersistenceHandleSQL;TBoldObjectUpgraderHandle;TBoldPersistenceHandleDB" />
+  </ItemGroup>
 </Project>

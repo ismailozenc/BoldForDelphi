@@ -100,7 +100,7 @@ jobs:
         if: ${{ !cancelled() && steps.build.outcome == 'success' }}
         shell: powershell
         run: |
-          & CSharp\deploy\install.ps1 -NoBuild
+          & CSharp\deploy\install.ps1 -NoBuild -NoVisualStudio
           $app = Join-Path $env:RUNNER_TEMP 'bold-installed'
           dotnet new console -n Library -o $app
           if ($LASTEXITCODE -ne 0) { throw 'dotnet new failed' }
@@ -116,7 +116,76 @@ jobs:
           Pop-Location
           & "$env:USERPROFILE\.dotnet\tools\bold-codegen.exe" CSharp\deploy\PackageSmoke\Library.bld --out (Join-Path $env:RUNNER_TEMP 'bold-generated') --quiet
           if ($LASTEXITCODE -ne 0 -or -not (Test-Path (Join-Path $env:RUNNER_TEMP 'bold-generated\Book.g.cs'))) { throw 'The installed bold-codegen did not generate the classes' }
-          Write-Host 'ok   installed: the package source, a project on it, and bold-codegen'
+          $type = (Get-ItemProperty 'HKCU:\Software\Classes\Bold.Model\shell\open\command').'(default)'
+          if ($type -notmatch 'Bold\.ModelEditor\.exe') { throw "The .bld file type opens $type" }
+          Write-Host 'ok   installed: the package source, a project on it, bold-codegen and the .bld file type'
+
+      # Bold for Visual Studio (CSharp/vs), built and installed into the runner's Visual Studio: the VSIX has the
+      # package, its registration and Bold's programs, and Visual Studio has the extension. The extension is new and
+      # is built by Visual Studio's MSBuild only, so this step reports and does not fail the run.
+      - name: Visual Studio extension
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        continue-on-error: true
+        shell: powershell
+        run: |
+          & CSharp\vs\build.ps1 -Install -NoBuild
+          $vsix = Resolve-Path 'CSharp\artifacts\vsix\Bold.VisualStudio.vsix'
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          $zip = [IO.Compression.ZipFile]::OpenRead($vsix)
+          $names = $zip.Entries | ForEach-Object { $_.FullName.Replace('\', '/') }
+          $pkgdef = $zip.Entries | Where-Object { $_.FullName -like '*.pkgdef' } | Select-Object -First 1
+          if ($pkgdef) { $reader = New-Object IO.StreamReader($pkgdef.Open()); $registration = $reader.ReadToEnd(); $reader.Dispose() }
+          $zip.Dispose()
+          Write-Host "$($names.Count) files in the VSIX"
+          foreach ($needed in 'extension.vsixmanifest', 'Bold.VisualStudio.dll', 'Bold.VisualStudio.pkgdef', 'tools/model-editor/Bold.ModelEditor.exe', 'tools/propagator-analyzer/Bold.PropagatorAnalyzer.exe', 'tools/codegen/bold-codegen.dll', 'tools/docs/TUTORIALS.md') {
+            if ($names -notcontains $needed) { $names | Select-Object -First 40 | Write-Host; throw "The VSIX has no $needed" }
+          }
+          Write-Host $registration
+          foreach ($needed in 'Menus.ctmenu', 'd2c4e6a8-1b3d-4f5a-9c7e-2a4b6c8d0e63', '"bld"', 'f1e2d3c4-b5a6-4978-8a9b-0c1d2e3f4a74') {
+            if ($registration -notmatch [regex]::Escape($needed)) { throw "The package's registration has no $needed" }
+          }
+          $installed = Get-ChildItem (Join-Path $env:LOCALAPPDATA 'Microsoft\VisualStudio') -Recurse -Filter Bold.VisualStudio.dll -ErrorAction SilentlyContinue | Select-Object -First 1
+          if (-not $installed) { throw 'Visual Studio does not have the extension' }
+          Write-Host "ok   installed in $($installed.DirectoryName)"
+          if (-not (Test-Path (Join-Path $installed.DirectoryName 'tools\model-editor\Bold.ModelEditor.exe'))) { throw 'The installed extension has no model editor' }
+          Write-Host 'ok   the VSIX, its registration and the installed extension'
+
+      # The menu command in a running Visual Studio: Bold.ModelEditor, given on devenv's command line, starts the model
+      # editor. A first start of Visual Studio on a new machine can wait for an answer nobody gives, so this step
+      # reports and does not fail the run.
+      - name: Visual Studio runs the Bold menu command
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        continue-on-error: true
+        timeout-minutes: 8
+        shell: powershell
+        run: |
+          $vswhere = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio\Installer\vswhere.exe'
+          $devenv = & $vswhere -latest -prerelease -products * -property productPath
+          Write-Host "Visual Studio: $devenv"
+          $visualStudio = Start-Process -FilePath $devenv -ArgumentList '/NoSplash', '/Command', 'Bold.ModelEditor' -PassThru
+          $editor = $null
+          for ($i = 0; $i -lt 300 -and -not $editor; $i++) {
+            Start-Sleep -Seconds 1
+            $editor = Get-Process -Name 'Bold.ModelEditor' -ErrorAction SilentlyContinue
+            if ($visualStudio.HasExited) { break }
+          }
+          $path = if ($editor) { $editor[0].Path } else { '' }
+          Get-Process -Name 'Bold.ModelEditor', 'devenv' -ErrorAction SilentlyContinue | Stop-Process -Force
+          if (-not $editor) {
+            Get-ChildItem (Join-Path $env:APPDATA 'Microsoft\VisualStudio') -Recurse -Filter ActivityLog.xml -ErrorAction SilentlyContinue | ForEach-Object { Select-String -Path $_.FullName -Pattern 'Bold' -Context 0, 3 | Select-Object -First 20 | Write-Host }
+            Write-Host "::warning title=Visual Studio::The Bold.ModelEditor command did not start the model editor within five minutes (Visual Studio exited: $($visualStudio.HasExited))"
+            exit 1
+          }
+          Write-Host "ok   Visual Studio's Bold.ModelEditor command started $path"
+
+      - name: Upload the Visual Studio extension
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: visual-studio-extension
+          path: CSharp/artifacts/vsix/Bold.VisualStudio.vsix
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Check port links
         if: ${{ !cancelled() }}

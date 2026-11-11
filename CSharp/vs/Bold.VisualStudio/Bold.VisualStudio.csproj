@@ -1,0 +1,70 @@
+<Project>
+  <!--
+    Bold for Visual Studio: a Visual Studio package (VSIX) that puts Bold's tools in Visual Studio's menus. It runs inside
+    Visual Studio, so it is a .NET Framework library, and it starts Bold's programs, which are .NET 10 programs, from its
+    tools folder. Build it with vs/build.ps1 (Windows, with Visual Studio's MSBuild): the VSIX tasks and the menu
+    compiler are Windows programs. Elsewhere "dotnet build" compiles the code only, as a check.
+  -->
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Bold.VisualStudio</RootNamespace>
+    <AssemblyName>Bold.VisualStudio</AssemblyName>
+    <Version>1.0.0</Version>
+    <Description>Bold for C# in Visual Studio: the model editor, typed classes and the tools, from the menus.</Description>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <!-- The VSIX: built by Visual Studio's MSBuild on Windows. -->
+    <BoldBuildVsix Condition="'$(BoldBuildVsix)' == '' and '$(OS)' == 'Windows_NT' and '$(MSBuildRuntimeType)' == 'Full'">true</BoldBuildVsix>
+    <GeneratePkgDefFile>true</GeneratePkgDefFile>
+    <UseCodebase>true</UseCodebase>
+    <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
+    <IncludeDebugSymbolsInVSIXContainer>false</IncludeDebugSymbolsInVSIXContainer>
+    <IncludeDebugSymbolsInLocalVSIXDeployment>false</IncludeDebugSymbolsInLocalVSIXDeployment>
+    <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
+    <CopyOutputSymbolsToOutputDirectory>false</CopyOutputSymbolsToOutputDirectory>
+    <!-- No copy into Visual Studio's experimental instance: build.ps1 installs the VSIX. -->
+    <DeployExtension>false</DeployExtension>
+    <!-- Bold's programs and pages, which build.ps1 publishes here before it builds the VSIX. -->
+    <BoldToolsDir Condition="'$(BoldToolsDir)' == ''">$(MSBuildThisFileDirectory)..\..\artifacts\vsix\tools\</BoldToolsDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The lowest version the extension runs in: Visual Studio 2022 (17.0); Visual Studio brings these assemblies itself. -->
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.0.32112.339" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.14.2120" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Design" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <VSCTCompile Include="BoldPackage.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
+    <EmbeddedResource Update="VSPackage.resx">
+      <MergeWithCTO>true</MergeWithCTO>
+      <ManifestResourceName>VSPackage</ManifestResourceName>
+    </EmbeddedResource>
+    <Content Include="$(BoldToolsDir)**\*" Condition="'$(BoldBuildVsix)' == 'true'">
+      <IncludeInVSIX>true</IncludeInVSIX>
+      <VSIXSubPath>tools\%(RecursiveDir)</VSIXSubPath>
+      <Link>tools\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(BoldBuildVsix)' == 'true' and '$(VSToolsPath)' != '' and Exists('$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets')" />
+
+  <Target Name="BoldToolsArePublished" BeforeTargets="CreateVsixContainer" Condition="'$(BoldBuildVsix)' == 'true'">
+    <Error Condition="!Exists('$(BoldToolsDir)model-editor\Bold.ModelEditor.exe')" Text="Bold's programs are not in $(BoldToolsDir): build the extension with CSharp/vs/build.ps1, which publishes them first." />
+  </Target>
+</Project>

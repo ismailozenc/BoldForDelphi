@@ -25,8 +25,14 @@ Packs and publishes what "dotnet build CSharp/Bold.slnx -c Release" already buil
 .PARAMETER NoPrograms
 Leaves the programs out: only the packages, the package source and bold-codegen.
 
+.PARAMETER NoVisualStudio
+Leaves Visual Studio alone. Without it, on Windows with Visual Studio 2022 or later, the installer also builds Bold for
+Visual Studio (vs/build.ps1) and installs it: a Bold submenu in the Tools menu, .bld files opened in the model editor,
+and class generation from Solution Explorer. Close Visual Studio first.
+
 .PARAMETER Uninstall
-Removes the package source, the bold-codegen tool and the cached packages. The repository's files stay.
+Removes the package source, the bold-codegen tool, the cached packages, the .bld file type and the Visual Studio
+extension. The repository's files stay.
 
 .EXAMPLE
 powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1
@@ -40,6 +46,7 @@ param(
     [string]$SourceName = 'bold',
     [switch]$NoBuild,
     [switch]$NoPrograms,
+    [switch]$NoVisualStudio,
     [switch]$Uninstall
 )
 
@@ -122,6 +129,39 @@ function Remove-Tool {
     }
 }
 
+# Whether Visual Studio (2022 or later, with MSBuild) is on this machine.
+function Test-VisualStudio {
+    if (-not $onWindows) {
+        return $false
+    }
+    $vswhere = Join-Path ${env:ProgramFiles(x86)} 'Microsoft Visual Studio\Installer\vswhere.exe'
+    if (-not (Test-Path $vswhere)) {
+        return $false
+    }
+    $found = & $vswhere -latest -prerelease -products * -requires Microsoft.Component.MSBuild -property installationPath
+    return [bool]$found
+}
+
+# Makes .bld the file type of the model editor for this user: a double click in Explorer opens the model in it.
+function Set-ModelFileType([string]$editor) {
+    $classes = 'HKCU:\Software\Classes'
+    New-Item -Path "$classes\.bld" -Force | Out-Null
+    Set-ItemProperty -Path "$classes\.bld" -Name '(Default)' -Value 'Bold.Model'
+    New-Item -Path "$classes\Bold.Model\shell\open\command" -Force | Out-Null
+    Set-ItemProperty -Path "$classes\Bold.Model" -Name '(Default)' -Value 'Bold model'
+    Set-ItemProperty -Path "$classes\Bold.Model\shell\open\command" -Name '(Default)' -Value "`"$editor`" `"%1`""
+}
+
+function Remove-ModelFileType {
+    $classes = 'HKCU:\Software\Classes'
+    if ((Test-Path "$classes\.bld") -and ((Get-ItemProperty -Path "$classes\.bld").'(default)' -eq 'Bold.Model')) {
+        Remove-Item -Path "$classes\.bld" -Recurse -Force
+    }
+    if (Test-Path "$classes\Bold.Model") {
+        Remove-Item -Path "$classes\Bold.Model" -Recurse -Force
+    }
+}
+
 if (-not (Get-Command dotnet -ErrorAction SilentlyContinue)) {
     throw 'The .NET SDK is not installed (dotnet is not on the path). Install the .NET 10 SDK from https://dotnet.microsoft.com/download and run this again.'
 }
@@ -142,6 +182,12 @@ try {
         }
         Remove-Tool
         Clear-CachedPackages
+        if ($onWindows) {
+            Remove-ModelFileType
+            if (-not $NoVisualStudio -and (Test-VisualStudio)) {
+                & (Join-Path $root 'vs\build.ps1') -Uninstall
+            }
+        }
         Write-Host ''
         Write-Host 'Uninstalled. The repository and CSharp/artifacts are as they were.'
         return
@@ -225,6 +271,30 @@ try {
         }
     }
 
+    $editor = Join-Path (Join-Path $publish 'model-editor') 'Bold.ModelEditor.exe'
+    if ($onWindows -and (Test-Path $editor)) {
+        Step 'Model files (.bld)'
+        Set-ModelFileType $editor
+        Write-Host "A double click on a .bld file opens it in $editor"
+    }
+
+    $inVisualStudio = $false
+    if ($onWindows -and -not $NoVisualStudio) {
+        if (Test-VisualStudio) {
+            if ($NoBuild) {
+                & (Join-Path $root 'vs\build.ps1') -Install -NoBuild
+            }
+            else {
+                & (Join-Path $root 'vs\build.ps1') -Install
+            }
+            $inVisualStudio = $true
+        }
+        else {
+            Write-Host ''
+            Write-Host '(Visual Studio was not found: its extension is not installed. Run CSharp\vs\build.ps1 -Install once it is there.)'
+        }
+    }
+
     Write-Host ''
     Write-Host "Bold for C# $packed is installed."
     Write-Host ''
@@ -242,6 +312,11 @@ try {
         Write-Host "  $(Join-Path (Join-Path $publish 'model-editor') 'Bold.ModelEditor.exe') Model.bld      the model editor"
     }
     Write-Host '  dotnet run --project examples/Library/Basics      the first tutorial (docs/TUTORIALS.md), from the CSharp folder'
+    if ($inVisualStudio) {
+        Write-Host ''
+        Write-Host 'In Visual Studio: Tools > Bold has the model editor, class generation, the user guide and the tutorials;'
+        Write-Host 'a .bld file opens in the model editor, and its right-click menu in Solution Explorer generates its classes.'
+    }
     Write-Host ''
     Write-Host 'If bold-codegen is not found, open a new terminal: a first global tool adds its folder to the path.'
 }

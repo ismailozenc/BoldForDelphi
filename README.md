@@ -4,9 +4,10 @@
 
 The `CSharp` branch holds the port of Bold to C# on .NET 10, in [`CSharp/`](CSharp): the libraries, the model editor, the servers, tests, examples and tutorials. The Delphi source in `Source/` is its specification.
 
+- [Compiling and installing, step by step](CSharp/docs/INSTALL.md).
 - [`CSharp/README.md`](CSharp/README.md): what is where, and how to build and test.
 - [User guide](CSharp/docs/USER_GUIDE.md) and [tutorials](CSharp/docs/TUTORIALS.md): how to use it.
-- Install on Windows, with the .NET 10 SDK: `powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1`.
+- Install on Windows, with the .NET 10 SDK: `powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1`. With Visual Studio on the machine, it also installs [Bold for Visual Studio](CSharp/vs/README.md): Bold in the Tools menu.
 
 ## Changes in this copy
 

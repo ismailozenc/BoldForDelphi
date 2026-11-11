@@ -12,5 +12,8 @@
     <ProjectReference Include="../../examples/Library/Xmi/Library.Xmi.csproj" ReferenceOutputAssembly="false" />
     <ProjectReference Include="../../examples/Library/Attributes/Library.Attributes.csproj" ReferenceOutputAssembly="false" />
     <ProjectReference Include="../../examples/Library/Branches/Library.Branches.csproj" ReferenceOutputAssembly="false" />
+    <!-- bold-codegen, which the Visual Studio extension's launcher (vs/Bold.VisualStudio/BoldTools.cs, compiled in here) starts. -->
+    <ProjectReference Include="../../tools/Bold.CodeGen.Tool/Bold.CodeGen.Tool.csproj" ReferenceOutputAssembly="false" />
+    <Compile Include="../../vs/Bold.VisualStudio/BoldTools.cs" Link="VisualStudio/BoldTools.cs" />
   </ItemGroup>
 </Project>

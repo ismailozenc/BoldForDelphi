@@ -1,0 +1,6 @@
+<Project>
+  <!-- The extension names its package versions in its project file. -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+</Project>

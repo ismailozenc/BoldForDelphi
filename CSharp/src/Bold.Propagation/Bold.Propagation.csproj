@@ -12,4 +12,11 @@
     <ProjectReference Include="../Bold.ObjectSpace/Bold.ObjectSpace.csproj" />
     <ProjectReference Include="../Bold.Handles/Bold.Handles.csproj" />
   </ItemGroup>
+  <!--
+    The pictures of Delphi's component palette (Images/Components), embedded under the class's name: Visual Studio's
+    toolbox and the designer's component tray show the bitmap named as the component (Bold.TBoldGrid.bmp for TBoldGrid).
+  -->
+  <ItemGroup>
+    <BoldToolboxBitmap Include="TBoldExternalObjectSpaceEventHandler;TBoldIDAdderHandle;TBoldListenerHandle;TBoldLockingHandle;TBoldSnooperHandle;TBoldUDPModificationBroadcaster" />
+  </ItemGroup>
 </Project>

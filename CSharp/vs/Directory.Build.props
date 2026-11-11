@@ -1,0 +1,3 @@
+<Project>
+  <!-- Empty on purpose: the Visual Studio extension runs inside Visual Studio, on .NET Framework, and takes none of the port's build settings. -->
+</Project>
