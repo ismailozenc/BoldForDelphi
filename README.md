@@ -1,5 +1,13 @@
 # BoldForDelphi
 
+## Bold for C#
+
+The `CSharp` branch holds the port of Bold to C# on .NET 10, in [`CSharp/`](CSharp): the libraries, the model editor, the servers, tests, examples and tutorials. The Delphi source in `Source/` is its specification.
+
+- [`CSharp/README.md`](CSharp/README.md): what is where, and how to build and test.
+- [User guide](CSharp/docs/USER_GUIDE.md) and [tutorials](CSharp/docs/TUTORIALS.md): how to use it.
+- Install on Windows, with the .NET 10 SDK: `powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1`.
+
 ## Changes in this copy
 
 This copy is being used to rebuild Bold in C#. Some parts have been removed, and each folder has a `FOLDER_INFO.md` that describes its contents.
@@ -9,16 +17,16 @@ Removed so far:
 - **Delphi package files (`*.dpk`):** all 27, including the ones in `examples/` and `Source/Unassigned/`. The units they listed are still in the tree.
 - **Dead database drivers:** the BDE, DBISAM, Advantage, IBX, DBExpress, SQLDirect and DOA persistence back ends, and the unassigned Asta, BDEUtils, dbvalidate and Oracle-BDE code. ADO and the generic DB layer are kept.
 - **Non-Windows code (CLX and Linux):** the CLX GUI (`Source/BoldQAwareGUI`), the CLX environment (`BoldEnvironmentCLX.pas`, `BoldEnvironmentAllowBothUseCLX.pas`, and `BoldEnvironmentAllowBothUseVCL.pas`, which existed only to allow VCL and CLX together), the CLX configuration in `BoldEnvironment.pas`, and the `{$IFDEF LINUX}` branches in `BoldPerformanceCounter.pas` and `BoldUtils.pas`. The matching entries are removed from `PackageDef.txt` and `SourceDef.txt`.
-- **Rational Rose code:** `Common/Rose98`, `Common/Rose2000` and `UMLModel/ModelLinks/Rose98`, along with the Rose link in the UML data module. UML model creation and import is not replaced yet. A replacement is needed, as tracked in the drop list.
+- **Rational Rose code:** `Common/Rose98`, `Common/Rose2000` and `UMLModel/ModelLinks/Rose98`, along with the Rose link in the UML data module. The C# port replaces it with XMI import and export (`Bold.Xmi`) and the model editor (`Bold.ModelEditor`).
 - **Windows-only units with no remaining users:** `Common/SupportWin/BoldWinUtils`, `Common/Support/BoldDirectoryTraverser`, `Common/Template/BoldTemplate` and `Samples/Unicode`. Other Windows-API units stay until the code that uses them is ported; the drop list says which.
 - **COM and DCOM distribution:** 78 COM-only units and their files (84 at first; the 6 OLLE units came back, see below), including the COM object space, COM client GUI and handles, COM connection layers, the Enterprise propagator COM wrappers, and the COM handles and concurrency control. XML parsing and propagator interfaces still use some COM-era units; those stay until their replacements are built. The drop list says which.
-- **SOAP and HTTP persistence:** `Source/Persistence/SOAP`, `Source/Common/SOAP`, `Source/Persistence/HTTP` and `Source/Common/HTTP`. The HTTP transport was SOAP over HTTP, so it goes too. The XML streaming helpers used only by SOAP (`GetSOAP`/`NewSOAP`) and the SOAP/XMLRequests constants are removed. The ASP and HTTPPMapper examples, the XML dispatcher COM and IDE remnants, and the related component bitmaps are removed with them. A replacement HTTP transport on ASP.NET Core is still needed, as tracked in the drop list.
+- **SOAP and HTTP persistence:** `Source/Persistence/SOAP`, `Source/Common/SOAP`, `Source/Persistence/HTTP` and `Source/Common/HTTP`. The HTTP transport was SOAP over HTTP, so it goes too. The XML streaming helpers used only by SOAP (`GetSOAP`/`NewSOAP`) and the SOAP/XMLRequests constants are removed. The ASP and HTTPPMapper examples, the XML dispatcher COM and IDE remnants, and the related component bitmaps are removed with them. The C# port replaces it with `Bold.Remote.Server` and `Bold.Remote.Client` on ASP.NET Core.
 - **OLLE restored:** `Source/Extensions/OLLE/Core`, the Object Lending Library Extension, which lends objects between Bold databases. It was removed by mistake in the COM step, because it was taken for "OLE"; it has no COM code. Only its design-time editor (`OLLE/IDE`) stays removed.
 - **ModelMaker link and ECO III generator:** `UMLModel/ModelLinks/ModelMaker` and `UMLModel/Plugins/BoldUMLModelToEcoIIIGenerator.pas`, plus `BoldUMLDelphiSupport`, which only the ModelMaker importer used. ModelMaker integration is planned for later.
 - **Connection base classes:** `Common/Connection` and `Common/ConnectionHandles` (abstract client and server classes, with their application registry). Only the COM layer used them. The COM-blocked Enterprise propagator server (`BoldServerHandlesDataMod.pas`) still refers to `BoldServerHandles`, so it will not build until that propagator is replaced.
 - **Samples:** `Source/Samples` (example components and apps). They are kept on `master` as the reference copy.
 - **Multi-unit code generator patch:** `Source/Unassigned/patches/MultiUnitCodeGenPatch.pas`. It fixed Delphi unit placement for link classes. C# output uses one file per class, so it is not needed.
-- **All examples:** the whole `examples/` folder (CBuilder, Delphi and html). Examples are removed entirely. We will write our own examples once the main functionality is running.
+- **All examples:** the whole `examples/` folder (CBuilder, Delphi and html). The C# port has its own, in `CSharp/examples`.
 
 Not yet removed: the rest of the drop list (Delphi IDE integration). Those are tracked in the drop list and will be removed in later changes.
 

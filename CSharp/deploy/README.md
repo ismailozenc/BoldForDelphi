@@ -5,6 +5,7 @@ in containers. The user guide's Deployment section explains each; this folder ho
 
 | File | What |
 |---|---|
+| [`install.ps1`](install.ps1) | Installs Bold on a machine that has the .NET 10 SDK: packs everything into `CSharp/artifacts/packages`, makes that folder the package source `bold`, installs `bold-codegen` as a global tool and publishes the programs into `CSharp/artifacts/publish`; it removes cached packages of the same version, so a new pack is the one used. `-Uninstall` undoes it. CI runs it in Windows PowerShell and builds a new project on the installed source. |
 | [`check.sh`](check.sh) | Proves the repository deploys: packs everything into `CSharp/artifacts/packages`, installs `bold-codegen` from there, builds and runs [`PackageSmoke`](PackageSmoke) on the packages alone, publishes the programs into `CSharp/artifacts/publish` and starts the servers from there. CI runs it on Windows after the tests. |
 | [`PackageSmoke/`](PackageSmoke) | An application outside the solution that uses only the packages: the Library model, typed classes from `bold-codegen`, SQLite, OCL, transactions and a custom attribute type. |
 | [`WinFormsSmoke/`](WinFormsSmoke) | The user guide's WinForms window on the packages alone; `check.sh` starts it on Windows and checks its grid. |
@@ -15,6 +16,7 @@ in containers. The user guide's Deployment section explains each; this folder ho
 | [`systemd/`](systemd) | systemd units for both servers. |
 
 ```
+powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1     # install on this machine
 bash CSharp/deploy/check.sh                  # pack, check and publish
 dotnet pack CSharp/Bold.slnx -c Release      # only the packages
 docker build -f CSharp/deploy/docker/propagator.Dockerfile -t bold-propagator .

@@ -25,7 +25,7 @@
     <None Update="Library.bld" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <ItemGroup Condition="'$(BoldOffline)' != 'true'">
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.15" />
   </ItemGroup>
   <!-- Offline (no feed but a local one) the small native SQLite provider of the SQL tests stands in for Microsoft.Data.Sqlite. -->
   <PropertyGroup Condition="'$(BoldOffline)' == 'true'">

@@ -93,6 +93,31 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
+      # The installer a Windows user runs (CSharp/deploy/install.ps1), in Windows PowerShell as Windows has it: the
+      # packages become a package source and bold-codegen a global tool. A new project outside the repository then
+      # takes the packages from that source, as the user guide's first application does, and the tool generates classes.
+      - name: Install
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        shell: powershell
+        run: |
+          & CSharp\deploy\install.ps1 -NoBuild
+          $app = Join-Path $env:RUNNER_TEMP 'bold-installed'
+          dotnet new console -n Library -o $app
+          if ($LASTEXITCODE -ne 0) { throw 'dotnet new failed' }
+          Push-Location $app
+          dotnet add package Bold.Persistence.Sql
+          if ($LASTEXITCODE -ne 0) { throw 'Bold.Persistence.Sql was not found in the installed package source' }
+          dotnet add package Bold.WinForms
+          if ($LASTEXITCODE -ne 0) { throw 'Bold.WinForms was not found in the installed package source' }
+          Set-Content Program.cs 'using Bold; System.Console.WriteLine(typeof(TBoldSystemHandle).Assembly.GetName().Name + " " + typeof(TBoldGrid).Assembly.GetName().Name);'
+          (Get-Content Library.csproj) -replace '<TargetFramework>net10.0</TargetFramework>', '<TargetFramework>net10.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms>' | Set-Content Library.csproj
+          $said = dotnet run
+          if ($LASTEXITCODE -ne 0 -or "$said" -notmatch 'Bold.Handles Bold.WinForms') { throw "The installed packages did not run: $said" }
+          Pop-Location
+          & "$env:USERPROFILE\.dotnet\tools\bold-codegen.exe" CSharp\deploy\PackageSmoke\Library.bld --out (Join-Path $env:RUNNER_TEMP 'bold-generated') --quiet
+          if ($LASTEXITCODE -ne 0 -or -not (Test-Path (Join-Path $env:RUNNER_TEMP 'bold-generated\Book.g.cs'))) { throw 'The installed bold-codegen did not generate the classes' }
+          Write-Host 'ok   installed: the package source, a project on it, and bold-codegen'
+
       - name: Check port links
         if: ${{ !cancelled() }}
         run: dotnet run --project CSharp/tools/Bold.PortTool --configuration Release --no-build -- check --results CSharp/TestResults

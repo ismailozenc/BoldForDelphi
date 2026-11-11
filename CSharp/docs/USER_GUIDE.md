@@ -44,9 +44,14 @@ You need the .NET 10 SDK and the Bold packages, which you build from the reposit
 **Get the packages**
 
 1. Clone the repository and check out the `CSharp` branch.
-2. Run `bash CSharp/deploy/check.sh`. It packs every library, the attribute generator and the `bold-codegen` tool into `CSharp/artifacts/packages`, then proves them by building a small application on them alone. On Linux it skips the Windows-only packages.
-3. Or take the `packages` artifact of a CI run of the branch; each run keeps it for 14 days.
-4. Make the folder a package source: `dotnet nuget add source /path/to/packages --name bold`.
+2. Run the installer. On Windows: `powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1`; with PowerShell 7, on Windows or Linux: `pwsh CSharp/deploy/install.ps1`. It packs every library, the attribute generator and the `bold-codegen` tool into `CSharp/artifacts/packages`, makes that folder the package source `bold`, installs `bold-codegen` as a global tool, and publishes the model editor and the servers into `CSharp/artifacts/publish`. On Linux it skips what needs Windows. Run it again after you pull a new revision; `-Uninstall` takes the source and the tool away again.
+3. That is all: `dotnet add package Bold.Persistence.Sql` now works in any project on the machine.
+
+Other ways to the packages:
+
+- `bash CSharp/deploy/check.sh` packs them and proves them by building a small application on them alone, but installs nothing. CI runs it.
+- The `packages` artifact of a CI run of the branch has them; each run keeps it for 14 days.
+- Either way, make the folder a package source yourself: `dotnet nuget add source /path/to/packages --name bold`.
 
 To pack without the checks, run `dotnet pack CSharp/Bold.slnx -c Release`. Add `-p:Version=1.2.0` to stamp your own version; the default is 1.0.0.
 
@@ -65,13 +70,17 @@ Each package brings the ones it depends on, so an application names only the top
 | The propagator or remote persistence inside your own ASP.NET Core host | `Bold.Propagator.Server`, `Bold.Remote.Server` |
 | Custom attribute types | `Bold.SourceGenerators` |
 | XMI import and export, code generation at run time, object lending | `Bold.Xmi`, `Bold.CodeGen`, `Bold.Olle` |
-| Typed classes from a model | the `bold-codegen` tool: `dotnet tool install --global bold-codegen --add-source /path/to/packages` |
+| Typed classes from a model | the `bold-codegen` tool, which the installer installs; by hand: `dotnet tool install --global bold-codegen --add-source /path/to/packages` |
 
 The packages also bring Delphi Bold's type names, such as `TBoldRepresentation` for `int`, compiled into your project. Set `<BoldAliases>false</BoldAliases>` in your project file to leave them out.
 
 **Build from source**
 
-`dotnet build CSharp/Bold.slnx` builds everything, and `dotnet test CSharp/Bold.slnx` runs about 1,700 tests. `CSharp/examples` holds the Buildings and Owners application and the custom attribute example; `CSharp/README.md` maps the projects.
+`dotnet build CSharp/Bold.slnx` builds everything, and `dotnet test CSharp/Bold.slnx` runs about 1,700 tests. `CSharp/examples` holds the Library examples of the [tutorials](TUTORIALS.md), the Buildings and Owners application and the custom attribute example; `CSharp/README.md` maps the projects.
+
+**Learn by running**
+
+The [tutorials](TUTORIALS.md) build nine small programs on one model, a lending library: a first system, typed classes, business rules, a WinForms desk, desks over the network, model evolution, XMI, custom attribute types and object lending. Each runs with one command, and a test runs each of them.
 
 ## A first application
 

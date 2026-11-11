@@ -17,7 +17,7 @@
   <ItemGroup>
     <PackageReference Include="Bold.WinForms" Version="$(BoldVersion)" />
     <PackageReference Include="Bold.Persistence.Sql" Version="$(BoldVersion)" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.15" />
   </ItemGroup>
   <ItemGroup>
     <None Include="../PackageSmoke/Library.bld" Link="Library.bld" CopyToOutputDirectory="PreserveNewest" />
