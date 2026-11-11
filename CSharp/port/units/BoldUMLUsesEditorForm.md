@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | 🟢 ported: 9 of 9 symbols done, 0 verified |
+| Status | 🟢 ported: 9 of 9 symbols done, 4 verified |
 
-🟢 8 ported · 🔵 1 replaced
+✅ 4 verified · 🟢 4 ported · 🔵 1 replaced
 
 ## Unit level
 
@@ -27,13 +27,13 @@ class at [line 23](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L23
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `btnCancelClick` | method | [37](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L37) · [body 60](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L60) | [`TfrmUsesEditor.btnCancelClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L64) | 🟢 ported | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
-| `FormClose` | method | [38](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L38) · [body 65](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L65) | [`TfrmUsesEditor.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L67) | 🟢 ported: WinForms frees a closed modeless form. | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
-| `btnOKClick` | method | [39](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L39) · [body 71](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L71) | [`TfrmUsesEditor.btnOKClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L73) | 🟢 ported | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+| `btnCancelClick` | method | [37](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L37) · [body 60](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L60) | [`TfrmUsesEditor.btnCancelClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L64) | ✅ verified | ✔ [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+| `FormClose` | method | [38](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L38) · [body 65](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L65) | [`TfrmUsesEditor.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L67) | ✅ verified: WinForms frees a closed modeless form. | ✔ [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+| `btnOKClick` | method | [39](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L39) · [body 71](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L71) | [`TfrmUsesEditor.btnOKClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L73) | ✅ verified | ✔ [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
 | `mnuCutClick` | method | [40](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L40) · [body 87](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L87) | [`TfrmUsesEditor.mnuCutClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L80) | 🟢 ported |  |
 | `mnuCopyClick` | method | [41](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L41) · [body 93](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L93) | [`TfrmUsesEditor.mnuCopyClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L83) | 🟢 ported |  |
 | `mnuPasteClick` | method | [42](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L42) · [body 99](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L99) | [`TfrmUsesEditor.mnuPasteClick`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L86) | 🟢 ported |  |
-| `CreateEditorWithParams` | constructor | [47](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L47) · [body 77](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L77) | [`TfrmUsesEditor.TfrmUsesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L30) | 🟢 ported: Takes the element and the tag of the value to edit; Show it after. | [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
+| `CreateEditorWithParams` | constructor | [47](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L47) · [body 77](../../../Source/UMLModel/Editor/BoldUMLUsesEditorForm.pas#L77) | [`TfrmUsesEditor.TfrmUsesEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldUMLUsesEditorForm.cs#L30) | ✅ verified: Takes the element and the tag of the value to edit; Show it after. | ✔ [`BoldUMLUsesEditorFormTests.The_uses_editor_writes_the_units_back`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldUMLUsesEditorFormTests.cs#L14) |
 
 ## C# additions
 

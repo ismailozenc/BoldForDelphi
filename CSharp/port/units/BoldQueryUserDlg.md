@@ -8,10 +8,10 @@
 | C# | [`CSharp/src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | 🟢 ported: 8 of 8 symbols done, 0 verified |
+| Status | ✅ verified: 8 of 8 symbols done, 8 verified |
 | Note | Bold.Core gets a callback interface; Bold.WinForms supplies the dialog. |
 
-🟢 8 ported
+✅ 8 verified
 
 ## Unit level
 
@@ -19,21 +19,21 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldQueryResult` | enum | [16](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L16) | [`[assembly: Delphi] in BoldQueryUserDlg.cs`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L7) | 🟢 ported: Declared in Bold.Persistence.Sql (BoldPSDescriptionsSQL.cs), so that the persistence layer can ask without WinForms. | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
-| `TfrmBoldQueryUser` | class | [17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17) | [`TfrmBoldQueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L13) | 🟢 ported: The form's layout is that of the Delphi form file. | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
-| `QueryUser` | routine | [35](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L35) · [body 46](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L46) | [`BoldQueryUserDlg.QueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L67) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `TBoldQueryResult` | enum | [16](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L16) | [`[assembly: Delphi] in BoldQueryUserDlg.cs`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L7) | ✅ verified: Declared in Bold.Persistence.Sql (BoldPSDescriptionsSQL.cs), so that the persistence layer can ask without WinForms. | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `TfrmBoldQueryUser` | class | [17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17) | [`TfrmBoldQueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L13) | ✅ verified: The form's layout is that of the Delphi form file. | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `QueryUser` | routine | [35](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L35) · [body 46](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L46) | [`BoldQueryUserDlg.QueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L67) | ✅ verified | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
 
 ## TfrmBoldQueryUser
 
-class at [line 17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17); 🟢 ported, C# [`TfrmBoldQueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L13).
+class at [line 17](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L17); ✅ verified, C# [`TfrmBoldQueryUser`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L13).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `cmdYesAllClick` | method | [23](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L23) · [body 63](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L63) | [`TfrmBoldQueryUser.cmdYesAllClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L46) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
-| `cmdYesClick` | method | [24](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L24) · [body 68](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L68) | [`TfrmBoldQueryUser.cmdYesClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L49) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
-| `cmdNoClick` | method | [25](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L25) · [body 73](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L73) | [`TfrmBoldQueryUser.cmdNoClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L52) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
-| `cmdNoAllClick` | method | [26](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L26) · [body 78](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L78) | [`TfrmBoldQueryUser.cmdNoAllClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L55) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
-| `QueryResult` | property | [32](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L32) | [`TfrmBoldQueryUser.QueryResult`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L59) | 🟢 ported | [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `cmdYesAllClick` | method | [23](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L23) · [body 63](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L63) | [`TfrmBoldQueryUser.cmdYesAllClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L46) | ✅ verified | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `cmdYesClick` | method | [24](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L24) · [body 68](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L68) | [`TfrmBoldQueryUser.cmdYesClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L49) | ✅ verified | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `cmdNoClick` | method | [25](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L25) · [body 73](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L73) | [`TfrmBoldQueryUser.cmdNoClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L52) | ✅ verified | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `cmdNoAllClick` | method | [26](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L26) · [body 78](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L78) | [`TfrmBoldQueryUser.cmdNoAllClick`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L55) | ✅ verified | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
+| `QueryResult` | property | [32](../../../Source/Common/UtilsGUI/BoldQueryUserDlg.pas#L32) | [`TfrmBoldQueryUser.QueryResult`](../../src/Bold.WinForms/Common/UtilsGUI/BoldQueryUserDlg.cs#L59) | ✅ verified | ✔ [`BoldQueryUserDlgTests.The_dialog_gives_the_button_pressed`](../../tests/Bold.WinForms.Tests/Common/UtilsGUI/BoldQueryUserDlgTests.cs#L35) |
 
 ## C# additions
 

@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs) |
 | Project | Bold.ModelEditor |
 | Milestone | M12 Model editor |
-| Status | 🟢 ported: 3 of 3 symbols done, 0 verified |
+| Status | 🟢 ported: 3 of 3 symbols done, 2 verified |
 
-🟢 3 ported
+✅ 2 verified · 🟢 1 ported
 
 ## Unit level
 
@@ -19,7 +19,7 @@ Types, routines, constants, variables and the initialization and finalization se
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
 | `TfrmBoldDerivationExpressionsEditor` | class | [18](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L18) | [`TfrmBoldDerivationExpressionsEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs#L11) | 🟢 ported: Built in code; the memo edits the tagged value's value, written back when the form closes. |  |
-| `ShowDerivationExpressionsEditor` | routine | [31](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L31) · [body 43](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L43) | [`TfrmBoldDerivationExpressionsEditor.ShowDerivationExpressionsEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs#L43) | 🟢 ported | [`BoldDerivationExpressionsEditorTests.The_derivation_expressions_editor_writes_its_text_when_it_closes`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldDerivationExpressionsEditorTests.cs#L14) |
+| `ShowDerivationExpressionsEditor` | routine | [31](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L31) · [body 43](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L43) | [`TfrmBoldDerivationExpressionsEditor.ShowDerivationExpressionsEditor`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs#L43) | ✅ verified | ✔ [`BoldDerivationExpressionsEditorTests.The_derivation_expressions_editor_writes_its_text_when_it_closes`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldDerivationExpressionsEditorTests.cs#L14) |
 
 ## TfrmBoldDerivationExpressionsEditor
 
@@ -27,7 +27,7 @@ class at [line 18](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEdit
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `FormClose` | method | [24](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L24) · [body 50](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L50) | [`TfrmBoldDerivationExpressionsEditor.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs#L39) | 🟢 ported: Writes the memo to the tagged value, as Delphi's Bold-aware memo did; WinForms frees the form. | [`BoldDerivationExpressionsEditorTests.The_derivation_expressions_editor_writes_its_text_when_it_closes`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldDerivationExpressionsEditorTests.cs#L14) |
+| `FormClose` | method | [24](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L24) · [body 50](../../../Source/UMLModel/Editor/BoldDerivationExpressionsEditor.pas#L50) | [`TfrmBoldDerivationExpressionsEditor.FormClose`](../../src/Bold.ModelEditor/UMLModel/Editor/BoldDerivationExpressionsEditor.cs#L39) | ✅ verified: Writes the memo to the tagged value, as Delphi's Bold-aware memo did; WinForms frees the form. | ✔ [`BoldDerivationExpressionsEditorTests.The_derivation_expressions_editor_writes_its_text_when_it_closes`](../../tests/Bold.ModelEditor.Tests/UMLModel/Editor/BoldDerivationExpressionsEditorTests.cs#L14) |
 
 ## C# additions
 

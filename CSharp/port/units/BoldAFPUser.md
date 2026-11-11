@@ -8,9 +8,9 @@
 | C# | [`CSharp/src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs) |
 | Project | Bold.WinForms |
 | Milestone | M8 WinForms |
-| Status | 🟢 ported: 4 of 4 symbols done, 0 verified |
+| Status | ✅ verified: 4 of 4 symbols done, 4 verified |
 
-🟢 4 ported
+✅ 4 verified
 
 ## Unit level
 
@@ -18,17 +18,17 @@ Types, routines, constants, variables and the initialization and finalization se
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `TBoldUserFormProvider` | class | [14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14) | [`TBoldUserFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L10) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
+| `TBoldUserFormProvider` | class | [14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14) | [`TBoldUserFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L10) | ✅ verified | ✔ [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
 
 ## TBoldUserFormProvider
 
-class at [line 14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14); 🟢 ported, C# [`TBoldUserFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L10).
+class at [line 14](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L14); ✅ verified, C# [`TBoldUserFormProvider`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L10).
 
 | Delphi | Kind | Lines | C# | Status | Tests |
 |---|---|---|---|---|---|
-| `GetForm` | method, protected | [18](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L18) · [body 26](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L26) | [`TBoldUserFormProvider.GetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L20) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
-| `SetForm` | method, protected | [19](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L19) · [body 31](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L31) | [`TBoldUserFormProvider.SetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L23) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
-| `EnsureComponents` | method, protected | [20](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L20) · [body 36](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L36) | [`TBoldUserFormProvider.EnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L26) | 🟢 ported | [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
+| `GetForm` | method, protected | [18](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L18) · [body 26](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L26) | [`TBoldUserFormProvider.GetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L20) | ✅ verified | ✔ [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
+| `SetForm` | method, protected | [19](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L19) · [body 31](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L31) | [`TBoldUserFormProvider.SetForm`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L23) | ✅ verified | ✔ [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
+| `EnsureComponents` | method, protected | [20](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L20) · [body 36](../../../Source/BoldAwareGUI/FormGen/BoldAFPUser.pas#L36) | [`TBoldUserFormProvider.EnsureComponents`](../../src/Bold.WinForms/BoldAwareGUI/FormGen/BoldAFPUser.cs#L26) | ✅ verified | ✔ [`BoldAFPDefaultTests.An_object_form_has_a_tab_of_attributes_and_single_roles_a_history_tab_and_a_tab_per_multi_role`](../../tests/Bold.WinForms.Tests/BoldAwareGUI/FormGen/BoldAFPDefaultTests.cs#L58) |
 
 ## C# additions
 
