@@ -710,6 +710,8 @@ COM and DCOM distribution (the COM object space and type libraries), CLX and Kyl
 
 **Finding a Delphi name**
 
+The port browser shows both code bases side by side: `dotnet run --project CSharp/tools/Bold.PortBrowser` on Windows, or **Tools > Bold > Port Browser** in Visual Studio. Select a Delphi unit, type or member and it shows the C# code that ports it, with its status and tests; for what was dropped or replaced it says why. It works from the C# side too.
+
 Search the C# sources for the Delphi name; it is the same. Every C# file starts with the path of the Delphi unit it ports, every ported element carries a `[Delphi(PortStatus...)]` attribute, and `CSharp/port/units/<Unit>.md` lists each symbol of a unit with links to its Delphi line, its C# code and its tests. All 383 units planned for the port are ported; CI's port status shows how many of their symbols tests cover (66% today).
 
 ## Troubleshooting

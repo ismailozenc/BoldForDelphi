@@ -11,14 +11,16 @@ programs.
 | **Tools > Bold > Model Editor** | Opens the Bold model editor, on the selected model when a `.bld` file is selected. |
 | **Tools > Bold > Generate Classes from Model...** | Runs `bold-codegen` on the selected model, or on one you pick; the classes are written next to the model, and what the generator says shows in the Output window's **Bold** pane. |
 | **Tools > Bold > Propagator Analyzer** | Starts the propagator analyzer. |
+| **Tools > Bold > Port Browser** | Opens the [port browser](../tools/Bold.PortBrowser/README.md) on the repository of the open solution: the Delphi source and the C# port side by side, linked both ways. |
+| **Show Delphi Counterpart**, in the code editor's right-click menu and on a `.cs` or `.pas` file in Solution Explorer | Opens the port browser at that file and the line of the cursor, with the counterpart beside it. |
 | **Tools > Bold > User Guide**, **Tutorials** | Open the pages in Visual Studio. |
 | A double click on a `.bld` file | Opens the model in the model editor. **Open With...** still offers Visual Studio's text editor. |
 | Right click on a `.bld` file in Solution Explorer | **Open in Bold Model Editor** and **Generate Bold Classes**. |
 | The WinForms designer's toolbox and component tray | Bold's controls and handles show with the pictures of Delphi's component palette. This comes with the `Bold.WinForms` and `Bold.Handles` packages, not with the extension. |
 
 The commands are also in Visual Studio's command window and keyboard options, as `Bold.ModelEditor`,
-`Bold.GenerateClasses`, `Bold.PropagatorAnalyzer`, `Bold.UserGuide`, `Bold.Tutorials`, `Bold.OpenModel` and
-`Bold.GenerateClassesOfModel`.
+`Bold.GenerateClasses`, `Bold.PropagatorAnalyzer`, `Bold.PortBrowser`, `Bold.UserGuide`, `Bold.Tutorials`,
+`Bold.OpenModel`, `Bold.GenerateClassesOfModel`, `Bold.ShowCounterpart` and `Bold.ShowCounterpartOfFile`.
 
 The model editor opens as a window of its own, started by Visual Studio. It cannot be a tab inside Visual Studio: it is
 a .NET 10 WinForms program, and Visual Studio itself runs on .NET Framework.
@@ -66,6 +68,7 @@ launcher is tested, but the VSIX build and the menus have to be checked in Visua
 2. In Visual Studio, **Tools > Bold** is there, and **Model Editor** opens the editor.
 3. In a project with a `.bld` file: a double click opens the model in the editor, and the right-click menu has the two Bold commands, on `.bld` files only.
 4. **Generate Bold Classes** writes the `.g.cs` files next to the model, and the Output window's Bold pane shows the generator's lines.
-5. In a WinForms project that references `Bold.WinForms`, the toolbox lists the Bold controls with their pictures.
+5. With `CSharp\Bold.slnx` open: **Tools > Bold > Port Browser** opens the browser on the repository, and **Show Delphi Counterpart** in a `.cs` file's right-click menu opens it at that line.
+6. In a WinForms project that references `Bold.WinForms`, the toolbox lists the Bold controls with their pictures.
 
 If the build fails, `CSharp\artifacts\vsix\logs\vsix.log` has MSBuild's output.

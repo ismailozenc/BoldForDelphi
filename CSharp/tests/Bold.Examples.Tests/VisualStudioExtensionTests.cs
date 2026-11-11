@@ -84,6 +84,18 @@ public class VisualStudioExtensionTests
         Assert.That(BoldTools.Quote(arguments), Is.EqualTo(line));
 
     [Test]
+    public void The_port_browser_is_started_at_the_file_and_line()
+    {
+        Assert.That(BoldTools.PortBrowserArguments(@"C:\Bold", null, 0), Is.EqualTo(new[] { @"C:\Bold" }));
+        Assert.That(BoldTools.PortBrowserArguments(null, @"C:\Bold\CSharp\src\Bold.Core\Common\Core\BoldDefs.cs", 42),
+            Is.EqualTo(new[] { "--open", @"C:\Bold\CSharp\src\Bold.Core\Common\Core\BoldDefs.cs", "--line", "42" }));
+        Assert.That(BoldTools.PortBrowserArguments(null, "BoldDefs.pas", 0), Is.EqualTo(new[] { "--open", "BoldDefs.pas" }));
+        Assert.That(BoldTools.PortBrowserArguments(null, null, 7), Is.Empty);
+        Assert.That(BoldTools.IsSource("A.CS") && BoldTools.IsSource(@"x\BoldDefs.pas"), Is.True);
+        Assert.That(BoldTools.IsSource("Library.bld") || BoldTools.IsSource(null), Is.False);
+    }
+
+    [Test]
     public void A_program_that_is_not_there_is_named()
     {
         string? before = Environment.GetEnvironmentVariable("BOLD_TOOLS");
@@ -111,11 +123,13 @@ public class VisualStudioExtensionTests
         Assert.That(Guid("guidBoldPackage"), Is.EqualTo(Constant("Package")));
         Assert.That(Guid("guidBoldCmdSet"), Is.EqualTo(Constant("CommandSet")));
         Assert.That(Guid("guidBldSelected"), Is.EqualTo(Constant("BldSelected")));
+        Assert.That(Guid("guidSourceSelected"), Is.EqualTo(Constant("SourceSelected")));
         var commands = new Dictionary<string, string>
         {
             ["cmdModelEditor"] = "ModelEditor", ["cmdGenerateClasses"] = "GenerateClasses", ["cmdPropagatorAnalyzer"] = "PropagatorAnalyzer",
             ["cmdUserGuide"] = "UserGuide", ["cmdTutorials"] = "Tutorials", ["cmdOpenModel"] = "OpenModel",
-            ["cmdGenerateClassesOfModel"] = "GenerateClassesOfModel",
+            ["cmdGenerateClassesOfModel"] = "GenerateClassesOfModel", ["cmdPortBrowser"] = "PortBrowser",
+            ["cmdShowCounterpart"] = "ShowCounterpart", ["cmdShowCounterpartOfFile"] = "ShowCounterpartOfFile",
         };
         foreach ((string symbol, string constant) in commands)
         {

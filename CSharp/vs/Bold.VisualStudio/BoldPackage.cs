@@ -13,8 +13,8 @@ using Task = System.Threading.Tasks.Task;
 namespace Bold.VisualStudio;
 
 /// <summary>
-/// The Bold package. Its menus are in BoldPackage.vsct: Tools > Bold, and two commands on a model file in Solution
-/// Explorer. Each command starts one of Bold's programs from the extension's tools folder (BoldTools); the command line
+/// The Bold package. Its menus are in BoldPackage.vsct: Tools > Bold, two commands on a model file in Solution
+/// Explorer, and "Show Delphi Counterpart" in the code editor and on a source file. Each command starts one of Bold's programs from the extension's tools folder (BoldTools); the command line
 /// tools stay as they are.
 /// </summary>
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
@@ -25,6 +25,8 @@ namespace Bold.VisualStudio;
 [ProvideEditorExtension(typeof(BldEditorFactory), BoldTools.ModelExtension, 50)]
 [ProvideUIContextRule(PackageIds.BldSelected, name: "A Bold model is selected", expression: "bld",
     termNames: new[] { "bld" }, termValues: new[] { "HierSingleSelectionName:.bld$" })]
+[ProvideUIContextRule(PackageIds.SourceSelected, name: "A source file is selected", expression: "source",
+    termNames: new[] { "source" }, termValues: new[] { "HierSingleSelectionName:.(cs|pas)$" })]
 public sealed class BoldPackage : AsyncPackage
 {
     private static readonly Guid OutputPane = new("8c5f3a1d-7e2b-4d6c-9a0f-1b2c3d4e5f85");
@@ -40,6 +42,9 @@ public sealed class BoldPackage : AsyncPackage
             Add(commands, PackageIds.PropagatorAnalyzer, () => Run(() => BoldTools.OpenPropagatorAnalyzer()));
             Add(commands, PackageIds.GenerateClasses, () => GenerateClasses(SelectedModel() ?? AskForModel()));
             Add(commands, PackageIds.GenerateClassesOfModel, () => GenerateClasses(SelectedModel()));
+            Add(commands, PackageIds.PortBrowser, () => Run(() => BoldTools.OpenPortBrowser(SolutionFolder())));
+            Add(commands, PackageIds.ShowCounterpart, ShowCounterpartOfDocument);
+            Add(commands, PackageIds.ShowCounterpartOfFile, () => ShowCounterpart(SelectedFile(BoldTools.IsSource), 0));
             Add(commands, PackageIds.UserGuide, () => OpenPage(BoldTools.UserGuide));
             Add(commands, PackageIds.Tutorials, () => OpenPage(BoldTools.Tutorials));
         }
@@ -73,6 +78,70 @@ public sealed class BoldPackage : AsyncPackage
     private static string? SelectedModel()
     {
         ThreadHelper.ThrowIfNotOnUIThread();
+        return SelectedFile(BoldTools.IsModel);
+    }
+
+    /// <summary>The folder of the open solution, where the port browser looks for the repository; null without a solution.</summary>
+    private static string? SolutionFolder()
+    {
+        ThreadHelper.ThrowIfNotOnUIThread();
+        if (GetGlobalService(typeof(SDTE)) is EnvDTE.DTE dte)
+        {
+            try
+            {
+                string? solution = dte.Solution?.FullName;
+                return string.IsNullOrEmpty(solution) ? null : Path.GetDirectoryName(solution);
+            }
+            catch (COMException)
+            {
+                // no solution
+            }
+        }
+
+        return null;
+    }
+
+    /// <summary>The port browser at the file and line of the cursor in the active document, with its counterpart beside it.</summary>
+    private static void ShowCounterpartOfDocument()
+    {
+        ThreadHelper.ThrowIfNotOnUIThread();
+        string? file = null;
+        int line = 0;
+        if (GetGlobalService(typeof(SDTE)) is EnvDTE.DTE dte)
+        {
+            try
+            {
+                file = dte.ActiveDocument?.FullName;
+                if (dte.ActiveDocument?.Selection is EnvDTE.TextSelection selection)
+                {
+                    line = selection.CurrentLine;
+                }
+            }
+            catch (Exception e) when (e is COMException or ArgumentException)
+            {
+                // no active document that has a file
+            }
+        }
+
+        ShowCounterpart(file, line);
+    }
+
+    private static void ShowCounterpart(string? file, int line)
+    {
+        ThreadHelper.ThrowIfNotOnUIThread();
+        if (!BoldTools.IsSource(file))
+        {
+            ShowError("The port browser shows the counterpart of a C# file (.cs) of the port or of a Delphi unit (.pas).");
+            return;
+        }
+
+        Run(() => BoldTools.OpenPortBrowser(null, file, line));
+    }
+
+    /// <summary>The file that is selected in Solution Explorer, or else the one in the active document window, when it is one of the wanted kind; null otherwise.</summary>
+    private static string? SelectedFile(Func<string?, bool> wanted)
+    {
+        ThreadHelper.ThrowIfNotOnUIThread();
         if (GetGlobalService(typeof(SVsShellMonitorSelection)) is IVsMonitorSelection selection &&
             ErrorHandler.Succeeded(selection.GetCurrentSelection(out IntPtr hierarchyPointer, out uint item, out _, out IntPtr containerPointer)))
         {
@@ -80,7 +149,7 @@ public sealed class BoldPackage : AsyncPackage
             {
                 if (hierarchyPointer != IntPtr.Zero && item != VSConstants.VSITEMID_NIL && item != VSConstants.VSITEMID_SELECTION &&
                     item != VSConstants.VSITEMID_ROOT && Marshal.GetObjectForIUnknown(hierarchyPointer) is IVsHierarchy hierarchy &&
-                    ErrorHandler.Succeeded(hierarchy.GetCanonicalName(item, out string name)) && BoldTools.IsModel(name) && File.Exists(name))
+                    ErrorHandler.Succeeded(hierarchy.GetCanonicalName(item, out string name)) && wanted(name) && File.Exists(name))
                 {
                     return name;
                 }
@@ -104,7 +173,7 @@ public sealed class BoldPackage : AsyncPackage
             try
             {
                 string? document = dte.ActiveDocument?.FullName;
-                if (BoldTools.IsModel(document) && File.Exists(document))
+                if (wanted(document) && File.Exists(document))
                 {
                     return document;
                 }

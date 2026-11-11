@@ -4,5 +4,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../../tools/Bold.PortTool/Bold.PortTool.csproj" />
+    <ProjectReference Include="../../tools/Bold.PortBrowser.Core/Bold.PortBrowser.Core.csproj" />
   </ItemGroup>
 </Project>

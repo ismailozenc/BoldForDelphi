@@ -137,7 +137,7 @@ jobs:
           if ($pkgdef) { $reader = New-Object IO.StreamReader($pkgdef.Open()); $registration = $reader.ReadToEnd(); $reader.Dispose() }
           $zip.Dispose()
           Write-Host "$($names.Count) files in the VSIX"
-          foreach ($needed in 'extension.vsixmanifest', 'Bold.VisualStudio.dll', 'Bold.VisualStudio.pkgdef', 'tools/model-editor/Bold.ModelEditor.exe', 'tools/propagator-analyzer/Bold.PropagatorAnalyzer.exe', 'tools/codegen/bold-codegen.dll', 'tools/docs/TUTORIALS.md') {
+          foreach ($needed in 'extension.vsixmanifest', 'Bold.VisualStudio.dll', 'Bold.VisualStudio.pkgdef', 'tools/model-editor/Bold.ModelEditor.exe', 'tools/propagator-analyzer/Bold.PropagatorAnalyzer.exe', 'tools/port-browser/Bold.PortBrowser.exe', 'tools/codegen/bold-codegen.dll', 'tools/docs/TUTORIALS.md') {
             if ($names -notcontains $needed) { $names | Select-Object -First 40 | Write-Host; throw "The VSIX has no $needed" }
           }
           Write-Host $registration

@@ -33,6 +33,8 @@ public static class BoldTools
 
     public static string PropagatorAnalyzer => Path.Combine(Folder, "propagator-analyzer", "Bold.PropagatorAnalyzer.exe");
 
+    public static string PortBrowser => Path.Combine(Folder, "port-browser", "Bold.PortBrowser.exe");
+
     /// <summary>bold-codegen, as the library "dotnet" runs.</summary>
     public static string CodeGenerator => Path.Combine(Folder, "codegen", "bold-codegen.dll");
 
@@ -49,6 +51,43 @@ public static class BoldTools
         Start(ModelEditor, model is null ? Array.Empty<string>() : new[] { model }, model is null ? null : Path.GetDirectoryName(model));
 
     public static Process OpenPropagatorAnalyzer() => Start(PropagatorAnalyzer, Array.Empty<string>(), null);
+
+    /// <summary>Whether the file is Delphi or C# source, which the port browser shows with its counterpart.</summary>
+    public static bool IsSource(string? file)
+    {
+        string extension = string.IsNullOrEmpty(file) ? "" : Path.GetExtension(file);
+        return string.Equals(extension, ".cs", StringComparison.OrdinalIgnoreCase) || string.Equals(extension, ".pas", StringComparison.OrdinalIgnoreCase);
+    }
+
+    /// <summary>
+    /// The port browser's arguments: the repository (a folder in it will do; the browser finds it from the file when
+    /// none is given), and the file and line to start at.
+    /// </summary>
+    public static IReadOnlyList<string> PortBrowserArguments(string? repository, string? file, int line)
+    {
+        var arguments = new List<string>();
+        if (!string.IsNullOrEmpty(repository))
+        {
+            arguments.Add(repository!);
+        }
+
+        if (!string.IsNullOrEmpty(file))
+        {
+            arguments.Add("--open");
+            arguments.Add(file!);
+            if (line > 0)
+            {
+                arguments.Add("--line");
+                arguments.Add(line.ToString(System.Globalization.CultureInfo.InvariantCulture));
+            }
+        }
+
+        return arguments;
+    }
+
+    /// <summary>Starts the port browser, at the file and the line when they are given.</summary>
+    public static Process OpenPortBrowser(string? repository, string? file = null, int line = 0) =>
+        Start(PortBrowser, PortBrowserArguments(repository, file, line), null);
 
     /// <summary>The folder bold-codegen writes a model's classes to: the model's own.</summary>
     public static string ClassesFolder(string model) => Path.GetDirectoryName(Path.GetFullPath(model)) ?? ".";
