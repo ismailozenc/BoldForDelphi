@@ -129,6 +129,24 @@ public class BoldGridTests
     }
 
     [Test]
+    public void A_grid_shown_with_its_list_keeps_the_handles_current_element()
+    {
+        // The grid has its handle before its window shows, as on a form built in code. A DataGridView takes its first
+        // current cell when it shows, while the grid still has its empty row: that is no click on a row.
+        var grid = new TBoldGrid { BoldHandle = People };
+        grid.Columns[1].BoldProperties.Expression = "firstName";
+        Assert.That(People.CurrentIndex, Is.EqualTo(0));
+        using var form = new TestForm(grid);
+        Assert.That(People.CurrentIndex, Is.EqualTo(0), "showing the grid leaves the current element");
+        Assert.That(People.CurrentBoldObject, Is.SameAs(Person(0)), "and so what handles rooted in it follow");
+        GuiSample.Display();
+        Assert.That(grid.HasGhostRow, Is.False);
+        Assert.That(People.CurrentIndex, Is.EqualTo(0));
+        Assert.That(grid.CurrentBoldElement, Is.SameAs(Person(0)));
+        Assert.That(grid.CellText(1, 1), Is.EqualTo("Ann"));
+    }
+
+    [Test]
     public void The_current_row_follows_the_handle_and_the_handle_follows_the_current_row()
     {
         ShowNames();

@@ -2098,10 +2098,10 @@ public class TBoldCustomGrid : DataGridView, IBoldValidateableComponent
     protected bool CanEditShowForCustomEditors() => InheritedCanEditShow() && CurrentCellFollower is not null;
 
     /// <summary>The handle's current element follows the current row.</summary>
-    [Delphi(PortStatus.Ported, Symbol = "TBoldCustomGrid.Click", Note = "OnCurrentCellChanged: Delphi's grid clicked whenever the current cell moved. Not while the grid follows the list.")]
+    [Delphi(PortStatus.Ported, Symbol = "TBoldCustomGrid.Click", Note = "OnCurrentCellChanged: Delphi's grid clicked whenever the current cell moved. Not while the grid follows the list, and not on the empty row: a DataGridView takes its first current cell when it shows, before the list is displayed, and that must not clear the handle's current element.")]
     protected override void OnCurrentCellChanged(EventArgs e)
     {
-        if (fHandleFollower is not null && !fMakingListUpToDate && CurrentCell is not null)
+        if (fHandleFollower is not null && !fMakingListUpToDate && !HasGhostRow && CurrentCell is not null)
         {
             fCol = CurrentCell.ColumnIndex;
             fHandleFollower.SetFollowerIndex(DataRow(Row));

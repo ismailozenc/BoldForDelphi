@@ -533,11 +533,12 @@ public class TBoldCustomNavigator : TBoldNavigateBtnImageIndexOwner
     }
 
     /// <summary>Enables each button when its action can be done on the handle.</summary>
-    [Delphi(PortStatus.Ported)]
+    [Delphi(PortStatus.Ported, Note = "Delphi bug fixed: on a list whose elements are not objects (the auto form of an attribute list), the current element is no object to delete or move, where Delphi's CurrentBoldObject raised.")]
     protected void SetActiveButtons()
     {
         TBoldAbstractListHandle? handle = BoldHandle;
         bool EnabledAndHandle = Enabled && handle is not null;
+        TBoldObject? current = handle?.CurrentElement as TBoldObject;
         Button(TBoldNavigateBtn.nbFirst).Enabled = EnabledAndHandle && handle!.HasPrior;
         Button(TBoldNavigateBtn.nbPrior).Enabled = Button(TBoldNavigateBtn.nbFirst).Enabled;
         Button(TBoldNavigateBtn.nbNext).Enabled = EnabledAndHandle && handle!.HasNext;
@@ -545,11 +546,11 @@ public class TBoldCustomNavigator : TBoldNavigateBtnImageIndexOwner
         Button(TBoldNavigateBtn.nbInsert).Enabled = EnabledAndHandle && VisibleButtons.Contains(TBoldNavigateBtn.nbInsert) &&
             handle!.MutableList is not null && handle.MutableList.CanCreateNew;
         Button(TBoldNavigateBtn.nbDelete).Enabled = EnabledAndHandle && VisibleButtons.Contains(TBoldNavigateBtn.nbDelete) &&
-            handle!.CurrentBoldObject is not null && MapMinus(handle.CurrentBoldObject.CanDelete());
+            current is not null && MapMinus(current.CanDelete());
         Button(TBoldNavigateBtn.nbMoveUp).Enabled = EnabledAndHandle && VisibleButtons.Contains(TBoldNavigateBtn.nbMoveUp) &&
-            handle!.CurrentBoldObject is not null && handle.List!.CanMove(handle.CurrentIndex, handle.CurrentIndex - 1);
+            current is not null && handle!.List!.CanMove(handle.CurrentIndex, handle.CurrentIndex - 1);
         Button(TBoldNavigateBtn.nbMoveDown).Enabled = EnabledAndHandle && VisibleButtons.Contains(TBoldNavigateBtn.nbMoveDown) &&
-            handle!.CurrentBoldObject is not null && handle.List!.CanMove(handle.CurrentIndex, handle.CurrentIndex + 1);
+            current is not null && handle!.List!.CanMove(handle.CurrentIndex, handle.CurrentIndex + 1);
     }
 
     private TBoldNavButton Button(TBoldNavigateBtn button) => Buttons[(int)button];

@@ -390,6 +390,9 @@ public class BoldAFPDefaultTests
         TBoldElement names = s.System.EvaluateExpressionAsNewElement("Person.allInstances.firstName")!;
         Form namesForm = ShowOffScreen(FormFor(names));
         Assert.That(Find<TBoldGrid>(namesForm, "BoldGrid").RowCount, Is.EqualTo(2));
+        TBoldNavigator namesNavigator = Find<TBoldNavigator>(namesForm, "BoldNavigator");
+        Assert.That(namesNavigator.BoldHandle!.CurrentIndex, Is.EqualTo(0), "the first name is current");
+        Assert.That(namesNavigator.BoldHandle.CurrentElement, Is.Not.InstanceOf<TBoldObject>(), "a value, which the navigator can neither delete nor move");
 
         Form systemForm = ShowOffScreen(FormFor(s.System));
         Assert.That(systemForm.Text, Is.EqualTo(s.System.BoldType!.ModelName));
