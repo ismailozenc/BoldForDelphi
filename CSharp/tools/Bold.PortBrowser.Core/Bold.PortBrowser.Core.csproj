@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The port browser without its window: the trees of the Delphi source and of the C# port, the counterpart of a file or a symbol in both directions, what the port did with it and why, search, and the colours of the code. Built on the port tool's analysis.</Description>
+    <RootNamespace>Bold.PortBrowser</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.PortTool/Bold.PortTool.csproj" />
+    <ProjectReference Include="../../src/Bold.Porting/Bold.Porting.csproj" />
+  </ItemGroup>
+</Project>

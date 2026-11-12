@@ -13,6 +13,7 @@ To compile and install it on Windows, follow [the steps](docs/INSTALL.md). To us
 | [`port/units/`](port/units) | One page per Delphi unit: every type, method, property and constant, linked to its Delphi line, its C# code and its tests, with a status. |
 | [`port/port-map.json`](port/port-map.json) | Where each Delphi unit goes: project and milestone, or why it is not ported. |
 | [`tools/Bold.PortTool`](tools/Bold.PortTool) | Reads both code bases, writes the status pages, keeps the links in the sources current, and checks them. |
+| [`tools/Bold.PortBrowser`](tools/Bold.PortBrowser) | The port browser: the Delphi source and the C# port side by side, linked both ways, with what the port did with each file and symbol and why ([its readme](tools/Bold.PortBrowser/README.md)). |
 | [`tools/Bold.CodeGen.Tool`](tools/Bold.CodeGen.Tool) | `bold-codegen`: generates typed classes from a model, in C# (or Delphi or C++). |
 | [`deploy/`](deploy) | Deployment: [`install.ps1`](deploy/install.ps1), which installs the packages, `bold-codegen` and the programs on a machine; the package readme, the Dockerfiles and systemd units of the servers; and [`check.sh`](deploy/check.sh), which packs everything, runs an application on the packages alone and starts the published programs (CI runs both). |
 | [`vs/`](vs) | Bold for Visual Studio: an extension that puts the model editor, class generation and the tools in Visual Studio's menus and opens `.bld` files in the model editor ([`vs/README.md`](vs/README.md)). |
@@ -262,11 +263,14 @@ Bold.ModelEditor.exe Model.bld
 | `Bold.Propagator.Server` | The propagator and lock manager, with their SignalR hub at `/propagator`. |
 | `Bold.Remote.Server` | Remote persistence at `/persistence`, with the propagator on the same host when configured. |
 | `Bold.PropagatorAnalyzer` | Reads the propagator's thread log and reports lock dependencies (Windows). |
+| `Bold.PortBrowser` | Shows the Delphi source and the C# port side by side, linked both ways (Windows). |
 | `bold-codegen` | Generates typed classes from a model. |
 | `BldOwn` | The Buildings and Owners example application (Windows). |
 
 Each has a test that starts it as a user does.
 
 ## Where things came from
+
+The [port browser](tools/Bold.PortBrowser/README.md) shows it: `dotnet run --project CSharp/tools/Bold.PortBrowser` opens the Delphi source and the C# port side by side, and a file or a symbol selected on one side is shown on the other, with its status and the reason when it was dropped or replaced.
 
 Every ported element carries a `[Delphi(PortStatus.…)]` attribute, and every C# file starts with the Delphi file it ports. In the other direction, every Delphi unit has a comment on its `unit` line naming its C# file, and every `FOLDER_INFO.md` in `Source` lists where its units went. [PORTING.md](PORTING.md) explains the details.

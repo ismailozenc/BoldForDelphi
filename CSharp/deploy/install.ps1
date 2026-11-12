@@ -5,7 +5,7 @@ Installs Bold for C# on this machine from the repository: the packages, the bold
 .DESCRIPTION
 Packs the libraries, the attribute generator and bold-codegen into CSharp/artifacts/packages, makes that folder a NuGet
 package source (so that "dotnet add package Bold.Persistence.Sql" finds the packages), installs bold-codegen as a global
-.NET tool, and publishes the programs (the model editor, the propagator analyzer and the two servers) into
+.NET tool, and publishes the programs (the model editor, the propagator analyzer, the port browser and the two servers) into
 CSharp/artifacts/publish. Packages of the same version that an earlier install left in NuGet's cache are removed, so
 that applications get the ones just packed.
 
@@ -252,7 +252,8 @@ try {
             @{ Name = 'propagator'; Project = 'src/Bold.Propagator.Server'; Program = 'Bold.Propagator.Server'; Windows = $false },
             @{ Name = 'remote'; Project = 'src/Bold.Remote.Server'; Program = 'Bold.Remote.Server'; Windows = $false },
             @{ Name = 'model-editor'; Project = 'src/Bold.ModelEditor'; Program = 'Bold.ModelEditor'; Windows = $true },
-            @{ Name = 'propagator-analyzer'; Project = 'src/Bold.PropagatorAnalyzer'; Program = 'Bold.PropagatorAnalyzer'; Windows = $true }
+            @{ Name = 'propagator-analyzer'; Project = 'src/Bold.PropagatorAnalyzer'; Program = 'Bold.PropagatorAnalyzer'; Windows = $true },
+            @{ Name = 'port-browser'; Project = 'tools/Bold.PortBrowser'; Program = 'Bold.PortBrowser'; Windows = $true }
         )
         foreach ($program in $wanted) {
             if ($program.Windows -and -not $onWindows) {

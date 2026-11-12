@@ -3,7 +3,7 @@
 Builds Bold for Visual Studio (the VSIX), and installs it into Visual Studio when asked.
 
 .DESCRIPTION
-Publishes Bold's programs (the model editor, the propagator analyzer and bold-codegen) and the user guide into
+Publishes Bold's programs (the model editor, the propagator analyzer, the port browser and bold-codegen) and the user guide into
 CSharp/artifacts/vsix/tools, builds the extension with Visual Studio's MSBuild, and leaves it as
 CSharp/artifacts/vsix/Bold.VisualStudio.vsix, with the programs inside. A double click on that file installs it too.
 
@@ -121,6 +121,7 @@ try {
     $programs = @(
         @{ Name = 'model-editor'; Project = 'src/Bold.ModelEditor'; File = 'Bold.ModelEditor.exe' },
         @{ Name = 'propagator-analyzer'; Project = 'src/Bold.PropagatorAnalyzer'; File = 'Bold.PropagatorAnalyzer.exe' },
+        @{ Name = 'port-browser'; Project = 'tools/Bold.PortBrowser'; File = 'Bold.PortBrowser.exe' },
         @{ Name = 'codegen'; Project = 'tools/Bold.CodeGen.Tool'; File = 'bold-codegen.dll' }
     )
     foreach ($program in $programs) {

@@ -99,7 +99,7 @@ powershell -ExecutionPolicy Bypass -File CSharp\deploy\install.ps1 -NoBuild
 | Packs the libraries as NuGet packages | `CSharp\artifacts\packages` |
 | Makes that folder a package source named `bold` | Your NuGet settings |
 | Installs `bold-codegen` as a global tool | `%USERPROFILE%\.dotnet\tools` |
-| Publishes the model editor, the propagator analyzer and the two servers | `CSharp\artifacts\publish` |
+| Publishes the model editor, the propagator analyzer, the port browser and the two servers | `CSharp\artifacts\publish` |
 | Makes `.bld` the model editor's file type, and installs the Visual Studio extension when Visual Studio is there | Your user settings; Visual Studio |
 
 **You should see** the line `Bold for C# 1.0.0 is installed.`
@@ -161,6 +161,16 @@ Start Visual Studio.
 3. Build the project once, then open `Form1` in the designer and open the **Toolbox**.
 
 **You should see** the Bold controls (`TBoldGrid`, `TBoldEdit`, `TBoldNavigator` and others) with their pictures. Handles such as `TBoldSystemHandle` and `TBoldListHandle` go to the tray under the form.
+
+### Step 12a. Look at the port in the port browser
+
+```powershell
+CSharp\artifacts\publish\port-browser\Bold.PortBrowser.exe
+```
+
+Or, in Visual Studio, **Tools > Bold > Port Browser**. It takes a few seconds to read both code bases.
+
+**You should see** the Delphi source in the left tree and the C# port in the right one. In the left tree open `Source\ObjectSpace\BORepresentation\BoldSystem.pas`, then `TBoldSystem`, and select `UpdateDatabase`: both code panes go to the method, the Delphi one at `procedure UpdateDatabase;` and the C# one at `public void UpdateDatabase()`. Select `Source\Common\Support\BoldGuard.pas`: the C# pane says it was replaced by `using` and the garbage collector. `CSharp\tools\Bold.PortBrowser\README.md` says what else it does.
 
 ## E. A first application
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Bold's menus in Visual Studio: a Bold submenu in the Tools menu, and two commands in Solution Explorer's menu of a
-  model file (.bld). The numbers here are the ones in PackageIds.cs.
+  Bold's menus in Visual Studio: a Bold submenu in the Tools menu, two commands in Solution Explorer's menu of a
+  model file (.bld), and "Show Delphi Counterpart" in the code editor's menu and on a source file in Solution Explorer.
+  The numbers here are the ones in PackageIds.cs.
 -->
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <Extern href="stdidcmd.h" />
@@ -28,6 +29,10 @@
       </Group>
       <Group guid="guidBoldCmdSet" id="BoldHelpGroup" priority="0x0200">
         <Parent guid="guidBoldCmdSet" id="BoldMenu" />
+      </Group>
+      <!-- In the code editor's right-click menu. -->
+      <Group guid="guidBoldCmdSet" id="BoldCodeGroup" priority="0x0700">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN" />
       </Group>
       <!-- In Solution Explorer's menu of a file. -->
       <Group guid="guidBoldCmdSet" id="BoldItemGroup" priority="0x0080">
@@ -63,6 +68,16 @@
           <CommandName>Bold Propagator Analyzer</CommandName>
           <CanonicalName>.Bold.PropagatorAnalyzer</CanonicalName>
           <LocCanonicalName>.Bold.PropagatorAnalyzer</LocCanonicalName>
+        </Strings>
+      </Button>
+      <Button guid="guidBoldCmdSet" id="cmdPortBrowser" priority="0x0130" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldToolsGroup" />
+        <Strings>
+          <ButtonText>Port &amp;Browser</ButtonText>
+          <CommandName>Bold Port Browser</CommandName>
+          <CanonicalName>.Bold.PortBrowser</CanonicalName>
+          <LocCanonicalName>.Bold.PortBrowser</LocCanonicalName>
+          <ToolTipText>Opens the port browser: the Delphi source and the C# port side by side, linked both ways</ToolTipText>
         </Strings>
       </Button>
       <Button guid="guidBoldCmdSet" id="cmdUserGuide" priority="0x0100" type="Button">
@@ -107,30 +122,60 @@
           <LocCanonicalName>.Bold.GenerateClassesOfModel</LocCanonicalName>
         </Strings>
       </Button>
+
+      <!-- The code editor: the Delphi code of what the cursor is in (or the C# code, in a .pas file). -->
+      <Button guid="guidBoldCmdSet" id="cmdShowCounterpart" priority="0x0100" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldCodeGroup" />
+        <Strings>
+          <ButtonText>Show &amp;Delphi Counterpart</ButtonText>
+          <CommandName>Bold Show Delphi Counterpart</CommandName>
+          <CanonicalName>.Bold.ShowCounterpart</CanonicalName>
+          <LocCanonicalName>.Bold.ShowCounterpart</LocCanonicalName>
+          <ToolTipText>Opens the port browser at this line, with the Delphi code it ports beside it</ToolTipText>
+        </Strings>
+      </Button>
+      <!-- Solution Explorer, on a source file (.cs or .pas). -->
+      <Button guid="guidBoldCmdSet" id="cmdShowCounterpartOfFile" priority="0x0120" type="Button">
+        <Parent guid="guidBoldCmdSet" id="BoldItemGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Show &amp;Delphi Counterpart</ButtonText>
+          <CommandName>Bold Show Delphi Counterpart of File</CommandName>
+          <CanonicalName>.Bold.ShowCounterpartOfFile</CanonicalName>
+          <LocCanonicalName>.Bold.ShowCounterpartOfFile</LocCanonicalName>
+        </Strings>
+      </Button>
     </Buttons>
   </Commands>
 
   <VisibilityConstraints>
     <VisibilityItem guid="guidBoldCmdSet" id="cmdOpenModel" context="guidBldSelected" />
     <VisibilityItem guid="guidBoldCmdSet" id="cmdGenerateClassesOfModel" context="guidBldSelected" />
+    <VisibilityItem guid="guidBoldCmdSet" id="cmdShowCounterpartOfFile" context="guidSourceSelected" />
   </VisibilityConstraints>
 
   <Symbols>
     <GuidSymbol name="guidBoldPackage" value="{6b1e6f4c-2c7a-4c0b-9e8a-5b0c1d2e3f41}" />
     <GuidSymbol name="guidBldSelected" value="{f1e2d3c4-b5a6-4978-8a9b-0c1d2e3f4a74}" />
+    <GuidSymbol name="guidSourceSelected" value="{b7c8d9e0-a1f2-4b3c-8d4e-5f6a7b8c9d96}" />
     <GuidSymbol name="guidBoldCmdSet" value="{a3d7b2e1-4f5c-4a6b-8c9d-0e1f2a3b4c52}">
       <IDSymbol name="BoldMenu" value="0x1000" />
       <IDSymbol name="BoldMenuGroup" value="0x1010" />
       <IDSymbol name="BoldToolsGroup" value="0x1020" />
       <IDSymbol name="BoldHelpGroup" value="0x1030" />
       <IDSymbol name="BoldItemGroup" value="0x1040" />
+      <IDSymbol name="BoldCodeGroup" value="0x1050" />
       <IDSymbol name="cmdModelEditor" value="0x0100" />
       <IDSymbol name="cmdGenerateClasses" value="0x0101" />
       <IDSymbol name="cmdPropagatorAnalyzer" value="0x0102" />
+      <IDSymbol name="cmdPortBrowser" value="0x0103" />
       <IDSymbol name="cmdUserGuide" value="0x0110" />
       <IDSymbol name="cmdTutorials" value="0x0111" />
       <IDSymbol name="cmdOpenModel" value="0x0120" />
       <IDSymbol name="cmdGenerateClassesOfModel" value="0x0121" />
+      <IDSymbol name="cmdShowCounterpart" value="0x0122" />
+      <IDSymbol name="cmdShowCounterpartOfFile" value="0x0123" />
     </GuidSymbol>
   </Symbols>
 </CommandTable>

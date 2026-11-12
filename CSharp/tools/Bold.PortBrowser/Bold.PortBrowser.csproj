@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>The port browser: the Delphi source and the C# port side by side, linked both ways. Select a file or a symbol on one side and the other side shows its counterpart, with what the port did with it and why.</Description>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- Lets this project compile on Linux and macOS as well (it runs on Windows). -->
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bold.PortBrowser</RootNamespace>
+    <ApplicationIcon>../../../Images/Bold.ico</ApplicationIcon>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+    <!-- The port tool it is built on is a program too: both bring a .deps.json of that name when published for one runtime. -->
+    <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+    <!-- A program, published rather than packed (dotnet publish). -->
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Bold.PortBrowser.Core/Bold.PortBrowser.Core.csproj" />
+    <ProjectReference Include="../Bold.PortTool/Bold.PortTool.csproj" />
+    <ProjectReference Include="../../src/Bold.Porting/Bold.Porting.csproj" />
+  </ItemGroup>
+</Project>

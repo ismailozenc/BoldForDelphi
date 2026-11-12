@@ -40,5 +40,8 @@
     <!-- The example applications, which tests run. -->
     <ProjectReference Include="../../examples/Building/BldOwn/BldOwn.csproj" />
     <ProjectReference Include="../../examples/Library/Desk/Library.Desk.csproj" />
+    <!-- The port browser, whose window the tests show. -->
+    <ProjectReference Include="../../tools/Bold.PortBrowser/Bold.PortBrowser.csproj" />
+    <ProjectReference Include="../../tools/Bold.PortBrowser.Core/Bold.PortBrowser.Core.csproj" />
   </ItemGroup>
 </Project>

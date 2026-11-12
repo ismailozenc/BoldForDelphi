@@ -12,13 +12,19 @@ internal static class PackageIds
     /// <summary>The UI context that is active while one .bld file is selected in Solution Explorer.</summary>
     public const string BldSelected = "f1e2d3c4-b5a6-4978-8a9b-0c1d2e3f4a74";
 
+    /// <summary>The UI context that is active while one .cs or .pas file is selected in Solution Explorer.</summary>
+    public const string SourceSelected = "b7c8d9e0-a1f2-4b3c-8d4e-5f6a7b8c9d96";
+
     public static readonly Guid CommandSetGuid = new(CommandSet);
 
     public const int ModelEditor = 0x0100;
     public const int GenerateClasses = 0x0101;
     public const int PropagatorAnalyzer = 0x0102;
+    public const int PortBrowser = 0x0103;
     public const int UserGuide = 0x0110;
     public const int Tutorials = 0x0111;
     public const int OpenModel = 0x0120;
     public const int GenerateClassesOfModel = 0x0121;
+    public const int ShowCounterpart = 0x0122;
+    public const int ShowCounterpartOfFile = 0x0123;
 }
